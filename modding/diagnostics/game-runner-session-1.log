@@ -1,0 +1,123 @@
+START native lighting runner installed=1; graphics-derived speed uncalibrated; shared motion state for Corolla instances
+FRAME 120 candidates=0 owned=0 replaced=0 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000
+FRAME 240 candidates=0 owned=0 replaced=0 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000
+FRAME 360 candidates=0 owned=0 replaced=0 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000
+FRAME 480 candidates=0 owned=0 replaced=0 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000
+FRAME 600 candidates=0 owned=0 replaced=0 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000
+FRAME 720 candidates=0 owned=0 replaced=0 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000
+OWNED frame=761 base=0 min=0 start=0 offset=0 stride=36 color=7 shaderBytes=1792 supported=1
+OWNED frame=761 base=0 min=0 start=0 offset=0 stride=36 color=7 shaderBytes=1792 supported=1
+OWNED frame=762 base=0 min=0 start=0 offset=0 stride=36 color=7 shaderBytes=1792 supported=1
+OWNED frame=762 base=0 min=0 start=0 offset=0 stride=36 color=7 shaderBytes=1792 supported=1
+OWNED frame=763 base=0 min=0 start=0 offset=0 stride=36 color=7 shaderBytes=1792 supported=1
+OWNED frame=763 base=0 min=0 start=0 offset=0 stride=36 color=7 shaderBytes=1792 supported=1
+OWNED frame=764 base=0 min=0 start=0 offset=0 stride=36 color=7 shaderBytes=1792 supported=1
+OWNED frame=764 base=0 min=0 start=0 offset=0 stride=36 color=7 shaderBytes=1792 supported=1
+FRAME 840 candidates=158 owned=158 replaced=158 shaderFailures=0 references=38 bodies=2 graphicsSpeedValid=1 graphicsSpeed=0.0000 blend=0.0006
+FRAME 960 candidates=398 owned=398 replaced=398 shaderFailures=0 references=38 bodies=2 graphicsSpeedValid=1 graphicsSpeed=0.0000 blend=0.0000
+FRAME 1080 candidates=638 owned=638 replaced=638 shaderFailures=0 references=38 bodies=2 graphicsSpeedValid=1 graphicsSpeed=0.0000 blend=0.0000
+FRAME 1200 candidates=878 owned=878 replaced=878 shaderFailures=0 references=38 bodies=2 graphicsSpeedValid=1 graphicsSpeed=0.0000 blend=0.0000
+FRAME 1320 candidates=970 owned=970 replaced=970 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000
+FRAME 1440 candidates=1258 owned=1258 replaced=1258 shaderFailures=0 references=96 bodies=8 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000
+FRAME 1560 candidates=2128 owned=2128 replaced=2128 shaderFailures=0 references=96 bodies=8 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000
+FRAME 1680 candidates=3085 owned=3085 replaced=3085 shaderFailures=0 references=96 bodies=8 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000
+FRAME 1800 candidates=4045 owned=4045 replaced=4045 shaderFailures=0 references=96 bodies=8 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000
+FRAME 1920 candidates=5005 owned=5005 replaced=5005 shaderFailures=0 references=96 bodies=8 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000
+FRAME 2040 candidates=5965 owned=5965 replaced=5965 shaderFailures=0 references=96 bodies=8 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000
+FRAME 2160 candidates=6661 owned=6661 replaced=6661 shaderFailures=0 references=96 bodies=5 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000
+FRAME 2280 candidates=7198 owned=7198 replaced=7198 shaderFailures=0 references=96 bodies=3 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000
+FRAME 2400 candidates=7558 owned=7558 replaced=7558 shaderFailures=0 references=96 bodies=3 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000
+FRAME 2520 candidates=7918 owned=7918 replaced=7918 shaderFailures=0 references=96 bodies=3 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000
+FRAME 2640 candidates=8278 owned=8278 replaced=8278 shaderFailures=0 references=96 bodies=3 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000
+FRAME 2760 candidates=8638 owned=8638 replaced=8638 shaderFailures=0 references=96 bodies=3 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000
+FRAME 2880 candidates=8974 owned=8974 replaced=8974 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000
+FRAME 3000 candidates=9566 owned=9566 replaced=9566 shaderFailures=0 references=96 bodies=8 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000
+FRAME 3120 candidates=10526 owned=10526 replaced=10526 shaderFailures=0 references=96 bodies=8 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000
+FRAME 3240 candidates=11486 owned=11486 replaced=11486 shaderFailures=0 references=96 bodies=8 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000
+FRAME 3360 candidates=12446 owned=12446 replaced=12446 shaderFailures=0 references=96 bodies=8 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000
+FRAME 3480 candidates=13406 owned=13406 replaced=13406 shaderFailures=0 references=96 bodies=8 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000
+FRAME 3600 candidates=14366 owned=14366 replaced=14366 shaderFailures=0 references=96 bodies=8 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000
+FRAME 3720 candidates=14566 owned=14566 replaced=14566 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000
+FRAME 3840 candidates=14566 owned=14566 replaced=14566 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000
+FRAME 3960 candidates=14734 owned=14734 replaced=14734 shaderFailures=0 references=38 bodies=2 graphicsSpeedValid=1 graphicsSpeed=0.0000 blend=0.0003
+FRAME 4080 candidates=14974 owned=14974 replaced=14974 shaderFailures=0 references=38 bodies=2 graphicsSpeedValid=1 graphicsSpeed=0.0000 blend=0.0000
+FRAME 4200 candidates=15214 owned=15214 replaced=15214 shaderFailures=0 references=38 bodies=2 graphicsSpeedValid=1 graphicsSpeed=0.0000 blend=0.0000
+FRAME 4320 candidates=15454 owned=15454 replaced=15454 shaderFailures=0 references=38 bodies=2 graphicsSpeedValid=1 graphicsSpeed=0.0000 blend=0.0000
+FRAME 4440 candidates=15694 owned=15694 replaced=15694 shaderFailures=0 references=38 bodies=2 graphicsSpeedValid=1 graphicsSpeed=0.0000 blend=0.0000
+FRAME 4560 candidates=15934 owned=15934 replaced=15934 shaderFailures=0 references=38 bodies=2 graphicsSpeedValid=1 graphicsSpeed=0.0000 blend=0.0000
+FRAME 4680 candidates=16174 owned=16174 replaced=16174 shaderFailures=0 references=38 bodies=2 graphicsSpeedValid=1 graphicsSpeed=0.0000 blend=0.0000
+FRAME 4800 candidates=16414 owned=16414 replaced=16414 shaderFailures=0 references=38 bodies=2 graphicsSpeedValid=1 graphicsSpeed=0.0000 blend=0.0000
+FRAME 4920 candidates=16654 owned=16654 replaced=16654 shaderFailures=0 references=38 bodies=2 graphicsSpeedValid=1 graphicsSpeed=0.0001 blend=0.0000
+FRAME 5040 candidates=16894 owned=16894 replaced=16894 shaderFailures=0 references=38 bodies=2 graphicsSpeedValid=1 graphicsSpeed=-0.0001 blend=0.0000
+FRAME 5160 candidates=17134 owned=17134 replaced=17134 shaderFailures=0 references=38 bodies=2 graphicsSpeedValid=1 graphicsSpeed=0.0000 blend=0.0000
+FRAME 5280 candidates=17374 owned=17374 replaced=17374 shaderFailures=0 references=38 bodies=2 graphicsSpeedValid=1 graphicsSpeed=-0.0001 blend=0.0000
+FRAME 5400 candidates=17614 owned=17614 replaced=17614 shaderFailures=0 references=38 bodies=2 graphicsSpeedValid=1 graphicsSpeed=-0.0000 blend=0.0000
+FRAME 5520 candidates=17854 owned=17854 replaced=17854 shaderFailures=0 references=38 bodies=2 graphicsSpeedValid=1 graphicsSpeed=0.0000 blend=0.0000
+FRAME 5640 candidates=18094 owned=18094 replaced=18094 shaderFailures=0 references=38 bodies=2 graphicsSpeedValid=1 graphicsSpeed=-0.0001 blend=0.0000
+FRAME 5760 candidates=18334 owned=18334 replaced=18334 shaderFailures=0 references=38 bodies=2 graphicsSpeedValid=1 graphicsSpeed=0.0000 blend=0.0000
+FRAME 5880 candidates=18574 owned=18574 replaced=18574 shaderFailures=0 references=36 bodies=2 graphicsSpeedValid=1 graphicsSpeed=-0.0001 blend=0.0000
+FRAME 6000 candidates=18814 owned=18814 replaced=18814 shaderFailures=0 references=32 bodies=2 graphicsSpeedValid=1 graphicsSpeed=0.0000 blend=0.0000
+FRAME 6120 candidates=19054 owned=19054 replaced=19054 shaderFailures=0 references=38 bodies=2 graphicsSpeedValid=1 graphicsSpeed=0.0001 blend=0.0000
+FRAME 6240 candidates=19294 owned=19294 replaced=19294 shaderFailures=0 references=38 bodies=2 graphicsSpeedValid=1 graphicsSpeed=0.0000 blend=0.0000
+START native lighting runner installed=1; graphics-derived speed uncalibrated; shared motion state for Corolla instances
+FRAME 120 candidates=0 owned=0 replaced=0 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000
+FRAME 240 candidates=0 owned=0 replaced=0 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000
+FRAME 360 candidates=0 owned=0 replaced=0 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000
+FRAME 480 candidates=0 owned=0 replaced=0 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000
+FRAME 600 candidates=0 owned=0 replaced=0 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000
+FRAME 720 candidates=0 owned=0 replaced=0 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000
+FRAME 840 candidates=0 owned=0 replaced=0 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000
+FRAME 960 candidates=0 owned=0 replaced=0 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000
+FRAME 1080 candidates=0 owned=0 replaced=0 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000
+FRAME 1200 candidates=0 owned=0 replaced=0 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000
+FRAME 1320 candidates=0 owned=0 replaced=0 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000
+FRAME 1440 candidates=0 owned=0 replaced=0 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000
+FRAME 1560 candidates=0 owned=0 replaced=0 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000
+FRAME 1680 candidates=0 owned=0 replaced=0 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000
+FRAME 1800 candidates=0 owned=0 replaced=0 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000
+FRAME 1920 candidates=0 owned=0 replaced=0 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000
+FRAME 2040 candidates=0 owned=0 replaced=0 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000
+FRAME 2160 candidates=0 owned=0 replaced=0 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000
+FRAME 2280 candidates=0 owned=0 replaced=0 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000
+FRAME 2400 candidates=0 owned=0 replaced=0 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000
+FRAME 2520 candidates=0 owned=0 replaced=0 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000
+FRAME 2640 candidates=0 owned=0 replaced=0 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000
+FRAME 2760 candidates=0 owned=0 replaced=0 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000
+FRAME 2880 candidates=0 owned=0 replaced=0 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000
+FRAME 3000 candidates=0 owned=0 replaced=0 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000
+FRAME 3120 candidates=0 owned=0 replaced=0 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000
+FRAME 3240 candidates=0 owned=0 replaced=0 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000
+FRAME 3360 candidates=0 owned=0 replaced=0 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000
+FRAME 3480 candidates=0 owned=0 replaced=0 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000
+FRAME 3600 candidates=0 owned=0 replaced=0 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000
+FRAME 3720 candidates=0 owned=0 replaced=0 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000
+FRAME 3840 candidates=0 owned=0 replaced=0 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000
+FRAME 3960 candidates=0 owned=0 replaced=0 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000
+FRAME 4080 candidates=0 owned=0 replaced=0 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000
+FRAME 4200 candidates=0 owned=0 replaced=0 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000
+FRAME 4320 candidates=0 owned=0 replaced=0 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000
+FRAME 4440 candidates=0 owned=0 replaced=0 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000
+OWNED frame=4485 base=0 min=0 start=0 offset=0 stride=36 color=7 shaderBytes=1792 supported=1
+OWNED frame=4485 base=0 min=0 start=0 offset=0 stride=36 color=7 shaderBytes=1792 supported=1
+OWNED frame=4486 base=0 min=0 start=0 offset=0 stride=36 color=7 shaderBytes=1792 supported=1
+OWNED frame=4486 base=0 min=0 start=0 offset=0 stride=36 color=7 shaderBytes=1792 supported=1
+OWNED frame=4487 base=0 min=0 start=0 offset=0 stride=36 color=7 shaderBytes=1792 supported=1
+OWNED frame=4487 base=0 min=0 start=0 offset=0 stride=36 color=7 shaderBytes=1792 supported=1
+OWNED frame=4488 base=0 min=0 start=0 offset=0 stride=36 color=7 shaderBytes=1792 supported=1
+OWNED frame=4488 base=0 min=0 start=0 offset=0 stride=36 color=7 shaderBytes=1792 supported=1
+FRAME 4560 candidates=150 owned=150 replaced=150 shaderFailures=0 references=38 bodies=2 graphicsSpeedValid=1 graphicsSpeed=0.0000 blend=0.0611
+FRAME 4680 candidates=390 owned=390 replaced=390 shaderFailures=0 references=35 bodies=2 graphicsSpeedValid=1 graphicsSpeed=23.6436 blend=0.5853
+FRAME 4800 candidates=412 owned=412 replaced=412 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=21.0167 blend=0.0018
+FRAME 4920 candidates=632 owned=632 replaced=632 shaderFailures=0 references=38 bodies=2 graphicsSpeedValid=1 graphicsSpeed=0.0000 blend=0.0089
+FRAME 5040 candidates=821 owned=821 replaced=821 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=23.7088 blend=0.1801
+FRAME 5160 candidates=821 owned=821 replaced=821 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=23.7088 blend=0.0002
+FRAME 5280 candidates=821 owned=821 replaced=821 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=23.7088 blend=0.0000
+FRAME 5400 candidates=821 owned=821 replaced=821 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=23.7088 blend=0.0000
+FRAME 5520 candidates=821 owned=821 replaced=821 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=23.7088 blend=0.0000
+FRAME 5640 candidates=821 owned=821 replaced=821 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=23.7088 blend=0.0000
+FRAME 5760 candidates=821 owned=821 replaced=821 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=23.7088 blend=0.0000
+FRAME 5880 candidates=821 owned=821 replaced=821 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=23.7088 blend=0.0000
+FRAME 6000 candidates=821 owned=821 replaced=821 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=23.7088 blend=0.0000
+FRAME 6120 candidates=821 owned=821 replaced=821 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=23.7088 blend=0.0000
+FRAME 6240 candidates=821 owned=821 replaced=821 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=23.7088 blend=0.0000
+FRAME 6360 candidates=821 owned=821 replaced=821 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=23.7088 blend=0.0000

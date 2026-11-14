@@ -5,6 +5,7 @@
 #include "uma_d3d.h"
 #include "uma_upload.h"
 #include "uma_scene_speed.h"
+#include "uma_wheels.h"
 typedef HRESULT (WINAPI *RunnerPresent)(IDirect3DDevice9*,const RECT*,const RECT*,HWND,const RGNDATA*);
 typedef HRESULT (WINAPI *RunnerReset)(IDirect3DDevice9*,D3DPRESENT_PARAMETERS*);
 static UmaDrawIndexed runner_original_draw;
@@ -21,36 +22,57 @@ static WCHAR runner_atlas[4096];
 static FILE *runner_log;
 static ULONGLONG runner_last_tick;
 static unsigned runner_frames,runner_candidates,runner_owned,runner_replaced,runner_shader_failures;
+static unsigned runner_hidden_wheels,runner_tire_candidates;
 static int runner_speed_valid;
 static float runner_speed;
-static unsigned runner_last_owned;
+static unsigned runner_last_owned,runner_projected_references;
+static UmaMatrix runner_inverse_projection;
+static int runner_projection_valid;
+static int runner_combined(IDirect3DDevice9 *device,const UmaShaderEntry *entry,UmaMatrix *output){
+ if(!entry || entry->worldviewproj<0)return 0;
+ float rows[4][4];if(FAILED(IDirect3DDevice9_GetVertexShaderConstantF(device,(UINT)entry->worldviewproj,&rows[0][0],4)))return 0;
+ for(int r=0;r<4;r++)for(int c=0;c<4;c++){if(!isfinite(rows[c][r]))return 0;output->m[r][c]=rows[c][r];}
+ return 1;
+}
 static int runner_worldview(IDirect3DDevice9 *device,const UmaShaderEntry *entry,UmaMatrix *output){
  UmaMatrix matrix={0};matrix.m[3][3]=1;
  if(entry){
-  if(entry->worldview<0)return 0;
+  if(entry->worldview<0){
+   UmaMatrix combined;if(!entry->reference || !runner_projection_valid || !runner_combined(device,entry,&combined))return 0;
+   matrix=uma_matrix_product(&combined,&runner_inverse_projection);if(!uma_rigid(&matrix))return 0;
+   *output=matrix;runner_projected_references++;return 1;
+  }
   float rows[3][4];if(FAILED(IDirect3DDevice9_GetVertexShaderConstantF(device,(UINT)entry->worldview,&rows[0][0],3)))return 0;
   for(int r=0;r<4;r++)for(int c=0;c<3;c++)matrix.m[r][c]=rows[c][r];
  }else{
   D3DMATRIX world,view;if(FAILED(IDirect3DDevice9_GetTransform(device,D3DTS_WORLD,&world)) || FAILED(IDirect3DDevice9_GetTransform(device,D3DTS_VIEW,&view)))return 0;
   memset(&matrix,0,sizeof(matrix));for(int r=0;r<4;r++)for(int c=0;c<4;c++)for(int k=0;k<4;k++)matrix.m[r][c]+=world.m[r][k]*view.m[k][c];
  }
- if(!uma_rigid(&matrix))return 0;
+ for(int r=0;r<4;r++)for(int c=0;c<4;c++)if(!isfinite(matrix.m[r][c]))return 0;
  *output=matrix;return 1;
 }
 static int runner_fixed_combined(IDirect3DDevice9 *device,D3DMATRIX *combined){
  D3DMATRIX projection;UmaMatrix worldview;if(!runner_worldview(device,NULL,&worldview) || FAILED(IDirect3DDevice9_GetTransform(device,D3DTS_PROJECTION,&projection)))return 0;
  memset(combined,0,sizeof(*combined));for(int r=0;r<4;r++)for(int c=0;c<4;c++)for(int k=0;k<4;k++)combined->m[r][c]+=worldview.m[r][k]*projection.m[k][c];return 1;
 }
+static int runner_tire_texture(IDirect3DDevice9 *device){
+ IDirect3DBaseTexture9 *texture=NULL;D3DSURFACE_DESC description;int tire=0;
+ if(SUCCEEDED(IDirect3DDevice9_GetTexture(device,1,&texture)) && texture){
+  if(IDirect3DBaseTexture9_GetType(texture)==D3DRTYPE_TEXTURE && SUCCEEDED(IDirect3DTexture9_GetLevelDesc((IDirect3DTexture9*)texture,0,&description)))tire=description.Width==128 && description.Height==128 && description.Format==D3DFMT_DXT1;
+  IDirect3DBaseTexture9_Release(texture);
+ }
+ return tire;
+}
 static HRESULT WINAPI runner_draw(IDirect3DDevice9 *device,D3DPRIMITIVETYPE type,INT base,UINT minimum,UINT vertices,UINT start,UINT triangles){
  HRESULT result=E_FAIL;int replaced=0;EnterCriticalSection(&runner_lock);
  int candidate=type==D3DPT_TRIANGLELIST && vertices==runner_motion.vertices && triangles==runner_motion.indices/3;
  if(candidate)runner_candidates++;
- if(candidate || (runner_renderer.device==device && runner_frames-runner_last_owned<3 && runner_scene.samples<96)){
+ if(candidate || (runner_renderer.device==device && runner_frames-runner_last_owned<3 && (runner_scene.samples<96 || (vertices<=4096 && type==D3DPT_TRIANGLELIST)))){
   IDirect3DVertexBuffer9 *vb=NULL;UINT offset=0,stride=0;
   if(SUCCEEDED(IDirect3DDevice9_GetStreamSource(device,0,&vb,&offset,&stride)) && vb){
    int64_t first=(int64_t)base+minimum;uint64_t byte_offset=first>=0?(uint64_t)offset+(uint64_t)first*stride:UINT64_MAX;
    int owned=candidate && stride==36 && byte_offset<=UINT_MAX && uma_upload_matches_at(vb,(UINT)byte_offset);DWORD depth=0;
-   if(SUCCEEDED(IDirect3DDevice9_GetRenderState(device,D3DRS_ZENABLE,&depth)) && depth && (owned || stride==24)){
+   if(SUCCEEDED(IDirect3DDevice9_GetRenderState(device,D3DRS_ZENABLE,&depth)) && depth && (owned || stride==24 || (stride==36 && vertices<=4096))){
     if(owned){
      runner_owned++;runner_last_owned=runner_frames;
      if(runner_renderer.device && runner_renderer.device!=device)uma_d3d_close(&runner_renderer);
@@ -58,10 +80,17 @@ static HRESULT WINAPI runner_draw(IDirect3DDevice9 *device,D3DPRIMITIVETYPE type
     }
     if(runner_renderer.device==device){
      HRESULT shader_status;UmaShaderEntry *entry=uma_shader_get(&runner_renderer.shaders,device,&shader_status);UmaMatrix worldview;
+     if(owned && SUCCEEDED(shader_status) && entry && entry->worldview>=0){
+      UmaMatrix combined;if(runner_worldview(device,entry,&worldview) && runner_combined(device,entry,&combined))runner_projection_valid=uma_inverse_projection(&worldview,&combined,&runner_inverse_projection);
+     }
      if(SUCCEEDED(shader_status) && runner_worldview(device,entry,&worldview)){
       if(owned)uma_scene_body(&runner_scene,&worldview);
       else if(entry && entry->reference)uma_scene_reference(&runner_scene,&worldview);
       else if(!entry){DWORD fvf=0;if(SUCCEEDED(IDirect3DDevice9_GetFVF(device,&fvf)) && (fvf&D3DFVF_POSITION_MASK)==D3DFVF_XYZ)uma_scene_reference(&runner_scene,&worldview);}
+     }
+     if(!owned && stride==36 && vertices<=4096 && SUCCEEDED(shader_status) && runner_tire_texture(device) && runner_worldview(device,entry,&worldview)){
+      if(runner_log && runner_tire_candidates++<8){fprintf(runner_log,"TIRE frame=%u vertices=%u triangles=%u bodies=%u origin=%.4f,%.4f,%.4f\n",runner_frames,vertices,triangles,runner_scene.bodies,worldview.m[3][0],worldview.m[3][1],worldview.m[3][2]);fflush(runner_log);}
+      for(unsigned i=0;i<runner_scene.bodies;i++)if(uma_corolla_wheel(&worldview,&runner_scene.body[i])){replaced=1;result=S_OK;runner_hidden_wheels++;break;}
      }
      if(owned){
       DWORD color=0;IDirect3DDevice9_GetRenderState(device,D3DRS_COLORWRITEENABLE,&color);
@@ -79,18 +108,26 @@ static HRESULT WINAPI runner_draw(IDirect3DDevice9 *device,D3DPRIMITIVETYPE type
 }
 static HRESULT WINAPI runner_present(IDirect3DDevice9 *device,const RECT *source,const RECT *destination,HWND window,const RGNDATA *dirty){
  EnterCriticalSection(&runner_lock);ULONGLONG tick=GetTickCount64();float seconds=runner_last_tick?(float)(tick-runner_last_tick)*.001f:0;runner_last_tick=tick;
- unsigned references=runner_scene.samples,bodies=runner_scene.bodies;
+ unsigned references=runner_scene.samples,bodies=runner_scene.bodies,groups=runner_scene.references,best_votes=0,second_votes=0;
+ for(unsigned i=0;i<groups;i++){unsigned votes=runner_scene.reference[i].votes;if(votes>best_votes){second_votes=best_votes;best_votes=votes;}else if(votes>second_votes)second_votes=votes;}
+ if(runner_log && runner_frames%120==119 && references && bodies && runner_frames<2400){
+  fprintf(runner_log,"CAMERA frame=%u groups=%u best=%u second=%u inverseProjection=",runner_frames,groups,best_votes,second_votes);
+  for(int i=0;i<4;i++)for(int j=0;j<4;j++)fprintf(runner_log,"%.6g,",runner_inverse_projection.m[i][j]);
+  fputc('\n',runner_log);
+  for(unsigned i=0;i<groups && i<4;i++){fprintf(runner_log,"REF votes=%u ",runner_scene.reference[i].votes);for(int r=0;r<4;r++)for(int c=0;c<3;c++)fprintf(runner_log,"%.6g,",runner_scene.reference[i].matrix.m[r][c]);fputc('\n',runner_log);}
+  fprintf(runner_log,"BODY ");for(int r=0;r<4;r++)for(int c=0;c<3;c++)fprintf(runner_log,"%.6g,",runner_scene.body[0].m[r][c]);fputc('\n',runner_log);
+ }
  runner_speed_valid=uma_scene_finish(&runner_scene,seconds,&runner_speed);
  if(seconds>0 && seconds<=.1f)uma_motion_step(&runner_state,seconds,runner_speed_valid?runner_speed:0,0);
  runner_frames++;
  if(runner_log && runner_frames%120==0){
-  fprintf(runner_log,"FRAME %u candidates=%u owned=%u replaced=%u shaderFailures=%u references=%u bodies=%u graphicsSpeedValid=%d graphicsSpeed=%.4f blend=%.4f\n",runner_frames,runner_candidates,runner_owned,runner_replaced,runner_shader_failures,references,bodies,runner_speed_valid,runner_speed,runner_state.run_blend);fflush(runner_log);
+  fprintf(runner_log,"FRAME %u candidates=%u owned=%u replaced=%u shaderFailures=%u references=%u bodies=%u graphicsSpeedValid=%d graphicsSpeed=%.4f blend=%.4f projectionValid=%d recoveredSceneRefs=%u hiddenWheels=%u groups=%u best=%u second=%u\n",runner_frames,runner_candidates,runner_owned,runner_replaced,runner_shader_failures,references,bodies,runner_speed_valid,runner_speed,runner_state.run_blend,runner_projection_valid,runner_projected_references,runner_hidden_wheels,groups,best_votes,second_votes);fflush(runner_log);
   if(ftell(runner_log)>2*1024*1024){fclose(runner_log);runner_log=NULL;}
  }
  LeaveCriticalSection(&runner_lock);return runner_original_present(device,source,destination,window,dirty);
 }
 static HRESULT WINAPI runner_reset(IDirect3DDevice9 *device,D3DPRESENT_PARAMETERS *parameters){
- EnterCriticalSection(&runner_lock);uma_d3d_close(&runner_renderer);memset(&runner_scene,0,sizeof(runner_scene));runner_last_tick=0;LeaveCriticalSection(&runner_lock);
+ EnterCriticalSection(&runner_lock);uma_d3d_close(&runner_renderer);memset(&runner_scene,0,sizeof(runner_scene));runner_last_tick=0;runner_projection_valid=0;LeaveCriticalSection(&runner_lock);
  return runner_original_reset(device,parameters);
 }
 static int runner_install(IDirect3DDevice9 *device){

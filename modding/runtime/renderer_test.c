@@ -72,7 +72,7 @@ static void check_invalid_textures(IDirect3DDevice9 *device){
 }
 static void check_shader_bridge(void){
  for(UINT i=0;i<UMA_SHADER_PROFILE_COUNT;i++){
-  UmaShaderEntry entry={0};entry.code=(DWORD*)uma_shader_profiles[i].words;entry.bytes=uma_shader_profiles[i].bytes;uma_shader_parse(&entry);assert(entry.supported && entry.uv>=0);assert(entry.worldview==uma_shader_profiles[i].worldview);
+  UmaShaderEntry entry={0};entry.code=(DWORD*)uma_shader_profiles[i].words;entry.bytes=uma_shader_profiles[i].bytes;uma_shader_parse(&entry);assert(entry.supported && entry.uv>=0);assert(entry.worldview==uma_shader_profiles[i].worldview);assert(entry.worldviewproj==(int)uma_shader_profiles[i].rows[0]);
  }
  DWORD uv_only[]={0xfffe0101,31,0x80000000,0x900f0000,31,0x80000005,0x900f0002,1,0xc00f0000,0x90e40002,0xffff};
  UmaShaderEntry uv={0};uv.code=uv_only;uv.bytes=sizeof(uv_only);uma_shader_parse(&uv);assert(!uv.supported);

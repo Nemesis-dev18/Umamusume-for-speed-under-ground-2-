@@ -395,7 +395,35 @@ class BodyMaterialRoute(unittest.TestCase):
         source=(ROOT/'CARS/COROLLA/GEOMETRY.BIN.before-skin-slot.bak').read_bytes()
         plan=json.loads((ROOT/'modding/staged-runtime/geometry-plan.json').read_text())
         expected,changes=route_body(source,plan['minimum'],plan['maximum'])
-        self.assertEqual(expected,(ROOT/'CARS/COROLLA/GEOMETRY.BIN').read_bytes())
+        self.assertEqual(expected,(ROOT/'CARS/COROLLA/GEOMETRY.BIN.before-effects.bak').read_bytes())
         self.assertEqual(len(changes),36)
         self.assertEqual(hashlib.sha256(expected).hexdigest(),'20498c7d93be4bdc57a19db72d246ae79f56cfbd3bd13235199524ebc545cf28')
         with self.assertRaises(ValueError):route_body(expected,plan['minimum'],plan['maximum'])
+
+class CarEffectCandidates(unittest.TestCase):
+    def test_exact_optional_marker_hash_edits(self):
+        from inspect_assets import ROOT
+        from disable_car_effects import disable_effects
+        from extract_assets import geometry
+        source=(ROOT/'CARS/COROLLA/GEOMETRY.BIN.before-effects.bak').read_bytes()
+        candidate,changes=disable_effects(source)
+        self.assertEqual(candidate,(ROOT/'modding/staged-runtime/GEOMETRY-effects.BIN').read_bytes())
+        self.assertEqual(len(changes),214)
+        mask=bytearray(len(source))
+        for c in changes:mask[c['offset']:c['offset']+4]=b'\1'*4
+        self.assertTrue(all(x==y or mask[i] for i,(x,y) in enumerate(zip(source,candidate))))
+        old,new=geometry(source,''),geometry(candidate,'')
+        for a,b in zip(old,new):
+            for field in ('asset_hash','positions','normals','uv','indices','transform','material_runs'):self.assertEqual(a[field],b[field])
+            self.assertEqual([m['matrix'] for m in a['markers']],[m['matrix'] for m in b['markers']])
+        with self.assertRaises(ValueError):disable_effects(candidate)
+
+    def test_shadow_format_and_unrelated_texture_preservation(self):
+        from inspect_assets import ROOT
+        from verify_foot_shadow import verify
+        original=(ROOT/'CARS/COROLLA/TEXTURES.BIN.before-foot-shadow.bak').read_bytes()
+        candidate=(ROOT/'modding/staged-runtime/TEXTURES-shadow.BIN').read_bytes()
+        result=verify(original,candidate)
+        self.assertEqual(result['textures'],56)
+        self.assertTrue(result['metadata_unchanged'])
+        with self.assertRaises(ValueError):verify(original,candidate[:-1])

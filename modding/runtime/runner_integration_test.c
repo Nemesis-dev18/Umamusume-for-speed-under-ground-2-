@@ -27,6 +27,22 @@ int main(void){
   for(int i=0;i<640*480;i++)if(pixels[i]!=0xff252a32){changed++;if(pixels[i]!=0xffffffff)colored++;unsigned r=(pixels[i]>>16)&255,g=(pixels[i]>>8)&255,b=pixels[i]&255;if(g>25 && b>25)not_red++;if(r+g+b>60 && (abs((int)r-(int)b)>8 || abs((int)r-(int)g)>8))textured++;}
   assert(changed>1000);if(kind==1)assert(colored==0);else{assert(colored>1000 && textured>1000 && not_red>100);float restored_paint[4];CHECK(IDirect3DDevice9_GetVertexShaderConstantF(device,18,restored_paint,1));assert(!memcmp(restored_paint,paint,sizeof(paint)));save_ppm("modding/runtime/integration-test/replaced.ppm",pixels);}free(pixels);
  }
+ /* Route a tire by texture plus the Corolla's own mount; a foreign car must pass through. */
+ IDirect3DVertexBuffer9 *wheel_vb=NULL;IDirect3DIndexBuffer9 *wheel_ib=NULL;IDirect3DTexture9 *tire=NULL,*non_tire=NULL;
+ UmaVertex quad[4]={0};for(int i=0;i<4;i++){quad[i].position[1]=(i&1)?.2f:-.2f;quad[i].position[2]=(i&2)?1.2f:.7f;quad[i].normal[0]=1;memset(quad[i].bgra,255,4);}const WORD wheel_indices[]={0,1,2,2,1,3};
+ CHECK(IDirect3DDevice9_CreateVertexBuffer(device,sizeof(quad),D3DUSAGE_WRITEONLY,0,D3DPOOL_DEFAULT,&wheel_vb,NULL));CHECK(IDirect3DVertexBuffer9_Lock(wheel_vb,0,0,&mapped,0));memcpy(mapped,quad,sizeof(quad));CHECK(IDirect3DVertexBuffer9_Unlock(wheel_vb));
+ CHECK(IDirect3DDevice9_CreateIndexBuffer(device,sizeof(wheel_indices),0,D3DFMT_INDEX16,D3DPOOL_MANAGED,&wheel_ib,NULL));CHECK(IDirect3DIndexBuffer9_Lock(wheel_ib,0,0,&mapped,0));memcpy(mapped,wheel_indices,sizeof(wheel_indices));CHECK(IDirect3DIndexBuffer9_Unlock(wheel_ib));
+ CHECK(IDirect3DDevice9_CreateTexture(device,128,128,1,0,D3DFMT_DXT1,D3DPOOL_MANAGED,&tire,NULL));CHECK(IDirect3DDevice9_CreateTexture(device,128,128,1,0,D3DFMT_A8R8G8B8,D3DPOOL_MANAGED,&non_tire,NULL));
+ CHECK(IDirect3DDevice9_SetStreamSource(device,0,wheel_vb,0,36));CHECK(IDirect3DDevice9_SetIndices(device,wheel_ib));
+ runner_scene.bodies=1;memset(&runner_scene.body[0],0,sizeof(UmaMatrix));for(int i=0;i<4;i++)runner_scene.body[0].m[i][i]=1;
+ native_draw=runner_original_draw;runner_original_draw=observed_draw;draws=0;unsigned hidden=runner_hidden_wheels;
+ for(int kind=0;kind<3;kind++){
+  float wheel_view[3][4]={{1,0,0,1.35f},{0,1,0,.78f},{0,0,1,.275f}};if(kind==1)wheel_view[0][3]+=10;
+  CHECK(IDirect3DDevice9_SetVertexShaderConstantF(device,14,&wheel_view[0][0],3));CHECK(IDirect3DDevice9_SetTexture(device,1,(IDirect3DBaseTexture9*)(kind==2?non_tire:tire)));
+  CHECK(IDirect3DDevice9_BeginScene(device));CHECK(IDirect3DDevice9_DrawIndexedPrimitive(device,D3DPT_TRIANGLELIST,0,0,4,0,2));CHECK(IDirect3DDevice9_EndScene(device));assert(draws==(unsigned)kind);assert(runner_hidden_wheels==hidden+1);
+ }
+ runner_original_draw=native_draw;CHECK(IDirect3DDevice9_SetTexture(device,1,NULL));IDirect3DTexture9_Release(tire);IDirect3DTexture9_Release(non_tire);IDirect3DVertexBuffer9_Release(wheel_vb);CHECK(IDirect3DDevice9_SetIndices(device,indices));IDirect3DIndexBuffer9_Release(wheel_ib);
+ puts("PASS runtime hides only own Corolla tire with matching texture; foreign tire and different texture retain original draw");
  CHECK(IDirect3DDevice9_Present(device,NULL,NULL,NULL,NULL));assert(runner_frames==1);
  CHECK(IDirect3DDevice9_SetStreamSource(device,0,NULL,0,0));IDirect3DVertexBuffer9_Release(vb);IDirect3DVertexBuffer9_Release(other);CHECK(IDirect3DDevice9_Reset(device,&pp));assert(!runner_renderer.device);assert(runner_remove());
  IDirect3DVertexShader9_Release(shader);IDirect3DVertexDeclaration9_Release(declaration);IDirect3DPixelShader9_Release(white);IDirect3DIndexBuffer9_Release(indices);uma_motion_free(&runner_motion);fclose(runner_log);runner_log=NULL;DeleteCriticalSection(&runner_lock);IDirect3DDevice9_Release(device);IDirect3D9_Release(api);DestroyWindow(window);

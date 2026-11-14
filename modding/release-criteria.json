@@ -3,13 +3,13 @@
   "do_not_launch_game": "controlled functional test only when user available; final release not ready",
   "selection": {
     "opaque_correctly_textured_character": false,
-    "idle_without_import_pose": "Runtime bridge and idle/run authored; independent GPU test passed",
+    "idle_without_import_pose": "Confirmed by user in real game: no import pose, slight idle movement",
     "no_residual_car_wheel_or_shadow": false
   },
   "race": {
-    "player_character_visible": false,
-    "animated_running_and_speed_response": "Runtime integrated in independent host; graphics-derived speed passed synthetic camera tests but remains uncalibrated in game",
-    "other_car_bodies_visible_when_kitasan_selected": "not verified; Nissan alone baseline passed"
+    "player_character_visible": true,
+    "animated_running_and_speed_response": "First real run failed: speed invalid. ViewProj scenery recovery prepared and independently tested; pending real run",
+    "other_car_bodies_visible_when_kitasan_selected": "Nissan 240SX confirmed intact by user. Replacement currently applies to every Corolla instance; no player-only targeting"
   },
   "offline_motion": {
     "rig_vertices": 14512,
@@ -26,7 +26,7 @@
     "grounding": "240 transition poses checked above local support plane"
   },
   "resource_changes_this_stage": true,
-  "diagnostic_removed": true,
+  "diagnostic_removed": "Temporary probes removed; permanent runtime renderer records bounded telemetry",
   "bounds_repair": "installed header and first-material bounds for sampled idle/run envelope plus 0.15m margin",
   "release_ready": false,
   "offline_renderer": {

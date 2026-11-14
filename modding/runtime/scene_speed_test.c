@@ -1,4 +1,5 @@
 #include "uma_scene_speed.h"
+#include "uma_wheels.h"
 #include <assert.h>
 #include <stdio.h>
 static UmaMatrix identity(void){UmaMatrix m={0};for(int i=0;i<4;i++)m.m[i][i]=1;return m;}
@@ -21,5 +22,19 @@ int main(void){
  scene=(UmaSceneSpeed){0};for(int i=0;i<3;i++)uma_scene_reference(&scene,&view);for(int i=0;i<3;i++)uma_scene_reference(&scene,&reflected);uma_scene_body(&scene,&wv);speed=42;assert(!uma_scene_finish(&scene,.01f,&speed) && speed==42);
  frame(&scene,wv,view);assert(!uma_scene_finish(&scene,.5f,&speed) && speed==42);
  for(int i=0;i<150;i++){uma_scene_reference(&scene,&view);}assert(scene.samples==96);uma_scene_body(&scene,&wv);assert(uma_scene_finish(&scene,.01f,&speed));
+ UmaMatrix projection={0},inverse_projection,recovered,combined;projection.m[0][0]=2.5f;projection.m[1][1]=3.8f;projection.m[2][2]=1.001f;projection.m[2][3]=1;projection.m[3][2]=-.1001f;
+ combined=multiply(wv,projection);assert(uma_inverse_projection(&wv,&combined,&inverse_projection));
+ combined=multiply(view,projection);recovered=multiply(combined,inverse_projection);
+ for(int i=0;i<4;i++)for(int j=0;j<4;j++)assert(fabsf(recovered.m[i][j]-view.m[i][j])<.004f);
+ assert(uma_rigid(&recovered));scene=(UmaSceneSpeed){0};frame(&scene,wv,recovered);assert(uma_scene_finish(&scene,.016f,&speed) && speed==0);
+ body.m[3][0]+=.16f;wv=multiply(body,view);frame(&scene,wv,recovered);assert(uma_scene_finish(&scene,.016f,&speed));assert(fabsf(speed-10)<.1f);
+ UmaMatrix singular={0};assert(!uma_inverse_projection(&wv,&singular,&inverse_projection));singular.m[0][0]=NAN;assert(!uma_matrix_inverse(&singular,&recovered));
+ UmaMatrix mount=identity();mount.m[3][0]=1.35f;mount.m[3][1]=.78f;mount.m[3][2]=.275f;
+ UmaMatrix root=identity(),wheel=multiply(mount,view);assert(uma_corolla_wheel(&wheel,&view));
+ root.m[3][0]=25;root=multiply(root,view);assert(!uma_corolla_wheel(&wheel,&root));
+ wheel.m[0][0]*=.3f;assert(uma_corolla_wheel(&wheel,&view));
+ mount.m[3][1]+=.2f;wheel=multiply(mount,view);assert(!uma_corolla_wheel(&wheel,&view));wheel.m[0][0]=NAN;assert(!uma_corolla_wheel(&wheel,&view));
+ puts("PASS own tire mount, foreign car rejection, scaled tire and invalid matrix cases");
+ puts("PASS scenery ViewProj recovery from body WV/WVP, moving body speed, singular and nonfinite matrices rejected");
  puts("PASS camera motion cancellation, translation speed, stop/reverse, teleport rejection, reflection/scale rejection, ambiguity and sample bounds; synthetic matrices only");return 0;
 }

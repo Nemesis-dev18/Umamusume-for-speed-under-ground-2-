@@ -1,0 +1,1300 @@
+{
+  "geometry_sha_before": "20498c7d93be4bdc57a19db72d246ae79f56cfbd3bd13235199524ebc545cf28",
+  "geometry_sha_after": "4d270e7521067463654b953d30b7e79ce8ac2241840d9a10c9297535c444dfdf",
+  "geometry_bytes": 4570240,
+  "marker_changes": [
+    {
+      "name": "LEFT_BRAKELIGHT",
+      "offset": 2549264,
+      "before": "8667a631",
+      "after": "a2cd271a"
+    },
+    {
+      "name": "LEFT_BRAKELIGHT",
+      "offset": 2549344,
+      "before": "8667a631",
+      "after": "a2cd271a"
+    },
+    {
+      "name": "CENTRE_BRAKELIGHT",
+      "offset": 2549424,
+      "before": "7cfca2a2",
+      "after": "985916b1"
+    },
+    {
+      "name": "RIGHT_BRAKELIGHT",
+      "offset": 2549504,
+      "before": "790a70bf",
+      "after": "15341eb8"
+    },
+    {
+      "name": "RIGHT_BRAKELIGHT",
+      "offset": 2549584,
+      "before": "790a70bf",
+      "after": "15341eb8"
+    },
+    {
+      "name": "LEFT_BRAKELIGHT",
+      "offset": 2550544,
+      "before": "8667a631",
+      "after": "a2cd271a"
+    },
+    {
+      "name": "LEFT_BRAKELIGHT",
+      "offset": 2550624,
+      "before": "8667a631",
+      "after": "a2cd271a"
+    },
+    {
+      "name": "CENTRE_BRAKELIGHT",
+      "offset": 2550704,
+      "before": "7cfca2a2",
+      "after": "985916b1"
+    },
+    {
+      "name": "RIGHT_BRAKELIGHT",
+      "offset": 2550784,
+      "before": "790a70bf",
+      "after": "15341eb8"
+    },
+    {
+      "name": "RIGHT_BRAKELIGHT",
+      "offset": 2550864,
+      "before": "790a70bf",
+      "after": "15341eb8"
+    },
+    {
+      "name": "LEFT_HEADLIGHT",
+      "offset": 2595872,
+      "before": "3301b99d",
+      "after": "cf1358f2"
+    },
+    {
+      "name": "RIGHT_HEADLIGHT",
+      "offset": 2595952,
+      "before": "c69190d0",
+      "after": "e2f711b9"
+    },
+    {
+      "name": "LEFT_HEADLIGHT",
+      "offset": 2597792,
+      "before": "3301b99d",
+      "after": "cf1358f2"
+    },
+    {
+      "name": "RIGHT_HEADLIGHT",
+      "offset": 2597872,
+      "before": "c69190d0",
+      "after": "e2f711b9"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 2615184,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 2615264,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 2621200,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 2621280,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 2678768,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 2678848,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 2683632,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 2683712,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 2719344,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 2719424,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 2726128,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 2726208,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 2762736,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 2762816,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 2770544,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 2770624,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 2805248,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 2805328,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 2813312,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 2813392,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 2846976,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 2847056,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 2855296,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 2855376,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 2895616,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 2895696,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 2904448,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 2904528,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 2944512,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 2944592,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 2952448,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 2952528,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 2989936,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 2990016,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 2996976,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 2997056,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 3036912,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 3036992,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 3042928,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 3043008,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 3075728,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 3075808,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 3084688,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 3084768,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 3116064,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 3116144,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 3123744,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 3123824,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 3161984,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 3162064,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 3169408,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 3169488,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 3201792,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 3201872,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 3208704,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 3208784,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 3240832,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 3240912,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 3246976,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 3247056,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 3280128,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 3280208,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 3286272,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 3286352,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 3321488,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 3321568,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 3330448,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 3330528,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 3363072,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 3363152,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 3368704,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 3368784,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 3402608,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 3402688,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 3410160,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 3410240,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 3446016,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 3446096,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 3453312,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 3453392,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 3496336,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 3496416,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 3506704,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 3506784,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 3545600,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 3545680,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 3552384,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 3552464,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 3588352,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 3588432,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 3597952,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 3598032,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 3635440,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 3635520,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 3641200,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 3641280,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 3675536,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 3675616,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 3684480,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 3684560,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 3733248,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 3733328,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 3742976,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 3743056,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 3766304,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 3766464,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 3792192,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 3792352,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 3823952,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 3824112,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 3854768,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 3854928,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 3889184,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 3889344,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 3925808,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 3925968,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 3966384,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 3966544,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 3994432,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 3994592,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_BRAKELIGHT",
+      "offset": 4069024,
+      "before": "8667a631",
+      "after": "a2cd271a"
+    },
+    {
+      "name": "RIGHT_BRAKELIGHT",
+      "offset": 4069104,
+      "before": "790a70bf",
+      "after": "15341eb8"
+    },
+    {
+      "name": "LEFT_BRAKELIGHT",
+      "offset": 4072864,
+      "before": "8667a631",
+      "after": "a2cd271a"
+    },
+    {
+      "name": "RIGHT_BRAKELIGHT",
+      "offset": 4072944,
+      "before": "790a70bf",
+      "after": "15341eb8"
+    },
+    {
+      "name": "LEFT_HEADLIGHT",
+      "offset": 4075824,
+      "before": "3301b99d",
+      "after": "cf1358f2"
+    },
+    {
+      "name": "RIGHT_HEADLIGHT",
+      "offset": 4075904,
+      "before": "c69190d0",
+      "after": "e2f711b9"
+    },
+    {
+      "name": "LEFT_HEADLIGHT",
+      "offset": 4077488,
+      "before": "3301b99d",
+      "after": "cf1358f2"
+    },
+    {
+      "name": "RIGHT_HEADLIGHT",
+      "offset": 4077568,
+      "before": "c69190d0",
+      "after": "e2f711b9"
+    },
+    {
+      "name": "LEFT_BRAKELIGHT",
+      "offset": 4092192,
+      "before": "8667a631",
+      "after": "a2cd271a"
+    },
+    {
+      "name": "RIGHT_BRAKELIGHT",
+      "offset": 4092272,
+      "before": "790a70bf",
+      "after": "15341eb8"
+    },
+    {
+      "name": "LEFT_BRAKELIGHT",
+      "offset": 4096032,
+      "before": "8667a631",
+      "after": "a2cd271a"
+    },
+    {
+      "name": "RIGHT_BRAKELIGHT",
+      "offset": 4096112,
+      "before": "790a70bf",
+      "after": "15341eb8"
+    },
+    {
+      "name": "LEFT_HEADLIGHT",
+      "offset": 4098864,
+      "before": "3301b99d",
+      "after": "cf1358f2"
+    },
+    {
+      "name": "RIGHT_HEADLIGHT",
+      "offset": 4098944,
+      "before": "c69190d0",
+      "after": "e2f711b9"
+    },
+    {
+      "name": "LEFT_HEADLIGHT",
+      "offset": 4101552,
+      "before": "3301b99d",
+      "after": "cf1358f2"
+    },
+    {
+      "name": "RIGHT_HEADLIGHT",
+      "offset": 4101632,
+      "before": "c69190d0",
+      "after": "e2f711b9"
+    },
+    {
+      "name": "LEFT_BRAKELIGHT",
+      "offset": 4118960,
+      "before": "8667a631",
+      "after": "a2cd271a"
+    },
+    {
+      "name": "RIGHT_BRAKELIGHT",
+      "offset": 4119040,
+      "before": "790a70bf",
+      "after": "15341eb8"
+    },
+    {
+      "name": "LEFT_BRAKELIGHT",
+      "offset": 4125232,
+      "before": "8667a631",
+      "after": "a2cd271a"
+    },
+    {
+      "name": "RIGHT_BRAKELIGHT",
+      "offset": 4125312,
+      "before": "790a70bf",
+      "after": "15341eb8"
+    },
+    {
+      "name": "LEFT_HEADLIGHT",
+      "offset": 4130096,
+      "before": "3301b99d",
+      "after": "cf1358f2"
+    },
+    {
+      "name": "RIGHT_HEADLIGHT",
+      "offset": 4130176,
+      "before": "c69190d0",
+      "after": "e2f711b9"
+    },
+    {
+      "name": "LEFT_HEADLIGHT",
+      "offset": 4132272,
+      "before": "3301b99d",
+      "after": "cf1358f2"
+    },
+    {
+      "name": "RIGHT_HEADLIGHT",
+      "offset": 4132352,
+      "before": "c69190d0",
+      "after": "e2f711b9"
+    },
+    {
+      "name": "LEFT_BRAKELIGHT",
+      "offset": 4146208,
+      "before": "8667a631",
+      "after": "a2cd271a"
+    },
+    {
+      "name": "RIGHT_BRAKELIGHT",
+      "offset": 4146288,
+      "before": "790a70bf",
+      "after": "15341eb8"
+    },
+    {
+      "name": "LEFT_BRAKELIGHT",
+      "offset": 4151840,
+      "before": "8667a631",
+      "after": "a2cd271a"
+    },
+    {
+      "name": "RIGHT_BRAKELIGHT",
+      "offset": 4151920,
+      "before": "790a70bf",
+      "after": "15341eb8"
+    },
+    {
+      "name": "LEFT_HEADLIGHT",
+      "offset": 4155712,
+      "before": "3301b99d",
+      "after": "cf1358f2"
+    },
+    {
+      "name": "RIGHT_HEADLIGHT",
+      "offset": 4155792,
+      "before": "c69190d0",
+      "after": "e2f711b9"
+    },
+    {
+      "name": "LEFT_HEADLIGHT",
+      "offset": 4157632,
+      "before": "3301b99d",
+      "after": "cf1358f2"
+    },
+    {
+      "name": "RIGHT_HEADLIGHT",
+      "offset": 4157712,
+      "before": "c69190d0",
+      "after": "e2f711b9"
+    },
+    {
+      "name": "LEFT_BRAKELIGHT",
+      "offset": 4170016,
+      "before": "8667a631",
+      "after": "a2cd271a"
+    },
+    {
+      "name": "RIGHT_BRAKELIGHT",
+      "offset": 4170096,
+      "before": "790a70bf",
+      "after": "15341eb8"
+    },
+    {
+      "name": "LEFT_BRAKELIGHT",
+      "offset": 4173856,
+      "before": "8667a631",
+      "after": "a2cd271a"
+    },
+    {
+      "name": "RIGHT_BRAKELIGHT",
+      "offset": 4173936,
+      "before": "790a70bf",
+      "after": "15341eb8"
+    },
+    {
+      "name": "LEFT_HEADLIGHT",
+      "offset": 4176688,
+      "before": "3301b99d",
+      "after": "cf1358f2"
+    },
+    {
+      "name": "RIGHT_HEADLIGHT",
+      "offset": 4176768,
+      "before": "c69190d0",
+      "after": "e2f711b9"
+    },
+    {
+      "name": "LEFT_HEADLIGHT",
+      "offset": 4178992,
+      "before": "3301b99d",
+      "after": "cf1358f2"
+    },
+    {
+      "name": "RIGHT_HEADLIGHT",
+      "offset": 4179072,
+      "before": "c69190d0",
+      "after": "e2f711b9"
+    },
+    {
+      "name": "LEFT_BRAKELIGHT",
+      "offset": 4194336,
+      "before": "8667a631",
+      "after": "a2cd271a"
+    },
+    {
+      "name": "RIGHT_BRAKELIGHT",
+      "offset": 4194416,
+      "before": "790a70bf",
+      "after": "15341eb8"
+    },
+    {
+      "name": "LEFT_BRAKELIGHT",
+      "offset": 4196752,
+      "before": "8667a631",
+      "after": "a2cd271a"
+    },
+    {
+      "name": "RIGHT_BRAKELIGHT",
+      "offset": 4196832,
+      "before": "790a70bf",
+      "after": "15341eb8"
+    },
+    {
+      "name": "LEFT_HEADLIGHT",
+      "offset": 4199584,
+      "before": "3301b99d",
+      "after": "cf1358f2"
+    },
+    {
+      "name": "RIGHT_HEADLIGHT",
+      "offset": 4199664,
+      "before": "c69190d0",
+      "after": "e2f711b9"
+    },
+    {
+      "name": "LEFT_HEADLIGHT",
+      "offset": 4202400,
+      "before": "3301b99d",
+      "after": "cf1358f2"
+    },
+    {
+      "name": "RIGHT_HEADLIGHT",
+      "offset": 4202480,
+      "before": "c69190d0",
+      "after": "e2f711b9"
+    },
+    {
+      "name": "LEFT_BRAKELIGHT",
+      "offset": 4217760,
+      "before": "8667a631",
+      "after": "a2cd271a"
+    },
+    {
+      "name": "RIGHT_BRAKELIGHT",
+      "offset": 4217840,
+      "before": "790a70bf",
+      "after": "15341eb8"
+    },
+    {
+      "name": "LEFT_BRAKELIGHT",
+      "offset": 4221600,
+      "before": "8667a631",
+      "after": "a2cd271a"
+    },
+    {
+      "name": "RIGHT_BRAKELIGHT",
+      "offset": 4221680,
+      "before": "790a70bf",
+      "after": "15341eb8"
+    },
+    {
+      "name": "LEFT_HEADLIGHT",
+      "offset": 4224288,
+      "before": "3301b99d",
+      "after": "cf1358f2"
+    },
+    {
+      "name": "RIGHT_HEADLIGHT",
+      "offset": 4224368,
+      "before": "c69190d0",
+      "after": "e2f711b9"
+    },
+    {
+      "name": "LEFT_HEADLIGHT",
+      "offset": 4228128,
+      "before": "3301b99d",
+      "after": "cf1358f2"
+    },
+    {
+      "name": "RIGHT_HEADLIGHT",
+      "offset": 4228208,
+      "before": "c69190d0",
+      "after": "e2f711b9"
+    },
+    {
+      "name": "LEFT_BRAKELIGHT",
+      "offset": 4244896,
+      "before": "8667a631",
+      "after": "a2cd271a"
+    },
+    {
+      "name": "RIGHT_BRAKELIGHT",
+      "offset": 4244976,
+      "before": "790a70bf",
+      "after": "15341eb8"
+    },
+    {
+      "name": "LEFT_BRAKELIGHT",
+      "offset": 4250384,
+      "before": "8667a631",
+      "after": "a2cd271a"
+    },
+    {
+      "name": "RIGHT_BRAKELIGHT",
+      "offset": 4250464,
+      "before": "790a70bf",
+      "after": "15341eb8"
+    },
+    {
+      "name": "LEFT_HEADLIGHT",
+      "offset": 4255664,
+      "before": "3301b99d",
+      "after": "cf1358f2"
+    },
+    {
+      "name": "RIGHT_HEADLIGHT",
+      "offset": 4255744,
+      "before": "c69190d0",
+      "after": "e2f711b9"
+    },
+    {
+      "name": "LEFT_HEADLIGHT",
+      "offset": 4258736,
+      "before": "3301b99d",
+      "after": "cf1358f2"
+    },
+    {
+      "name": "RIGHT_HEADLIGHT",
+      "offset": 4258816,
+      "before": "c69190d0",
+      "after": "e2f711b9"
+    },
+    {
+      "name": "LEFT_BRAKELIGHT",
+      "offset": 4275472,
+      "before": "8667a631",
+      "after": "a2cd271a"
+    },
+    {
+      "name": "RIGHT_BRAKELIGHT",
+      "offset": 4275552,
+      "before": "790a70bf",
+      "after": "15341eb8"
+    },
+    {
+      "name": "LEFT_BRAKELIGHT",
+      "offset": 4277904,
+      "before": "8667a631",
+      "after": "a2cd271a"
+    },
+    {
+      "name": "RIGHT_BRAKELIGHT",
+      "offset": 4277984,
+      "before": "790a70bf",
+      "after": "15341eb8"
+    },
+    {
+      "name": "LEFT_HEADLIGHT",
+      "offset": 4280624,
+      "before": "3301b99d",
+      "after": "cf1358f2"
+    },
+    {
+      "name": "RIGHT_HEADLIGHT",
+      "offset": 4280704,
+      "before": "c69190d0",
+      "after": "e2f711b9"
+    },
+    {
+      "name": "LEFT_HEADLIGHT",
+      "offset": 4282672,
+      "before": "3301b99d",
+      "after": "cf1358f2"
+    },
+    {
+      "name": "RIGHT_HEADLIGHT",
+      "offset": 4282752,
+      "before": "c69190d0",
+      "after": "e2f711b9"
+    },
+    {
+      "name": "LEFT_BRAKELIGHT",
+      "offset": 4298912,
+      "before": "8667a631",
+      "after": "a2cd271a"
+    },
+    {
+      "name": "RIGHT_BRAKELIGHT",
+      "offset": 4298992,
+      "before": "790a70bf",
+      "after": "15341eb8"
+    },
+    {
+      "name": "LEFT_BRAKELIGHT",
+      "offset": 4300816,
+      "before": "8667a631",
+      "after": "a2cd271a"
+    },
+    {
+      "name": "RIGHT_BRAKELIGHT",
+      "offset": 4300896,
+      "before": "790a70bf",
+      "after": "15341eb8"
+    },
+    {
+      "name": "LEFT_HEADLIGHT",
+      "offset": 4303536,
+      "before": "3301b99d",
+      "after": "cf1358f2"
+    },
+    {
+      "name": "RIGHT_HEADLIGHT",
+      "offset": 4303616,
+      "before": "c69190d0",
+      "after": "e2f711b9"
+    },
+    {
+      "name": "LEFT_HEADLIGHT",
+      "offset": 4306352,
+      "before": "3301b99d",
+      "after": "cf1358f2"
+    },
+    {
+      "name": "RIGHT_HEADLIGHT",
+      "offset": 4306432,
+      "before": "c69190d0",
+      "after": "e2f711b9"
+    }
+  ],
+  "texture_shadow": {
+    "textures": 56,
+    "only_two_shadows_changed": true,
+    "format": "DXT3 128x64, four mips",
+    "metadata_unchanged": true,
+    "sha256": "7804f9d06d8bd136051e2c8978feeec96eef17433fc136aefb195e113164aab0"
+  },
+  "module_sha256": "34e6a93c64196f5f01a2f01b5582b3c852053c285781f0e4aa7401ccad8a0aad",
+  "installed": false
+}

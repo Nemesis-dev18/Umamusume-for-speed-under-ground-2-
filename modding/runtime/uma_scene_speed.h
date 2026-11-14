@@ -6,6 +6,27 @@
 typedef struct {float m[4][4];} UmaMatrix;
 typedef struct {UmaMatrix matrix;unsigned votes;} UmaReference;
 typedef struct {UmaReference reference[32];UmaMatrix body[16];unsigned references,bodies,samples;float previous[3];int tracked;} UmaSceneSpeed;
+static UmaMatrix uma_matrix_product(const UmaMatrix *a,const UmaMatrix *b){
+ UmaMatrix result={0};for(int i=0;i<4;i++)for(int j=0;j<4;j++)for(int k=0;k<4;k++)result.m[i][j]+=a->m[i][k]*b->m[k][j];return result;
+}
+static int uma_matrix_inverse(const UmaMatrix *matrix,UmaMatrix *output){
+ double work[4][8];
+ for(int i=0;i<4;i++)for(int j=0;j<8;j++){double v=j<4?matrix->m[i][j]:(j-4==i);if(!isfinite(v))return 0;work[i][j]=v;}
+ for(int c=0;c<4;c++){
+  int pivot=c;for(int r=c+1;r<4;r++)if(fabs(work[r][c])>fabs(work[pivot][c]))pivot=r;
+  if(fabs(work[pivot][c])<1e-10)return 0;
+  if(pivot!=c)for(int j=0;j<8;j++){double tmp=work[c][j];work[c][j]=work[pivot][j];work[pivot][j]=tmp;}
+  double factor=work[c][c];for(int j=0;j<8;j++)work[c][j]/=factor;
+  for(int r=0;r<4;r++)if(r!=c){factor=work[r][c];for(int j=0;j<8;j++)work[r][j]-=factor*work[c][j];}
+ }
+ UmaMatrix inverse;for(int i=0;i<4;i++)for(int j=0;j<4;j++){double v=work[i][j+4];if(!isfinite(v) || fabs(v)>1e8)return 0;inverse.m[i][j]=(float)v;}
+ *output=inverse;return 1;
+}
+/* Recover P from one body's WV and WVP so world-space scenery needs no WV constant. */
+static int uma_inverse_projection(const UmaMatrix *worldview,const UmaMatrix *combined,UmaMatrix *inverse_projection){
+ UmaMatrix inverse_worldview;if(!uma_matrix_inverse(worldview,&inverse_worldview))return 0;
+ UmaMatrix projection=uma_matrix_product(&inverse_worldview,combined);return uma_matrix_inverse(&projection,inverse_projection);
+}
 static float uma_determinant(const UmaMatrix *a){return a->m[0][0]*(a->m[1][1]*a->m[2][2]-a->m[1][2]*a->m[2][1])-a->m[0][1]*(a->m[1][0]*a->m[2][2]-a->m[1][2]*a->m[2][0])+a->m[0][2]*(a->m[1][0]*a->m[2][1]-a->m[1][1]*a->m[2][0]);}
 static int uma_rigid(const UmaMatrix *a){
  for(int r=0;r<4;r++)for(int c=0;c<4;c++)if(!isfinite(a->m[r][c]))return 0;
