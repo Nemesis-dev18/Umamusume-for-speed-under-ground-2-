@@ -1,2 +1,5 @@
-PASS runtime hides only own Corolla tire with matching texture; foreign tire and different texture retain original draw
+PASS CPU-baked wheel vertices across all four draw APIs; foreign pixels intact; partial writes invalidate bounds
+PASS DP, DPUP and DIPUP wheel mounts, stride32, triangle strips, foreign pixels preserved and UP binding side effects
+PASS wheel-mounted attachments hidden across materials; foreign tire draw retained
+PASS runtime GPU constants, COM resource identities and stable scenery draw key recover 10 m/s while camera moves
 PASS native shader 5 renders animated textured body through runtime hook; stream offset and base vertex pass, cross-device hooks pass, same-size impostor retains original white output; Present, Reset and hook removal pass. Not NFSU2 gameplay.

@@ -13,15 +13,15 @@ def string_hash(name):
     return value
 
 
-def disable_effects(data):
+def rename_markers(data,requested,required):
     nodes=[node for node in flatten(chunks(data)) if node['id']=='0x0013401a']
-    names={string_hash(name):name for name in NAMES}
+    names={string_hash(name):name for name in requested}
     existing=set()
     for node in nodes:
         raw=payload(data,node);lead=skip_words(raw)
         if (len(raw)-lead)%80:raise ValueError('Partial marker record')
         existing.update(struct.unpack_from('<I',raw,at)[0] for at in range(lead,len(raw),80))
-    if not {string_hash(name) for name in NAMES[:6]}<=existing:raise ValueError('Required known Corolla light/plate marker absent')
+    if not {string_hash(name) for name in required}<=existing:raise ValueError('Required known Corolla light/plate marker absent')
     replacements={old:string_hash('UMA_OFF_'+name) for old,name in names.items()}
     if set(replacements.values())&existing:raise ValueError('Disabled marker hash collision')
     result=bytearray(data);changes=[]
@@ -35,3 +35,7 @@ def disable_effects(data):
             changes.append({'name':names[old],'offset':offset,'before':data[offset:offset+4].hex(),'after':result[offset:offset+4].hex()})
     if chunks(result)!=chunks(data):raise ValueError('Container layout changed')
     return bytes(result),changes
+
+
+def disable_effects(data):
+    return rename_markers(data,NAMES,NAMES[:6])

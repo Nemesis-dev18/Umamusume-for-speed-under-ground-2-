@@ -427,3 +427,34 @@ class CarEffectCandidates(unittest.TestCase):
         self.assertEqual(result['textures'],56)
         self.assertTrue(result['metadata_unchanged'])
         with self.assertRaises(ValueError):verify(original,candidate[:-1])
+
+class SpoilerNeonCandidates(unittest.TestCase):
+    def test_two_spoiler_marker_fields_only(self):
+        from inspect_assets import ROOT
+        from disable_car_effects import rename_markers
+        source=(ROOT/'CARS/COROLLA/GEOMETRY.BIN.before-motion-wheels.bak').read_bytes()
+        result,changes=rename_markers(source,('SPOILER',),('SPOILER',))
+        self.assertEqual([c['offset'] for c in changes],[20560,23888])
+        self.assertEqual(result,(ROOT/'modding/staged-runtime/GEOMETRY-no-spoiler.BIN').read_bytes())
+        allowed={i for c in changes for i in range(c['offset'],c['offset']+4)}
+        self.assertTrue(all(a==b or i in allowed for i,(a,b) in enumerate(zip(source,result))))
+        with self.assertRaises(ValueError):rename_markers(result,('SPOILER',),('SPOILER',))
+
+    def test_only_neon_pixels_zeroed(self):
+        import io
+        from PIL import Image
+        from inspect_assets import ROOT
+        from verify_foot_shadow import pools
+        from extract_assets import dds_header
+        old=pools((ROOT/'CARS/COROLLA/TEXTURES.BIN.before-motion-wheels.bak').read_bytes())
+        new=pools((ROOT/'modding/staged-runtime/TEXTURES-no-neon.BIN').read_bytes())
+        self.assertEqual(old.keys(),new.keys())
+        for key,(before,offset) in old.items():
+            after,new_offset=new[key]
+            self.assertEqual(offset,new_offset)
+            if key!=0x820f4c3a:self.assertEqual(before,after);continue
+            size=struct.unpack_from('<I',after,offset+20)[0]
+            self.assertEqual((size,struct.unpack_from('<HH',after,offset+32),after[offset+38]),(5440,(128,64),0x22))
+            self.assertEqual(before[size:],after[size:])
+            image=Image.open(io.BytesIO(dds_header(128,64,b'DXT1',4096,4)+after[:size])).convert('RGBA')
+            self.assertEqual(image.getextrema(),((0,0),)*4)

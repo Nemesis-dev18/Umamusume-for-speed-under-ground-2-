@@ -3,9 +3,11 @@
 #include <math.h>
 #include <string.h>
 #include <float.h>
+#include <stdint.h>
 typedef struct {float m[4][4];} UmaMatrix;
-typedef struct {UmaMatrix matrix;unsigned votes;} UmaReference;
-typedef struct {UmaReference reference[32];UmaMatrix body[16];unsigned references,bodies,samples;float previous[3];int tracked;} UmaSceneSpeed;
+typedef struct {uint32_t buffer,index,base,minimum,start,vertices,primitives,offset,pass,width,height;} UmaSceneKey;
+typedef struct {UmaMatrix matrix;UmaSceneKey key;unsigned votes;int ambiguous;} UmaReference;
+typedef struct {UmaReference reference[96];UmaMatrix body[16];UmaSceneKey previous_key;unsigned references,bodies,samples;float previous[3];int tracked;} UmaSceneSpeed;
 static UmaMatrix uma_matrix_product(const UmaMatrix *a,const UmaMatrix *b){
  UmaMatrix result={0};for(int i=0;i<4;i++)for(int j=0;j<4;j++)for(int k=0;k<4;k++)result.m[i][j]+=a->m[i][k]*b->m[k][j];return result;
 }
@@ -42,36 +44,42 @@ static int uma_relative_world(const UmaMatrix *body,const UmaMatrix *view,UmaMat
  if(!uma_rigid(&result) || uma_determinant(&result)<.98f)return 0;
  *out=result;return 1;
 }
-static void uma_scene_reference(UmaSceneSpeed *scene,const UmaMatrix *matrix){
- if(scene->samples>=96 || !uma_rigid(matrix))return;
- scene->samples++;
+static void uma_scene_reference(UmaSceneSpeed *scene,const UmaMatrix *matrix,const UmaSceneKey *key){
+ if(!key || !key->buffer || !uma_rigid(matrix))return;
+ if(scene->samples<96)scene->samples++;
  for(unsigned i=0;i<scene->references;i++){
-  int equal=1;for(int r=0;r<4;r++)for(int c=0;c<3;c++)if(fabsf(scene->reference[i].matrix.m[r][c]-matrix->m[r][c])>1e-5f)equal=0;
-  if(equal){scene->reference[i].votes++;return;}
+  UmaReference *entry=&scene->reference[i];if(memcmp(&entry->key,key,sizeof(*key)))continue;
+  for(int r=0;r<4;r++)for(int c=0;c<3;c++)if(fabsf(entry->matrix.m[r][c]-matrix->m[r][c])>.003f)entry->ambiguous=1;
+  entry->votes++;return;
  }
- if(scene->references<32){UmaReference *entry=&scene->reference[scene->references++];entry->matrix=*matrix;entry->votes=1;}
+ if(scene->references<96){UmaReference *entry=&scene->reference[scene->references++];entry->matrix=*matrix;entry->key=*key;entry->votes=1;entry->ambiguous=0;}
 }
 static void uma_scene_body(UmaSceneSpeed *scene,const UmaMatrix *matrix){if(scene->bodies<16 && uma_rigid(matrix))scene->body[scene->bodies++]=*matrix;}
-/* shortcut: dominant static-scene transform is inferred, validate against gameplay speed before release. */
+/* Track one immutable scenery draw across frames; independent objects need not share a matrix. */
 static int uma_scene_finish(UmaSceneSpeed *scene,float seconds,float *speed){
- unsigned best=0,second=0;int valid=0;float distance=FLT_MAX;UmaMatrix chosen={0};
+ int best=-1,valid=0,same=0;float distance=FLT_MAX;UmaMatrix chosen={0};
  if(!isfinite(seconds) || seconds<=0 || seconds>.25f || !scene->references || !scene->bodies)goto done;
- for(unsigned i=1;i<scene->references;i++)if(scene->reference[i].votes>scene->reference[best].votes)best=i;
- for(unsigned i=0;i<scene->references;i++)if(i!=best && scene->reference[i].votes>second)second=scene->reference[i].votes;
- if(scene->reference[best].votes<3 || scene->reference[best].votes<=second || scene->reference[best].votes*2<scene->samples)goto done;
+ for(unsigned i=0;i<scene->references;i++){
+  UmaReference *entry=&scene->reference[i];if(entry->ambiguous)continue;
+  int compatible=0;for(unsigned j=0;j<scene->bodies;j++)if(uma_determinant(&entry->matrix)*uma_determinant(&scene->body[j])>.9f)compatible=1;
+  if(!compatible)continue;
+  if(scene->tracked && !memcmp(&entry->key,&scene->previous_key,sizeof(entry->key))){best=(int)i;same=1;break;}
+  if(best<0 || entry->key.primitives>scene->reference[best].key.primitives)best=(int)i;
+ }
+ if(best<0)goto done;
  for(unsigned i=0;i<scene->bodies;i++){
   UmaMatrix world;if(!uma_relative_world(&scene->body[i],&scene->reference[best].matrix,&world))continue;
-  float score=0;for(int k=0;k<3;k++){float delta=scene->tracked?world.m[3][k]-scene->previous[k]:scene->body[i].m[3][k];score+=delta*delta;}
+  float score=0;for(int k=0;k<3;k++){float delta=same?world.m[3][k]-scene->previous[k]:scene->body[i].m[3][k];score+=delta*delta;}
   if(score<distance){chosen=world;distance=score;valid=1;}
  }
  if(valid){
   float result=0;
-  if(scene->tracked){
+  if(same){
    float forward=0;for(int k=0;k<3;k++)forward+=(chosen.m[3][k]-scene->previous[k])*chosen.m[0][k];
    result=sqrtf(distance)/seconds;if(result>120){valid=0;goto done;}if(forward<0)result=-result;
   }
   for(int k=0;k<3;k++)scene->previous[k]=chosen.m[3][k];
-  *speed=result;
+  scene->previous_key=scene->reference[best].key;*speed=result;
  }
 done:
  scene->tracked=valid;scene->references=scene->bodies=scene->samples=0;return valid;
