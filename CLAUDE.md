@@ -81,3 +81,15 @@ Se detectó además que las cuatro cabeceras KIT00_BODY declaran u32 0x38B040AD 
 La aprobación de esa reparación se solicitó explícitamente al usuario. No se ha creado GEOMETRY.BIN.bak ni modificado GEOMETRY.BIN. Antes de aplicar: confirmar fuente SHA-256, juego cerrado, estado Git limpio; crear respaldo .bak exacto y commit; escribir temporal GEOMETRY.BIN.uma-header.tmp, validar y sustituir de forma atómica. La corrección no debe presentarse como prueba de que la carrera funciona.
 
 Pruebas al cierre de la segunda revisión: 18 aprobadas. La reparación previa se prueba solo en memoria, comparando el árbol de chunks completo y los ocho offsets distintos, rechazando un archivo ya corregido y otro coche. Los 716 archivos de datos conservan sus hashes iniciales. Pendiente respuesta del usuario a la reparación concreta; no se abrió el juego.
+
+## Skinning nativo: tercera revisión
+
+`extract_native_skin.py` extrae cinco mallas de NIS/Scene_IntroNis01_BundleB.bun, con 4.265 vértices ponderados, a OBJ y skin.json dentro de modding/extracted/native-skin-validated. No modifica el bundle fuente. Conserva posiciones, normales, UV, índices, pesos y tablas por grupo sin forzar una asignación a un esqueleto concreto.
+
+Layout observado de vértice de 60 bytes: posición float3 en +0, normal float3 +12, BGRA +24, UV float2 +28, tres pesos float3 +36 y tres índices locales almacenados como float3 en +48. Se comprueban finitud, pesos en [0,1], suma 1 (tolerancia 1e-5), índices enteros 0..15 y triángulos dentro del número de vértices. Solo se admite si todo el prefijo anterior a los registros es filler 0x11.
+
+Tabla de rangos de 60 bytes: count u32 en +12 y offset u32 en +52; slot crudo u8 en +32 y paleta candidata de 16 bytes en +33..+48. Los índices locales usados se traducen por esa tabla; todos quedan dentro del byte de número de huesos de la cabecera. Los rangos deben cubrir exactamente los índices sin huecos. No se presenta todavía esta correspondencia como vínculo definitivo entre malla y nombre de esqueleto.
+
+En la cabecera del solid, descontando filler inicial, el byte +24 coincide con los números de huesos de las cinco mallas: 24, 24, 24, 24 y 35. Se conserva como bone_count_byte y limita las entradas utilizadas de la paleta. La identificación del esqueleto específico de cada malla sigue pendiente; compartir 24 huesos no basta para elegir entre Bip02 y Bip03.
+
+19 pruebas pasan: la nueva prueba cubre las cinco mallas, cobertura de rangos y límites de paletas, y rechaza peso 1.5 e índice local 16. Verificación completa repetida: los 716 SHA-256 fuente siguen iguales. No se ha aplicado la reparación de cabeceras ni creado su .bak; sigue pendiente la respuesta a la confirmación concreta.

@@ -172,4 +172,25 @@ class HeaderRepairPreview(unittest.TestCase):
         from plan_header_repair import repair_preview
         with self.assertRaises(ValueError):repair_preview((ROOT/'CARS/240SX/GEOMETRY.BIN').read_bytes())
 
+
+class NativeSkin(unittest.TestCase):
+    def test_real_skin_and_corrupt_weight(self):
+        from inspect_assets import ROOT
+        from extract_native_skin import read_skin
+        data=(ROOT/'NIS/Scene_IntroNis01_BundleB.bun').read_bytes()
+        meshes=read_skin(data)
+        self.assertEqual(len(meshes),5)
+        self.assertEqual(sum(len(m['weights']) for m in meshes),4265)
+        self.assertEqual([m['bone_count_byte'] for m in meshes],[24,24,24,24,35])
+        for mesh in meshes:
+            self.assertEqual(sum(r['count'] for r in mesh['skin_runs']),len(mesh['indices']))
+            for run in mesh['skin_runs']:
+                self.assertEqual(len(run['palette16_raw']),16)
+                self.assertLess(max(run['candidate_global_bone_indices_used']),mesh['bone_count_byte'])
+        mutated=bytearray(data);at=meshes[0]['vertex_data_absolute_offset']
+        struct.pack_into('<f',mutated,at+36,1.5)
+        with self.assertRaises(ValueError):read_skin(mutated)
+        mutated=bytearray(data);struct.pack_into('<f',mutated,at+48,16)
+        with self.assertRaises(ValueError):read_skin(mutated)
+
 if __name__ == '__main__': unittest.main()
