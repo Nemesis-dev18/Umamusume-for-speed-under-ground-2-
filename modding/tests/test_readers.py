@@ -53,6 +53,17 @@ class Geometry(unittest.TestCase):
                 for index in (0,len(mesh['positions'])-1):
                     self.assertEqual(struct.unpack_from('<3f',data,at+index*stride),mesh['positions'][index],mesh['name'])
                 self.assertEqual(struct.unpack_from('<2f',data,at+stride-8),mesh['uv'][0],mesh['name'])
+    def test_current_character_upload_signature(self):
+        from extract_assets import geometry
+        from inspect_assets import ROOT
+        asset=(ROOT/'modding/runtime/kitasan.umab').read_bytes()
+        count=struct.unpack_from('<I',asset,8)[0];expected=asset[32:32+count*36]
+        self.assertEqual(len(expected),522432)
+        data=data_path('CARS/COROLLA/GEOMETRY.BIN').read_bytes()
+        meshes=geometry(data,'KIT00_BODY_');self.assertEqual(len(meshes),4)
+        for mesh in meshes:
+            start=mesh['vertex_data_offset']
+            self.assertEqual(data[start:start+len(expected)],expected,mesh['name'])
     def test_globalb_golden_pair(self):
         from inspect_assets import ROOT
         self.assertEqual(jdlz((ROOT/'GLOBAL/GlobalB.lzc').read_bytes()),(ROOT/'GLOBAL/GLOBALB.BUN').read_bytes())

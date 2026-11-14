@@ -1,5 +1,6 @@
 #include "uma_d3d.h"
 #include "uma_camera.h"
+#include "uma_upload.h"
 #include <assert.h>
 #define CHECK(call) do{HRESULT hr=(call);if(FAILED(hr)){fprintf(stderr,"FAIL %s: %08lx\n",#call,(unsigned long)hr);return 1;}}while(0)
 static UmaDrawIndexed native_draw;static UINT draws;static int fail_draw;
@@ -79,6 +80,28 @@ static int check_camera(IDirect3DDevice9 *device){
  assert(captured.m[0][0]==3 && captured.m[1][1]==5 && captured.m[3][0]==6 && captured.m[3][1]==20);
  puts("PASS fixed-function and direct VS1.1/VS2 camera extraction; malformed and unsupported shaders rejected");return 0;
 }
+static int check_upload_identity(IDirect3DDevice9 *device,const UmaMotion *motion){
+ UINT size=motion->vertices*sizeof(UmaVertex);IDirect3DVertexBuffer9 *candidate=NULL,*other=NULL,*managed=NULL;void *mapped=NULL;
+ CHECK(IDirect3DDevice9_CreateVertexBuffer(device,size,D3DUSAGE_DYNAMIC|D3DUSAGE_WRITEONLY,0,D3DPOOL_DEFAULT,&candidate,NULL));
+ CHECK(IDirect3DDevice9_CreateVertexBuffer(device,size,D3DUSAGE_DYNAMIC|D3DUSAGE_WRITEONLY,0,D3DPOOL_DEFAULT,&other,NULL));
+ CHECK(IDirect3DDevice9_CreateVertexBuffer(device,size,0,0,D3DPOOL_MANAGED,&managed,NULL));
+ assert(uma_upload_install(candidate,motion->rest,size));assert(!uma_upload_install(candidate,motion->rest,size));
+ assert(!uma_upload_is_character(candidate) && !uma_upload_is_character(other));
+ CHECK(IDirect3DVertexBuffer9_Lock(candidate,0,0,&mapped,D3DLOCK_DISCARD));memcpy(mapped,motion->rest,size);CHECK(IDirect3DVertexBuffer9_Unlock(candidate));assert(uma_upload_is_character(candidate));
+ CHECK(IDirect3DVertexBuffer9_Lock(other,0,size,&mapped,D3DLOCK_DISCARD));memcpy(mapped,motion->rest,size);((BYTE*)mapped)[size-1]^=1;CHECK(IDirect3DVertexBuffer9_Unlock(other));assert(!uma_upload_is_character(other));
+ CHECK(IDirect3DVertexBuffer9_Lock(candidate,4,4,&mapped,0));memset(mapped,0,4);assert(!uma_upload_is_character(candidate));CHECK(IDirect3DVertexBuffer9_Unlock(candidate));assert(!uma_upload_is_character(candidate));
+ CHECK(IDirect3DVertexBuffer9_Lock(candidate,0,size,&mapped,D3DLOCK_DISCARD));memcpy(mapped,motion->rest,size);CHECK(IDirect3DVertexBuffer9_Unlock(candidate));assert(uma_upload_is_character(candidate));
+ CHECK(IDirect3DVertexBuffer9_Lock(managed,0,size,&mapped,0));memcpy(mapped,motion->rest,size);CHECK(IDirect3DVertexBuffer9_Unlock(managed));assert(uma_upload_is_character(managed));
+ CHECK(IDirect3DVertexBuffer9_Lock(managed,0,0,&mapped,D3DLOCK_READONLY));assert(!memcmp(mapped,motion->rest,size));CHECK(IDirect3DVertexBuffer9_Unlock(managed));assert(uma_upload_is_character(managed));
+ void *second=NULL;
+ CHECK(IDirect3DVertexBuffer9_Lock(managed,0,size,&mapped,0));memcpy(mapped,motion->rest,size);
+ CHECK(IDirect3DVertexBuffer9_Lock(managed,0,size,&second,0));memcpy(second,motion->rest,size);
+ CHECK(IDirect3DVertexBuffer9_Unlock(managed));assert(!uma_upload_is_character(managed));
+ CHECK(IDirect3DVertexBuffer9_Unlock(managed));assert(!uma_upload_is_character(managed));
+ CHECK(IDirect3DVertexBuffer9_Lock(candidate,0,0,&mapped,D3DLOCK_DISCARD));memset(mapped,0,size);CHECK(IDirect3DVertexBuffer9_Unlock(candidate));assert(!uma_upload_is_character(candidate));
+ IDirect3DVertexBuffer9_Release(managed);IDirect3DVertexBuffer9_Release(other);IDirect3DVertexBuffer9_Release(candidate);assert(uma_upload_remove());assert(!uma_upload_remove());
+ puts("PASS full upload identity, one-byte impostor, partial/nested overwrite, READONLY, DISCARD and hook removal");return 0;
+}
 int main(void){
  freopen("modding/runtime/gpu-test/result.txt","w",stdout);freopen("modding/runtime/gpu-test/errors.txt","w",stderr);
  puts("START independent renderer test; not NFSU2");fflush(stdout);
@@ -87,7 +110,7 @@ int main(void){
  IDirect3D9 *api=Direct3DCreate9(D3D_SDK_VERSION);assert(api);
  D3DPRESENT_PARAMETERS pp={0};pp.Windowed=TRUE;pp.SwapEffect=D3DSWAPEFFECT_DISCARD;pp.hDeviceWindow=window;pp.BackBufferWidth=640;pp.BackBufferHeight=480;pp.BackBufferFormat=D3DFMT_A8R8G8B8;pp.EnableAutoDepthStencil=TRUE;pp.AutoDepthStencilFormat=D3DFMT_D24S8;
  IDirect3DDevice9 *device=NULL;CHECK(IDirect3D9_CreateDevice(api,0,D3DDEVTYPE_HAL,window,D3DCREATE_HARDWARE_VERTEXPROCESSING,&pp,&device));native_draw=(UmaDrawIndexed)(*(void***)device)[82];
- assert(check_camera(device)==0);check_invalid_textures(device);
+ assert(check_upload_identity(device,&motion)==0);assert(check_camera(device)==0);check_invalid_textures(device);
  struct Quad q[]={{-.5f,-.5f,0,1,0,0},{15.5f,-.5f,0,1,1,0},{-.5f,15.5f,0,1,0,1},{15.5f,15.5f,0,1,1,1}};const WORD indices[]={0,1,2,2,1,3};void *mapped=NULL;
  IDirect3DVertexBuffer9 *vb=NULL;IDirect3DIndexBuffer9 *ib=NULL;
  CHECK(IDirect3DDevice9_CreateVertexBuffer(device,sizeof(q),0,D3DFVF_XYZRHW|D3DFVF_TEX1,D3DPOOL_MANAGED,&vb,NULL));CHECK(IDirect3DVertexBuffer9_Lock(vb,0,sizeof(q),&mapped,0));memcpy(mapped,q,sizeof(q));CHECK(IDirect3DVertexBuffer9_Unlock(vb));
