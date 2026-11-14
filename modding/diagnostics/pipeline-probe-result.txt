@@ -1,0 +1,2 @@
+START standalone Direct3D9 test
+PASS: GPU vertex shader words, constants, binding unchanged and deduplicated; shader/log limits exercised; hook installed through separate software-processing device observes hardware-processing draw; GPU readback and shader unchanged; Present and candidate metadata exercised.

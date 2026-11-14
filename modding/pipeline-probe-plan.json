@@ -1,0 +1,39 @@
+{
+  "status": "prepared and tested independently; awaiting explicit exception to no-launch instruction",
+  "source": "modding/diagnostics/UmaPipelineProbe.asi",
+  "module_bytes": 243743,
+  "module_sha256": "458f49fe72810ad3765608c63484f59fa875eab4086b2db875be329ed69ae397",
+  "target": "scripts/UmaPipelineProbe.asi",
+  "temporary_target": "scripts/UmaPipelineProbe.asi.tmp",
+  "target_must_not_exist": true,
+  "log": "modding/uma-pipeline.log",
+  "log_mode": "append, stop capture around 8 MiB",
+  "backup": "no target to overwrite; if target exists refuse installation; Git checkpoint preserves staged module and source",
+  "runtime_action": "temporary Direct3D9 Present/DIP vtable observer, shader object/constant/state reads only; no shader binding or state changes",
+  "shader_bounds": "64 retained shader objects; 16 KiB maximum bytecode each; at most 256 constant registers per snapshot",
+  "untouched": [
+    "CARS/COROLLA/GEOMETRY.BIN",
+    "CARS/COROLLA/TEXTURES.BIN",
+    "SPEED2.EXE",
+    "all network/online/anticheat resources"
+  ],
+  "test_protocol": "Only if explicitly approved: launch working copy, leave Corolla visible in selection about 5 seconds, then a race about 10 seconds; close game; remove only our known-hash module and retain log",
+  "cleanup": "with SPEED2.EXE closed, verify installed module hash and remove only scripts/UmaPipelineProbe.asi; retain modding/uma-pipeline.log",
+  "requires": [
+    "explicit approval to install temporary diagnostic",
+    "explicit exception allowing one diagnostic launch before mod is fixed",
+    "user availability to enter selection and race menus"
+  ],
+  "independent_tests": {
+    "preserved_white_gpu_pixel": true,
+    "shader_bytes_constants_binding_unchanged": true,
+    "duplicate_shader_deduplicated": true,
+    "shader_limit_exercised": true,
+    "log_limit_exercised": true,
+    "cross_device_draw_and_present_pass_through": true,
+    "dll_initialization_with_cwd_scripts": true
+  },
+  "game_tested": false,
+  "installation_performed": false,
+  "limits": "Diagnostic only; not animation integration or a final mod. Capturing adds overhead; independent tests do not prove behavior in this game."
+}
