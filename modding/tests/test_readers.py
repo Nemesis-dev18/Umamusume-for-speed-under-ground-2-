@@ -161,7 +161,9 @@ class HeaderRepairPreview(unittest.TestCase):
         backup=source.with_name(source.name+'.bak')
         data=(backup if backup.exists() else source).read_bytes()
         corrected,changes=repair_preview(data)
-        if backup.exists():self.assertEqual(source.read_bytes(),corrected)
+        if backup.exists():
+            material_baseline=source.with_name(source.name+'.before-material.bak')
+            self.assertEqual((material_baseline if material_baseline.exists() else source).read_bytes(),corrected)
         self.assertEqual(len(changes),4)
         self.assertEqual(len(corrected),len(data))
         self.assertEqual(chunks(data),chunks(corrected))

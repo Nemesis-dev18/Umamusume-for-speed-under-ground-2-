@@ -1,0 +1,13 @@
+{
+  "approved_by_user": true,
+  "before_sha256": "1d16d7e3c9d1a7ed3f240224a6eb4e725140035188b45a2cc48fd17733d41808",
+  "installed_sha256": "cedf717c16c342b449c32e312351bd2f93d21533446b9501488dd0b5a3664389",
+  "bytes": 9952256,
+  "changed_bytes": 16,
+  "backup": "CARS/COROLLA/GEOMETRY.BIN.before-material.bak",
+  "backup_commit": "81ce1576dd5855127f8423f391eb75f42cb946e2",
+  "chunk_structure_unchanged": true,
+  "game_launched": false,
+  "race_result": "unverified",
+  "animation_integrated": false
+}
