@@ -1,0 +1,13 @@
+{
+  "module": "scripts/UmaRunner.asi",
+  "sha256": "e4bdd63d8fa25b520bcc097d2c9fdb92420a25b6a615943773842f8914045412",
+  "bytes": 279644,
+  "checkpoint": "393287d26001632defbd86726e2fce35086d9ac5",
+  "inventory_files": 716,
+  "changed_data": [
+    "CARS/COROLLA/GEOMETRY.BIN"
+  ],
+  "unchanged_data": 715,
+  "game_running": false,
+  "gameplay_verified": false
+}
