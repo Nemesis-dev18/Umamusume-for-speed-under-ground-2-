@@ -207,5 +207,8 @@
       "after": "61d61440"
     }
   ],
-  "installed": false
+  "installed": false,
+  "runtime_sha256": "72ef068ca839e934ea647d8b3df6074ecaca4c929b98efd73a1fa88c57210cde",
+  "motion_sha256": "c1701a3227ce720bf2f4166b96f96219e96b4f307251a579d9c2f0059c8e0581",
+  "runtime_bytes": 291169
 }

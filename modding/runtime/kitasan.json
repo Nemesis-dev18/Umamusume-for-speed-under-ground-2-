@@ -1,6 +1,9 @@
 {
   "bytes": 1606288,
-  "sha256": "d49c072e034b1e9ee42e550599685bfaa3977448dff545e67df3ad42d55e94aa",
-  "format": "UMAB v2; local quaternions, translations and parent hierarchy; not an EAGL container",
-  "game_integrated": false
+  "sha256": "c1701a3227ce720bf2f4166b96f96219e96b4f307251a579d9c2f0059c8e0581",
+  "format": "UMAB v2; local quaternion motion on existing PMX model",
+  "reference_clip_directory": "modding/animation-steam-retarget",
+  "source_clip": "anm_rac_type03_run02_base",
+  "game_integrated": false,
+  "preinstall_checkpoint": "740e7eb"
 }
