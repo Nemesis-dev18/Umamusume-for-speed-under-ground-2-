@@ -1,0 +1,12 @@
+{
+  "source": "https://github.com/nlgxzef/NFSU2CarSoundTuner",
+  "commit": "5b94847f2fcd85bcba8f1a8f15437d6210e44c3e",
+  "engines": 43,
+  "mappings": 33,
+  "corolla_mapping": 6,
+  "unused_engine_slot": 3,
+  "engine_stride": 76,
+  "mapping_stride": 48,
+  "strategy": "Require unique exact match of all numeric defaults in writable main-image data; reject altered or unsupported profiles. No executable file or instruction patch.",
+  "installed": false
+}

@@ -21,21 +21,26 @@ def run(args, **kwargs):
 def main():
     build = RUNTIME / 'test-build'
     build.mkdir(exist_ok=True)
-    for name in ('renderer', 'runner_integration', 'runner_load'):
-        run([CC, *FLAGS, RUNTIME / f'{name}_test.c', '-o', build / f'{name}-test.exe', '-ld3d9', '-luser32', '-lm'])
-    run([CC, *FLAGS, '-shared', RUNTIME / 'uma_runner.c', '-o', RUNTIME / 'UmaRunner.asi', '-ld3d9', '-luser32', '-lm'])
+    for name in ('renderer', 'runner_integration', 'runner_load', 'audio_windows'):
+        run([CC, *FLAGS, RUNTIME / f'{name}_test.c', '-o', build / f'{name}-test.exe', '-ld3d9', '-luser32', '-lwinmm', '-lm'])
+    run([CC, *FLAGS, '-shared', RUNTIME / 'uma_runner.c', '-o', RUNTIME / 'UmaRunner.asi', '-ld3d9', '-luser32', '-lwinmm', '-lm'])
     run(['gcc', '-std=c11', '-O2', '-Wall', '-Wextra', '-Werror', RUNTIME / 'scene_speed_test.c', '-o', build / 'scene-speed-test', '-lm'])
     run([build / 'scene-speed-test'])
+    run(['gcc','-std=c11','-O2','-Wall','-Wextra','-Werror',RUNTIME/'engine_audio_test.c','-o',build/'engine-audio-test','-lm'])
+    run([build/'engine-audio-test'])
     fixture = RUNTIME / 'runner-load-test'
     (fixture / 'scripts').mkdir(exist_ok=True)
     (fixture / 'modding/runtime').mkdir(parents=True, exist_ok=True)
-    for name in ('kitasan.umab', 'atlas.dds'):
+    for name in ('kitasan.umab', 'atlas.dds', 'hoof-0.wav', 'hoof-1.wav'):
         shutil.copyfile(RUNTIME / name, fixture / 'modding/runtime' / name)
     shutil.copyfile(RUNTIME / 'UmaRunner.asi', fixture / 'scripts/UmaRunner.asi')
     (fixture / 'modding/uma-runner.log').unlink(missing_ok=True)
     env = dict(os.environ, WINEPREFIX=str(WORK / 'proton-prefix/pfx'), WINEDEBUG='-all')
-    for name in ('renderer', 'runner_integration', 'runner_load'):
+    for name in ('renderer', 'runner_integration', 'runner_load', 'audio_windows'):
         run([WINE, build / f'{name}-test.exe'], env=env)
+    for variant in ('--ambiguous-audio','--incompatible-audio'):
+        (fixture/'modding/uma-runner.log').unlink(missing_ok=True)
+        run([WINE,build/'runner_load-test.exe',variant],env=env)
     results = {}
     for name, folder in (('renderer', 'gpu-test'), ('integration', 'integration-test')):
         lines = (RUNTIME / folder / 'result.txt').read_text().splitlines()
@@ -43,7 +48,7 @@ def main():
             raise RuntimeError(f'{name} did not finish successfully')
         results[name] = lines[-1]
     hashes = {name: hashlib.sha256((RUNTIME / name).read_bytes()).hexdigest() for name in ('UmaRunner.asi', 'kitasan.umab', 'atlas.dds')}
-    report = {'scope': 'Independent test hosts, not NFSU2 gameplay', 'results': results, 'sha256': hashes, 'gameplay_verified': False}
+    report = {'scope': 'Independent test hosts, not NFSU2 gameplay', 'results': results, 'sha256': hashes, 'audio_tests': ['exact mutable-image profile', 'ambiguous/incompatible profile rejection', 'WinMM playback', 'idle silence', 'restore on playback failure'], 'gameplay_verified': False}
     (RUNTIME / 'verification.json').write_text(json.dumps(report, indent=2) + '\n')
     print(json.dumps(report, indent=2))
 

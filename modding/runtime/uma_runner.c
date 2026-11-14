@@ -6,6 +6,7 @@
 #include "uma_upload.h"
 #include "uma_scene_speed.h"
 #include "uma_wheels.h"
+#include "uma_audio_win.h"
 typedef HRESULT (WINAPI *RunnerPresent)(IDirect3DDevice9*,const RECT*,const RECT*,HWND,const RGNDATA*);
 typedef HRESULT (WINAPI *RunnerReset)(IDirect3DDevice9*,D3DPRESENT_PARAMETERS*);
 typedef HRESULT (WINAPI *RunnerPrimitive)(IDirect3DDevice9*,D3DPRIMITIVETYPE,UINT,UINT);
@@ -213,10 +214,13 @@ static HRESULT WINAPI runner_present(IDirect3DDevice9 *device,const RECT *source
   fprintf(runner_log,"BODY ");for(int r=0;r<4;r++)for(int c=0;c<3;c++)fprintf(runner_log,"%.6g,",runner_scene.body[0].m[r][c]);fputc('\n',runner_log);
  }
  runner_speed_valid=uma_scene_finish(&runner_scene,seconds,&runner_speed);
- if(seconds>0 && seconds<=.1f)uma_motion_step(&runner_state,seconds,runner_speed_valid?runner_speed:0,0);
+ if(seconds>0 && seconds<=.1f){
+  float previous_phase=runner_state.run_phase;uma_motion_step(&runner_state,seconds,runner_speed_valid?runner_speed:0,0);
+  uma_audio_step(previous_phase,runner_state.run_phase,runner_state.run_blend,runner_speed_valid?runner_speed:0,seconds,runner_log);
+ }
  runner_frames++;
  if(runner_log && runner_frames%120==0){
-  fprintf(runner_log,"FRAME %u candidates=%u owned=%u replaced=%u shaderFailures=%u references=%u bodies=%u graphicsSpeedValid=%d graphicsSpeed=%.4f blend=%.4f projectionValid=%d recoveredSceneRefs=%u hiddenWheels=%u groups=%u best=%u second=%u\n",runner_frames,runner_candidates,runner_owned,runner_replaced,runner_shader_failures,references,bodies,runner_speed_valid,runner_speed,runner_state.run_blend,runner_projection_valid,runner_projected_references,runner_hidden_wheels,groups,best_votes,second_votes);fflush(runner_log);
+  fprintf(runner_log,"FRAME %u candidates=%u owned=%u replaced=%u shaderFailures=%u references=%u bodies=%u graphicsSpeedValid=%d graphicsSpeed=%.4f blend=%.4f projectionValid=%d recoveredSceneRefs=%u hiddenWheels=%u groups=%u best=%u second=%u hoofPlayed=%u audioActive=%d\n",runner_frames,runner_candidates,runner_owned,runner_replaced,runner_shader_failures,references,bodies,runner_speed_valid,runner_speed,runner_state.run_blend,runner_projection_valid,runner_projected_references,runner_hidden_wheels,groups,best_votes,second_votes,uma_hoof_played,uma_engine_patch.active);fflush(runner_log);
   if(ftell(runner_log)>2*1024*1024){fclose(runner_log);runner_log=NULL;}
  }
  LeaveCriticalSection(&runner_lock);return runner_original_present(device,source,destination,window,dirty);
@@ -241,7 +245,7 @@ static int runner_remove(void){
  if(!runner_table)return 0;
  void **table=runner_table;DWORD protection;
  if(table[81]!=(void*)runner_primitive || table[83]!=(void*)runner_primitive_up || table[84]!=(void*)runner_indexed_up || table[82]!=(void*)runner_draw || table[17]!=(void*)runner_present || table[16]!=(void*)runner_reset || !VirtualProtect(table+16,(84-16+1)*sizeof(void*),PAGE_READWRITE,&protection))return 0;
- uma_d3d_close(&runner_renderer);InterlockedExchangePointer(table+81,(void*)runner_original_primitive);InterlockedExchangePointer(table+83,(void*)runner_original_primitive_up);InterlockedExchangePointer(table+84,(void*)runner_original_indexed_up);InterlockedExchangePointer(table+82,(void*)runner_original_draw);InterlockedExchangePointer(table+17,(void*)runner_original_present);InterlockedExchangePointer(table+16,(void*)runner_original_reset);
+ uma_audio_close();uma_d3d_close(&runner_renderer);InterlockedExchangePointer(table+81,(void*)runner_original_primitive);InterlockedExchangePointer(table+83,(void*)runner_original_primitive_up);InterlockedExchangePointer(table+84,(void*)runner_original_indexed_up);InterlockedExchangePointer(table+82,(void*)runner_original_draw);InterlockedExchangePointer(table+17,(void*)runner_original_present);InterlockedExchangePointer(table+16,(void*)runner_original_reset);
  DWORD ignored;VirtualProtect(table+16,(84-16+1)*sizeof(void*),protection,&ignored);runner_table=NULL;return uma_upload_remove();
 }
 #else
@@ -255,6 +259,7 @@ static DWORD WINAPI runner_start(void *module){
  D3DPRESENT_PARAMETERS pp={0};pp.Windowed=TRUE;pp.SwapEffect=D3DSWAPEFFECT_DISCARD;pp.hDeviceWindow=window;pp.BackBufferWidth=16;pp.BackBufferHeight=16;pp.BackBufferFormat=D3DFMT_A8R8G8B8;
  HRESULT result=window && api?IDirect3D9_CreateDevice(api,0,D3DDEVTYPE_HAL,window,D3DCREATE_SOFTWARE_VERTEXPROCESSING,&pp,&device):E_FAIL;
  int installed=SUCCEEDED(result) && runner_install(device);
+ if(installed)(void)uma_audio_start(root,runner_log);
  if(runner_log){fprintf(runner_log,"START native lighting runner installed=%d; graphics-derived speed uncalibrated; shared motion state for Corolla instances\n",installed);fflush(runner_log);}
  if(device){IDirect3DDevice9_Release(device);}if(api){IDirect3D9_Release(api);}if(window){DestroyWindow(window);}
  if(!installed){uma_motion_free(&runner_motion);}return installed?0:1;

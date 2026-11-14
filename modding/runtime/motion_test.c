@@ -31,6 +31,7 @@ int main(int argc,char **argv){
  UmaMotionState state={0};
  for(int i=0;i<60;i++)assert(uma_motion_step(&state,1.f/60,6,0));
  assert(state.run_blend>.99f);
+ assert(fabsf(state.run_phase-2.f/3)<1e-4f);
  UmaMotionState paused=state;assert(uma_motion_step(&state,.1f,6,1));assert(!memcmp(&paused,&state,sizeof(state)));
  for(int i=0;i<120;i++)assert(uma_motion_step(&state,1.f/60,0,0));
  assert(state.run_blend<1e-4f);

@@ -1,5 +1,5 @@
 {
-  "standalone_test": "PASS: six Python-reference poses, max error 7.15255737e-07; UV/colour preservation; transitions, pause, invalid inputs, alias rejection and nine malformed packages. 240 grounded transition poses; CPU sample 0.850 ms (standalone, not game FPS).",
+  "standalone_test": "PASS: six Python-reference poses, max error 7.15255737e-07; UV/colour preservation; transitions, pause, invalid inputs, alias rejection and nine malformed packages. 240 grounded transition poses; CPU sample 0.906 ms (standalone, not game FPS).",
   "key_poses_match_reference_clips": true,
   "reference_clip_directory": "modding/animation-steam-retarget",
   "asset": "modding/runtime/kitasan.umab",
