@@ -18,7 +18,7 @@
     "run_frames": 48,
     "foot_ik_checked": true,
     "loop_and_normals_tests_passed": true,
-    "latest_candidate": "modding/animation-offline-v2",
+    "latest_candidate": "modding/animation-steam-retarget",
     "ready_for_gameplay": false,
     "c_player": "Linux and i686 Windows standalone checks passed; no game integration",
     "playback_asset_bytes": 1606288,
@@ -48,8 +48,8 @@
     "vertices_after": 59749,
     "directory_records_verified": 571,
     "repeated_build_identical": true,
-    "actual_race_result": "new geometry not launched yet",
-    "installed_sha256": "ed7e51a5895c859708a29cb92ebed6481d25d519d8dc392d2d13354175e90f18",
+    "actual_race_result": "Steam-motion envelope installed; gameplay pending",
+    "installed_sha256": "9149255821f002da6e9b8aad99890298ad48b202063814722dd51c2d6623274b",
     "backup": "CARS/COROLLA/GEOMETRY.BIN.before-runtime.bak"
   },
   "authorization": "User broadly authorized necessary repairs after capture; no repeated approval requests for those repairs. Executable, network and anticheat remain excluded.",
@@ -73,5 +73,5 @@
     "cpu_baked_wheel_bounds_tested": true,
     "real_game_result": "Running triggered. Selection black wheel persists; root-level car accessories remain in screenshot. No final release."
   },
-  "original_motion_source": "User asked about Steam files; no matching installation found in registered Steam libraries; requested local path"
+  "original_motion_source": "Installed local Steam type03 run02 retarget; real game quality pending"
 }

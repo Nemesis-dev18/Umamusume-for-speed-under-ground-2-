@@ -1,0 +1,24 @@
+{
+  "checkpoint": "46f4907481a9b22be79c8f9b087c7a9abfc3690d",
+  "replaced": [
+    {
+      "path": "CARS/COROLLA/GEOMETRY.BIN",
+      "sha256": "9149255821f002da6e9b8aad99890298ad48b202063814722dd51c2d6623274b",
+      "backup": "CARS/COROLLA/GEOMETRY.BIN.before-steam-motion.bak"
+    },
+    {
+      "path": "scripts/UmaRunner.asi",
+      "sha256": "72ef068ca839e934ea647d8b3df6074ecaca4c929b98efd73a1fa88c57210cde",
+      "backup": "modding/runtime/UmaRunner.before-steam-motion.asi"
+    },
+    {
+      "path": "modding/runtime/kitasan.umab",
+      "sha256": "c1701a3227ce720bf2f4166b96f96219e96b4f307251a579d9c2f0059c8e0581",
+      "backup": "modding/runtime/kitasan.before-steam.umab"
+    }
+  ],
+  "unchanged_data": 714,
+  "gameplay_verified": false,
+  "game_running": false,
+  "source": "local Steam type03 run02 retarget; original Steam files unchanged"
+}
