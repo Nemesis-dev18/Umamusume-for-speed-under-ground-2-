@@ -1,0 +1,14 @@
+{
+  "create": "scripts/UmaRunner.asi",
+  "bytes": 279644,
+  "sha256": "e4bdd63d8fa25b520bcc097d2c9fdb92420a25b6a615943773842f8914045412",
+  "resources": "Existing compact Corolla with native CARSKIN slot, SHA20498c7d; no texture, physics or opponent edits this stage",
+  "assets": {
+    "UmaRunner.asi": "e4bdd63d8fa25b520bcc097d2c9fdb92420a25b6a615943773842f8914045412",
+    "kitasan.umab": "d49c072e034b1e9ee42e550599685bfaa3977448dff545e67df3ad42d55e94aa",
+    "atlas.dds": "cb40a42c64d1f97fb69734ad30caa78776c97330472d1152bcda44d69470920d"
+  },
+  "rollback": "Remove only scripts/UmaRunner.asi after closing game and checking installed module hash; restore GEOMETRY.BIN.before-skin-slot.bak only if reverting native material routing too",
+  "gameplay_verified": false,
+  "authorization": "User explicitly authorized necessary changes until repair; original installation, executable and network excluded"
+}

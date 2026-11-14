@@ -41,10 +41,10 @@ static int uma_camera_finite(const D3DMATRIX *matrix){
  for(int row=0;row<4;row++)for(int col=0;col<4;col++)if(!isfinite(matrix->m[row][col]))return 0;
  return 1;
 }
-static HRESULT uma_camera_capture(IDirect3DDevice9 *device,D3DMATRIX *output){
+static HRESULT uma_camera_capture(IDirect3DDevice9 *device,D3DMATRIX *output,const UmaShaderProfile **matched){
  if(!device || !output)return E_INVALIDARG;
  IDirect3DVertexShader9 *shader=NULL;HRESULT result=IDirect3DDevice9_GetVertexShader(device,&shader);if(FAILED(result))return result;
- D3DMATRIX combined={0};
+ D3DMATRIX combined={0};const UmaShaderProfile *chosen=NULL;
  if(shader){
   UINT bytes=0;DWORD *code=NULL;UINT base=0;
   result=IDirect3DVertexShader9_GetFunction(shader,NULL,&bytes);
@@ -53,6 +53,7 @@ static HRESULT uma_camera_capture(IDirect3DDevice9 *device,D3DMATRIX *output){
   result=IDirect3DVertexShader9_GetFunction(shader,code,&bytes);IDirect3DVertexShader9_Release(shader);
   const UmaShaderProfile *profile=NULL;
   if(SUCCEEDED(result))for(UINT i=0;i<UMA_SHADER_PROFILE_COUNT;i++)if(bytes==uma_shader_profiles[i].bytes && !memcmp(code,uma_shader_profiles[i].words,bytes)){profile=&uma_shader_profiles[i];break;}
+  chosen=profile;
   int supported=profile || (SUCCEEDED(result) && uma_camera_constant(code,bytes/4,&base));free(code);if(!supported)return E_FAIL;
   float constants[4][4];
   if(profile){for(UINT i=0;i<4;i++){result=IDirect3DDevice9_GetVertexShaderConstantF(device,profile->rows[i],constants[i],1);if(FAILED(result))return result;for(UINT k=0;k<4;k++)constants[i][k]*=profile->signs[i];}}
@@ -67,6 +68,6 @@ static HRESULT uma_camera_capture(IDirect3DDevice9 *device,D3DMATRIX *output){
   for(int r=0;r<4;r++)for(int c=0;c<4;c++)for(int k=0;k<4;k++)combined.m[r][c]+=temp.m[r][k]*projection.m[k][c];
  }
  if(!uma_camera_finite(&combined))return E_FAIL;
- *output=combined;return S_OK;
+ *output=combined;if(matched)*matched=chosen;return S_OK;
 }
 #endif

@@ -378,7 +378,7 @@ class InstalledRuntimeGeometry(unittest.TestCase):
         from inspect_assets import ROOT
         from plan_hidden_compaction import verify_compaction,reviewed_source
         receipt=json.loads((ROOT/'modding/runtime-geometry-applied.json').read_text())
-        data=data_path('CARS/COROLLA/GEOMETRY.BIN').read_bytes()
+        data=data_path('CARS/COROLLA/GEOMETRY.BIN.before-skin-slot.bak').read_bytes()
         self.assertEqual(hashlib.sha256(data).hexdigest(),receipt['installed_sha256'])
         report=verify_compaction(reviewed_source().read_bytes(),data)
         self.assertEqual(report['collapsed_solids_compacted'],567)
@@ -386,3 +386,16 @@ class InstalledRuntimeGeometry(unittest.TestCase):
         self.assertEqual(report['solid_directory_records_verified'],571)
         for field in receipt['fields']:
             self.assertEqual(data[field['offset']:field['offset']+4].hex(),field['after'])
+
+class BodyMaterialRoute(unittest.TestCase):
+    def test_only_reviewed_material_fields_changed(self):
+        import hashlib,json
+        from inspect_assets import ROOT
+        from route_body_material import route_body
+        source=(ROOT/'CARS/COROLLA/GEOMETRY.BIN.before-skin-slot.bak').read_bytes()
+        plan=json.loads((ROOT/'modding/staged-runtime/geometry-plan.json').read_text())
+        expected,changes=route_body(source,plan['minimum'],plan['maximum'])
+        self.assertEqual(expected,(ROOT/'CARS/COROLLA/GEOMETRY.BIN').read_bytes())
+        self.assertEqual(len(changes),36)
+        self.assertEqual(hashlib.sha256(expected).hexdigest(),'20498c7d93be4bdc57a19db72d246ae79f56cfbd3bd13235199524ebc545cf28')
+        with self.assertRaises(ValueError):route_body(expected,plan['minimum'],plan['maximum'])

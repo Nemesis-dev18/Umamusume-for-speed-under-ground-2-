@@ -22,7 +22,10 @@
           3,
           1
         ]
-      ]
+      ],
+      "worldview_register": -1,
+      "color_input_reference_candidate": true,
+      "uv_output": -1
     },
     {
       "id": 2,
@@ -45,7 +48,10 @@
           3,
           1
         ]
-      ]
+      ],
+      "worldview_register": 4,
+      "color_input_reference_candidate": true,
+      "uv_output": -1
     },
     {
       "id": 3,
@@ -68,7 +74,10 @@
           3,
           1
         ]
-      ]
+      ],
+      "worldview_register": 4,
+      "color_input_reference_candidate": true,
+      "uv_output": 0
     },
     {
       "id": 4,
@@ -91,7 +100,10 @@
           3,
           1
         ]
-      ]
+      ],
+      "worldview_register": -1,
+      "color_input_reference_candidate": true,
+      "uv_output": -1
     },
     {
       "id": 5,
@@ -114,7 +126,10 @@
           13,
           1
         ]
-      ]
+      ],
+      "worldview_register": 14,
+      "color_input_reference_candidate": false,
+      "uv_output": 1
     },
     {
       "id": 6,
@@ -137,7 +152,10 @@
           3,
           1
         ]
-      ]
+      ],
+      "worldview_register": 4,
+      "color_input_reference_candidate": false,
+      "uv_output": -1
     },
     {
       "id": 7,
@@ -160,7 +178,10 @@
           3,
           1
         ]
-      ]
+      ],
+      "worldview_register": 8,
+      "color_input_reference_candidate": true,
+      "uv_output": -1
     },
     {
       "id": 8,
@@ -183,7 +204,10 @@
           3,
           1
         ]
-      ]
+      ],
+      "worldview_register": 4,
+      "color_input_reference_candidate": false,
+      "uv_output": -1
     },
     {
       "id": 9,
@@ -212,7 +236,10 @@
           3,
           1
         ]
-      ]
+      ],
+      "worldview_register": 4,
+      "color_input_reference_candidate": false,
+      "uv_output": -1
     },
     {
       "id": 11,
@@ -235,7 +262,10 @@
           3,
           1
         ]
-      ]
+      ],
+      "worldview_register": 4,
+      "color_input_reference_candidate": true,
+      "uv_output": 0
     },
     {
       "id": 12,
@@ -258,7 +288,10 @@
           3,
           1
         ]
-      ]
+      ],
+      "worldview_register": 8,
+      "color_input_reference_candidate": true,
+      "uv_output": 0
     },
     {
       "id": 13,
@@ -281,7 +314,10 @@
           3,
           1
         ]
-      ]
+      ],
+      "worldview_register": 8,
+      "color_input_reference_candidate": true,
+      "uv_output": -1
     },
     {
       "id": 14,
@@ -304,7 +340,10 @@
           3,
           1
         ]
-      ]
+      ],
+      "worldview_register": 4,
+      "color_input_reference_candidate": true,
+      "uv_output": -1
     },
     {
       "id": 15,
@@ -327,7 +366,10 @@
           3,
           1
         ]
-      ]
+      ],
+      "worldview_register": 4,
+      "color_input_reference_candidate": false,
+      "uv_output": -1
     },
     {
       "id": 16,
@@ -350,7 +392,10 @@
           3,
           1
         ]
-      ]
+      ],
+      "worldview_register": 8,
+      "color_input_reference_candidate": true,
+      "uv_output": 0
     }
   ],
   "exact_bytecode_match_required": true,
