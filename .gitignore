@@ -1,0 +1,10 @@
+/*
+!/.gitignore
+!/CLAUDE.md
+!/modding/
+/modding/*
+!/modding/scripts/
+!/modding/tests/
+!/modding/*.json
+__pycache__/
+*.pyc
