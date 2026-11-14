@@ -59,11 +59,11 @@ int main(void){
  }
  /* CPU-baked wheel vertices use the body root matrix rather than a wheel mount matrix. */
  for(int i=0;i<4;i++){quad[i].position[0]=1.35f;quad[i].position[1]=.78f+((i&1)?.2f:-.2f);quad[i].position[2]=.275f+((i&2)?.2f:-.2f);memcpy(quad32[i].position,quad[i].position,12);}
- CHECK(IDirect3DVertexBuffer9_Lock(wheel_vb,0,0,&mapped,0));memcpy(mapped,quad,sizeof(quad));CHECK(IDirect3DVertexBuffer9_Unlock(wheel_vb));
- UmaVertexBounds cached;assert(uma_upload_bounds(wheel_vb,36,4,&cached));hidden=runner_hidden_wheels;
+ IDirect3DVertexBuffer9 *baked_vb=NULL;CHECK(IDirect3DDevice9_CreateVertexBuffer(device,sizeof(quad32),D3DUSAGE_WRITEONLY,0,D3DPOOL_DEFAULT,&baked_vb,NULL));CHECK(IDirect3DVertexBuffer9_Lock(baked_vb,0,0,&mapped,0));memcpy(mapped,quad32,sizeof(quad32));CHECK(IDirect3DVertexBuffer9_Unlock(baked_vb));
+ UmaVertexBounds cached;assert(uma_upload_bounds(baked_vb,0,4,32,0,&cached));hidden=runner_hidden_wheels;
  for(int method=0;method<4;method++)for(int foreign=0;foreign<2;foreign++){
   float baked_view[3][4]={{1,0,0,foreign?10:0},{0,1,0,0},{0,0,1,0}};CHECK(IDirect3DDevice9_SetVertexShaderConstantF(device,14,&baked_view[0][0],3));
-  CHECK(IDirect3DDevice9_SetVertexDeclaration(device,method>=2?declaration32:declaration));CHECK(IDirect3DDevice9_SetStreamSource(device,0,wheel_vb,0,36));CHECK(IDirect3DDevice9_SetIndices(device,wheel_ib));
+  CHECK(IDirect3DDevice9_SetVertexDeclaration(device,declaration32));CHECK(IDirect3DDevice9_SetStreamSource(device,0,baked_vb,0,32));CHECK(IDirect3DDevice9_SetIndices(device,wheel_ib));
   CHECK(IDirect3DDevice9_Clear(device,0,NULL,D3DCLEAR_TARGET|D3DCLEAR_ZBUFFER,0xff252a32,1,0));CHECK(IDirect3DDevice9_BeginScene(device));
   if(method==0){CHECK(IDirect3DDevice9_DrawIndexedPrimitive(device,D3DPT_TRIANGLELIST,0,0,4,0,2));}
   else if(method==1){CHECK(IDirect3DDevice9_DrawPrimitive(device,D3DPT_TRIANGLESTRIP,0,2));}
@@ -72,8 +72,22 @@ int main(void){
   CHECK(IDirect3DDevice9_EndScene(device));assert(runner_hidden_wheels==hidden+(unsigned)method+1);
   DWORD *pixels=read_pixels(device);unsigned changed=0;for(int i=0;i<640*480;i++)if(pixels[i]!=0xff252a32)changed++;free(pixels);assert(foreign?changed>100:changed==0);
  }
- CHECK(IDirect3DVertexBuffer9_Lock(wheel_vb,0,4,&mapped,0));memset(mapped,0,4);CHECK(IDirect3DVertexBuffer9_Unlock(wheel_vb));assert(!uma_upload_bounds(wheel_vb,36,4,&cached));
+ CHECK(IDirect3DVertexBuffer9_Lock(baked_vb,0,4,&mapped,0));memset(mapped,0,4);CHECK(IDirect3DVertexBuffer9_Unlock(baked_vb));assert(!uma_upload_bounds(baked_vb,0,4,32,0,&cached));
+ IDirect3DVertexBuffer9_Release(baked_vb);
  puts("PASS CPU-baked wheel vertices across all four draw APIs; foreign pixels intact; partial writes invalidate bounds");
+ /* Optional attachments can fall back to the body origin when their marker is absent. */
+ float root_view[3][4]={{1,0,0,0},{0,1,0,0},{0,0,1,0}};CHECK(IDirect3DDevice9_SetVertexShaderConstantF(device,14,&root_view[0][0],3));
+ CHECK(IDirect3DDevice9_SetVertexDeclaration(device,declaration));CHECK(IDirect3DDevice9_SetStreamSource(device,0,wheel_vb,0,36));CHECK(IDirect3DDevice9_SetIndices(device,wheel_ib));
+ hidden=runner_hidden_wheels;CHECK(IDirect3DDevice9_BeginScene(device));CHECK(IDirect3DDevice9_DrawIndexedPrimitive(device,D3DPT_TRIANGLELIST,0,0,4,0,2));CHECK(IDirect3DDevice9_EndScene(device));assert(runner_hidden_wheels==hidden+1);
+ root_view[0][3]=2;CHECK(IDirect3DDevice9_SetVertexShaderConstantF(device,14,&root_view[0][0],3));CHECK(IDirect3DDevice9_BeginScene(device));CHECK(IDirect3DDevice9_DrawIndexedPrimitive(device,D3DPT_TRIANGLELIST,0,0,4,0,2));CHECK(IDirect3DDevice9_EndScene(device));assert(runner_hidden_wheels==hidden+1);
+ puts("PASS car-style root attachment hidden only at a recognized Corolla root; translated actor preserved");
+ /* The real native batch uses a 96,240-byte VB; queries must cover draw subranges. */
+ IDirect3DVertexBuffer9 *shared=NULL;CHECK(IDirect3DDevice9_CreateVertexBuffer(device,96240,D3DUSAGE_DYNAMIC|D3DUSAGE_WRITEONLY,0,D3DPOOL_DEFAULT,&shared,NULL));
+ CHECK(IDirect3DVertexBuffer9_Lock(shared,0,0,&mapped,D3DLOCK_DISCARD));memset(mapped,0,96240);memcpy((BYTE*)mapped+96000,quad,sizeof(quad));CHECK(IDirect3DVertexBuffer9_Unlock(shared));assert(uma_upload_bounds(shared,96000,4,36,0,&cached));
+ CHECK(IDirect3DVertexBuffer9_Lock(shared,40,80,&mapped,0));memset(mapped,0,80);for(int i=0;i<4;i++)memcpy((BYTE*)mapped+i*20+4,quad[i].position,12);CHECK(IDirect3DVertexBuffer9_Unlock(shared));
+ assert(uma_upload_bounds(shared,40,4,20,4,&cached));assert(!uma_upload_bounds(shared,96000,4,36,0,&cached));
+ CHECK(IDirect3DVertexBuffer9_Lock(shared,40,80,&mapped,D3DLOCK_READONLY));CHECK(IDirect3DVertexBuffer9_Unlock(shared));assert(uma_upload_bounds(shared,40,4,20,4,&cached));
+ IDirect3DVertexBuffer9_Release(shared);puts("PASS native 96KB shared buffer, draw subrange, partial upload at offset, stride20 position offset and READONLY preservation");
  CHECK(IDirect3DDevice9_SetVertexDeclaration(device,declaration));IDirect3DVertexDeclaration9_Release(declaration32);
  puts("PASS DP, DPUP and DIPUP wheel mounts, stride32, triangle strips, foreign pixels preserved and UP binding side effects");
  CHECK(IDirect3DDevice9_SetTexture(device,1,NULL));IDirect3DTexture9_Release(tire);IDirect3DTexture9_Release(non_tire);IDirect3DVertexBuffer9_Release(wheel_vb);CHECK(IDirect3DDevice9_SetIndices(device,indices));IDirect3DIndexBuffer9_Release(wheel_ib);

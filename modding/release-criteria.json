@@ -8,7 +8,7 @@
   },
   "race": {
     "player_character_visible": true,
-    "animated_running_and_speed_response": "First real run failed: speed invalid. ViewProj scenery recovery prepared and independently tested; pending real run",
+    "animated_running_and_speed_response": "User confirmed leg animation now runs; speed valid in real log, but style unnatural and needs replacement/polish",
     "other_car_bodies_visible_when_kitasan_selected": "Nissan 240SX confirmed intact by user. Replacement currently applies to every Corolla instance; no player-only targeting"
   },
   "offline_motion": {
@@ -71,6 +71,7 @@
     "static_scenery_anchor_key": true,
     "all_four_draw_paths_tested": true,
     "cpu_baked_wheel_bounds_tested": true,
-    "real_game_result": "pending"
-  }
+    "real_game_result": "Running triggered. Selection black wheel persists; root-level car accessories remain in screenshot. No final release."
+  },
+  "original_motion_source": "User asked about Steam files; no matching installation found in registered Steam libraries; requested local path"
 }

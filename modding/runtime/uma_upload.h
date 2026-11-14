@@ -16,12 +16,13 @@ static void **uma_upload_table;
 static const void *uma_upload_expected;
 static UINT uma_upload_bytes;
 typedef struct {void *pointer;UINT bytes,offset,depth;BOOL whole;} UmaPendingUpload;
-typedef struct {UINT bytes,valid;UmaVertexBounds bounds[3];} UmaUploadBounds;
+/* Retain only bounded CPU upload bytes; decode the actual declaration/range at draw time. */
+typedef struct {UINT offset,bytes;BYTE data[131072];} UmaUploadSnapshot;
 static const GUID uma_bounds_guid={0x0fd3a417,0x882b,0x45a9,{0xaf,0x28,0x41,0x3e,0x3f,0xd2,0xe8,0x56}};
-static inline int uma_upload_bounds(IDirect3DVertexBuffer9 *buffer,UINT stride,UINT vertices,UmaVertexBounds *output){
- UmaUploadBounds bounds;DWORD size=sizeof(bounds);int lane=stride==24?0:(stride==32?1:(stride==36?2:-1));
- if(!buffer || lane<0 || !vertices || vertices>4096 || FAILED(IDirect3DVertexBuffer9_GetPrivateData(buffer,&uma_bounds_guid,&bounds,&size)) || size!=sizeof(bounds) || !(bounds.valid&(1u<<lane)) || bounds.bytes!=vertices*stride)return 0;
- *output=bounds.bounds[lane];return 1;
+static inline int uma_upload_bounds(IDirect3DVertexBuffer9 *buffer,UINT offset,UINT vertices,UINT stride,UINT position,UmaVertexBounds *output){
+ UmaUploadSnapshot snapshot;DWORD size=sizeof(snapshot);
+ if(!buffer || FAILED(IDirect3DVertexBuffer9_GetPrivateData(buffer,&uma_bounds_guid,&snapshot,&size)) || size<8 || snapshot.bytes>sizeof(snapshot.data) || size!=8+snapshot.bytes || offset<snapshot.offset || offset-snapshot.offset>snapshot.bytes)return 0;
+ UINT first=offset-snapshot.offset;return uma_vertex_bounds(snapshot.data+first,snapshot.bytes-first,vertices,stride,position,output);
 }
 typedef struct {UINT count,offsets[16];} UmaUploadIdentity;
 static BOOL uma_upload_matches_at(IDirect3DVertexBuffer9 *buffer,UINT offset){
@@ -58,10 +59,9 @@ static int uma_upload_geometry_equal(const void *mapped){
 static HRESULT WINAPI uma_observe_unlock(IDirect3DVertexBuffer9 *buffer){
  UmaPendingUpload pending={0};DWORD bytes=sizeof(pending);
  BOOL tracked=SUCCEEDED(IDirect3DVertexBuffer9_GetPrivateData(buffer,&uma_pending_guid,&pending,&bytes)) && bytes==sizeof(pending);
- UmaUploadIdentity identity={0};UmaUploadBounds bounds={0};
- if(tracked && pending.depth==1 && pending.pointer && pending.whole && pending.bytes<=4096*36){
-  bounds.bytes=pending.bytes;const UINT strides[]={24,32,36};
-  for(int i=0;i<3;i++)if(!(pending.bytes%strides[i]) && uma_vertex_bounds(pending.pointer,pending.bytes,pending.bytes/strides[i],strides[i],0,&bounds.bounds[i]))bounds.valid|=1u<<i;
+ UmaUploadIdentity identity={0};UmaUploadSnapshot snapshot;snapshot.bytes=0;
+ if(tracked && pending.depth==1 && pending.pointer && pending.bytes>=12 && pending.bytes<=sizeof(snapshot.data)){
+  snapshot.offset=pending.offset;snapshot.bytes=pending.bytes;memcpy(snapshot.data,pending.pointer,pending.bytes);
  }
  if(tracked && pending.depth==1 && pending.pointer && pending.bytes>=uma_upload_bytes){
   const BYTE *mapped=pending.pointer,*expected=uma_upload_expected;
@@ -74,7 +74,7 @@ static HRESULT WINAPI uma_observe_unlock(IDirect3DVertexBuffer9 *buffer){
  if(tracked && pending.depth>1){pending.depth--;pending.pointer=NULL;IDirect3DVertexBuffer9_SetPrivateData(buffer,&uma_pending_guid,&pending,sizeof(pending),0);}
  else IDirect3DVertexBuffer9_FreePrivateData(buffer,&uma_pending_guid);
  HRESULT result=uma_native_unlock(buffer);
- if(SUCCEEDED(result) && bounds.valid)IDirect3DVertexBuffer9_SetPrivateData(buffer,&uma_bounds_guid,&bounds,sizeof(bounds),0);
+ if(SUCCEEDED(result) && snapshot.bytes)IDirect3DVertexBuffer9_SetPrivateData(buffer,&uma_bounds_guid,&snapshot,8+snapshot.bytes,0);
  if(SUCCEEDED(result) && identity.count)IDirect3DVertexBuffer9_SetPrivateData(buffer,&uma_identity_guid,&identity,sizeof(identity),0);
  return result;
 }
