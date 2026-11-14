@@ -28,5 +28,14 @@
   "resource_changes_this_stage": false,
   "diagnostic_removed": true,
   "bounds_repair": "prepared in memory, not applied; requires reviewed installation approval",
-  "release_ready": false
+  "release_ready": false,
+  "offline_renderer": {
+    "standalone_d3d9_test_passed": true,
+    "dds_format": "DXT5, 10 mip levels",
+    "texture_bytes": 349680,
+    "state_restored_after_success_and_failure": true,
+    "device_reset_test_passed": true,
+    "invalid_texture_cases_rejected": 7,
+    "game_integrated": false
+  }
 }

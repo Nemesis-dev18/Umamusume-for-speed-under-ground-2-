@@ -1,0 +1,59 @@
+{
+  "format": "Standard DDS DXT5/BC3 with premultiplied-alpha filtered mip generation",
+  "bytes": 349680,
+  "sha256": "cb40a42c64d1f97fb69734ad30caa78776c97330472d1152bcda44d69470920d",
+  "levels": [
+    {
+      "width": 512,
+      "height": 512,
+      "bytes": 262144
+    },
+    {
+      "width": 256,
+      "height": 256,
+      "bytes": 65536
+    },
+    {
+      "width": 128,
+      "height": 128,
+      "bytes": 16384
+    },
+    {
+      "width": 64,
+      "height": 64,
+      "bytes": 4096
+    },
+    {
+      "width": 32,
+      "height": 32,
+      "bytes": 1024
+    },
+    {
+      "width": 16,
+      "height": 16,
+      "bytes": 256
+    },
+    {
+      "width": 8,
+      "height": 8,
+      "bytes": 64
+    },
+    {
+      "width": 4,
+      "height": 4,
+      "bytes": 16
+    },
+    {
+      "width": 2,
+      "height": 2,
+      "bytes": 16
+    },
+    {
+      "width": 1,
+      "height": 1,
+      "bytes": 16
+    }
+  ],
+  "opaque_rgb_rmse_0_255": 8.070891911217263,
+  "game_integrated": false
+}

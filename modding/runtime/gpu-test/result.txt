@@ -1,0 +1,9 @@
+START independent renderer test; not NFSU2
+PASS seven invalid DDS inputs rejected without publishing a texture
+PASS half-alpha texture produces opaque RGB without background blending
+PASS zero-alpha texture is discarded
+PASS animated frame 0; 27078 non-background pixels; unrelated quad remains white
+PASS animated frame 1; 25865 non-background pixels; unrelated quad remains white
+PASS animated frame 2; 27108 non-background pixels; unrelated quad remains white
+PASS animated frame 3; 25876 non-background pixels; unrelated quad remains white
+PASS all renderer checks, failure restoration and device reset; 10 intercepted draws. No game integration tested.
