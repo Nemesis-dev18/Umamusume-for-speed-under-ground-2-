@@ -1,0 +1,301 @@
+START draw-only diagnostics; no executable addresses; no shader/state changes
+HOOK installed=1 deviceHR=00000000
+SUMMARY tick=758016 frame=120 draws=0 characterCandidates=0
+SUMMARY tick=760041 frame=240 draws=0 characterCandidates=0
+SUMMARY tick=762041 frame=360 draws=0 characterCandidates=0
+SUMMARY tick=764052 frame=480 draws=0 characterCandidates=0
+SUMMARY tick=766104 frame=600 draws=0 characterCandidates=0
+SUMMARY tick=768108 frame=720 draws=0 characterCandidates=0
+SUMMARY tick=773422 frame=840 draws=0 characterCandidates=0
+SUMMARY tick=775481 frame=960 draws=0 characterCandidates=0
+PAIR tick=776867 frame=1041 vertices=6267 primitives=6 type=4 candidate=0
+PAIR tick=776868 frame=1041 vertices=6267 primitives=277 type=4 candidate=0
+PAIR tick=776868 frame=1041 vertices=6267 primitives=2 type=4 candidate=0
+PAIR tick=776868 frame=1041 vertices=6267 primitives=40 type=4 candidate=0
+PAIR tick=776868 frame=1041 vertices=6267 primitives=209 type=4 candidate=0
+PAIR tick=776868 frame=1041 vertices=6267 primitives=28 type=4 candidate=0
+PAIR tick=776868 frame=1041 vertices=6267 primitives=60 type=4 candidate=0
+PAIR tick=776868 frame=1041 vertices=6267 primitives=24 type=4 candidate=0
+PAIR tick=776868 frame=1041 vertices=6267 primitives=844 type=4 candidate=0
+PAIR tick=776868 frame=1041 vertices=6267 primitives=13 type=4 candidate=0
+PAIR tick=776868 frame=1041 vertices=6267 primitives=15 type=4 candidate=0
+PAIR tick=776868 frame=1041 vertices=6267 primitives=53 type=4 candidate=0
+PAIR tick=776868 frame=1041 vertices=6267 primitives=1000 type=4 candidate=0
+PAIR tick=776868 frame=1041 vertices=6267 primitives=375 type=4 candidate=0
+PAIR tick=776868 frame=1041 vertices=6267 primitives=178 type=4 candidate=0
+PAIR tick=776868 frame=1041 vertices=6267 primitives=22 type=4 candidate=0
+PAIR tick=776868 frame=1041 vertices=6267 primitives=66 type=4 candidate=0
+PAIR tick=776868 frame=1041 vertices=6267 primitives=223 type=4 candidate=0
+PAIR tick=776868 frame=1041 vertices=6267 primitives=89 type=4 candidate=0
+PAIR tick=776868 frame=1041 vertices=150 primitives=144 type=4 candidate=0
+PAIR tick=776868 frame=1041 vertices=6267 primitives=174 type=4 candidate=0
+PAIR tick=776868 frame=1041 vertices=6267 primitives=46 type=4 candidate=0
+PAIR tick=776868 frame=1041 vertices=6267 primitives=45 type=4 candidate=0
+PAIR tick=776868 frame=1041 vertices=6267 primitives=8 type=4 candidate=0
+PAIR tick=776868 frame=1041 vertices=6267 primitives=20 type=4 candidate=0
+PAIR tick=776868 frame=1041 vertices=6267 primitives=4 type=4 candidate=0
+PAIR tick=776868 frame=1041 vertices=6267 primitives=12 type=4 candidate=0
+PAIR tick=776868 frame=1041 vertices=539 primitives=787 type=4 candidate=0
+PAIR tick=776868 frame=1041 vertices=371 primitives=192 type=4 candidate=0
+PAIR tick=776868 frame=1041 vertices=371 primitives=216 type=4 candidate=0
+PAIR tick=776868 frame=1041 vertices=371 primitives=72 type=4 candidate=0
+PAIR tick=776882 frame=1042 vertices=4 primitives=2 type=4 candidate=0
+PAIR tick=776965 frame=1047 vertices=8 primitives=4 type=4 candidate=0
+PAIR tick=777065 frame=1053 vertices=12 primitives=6 type=4 candidate=0
+PAIR tick=777181 frame=1060 vertices=16 primitives=8 type=4 candidate=0
+PAIR tick=777281 frame=1066 vertices=20 primitives=10 type=4 candidate=0
+PAIR tick=777381 frame=1072 vertices=24 primitives=12 type=4 candidate=0
+PAIR tick=777481 frame=1078 vertices=28 primitives=14 type=4 candidate=0
+SUMMARY tick=777498 frame=1080 draws=2578 characterCandidates=0
+PAIR tick=777581 frame=1084 vertices=32 primitives=16 type=4 candidate=0
+PAIR tick=777664 frame=1089 vertices=1250 primitives=648 type=4 candidate=0
+PAIR tick=777665 frame=1089 vertices=1777 primitives=1000 type=4 candidate=0
+PAIR tick=777681 frame=1090 vertices=1250 primitives=16 type=4 candidate=0
+PAIR tick=777681 frame=1090 vertices=1250 primitives=97 type=4 candidate=0
+PAIR tick=777681 frame=1090 vertices=186 primitives=98 type=4 candidate=0
+PAIR tick=777681 frame=1090 vertices=318 primitives=96 type=4 candidate=0
+PAIR tick=777681 frame=1090 vertices=228 primitives=146 type=4 candidate=0
+PAIR tick=777681 frame=1090 vertices=1250 primitives=53 type=4 candidate=0
+PAIR tick=777681 frame=1090 vertices=657 primitives=314 type=4 candidate=0
+PAIR tick=777681 frame=1090 vertices=1777 primitives=16 type=4 candidate=0
+PAIR tick=777681 frame=1090 vertices=1777 primitives=126 type=4 candidate=0
+PAIR tick=777681 frame=1090 vertices=1777 primitives=212 type=4 candidate=0
+PAIR tick=777681 frame=1090 vertices=448 primitives=158 type=4 candidate=0
+PAIR tick=777681 frame=1090 vertices=88 primitives=90 type=4 candidate=0
+PAIR tick=777681 frame=1090 vertices=649 primitives=224 type=4 candidate=0
+PAIR tick=777681 frame=1090 vertices=1777 primitives=62 type=4 candidate=0
+PAIR tick=777681 frame=1090 vertices=36 primitives=18 type=4 candidate=0
+PAIR tick=777698 frame=1091 vertices=228 primitives=52 type=4 candidate=0
+PAIR tick=777698 frame=1091 vertices=198 primitives=10 type=4 candidate=0
+PAIR tick=777698 frame=1091 vertices=198 primitives=15 type=4 candidate=0
+PAIR tick=777698 frame=1091 vertices=164 primitives=66 type=4 candidate=0
+PAIR tick=777698 frame=1091 vertices=198 primitives=22 type=4 candidate=0
+PAIR tick=777698 frame=1091 vertices=450 primitives=45 type=4 candidate=0
+PAIR tick=777698 frame=1091 vertices=450 primitives=11 type=4 candidate=0
+PAIR tick=777698 frame=1091 vertices=450 primitives=23 type=4 candidate=0
+PAIR tick=777714 frame=1092 vertices=234 primitives=118 type=4 candidate=0
+PAIR tick=777714 frame=1092 vertices=128 primitives=64 type=4 candidate=0
+PAIR tick=777714 frame=1092 vertices=164 primitives=40 type=4 candidate=0
+PAIR tick=777714 frame=1092 vertices=198 primitives=34 type=4 candidate=0
+PAIR tick=777714 frame=1092 vertices=128 primitives=12 type=4 candidate=0
+PAIR tick=777714 frame=1092 vertices=24 primitives=30 type=4 candidate=0
+PAIR tick=777714 frame=1092 vertices=318 primitives=64 type=4 candidate=0
+PAIR tick=777714 frame=1092 vertices=259 primitives=60 type=4 candidate=0
+PAIR tick=777714 frame=1092 vertices=259 primitives=160 type=4 candidate=0
+PAIR tick=777714 frame=1092 vertices=259 primitives=14 type=4 candidate=0
+PAIR tick=777714 frame=1092 vertices=186 primitives=4 type=4 candidate=0
+PAIR tick=777714 frame=1092 vertices=186 primitives=34 type=4 candidate=0
+PAIR tick=777715 frame=1092 vertices=448 primitives=56 type=4 candidate=0
+PAIR tick=777715 frame=1092 vertices=450 primitives=60 type=4 candidate=0
+PAIR tick=777715 frame=1092 vertices=649 primitives=156 type=4 candidate=0
+PAIR tick=777715 frame=1092 vertices=495 primitives=120 type=4 candidate=0
+PAIR tick=777715 frame=1092 vertices=495 primitives=330 type=4 candidate=0
+PAIR tick=777715 frame=1092 vertices=495 primitives=22 type=4 candidate=0
+PAIR tick=777715 frame=1092 vertices=448 primitives=10 type=4 candidate=0
+PAIR tick=777731 frame=1093 vertices=1250 primitives=30 type=4 candidate=0
+PAIR tick=777731 frame=1093 vertices=269 primitives=98 type=4 candidate=0
+PAIR tick=777731 frame=1093 vertices=128 primitives=44 type=4 candidate=0
+PAIR tick=777731 frame=1093 vertices=269 primitives=44 type=4 candidate=0
+PAIR tick=777731 frame=1093 vertices=269 primitives=8 type=4 candidate=0
+PAIR tick=777731 frame=1093 vertices=269 primitives=38 type=4 candidate=0
+PAIR tick=777731 frame=1093 vertices=234 primitives=22 type=4 candidate=0
+PAIR tick=777732 frame=1093 vertices=186 primitives=20 type=4 candidate=0
+PAIR tick=777732 frame=1093 vertices=31 primitives=25 type=4 candidate=0
+PAIR tick=777732 frame=1093 vertices=657 primitives=32 type=4 candidate=0
+PAIR tick=777732 frame=1093 vertices=1777 primitives=24 type=4 candidate=0
+PAIR tick=777732 frame=1093 vertices=448 primitives=44 type=4 candidate=0
+PAIR tick=777732 frame=1093 vertices=448 primitives=26 type=4 candidate=0
+PAIR tick=777732 frame=1093 vertices=448 primitives=38 type=4 candidate=0
+PAIR tick=777747 frame=1094 vertices=68 primitives=18 type=4 candidate=0
+PAIR tick=777747 frame=1094 vertices=68 primitives=48 type=4 candidate=0
+PAIR tick=777747 frame=1094 vertices=1250 primitives=68 type=4 candidate=0
+PAIR tick=777748 frame=1094 vertices=1250 primitives=28 type=4 candidate=0
+PAIR tick=777748 frame=1094 vertices=234 primitives=6 type=4 candidate=0
+PAIR tick=777748 frame=1094 vertices=657 primitives=6 type=4 candidate=0
+PAIR tick=777748 frame=1094 vertices=1777 primitives=6 type=4 candidate=0
+PAIR tick=777748 frame=1094 vertices=103 primitives=28 type=4 candidate=0
+PAIR tick=777748 frame=1094 vertices=103 primitives=90 type=4 candidate=0
+PAIR tick=777748 frame=1094 vertices=1777 primitives=90 type=4 candidate=0
+PAIR tick=777748 frame=1094 vertices=657 primitives=24 type=4 candidate=0
+PAIR tick=777748 frame=1094 vertices=657 primitives=8 type=4 candidate=0
+PAIR tick=777764 frame=1095 vertices=234 primitives=8 type=4 candidate=0
+PAIR tick=777764 frame=1095 vertices=448 primitives=37 type=4 candidate=0
+PAIR tick=777764 frame=1095 vertices=127 primitives=8 type=4 candidate=0
+PAIR tick=777764 frame=1095 vertices=127 primitives=39 type=4 candidate=0
+PAIR tick=777764 frame=1095 vertices=76 primitives=50 type=4 candidate=0
+PAIR tick=777764 frame=1095 vertices=48 primitives=31 type=4 candidate=0
+PAIR tick=777766 frame=1095 vertices=448 primitives=2 type=4 candidate=0
+PAIR tick=777766 frame=1095 vertices=127 primitives=27 type=4 candidate=0
+PAIR tick=777781 frame=1096 vertices=186 primitives=16 type=4 candidate=0
+PAIR tick=777781 frame=1096 vertices=186 primitives=2 type=4 candidate=0
+PAIR tick=777781 frame=1096 vertices=234 primitives=26 type=4 candidate=0
+PAIR tick=777782 frame=1096 vertices=234 primitives=12 type=4 candidate=0
+PAIR tick=777782 frame=1096 vertices=8 primitives=6 type=4 candidate=0
+PAIR tick=777782 frame=1096 vertices=657 primitives=36 type=4 candidate=0
+PAIR tick=777782 frame=1096 vertices=657 primitives=26 type=4 candidate=0
+PAIR tick=777782 frame=1096 vertices=40 primitives=20 type=4 candidate=0
+PAIR tick=777798 frame=1097 vertices=1250 primitives=24 type=4 candidate=0
+PAIR tick=777799 frame=1097 vertices=74 primitives=48 type=4 candidate=0
+PAIR tick=777799 frame=1097 vertices=1777 primitives=12 type=4 candidate=0
+PAIR tick=777799 frame=1097 vertices=74 primitives=6 type=4 candidate=0
+PAIR tick=777814 frame=1098 vertices=315 primitives=36 type=4 candidate=0
+PAIR tick=777814 frame=1098 vertices=62 primitives=34 type=4 candidate=0
+PAIR tick=777814 frame=1098 vertices=315 primitives=226 type=4 candidate=0
+PAIR tick=777815 frame=1098 vertices=62 primitives=6 type=4 candidate=0
+PAIR tick=777815 frame=1098 vertices=127 primitives=10 type=4 candidate=0
+PAIR tick=777848 frame=1100 vertices=159 primitives=94 type=4 candidate=0
+PAIR tick=777848 frame=1100 vertices=159 primitives=6 type=4 candidate=0
+PAIR tick=777848 frame=1100 vertices=159 primitives=28 type=4 candidate=0
+PAIR tick=777848 frame=1100 vertices=159 primitives=18 type=4 candidate=0
+PAIR tick=777849 frame=1100 vertices=326 primitives=31 type=4 candidate=0
+PAIR tick=777849 frame=1100 vertices=326 primitives=180 type=4 candidate=0
+PAIR tick=777849 frame=1100 vertices=326 primitives=7 type=4 candidate=0
+PAIR tick=777849 frame=1100 vertices=326 primitives=48 type=4 candidate=0
+PAIR tick=777865 frame=1101 vertices=1777 primitives=10 type=4 candidate=0
+PAIR tick=777866 frame=1101 vertices=44 primitives=22 type=4 candidate=0
+PAIR tick=777881 frame=1102 vertices=326 primitives=79 type=4 candidate=0
+PAIR tick=777881 frame=1102 vertices=326 primitives=132 type=4 candidate=0
+PAIR tick=777881 frame=1102 vertices=326 primitives=32 type=4 candidate=0
+PAIR tick=777881 frame=1102 vertices=326 primitives=16 type=4 candidate=0
+PAIR tick=777982 frame=1108 vertices=48 primitives=24 type=4 candidate=0
+PAIR tick=778082 frame=1114 vertices=52 primitives=26 type=4 candidate=0
+PAIR tick=778183 frame=1120 vertices=56 primitives=28 type=4 candidate=0
+PAIR tick=778283 frame=1126 vertices=60 primitives=30 type=4 candidate=0
+PAIR tick=778383 frame=1132 vertices=64 primitives=32 type=4 candidate=0
+PAIR tick=778483 frame=1138 vertices=68 primitives=34 type=4 candidate=0
+PAIR tick=778584 frame=1144 vertices=72 primitives=36 type=4 candidate=0
+PAIR tick=778683 frame=1150 vertices=76 primitives=38 type=4 candidate=0
+PAIR tick=778770 frame=1155 vertices=80 primitives=40 type=4 candidate=0
+PAIR tick=778871 frame=1161 vertices=84 primitives=42 type=4 candidate=0
+PAIR tick=778972 frame=1167 vertices=88 primitives=44 type=4 candidate=0
+PAIR tick=779072 frame=1173 vertices=92 primitives=46 type=4 candidate=0
+PAIR tick=779171 frame=1179 vertices=96 primitives=48 type=4 candidate=0
+PAIR tick=779271 frame=1185 vertices=100 primitives=50 type=4 candidate=0
+PAIR tick=779371 frame=1191 vertices=104 primitives=52 type=4 candidate=0
+PAIR tick=779473 frame=1197 vertices=108 primitives=54 type=4 candidate=0
+SUMMARY tick=779506 frame=1200 draws=30102 characterCandidates=0
+PAIR tick=779571 frame=1203 vertices=112 primitives=56 type=4 candidate=0
+PAIR tick=779672 frame=1209 vertices=116 primitives=58 type=4 candidate=0
+PAIR tick=779773 frame=1215 vertices=120 primitives=60 type=4 candidate=0
+PAIR tick=779873 frame=1221 vertices=124 primitives=62 type=4 candidate=0
+PAIR tick=780073 frame=1233 vertices=132 primitives=66 type=4 candidate=0
+PAIR tick=780174 frame=1239 vertices=136 primitives=68 type=4 candidate=0
+PAIR tick=780273 frame=1245 vertices=140 primitives=70 type=4 candidate=0
+PAIR tick=780373 frame=1251 vertices=144 primitives=72 type=4 candidate=0
+PAIR tick=780474 frame=1257 vertices=148 primitives=74 type=4 candidate=0
+PAIR tick=780574 frame=1263 vertices=152 primitives=76 type=4 candidate=0
+PAIR tick=780674 frame=1269 vertices=156 primitives=78 type=4 candidate=0
+PAIR tick=780776 frame=1275 vertices=160 primitives=80 type=4 candidate=0
+PAIR tick=780875 frame=1281 vertices=164 primitives=82 type=4 candidate=0
+PAIR tick=780978 frame=1287 vertices=168 primitives=84 type=4 candidate=0
+PAIR tick=781077 frame=1293 vertices=172 primitives=86 type=4 candidate=0
+PAIR tick=781177 frame=1299 vertices=176 primitives=88 type=4 candidate=0
+PAIR tick=781277 frame=1305 vertices=180 primitives=90 type=4 candidate=0
+PAIR tick=781377 frame=1311 vertices=184 primitives=92 type=4 candidate=0
+PAIR tick=781476 frame=1317 vertices=188 primitives=94 type=4 candidate=0
+SUMMARY tick=781511 frame=1320 draws=33360 characterCandidates=0
+PAIR tick=781577 frame=1323 vertices=192 primitives=96 type=4 candidate=0
+PAIR tick=781677 frame=1329 vertices=196 primitives=98 type=4 candidate=0
+PAIR tick=781779 frame=1335 vertices=200 primitives=100 type=4 candidate=0
+PAIR tick=781879 frame=1341 vertices=204 primitives=102 type=4 candidate=0
+PAIR tick=781979 frame=1347 vertices=208 primitives=104 type=4 candidate=0
+PAIR tick=782080 frame=1353 vertices=212 primitives=106 type=4 candidate=0
+PAIR tick=782180 frame=1359 vertices=216 primitives=108 type=4 candidate=0
+PAIR tick=782280 frame=1365 vertices=220 primitives=110 type=4 candidate=0
+PAIR tick=782380 frame=1371 vertices=224 primitives=112 type=4 candidate=0
+PAIR tick=782480 frame=1377 vertices=228 primitives=114 type=4 candidate=0
+PAIR tick=782580 frame=1383 vertices=232 primitives=116 type=4 candidate=0
+PAIR tick=782663 frame=1388 vertices=180 primitives=77 type=4 candidate=0
+PAIR tick=782664 frame=1388 vertices=285 primitives=15 type=4 candidate=0
+PAIR tick=782664 frame=1388 vertices=285 primitives=152 type=4 candidate=0
+PAIR tick=782680 frame=1389 vertices=180 primitives=10 type=4 candidate=0
+PAIR tick=782680 frame=1389 vertices=147 primitives=42 type=4 candidate=0
+PAIR tick=782680 frame=1389 vertices=314 primitives=78 type=4 candidate=0
+PAIR tick=782680 frame=1389 vertices=314 primitives=145 type=4 candidate=0
+PAIR tick=782680 frame=1389 vertices=180 primitives=4 type=4 candidate=0
+PAIR tick=782680 frame=1389 vertices=449 primitives=318 type=4 candidate=0
+PAIR tick=782680 frame=1389 vertices=241 primitives=74 type=4 candidate=0
+PAIR tick=782680 frame=1389 vertices=86 primitives=78 type=4 candidate=0
+PAIR tick=782680 frame=1389 vertices=285 primitives=8 type=4 candidate=0
+PAIR tick=782680 frame=1389 vertices=236 primitives=118 type=4 candidate=0
+PAIR tick=782697 frame=1390 vertices=269 primitives=16 type=4 candidate=0
+PAIR tick=782697 frame=1390 vertices=271 primitives=161 type=4 candidate=0
+PAIR tick=782697 frame=1390 vertices=180 primitives=21 type=4 candidate=0
+PAIR tick=782697 frame=1390 vertices=105 primitives=48 type=4 candidate=0
+PAIR tick=782697 frame=1390 vertices=147 primitives=15 type=4 candidate=0
+PAIR tick=782697 frame=1390 vertices=180 primitives=8 type=4 candidate=0
+PAIR tick=782697 frame=1390 vertices=74 primitives=19 type=4 candidate=0
+PAIR tick=782697 frame=1390 vertices=80 primitives=64 type=4 candidate=0
+PAIR tick=782697 frame=1390 vertices=147 primitives=10 type=4 candidate=0
+PAIR tick=782697 frame=1390 vertices=14512 primitives=16557 type=4 candidate=1
+DETAIL tick=782697 frame=1390 base=0 min=0 start=0 streamOffset=0 stride=36 bufferBytes=522432 state22=2 state15=0 state25=5 state24=0 state27=1 state7=1 state168=7
+PAIR tick=782698 frame=1390 vertices=147 primitives=6 type=4 candidate=0
+PAIR tick=782698 frame=1390 vertices=431 primitives=18 type=4 candidate=0
+PAIR tick=782698 frame=1390 vertices=285 primitives=38 type=4 candidate=0
+PAIR tick=782698 frame=1390 vertices=285 primitives=6 type=4 candidate=0
+PAIR tick=782698 frame=1390 vertices=161 primitives=96 type=4 candidate=0
+PAIR tick=782698 frame=1390 vertices=161 primitives=58 type=4 candidate=0
+PAIR tick=782698 frame=1390 vertices=241 primitives=26 type=4 candidate=0
+PAIR tick=782698 frame=1390 vertices=285 primitives=14 type=4 candidate=0
+PAIR tick=782698 frame=1390 vertices=142 primitives=31 type=4 candidate=0
+PAIR tick=782698 frame=1390 vertices=142 primitives=24 type=4 candidate=0
+PAIR tick=782698 frame=1390 vertices=241 primitives=10 type=4 candidate=0
+PAIR tick=782698 frame=1390 vertices=241 primitives=20 type=4 candidate=0
+PAIR tick=782714 frame=1391 vertices=147 primitives=21 type=4 candidate=0
+PAIR tick=782714 frame=1391 vertices=66 primitives=56 type=4 candidate=0
+PAIR tick=782714 frame=1391 vertices=314 primitives=2 type=4 candidate=0
+PAIR tick=782715 frame=1391 vertices=271 primitives=12 type=4 candidate=0
+PAIR tick=782715 frame=1391 vertices=241 primitives=54 type=4 candidate=0
+PAIR tick=782715 frame=1391 vertices=449 primitives=18 type=4 candidate=0
+PAIR tick=782715 frame=1391 vertices=449 primitives=7 type=4 candidate=0
+PAIR tick=782730 frame=1392 vertices=105 primitives=38 type=4 candidate=0
+PAIR tick=782730 frame=1392 vertices=269 primitives=60 type=4 candidate=0
+PAIR tick=782730 frame=1392 vertices=269 primitives=77 type=4 candidate=0
+PAIR tick=782730 frame=1392 vertices=66 primitives=6 type=4 candidate=0
+PAIR tick=782730 frame=1392 vertices=147 primitives=2 type=4 candidate=0
+PAIR tick=782730 frame=1392 vertices=235 primitives=115 type=4 candidate=0
+PAIR tick=782730 frame=1392 vertices=235 primitives=40 type=4 candidate=0
+PAIR tick=782730 frame=1392 vertices=235 primitives=2 type=4 candidate=0
+PAIR tick=782730 frame=1392 vertices=64 primitives=12 type=4 candidate=0
+PAIR tick=782730 frame=1392 vertices=64 primitives=24 type=4 candidate=0
+PAIR tick=782730 frame=1392 vertices=271 primitives=4 type=4 candidate=0
+PAIR tick=782731 frame=1392 vertices=431 primitives=63 type=4 candidate=0
+PAIR tick=782731 frame=1392 vertices=431 primitives=104 type=4 candidate=0
+PAIR tick=782731 frame=1392 vertices=431 primitives=72 type=4 candidate=0
+PAIR tick=782731 frame=1392 vertices=241 primitives=4 type=4 candidate=0
+PAIR tick=782731 frame=1392 vertices=515 primitives=120 type=4 candidate=0
+PAIR tick=782731 frame=1392 vertices=515 primitives=330 type=4 candidate=0
+PAIR tick=782731 frame=1392 vertices=515 primitives=2 type=4 candidate=0
+PAIR tick=782731 frame=1392 vertices=431 primitives=8 type=4 candidate=0
+PAIR tick=782747 frame=1393 vertices=147 primitives=4 type=4 candidate=0
+SUMMARY tick=783530 frame=1440 draws=30206 characterCandidates=100
+DETAIL tick=783545 frame=1440 base=0 min=0 start=0 streamOffset=0 stride=36 bufferBytes=522432 state22=2 state15=0 state25=5 state24=0 state27=1 state7=1 state168=7
+SUMMARY tick=785569 frame=1560 draws=27514 characterCandidates=68
+DETAIL tick=785801 frame=1573 base=0 min=0 start=0 streamOffset=0 stride=36 bufferBytes=522432 state22=2 state15=0 state25=5 state24=0 state27=1 state7=1 state168=7
+SUMMARY tick=798393 frame=1680 draws=29615 characterCandidates=214
+DETAIL tick=798408 frame=1680 base=0 min=0 start=0 streamOffset=0 stride=36 bufferBytes=522432 state22=2 state15=0 state25=5 state24=0 state27=1 state7=1 state168=7
+SUMMARY tick=800402 frame=1800 draws=31080 characterCandidates=240
+DETAIL tick=800418 frame=1800 base=0 min=0 start=0 streamOffset=0 stride=36 bufferBytes=522432 state22=2 state15=0 state25=5 state24=0 state27=1 state7=1 state168=7
+SUMMARY tick=802409 frame=1920 draws=31080 characterCandidates=240
+DETAIL tick=802425 frame=1920 base=0 min=0 start=0 streamOffset=0 stride=36 bufferBytes=522432 state22=2 state15=0 state25=5 state24=0 state27=1 state7=1 state168=7
+SUMMARY tick=804414 frame=2040 draws=31080 characterCandidates=240
+DETAIL tick=804430 frame=2040 base=0 min=0 start=0 streamOffset=0 stride=36 bufferBytes=522432 state22=2 state15=0 state25=5 state24=0 state27=1 state7=1 state168=7
+SUMMARY tick=806450 frame=2160 draws=31080 characterCandidates=240
+DETAIL tick=806466 frame=2160 base=0 min=0 start=0 streamOffset=0 stride=36 bufferBytes=522432 state22=2 state15=0 state25=5 state24=0 state27=1 state7=1 state168=7
+SUMMARY tick=808470 frame=2280 draws=31080 characterCandidates=240
+DETAIL tick=808486 frame=2280 base=0 min=0 start=0 streamOffset=0 stride=36 bufferBytes=522432 state22=2 state15=0 state25=5 state24=0 state27=1 state7=1 state168=7
+SUMMARY tick=810503 frame=2400 draws=31080 characterCandidates=240
+DETAIL tick=810520 frame=2400 base=0 min=0 start=0 streamOffset=0 stride=36 bufferBytes=522432 state22=2 state15=0 state25=5 state24=0 state27=1 state7=1 state168=7
+SUMMARY tick=812509 frame=2520 draws=31080 characterCandidates=240
+DETAIL tick=812525 frame=2520 base=0 min=0 start=0 streamOffset=0 stride=36 bufferBytes=522432 state22=2 state15=0 state25=5 state24=0 state27=1 state7=1 state168=7
+SUMMARY tick=814616 frame=2640 draws=2590 characterCandidates=20
+SUMMARY tick=817715 frame=2760 draws=104259 characterCandidates=0
+SUMMARY tick=819806 frame=2880 draws=154264 characterCandidates=0
+SUMMARY tick=821826 frame=3000 draws=160617 characterCandidates=0
+SUMMARY tick=823829 frame=3120 draws=207031 characterCandidates=0
+SUMMARY tick=826417 frame=3240 draws=192438 characterCandidates=0
+SUMMARY tick=828420 frame=3360 draws=144691 characterCandidates=0
+SUMMARY tick=830440 frame=3480 draws=140924 characterCandidates=0
+SUMMARY tick=832473 frame=3600 draws=122242 characterCandidates=0
+SUMMARY tick=837662 frame=3720 draws=120565 characterCandidates=0
+SUMMARY tick=839673 frame=3840 draws=120600 characterCandidates=0

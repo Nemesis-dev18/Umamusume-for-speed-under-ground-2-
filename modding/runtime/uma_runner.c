@@ -7,6 +7,7 @@
 #include "uma_scene_speed.h"
 #include "uma_wheels.h"
 #include "uma_audio_win.h"
+#include "uma_selection_capture.h"
 typedef HRESULT (WINAPI *RunnerPresent)(IDirect3DDevice9*,const RECT*,const RECT*,HWND,const RGNDATA*);
 typedef HRESULT (WINAPI *RunnerReset)(IDirect3DDevice9*,D3DPRESENT_PARAMETERS*);
 typedef HRESULT (WINAPI *RunnerPrimitive)(IDirect3DDevice9*,D3DPRIMITIVETYPE,UINT,UINT);
@@ -149,21 +150,24 @@ static UINT runner_primitive_vertices(D3DPRIMITIVETYPE type,UINT count){
  return type==D3DPT_TRIANGLELIST?count*3:((type==D3DPT_TRIANGLESTRIP || type==D3DPT_TRIANGLEFAN)?count+2:0);
 }
 static HRESULT WINAPI runner_primitive(IDirect3DDevice9 *device,D3DPRIMITIVETYPE type,UINT start,UINT count){
- EnterCriticalSection(&runner_lock);int hide=runner_wheel_draw(device,type,runner_primitive_vertices(type,count),count,"DP",NULL,0,start);LeaveCriticalSection(&runner_lock);
- return hide?S_OK:runner_original_primitive(device,type,start,count);
+ EnterCriticalSection(&runner_lock);int capture=uma_selection_before(device);int hide=runner_wheel_draw(device,type,runner_primitive_vertices(type,count),count,"DP",NULL,0,start);LeaveCriticalSection(&runner_lock);
+ HRESULT result=hide?S_OK:runner_original_primitive(device,type,start,count);
+ if(capture){EnterCriticalSection(&runner_lock);uma_selection_after(device,capture,"DP",runner_primitive_vertices(type,count),count);LeaveCriticalSection(&runner_lock);}return result;
 }
 static HRESULT WINAPI runner_primitive_up(IDirect3DDevice9 *device,D3DPRIMITIVETYPE type,UINT count,const void *vertices,UINT stride){
- EnterCriticalSection(&runner_lock);int hide=vertices && stride && runner_wheel_draw(device,type,runner_primitive_vertices(type,count),count,"DPUP",vertices,stride,0);LeaveCriticalSection(&runner_lock);
- if(hide)return IDirect3DDevice9_SetStreamSource(device,0,NULL,0,0);
- return runner_original_primitive_up(device,type,count,vertices,stride);
+ EnterCriticalSection(&runner_lock);int capture=uma_selection_before(device);int hide=vertices && stride && runner_wheel_draw(device,type,runner_primitive_vertices(type,count),count,"DPUP",vertices,stride,0);LeaveCriticalSection(&runner_lock);
+ HRESULT result=hide?IDirect3DDevice9_SetStreamSource(device,0,NULL,0,0):runner_original_primitive_up(device,type,count,vertices,stride);
+ if(capture){EnterCriticalSection(&runner_lock);uma_selection_after(device,capture,"DPUP",runner_primitive_vertices(type,count),count);LeaveCriticalSection(&runner_lock);}return result;
 }
 static HRESULT WINAPI runner_indexed_up(IDirect3DDevice9 *device,D3DPRIMITIVETYPE type,UINT minimum,UINT vertices,UINT count,const void *indices,D3DFORMAT format,const void *data,UINT stride){
- EnterCriticalSection(&runner_lock);int hide=data && indices && stride && runner_wheel_draw(device,type,vertices,count,"DIPUP",minimum?NULL:data,stride,minimum);LeaveCriticalSection(&runner_lock);
- if(hide){HRESULT result=IDirect3DDevice9_SetStreamSource(device,0,NULL,0,0);HRESULT cleared=IDirect3DDevice9_SetIndices(device,NULL);return FAILED(result)?result:cleared;}
- return runner_original_indexed_up(device,type,minimum,vertices,count,indices,format,data,stride);
+ EnterCriticalSection(&runner_lock);int capture=uma_selection_before(device);int hide=data && indices && stride && runner_wheel_draw(device,type,vertices,count,"DIPUP",minimum?NULL:data,stride,minimum);LeaveCriticalSection(&runner_lock);
+ HRESULT result;
+ if(hide){result=IDirect3DDevice9_SetStreamSource(device,0,NULL,0,0);HRESULT cleared=IDirect3DDevice9_SetIndices(device,NULL);if(SUCCEEDED(result))result=cleared;}
+ else result=runner_original_indexed_up(device,type,minimum,vertices,count,indices,format,data,stride);
+ if(capture){EnterCriticalSection(&runner_lock);uma_selection_after(device,capture,"DIPUP",vertices,count);LeaveCriticalSection(&runner_lock);}return result;
 }
 static HRESULT WINAPI runner_draw(IDirect3DDevice9 *device,D3DPRIMITIVETYPE type,INT base,UINT minimum,UINT vertices,UINT start,UINT triangles){
- HRESULT result=E_FAIL;int replaced=0;EnterCriticalSection(&runner_lock);
+ HRESULT result=E_FAIL;int replaced=0;EnterCriticalSection(&runner_lock);int capture=uma_selection_before(device);
  int candidate=type==D3DPT_TRIANGLELIST && vertices==runner_motion.vertices && triangles==runner_motion.indices/3;
  if(candidate)runner_candidates++;
  if(candidate || (runner_renderer.device==device && runner_frames-runner_last_owned<3 && (runner_scene.references<96 || (vertices<=4096 && type==D3DPT_TRIANGLELIST) || (runner_scene.tracked && vertices==runner_scene.previous_key.vertices && triangles==runner_scene.previous_key.primitives)))){
@@ -199,8 +203,8 @@ static HRESULT WINAPI runner_draw(IDirect3DDevice9 *device,D3DPRIMITIVETYPE type
    IDirect3DVertexBuffer9_Release(vb);
   }
  }
- LeaveCriticalSection(&runner_lock);if(replaced)return result;
- return runner_original_draw(device,type,base,minimum,vertices,start,triangles);
+ LeaveCriticalSection(&runner_lock);if(!replaced)result=runner_original_draw(device,type,base,minimum,vertices,start,triangles);
+ if(capture){EnterCriticalSection(&runner_lock);uma_selection_after(device,capture,"DIP",vertices,triangles);LeaveCriticalSection(&runner_lock);}return result;
 }
 static HRESULT WINAPI runner_present(IDirect3DDevice9 *device,const RECT *source,const RECT *destination,HWND window,const RGNDATA *dirty){
  EnterCriticalSection(&runner_lock);ULONGLONG tick=GetTickCount64();float seconds=runner_last_tick?(float)(tick-runner_last_tick)*.001f:0;runner_last_tick=tick;
@@ -213,6 +217,7 @@ static HRESULT WINAPI runner_present(IDirect3DDevice9 *device,const RECT *source
   for(unsigned i=0;i<groups && i<4;i++){fprintf(runner_log,"REF votes=%u ",runner_scene.reference[i].votes);for(int r=0;r<4;r++)for(int c=0;c<3;c++)fprintf(runner_log,"%.6g,",runner_scene.reference[i].matrix.m[r][c]);fputc('\n',runner_log);}
   fprintf(runner_log,"BODY ");for(int r=0;r<4;r++)for(int c=0;c<3;c++)fprintf(runner_log,"%.6g,",runner_scene.body[0].m[r][c]);fputc('\n',runner_log);
  }
+ uma_selection_finish(device,bodies);
  runner_speed_valid=uma_scene_finish(&runner_scene,seconds,&runner_speed);
  if(seconds>0 && seconds<=.1f){
   float previous_phase=runner_state.run_phase;uma_motion_step(&runner_state,seconds,runner_speed_valid?runner_speed:0,0);
@@ -226,7 +231,7 @@ static HRESULT WINAPI runner_present(IDirect3DDevice9 *device,const RECT *source
  LeaveCriticalSection(&runner_lock);return runner_original_present(device,source,destination,window,dirty);
 }
 static HRESULT WINAPI runner_reset(IDirect3DDevice9 *device,D3DPRESENT_PARAMETERS *parameters){
- EnterCriticalSection(&runner_lock);uma_d3d_close(&runner_renderer);memset(&runner_scene,0,sizeof(runner_scene));runner_last_tick=0;runner_projection_valid=0;LeaveCriticalSection(&runner_lock);
+ EnterCriticalSection(&runner_lock);uma_selection_release();uma_d3d_close(&runner_renderer);memset(&runner_scene,0,sizeof(runner_scene));runner_last_tick=0;runner_projection_valid=0;LeaveCriticalSection(&runner_lock);
  return runner_original_reset(device,parameters);
 }
 static int runner_install(IDirect3DDevice9 *device){
@@ -245,7 +250,7 @@ static int runner_remove(void){
  if(!runner_table)return 0;
  void **table=runner_table;DWORD protection;
  if(table[81]!=(void*)runner_primitive || table[83]!=(void*)runner_primitive_up || table[84]!=(void*)runner_indexed_up || table[82]!=(void*)runner_draw || table[17]!=(void*)runner_present || table[16]!=(void*)runner_reset || !VirtualProtect(table+16,(84-16+1)*sizeof(void*),PAGE_READWRITE,&protection))return 0;
- uma_audio_close();uma_d3d_close(&runner_renderer);InterlockedExchangePointer(table+81,(void*)runner_original_primitive);InterlockedExchangePointer(table+83,(void*)runner_original_primitive_up);InterlockedExchangePointer(table+84,(void*)runner_original_indexed_up);InterlockedExchangePointer(table+82,(void*)runner_original_draw);InterlockedExchangePointer(table+17,(void*)runner_original_present);InterlockedExchangePointer(table+16,(void*)runner_original_reset);
+ uma_audio_close();uma_selection_release();uma_d3d_close(&runner_renderer);InterlockedExchangePointer(table+81,(void*)runner_original_primitive);InterlockedExchangePointer(table+83,(void*)runner_original_primitive_up);InterlockedExchangePointer(table+84,(void*)runner_original_indexed_up);InterlockedExchangePointer(table+82,(void*)runner_original_draw);InterlockedExchangePointer(table+17,(void*)runner_original_present);InterlockedExchangePointer(table+16,(void*)runner_original_reset);
  DWORD ignored;VirtualProtect(table+16,(84-16+1)*sizeof(void*),protection,&ignored);runner_table=NULL;return uma_upload_remove();
 }
 #else
@@ -253,6 +258,11 @@ static DWORD WINAPI runner_start(void *module){
  InitializeCriticalSection(&runner_lock);WCHAR root[4096],path[4096];DWORD length=GetModuleFileNameW((HMODULE)module,root,4096);if(!length || length>=4096)return 1;
  WCHAR *last=wcsrchr(root,L'\\');if(!last)return 1;*last=0;last=wcsrchr(root,L'\\');if(!last || _wcsicmp(last+1,L"scripts"))return 1;*last=0;if(wcslen(root)>3900)return 1;
  wcscpy(path,root);wcscat(path,L"\\modding\\uma-runner.log");runner_log=_wfopen(path,L"a");
+ wcscpy(path,root);wcscat(path,L"\\modding\\selection-trace.request");
+ if(GetFileAttributesW(path)!=INVALID_FILE_ATTRIBUTES){
+  wcscpy(uma_selection.folder,root);wcscat(uma_selection.folder,L"\\modding\\diagnostics\\selection-capture");
+  swprintf(path,4096,L"%ls\\trace.log",uma_selection.folder);uma_selection.log=_wfopen(path,L"w");uma_selection.enabled=uma_selection.log!=NULL;
+ }
  wcscpy(path,root);wcscat(path,L"\\modding\\runtime\\kitasan.umab");FILE *asset=_wfopen(path,L"rb");if(!asset)return 1;int loaded=uma_motion_load(asset,&runner_motion);fclose(asset);if(!loaded)return 1;
  wcscpy(runner_atlas,root);wcscat(runner_atlas,L"\\modding\\runtime\\atlas.dds");
  HWND window=CreateWindowA("STATIC","Uma renderer initialization",WS_POPUP,0,0,16,16,NULL,NULL,GetModuleHandle(NULL),NULL);IDirect3D9 *api=Direct3DCreate9(D3D_SDK_VERSION);IDirect3DDevice9 *device=NULL;

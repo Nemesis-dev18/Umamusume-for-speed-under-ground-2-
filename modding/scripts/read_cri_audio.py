@@ -52,9 +52,12 @@ def awb(data):
     if offset_width not in (2,4) or id_width!=2 or not 0<alignment<=4096 or count>10000:raise ValueError('Unsupported AFS2 layout')
     table=16+count*id_width
     if table+(count+1)*offset_width>len(data):raise ValueError('Truncated AFS2 directory')
+    seen=set()
     offsets=[int.from_bytes(data[table+i*offset_width:table+(i+1)*offset_width],'little') for i in range(count+1)];result=[]
     for i in range(count):
         begin=(offsets[i]+alignment-1)//alignment*alignment;end=offsets[i+1]
-        if begin>end or end>len(data):raise ValueError('AFS2 member outside bank')
-        result.append((struct.unpack_from('<H',data,16+i*2)[0],data[begin:end]))
+        if begin<table+(count+1)*offset_width or begin>end or end>len(data):raise ValueError('AFS2 member outside bank')
+        ident=struct.unpack_from('<H',data,16+i*2)[0]
+        if ident in seen:raise ValueError('Duplicate AFS2 wave ID')
+        seen.add(ident);result.append((ident,data[begin:end]))
     return subkey,result

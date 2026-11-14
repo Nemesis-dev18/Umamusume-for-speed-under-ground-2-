@@ -1,0 +1,22 @@
+{
+  "source_clip": "anm_rac_type03_run02_base",
+  "source_duration": 0.6000000238418579,
+  "source_character": 1068,
+  "source_race_style": 3,
+  "limb_scale_median": 1.3345280304740663,
+  "mapped_core_limb_pairs": 12,
+  "unmapped_source_bindings": 14,
+  "unmapped_policy": "Source bindings absent from body-prefab hierarchy are excluded; primary limb bindings resolved",
+  "secondary_motion": "Authored hair/tail local curves; source palms and 30 finger bones retargeted",
+  "minimum": [
+    -1.0845645425442636,
+    -0.5075666138537496,
+    -0.00010000000000001632
+  ],
+  "maximum": [
+    0.8741006058184704,
+    0.504880418202843,
+    2.125584596917904
+  ],
+  "installed": false
+}

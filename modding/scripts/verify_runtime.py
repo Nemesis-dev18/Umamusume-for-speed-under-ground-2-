@@ -21,7 +21,7 @@ def run(args, **kwargs):
 def main():
     build = RUNTIME / 'test-build'
     build.mkdir(exist_ok=True)
-    for name in ('renderer', 'runner_integration', 'runner_load', 'audio_windows'):
+    for name in ('renderer', 'runner_integration', 'runner_load', 'audio_windows', 'selection_capture'):
         run([CC, *FLAGS, RUNTIME / f'{name}_test.c', '-o', build / f'{name}-test.exe', '-ld3d9', '-luser32', '-lwinmm', '-lm'])
     run([CC, *FLAGS, '-shared', RUNTIME / 'uma_runner.c', '-o', RUNTIME / 'UmaRunner.asi', '-ld3d9', '-luser32', '-lwinmm', '-lm'])
     run(['gcc', '-std=c11', '-O2', '-Wall', '-Wextra', '-Werror', RUNTIME / 'scene_speed_test.c', '-o', build / 'scene-speed-test', '-lm'])
@@ -31,12 +31,12 @@ def main():
     fixture = RUNTIME / 'runner-load-test'
     (fixture / 'scripts').mkdir(exist_ok=True)
     (fixture / 'modding/runtime').mkdir(parents=True, exist_ok=True)
-    for name in ('kitasan.umab', 'atlas.dds', 'hoof-0.wav', 'hoof-1.wav'):
+    for name in ('kitasan.umab', 'atlas.dds', *(f'hoof-{foot}-{variant}.wav' for foot in range(2) for variant in range(10))):
         shutil.copyfile(RUNTIME / name, fixture / 'modding/runtime' / name)
     shutil.copyfile(RUNTIME / 'UmaRunner.asi', fixture / 'scripts/UmaRunner.asi')
     (fixture / 'modding/uma-runner.log').unlink(missing_ok=True)
     env = dict(os.environ, WINEPREFIX=str(WORK / 'proton-prefix/pfx'), WINEDEBUG='-all')
-    for name in ('renderer', 'runner_integration', 'runner_load', 'audio_windows'):
+    for name in ('renderer', 'runner_integration', 'runner_load', 'audio_windows', 'selection_capture'):
         run([WINE, build / f'{name}-test.exe'], env=env)
     for variant in ('--ambiguous-audio','--incompatible-audio'):
         (fixture/'modding/uma-runner.log').unlink(missing_ok=True)

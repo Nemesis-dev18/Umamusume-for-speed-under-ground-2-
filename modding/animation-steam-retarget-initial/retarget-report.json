@@ -1,0 +1,22 @@
+{
+  "source_clip": "anm_rac_type03_run02_base",
+  "source_duration": 0.6000000238418579,
+  "source_character": 1068,
+  "source_race_style": 3,
+  "limb_scale_median": 1.3345280304740663,
+  "mapped_core_limb_pairs": 12,
+  "unmapped_source_bindings": 14,
+  "unmapped_policy": "Excluded auxiliary transform curves not present in body prefab; primary limb bindings resolved",
+  "secondary_motion": "Existing authored fist/hair/tail local curves",
+  "minimum": [
+    -1.084517326331495,
+    -0.5080715924929731,
+    -0.0001000000000000211
+  ],
+  "maximum": [
+    0.8409314816180213,
+    0.5045356248700642,
+    2.125584596917904
+  ],
+  "installed": false
+}

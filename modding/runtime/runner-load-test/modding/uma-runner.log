@@ -1,0 +1,2 @@
+AUDIO engineProfiles=0 mappingProfiles=1 installed=0; mutable data only; Corolla-only silent engine slot and hoof samples
+START native lighting runner installed=1; graphics-derived speed uncalibrated; shared motion state for Corolla instances

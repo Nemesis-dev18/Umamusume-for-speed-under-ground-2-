@@ -1,0 +1,1093 @@
+18:32:47:732 [07888] | INFO  | Initializing crosire's ReShade version '4.9.1.1002' (32-bit) built on '2021-01-09 21:10:30' loaded from "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\d3d9.dll" into "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\SPEED2.EXE" ...
+18:32:47:756 [07888] | INFO  | Registering hooks for "user32.dll" ...
+18:32:47:771 [07888] | INFO  | > Libraries loaded.
+18:32:47:781 [07888] | INFO  | > Found 14 match(es). Installing ...
+18:32:47:791 [07888] | INFO  | Registering hooks for "ws2_32.dll" ...
+18:32:47:801 [07888] | INFO  | > Libraries loaded.
+18:32:47:801 [07888] | INFO  | > Found 8 match(es). Installing ...
+18:32:47:816 [07888] | INFO  | Registering hooks for "C:\Windows\system32\d2d1.dll" ...
+18:32:47:821 [07888] | INFO  | > Delayed.
+18:32:47:821 [07888] | INFO  | Registering hooks for "C:\Windows\system32\d3d9.dll" ...
+18:32:47:832 [07888] | INFO  | > Delayed until first call to an exported function.
+18:32:47:832 [07888] | INFO  | Registering hooks for "C:\Windows\system32\d3d10.dll" ...
+18:32:47:832 [07888] | INFO  | > Delayed.
+18:32:47:832 [07888] | INFO  | Registering hooks for "C:\Windows\system32\d3d10_1.dll" ...
+18:32:47:832 [07888] | INFO  | > Delayed.
+18:32:47:832 [07888] | INFO  | Registering hooks for "C:\Windows\system32\d3d11.dll" ...
+18:32:47:832 [07888] | INFO  | > Delayed.
+18:32:47:832 [07888] | INFO  | Registering hooks for "C:\Windows\system32\d3d12.dll" ...
+18:32:47:832 [07888] | INFO  | > Delayed.
+18:32:47:832 [07888] | INFO  | Registering hooks for "C:\Windows\system32\dxgi.dll" ...
+18:32:47:832 [07888] | INFO  | > Libraries loaded.
+18:32:47:832 [07888] | INFO  | > Found 5 match(es). Installing ...
+18:32:47:847 [07888] | INFO  | Registering hooks for "C:\Windows\system32\opengl32.dll" ...
+18:32:47:847 [07888] | INFO  | > Delayed.
+18:32:47:854 [07888] | INFO  | Initialized.
+18:32:47:901 [03272] | WARN  | Ignoring LoadLibrary("ext-ms-win-mininput-inputhost-l1-1-0.dll") call to avoid possible deadlock.
+18:32:48:071 [05288] | INFO  | Redirecting Direct3DCreate9(SDKVersion = 32) ...
+18:32:48:074 [05288] | INFO  | Installing export hooks for "C:\Windows\system32\d3d9.dll" ...
+18:32:48:075 [05288] | INFO  | > Found 9 match(es). Installing ...
+18:32:48:123 [05288] | INFO  | Redirecting RegisterClassExA(lpWndClassEx = 0019FE50 { GameFrame }) ...
+18:32:48:123 [05288] | INFO  | > Adding 'CS_OWNDC' window class style flag to 'GameFrame'.
+18:32:48:143 [05288] | INFO  | Redirecting IDirect3D9::CreateDevice(this = 00D2BB00, Adapter = 0, DeviceType = 1, hFocusWindow = 000D0786, BehaviorFlags = 0x50, pPresentationParameters = 0086F870, ppReturnedDeviceInterface = 00870974) ...
+18:32:48:147 [05288] | INFO  | > Dumping presentation parameters:
+18:32:48:147 [05288] | INFO  |   +-----------------------------------------+-----------------------------------------+
+18:32:48:148 [05288] | INFO  |   | Parameter                               | Value                                   |
+18:32:48:148 [05288] | INFO  |   +-----------------------------------------+-----------------------------------------+
+18:32:48:148 [05288] | INFO  |   | BackBufferWidth                         | 1920                                    |
+18:32:48:148 [05288] | INFO  |   | BackBufferHeight                        | 1080                                    |
+18:32:48:149 [05288] | INFO  |   | BackBufferFormat                        | D3DFMT_A8R8G8B8                         |
+18:32:48:149 [05288] | INFO  |   | BackBufferCount                         | 0                                       |
+18:32:48:149 [05288] | INFO  |   | MultiSampleType                         | 0                                       |
+18:32:48:149 [05288] | INFO  |   | MultiSampleQuality                      | 0                                       |
+18:32:48:149 [05288] | INFO  |   | SwapEffect                              | 1                                       |
+18:32:48:149 [05288] | INFO  |   | DeviceWindow                            | 000D0786                                |
+18:32:48:149 [05288] | INFO  |   | Windowed                                | FALSE                                   |
+18:32:48:149 [05288] | INFO  |   | EnableAutoDepthStencil                  | TRUE                                    |
+18:32:48:150 [05288] | INFO  |   | AutoDepthStencilFormat                  | 75                                      |
+18:32:48:150 [05288] | INFO  |   | Flags                                   | 0                                       |
+18:32:48:150 [05288] | INFO  |   | FullScreen_RefreshRateInHz              | 0                                       |
+18:32:48:150 [05288] | INFO  |   | PresentationInterval                    | 0x80000000                              |
+18:32:48:151 [05288] | INFO  |   +-----------------------------------------+-----------------------------------------+
+18:32:48:473 [05288] | INFO  | Running on NVIDIA GeForce GTX 1660 Driver 496.49
+18:32:48:475 [05288] | INFO  | Recreated runtime environment on runtime 08A54870.
+18:33:09:829 [01524] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\3DFX.fx".
+18:33:09:832 [01524] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\AdaptiveFog.fx".
+18:33:09:840 [01524] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\AdaptiveSharpen.fx".
+18:33:09:847 [05560] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Clarity.fx".
+18:33:09:860 [05560] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\ColorLab.fx".
+18:33:09:864 [05560] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\ColorMatrix.fx".
+18:33:09:867 [05560] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Colourfulness.fx".
+18:33:09:875 [05560] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\ContrastStretch.fx".
+18:33:09:883 [05560] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CRT.fx".
+18:33:09:887 [05560] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CRT_Lottes.fx".
+18:33:09:891 [05560] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CRT_Yee64.fx".
+18:33:09:894 [05560] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CRT_Yeetron.fx".
+18:33:09:898 [05560] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Cursor.fx".
+18:33:09:901 [05560] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Curves.fx".
+18:33:09:903 [05560] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daltonize.fx".
+18:33:09:907 [05560] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Deband.fx".
+18:33:09:924 [05560] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Dehaze.fx".
+18:33:09:933 [05560] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Denoise.fx".
+18:33:09:942 [05560] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Depth3D.fx".
+18:33:09:949 [05560] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\DepthAlpha.fx".
+18:33:09:951 [05560] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\DepthHaze.fx".
+18:33:09:956 [05560] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\DisplayDepth.fx".
+18:33:09:867 [01608] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\MultiFX.fx".
+18:33:09:959 [01608] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\MultiLUT.fx".
+18:33:09:965 [01608] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\MXAO.fx".
+18:33:09:979 [01608] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\NeoBloom.fx".
+18:33:09:991 [01608] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\NightVision.fx".
+18:33:09:995 [01608] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\NormalMap.fx".
+18:33:10:009 [01608] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Nostalgia.fx".
+18:33:10:015 [01608] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Oilify.fx".
+18:33:10:018 [01608] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Overlay.fx".
+18:33:10:021 [01608] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PerfectPerspective.fx".
+18:33:10:026 [01608] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PiecewiseFilmicTonemap.fx".
+18:33:10:034 [01608] | WARN  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Pong.fx" with warnings:
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\FXShaders/Digits.fxh(827, 31): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Pong.fx(244, 38): warning X3206: implicit truncation of vector type
+
+18:33:10:041 [01608] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PPFX_Bloom.fx".
+18:33:10:081 [01608] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PPFX_Godrays.fx".
+18:33:10:093 [01608] | WARN  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PPFX_SSDO.fx" with warnings:
+warning: V__texNoise: another effect (PD80_02_Bonus_LUT_pack.fx) already created a texture with the same name but different dimensions
+warning: V__texNoise: another effect (PD80_02_Bonus_LUT_pack.fx) already created a texture with a different image file
+
+18:33:10:104 [01608] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Prism.fx".
+18:33:09:849 [00640] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Dither.fx".
+18:33:10:159 [00640] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\DOF.fx".
+18:33:10:165 [00640] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\DPX.fx".
+18:33:10:168 [00640] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Emphasize.fx".
+18:33:10:174 [00640] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\EyeAdaption.fx".
+18:33:10:177 [00640] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\FakeHDR.fx".
+18:33:10:181 [00640] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\FakeMotionBlur.fx".
+18:33:10:183 [00640] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\FilmGrain.fx".
+18:33:10:149 [04440] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Fubax\Cursor.fx".
+18:33:10:225 [04440] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Fubax\FilmicAnamorphSharpen.fx".
+18:33:10:228 [04440] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Fubax\FilmicSharpen.fx".
+18:33:10:036 [07996] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\OtisFX\CinematicDOF.fx".
+18:33:10:240 [07996] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\OtisFX\DepthHaze.fx".
+18:33:10:244 [07996] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\OtisFX\DirectionalDepthBlur.fx".
+18:33:10:246 [07996] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\OtisFX\Emphasize.fx".
+18:33:10:249 [07996] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\OtisFX\MagicBorder.fx".
+18:33:10:252 [07996] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\OtisFX\MultiLUT.fx".
+18:33:10:259 [07996] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\OtisFX\PandaFX.fx".
+18:33:10:265 [07996] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\AspectRatioComposition.fx".
+18:33:10:268 [07996] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\ColorfulPoster.fx".
+18:33:10:274 [07996] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\ColorIsolation.fx".
+18:33:10:280 [07996] | WARN  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\Comic.fx" with warnings:
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\Comic.fx(414, 33): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\Comic.fx(416, 17): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\Comic.fx(417, 17): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\Comic.fx(418, 17): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\Comic.fx(419, 17): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\Comic.fx(422, 17): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\Comic.fx(423, 17): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\Comic.fx(424, 17): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\Comic.fx(425, 17): warning X3206: implicit truncation of vector type
+
+18:33:10:282 [07996] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\HotsamplingHelper.fx".
+18:33:10:285 [07996] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\MeshEdges.fx".
+18:33:10:288 [07996] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\MultiTonePoster.fx".
+18:33:10:291 [07996] | WARN  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\RemoveTint.fx" with warnings:
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\RemoveTint.fx(69, 64): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\RemoveTint.fx(85, 76): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\RemoveTint.fx(100, 94): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\RemoveTint.fx(101, 94): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\RemoveTint.fx(110, 76): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\RemoveTint.fx(111, 76): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\RemoveTint.fx(116, 72): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\RemoveTint.fx(117, 72): warning X3206: implicit truncation of vector type
+
+18:33:10:293 [07996] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\RetroTint.fx".
+18:33:10:296 [07996] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Fubax\AspectRatio.fx".
+18:33:10:298 [07996] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Fubax\BeforeAfter.fx".
+18:33:10:301 [07996] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Fubax\Chromakey.fx".
+18:33:10:001 [10920] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_05_Sharpening.fx".
+18:33:10:305 [10920] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_06_Chromatic_Aberration.fx".
+18:33:10:310 [10920] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_06_Depth_Slicer.fx".
+18:33:10:316 [10920] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_06_Film_Grain.fx".
+18:33:10:319 [10920] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_06_Luma_Fade.fx".
+18:33:10:322 [10920] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_06_Posterize_Pixelate.fx".
+18:33:10:352 [10920] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Depth3D\SuperDepth3D.fx".
+18:33:10:379 [10920] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Depth3D\SuperDepth3D_VR+.fx".
+18:33:10:390 [10920] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\AstrayFX\BloomingHDR.fx".
+18:33:10:400 [10920] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\AstrayFX\Clarity.fx".
+18:33:10:409 [10920] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\AstrayFX\Depth_Cues.fx".
+18:33:10:419 [10920] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\AstrayFX\DLAA_Plus.fx".
+18:33:10:427 [10920] | WARN  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\AstrayFX\eMotionBlur.fx" with warnings:
+warning: V__currTex: another effect (FakeMotionBlur.fx) already created a texture with the same name but different dimensions
+warning: V__prevTex: another effect (FakeMotionBlur.fx) already created a texture with the same name but different dimensions
+
+18:33:10:436 [10920] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\AstrayFX\Flair.fx".
+18:33:09:997 [06564] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_02_Bonus_LUT_pack.fx".
+18:33:10:452 [06564] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_02_Cinetools_LUT.fx".
+18:33:10:456 [06564] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_02_LUT_Creator.fx".
+18:33:10:461 [06564] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_03_Color_Space_Curves.fx".
+18:33:10:465 [06564] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_03_Curved_Levels.fx".
+18:33:10:468 [06564] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_03_Filmic_Adaptation.fx".
+18:33:10:473 [06564] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_03_Levels.fx".
+18:33:10:479 [06564] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_03_Shadows_Midtones_Highlights.fx".
+18:33:10:485 [06564] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_04_BlacknWhite.fx".
+18:33:10:488 [06564] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_04_Color_Balance.fx".
+18:33:10:493 [06564] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_04_Color_Gradients.fx".
+18:33:10:499 [06564] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_04_Color_Isolation.fx".
+18:33:10:503 [06564] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_04_Color_Temperature.fx".
+18:33:10:511 [06564] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_04_Contrast_Brightness_Saturation.fx".
+18:33:10:519 [06564] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_04_Magical_Rectangle.fx".
+18:33:10:523 [06564] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_04_Saturation_Limit.fx".
+18:33:10:528 [06564] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_04_Selective_Color.fx".
+18:33:10:540 [06564] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_04_Selective_Color_v2.fx".
+18:33:10:546 [06564] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_04_Technicolor.fx".
+18:33:09:970 [12156] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\ReVeil.fx".
+18:33:10:549 [12156] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\SCurve.fx".
+18:33:10:551 [12156] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Sepia.fx".
+18:33:10:553 [12156] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\SharpContrast.fx".
+18:33:09:852 [00536] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\GrainSpread.fx".
+18:33:10:559 [00536] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\HexLensFlare.fx".
+18:33:10:574 [00536] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\HighPassSharpen.fx".
+18:33:10:577 [00536] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\HQ4X.fx".
+18:33:10:580 [00536] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\HSLShift.fx".
+18:33:10:582 [00536] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Layer.fx".
+18:33:10:585 [00536] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Levels.fx".
+18:33:10:588 [00536] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\LevelsPlus.fx".
+18:33:10:590 [00536] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\LiftGammaGain.fx".
+18:33:10:593 [00536] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\LightDoF.fx".
+18:33:10:600 [00536] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\LiquidLens.fx".
+18:33:10:605 [00536] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\LocalContrastCS.fx".
+18:33:10:622 [00536] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\LumaSharpen.fx".
+18:33:10:629 [00536] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\LUT.fx".
+18:33:10:634 [00536] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\MagicBloom.fx".
+18:33:10:645 [00536] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\MagicHDR.fx".
+18:33:10:648 [00536] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\MBMB.fx".
+18:33:10:651 [00536] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\MinimalColorGrading.fx".
+18:33:10:656 [00536] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Monochrome.fx".
+18:33:09:857 [01524] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\AdaptiveTonemapper.fx".
+18:33:10:663 [01524] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\AmbientLight.fx".
+18:33:10:667 [01524] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\ArcaneBloom.fx".
+18:33:10:670 [01524] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\ArtisticVignette.fx".
+18:33:10:674 [01524] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\ASCII.fx".
+18:33:10:676 [01524] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\AspectRatio.fx".
+18:33:10:679 [01524] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\AspectRatioSuite.fx".
+18:33:10:684 [01524] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\BilateralComic.fx".
+18:33:10:690 [01524] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Bloom.fx".
+18:33:10:692 [01524] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Border.fx".
+18:33:10:698 [01524] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\BulgePinch.fx".
+18:33:10:701 [01524] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Cartoon.fx".
+18:33:10:706 [01524] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CAS.fx".
+18:33:10:708 [01524] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Checkerboard.fx".
+18:33:10:715 [01524] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Chromakey.fx".
+18:33:10:717 [01524] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\ChromaticAberration.fx".
+18:33:10:730 [01524] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CinematicDOF.fx".
+18:33:10:234 [00640] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\FilmGrain2.fx".
+18:33:10:739 [00640] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\FilmicAnamorphSharpen.fx".
+18:33:10:743 [00640] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\FilmicPass.fx".
+18:33:10:747 [00640] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\FineSharp.fx".
+18:33:10:749 [00640] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Flashlight.fx".
+18:33:10:752 [00640] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\FlexibleCA.fx".
+18:33:10:754 [00640] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\FocalDOF.fx".
+18:33:10:757 [00640] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\FramerateLimiter.fx".
+18:33:10:762 [00640] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\FXAA.fx".
+18:33:10:766 [00640] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\GaussianBlur.fx".
+18:33:10:772 [00640] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\GaussianBlurCS.fx".
+18:33:10:776 [00640] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Glitch.fx".
+18:33:09:986 [08956] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\UnrealLens.fx".
+18:33:10:786 [08956] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Unsharp.fx".
+18:33:10:789 [08956] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Vibrance.fx".
+18:33:10:792 [08956] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Vignette.fx".
+18:33:10:799 [08956] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\VirtualResolution.fx".
+18:33:10:801 [08956] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\VRS_Map.fx".
+18:33:10:811 [08956] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Wave.fx".
+18:33:10:822 [08956] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\WhitepointFixer.fx".
+18:33:10:825 [08956] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\ZigZag.fx".
+18:33:10:829 [08956] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\qUINT\qUINT_bloom.fx".
+18:33:10:832 [08956] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\qUINT\qUINT_deband.fx".
+18:33:10:843 [08956] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\qUINT\qUINT_dof.fx".
+18:33:10:852 [08956] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\qUINT\qUINT_lightroom.fx".
+18:33:10:858 [08956] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\qUINT\qUINT_mxao.fx".
+18:33:10:861 [08956] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\qUINT\qUINT_sharp.fx".
+18:33:10:866 [08956] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\qUINT\qUINT_ssr.fx".
+18:33:10:870 [08956] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_01A_RT_Correct_Contrast.fx".
+18:33:10:876 [08956] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_01B_RT_Correct_Color.fx".
+18:33:10:882 [08956] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_01_Color_Gamut.fx".
+18:33:10:888 [08956] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_02_Bloom.fx".
+18:33:10:178 [01608] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\qUINT_rtgi.fx".
+18:33:10:898 [01608] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\qUINT_rtgi_cs.fx".
+18:33:10:908 [01608] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\ReflectiveBumpMapping.fx".
+18:33:10:911 [01608] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\RetroFog.fx".
+18:33:10:557 [12156] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Sketch.fx".
+18:33:10:921 [12156] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\SMAA.fx".
+18:33:10:924 [12156] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Splitscreen.fx".
+18:33:10:926 [12156] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\StageDepth.fx".
+18:33:10:931 [12156] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\SurfaceBlur.fx".
+18:33:10:448 [10920] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\AstrayFX\NFAA.fx".
+18:33:10:963 [10920] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\AstrayFX\RadiantGI.fx".
+18:33:10:970 [10920] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\AstrayFX\Smart_Sharp.fx".
+18:33:10:976 [10920] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\AstrayFX\Temporal_AA.fx".
+18:33:10:981 [10920] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\AstrayFX\Trails.fx".
+18:33:10:983 [10920] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\OtisFX\AdaptiveFog.fx".
+18:33:10:939 [12156] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Swirl.fx".
+18:33:10:986 [12156] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Technicolor.fx".
+18:33:10:989 [12156] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Technicolor2.fx".
+18:33:10:991 [12156] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\TiltShift.fx".
+18:33:10:994 [12156] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\TinyPlanet.fx".
+18:33:10:996 [12156] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Tonemap.fx".
+18:33:11:000 [12156] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\TrackingRays.fx".
+18:33:11:002 [12156] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\UIDetect.fx".
+18:33:11:005 [12156] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\UIMask.fx".
+18:33:11:007 [12156] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\UIMaskCreator.fx".
+18:33:10:231 [04440] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Fubax\Flipbook.fx".
+18:33:11:012 [04440] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Fubax\Image.fx".
+18:33:11:016 [04440] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Fubax\Interlaced.fx".
+18:33:11:036 [04440] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Fubax\Letterbox.fx".
+18:33:11:047 [04440] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Fubax\LUTTools.fx".
+18:33:11:071 [04440] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Fubax\PerfectPerspective.fx".
+18:33:11:085 [04440] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Fubax\Prism.fx".
+18:33:11:087 [04440] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Fubax\SimpleGrain.fx".
+18:33:11:097 [04440] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Fubax\SunsetFilter.fx".
+18:33:11:100 [04440] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Fubax\TiltShift.fx".
+18:33:11:111 [04440] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\CanvasFog.fx".
+18:33:11:116 [04440] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\CanvasMask.fx".
+18:33:11:120 [04440] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\ColorMask.fx".
+18:33:11:122 [04440] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\Flip.fx".
+18:33:11:128 [04440] | WARN  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx" with warnings:
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(370, 50): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(370, 68): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(370, 27): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(371, 48): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(371, 66): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(371, 27): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(372, 49): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(372, 67): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(372, 27): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(373, 48): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(373, 66): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(373, 27): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(374, 49): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(374, 67): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(374, 27): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(375, 52): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(375, 70): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(375, 27): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(376, 51): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(376, 69): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(376, 27): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(377, 51): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(377, 69): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(377, 27): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(378, 51): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(378, 69): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(378, 27): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(379, 53): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(379, 71): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(379, 28): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(380, 52): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(380, 70): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(380, 28): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(381, 46): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(381, 64): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(381, 28): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(382, 53): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(382, 71): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(382, 28): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(383, 49): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(383, 67): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(383, 28): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(384, 53): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(384, 71): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(384, 28): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(385, 53): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(385, 71): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(385, 28): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(386, 54): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(386, 72): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(386, 28): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(387, 53): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(387, 71): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(387, 28): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(388, 54): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(388, 72): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(388, 28): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(389, 51): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(389, 69): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(389, 28): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(390, 50): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(390, 68): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(390, 28): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(391, 50): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(391, 68): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(391, 28): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(392, 47): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(392, 65): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(392, 28): warning X3206: implicit truncation of vector type
+
+18:33:11:135 [04440] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\StageDepthPlus.fx".
+18:33:11:808 [05288] | INFO  | Loading image files for textures ...
+18:33:11:808 [05288] | INFO  | Resizing image data for texture 'V__CursorTex' from 12x19 to 108x108 ...
+18:33:11:822 [05288] | INFO  | Resizing image data for texture 'V__texMultiLUT' from 1024x544 to 1024x576 ...
+18:33:11:903 [05288] | INFO  | Resizing image data for texture 'V__texDirt' from 1024x576 to 1920x1080 ...
+18:34:17:001 [05288] | INFO  | Redirecting IDirect3DDevice9::Reset(this = 046B26E8, pPresentationParameters = 0086F870) ...
+18:34:17:001 [05288] | INFO  | > Dumping presentation parameters:
+18:34:17:002 [05288] | INFO  |   +-----------------------------------------+-----------------------------------------+
+18:34:17:002 [05288] | INFO  |   | Parameter                               | Value                                   |
+18:34:17:002 [05288] | INFO  |   +-----------------------------------------+-----------------------------------------+
+18:34:17:002 [05288] | INFO  |   | BackBufferWidth                         | 1920                                    |
+18:34:17:003 [05288] | INFO  |   | BackBufferHeight                        | 1080                                    |
+18:34:17:003 [05288] | INFO  |   | BackBufferFormat                        | D3DFMT_A8R8G8B8                         |
+18:34:17:003 [05288] | INFO  |   | BackBufferCount                         | 0                                       |
+18:34:17:003 [05288] | INFO  |   | MultiSampleType                         | 0                                       |
+18:34:17:004 [05288] | INFO  |   | MultiSampleQuality                      | 0                                       |
+18:34:17:004 [05288] | INFO  |   | SwapEffect                              | 1                                       |
+18:34:17:004 [05288] | INFO  |   | DeviceWindow                            | 000D0786                                |
+18:34:17:004 [05288] | INFO  |   | Windowed                                | FALSE                                   |
+18:34:17:004 [05288] | INFO  |   | EnableAutoDepthStencil                  | TRUE                                    |
+18:34:17:005 [05288] | INFO  |   | AutoDepthStencilFormat                  | 75                                      |
+18:34:17:005 [05288] | INFO  |   | Flags                                   | 0                                       |
+18:34:17:005 [05288] | INFO  |   | FullScreen_RefreshRateInHz              | 0                                       |
+18:34:17:006 [05288] | INFO  |   | PresentationInterval                    | 0x80000000                              |
+18:34:17:006 [05288] | INFO  |   +-----------------------------------------+-----------------------------------------+
+18:34:17:009 [05288] | INFO  | Destroyed runtime environment on runtime 08A54870.
+18:34:17:080 [05288] | INFO  | Recreated runtime environment on runtime 08A54870.
+18:34:17:081 [05288] | INFO  | Redirecting IDirect3DDevice9::Reset(this = 046B26E8, pPresentationParameters = 0086F870) ...
+18:34:17:081 [05288] | INFO  | > Dumping presentation parameters:
+18:34:17:081 [05288] | INFO  |   +-----------------------------------------+-----------------------------------------+
+18:34:17:081 [05288] | INFO  |   | Parameter                               | Value                                   |
+18:34:17:082 [05288] | INFO  |   +-----------------------------------------+-----------------------------------------+
+18:34:17:082 [05288] | INFO  |   | BackBufferWidth                         | 1920                                    |
+18:34:17:082 [05288] | INFO  |   | BackBufferHeight                        | 1080                                    |
+18:34:17:082 [05288] | INFO  |   | BackBufferFormat                        | D3DFMT_A8R8G8B8                         |
+18:34:17:083 [05288] | INFO  |   | BackBufferCount                         | 1                                       |
+18:34:17:083 [05288] | INFO  |   | MultiSampleType                         | 0                                       |
+18:34:17:083 [05288] | INFO  |   | MultiSampleQuality                      | 0                                       |
+18:34:17:083 [05288] | INFO  |   | SwapEffect                              | 1                                       |
+18:34:17:083 [05288] | INFO  |   | DeviceWindow                            | 000D0786                                |
+18:34:17:084 [05288] | INFO  |   | Windowed                                | FALSE                                   |
+18:34:17:084 [05288] | INFO  |   | EnableAutoDepthStencil                  | TRUE                                    |
+18:34:17:084 [05288] | INFO  |   | AutoDepthStencilFormat                  | 75                                      |
+18:34:17:084 [05288] | INFO  |   | Flags                                   | 0                                       |
+18:34:17:085 [05288] | INFO  |   | FullScreen_RefreshRateInHz              | 0                                       |
+18:34:17:085 [05288] | INFO  |   | PresentationInterval                    | 0x80000000                              |
+18:34:17:085 [05288] | INFO  |   +-----------------------------------------+-----------------------------------------+
+18:34:17:085 [05288] | INFO  | Destroyed runtime environment on runtime 08A54870.
+18:34:17:100 [05288] | INFO  | Recreated runtime environment on runtime 08A54870.
+18:34:17:261 [12188] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\3DFX.fx".
+18:34:17:264 [12188] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\AdaptiveFog.fx".
+18:34:17:271 [12188] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\AdaptiveSharpen.fx".
+18:34:17:277 [11960] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Clarity.fx".
+18:34:17:290 [11960] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\ColorLab.fx".
+18:34:17:295 [11960] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\ColorMatrix.fx".
+18:34:17:287 [12188] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\AdaptiveTonemapper.fx".
+18:34:17:307 [12188] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\AmbientLight.fx".
+18:34:17:314 [12188] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\ArcaneBloom.fx".
+18:34:17:317 [12188] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\ArtisticVignette.fx".
+18:34:17:321 [12188] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\ASCII.fx".
+18:34:17:323 [12188] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\AspectRatio.fx".
+18:34:17:327 [12188] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\AspectRatioSuite.fx".
+18:34:17:331 [12188] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\BilateralComic.fx".
+18:34:17:337 [12188] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Bloom.fx".
+18:34:17:339 [12188] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Border.fx".
+18:34:17:345 [12188] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\BulgePinch.fx".
+18:34:17:347 [12188] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Cartoon.fx".
+18:34:17:353 [12188] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CAS.fx".
+18:34:17:356 [12188] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Checkerboard.fx".
+18:34:17:362 [12188] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Chromakey.fx".
+18:34:17:364 [12188] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\ChromaticAberration.fx".
+18:34:17:377 [12188] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CinematicDOF.fx".
+18:34:17:280 [10224] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Dither.fx".
+18:34:17:398 [10224] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\DOF.fx".
+18:34:17:412 [10224] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\DPX.fx".
+18:34:17:414 [10224] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Emphasize.fx".
+18:34:17:420 [10224] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\EyeAdaption.fx".
+18:34:17:423 [10224] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\FakeHDR.fx".
+18:34:17:428 [10224] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\FakeMotionBlur.fx".
+18:34:17:431 [10224] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\FilmGrain.fx".
+18:34:17:438 [10224] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\FilmGrain2.fx".
+18:34:17:441 [10224] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\FilmicAnamorphSharpen.fx".
+18:34:17:446 [10224] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\FilmicPass.fx".
+18:34:17:456 [10224] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\FineSharp.fx".
+18:34:17:458 [10224] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Flashlight.fx".
+18:34:17:462 [10224] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\FlexibleCA.fx".
+18:34:17:465 [10224] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\FocalDOF.fx".
+18:34:17:470 [10224] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\FramerateLimiter.fx".
+18:34:17:475 [10224] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\FXAA.fx".
+18:34:17:479 [10224] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\GaussianBlur.fx".
+18:34:17:481 [10224] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\GaussianBlurCS.fx".
+18:34:17:487 [10224] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Glitch.fx".
+18:34:17:292 [08712] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\MultiFX.fx".
+18:34:17:490 [08712] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\MultiLUT.fx".
+18:34:17:496 [08712] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\MXAO.fx".
+18:34:17:509 [08712] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\NeoBloom.fx".
+18:34:17:524 [08712] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\NightVision.fx".
+18:34:17:527 [08712] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\NormalMap.fx".
+18:34:17:540 [08712] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Nostalgia.fx".
+18:34:17:606 [08712] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Oilify.fx".
+18:34:17:759 [08712] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Overlay.fx".
+18:34:17:762 [08712] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PerfectPerspective.fx".
+18:34:17:767 [08712] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PiecewiseFilmicTonemap.fx".
+18:34:17:773 [08712] | WARN  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Pong.fx" with warnings:
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\FXShaders/Digits.fxh(827, 31): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Pong.fx(244, 38): warning X3206: implicit truncation of vector type
+
+18:34:17:792 [08712] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PPFX_Bloom.fx".
+18:34:17:795 [08712] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PPFX_Godrays.fx".
+18:34:17:799 [08712] | WARN  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PPFX_SSDO.fx" with warnings:
+warning: V__texNoise: another effect (PD80_02_Bonus_LUT_pack.fx) already created a texture with the same name but different dimensions
+warning: V__texNoise: another effect (PD80_02_Bonus_LUT_pack.fx) already created a texture with a different image file
+
+18:34:17:802 [08712] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Prism.fx".
+18:34:17:818 [08712] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\qUINT_rtgi.fx".
+18:34:17:839 [08712] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\qUINT_rtgi_cs.fx".
+18:34:17:843 [08712] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\ReflectiveBumpMapping.fx".
+18:34:17:854 [08712] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\RetroFog.fx".
+18:34:17:283 [01928] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\GrainSpread.fx".
+18:34:17:857 [01928] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\HexLensFlare.fx".
+18:34:17:861 [01928] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\HighPassSharpen.fx".
+18:34:17:864 [01928] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\HQ4X.fx".
+18:34:17:867 [01928] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\HSLShift.fx".
+18:34:17:870 [01928] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Layer.fx".
+18:34:17:872 [01928] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Levels.fx".
+18:34:17:879 [01928] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\LevelsPlus.fx".
+18:34:17:881 [01928] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\LiftGammaGain.fx".
+18:34:17:884 [01928] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\LightDoF.fx".
+18:34:17:891 [01928] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\LiquidLens.fx".
+18:34:17:894 [01928] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\LocalContrastCS.fx".
+18:34:17:897 [01928] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\LumaSharpen.fx".
+18:34:17:903 [01928] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\LUT.fx".
+18:34:17:907 [01928] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\MagicBloom.fx".
+18:34:17:915 [01928] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\MagicHDR.fx".
+18:34:17:920 [01928] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\MBMB.fx".
+18:34:17:922 [01928] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\MinimalColorGrading.fx".
+18:34:17:928 [01928] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Monochrome.fx".
+18:34:17:458 [06184] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Fubax\Cursor.fx".
+18:34:17:932 [06184] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Fubax\FilmicAnamorphSharpen.fx".
+18:34:17:935 [06184] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Fubax\FilmicSharpen.fx".
+18:34:17:937 [06184] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Fubax\Flipbook.fx".
+18:34:17:940 [06184] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Fubax\Image.fx".
+18:34:17:942 [06184] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Fubax\Interlaced.fx".
+18:34:17:945 [06184] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Fubax\Letterbox.fx".
+18:34:17:947 [06184] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Fubax\LUTTools.fx".
+18:34:17:951 [06184] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Fubax\PerfectPerspective.fx".
+18:34:17:962 [06184] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Fubax\Prism.fx".
+18:34:17:964 [06184] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Fubax\SimpleGrain.fx".
+18:34:17:967 [06184] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Fubax\SunsetFilter.fx".
+18:34:17:970 [06184] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Fubax\TiltShift.fx".
+18:34:17:978 [06184] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\CanvasFog.fx".
+18:34:17:983 [06184] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\CanvasMask.fx".
+18:34:17:988 [06184] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\ColorMask.fx".
+18:34:17:990 [06184] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\Flip.fx".
+18:34:17:996 [06184] | WARN  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx" with warnings:
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(370, 50): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(370, 68): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(370, 27): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(371, 48): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(371, 66): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(371, 27): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(372, 49): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(372, 67): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(372, 27): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(373, 48): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(373, 66): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(373, 27): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(374, 49): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(374, 67): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(374, 27): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(375, 52): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(375, 70): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(375, 27): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(376, 51): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(376, 69): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(376, 27): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(377, 51): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(377, 69): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(377, 27): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(378, 51): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(378, 69): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(378, 27): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(379, 53): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(379, 71): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(379, 28): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(380, 52): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(380, 70): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(380, 28): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(381, 46): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(381, 64): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(381, 28): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(382, 53): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(382, 71): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(382, 28): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(383, 49): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(383, 67): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(383, 28): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(384, 53): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(384, 71): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(384, 28): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(385, 53): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(385, 71): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(385, 28): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(386, 54): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(386, 72): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(386, 28): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(387, 53): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(387, 71): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(387, 28): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(388, 54): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(388, 72): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(388, 28): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(389, 51): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(389, 69): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(389, 28): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(390, 50): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(390, 68): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(390, 28): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(391, 50): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(391, 68): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(391, 28): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(392, 47): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(392, 65): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(392, 28): warning X3206: implicit truncation of vector type
+
+18:34:18:007 [06184] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\StageDepthPlus.fx".
+18:34:17:401 [05348] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\UnrealLens.fx".
+18:34:18:027 [05348] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Unsharp.fx".
+18:34:18:037 [05348] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Vibrance.fx".
+18:34:18:039 [05348] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Vignette.fx".
+18:34:18:046 [05348] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\VirtualResolution.fx".
+18:34:18:048 [05348] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\VRS_Map.fx".
+18:34:18:054 [05348] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Wave.fx".
+18:34:18:057 [05348] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\WhitepointFixer.fx".
+18:34:18:062 [05348] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\ZigZag.fx".
+18:34:18:067 [05348] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\qUINT\qUINT_bloom.fx".
+18:34:18:070 [05348] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\qUINT\qUINT_deband.fx".
+18:34:18:077 [05348] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\qUINT\qUINT_dof.fx".
+18:34:18:084 [05348] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\qUINT\qUINT_lightroom.fx".
+18:34:18:091 [05348] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\qUINT\qUINT_mxao.fx".
+18:34:18:109 [05348] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\qUINT\qUINT_sharp.fx".
+18:34:18:114 [05348] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\qUINT\qUINT_ssr.fx".
+18:34:18:117 [05348] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_01A_RT_Correct_Contrast.fx".
+18:34:18:132 [05348] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_01B_RT_Correct_Color.fx".
+18:34:18:138 [05348] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_01_Color_Gamut.fx".
+18:34:18:145 [05348] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_02_Bloom.fx".
+18:34:17:383 [12008] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\ReVeil.fx".
+18:34:18:148 [12008] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\SCurve.fx".
+18:34:18:150 [12008] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Sepia.fx".
+18:34:18:152 [12008] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\SharpContrast.fx".
+18:34:18:156 [12008] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Sketch.fx".
+18:34:18:165 [12008] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\SMAA.fx".
+18:34:18:168 [12008] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Splitscreen.fx".
+18:34:18:170 [12008] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\StageDepth.fx".
+18:34:18:175 [12008] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\SurfaceBlur.fx".
+18:34:18:179 [12008] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Swirl.fx".
+18:34:18:181 [12008] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Technicolor.fx".
+18:34:18:187 [12008] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Technicolor2.fx".
+18:34:18:189 [12008] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\TiltShift.fx".
+18:34:18:192 [12008] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\TinyPlanet.fx".
+18:34:18:194 [12008] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Tonemap.fx".
+18:34:18:205 [12008] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\TrackingRays.fx".
+18:34:18:207 [12008] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\UIDetect.fx".
+18:34:18:210 [12008] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\UIMask.fx".
+18:34:18:212 [12008] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\UIMaskCreator.fx".
+18:34:17:442 [01300] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\OtisFX\CinematicDOF.fx".
+18:34:18:216 [01300] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\OtisFX\DepthHaze.fx".
+18:34:18:219 [01300] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\OtisFX\DirectionalDepthBlur.fx".
+18:34:18:222 [01300] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\OtisFX\Emphasize.fx".
+18:34:18:225 [01300] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\OtisFX\MagicBorder.fx".
+18:34:18:236 [01300] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\OtisFX\MultiLUT.fx".
+18:34:18:241 [01300] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\OtisFX\PandaFX.fx".
+18:34:18:245 [01300] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\AspectRatioComposition.fx".
+18:34:18:248 [01300] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\ColorfulPoster.fx".
+18:34:18:254 [01300] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\ColorIsolation.fx".
+18:34:18:260 [01300] | WARN  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\Comic.fx" with warnings:
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\Comic.fx(414, 33): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\Comic.fx(416, 17): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\Comic.fx(417, 17): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\Comic.fx(418, 17): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\Comic.fx(419, 17): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\Comic.fx(422, 17): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\Comic.fx(423, 17): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\Comic.fx(424, 17): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\Comic.fx(425, 17): warning X3206: implicit truncation of vector type
+
+18:34:18:262 [01300] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\HotsamplingHelper.fx".
+18:34:18:265 [01300] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\MeshEdges.fx".
+18:34:18:268 [01300] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\MultiTonePoster.fx".
+18:34:18:271 [01300] | WARN  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\RemoveTint.fx" with warnings:
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\RemoveTint.fx(69, 64): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\RemoveTint.fx(85, 76): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\RemoveTint.fx(100, 94): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\RemoveTint.fx(101, 94): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\RemoveTint.fx(110, 76): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\RemoveTint.fx(111, 76): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\RemoveTint.fx(116, 72): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\RemoveTint.fx(117, 72): warning X3206: implicit truncation of vector type
+
+18:34:18:273 [01300] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\RetroTint.fx".
+18:34:18:276 [01300] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Fubax\AspectRatio.fx".
+18:34:18:278 [01300] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Fubax\BeforeAfter.fx".
+18:34:18:281 [01300] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Fubax\Chromakey.fx".
+18:34:17:415 [09884] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_05_Sharpening.fx".
+18:34:18:288 [09884] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_06_Chromatic_Aberration.fx".
+18:34:18:293 [09884] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_06_Depth_Slicer.fx".
+18:34:18:307 [09884] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_06_Film_Grain.fx".
+18:34:18:325 [09884] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_06_Luma_Fade.fx".
+18:34:18:328 [09884] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_06_Posterize_Pixelate.fx".
+18:34:18:374 [09884] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Depth3D\SuperDepth3D.fx".
+18:34:18:401 [09884] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Depth3D\SuperDepth3D_VR+.fx".
+18:34:18:413 [09884] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\AstrayFX\BloomingHDR.fx".
+18:34:18:420 [09884] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\AstrayFX\Clarity.fx".
+18:34:18:427 [09884] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\AstrayFX\Depth_Cues.fx".
+18:34:18:434 [09884] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\AstrayFX\DLAA_Plus.fx".
+18:34:18:455 [09884] | WARN  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\AstrayFX\eMotionBlur.fx" with warnings:
+warning: V__currTex: another effect (FakeMotionBlur.fx) already created a texture with the same name but different dimensions
+warning: V__prevTex: another effect (FakeMotionBlur.fx) already created a texture with the same name but different dimensions
+
+18:34:18:476 [09884] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\AstrayFX\Flair.fx".
+18:34:18:494 [09884] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\AstrayFX\NFAA.fx".
+18:34:18:521 [09884] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\AstrayFX\RadiantGI.fx".
+18:34:18:529 [09884] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\AstrayFX\Smart_Sharp.fx".
+18:34:18:536 [09884] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\AstrayFX\Temporal_AA.fx".
+18:34:18:538 [09884] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\AstrayFX\Trails.fx".
+18:34:18:541 [09884] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\OtisFX\AdaptiveFog.fx".
+18:34:17:298 [11960] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Colourfulness.fx".
+18:34:18:546 [11960] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\ContrastStretch.fx".
+18:34:18:551 [11960] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CRT.fx".
+18:34:18:555 [11960] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CRT_Lottes.fx".
+18:34:18:559 [11960] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CRT_Yee64.fx".
+18:34:18:563 [11960] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CRT_Yeetron.fx".
+18:34:18:565 [11960] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Cursor.fx".
+18:34:18:571 [11960] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Curves.fx".
+18:34:18:574 [11960] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daltonize.fx".
+18:34:18:580 [11960] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Deband.fx".
+18:34:18:597 [11960] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Dehaze.fx".
+18:34:18:812 [11960] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Denoise.fx".
+18:34:18:821 [11960] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Depth3D.fx".
+18:34:18:828 [11960] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\DepthAlpha.fx".
+18:34:18:903 [11960] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\DepthHaze.fx".
+18:34:18:906 [11960] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\DisplayDepth.fx".
+18:34:17:406 [11088] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_02_Bonus_LUT_pack.fx".
+18:34:18:915 [11088] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_02_Cinetools_LUT.fx".
+18:34:18:920 [11088] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_02_LUT_Creator.fx".
+18:34:18:925 [11088] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_03_Color_Space_Curves.fx".
+18:34:18:929 [11088] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_03_Curved_Levels.fx".
+18:34:18:932 [11088] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_03_Filmic_Adaptation.fx".
+18:34:18:937 [11088] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_03_Levels.fx".
+18:34:18:942 [11088] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_03_Shadows_Midtones_Highlights.fx".
+18:34:18:948 [11088] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_04_BlacknWhite.fx".
+18:34:18:954 [11088] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_04_Color_Balance.fx".
+18:34:18:959 [11088] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_04_Color_Gradients.fx".
+18:34:18:963 [11088] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_04_Color_Isolation.fx".
+18:34:18:971 [11088] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_04_Color_Temperature.fx".
+18:34:18:997 [11088] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_04_Contrast_Brightness_Saturation.fx".
+18:34:19:005 [11088] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_04_Magical_Rectangle.fx".
+18:34:19:009 [11088] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_04_Saturation_Limit.fx".
+18:34:19:014 [11088] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_04_Selective_Color.fx".
+18:34:19:029 [11088] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_04_Selective_Color_v2.fx".
+18:34:19:032 [11088] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_04_Technicolor.fx".
+18:34:19:615 [05288] | INFO  | Loading image files for textures ...
+18:34:19:622 [05288] | INFO  | Resizing image data for texture 'V__texDirt' from 1024x576 to 1920x1080 ...
+18:34:19:723 [05288] | INFO  | Resizing image data for texture 'V__CursorTex' from 12x19 to 108x108 ...
+18:34:19:737 [05288] | INFO  | Resizing image data for texture 'V__texMultiLUT' from 1024x544 to 1024x576 ...
+18:34:19:779 [05288] | INFO  | Redirecting IDirect3DDevice9::Reset(this = 046B26E8, pPresentationParameters = 0086F870) ...
+18:34:19:780 [05288] | INFO  | > Dumping presentation parameters:
+18:34:19:780 [05288] | INFO  |   +-----------------------------------------+-----------------------------------------+
+18:34:19:780 [05288] | INFO  |   | Parameter                               | Value                                   |
+18:34:19:780 [05288] | INFO  |   +-----------------------------------------+-----------------------------------------+
+18:34:19:780 [05288] | INFO  |   | BackBufferWidth                         | 1920                                    |
+18:34:19:781 [05288] | INFO  |   | BackBufferHeight                        | 1080                                    |
+18:34:19:781 [05288] | INFO  |   | BackBufferFormat                        | D3DFMT_A8R8G8B8                         |
+18:34:19:781 [05288] | INFO  |   | BackBufferCount                         | 0                                       |
+18:34:19:782 [05288] | INFO  |   | MultiSampleType                         | 0                                       |
+18:34:19:782 [05288] | INFO  |   | MultiSampleQuality                      | 0                                       |
+18:34:19:782 [05288] | INFO  |   | SwapEffect                              | 1                                       |
+18:34:19:782 [05288] | INFO  |   | DeviceWindow                            | 000D0786                                |
+18:34:19:782 [05288] | INFO  |   | Windowed                                | FALSE                                   |
+18:34:19:783 [05288] | INFO  |   | EnableAutoDepthStencil                  | TRUE                                    |
+18:34:19:783 [05288] | INFO  |   | AutoDepthStencilFormat                  | 75                                      |
+18:34:19:783 [05288] | INFO  |   | Flags                                   | 0                                       |
+18:34:19:784 [05288] | INFO  |   | FullScreen_RefreshRateInHz              | 0                                       |
+18:34:19:784 [05288] | INFO  |   | PresentationInterval                    | 0x80000000                              |
+18:34:19:784 [05288] | INFO  |   +-----------------------------------------+-----------------------------------------+
+18:34:19:788 [05288] | INFO  | Destroyed runtime environment on runtime 08A54870.
+18:34:19:860 [05288] | INFO  | Recreated runtime environment on runtime 08A54870.
+18:34:19:860 [05288] | INFO  | Redirecting IDirect3DDevice9::Reset(this = 046B26E8, pPresentationParameters = 0086F870) ...
+18:34:19:860 [05288] | INFO  | > Dumping presentation parameters:
+18:34:19:861 [05288] | INFO  |   +-----------------------------------------+-----------------------------------------+
+18:34:19:861 [05288] | INFO  |   | Parameter                               | Value                                   |
+18:34:19:861 [05288] | INFO  |   +-----------------------------------------+-----------------------------------------+
+18:34:19:861 [05288] | INFO  |   | BackBufferWidth                         | 1920                                    |
+18:34:19:862 [05288] | INFO  |   | BackBufferHeight                        | 1080                                    |
+18:34:19:862 [05288] | INFO  |   | BackBufferFormat                        | D3DFMT_A8R8G8B8                         |
+18:34:19:862 [05288] | INFO  |   | BackBufferCount                         | 1                                       |
+18:34:19:862 [05288] | INFO  |   | MultiSampleType                         | 0                                       |
+18:34:19:862 [05288] | INFO  |   | MultiSampleQuality                      | 0                                       |
+18:34:19:863 [05288] | INFO  |   | SwapEffect                              | 1                                       |
+18:34:19:863 [05288] | INFO  |   | DeviceWindow                            | 000D0786                                |
+18:34:19:863 [05288] | INFO  |   | Windowed                                | FALSE                                   |
+18:34:19:864 [05288] | INFO  |   | EnableAutoDepthStencil                  | TRUE                                    |
+18:34:19:864 [05288] | INFO  |   | AutoDepthStencilFormat                  | 75                                      |
+18:34:19:864 [05288] | INFO  |   | Flags                                   | 0                                       |
+18:34:19:864 [05288] | INFO  |   | FullScreen_RefreshRateInHz              | 0                                       |
+18:34:19:864 [05288] | INFO  |   | PresentationInterval                    | 0x80000000                              |
+18:34:19:865 [05288] | INFO  |   +-----------------------------------------+-----------------------------------------+
+18:34:19:865 [05288] | INFO  | Destroyed runtime environment on runtime 08A54870.
+18:34:19:879 [05288] | INFO  | Recreated runtime environment on runtime 08A54870.
+18:34:20:033 [03648] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\3DFX.fx".
+18:34:20:035 [03648] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\AdaptiveFog.fx".
+18:34:20:042 [03648] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\AdaptiveSharpen.fx".
+18:34:20:054 [03648] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\AdaptiveTonemapper.fx".
+18:34:20:060 [03648] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\AmbientLight.fx".
+18:34:20:049 [06836] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Clarity.fx".
+18:34:20:070 [06836] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\ColorLab.fx".
+18:34:20:072 [06836] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\ColorMatrix.fx".
+18:34:20:078 [06836] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Colourfulness.fx".
+18:34:20:082 [06836] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\ContrastStretch.fx".
+18:34:20:073 [12112] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\GrainSpread.fx".
+18:34:20:090 [12112] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\HexLensFlare.fx".
+18:34:20:096 [12112] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\HighPassSharpen.fx".
+18:34:20:099 [12112] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\HQ4X.fx".
+18:34:20:103 [12112] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\HSLShift.fx".
+18:34:20:106 [12112] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Layer.fx".
+18:34:20:111 [12112] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Levels.fx".
+18:34:20:114 [12112] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\LevelsPlus.fx".
+18:34:20:119 [12112] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\LiftGammaGain.fx".
+18:34:20:122 [12112] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\LightDoF.fx".
+18:34:20:129 [12112] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\LiquidLens.fx".
+18:34:20:131 [12112] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\LocalContrastCS.fx".
+18:34:20:136 [12112] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\LumaSharpen.fx".
+18:34:20:138 [12112] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\LUT.fx".
+18:34:20:146 [12112] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\MagicBloom.fx".
+18:34:20:153 [12112] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\MagicHDR.fx".
+18:34:20:157 [12112] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\MBMB.fx".
+18:34:20:161 [12112] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\MinimalColorGrading.fx".
+18:34:20:163 [12112] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Monochrome.fx".
+18:34:20:083 [00444] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\MultiFX.fx".
+18:34:20:166 [00444] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\MultiLUT.fx".
+18:34:20:172 [00444] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\MXAO.fx".
+18:34:20:184 [00444] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\NeoBloom.fx".
+18:34:20:199 [00444] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\NightVision.fx".
+18:34:20:203 [00444] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\NormalMap.fx".
+18:34:20:223 [00444] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Nostalgia.fx".
+18:34:20:241 [00444] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Oilify.fx".
+18:34:20:243 [00444] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Overlay.fx".
+18:34:20:247 [00444] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PerfectPerspective.fx".
+18:34:20:064 [03648] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\ArcaneBloom.fx".
+18:34:20:203 [11680] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_02_Bonus_LUT_pack.fx".
+18:34:20:305 [11680] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_02_Cinetools_LUT.fx".
+18:34:20:316 [11680] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_02_LUT_Creator.fx".
+18:34:20:321 [11680] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_03_Color_Space_Curves.fx".
+18:34:20:324 [11680] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_03_Curved_Levels.fx".
+18:34:20:336 [11680] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_03_Filmic_Adaptation.fx".
+18:34:20:376 [11680] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_03_Levels.fx".
+18:34:20:381 [11680] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_03_Shadows_Midtones_Highlights.fx".
+18:34:20:399 [11680] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_04_BlacknWhite.fx".
+18:34:20:404 [11680] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_04_Color_Balance.fx".
+18:34:20:409 [11680] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_04_Color_Gradients.fx".
+18:34:20:413 [11680] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_04_Color_Isolation.fx".
+18:34:20:421 [11680] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_04_Color_Temperature.fx".
+18:34:20:429 [11680] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_04_Contrast_Brightness_Saturation.fx".
+18:34:20:437 [11680] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_04_Magical_Rectangle.fx".
+18:34:20:441 [11680] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_04_Saturation_Limit.fx".
+18:34:20:446 [11680] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_04_Selective_Color.fx".
+18:34:20:458 [11680] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_04_Selective_Color_v2.fx".
+18:34:20:462 [11680] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_04_Technicolor.fx".
+18:34:20:306 [01888] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Fubax\Cursor.fx".
+18:34:20:473 [01888] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Fubax\FilmicAnamorphSharpen.fx".
+18:34:20:475 [01888] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Fubax\FilmicSharpen.fx".
+18:34:20:478 [01888] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Fubax\Flipbook.fx".
+18:34:20:480 [01888] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Fubax\Image.fx".
+18:34:20:483 [01888] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Fubax\Interlaced.fx".
+18:34:20:485 [01888] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Fubax\Letterbox.fx".
+18:34:20:487 [01888] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Fubax\LUTTools.fx".
+18:34:20:490 [01888] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Fubax\PerfectPerspective.fx".
+18:34:20:493 [01888] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Fubax\Prism.fx".
+18:34:20:495 [01888] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Fubax\SimpleGrain.fx".
+18:34:20:498 [01888] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Fubax\SunsetFilter.fx".
+18:34:20:501 [01888] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Fubax\TiltShift.fx".
+18:34:20:509 [01888] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\CanvasFog.fx".
+18:34:20:538 [01888] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\CanvasMask.fx".
+18:34:20:542 [01888] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\ColorMask.fx".
+18:34:20:553 [01888] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\Flip.fx".
+18:34:20:559 [01888] | WARN  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx" with warnings:
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(370, 50): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(370, 68): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(370, 27): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(371, 48): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(371, 66): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(371, 27): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(372, 49): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(372, 67): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(372, 27): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(373, 48): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(373, 66): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(373, 27): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(374, 49): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(374, 67): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(374, 27): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(375, 52): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(375, 70): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(375, 27): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(376, 51): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(376, 69): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(376, 27): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(377, 51): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(377, 69): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(377, 27): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(378, 51): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(378, 69): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(378, 27): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(379, 53): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(379, 71): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(379, 28): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(380, 52): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(380, 70): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(380, 28): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(381, 46): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(381, 64): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(381, 28): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(382, 53): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(382, 71): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(382, 28): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(383, 49): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(383, 67): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(383, 28): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(384, 53): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(384, 71): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(384, 28): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(385, 53): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(385, 71): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(385, 28): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(386, 54): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(386, 72): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(386, 28): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(387, 53): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(387, 71): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(387, 28): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(388, 54): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(388, 72): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(388, 28): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(389, 51): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(389, 69): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(389, 28): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(390, 50): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(390, 68): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(390, 28): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(391, 50): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(391, 68): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(391, 28): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(392, 47): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(392, 65): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\FreezeShot.fx(392, 28): warning X3206: implicit truncation of vector type
+
+18:34:20:566 [01888] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CorgiFX\StageDepthPlus.fx".
+18:34:20:186 [09844] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\ReVeil.fx".
+18:34:20:577 [09844] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\SCurve.fx".
+18:34:20:579 [09844] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Sepia.fx".
+18:34:20:581 [09844] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\SharpContrast.fx".
+18:34:20:585 [09844] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Sketch.fx".
+18:34:20:594 [09844] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\SMAA.fx".
+18:34:20:596 [09844] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Splitscreen.fx".
+18:34:20:603 [09844] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\StageDepth.fx".
+18:34:20:614 [09844] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\SurfaceBlur.fx".
+18:34:20:624 [09844] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Swirl.fx".
+18:34:20:641 [09844] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Technicolor.fx".
+18:34:20:643 [09844] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Technicolor2.fx".
+18:34:20:646 [09844] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\TiltShift.fx".
+18:34:20:648 [09844] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\TinyPlanet.fx".
+18:34:20:651 [09844] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Tonemap.fx".
+18:34:20:654 [09844] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\TrackingRays.fx".
+18:34:20:657 [09844] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\UIDetect.fx".
+18:34:20:659 [09844] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\UIMask.fx".
+18:34:20:661 [09844] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\UIMaskCreator.fx".
+18:34:20:207 [07508] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_05_Sharpening.fx".
+18:34:20:665 [07508] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_06_Chromatic_Aberration.fx".
+18:34:20:671 [07508] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_06_Depth_Slicer.fx".
+18:34:20:682 [07508] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_06_Film_Grain.fx".
+18:34:20:698 [07508] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_06_Luma_Fade.fx".
+18:34:20:701 [07508] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_06_Posterize_Pixelate.fx".
+18:34:20:740 [07508] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Depth3D\SuperDepth3D.fx".
+18:34:20:768 [07508] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Depth3D\SuperDepth3D_VR+.fx".
+18:34:20:779 [07508] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\AstrayFX\BloomingHDR.fx".
+18:34:20:786 [07508] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\AstrayFX\Clarity.fx".
+18:34:20:793 [07508] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\AstrayFX\Depth_Cues.fx".
+18:34:20:800 [07508] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\AstrayFX\DLAA_Plus.fx".
+18:34:20:808 [07508] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\AstrayFX\eMotionBlur.fx".
+18:34:20:817 [07508] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\AstrayFX\Flair.fx".
+18:34:20:833 [07508] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\AstrayFX\NFAA.fx".
+18:34:20:860 [07508] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\AstrayFX\RadiantGI.fx".
+18:34:20:867 [07508] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\AstrayFX\Smart_Sharp.fx".
+18:34:20:874 [07508] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\AstrayFX\Temporal_AA.fx".
+18:34:20:877 [07508] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\AstrayFX\Trails.fx".
+18:34:20:879 [07508] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\OtisFX\AdaptiveFog.fx".
+18:34:20:065 [08184] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Dither.fx".
+18:34:20:889 [08184] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\DOF.fx".
+18:34:20:895 [08184] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\DPX.fx".
+18:34:20:897 [08184] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Emphasize.fx".
+18:34:20:904 [08184] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\EyeAdaption.fx".
+18:34:20:906 [08184] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\FakeHDR.fx".
+18:34:20:911 [08184] | WARN  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\FakeMotionBlur.fx" with warnings:
+warning: V__currTex: another effect (eMotionBlur.fx) already created a texture with the same name but different dimensions
+warning: V__prevTex: another effect (eMotionBlur.fx) already created a texture with the same name but different dimensions
+
+18:34:20:914 [08184] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\FilmGrain.fx".
+18:34:20:917 [08184] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\FilmGrain2.fx".
+18:34:20:920 [08184] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\FilmicAnamorphSharpen.fx".
+18:34:20:929 [08184] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\FilmicPass.fx".
+18:34:20:935 [08184] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\FineSharp.fx".
+18:34:20:937 [08184] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Flashlight.fx".
+18:34:20:939 [08184] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\FlexibleCA.fx".
+18:34:20:942 [08184] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\FocalDOF.fx".
+18:34:20:944 [08184] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\FramerateLimiter.fx".
+18:34:20:950 [08184] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\FXAA.fx".
+18:34:20:954 [08184] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\GaussianBlur.fx".
+18:34:20:956 [08184] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\GaussianBlurCS.fx".
+18:34:20:962 [08184] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Glitch.fx".
+18:34:20:217 [04284] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\OtisFX\CinematicDOF.fx".
+18:34:20:966 [04284] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\OtisFX\DepthHaze.fx".
+18:34:20:969 [04284] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\OtisFX\DirectionalDepthBlur.fx".
+18:34:20:978 [04284] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\OtisFX\Emphasize.fx".
+18:34:20:981 [04284] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\OtisFX\MagicBorder.fx".
+18:34:20:986 [04284] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\OtisFX\MultiLUT.fx".
+18:34:20:991 [04284] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\OtisFX\PandaFX.fx".
+18:34:20:993 [04284] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\AspectRatioComposition.fx".
+18:34:20:996 [04284] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\ColorfulPoster.fx".
+18:34:20:999 [04284] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\ColorIsolation.fx".
+18:34:21:006 [04284] | WARN  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\Comic.fx" with warnings:
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\Comic.fx(414, 33): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\Comic.fx(416, 17): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\Comic.fx(417, 17): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\Comic.fx(418, 17): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\Comic.fx(419, 17): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\Comic.fx(422, 17): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\Comic.fx(423, 17): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\Comic.fx(424, 17): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\Comic.fx(425, 17): warning X3206: implicit truncation of vector type
+
+18:34:21:011 [04284] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\HotsamplingHelper.fx".
+18:34:21:014 [04284] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\MeshEdges.fx".
+18:34:21:020 [04284] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\MultiTonePoster.fx".
+18:34:21:023 [04284] | WARN  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\RemoveTint.fx" with warnings:
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\RemoveTint.fx(69, 64): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\RemoveTint.fx(85, 76): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\RemoveTint.fx(100, 94): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\RemoveTint.fx(101, 94): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\RemoveTint.fx(110, 76): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\RemoveTint.fx(111, 76): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\RemoveTint.fx(116, 72): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\RemoveTint.fx(117, 72): warning X3206: implicit truncation of vector type
+
+18:34:21:025 [04284] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daodan\RetroTint.fx".
+18:34:21:028 [04284] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Fubax\AspectRatio.fx".
+18:34:21:030 [04284] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Fubax\BeforeAfter.fx".
+18:34:21:033 [04284] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Fubax\Chromakey.fx".
+18:34:20:297 [00444] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PiecewiseFilmicTonemap.fx".
+18:34:21:039 [00444] | WARN  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Pong.fx" with warnings:
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\FXShaders/Digits.fxh(827, 31): warning X3206: implicit truncation of vector type
+F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Pong.fx(244, 38): warning X3206: implicit truncation of vector type
+
+18:34:21:044 [00444] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PPFX_Bloom.fx".
+18:34:21:054 [00444] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PPFX_Godrays.fx".
+18:34:21:058 [00444] | WARN  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PPFX_SSDO.fx" with warnings:
+warning: V__texNoise: another effect (PD80_02_Bonus_LUT_pack.fx) already created a texture with the same name but different dimensions
+warning: V__texNoise: another effect (PD80_02_Bonus_LUT_pack.fx) already created a texture with a different image file
+
+18:34:21:062 [00444] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Prism.fx".
+18:34:21:071 [00444] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\qUINT_rtgi.fx".
+18:34:21:080 [00444] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\qUINT_rtgi_cs.fx".
+18:34:21:084 [00444] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\ReflectiveBumpMapping.fx".
+18:34:21:087 [00444] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\RetroFog.fx".
+18:34:20:300 [03648] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\ArtisticVignette.fx".
+18:34:21:091 [03648] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\ASCII.fx".
+18:34:21:094 [03648] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\AspectRatio.fx".
+18:34:21:097 [03648] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\AspectRatioSuite.fx".
+18:34:21:101 [03648] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\BilateralComic.fx".
+18:34:21:108 [03648] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Bloom.fx".
+18:34:21:123 [03648] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Border.fx".
+18:34:21:126 [03648] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\BulgePinch.fx".
+18:34:21:128 [03648] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Cartoon.fx".
+18:34:21:131 [03648] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CAS.fx".
+18:34:21:133 [03648] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Checkerboard.fx".
+18:34:21:136 [03648] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Chromakey.fx".
+18:34:21:138 [03648] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\ChromaticAberration.fx".
+18:34:21:148 [03648] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CinematicDOF.fx".
+18:34:20:088 [06836] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CRT.fx".
+18:34:21:171 [06836] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CRT_Lottes.fx".
+18:34:21:175 [06836] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CRT_Yee64.fx".
+18:34:21:179 [06836] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\CRT_Yeetron.fx".
+18:34:21:181 [06836] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Cursor.fx".
+18:34:21:187 [06836] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Curves.fx".
+18:34:21:190 [06836] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Daltonize.fx".
+18:34:21:196 [06836] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Deband.fx".
+18:34:21:214 [06836] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Dehaze.fx".
+18:34:21:223 [06836] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Denoise.fx".
+18:34:21:232 [06836] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Depth3D.fx".
+18:34:21:254 [06836] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\DepthAlpha.fx".
+18:34:21:257 [06836] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\DepthHaze.fx".
+18:34:21:262 [06836] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\DisplayDepth.fx".
+18:34:20:193 [11156] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\UnrealLens.fx".
+18:34:21:267 [11156] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Unsharp.fx".
+18:34:21:269 [11156] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Vibrance.fx".
+18:34:21:278 [11156] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Vignette.fx".
+18:34:21:281 [11156] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\VirtualResolution.fx".
+18:34:21:286 [11156] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\VRS_Map.fx".
+18:34:21:288 [11156] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\Wave.fx".
+18:34:21:295 [11156] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\WhitepointFixer.fx".
+18:34:21:298 [11156] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\ZigZag.fx".
+18:34:21:305 [11156] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\qUINT\qUINT_bloom.fx".
+18:34:21:308 [11156] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\qUINT\qUINT_deband.fx".
+18:34:21:315 [11156] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\qUINT\qUINT_dof.fx".
+18:34:21:335 [11156] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\qUINT\qUINT_lightroom.fx".
+18:34:21:344 [11156] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\qUINT\qUINT_mxao.fx".
+18:34:21:353 [11156] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\qUINT\qUINT_sharp.fx".
+18:34:21:358 [11156] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\qUINT\qUINT_ssr.fx".
+18:34:21:362 [11156] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_01A_RT_Correct_Contrast.fx".
+18:34:21:373 [11156] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_01B_RT_Correct_Color.fx".
+18:34:21:379 [11156] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_01_Color_Gamut.fx".
+18:34:21:386 [11156] | INFO  | Successfully loaded "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\reshade-shaders\Shaders\PD80\PD80_02_Bloom.fx".
+18:34:21:980 [05288] | INFO  | Loading image files for textures ...
+18:34:21:994 [05288] | INFO  | Resizing image data for texture 'V__texMultiLUT' from 1024x544 to 1024x576 ...
+18:34:22:064 [05288] | INFO  | Resizing image data for texture 'V__CursorTex' from 12x19 to 108x108 ...
+18:34:22:071 [05288] | INFO  | Resizing image data for texture 'V__texDirt' from 1024x576 to 1920x1080 ...
+18:36:10:599 [05288] | INFO  | Saving screenshot to "F:\Jocuri\NFS Underground 2 joc bun\NFS Underground 2\SPEED2 2021-12-08 18-36-10.png" ...
+18:36:13:179 [05288] | INFO  | Exiting ...
+18:36:13:180 [05288] | INFO  | Uninstalling 41 hook(s) ...
+18:36:14:244 [05288] | INFO  | Finished exiting.

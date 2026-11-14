@@ -1,0 +1,48 @@
+{
+  "format": "UMAT v1 BGRA8, private renderer data; not EAGL",
+  "bytes": 1398132,
+  "sha256": "dbffcdf35289350997f9eb3cdf94ae78a19f09e761485d69647447a249fd8565",
+  "levels": [
+    {
+      "width": 512,
+      "height": 512
+    },
+    {
+      "width": 256,
+      "height": 256
+    },
+    {
+      "width": 128,
+      "height": 128
+    },
+    {
+      "width": 64,
+      "height": 64
+    },
+    {
+      "width": 32,
+      "height": 32
+    },
+    {
+      "width": 16,
+      "height": 16
+    },
+    {
+      "width": 8,
+      "height": 8
+    },
+    {
+      "width": 4,
+      "height": 4
+    },
+    {
+      "width": 2,
+      "height": 2
+    },
+    {
+      "width": 1,
+      "height": 1
+    }
+  ],
+  "game_integrated": false
+}
