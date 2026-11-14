@@ -93,3 +93,13 @@ Tabla de rangos de 60 bytes: count u32 en +12 y offset u32 en +52; slot crudo u8
 En la cabecera del solid, descontando filler inicial, el byte +24 coincide con los números de huesos de las cinco mallas: 24, 24, 24, 24 y 35. Se conserva como bone_count_byte y limita las entradas utilizadas de la paleta. La identificación del esqueleto específico de cada malla sigue pendiente; compartir 24 huesos no basta para elegir entre Bip02 y Bip03.
 
 19 pruebas pasan: la nueva prueba cubre las cinco mallas, cobertura de rangos y límites de paletas, y rechaza peso 1.5 e índice local 16. Verificación completa repetida: los 716 SHA-256 fuente siguen iguales. No se ha aplicado la reparación de cabeceras ni creado su .bak; sigue pendiente la respuesta a la confirmación concreta.
+
+## Reparación aprobada y aplicada
+
+El usuario respondió explícitamente «Sí, aplica la reparación con respaldo». Antes del cambio se verificó estado Git limpio, ausencia de proceso SPEED2.EXE y coincidencia exacta del SHA-256 fuente con el plan. Se creó CARS/COROLLA/GEOMETRY.BIN.bak, se verificó byte a byte y se versionó en el commit e1aadcbbdb285900323130ba84f3080a08f9c4ec antes de modificar GEOMETRY.BIN.
+
+Se escribió el temporal aprobado, se verificó su contenido, se conservó el modo de permisos y se sustituyó de forma atómica con fsync. Resultado: 9.952.256 bytes; SHA-256 1d16d7e3c9d1a7ed3f240224a6eb4e725140035188b45a2cc48fd17733d41808; exactamente ocho bytes distintos en los cuatro campos aprobados. El árbol completo de chunks coincide antes/después. Los cuatro recuentos u32 son ahora 16.557. Se conservaron todos los offsets, tamaños, materiales, texturas y referencias de colisión.
+
+De los 716 archivos del inventario original, los otros 715 conservan su hash. El respaldo es una adición intencionada, no una modificación de otro recurso. El informe verificable está en modding/header-repair-applied.json. Las 19 pruebas pasan; la prueba de reparación usa el respaldo previo como entrada y exige que el archivo instalado coincida exactamente con la salida calculada.
+
+No se abrió el juego. Visibilidad y estabilidad en carrera, ruedas residuales, materiales y animación siguen pendientes de una prueba real. Esta reparación no equivale al mod final ni demuestra equivalencia con el video. Los estados históricos anteriores a esta sección quedan superados únicamente respecto a la reparación de cabeceras.

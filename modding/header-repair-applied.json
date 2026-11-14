@@ -1,0 +1,24 @@
+{
+  "approved_by_user": true,
+  "source_sha256": "a01b652817a8e54ea9ee5bd677da1dac221962d2726675051f796ed5b7b1e455",
+  "installed_sha256": "1d16d7e3c9d1a7ed3f240224a6eb4e725140035188b45a2cc48fd17733d41808",
+  "installed_bytes": 9952256,
+  "changed_bytes": 8,
+  "changed_offsets": [
+    77734,
+    77735,
+    713510,
+    713511,
+    1341734,
+    1341735,
+    1967654,
+    1967655
+  ],
+  "backup": "CARS/COROLLA/GEOMETRY.BIN.bak",
+  "backup_commit": "e1aadcbbdb285900323130ba84f3080a08f9c4ec",
+  "chunk_structure_unchanged": true,
+  "game_launched": false,
+  "race_visibility_verified": false,
+  "baseline_files_checked": 716,
+  "unchanged_baseline_files": 715
+}

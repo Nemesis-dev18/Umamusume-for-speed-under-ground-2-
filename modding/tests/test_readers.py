@@ -157,8 +157,11 @@ class HeaderRepairPreview(unittest.TestCase):
     def test_exact_eight_byte_repair_only(self):
         from inspect_assets import ROOT,chunks
         from plan_header_repair import repair_preview
-        data=(ROOT/'CARS/COROLLA/GEOMETRY.BIN').read_bytes()
+        source=ROOT/'CARS/COROLLA/GEOMETRY.BIN'
+        backup=source.with_name(source.name+'.bak')
+        data=(backup if backup.exists() else source).read_bytes()
         corrected,changes=repair_preview(data)
+        if backup.exists():self.assertEqual(source.read_bytes(),corrected)
         self.assertEqual(len(changes),4)
         self.assertEqual(len(corrected),len(data))
         self.assertEqual(chunks(data),chunks(corrected))
