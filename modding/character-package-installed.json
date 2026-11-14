@@ -1,0 +1,94 @@
+{
+  "checkpoint": "f43675e92d09c74c2fcb88487f84e43353dffe0f",
+  "files": [
+    {
+      "path": "CARS/MIRRORS_BODY/GEOMETRY.BIN",
+      "sha256": "3194617b3ba5bcc37f99bec77394cd18d49c0c9dee50932e4d7138088801bc61",
+      "backup": "CARS/MIRRORS_BODY/GEOMETRY.BIN.before-uma-parts.bak"
+    },
+    {
+      "path": "CARS/MIRRORS_POST/GEOMETRY.BIN",
+      "sha256": "3da5bc1b6e073a9d79e76498d5e1566eb0b2555cda057c619b8ec000ab163a4f",
+      "backup": "CARS/MIRRORS_POST/GEOMETRY.BIN.before-uma-parts.bak"
+    },
+    {
+      "path": "CARS/MIRRORS_SUV/GEOMETRY.BIN",
+      "sha256": "6d0d280bb4a6b03effd91b6af21e1661dd5c61287d4c9b44dc874d57d8b03519",
+      "backup": "CARS/MIRRORS_SUV/GEOMETRY.BIN.before-uma-parts.bak"
+    },
+    {
+      "path": "CARS/MIRRORS_HUMMER/GEOMETRY.BIN",
+      "sha256": "874ea758c1239d075ec5e9e4d20e49b5c33bf128ac9c22cf18f99baee7508128",
+      "backup": "CARS/MIRRORS_HUMMER/GEOMETRY.BIN.before-uma-parts.bak"
+    },
+    {
+      "path": "CARS/SPOILER/GEOMETRY.BIN",
+      "sha256": "db5dd22ebd024d3fdea8923cf90627843447941a91c00fd1417646458ce83665",
+      "backup": "CARS/SPOILER/GEOMETRY.BIN.before-uma-parts.bak"
+    },
+    {
+      "path": "CARS/SPOILER_HATCH/GEOMETRY.BIN",
+      "sha256": "43a3ff38ad4671506f3dd29887d6af688f7172da2d5607e7ca20be0113c4d529",
+      "backup": "CARS/SPOILER_HATCH/GEOMETRY.BIN.before-uma-parts.bak"
+    },
+    {
+      "path": "CARS/SPOILER_SUV/GEOMETRY.BIN",
+      "sha256": "15f978cd65c4930078b4031778b82442e5a91b548e801faf0bc1599a587aad57",
+      "backup": "CARS/SPOILER_SUV/GEOMETRY.BIN.before-uma-parts.bak"
+    },
+    {
+      "path": "CARS/PLATES/GEOMETRY.BIN",
+      "sha256": "7a9b699ec4a62c652a93bd451be9f21f1fa1896e87276b631cc6c95eac2a6240",
+      "backup": "CARS/PLATES/GEOMETRY.BIN.before-uma-parts.bak"
+    },
+    {
+      "path": "CARS/EXHAUST/GEOMETRY.BIN",
+      "sha256": "f6b0b977328b166deebce3b1aa000b0c77fd486da985fa1abc94ccb79497c55d",
+      "backup": "CARS/EXHAUST/GEOMETRY.BIN.before-uma-parts.bak"
+    },
+    {
+      "path": "CARS/ROOF/GEOMETRY.BIN",
+      "sha256": "df3fe20a70a8fcda0ac6c7dea6fd92cd5e007b5d7f669e1e0b314dafdc3e8379",
+      "backup": "CARS/ROOF/GEOMETRY.BIN.before-uma-parts.bak"
+    },
+    {
+      "path": "CARS/BRAKES/GEOMETRY.BIN",
+      "sha256": "d187dc69ff03d92b69c6965f1f31a3e51f705db371b60f8de4a096436d7a58ff",
+      "backup": "CARS/BRAKES/GEOMETRY.BIN.before-uma-parts.bak"
+    },
+    {
+      "path": "CARS/AUDIO/GEOMETRY.BIN",
+      "sha256": "2c47874f037b9d4fa0aef96d190328858f94c0a226da3591e731bd422ea8c4b5",
+      "backup": "CARS/AUDIO/GEOMETRY.BIN.before-uma-parts.bak"
+    },
+    {
+      "path": "CARS/COROLLA/GEOMETRY.BIN",
+      "sha256": "4b3d213ccc8c52a0e3000c4117845439a900aa6b6590bcb517f9d98ef083714c",
+      "backup": "CARS/COROLLA/GEOMETRY.BIN.before-character-collision.bak"
+    },
+    {
+      "path": "scripts/UmaRunner.asi",
+      "sha256": "699b55263cc602a20eef93e9f90b920bf18e4a261a63617c3f3172a564960bb0",
+      "backup": "modding/runtime/UmaRunner.before-hoof-audio.asi"
+    }
+  ],
+  "changed_data": [
+    "CARS/AUDIO/GEOMETRY.BIN",
+    "CARS/BRAKES/GEOMETRY.BIN",
+    "CARS/COROLLA/GEOMETRY.BIN",
+    "CARS/COROLLA/TEXTURES.BIN",
+    "CARS/EXHAUST/GEOMETRY.BIN",
+    "CARS/MIRRORS_BODY/GEOMETRY.BIN",
+    "CARS/MIRRORS_HUMMER/GEOMETRY.BIN",
+    "CARS/MIRRORS_POST/GEOMETRY.BIN",
+    "CARS/MIRRORS_SUV/GEOMETRY.BIN",
+    "CARS/PLATES/GEOMETRY.BIN",
+    "CARS/ROOF/GEOMETRY.BIN",
+    "CARS/SPOILER/GEOMETRY.BIN",
+    "CARS/SPOILER_HATCH/GEOMETRY.BIN",
+    "CARS/SPOILER_SUV/GEOMETRY.BIN"
+  ],
+  "unchanged_data": 702,
+  "gameplay_verified": false,
+  "audio_profile_in_game_verified": false
+}

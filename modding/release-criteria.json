@@ -74,5 +74,33 @@
     "cpu_baked_wheel_bounds_tested": true,
     "real_game_result": "Steam motion improved per user; selection wheel persists, mirrors visible, wheels reappear on collision"
   },
-  "original_motion_source": "Installed local Steam type03 run02 retarget; real game quality pending"
+  "original_motion_source": "Installed local Steam type03 run02 retarget; real game quality pending",
+  "character_collision": {
+    "installed": true,
+    "bounds": [
+      [
+        -0.35,
+        -0.29,
+        0.05
+      ],
+      [
+        0.65,
+        0.29,
+        1.95
+      ]
+    ],
+    "physics_gameplay_verified": false
+  },
+  "hoof_audio": {
+    "installed": true,
+    "scope": "Corolla characters only",
+    "native_profile_verified": false,
+    "listening_test_verified": false
+  },
+  "shared_car_parts": {
+    "installed": true,
+    "files": 12,
+    "meshes": 2192,
+    "gameplay_verified": false
+  }
 }

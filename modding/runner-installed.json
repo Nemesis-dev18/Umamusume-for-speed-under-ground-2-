@@ -1,16 +1,28 @@
 {
   "module": "scripts/UmaRunner.asi",
-  "sha256": "5ae14a5f7de525e2e402cd60d4ca009a9c99a54e95f8ddc55613503a45941306",
-  "bytes": 293212,
-  "checkpoint": "7afbe621f9a0fb935d9ac6ad944b47cf1e485c1a",
+  "sha256": "699b55263cc602a20eef93e9f90b920bf18e4a261a63617c3f3172a564960bb0",
+  "bytes": 353526,
+  "checkpoint": "f43675e92d09c74c2fcb88487f84e43353dffe0f",
   "inventory_files": 716,
   "changed_data": [
+    "CARS/AUDIO/GEOMETRY.BIN",
+    "CARS/BRAKES/GEOMETRY.BIN",
     "CARS/COROLLA/GEOMETRY.BIN",
-    "CARS/COROLLA/TEXTURES.BIN"
+    "CARS/COROLLA/TEXTURES.BIN",
+    "CARS/EXHAUST/GEOMETRY.BIN",
+    "CARS/MIRRORS_BODY/GEOMETRY.BIN",
+    "CARS/MIRRORS_HUMMER/GEOMETRY.BIN",
+    "CARS/MIRRORS_POST/GEOMETRY.BIN",
+    "CARS/MIRRORS_SUV/GEOMETRY.BIN",
+    "CARS/PLATES/GEOMETRY.BIN",
+    "CARS/ROOF/GEOMETRY.BIN",
+    "CARS/SPOILER/GEOMETRY.BIN",
+    "CARS/SPOILER_HATCH/GEOMETRY.BIN",
+    "CARS/SPOILER_SUV/GEOMETRY.BIN"
   ],
-  "unchanged_data": 714,
+  "unchanged_data": 702,
   "game_running": false,
   "gameplay_verified": false,
   "previous_sha256": "34e6a93c64196f5f01a2f01b5582b3c852053c285781f0e4aa7401ccad8a0aad",
-  "current_receipt": "modding/batched-tires-installed.json"
+  "current_receipt": "modding/character-package-installed.json"
 }
