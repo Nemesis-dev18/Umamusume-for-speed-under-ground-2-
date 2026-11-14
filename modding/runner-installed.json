@@ -1,8 +1,8 @@
 {
   "module": "scripts/UmaRunner.asi",
-  "sha256": "72ef068ca839e934ea647d8b3df6074ecaca4c929b98efd73a1fa88c57210cde",
-  "bytes": 291169,
-  "checkpoint": "46f4907481a9b22be79c8f9b087c7a9abfc3690d",
+  "sha256": "5ae14a5f7de525e2e402cd60d4ca009a9c99a54e95f8ddc55613503a45941306",
+  "bytes": 293212,
+  "checkpoint": "7afbe621f9a0fb935d9ac6ad944b47cf1e485c1a",
   "inventory_files": 716,
   "changed_data": [
     "CARS/COROLLA/GEOMETRY.BIN",
@@ -12,5 +12,5 @@
   "game_running": false,
   "gameplay_verified": false,
   "previous_sha256": "34e6a93c64196f5f01a2f01b5582b3c852053c285781f0e4aa7401ccad8a0aad",
-  "current_receipt": "modding/steam-motion-installed.json"
+  "current_receipt": "modding/batched-tires-installed.json"
 }
