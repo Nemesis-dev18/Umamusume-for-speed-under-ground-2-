@@ -75,11 +75,37 @@ int main(void){
  CHECK(IDirect3DVertexBuffer9_Lock(baked_vb,0,4,&mapped,0));memset(mapped,0,4);CHECK(IDirect3DVertexBuffer9_Unlock(baked_vb));assert(!uma_upload_bounds(baked_vb,0,4,32,0,&cached));
  IDirect3DVertexBuffer9_Release(baked_vb);
  puts("PASS CPU-baked wheel vertices across all four draw APIs; foreign pixels intact; partial writes invalidate bounds");
+ /* Combined tires in a shared upload must be tested vertex by vertex. */
+ float batch[16][8]={0};WORD batch_indices[24];
+ for(int k=0;k<4;k++)for(int j=0;j<4;j++){
+  int v=k*4+j;batch[v][0]=(k<2?1.35f:-1.05f)+(j&1?.2f:-.2f);batch[v][1]=k&1?-.78f:.78f;batch[v][2]=.275f+(j&2?.2f:-.2f);
+ }
+ for(int k=0;k<4;k++)for(int j=0;j<6;j++)batch_indices[k*6+j]=k*4+wheel_indices[j];
+ IDirect3DVertexBuffer9 *batch_vb=NULL;IDirect3DIndexBuffer9 *batch_ib=NULL;
+ CHECK(IDirect3DDevice9_CreateVertexBuffer(device,96240,D3DUSAGE_WRITEONLY,0,D3DPOOL_DEFAULT,&batch_vb,NULL));CHECK(IDirect3DVertexBuffer9_Lock(batch_vb,0,0,&mapped,0));memset(mapped,0,96240);memcpy((BYTE*)mapped+128,batch,sizeof(batch));CHECK(IDirect3DVertexBuffer9_Unlock(batch_vb));
+ CHECK(IDirect3DDevice9_CreateIndexBuffer(device,sizeof(batch_indices),0,D3DFMT_INDEX16,D3DPOOL_MANAGED,&batch_ib,NULL));CHECK(IDirect3DIndexBuffer9_Lock(batch_ib,0,0,&mapped,0));memcpy(mapped,batch_indices,sizeof(batch_indices));CHECK(IDirect3DIndexBuffer9_Unlock(batch_ib));
+ for(int method=0;method<4;method++)for(int foreign=0;foreign<2;foreign++){
+  float batch_view[3][4]={{1,0,0,foreign?10:0},{0,1,0,0},{0,0,1,.2f}};CHECK(IDirect3DDevice9_SetVertexShaderConstantF(device,14,&batch_view[0][0],3));
+  CHECK(IDirect3DDevice9_SetVertexDeclaration(device,declaration32));CHECK(IDirect3DDevice9_SetStreamSource(device,0,batch_vb,128,32));CHECK(IDirect3DDevice9_SetIndices(device,batch_ib));
+  hidden=runner_hidden_wheels;CHECK(IDirect3DDevice9_BeginScene(device));
+  if(method==0){CHECK(IDirect3DDevice9_DrawIndexedPrimitive(device,D3DPT_TRIANGLELIST,0,0,16,0,8));}
+  else if(method==1){CHECK(IDirect3DDevice9_DrawPrimitive(device,D3DPT_TRIANGLESTRIP,0,14));}
+  else if(method==2){CHECK(IDirect3DDevice9_DrawPrimitiveUP(device,D3DPT_TRIANGLESTRIP,14,batch,32));}
+  else {CHECK(IDirect3DDevice9_DrawIndexedPrimitiveUP(device,D3DPT_TRIANGLELIST,0,16,8,batch_indices,D3DFMT_INDEX16,batch,32));}
+  CHECK(IDirect3DDevice9_EndScene(device));assert(runner_hidden_wheels==hidden+(foreign?0:1));
+ }
+ IDirect3DVertexBuffer9_Release(batch_vb);IDirect3DIndexBuffer9_Release(batch_ib);
+ puts("PASS four-tire shared upload batch through all draw APIs with suspension offset; foreign actor not hidden");
  /* Optional attachments can fall back to the body origin when their marker is absent. */
  float root_view[3][4]={{1,0,0,0},{0,1,0,0},{0,0,1,0}};CHECK(IDirect3DDevice9_SetVertexShaderConstantF(device,14,&root_view[0][0],3));
  CHECK(IDirect3DDevice9_SetVertexDeclaration(device,declaration));CHECK(IDirect3DDevice9_SetStreamSource(device,0,wheel_vb,0,36));CHECK(IDirect3DDevice9_SetIndices(device,wheel_ib));
  hidden=runner_hidden_wheels;CHECK(IDirect3DDevice9_BeginScene(device));CHECK(IDirect3DDevice9_DrawIndexedPrimitive(device,D3DPT_TRIANGLELIST,0,0,4,0,2));CHECK(IDirect3DDevice9_EndScene(device));assert(runner_hidden_wheels==hidden+1);
  root_view[0][3]=2;CHECK(IDirect3DDevice9_SetVertexShaderConstantF(device,14,&root_view[0][0],3));CHECK(IDirect3DDevice9_BeginScene(device));CHECK(IDirect3DDevice9_DrawIndexedPrimitive(device,D3DPT_TRIANGLELIST,0,0,4,0,2));CHECK(IDirect3DDevice9_EndScene(device));assert(runner_hidden_wheels==hidden+1);
+ for(int foreign=0;foreign<2;foreign++){
+  root_view[0][3]=.6322f+(foreign?10:0);root_view[1][3]=.7031f;root_view[2][3]=.9397f;CHECK(IDirect3DDevice9_SetVertexShaderConstantF(device,14,&root_view[0][0],3));
+  hidden=runner_hidden_wheels;CHECK(IDirect3DDevice9_BeginScene(device));CHECK(IDirect3DDevice9_DrawIndexedPrimitive(device,D3DPT_TRIANGLELIST,0,0,4,0,2));CHECK(IDirect3DDevice9_EndScene(device));assert(runner_hidden_wheels==hidden+(foreign?0:1));
+ }
+ puts("PASS car-style side anchor attachment hidden at Corolla socket; foreign actor preserved");
  puts("PASS car-style root attachment hidden only at a recognized Corolla root; translated actor preserved");
  /* The real native batch uses a 96,240-byte VB; queries must cover draw subranges. */
  IDirect3DVertexBuffer9 *shared=NULL;CHECK(IDirect3DDevice9_CreateVertexBuffer(device,96240,D3DUSAGE_DYNAMIC|D3DUSAGE_WRITEONLY,0,D3DPOOL_DEFAULT,&shared,NULL));

@@ -29,6 +29,7 @@ static FILE *runner_log;
 static ULONGLONG runner_last_tick;
 static unsigned runner_frames,runner_candidates,runner_owned,runner_replaced,runner_shader_failures;
 static unsigned runner_hidden_wheels,runner_tire_candidates,runner_camera_reports;
+static struct {UINT vertices,primitives,shader;const char *method;int match,racing;} runner_wheel_reports[96];
 static int runner_speed_valid;
 static float runner_speed;
 static unsigned runner_last_owned,runner_projected_references;
@@ -97,16 +98,21 @@ static int runner_readable(const void *data,size_t bytes){
  }
  return at>=end;
 }
-static int runner_draw_bounds(IDirect3DDevice9 *device,UINT vertices,const void *data,UINT stride,UINT first,UmaVertexBounds *output){
- UINT position;
- if(data){size_t bytes=(size_t)vertices*stride;return runner_position_offset(device,stride,&position) && runner_readable(data,bytes) && uma_vertex_bounds(data,bytes,vertices,stride,position,output);}
- IDirect3DVertexBuffer9 *buffer=NULL;UINT offset=0;int valid=0;
- if(SUCCEEDED(IDirect3DDevice9_GetStreamSource(device,0,&buffer,&offset,&stride)) && buffer){
-  uint64_t byte_offset=(uint64_t)offset+(uint64_t)first*stride;
-  if(byte_offset<=UINT_MAX && runner_position_offset(device,stride,&position))valid=uma_upload_bounds(buffer,(UINT)byte_offset,vertices,stride,position,output);
-  IDirect3DVertexBuffer9_Release(buffer);
- }
- return valid;
+static int runner_vertex_wheels(IDirect3DDevice9 *device,UINT vertices,const void *data,UINT stride,UINT first,const UmaMatrix *worldview,UmaVertexBounds *decoded){
+ UINT position=0;UmaUploadSnapshot snapshot;const BYTE *points=data;size_t bytes=(size_t)vertices*stride;
+ if(!data){
+  IDirect3DVertexBuffer9 *buffer=NULL;UINT offset=0;DWORD size=sizeof(snapshot);
+  if(FAILED(IDirect3DDevice9_GetStreamSource(device,0,&buffer,&offset,&stride)) || !buffer)return 0;
+  HRESULT result=IDirect3DVertexBuffer9_GetPrivateData(buffer,&uma_bounds_guid,&snapshot,&size);IDirect3DVertexBuffer9_Release(buffer);
+  uint64_t begin=(uint64_t)offset+(uint64_t)first*stride;
+  if(FAILED(result) || size<8 || snapshot.bytes>sizeof(snapshot.data) || size!=8+snapshot.bytes || begin<snapshot.offset || begin-snapshot.offset>snapshot.bytes)return 0;
+  UINT skip=(UINT)(begin-snapshot.offset);points=snapshot.data+skip;bytes=snapshot.bytes-skip;
+ }else if(!runner_readable(data,bytes))return 0;
+ if(!runner_position_offset(device,stride,&position))return 0;
+ UmaVertexBounds bounds;if(!uma_vertex_bounds(points,bytes,vertices,stride,position,&bounds))return 0;
+ *decoded=bounds;
+ for(unsigned i=0;i<runner_scene.bodies;i++)if(uma_corolla_wheel_bounds(&bounds,worldview,&runner_scene.body[i]) || uma_corolla_tire_batch(points,bytes,vertices,stride,position,worldview,&runner_scene.body[i]))return 1;
+ return 0;
 }
 static int runner_root_attachment(IDirect3DDevice9 *device,const UmaShaderEntry *entry,const UmaMatrix *worldview,UINT vertices){
  if(!entry || entry->diffuse_min<0 || vertices<4 || vertices>4096)return 0;
@@ -123,9 +129,17 @@ static int runner_wheel_draw(IDirect3DDevice9 *device,D3DPRIMITIVETYPE type,UINT
  if(type<D3DPT_TRIANGLELIST || type>D3DPT_TRIANGLEFAN || vertices<4 || vertices>4096 || triangles<2 || triangles>2048 || runner_renderer.device!=device || runner_frames-runner_last_owned>=3 || !runner_scene.bodies)return 0;
  DWORD depth=0;if(FAILED(IDirect3DDevice9_GetRenderState(device,D3DRS_ZENABLE,&depth)) || !depth)return 0;
  HRESULT status;UmaShaderEntry *entry=uma_shader_get(&runner_renderer.shaders,device,&status);UmaMatrix worldview;if(FAILED(status) || !runner_worldview(device,entry,&worldview))return 0;
- int match=runner_root_attachment(device,entry,&worldview,vertices);for(unsigned i=0;!match && i<runner_scene.bodies;i++)if(uma_corolla_wheel(&worldview,&runner_scene.body[i])){match=1;break;}
- if(!match){UmaVertexBounds bounds;if(runner_draw_bounds(device,vertices,data,stride,first,&bounds))for(unsigned i=0;i<runner_scene.bodies;i++)if(uma_corolla_wheel_bounds(&bounds,&worldview,&runner_scene.body[i])){match=1;break;}}
- if(runner_log && runner_tire_candidates<24){runner_tire_candidates++;fprintf(runner_log,"WHEEL method=%s frame=%u vertices=%u primitives=%u match=%d bodies=%u origin=%.4f,%.4f,%.4f\n",method,runner_frames,vertices,triangles,match,runner_scene.bodies,worldview.m[3][0],worldview.m[3][1],worldview.m[3][2]);fflush(runner_log);}
+ int match=runner_root_attachment(device,entry,&worldview,vertices);for(unsigned i=0;!match && i<runner_scene.bodies;i++)if(uma_corolla_wheel(&worldview,&runner_scene.body[i]) || (entry && entry->diffuse_min>=0 && uma_corolla_side_attachment(&worldview,&runner_scene.body[i]))){match=1;break;}
+ UmaVertexBounds decoded={{NAN,NAN,NAN},{NAN,NAN,NAN}};
+ if(!match)match=runner_vertex_wheels(device,vertices,data,stride,first,&worldview,&decoded);
+ if(runner_log && runner_tire_candidates<96){
+  UINT shader=entry?entry->bytes:0;int known=0,racing=runner_scene.bodies>2;
+  for(unsigned i=0;i<runner_tire_candidates;i++)if(runner_wheel_reports[i].vertices==vertices && runner_wheel_reports[i].primitives==triangles && runner_wheel_reports[i].shader==shader && runner_wheel_reports[i].method==method && runner_wheel_reports[i].match==match && runner_wheel_reports[i].racing==racing)known=1;
+  if(!known){
+   unsigned i=runner_tire_candidates++;runner_wheel_reports[i].vertices=vertices;runner_wheel_reports[i].primitives=triangles;runner_wheel_reports[i].shader=shader;runner_wheel_reports[i].method=method;runner_wheel_reports[i].match=match;runner_wheel_reports[i].racing=racing;
+   fprintf(runner_log,"WHEEL method=%s frame=%u vertices=%u primitives=%u shaderBytes=%u match=%d bodies=%u origin=%.4f,%.4f,%.4f rawBounds=%.4f,%.4f,%.4f:%.4f,%.4f,%.4f\n",method,runner_frames,vertices,triangles,shader,match,runner_scene.bodies,worldview.m[3][0],worldview.m[3][1],worldview.m[3][2],decoded.minimum[0],decoded.minimum[1],decoded.minimum[2],decoded.maximum[0],decoded.maximum[1],decoded.maximum[2]);fflush(runner_log);
+  }
+ }
  if(match)runner_hidden_wheels++;
  return match;
 }

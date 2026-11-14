@@ -54,6 +54,18 @@ int main(void){
  float points[4][8]={{1.35f,.58f,.075f},{1.35f,.98f,.075f},{1.35f,.58f,.475f},{1.35f,.98f,.475f}};
  assert(uma_vertex_bounds(points,sizeof(points),4,32,0,&baked));assert(uma_corolla_wheel_bounds(&baked,&view,&view));
  assert(!uma_vertex_bounds(points,3*32+11,4,32,0,&baked));points[0][0]=NAN;assert(!uma_vertex_bounds(points,sizeof(points),4,32,0,&baked));
+ /* A combined four-tire draw has no individual-wheel AABB center. */
+ float tires[16][6]={0};for(int k=0;k<4;k++)for(int j=0;j<4;j++){
+  tires[k*4+j][0]=(k<2?1.35f:-1.05f)+(j&1?.2f:-.2f);tires[k*4+j][1]=k&1?-.78f:.78f;tires[k*4+j][2]=.275f+(j&2?.2f:-.2f);
+ }
+ root=identity();assert(uma_corolla_tire_batch(tires,sizeof(tires),16,24,0,&root,&root));
+ UmaMatrix suspension=root;suspension.m[3][2]=.2f;assert(uma_corolla_tire_batch(tires,sizeof(tires),16,24,0,&suspension,&root));
+ UmaMatrix foreign=root;foreign.m[3][0]=10;assert(!uma_corolla_tire_batch(tires,sizeof(tires),16,24,0,&root,&foreign));
+ tires[15][0]=0;assert(!uma_corolla_tire_batch(tires,sizeof(tires),16,24,0,&root,&root));tires[15][0]=NAN;assert(!uma_corolla_tire_batch(tires,sizeof(tires),16,24,0,&root,&root));
+ assert(!uma_corolla_tire_batch(tires,10,16,24,0,&root,&root));
+ UmaMatrix mirror=root;mirror.m[3][0]=.6322f;mirror.m[3][1]=.7031f;mirror.m[3][2]=.9397f;
+ assert(uma_corolla_side_attachment(&mirror,&root));mirror.m[3][1]*=-1;assert(uma_corolla_side_attachment(&mirror,&root));assert(!uma_corolla_side_attachment(&mirror,&foreign));
+ puts("PASS multi-tire batch, suspension travel, foreign actor and outlier rejection; symmetric side anchors");
  puts("PASS CPU-baked wheel center and radius; large mesh, truncated data and nonfinite vertices rejected");
  puts("PASS own tire mount, foreign car rejection, scaled tire and invalid matrix cases");
  puts("PASS scenery ViewProj recovery from body WV/WVP, moving body speed, singular and nonfinite matrices rejected");

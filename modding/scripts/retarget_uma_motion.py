@@ -1,4 +1,5 @@
 """Retarget an original local Uma race clip to the existing PMX mesh, without game writes."""
+import argparse
 import json
 from pathlib import Path
 import numpy as np
@@ -35,7 +36,7 @@ class UmaRetarget:
         if amount==0:return self.target.pose(phase,0)
         if amount!=1:raise ValueError('Blend in the runtime local-quaternion player')
         target=self.target;source=self.source;sr,sp=source.pose(self.clip.channels(phase));desired={}
-        # Preserve the existing authored fist/secondary motion, replacing all primary body poses.
+        # Preserve authored secondary motion; replace primary body and finger poses.
         old_r,_,_,_=target.pose(phase,1);local=np.empty_like(old_r)
         for i,bone in enumerate(target.bones):local[i]=old_r[i] if bone['parent']<0 else old_r[bone['parent']].T@old_r[i]
         for name in ('全ての親','センター','グルーブ','下半身'):
@@ -72,7 +73,9 @@ class UmaRetarget:
         return rotation,offset,positions,[]
 
 def main():
-    retarget=UmaRetarget();out=ROOT/'modding/animation-steam-retarget';out.mkdir(exist_ok=False);bounds=[]
+    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--output',default='modding/animation-steam-retarget');args=parser.parse_args()
+    out=(ROOT/args.output).resolve();out.relative_to((ROOT/'modding').resolve())
+    retarget=UmaRetarget();out.mkdir(exist_ok=False);bounds=[]
     for name,amount,count in [('idle',0,32),('run',1,48)]:
         rotations=[];offsets=[]
         for frame in range(count):

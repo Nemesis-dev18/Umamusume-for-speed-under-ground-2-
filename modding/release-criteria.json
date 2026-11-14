@@ -23,7 +23,8 @@
     "c_player": "Linux and i686 Windows standalone checks passed; no game integration",
     "playback_asset_bytes": 1606288,
     "local_quaternion_blend": true,
-    "grounding": "240 transition poses checked above local support plane"
+    "grounding": "240 transition poses checked above local support plane",
+    "repeated_retarget_pack_identical": true
   },
   "resource_changes_this_stage": true,
   "diagnostic_removed": "Temporary probes removed; permanent runtime renderer records bounded telemetry",
@@ -71,7 +72,7 @@
     "static_scenery_anchor_key": true,
     "all_four_draw_paths_tested": true,
     "cpu_baked_wheel_bounds_tested": true,
-    "real_game_result": "Running triggered. Selection black wheel persists; root-level car accessories remain in screenshot. No final release."
+    "real_game_result": "Steam motion improved per user; selection wheel persists, mirrors visible, wheels reappear on collision"
   },
   "original_motion_source": "Installed local Steam type03 run02 retarget; real game quality pending"
 }

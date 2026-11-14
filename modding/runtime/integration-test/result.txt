@@ -1,4 +1,6 @@
 PASS CPU-baked wheel vertices across all four draw APIs; foreign pixels intact; partial writes invalidate bounds
+PASS four-tire shared upload batch through all draw APIs with suspension offset; foreign actor not hidden
+PASS car-style side anchor attachment hidden at Corolla socket; foreign actor preserved
 PASS car-style root attachment hidden only at a recognized Corolla root; translated actor preserved
 PASS native 96KB shared buffer, draw subrange, partial upload at offset, stride20 position offset and READONLY preservation
 PASS DP, DPUP and DIPUP wheel mounts, stride32, triangle strips, foreign pixels preserved and UP binding side effects
