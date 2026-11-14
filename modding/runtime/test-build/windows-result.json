@@ -1,0 +1,11 @@
+{
+  "platform": "i686 Windows binary under existing Proton Wine; standalone console test only",
+  "passed": true,
+  "reference_poses": 6,
+  "grounded_transition_poses": 240,
+  "max_reference_error": 5.96046448e-07,
+  "mean_cpu_sample_ms_observed": 3.53,
+  "game_fps_measured": false,
+  "game_launched": false,
+  "input_sha256": "d49c072e034b1e9ee42e550599685bfaa3977448dff545e67df3ad42d55e94aa"
+}

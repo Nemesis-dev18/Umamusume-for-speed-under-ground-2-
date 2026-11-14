@@ -19,7 +19,11 @@
     "foot_ik_checked": true,
     "loop_and_normals_tests_passed": true,
     "latest_candidate": "modding/animation-offline-v2",
-    "ready_for_gameplay": false
+    "ready_for_gameplay": false,
+    "c_player": "Linux and i686 Windows standalone checks passed; no game integration",
+    "playback_asset_bytes": 1606288,
+    "local_quaternion_blend": true,
+    "grounding": "240 transition poses checked above local support plane"
   },
   "resource_changes_this_stage": false,
   "diagnostic_removed": true,

@@ -1,0 +1,18 @@
+{
+  "standalone_test": "PASS: six Python-reference poses, max error 5.96046448e-07; UV/colour preservation; transitions, pause, invalid inputs, alias rejection and nine malformed packages. 240 grounded transition poses; CPU sample 0.913 ms (standalone, not game FPS).",
+  "key_poses_match_authored_motion": true,
+  "blended_bone_lengths_checked": true,
+  "game_launched": false,
+  "game_integrated": false,
+  "surface_min_z_before_root_correction_by_case": [
+    -3.0326423500499376e-05,
+    -3.0336848580729606e-05,
+    -0.005921392180762671,
+    -0.006754196431151711,
+    -3.0358762065248463e-05,
+    -3.0326423500499376e-05
+  ],
+  "grounded_transition_poses_checked": 240,
+  "support_plane_tolerance_m": 0.000101,
+  "sanitizers": "Not run: installed GCC sanitizer runtime library is missing; no installation attempted"
+}
