@@ -94,7 +94,7 @@
   "hoof_audio": {
     "installed": true,
     "scope": "Corolla characters only",
-    "native_profile_verified": false,
+    "native_profile_verified": true,
     "listening_test_verified": false
   },
   "shared_car_parts": {

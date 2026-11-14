@@ -90,5 +90,7 @@
   ],
   "unchanged_data": 702,
   "gameplay_verified": false,
-  "audio_profile_in_game_verified": false
+  "audio_profile_in_game_verified": true,
+  "game_pid": 182198,
+  "listening_test_verified": false
 }
