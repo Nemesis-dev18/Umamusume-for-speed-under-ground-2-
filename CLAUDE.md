@@ -12,7 +12,7 @@ No leer ni modificar ejecutables, DLL, ASI, red o anticheat. No lanzar el juego 
 
 `modding/containers.json`: mapa de CARS/COROLLA/GEOMETRY.BIN y TEXTURES.BIN, GLOBAL/GLOBALB.BUN y GlobalB.lzc. Los offsets del último se refieren al búfer descomprimido, no al archivo comprimido.
 
-`modding/animation-containers.json`: 71 archivos binarios candidatos de NIS y PARTS_ANIMATIONS; todos admiten recorrido estructural de chunks. No se ha identificado una jerarquía de huesos ni curvas de animación. Un chunk o nombre de archivo no demuestra esas estructuras.
+`modding/animation-containers.json`: 71 archivos binarios candidatos de NIS y PARTS_ANIMATIONS; todos admiten recorrido estructural de chunks. La primera pasada solo clasificó chunks. La revisión posterior de ELF de datos recuperó esqueletos y canales; ver sección de animación nativa. Un chunk o nombre de archivo por sí solo no demuestra esas estructuras.
 
 ## Estructuras implementadas
 
@@ -51,10 +51,33 @@ La descompresión en memoria de GLOBAL/GlobalB.lzc coincide byte a byte con GLOB
 
 No se ejecutó el juego en esta revisión. La última evidencia del usuario sigue siendo cuerpo invisible en carrera, aunque visible en selección, con elementos del automóvil restantes. Las pruebas de parsers no prueban carga en el motor.
 
-Pendiente: búsqueda estructural del rig/curvas, verificar unidades de CarTypeInfo en el motor, reempaquetado reversible y pruebas de carrera. No editar física para ocultar ruedas. No introducir hooks ni direcciones de otra versión. Blender MCP y Git MCP no están expuestos; filesystem MCP permite otra raíz. No se cambió configuración ni se instalaron herramientas. Git CLI está disponible.
+Pendiente: curvas comprimidas y vínculo de skinning, verificar unidades de CarTypeInfo en el motor, reempaquetado reversible y pruebas de carrera. No editar física para ocultar ruedas. No introducir hooks ni direcciones de otra versión. Blender MCP y Git MCP no están expuestos; filesystem MCP permite otra raíz. No se cambió configuración ni se instalaron herramientas. Git CLI está disponible.
 
 ## Cierre de esta revisión
 
 13 pruebas automatizadas pasan, incluyendo HUFF sintético y sus 13 blobs reales, cadena mip exacta/rechazo de cadenas parciales, cabecera DDS con número de niveles y los 46 registros CarTypeInfo. Los 225 PNG de mipmap tienen las dimensiones declaradas y las imágenes superiores coinciden con la extracción anterior. El caso HUFF no tiene aún un vector independiente completo de salida conocido; tamaño/hash interno y decodificación gráfica no sustituyen esa comparación.
 
 El primer checkpoint Git es ae7016b. Solo se versionan herramientas, manifiestos y documentación; los datos del juego y resultados grandes están excluidos. Ningún binario del juego fue sobrescrito, así que todavía no hay un respaldo .bak de una modificación nueva ni un checkpoint de bytes originales para reempaquetado. No confundir el commit de herramientas con un respaldo del juego.
+
+## Animación nativa: segunda revisión
+
+`extract_animation_banks.py` recorre los 71 candidatos registrados en animation-containers.json. Resultado completo en all-native-animation-skeletons.json: 784 objetos de datos (701 AnimationBank y 83 esqueletos), 2.023 canales, 576 curvas float4 decodificadas y 2.355 huesos con nombre/índice/parentesco. No se ejecuta ni se carga ningún ELF. Se rechazan secciones ejecutables y program headers. No se inspeccionó SPEED2.EXE.
+
+- Chunk `0x00E34010`: objeto ELF32 little-endian, ET_REL=1, máquina MIPS=8. Cabecera de 52 bytes, sección de 40 bytes, símbolos de 16 bytes y relocaciones de 8 bytes. Solo se admiten referencias locales R_MIPS_32 tipo 2. Se conservan rangos absolutos en el archivo y relativos en .data.
+- Símbolo `__AnimationBank:::bank`: cabecera de 28 bytes, número de canales u32 en +4; tablas de punteros a descriptores/nombres en +16/+20. Descriptor de 16 bytes: puntero a formato en +4, campos u16 crudos tipo/muestras en +8/+10, puntero a datos en +12. Los punteros deben estar en la tabla de relocación.
+- Variante de valores admitida: firma u32 0x14000000, modo u32 2, componentes u32 4, número de muestras u32 en +12; valores float4 desde +32. El tamaño debe coincidir exactamente con el siguiente destino de relocación. Las curvas terminadas en _q tienen norma próxima a uno. En Corolla son 21 curvas y 611 muestras. No asumir frecuencia temporal hasta validarla.
+- Chunk `0x00E34009`: objeto ELF de datos con símbolos `__Skeleton:::...` y `__Bone:::...`. Cada símbolo de hueso apunta a un registro con índice u32. La cabecera Skeleton contiene hash en +0 y número de huesos u32 en +8; registros desde +16 con stride 112: escala float3 +0, padre i32 +12, rotación float4 +16, traslación float3 +32, índice u32 +44 y matriz float16 +48.
+- Se validaron índices únicos, todos los nombres, padres en rango, ausencia de ciclos y datos finitos. Además, las transformaciones locales reproducen las matrices nativas usando cuaternión xyzw y matriz inversa de reposo almacenada en convención de filas: world=inverse(stored_matrix.T). Para las 83 jerarquías/2.355 huesos, el máximo error de composición local es 2.875e-7. Esto corrobora la interpretación de padres y transformaciones; no prueba una asignación de pesos a una malla.
+- Primer IntroNis01: tres esqueletos con 24, 24 y 35 huesos. Los bancos de personajes usan variantes comprimidas que se conservan como metadatos y SHA-256; no se reinterpretan como floats. Índices de skinning/material palettes todavía no vinculados a esos esqueletos.
+
+## Visibilidad y reparación propuesta (no aplicada)
+
+body-visibility-analysis.json muestra 23 mallas BASE/BODY: solo cuatro KIT00_BODY tienen extensión no nula; las otras 19 están colapsadas. Esto podría ocultar el modelo si la carrera selecciona un kit distinto; la selección real en carrera no se ha observado.
+
+Se detectó además que las cuatro cabeceras KIT00_BODY declaran u32 0x38B040AD en payload+20 (951.074.989). La mitad superior contiene exactamente el número de vértices 14.512 y la inferior el de triángulos 16.557: firma de la escritura anterior de dos u16. En otras mallas, el u32 es un recuento pequeño, normalmente igual al número de triángulos; algunos originales difieren ligeramente, por lo que no se normalizan todas las cabeceras.
+
+`plan_header_repair.py` calcula en memoria la corrección limitada a las cuatro cabeceras conocidas. `header-repair-plan.json` contiene hash fuente/resultante, tamaño 9.952.256 y cuatro escrituras: offsets absolutos 0x12FA4, 0xAE324, 0x147924, 0x1E0624, bytes AD 40 B0 38 -> AD 40 00 00. Solo ocho bytes distintos. Tamaños de chunks y offsets permanecen iguales. No cambia texturas, materiales ni física.
+
+La aprobación de esa reparación se solicitó explícitamente al usuario. No se ha creado GEOMETRY.BIN.bak ni modificado GEOMETRY.BIN. Antes de aplicar: confirmar fuente SHA-256, juego cerrado, estado Git limpio; crear respaldo .bak exacto y commit; escribir temporal GEOMETRY.BIN.uma-header.tmp, validar y sustituir de forma atómica. La corrección no debe presentarse como prueba de que la carrera funciona.
+
+Pruebas al cierre de la segunda revisión: 18 aprobadas. La reparación previa se prueba solo en memoria, comparando el árbol de chunks completo y los ocho offsets distintos, rechazando un archivo ya corregido y otro coche. Los 716 archivos de datos conservan sus hashes iniciales. Pendiente respuesta del usuario a la reparación concreta; no se abrió el juego.

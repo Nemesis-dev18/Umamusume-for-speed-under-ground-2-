@@ -99,4 +99,77 @@ class CarTypes(unittest.TestCase):
         self.assertEqual(len([r for r in records if r['name']=='COROLLA']),1)
         for record in records:self.assertEqual(len(record['wheels']),4)
 
+
+class AnimationBanks(unittest.TestCase):
+    def banks(self,relative,tag):
+        from inspect_assets import ROOT,chunks,flatten
+        from extract_assets import skip_words
+        data=(ROOT/relative).read_bytes()
+        return [(data[n['payload']+skip_words(data[n['payload']:n['end']]):n['end']],n['payload']+skip_words(data[n['payload']:n['end']]))
+                for n in flatten(chunks(data)) if n['id']==tag]
+    def test_float4_curves_and_truncation(self):
+        from extract_animation_banks import inspect_bank
+        banks=self.banks('CARS/COROLLA/PARTS_ANIMATIONS.bin','0x00e34010')
+        self.assertEqual(len(banks),21)
+        decoded=[]
+        for raw,offset in banks:
+            result=inspect_bank(raw,offset);decoded.extend(c for c in result['channels'] if c['decoded'])
+            with self.assertRaises(ValueError):inspect_bank(raw[:51],offset)
+        self.assertEqual(len(decoded),21)
+        self.assertEqual(sum(len(c['values']) for c in decoded),611)
+        for curve in decoded:
+            self.assertLess(abs(curve['norm_min']-1),1e-5)
+            self.assertLess(abs(curve['norm_max']-1),1e-5)
+    def test_native_skeletons_and_transforms(self):
+        import numpy as np
+        from extract_animation_banks import inspect_skeleton
+        banks=self.banks('NIS/Scene_IntroNis01_BundleB.bun','0x00e34009')
+        self.assertEqual(len(banks),3)
+        sizes=[]
+        for raw,offset in banks:
+            rig=inspect_skeleton(raw,offset);bones=rig['bones'];sizes.append(len(bones))
+            self.assertFalse(rig['skeleton'].startswith(':'))
+            worlds=[np.linalg.inv(np.array(b['matrix_raw16']).reshape(4,4).T) for b in bones]
+            for bone,world in zip(bones,worlds):
+                self.assertEqual(bone['index_lane_raw'],bone['index'])
+                x,y,z,w=bone['rotation_raw4']
+                q=np.array([[1-2*(y*y+z*z),2*(x*y-z*w),2*(x*z+y*w)],
+                            [2*(x*y+z*w),1-2*(x*x+z*z),2*(y*z-x*w)],
+                            [2*(x*z-y*w),2*(y*z+x*w),1-2*(x*x+y*y)]])
+                local=np.eye(4);local[:3,:3]=q@np.diag(bone['scale_raw']);local[:3,3]=bone['translation_raw3']
+                parent=bone['parent'];actual=world if parent<0 else np.linalg.inv(worlds[parent])@world
+                self.assertLess(float(np.max(np.abs(actual-local))),2e-5)
+            mutated=bytearray(raw)
+            data_section=next(s for s in rig['sections'] if s['name']=='.data')
+            parent_at=data_section['offset_in_elf']+rig['skeleton_offset_in_pool']+16+12
+            struct.pack_into('<i',mutated,parent_at,0)
+            with self.assertRaises(ValueError):inspect_skeleton(mutated,offset)
+        self.assertEqual(sizes,[24,24,35])
+    def test_executable_sections_rejected(self):
+        from extract_animation_banks import inspect_data_elf
+        raw,offset=self.banks('CARS/COROLLA/PARTS_ANIMATIONS.bin','0x00e34010')[0]
+        mutated=bytearray(raw);section_table=struct.unpack_from('<I',raw,32)[0]
+        struct.pack_into('<I',mutated,section_table+40+8,7)
+        with self.assertRaises(ValueError):inspect_data_elf(mutated,offset)
+
+
+class HeaderRepairPreview(unittest.TestCase):
+    def test_exact_eight_byte_repair_only(self):
+        from inspect_assets import ROOT,chunks
+        from plan_header_repair import repair_preview
+        data=(ROOT/'CARS/COROLLA/GEOMETRY.BIN').read_bytes()
+        corrected,changes=repair_preview(data)
+        self.assertEqual(len(changes),4)
+        self.assertEqual(len(corrected),len(data))
+        self.assertEqual(chunks(data),chunks(corrected))
+        expected={c['offset']+i for c in changes for i in (2,3)}
+        actual={i for i,(a,b) in enumerate(zip(data,corrected)) if a!=b}
+        self.assertEqual(actual,expected)
+        for c in changes:self.assertEqual(struct.unpack_from('<I',corrected,c['offset'])[0],16557)
+        with self.assertRaises(ValueError):repair_preview(corrected)
+    def test_other_car_rejected(self):
+        from inspect_assets import ROOT
+        from plan_header_repair import repair_preview
+        with self.assertRaises(ValueError):repair_preview((ROOT/'CARS/240SX/GEOMETRY.BIN').read_bytes())
+
 if __name__ == '__main__': unittest.main()
