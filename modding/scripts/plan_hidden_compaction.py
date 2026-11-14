@@ -7,6 +7,12 @@ from extract_assets import geometry,payload
 
 SOURCE_HASH='cedf717c16c342b449c32e312351bd2f93d21533446b9501488dd0b5a3664389'
 
+def reviewed_source():
+    for relative in ('CARS/COROLLA/GEOMETRY.BIN','CARS/COROLLA/GEOMETRY.BIN.before-runtime.bak'):
+        path=data_path(relative)
+        if path.exists() and hashlib.sha256(path.read_bytes()).hexdigest()==SOURCE_HASH:return path
+    raise ValueError('Reviewed prototype source or exact backup required')
+
 def verify_compaction(original,raw):
     oldtree=chunks(original);newtree=chunks(raw)
     oldmeshes={m['asset_hash']:m for m in geometry(original,'COROLLA_')}
@@ -58,9 +64,9 @@ def verify_compaction(original,raw):
     return {'source':'CARS/COROLLA/GEOMETRY.BIN','source_sha256':hashlib.sha256(original).hexdigest(),'result_sha256':hashlib.sha256(raw).hexdigest(),'bytes_before':len(original),'bytes_after':len(raw),'collapsed_solids_compacted':len(changes),'vertices_before':sum(len(m['positions']) for m in oldmeshes.values()),'vertices_after':sum(len(m['positions']) for m in newmeshes.values()),'solid_directory_records_verified':records_checked,'collision_pointer_before':oldcol['offset'],'collision_pointer_after':off,'collision_payload_unchanged':True,'noncollapsed_geometry_unchanged':True,'visible_vertex_records_unchanged':True,'other_solid_leaf_payloads_unchanged':True,'part_names_markers_transforms_preserved':True,'installed':False,'binary_saved':False,'approval_required':True,'limits':'Does not prove race visibility or fix body-kit selection, material bounds, running integration or residual shared wheels. Diagnostic candidate only.','changes':changes}
 
 def main():
-    source=data_path('CARS/COROLLA/GEOMETRY.BIN');original=source.read_bytes()
+    source=reviewed_source();original=source.read_bytes()
     if hashlib.sha256(original).hexdigest()!=SOURCE_HASH:raise ValueError('Expected reviewed prototype source')
-    build=subprocess.run([str(ROOT/'modding/runtime/compact-hidden-dry-run')],cwd=ROOT,stdout=subprocess.PIPE,check=True,timeout=120)
+    build=subprocess.run([str(ROOT/'modding/runtime/compact-hidden-dry-run'),str(source.relative_to(ROOT))],cwd=ROOT,stdout=subprocess.PIPE,check=True,timeout=120)
     report=verify_compaction(original,build.stdout)
     if source.read_bytes()!=original:raise ValueError('Source changed during planning')
     save_json('hidden-compaction-plan.json',report)

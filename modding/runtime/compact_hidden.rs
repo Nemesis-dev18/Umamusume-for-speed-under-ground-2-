@@ -5,7 +5,9 @@ fn solids(nodes:&[ChunkNode])->Vec<&ChunkNode>{let mut result=Vec::new();for nod
 fn u32at(bytes:&[u8],offset:usize)->u32{u32::from_le_bytes(bytes[offset..offset+4].try_into().unwrap())}
 fn key(solid:&ChunkNode,bytes:&[u8])->u32{u32at(solid.find(SOLID_HEADER).unwrap().data(bytes),16)}
 fn main()->Result<(),Box<dyn std::error::Error>>{
- let original=fs::read("CARS/COROLLA/GEOMETRY.BIN")?;
+ let source=std::env::args().nth(1).unwrap_or_else(||"CARS/COROLLA/GEOMETRY.BIN".into());
+ if source!="CARS/COROLLA/GEOMETRY.BIN" && source!="CARS/COROLLA/GEOMETRY.BIN.before-runtime.bak"{return Err("source must be admitted Corolla resource or its exact backup".into());}
+ let original=fs::read(source)?;
  let tree=ChunkNode::parse(&original)?;
  assert_eq!(geometry::rebuild(&original,&Edits::new())?,original,"no-op rebuild must be byte exact");
  let mut targets=Vec::new();

@@ -73,6 +73,16 @@ static int check_camera(IDirect3DDevice9 *device){
   for(int r=0;r<4;r++)for(int c=0;c<4;c++)assert(captured.m[r][c]==constants[c][r]);
   IDirect3DVertexShader9 *same=NULL;CHECK(IDirect3DDevice9_GetVertexShader(device,&same));assert(same==shader);IDirect3DVertexShader9_Release(same);CHECK(IDirect3DDevice9_SetVertexShader(device,NULL));IDirect3DVertexShader9_Release(shader);
  }
+ for(UINT i=0;i<UMA_SHADER_PROFILE_COUNT;i++){
+  const UmaShaderProfile *profile=&uma_shader_profiles[i];IDirect3DVertexShader9 *shader=NULL;
+  CHECK(IDirect3DDevice9_CreateVertexShader(device,profile->words,&shader));CHECK(IDirect3DDevice9_SetVertexShader(device,shader));
+  for(UINT row=0;row<4;row++)CHECK(IDirect3DDevice9_SetVertexShaderConstantF(device,profile->rows[row],constants[row],1));
+  D3DMATRIX actual;CHECK(uma_camera_capture(device,&actual));
+  for(int row=0;row<4;row++)for(int col=0;col<4;col++)assert(actual.m[row][col]==constants[col][row]*profile->signs[col]);
+  IDirect3DVertexShader9 *same=NULL;CHECK(IDirect3DDevice9_GetVertexShader(device,&same));assert(same==shader);IDirect3DVertexShader9_Release(same);
+  CHECK(IDirect3DDevice9_SetVertexShader(device,NULL));IDirect3DVertexShader9_Release(shader);
+ }
+ printf("PASS exact captured game shader profiles: %u programs; read-only camera extraction\n",(unsigned)UMA_SHADER_PROFILE_COUNT);
  D3DMATRIX world={0},view={0},projection={0},captured;
  for(int k=0;k<4;k++){world.m[k][k]=1;view.m[k][k]=1;projection.m[k][k]=1;}
  world.m[3][0]=2;view.m[0][0]=3;view.m[3][1]=4;projection.m[1][1]=5;

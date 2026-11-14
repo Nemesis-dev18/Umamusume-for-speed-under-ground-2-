@@ -1,0 +1,6050 @@
+{
+  "source_sha256": "cedf717c16c342b449c32e312351bd2f93d21533446b9501488dd0b5a3664389",
+  "candidate_sha256": "70672ce2ce71e9e931e12f45cb8b6ef33b9ed9fab303f6641a39ad3845275692",
+  "bytes": 4570240,
+  "minimum": [
+    -0.9359397530555725,
+    -0.8141049981117249,
+    -0.15003035493500647
+  ],
+  "maximum": [
+    0.7034947514533997,
+    0.812537157535553,
+    2.3081406593322753
+  ],
+  "bounds_basis": "80 authored idle/run keyframes plus rest and 0.15m margin; not exhaustive runtime interpolation proof",
+  "fields": [
+    {
+      "part": "COROLLA_KIT00_BODY_A",
+      "chunk": "0x00134011",
+      "offset": 35248,
+      "before": "de3642bf",
+      "after": "bf996fbf"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_A",
+      "chunk": "0x00134011",
+      "offset": 35252,
+      "before": "25922cbf",
+      "after": "2f6950bf"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_A",
+      "chunk": "0x00134011",
+      "offset": 35256,
+      "before": "5b5624bc",
+      "after": "8fa119be"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_A",
+      "chunk": "0x00134011",
+      "offset": 35264,
+      "before": "0a8b8d3e",
+      "after": "3b18343f"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_A",
+      "chunk": "0x00134011",
+      "offset": 35268,
+      "before": "652b2c3f",
+      "after": "6f02503f"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_A",
+      "chunk": "0x00134011",
+      "offset": 35272,
+      "before": "d1c20a40",
+      "after": "94b81340"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_A",
+      "chunk": "0x00134b02",
+      "offset": 558032,
+      "before": "3b8aafbf",
+      "after": "bf996fbf"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_A",
+      "chunk": "0x00134b02",
+      "offset": 558036,
+      "before": "dc0052bf",
+      "after": "2f6950bf"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_A",
+      "chunk": "0x00134b02",
+      "offset": 558040,
+      "before": "a6b30d3f",
+      "after": "8fa119be"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_A",
+      "chunk": "0x00134b02",
+      "offset": 558048,
+      "before": "f738d23f",
+      "after": "3b18343f"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_A",
+      "chunk": "0x00134b02",
+      "offset": 558052,
+      "before": "da00523f",
+      "after": "6f02503f"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_A",
+      "chunk": "0x00134b02",
+      "offset": 558056,
+      "before": "5a91373f",
+      "after": "94b81340"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_B",
+      "chunk": "0x00134011",
+      "offset": 671024,
+      "before": "de3642bf",
+      "after": "bf996fbf"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_B",
+      "chunk": "0x00134011",
+      "offset": 671028,
+      "before": "25922cbf",
+      "after": "2f6950bf"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_B",
+      "chunk": "0x00134011",
+      "offset": 671032,
+      "before": "5b5624bc",
+      "after": "8fa119be"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_B",
+      "chunk": "0x00134011",
+      "offset": 671040,
+      "before": "0a8b8d3e",
+      "after": "3b18343f"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_B",
+      "chunk": "0x00134011",
+      "offset": 671044,
+      "before": "652b2c3f",
+      "after": "6f02503f"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_B",
+      "chunk": "0x00134011",
+      "offset": 671048,
+      "before": "d1c20a40",
+      "after": "94b81340"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_B",
+      "chunk": "0x00134b02",
+      "offset": 1193936,
+      "before": "388aafbf",
+      "after": "bf996fbf"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_B",
+      "chunk": "0x00134b02",
+      "offset": 1193940,
+      "before": "405353bf",
+      "after": "2f6950bf"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_B",
+      "chunk": "0x00134b02",
+      "offset": 1193944,
+      "before": "a6b30d3f",
+      "after": "8fa119be"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_B",
+      "chunk": "0x00134b02",
+      "offset": 1193952,
+      "before": "f338d23f",
+      "after": "3b18343f"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_B",
+      "chunk": "0x00134b02",
+      "offset": 1193956,
+      "before": "3953533f",
+      "after": "6f02503f"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_B",
+      "chunk": "0x00134b02",
+      "offset": 1193960,
+      "before": "5b91373f",
+      "after": "94b81340"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_C",
+      "chunk": "0x00134011",
+      "offset": 1299248,
+      "before": "de3642bf",
+      "after": "bf996fbf"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_C",
+      "chunk": "0x00134011",
+      "offset": 1299252,
+      "before": "25922cbf",
+      "after": "2f6950bf"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_C",
+      "chunk": "0x00134011",
+      "offset": 1299256,
+      "before": "5b5624bc",
+      "after": "8fa119be"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_C",
+      "chunk": "0x00134011",
+      "offset": 1299264,
+      "before": "0a8b8d3e",
+      "after": "3b18343f"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_C",
+      "chunk": "0x00134011",
+      "offset": 1299268,
+      "before": "652b2c3f",
+      "after": "6f02503f"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_C",
+      "chunk": "0x00134011",
+      "offset": 1299272,
+      "before": "d1c20a40",
+      "after": "94b81340"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_C",
+      "chunk": "0x00134b02",
+      "offset": 1822160,
+      "before": "388aafbf",
+      "after": "bf996fbf"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_C",
+      "chunk": "0x00134b02",
+      "offset": 1822164,
+      "before": "3c5353bf",
+      "after": "2f6950bf"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_C",
+      "chunk": "0x00134b02",
+      "offset": 1822168,
+      "before": "a6b30d3f",
+      "after": "8fa119be"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_C",
+      "chunk": "0x00134b02",
+      "offset": 1822176,
+      "before": "f738d23f",
+      "after": "3b18343f"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_C",
+      "chunk": "0x00134b02",
+      "offset": 1822180,
+      "before": "3e53533f",
+      "after": "6f02503f"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_C",
+      "chunk": "0x00134b02",
+      "offset": 1822184,
+      "before": "5a91373f",
+      "after": "94b81340"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_D",
+      "chunk": "0x00134011",
+      "offset": 1925168,
+      "before": "de3642bf",
+      "after": "bf996fbf"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_D",
+      "chunk": "0x00134011",
+      "offset": 1925172,
+      "before": "25922cbf",
+      "after": "2f6950bf"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_D",
+      "chunk": "0x00134011",
+      "offset": 1925176,
+      "before": "5b5624bc",
+      "after": "8fa119be"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_D",
+      "chunk": "0x00134011",
+      "offset": 1925184,
+      "before": "0a8b8d3e",
+      "after": "3b18343f"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_D",
+      "chunk": "0x00134011",
+      "offset": 1925188,
+      "before": "652b2c3f",
+      "after": "6f02503f"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_D",
+      "chunk": "0x00134011",
+      "offset": 1925192,
+      "before": "d1c20a40",
+      "after": "94b81340"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_D",
+      "chunk": "0x00134b02",
+      "offset": 2447952,
+      "before": "059100c0",
+      "after": "bf996fbf"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_D",
+      "chunk": "0x00134b02",
+      "offset": 2447956,
+      "before": "55ea4abf",
+      "after": "2f6950bf"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_D",
+      "chunk": "0x00134b02",
+      "offset": 2447960,
+      "before": "4d89543e",
+      "after": "8fa119be"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_D",
+      "chunk": "0x00134b02",
+      "offset": 2447968,
+      "before": "40a90640",
+      "after": "3b18343f"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_D",
+      "chunk": "0x00134b02",
+      "offset": 2447972,
+      "before": "63ea4a3f",
+      "after": "6f02503f"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_D",
+      "chunk": "0x00134b02",
+      "offset": 2447976,
+      "before": "18b2bf3e",
+      "after": "94b81340"
+    }
+  ],
+  "compaction": {
+    "source": "CARS/COROLLA/GEOMETRY.BIN",
+    "source_sha256": "cedf717c16c342b449c32e312351bd2f93d21533446b9501488dd0b5a3664389",
+    "result_sha256": "70672ce2ce71e9e931e12f45cb8b6ef33b9ed9fab303f6641a39ad3845275692",
+    "bytes_before": 9952256,
+    "bytes_after": 4570240,
+    "collapsed_solids_compacted": 567,
+    "vertices_before": 192764,
+    "vertices_after": 59749,
+    "solid_directory_records_verified": 571,
+    "collision_pointer_before": 9938496,
+    "collision_pointer_after": 4556480,
+    "collision_payload_unchanged": true,
+    "noncollapsed_geometry_unchanged": true,
+    "visible_vertex_records_unchanged": true,
+    "other_solid_leaf_payloads_unchanged": true,
+    "part_names_markers_transforms_preserved": true,
+    "installed": false,
+    "binary_saved": false,
+    "approval_required": true,
+    "limits": "Does not prove race visibility or fix body-kit selection, material bounds, running integration or residual shared wheels. Diagnostic candidate only.",
+    "changes": [
+      {
+        "asset_hash": "0x26cf10e5",
+        "part": "COROLLA_BASE_A",
+        "old_offset": 18560,
+        "new_offset": 18560,
+        "vertices_before": 449,
+        "vertices_after": 3,
+        "triangles_before": 455,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x26cf10e6",
+        "part": "COROLLA_BASE_B",
+        "old_offset": 40704,
+        "new_offset": 21888,
+        "vertices_before": 271,
+        "vertices_after": 3,
+        "triangles_before": 247,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x26cf10e7",
+        "part": "COROLLA_BASE_C",
+        "old_offset": 56320,
+        "new_offset": 26368,
+        "vertices_before": 78,
+        "vertices_after": 3,
+        "triangles_before": 52,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x5f0902aa",
+        "part": "COROLLA_DECAL_FRONT_WINDOW_",
+        "old_offset": 60160,
+        "new_offset": 27264,
+        "vertices_before": 10,
+        "vertices_after": 3,
+        "triangles_before": 8,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xfe85cd79",
+        "part": "COROLLA_DECAL_HOOD_RECT_MED",
+        "old_offset": 61056,
+        "new_offset": 27904,
+        "vertices_before": 60,
+        "vertices_after": 3,
+        "triangles_before": 48,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xa236ef51",
+        "part": "COROLLA_DECAL_HOOD_RECT_SMA",
+        "old_offset": 64256,
+        "new_offset": 28800,
+        "vertices_before": 61,
+        "vertices_after": 3,
+        "triangles_before": 41,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xb38106ad",
+        "part": "COROLLA_DECAL_LEFT_DOOR_REC",
+        "old_offset": 67840,
+        "new_offset": 29952,
+        "vertices_before": 40,
+        "vertices_after": 3,
+        "triangles_before": 24,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x2950abbd",
+        "part": "COROLLA_DECAL_LEFT_QUARTER_",
+        "old_offset": 70272,
+        "new_offset": 30848,
+        "vertices_before": 11,
+        "vertices_after": 3,
+        "triangles_before": 10,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x8c3d1515",
+        "part": "COROLLA_DECAL_LEFT_QUARTER_",
+        "old_offset": 71296,
+        "new_offset": 31488,
+        "vertices_before": 10,
+        "vertices_after": 3,
+        "triangles_before": 6,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xfe5e9d8b",
+        "part": "COROLLA_DECAL_REAR_WINDOW_W",
+        "old_offset": 72320,
+        "new_offset": 32256,
+        "vertices_before": 10,
+        "vertices_after": 3,
+        "triangles_before": 8,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x32d2d900",
+        "part": "COROLLA_DECAL_RIGHT_DOOR_RE",
+        "old_offset": 73216,
+        "new_offset": 32896,
+        "vertices_before": 40,
+        "vertices_after": 3,
+        "triangles_before": 24,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x2656c130",
+        "part": "COROLLA_DECAL_RIGHT_QUARTER",
+        "old_offset": 75648,
+        "new_offset": 33792,
+        "vertices_before": 11,
+        "vertices_after": 3,
+        "triangles_before": 10,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x274cc828",
+        "part": "COROLLA_DECAL_RIGHT_QUARTER",
+        "old_offset": 76672,
+        "new_offset": 34432,
+        "vertices_before": 10,
+        "vertices_after": 3,
+        "triangles_before": 6,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x8445506e",
+        "part": "COROLLA_KIT00_BRAKELIGHT_A",
+        "old_offset": 2591488,
+        "new_offset": 2548992,
+        "vertices_before": 142,
+        "vertices_after": 3,
+        "triangles_before": 110,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x8445506f",
+        "part": "COROLLA_KIT00_BRAKELIGHT_B",
+        "old_offset": 2598400,
+        "new_offset": 2550272,
+        "vertices_before": 74,
+        "vertices_after": 3,
+        "triangles_before": 50,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x84455070",
+        "part": "COROLLA_KIT00_BRAKELIGHT_C",
+        "old_offset": 2602496,
+        "new_offset": 2551552,
+        "vertices_before": 12,
+        "vertices_after": 3,
+        "triangles_before": 8,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xf5eba76f",
+        "part": "COROLLA_KIT00_DOOR_LEFT_A",
+        "old_offset": 2603520,
+        "new_offset": 2552320,
+        "vertices_before": 163,
+        "vertices_after": 3,
+        "triangles_before": 115,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xf5eba770",
+        "part": "COROLLA_KIT00_DOOR_LEFT_B",
+        "old_offset": 2613632,
+        "new_offset": 2556032,
+        "vertices_before": 6,
+        "vertices_after": 3,
+        "triangles_before": 4,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xf5eba771",
+        "part": "COROLLA_KIT00_DOOR_LEFT_C",
+        "old_offset": 2614400,
+        "new_offset": 2556672,
+        "vertices_before": 4,
+        "vertices_after": 3,
+        "triangles_before": 2,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x467299fe",
+        "part": "COROLLA_KIT00_DOOR_PANEL_LE",
+        "old_offset": 2615168,
+        "new_offset": 2557312,
+        "vertices_before": 84,
+        "vertices_after": 3,
+        "triangles_before": 64,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xec034211",
+        "part": "COROLLA_KIT00_DOOR_PANEL_RI",
+        "old_offset": 2620160,
+        "new_offset": 2559104,
+        "vertices_before": 84,
+        "vertices_after": 3,
+        "triangles_before": 64,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x8a9dfda2",
+        "part": "COROLLA_KIT00_DOOR_RIGHT_A",
+        "old_offset": 2625280,
+        "new_offset": 2560896,
+        "vertices_before": 163,
+        "vertices_after": 3,
+        "triangles_before": 115,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x8a9dfda3",
+        "part": "COROLLA_KIT00_DOOR_RIGHT_B",
+        "old_offset": 2635392,
+        "new_offset": 2564608,
+        "vertices_before": 6,
+        "vertices_after": 3,
+        "triangles_before": 4,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x8a9dfda4",
+        "part": "COROLLA_KIT00_DOOR_RIGHT_C",
+        "old_offset": 2636160,
+        "new_offset": 2565248,
+        "vertices_before": 5,
+        "vertices_after": 3,
+        "triangles_before": 3,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x1e790b22",
+        "part": "COROLLA_KIT00_DOOR_SILL_LEF",
+        "old_offset": 2636928,
+        "new_offset": 2565888,
+        "vertices_before": 37,
+        "vertices_after": 3,
+        "triangles_before": 31,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xc4d7d7b5",
+        "part": "COROLLA_KIT00_DOOR_SILL_RIG",
+        "old_offset": 2639360,
+        "new_offset": 2567040,
+        "vertices_before": 37,
+        "vertices_after": 3,
+        "triangles_before": 31,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x0657ad27",
+        "part": "COROLLA_KIT00_ENGINE_A",
+        "old_offset": 2641792,
+        "new_offset": 2568192,
+        "vertices_before": 1470,
+        "vertices_after": 3,
+        "triangles_before": 1185,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xbfcc8e52",
+        "part": "COROLLA_KIT00_ENGINE_UNLIT_",
+        "old_offset": 2702592,
+        "new_offset": 2569088,
+        "vertices_before": 155,
+        "vertices_after": 3,
+        "triangles_before": 111,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x46b6c8b3",
+        "part": "COROLLA_KIT00_EXHAUST_A",
+        "old_offset": 2709504,
+        "new_offset": 2569856,
+        "vertices_before": 66,
+        "vertices_after": 3,
+        "triangles_before": 62,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xfc179d1e",
+        "part": "COROLLA_KIT00_FRONT_BRAKE_A",
+        "old_offset": 2712832,
+        "new_offset": 2570624,
+        "vertices_before": 64,
+        "vertices_after": 3,
+        "triangles_before": 58,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xfc179d1f",
+        "part": "COROLLA_KIT00_FRONT_BRAKE_B",
+        "old_offset": 2716160,
+        "new_offset": 2571392,
+        "vertices_before": 38,
+        "vertices_after": 3,
+        "triangles_before": 30,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x82522604",
+        "part": "COROLLA_KIT00_FRONT_BUMPER_",
+        "old_offset": 2718336,
+        "new_offset": 2572160,
+        "vertices_before": 657,
+        "vertices_after": 3,
+        "triangles_before": 529,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x82522605",
+        "part": "COROLLA_KIT00_FRONT_BUMPER_",
+        "old_offset": 2758016,
+        "new_offset": 2585088,
+        "vertices_before": 392,
+        "vertices_after": 3,
+        "triangles_before": 311,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x82522606",
+        "part": "COROLLA_KIT00_FRONT_BUMPER_",
+        "old_offset": 2778368,
+        "new_offset": 2589568,
+        "vertices_before": 208,
+        "vertices_after": 3,
+        "triangles_before": 122,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x3590382e",
+        "part": "COROLLA_KIT00_FRONT_WHEEL_A",
+        "old_offset": 2789888,
+        "new_offset": 2593024,
+        "vertices_before": 515,
+        "vertices_after": 3,
+        "triangles_before": 452,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x3590382f",
+        "part": "COROLLA_KIT00_FRONT_WHEEL_B",
+        "old_offset": 2811904,
+        "new_offset": 2593920,
+        "vertices_before": 235,
+        "vertices_after": 3,
+        "triangles_before": 157,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x35903830",
+        "part": "COROLLA_KIT00_FRONT_WHEEL_C",
+        "old_offset": 2822144,
+        "new_offset": 2594816,
+        "vertices_before": 108,
+        "vertices_after": 3,
+        "triangles_before": 68,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x0a266b45",
+        "part": "COROLLA_KIT00_HEADLIGHT_LEF",
+        "old_offset": 2827136,
+        "new_offset": 2595584,
+        "vertices_before": 132,
+        "vertices_after": 3,
+        "triangles_before": 112,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x0a266b46",
+        "part": "COROLLA_KIT00_HEADLIGHT_LEF",
+        "old_offset": 2834432,
+        "new_offset": 2597504,
+        "vertices_before": 99,
+        "vertices_after": 3,
+        "triangles_before": 74,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x0a266b47",
+        "part": "COROLLA_KIT00_HEADLIGHT_LEF",
+        "old_offset": 2839680,
+        "new_offset": 2598912,
+        "vertices_before": 36,
+        "vertices_after": 3,
+        "triangles_before": 26,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x26313c38",
+        "part": "COROLLA_KIT00_HEADLIGHT_RIG",
+        "old_offset": 2841856,
+        "new_offset": 2599808,
+        "vertices_before": 132,
+        "vertices_after": 3,
+        "triangles_before": 112,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x26313c39",
+        "part": "COROLLA_KIT00_HEADLIGHT_RIG",
+        "old_offset": 2848896,
+        "new_offset": 2601472,
+        "vertices_before": 99,
+        "vertices_after": 3,
+        "triangles_before": 74,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x26313c3a",
+        "part": "COROLLA_KIT00_HEADLIGHT_RIG",
+        "old_offset": 2853888,
+        "new_offset": 2602624,
+        "vertices_before": 36,
+        "vertices_after": 3,
+        "triangles_before": 26,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xf1ef2d3b",
+        "part": "COROLLA_KIT00_HOOD_A",
+        "old_offset": 2856064,
+        "new_offset": 2603520,
+        "vertices_before": 75,
+        "vertices_after": 3,
+        "triangles_before": 68,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xf1ef2d3c",
+        "part": "COROLLA_KIT00_HOOD_B",
+        "old_offset": 2860928,
+        "new_offset": 2605440,
+        "vertices_before": 38,
+        "vertices_after": 3,
+        "triangles_before": 34,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xf1ef2d3d",
+        "part": "COROLLA_KIT00_HOOD_C",
+        "old_offset": 2863360,
+        "new_offset": 2606464,
+        "vertices_before": 14,
+        "vertices_after": 3,
+        "triangles_before": 8,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xe1fdcf58",
+        "part": "COROLLA_KIT00_HOOD_UNDER_A",
+        "old_offset": 2864640,
+        "new_offset": 2607232,
+        "vertices_before": 42,
+        "vertices_after": 3,
+        "triangles_before": 54,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x22938a7a",
+        "part": "COROLLA_KIT00_LEFT_SIDE_MIR",
+        "old_offset": 2867072,
+        "new_offset": 2607872,
+        "vertices_before": 98,
+        "vertices_after": 3,
+        "triangles_before": 78,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x22938a7b",
+        "part": "COROLLA_KIT00_LEFT_SIDE_MIR",
+        "old_offset": 2873472,
+        "new_offset": 2610432,
+        "vertices_before": 38,
+        "vertices_after": 3,
+        "triangles_before": 24,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x22938a7c",
+        "part": "COROLLA_KIT00_LEFT_SIDE_MIR",
+        "old_offset": 2875904,
+        "new_offset": 2611456,
+        "vertices_before": 28,
+        "vertices_after": 3,
+        "triangles_before": 16,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x0ea9887f",
+        "part": "COROLLA_KIT00_REAR_BRAKE_A",
+        "old_offset": 2877824,
+        "new_offset": 2612480,
+        "vertices_before": 64,
+        "vertices_after": 3,
+        "triangles_before": 58,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x0ea98880",
+        "part": "COROLLA_KIT00_REAR_BRAKE_B",
+        "old_offset": 2881152,
+        "new_offset": 2613248,
+        "vertices_before": 28,
+        "vertices_after": 3,
+        "triangles_before": 24,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x0ea98881",
+        "part": "COROLLA_KIT00_REAR_BRAKE_C",
+        "old_offset": 2882944,
+        "new_offset": 2614016,
+        "vertices_before": 10,
+        "vertices_after": 3,
+        "triangles_before": 6,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xe7217d85",
+        "part": "COROLLA_KIT00_REAR_BUMPER_A",
+        "old_offset": 2883968,
+        "new_offset": 2614784,
+        "vertices_before": 285,
+        "vertices_after": 3,
+        "triangles_before": 233,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xe7217d86",
+        "part": "COROLLA_KIT00_REAR_BUMPER_B",
+        "old_offset": 2901504,
+        "new_offset": 2620800,
+        "vertices_before": 180,
+        "vertices_after": 3,
+        "triangles_before": 124,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xe7217d87",
+        "part": "COROLLA_KIT00_REAR_BUMPER_C",
+        "old_offset": 2911104,
+        "new_offset": 2623232,
+        "vertices_before": 119,
+        "vertices_after": 3,
+        "triangles_before": 82,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x630032cd",
+        "part": "COROLLA_KIT00_RIGHT_SIDE_MI",
+        "old_offset": 2918016,
+        "new_offset": 2625536,
+        "vertices_before": 98,
+        "vertices_after": 3,
+        "triangles_before": 78,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x630032ce",
+        "part": "COROLLA_KIT00_RIGHT_SIDE_MI",
+        "old_offset": 2924416,
+        "new_offset": 2628096,
+        "vertices_before": 39,
+        "vertices_after": 3,
+        "triangles_before": 24,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x630032cf",
+        "part": "COROLLA_KIT00_RIGHT_SIDE_MI",
+        "old_offset": 2926976,
+        "new_offset": 2629120,
+        "vertices_before": 30,
+        "vertices_after": 3,
+        "triangles_before": 16,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x0942cc07",
+        "part": "COROLLA_KIT00_ROOF_A",
+        "old_offset": 2929024,
+        "new_offset": 2630144,
+        "vertices_before": 161,
+        "vertices_after": 3,
+        "triangles_before": 154,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x0942cc08",
+        "part": "COROLLA_KIT00_ROOF_B",
+        "old_offset": 2939392,
+        "new_offset": 2633856,
+        "vertices_before": 105,
+        "vertices_after": 3,
+        "triangles_before": 86,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x0942cc09",
+        "part": "COROLLA_KIT00_ROOF_C",
+        "old_offset": 2945152,
+        "new_offset": 2635520,
+        "vertices_before": 26,
+        "vertices_after": 3,
+        "triangles_before": 16,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x74dbbdfe",
+        "part": "COROLLA_KIT00_SKIRT_A",
+        "old_offset": 2947200,
+        "new_offset": 2636672,
+        "vertices_before": 431,
+        "vertices_after": 3,
+        "triangles_before": 271,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x74dbbdff",
+        "part": "COROLLA_KIT00_SKIRT_B",
+        "old_offset": 2972032,
+        "new_offset": 2644480,
+        "vertices_before": 269,
+        "vertices_after": 3,
+        "triangles_before": 179,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x74dbbe00",
+        "part": "COROLLA_KIT00_SKIRT_C",
+        "old_offset": 2986240,
+        "new_offset": 2648064,
+        "vertices_before": 104,
+        "vertices_after": 3,
+        "triangles_before": 64,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xd300e565",
+        "part": "COROLLA_KIT00_TRUNK_A",
+        "old_offset": 2992256,
+        "new_offset": 2650112,
+        "vertices_before": 241,
+        "vertices_after": 3,
+        "triangles_before": 200,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x15510116",
+        "part": "COROLLA_KIT00_TRUNK_AUDIO_A",
+        "old_offset": 3006848,
+        "new_offset": 2654976,
+        "vertices_before": 80,
+        "vertices_after": 3,
+        "triangles_before": 64,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x64d6d981",
+        "part": "COROLLA_KIT00_TRUNK_AUDIO_U",
+        "old_offset": 3010688,
+        "new_offset": 2655616,
+        "vertices_before": 314,
+        "vertices_after": 3,
+        "triangles_before": 225,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xd300e566",
+        "part": "COROLLA_KIT00_TRUNK_B",
+        "old_offset": 3024000,
+        "new_offset": 2656384,
+        "vertices_before": 147,
+        "vertices_after": 3,
+        "triangles_before": 100,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xd300e567",
+        "part": "COROLLA_KIT00_TRUNK_C",
+        "old_offset": 3032064,
+        "new_offset": 2658688,
+        "vertices_before": 84,
+        "vertices_after": 3,
+        "triangles_before": 55,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x08877f02",
+        "part": "COROLLA_KIT00_TRUNK_UNDER_A",
+        "old_offset": 3037568,
+        "new_offset": 2660992,
+        "vertices_before": 86,
+        "vertices_after": 3,
+        "triangles_before": 78,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x8e874be5",
+        "part": "COROLLA_KIT01_FRONT_BUMPER_",
+        "old_offset": 3041664,
+        "new_offset": 2661632,
+        "vertices_before": 643,
+        "vertices_after": 3,
+        "triangles_before": 483,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x8e874be6",
+        "part": "COROLLA_KIT01_FRONT_BUMPER_",
+        "old_offset": 3075840,
+        "new_offset": 2669824,
+        "vertices_before": 377,
+        "vertices_after": 3,
+        "triangles_before": 265,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x8e874be7",
+        "part": "COROLLA_KIT01_FRONT_BUMPER_",
+        "old_offset": 3096832,
+        "new_offset": 2675840,
+        "vertices_before": 159,
+        "vertices_after": 3,
+        "triangles_before": 97,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x8a68eb46",
+        "part": "COROLLA_KIT01_REAR_BUMPER_A",
+        "old_offset": 3105536,
+        "new_offset": 2678400,
+        "vertices_before": 307,
+        "vertices_after": 3,
+        "triangles_before": 263,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x8a68eb47",
+        "part": "COROLLA_KIT01_REAR_BUMPER_B",
+        "old_offset": 3122944,
+        "new_offset": 2683264,
+        "vertices_before": 197,
+        "vertices_after": 3,
+        "triangles_before": 137,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x8a68eb48",
+        "part": "COROLLA_KIT01_REAR_BUMPER_C",
+        "old_offset": 3134208,
+        "new_offset": 2686720,
+        "vertices_before": 84,
+        "vertices_after": 3,
+        "triangles_before": 52,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xe9582eff",
+        "part": "COROLLA_KIT01_SKIRT_A",
+        "old_offset": 3139200,
+        "new_offset": 2688512,
+        "vertices_before": 498,
+        "vertices_after": 3,
+        "triangles_before": 318,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xe9582f00",
+        "part": "COROLLA_KIT01_SKIRT_B",
+        "old_offset": 3164672,
+        "new_offset": 2694272,
+        "vertices_before": 304,
+        "vertices_after": 3,
+        "triangles_before": 186,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xe9582f01",
+        "part": "COROLLA_KIT01_SKIRT_C",
+        "old_offset": 3180672,
+        "new_offset": 2698368,
+        "vertices_before": 108,
+        "vertices_after": 3,
+        "triangles_before": 66,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xb8986ed7",
+        "part": "COROLLA_KIT01_TRUNK_AUDIO_A",
+        "old_offset": 3186688,
+        "new_offset": 2700288,
+        "vertices_before": 98,
+        "vertices_after": 3,
+        "triangles_before": 73,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xb5e3d402",
+        "part": "COROLLA_KIT01_TRUNK_AUDIO_U",
+        "old_offset": 3191552,
+        "new_offset": 2701312,
+        "vertices_before": 346,
+        "vertices_after": 3,
+        "triangles_before": 261,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x5bdfdc98",
+        "part": "COROLLA_KIT02_TRUNK_AUDIO_A",
+        "old_offset": 3206144,
+        "new_offset": 2702080,
+        "vertices_before": 69,
+        "vertices_after": 3,
+        "triangles_before": 52,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x06f0ce83",
+        "part": "COROLLA_KIT02_TRUNK_AUDIO_U",
+        "old_offset": 3209984,
+        "new_offset": 2703232,
+        "vertices_before": 369,
+        "vertices_after": 3,
+        "triangles_before": 278,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xa6f197a7",
+        "part": "COROLLA_KIT03_FRONT_BUMPER_",
+        "old_offset": 3225472,
+        "new_offset": 2704000,
+        "vertices_before": 663,
+        "vertices_after": 3,
+        "triangles_before": 512,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xa6f197a8",
+        "part": "COROLLA_KIT03_FRONT_BUMPER_",
+        "old_offset": 3261312,
+        "new_offset": 2712960,
+        "vertices_before": 363,
+        "vertices_after": 3,
+        "triangles_before": 257,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xa6f197a9",
+        "part": "COROLLA_KIT03_FRONT_BUMPER_",
+        "old_offset": 3280000,
+        "new_offset": 2717184,
+        "vertices_before": 170,
+        "vertices_after": 3,
+        "triangles_before": 109,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xd0f7c6c8",
+        "part": "COROLLA_KIT03_REAR_BUMPER_A",
+        "old_offset": 3288448,
+        "new_offset": 2718976,
+        "vertices_before": 394,
+        "vertices_after": 3,
+        "triangles_before": 304,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xd0f7c6c9",
+        "part": "COROLLA_KIT03_REAR_BUMPER_B",
+        "old_offset": 3311104,
+        "new_offset": 2725760,
+        "vertices_before": 238,
+        "vertices_after": 3,
+        "triangles_before": 160,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xd0f7c6ca",
+        "part": "COROLLA_KIT03_REAR_BUMPER_C",
+        "old_offset": 3325056,
+        "new_offset": 2730240,
+        "vertices_before": 138,
+        "vertices_after": 3,
+        "triangles_before": 72,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xd2511101",
+        "part": "COROLLA_KIT03_SKIRT_A",
+        "old_offset": 3332608,
+        "new_offset": 2732544,
+        "vertices_before": 494,
+        "vertices_after": 3,
+        "triangles_before": 302,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xd2511102",
+        "part": "COROLLA_KIT03_SKIRT_B",
+        "old_offset": 3357568,
+        "new_offset": 2738048,
+        "vertices_before": 302,
+        "vertices_after": 3,
+        "triangles_before": 170,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xd2511103",
+        "part": "COROLLA_KIT03_SKIRT_C",
+        "old_offset": 3374080,
+        "new_offset": 2742784,
+        "vertices_before": 132,
+        "vertices_after": 3,
+        "triangles_before": 66,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xff274a59",
+        "part": "COROLLA_KIT03_TRUNK_AUDIO_A",
+        "old_offset": 3381120,
+        "new_offset": 2744832,
+        "vertices_before": 94,
+        "vertices_after": 3,
+        "triangles_before": 60,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x57fdc904",
+        "part": "COROLLA_KIT03_TRUNK_AUDIO_U",
+        "old_offset": 3386240,
+        "new_offset": 2746368,
+        "vertices_before": 379,
+        "vertices_after": 3,
+        "triangles_before": 282,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xb326bd88",
+        "part": "COROLLA_KIT04_FRONT_BUMPER_",
+        "old_offset": 3402240,
+        "new_offset": 2747136,
+        "vertices_before": 626,
+        "vertices_after": 3,
+        "triangles_before": 514,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xb326bd89",
+        "part": "COROLLA_KIT04_FRONT_BUMPER_",
+        "old_offset": 3436928,
+        "new_offset": 2756352,
+        "vertices_before": 361,
+        "vertices_after": 3,
+        "triangles_before": 275,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xb326bd8a",
+        "part": "COROLLA_KIT04_FRONT_BUMPER_",
+        "old_offset": 3455616,
+        "new_offset": 2760576,
+        "vertices_before": 139,
+        "vertices_after": 3,
+        "triangles_before": 91,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x743f3489",
+        "part": "COROLLA_KIT04_REAR_BUMPER_A",
+        "old_offset": 3462784,
+        "new_offset": 2762368,
+        "vertices_before": 462,
+        "vertices_after": 3,
+        "triangles_before": 410,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x743f348a",
+        "part": "COROLLA_KIT04_REAR_BUMPER_B",
+        "old_offset": 3489664,
+        "new_offset": 2770176,
+        "vertices_before": 279,
+        "vertices_after": 3,
+        "triangles_before": 226,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x743f348b",
+        "part": "COROLLA_KIT04_REAR_BUMPER_C",
+        "old_offset": 3505024,
+        "new_offset": 2774272,
+        "vertices_before": 144,
+        "vertices_after": 3,
+        "triangles_before": 84,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x46cd8202",
+        "part": "COROLLA_KIT04_SKIRT_A",
+        "old_offset": 3512704,
+        "new_offset": 2776448,
+        "vertices_before": 580,
+        "vertices_after": 3,
+        "triangles_before": 400,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x46cd8203",
+        "part": "COROLLA_KIT04_SKIRT_B",
+        "old_offset": 3542528,
+        "new_offset": 2783104,
+        "vertices_before": 368,
+        "vertices_after": 3,
+        "triangles_before": 222,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x46cd8204",
+        "part": "COROLLA_KIT04_SKIRT_C",
+        "old_offset": 3560832,
+        "new_offset": 2786944,
+        "vertices_before": 138,
+        "vertices_after": 3,
+        "triangles_before": 82,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xe3fb550c",
+        "part": "COROLLA_KIT08_FRONT_BUMPER_",
+        "old_offset": 3568256,
+        "new_offset": 2788992,
+        "vertices_before": 665,
+        "vertices_after": 3,
+        "triangles_before": 505,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xe3fb550d",
+        "part": "COROLLA_KIT08_FRONT_BUMPER_",
+        "old_offset": 3604608,
+        "new_offset": 2798464,
+        "vertices_before": 397,
+        "vertices_after": 3,
+        "triangles_before": 264,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xe3fb550e",
+        "part": "COROLLA_KIT08_FRONT_BUMPER_",
+        "old_offset": 3624704,
+        "new_offset": 2802816,
+        "vertices_before": 179,
+        "vertices_after": 3,
+        "triangles_before": 113,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x015ceb8d",
+        "part": "COROLLA_KIT08_REAR_BUMPER_A",
+        "old_offset": 3633792,
+        "new_offset": 2804864,
+        "vertices_before": 433,
+        "vertices_after": 3,
+        "triangles_before": 333,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x015ceb8e",
+        "part": "COROLLA_KIT08_REAR_BUMPER_B",
+        "old_offset": 3659392,
+        "new_offset": 2812928,
+        "vertices_before": 248,
+        "vertices_after": 3,
+        "triangles_before": 188,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x015ceb8f",
+        "part": "COROLLA_KIT08_REAR_BUMPER_C",
+        "old_offset": 3672832,
+        "new_offset": 2816384,
+        "vertices_before": 123,
+        "vertices_after": 3,
+        "triangles_before": 75,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x18bf4606",
+        "part": "COROLLA_KIT08_SKIRT_A",
+        "old_offset": 3679744,
+        "new_offset": 2818432,
+        "vertices_before": 516,
+        "vertices_after": 3,
+        "triangles_before": 326,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x18bf4607",
+        "part": "COROLLA_KIT08_SKIRT_B",
+        "old_offset": 3706624,
+        "new_offset": 2824832,
+        "vertices_before": 310,
+        "vertices_after": 3,
+        "triangles_before": 186,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x18bf4608",
+        "part": "COROLLA_KIT08_SKIRT_C",
+        "old_offset": 3722496,
+        "new_offset": 2828544,
+        "vertices_before": 110,
+        "vertices_after": 3,
+        "triangles_before": 72,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xf0307aed",
+        "part": "COROLLA_KIT09_FRONT_BUMPER_",
+        "old_offset": 3728512,
+        "new_offset": 2830336,
+        "vertices_before": 647,
+        "vertices_after": 3,
+        "triangles_before": 471,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xf0307aee",
+        "part": "COROLLA_KIT09_FRONT_BUMPER_",
+        "old_offset": 3763840,
+        "new_offset": 2839680,
+        "vertices_before": 357,
+        "vertices_after": 3,
+        "triangles_before": 245,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xf0307aef",
+        "part": "COROLLA_KIT09_FRONT_BUMPER_",
+        "old_offset": 3782400,
+        "new_offset": 2844032,
+        "vertices_before": 195,
+        "vertices_after": 3,
+        "triangles_before": 105,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xa4a4594e",
+        "part": "COROLLA_KIT09_REAR_BUMPER_A",
+        "old_offset": 3792512,
+        "new_offset": 2846592,
+        "vertices_before": 449,
+        "vertices_after": 3,
+        "triangles_before": 339,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xa4a4594f",
+        "part": "COROLLA_KIT09_REAR_BUMPER_B",
+        "old_offset": 3819008,
+        "new_offset": 2854912,
+        "vertices_before": 262,
+        "vertices_after": 3,
+        "triangles_before": 186,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xa4a45950",
+        "part": "COROLLA_KIT09_REAR_BUMPER_C",
+        "old_offset": 3833472,
+        "new_offset": 2859008,
+        "vertices_before": 138,
+        "vertices_after": 3,
+        "triangles_before": 84,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x8d3bb707",
+        "part": "COROLLA_KIT09_SKIRT_A",
+        "old_offset": 3841280,
+        "new_offset": 2861440,
+        "vertices_before": 520,
+        "vertices_after": 3,
+        "triangles_before": 354,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x8d3bb708",
+        "part": "COROLLA_KIT09_SKIRT_B",
+        "old_offset": 3868160,
+        "new_offset": 2867584,
+        "vertices_before": 309,
+        "vertices_after": 3,
+        "triangles_before": 194,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x8d3bb709",
+        "part": "COROLLA_KIT09_SKIRT_C",
+        "old_offset": 3884288,
+        "new_offset": 2871552,
+        "vertices_before": 114,
+        "vertices_after": 3,
+        "triangles_before": 64,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x152c0805",
+        "part": "COROLLA_KIT10_FRONT_BUMPER_",
+        "old_offset": 3890432,
+        "new_offset": 2873344,
+        "vertices_before": 813,
+        "vertices_after": 3,
+        "triangles_before": 624,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x152c0806",
+        "part": "COROLLA_KIT10_FRONT_BUMPER_",
+        "old_offset": 3935488,
+        "new_offset": 2885504,
+        "vertices_before": 453,
+        "vertices_after": 3,
+        "triangles_before": 325,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x152c0807",
+        "part": "COROLLA_KIT10_FRONT_BUMPER_",
+        "old_offset": 3960448,
+        "new_offset": 2892288,
+        "vertices_before": 221,
+        "vertices_after": 3,
+        "triangles_before": 139,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xf356a366",
+        "part": "COROLLA_KIT10_REAR_BUMPER_A",
+        "old_offset": 3972096,
+        "new_offset": 2895232,
+        "vertices_before": 476,
+        "vertices_after": 3,
+        "triangles_before": 363,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xf356a367",
+        "part": "COROLLA_KIT10_REAR_BUMPER_B",
+        "old_offset": 4000128,
+        "new_offset": 2904064,
+        "vertices_before": 252,
+        "vertices_after": 3,
+        "triangles_before": 172,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xf356a368",
+        "part": "COROLLA_KIT10_REAR_BUMPER_C",
+        "old_offset": 4014080,
+        "new_offset": 2908032,
+        "vertices_before": 135,
+        "vertices_after": 3,
+        "triangles_before": 86,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x78e64f1f",
+        "part": "COROLLA_KIT10_SKIRT_A",
+        "old_offset": 4021760,
+        "new_offset": 2910464,
+        "vertices_before": 488,
+        "vertices_after": 3,
+        "triangles_before": 296,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x78e64f20",
+        "part": "COROLLA_KIT10_SKIRT_B",
+        "old_offset": 4047104,
+        "new_offset": 2916480,
+        "vertices_before": 300,
+        "vertices_after": 3,
+        "triangles_before": 156,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x78e64f21",
+        "part": "COROLLA_KIT10_SKIRT_C",
+        "old_offset": 4063360,
+        "new_offset": 2921088,
+        "vertices_before": 144,
+        "vertices_after": 3,
+        "triangles_before": 74,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x21612de6",
+        "part": "COROLLA_KIT11_FRONT_BUMPER_",
+        "old_offset": 4071296,
+        "new_offset": 2923520,
+        "vertices_before": 698,
+        "vertices_after": 3,
+        "triangles_before": 597,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x21612de7",
+        "part": "COROLLA_KIT11_FRONT_BUMPER_",
+        "old_offset": 4110720,
+        "new_offset": 2934400,
+        "vertices_before": 433,
+        "vertices_after": 3,
+        "triangles_before": 341,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x21612de8",
+        "part": "COROLLA_KIT11_FRONT_BUMPER_",
+        "old_offset": 4135680,
+        "new_offset": 2941824,
+        "vertices_before": 185,
+        "vertices_after": 3,
+        "triangles_before": 119,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x969e1127",
+        "part": "COROLLA_KIT11_REAR_BUMPER_A",
+        "old_offset": 4145280,
+        "new_offset": 2944128,
+        "vertices_before": 503,
+        "vertices_after": 3,
+        "triangles_before": 409,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x969e1128",
+        "part": "COROLLA_KIT11_REAR_BUMPER_B",
+        "old_offset": 4173696,
+        "new_offset": 2952064,
+        "vertices_before": 330,
+        "vertices_after": 3,
+        "triangles_before": 218,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x969e1129",
+        "part": "COROLLA_KIT11_REAR_BUMPER_C",
+        "old_offset": 4192512,
+        "new_offset": 2957824,
+        "vertices_before": 130,
+        "vertices_after": 3,
+        "triangles_before": 82,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xed62c020",
+        "part": "COROLLA_KIT11_SKIRT_A",
+        "old_offset": 4199296,
+        "new_offset": 2959616,
+        "vertices_before": 584,
+        "vertices_after": 3,
+        "triangles_before": 360,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xed62c021",
+        "part": "COROLLA_KIT11_SKIRT_B",
+        "old_offset": 4229376,
+        "new_offset": 2966656,
+        "vertices_before": 366,
+        "vertices_after": 3,
+        "triangles_before": 218,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xed62c022",
+        "part": "COROLLA_KIT11_SKIRT_C",
+        "old_offset": 4248960,
+        "new_offset": 2971776,
+        "vertices_before": 116,
+        "vertices_after": 3,
+        "triangles_before": 70,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x2d9653c7",
+        "part": "COROLLA_KIT12_FRONT_BUMPER_",
+        "old_offset": 4255488,
+        "new_offset": 2973824,
+        "vertices_before": 587,
+        "vertices_after": 3,
+        "triangles_before": 497,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x2d9653c8",
+        "part": "COROLLA_KIT12_FRONT_BUMPER_",
+        "old_offset": 4288000,
+        "new_offset": 2982272,
+        "vertices_before": 331,
+        "vertices_after": 3,
+        "triangles_before": 271,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x2d9653c9",
+        "part": "COROLLA_KIT12_FRONT_BUMPER_",
+        "old_offset": 4306304,
+        "new_offset": 2987136,
+        "vertices_before": 175,
+        "vertices_after": 3,
+        "triangles_before": 107,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x39e57ee8",
+        "part": "COROLLA_KIT12_REAR_BUMPER_A",
+        "old_offset": 4315648,
+        "new_offset": 2989568,
+        "vertices_before": 374,
+        "vertices_after": 3,
+        "triangles_before": 328,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x39e57ee9",
+        "part": "COROLLA_KIT12_REAR_BUMPER_B",
+        "old_offset": 4338048,
+        "new_offset": 2996608,
+        "vertices_before": 233,
+        "vertices_after": 3,
+        "triangles_before": 178,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x39e57eea",
+        "part": "COROLLA_KIT12_REAR_BUMPER_C",
+        "old_offset": 4351232,
+        "new_offset": 3000448,
+        "vertices_before": 109,
+        "vertices_after": 3,
+        "triangles_before": 67,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x61df3121",
+        "part": "COROLLA_KIT12_SKIRT_A",
+        "old_offset": 4357248,
+        "new_offset": 3002240,
+        "vertices_before": 618,
+        "vertices_after": 3,
+        "triangles_before": 418,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x61df3122",
+        "part": "COROLLA_KIT12_SKIRT_B",
+        "old_offset": 4389248,
+        "new_offset": 3009664,
+        "vertices_before": 368,
+        "vertices_after": 3,
+        "triangles_before": 226,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x61df3123",
+        "part": "COROLLA_KIT12_SKIRT_C",
+        "old_offset": 4408576,
+        "new_offset": 3014528,
+        "vertices_before": 152,
+        "vertices_after": 3,
+        "triangles_before": 80,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x39cb79a8",
+        "part": "COROLLA_KIT13_FRONT_BUMPER_",
+        "old_offset": 4416512,
+        "new_offset": 3016576,
+        "vertices_before": 629,
+        "vertices_after": 3,
+        "triangles_before": 515,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x39cb79a9",
+        "part": "COROLLA_KIT13_FRONT_BUMPER_",
+        "old_offset": 4452736,
+        "new_offset": 3027200,
+        "vertices_before": 402,
+        "vertices_after": 3,
+        "triangles_before": 285,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x39cb79aa",
+        "part": "COROLLA_KIT13_FRONT_BUMPER_",
+        "old_offset": 4474880,
+        "new_offset": 3033344,
+        "vertices_before": 199,
+        "vertices_after": 3,
+        "triangles_before": 107,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xdd2ceca9",
+        "part": "COROLLA_KIT13_REAR_BUMPER_A",
+        "old_offset": 4485760,
+        "new_offset": 3036544,
+        "vertices_before": 343,
+        "vertices_after": 3,
+        "triangles_before": 311,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xdd2cecaa",
+        "part": "COROLLA_KIT13_REAR_BUMPER_B",
+        "old_offset": 4505856,
+        "new_offset": 3042560,
+        "vertices_before": 208,
+        "vertices_after": 3,
+        "triangles_before": 156,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xdd2cecab",
+        "part": "COROLLA_KIT13_REAR_BUMPER_C",
+        "old_offset": 4517376,
+        "new_offset": 3045760,
+        "vertices_before": 108,
+        "vertices_after": 3,
+        "triangles_before": 64,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xd65ba222",
+        "part": "COROLLA_KIT13_SKIRT_A",
+        "old_offset": 4523392,
+        "new_offset": 3047552,
+        "vertices_before": 536,
+        "vertices_after": 3,
+        "triangles_before": 358,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xd65ba223",
+        "part": "COROLLA_KIT13_SKIRT_B",
+        "old_offset": 4550656,
+        "new_offset": 3053440,
+        "vertices_before": 332,
+        "vertices_after": 3,
+        "triangles_before": 194,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xd65ba224",
+        "part": "COROLLA_KIT13_SKIRT_C",
+        "old_offset": 4568320,
+        "new_offset": 3058176,
+        "vertices_before": 120,
+        "vertices_after": 3,
+        "triangles_before": 66,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x46009f89",
+        "part": "COROLLA_KIT14_FRONT_BUMPER_",
+        "old_offset": 4574848,
+        "new_offset": 3060224,
+        "vertices_before": 575,
+        "vertices_after": 3,
+        "triangles_before": 459,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x46009f8a",
+        "part": "COROLLA_KIT14_FRONT_BUMPER_",
+        "old_offset": 4606336,
+        "new_offset": 3068416,
+        "vertices_before": 339,
+        "vertices_after": 3,
+        "triangles_before": 225,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x46009f8b",
+        "part": "COROLLA_KIT14_FRONT_BUMPER_",
+        "old_offset": 4624256,
+        "new_offset": 3072896,
+        "vertices_before": 155,
+        "vertices_after": 3,
+        "triangles_before": 89,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x80745a6a",
+        "part": "COROLLA_KIT14_REAR_BUMPER_A",
+        "old_offset": 4632704,
+        "new_offset": 3075328,
+        "vertices_before": 506,
+        "vertices_after": 3,
+        "triangles_before": 389,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x80745a6b",
+        "part": "COROLLA_KIT14_REAR_BUMPER_B",
+        "old_offset": 4662016,
+        "new_offset": 3084288,
+        "vertices_before": 299,
+        "vertices_after": 3,
+        "triangles_before": 206,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x80745a6c",
+        "part": "COROLLA_KIT14_REAR_BUMPER_C",
+        "old_offset": 4678272,
+        "new_offset": 3088640,
+        "vertices_before": 100,
+        "vertices_after": 3,
+        "triangles_before": 74,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x4ad81323",
+        "part": "COROLLA_KIT14_SKIRT_A",
+        "old_offset": 4684288,
+        "new_offset": 3090688,
+        "vertices_before": 497,
+        "vertices_after": 3,
+        "triangles_before": 301,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x4ad81324",
+        "part": "COROLLA_KIT14_SKIRT_B",
+        "old_offset": 4709632,
+        "new_offset": 3096448,
+        "vertices_before": 296,
+        "vertices_after": 3,
+        "triangles_before": 174,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x4ad81325",
+        "part": "COROLLA_KIT14_SKIRT_C",
+        "old_offset": 4724992,
+        "new_offset": 3100160,
+        "vertices_before": 112,
+        "vertices_after": 3,
+        "triangles_before": 62,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x5e6aeb4b",
+        "part": "COROLLA_KIT16_FRONT_BUMPER_",
+        "old_offset": 4731392,
+        "new_offset": 3102208,
+        "vertices_before": 511,
+        "vertices_after": 3,
+        "triangles_before": 371,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x5e6aeb4c",
+        "part": "COROLLA_KIT16_FRONT_BUMPER_",
+        "old_offset": 4759168,
+        "new_offset": 3109376,
+        "vertices_before": 303,
+        "vertices_after": 3,
+        "triangles_before": 193,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x5e6aeb4d",
+        "part": "COROLLA_KIT16_FRONT_BUMPER_",
+        "old_offset": 4775680,
+        "new_offset": 3113856,
+        "vertices_before": 128,
+        "vertices_after": 3,
+        "triangles_before": 76,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xc70335ec",
+        "part": "COROLLA_KIT16_REAR_BUMPER_A",
+        "old_offset": 4782464,
+        "new_offset": 3115648,
+        "vertices_before": 457,
+        "vertices_after": 3,
+        "triangles_before": 393,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xc70335ed",
+        "part": "COROLLA_KIT16_REAR_BUMPER_B",
+        "old_offset": 4808832,
+        "new_offset": 3123328,
+        "vertices_before": 272,
+        "vertices_after": 3,
+        "triangles_before": 207,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xc70335ee",
+        "part": "COROLLA_KIT16_REAR_BUMPER_C",
+        "old_offset": 4823936,
+        "new_offset": 3127424,
+        "vertices_before": 143,
+        "vertices_after": 3,
+        "triangles_before": 91,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x33d0f525",
+        "part": "COROLLA_KIT16_SKIRT_A",
+        "old_offset": 4831872,
+        "new_offset": 3129728,
+        "vertices_before": 548,
+        "vertices_after": 3,
+        "triangles_before": 366,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x33d0f526",
+        "part": "COROLLA_KIT16_SKIRT_B",
+        "old_offset": 4860416,
+        "new_offset": 3136512,
+        "vertices_before": 334,
+        "vertices_after": 3,
+        "triangles_before": 202,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x33d0f527",
+        "part": "COROLLA_KIT16_SKIRT_C",
+        "old_offset": 4878080,
+        "new_offset": 3141120,
+        "vertices_before": 138,
+        "vertices_after": 3,
+        "triangles_before": 76,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x6aa0112c",
+        "part": "COROLLA_KIT17_FRONT_BUMPER_",
+        "old_offset": 4886528,
+        "new_offset": 3144192,
+        "vertices_before": 603,
+        "vertices_after": 3,
+        "triangles_before": 478,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x6aa0112d",
+        "part": "COROLLA_KIT17_FRONT_BUMPER_",
+        "old_offset": 4919808,
+        "new_offset": 3153024,
+        "vertices_before": 328,
+        "vertices_after": 3,
+        "triangles_before": 261,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x6aa0112e",
+        "part": "COROLLA_KIT17_FRONT_BUMPER_",
+        "old_offset": 4938752,
+        "new_offset": 3158784,
+        "vertices_before": 160,
+        "vertices_after": 3,
+        "triangles_before": 99,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x6a4aa3ad",
+        "part": "COROLLA_KIT17_REAR_BUMPER_A",
+        "old_offset": 4947840,
+        "new_offset": 3161600,
+        "vertices_before": 429,
+        "vertices_after": 3,
+        "triangles_before": 380,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x6a4aa3ae",
+        "part": "COROLLA_KIT17_REAR_BUMPER_B",
+        "old_offset": 4972800,
+        "new_offset": 3169024,
+        "vertices_before": 263,
+        "vertices_after": 3,
+        "triangles_before": 208,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x6a4aa3af",
+        "part": "COROLLA_KIT17_REAR_BUMPER_C",
+        "old_offset": 4988544,
+        "new_offset": 3174144,
+        "vertices_before": 123,
+        "vertices_after": 3,
+        "triangles_before": 76,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xa84d6626",
+        "part": "COROLLA_KIT17_SKIRT_A",
+        "old_offset": 4995584,
+        "new_offset": 3176448,
+        "vertices_before": 514,
+        "vertices_after": 3,
+        "triangles_before": 318,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xa84d6627",
+        "part": "COROLLA_KIT17_SKIRT_B",
+        "old_offset": 5021952,
+        "new_offset": 3182592,
+        "vertices_before": 294,
+        "vertices_after": 3,
+        "triangles_before": 174,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xa84d6628",
+        "part": "COROLLA_KIT17_SKIRT_C",
+        "old_offset": 5037824,
+        "new_offset": 3186944,
+        "vertices_before": 120,
+        "vertices_after": 3,
+        "triangles_before": 66,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x76d5370d",
+        "part": "COROLLA_KIT18_FRONT_BUMPER_",
+        "old_offset": 5044736,
+        "new_offset": 3189248,
+        "vertices_before": 504,
+        "vertices_after": 3,
+        "triangles_before": 367,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x76d5370e",
+        "part": "COROLLA_KIT18_FRONT_BUMPER_",
+        "old_offset": 5071872,
+        "new_offset": 3196160,
+        "vertices_before": 316,
+        "vertices_after": 3,
+        "triangles_before": 205,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x76d5370f",
+        "part": "COROLLA_KIT18_FRONT_BUMPER_",
+        "old_offset": 5087744,
+        "new_offset": 3199488,
+        "vertices_before": 141,
+        "vertices_after": 3,
+        "triangles_before": 73,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x0d92116e",
+        "part": "COROLLA_KIT18_REAR_BUMPER_A",
+        "old_offset": 5095040,
+        "new_offset": 3201408,
+        "vertices_before": 411,
+        "vertices_after": 3,
+        "triangles_before": 326,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x0d92116f",
+        "part": "COROLLA_KIT18_REAR_BUMPER_B",
+        "old_offset": 5118592,
+        "new_offset": 3208320,
+        "vertices_before": 272,
+        "vertices_after": 3,
+        "triangles_before": 184,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x0d921170",
+        "part": "COROLLA_KIT18_REAR_BUMPER_C",
+        "old_offset": 5132416,
+        "new_offset": 3211392,
+        "vertices_before": 114,
+        "vertices_after": 3,
+        "triangles_before": 74,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x1cc9d727",
+        "part": "COROLLA_KIT18_SKIRT_A",
+        "old_offset": 5138816,
+        "new_offset": 3213440,
+        "vertices_before": 472,
+        "vertices_after": 3,
+        "triangles_before": 322,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x1cc9d728",
+        "part": "COROLLA_KIT18_SKIRT_B",
+        "old_offset": 5163648,
+        "new_offset": 3219456,
+        "vertices_before": 306,
+        "vertices_after": 3,
+        "triangles_before": 180,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x1cc9d729",
+        "part": "COROLLA_KIT18_SKIRT_C",
+        "old_offset": 5179520,
+        "new_offset": 3223424,
+        "vertices_before": 106,
+        "vertices_after": 3,
+        "triangles_before": 68,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x830a5cee",
+        "part": "COROLLA_KIT19_FRONT_BUMPER_",
+        "old_offset": 5185280,
+        "new_offset": 3225088,
+        "vertices_before": 526,
+        "vertices_after": 3,
+        "triangles_before": 411,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x830a5cef",
+        "part": "COROLLA_KIT19_FRONT_BUMPER_",
+        "old_offset": 5215104,
+        "new_offset": 3233664,
+        "vertices_before": 303,
+        "vertices_after": 3,
+        "triangles_before": 223,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x830a5cf0",
+        "part": "COROLLA_KIT19_FRONT_BUMPER_",
+        "old_offset": 5231616,
+        "new_offset": 3238016,
+        "vertices_before": 159,
+        "vertices_after": 3,
+        "triangles_before": 99,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xb0d97f2f",
+        "part": "COROLLA_KIT19_REAR_BUMPER_A",
+        "old_offset": 5240192,
+        "new_offset": 3240448,
+        "vertices_before": 360,
+        "vertices_after": 3,
+        "triangles_before": 313,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xb0d97f30",
+        "part": "COROLLA_KIT19_REAR_BUMPER_B",
+        "old_offset": 5261056,
+        "new_offset": 3246592,
+        "vertices_before": 219,
+        "vertices_after": 3,
+        "triangles_before": 164,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xb0d97f31",
+        "part": "COROLLA_KIT19_REAR_BUMPER_C",
+        "old_offset": 5273344,
+        "new_offset": 3250176,
+        "vertices_before": 120,
+        "vertices_after": 3,
+        "triangles_before": 76,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x91464828",
+        "part": "COROLLA_KIT19_SKIRT_A",
+        "old_offset": 5280000,
+        "new_offset": 3252096,
+        "vertices_before": 546,
+        "vertices_after": 3,
+        "triangles_before": 344,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x91464829",
+        "part": "COROLLA_KIT19_SKIRT_B",
+        "old_offset": 5308160,
+        "new_offset": 3258752,
+        "vertices_before": 308,
+        "vertices_after": 3,
+        "triangles_before": 186,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x9146482a",
+        "part": "COROLLA_KIT19_SKIRT_C",
+        "old_offset": 5324160,
+        "new_offset": 3262592,
+        "vertices_before": 136,
+        "vertices_after": 3,
+        "triangles_before": 78,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xa805ea06",
+        "part": "COROLLA_KIT20_FRONT_BUMPER_",
+        "old_offset": 5331456,
+        "new_offset": 3264768,
+        "vertices_before": 546,
+        "vertices_after": 3,
+        "triangles_before": 318,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xa805ea07",
+        "part": "COROLLA_KIT20_FRONT_BUMPER_",
+        "old_offset": 5361536,
+        "new_offset": 3273344,
+        "vertices_before": 275,
+        "vertices_after": 3,
+        "triangles_before": 177,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xa805ea08",
+        "part": "COROLLA_KIT20_FRONT_BUMPER_",
+        "old_offset": 5376768,
+        "new_offset": 3277696,
+        "vertices_before": 125,
+        "vertices_after": 3,
+        "triangles_before": 74,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xff8bc947",
+        "part": "COROLLA_KIT20_REAR_BUMPER_A",
+        "old_offset": 5383552,
+        "new_offset": 3279744,
+        "vertices_before": 363,
+        "vertices_after": 3,
+        "triangles_before": 277,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xff8bc948",
+        "part": "COROLLA_KIT20_REAR_BUMPER_B",
+        "old_offset": 5404288,
+        "new_offset": 3285888,
+        "vertices_before": 234,
+        "vertices_after": 3,
+        "triangles_before": 152,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xff8bc949",
+        "part": "COROLLA_KIT20_REAR_BUMPER_C",
+        "old_offset": 5416704,
+        "new_offset": 3289088,
+        "vertices_before": 93,
+        "vertices_after": 3,
+        "triangles_before": 57,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x7cf0e040",
+        "part": "COROLLA_KIT20_SKIRT_A",
+        "old_offset": 5422080,
+        "new_offset": 3290880,
+        "vertices_before": 539,
+        "vertices_after": 3,
+        "triangles_before": 330,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x7cf0e041",
+        "part": "COROLLA_KIT20_SKIRT_B",
+        "old_offset": 5449856,
+        "new_offset": 3297408,
+        "vertices_before": 330,
+        "vertices_after": 3,
+        "triangles_before": 184,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x7cf0e042",
+        "part": "COROLLA_KIT20_SKIRT_C",
+        "old_offset": 5467136,
+        "new_offset": 3301888,
+        "vertices_before": 178,
+        "vertices_after": 3,
+        "triangles_before": 92,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xb43b0fe7",
+        "part": "COROLLA_KIT21_FRONT_BUMPER_",
+        "old_offset": 5476864,
+        "new_offset": 3304832,
+        "vertices_before": 567,
+        "vertices_after": 3,
+        "triangles_before": 409,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xb43b0fe8",
+        "part": "COROLLA_KIT21_FRONT_BUMPER_",
+        "old_offset": 5508224,
+        "new_offset": 3313408,
+        "vertices_before": 333,
+        "vertices_after": 3,
+        "triangles_before": 219,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xb43b0fe9",
+        "part": "COROLLA_KIT21_FRONT_BUMPER_",
+        "old_offset": 5525248,
+        "new_offset": 3317248,
+        "vertices_before": 159,
+        "vertices_after": 3,
+        "triangles_before": 93,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xb9171765",
+        "part": "COROLLA_KIT21_HOOD_UNDER_LE",
+        "old_offset": 5533952,
+        "new_offset": 3319808,
+        "vertices_before": 46,
+        "vertices_after": 3,
+        "triangles_before": 51,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xb3376c58",
+        "part": "COROLLA_KIT21_HOOD_UNDER_RI",
+        "old_offset": 5536512,
+        "new_offset": 3320448,
+        "vertices_before": 45,
+        "vertices_after": 3,
+        "triangles_before": 50,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xa2d33708",
+        "part": "COROLLA_KIT21_REAR_BUMPER_A",
+        "old_offset": 5538944,
+        "new_offset": 3321088,
+        "vertices_before": 513,
+        "vertices_after": 3,
+        "triangles_before": 391,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xa2d33709",
+        "part": "COROLLA_KIT21_REAR_BUMPER_B",
+        "old_offset": 5568512,
+        "new_offset": 3330048,
+        "vertices_before": 319,
+        "vertices_after": 3,
+        "triangles_before": 218,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xa2d3370a",
+        "part": "COROLLA_KIT21_REAR_BUMPER_C",
+        "old_offset": 5585152,
+        "new_offset": 3334016,
+        "vertices_before": 155,
+        "vertices_after": 3,
+        "triangles_before": 96,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xf16d5141",
+        "part": "COROLLA_KIT21_SKIRT_A",
+        "old_offset": 5593856,
+        "new_offset": 3336704,
+        "vertices_before": 608,
+        "vertices_after": 3,
+        "triangles_before": 370,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xf16d5142",
+        "part": "COROLLA_KIT21_SKIRT_B",
+        "old_offset": 5624832,
+        "new_offset": 3343744,
+        "vertices_before": 334,
+        "vertices_after": 3,
+        "triangles_before": 200,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xf16d5143",
+        "part": "COROLLA_KIT21_SKIRT_C",
+        "old_offset": 5642496,
+        "new_offset": 3348352,
+        "vertices_before": 138,
+        "vertices_after": 3,
+        "triangles_before": 88,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xc07035c8",
+        "part": "COROLLA_KIT22_FRONT_BUMPER_",
+        "old_offset": 5650048,
+        "new_offset": 3350528,
+        "vertices_before": 352,
+        "vertices_after": 3,
+        "triangles_before": 290,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xc07035c9",
+        "part": "COROLLA_KIT22_FRONT_BUMPER_",
+        "old_offset": 5670528,
+        "new_offset": 3356672,
+        "vertices_before": 209,
+        "vertices_after": 3,
+        "triangles_before": 155,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xc07035ca",
+        "part": "COROLLA_KIT22_FRONT_BUMPER_",
+        "old_offset": 5681792,
+        "new_offset": 3359616,
+        "vertices_before": 102,
+        "vertices_after": 3,
+        "triangles_before": 59,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x69f17da6",
+        "part": "COROLLA_KIT22_HOOD_UNDER_LE",
+        "old_offset": 5687552,
+        "new_offset": 3361408,
+        "vertices_before": 69,
+        "vertices_after": 3,
+        "triangles_before": 70,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x7f5e9ab9",
+        "part": "COROLLA_KIT22_HOOD_UNDER_RI",
+        "old_offset": 5691008,
+        "new_offset": 3362048,
+        "vertices_before": 69,
+        "vertices_after": 3,
+        "triangles_before": 66,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x461aa4c9",
+        "part": "COROLLA_KIT22_REAR_BUMPER_A",
+        "old_offset": 5694464,
+        "new_offset": 3362688,
+        "vertices_before": 296,
+        "vertices_after": 3,
+        "triangles_before": 290,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x461aa4ca",
+        "part": "COROLLA_KIT22_REAR_BUMPER_B",
+        "old_offset": 5712384,
+        "new_offset": 3368320,
+        "vertices_before": 192,
+        "vertices_after": 3,
+        "triangles_before": 162,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x461aa4cb",
+        "part": "COROLLA_KIT22_REAR_BUMPER_C",
+        "old_offset": 5723008,
+        "new_offset": 3371264,
+        "vertices_before": 84,
+        "vertices_after": 3,
+        "triangles_before": 55,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x65e9c242",
+        "part": "COROLLA_KIT22_SKIRT_A",
+        "old_offset": 5728000,
+        "new_offset": 3373056,
+        "vertices_before": 474,
+        "vertices_after": 3,
+        "triangles_before": 310,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x65e9c243",
+        "part": "COROLLA_KIT22_SKIRT_B",
+        "old_offset": 5751680,
+        "new_offset": 3378048,
+        "vertices_before": 312,
+        "vertices_after": 3,
+        "triangles_before": 182,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x65e9c244",
+        "part": "COROLLA_KIT22_SKIRT_C",
+        "old_offset": 5768320,
+        "new_offset": 3382400,
+        "vertices_before": 124,
+        "vertices_after": 3,
+        "triangles_before": 74,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xcca55ba9",
+        "part": "COROLLA_KIT23_FRONT_BUMPER_",
+        "old_offset": 5775616,
+        "new_offset": 3384960,
+        "vertices_before": 488,
+        "vertices_after": 3,
+        "triangles_before": 390,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xcca55baa",
+        "part": "COROLLA_KIT23_FRONT_BUMPER_",
+        "old_offset": 5804288,
+        "new_offset": 3393920,
+        "vertices_before": 293,
+        "vertices_after": 3,
+        "triangles_before": 211,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xcca55bab",
+        "part": "COROLLA_KIT23_FRONT_BUMPER_",
+        "old_offset": 5820672,
+        "new_offset": 3398656,
+        "vertices_before": 154,
+        "vertices_after": 3,
+        "triangles_before": 100,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x1acbe3e7",
+        "part": "COROLLA_KIT23_HOOD_UNDER_LE",
+        "old_offset": 5828992,
+        "new_offset": 3400960,
+        "vertices_before": 48,
+        "vertices_after": 3,
+        "triangles_before": 42,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x4b85c91a",
+        "part": "COROLLA_KIT23_HOOD_UNDER_RI",
+        "old_offset": 5831552,
+        "new_offset": 3401600,
+        "vertices_before": 54,
+        "vertices_after": 3,
+        "triangles_before": 50,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xe962128a",
+        "part": "COROLLA_KIT23_REAR_BUMPER_A",
+        "old_offset": 5834368,
+        "new_offset": 3402240,
+        "vertices_before": 415,
+        "vertices_after": 3,
+        "triangles_before": 339,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xe962128b",
+        "part": "COROLLA_KIT23_REAR_BUMPER_B",
+        "old_offset": 5858816,
+        "new_offset": 3409792,
+        "vertices_before": 247,
+        "vertices_after": 3,
+        "triangles_before": 189,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xe962128c",
+        "part": "COROLLA_KIT23_REAR_BUMPER_C",
+        "old_offset": 5872768,
+        "new_offset": 3413760,
+        "vertices_before": 104,
+        "vertices_after": 3,
+        "triangles_before": 70,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xda663343",
+        "part": "COROLLA_KIT23_SKIRT_A",
+        "old_offset": 5879040,
+        "new_offset": 3415936,
+        "vertices_before": 444,
+        "vertices_after": 3,
+        "triangles_before": 298,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xda663344",
+        "part": "COROLLA_KIT23_SKIRT_B",
+        "old_offset": 5901568,
+        "new_offset": 3420800,
+        "vertices_before": 266,
+        "vertices_after": 3,
+        "triangles_before": 174,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xda663345",
+        "part": "COROLLA_KIT23_SKIRT_C",
+        "old_offset": 5915904,
+        "new_offset": 3424640,
+        "vertices_before": 124,
+        "vertices_after": 3,
+        "triangles_before": 74,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xd8da818a",
+        "part": "COROLLA_KIT24_FRONT_BUMPER_",
+        "old_offset": 5922688,
+        "new_offset": 3426688,
+        "vertices_before": 594,
+        "vertices_after": 3,
+        "triangles_before": 438,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xd8da818b",
+        "part": "COROLLA_KIT24_FRONT_BUMPER_",
+        "old_offset": 5955456,
+        "new_offset": 3435520,
+        "vertices_before": 362,
+        "vertices_after": 3,
+        "triangles_before": 236,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xd8da818c",
+        "part": "COROLLA_KIT24_FRONT_BUMPER_",
+        "old_offset": 5976192,
+        "new_offset": 3441920,
+        "vertices_before": 159,
+        "vertices_after": 3,
+        "triangles_before": 95,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xcba64a28",
+        "part": "COROLLA_KIT24_HOOD_UNDER_LE",
+        "old_offset": 5984768,
+        "new_offset": 3444352,
+        "vertices_before": 68,
+        "vertices_after": 3,
+        "triangles_before": 61,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x17acf77b",
+        "part": "COROLLA_KIT24_HOOD_UNDER_RI",
+        "old_offset": 5988096,
+        "new_offset": 3444992,
+        "vertices_before": 70,
+        "vertices_after": 3,
+        "triangles_before": 63,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x8ca9804b",
+        "part": "COROLLA_KIT24_REAR_BUMPER_A",
+        "old_offset": 5991552,
+        "new_offset": 3445632,
+        "vertices_before": 440,
+        "vertices_after": 3,
+        "triangles_before": 350,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x8ca9804c",
+        "part": "COROLLA_KIT24_REAR_BUMPER_B",
+        "old_offset": 6016640,
+        "new_offset": 3452928,
+        "vertices_before": 268,
+        "vertices_after": 3,
+        "triangles_before": 179,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x8ca9804d",
+        "part": "COROLLA_KIT24_REAR_BUMPER_C",
+        "old_offset": 6031360,
+        "new_offset": 3457024,
+        "vertices_before": 116,
+        "vertices_after": 3,
+        "triangles_before": 68,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x4ee2a444",
+        "part": "COROLLA_KIT24_SKIRT_A",
+        "old_offset": 6037888,
+        "new_offset": 3459072,
+        "vertices_before": 534,
+        "vertices_after": 3,
+        "triangles_before": 358,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x4ee2a445",
+        "part": "COROLLA_KIT24_SKIRT_B",
+        "old_offset": 6065280,
+        "new_offset": 3465216,
+        "vertices_before": 322,
+        "vertices_after": 3,
+        "triangles_before": 210,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x4ee2a446",
+        "part": "COROLLA_KIT24_SKIRT_C",
+        "old_offset": 6082816,
+        "new_offset": 3469952,
+        "vertices_before": 169,
+        "vertices_after": 3,
+        "triangles_before": 99,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xe50fa76b",
+        "part": "COROLLA_KIT25_FRONT_BUMPER_",
+        "old_offset": 6091776,
+        "new_offset": 3472384,
+        "vertices_before": 776,
+        "vertices_after": 3,
+        "triangles_before": 534,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xe50fa76c",
+        "part": "COROLLA_KIT25_FRONT_BUMPER_",
+        "old_offset": 6135552,
+        "new_offset": 3485184,
+        "vertices_before": 463,
+        "vertices_after": 3,
+        "triangles_before": 279,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xe50fa76d",
+        "part": "COROLLA_KIT25_FRONT_BUMPER_",
+        "old_offset": 6159872,
+        "new_offset": 3491328,
+        "vertices_before": 199,
+        "vertices_after": 3,
+        "triangles_before": 113,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x7c80b069",
+        "part": "COROLLA_KIT25_HOOD_UNDER_LE",
+        "old_offset": 6171008,
+        "new_offset": 3494656,
+        "vertices_before": 49,
+        "vertices_after": 3,
+        "triangles_before": 40,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xe3d425dc",
+        "part": "COROLLA_KIT25_HOOD_UNDER_RI",
+        "old_offset": 6173568,
+        "new_offset": 3495296,
+        "vertices_before": 65,
+        "vertices_after": 3,
+        "triangles_before": 64,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x2ff0ee0c",
+        "part": "COROLLA_KIT25_REAR_BUMPER_A",
+        "old_offset": 6176768,
+        "new_offset": 3495936,
+        "vertices_before": 596,
+        "vertices_after": 3,
+        "triangles_before": 487,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x2ff0ee0d",
+        "part": "COROLLA_KIT25_REAR_BUMPER_B",
+        "old_offset": 6211328,
+        "new_offset": 3506304,
+        "vertices_before": 381,
+        "vertices_after": 3,
+        "triangles_before": 270,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x2ff0ee0e",
+        "part": "COROLLA_KIT25_REAR_BUMPER_C",
+        "old_offset": 6232320,
+        "new_offset": 3512064,
+        "vertices_before": 160,
+        "vertices_after": 3,
+        "triangles_before": 96,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xc35f1545",
+        "part": "COROLLA_KIT25_SKIRT_A",
+        "old_offset": 6241280,
+        "new_offset": 3514880,
+        "vertices_before": 513,
+        "vertices_after": 3,
+        "triangles_before": 358,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xc35f1546",
+        "part": "COROLLA_KIT25_SKIRT_B",
+        "old_offset": 6268928,
+        "new_offset": 3522048,
+        "vertices_before": 362,
+        "vertices_after": 3,
+        "triangles_before": 224,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xc35f1547",
+        "part": "COROLLA_KIT25_SKIRT_C",
+        "old_offset": 6288896,
+        "new_offset": 3527680,
+        "vertices_before": 174,
+        "vertices_after": 3,
+        "triangles_before": 90,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xf144cd4c",
+        "part": "COROLLA_KIT26_FRONT_BUMPER_",
+        "old_offset": 6298368,
+        "new_offset": 3530496,
+        "vertices_before": 534,
+        "vertices_after": 3,
+        "triangles_before": 391,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xf144cd4d",
+        "part": "COROLLA_KIT26_FRONT_BUMPER_",
+        "old_offset": 6328192,
+        "new_offset": 3538944,
+        "vertices_before": 311,
+        "vertices_after": 3,
+        "triangles_before": 209,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xf144cd4e",
+        "part": "COROLLA_KIT26_FRONT_BUMPER_",
+        "old_offset": 6344960,
+        "new_offset": 3543424,
+        "vertices_before": 152,
+        "vertices_after": 3,
+        "triangles_before": 86,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xd3385bcd",
+        "part": "COROLLA_KIT26_REAR_BUMPER_A",
+        "old_offset": 6352640,
+        "new_offset": 3545216,
+        "vertices_before": 402,
+        "vertices_after": 3,
+        "triangles_before": 339,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xd3385bce",
+        "part": "COROLLA_KIT26_REAR_BUMPER_B",
+        "old_offset": 6375936,
+        "new_offset": 3552000,
+        "vertices_before": 222,
+        "vertices_after": 3,
+        "triangles_before": 172,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xd3385bcf",
+        "part": "COROLLA_KIT26_REAR_BUMPER_C",
+        "old_offset": 6388224,
+        "new_offset": 3555456,
+        "vertices_before": 104,
+        "vertices_after": 3,
+        "triangles_before": 72,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x37db8646",
+        "part": "COROLLA_KIT26_SKIRT_A",
+        "old_offset": 6393984,
+        "new_offset": 3557120,
+        "vertices_before": 546,
+        "vertices_after": 3,
+        "triangles_before": 398,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x37db8647",
+        "part": "COROLLA_KIT26_SKIRT_B",
+        "old_offset": 6422656,
+        "new_offset": 3563904,
+        "vertices_before": 332,
+        "vertices_after": 3,
+        "triangles_before": 220,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x37db8648",
+        "part": "COROLLA_KIT26_SKIRT_C",
+        "old_offset": 6440448,
+        "new_offset": 3568512,
+        "vertices_before": 158,
+        "vertices_after": 3,
+        "triangles_before": 90,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xfd79f32d",
+        "part": "COROLLA_KIT27_FRONT_BUMPER_",
+        "old_offset": 6448768,
+        "new_offset": 3570816,
+        "vertices_before": 570,
+        "vertices_after": 3,
+        "triangles_before": 455,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xfd79f32e",
+        "part": "COROLLA_KIT27_FRONT_BUMPER_",
+        "old_offset": 6481792,
+        "new_offset": 3580672,
+        "vertices_before": 351,
+        "vertices_after": 3,
+        "triangles_before": 249,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xfd79f32f",
+        "part": "COROLLA_KIT27_FRONT_BUMPER_",
+        "old_offset": 6500224,
+        "new_offset": 3585152,
+        "vertices_before": 151,
+        "vertices_after": 3,
+        "triangles_before": 89,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x767fc98e",
+        "part": "COROLLA_KIT27_REAR_BUMPER_A",
+        "old_offset": 6508928,
+        "new_offset": 3587968,
+        "vertices_before": 542,
+        "vertices_after": 3,
+        "triangles_before": 449,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x767fc98f",
+        "part": "COROLLA_KIT27_REAR_BUMPER_B",
+        "old_offset": 6540544,
+        "new_offset": 3597568,
+        "vertices_before": 351,
+        "vertices_after": 3,
+        "triangles_before": 246,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x767fc990",
+        "part": "COROLLA_KIT27_REAR_BUMPER_C",
+        "old_offset": 6559744,
+        "new_offset": 3602688,
+        "vertices_before": 135,
+        "vertices_after": 3,
+        "triangles_before": 92,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xac57f747",
+        "part": "COROLLA_KIT27_SKIRT_A",
+        "old_offset": 6567296,
+        "new_offset": 3604992,
+        "vertices_before": 620,
+        "vertices_after": 3,
+        "triangles_before": 434,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xac57f748",
+        "part": "COROLLA_KIT27_SKIRT_B",
+        "old_offset": 6600448,
+        "new_offset": 3613312,
+        "vertices_before": 334,
+        "vertices_after": 3,
+        "triangles_before": 240,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xac57f749",
+        "part": "COROLLA_KIT27_SKIRT_C",
+        "old_offset": 6617984,
+        "new_offset": 3617536,
+        "vertices_before": 120,
+        "vertices_after": 3,
+        "triangles_before": 74,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x09af190e",
+        "part": "COROLLA_KIT28_FRONT_BUMPER_",
+        "old_offset": 6624896,
+        "new_offset": 3619712,
+        "vertices_before": 501,
+        "vertices_after": 3,
+        "triangles_before": 327,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x09af190f",
+        "part": "COROLLA_KIT28_FRONT_BUMPER_",
+        "old_offset": 6653056,
+        "new_offset": 3628032,
+        "vertices_before": 315,
+        "vertices_after": 3,
+        "triangles_before": 176,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x09af1910",
+        "part": "COROLLA_KIT28_FRONT_BUMPER_",
+        "old_offset": 6669952,
+        "new_offset": 3632640,
+        "vertices_before": 145,
+        "vertices_after": 3,
+        "triangles_before": 81,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x19c7374f",
+        "part": "COROLLA_KIT28_REAR_BUMPER_A",
+        "old_offset": 6677888,
+        "new_offset": 3635072,
+        "vertices_before": 338,
+        "vertices_after": 3,
+        "triangles_before": 288,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x19c73750",
+        "part": "COROLLA_KIT28_REAR_BUMPER_B",
+        "old_offset": 6697344,
+        "new_offset": 3640832,
+        "vertices_before": 208,
+        "vertices_after": 3,
+        "triangles_before": 158,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x19c73751",
+        "part": "COROLLA_KIT28_REAR_BUMPER_C",
+        "old_offset": 6708480,
+        "new_offset": 3643648,
+        "vertices_before": 96,
+        "vertices_after": 3,
+        "triangles_before": 54,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x20d46848",
+        "part": "COROLLA_KIT28_SKIRT_A",
+        "old_offset": 6713856,
+        "new_offset": 3645312,
+        "vertices_before": 470,
+        "vertices_after": 3,
+        "triangles_before": 294,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x20d46849",
+        "part": "COROLLA_KIT28_SKIRT_B",
+        "old_offset": 6737408,
+        "new_offset": 3650304,
+        "vertices_before": 272,
+        "vertices_after": 3,
+        "triangles_before": 162,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x20d4684a",
+        "part": "COROLLA_KIT28_SKIRT_C",
+        "old_offset": 6751872,
+        "new_offset": 3654144,
+        "vertices_before": 94,
+        "vertices_after": 3,
+        "triangles_before": 56,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x15e43eef",
+        "part": "COROLLA_KIT29_FRONT_BUMPER_",
+        "old_offset": 6757248,
+        "new_offset": 3655936,
+        "vertices_before": 662,
+        "vertices_after": 3,
+        "triangles_before": 479,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x15e43ef0",
+        "part": "COROLLA_KIT29_FRONT_BUMPER_",
+        "old_offset": 6794752,
+        "new_offset": 3666944,
+        "vertices_before": 401,
+        "vertices_after": 3,
+        "triangles_before": 258,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x15e43ef1",
+        "part": "COROLLA_KIT29_FRONT_BUMPER_",
+        "old_offset": 6815872,
+        "new_offset": 3672192,
+        "vertices_before": 179,
+        "vertices_after": 3,
+        "triangles_before": 109,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xbd0ea510",
+        "part": "COROLLA_KIT29_REAR_BUMPER_A",
+        "old_offset": 6825728,
+        "new_offset": 3675136,
+        "vertices_before": 473,
+        "vertices_after": 3,
+        "triangles_before": 361,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xbd0ea511",
+        "part": "COROLLA_KIT29_REAR_BUMPER_B",
+        "old_offset": 6853760,
+        "new_offset": 3684096,
+        "vertices_before": 314,
+        "vertices_after": 3,
+        "triangles_before": 208,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xbd0ea512",
+        "part": "COROLLA_KIT29_REAR_BUMPER_C",
+        "old_offset": 6870016,
+        "new_offset": 3687936,
+        "vertices_before": 116,
+        "vertices_after": 3,
+        "triangles_before": 77,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x9550d949",
+        "part": "COROLLA_KIT29_SKIRT_A",
+        "old_offset": 6876288,
+        "new_offset": 3689728,
+        "vertices_before": 726,
+        "vertices_after": 3,
+        "triangles_before": 464,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x9550d94a",
+        "part": "COROLLA_KIT29_SKIRT_B",
+        "old_offset": 6915584,
+        "new_offset": 3700224,
+        "vertices_before": 450,
+        "vertices_after": 3,
+        "triangles_before": 268,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x9550d94b",
+        "part": "COROLLA_KIT29_SKIRT_C",
+        "old_offset": 6939264,
+        "new_offset": 3706240,
+        "vertices_before": 202,
+        "vertices_after": 3,
+        "triangles_before": 120,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x3adfcc07",
+        "part": "COROLLA_KIT30_FRONT_BUMPER_",
+        "old_offset": 6950400,
+        "new_offset": 3709568,
+        "vertices_before": 776,
+        "vertices_after": 3,
+        "triangles_before": 616,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x3adfcc08",
+        "part": "COROLLA_KIT30_FRONT_BUMPER_",
+        "old_offset": 6995200,
+        "new_offset": 3722880,
+        "vertices_before": 481,
+        "vertices_after": 3,
+        "triangles_before": 351,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x3adfcc09",
+        "part": "COROLLA_KIT30_FRONT_BUMPER_",
+        "old_offset": 7020672,
+        "new_offset": 3729024,
+        "vertices_before": 212,
+        "vertices_after": 3,
+        "triangles_before": 132,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x0bc0ef28",
+        "part": "COROLLA_KIT30_REAR_BUMPER_A",
+        "old_offset": 7032832,
+        "new_offset": 3732864,
+        "vertices_before": 557,
+        "vertices_after": 3,
+        "triangles_before": 491,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x0bc0ef29",
+        "part": "COROLLA_KIT30_REAR_BUMPER_B",
+        "old_offset": 7065472,
+        "new_offset": 3742592,
+        "vertices_before": 348,
+        "vertices_after": 3,
+        "triangles_before": 268,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x0bc0ef2a",
+        "part": "COROLLA_KIT30_REAR_BUMPER_C",
+        "old_offset": 7083648,
+        "new_offset": 3746688,
+        "vertices_before": 143,
+        "vertices_after": 3,
+        "triangles_before": 97,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x80fb7161",
+        "part": "COROLLA_KIT30_SKIRT_A",
+        "old_offset": 7091840,
+        "new_offset": 3749248,
+        "vertices_before": 664,
+        "vertices_after": 3,
+        "triangles_before": 484,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x80fb7162",
+        "part": "COROLLA_KIT30_SKIRT_B",
+        "old_offset": 7127168,
+        "new_offset": 3757824,
+        "vertices_before": 432,
+        "vertices_after": 3,
+        "triangles_before": 300,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x80fb7163",
+        "part": "COROLLA_KIT30_SKIRT_C",
+        "old_offset": 7149184,
+        "new_offset": 3762688,
+        "vertices_before": 184,
+        "vertices_after": 3,
+        "triangles_before": 106,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x25c4fff7",
+        "part": "COROLLA_KITW01_BODY_A",
+        "old_offset": 7159040,
+        "new_offset": 3765504,
+        "vertices_before": 1989,
+        "vertices_after": 3,
+        "triangles_before": 1678,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x25c4fff8",
+        "part": "COROLLA_KITW01_BODY_B",
+        "old_offset": 7266432,
+        "new_offset": 3791360,
+        "vertices_before": 1295,
+        "vertices_after": 3,
+        "triangles_before": 965,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x25c4fff9",
+        "part": "COROLLA_KITW01_BODY_C",
+        "old_offset": 7330048,
+        "new_offset": 3802624,
+        "vertices_before": 657,
+        "vertices_after": 3,
+        "triangles_before": 433,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x25c4fffa",
+        "part": "COROLLA_KITW01_BODY_D",
+        "old_offset": 7362560,
+        "new_offset": 3809024,
+        "vertices_before": 202,
+        "vertices_after": 3,
+        "triangles_before": 132,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x28dd33c7",
+        "part": "COROLLA_KITW01_DOOR_LEFT_A",
+        "old_offset": 7372800,
+        "new_offset": 3811328,
+        "vertices_before": 131,
+        "vertices_after": 3,
+        "triangles_before": 99,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x28dd33c8",
+        "part": "COROLLA_KITW01_DOOR_LEFT_B",
+        "old_offset": 7379968,
+        "new_offset": 3813248,
+        "vertices_before": 6,
+        "vertices_after": 3,
+        "triangles_before": 4,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x28dd33c9",
+        "part": "COROLLA_KITW01_DOOR_LEFT_C",
+        "old_offset": 7380736,
+        "new_offset": 3813888,
+        "vertices_before": 4,
+        "vertices_after": 3,
+        "triangles_before": 2,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x79620856",
+        "part": "COROLLA_KITW01_DOOR_PANEL_L",
+        "old_offset": 7381504,
+        "new_offset": 3814528,
+        "vertices_before": 84,
+        "vertices_after": 3,
+        "triangles_before": 64,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x7ce07b69",
+        "part": "COROLLA_KITW01_DOOR_PANEL_R",
+        "old_offset": 7386112,
+        "new_offset": 3815936,
+        "vertices_before": 84,
+        "vertices_after": 3,
+        "triangles_before": 64,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x1bc114fa",
+        "part": "COROLLA_KITW01_DOOR_RIGHT_A",
+        "old_offset": 7391232,
+        "new_offset": 3817728,
+        "vertices_before": 131,
+        "vertices_after": 3,
+        "triangles_before": 99,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x1bc114fb",
+        "part": "COROLLA_KITW01_DOOR_RIGHT_B",
+        "old_offset": 7398400,
+        "new_offset": 3819648,
+        "vertices_before": 6,
+        "vertices_after": 3,
+        "triangles_before": 4,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x1bc114fc",
+        "part": "COROLLA_KITW01_DOOR_RIGHT_C",
+        "old_offset": 7399168,
+        "new_offset": 3820288,
+        "vertices_before": 5,
+        "vertices_after": 3,
+        "triangles_before": 3,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x2f880e7a",
+        "part": "COROLLA_KITW01_DOOR_SILL_LE",
+        "old_offset": 7399936,
+        "new_offset": 3820928,
+        "vertices_before": 37,
+        "vertices_after": 3,
+        "triangles_before": 31,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xf7c7460d",
+        "part": "COROLLA_KITW01_DOOR_SILL_RI",
+        "old_offset": 7402368,
+        "new_offset": 3821952,
+        "vertices_before": 37,
+        "vertices_after": 3,
+        "triangles_before": 31,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x1206d4d8",
+        "part": "COROLLA_KITW02_BODY_A",
+        "old_offset": 7404800,
+        "new_offset": 3823104,
+        "vertices_before": 2240,
+        "vertices_after": 3,
+        "triangles_before": 1862,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x1206d4d9",
+        "part": "COROLLA_KITW02_BODY_B",
+        "old_offset": 7527296,
+        "new_offset": 3853952,
+        "vertices_before": 1439,
+        "vertices_after": 3,
+        "triangles_before": 1105,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x1206d4da",
+        "part": "COROLLA_KITW02_BODY_C",
+        "old_offset": 7599488,
+        "new_offset": 3867776,
+        "vertices_before": 727,
+        "vertices_after": 3,
+        "triangles_before": 520,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x1206d4db",
+        "part": "COROLLA_KITW02_BODY_D",
+        "old_offset": 7635328,
+        "new_offset": 3874432,
+        "vertices_before": 206,
+        "vertices_after": 3,
+        "triangles_before": 132,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x783c3d48",
+        "part": "COROLLA_KITW02_DOOR_LEFT_A",
+        "old_offset": 7645312,
+        "new_offset": 3876352,
+        "vertices_before": 151,
+        "vertices_after": 3,
+        "triangles_before": 109,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x783c3d49",
+        "part": "COROLLA_KITW02_DOOR_LEFT_B",
+        "old_offset": 7653376,
+        "new_offset": 3878528,
+        "vertices_before": 6,
+        "vertices_after": 3,
+        "triangles_before": 4,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x783c3d4a",
+        "part": "COROLLA_KITW02_DOOR_LEFT_C",
+        "old_offset": 7654144,
+        "new_offset": 3879168,
+        "vertices_before": 4,
+        "vertices_after": 3,
+        "triangles_before": 2,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x2a3c6e97",
+        "part": "COROLLA_KITW02_DOOR_PANEL_L",
+        "old_offset": 7654912,
+        "new_offset": 3879808,
+        "vertices_before": 84,
+        "vertices_after": 3,
+        "triangles_before": 64,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x4907a9ca",
+        "part": "COROLLA_KITW02_DOOR_PANEL_R",
+        "old_offset": 7659648,
+        "new_offset": 3881216,
+        "vertices_before": 84,
+        "vertices_after": 3,
+        "triangles_before": 64,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x57014e9b",
+        "part": "COROLLA_KITW02_DOOR_RIGHT_A",
+        "old_offset": 7664640,
+        "new_offset": 3882880,
+        "vertices_before": 151,
+        "vertices_after": 3,
+        "triangles_before": 109,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x57014e9c",
+        "part": "COROLLA_KITW02_DOOR_RIGHT_B",
+        "old_offset": 7672704,
+        "new_offset": 3885056,
+        "vertices_before": 6,
+        "vertices_after": 3,
+        "triangles_before": 4,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x57014e9d",
+        "part": "COROLLA_KITW02_DOOR_RIGHT_C",
+        "old_offset": 7673472,
+        "new_offset": 3885696,
+        "vertices_before": 5,
+        "vertices_after": 3,
+        "triangles_before": 3,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x1d9e309b",
+        "part": "COROLLA_KITW02_DOOR_SILL_LE",
+        "old_offset": 7674240,
+        "new_offset": 3886336,
+        "vertices_before": 37,
+        "vertices_after": 3,
+        "triangles_before": 31,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xa8a1ac4e",
+        "part": "COROLLA_KITW02_DOOR_SILL_RI",
+        "old_offset": 7676672,
+        "new_offset": 3887360,
+        "vertices_before": 37,
+        "vertices_after": 3,
+        "triangles_before": 31,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xfe48a9b9",
+        "part": "COROLLA_KITW03_BODY_A",
+        "old_offset": 7679104,
+        "new_offset": 3888384,
+        "vertices_before": 2274,
+        "vertices_after": 3,
+        "triangles_before": 1891,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xfe48a9ba",
+        "part": "COROLLA_KITW03_BODY_B",
+        "old_offset": 7808768,
+        "new_offset": 3924992,
+        "vertices_before": 1425,
+        "vertices_after": 3,
+        "triangles_before": 1100,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xfe48a9bb",
+        "part": "COROLLA_KITW03_BODY_C",
+        "old_offset": 7879808,
+        "new_offset": 3938176,
+        "vertices_before": 729,
+        "vertices_after": 3,
+        "triangles_before": 496,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xfe48a9bc",
+        "part": "COROLLA_KITW03_BODY_D",
+        "old_offset": 7918208,
+        "new_offset": 3947392,
+        "vertices_before": 210,
+        "vertices_after": 3,
+        "triangles_before": 132,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xc79b46c9",
+        "part": "COROLLA_KITW03_DOOR_LEFT_A",
+        "old_offset": 7928704,
+        "new_offset": 3949696,
+        "vertices_before": 186,
+        "vertices_after": 3,
+        "triangles_before": 142,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xc79b46ca",
+        "part": "COROLLA_KITW03_DOOR_LEFT_B",
+        "old_offset": 7939584,
+        "new_offset": 3953152,
+        "vertices_before": 6,
+        "vertices_after": 3,
+        "triangles_before": 4,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xc79b46cb",
+        "part": "COROLLA_KITW03_DOOR_LEFT_C",
+        "old_offset": 7940352,
+        "new_offset": 3953792,
+        "vertices_before": 4,
+        "vertices_after": 3,
+        "triangles_before": 2,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xdb16d4d8",
+        "part": "COROLLA_KITW03_DOOR_PANEL_L",
+        "old_offset": 7941120,
+        "new_offset": 3954432,
+        "vertices_before": 89,
+        "vertices_after": 3,
+        "triangles_before": 69,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x152ed82b",
+        "part": "COROLLA_KITW03_DOOR_PANEL_R",
+        "old_offset": 7945984,
+        "new_offset": 3955840,
+        "vertices_before": 89,
+        "vertices_after": 3,
+        "triangles_before": 69,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x9241883c",
+        "part": "COROLLA_KITW03_DOOR_RIGHT_A",
+        "old_offset": 7951360,
+        "new_offset": 3957760,
+        "vertices_before": 186,
+        "vertices_after": 3,
+        "triangles_before": 142,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x9241883d",
+        "part": "COROLLA_KITW03_DOOR_RIGHT_B",
+        "old_offset": 7963008,
+        "new_offset": 3961984,
+        "vertices_before": 6,
+        "vertices_after": 3,
+        "triangles_before": 4,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x9241883e",
+        "part": "COROLLA_KITW03_DOOR_RIGHT_C",
+        "old_offset": 7963776,
+        "new_offset": 3962624,
+        "vertices_before": 5,
+        "vertices_after": 3,
+        "triangles_before": 3,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x0bb452bc",
+        "part": "COROLLA_KITW03_DOOR_SILL_LE",
+        "old_offset": 7964544,
+        "new_offset": 3963264,
+        "vertices_before": 41,
+        "vertices_after": 3,
+        "triangles_before": 35,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x597c128f",
+        "part": "COROLLA_KITW03_DOOR_SILL_RI",
+        "old_offset": 7967232,
+        "new_offset": 3964416,
+        "vertices_before": 41,
+        "vertices_after": 3,
+        "triangles_before": 35,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xea8a7e9a",
+        "part": "COROLLA_KITW04_BODY_A",
+        "old_offset": 7969920,
+        "new_offset": 3965568,
+        "vertices_before": 1707,
+        "vertices_after": 3,
+        "triangles_before": 1432,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xea8a7e9b",
+        "part": "COROLLA_KITW04_BODY_B",
+        "old_offset": 8067840,
+        "new_offset": 3993600,
+        "vertices_before": 1219,
+        "vertices_after": 3,
+        "triangles_before": 899,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xea8a7e9c",
+        "part": "COROLLA_KITW04_BODY_C",
+        "old_offset": 8135040,
+        "new_offset": 4011648,
+        "vertices_before": 668,
+        "vertices_after": 3,
+        "triangles_before": 440,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xea8a7e9d",
+        "part": "COROLLA_KITW04_BODY_D",
+        "old_offset": 8171648,
+        "new_offset": 4021632,
+        "vertices_before": 214,
+        "vertices_after": 3,
+        "triangles_before": 132,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x16fa504a",
+        "part": "COROLLA_KITW04_DOOR_LEFT_A",
+        "old_offset": 8182272,
+        "new_offset": 4023936,
+        "vertices_before": 151,
+        "vertices_after": 3,
+        "triangles_before": 109,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x16fa504b",
+        "part": "COROLLA_KITW04_DOOR_LEFT_B",
+        "old_offset": 8190336,
+        "new_offset": 4026112,
+        "vertices_before": 6,
+        "vertices_after": 3,
+        "triangles_before": 4,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x16fa504c",
+        "part": "COROLLA_KITW04_DOOR_LEFT_C",
+        "old_offset": 8191104,
+        "new_offset": 4026752,
+        "vertices_before": 4,
+        "vertices_after": 3,
+        "triangles_before": 2,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x8bf13b19",
+        "part": "COROLLA_KITW04_DOOR_PANEL_L",
+        "old_offset": 8191872,
+        "new_offset": 4027392,
+        "vertices_before": 84,
+        "vertices_after": 3,
+        "triangles_before": 64,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xe156068c",
+        "part": "COROLLA_KITW04_DOOR_PANEL_R",
+        "old_offset": 8196864,
+        "new_offset": 4029184,
+        "vertices_before": 84,
+        "vertices_after": 3,
+        "triangles_before": 64,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xcd81c1dd",
+        "part": "COROLLA_KITW04_DOOR_RIGHT_A",
+        "old_offset": 8201984,
+        "new_offset": 4030976,
+        "vertices_before": 151,
+        "vertices_after": 3,
+        "triangles_before": 109,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xcd81c1de",
+        "part": "COROLLA_KITW04_DOOR_RIGHT_B",
+        "old_offset": 8210048,
+        "new_offset": 4033152,
+        "vertices_before": 6,
+        "vertices_after": 3,
+        "triangles_before": 4,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xcd81c1df",
+        "part": "COROLLA_KITW04_DOOR_RIGHT_C",
+        "old_offset": 8210816,
+        "new_offset": 4033792,
+        "vertices_before": 5,
+        "vertices_after": 3,
+        "triangles_before": 3,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xf9ca74dd",
+        "part": "COROLLA_KITW04_DOOR_SILL_LE",
+        "old_offset": 8211584,
+        "new_offset": 4034432,
+        "vertices_before": 37,
+        "vertices_after": 3,
+        "triangles_before": 31,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x0a5678d0",
+        "part": "COROLLA_KITW04_DOOR_SILL_RI",
+        "old_offset": 8214016,
+        "new_offset": 4035456,
+        "vertices_before": 37,
+        "vertices_after": 3,
+        "triangles_before": 31,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xc304c6b1",
+        "part": "COROLLA_STYLE01_ENGINE_A",
+        "old_offset": 8216448,
+        "new_offset": 4036608,
+        "vertices_before": 1584,
+        "vertices_after": 3,
+        "triangles_before": 1103,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x790d275c",
+        "part": "COROLLA_STYLE01_ENGINE_UNLI",
+        "old_offset": 8280960,
+        "new_offset": 4037504,
+        "vertices_before": 282,
+        "vertices_after": 3,
+        "triangles_before": 195,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x70945c45",
+        "part": "COROLLA_STYLE01_HOOD_A",
+        "old_offset": 8293120,
+        "new_offset": 4038400,
+        "vertices_before": 180,
+        "vertices_after": 3,
+        "triangles_before": 166,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x70945c46",
+        "part": "COROLLA_STYLE01_HOOD_B",
+        "old_offset": 8304000,
+        "new_offset": 4041856,
+        "vertices_before": 101,
+        "vertices_after": 3,
+        "triangles_before": 86,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x70945c47",
+        "part": "COROLLA_STYLE01_HOOD_C",
+        "old_offset": 8310272,
+        "new_offset": 4044032,
+        "vertices_before": 39,
+        "vertices_after": 3,
+        "triangles_before": 28,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xc70f57d2",
+        "part": "COROLLA_STYLE02_ENGINE_A",
+        "old_offset": 8313088,
+        "new_offset": 4045440,
+        "vertices_before": 1384,
+        "vertices_after": 3,
+        "triangles_before": 1194,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x85424d3d",
+        "part": "COROLLA_STYLE02_ENGINE_UNLI",
+        "old_offset": 8371840,
+        "new_offset": 4047360,
+        "vertices_before": 149,
+        "vertices_after": 3,
+        "triangles_before": 105,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x5cd63126",
+        "part": "COROLLA_STYLE02_HOOD_A",
+        "old_offset": 8378496,
+        "new_offset": 4048128,
+        "vertices_before": 125,
+        "vertices_after": 3,
+        "triangles_before": 110,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x5cd63127",
+        "part": "COROLLA_STYLE02_HOOD_B",
+        "old_offset": 8386176,
+        "new_offset": 4050816,
+        "vertices_before": 78,
+        "vertices_after": 3,
+        "triangles_before": 60,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x5cd63128",
+        "part": "COROLLA_STYLE02_HOOD_C",
+        "old_offset": 8391040,
+        "new_offset": 4052608,
+        "vertices_before": 40,
+        "vertices_after": 3,
+        "triangles_before": 22,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x49180607",
+        "part": "COROLLA_STYLE03_HOOD_A",
+        "old_offset": 8393728,
+        "new_offset": 4053888,
+        "vertices_before": 201,
+        "vertices_after": 3,
+        "triangles_before": 144,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x49180608",
+        "part": "COROLLA_STYLE03_HOOD_B",
+        "old_offset": 8405248,
+        "new_offset": 4057344,
+        "vertices_before": 131,
+        "vertices_after": 3,
+        "triangles_before": 92,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x49180609",
+        "part": "COROLLA_STYLE03_HOOD_C",
+        "old_offset": 8413312,
+        "new_offset": 4060288,
+        "vertices_before": 26,
+        "vertices_after": 3,
+        "triangles_before": 24,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x3559dae8",
+        "part": "COROLLA_STYLE04_HOOD_A",
+        "old_offset": 8415360,
+        "new_offset": 4061440,
+        "vertices_before": 181,
+        "vertices_after": 3,
+        "triangles_before": 182,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x3559dae9",
+        "part": "COROLLA_STYLE04_HOOD_B",
+        "old_offset": 8426368,
+        "new_offset": 4064896,
+        "vertices_before": 110,
+        "vertices_after": 3,
+        "triangles_before": 96,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x3559daea",
+        "part": "COROLLA_STYLE04_HOOD_C",
+        "old_offset": 8433024,
+        "new_offset": 4067200,
+        "vertices_before": 46,
+        "vertices_after": 3,
+        "triangles_before": 38,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x8a99057c",
+        "part": "COROLLA_STYLE05_BRAKELIGHT_",
+        "old_offset": 8436224,
+        "new_offset": 4068736,
+        "vertices_before": 560,
+        "vertices_after": 3,
+        "triangles_before": 444,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x8a99057d",
+        "part": "COROLLA_STYLE05_BRAKELIGHT_",
+        "old_offset": 8462848,
+        "new_offset": 4072576,
+        "vertices_before": 276,
+        "vertices_after": 3,
+        "triangles_before": 204,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x8a99057e",
+        "part": "COROLLA_STYLE05_BRAKELIGHT_",
+        "old_offset": 8476032,
+        "new_offset": 4074752,
+        "vertices_before": 62,
+        "vertices_after": 3,
+        "triangles_before": 34,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xce49f753",
+        "part": "COROLLA_STYLE05_HEADLIGHT_L",
+        "old_offset": 8479104,
+        "new_offset": 4075520,
+        "vertices_before": 162,
+        "vertices_after": 3,
+        "triangles_before": 139,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xce49f754",
+        "part": "COROLLA_STYLE05_HEADLIGHT_L",
+        "old_offset": 8487296,
+        "new_offset": 4077184,
+        "vertices_before": 114,
+        "vertices_after": 3,
+        "triangles_before": 82,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xce49f755",
+        "part": "COROLLA_STYLE05_HEADLIGHT_L",
+        "old_offset": 8493312,
+        "new_offset": 4078720,
+        "vertices_before": 43,
+        "vertices_after": 3,
+        "triangles_before": 33,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x6ec64a06",
+        "part": "COROLLA_STYLE05_HEADLIGHT_R",
+        "old_offset": 8496000,
+        "new_offset": 4079744,
+        "vertices_before": 162,
+        "vertices_after": 3,
+        "triangles_before": 139,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x6ec64a07",
+        "part": "COROLLA_STYLE05_HEADLIGHT_R",
+        "old_offset": 8503936,
+        "new_offset": 4081152,
+        "vertices_before": 114,
+        "vertices_after": 3,
+        "triangles_before": 82,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x6ec64a08",
+        "part": "COROLLA_STYLE05_HEADLIGHT_R",
+        "old_offset": 8509696,
+        "new_offset": 4082432,
+        "vertices_before": 43,
+        "vertices_after": 3,
+        "triangles_before": 33,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x219bafc9",
+        "part": "COROLLA_STYLE05_HOOD_A",
+        "old_offset": 8512384,
+        "new_offset": 4083456,
+        "vertices_before": 197,
+        "vertices_after": 3,
+        "triangles_before": 168,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x219bafca",
+        "part": "COROLLA_STYLE05_HOOD_B",
+        "old_offset": 8524416,
+        "new_offset": 4087552,
+        "vertices_before": 120,
+        "vertices_after": 3,
+        "triangles_before": 82,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x219bafcb",
+        "part": "COROLLA_STYLE05_HOOD_C",
+        "old_offset": 8531712,
+        "new_offset": 4090240,
+        "vertices_before": 57,
+        "vertices_after": 3,
+        "triangles_before": 37,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xc5d93f1d",
+        "part": "COROLLA_STYLE06_BRAKELIGHT_",
+        "old_offset": 8535552,
+        "new_offset": 4091904,
+        "vertices_before": 468,
+        "vertices_after": 3,
+        "triangles_before": 364,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xc5d93f1e",
+        "part": "COROLLA_STYLE06_BRAKELIGHT_",
+        "old_offset": 8558336,
+        "new_offset": 4095744,
+        "vertices_before": 290,
+        "vertices_after": 3,
+        "triangles_before": 216,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xc5d93f1f",
+        "part": "COROLLA_STYLE06_BRAKELIGHT_",
+        "old_offset": 8572160,
+        "new_offset": 4097920,
+        "vertices_before": 12,
+        "vertices_after": 3,
+        "triangles_before": 8,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xbc601974",
+        "part": "COROLLA_STYLE06_HEADLIGHT_L",
+        "old_offset": 8573184,
+        "new_offset": 4098560,
+        "vertices_before": 250,
+        "vertices_after": 3,
+        "triangles_before": 209,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xbc601975",
+        "part": "COROLLA_STYLE06_HEADLIGHT_L",
+        "old_offset": 8585984,
+        "new_offset": 4101248,
+        "vertices_before": 145,
+        "vertices_after": 3,
+        "triangles_before": 119,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xbc601976",
+        "part": "COROLLA_STYLE06_HEADLIGHT_L",
+        "old_offset": 8593664,
+        "new_offset": 4103168,
+        "vertices_before": 73,
+        "vertices_after": 3,
+        "triangles_before": 55,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x1fa0b047",
+        "part": "COROLLA_STYLE06_HEADLIGHT_R",
+        "old_offset": 8597504,
+        "new_offset": 4104192,
+        "vertices_before": 250,
+        "vertices_after": 3,
+        "triangles_before": 209,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x1fa0b048",
+        "part": "COROLLA_STYLE06_HEADLIGHT_R",
+        "old_offset": 8610176,
+        "new_offset": 4106752,
+        "vertices_before": 145,
+        "vertices_after": 3,
+        "triangles_before": 119,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x1fa0b049",
+        "part": "COROLLA_STYLE06_HEADLIGHT_R",
+        "old_offset": 8617728,
+        "new_offset": 4108544,
+        "vertices_before": 73,
+        "vertices_after": 3,
+        "triangles_before": 55,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x0ddd84aa",
+        "part": "COROLLA_STYLE06_HOOD_A",
+        "old_offset": 8621568,
+        "new_offset": 4109568,
+        "vertices_before": 236,
+        "vertices_after": 3,
+        "triangles_before": 188,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x0ddd84ab",
+        "part": "COROLLA_STYLE06_HOOD_B",
+        "old_offset": 8635520,
+        "new_offset": 4114048,
+        "vertices_before": 118,
+        "vertices_after": 3,
+        "triangles_before": 88,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x0ddd84ac",
+        "part": "COROLLA_STYLE06_HOOD_C",
+        "old_offset": 8642816,
+        "new_offset": 4116736,
+        "vertices_before": 75,
+        "vertices_after": 3,
+        "triangles_before": 62,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x011978be",
+        "part": "COROLLA_STYLE07_BRAKELIGHT_",
+        "old_offset": 8647680,
+        "new_offset": 4118656,
+        "vertices_before": 652,
+        "vertices_after": 3,
+        "triangles_before": 484,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x011978bf",
+        "part": "COROLLA_STYLE07_BRAKELIGHT_",
+        "old_offset": 8680320,
+        "new_offset": 4124928,
+        "vertices_before": 388,
+        "vertices_after": 3,
+        "triangles_before": 320,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x011978c0",
+        "part": "COROLLA_STYLE07_BRAKELIGHT_",
+        "old_offset": 8699904,
+        "new_offset": 4128768,
+        "vertices_before": 68,
+        "vertices_after": 3,
+        "triangles_before": 44,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xaa763b95",
+        "part": "COROLLA_STYLE07_HEADLIGHT_L",
+        "old_offset": 8703488,
+        "new_offset": 4129792,
+        "vertices_before": 214,
+        "vertices_after": 3,
+        "triangles_before": 169,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xaa763b96",
+        "part": "COROLLA_STYLE07_HEADLIGHT_L",
+        "old_offset": 8714240,
+        "new_offset": 4131968,
+        "vertices_before": 121,
+        "vertices_after": 3,
+        "triangles_before": 95,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xaa763b97",
+        "part": "COROLLA_STYLE07_HEADLIGHT_L",
+        "old_offset": 8720768,
+        "new_offset": 4133760,
+        "vertices_before": 71,
+        "vertices_after": 3,
+        "triangles_before": 47,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xd07b1688",
+        "part": "COROLLA_STYLE07_HEADLIGHT_R",
+        "old_offset": 8724608,
+        "new_offset": 4134912,
+        "vertices_before": 214,
+        "vertices_after": 3,
+        "triangles_before": 169,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xd07b1689",
+        "part": "COROLLA_STYLE07_HEADLIGHT_R",
+        "old_offset": 8735104,
+        "new_offset": 4136832,
+        "vertices_before": 121,
+        "vertices_after": 3,
+        "triangles_before": 95,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xd07b168a",
+        "part": "COROLLA_STYLE07_HEADLIGHT_R",
+        "old_offset": 8741504,
+        "new_offset": 4138496,
+        "vertices_before": 71,
+        "vertices_after": 3,
+        "triangles_before": 47,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xfa1f598b",
+        "part": "COROLLA_STYLE07_HOOD_A",
+        "old_offset": 8745344,
+        "new_offset": 4139648,
+        "vertices_before": 262,
+        "vertices_after": 3,
+        "triangles_before": 214,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xfa1f598c",
+        "part": "COROLLA_STYLE07_HOOD_B",
+        "old_offset": 8759424,
+        "new_offset": 4143232,
+        "vertices_before": 101,
+        "vertices_after": 3,
+        "triangles_before": 76,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xfa1f598d",
+        "part": "COROLLA_STYLE07_HOOD_C",
+        "old_offset": 8765056,
+        "new_offset": 4144896,
+        "vertices_before": 55,
+        "vertices_after": 3,
+        "triangles_before": 40,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x3c59b25f",
+        "part": "COROLLA_STYLE08_BRAKELIGHT_",
+        "old_offset": 8768128,
+        "new_offset": 4145920,
+        "vertices_before": 500,
+        "vertices_after": 3,
+        "triangles_before": 406,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x3c59b260",
+        "part": "COROLLA_STYLE08_BRAKELIGHT_",
+        "old_offset": 8794112,
+        "new_offset": 4151552,
+        "vertices_before": 328,
+        "vertices_after": 3,
+        "triangles_before": 248,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x3c59b261",
+        "part": "COROLLA_STYLE08_BRAKELIGHT_",
+        "old_offset": 8810368,
+        "new_offset": 4154624,
+        "vertices_before": 76,
+        "vertices_after": 3,
+        "triangles_before": 44,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x988c5db6",
+        "part": "COROLLA_STYLE08_HEADLIGHT_L",
+        "old_offset": 8813952,
+        "new_offset": 4155392,
+        "vertices_before": 174,
+        "vertices_after": 3,
+        "triangles_before": 136,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x988c5db7",
+        "part": "COROLLA_STYLE08_HEADLIGHT_L",
+        "old_offset": 8822784,
+        "new_offset": 4157312,
+        "vertices_before": 115,
+        "vertices_after": 3,
+        "triangles_before": 95,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x988c5db8",
+        "part": "COROLLA_STYLE08_HEADLIGHT_L",
+        "old_offset": 8829184,
+        "new_offset": 4159104,
+        "vertices_before": 67,
+        "vertices_after": 3,
+        "triangles_before": 41,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x81557cc9",
+        "part": "COROLLA_STYLE08_HEADLIGHT_R",
+        "old_offset": 8832896,
+        "new_offset": 4160256,
+        "vertices_before": 174,
+        "vertices_after": 3,
+        "triangles_before": 136,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x81557cca",
+        "part": "COROLLA_STYLE08_HEADLIGHT_R",
+        "old_offset": 8841600,
+        "new_offset": 4162048,
+        "vertices_before": 115,
+        "vertices_after": 3,
+        "triangles_before": 95,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x81557ccb",
+        "part": "COROLLA_STYLE08_HEADLIGHT_R",
+        "old_offset": 8847872,
+        "new_offset": 4163712,
+        "vertices_before": 67,
+        "vertices_after": 3,
+        "triangles_before": 41,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xe6612e6c",
+        "part": "COROLLA_STYLE08_HOOD_A",
+        "old_offset": 8851584,
+        "new_offset": 4164864,
+        "vertices_before": 119,
+        "vertices_after": 3,
+        "triangles_before": 108,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xe6612e6d",
+        "part": "COROLLA_STYLE08_HOOD_B",
+        "old_offset": 8858752,
+        "new_offset": 4167168,
+        "vertices_before": 65,
+        "vertices_after": 3,
+        "triangles_before": 58,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xe6612e6e",
+        "part": "COROLLA_STYLE08_HOOD_C",
+        "old_offset": 8862720,
+        "new_offset": 4168576,
+        "vertices_before": 27,
+        "vertices_after": 3,
+        "triangles_before": 24,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x7799ec00",
+        "part": "COROLLA_STYLE09_BRAKELIGHT_",
+        "old_offset": 8864768,
+        "new_offset": 4169728,
+        "vertices_before": 350,
+        "vertices_after": 3,
+        "triangles_before": 270,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x7799ec01",
+        "part": "COROLLA_STYLE09_BRAKELIGHT_",
+        "old_offset": 8882688,
+        "new_offset": 4173568,
+        "vertices_before": 180,
+        "vertices_after": 3,
+        "triangles_before": 124,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x7799ec02",
+        "part": "COROLLA_STYLE09_BRAKELIGHT_",
+        "old_offset": 8891904,
+        "new_offset": 4175744,
+        "vertices_before": 36,
+        "vertices_after": 3,
+        "triangles_before": 24,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x86a27fd7",
+        "part": "COROLLA_STYLE09_HEADLIGHT_L",
+        "old_offset": 8893824,
+        "new_offset": 4176384,
+        "vertices_before": 222,
+        "vertices_after": 3,
+        "triangles_before": 193,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x86a27fd8",
+        "part": "COROLLA_STYLE09_HEADLIGHT_L",
+        "old_offset": 8905216,
+        "new_offset": 4178688,
+        "vertices_before": 147,
+        "vertices_after": 3,
+        "triangles_before": 110,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x86a27fd9",
+        "part": "COROLLA_STYLE09_HEADLIGHT_L",
+        "old_offset": 8912768,
+        "new_offset": 4180352,
+        "vertices_before": 64,
+        "vertices_after": 3,
+        "triangles_before": 44,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x322fe30a",
+        "part": "COROLLA_STYLE09_HEADLIGHT_R",
+        "old_offset": 8916224,
+        "new_offset": 4181376,
+        "vertices_before": 222,
+        "vertices_after": 3,
+        "triangles_before": 193,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x322fe30b",
+        "part": "COROLLA_STYLE09_HEADLIGHT_R",
+        "old_offset": 8927488,
+        "new_offset": 4183552,
+        "vertices_before": 147,
+        "vertices_after": 3,
+        "triangles_before": 110,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x322fe30c",
+        "part": "COROLLA_STYLE09_HEADLIGHT_R",
+        "old_offset": 8934912,
+        "new_offset": 4185088,
+        "vertices_before": 64,
+        "vertices_after": 3,
+        "triangles_before": 44,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xd2a3034d",
+        "part": "COROLLA_STYLE09_HOOD_A",
+        "old_offset": 8938368,
+        "new_offset": 4186112,
+        "vertices_before": 191,
+        "vertices_after": 3,
+        "triangles_before": 192,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xd2a3034e",
+        "part": "COROLLA_STYLE09_HOOD_B",
+        "old_offset": 8950272,
+        "new_offset": 4190080,
+        "vertices_before": 104,
+        "vertices_after": 3,
+        "triangles_before": 86,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xd2a3034f",
+        "part": "COROLLA_STYLE09_HOOD_C",
+        "old_offset": 8956672,
+        "new_offset": 4192384,
+        "vertices_before": 58,
+        "vertices_after": 3,
+        "triangles_before": 38,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x059f5318",
+        "part": "COROLLA_STYLE10_BRAKELIGHT_",
+        "old_offset": 8960512,
+        "new_offset": 4194048,
+        "vertices_before": 510,
+        "vertices_after": 3,
+        "triangles_before": 414,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x059f5319",
+        "part": "COROLLA_STYLE10_BRAKELIGHT_",
+        "old_offset": 8983680,
+        "new_offset": 4196480,
+        "vertices_before": 318,
+        "vertices_after": 3,
+        "triangles_before": 282,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x059f531a",
+        "part": "COROLLA_STYLE10_BRAKELIGHT_",
+        "old_offset": 8998912,
+        "new_offset": 4198656,
+        "vertices_before": 56,
+        "vertices_after": 3,
+        "triangles_before": 40,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xd8b5b2ef",
+        "part": "COROLLA_STYLE10_HEADLIGHT_L",
+        "old_offset": 9001728,
+        "new_offset": 4199296,
+        "vertices_before": 213,
+        "vertices_after": 3,
+        "triangles_before": 217,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xd8b5b2f0",
+        "part": "COROLLA_STYLE10_HEADLIGHT_L",
+        "old_offset": 9013376,
+        "new_offset": 4202112,
+        "vertices_before": 183,
+        "vertices_after": 3,
+        "triangles_before": 184,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xd8b5b2f1",
+        "part": "COROLLA_STYLE10_HEADLIGHT_L",
+        "old_offset": 9022592,
+        "new_offset": 4203776,
+        "vertices_before": 69,
+        "vertices_after": 3,
+        "triangles_before": 65,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xc6a97922",
+        "part": "COROLLA_STYLE10_HEADLIGHT_R",
+        "old_offset": 9026560,
+        "new_offset": 4204928,
+        "vertices_before": 213,
+        "vertices_after": 3,
+        "triangles_before": 217,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xc6a97923",
+        "part": "COROLLA_STYLE10_HEADLIGHT_R",
+        "old_offset": 9037952,
+        "new_offset": 4207488,
+        "vertices_before": 183,
+        "vertices_after": 3,
+        "triangles_before": 184,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xc6a97924",
+        "part": "COROLLA_STYLE10_HEADLIGHT_R",
+        "old_offset": 9046912,
+        "new_offset": 4208896,
+        "vertices_before": 69,
+        "vertices_after": 3,
+        "triangles_before": 65,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xf8cef865",
+        "part": "COROLLA_STYLE10_HOOD_A",
+        "old_offset": 9050880,
+        "new_offset": 4210048,
+        "vertices_before": 183,
+        "vertices_after": 3,
+        "triangles_before": 174,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xf8cef866",
+        "part": "COROLLA_STYLE10_HOOD_B",
+        "old_offset": 9062016,
+        "new_offset": 4213632,
+        "vertices_before": 104,
+        "vertices_after": 3,
+        "triangles_before": 92,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xf8cef867",
+        "part": "COROLLA_STYLE10_HOOD_C",
+        "old_offset": 9068416,
+        "new_offset": 4215808,
+        "vertices_before": 61,
+        "vertices_after": 3,
+        "triangles_before": 46,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x40df8cb9",
+        "part": "COROLLA_STYLE11_BRAKELIGHT_",
+        "old_offset": 9072512,
+        "new_offset": 4217472,
+        "vertices_before": 608,
+        "vertices_after": 3,
+        "triangles_before": 446,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x40df8cba",
+        "part": "COROLLA_STYLE11_BRAKELIGHT_",
+        "old_offset": 9100800,
+        "new_offset": 4221312,
+        "vertices_before": 264,
+        "vertices_after": 3,
+        "triangles_before": 224,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x40df8cbb",
+        "part": "COROLLA_STYLE11_BRAKELIGHT_",
+        "old_offset": 9113600,
+        "new_offset": 4223360,
+        "vertices_before": 44,
+        "vertices_after": 3,
+        "triangles_before": 28,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xc6cbd510",
+        "part": "COROLLA_STYLE11_HEADLIGHT_L",
+        "old_offset": 9115904,
+        "new_offset": 4224000,
+        "vertices_before": 230,
+        "vertices_after": 3,
+        "triangles_before": 205,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xc6cbd511",
+        "part": "COROLLA_STYLE11_HEADLIGHT_L",
+        "old_offset": 9129088,
+        "new_offset": 4227840,
+        "vertices_before": 147,
+        "vertices_after": 3,
+        "triangles_before": 118,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xc6cbd512",
+        "part": "COROLLA_STYLE11_HEADLIGHT_L",
+        "old_offset": 9137792,
+        "new_offset": 4230656,
+        "vertices_before": 46,
+        "vertices_after": 3,
+        "triangles_before": 38,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x7783df63",
+        "part": "COROLLA_STYLE11_HEADLIGHT_R",
+        "old_offset": 9140608,
+        "new_offset": 4231680,
+        "vertices_before": 230,
+        "vertices_after": 3,
+        "triangles_before": 205,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x7783df64",
+        "part": "COROLLA_STYLE11_HEADLIGHT_R",
+        "old_offset": 9153536,
+        "new_offset": 4235264,
+        "vertices_before": 147,
+        "vertices_after": 3,
+        "triangles_before": 118,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x7783df65",
+        "part": "COROLLA_STYLE11_HEADLIGHT_R",
+        "old_offset": 9161984,
+        "new_offset": 4237824,
+        "vertices_before": 46,
+        "vertices_after": 3,
+        "triangles_before": 38,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xe510cd46",
+        "part": "COROLLA_STYLE11_HOOD_A",
+        "old_offset": 9164800,
+        "new_offset": 4238848,
+        "vertices_before": 144,
+        "vertices_after": 3,
+        "triangles_before": 140,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xe510cd47",
+        "part": "COROLLA_STYLE11_HOOD_B",
+        "old_offset": 9173376,
+        "new_offset": 4241536,
+        "vertices_before": 83,
+        "vertices_after": 3,
+        "triangles_before": 80,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xe510cd48",
+        "part": "COROLLA_STYLE11_HOOD_C",
+        "old_offset": 9178496,
+        "new_offset": 4243328,
+        "vertices_before": 42,
+        "vertices_after": 3,
+        "triangles_before": 36,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x7c1fc65a",
+        "part": "COROLLA_STYLE12_BRAKELIGHT_",
+        "old_offset": 9181440,
+        "new_offset": 4244608,
+        "vertices_before": 474,
+        "vertices_after": 3,
+        "triangles_before": 456,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x7c1fc65b",
+        "part": "COROLLA_STYLE12_BRAKELIGHT_",
+        "old_offset": 9206656,
+        "new_offset": 4250112,
+        "vertices_before": 298,
+        "vertices_after": 3,
+        "triangles_before": 260,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x7c1fc65c",
+        "part": "COROLLA_STYLE12_BRAKELIGHT_",
+        "old_offset": 9222912,
+        "new_offset": 4254208,
+        "vertices_before": 76,
+        "vertices_after": 3,
+        "triangles_before": 52,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xb4e1f731",
+        "part": "COROLLA_STYLE12_HEADLIGHT_L",
+        "old_offset": 9227008,
+        "new_offset": 4255360,
+        "vertices_before": 225,
+        "vertices_after": 3,
+        "triangles_before": 193,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xb4e1f732",
+        "part": "COROLLA_STYLE12_HEADLIGHT_L",
+        "old_offset": 9239296,
+        "new_offset": 4258432,
+        "vertices_before": 115,
+        "vertices_after": 3,
+        "triangles_before": 94,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xb4e1f733",
+        "part": "COROLLA_STYLE12_HEADLIGHT_L",
+        "old_offset": 9245568,
+        "new_offset": 4260096,
+        "vertices_before": 72,
+        "vertices_after": 3,
+        "triangles_before": 55,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x285e45a4",
+        "part": "COROLLA_STYLE12_HEADLIGHT_R",
+        "old_offset": 9249920,
+        "new_offset": 4261632,
+        "vertices_before": 225,
+        "vertices_after": 3,
+        "triangles_before": 193,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x285e45a5",
+        "part": "COROLLA_STYLE12_HEADLIGHT_R",
+        "old_offset": 9262080,
+        "new_offset": 4264576,
+        "vertices_before": 115,
+        "vertices_after": 3,
+        "triangles_before": 94,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x285e45a6",
+        "part": "COROLLA_STYLE12_HEADLIGHT_R",
+        "old_offset": 9268224,
+        "new_offset": 4266112,
+        "vertices_before": 72,
+        "vertices_after": 3,
+        "triangles_before": 55,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xd152a227",
+        "part": "COROLLA_STYLE12_HOOD_A",
+        "old_offset": 9272576,
+        "new_offset": 4267648,
+        "vertices_before": 199,
+        "vertices_after": 3,
+        "triangles_before": 196,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xd152a228",
+        "part": "COROLLA_STYLE12_HOOD_B",
+        "old_offset": 9284480,
+        "new_offset": 4271232,
+        "vertices_before": 111,
+        "vertices_after": 3,
+        "triangles_before": 102,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xd152a229",
+        "part": "COROLLA_STYLE12_HOOD_C",
+        "old_offset": 9291264,
+        "new_offset": 4273408,
+        "vertices_before": 71,
+        "vertices_after": 3,
+        "triangles_before": 62,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xb75ffffb",
+        "part": "COROLLA_STYLE13_BRAKELIGHT_",
+        "old_offset": 9295872,
+        "new_offset": 4275200,
+        "vertices_before": 490,
+        "vertices_after": 3,
+        "triangles_before": 436,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xb75ffffc",
+        "part": "COROLLA_STYLE13_BRAKELIGHT_",
+        "old_offset": 9318400,
+        "new_offset": 4277632,
+        "vertices_before": 360,
+        "vertices_after": 3,
+        "triangles_before": 264,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xb75ffffd",
+        "part": "COROLLA_STYLE13_BRAKELIGHT_",
+        "old_offset": 9334912,
+        "new_offset": 4279680,
+        "vertices_before": 68,
+        "vertices_after": 3,
+        "triangles_before": 48,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xa2f81952",
+        "part": "COROLLA_STYLE13_HEADLIGHT_L",
+        "old_offset": 9338240,
+        "new_offset": 4280320,
+        "vertices_before": 120,
+        "vertices_after": 3,
+        "triangles_before": 113,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xa2f81953",
+        "part": "COROLLA_STYLE13_HEADLIGHT_L",
+        "old_offset": 9345152,
+        "new_offset": 4282368,
+        "vertices_before": 101,
+        "vertices_after": 3,
+        "triangles_before": 86,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xa2f81954",
+        "part": "COROLLA_STYLE13_HEADLIGHT_L",
+        "old_offset": 9350784,
+        "new_offset": 4284032,
+        "vertices_before": 46,
+        "vertices_after": 3,
+        "triangles_before": 36,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xd938abe5",
+        "part": "COROLLA_STYLE13_HEADLIGHT_R",
+        "old_offset": 9353600,
+        "new_offset": 4285056,
+        "vertices_before": 120,
+        "vertices_after": 3,
+        "triangles_before": 113,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xd938abe6",
+        "part": "COROLLA_STYLE13_HEADLIGHT_R",
+        "old_offset": 9360384,
+        "new_offset": 4286976,
+        "vertices_before": 101,
+        "vertices_after": 3,
+        "triangles_before": 86,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xd938abe7",
+        "part": "COROLLA_STYLE13_HEADLIGHT_R",
+        "old_offset": 9365888,
+        "new_offset": 4288512,
+        "vertices_before": 46,
+        "vertices_after": 3,
+        "triangles_before": 36,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xbd947708",
+        "part": "COROLLA_STYLE13_HOOD_A",
+        "old_offset": 9368704,
+        "new_offset": 4289536,
+        "vertices_before": 329,
+        "vertices_after": 3,
+        "triangles_before": 260,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xbd947709",
+        "part": "COROLLA_STYLE13_HOOD_B",
+        "old_offset": 9386624,
+        "new_offset": 4294144,
+        "vertices_before": 166,
+        "vertices_after": 3,
+        "triangles_before": 126,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xbd94770a",
+        "part": "COROLLA_STYLE13_HOOD_C",
+        "old_offset": 9396096,
+        "new_offset": 4296960,
+        "vertices_before": 54,
+        "vertices_after": 3,
+        "triangles_before": 42,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xf2a0399c",
+        "part": "COROLLA_STYLE14_BRAKELIGHT_",
+        "old_offset": 9399808,
+        "new_offset": 4298624,
+        "vertices_before": 356,
+        "vertices_after": 3,
+        "triangles_before": 336,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xf2a0399d",
+        "part": "COROLLA_STYLE14_BRAKELIGHT_",
+        "old_offset": 9416448,
+        "new_offset": 4300544,
+        "vertices_before": 276,
+        "vertices_after": 3,
+        "triangles_before": 216,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xf2a0399e",
+        "part": "COROLLA_STYLE14_BRAKELIGHT_",
+        "old_offset": 9429632,
+        "new_offset": 4302592,
+        "vertices_before": 92,
+        "vertices_after": 3,
+        "triangles_before": 48,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x910e3b73",
+        "part": "COROLLA_STYLE14_HEADLIGHT_L",
+        "old_offset": 9433728,
+        "new_offset": 4303232,
+        "vertices_before": 216,
+        "vertices_after": 3,
+        "triangles_before": 189,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x910e3b74",
+        "part": "COROLLA_STYLE14_HEADLIGHT_L",
+        "old_offset": 9445248,
+        "new_offset": 4306048,
+        "vertices_before": 115,
+        "vertices_after": 3,
+        "triangles_before": 96,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x910e3b75",
+        "part": "COROLLA_STYLE14_HEADLIGHT_L",
+        "old_offset": 9451648,
+        "new_offset": 4307840,
+        "vertices_before": 60,
+        "vertices_after": 3,
+        "triangles_before": 42,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x8a131226",
+        "part": "COROLLA_STYLE14_HEADLIGHT_R",
+        "old_offset": 9454976,
+        "new_offset": 4308992,
+        "vertices_before": 216,
+        "vertices_after": 3,
+        "triangles_before": 189,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x8a131227",
+        "part": "COROLLA_STYLE14_HEADLIGHT_R",
+        "old_offset": 9466368,
+        "new_offset": 4311680,
+        "vertices_before": 115,
+        "vertices_after": 3,
+        "triangles_before": 96,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x8a131228",
+        "part": "COROLLA_STYLE14_HEADLIGHT_R",
+        "old_offset": 9472640,
+        "new_offset": 4313344,
+        "vertices_before": 60,
+        "vertices_after": 3,
+        "triangles_before": 42,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xa9d64be9",
+        "part": "COROLLA_STYLE14_HOOD_A",
+        "old_offset": 9475968,
+        "new_offset": 4314496,
+        "vertices_before": 114,
+        "vertices_after": 3,
+        "triangles_before": 92,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xa9d64bea",
+        "part": "COROLLA_STYLE14_HOOD_B",
+        "old_offset": 9482880,
+        "new_offset": 4316928,
+        "vertices_before": 81,
+        "vertices_after": 3,
+        "triangles_before": 66,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xa9d64beb",
+        "part": "COROLLA_STYLE14_HOOD_C",
+        "old_offset": 9487872,
+        "new_offset": 4318720,
+        "vertices_before": 52,
+        "vertices_after": 3,
+        "triangles_before": 38,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x961820ca",
+        "part": "COROLLA_STYLE15_HOOD_A",
+        "old_offset": 9491328,
+        "new_offset": 4320256,
+        "vertices_before": 262,
+        "vertices_after": 3,
+        "triangles_before": 182,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x961820cb",
+        "part": "COROLLA_STYLE15_HOOD_B",
+        "old_offset": 9507200,
+        "new_offset": 4325760,
+        "vertices_before": 176,
+        "vertices_after": 3,
+        "triangles_before": 112,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x961820cc",
+        "part": "COROLLA_STYLE15_HOOD_C",
+        "old_offset": 9518080,
+        "new_offset": 4329728,
+        "vertices_before": 44,
+        "vertices_after": 3,
+        "triangles_before": 36,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x8259f5ab",
+        "part": "COROLLA_STYLE16_HOOD_A",
+        "old_offset": 9521152,
+        "new_offset": 4331136,
+        "vertices_before": 109,
+        "vertices_after": 3,
+        "triangles_before": 98,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x8259f5ac",
+        "part": "COROLLA_STYLE16_HOOD_B",
+        "old_offset": 9527552,
+        "new_offset": 4333184,
+        "vertices_before": 61,
+        "vertices_after": 3,
+        "triangles_before": 56,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x8259f5ad",
+        "part": "COROLLA_STYLE16_HOOD_C",
+        "old_offset": 9531392,
+        "new_offset": 4334592,
+        "vertices_before": 26,
+        "vertices_after": 3,
+        "triangles_before": 20,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x6e9bca8c",
+        "part": "COROLLA_STYLE17_HOOD_A",
+        "old_offset": 9533440,
+        "new_offset": 4335616,
+        "vertices_before": 130,
+        "vertices_after": 3,
+        "triangles_before": 118,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x6e9bca8d",
+        "part": "COROLLA_STYLE17_HOOD_B",
+        "old_offset": 9541120,
+        "new_offset": 4338048,
+        "vertices_before": 73,
+        "vertices_after": 3,
+        "triangles_before": 64,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x6e9bca8e",
+        "part": "COROLLA_STYLE17_HOOD_C",
+        "old_offset": 9545600,
+        "new_offset": 4339712,
+        "vertices_before": 34,
+        "vertices_after": 3,
+        "triangles_before": 24,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x5add9f6d",
+        "part": "COROLLA_STYLE18_HOOD_A",
+        "old_offset": 9548032,
+        "new_offset": 4340992,
+        "vertices_before": 230,
+        "vertices_after": 3,
+        "triangles_before": 200,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x5add9f6e",
+        "part": "COROLLA_STYLE18_HOOD_B",
+        "old_offset": 9561984,
+        "new_offset": 4345600,
+        "vertices_before": 140,
+        "vertices_after": 3,
+        "triangles_before": 124,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x5add9f6f",
+        "part": "COROLLA_STYLE18_HOOD_C",
+        "old_offset": 9570560,
+        "new_offset": 4348544,
+        "vertices_before": 62,
+        "vertices_after": 3,
+        "triangles_before": 54,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x471f744e",
+        "part": "COROLLA_STYLE19_HOOD_A",
+        "old_offset": 9574784,
+        "new_offset": 4350336,
+        "vertices_before": 158,
+        "vertices_after": 3,
+        "triangles_before": 138,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x471f744f",
+        "part": "COROLLA_STYLE19_HOOD_B",
+        "old_offset": 9584256,
+        "new_offset": 4353408,
+        "vertices_before": 99,
+        "vertices_after": 3,
+        "triangles_before": 82,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x471f7450",
+        "part": "COROLLA_STYLE19_HOOD_C",
+        "old_offset": 9590272,
+        "new_offset": 4355584,
+        "vertices_before": 78,
+        "vertices_after": 3,
+        "triangles_before": 58,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x6d4b6966",
+        "part": "COROLLA_STYLE20_HOOD_A",
+        "old_offset": 9595136,
+        "new_offset": 4357504,
+        "vertices_before": 238,
+        "vertices_after": 3,
+        "triangles_before": 194,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x6d4b6967",
+        "part": "COROLLA_STYLE20_HOOD_B",
+        "old_offset": 9608448,
+        "new_offset": 4361216,
+        "vertices_before": 166,
+        "vertices_after": 3,
+        "triangles_before": 128,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x6d4b6968",
+        "part": "COROLLA_STYLE20_HOOD_C",
+        "old_offset": 9617792,
+        "new_offset": 4363904,
+        "vertices_before": 32,
+        "vertices_after": 3,
+        "triangles_before": 24,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xbdd370b1",
+        "part": "COROLLA_STYLE21_HOOD_LEFT_A",
+        "old_offset": 9620096,
+        "new_offset": 4365056,
+        "vertices_before": 52,
+        "vertices_after": 3,
+        "triangles_before": 41,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xbdd370b2",
+        "part": "COROLLA_STYLE21_HOOD_LEFT_B",
+        "old_offset": 9623424,
+        "new_offset": 4366464,
+        "vertices_before": 74,
+        "vertices_after": 3,
+        "triangles_before": 60,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xbdd370b3",
+        "part": "COROLLA_STYLE21_HOOD_LEFT_C",
+        "old_offset": 9628032,
+        "new_offset": 4368128,
+        "vertices_before": 46,
+        "vertices_after": 3,
+        "triangles_before": 34,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x4f7eef24",
+        "part": "COROLLA_STYLE21_HOOD_RIGHT_",
+        "old_offset": 9631232,
+        "new_offset": 4369536,
+        "vertices_before": 98,
+        "vertices_after": 3,
+        "triangles_before": 86,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x0d327a32",
+        "part": "COROLLA_STYLE22_HOOD_LEFT_A",
+        "old_offset": 9637248,
+        "new_offset": 4371712,
+        "vertices_before": 111,
+        "vertices_after": 3,
+        "triangles_before": 102,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x0d327a33",
+        "part": "COROLLA_STYLE22_HOOD_LEFT_B",
+        "old_offset": 9644416,
+        "new_offset": 4374400,
+        "vertices_before": 72,
+        "vertices_after": 3,
+        "triangles_before": 64,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x0d327a34",
+        "part": "COROLLA_STYLE22_HOOD_LEFT_C",
+        "old_offset": 9649024,
+        "new_offset": 4376192,
+        "vertices_before": 48,
+        "vertices_after": 3,
+        "triangles_before": 38,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x8abf28c5",
+        "part": "COROLLA_STYLE22_HOOD_RIGHT_",
+        "old_offset": 9652352,
+        "new_offset": 4377728,
+        "vertices_before": 105,
+        "vertices_after": 3,
+        "triangles_before": 96,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x5c9183b3",
+        "part": "COROLLA_STYLE23_HOOD_LEFT_A",
+        "old_offset": 9659136,
+        "new_offset": 4380288,
+        "vertices_before": 128,
+        "vertices_after": 3,
+        "triangles_before": 98,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x5c9183b4",
+        "part": "COROLLA_STYLE23_HOOD_LEFT_B",
+        "old_offset": 9667200,
+        "new_offset": 4383232,
+        "vertices_before": 85,
+        "vertices_after": 3,
+        "triangles_before": 69,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x5c9183b5",
+        "part": "COROLLA_STYLE23_HOOD_LEFT_C",
+        "old_offset": 9672448,
+        "new_offset": 4385152,
+        "vertices_before": 57,
+        "vertices_after": 3,
+        "triangles_before": 39,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xc5ff6266",
+        "part": "COROLLA_STYLE23_HOOD_RIGHT_",
+        "old_offset": 9676288,
+        "new_offset": 4386816,
+        "vertices_before": 65,
+        "vertices_after": 3,
+        "triangles_before": 54,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xabf08d34",
+        "part": "COROLLA_STYLE24_HOOD_LEFT_A",
+        "old_offset": 9680256,
+        "new_offset": 4388352,
+        "vertices_before": 128,
+        "vertices_after": 3,
+        "triangles_before": 110,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xabf08d35",
+        "part": "COROLLA_STYLE24_HOOD_LEFT_B",
+        "old_offset": 9688576,
+        "new_offset": 4391552,
+        "vertices_before": 98,
+        "vertices_after": 3,
+        "triangles_before": 82,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xabf08d36",
+        "part": "COROLLA_STYLE24_HOOD_LEFT_C",
+        "old_offset": 9694720,
+        "new_offset": 4393856,
+        "vertices_before": 74,
+        "vertices_after": 3,
+        "triangles_before": 56,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x013f9c07",
+        "part": "COROLLA_STYLE24_HOOD_RIGHT_",
+        "old_offset": 9699712,
+        "new_offset": 4396032,
+        "vertices_before": 143,
+        "vertices_after": 3,
+        "triangles_before": 125,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xfb4f96b5",
+        "part": "COROLLA_STYLE25_HOOD_LEFT_A",
+        "old_offset": 9708928,
+        "new_offset": 4399488,
+        "vertices_before": 98,
+        "vertices_after": 3,
+        "triangles_before": 84,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xfb4f96b6",
+        "part": "COROLLA_STYLE25_HOOD_LEFT_B",
+        "old_offset": 9715456,
+        "new_offset": 4402048,
+        "vertices_before": 75,
+        "vertices_after": 3,
+        "triangles_before": 63,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xfb4f96b7",
+        "part": "COROLLA_STYLE25_HOOD_LEFT_C",
+        "old_offset": 9720192,
+        "new_offset": 4403840,
+        "vertices_before": 51,
+        "vertices_after": 3,
+        "triangles_before": 37,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x3c7fd5a8",
+        "part": "COROLLA_STYLE25_HOOD_RIGHT_",
+        "old_offset": 9723776,
+        "new_offset": 4405376,
+        "vertices_before": 87,
+        "vertices_after": 3,
+        "triangles_before": 84,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xf6d666ac",
+        "part": "COROLLA_STYLE26_HOOD_A",
+        "old_offset": 9729536,
+        "new_offset": 4407680,
+        "vertices_before": 143,
+        "vertices_after": 3,
+        "triangles_before": 128,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xf6d666ad",
+        "part": "COROLLA_STYLE26_HOOD_B",
+        "old_offset": 9737984,
+        "new_offset": 4410240,
+        "vertices_before": 81,
+        "vertices_after": 3,
+        "triangles_before": 72,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xf6d666ae",
+        "part": "COROLLA_STYLE26_HOOD_C",
+        "old_offset": 9742976,
+        "new_offset": 4411904,
+        "vertices_before": 42,
+        "vertices_after": 3,
+        "triangles_before": 32,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xe3183b8d",
+        "part": "COROLLA_STYLE27_HOOD_A",
+        "old_offset": 9745920,
+        "new_offset": 4413184,
+        "vertices_before": 179,
+        "vertices_after": 3,
+        "triangles_before": 160,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xe3183b8e",
+        "part": "COROLLA_STYLE27_HOOD_B",
+        "old_offset": 9756544,
+        "new_offset": 4416512,
+        "vertices_before": 105,
+        "vertices_after": 3,
+        "triangles_before": 88,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xe3183b8f",
+        "part": "COROLLA_STYLE27_HOOD_C",
+        "old_offset": 9762944,
+        "new_offset": 4418688,
+        "vertices_before": 58,
+        "vertices_after": 3,
+        "triangles_before": 40,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xcf5a106e",
+        "part": "COROLLA_STYLE28_HOOD_A",
+        "old_offset": 9766784,
+        "new_offset": 4420352,
+        "vertices_before": 132,
+        "vertices_after": 3,
+        "triangles_before": 92,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xcf5a106f",
+        "part": "COROLLA_STYLE28_HOOD_B",
+        "old_offset": 9774848,
+        "new_offset": 4423168,
+        "vertices_before": 104,
+        "vertices_after": 3,
+        "triangles_before": 70,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xcf5a1070",
+        "part": "COROLLA_STYLE28_HOOD_C",
+        "old_offset": 9781248,
+        "new_offset": 4425472,
+        "vertices_before": 94,
+        "vertices_after": 3,
+        "triangles_before": 56,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x4e9f7e46",
+        "part": "COROLLA_WIDE1_DECAL_LEFT_DO",
+        "old_offset": 9787136,
+        "new_offset": 4427776,
+        "vertices_before": 49,
+        "vertices_after": 3,
+        "triangles_before": 33,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x9943a8b6",
+        "part": "COROLLA_WIDE1_DECAL_LEFT_QU",
+        "old_offset": 9789952,
+        "new_offset": 4428672,
+        "vertices_before": 15,
+        "vertices_after": 3,
+        "triangles_before": 16,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x31c043b9",
+        "part": "COROLLA_WIDE1_DECAL_RIGHT_D",
+        "old_offset": 9791104,
+        "new_offset": 4429312,
+        "vertices_before": 49,
+        "vertices_after": 3,
+        "triangles_before": 33,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x94a95d49",
+        "part": "COROLLA_WIDE1_DECAL_RIGHT_Q",
+        "old_offset": 9793920,
+        "new_offset": 4430208,
+        "vertices_before": 15,
+        "vertices_after": 3,
+        "triangles_before": 16,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x1b644e07",
+        "part": "COROLLA_WIDE2_DECAL_LEFT_DO",
+        "old_offset": 9795072,
+        "new_offset": 4430848,
+        "vertices_before": 55,
+        "vertices_after": 3,
+        "triangles_before": 39,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xd173ecd7",
+        "part": "COROLLA_WIDE2_DECAL_LEFT_QU",
+        "old_offset": 9798144,
+        "new_offset": 4431744,
+        "vertices_before": 35,
+        "vertices_after": 3,
+        "triangles_before": 36,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x971f0b9a",
+        "part": "COROLLA_WIDE2_DECAL_RIGHT_D",
+        "old_offset": 9800192,
+        "new_offset": 4432384,
+        "vertices_before": 55,
+        "vertices_after": 3,
+        "triangles_before": 39,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xd2e2258a",
+        "part": "COROLLA_WIDE2_DECAL_RIGHT_Q",
+        "old_offset": 9803264,
+        "new_offset": 4433280,
+        "vertices_before": 35,
+        "vertices_after": 3,
+        "triangles_before": 36,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xe8291dc8",
+        "part": "COROLLA_WIDE3_DECAL_LEFT_DO",
+        "old_offset": 9805312,
+        "new_offset": 4433920,
+        "vertices_before": 47,
+        "vertices_after": 3,
+        "triangles_before": 25,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x09a430f8",
+        "part": "COROLLA_WIDE3_DECAL_LEFT_QU",
+        "old_offset": 9808000,
+        "new_offset": 4434816,
+        "vertices_before": 20,
+        "vertices_after": 3,
+        "triangles_before": 16,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xfc7dd37b",
+        "part": "COROLLA_WIDE3_DECAL_RIGHT_D",
+        "old_offset": 9809408,
+        "new_offset": 4435456,
+        "vertices_before": 47,
+        "vertices_after": 3,
+        "triangles_before": 25,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x111aedcb",
+        "part": "COROLLA_WIDE3_DECAL_RIGHT_Q",
+        "old_offset": 9812096,
+        "new_offset": 4436352,
+        "vertices_before": 20,
+        "vertices_after": 3,
+        "triangles_before": 16,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0xb4eded89",
+        "part": "COROLLA_WIDE4_DECAL_LEFT_DO",
+        "old_offset": 9813504,
+        "new_offset": 4436992,
+        "vertices_before": 55,
+        "vertices_after": 3,
+        "triangles_before": 39,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x41d47519",
+        "part": "COROLLA_WIDE4_DECAL_LEFT_QU",
+        "old_offset": 9816576,
+        "new_offset": 4437888,
+        "vertices_before": 16,
+        "vertices_after": 3,
+        "triangles_before": 17,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x61dc9b5c",
+        "part": "COROLLA_WIDE4_DECAL_RIGHT_D",
+        "old_offset": 9817856,
+        "new_offset": 4438528,
+        "vertices_before": 55,
+        "vertices_after": 3,
+        "triangles_before": 39,
+        "triangles_after": 1
+      },
+      {
+        "asset_hash": "0x4f53b60c",
+        "part": "COROLLA_WIDE4_DECAL_RIGHT_Q",
+        "old_offset": 9820928,
+        "new_offset": 4439424,
+        "vertices_before": 16,
+        "vertices_after": 3,
+        "triangles_before": 17,
+        "triangles_after": 1
+      }
+    ]
+  },
+  "installed": false,
+  "authorization": "User explicitly authorized all repairs after pipeline capture; executables/network remain excluded"
+}

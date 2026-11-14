@@ -5,6 +5,8 @@
 #include <d3d9.h>
 #include <math.h>
 #include <stdlib.h>
+#include <string.h>
+#include "uma_shader_profiles.h"
 /* shortcut: accepts only a direct v0-to-oPos matrix shader; extend from captured shader evidence. */
 static int uma_camera_constant(const DWORD *code,size_t count,UINT *base){
  if(!code || !base || count<2 || (code[0]!=0xfffe0101 && code[0]!=0xfffe0200))return 0;
@@ -49,8 +51,12 @@ static HRESULT uma_camera_capture(IDirect3DDevice9 *device,D3DMATRIX *output){
   if(FAILED(result) || bytes<8 || bytes>65536 || bytes%4){IDirect3DVertexShader9_Release(shader);return E_FAIL;}
   code=malloc(bytes);if(!code){IDirect3DVertexShader9_Release(shader);return E_OUTOFMEMORY;}
   result=IDirect3DVertexShader9_GetFunction(shader,code,&bytes);IDirect3DVertexShader9_Release(shader);
-  int supported=SUCCEEDED(result) && uma_camera_constant(code,bytes/4,&base);free(code);if(!supported)return E_FAIL;
-  float constants[4][4];result=IDirect3DDevice9_GetVertexShaderConstantF(device,base,&constants[0][0],4);if(FAILED(result))return result;
+  const UmaShaderProfile *profile=NULL;
+  if(SUCCEEDED(result))for(UINT i=0;i<UMA_SHADER_PROFILE_COUNT;i++)if(bytes==uma_shader_profiles[i].bytes && !memcmp(code,uma_shader_profiles[i].words,bytes)){profile=&uma_shader_profiles[i];break;}
+  int supported=profile || (SUCCEEDED(result) && uma_camera_constant(code,bytes/4,&base));free(code);if(!supported)return E_FAIL;
+  float constants[4][4];
+  if(profile){for(UINT i=0;i<4;i++){result=IDirect3DDevice9_GetVertexShaderConstantF(device,profile->rows[i],constants[i],1);if(FAILED(result))return result;for(UINT k=0;k<4;k++)constants[i][k]*=profile->signs[i];}}
+  else{result=IDirect3DDevice9_GetVertexShaderConstantF(device,base,&constants[0][0],4);if(FAILED(result))return result;}
   for(int row=0;row<4;row++)for(int col=0;col<4;col++)combined.m[row][col]=constants[col][row];
  }else{
   D3DMATRIX world,view,projection,temp={0};

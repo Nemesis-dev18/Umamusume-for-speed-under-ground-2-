@@ -82,8 +82,8 @@ class Geometry(unittest.TestCase):
                     count+=1
             self.assertEqual(count,len(meshes))
     def test_compaction_verifier_rejects_uncompacted_source(self):
-        from plan_hidden_compaction import verify_compaction
-        data=data_path('CARS/COROLLA/GEOMETRY.BIN').read_bytes()
+        from plan_hidden_compaction import verify_compaction,reviewed_source
+        data=reviewed_source().read_bytes()
         with self.assertRaisesRegex(ValueError,'Invalid compact degenerate mesh'):
             verify_compaction(data,data)
     def test_globalb_golden_pair(self):
@@ -255,7 +255,9 @@ class MaterialProbe(unittest.TestCase):
         self.assertEqual(chunks(data),chunks(result))
         expected={c['offset']+i for c in changes for i in range(4)}
         self.assertEqual({i for i,(a,b) in enumerate(zip(data,result)) if a!=b},expected)
-        if backup.exists():self.assertEqual(source.read_bytes(),result)
+        if backup.exists():
+            from plan_hidden_compaction import reviewed_source
+            self.assertEqual(reviewed_source().read_bytes(),result)
         with self.assertRaises(ValueError):material_preview(result)
     def test_native_material_definition(self):
         from inspect_assets import ROOT,chunks,flatten
@@ -273,7 +275,8 @@ class CharacterBounds(unittest.TestCase):
         from extract_assets import geometry,payload
         from plan_bounds_repair import bounds_preview
         source=ROOT/'CARS/COROLLA/GEOMETRY.BIN';backup=source.with_name(source.name+'.before-bounds.bak')
-        data=(backup if backup.exists() else source).read_bytes();result,changes=bounds_preview(data)
+        from plan_hidden_compaction import reviewed_source
+        data=(backup if backup.exists() else reviewed_source()).read_bytes();result,changes=bounds_preview(data)
         self.assertEqual(chunks(data),chunks(result));self.assertEqual(len(changes),4)
         allowed={f['offset']+j for c in changes for f in c['fields'] for j in range(4)}
         changed={i for i,(a,b) in enumerate(zip(data,result)) if a!=b}
@@ -287,7 +290,9 @@ class CharacterBounds(unittest.TestCase):
             for index in mesh['indices']:
                 for axis in range(3):self.assertLessEqual(lower[axis],mesh['positions'][index][axis]);self.assertGreaterEqual(upper[axis],mesh['positions'][index][axis])
         with self.assertRaises(ValueError):bounds_preview(result)
-        if backup.exists():self.assertEqual(source.read_bytes(),result)
+        if backup.exists():
+            from plan_hidden_compaction import reviewed_source
+            self.assertEqual(reviewed_source().read_bytes(),result)
     def test_unrelated_car_rejected(self):
         from inspect_assets import ROOT
         from plan_bounds_repair import bounds_preview
@@ -340,3 +345,29 @@ class AuthoredMotion(unittest.TestCase):
             self.assertGreater(float(((cross*n[t].mean(1)).sum(1)[valid]>0).mean()),.99)
 
 if __name__ == '__main__': unittest.main()
+
+class CapturedShaderProfiles(unittest.TestCase):
+    def test_real_programs_and_skinning_rejection(self):
+        from inspect_assets import ROOT
+        from profile_captured_shaders import matrix_rows
+        programs={}
+        for line in (ROOT/'modding/diagnostics/game-pipeline-session-1.log').read_text().splitlines():
+            if line.startswith('VS '):programs[int(line.split('id=')[1].split()[0])]=[int(v,16) for v in line.split('words=')[1].split()]
+        self.assertEqual(matrix_rows(programs[5]),[(10,1),(11,1),(12,1),(13,1)])
+        with self.assertRaises(ValueError):matrix_rows(programs[9])
+    def test_temporary_moves_and_overwrite_rejection(self):
+        from profile_captured_shaders import matrix_rows
+        code=[0xfffe0101]
+        for k in range(4):code += [9,0x80000000|((1<<k)<<16),0x90e40000,0xa0e40000+k]
+        code += [1,0xc00f0000,0x80e40000,65535]
+        self.assertEqual(matrix_rows(code),[(k,1) for k in range(4)])
+        with self.assertRaises(ValueError):matrix_rows(code[:-1]+[2,0xc0010000,0x80e40000,0xa0e40001,65535])
+    def test_relative_constants_and_truncation_rejected(self):
+        from profile_captured_shaders import matrix_rows
+        code=[0xfffe0101,20,0xc00f0000,0x90e40000,0xa0e40000,65535]
+        self.assertEqual(matrix_rows(code),[(k,1) for k in range(4)])
+        bad=code.copy();bad[4]|=0x2000
+        for raw in (bad,code[:-1],[0xfffe0101,0x7fff_fffe,65535]):
+            with self.assertRaises(ValueError):matrix_rows(raw)
+        defined=[0xfffe0101,81,0xa00f0000,0,0,0,0]+code[1:]
+        with self.assertRaises(ValueError):matrix_rows(defined)
