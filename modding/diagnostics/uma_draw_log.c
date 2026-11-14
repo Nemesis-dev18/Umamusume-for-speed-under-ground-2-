@@ -2,6 +2,7 @@
 #include <windows.h>
 #include <d3d9.h>
 #include <stdio.h>
+#include <wchar.h>
 
 typedef HRESULT (WINAPI *DrawFn)(IDirect3DDevice9*,D3DPRIMITIVETYPE,INT,UINT,UINT,UINT,UINT);
 typedef HRESULT (WINAPI *PresentFn)(IDirect3DDevice9*,const RECT*,const RECT*,HWND,const RGNDATA*);
@@ -62,9 +63,15 @@ static BOOL install_hooks(IDirect3DDevice9 *device){
  DWORD ignored;VirtualProtect(table+17,(82-17+1)*sizeof(void*),protection,&ignored);return TRUE;
 }
 #ifndef UMA_LOG_TEST
-static DWORD WINAPI start_logging(void *unused){
- (void)unused;InitializeCriticalSection(&log_lock);
- draw_log=fopen("modding/uma-draw.log","a");if(!draw_log)return 1;
+static DWORD WINAPI start_logging(void *module){
+ InitializeCriticalSection(&log_lock);
+ WCHAR path[4096];DWORD length=GetModuleFileNameW((HMODULE)module,path,4096);
+ if(!length || length>=4096)return 1;
+ WCHAR *last=wcsrchr(path,L'\\');if(!last)return 1;*last=0;
+ last=wcsrchr(path,L'\\');if(!last || _wcsicmp(last+1,L"scripts"))return 1;*last=0;
+ const WCHAR suffix[]=L"\\modding\\uma-draw.log";
+ if(wcslen(path)+wcslen(suffix)>=4096)return 1;
+ wcscat(path,suffix);draw_log=_wfopen(path,L"a");if(!draw_log)return 1;
  fputs("START draw-only diagnostics; no executable addresses; no shader/state changes\n",draw_log);fflush(draw_log);
  HWND window=CreateWindowA("STATIC","Uma graphics probe",WS_POPUP,0,0,16,16,NULL,NULL,GetModuleHandle(NULL),NULL);
  IDirect3D9 *api=Direct3DCreate9(D3D_SDK_VERSION);IDirect3DDevice9 *device=NULL;
@@ -79,7 +86,7 @@ static DWORD WINAPI start_logging(void *unused){
 }
 BOOL WINAPI DllMain(HINSTANCE instance,DWORD reason,LPVOID reserved){
  (void)reserved;
- if(reason==DLL_PROCESS_ATTACH){DisableThreadLibraryCalls(instance);HANDLE thread=CreateThread(NULL,0,start_logging,NULL,0,NULL);if(thread)CloseHandle(thread);}
+ if(reason==DLL_PROCESS_ATTACH){DisableThreadLibraryCalls(instance);HANDLE thread=CreateThread(NULL,0,start_logging,instance,0,NULL);if(thread)CloseHandle(thread);}
  return TRUE;
 }
 #endif
