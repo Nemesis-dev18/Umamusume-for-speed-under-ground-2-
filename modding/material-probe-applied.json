@@ -7,7 +7,8 @@
   "backup": "CARS/COROLLA/GEOMETRY.BIN.before-material.bak",
   "backup_commit": "81ce1576dd5855127f8423f391eb75f42cb946e2",
   "chunk_structure_unchanged": true,
-  "game_launched": false,
-  "race_result": "unverified",
-  "animation_integrated": false
+  "game_launched": true,
+  "race_result": "User reports game loads but Kitasan remains invisible",
+  "animation_integrated": false,
+  "selection_result": "User screenshot shows partially transparent static Kitasan, residual black wheel and car shadow"
 }

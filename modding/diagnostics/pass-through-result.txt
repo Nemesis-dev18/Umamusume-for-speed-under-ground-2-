@@ -1,0 +1,2 @@
+START standalone Direct3D9 test
+PASS: hook installed through separate software-processing device observes hardware-processing draw; GPU readback and shader unchanged; Present and candidate metadata exercised.

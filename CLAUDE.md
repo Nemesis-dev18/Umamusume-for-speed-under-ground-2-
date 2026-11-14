@@ -122,3 +122,11 @@ Pasaron 21 pruebas, incluidas la identidad exacta de los 16 bytes distintos, pre
 
 
 Prueba de material aplicada después de la aprobación: respaldo exacto GEOMETRY.BIN.before-material.bak versionado antes de sustituir, commit 81ce1576dd5855127f8423f391eb75f42cb946e2. Solo cambiaron los 16 bytes revisados; tamaño 9.952.256; hash instalado cedf717c16c342b449c32e312351bd2f93d21533446b9501488dd0b5a3664389. Se verificó la sustitución atómica y el árbol de chunks idéntico. Los otros 715 recursos del inventario mantienen sus hashes. Se conservan ambos respaldos. Las 21 pruebas pasan, incluyendo la cadena de comparación entre respaldo inicial, reparación de cabeceras, respaldo previo al material y resultado instalado. Informe: modding/material-probe-applied.json. El resultado en carrera todavía no se ha observado; la pose y animación no se han cambiado.
+
+## Diagnóstico de llamadas Direct3D aprobado
+
+La prueba DECAL -> DULLPLASTIC no resolvió la invisibilidad en carrera y la captura de selección muestra transparencia parcial, rueda y sombra residuales. No se interpreta como arreglo de materiales. Se conserva el estado instalado para observarlo sin añadir otra modificación de recursos.
+
+Se preparó el módulo de diagnóstico en modding/diagnostics/UmaDrawLog.asi, con código en uma_draw_log.c y prueba independiente pass_through_test.c. La prueba GPU pasó: un hook instalado a través de un segundo dispositivo de software observa la llamada del dispositivo de hardware, conserva el píxel blanco y el shader original y registra Present y metadatos. Compilación con -Wall -Wextra -Werror. Imports inspeccionados: d3d9, KERNEL32, msvcrt y USER32. No requiere proveedor REA ni lectura del ejecutable del juego.
+
+El usuario autorizó explícitamente la excepción temporal a solo datos: scripts/UmaDrawLog.asi, 239.762 bytes, SHA-256 b38a2d5d4eea05311a5af11be46d6657233701266c806ab9db00c1cfa6750526; registro append modding/uma-draw.log. El módulo sustituye entradas de vtable de Direct3D9 en memoria, no instrucciones del ejecutable ni bytes de SPEED2.EXE. No altera shaders/estados de dibujo ni recursos. Las cantidades conocidas de vértices/triángulos son candidatos, no prueba de identidad visual. No hay módulo anterior que sobrescribir. Se retirará con el juego cerrado y se conservará el registro.
