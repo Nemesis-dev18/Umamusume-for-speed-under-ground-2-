@@ -39,5 +39,15 @@
     "game_integrated": false,
     "camera_adapter": "fixed-function and restricted direct VS1.1/VS2 tested independently; actual game shader unknown",
     "upload_identity": "full canonical VB content observer passed standalone; real game uploads and draw pass not verified"
+  },
+  "native_compaction": {
+    "prepared_in_memory": true,
+    "binary_saved": false,
+    "installed": false,
+    "bytes_after": 4570240,
+    "vertices_after": 59749,
+    "directory_records_verified": 571,
+    "repeated_build_identical": true,
+    "actual_race_result": "not tested; no game launch"
   }
 }

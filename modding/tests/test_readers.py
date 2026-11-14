@@ -64,6 +64,28 @@ class Geometry(unittest.TestCase):
         for mesh in meshes:
             start=mesh['vertex_data_offset']
             self.assertEqual(data[start:start+len(expected)],expected,mesh['name'])
+    def test_binary_identity_survives_truncated_name_collisions(self):
+        from extract_assets import geometry,payload
+        from inspect_assets import flatten
+        for car in ('COROLLA','240SX'):
+            data=data_path(f'CARS/{car}/GEOMETRY.BIN').read_bytes();meshes=geometry(data,'')
+            identities={mesh['asset_hash']:mesh for mesh in meshes}
+            self.assertEqual(len(identities),len(meshes))
+            self.assertLess(len({mesh['name'] for mesh in meshes}),len(meshes))
+            count=0
+            for node in flatten(chunks(data)):
+                if node['id']!='0x00134004':continue
+                records=payload(data,node)
+                for at in range(0,len(records),24):
+                    key,offset=struct.unpack_from('<2I',records,at)
+                    self.assertEqual(identities[f'0x{key:08x}']['solid_offset'],offset)
+                    count+=1
+            self.assertEqual(count,len(meshes))
+    def test_compaction_verifier_rejects_uncompacted_source(self):
+        from plan_hidden_compaction import verify_compaction
+        data=data_path('CARS/COROLLA/GEOMETRY.BIN').read_bytes()
+        with self.assertRaisesRegex(ValueError,'Invalid compact degenerate mesh'):
+            verify_compaction(data,data)
     def test_globalb_golden_pair(self):
         from inspect_assets import ROOT
         self.assertEqual(jdlz((ROOT/'GLOBAL/GlobalB.lzc').read_bytes()),(ROOT/'GLOBAL/GLOBALB.BUN').read_bytes())

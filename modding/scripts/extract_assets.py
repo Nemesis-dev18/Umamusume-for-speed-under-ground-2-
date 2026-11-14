@@ -89,7 +89,8 @@ def geometry(data, selected):
                 if run['offset']!=cursor:raise ValueError('Material ranges overlap or leave gaps')
                 cursor+=run['count']
             if cursor!=len(indices):raise ValueError('Material ranges do not cover triangles')
-        result.append({'name':name,'solid_offset':solid['offset'],'stride':stride,
+        result.append({'name':name,'asset_hash':f'0x{struct.unpack_from("<I",header,skip_words(header)+16)[0]:08x}',
+                       'solid_offset':solid['offset'],'stride':stride,
                        'vertex_data_offset':leaves[required[2]]['payload']+vertex_lead,
                        'index_data_offset':leaves[required[3]]['payload']+first,
                        'positions':positions,'normals':normals,'uv':uv,'indices':indices,
