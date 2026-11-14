@@ -111,3 +111,11 @@ Se lanzó la copia de prueba a petición explícita del usuario. El usuario resp
 Lectura de materiales de GLOBALB.BUN: los chunks 0x00135200 llevan hash en payload+12 y nombre ASCII desde +20. El hash 0x02A05578 corresponde a DECAL; 0x0FEDEE40 a DULLPLASTIC y 0x12C9453C a MOLDINGS. El primer rango de KIT00_BODY_A del Corolla usa el shader DECAL y el atlas de Kitasan. Este hallazgo es una hipótesis para una prueba aislada, no una causa confirmada. No se modificaron materiales ni GLOBAL.
 
 Antes de otro cambio se solicitó comparar una carrera con Nissan 240SX, cuyos recursos no fueron modificados en este flujo. El resultado determinará si la investigación debe concentrarse en el Corolla o en un fallo general de renderizado de esta copia. No se aplicó ninguna segunda reparación.
+
+## Referencia 240SX y prueba de material aprobada
+
+El usuario confirmó que el Nissan 240SX sí muestra carrocería en carrera, mientras Kitasan sigue en pose de importación en selección. Esto acota el problema a los recursos/ruta de dibujo del Corolla, sin demostrar aún la causa exacta.
+
+Se preparó en memoria material-probe-plan.json y plan_material_probe.py: el primer rango de cada KIT00_BODY usa DECAL (0x02A05578) y atlas 0x1C9637A6; la prueba cambia solo el hash del shader referenciado a DULLPLASTIC (0x0FEDEE40), cuya definición existe en GLOBALB.BUN. Cuatro escrituras u32 en 0x13080, 0xAE408, 0x147A10 y 0x1E0708: 78 55 A0 02 -> 40 EE ED 0F. Tamaño idéntico: 9.952.256 bytes. Sin cambios de malla, límites, texturas, pose, ruedas ni física.
+
+Pasaron 21 pruebas, incluidas la identidad exacta de los 16 bytes distintos, preservación del árbol de chunks y definición nativa del material. El usuario aprobó explícitamente «Sí, ya cerré el juego; aplica la prueba». Se comprobó ausencia del proceso SPEED2.EXE. Antes de sustituir se creará GEOMETRY.BIN.before-material.bak y un commit de ese respaldo, manteniendo el .bak de la reparación anterior.

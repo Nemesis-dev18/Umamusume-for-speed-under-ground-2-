@@ -1,0 +1,57 @@
+{
+  "source": "CARS/COROLLA/GEOMETRY.BIN",
+  "source_sha256": "1d16d7e3c9d1a7ed3f240224a6eb4e725140035188b45a2cc48fd17733d41808",
+  "result_sha256": "cedf717c16c342b449c32e312351bd2f93d21533446b9501488dd0b5a3664389",
+  "bytes_before": 9952256,
+  "bytes_after": 9952256,
+  "changed_bytes": 16,
+  "changes": [
+    {
+      "part": "COROLLA_KIT00_BODY_A",
+      "offset": 77952,
+      "offset_hex": "0x13080",
+      "length": 4,
+      "old_hex": "78 55 a0 02",
+      "new_hex": "40 ee ed 0f",
+      "old_material": "DECAL",
+      "new_material": "DULLPLASTIC"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_B",
+      "offset": 713736,
+      "offset_hex": "0xae408",
+      "length": 4,
+      "old_hex": "78 55 a0 02",
+      "new_hex": "40 ee ed 0f",
+      "old_material": "DECAL",
+      "new_material": "DULLPLASTIC"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_C",
+      "offset": 1341968,
+      "offset_hex": "0x147a10",
+      "length": 4,
+      "old_hex": "78 55 a0 02",
+      "new_hex": "40 ee ed 0f",
+      "old_material": "DECAL",
+      "new_material": "DULLPLASTIC"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_D",
+      "offset": 1967880,
+      "offset_hex": "0x1e0708",
+      "length": 4,
+      "old_hex": "78 55 a0 02",
+      "new_hex": "40 ee ed 0f",
+      "old_material": "DECAL",
+      "new_material": "DULLPLASTIC"
+    }
+  ],
+  "backup": "CARS/COROLLA/GEOMETRY.BIN.before-material.bak",
+  "temporary": "CARS/COROLLA/GEOMETRY.BIN.uma-material.tmp",
+  "approval_required": true,
+  "game_must_be_closed": true,
+  "applied": false,
+  "purpose": "Isolate whether the DECAL material causes race invisibility; DULLPLASTIC is present in GLOBALB.BUN",
+  "limits": "No animation, pose, texture, wheel, bounding-box, or geometry change. Outcome requires a race test."
+}

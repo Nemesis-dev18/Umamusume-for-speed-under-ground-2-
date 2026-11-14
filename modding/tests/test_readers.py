@@ -196,4 +196,28 @@ class NativeSkin(unittest.TestCase):
         mutated=bytearray(data);struct.pack_into('<f',mutated,at+48,16)
         with self.assertRaises(ValueError):read_skin(mutated)
 
+
+class MaterialProbe(unittest.TestCase):
+    def test_exact_material_only_preview(self):
+        from inspect_assets import ROOT,chunks
+        from plan_material_probe import material_preview
+        source=ROOT/'CARS/COROLLA/GEOMETRY.BIN'
+        backup=source.with_name(source.name+'.before-material.bak')
+        data=(backup if backup.exists() else source).read_bytes()
+        result,changes=material_preview(data)
+        self.assertEqual(len(changes),4)
+        self.assertEqual(chunks(data),chunks(result))
+        expected={c['offset']+i for c in changes for i in range(4)}
+        self.assertEqual({i for i,(a,b) in enumerate(zip(data,result)) if a!=b},expected)
+        if backup.exists():self.assertEqual(source.read_bytes(),result)
+        with self.assertRaises(ValueError):material_preview(result)
+    def test_native_material_definition(self):
+        from inspect_assets import ROOT,chunks,flatten
+        from extract_assets import payload
+        data=(ROOT/'GLOBAL/GLOBALB.BUN').read_bytes()
+        definitions=[payload(data,n) for n in flatten(chunks(data)) if n['id']=='0x00135200']
+        matches=[r for r in definitions if struct.unpack_from('<I',r,12)[0]==0x0fedee40]
+        self.assertEqual(len(matches),1)
+        self.assertEqual(matches[0][20:48].split(b'\0')[0],b'DULLPLASTIC')
+
 if __name__ == '__main__': unittest.main()
