@@ -30,7 +30,11 @@ def quaternion(matrix):
     return q if q[3]>=0 else -q
 
 
-def pack():
+def pack(clips_directory=None):
+    manifest=ROOT/'modding/runtime/kitasan.json'
+    current=json.loads(manifest.read_text()) if manifest.exists() else {}
+    clips_directory=clips_directory or ROOT/current.get('reference_clip_directory','modding/animation-offline-v2')
+    clips_directory.resolve().relative_to((ROOT/'modding').resolve())
     folder=ROOT/'modding/character-source';mesh=(folder/'mesh.bin').read_bytes()
     nv,ni=struct.unpack_from('<II',mesh);skin=(folder/'skin.bin').read_bytes()
     bones=json.loads((folder/'skeleton.json').read_text());nb=len(bones)
@@ -52,7 +56,7 @@ def pack():
         struct.pack_into('<4H',skin_out,i*24,*(int(remap[j]) for j in old))
     clips=[];counts=[]
     for name in ('idle','run'):
-        with np.load(ROOT/f'modding/animation-offline-v2/{name}.npz',allow_pickle=False) as clip:
+        with np.load(clips_directory/f'{name}.npz',allow_pickle=False) as clip:
             r=clip['rotations'].astype(float);t=clip['offsets'].astype(float)
             if r.ndim!=4 or r.shape[1:]!=(nb,3,3) or t.shape!=r.shape[:2]+(3,) or not np.isfinite(r).all() or not np.isfinite(t).all():raise ValueError('Invalid motion arrays')
             positions=np.einsum('fbij,bj->fbi',r,rest)+t
@@ -78,7 +82,7 @@ def main():
     data=pack();output=ROOT/'modding/runtime/kitasan.umab'
     # This is generated authoring data, never an installed game resource.
     output.write_bytes(data)
-    report={'bytes':len(data),'sha256':hashlib.sha256(data).hexdigest(),'format':'UMAB v2; local quaternions, translations and parent hierarchy; not an EAGL container','game_integrated':False}
+    report={'bytes':len(data),'sha256':hashlib.sha256(data).hexdigest(),'format':'UMAB v2; local quaternions, translations and parent hierarchy; not an EAGL container','game_integrated':False,'reference_clip_directory':json.loads(output.with_suffix('.json').read_text()).get('reference_clip_directory','modding/animation-offline-v2')}
     output.with_suffix('.json').write_text(json.dumps(report,indent=2)+'\n')
     print(json.dumps(report))
 

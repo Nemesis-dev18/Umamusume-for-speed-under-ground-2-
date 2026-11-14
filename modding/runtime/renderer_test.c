@@ -147,10 +147,11 @@ static int check_upload_identity(IDirect3DDevice9 *device,const UmaMotion *motio
  IDirect3DVertexBuffer9_Release(managed);IDirect3DVertexBuffer9_Release(other);IDirect3DVertexBuffer9_Release(candidate);assert(uma_upload_remove());assert(!uma_upload_remove());
  puts("PASS full upload identity, one-byte impostor, partial/nested overwrite, READONLY, DISCARD and hook removal");return 0;
 }
-int main(void){
+int main(int argc,char **argv){
+ const char *asset_path=argc>1?argv[1]:"modding/runtime/kitasan.umab";
  freopen("modding/runtime/gpu-test/result.txt","w",stdout);freopen("modding/runtime/gpu-test/errors.txt","w",stderr);
  puts("START independent renderer test; not NFSU2");fflush(stdout);
- FILE *input=fopen("modding/runtime/kitasan.umab","rb");assert(input);UmaMotion motion={0};assert(uma_motion_load(input,&motion));fclose(input);
+ FILE *input=fopen(asset_path,"rb");assert(input);UmaMotion motion={0};assert(uma_motion_load(input,&motion));fclose(input);
  HWND window=CreateWindowA("STATIC","Independent Kitasan renderer test",WS_POPUP,0,0,640,480,NULL,NULL,GetModuleHandle(NULL),NULL);assert(window);
  IDirect3D9 *api=Direct3DCreate9(D3D_SDK_VERSION);assert(api);
  D3DPRESENT_PARAMETERS pp={0};pp.Windowed=TRUE;pp.SwapEffect=D3DSWAPEFFECT_DISCARD;pp.hDeviceWindow=window;pp.BackBufferWidth=640;pp.BackBufferHeight=480;pp.BackBufferFormat=D3DFMT_A8R8G8B8;pp.EnableAutoDepthStencil=TRUE;pp.AutoDepthStencilFormat=D3DFMT_D24S8;

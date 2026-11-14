@@ -131,7 +131,8 @@ static int uma_motion_step(UmaMotionState *state,float seconds,float speed_mps,i
  float speed=fminf(fabsf(speed_mps),100),target=fminf(fmaxf((speed-.2f)/2.8f,0),1);
  state->run_blend+=(target-state->run_blend)*(1-expf(-seconds/.15f));
  state->idle_phase=uma_fraction(state->idle_phase+seconds*.5f);
- float cadence=1.4f+1.4f*fminf(speed/6,1);
+ /* Original race loop lasts 0.6 seconds; avoid the earlier rapid small-step cadence. */
+ float cadence=1.5f+.6f*fminf(speed/12,1);
  state->run_phase=uma_fraction(state->run_phase+(speed_mps<0?-1:1)*seconds*cadence);
  return 1;
 }

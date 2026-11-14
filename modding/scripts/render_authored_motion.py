@@ -47,14 +47,17 @@ def frame_image(phase,amount,label):
  image=Image.new('RGB',(640,525),(24,28,34));image.paste(render([3,2,1.8]),(0,30));image.paste(render([-3,-2,1.8]),(320,30))
  draw=ImageDraw.Draw(image);draw.text((10,10),'PREVIA OFFLINE — NO ES GAMEPLAY',fill='white');draw.text((10,507),label,fill='white')
  return image
-parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--output',default='animation-offline')
-args=parser.parse_args();relative=Path(args.output)
-if relative.is_absolute() or '..' in relative.parts:raise ValueError('Output must stay in modding')
-out=ROOT/'modding'/relative
-if not out.is_dir() or out.is_symlink():raise ValueError('Expected existing offline clip directory')
-frame_image(0,0,'Reposo propuesto | integracion en juego pendiente').save(out/'idle-preview.png')
-frames=[]
-for i in range(10):
- frames.append(frame_image(i/10,1,'Carrera propuesta | IK de pies | integracion en juego pendiente'))
- print('Rendered offline frame',i+1,flush=True)
-frames[0].save(out/'run-preview.gif',save_all=True,append_images=frames[1:],duration=55,loop=0,optimize=False)
+def main():
+ parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--output',default='animation-offline')
+ args=parser.parse_args();relative=Path(args.output)
+ if relative.is_absolute() or '..' in relative.parts:raise ValueError('Output must stay in modding')
+ out=ROOT/'modding'/relative
+ if not out.is_dir() or out.is_symlink():raise ValueError('Expected existing offline clip directory')
+ frame_image(0,0,'Reposo propuesto | integracion en juego pendiente').save(out/'idle-preview.png')
+ frames=[]
+ for i in range(10):
+  frames.append(frame_image(i/10,1,'Carrera propuesta | IK de pies | integracion en juego pendiente'))
+  print('Rendered offline frame',i+1,flush=True)
+ frames[0].save(out/'run-preview.gif',save_all=True,append_images=frames[1:],duration=55,loop=0,optimize=False)
+
+if __name__=='__main__':main()

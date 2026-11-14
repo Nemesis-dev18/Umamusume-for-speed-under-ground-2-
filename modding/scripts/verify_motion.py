@@ -1,4 +1,5 @@
 """Compare the C player to Python hierarchy/skinning without starting the game."""
+import argparse
 import json
 import struct
 import subprocess
@@ -32,8 +33,16 @@ def rotation_matrix(quaternions):
 
 
 def main():
+    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--asset',default='modding/runtime/kitasan.umab');parser.add_argument('--clips');args=parser.parse_args()
+    asset_path=(ROOT/args.asset).resolve()
+    manifest=json.loads(asset_path.with_suffix('.json').read_text()) if asset_path.with_suffix('.json').exists() else {}
+    clips_path=(ROOT/(args.clips or manifest.get('reference_clip_directory','modding/animation-offline-v2'))).resolve()
+    for path in (asset_path,clips_path):path.relative_to((ROOT/'modding').resolve())
+    reference_clips={}
+    for name in ('idle','run'):
+        with np.load(clips_path/(name+'.npz'),allow_pickle=False) as clip:reference_clips[name]=(clip['rotations'].copy(),clip['offsets'].copy())
     build=ROOT/'modding/runtime/test-build';build.mkdir(exist_ok=True)
-    rig=Rig();order=topology(rig.bones);data=(ROOT/'modding/runtime/kitasan.umab').read_bytes()
+    rig=Rig();order=topology(rig.bones);data=asset_path.read_bytes()
     _,version,nv,ni,nb,idle_count,run_count,_=struct.unpack_from('<4s7I',data)
     if version!=2 or nv!=rig.vertices or nb!=len(rig.bones):raise ValueError('Playback format mismatch')
     offset=32+nv*60+nb*16+((ni*2+3)//4)*4
@@ -49,7 +58,9 @@ def main():
             rotation,positions=rig.world(local,translation);offsets=positions-np.einsum('bij,bj->bi',rotation,rig.rest)
             p,n=rig.skin(rotation,offsets);floor.append(float(p[:,2].min()))
             if blend in (0,1):
-                original_r,original_t,_,_=rig.pose(rp if blend else ip,float(blend));original_p,original_n=rig.skin(original_r,original_t)
+                reference_r,reference_t=reference_clips['run' if blend else 'idle'];phase=(rp if blend else ip)%1;key=phase*len(reference_r)
+                if abs(key-round(key))>1e-5:raise ValueError('Reference check requires exact key phase')
+                original_r,original_t=reference_r[int(round(key))%len(reference_r)],reference_t[int(round(key))%len(reference_t)];original_p,original_n=rig.skin(original_r,original_t)
                 if not np.allclose(p,original_p,atol=1e-5) or not np.allclose(n,original_n,atol=1e-5):raise ValueError('Packed key pose differs from authored motion')
             for bone in range(nb):
                 parent=rig.bones[bone]['parent']
@@ -59,8 +70,8 @@ def main():
             values=np.column_stack((p,n)).astype('<f4');f.write(struct.pack('<3f',ip,rp,blend));f.write(values.tobytes())
     executable=build/'motion_test'
     subprocess.run(['gcc','-std=c11','-O2','-Wall','-Wextra','-Werror',str(ROOT/'modding/runtime/motion_test.c'),'-o',str(executable),'-lm'],check=True,cwd=ROOT)
-    result=subprocess.run([str(executable)],check=True,capture_output=True,text=True,cwd=ROOT)
-    report={'standalone_test':result.stdout.strip(),'key_poses_match_authored_motion':True,'blended_bone_lengths_checked':True,'surface_min_z_before_root_correction_by_case':floor,'grounded_transition_poses_checked':240,'support_plane_tolerance_m':.000101,'game_launched':False,'game_integrated':False}
+    result=subprocess.run([str(executable),str(asset_path)],check=True,capture_output=True,text=True,cwd=ROOT)
+    report={'standalone_test':result.stdout.strip(),'key_poses_match_reference_clips':True,'reference_clip_directory':str(clips_path.relative_to(ROOT)),'asset':str(asset_path.relative_to(ROOT)),'blended_bone_lengths_checked':True,'surface_min_z_before_root_correction_by_case':floor,'grounded_transition_poses_checked':240,'support_plane_tolerance_m':.000101,'game_launched':False,'game_integrated':False}
     (build/'result.json').write_text(json.dumps(report,indent=2)+'\n');print(result.stdout,end='');print('Surface min z before root correction:',floor)
 
 if __name__=='__main__':main()

@@ -7,8 +7,9 @@ static void reject(const unsigned char *bytes,size_t count){
  UmaMotion a={0};a.vertices=17;UmaMotion before=a;assert(!uma_motion_load(f,&a));assert(!memcmp(&a,&before,sizeof(a)));
  fclose(f);assert(remove(path)==0);
 }
-int main(void){
- FILE *f=fopen("modding/runtime/kitasan.umab","rb");assert(f);UmaMotion a={0};assert(uma_motion_load(f,&a));fclose(f);
+int main(int argc,char **argv){
+ const char *asset_path=argc>1?argv[1]:"modding/runtime/kitasan.umab";
+ FILE *f=fopen(asset_path,"rb");assert(f);UmaMotion a={0};assert(uma_motion_load(f,&a));fclose(f);
  assert(a.vertices==14512 && a.bones==282 && a.idle_frames==32 && a.run_frames==48);
  size_t bytes=(size_t)a.vertices*36;UmaVertex *out=malloc(bytes);assert(out);memset(out,0xa5,bytes);
  assert(!uma_motion_sample(&a,0,0,0,out,bytes-1));for(size_t i=0;i<bytes;i++)assert(((unsigned char*)out)[i]==0xa5);
@@ -46,7 +47,7 @@ int main(void){
  clock_t begin=clock();
  for(int i=0;i<100;i++){assert(uma_motion_step(&state,1.f/60,6,0));assert(uma_motion_sample(&a,state.idle_phase,state.run_phase,state.run_blend,out,bytes));}
  double sample_ms=(double)(clock()-begin)*1000/CLOCKS_PER_SEC/100;
- f=fopen("modding/runtime/kitasan.umab","rb");assert(f);size_t length=a.memory_bytes+32;unsigned char *original=malloc(length+1),*bad=malloc(length+1);assert(original && bad);assert(fread(original,1,length,f)==length);fclose(f);
+ f=fopen(asset_path,"rb");assert(f);size_t length=a.memory_bytes+32;unsigned char *original=malloc(length+1),*bad=malloc(length+1);assert(original && bad);assert(fread(original,1,length,f)==length);fclose(f);
  reject(original,31);reject(original,40);
  memcpy(bad,original,length);bad[4]=3;reject(bad,length);
  memcpy(bad,original,length);memset(bad+8,0,4);reject(bad,length);
