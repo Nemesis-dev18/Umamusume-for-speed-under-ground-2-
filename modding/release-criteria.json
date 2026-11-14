@@ -36,7 +36,7 @@
     "state_restored_after_success_and_failure": true,
     "device_reset_test_passed": true,
     "invalid_texture_cases_rejected": 7,
-    "game_integrated": false,
+    "game_integrated": "Module loaded and body rendering confirmed in first real run; final behavior unverified",
     "camera_adapter": "Private clone of native GPU VS1.1, preserving transform and lighting; 15 captured programs parsed; UV composition rejected",
     "upload_identity": "Exact position/normal/UV identity, BGRA color excluded; full mesh recognized in shared 36-byte-stride buffers; partial write invalidates tag"
   },
@@ -49,7 +49,7 @@
     "directory_records_verified": 571,
     "repeated_build_identical": true,
     "actual_race_result": "new geometry not launched yet",
-    "installed_sha256": "20498c7d93be4bdc57a19db72d246ae79f56cfbd3bd13235199524ebc545cf28",
+    "installed_sha256": "4d270e7521067463654b953d30b7e79ce8ac2241840d9a10c9297535c444dfdf",
     "backup": "CARS/COROLLA/GEOMETRY.BIN.before-runtime.bak"
   },
   "authorization": "User broadly authorized necessary repairs after capture; no repeated approval requests for those repairs. Executable, network and anticheat remain excluded.",
@@ -58,5 +58,10 @@
     "active_shader_hash": "d6d6080a",
     "fields_changed": 36,
     "race_visibility_proved": false
+  },
+  "runtime_effects_cleanup": {
+    "installed": true,
+    "receipt": "modding/effects-installed.json",
+    "gameplay_verified": false
   }
 }

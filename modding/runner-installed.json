@@ -1,13 +1,16 @@
 {
   "module": "scripts/UmaRunner.asi",
-  "sha256": "e4bdd63d8fa25b520bcc097d2c9fdb92420a25b6a615943773842f8914045412",
-  "bytes": 279644,
-  "checkpoint": "393287d26001632defbd86726e2fce35086d9ac5",
+  "sha256": "34e6a93c64196f5f01a2f01b5582b3c852053c285781f0e4aa7401ccad8a0aad",
+  "bytes": 283724,
+  "checkpoint": "9336a5e3b1ffcd7dc0e273fb868ecd8909bb4b16",
   "inventory_files": 716,
   "changed_data": [
-    "CARS/COROLLA/GEOMETRY.BIN"
+    "CARS/COROLLA/GEOMETRY.BIN",
+    "CARS/COROLLA/TEXTURES.BIN"
   ],
-  "unchanged_data": 715,
-  "game_running": false,
-  "gameplay_verified": false
+  "unchanged_data": 714,
+  "game_running": true,
+  "gameplay_verified": false,
+  "previous_sha256": "e4bdd63d8fa25b520bcc097d2c9fdb92420a25b6a615943773842f8914045412",
+  "current_receipt": "modding/effects-installed.json"
 }
