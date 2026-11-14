@@ -19,7 +19,8 @@ def prepare(source):
 def main():
     root=ROOT/'modding/staged-runtime/shared-parts';root.mkdir(exist_ok=True);files=[]
     for part in PARTS:
-        relative=f'CARS/{part}/GEOMETRY.BIN';source=(ROOT/relative).read_bytes();candidate,ranges=prepare(source)
+        relative=f'CARS/{part}/GEOMETRY.BIN';target=ROOT/relative;backup=target.with_name('GEOMETRY.BIN.before-uma-parts.bak')
+        source=(backup if backup.exists() else target).read_bytes();candidate,ranges=prepare(source)
         path=root/(part+'.BIN');path.write_bytes(candidate)
         files.append({'target':relative,'candidate':str(path.relative_to(ROOT)),'bytes':len(source),'before_sha256':hashlib.sha256(source).hexdigest(),'after_sha256':hashlib.sha256(candidate).hexdigest(),'index_ranges':ranges})
     plan={'scope':'All cars: shared mirrors/spoilers/plates/exhaust/roof/brakes/trunk-audio geometry only; main car bodies preserved','method':'Set each triangle index to zero, preserving all vertices, material ranges, sizes and alignment','files':files,'installed':False}

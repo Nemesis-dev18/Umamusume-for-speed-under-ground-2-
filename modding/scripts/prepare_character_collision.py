@@ -36,7 +36,8 @@ def prepare(source):
     return bytes(out),groups,allowed
 
 def main():
-    path=ROOT/'CARS/COROLLA/GEOMETRY.BIN';source=path.read_bytes();candidate,groups,allowed=prepare(source)
+    path=ROOT/'CARS/COROLLA/GEOMETRY.BIN';backup=path.with_name('GEOMETRY.BIN.before-character-collision.bak')
+    source=(backup if backup.exists() else path).read_bytes();candidate,groups,allowed=prepare(source)
     stage=ROOT/'modding/staged-runtime/GEOMETRY-character-collision.BIN';stage.write_bytes(candidate)
     plan={'target':str(path.relative_to(ROOT)),'candidate':str(stage.relative_to(ROOT)),'before_sha256':hashlib.sha256(source).hexdigest(),'after_sha256':hashlib.sha256(candidate).hexdigest(),'bytes':len(candidate),'groups':groups,'changed_ranges':allowed,'topology_and_layout_preserved':True,'installed':False,'limits':'Static convex hull approximation, not a ragdoll. Wheel suspension/mass/handling unchanged; gameplay stability and clearance pending.'}
     (ROOT/'modding/character-collision-plan.json').write_text(json.dumps(plan,indent=2)+'\n');print('Staged',len(groups),'hulls;',len(allowed),'vertex records;',plan['after_sha256'])

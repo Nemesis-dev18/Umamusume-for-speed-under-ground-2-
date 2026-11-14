@@ -24,7 +24,8 @@ def prepare(source,minimum,maximum):
     return bytes(result),changes
 
 def main():
-    report=json.loads((ROOT/'modding/animation-steam-retarget/retarget-report.json').read_text());source=(ROOT/'CARS/COROLLA/GEOMETRY.BIN').read_bytes()
+    report=json.loads((ROOT/'modding/animation-steam-retarget/retarget-report.json').read_text())
+    target=ROOT/'CARS/COROLLA/GEOMETRY.BIN';backup=target.with_name('GEOMETRY.BIN.before-steam-motion.bak');source=(backup if backup.exists() else target).read_bytes()
     lower=np.array(report['minimum'])-.2;upper=np.array(report['maximum'])+.2;candidate,changes=prepare(source,lower,upper)
     (ROOT/'modding/staged-runtime/GEOMETRY-steam-motion.BIN').write_bytes(candidate)
     result={'before_sha256':hashlib.sha256(source).hexdigest(),'after_sha256':hashlib.sha256(candidate).hexdigest(),'bytes':len(candidate),'source_envelope_margin':.2,'minimum':lower.tolist(),'maximum':upper.tolist(),'fields':changes,'installed':False}
