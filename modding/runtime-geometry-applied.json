@@ -1,0 +1,347 @@
+{
+  "checkpoint": "d2fc51e",
+  "source_sha256": "cedf717c16c342b449c32e312351bd2f93d21533446b9501488dd0b5a3664389",
+  "installed_sha256": "70672ce2ce71e9e931e12f45cb8b6ef33b9ed9fab303f6641a39ad3845275692",
+  "installed_bytes": 4570240,
+  "backup": "CARS/COROLLA/GEOMETRY.BIN.before-runtime.bak",
+  "fields": [
+    {
+      "part": "COROLLA_KIT00_BODY_A",
+      "chunk": "0x00134011",
+      "offset": 35248,
+      "before": "de3642bf",
+      "after": "bf996fbf"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_A",
+      "chunk": "0x00134011",
+      "offset": 35252,
+      "before": "25922cbf",
+      "after": "2f6950bf"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_A",
+      "chunk": "0x00134011",
+      "offset": 35256,
+      "before": "5b5624bc",
+      "after": "8fa119be"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_A",
+      "chunk": "0x00134011",
+      "offset": 35264,
+      "before": "0a8b8d3e",
+      "after": "3b18343f"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_A",
+      "chunk": "0x00134011",
+      "offset": 35268,
+      "before": "652b2c3f",
+      "after": "6f02503f"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_A",
+      "chunk": "0x00134011",
+      "offset": 35272,
+      "before": "d1c20a40",
+      "after": "94b81340"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_A",
+      "chunk": "0x00134b02",
+      "offset": 558032,
+      "before": "3b8aafbf",
+      "after": "bf996fbf"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_A",
+      "chunk": "0x00134b02",
+      "offset": 558036,
+      "before": "dc0052bf",
+      "after": "2f6950bf"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_A",
+      "chunk": "0x00134b02",
+      "offset": 558040,
+      "before": "a6b30d3f",
+      "after": "8fa119be"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_A",
+      "chunk": "0x00134b02",
+      "offset": 558048,
+      "before": "f738d23f",
+      "after": "3b18343f"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_A",
+      "chunk": "0x00134b02",
+      "offset": 558052,
+      "before": "da00523f",
+      "after": "6f02503f"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_A",
+      "chunk": "0x00134b02",
+      "offset": 558056,
+      "before": "5a91373f",
+      "after": "94b81340"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_B",
+      "chunk": "0x00134011",
+      "offset": 671024,
+      "before": "de3642bf",
+      "after": "bf996fbf"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_B",
+      "chunk": "0x00134011",
+      "offset": 671028,
+      "before": "25922cbf",
+      "after": "2f6950bf"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_B",
+      "chunk": "0x00134011",
+      "offset": 671032,
+      "before": "5b5624bc",
+      "after": "8fa119be"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_B",
+      "chunk": "0x00134011",
+      "offset": 671040,
+      "before": "0a8b8d3e",
+      "after": "3b18343f"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_B",
+      "chunk": "0x00134011",
+      "offset": 671044,
+      "before": "652b2c3f",
+      "after": "6f02503f"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_B",
+      "chunk": "0x00134011",
+      "offset": 671048,
+      "before": "d1c20a40",
+      "after": "94b81340"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_B",
+      "chunk": "0x00134b02",
+      "offset": 1193936,
+      "before": "388aafbf",
+      "after": "bf996fbf"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_B",
+      "chunk": "0x00134b02",
+      "offset": 1193940,
+      "before": "405353bf",
+      "after": "2f6950bf"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_B",
+      "chunk": "0x00134b02",
+      "offset": 1193944,
+      "before": "a6b30d3f",
+      "after": "8fa119be"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_B",
+      "chunk": "0x00134b02",
+      "offset": 1193952,
+      "before": "f338d23f",
+      "after": "3b18343f"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_B",
+      "chunk": "0x00134b02",
+      "offset": 1193956,
+      "before": "3953533f",
+      "after": "6f02503f"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_B",
+      "chunk": "0x00134b02",
+      "offset": 1193960,
+      "before": "5b91373f",
+      "after": "94b81340"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_C",
+      "chunk": "0x00134011",
+      "offset": 1299248,
+      "before": "de3642bf",
+      "after": "bf996fbf"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_C",
+      "chunk": "0x00134011",
+      "offset": 1299252,
+      "before": "25922cbf",
+      "after": "2f6950bf"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_C",
+      "chunk": "0x00134011",
+      "offset": 1299256,
+      "before": "5b5624bc",
+      "after": "8fa119be"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_C",
+      "chunk": "0x00134011",
+      "offset": 1299264,
+      "before": "0a8b8d3e",
+      "after": "3b18343f"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_C",
+      "chunk": "0x00134011",
+      "offset": 1299268,
+      "before": "652b2c3f",
+      "after": "6f02503f"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_C",
+      "chunk": "0x00134011",
+      "offset": 1299272,
+      "before": "d1c20a40",
+      "after": "94b81340"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_C",
+      "chunk": "0x00134b02",
+      "offset": 1822160,
+      "before": "388aafbf",
+      "after": "bf996fbf"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_C",
+      "chunk": "0x00134b02",
+      "offset": 1822164,
+      "before": "3c5353bf",
+      "after": "2f6950bf"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_C",
+      "chunk": "0x00134b02",
+      "offset": 1822168,
+      "before": "a6b30d3f",
+      "after": "8fa119be"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_C",
+      "chunk": "0x00134b02",
+      "offset": 1822176,
+      "before": "f738d23f",
+      "after": "3b18343f"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_C",
+      "chunk": "0x00134b02",
+      "offset": 1822180,
+      "before": "3e53533f",
+      "after": "6f02503f"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_C",
+      "chunk": "0x00134b02",
+      "offset": 1822184,
+      "before": "5a91373f",
+      "after": "94b81340"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_D",
+      "chunk": "0x00134011",
+      "offset": 1925168,
+      "before": "de3642bf",
+      "after": "bf996fbf"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_D",
+      "chunk": "0x00134011",
+      "offset": 1925172,
+      "before": "25922cbf",
+      "after": "2f6950bf"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_D",
+      "chunk": "0x00134011",
+      "offset": 1925176,
+      "before": "5b5624bc",
+      "after": "8fa119be"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_D",
+      "chunk": "0x00134011",
+      "offset": 1925184,
+      "before": "0a8b8d3e",
+      "after": "3b18343f"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_D",
+      "chunk": "0x00134011",
+      "offset": 1925188,
+      "before": "652b2c3f",
+      "after": "6f02503f"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_D",
+      "chunk": "0x00134011",
+      "offset": 1925192,
+      "before": "d1c20a40",
+      "after": "94b81340"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_D",
+      "chunk": "0x00134b02",
+      "offset": 2447952,
+      "before": "059100c0",
+      "after": "bf996fbf"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_D",
+      "chunk": "0x00134b02",
+      "offset": 2447956,
+      "before": "55ea4abf",
+      "after": "2f6950bf"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_D",
+      "chunk": "0x00134b02",
+      "offset": 2447960,
+      "before": "4d89543e",
+      "after": "8fa119be"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_D",
+      "chunk": "0x00134b02",
+      "offset": 2447968,
+      "before": "40a90640",
+      "after": "3b18343f"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_D",
+      "chunk": "0x00134b02",
+      "offset": 2447972,
+      "before": "63ea4a3f",
+      "after": "6f02503f"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_D",
+      "chunk": "0x00134b02",
+      "offset": 2447976,
+      "before": "18b2bf3e",
+      "after": "94b81340"
+    }
+  ],
+  "game_launched": false,
+  "runtime_animation_installed": false
+}

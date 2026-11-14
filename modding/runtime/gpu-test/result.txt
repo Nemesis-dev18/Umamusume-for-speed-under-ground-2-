@@ -1,5 +1,6 @@
 START independent renderer test; not NFSU2
 PASS full upload identity, one-byte impostor, partial/nested overwrite, READONLY, DISCARD and hook removal
+PASS exact captured game shader profiles: 15 programs; read-only camera extraction
 PASS fixed-function and direct VS1.1/VS2 camera extraction; malformed and unsupported shaders rejected
 PASS seven invalid DDS inputs rejected without publishing a texture
 PASS half-alpha texture produces opaque RGB without background blending

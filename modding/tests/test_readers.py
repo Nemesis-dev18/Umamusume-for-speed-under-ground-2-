@@ -371,3 +371,18 @@ class CapturedShaderProfiles(unittest.TestCase):
             with self.assertRaises(ValueError):matrix_rows(raw)
         defined=[0xfffe0101,81,0xa00f0000,0,0,0,0]+code[1:]
         with self.assertRaises(ValueError):matrix_rows(defined)
+
+class InstalledRuntimeGeometry(unittest.TestCase):
+    def test_installed_compact_geometry_and_motion_bounds(self):
+        import hashlib,json
+        from inspect_assets import ROOT
+        from plan_hidden_compaction import verify_compaction,reviewed_source
+        receipt=json.loads((ROOT/'modding/runtime-geometry-applied.json').read_text())
+        data=data_path('CARS/COROLLA/GEOMETRY.BIN').read_bytes()
+        self.assertEqual(hashlib.sha256(data).hexdigest(),receipt['installed_sha256'])
+        report=verify_compaction(reviewed_source().read_bytes(),data)
+        self.assertEqual(report['collapsed_solids_compacted'],567)
+        self.assertEqual(report['vertices_after'],59749)
+        self.assertEqual(report['solid_directory_records_verified'],571)
+        for field in receipt['fields']:
+            self.assertEqual(data[field['offset']:field['offset']+4].hex(),field['after'])
