@@ -36,19 +36,25 @@ No extrapolar reglas de alineación de NFSU 2003 a todos los bloques de NFSU2. L
 
 `python -B modding/scripts/extract_assets.py` extrae cuatro KIT00_BODY del Corolla a OBJ de coordenadas locales y JSON de transformaciones/markers; 14.512 vértices y 16.557 triángulos por LOD. El manifiesto no atribuye huesos ni curvas a estos datos.
 
-56 descriptores de texturas; 43 decodificados a PNG, DDS del mip superior cuando aplica. 13 blobs HUFF pendientes: no se exportan como si fueran JDLZ. No se exporta todavía toda la cadena mip. Falta conexión OBJ/MTL con materiales. No se ha reempaquetado nada.
+56 descriptores de texturas; 43 decodificados a PNG, DDS del mip superior cuando aplica. El lector HUFF implementa exclusivamente el tipo observado 0x30fb, con tabla canónica, escape de repetición/literal y validación de longitudes interna/externa. Los 13 blobs se decodifican y sus hashes embebidos coinciden. La extracción final COROLLA-mips-materials incluye 56 texturas, 225 niveles mip originales, DDS con cadena completa cuando son DXT y PNG por nivel. OBJ/MTL conecta el material de cada LOD con la textura 1c9637a6. No se ha reempaquetado nada.
 
-La descompresión en memoria de GLOBAL/GlobalB.lzc coincide byte a byte con GLOBAL/GLOBALB.BUN: vector real de validación para JDLZ. CarTypeInfo no está todavía interpretado por los nuevos scripts.
+La descompresión en memoria de GLOBAL/GlobalB.lzc coincide byte a byte con GLOBAL/GLOBALB.BUN: vector real de validación para JDLZ. `modding/cartypes.json` identifica 46 registros candidatos CarTypeInfo de 0x890 bytes, con ruta GEOMETRY en +0x40, nombres repetidos en +0/+0x20, cuatro ruedas en +0x120 con stride 0x30 y masa almacenada float en +0x220. Se extraen posiciones y radios como interpretación de referencia; no se editan unidades ni física.
 
 ## Pruebas y reproducción
 
 - `python -B -m unittest discover -s modding/tests -v`: JDLZ literal/copia solapada, truncado/tamaño excesivo/referencia inválida, límites de chunks, offsets anidados, confinamiento de entradas, cabecera DDS, geometría real y pareja GlobalB real.
 - `python -B modding/scripts/inspect_assets.py --inventory --map CARS/COROLLA/GEOMETRY.BIN CARS/COROLLA/TEXTURES.BIN GLOBAL/GLOBALB.BUN GLOBAL/GlobalB.lzc`
-- Los reportes y destinos existentes se rechazan para evitar sobrescrituras. Verificación de reproducibilidad pendiente en un destino aislado; no borrar resultados manualmente para simularla.
-- Hashes fuente antes/después de extracción coinciden. La comparación completa con inventario se realiza al cierre de esta revisión.
+- Los reportes y destinos existentes se rechazan para evitar sobrescrituras. La opción --output permite otro destino nuevo dentro de modding/. Dos extracciones finales separadas producen 340 archivos idénticos por SHA-256, incluidos manifiestos. No borrar resultados manualmente para simular repetibilidad.
+- Hashes fuente antes/después de extracción coinciden. Los 716 hashes del inventario siguen iguales tras las extracciones. `modding/verification.json` registra 340 archivos reproducibles, 56 texturas y 225 mipmaps comprobados con Pillow.
 
 ## Estado del juego y próximos pasos
 
 No se ejecutó el juego en esta revisión. La última evidencia del usuario sigue siendo cuerpo invisible en carrera, aunque visible en selección, con elementos del automóvil restantes. Las pruebas de parsers no prueban carga en el motor.
 
-Pendiente: HUFF, mipmaps completos, asociación de materiales, búsqueda estructural del rig/curvas, CarTypeInfo, reempaquetado reversible y pruebas de carrera. No editar física para ocultar ruedas. No introducir hooks ni direcciones de otra versión. Blender MCP y Git MCP no están expuestos; filesystem MCP permite otra raíz. No se cambió configuración ni se instalaron herramientas. Git CLI está disponible.
+Pendiente: búsqueda estructural del rig/curvas, verificar unidades de CarTypeInfo en el motor, reempaquetado reversible y pruebas de carrera. No editar física para ocultar ruedas. No introducir hooks ni direcciones de otra versión. Blender MCP y Git MCP no están expuestos; filesystem MCP permite otra raíz. No se cambió configuración ni se instalaron herramientas. Git CLI está disponible.
+
+## Cierre de esta revisión
+
+13 pruebas automatizadas pasan, incluyendo HUFF sintético y sus 13 blobs reales, cadena mip exacta/rechazo de cadenas parciales, cabecera DDS con número de niveles y los 46 registros CarTypeInfo. Los 225 PNG de mipmap tienen las dimensiones declaradas y las imágenes superiores coinciden con la extracción anterior. El caso HUFF no tiene aún un vector independiente completo de salida conocido; tamaño/hash interno y decodificación gráfica no sustituyen esa comparación.
+
+El primer checkpoint Git es ae7016b. Solo se versionan herramientas, manifiestos y documentación; los datos del juego y resultados grandes están excluidos. Ningún binario del juego fue sobrescrito, así que todavía no hay un respaldo .bak de una modificación nueva ni un checkpoint de bytes originales para reempaquetado. No confundir el commit de herramientas con un respaldo del juego.

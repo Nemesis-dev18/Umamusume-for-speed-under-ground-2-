@@ -29,8 +29,9 @@ def data_path(relative):
 
 def save_json(relative, value):
     path = ROOT / 'modding' / relative
-    if path.is_symlink():
-        raise ValueError('Output symlink excluded')
+    for parent in (path,*path.parents):
+        if parent==ROOT:break
+        if parent.is_symlink():raise ValueError('Output symlink excluded')
     path.resolve().relative_to((ROOT / 'modding').resolve())
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open('x', encoding='utf-8') as out:
@@ -74,6 +75,68 @@ def jdlz(data):
         else:
             out.append(read())
         flags1 >>= 1
+    return bytes(out)
+
+
+def huff(data):
+    """EA order-0 Huffman, observed 0x30fb variant; no delta variants guessed."""
+    if len(data)<16 or data[:8]!=b'HUFF\x01\x10\0\0':
+        raise ValueError('Invalid/unsupported HUFF header')
+    size, compressed=struct.unpack_from('<II',data,8)
+    if size>MAX_OUTPUT or compressed>len(data)-16:
+        raise ValueError('HUFF length out of bounds')
+    stream=memoryview(data)[16:16+compressed];bit=0
+    def read(count):
+        nonlocal bit
+        if bit+count>len(stream)*8: raise ValueError('Truncated HUFF bitstream')
+        value=0
+        for _ in range(count):
+            value=(value<<1)|((stream[bit//8]>>(7-bit%8))&1);bit+=1
+        return value
+    def number():
+        if read(1):return read(2)
+        n=3
+        while not read(1):
+            n+=1
+            if n>32:raise ValueError('Unterminated HUFF integer')
+        value=read(n)+(1<<n)-4
+        return value if value<2**31 else value-2**32
+    kind=read(16)
+    if kind!=0x30fb:raise ValueError(f'Unsupported HUFF stream type {kind:#x}')
+    declared=(read(8)<<16)|read(16);clue=read(8)
+    if declared!=size:raise ValueError('HUFF inner/outer length mismatch')
+    counts=[];base=0;total=0
+    for length in range(1,33):
+        count=number()
+        if not 0<=count<=256:raise ValueError('Invalid HUFF code count')
+        base=base*2+count;total+=count;counts.append(count)
+        if total>256 or base>1<<length:raise ValueError('Oversubscribed HUFF table')
+        if base==1<<length:break
+    else:raise ValueError('Incomplete HUFF table')
+    symbols=[];used=set();current=255
+    for _ in range(total):
+        leap=number()+1
+        if not 1<=leap<=256-len(used):raise ValueError('Invalid HUFF symbol leap')
+        while leap:
+            current=(current+1)&255
+            if current not in used:leap-=1
+        used.add(current);symbols.append(current)
+    out=bytearray()
+    while len(out)<size:
+        code=0;base=0;index=0
+        for count in counts:
+            code=(code<<1)|read(1)
+            if base<=code<base+count:
+                symbol=symbols[index+code-base];break
+            index+=count;base=(base+count)*2
+        else:raise ValueError('Unknown HUFF code')
+        if symbol!=clue:out.append(symbol);continue
+        length=number()
+        if length:
+            if length<0 or not out or length>size-len(out):raise ValueError('Invalid HUFF run')
+            out.extend(bytes([out[-1]])*length)
+        elif read(1):raise ValueError('HUFF premature end')
+        else:out.append(read(8))
     return bytes(out)
 
 
@@ -137,11 +200,39 @@ def inventory():
     return result
 
 
+def cartypes(data):
+    import re
+    import math
+    records=[]
+    for match in re.finditer(rb'CARS[\\/][A-Z0-9_]+[\\/]GEOMETRY\.BIN',data):
+        begin=match.start()-0x40
+        if begin<0 or begin+0x890>len(data):continue
+        name=data[begin:begin+16].split(b'\0')[0]
+        duplicate=data[begin+0x20:begin+0x30].split(b'\0')[0]
+        if not name or name!=duplicate or not re.fullmatch(rb'[A-Z0-9_]+',name):continue
+        wheels=[]
+        for index in range(4):
+            at=begin+0x120+index*0x30
+            values=[struct.unpack_from('<f',data,at+off)[0] for off in (0,8,16,0x1c)]
+            if not all(math.isfinite(v) for v in values):raise ValueError('Nonfinite wheel data')
+            wheels.append(dict(zip(('longitudinal','height','radius','lateral'),values)))
+        mass=struct.unpack_from('<f',data,begin+0x220)[0]
+        if not math.isfinite(mass):raise ValueError('Nonfinite mass')
+        records.append({'name':name.decode(),'offset':begin,'record_bytes':0x890,
+                        'mass_stored':mass,'wheels':wheels,'interpretation':'Candidate units from NFSU2 format reference; no physics edits'})
+    return records
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--inventory', action='store_true')
+    parser.add_argument('--cartypes', action='store_true')
     parser.add_argument('--map', nargs='*', default=[])
     args = parser.parse_args()
+    if args.cartypes:
+        records=cartypes(data_path('GLOBAL/GLOBALB.BUN').read_bytes())
+        save_json('cartypes.json',records)
+        print(f'Located {len(records)} validated-name CarTypeInfo candidates')
     if args.inventory:
         records = inventory()
         save_json('inventory.json', records)
