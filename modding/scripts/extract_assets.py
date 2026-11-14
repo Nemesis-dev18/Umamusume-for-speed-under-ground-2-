@@ -46,9 +46,9 @@ def geometry(data, selected):
                        all(b == 0x11 for b in vb[:len(vb)-vertices*s])), None)
         if stride is None:
             raise ValueError(f'{name}: unsupported vertex layout')
-        lead = len(vb)-vertices*stride
+        vertex_lead = len(vb)-vertices*stride
         positions, normals, uv = [], [], []
-        for at in range(lead, len(vb), stride):
+        for at in range(vertex_lead, len(vb), stride):
             p = struct.unpack_from('<3f', vb, at)
             n = struct.unpack_from('<3f', vb, at+12) if stride == 36 else None
             t = struct.unpack_from('<2f', vb, at+stride-8)
@@ -90,7 +90,7 @@ def geometry(data, selected):
                 cursor+=run['count']
             if cursor!=len(indices):raise ValueError('Material ranges do not cover triangles')
         result.append({'name':name,'solid_offset':solid['offset'],'stride':stride,
-                       'vertex_data_offset':leaves[required[2]]['payload']+lead,
+                       'vertex_data_offset':leaves[required[2]]['payload']+vertex_lead,
                        'index_data_offset':leaves[required[3]]['payload']+first,
                        'positions':positions,'normals':normals,'uv':uv,'indices':indices,
                        'markers':markers,'material_runs':runs,'transform':struct.unpack_from('<16f',header,64) if len(header)>=128 else None,

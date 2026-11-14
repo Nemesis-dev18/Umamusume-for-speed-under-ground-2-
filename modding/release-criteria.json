@@ -36,6 +36,7 @@
     "state_restored_after_success_and_failure": true,
     "device_reset_test_passed": true,
     "invalid_texture_cases_rejected": 7,
-    "game_integrated": false
+    "game_integrated": false,
+    "camera_adapter": "fixed-function and restricted direct VS1.1/VS2 tested independently; actual game shader unknown"
   }
 }

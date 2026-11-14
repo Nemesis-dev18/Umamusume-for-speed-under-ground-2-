@@ -1,4 +1,5 @@
 #include "uma_d3d.h"
+#include "uma_camera.h"
 #include <assert.h>
 #define CHECK(call) do{HRESULT hr=(call);if(FAILED(hr)){fprintf(stderr,"FAIL %s: %08lx\n",#call,(unsigned long)hr);return 1;}}while(0)
 static UmaDrawIndexed native_draw;static UINT draws;static int fail_draw;
@@ -48,6 +49,36 @@ static void check_invalid_textures(IDirect3DDevice9 *device){
  }
  free(bytes);puts("PASS seven invalid DDS inputs rejected without publishing a texture");
 }
+static int check_camera(IDirect3DDevice9 *device){
+ DWORD vs1[]={0xfffe0101,20,0xc00f0000,0x90e40000,0xa0e40008,1,0xe0030000,0x90e40003,0xffff};
+ DWORD vs2[]={0xfffe0200,0x0200001f,0x80000000,0x900f0000,0x03000014,0xc00f0000,0x90e40000,0xa0e40008,0xffff};
+ UINT base=999;assert(uma_camera_constant(vs1,sizeof(vs1)/4,&base) && base==8);assert(uma_camera_constant(vs2,sizeof(vs2)/4,&base) && base==8);
+ for(UINT n=0;n<sizeof(vs1)/4;n++){base=999;assert(!uma_camera_constant(vs1,n,&base) && base==999);}
+ for(int kind=0;kind<6;kind++){
+  DWORD bad[sizeof(vs1)/4];memcpy(bad,vs1,sizeof(vs1));
+  if(kind==0)bad[3]=0x90e40001;
+  if(kind==1)bad[4]|=0x2000;
+  if(kind==2)bad[2]=0xc0030000;
+  if(kind==3)bad[6]=0xc00f0000;
+  if(kind==4)bad[1]=D3DSIO_DP4;
+  if(kind==5)bad[4]=0xa0e400fd;
+  base=999;assert(!uma_camera_constant(bad,sizeof(bad)/4,&base) && base==999);
+ }
+ float constants[4][4]={{.7f,.1f,0,.2f},{0,.6f,.2f,-.1f},{.1f,0,.4f,.3f},{0,0,0,1}};
+ CHECK(IDirect3DDevice9_SetVertexShaderConstantF(device,8,&constants[0][0],4));
+ for(int kind=0;kind<2;kind++){
+  IDirect3DVertexShader9 *shader=NULL;CHECK(IDirect3DDevice9_CreateVertexShader(device,kind?vs2:vs1,&shader));CHECK(IDirect3DDevice9_SetVertexShader(device,shader));
+  D3DMATRIX captured;CHECK(uma_camera_capture(device,&captured));
+  for(int r=0;r<4;r++)for(int c=0;c<4;c++)assert(captured.m[r][c]==constants[c][r]);
+  IDirect3DVertexShader9 *same=NULL;CHECK(IDirect3DDevice9_GetVertexShader(device,&same));assert(same==shader);IDirect3DVertexShader9_Release(same);CHECK(IDirect3DDevice9_SetVertexShader(device,NULL));IDirect3DVertexShader9_Release(shader);
+ }
+ D3DMATRIX world={0},view={0},projection={0},captured;
+ for(int k=0;k<4;k++){world.m[k][k]=1;view.m[k][k]=1;projection.m[k][k]=1;}
+ world.m[3][0]=2;view.m[0][0]=3;view.m[3][1]=4;projection.m[1][1]=5;
+ CHECK(IDirect3DDevice9_SetTransform(device,D3DTS_WORLD,&world));CHECK(IDirect3DDevice9_SetTransform(device,D3DTS_VIEW,&view));CHECK(IDirect3DDevice9_SetTransform(device,D3DTS_PROJECTION,&projection));CHECK(uma_camera_capture(device,&captured));
+ assert(captured.m[0][0]==3 && captured.m[1][1]==5 && captured.m[3][0]==6 && captured.m[3][1]==20);
+ puts("PASS fixed-function and direct VS1.1/VS2 camera extraction; malformed and unsupported shaders rejected");return 0;
+}
 int main(void){
  freopen("modding/runtime/gpu-test/result.txt","w",stdout);freopen("modding/runtime/gpu-test/errors.txt","w",stderr);
  puts("START independent renderer test; not NFSU2");fflush(stdout);
@@ -56,7 +87,7 @@ int main(void){
  IDirect3D9 *api=Direct3DCreate9(D3D_SDK_VERSION);assert(api);
  D3DPRESENT_PARAMETERS pp={0};pp.Windowed=TRUE;pp.SwapEffect=D3DSWAPEFFECT_DISCARD;pp.hDeviceWindow=window;pp.BackBufferWidth=640;pp.BackBufferHeight=480;pp.BackBufferFormat=D3DFMT_A8R8G8B8;pp.EnableAutoDepthStencil=TRUE;pp.AutoDepthStencilFormat=D3DFMT_D24S8;
  IDirect3DDevice9 *device=NULL;CHECK(IDirect3D9_CreateDevice(api,0,D3DDEVTYPE_HAL,window,D3DCREATE_HARDWARE_VERTEXPROCESSING,&pp,&device));native_draw=(UmaDrawIndexed)(*(void***)device)[82];
- check_invalid_textures(device);
+ assert(check_camera(device)==0);check_invalid_textures(device);
  struct Quad q[]={{-.5f,-.5f,0,1,0,0},{15.5f,-.5f,0,1,1,0},{-.5f,15.5f,0,1,0,1},{15.5f,15.5f,0,1,1,1}};const WORD indices[]={0,1,2,2,1,3};void *mapped=NULL;
  IDirect3DVertexBuffer9 *vb=NULL;IDirect3DIndexBuffer9 *ib=NULL;
  CHECK(IDirect3DDevice9_CreateVertexBuffer(device,sizeof(q),0,D3DFVF_XYZRHW|D3DFVF_TEX1,D3DPOOL_MANAGED,&vb,NULL));CHECK(IDirect3DVertexBuffer9_Lock(vb,0,sizeof(q),&mapped,0));memcpy(mapped,q,sizeof(q));CHECK(IDirect3DVertexBuffer9_Unlock(vb));

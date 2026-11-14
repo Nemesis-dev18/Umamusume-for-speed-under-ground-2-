@@ -42,6 +42,17 @@ class Geometry(unittest.TestCase):
             self.assertLess(max(part['indices']),len(part['positions']))
             self.assertIsNone(part['native_bones'])
         self.assertEqual(before,hashlib.sha256(path.read_bytes()).digest())
+    def test_vertex_offsets_address_decoded_records(self):
+        from extract_assets import geometry
+        for car in ('COROLLA','240SX'):
+            data=data_path(f'CARS/{car}/GEOMETRY.BIN').read_bytes()
+            meshes=geometry(data,'BODY_')
+            self.assertTrue(meshes)
+            for mesh in meshes:
+                at=mesh['vertex_data_offset'];stride=mesh['stride']
+                for index in (0,len(mesh['positions'])-1):
+                    self.assertEqual(struct.unpack_from('<3f',data,at+index*stride),mesh['positions'][index],mesh['name'])
+                self.assertEqual(struct.unpack_from('<2f',data,at+stride-8),mesh['uv'][0],mesh['name'])
     def test_globalb_golden_pair(self):
         from inspect_assets import ROOT
         self.assertEqual(jdlz((ROOT/'GLOBAL/GlobalB.lzc').read_bytes()),(ROOT/'GLOBAL/GLOBALB.BUN').read_bytes())
