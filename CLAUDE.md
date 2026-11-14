@@ -103,3 +103,11 @@ Se escribió el temporal aprobado, se verificó su contenido, se conservó el mo
 De los 716 archivos del inventario original, los otros 715 conservan su hash. El respaldo es una adición intencionada, no una modificación de otro recurso. El informe verificable está en modding/header-repair-applied.json. Las 19 pruebas pasan; la prueba de reparación usa el respaldo previo como entrada y exige que el archivo instalado coincida exactamente con la salida calculada.
 
 No se abrió el juego. Visibilidad y estabilidad en carrera, ruedas residuales, materiales y animación siguen pendientes de una prueba real. Esta reparación no equivale al mod final ni demuestra equivalencia con el video. Los estados históricos anteriores a esta sección quedan superados únicamente respecto a la reparación de cabeceras.
+
+## Prueba de usuario después de reparar las cabeceras
+
+Se lanzó la copia de prueba a petición explícita del usuario. El usuario respondió «Carga, pero sigue invisible» en carrera y aportó captura con ruedas, luces y matrícula visibles sin el cuerpo. También informó que en selección sigue en pose de importación/T. Por tanto, reparar el recuento no resolvió la invisibilidad. No atribuir éxito de carga visual a las pruebas estructurales. La animación de Kitasan no está integrada.
+
+Lectura de materiales de GLOBALB.BUN: los chunks 0x00135200 llevan hash en payload+12 y nombre ASCII desde +20. El hash 0x02A05578 corresponde a DECAL; 0x0FEDEE40 a DULLPLASTIC y 0x12C9453C a MOLDINGS. El primer rango de KIT00_BODY_A del Corolla usa el shader DECAL y el atlas de Kitasan. Este hallazgo es una hipótesis para una prueba aislada, no una causa confirmada. No se modificaron materiales ni GLOBAL.
+
+Antes de otro cambio se solicitó comparar una carrera con Nissan 240SX, cuyos recursos no fueron modificados en este flujo. El resultado determinará si la investigación debe concentrarse en el Corolla o en un fallo general de renderizado de esta copia. No se aplicó ninguna segunda reparación.

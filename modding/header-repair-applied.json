@@ -20,5 +20,8 @@
   "game_launched": false,
   "race_visibility_verified": false,
   "baseline_files_checked": 716,
-  "unchanged_baseline_files": 715
+  "unchanged_baseline_files": 715,
+  "user_race_result": "Loads but Kitasan body remains invisible",
+  "user_selection_result": "Still static import pose (described as T pose)",
+  "animation_integrated": false
 }
