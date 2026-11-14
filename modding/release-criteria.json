@@ -49,7 +49,7 @@
     "directory_records_verified": 571,
     "repeated_build_identical": true,
     "actual_race_result": "new geometry not launched yet",
-    "installed_sha256": "4d270e7521067463654b953d30b7e79ce8ac2241840d9a10c9297535c444dfdf",
+    "installed_sha256": "ed7e51a5895c859708a29cb92ebed6481d25d519d8dc392d2d13354175e90f18",
     "backup": "CARS/COROLLA/GEOMETRY.BIN.before-runtime.bak"
   },
   "authorization": "User broadly authorized necessary repairs after capture; no repeated approval requests for those repairs. Executable, network and anticheat remain excluded.",
@@ -62,6 +62,15 @@
   "runtime_effects_cleanup": {
     "installed": true,
     "receipt": "modding/effects-installed.json",
-    "gameplay_verified": false
+    "gameplay_verified": false,
+    "previous_real_run": "User confirmed lights and license plates gone; wheels, spoiler, neon and running still failed"
+  },
+  "runtime_motion_wheels": {
+    "installed": true,
+    "receipt": "modding/motion-wheel-installed.json",
+    "static_scenery_anchor_key": true,
+    "all_four_draw_paths_tested": true,
+    "cpu_baked_wheel_bounds_tested": true,
+    "real_game_result": "pending"
   }
 }
