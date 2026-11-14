@@ -222,4 +222,77 @@ class MaterialProbe(unittest.TestCase):
         self.assertEqual(len(matches),1)
         self.assertEqual(matches[0][20:48].split(b'\0')[0],b'DULLPLASTIC')
 
+
+class CharacterBounds(unittest.TestCase):
+    def test_exact_fields_and_full_geometry_containment(self):
+        from inspect_assets import ROOT,chunks,flatten
+        from extract_assets import geometry,payload
+        from plan_bounds_repair import bounds_preview
+        source=ROOT/'CARS/COROLLA/GEOMETRY.BIN';backup=source.with_name(source.name+'.before-bounds.bak')
+        data=(backup if backup.exists() else source).read_bytes();result,changes=bounds_preview(data)
+        self.assertEqual(chunks(data),chunks(result));self.assertEqual(len(changes),4)
+        allowed={f['offset']+j for c in changes for f in c['fields'] for j in range(4)}
+        changed={i for i,(a,b) in enumerate(zip(data,result)) if a!=b}
+        self.assertEqual(len(changed),85);self.assertTrue(changed<=allowed)
+        nodes={n['offset']:n for n in flatten(chunks(result))}
+        for mesh in geometry(result,'_KIT00_BODY_'):
+            solid=nodes[mesh['solid_offset']]
+            r=next(n for n in flatten(solid['children']) if n['id']=='0x00134b02')
+            raw=payload(result,r);lead=len(raw)%60
+            lower=struct.unpack_from('<3f',raw,lead);upper=struct.unpack_from('<3f',raw,lead+16)
+            for index in mesh['indices']:
+                for axis in range(3):self.assertLessEqual(lower[axis],mesh['positions'][index][axis]);self.assertGreaterEqual(upper[axis],mesh['positions'][index][axis])
+        with self.assertRaises(ValueError):bounds_preview(result)
+        if backup.exists():self.assertEqual(source.read_bytes(),result)
+    def test_unrelated_car_rejected(self):
+        from inspect_assets import ROOT
+        from plan_bounds_repair import bounds_preview
+        with self.assertRaises(ValueError):bounds_preview((ROOT/'CARS/240SX/GEOMETRY.BIN').read_bytes())
+
+
+class AuthoredMotion(unittest.TestCase):
+    def test_rotation_alignment_edges(self):
+        import numpy as np
+        from animate_kitasan import align
+        for a,b in [([1,0,0],[1,0,0]),([1,0,0],[-1,0,0]),([0,0,-1],[1,0,0])]:
+            r=align(a,b);self.assertTrue(np.allclose(r@np.array(a),b,atol=1e-7));self.assertAlmostEqual(np.linalg.det(r),1)
+        with self.assertRaises(ValueError):align([0,0,0],[1,0,0])
+    def test_rest_loop_and_planted_feet(self):
+        import numpy as np
+        from animate_kitasan import Rig,leg_target
+        rig=Rig();identity=np.repeat(np.eye(3)[None],len(rig.bones),0)
+        _,rest=rig.world(identity,np.zeros_like(rig.rest));p,n=rig.skin(identity,rest-rig.rest)
+        self.assertTrue(np.allclose(p,rig.records[:,:3],atol=1e-5))
+        a=rig.pose(0)[0:2];b=rig.pose(1)[0:2]
+        for x,y in zip(a,b):self.assertTrue(np.array_equal(x,y))
+        ankle=rig.rest[rig.named['左足首D']]
+        x0,_,stance0=leg_target(.1,ankle,1);x1,_,stance1=leg_target(.2,ankle,1)
+        self.assertTrue(stance0 and stance1);self.assertEqual(x0[2],x1[2]);self.assertAlmostEqual((x1[0]-x0[0])/.1,-.62/.38)
+    def test_pose_floor_limb_lengths_and_arms(self):
+        import numpy as np
+        from animate_kitasan import Rig
+        rig=Rig()
+        for amount in (0,.5,1):
+            for phase in (0,.125,.25,.5,.75):
+                rotation,offset,joints,feet=rig.pose(phase,amount);p,n=rig.skin(rotation,offset)
+                self.assertGreater(float(p[:,2].min()),-.005);self.assertLess(float(np.abs(p).max()),4)
+                self.assertTrue(np.allclose(np.linalg.norm(n,axis=1),1,atol=1e-5))
+                for foot in feet:self.assertLess(float(np.linalg.norm(joints[foot['ankle']]-foot['target'])),.005)
+                for side in ('左','右'):
+                    ids=[rig.named[side+j+'D'] for j in ('足','ひざ','足首')]
+                    for a,b in zip(ids,ids[1:]):self.assertAlmostEqual(float(np.linalg.norm(joints[b]-joints[a])),float(np.linalg.norm(rig.rest[b]-rig.rest[a])),places=6)
+                    upper,elbow=[rig.named[side+j] for j in ('腕','ひじ')]
+                    self.assertLess(joints[elbow,2],joints[upper,2]-.1)
+        with self.assertRaises(ValueError):rig.pose(float('nan'))
+        with self.assertRaises(ValueError):rig.pose(0,2)
+    def test_native_winding_calibration(self):
+        import numpy as np
+        from inspect_assets import ROOT
+        from extract_assets import geometry
+        for m in geometry((ROOT/'CARS/240SX/GEOMETRY.BIN').read_bytes(),'240SX_KIT00_BODY_D'):
+            p=np.array(m['positions']);n=np.array(m['normals']);t=np.array(m['indices']).reshape(-1,3)
+            cross=np.cross(p[t[:,1]]-p[t[:,0]],p[t[:,2]]-p[t[:,0]])
+            valid=np.linalg.norm(cross,axis=1)>1e-10
+            self.assertGreater(float(((cross*n[t].mean(1)).sum(1)[valid]>0).mean()),.99)
+
 if __name__ == '__main__': unittest.main()

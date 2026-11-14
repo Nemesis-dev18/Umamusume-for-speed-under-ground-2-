@@ -27,5 +27,6 @@
   "rollback": "Close game and remove only the installed module after verifying its hash; preserve log; geometry remains as currently installed",
   "previous_module_sha256": "b38a2d5d4eea05311a5af11be46d6657233701266c806ab9db00c1cfa6750526",
   "initialization_fix": "Resolve Unicode log path from own module location instead of process working directory",
-  "load_test": "PASS: original reproduced missing log with CWD=scripts; fixed DLL creates log and installs hook with CWD=scripts"
+  "load_test": "PASS: original reproduced missing log with CWD=scripts; fixed DLL creates log and installs hook with CWD=scripts",
+  "removed_after_capture": true
 }

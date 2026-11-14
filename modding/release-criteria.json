@@ -1,0 +1,28 @@
+{
+  "target": "Kitasan Black in NFS Underground 2, reference TjefYsbtwTI",
+  "do_not_launch_game": true,
+  "selection": {
+    "opaque_correctly_textured_character": false,
+    "idle_without_import_pose": "authored offline, not integrated",
+    "no_residual_car_wheel_or_shadow": false
+  },
+  "race": {
+    "player_character_visible": false,
+    "animated_running_and_speed_response": "offline motion authored; runtime connection missing",
+    "other_car_bodies_visible_when_kitasan_selected": "not verified; Nissan alone baseline passed"
+  },
+  "offline_motion": {
+    "rig_vertices": 14512,
+    "rig_bones": 282,
+    "idle_frames": 32,
+    "run_frames": 48,
+    "foot_ik_checked": true,
+    "loop_and_normals_tests_passed": true,
+    "latest_candidate": "modding/animation-offline-v2",
+    "ready_for_gameplay": false
+  },
+  "resource_changes_this_stage": false,
+  "diagnostic_removed": true,
+  "bounds_repair": "prepared in memory, not applied; requires reviewed installation approval",
+  "release_ready": false
+}

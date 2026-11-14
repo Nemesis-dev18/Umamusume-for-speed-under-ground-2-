@@ -1,0 +1,4528 @@
+{
+  "cars": [
+    {
+      "car": "240SX",
+      "sha256": "122342b8ed9418ccc05515bcad1d2b5720ec45ee90c4fcaedab28751612bd18a",
+      "largest_mesh": {
+        "vertices": 2281,
+        "triangles": 2113
+      },
+      "body_meshes": [
+        {
+          "name": "240SX_KIT00_BODY_A",
+          "vertices": 730,
+          "triangles": 728
+        },
+        {
+          "name": "240SX_KIT00_BODY_B",
+          "vertices": 432,
+          "triangles": 372
+        },
+        {
+          "name": "240SX_KIT00_BODY_C",
+          "vertices": 289,
+          "triangles": 211
+        },
+        {
+          "name": "240SX_KIT00_BODY_D",
+          "vertices": 342,
+          "triangles": 205
+        },
+        {
+          "name": "240SX_KITW01_BODY_A",
+          "vertices": 2225,
+          "triangles": 2006
+        },
+        {
+          "name": "240SX_KITW01_BODY_B",
+          "vertices": 1331,
+          "triangles": 1096
+        },
+        {
+          "name": "240SX_KITW01_BODY_C",
+          "vertices": 644,
+          "triangles": 441
+        },
+        {
+          "name": "240SX_KITW01_BODY_D",
+          "vertices": 342,
+          "triangles": 205
+        },
+        {
+          "name": "240SX_KITW02_BODY_A",
+          "vertices": 2281,
+          "triangles": 2113
+        },
+        {
+          "name": "240SX_KITW02_BODY_B",
+          "vertices": 1300,
+          "triangles": 1111
+        },
+        {
+          "name": "240SX_KITW02_BODY_C",
+          "vertices": 655,
+          "triangles": 444
+        },
+        {
+          "name": "240SX_KITW02_BODY_D",
+          "vertices": 342,
+          "triangles": 205
+        },
+        {
+          "name": "240SX_KITW03_BODY_A",
+          "vertices": 1906,
+          "triangles": 1586
+        },
+        {
+          "name": "240SX_KITW03_BODY_B",
+          "vertices": 1140,
+          "triangles": 856
+        },
+        {
+          "name": "240SX_KITW03_BODY_C",
+          "vertices": 640,
+          "triangles": 444
+        },
+        {
+          "name": "240SX_KITW03_BODY_D",
+          "vertices": 342,
+          "triangles": 205
+        },
+        {
+          "name": "240SX_KITW04_BODY_A",
+          "vertices": 1993,
+          "triangles": 1823
+        },
+        {
+          "name": "240SX_KITW04_BODY_B",
+          "vertices": 1195,
+          "triangles": 960
+        },
+        {
+          "name": "240SX_KITW04_BODY_C",
+          "vertices": 660,
+          "triangles": 444
+        },
+        {
+          "name": "240SX_KITW04_BODY_D",
+          "vertices": 342,
+          "triangles": 205
+        }
+      ]
+    },
+    {
+      "car": "3000GT",
+      "sha256": "d61429495b187e7a60dd6438fa09ba962d07fac1e4388da66ffcd54e60f00ac0",
+      "largest_mesh": {
+        "vertices": 2001,
+        "triangles": 1754
+      },
+      "body_meshes": [
+        {
+          "name": "3000GT_KIT00_BODY_A",
+          "vertices": 486,
+          "triangles": 458
+        },
+        {
+          "name": "3000GT_KIT00_BODY_B",
+          "vertices": 422,
+          "triangles": 380
+        },
+        {
+          "name": "3000GT_KIT00_BODY_C",
+          "vertices": 262,
+          "triangles": 220
+        },
+        {
+          "name": "3000GT_KIT00_BODY_D",
+          "vertices": 185,
+          "triangles": 124
+        },
+        {
+          "name": "3000GT_KITW01_BODY_A",
+          "vertices": 1775,
+          "triangles": 1582
+        },
+        {
+          "name": "3000GT_KITW01_BODY_B",
+          "vertices": 1106,
+          "triangles": 936
+        },
+        {
+          "name": "3000GT_KITW01_BODY_C",
+          "vertices": 553,
+          "triangles": 393
+        },
+        {
+          "name": "3000GT_KITW01_BODY_D",
+          "vertices": 189,
+          "triangles": 124
+        },
+        {
+          "name": "3000GT_KITW02_BODY_A",
+          "vertices": 1978,
+          "triangles": 1752
+        },
+        {
+          "name": "3000GT_KITW02_BODY_B",
+          "vertices": 1303,
+          "triangles": 1010
+        },
+        {
+          "name": "3000GT_KITW02_BODY_C",
+          "vertices": 727,
+          "triangles": 491
+        },
+        {
+          "name": "3000GT_KITW02_BODY_D",
+          "vertices": 189,
+          "triangles": 124
+        },
+        {
+          "name": "3000GT_KITW03_BODY_A",
+          "vertices": 2001,
+          "triangles": 1754
+        },
+        {
+          "name": "3000GT_KITW03_BODY_B",
+          "vertices": 1411,
+          "triangles": 1055
+        },
+        {
+          "name": "3000GT_KITW03_BODY_C",
+          "vertices": 599,
+          "triangles": 434
+        },
+        {
+          "name": "3000GT_KITW03_BODY_D",
+          "vertices": 189,
+          "triangles": 124
+        },
+        {
+          "name": "3000GT_KITW04_BODY_A",
+          "vertices": 1895,
+          "triangles": 1702
+        },
+        {
+          "name": "3000GT_KITW04_BODY_B",
+          "vertices": 1175,
+          "triangles": 938
+        },
+        {
+          "name": "3000GT_KITW04_BODY_C",
+          "vertices": 628,
+          "triangles": 437
+        },
+        {
+          "name": "3000GT_KITW04_BODY_D",
+          "vertices": 189,
+          "triangles": 124
+        }
+      ]
+    },
+    {
+      "car": "350Z",
+      "sha256": "90b66874fdf16b7bafdd760cdcfcc412bae4eb584b0bbbb755d2569617c57650",
+      "largest_mesh": {
+        "vertices": 2255,
+        "triangles": 1886
+      },
+      "body_meshes": [
+        {
+          "name": "350Z_KIT00_BODY_A",
+          "vertices": 460,
+          "triangles": 524
+        },
+        {
+          "name": "350Z_KIT00_BODY_B",
+          "vertices": 381,
+          "triangles": 372
+        },
+        {
+          "name": "350Z_KIT00_BODY_C",
+          "vertices": 219,
+          "triangles": 183
+        },
+        {
+          "name": "350Z_KIT00_BODY_D",
+          "vertices": 237,
+          "triangles": 154
+        },
+        {
+          "name": "350Z_KITW01_BODY_A",
+          "vertices": 2255,
+          "triangles": 1886
+        },
+        {
+          "name": "350Z_KITW01_BODY_B",
+          "vertices": 1374,
+          "triangles": 1060
+        },
+        {
+          "name": "350Z_KITW01_BODY_C",
+          "vertices": 680,
+          "triangles": 490
+        },
+        {
+          "name": "350Z_KITW01_BODY_D",
+          "vertices": 237,
+          "triangles": 154
+        },
+        {
+          "name": "350Z_KITW02_BODY_A",
+          "vertices": 1777,
+          "triangles": 1568
+        },
+        {
+          "name": "350Z_KITW02_BODY_B",
+          "vertices": 1250,
+          "triangles": 964
+        },
+        {
+          "name": "350Z_KITW02_BODY_C",
+          "vertices": 490,
+          "triangles": 360
+        },
+        {
+          "name": "350Z_KITW02_BODY_D",
+          "vertices": 236,
+          "triangles": 154
+        },
+        {
+          "name": "350Z_KITW03_BODY_A",
+          "vertices": 2208,
+          "triangles": 1802
+        },
+        {
+          "name": "350Z_KITW03_BODY_B",
+          "vertices": 1392,
+          "triangles": 952
+        },
+        {
+          "name": "350Z_KITW03_BODY_C",
+          "vertices": 658,
+          "triangles": 438
+        },
+        {
+          "name": "350Z_KITW03_BODY_D",
+          "vertices": 234,
+          "triangles": 154
+        },
+        {
+          "name": "350Z_KITW04_BODY_A",
+          "vertices": 1792,
+          "triangles": 1572
+        },
+        {
+          "name": "350Z_KITW04_BODY_B",
+          "vertices": 1246,
+          "triangles": 920
+        },
+        {
+          "name": "350Z_KITW04_BODY_C",
+          "vertices": 659,
+          "triangles": 442
+        },
+        {
+          "name": "350Z_KITW04_BODY_D",
+          "vertices": 235,
+          "triangles": 154
+        }
+      ]
+    },
+    {
+      "car": "4DR_SEDAN",
+      "sha256": "5818399288eede4e12a007e7aa061834048adda288f29977868f76e0860fef60",
+      "largest_mesh": {
+        "vertices": 659,
+        "triangles": 475
+      },
+      "body_meshes": [
+        {
+          "name": "4DR_SEDAN_BODY_A",
+          "vertices": 659,
+          "triangles": 475
+        },
+        {
+          "name": "4DR_SEDAN_BODY_B",
+          "vertices": 456,
+          "triangles": 284
+        },
+        {
+          "name": "4DR_SEDAN_BODY_C",
+          "vertices": 237,
+          "triangles": 140
+        }
+      ]
+    },
+    {
+      "car": "4DR_SEDAN02",
+      "sha256": "1b65d63ce7170007eb47f87119a4465f014a10c63fbbec028b6536a53496a998",
+      "largest_mesh": {
+        "vertices": 636,
+        "triangles": 480
+      },
+      "body_meshes": [
+        {
+          "name": "4DR_SEDAN02_BODY_A",
+          "vertices": 636,
+          "triangles": 480
+        },
+        {
+          "name": "4DR_SEDAN02_BODY_B",
+          "vertices": 427,
+          "triangles": 284
+        },
+        {
+          "name": "4DR_SEDAN02_BODY_C",
+          "vertices": 226,
+          "triangles": 136
+        }
+      ]
+    },
+    {
+      "car": "A3",
+      "sha256": "56d127df4bc793153da5ad294b52ceb08091e7aa6d5cdca5cada0edbb1914f3e",
+      "largest_mesh": {
+        "vertices": 2186,
+        "triangles": 1900
+      },
+      "body_meshes": [
+        {
+          "name": "A3_KIT00_BODY_A",
+          "vertices": 560,
+          "triangles": 526
+        },
+        {
+          "name": "A3_KIT00_BODY_B",
+          "vertices": 440,
+          "triangles": 320
+        },
+        {
+          "name": "A3_KIT00_BODY_C",
+          "vertices": 305,
+          "triangles": 211
+        },
+        {
+          "name": "A3_KIT00_BODY_D",
+          "vertices": 198,
+          "triangles": 128
+        },
+        {
+          "name": "A3_KITW01_BODY_A",
+          "vertices": 2181,
+          "triangles": 1783
+        },
+        {
+          "name": "A3_KITW01_BODY_B",
+          "vertices": 1242,
+          "triangles": 994
+        },
+        {
+          "name": "A3_KITW01_BODY_C",
+          "vertices": 602,
+          "triangles": 406
+        },
+        {
+          "name": "A3_KITW01_BODY_D",
+          "vertices": 194,
+          "triangles": 128
+        },
+        {
+          "name": "A3_KITW02_BODY_A",
+          "vertices": 1951,
+          "triangles": 1636
+        },
+        {
+          "name": "A3_KITW02_BODY_B",
+          "vertices": 1461,
+          "triangles": 1122
+        },
+        {
+          "name": "A3_KITW02_BODY_C",
+          "vertices": 681,
+          "triangles": 458
+        },
+        {
+          "name": "A3_KITW02_BODY_D",
+          "vertices": 194,
+          "triangles": 128
+        },
+        {
+          "name": "A3_KITW03_BODY_A",
+          "vertices": 1828,
+          "triangles": 1552
+        },
+        {
+          "name": "A3_KITW03_BODY_B",
+          "vertices": 1297,
+          "triangles": 988
+        },
+        {
+          "name": "A3_KITW03_BODY_C",
+          "vertices": 629,
+          "triangles": 389
+        },
+        {
+          "name": "A3_KITW03_BODY_D",
+          "vertices": 194,
+          "triangles": 128
+        },
+        {
+          "name": "A3_KITW04_BODY_A",
+          "vertices": 2186,
+          "triangles": 1900
+        },
+        {
+          "name": "A3_KITW04_BODY_B",
+          "vertices": 1509,
+          "triangles": 1206
+        },
+        {
+          "name": "A3_KITW04_BODY_C",
+          "vertices": 818,
+          "triangles": 485
+        },
+        {
+          "name": "A3_KITW04_BODY_D",
+          "vertices": 194,
+          "triangles": 128
+        }
+      ]
+    },
+    {
+      "car": "AMBULANCE",
+      "sha256": "bd1dde1a1778162e78cf34d8496b40cbd30ac541a9d028b4ec2870db768b829d",
+      "largest_mesh": {
+        "vertices": 708,
+        "triangles": 487
+      },
+      "body_meshes": [
+        {
+          "name": "AMBULANCE_BODY_A",
+          "vertices": 708,
+          "triangles": 487
+        },
+        {
+          "name": "AMBULANCE_BODY_B",
+          "vertices": 343,
+          "triangles": 209
+        },
+        {
+          "name": "AMBULANCE_BODY_C",
+          "vertices": 237,
+          "triangles": 143
+        }
+      ]
+    },
+    {
+      "car": "AUDIO",
+      "sha256": "46e63d14937299c0a397bf02e7f1144c3fce1e405e85d6a1f56a633c10b14deb",
+      "largest_mesh": {
+        "vertices": 315,
+        "triangles": 250
+      },
+      "body_meshes": []
+    },
+    {
+      "car": "BRAKES",
+      "sha256": "c9df4c97995168fff5da2d949f012b96aa534ceee1b135c295b2067f2fbcb9e7",
+      "largest_mesh": {
+        "vertices": 295,
+        "triangles": 208
+      },
+      "body_meshes": []
+    },
+    {
+      "car": "BUS",
+      "sha256": "d0dae93750656055c71b817c0b68771d9b478c7f718458e12a4d3b167f8b9e08",
+      "largest_mesh": {
+        "vertices": 862,
+        "triangles": 477
+      },
+      "body_meshes": [
+        {
+          "name": "BUS_BODY_A",
+          "vertices": 862,
+          "triangles": 477
+        },
+        {
+          "name": "BUS_BODY_B",
+          "vertices": 633,
+          "triangles": 345
+        }
+      ]
+    },
+    {
+      "car": "CELICA",
+      "sha256": "cdb486b204b24b4b7f94d5d92285ec1a7d0d0db9e99f175240a42b394ea5cbe1",
+      "largest_mesh": {
+        "vertices": 2231,
+        "triangles": 1592
+      },
+      "body_meshes": [
+        {
+          "name": "CELICA_KIT00_BODY_A",
+          "vertices": 634,
+          "triangles": 568
+        },
+        {
+          "name": "CELICA_KIT00_BODY_B",
+          "vertices": 554,
+          "triangles": 434
+        },
+        {
+          "name": "CELICA_KIT00_BODY_C",
+          "vertices": 227,
+          "triangles": 150
+        },
+        {
+          "name": "CELICA_KIT00_BODY_D",
+          "vertices": 241,
+          "triangles": 120
+        },
+        {
+          "name": "CELICA_KITW01_BODY_A",
+          "vertices": 1611,
+          "triangles": 1254
+        },
+        {
+          "name": "CELICA_KITW01_BODY_B",
+          "vertices": 1012,
+          "triangles": 672
+        },
+        {
+          "name": "CELICA_KITW01_BODY_C",
+          "vertices": 420,
+          "triangles": 244
+        },
+        {
+          "name": "CELICA_KITW01_BODY_D",
+          "vertices": 241,
+          "triangles": 120
+        },
+        {
+          "name": "CELICA_KITW02_BODY_A",
+          "vertices": 2205,
+          "triangles": 1597
+        },
+        {
+          "name": "CELICA_KITW02_BODY_B",
+          "vertices": 1282,
+          "triangles": 863
+        },
+        {
+          "name": "CELICA_KITW02_BODY_C",
+          "vertices": 514,
+          "triangles": 328
+        },
+        {
+          "name": "CELICA_KITW02_BODY_D",
+          "vertices": 241,
+          "triangles": 120
+        },
+        {
+          "name": "CELICA_KITW03_BODY_A",
+          "vertices": 2231,
+          "triangles": 1592
+        },
+        {
+          "name": "CELICA_KITW03_BODY_B",
+          "vertices": 1540,
+          "triangles": 883
+        },
+        {
+          "name": "CELICA_KITW03_BODY_C",
+          "vertices": 661,
+          "triangles": 344
+        },
+        {
+          "name": "CELICA_KITW03_BODY_D",
+          "vertices": 238,
+          "triangles": 120
+        },
+        {
+          "name": "CELICA_KITW04_BODY_A",
+          "vertices": 1924,
+          "triangles": 1464
+        },
+        {
+          "name": "CELICA_KITW04_BODY_B",
+          "vertices": 1295,
+          "triangles": 800
+        },
+        {
+          "name": "CELICA_KITW04_BODY_C",
+          "vertices": 571,
+          "triangles": 333
+        },
+        {
+          "name": "CELICA_KITW04_BODY_D",
+          "vertices": 238,
+          "triangles": 120
+        }
+      ]
+    },
+    {
+      "car": "CORSA",
+      "sha256": "0720c31e17ab027d054114d6c4f5cbc14ce41c25b1b8b956ffa171191b20456c",
+      "largest_mesh": {
+        "vertices": 2383,
+        "triangles": 1880
+      },
+      "body_meshes": [
+        {
+          "name": "CORSA_KIT00_BODY_A",
+          "vertices": 617,
+          "triangles": 548
+        },
+        {
+          "name": "CORSA_KIT00_BODY_B",
+          "vertices": 456,
+          "triangles": 366
+        },
+        {
+          "name": "CORSA_KIT00_BODY_C",
+          "vertices": 328,
+          "triangles": 243
+        },
+        {
+          "name": "CORSA_KIT00_BODY_D",
+          "vertices": 175,
+          "triangles": 130
+        },
+        {
+          "name": "CORSA_KITW01_BODY_A",
+          "vertices": 2154,
+          "triangles": 1790
+        },
+        {
+          "name": "CORSA_KITW01_BODY_B",
+          "vertices": 1332,
+          "triangles": 1067
+        },
+        {
+          "name": "CORSA_KITW01_BODY_C",
+          "vertices": 798,
+          "triangles": 578
+        },
+        {
+          "name": "CORSA_KITW01_BODY_D",
+          "vertices": 175,
+          "triangles": 130
+        },
+        {
+          "name": "CORSA_KITW02_BODY_A",
+          "vertices": 2087,
+          "triangles": 1800
+        },
+        {
+          "name": "CORSA_KITW02_BODY_B",
+          "vertices": 1266,
+          "triangles": 998
+        },
+        {
+          "name": "CORSA_KITW02_BODY_C",
+          "vertices": 743,
+          "triangles": 510
+        },
+        {
+          "name": "CORSA_KITW02_BODY_D",
+          "vertices": 175,
+          "triangles": 130
+        },
+        {
+          "name": "CORSA_KITW03_BODY_A",
+          "vertices": 2090,
+          "triangles": 1716
+        },
+        {
+          "name": "CORSA_KITW03_BODY_B",
+          "vertices": 1480,
+          "triangles": 1214
+        },
+        {
+          "name": "CORSA_KITW03_BODY_C",
+          "vertices": 655,
+          "triangles": 455
+        },
+        {
+          "name": "CORSA_KITW03_BODY_D",
+          "vertices": 175,
+          "triangles": 130
+        },
+        {
+          "name": "CORSA_KITW04_BODY_A",
+          "vertices": 2383,
+          "triangles": 1880
+        },
+        {
+          "name": "CORSA_KITW04_BODY_B",
+          "vertices": 1927,
+          "triangles": 1488
+        },
+        {
+          "name": "CORSA_KITW04_BODY_C",
+          "vertices": 696,
+          "triangles": 482
+        },
+        {
+          "name": "CORSA_KITW04_BODY_D",
+          "vertices": 148,
+          "triangles": 98
+        }
+      ]
+    },
+    {
+      "car": "COUPE",
+      "sha256": "6d8deca3f99cc3cde2539fca6aff5f041f037a8a7b5acd246bdb26a282f9dbdb",
+      "largest_mesh": {
+        "vertices": 723,
+        "triangles": 471
+      },
+      "body_meshes": [
+        {
+          "name": "COUPE_BODY_A",
+          "vertices": 723,
+          "triangles": 471
+        },
+        {
+          "name": "COUPE_BODY_B",
+          "vertices": 471,
+          "triangles": 289
+        },
+        {
+          "name": "COUPE_BODY_C",
+          "vertices": 277,
+          "triangles": 174
+        }
+      ]
+    },
+    {
+      "car": "ECLIPSE",
+      "sha256": "44a013a6b4265bd961909bc626bc50c69ef18376ef9cadfe825175671e285cd0",
+      "largest_mesh": {
+        "vertices": 2295,
+        "triangles": 1977
+      },
+      "body_meshes": [
+        {
+          "name": "ECLIPSE_KIT00_BODY_A",
+          "vertices": 517,
+          "triangles": 521
+        },
+        {
+          "name": "ECLIPSE_KIT00_BODY_B",
+          "vertices": 424,
+          "triangles": 438
+        },
+        {
+          "name": "ECLIPSE_KIT00_BODY_C",
+          "vertices": 228,
+          "triangles": 220
+        },
+        {
+          "name": "ECLIPSE_KIT00_BODY_D",
+          "vertices": 239,
+          "triangles": 156
+        },
+        {
+          "name": "ECLIPSE_KITW01_BODY_A",
+          "vertices": 2115,
+          "triangles": 1723
+        },
+        {
+          "name": "ECLIPSE_KITW01_BODY_B",
+          "vertices": 1213,
+          "triangles": 1002
+        },
+        {
+          "name": "ECLIPSE_KITW01_BODY_C",
+          "vertices": 613,
+          "triangles": 494
+        },
+        {
+          "name": "ECLIPSE_KITW01_BODY_D",
+          "vertices": 243,
+          "triangles": 156
+        },
+        {
+          "name": "ECLIPSE_KITW02_BODY_A",
+          "vertices": 2135,
+          "triangles": 1951
+        },
+        {
+          "name": "ECLIPSE_KITW02_BODY_B",
+          "vertices": 1445,
+          "triangles": 1270
+        },
+        {
+          "name": "ECLIPSE_KITW02_BODY_C",
+          "vertices": 784,
+          "triangles": 669
+        },
+        {
+          "name": "ECLIPSE_KITW02_BODY_D",
+          "vertices": 240,
+          "triangles": 156
+        },
+        {
+          "name": "ECLIPSE_KITW03_BODY_A",
+          "vertices": 2295,
+          "triangles": 1977
+        },
+        {
+          "name": "ECLIPSE_KITW03_BODY_B",
+          "vertices": 1500,
+          "triangles": 1172
+        },
+        {
+          "name": "ECLIPSE_KITW03_BODY_C",
+          "vertices": 644,
+          "triangles": 457
+        },
+        {
+          "name": "ECLIPSE_KITW03_BODY_D",
+          "vertices": 227,
+          "triangles": 156
+        },
+        {
+          "name": "ECLIPSE_KITW04_BODY_A",
+          "vertices": 2183,
+          "triangles": 1886
+        },
+        {
+          "name": "ECLIPSE_KITW04_BODY_B",
+          "vertices": 1486,
+          "triangles": 1196
+        },
+        {
+          "name": "ECLIPSE_KITW04_BODY_C",
+          "vertices": 637,
+          "triangles": 422
+        },
+        {
+          "name": "ECLIPSE_KITW04_BODY_D",
+          "vertices": 227,
+          "triangles": 156
+        }
+      ]
+    },
+    {
+      "car": "ESCALADE",
+      "sha256": "ef55ed85a361e3d067ddd7b252f3b93f56140932ba0b4515ee458eec13b88235",
+      "largest_mesh": {
+        "vertices": 1456,
+        "triangles": 1120
+      },
+      "body_meshes": [
+        {
+          "name": "ESCALADE_KIT00_BODY_A",
+          "vertices": 921,
+          "triangles": 767
+        },
+        {
+          "name": "ESCALADE_KIT00_BODY_B",
+          "vertices": 500,
+          "triangles": 388
+        },
+        {
+          "name": "ESCALADE_KIT00_BODY_C",
+          "vertices": 337,
+          "triangles": 243
+        },
+        {
+          "name": "ESCALADE_KIT00_BODY_D",
+          "vertices": 248,
+          "triangles": 128
+        }
+      ]
+    },
+    {
+      "car": "EXHAUST",
+      "sha256": "13dcd06a7deea4cd26d3cb9c9ea144aa6c2d63edffb6547387a9e4b2152012c1",
+      "largest_mesh": {
+        "vertices": 128,
+        "triangles": 120
+      },
+      "body_meshes": []
+    },
+    {
+      "car": "FIRETRUCK",
+      "sha256": "2988165634471fb39b18cbda29b414fe0a26caa38eac81acdf257eff511aae6d",
+      "largest_mesh": {
+        "vertices": 1005,
+        "triangles": 562
+      },
+      "body_meshes": [
+        {
+          "name": "FIRETRUCK_BODY_A",
+          "vertices": 1005,
+          "triangles": 562
+        },
+        {
+          "name": "FIRETRUCK_BODY_B",
+          "vertices": 769,
+          "triangles": 416
+        }
+      ]
+    },
+    {
+      "car": "FOCUS",
+      "sha256": "d114c0ec57ace4dfa4de994d6b0998cb9b6b6ccaba6773d2a5ff19c396223e67",
+      "largest_mesh": {
+        "vertices": 2039,
+        "triangles": 1580
+      },
+      "body_meshes": [
+        {
+          "name": "FOCUS_KIT00_BODY_A",
+          "vertices": 636,
+          "triangles": 540
+        },
+        {
+          "name": "FOCUS_KIT00_BODY_B",
+          "vertices": 573,
+          "triangles": 482
+        },
+        {
+          "name": "FOCUS_KIT00_BODY_C",
+          "vertices": 274,
+          "triangles": 212
+        },
+        {
+          "name": "FOCUS_KIT00_BODY_D",
+          "vertices": 167,
+          "triangles": 118
+        },
+        {
+          "name": "FOCUS_KITW01_BODY_A",
+          "vertices": 1761,
+          "triangles": 1414
+        },
+        {
+          "name": "FOCUS_KITW01_BODY_B",
+          "vertices": 1019,
+          "triangles": 787
+        },
+        {
+          "name": "FOCUS_KITW01_BODY_C",
+          "vertices": 607,
+          "triangles": 442
+        },
+        {
+          "name": "FOCUS_KITW01_BODY_D",
+          "vertices": 177,
+          "triangles": 122
+        },
+        {
+          "name": "FOCUS_KITW02_BODY_A",
+          "vertices": 1878,
+          "triangles": 1544
+        },
+        {
+          "name": "FOCUS_KITW02_BODY_B",
+          "vertices": 1038,
+          "triangles": 863
+        },
+        {
+          "name": "FOCUS_KITW02_BODY_C",
+          "vertices": 543,
+          "triangles": 417
+        },
+        {
+          "name": "FOCUS_KITW02_BODY_D",
+          "vertices": 175,
+          "triangles": 122
+        },
+        {
+          "name": "FOCUS_KITW03_BODY_A",
+          "vertices": 1574,
+          "triangles": 1380
+        },
+        {
+          "name": "FOCUS_KITW03_BODY_B",
+          "vertices": 1058,
+          "triangles": 863
+        },
+        {
+          "name": "FOCUS_KITW03_BODY_C",
+          "vertices": 529,
+          "triangles": 369
+        },
+        {
+          "name": "FOCUS_KITW03_BODY_D",
+          "vertices": 169,
+          "triangles": 118
+        },
+        {
+          "name": "FOCUS_KITW04_BODY_A",
+          "vertices": 2039,
+          "triangles": 1580
+        },
+        {
+          "name": "FOCUS_KITW04_BODY_B",
+          "vertices": 1330,
+          "triangles": 1029
+        },
+        {
+          "name": "FOCUS_KITW04_BODY_C",
+          "vertices": 638,
+          "triangles": 439
+        },
+        {
+          "name": "FOCUS_KITW04_BODY_D",
+          "vertices": 215,
+          "triangles": 146
+        }
+      ]
+    },
+    {
+      "car": "G35",
+      "sha256": "bd590339725f6f53d4421f3599ff39ae47260712a3bf97b03e56f118dbba4250",
+      "largest_mesh": {
+        "vertices": 2527,
+        "triangles": 2009
+      },
+      "body_meshes": [
+        {
+          "name": "G35_KIT00_BODY_A",
+          "vertices": 476,
+          "triangles": 466
+        },
+        {
+          "name": "G35_KIT00_BODY_B",
+          "vertices": 382,
+          "triangles": 338
+        },
+        {
+          "name": "G35_KIT00_BODY_C",
+          "vertices": 278,
+          "triangles": 232
+        },
+        {
+          "name": "G35_KIT00_BODY_D",
+          "vertices": 192,
+          "triangles": 134
+        },
+        {
+          "name": "G35_KITW01_BODY_A",
+          "vertices": 1972,
+          "triangles": 1792
+        },
+        {
+          "name": "G35_KITW01_BODY_B",
+          "vertices": 1321,
+          "triangles": 1032
+        },
+        {
+          "name": "G35_KITW01_BODY_C",
+          "vertices": 703,
+          "triangles": 441
+        },
+        {
+          "name": "G35_KITW01_BODY_D",
+          "vertices": 191,
+          "triangles": 134
+        },
+        {
+          "name": "G35_KITW02_BODY_A",
+          "vertices": 2139,
+          "triangles": 1852
+        },
+        {
+          "name": "G35_KITW02_BODY_B",
+          "vertices": 1364,
+          "triangles": 1082
+        },
+        {
+          "name": "G35_KITW02_BODY_C",
+          "vertices": 717,
+          "triangles": 443
+        },
+        {
+          "name": "G35_KITW02_BODY_D",
+          "vertices": 191,
+          "triangles": 134
+        },
+        {
+          "name": "G35_KITW03_BODY_A",
+          "vertices": 2236,
+          "triangles": 1954
+        },
+        {
+          "name": "G35_KITW03_BODY_B",
+          "vertices": 1302,
+          "triangles": 1038
+        },
+        {
+          "name": "G35_KITW03_BODY_C",
+          "vertices": 739,
+          "triangles": 510
+        },
+        {
+          "name": "G35_KITW03_BODY_D",
+          "vertices": 191,
+          "triangles": 134
+        },
+        {
+          "name": "G35_KITW04_BODY_A",
+          "vertices": 2527,
+          "triangles": 2009
+        },
+        {
+          "name": "G35_KITW04_BODY_B",
+          "vertices": 1815,
+          "triangles": 1220
+        },
+        {
+          "name": "G35_KITW04_BODY_C",
+          "vertices": 818,
+          "triangles": 555
+        },
+        {
+          "name": "G35_KITW04_BODY_D",
+          "vertices": 191,
+          "triangles": 134
+        }
+      ]
+    },
+    {
+      "car": "GOLF",
+      "sha256": "ff9123966a2253c537d2d3747d35607e14f61bad35a175063f6ca1eb2b707f99",
+      "largest_mesh": {
+        "vertices": 2242,
+        "triangles": 2050
+      },
+      "body_meshes": [
+        {
+          "name": "GOLF_KIT00_BODY_A",
+          "vertices": 498,
+          "triangles": 458
+        },
+        {
+          "name": "GOLF_KIT00_BODY_B",
+          "vertices": 358,
+          "triangles": 284
+        },
+        {
+          "name": "GOLF_KIT00_BODY_C",
+          "vertices": 136,
+          "triangles": 100
+        },
+        {
+          "name": "GOLF_KIT00_BODY_D",
+          "vertices": 302,
+          "triangles": 195
+        },
+        {
+          "name": "GOLF_KITW01_BODY_A",
+          "vertices": 2202,
+          "triangles": 1734
+        },
+        {
+          "name": "GOLF_KITW01_BODY_B",
+          "vertices": 1280,
+          "triangles": 928
+        },
+        {
+          "name": "GOLF_KITW01_BODY_C",
+          "vertices": 639,
+          "triangles": 424
+        },
+        {
+          "name": "GOLF_KITW01_BODY_D",
+          "vertices": 315,
+          "triangles": 195
+        },
+        {
+          "name": "GOLF_KITW02_BODY_A",
+          "vertices": 2010,
+          "triangles": 1726
+        },
+        {
+          "name": "GOLF_KITW02_BODY_B",
+          "vertices": 1111,
+          "triangles": 888
+        },
+        {
+          "name": "GOLF_KITW02_BODY_C",
+          "vertices": 552,
+          "triangles": 400
+        },
+        {
+          "name": "GOLF_KITW02_BODY_D",
+          "vertices": 312,
+          "triangles": 195
+        },
+        {
+          "name": "GOLF_KITW03_BODY_A",
+          "vertices": 2242,
+          "triangles": 2050
+        },
+        {
+          "name": "GOLF_KITW03_BODY_B",
+          "vertices": 1388,
+          "triangles": 1193
+        },
+        {
+          "name": "GOLF_KITW03_BODY_C",
+          "vertices": 645,
+          "triangles": 484
+        },
+        {
+          "name": "GOLF_KITW03_BODY_D",
+          "vertices": 312,
+          "triangles": 195
+        },
+        {
+          "name": "GOLF_KITW04_BODY_A",
+          "vertices": 2014,
+          "triangles": 1707
+        },
+        {
+          "name": "GOLF_KITW04_BODY_B",
+          "vertices": 1313,
+          "triangles": 1107
+        },
+        {
+          "name": "GOLF_KITW04_BODY_C",
+          "vertices": 648,
+          "triangles": 471
+        },
+        {
+          "name": "GOLF_KITW04_BODY_D",
+          "vertices": 308,
+          "triangles": 195
+        }
+      ]
+    },
+    {
+      "car": "GTO",
+      "sha256": "ed81aaabc8e12effd096f6c31886c0c1106a6ed660de5122aca0536ed49e9b43",
+      "largest_mesh": {
+        "vertices": 2379,
+        "triangles": 2010
+      },
+      "body_meshes": [
+        {
+          "name": "GTO_KIT00_BODY_A",
+          "vertices": 611,
+          "triangles": 535
+        },
+        {
+          "name": "GTO_KIT00_BODY_B",
+          "vertices": 491,
+          "triangles": 378
+        },
+        {
+          "name": "GTO_KIT00_BODY_C",
+          "vertices": 257,
+          "triangles": 192
+        },
+        {
+          "name": "GTO_KIT00_BODY_D",
+          "vertices": 175,
+          "triangles": 120
+        },
+        {
+          "name": "GTO_KITW01_BODY_A",
+          "vertices": 2221,
+          "triangles": 1856
+        },
+        {
+          "name": "GTO_KITW01_BODY_B",
+          "vertices": 1395,
+          "triangles": 1038
+        },
+        {
+          "name": "GTO_KITW01_BODY_C",
+          "vertices": 747,
+          "triangles": 502
+        },
+        {
+          "name": "GTO_KITW01_BODY_D",
+          "vertices": 175,
+          "triangles": 120
+        },
+        {
+          "name": "GTO_KITW02_BODY_A",
+          "vertices": 2323,
+          "triangles": 1934
+        },
+        {
+          "name": "GTO_KITW02_BODY_B",
+          "vertices": 1355,
+          "triangles": 1037
+        },
+        {
+          "name": "GTO_KITW02_BODY_C",
+          "vertices": 767,
+          "triangles": 528
+        },
+        {
+          "name": "GTO_KITW02_BODY_D",
+          "vertices": 175,
+          "triangles": 120
+        },
+        {
+          "name": "GTO_KITW03_BODY_A",
+          "vertices": 2273,
+          "triangles": 1975
+        },
+        {
+          "name": "GTO_KITW03_BODY_B",
+          "vertices": 1349,
+          "triangles": 1025
+        },
+        {
+          "name": "GTO_KITW03_BODY_C",
+          "vertices": 783,
+          "triangles": 562
+        },
+        {
+          "name": "GTO_KITW03_BODY_D",
+          "vertices": 175,
+          "triangles": 120
+        },
+        {
+          "name": "GTO_KITW04_BODY_A",
+          "vertices": 2379,
+          "triangles": 2010
+        },
+        {
+          "name": "GTO_KITW04_BODY_B",
+          "vertices": 1565,
+          "triangles": 1121
+        },
+        {
+          "name": "GTO_KITW04_BODY_C",
+          "vertices": 841,
+          "triangles": 592
+        },
+        {
+          "name": "GTO_KITW04_BODY_D",
+          "vertices": 175,
+          "triangles": 120
+        }
+      ]
+    },
+    {
+      "car": "HATCHBACK",
+      "sha256": "3b384e8f8c2a312bac6fe5f6035fd9c5fe45b310ede296437d20865e8b389259",
+      "largest_mesh": {
+        "vertices": 617,
+        "triangles": 420
+      },
+      "body_meshes": [
+        {
+          "name": "HATCHBACK_BODY_A",
+          "vertices": 617,
+          "triangles": 420
+        },
+        {
+          "name": "HATCHBACK_BODY_B",
+          "vertices": 447,
+          "triangles": 288
+        },
+        {
+          "name": "HATCHBACK_BODY_C",
+          "vertices": 264,
+          "triangles": 140
+        }
+      ]
+    },
+    {
+      "car": "HATCHBACK02",
+      "sha256": "8186b0aa3461e4ac041134df5b3e0903f228055ba6a9607696cee654d1651eaf",
+      "largest_mesh": {
+        "vertices": 699,
+        "triangles": 474
+      },
+      "body_meshes": [
+        {
+          "name": "HATCHBACK02_BODY_A",
+          "vertices": 699,
+          "triangles": 474
+        },
+        {
+          "name": "HATCHBACK02_BODY_B",
+          "vertices": 488,
+          "triangles": 300
+        },
+        {
+          "name": "HATCHBACK02_BODY_C",
+          "vertices": 206,
+          "triangles": 119
+        }
+      ]
+    },
+    {
+      "car": "HUMMER",
+      "sha256": "243bbd786728d56c480ab9d8a6a7a8c13fe7993f511dc0d7e2aa79f271724209",
+      "largest_mesh": {
+        "vertices": 1343,
+        "triangles": 1053
+      },
+      "body_meshes": [
+        {
+          "name": "HUMMER_KIT00_BODY_A",
+          "vertices": 738,
+          "triangles": 626
+        },
+        {
+          "name": "HUMMER_KIT00_BODY_B",
+          "vertices": 665,
+          "triangles": 486
+        },
+        {
+          "name": "HUMMER_KIT00_BODY_C",
+          "vertices": 363,
+          "triangles": 228
+        },
+        {
+          "name": "HUMMER_KIT00_BODY_D",
+          "vertices": 215,
+          "triangles": 122
+        }
+      ]
+    },
+    {
+      "car": "IMPREZAWRX",
+      "sha256": "c5c5a2832b7e82af19133d85125008eb9df8f25a1e96701323dd8a17f62b82de",
+      "largest_mesh": {
+        "vertices": 2518,
+        "triangles": 2144
+      },
+      "body_meshes": [
+        {
+          "name": "IMPREZAWRX_KIT00_BODY_A",
+          "vertices": 687,
+          "triangles": 660
+        },
+        {
+          "name": "IMPREZAWRX_KIT00_BODY_B",
+          "vertices": 576,
+          "triangles": 436
+        },
+        {
+          "name": "IMPREZAWRX_KIT00_BODY_C",
+          "vertices": 317,
+          "triangles": 236
+        },
+        {
+          "name": "IMPREZAWRX_KIT00_BODY_D",
+          "vertices": 201,
+          "triangles": 130
+        },
+        {
+          "name": "IMPREZAWRX_KITW01_BODY_A",
+          "vertices": 1868,
+          "triangles": 1598
+        },
+        {
+          "name": "IMPREZAWRX_KITW01_BODY_B",
+          "vertices": 1344,
+          "triangles": 992
+        },
+        {
+          "name": "IMPREZAWRX_KITW01_BODY_C",
+          "vertices": 667,
+          "triangles": 465
+        },
+        {
+          "name": "IMPREZAWRX_KITW01_BODY_D",
+          "vertices": 201,
+          "triangles": 130
+        },
+        {
+          "name": "IMPREZAWRX_KITW02_BODY_A",
+          "vertices": 2108,
+          "triangles": 1915
+        },
+        {
+          "name": "IMPREZAWRX_KITW02_BODY_B",
+          "vertices": 1302,
+          "triangles": 1178
+        },
+        {
+          "name": "IMPREZAWRX_KITW02_BODY_C",
+          "vertices": 770,
+          "triangles": 558
+        },
+        {
+          "name": "IMPREZAWRX_KITW02_BODY_D",
+          "vertices": 201,
+          "triangles": 130
+        },
+        {
+          "name": "IMPREZAWRX_KITW03_BODY_A",
+          "vertices": 2221,
+          "triangles": 1994
+        },
+        {
+          "name": "IMPREZAWRX_KITW03_BODY_B",
+          "vertices": 1462,
+          "triangles": 1220
+        },
+        {
+          "name": "IMPREZAWRX_KITW03_BODY_C",
+          "vertices": 765,
+          "triangles": 569
+        },
+        {
+          "name": "IMPREZAWRX_KITW03_BODY_D",
+          "vertices": 201,
+          "triangles": 130
+        },
+        {
+          "name": "IMPREZAWRX_KITW04_BODY_A",
+          "vertices": 2518,
+          "triangles": 2144
+        },
+        {
+          "name": "IMPREZAWRX_KITW04_BODY_B",
+          "vertices": 1704,
+          "triangles": 1312
+        },
+        {
+          "name": "IMPREZAWRX_KITW04_BODY_C",
+          "vertices": 801,
+          "triangles": 554
+        },
+        {
+          "name": "IMPREZAWRX_KITW04_BODY_D",
+          "vertices": 201,
+          "triangles": 130
+        }
+      ]
+    },
+    {
+      "car": "IS300",
+      "sha256": "af19747605a3c22e19911dc19d16c6f5d393a4183edff83b68441ca98d50869a",
+      "largest_mesh": {
+        "vertices": 2559,
+        "triangles": 1974
+      },
+      "body_meshes": [
+        {
+          "name": "IS300_KIT00_BODY_A",
+          "vertices": 717,
+          "triangles": 660
+        },
+        {
+          "name": "IS300_KIT00_BODY_B",
+          "vertices": 517,
+          "triangles": 395
+        },
+        {
+          "name": "IS300_KIT00_BODY_C",
+          "vertices": 212,
+          "triangles": 160
+        },
+        {
+          "name": "IS300_KIT00_BODY_D",
+          "vertices": 185,
+          "triangles": 116
+        },
+        {
+          "name": "IS300_KITW01_BODY_A",
+          "vertices": 2169,
+          "triangles": 1836
+        },
+        {
+          "name": "IS300_KITW01_BODY_B",
+          "vertices": 1389,
+          "triangles": 1030
+        },
+        {
+          "name": "IS300_KITW01_BODY_C",
+          "vertices": 716,
+          "triangles": 475
+        },
+        {
+          "name": "IS300_KITW01_BODY_D",
+          "vertices": 185,
+          "triangles": 116
+        },
+        {
+          "name": "IS300_KITW02_BODY_A",
+          "vertices": 2559,
+          "triangles": 1974
+        },
+        {
+          "name": "IS300_KITW02_BODY_B",
+          "vertices": 1642,
+          "triangles": 1129
+        },
+        {
+          "name": "IS300_KITW02_BODY_C",
+          "vertices": 857,
+          "triangles": 555
+        },
+        {
+          "name": "IS300_KITW02_BODY_D",
+          "vertices": 185,
+          "triangles": 116
+        },
+        {
+          "name": "IS300_KITW03_BODY_A",
+          "vertices": 1745,
+          "triangles": 1512
+        },
+        {
+          "name": "IS300_KITW03_BODY_B",
+          "vertices": 1125,
+          "triangles": 897
+        },
+        {
+          "name": "IS300_KITW03_BODY_C",
+          "vertices": 548,
+          "triangles": 377
+        },
+        {
+          "name": "IS300_KITW03_BODY_D",
+          "vertices": 185,
+          "triangles": 116
+        },
+        {
+          "name": "IS300_KITW04_BODY_A",
+          "vertices": 2014,
+          "triangles": 1736
+        },
+        {
+          "name": "IS300_KITW04_BODY_B",
+          "vertices": 1326,
+          "triangles": 973
+        },
+        {
+          "name": "IS300_KITW04_BODY_C",
+          "vertices": 590,
+          "triangles": 367
+        },
+        {
+          "name": "IS300_KITW04_BODY_D",
+          "vertices": 185,
+          "triangles": 116
+        }
+      ]
+    },
+    {
+      "car": "LANCEREVO8",
+      "sha256": "a844f3b92075cf46bd4c80bab68613c0bd7429511a6efa89daa43aad74ed3438",
+      "largest_mesh": {
+        "vertices": 2327,
+        "triangles": 1954
+      },
+      "body_meshes": [
+        {
+          "name": "LANCEREVO8_KIT00_BODY_A",
+          "vertices": 751,
+          "triangles": 709
+        },
+        {
+          "name": "LANCEREVO8_KIT00_BODY_B",
+          "vertices": 419,
+          "triangles": 301
+        },
+        {
+          "name": "LANCEREVO8_KIT00_BODY_C",
+          "vertices": 234,
+          "triangles": 156
+        },
+        {
+          "name": "LANCEREVO8_KIT00_BODY_D",
+          "vertices": 220,
+          "triangles": 120
+        },
+        {
+          "name": "LANCEREVO8_KITW01_BODY_A",
+          "vertices": 1624,
+          "triangles": 1387
+        },
+        {
+          "name": "LANCEREVO8_KITW01_BODY_B",
+          "vertices": 1008,
+          "triangles": 795
+        },
+        {
+          "name": "LANCEREVO8_KITW01_BODY_C",
+          "vertices": 542,
+          "triangles": 360
+        },
+        {
+          "name": "LANCEREVO8_KITW01_BODY_D",
+          "vertices": 220,
+          "triangles": 120
+        },
+        {
+          "name": "LANCEREVO8_KITW02_BODY_A",
+          "vertices": 2324,
+          "triangles": 2067
+        },
+        {
+          "name": "LANCEREVO8_KITW02_BODY_B",
+          "vertices": 1617,
+          "triangles": 1256
+        },
+        {
+          "name": "LANCEREVO8_KITW02_BODY_C",
+          "vertices": 843,
+          "triangles": 561
+        },
+        {
+          "name": "LANCEREVO8_KITW02_BODY_D",
+          "vertices": 220,
+          "triangles": 120
+        },
+        {
+          "name": "LANCEREVO8_KITW03_BODY_A",
+          "vertices": 2327,
+          "triangles": 1954
+        },
+        {
+          "name": "LANCEREVO8_KITW03_BODY_B",
+          "vertices": 1411,
+          "triangles": 1148
+        },
+        {
+          "name": "LANCEREVO8_KITW03_BODY_C",
+          "vertices": 733,
+          "triangles": 520
+        },
+        {
+          "name": "LANCEREVO8_KITW03_BODY_D",
+          "vertices": 220,
+          "triangles": 120
+        },
+        {
+          "name": "LANCEREVO8_KITW04_BODY_A",
+          "vertices": 2107,
+          "triangles": 1937
+        },
+        {
+          "name": "LANCEREVO8_KITW04_BODY_B",
+          "vertices": 1285,
+          "triangles": 1042
+        },
+        {
+          "name": "LANCEREVO8_KITW04_BODY_C",
+          "vertices": 660,
+          "triangles": 493
+        },
+        {
+          "name": "LANCEREVO8_KITW04_BODY_D",
+          "vertices": 220,
+          "triangles": 120
+        }
+      ]
+    },
+    {
+      "car": "MIATA",
+      "sha256": "c8b0bdfef2731b12030b4f281050d754810a001b51c5777a4098437e51075680",
+      "largest_mesh": {
+        "vertices": 2146,
+        "triangles": 1866
+      },
+      "body_meshes": [
+        {
+          "name": "MIATA_KIT00_BODY_A",
+          "vertices": 588,
+          "triangles": 564
+        },
+        {
+          "name": "MIATA_KIT00_BODY_B",
+          "vertices": 436,
+          "triangles": 372
+        },
+        {
+          "name": "MIATA_KIT00_BODY_C",
+          "vertices": 192,
+          "triangles": 164
+        },
+        {
+          "name": "MIATA_KIT00_BODY_D",
+          "vertices": 233,
+          "triangles": 177
+        },
+        {
+          "name": "MIATA_KITW01_BODY_A",
+          "vertices": 1803,
+          "triangles": 1687
+        },
+        {
+          "name": "MIATA_KITW01_BODY_B",
+          "vertices": 969,
+          "triangles": 892
+        },
+        {
+          "name": "MIATA_KITW01_BODY_C",
+          "vertices": 518,
+          "triangles": 408
+        },
+        {
+          "name": "MIATA_KITW01_BODY_D",
+          "vertices": 251,
+          "triangles": 181
+        },
+        {
+          "name": "MIATA_KITW02_BODY_A",
+          "vertices": 2035,
+          "triangles": 1723
+        },
+        {
+          "name": "MIATA_KITW02_BODY_B",
+          "vertices": 1194,
+          "triangles": 1006
+        },
+        {
+          "name": "MIATA_KITW02_BODY_C",
+          "vertices": 690,
+          "triangles": 541
+        },
+        {
+          "name": "MIATA_KITW02_BODY_D",
+          "vertices": 249,
+          "triangles": 181
+        },
+        {
+          "name": "MIATA_KITW03_BODY_A",
+          "vertices": 1935,
+          "triangles": 2002
+        },
+        {
+          "name": "MIATA_KITW03_BODY_B",
+          "vertices": 1179,
+          "triangles": 1104
+        },
+        {
+          "name": "MIATA_KITW03_BODY_C",
+          "vertices": 570,
+          "triangles": 416
+        },
+        {
+          "name": "MIATA_KITW03_BODY_D",
+          "vertices": 231,
+          "triangles": 177
+        },
+        {
+          "name": "MIATA_KITW04_BODY_A",
+          "vertices": 2146,
+          "triangles": 1866
+        },
+        {
+          "name": "MIATA_KITW04_BODY_B",
+          "vertices": 1423,
+          "triangles": 1120
+        },
+        {
+          "name": "MIATA_KITW04_BODY_C",
+          "vertices": 600,
+          "triangles": 404
+        },
+        {
+          "name": "MIATA_KITW04_BODY_D",
+          "vertices": 231,
+          "triangles": 177
+        }
+      ]
+    },
+    {
+      "car": "MINIVAN",
+      "sha256": "490ce9d05e6ce547d6dbbc962d7ba52dc05fe626733a02c818c4e0fb0b28befd",
+      "largest_mesh": {
+        "vertices": 763,
+        "triangles": 534
+      },
+      "body_meshes": [
+        {
+          "name": "MINIVAN_BODY_A",
+          "vertices": 763,
+          "triangles": 534
+        },
+        {
+          "name": "MINIVAN_BODY_B",
+          "vertices": 468,
+          "triangles": 311
+        },
+        {
+          "name": "MINIVAN_BODY_C",
+          "vertices": 269,
+          "triangles": 171
+        }
+      ]
+    },
+    {
+      "car": "MIRRORS_BODY",
+      "sha256": "52efee00e73fc12107cf7c9a9b3323ca255e56697aaa05d616e789da1b267cec",
+      "largest_mesh": {
+        "vertices": 222,
+        "triangles": 164
+      },
+      "body_meshes": [
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE01_A",
+          "vertices": 112,
+          "triangles": 80
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE01_B",
+          "vertices": 58,
+          "triangles": 41
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE01_C",
+          "vertices": 46,
+          "triangles": 26
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE01_CF",
+          "vertices": 126,
+          "triangles": 80
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE01_CF",
+          "vertices": 76,
+          "triangles": 41
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE01_CF",
+          "vertices": 52,
+          "triangles": 26
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE02_A",
+          "vertices": 136,
+          "triangles": 120
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE02_B",
+          "vertices": 92,
+          "triangles": 68
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE02_C",
+          "vertices": 36,
+          "triangles": 26
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE02_CF",
+          "vertices": 170,
+          "triangles": 120
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE02_CF",
+          "vertices": 114,
+          "triangles": 68
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE02_CF",
+          "vertices": 50,
+          "triangles": 26
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE03_A",
+          "vertices": 126,
+          "triangles": 128
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE03_B",
+          "vertices": 68,
+          "triangles": 68
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE03_C",
+          "vertices": 37,
+          "triangles": 34
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE03_CF",
+          "vertices": 154,
+          "triangles": 128
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE03_CF",
+          "vertices": 98,
+          "triangles": 68
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE03_CF",
+          "vertices": 55,
+          "triangles": 34
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE04_A",
+          "vertices": 118,
+          "triangles": 88
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE04_B",
+          "vertices": 66,
+          "triangles": 44
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE04_C",
+          "vertices": 40,
+          "triangles": 22
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE04_CF",
+          "vertices": 136,
+          "triangles": 88
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE04_CF",
+          "vertices": 83,
+          "triangles": 44
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE04_CF",
+          "vertices": 44,
+          "triangles": 22
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE05_A",
+          "vertices": 136,
+          "triangles": 108
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE05_B",
+          "vertices": 75,
+          "triangles": 50
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE05_C",
+          "vertices": 42,
+          "triangles": 26
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE05_CF",
+          "vertices": 161,
+          "triangles": 108
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE05_CF",
+          "vertices": 90,
+          "triangles": 50
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE05_CF",
+          "vertices": 50,
+          "triangles": 26
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE06_A",
+          "vertices": 108,
+          "triangles": 95
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE06_B",
+          "vertices": 64,
+          "triangles": 51
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE06_C",
+          "vertices": 32,
+          "triangles": 21
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE06_CF",
+          "vertices": 131,
+          "triangles": 95
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE06_CF",
+          "vertices": 87,
+          "triangles": 51
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE06_CF",
+          "vertices": 47,
+          "triangles": 21
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE07_A",
+          "vertices": 108,
+          "triangles": 102
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE07_B",
+          "vertices": 67,
+          "triangles": 60
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE07_C",
+          "vertices": 39,
+          "triangles": 26
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE07_CF",
+          "vertices": 138,
+          "triangles": 102
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE07_CF",
+          "vertices": 94,
+          "triangles": 60
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE07_CF",
+          "vertices": 51,
+          "triangles": 26
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE08_A",
+          "vertices": 72,
+          "triangles": 72
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE08_B",
+          "vertices": 46,
+          "triangles": 37
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE08_C",
+          "vertices": 33,
+          "triangles": 19
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE08_CF",
+          "vertices": 97,
+          "triangles": 72
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE08_CF",
+          "vertices": 69,
+          "triangles": 37
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE08_CF",
+          "vertices": 45,
+          "triangles": 19
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE09_A",
+          "vertices": 73,
+          "triangles": 56
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE09_B",
+          "vertices": 42,
+          "triangles": 30
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE09_C",
+          "vertices": 30,
+          "triangles": 16
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE09_CF",
+          "vertices": 84,
+          "triangles": 56
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE09_CF",
+          "vertices": 48,
+          "triangles": 30
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE09_CF",
+          "vertices": 30,
+          "triangles": 16
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE10_A",
+          "vertices": 96,
+          "triangles": 76
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE10_B",
+          "vertices": 57,
+          "triangles": 40
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE10_C",
+          "vertices": 36,
+          "triangles": 20
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE10_CF",
+          "vertices": 125,
+          "triangles": 76
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE10_CF",
+          "vertices": 74,
+          "triangles": 40
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE10_CF",
+          "vertices": 40,
+          "triangles": 20
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE11_A",
+          "vertices": 139,
+          "triangles": 109
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE11_B",
+          "vertices": 77,
+          "triangles": 55
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE11_C",
+          "vertices": 39,
+          "triangles": 25
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE11_CF",
+          "vertices": 159,
+          "triangles": 109
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE11_CF",
+          "vertices": 99,
+          "triangles": 55
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE11_CF",
+          "vertices": 43,
+          "triangles": 25
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE12_A",
+          "vertices": 166,
+          "triangles": 132
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE12_B",
+          "vertices": 97,
+          "triangles": 67
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE12_C",
+          "vertices": 47,
+          "triangles": 29
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE12_CF",
+          "vertices": 212,
+          "triangles": 132
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE12_CF",
+          "vertices": 127,
+          "triangles": 67
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE12_CF",
+          "vertices": 65,
+          "triangles": 29
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE13_A",
+          "vertices": 136,
+          "triangles": 132
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE13_B",
+          "vertices": 82,
+          "triangles": 66
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE13_C",
+          "vertices": 48,
+          "triangles": 32
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE13_CF",
+          "vertices": 168,
+          "triangles": 132
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE13_CF",
+          "vertices": 102,
+          "triangles": 66
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE13_CF",
+          "vertices": 60,
+          "triangles": 32
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE14_A",
+          "vertices": 86,
+          "triangles": 70
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE14_B",
+          "vertices": 58,
+          "triangles": 44
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE14_C",
+          "vertices": 52,
+          "triangles": 28
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE14_CF",
+          "vertices": 107,
+          "triangles": 70
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE14_CF",
+          "vertices": 79,
+          "triangles": 44
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE14_CF",
+          "vertices": 64,
+          "triangles": 28
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE15_A",
+          "vertices": 119,
+          "triangles": 88
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE15_B",
+          "vertices": 68,
+          "triangles": 43
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE15_C",
+          "vertices": 42,
+          "triangles": 23
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE15_CF",
+          "vertices": 144,
+          "triangles": 88
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE15_CF",
+          "vertices": 83,
+          "triangles": 43
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE15_CF",
+          "vertices": 47,
+          "triangles": 23
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE16_A",
+          "vertices": 94,
+          "triangles": 74
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE16_B",
+          "vertices": 59,
+          "triangles": 45
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE16_C",
+          "vertices": 38,
+          "triangles": 22
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE16_CF",
+          "vertices": 112,
+          "triangles": 74
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE16_CF",
+          "vertices": 75,
+          "triangles": 45
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE16_CF",
+          "vertices": 42,
+          "triangles": 22
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE17_A",
+          "vertices": 118,
+          "triangles": 94
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE17_B",
+          "vertices": 64,
+          "triangles": 48
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE17_C",
+          "vertices": 44,
+          "triangles": 26
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE17_CF",
+          "vertices": 147,
+          "triangles": 94
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE17_CF",
+          "vertices": 88,
+          "triangles": 48
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE17_CF",
+          "vertices": 54,
+          "triangles": 26
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE18_A",
+          "vertices": 119,
+          "triangles": 115
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE18_B",
+          "vertices": 78,
+          "triangles": 63
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE18_C",
+          "vertices": 58,
+          "triangles": 38
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE18_CF",
+          "vertices": 135,
+          "triangles": 115
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE18_CF",
+          "vertices": 91,
+          "triangles": 63
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE18_CF",
+          "vertices": 74,
+          "triangles": 38
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE19_A",
+          "vertices": 118,
+          "triangles": 76
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE19_B",
+          "vertices": 72,
+          "triangles": 40
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE19_C",
+          "vertices": 48,
+          "triangles": 20
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE19_CF",
+          "vertices": 124,
+          "triangles": 76
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE19_CF",
+          "vertices": 76,
+          "triangles": 40
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE19_CF",
+          "vertices": 50,
+          "triangles": 20
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE20_A",
+          "vertices": 187,
+          "triangles": 164
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE20_B",
+          "vertices": 117,
+          "triangles": 90
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE20_C",
+          "vertices": 74,
+          "triangles": 44
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE20_CF",
+          "vertices": 222,
+          "triangles": 164
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE20_CF",
+          "vertices": 154,
+          "triangles": 90
+        },
+        {
+          "name": "MIRROR_BODY_LEFT_STYLE20_CF",
+          "vertices": 88,
+          "triangles": 44
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE01_A",
+          "vertices": 112,
+          "triangles": 80
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE01_B",
+          "vertices": 58,
+          "triangles": 41
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE01_C",
+          "vertices": 46,
+          "triangles": 26
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE01_C",
+          "vertices": 126,
+          "triangles": 80
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE01_C",
+          "vertices": 76,
+          "triangles": 41
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE01_C",
+          "vertices": 52,
+          "triangles": 26
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE02_A",
+          "vertices": 136,
+          "triangles": 120
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE02_B",
+          "vertices": 92,
+          "triangles": 68
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE02_C",
+          "vertices": 36,
+          "triangles": 26
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE02_C",
+          "vertices": 170,
+          "triangles": 120
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE02_C",
+          "vertices": 114,
+          "triangles": 68
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE02_C",
+          "vertices": 50,
+          "triangles": 26
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE03_A",
+          "vertices": 126,
+          "triangles": 128
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE03_B",
+          "vertices": 68,
+          "triangles": 68
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE03_C",
+          "vertices": 37,
+          "triangles": 34
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE03_C",
+          "vertices": 154,
+          "triangles": 128
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE03_C",
+          "vertices": 98,
+          "triangles": 68
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE03_C",
+          "vertices": 55,
+          "triangles": 34
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE04_A",
+          "vertices": 118,
+          "triangles": 88
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE04_B",
+          "vertices": 66,
+          "triangles": 44
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE04_C",
+          "vertices": 40,
+          "triangles": 22
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE04_C",
+          "vertices": 136,
+          "triangles": 88
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE04_C",
+          "vertices": 83,
+          "triangles": 44
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE04_C",
+          "vertices": 44,
+          "triangles": 22
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE05_A",
+          "vertices": 136,
+          "triangles": 108
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE05_B",
+          "vertices": 75,
+          "triangles": 50
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE05_C",
+          "vertices": 42,
+          "triangles": 26
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE05_C",
+          "vertices": 161,
+          "triangles": 108
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE05_C",
+          "vertices": 90,
+          "triangles": 50
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE05_C",
+          "vertices": 50,
+          "triangles": 26
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE06_A",
+          "vertices": 108,
+          "triangles": 95
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE06_B",
+          "vertices": 64,
+          "triangles": 51
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE06_C",
+          "vertices": 32,
+          "triangles": 21
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE06_C",
+          "vertices": 131,
+          "triangles": 95
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE06_C",
+          "vertices": 87,
+          "triangles": 51
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE06_C",
+          "vertices": 47,
+          "triangles": 21
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE07_A",
+          "vertices": 108,
+          "triangles": 102
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE07_B",
+          "vertices": 67,
+          "triangles": 60
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE07_C",
+          "vertices": 39,
+          "triangles": 26
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE07_C",
+          "vertices": 138,
+          "triangles": 102
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE07_C",
+          "vertices": 94,
+          "triangles": 60
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE07_C",
+          "vertices": 51,
+          "triangles": 26
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE08_A",
+          "vertices": 72,
+          "triangles": 72
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE08_B",
+          "vertices": 46,
+          "triangles": 37
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE08_C",
+          "vertices": 33,
+          "triangles": 19
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE08_C",
+          "vertices": 97,
+          "triangles": 72
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE08_C",
+          "vertices": 69,
+          "triangles": 37
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE08_C",
+          "vertices": 45,
+          "triangles": 19
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE09_A",
+          "vertices": 73,
+          "triangles": 56
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE09_B",
+          "vertices": 42,
+          "triangles": 30
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE09_C",
+          "vertices": 30,
+          "triangles": 16
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE09_C",
+          "vertices": 84,
+          "triangles": 56
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE09_C",
+          "vertices": 48,
+          "triangles": 30
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE09_C",
+          "vertices": 30,
+          "triangles": 16
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE10_A",
+          "vertices": 96,
+          "triangles": 76
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE10_B",
+          "vertices": 57,
+          "triangles": 40
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE10_C",
+          "vertices": 36,
+          "triangles": 20
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE10_C",
+          "vertices": 125,
+          "triangles": 76
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE10_C",
+          "vertices": 74,
+          "triangles": 40
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE10_C",
+          "vertices": 40,
+          "triangles": 20
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE11_A",
+          "vertices": 139,
+          "triangles": 109
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE11_B",
+          "vertices": 77,
+          "triangles": 55
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE11_C",
+          "vertices": 39,
+          "triangles": 25
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE11_C",
+          "vertices": 159,
+          "triangles": 109
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE11_C",
+          "vertices": 99,
+          "triangles": 55
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE11_C",
+          "vertices": 43,
+          "triangles": 25
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE12_A",
+          "vertices": 166,
+          "triangles": 132
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE12_B",
+          "vertices": 97,
+          "triangles": 67
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE12_C",
+          "vertices": 47,
+          "triangles": 29
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE12_C",
+          "vertices": 212,
+          "triangles": 132
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE12_C",
+          "vertices": 127,
+          "triangles": 67
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE12_C",
+          "vertices": 65,
+          "triangles": 29
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE13_A",
+          "vertices": 136,
+          "triangles": 132
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE13_B",
+          "vertices": 82,
+          "triangles": 66
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE13_C",
+          "vertices": 48,
+          "triangles": 32
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE13_C",
+          "vertices": 168,
+          "triangles": 132
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE13_C",
+          "vertices": 102,
+          "triangles": 66
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE13_C",
+          "vertices": 60,
+          "triangles": 32
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE14_A",
+          "vertices": 86,
+          "triangles": 70
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE14_B",
+          "vertices": 58,
+          "triangles": 44
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE14_C",
+          "vertices": 50,
+          "triangles": 28
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE14_C",
+          "vertices": 107,
+          "triangles": 70
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE14_C",
+          "vertices": 79,
+          "triangles": 44
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE14_C",
+          "vertices": 64,
+          "triangles": 28
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE15_A",
+          "vertices": 119,
+          "triangles": 88
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE15_B",
+          "vertices": 68,
+          "triangles": 43
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE15_C",
+          "vertices": 42,
+          "triangles": 23
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE15_C",
+          "vertices": 144,
+          "triangles": 88
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE15_C",
+          "vertices": 83,
+          "triangles": 43
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE15_C",
+          "vertices": 47,
+          "triangles": 23
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE16_A",
+          "vertices": 94,
+          "triangles": 74
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE16_B",
+          "vertices": 59,
+          "triangles": 45
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE16_C",
+          "vertices": 38,
+          "triangles": 22
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE16_C",
+          "vertices": 112,
+          "triangles": 74
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE16_C",
+          "vertices": 75,
+          "triangles": 45
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE16_C",
+          "vertices": 42,
+          "triangles": 22
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE17_A",
+          "vertices": 118,
+          "triangles": 94
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE17_B",
+          "vertices": 64,
+          "triangles": 48
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE17_C",
+          "vertices": 44,
+          "triangles": 26
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE17_C",
+          "vertices": 147,
+          "triangles": 94
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE17_C",
+          "vertices": 88,
+          "triangles": 48
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE17_C",
+          "vertices": 54,
+          "triangles": 26
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE18_A",
+          "vertices": 119,
+          "triangles": 115
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE18_B",
+          "vertices": 78,
+          "triangles": 63
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE18_C",
+          "vertices": 58,
+          "triangles": 38
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE18_C",
+          "vertices": 135,
+          "triangles": 115
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE18_C",
+          "vertices": 91,
+          "triangles": 63
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE18_C",
+          "vertices": 74,
+          "triangles": 38
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE19_A",
+          "vertices": 118,
+          "triangles": 76
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE19_B",
+          "vertices": 72,
+          "triangles": 40
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE19_C",
+          "vertices": 48,
+          "triangles": 20
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE19_C",
+          "vertices": 124,
+          "triangles": 76
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE19_C",
+          "vertices": 76,
+          "triangles": 40
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE19_C",
+          "vertices": 50,
+          "triangles": 20
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE20_A",
+          "vertices": 187,
+          "triangles": 164
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE20_B",
+          "vertices": 117,
+          "triangles": 90
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE20_C",
+          "vertices": 74,
+          "triangles": 44
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE20_C",
+          "vertices": 222,
+          "triangles": 164
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE20_C",
+          "vertices": 154,
+          "triangles": 90
+        },
+        {
+          "name": "MIRROR_BODY_RIGHT_STYLE20_C",
+          "vertices": 88,
+          "triangles": 44
+        }
+      ]
+    },
+    {
+      "car": "MIRRORS_HUMMER",
+      "sha256": "9327030975fa36a8f576cf0134da12afdf90ca78fe68ea33c7705c170bfa0ba2",
+      "largest_mesh": {
+        "vertices": 156,
+        "triangles": 120
+      },
+      "body_meshes": []
+    },
+    {
+      "car": "MIRRORS_POST",
+      "sha256": "03d4d10c6139d45e4e15e075128ccfaa78d1d2a9abc871d8d8822fc84b9016b8",
+      "largest_mesh": {
+        "vertices": 182,
+        "triangles": 116
+      },
+      "body_meshes": []
+    },
+    {
+      "car": "MIRRORS_SUV",
+      "sha256": "f8bd8087d89b2a9b3544642e4e0302fb70cfe37f53ef473cfcdfbbbff613e75c",
+      "largest_mesh": {
+        "vertices": 204,
+        "triangles": 132
+      },
+      "body_meshes": []
+    },
+    {
+      "car": "MUSTANGGT",
+      "sha256": "2a587eb67b5c25794c563694c3eafbc21281beddaafe919b665523046bd20745",
+      "largest_mesh": {
+        "vertices": 2752,
+        "triangles": 2099
+      },
+      "body_meshes": [
+        {
+          "name": "MUSTANGGT_KIT00_BODY_A",
+          "vertices": 622,
+          "triangles": 540
+        },
+        {
+          "name": "MUSTANGGT_KIT00_BODY_B",
+          "vertices": 470,
+          "triangles": 352
+        },
+        {
+          "name": "MUSTANGGT_KIT00_BODY_C",
+          "vertices": 325,
+          "triangles": 224
+        },
+        {
+          "name": "MUSTANGGT_KIT00_BODY_D",
+          "vertices": 198,
+          "triangles": 123
+        },
+        {
+          "name": "MUSTANGGT_KITW01_BODY_A",
+          "vertices": 2618,
+          "triangles": 2088
+        },
+        {
+          "name": "MUSTANGGT_KITW01_BODY_B",
+          "vertices": 1494,
+          "triangles": 1168
+        },
+        {
+          "name": "MUSTANGGT_KITW01_BODY_C",
+          "vertices": 866,
+          "triangles": 656
+        },
+        {
+          "name": "MUSTANGGT_KITW01_BODY_D",
+          "vertices": 170,
+          "triangles": 108
+        },
+        {
+          "name": "MUSTANGGT_KITW02_BODY_A",
+          "vertices": 2351,
+          "triangles": 2060
+        },
+        {
+          "name": "MUSTANGGT_KITW02_BODY_B",
+          "vertices": 1574,
+          "triangles": 1260
+        },
+        {
+          "name": "MUSTANGGT_KITW02_BODY_C",
+          "vertices": 862,
+          "triangles": 635
+        },
+        {
+          "name": "MUSTANGGT_KITW02_BODY_D",
+          "vertices": 170,
+          "triangles": 108
+        },
+        {
+          "name": "MUSTANGGT_KITW03_BODY_A",
+          "vertices": 2697,
+          "triangles": 2012
+        },
+        {
+          "name": "MUSTANGGT_KITW03_BODY_B",
+          "vertices": 1686,
+          "triangles": 1221
+        },
+        {
+          "name": "MUSTANGGT_KITW03_BODY_C",
+          "vertices": 872,
+          "triangles": 598
+        },
+        {
+          "name": "MUSTANGGT_KITW03_BODY_D",
+          "vertices": 170,
+          "triangles": 108
+        },
+        {
+          "name": "MUSTANGGT_KITW04_BODY_A",
+          "vertices": 2752,
+          "triangles": 2099
+        },
+        {
+          "name": "MUSTANGGT_KITW04_BODY_B",
+          "vertices": 1775,
+          "triangles": 1270
+        },
+        {
+          "name": "MUSTANGGT_KITW04_BODY_C",
+          "vertices": 929,
+          "triangles": 639
+        },
+        {
+          "name": "MUSTANGGT_KITW04_BODY_D",
+          "vertices": 170,
+          "triangles": 108
+        }
+      ]
+    },
+    {
+      "car": "NAVIGATOR",
+      "sha256": "fea420754cc5f1df5025852364be67c77c016c15c197c307f2843d8152260e0c",
+      "largest_mesh": {
+        "vertices": 1477,
+        "triangles": 1030
+      },
+      "body_meshes": [
+        {
+          "name": "NAVIGATOR_KIT00_BODY_A",
+          "vertices": 615,
+          "triangles": 544
+        },
+        {
+          "name": "NAVIGATOR_KIT00_BODY_B",
+          "vertices": 563,
+          "triangles": 425
+        },
+        {
+          "name": "NAVIGATOR_KIT00_BODY_C",
+          "vertices": 328,
+          "triangles": 246
+        },
+        {
+          "name": "NAVIGATOR_KIT00_BODY_D",
+          "vertices": 192,
+          "triangles": 124
+        }
+      ]
+    },
+    {
+      "car": "PANELVAN",
+      "sha256": "c7d44f92315d080d45212ad6fbde740ae8e1c180c3f4ee02efc604eb881c507d",
+      "largest_mesh": {
+        "vertices": 620,
+        "triangles": 440
+      },
+      "body_meshes": [
+        {
+          "name": "PANELVAN_BODY_A",
+          "vertices": 620,
+          "triangles": 440
+        },
+        {
+          "name": "PANELVAN_BODY_B",
+          "vertices": 456,
+          "triangles": 270
+        },
+        {
+          "name": "PANELVAN_BODY_C",
+          "vertices": 312,
+          "triangles": 170
+        }
+      ]
+    },
+    {
+      "car": "PARCELVAN",
+      "sha256": "3311e5155b8da72d73870f9dbae3ea7fc533c6154b1b68a43287258b1fc58081",
+      "largest_mesh": {
+        "vertices": 785,
+        "triangles": 458
+      },
+      "body_meshes": [
+        {
+          "name": "PARCELVAN_BODY_A",
+          "vertices": 785,
+          "triangles": 458
+        },
+        {
+          "name": "PARCELVAN_BODY_B",
+          "vertices": 363,
+          "triangles": 198
+        },
+        {
+          "name": "PARCELVAN_BODY_C",
+          "vertices": 307,
+          "triangles": 158
+        }
+      ]
+    },
+    {
+      "car": "PEUGOT",
+      "sha256": "3bd6e6bc66b67e45dde327714b0220f98c0813064dfbdbc7ffa038c250446357",
+      "largest_mesh": {
+        "vertices": 2335,
+        "triangles": 1909
+      },
+      "body_meshes": [
+        {
+          "name": "PEUGOT_KIT00_BODY_A",
+          "vertices": 631,
+          "triangles": 596
+        },
+        {
+          "name": "PEUGOT_KIT00_BODY_B",
+          "vertices": 536,
+          "triangles": 470
+        },
+        {
+          "name": "PEUGOT_KIT00_BODY_C",
+          "vertices": 222,
+          "triangles": 174
+        },
+        {
+          "name": "PEUGOT_KIT00_BODY_D",
+          "vertices": 337,
+          "triangles": 216
+        },
+        {
+          "name": "PEUGOT_KITW01_BODY_A",
+          "vertices": 1834,
+          "triangles": 1808
+        },
+        {
+          "name": "PEUGOT_KITW01_BODY_B",
+          "vertices": 1016,
+          "triangles": 950
+        },
+        {
+          "name": "PEUGOT_KITW01_BODY_C",
+          "vertices": 425,
+          "triangles": 368
+        },
+        {
+          "name": "PEUGOT_KITW01_BODY_D",
+          "vertices": 319,
+          "triangles": 216
+        },
+        {
+          "name": "PEUGOT_KITW02_BODY_A",
+          "vertices": 2335,
+          "triangles": 1909
+        },
+        {
+          "name": "PEUGOT_KITW02_BODY_B",
+          "vertices": 1458,
+          "triangles": 1159
+        },
+        {
+          "name": "PEUGOT_KITW02_BODY_C",
+          "vertices": 593,
+          "triangles": 448
+        },
+        {
+          "name": "PEUGOT_KITW02_BODY_D",
+          "vertices": 341,
+          "triangles": 216
+        },
+        {
+          "name": "PEUGOT_KITW03_BODY_A",
+          "vertices": 2033,
+          "triangles": 1844
+        },
+        {
+          "name": "PEUGOT_KITW03_BODY_B",
+          "vertices": 1186,
+          "triangles": 897
+        },
+        {
+          "name": "PEUGOT_KITW03_BODY_C",
+          "vertices": 720,
+          "triangles": 481
+        },
+        {
+          "name": "PEUGOT_KITW03_BODY_D",
+          "vertices": 341,
+          "triangles": 216
+        },
+        {
+          "name": "PEUGOT_KITW04_BODY_A",
+          "vertices": 2104,
+          "triangles": 1840
+        },
+        {
+          "name": "PEUGOT_KITW04_BODY_B",
+          "vertices": 1162,
+          "triangles": 919
+        },
+        {
+          "name": "PEUGOT_KITW04_BODY_C",
+          "vertices": 604,
+          "triangles": 434
+        },
+        {
+          "name": "PEUGOT_KITW04_BODY_D",
+          "vertices": 341,
+          "triangles": 216
+        }
+      ]
+    },
+    {
+      "car": "PEUGOT106",
+      "sha256": "be05a03516f6e4c3a06cabcf2e150dc0f6a5cd40e91940847e257867c178ae33",
+      "largest_mesh": {
+        "vertices": 2288,
+        "triangles": 1918
+      },
+      "body_meshes": [
+        {
+          "name": "PEUGOT106_KIT00_BODY_A",
+          "vertices": 574,
+          "triangles": 508
+        },
+        {
+          "name": "PEUGOT106_KIT00_BODY_B",
+          "vertices": 546,
+          "triangles": 422
+        },
+        {
+          "name": "PEUGOT106_KIT00_BODY_C",
+          "vertices": 348,
+          "triangles": 258
+        },
+        {
+          "name": "PEUGOT106_KIT00_BODY_D",
+          "vertices": 182,
+          "triangles": 126
+        },
+        {
+          "name": "PEUGOT106_KITW01_BODY_A",
+          "vertices": 2097,
+          "triangles": 1654
+        },
+        {
+          "name": "PEUGOT106_KITW01_BODY_B",
+          "vertices": 1480,
+          "triangles": 1092
+        },
+        {
+          "name": "PEUGOT106_KITW01_BODY_C",
+          "vertices": 705,
+          "triangles": 451
+        },
+        {
+          "name": "PEUGOT106_KITW01_BODY_D",
+          "vertices": 188,
+          "triangles": 126
+        },
+        {
+          "name": "PEUGOT106_KITW02_BODY_A",
+          "vertices": 2084,
+          "triangles": 1800
+        },
+        {
+          "name": "PEUGOT106_KITW02_BODY_B",
+          "vertices": 1498,
+          "triangles": 1163
+        },
+        {
+          "name": "PEUGOT106_KITW02_BODY_C",
+          "vertices": 662,
+          "triangles": 422
+        },
+        {
+          "name": "PEUGOT106_KITW02_BODY_D",
+          "vertices": 188,
+          "triangles": 126
+        },
+        {
+          "name": "PEUGOT106_KITW03_BODY_A",
+          "vertices": 2288,
+          "triangles": 1918
+        },
+        {
+          "name": "PEUGOT106_KITW03_BODY_B",
+          "vertices": 1576,
+          "triangles": 1224
+        },
+        {
+          "name": "PEUGOT106_KITW03_BODY_C",
+          "vertices": 829,
+          "triangles": 561
+        },
+        {
+          "name": "PEUGOT106_KITW03_BODY_D",
+          "vertices": 188,
+          "triangles": 126
+        },
+        {
+          "name": "PEUGOT106_KITW04_BODY_A",
+          "vertices": 2163,
+          "triangles": 1806
+        },
+        {
+          "name": "PEUGOT106_KITW04_BODY_B",
+          "vertices": 1400,
+          "triangles": 1105
+        },
+        {
+          "name": "PEUGOT106_KITW04_BODY_C",
+          "vertices": 722,
+          "triangles": 493
+        },
+        {
+          "name": "PEUGOT106_KITW04_BODY_D",
+          "vertices": 188,
+          "triangles": 126
+        }
+      ]
+    },
+    {
+      "car": "PICKUP",
+      "sha256": "fa0d837e0d48aa1e358c0f6d8b1eb850c9bb8de92dec1b24b9ec87c152992a73",
+      "largest_mesh": {
+        "vertices": 786,
+        "triangles": 523
+      },
+      "body_meshes": [
+        {
+          "name": "PICKUP_BODY_A",
+          "vertices": 786,
+          "triangles": 523
+        },
+        {
+          "name": "PICKUP_BODY_B",
+          "vertices": 489,
+          "triangles": 312
+        },
+        {
+          "name": "PICKUP_BODY_C",
+          "vertices": 194,
+          "triangles": 112
+        }
+      ]
+    },
+    {
+      "car": "PLATES",
+      "sha256": "6a78e3c3dca4f72dae671d3c4fa109b243158c890b4ad96a233ec5c469a8804c",
+      "largest_mesh": {
+        "vertices": 24,
+        "triangles": 30
+      },
+      "body_meshes": []
+    },
+    {
+      "car": "ROOF",
+      "sha256": "5e4197fc11397751d0cd6ac72d980b96fd7c4bf4ab9d8265479a3391000d8912",
+      "largest_mesh": {
+        "vertices": 612,
+        "triangles": 352
+      },
+      "body_meshes": []
+    },
+    {
+      "car": "RX7",
+      "sha256": "8ba07105d1c20ce71edd09247b776e49bb97bab45039c39b7a64a2ebaee88ab6",
+      "largest_mesh": {
+        "vertices": 2189,
+        "triangles": 1843
+      },
+      "body_meshes": [
+        {
+          "name": "RX7_KIT00_BODY_A",
+          "vertices": 446,
+          "triangles": 448
+        },
+        {
+          "name": "RX7_KIT00_BODY_B",
+          "vertices": 350,
+          "triangles": 326
+        },
+        {
+          "name": "RX7_KIT00_BODY_C",
+          "vertices": 226,
+          "triangles": 186
+        },
+        {
+          "name": "RX7_KIT00_BODY_D",
+          "vertices": 310,
+          "triangles": 198
+        },
+        {
+          "name": "RX7_KITW01_BODY_A",
+          "vertices": 2097,
+          "triangles": 1921
+        },
+        {
+          "name": "RX7_KITW01_BODY_B",
+          "vertices": 1230,
+          "triangles": 1056
+        },
+        {
+          "name": "RX7_KITW01_BODY_C",
+          "vertices": 786,
+          "triangles": 588
+        },
+        {
+          "name": "RX7_KITW01_BODY_D",
+          "vertices": 308,
+          "triangles": 198
+        },
+        {
+          "name": "RX7_KITW02_BODY_A",
+          "vertices": 2189,
+          "triangles": 1843
+        },
+        {
+          "name": "RX7_KITW02_BODY_B",
+          "vertices": 1284,
+          "triangles": 996
+        },
+        {
+          "name": "RX7_KITW02_BODY_C",
+          "vertices": 648,
+          "triangles": 449
+        },
+        {
+          "name": "RX7_KITW02_BODY_D",
+          "vertices": 308,
+          "triangles": 198
+        },
+        {
+          "name": "RX7_KITW03_BODY_A",
+          "vertices": 1711,
+          "triangles": 1735
+        },
+        {
+          "name": "RX7_KITW03_BODY_B",
+          "vertices": 1096,
+          "triangles": 1034
+        },
+        {
+          "name": "RX7_KITW03_BODY_C",
+          "vertices": 621,
+          "triangles": 521
+        },
+        {
+          "name": "RX7_KITW03_BODY_D",
+          "vertices": 310,
+          "triangles": 198
+        },
+        {
+          "name": "RX7_KITW04_BODY_A",
+          "vertices": 2052,
+          "triangles": 1955
+        },
+        {
+          "name": "RX7_KITW04_BODY_B",
+          "vertices": 1306,
+          "triangles": 1141
+        },
+        {
+          "name": "RX7_KITW04_BODY_C",
+          "vertices": 728,
+          "triangles": 526
+        },
+        {
+          "name": "RX7_KITW04_BODY_D",
+          "vertices": 310,
+          "triangles": 198
+        }
+      ]
+    },
+    {
+      "car": "RX8",
+      "sha256": "0b578b23467abf8fe00280bfbbce4a89409ce557ebbb0f92896c2c5b5b37c89c",
+      "largest_mesh": {
+        "vertices": 2507,
+        "triangles": 1963
+      },
+      "body_meshes": [
+        {
+          "name": "RX8_KIT00_BODY_A",
+          "vertices": 678,
+          "triangles": 620
+        },
+        {
+          "name": "RX8_KIT00_BODY_B",
+          "vertices": 583,
+          "triangles": 461
+        },
+        {
+          "name": "RX8_KIT00_BODY_C",
+          "vertices": 242,
+          "triangles": 152
+        },
+        {
+          "name": "RX8_KIT00_BODY_D",
+          "vertices": 212,
+          "triangles": 138
+        },
+        {
+          "name": "RX8_KITW01_BODY_A",
+          "vertices": 1927,
+          "triangles": 1612
+        },
+        {
+          "name": "RX8_KITW01_BODY_B",
+          "vertices": 1399,
+          "triangles": 1117
+        },
+        {
+          "name": "RX8_KITW01_BODY_C",
+          "vertices": 917,
+          "triangles": 641
+        },
+        {
+          "name": "RX8_KITW01_BODY_D",
+          "vertices": 212,
+          "triangles": 138
+        },
+        {
+          "name": "RX8_KITW02_BODY_A",
+          "vertices": 2054,
+          "triangles": 1584
+        },
+        {
+          "name": "RX8_KITW02_BODY_B",
+          "vertices": 1397,
+          "triangles": 946
+        },
+        {
+          "name": "RX8_KITW02_BODY_C",
+          "vertices": 574,
+          "triangles": 378
+        },
+        {
+          "name": "RX8_KITW02_BODY_D",
+          "vertices": 212,
+          "triangles": 138
+        },
+        {
+          "name": "RX8_KITW03_BODY_A",
+          "vertices": 1853,
+          "triangles": 1556
+        },
+        {
+          "name": "RX8_KITW03_BODY_B",
+          "vertices": 1309,
+          "triangles": 954
+        },
+        {
+          "name": "RX8_KITW03_BODY_C",
+          "vertices": 637,
+          "triangles": 388
+        },
+        {
+          "name": "RX8_KITW03_BODY_D",
+          "vertices": 212,
+          "triangles": 138
+        },
+        {
+          "name": "RX8_KITW04_BODY_A",
+          "vertices": 2507,
+          "triangles": 1963
+        },
+        {
+          "name": "RX8_KITW04_BODY_B",
+          "vertices": 1665,
+          "triangles": 1117
+        },
+        {
+          "name": "RX8_KITW04_BODY_C",
+          "vertices": 762,
+          "triangles": 473
+        },
+        {
+          "name": "RX8_KITW04_BODY_D",
+          "vertices": 212,
+          "triangles": 138
+        }
+      ]
+    },
+    {
+      "car": "SENTRA",
+      "sha256": "a5b271f49e5b410c51deced40d06b93bcf7335b19e90af285f7f9e628a2bd74e",
+      "largest_mesh": {
+        "vertices": 2378,
+        "triangles": 2026
+      },
+      "body_meshes": [
+        {
+          "name": "SENTRA_KIT00_BODY_A",
+          "vertices": 508,
+          "triangles": 488
+        },
+        {
+          "name": "SENTRA_KIT00_BODY_B",
+          "vertices": 364,
+          "triangles": 310
+        },
+        {
+          "name": "SENTRA_KIT00_BODY_C",
+          "vertices": 143,
+          "triangles": 97
+        },
+        {
+          "name": "SENTRA_KIT00_BODY_D",
+          "vertices": 267,
+          "triangles": 208
+        },
+        {
+          "name": "SENTRA_KITW01_BODY_A",
+          "vertices": 1385,
+          "triangles": 1215
+        },
+        {
+          "name": "SENTRA_KITW01_BODY_B",
+          "vertices": 902,
+          "triangles": 680
+        },
+        {
+          "name": "SENTRA_KITW01_BODY_C",
+          "vertices": 455,
+          "triangles": 308
+        },
+        {
+          "name": "SENTRA_KITW01_BODY_D",
+          "vertices": 257,
+          "triangles": 206
+        },
+        {
+          "name": "SENTRA_KITW02_BODY_A",
+          "vertices": 2378,
+          "triangles": 2026
+        },
+        {
+          "name": "SENTRA_KITW02_BODY_B",
+          "vertices": 1357,
+          "triangles": 1069
+        },
+        {
+          "name": "SENTRA_KITW02_BODY_C",
+          "vertices": 542,
+          "triangles": 412
+        },
+        {
+          "name": "SENTRA_KITW02_BODY_D",
+          "vertices": 257,
+          "triangles": 206
+        },
+        {
+          "name": "SENTRA_KITW03_BODY_A",
+          "vertices": 1924,
+          "triangles": 1786
+        },
+        {
+          "name": "SENTRA_KITW03_BODY_B",
+          "vertices": 1157,
+          "triangles": 1033
+        },
+        {
+          "name": "SENTRA_KITW03_BODY_C",
+          "vertices": 598,
+          "triangles": 450
+        },
+        {
+          "name": "SENTRA_KITW03_BODY_D",
+          "vertices": 257,
+          "triangles": 206
+        },
+        {
+          "name": "SENTRA_KITW04_BODY_A",
+          "vertices": 2185,
+          "triangles": 1846
+        },
+        {
+          "name": "SENTRA_KITW04_BODY_B",
+          "vertices": 1448,
+          "triangles": 1097
+        },
+        {
+          "name": "SENTRA_KITW04_BODY_C",
+          "vertices": 715,
+          "triangles": 467
+        },
+        {
+          "name": "SENTRA_KITW04_BODY_D",
+          "vertices": 257,
+          "triangles": 206
+        }
+      ]
+    },
+    {
+      "car": "SKYLINE",
+      "sha256": "93cc878329d5783e61abb40cce41da6313c010105fb3c3643963df7e06904037",
+      "largest_mesh": {
+        "vertices": 2136,
+        "triangles": 1594
+      },
+      "body_meshes": [
+        {
+          "name": "SKYLINE_KIT00_BODY_A",
+          "vertices": 614,
+          "triangles": 618
+        },
+        {
+          "name": "SKYLINE_KIT00_BODY_B",
+          "vertices": 445,
+          "triangles": 372
+        },
+        {
+          "name": "SKYLINE_KIT00_BODY_C",
+          "vertices": 204,
+          "triangles": 186
+        },
+        {
+          "name": "SKYLINE_KIT00_BODY_D",
+          "vertices": 270,
+          "triangles": 158
+        },
+        {
+          "name": "SKYLINE_KITW01_BODY_A",
+          "vertices": 1593,
+          "triangles": 1366
+        },
+        {
+          "name": "SKYLINE_KITW01_BODY_B",
+          "vertices": 931,
+          "triangles": 731
+        },
+        {
+          "name": "SKYLINE_KITW01_BODY_C",
+          "vertices": 340,
+          "triangles": 258
+        },
+        {
+          "name": "SKYLINE_KITW01_BODY_D",
+          "vertices": 273,
+          "triangles": 158
+        },
+        {
+          "name": "SKYLINE_KITW02_BODY_A",
+          "vertices": 2136,
+          "triangles": 1594
+        },
+        {
+          "name": "SKYLINE_KITW02_BODY_B",
+          "vertices": 1107,
+          "triangles": 840
+        },
+        {
+          "name": "SKYLINE_KITW02_BODY_C",
+          "vertices": 454,
+          "triangles": 314
+        },
+        {
+          "name": "SKYLINE_KITW02_BODY_D",
+          "vertices": 273,
+          "triangles": 158
+        },
+        {
+          "name": "SKYLINE_KITW03_BODY_A",
+          "vertices": 2027,
+          "triangles": 1773
+        },
+        {
+          "name": "SKYLINE_KITW03_BODY_B",
+          "vertices": 1184,
+          "triangles": 978
+        },
+        {
+          "name": "SKYLINE_KITW03_BODY_C",
+          "vertices": 597,
+          "triangles": 436
+        },
+        {
+          "name": "SKYLINE_KITW03_BODY_D",
+          "vertices": 273,
+          "triangles": 158
+        },
+        {
+          "name": "SKYLINE_KITW04_BODY_A",
+          "vertices": 2016,
+          "triangles": 1741
+        },
+        {
+          "name": "SKYLINE_KITW04_BODY_B",
+          "vertices": 1242,
+          "triangles": 982
+        },
+        {
+          "name": "SKYLINE_KITW04_BODY_C",
+          "vertices": 650,
+          "triangles": 484
+        },
+        {
+          "name": "SKYLINE_KITW04_BODY_D",
+          "vertices": 273,
+          "triangles": 158
+        }
+      ]
+    },
+    {
+      "car": "SPOILER",
+      "sha256": "f4cdb8f55cfd8ab8f71fb9cd88acbb6a086b850c5502f8658ee490beb758796a",
+      "largest_mesh": {
+        "vertices": 760,
+        "triangles": 582
+      },
+      "body_meshes": []
+    },
+    {
+      "car": "SPOILER_HATCH",
+      "sha256": "13a50bc2c33e43bff061d6e01e62c946b1d10aa1967ae65d01b7bf8b55f04c73",
+      "largest_mesh": {
+        "vertices": 765,
+        "triangles": 524
+      },
+      "body_meshes": []
+    },
+    {
+      "car": "SPOILER_SUV",
+      "sha256": "e1104cd10c07661f4e6a349b51591d621bc4dabcbce607351a8a6ad9633b8b89",
+      "largest_mesh": {
+        "vertices": 763,
+        "triangles": 524
+      },
+      "body_meshes": []
+    },
+    {
+      "car": "SUPRA",
+      "sha256": "fa59a57248fad3c2e482b00c86075be13e2b52711eeb9f82eeca48b38a7230d3",
+      "largest_mesh": {
+        "vertices": 2578,
+        "triangles": 1691
+      },
+      "body_meshes": [
+        {
+          "name": "SUPRA_KIT00_BODY_A",
+          "vertices": 451,
+          "triangles": 442
+        },
+        {
+          "name": "SUPRA_KIT00_BODY_B",
+          "vertices": 380,
+          "triangles": 344
+        },
+        {
+          "name": "SUPRA_KIT00_BODY_C",
+          "vertices": 167,
+          "triangles": 138
+        },
+        {
+          "name": "SUPRA_KIT00_BODY_D",
+          "vertices": 254,
+          "triangles": 150
+        },
+        {
+          "name": "SUPRA_KITW01_BODY_A",
+          "vertices": 1894,
+          "triangles": 1556
+        },
+        {
+          "name": "SUPRA_KITW01_BODY_B",
+          "vertices": 1130,
+          "triangles": 869
+        },
+        {
+          "name": "SUPRA_KITW01_BODY_C",
+          "vertices": 594,
+          "triangles": 416
+        },
+        {
+          "name": "SUPRA_KITW01_BODY_D",
+          "vertices": 254,
+          "triangles": 150
+        },
+        {
+          "name": "SUPRA_KITW02_BODY_A",
+          "vertices": 2051,
+          "triangles": 1664
+        },
+        {
+          "name": "SUPRA_KITW02_BODY_B",
+          "vertices": 1091,
+          "triangles": 839
+        },
+        {
+          "name": "SUPRA_KITW02_BODY_C",
+          "vertices": 543,
+          "triangles": 418
+        },
+        {
+          "name": "SUPRA_KITW02_BODY_D",
+          "vertices": 254,
+          "triangles": 150
+        },
+        {
+          "name": "SUPRA_KITW03_BODY_A",
+          "vertices": 2535,
+          "triangles": 2084
+        },
+        {
+          "name": "SUPRA_KITW03_BODY_B",
+          "vertices": 1632,
+          "triangles": 1136
+        },
+        {
+          "name": "SUPRA_KITW03_BODY_C",
+          "vertices": 819,
+          "triangles": 490
+        },
+        {
+          "name": "SUPRA_KITW03_BODY_D",
+          "vertices": 254,
+          "triangles": 150
+        },
+        {
+          "name": "SUPRA_KITW04_BODY_A",
+          "vertices": 1950,
+          "triangles": 1781
+        },
+        {
+          "name": "SUPRA_KITW04_BODY_B",
+          "vertices": 1342,
+          "triangles": 984
+        },
+        {
+          "name": "SUPRA_KITW04_BODY_C",
+          "vertices": 758,
+          "triangles": 454
+        },
+        {
+          "name": "SUPRA_KITW04_BODY_D",
+          "vertices": 254,
+          "triangles": 150
+        }
+      ]
+    },
+    {
+      "car": "SUV",
+      "sha256": "7702503228db225a692d1c37308548badfb4de5be2eb1639fcb355505a2543ec",
+      "largest_mesh": {
+        "vertices": 772,
+        "triangles": 486
+      },
+      "body_meshes": [
+        {
+          "name": "SUV_BODY_A",
+          "vertices": 772,
+          "triangles": 486
+        },
+        {
+          "name": "SUV_BODY_B",
+          "vertices": 529,
+          "triangles": 304
+        },
+        {
+          "name": "SUV_BODY_C",
+          "vertices": 302,
+          "triangles": 182
+        }
+      ]
+    },
+    {
+      "car": "TAXI",
+      "sha256": "75539f4b736fce2c56496e3f5b461f56042fece1a14c31b4c7099fcd4aef8900",
+      "largest_mesh": {
+        "vertices": 655,
+        "triangles": 443
+      },
+      "body_meshes": [
+        {
+          "name": "TAXI_BODY_A",
+          "vertices": 655,
+          "triangles": 443
+        },
+        {
+          "name": "TAXI_BODY_B",
+          "vertices": 446,
+          "triangles": 270
+        },
+        {
+          "name": "TAXI_BODY_C",
+          "vertices": 261,
+          "triangles": 169
+        }
+      ]
+    },
+    {
+      "car": "TAXI02",
+      "sha256": "052d1c67458e4c330ef3f30b8358364f1c4d1e896427014c2e8959e702b7b2fa",
+      "largest_mesh": {
+        "vertices": 676,
+        "triangles": 503
+      },
+      "body_meshes": [
+        {
+          "name": "TAXI02_BODY_A",
+          "vertices": 676,
+          "triangles": 503
+        },
+        {
+          "name": "TAXI02_BODY_B",
+          "vertices": 451,
+          "triangles": 294
+        },
+        {
+          "name": "TAXI02_BODY_C",
+          "vertices": 251,
+          "triangles": 146
+        }
+      ]
+    },
+    {
+      "car": "TIBURON",
+      "sha256": "64edcc311242731561c66d9cc130d33ab08ee51be7e46eaf341a41111c28aaf7",
+      "largest_mesh": {
+        "vertices": 2535,
+        "triangles": 2148
+      },
+      "body_meshes": [
+        {
+          "name": "TIBURON_KIT00_BODY_A",
+          "vertices": 660,
+          "triangles": 534
+        },
+        {
+          "name": "TIBURON_KIT00_BODY_B",
+          "vertices": 408,
+          "triangles": 354
+        },
+        {
+          "name": "TIBURON_KIT00_BODY_C",
+          "vertices": 237,
+          "triangles": 179
+        },
+        {
+          "name": "TIBURON_KIT00_BODY_D",
+          "vertices": 243,
+          "triangles": 118
+        },
+        {
+          "name": "TIBURON_KITW01_BODY_A",
+          "vertices": 1631,
+          "triangles": 1380
+        },
+        {
+          "name": "TIBURON_KITW01_BODY_B",
+          "vertices": 914,
+          "triangles": 708
+        },
+        {
+          "name": "TIBURON_KITW01_BODY_C",
+          "vertices": 531,
+          "triangles": 394
+        },
+        {
+          "name": "TIBURON_KITW01_BODY_D",
+          "vertices": 237,
+          "triangles": 116
+        },
+        {
+          "name": "TIBURON_KITW02_BODY_A",
+          "vertices": 1650,
+          "triangles": 1336
+        },
+        {
+          "name": "TIBURON_KITW02_BODY_B",
+          "vertices": 892,
+          "triangles": 698
+        },
+        {
+          "name": "TIBURON_KITW02_BODY_C",
+          "vertices": 412,
+          "triangles": 308
+        },
+        {
+          "name": "TIBURON_KITW02_BODY_D",
+          "vertices": 212,
+          "triangles": 116
+        },
+        {
+          "name": "TIBURON_KITW03_BODY_A",
+          "vertices": 2535,
+          "triangles": 2148
+        },
+        {
+          "name": "TIBURON_KITW03_BODY_B",
+          "vertices": 1490,
+          "triangles": 1138
+        },
+        {
+          "name": "TIBURON_KITW03_BODY_C",
+          "vertices": 720,
+          "triangles": 498
+        },
+        {
+          "name": "TIBURON_KITW03_BODY_D",
+          "vertices": 243,
+          "triangles": 118
+        },
+        {
+          "name": "TIBURON_KITW04_BODY_A",
+          "vertices": 1758,
+          "triangles": 1620
+        },
+        {
+          "name": "TIBURON_KITW04_BODY_B",
+          "vertices": 1096,
+          "triangles": 918
+        },
+        {
+          "name": "TIBURON_KITW04_BODY_C",
+          "vertices": 522,
+          "triangles": 414
+        },
+        {
+          "name": "TIBURON_KITW04_BODY_D",
+          "vertices": 243,
+          "triangles": 118
+        }
+      ]
+    },
+    {
+      "car": "TT",
+      "sha256": "7cf22ae19bd31fa7c56f6d9762af90abb669739ec50fa1edb430c3cf89f80c39",
+      "largest_mesh": {
+        "vertices": 2715,
+        "triangles": 2180
+      },
+      "body_meshes": [
+        {
+          "name": "TT_KIT00_BODY_A",
+          "vertices": 417,
+          "triangles": 396
+        },
+        {
+          "name": "TT_KIT00_BODY_B",
+          "vertices": 386,
+          "triangles": 322
+        },
+        {
+          "name": "TT_KIT00_BODY_C",
+          "vertices": 277,
+          "triangles": 198
+        },
+        {
+          "name": "TT_KIT00_BODY_D",
+          "vertices": 173,
+          "triangles": 120
+        },
+        {
+          "name": "TT_KITW01_BODY_A",
+          "vertices": 1948,
+          "triangles": 1770
+        },
+        {
+          "name": "TT_KITW01_BODY_B",
+          "vertices": 1346,
+          "triangles": 1159
+        },
+        {
+          "name": "TT_KITW01_BODY_C",
+          "vertices": 611,
+          "triangles": 433
+        },
+        {
+          "name": "TT_KITW01_BODY_D",
+          "vertices": 173,
+          "triangles": 120
+        },
+        {
+          "name": "TT_KITW02_BODY_A",
+          "vertices": 2715,
+          "triangles": 2180
+        },
+        {
+          "name": "TT_KITW02_BODY_B",
+          "vertices": 1812,
+          "triangles": 1387
+        },
+        {
+          "name": "TT_KITW02_BODY_C",
+          "vertices": 951,
+          "triangles": 637
+        },
+        {
+          "name": "TT_KITW02_BODY_D",
+          "vertices": 173,
+          "triangles": 120
+        },
+        {
+          "name": "TT_KITW03_BODY_A",
+          "vertices": 2110,
+          "triangles": 1918
+        },
+        {
+          "name": "TT_KITW03_BODY_B",
+          "vertices": 1424,
+          "triangles": 1198
+        },
+        {
+          "name": "TT_KITW03_BODY_C",
+          "vertices": 647,
+          "triangles": 455
+        },
+        {
+          "name": "TT_KITW03_BODY_D",
+          "vertices": 173,
+          "triangles": 120
+        },
+        {
+          "name": "TT_KITW04_BODY_A",
+          "vertices": 1875,
+          "triangles": 1806
+        },
+        {
+          "name": "TT_KITW04_BODY_B",
+          "vertices": 1331,
+          "triangles": 1170
+        },
+        {
+          "name": "TT_KITW04_BODY_C",
+          "vertices": 707,
+          "triangles": 543
+        },
+        {
+          "name": "TT_KITW04_BODY_D",
+          "vertices": 173,
+          "triangles": 120
+        }
+      ]
+    },
+    {
+      "car": "WHEELS",
+      "sha256": "6d1aa5e363eb2377ae29991f40205afc260391315f184c3e9b821af221e24121",
+      "largest_mesh": {
+        "vertices": 0,
+        "triangles": 0
+      },
+      "body_meshes": []
+    }
+  ],
+  "limits": "Observed data budgets, not proven engine hard limits"
+}

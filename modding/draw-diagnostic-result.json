@@ -1,0 +1,11 @@
+{
+  "user_confirmed_selection_and_race": true,
+  "log_sha256": "4a5be1335db92c2576ffb779d9ac46dc2cfc75b5891b9867699fbf9ef48115d2",
+  "selection_signature": "vertices=14512 primitives=16557",
+  "selection_buffer_bytes": 522432,
+  "selection_stride": 36,
+  "later_window": "frames 2760..3840: substantial DrawIndexedPrimitive traffic, zero character candidates",
+  "interpretation": "Character signature absent in later race-correlated window. Does not identify selected part name or establish why draw is omitted.",
+  "diagnostic_removed_with_game_closed": true,
+  "geometry_sha256": "cedf717c16c342b449c32e312351bd2f93d21533446b9501488dd0b5a3664389"
+}

@@ -1,0 +1,15 @@
+{
+  "source_kind": "Prepared user-provided Kitasan model; not the original game installation",
+  "sha256": {
+    "mesh.bin": "c4857f78513fc5402c659402cab65f947af7c06f4dec791bf96188f992a156a7",
+    "skin.bin": "44c8775d05d2d47e6b3de2fc802f5d623d5d84f0857edcbc065bf74f8cb32370",
+    "skeleton.json": "9ac5c79bbd664ee7611ecf04ecdfc25324538477ebc732ea369f674374b8fb78",
+    "atlas.png": "a416722e17e4d42535ebcea78c8fd9e8166ed5904b6634ef59bf3a3dae20f9a7"
+  },
+  "vertices": 14512,
+  "triangles": 16557,
+  "bones": 282,
+  "attributes_and_indices_match_installed": true,
+  "weights_valid": true,
+  "animation_integrated": false
+}

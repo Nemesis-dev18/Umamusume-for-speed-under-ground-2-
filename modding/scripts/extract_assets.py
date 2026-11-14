@@ -84,8 +84,11 @@ def geometry(data, selected):
                     if start+count>len(indices) or count%3 or start%3 or material*8+4>len(materials):
                         raise ValueError('Invalid material index range')
                     runs.append({'offset':start,'count':count,'texture_hash':f'{struct.unpack_from("<I",materials,material*8)[0]:08x}'})
-            if sorted((r['offset'],r['count']) for r in runs)!=[(0,len(indices))]:
-                raise ValueError('Selected prototype requires one covering material run')
+            cursor=0
+            for run in sorted(runs,key=lambda r:r['offset']):
+                if run['offset']!=cursor:raise ValueError('Material ranges overlap or leave gaps')
+                cursor+=run['count']
+            if cursor!=len(indices):raise ValueError('Material ranges do not cover triangles')
         result.append({'name':name,'solid_offset':solid['offset'],'stride':stride,
                        'vertex_data_offset':leaves[required[2]]['payload']+lead,
                        'index_data_offset':leaves[required[3]]['payload']+first,
