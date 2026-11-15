@@ -1,0 +1,9 @@
+DRAW number=1 method=DPUP vertices=4 primitives=2 blackGain=37 blackLost=0 shaderBytes=228 stride=0 offset=0
+DRAW number=7 method=DPUP vertices=4 primitives=2 blackGain=1123 blackLost=0 shaderBytes=172 stride=0 offset=0
+DRAW number=11 method=DPUP vertices=4 primitives=2 blackGain=3630 blackLost=0 shaderBytes=228 stride=0 offset=0
+DRAW number=12 method=DPUP vertices=4 primitives=2 blackGain=3600 blackLost=0 shaderBytes=228 stride=0 offset=0
+DRAW number=13 method=DPUP vertices=4 primitives=2 blackGain=13 blackLost=132 shaderBytes=228 stride=0 offset=0
+DRAW number=14 method=DPUP vertices=4 primitives=2 blackGain=8 blackLost=119 shaderBytes=228 stride=0 offset=0
+DRAW number=15 method=DPUP vertices=4 primitives=2 blackGain=31 blackLost=58 shaderBytes=228 stride=0 offset=0
+DRAW number=16 method=DPUP vertices=4 primitives=2 blackGain=210 blackLost=0 shaderBytes=228 stride=0 offset=0
+DONE draws=18 largestBlackGain=3630

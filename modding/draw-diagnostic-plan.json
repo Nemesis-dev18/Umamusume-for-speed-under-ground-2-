@@ -1,0 +1,32 @@
+{
+  "module_source": "modding/diagnostics/UmaDrawLog.asi",
+  "install_path": "scripts/UmaDrawLog.asi",
+  "module_bytes": 241031,
+  "module_sha256": "bb4d4048d69e08fc71df8bbc5a5f822c1d9f900053a5933f33392a9915dc8ad8",
+  "log_path": "modding/uma-draw.log",
+  "log_mode": "append",
+  "requires_explicit_exception_to_data_only_scope": true,
+  "installed": false,
+  "overwrites_existing_plugin": false,
+  "runtime_effects": [
+    "Create and release a hidden diagnostic Direct3D9 device",
+    "Replace Direct3D9 device vtable entries 17 (Present) and 82 (DrawIndexedPrimitive) in process memory",
+    "Record draw counts, candidate mesh counts, stream stride, texture dimensions and selected render states; pass calls through unchanged"
+  ],
+  "excluded_actions": [
+    "No game executable file inspection or patch",
+    "No shader or render-state override",
+    "No mesh/material/texture/physics edits",
+    "No network inspection or anticheat interaction"
+  ],
+  "limitations": [
+    "Hook sharing verified on separate software/hardware vertex-processing devices in standalone Wine test",
+    "Initialization inside this game has not been tested",
+    "Candidate vertex/triangle counts do not by themselves prove character identity or visible pixels"
+  ],
+  "rollback": "Close game and remove only the installed module after verifying its hash; preserve log; geometry remains as currently installed",
+  "previous_module_sha256": "b38a2d5d4eea05311a5af11be46d6657233701266c806ab9db00c1cfa6750526",
+  "initialization_fix": "Resolve Unicode log path from own module location instead of process working directory",
+  "load_test": "PASS: original reproduced missing log with CWD=scripts; fixed DLL creates log and installs hook with CWD=scripts",
+  "removed_after_capture": true
+}

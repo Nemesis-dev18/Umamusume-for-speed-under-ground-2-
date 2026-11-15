@@ -1,0 +1,10 @@
+{
+  "logical_name": "3d/chara/body/bdy1068_00/pfb_bdy1068_00",
+  "physical_file": "/home/nemesis/.local/share/Steam/steamapps/common/UmamusumePrettyDerby/UmamusumePrettyDerby_Data/Persistent/dat/KI/KICC4AIHKEFQWYC7ZFO3FDC64WAROCSY",
+  "source_sha256": "eea10ed58385f2df1e523ee656bbfd17a8f29749293f07b5910e1f266113a5ec",
+  "decoded_sha256": "f71d3fc86f05993593cc7a5524d8f29b94c706be0f699880e83e061eab0469d0",
+  "catalog_region": "global",
+  "bundle_base_keys": "upstream JP constant validated by successful parsing",
+  "game_source_unchanged": true,
+  "reader_commit": "dca091dad2947d13f99a0510bcccdec82941df0c"
+}

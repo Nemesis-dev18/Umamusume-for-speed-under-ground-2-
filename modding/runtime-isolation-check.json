@@ -1,0 +1,9 @@
+{
+  "inventory_files": 716,
+  "changed": [
+    "CARS/COROLLA/GEOMETRY.BIN"
+  ],
+  "unchanged": 715,
+  "other_car_data_unchanged": true,
+  "gameplay_opponents_visibility_proved": false
+}

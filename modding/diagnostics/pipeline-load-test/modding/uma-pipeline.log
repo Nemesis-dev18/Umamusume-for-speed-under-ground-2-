@@ -1,0 +1,2 @@
+START pipeline diagnostics; GPU shader object reads only; no executable reads or rendering changes
+HOOK installed=1 deviceHR=00000000

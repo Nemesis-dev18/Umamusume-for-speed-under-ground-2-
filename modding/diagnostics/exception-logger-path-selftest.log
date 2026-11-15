@@ -1,0 +1,2 @@
+EXCEPTION LOGGER attached; observe only
+EXCEPTION code=c0000094 eip=7bc0b6bf esp=0062f658 module=C:\windows\system32\kernelbase.dll offset=0004b6bf

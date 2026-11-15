@@ -1,0 +1,64 @@
+{
+  "source": "CARS/COROLLA/GEOMETRY.BIN",
+  "source_bytes": 9952256,
+  "source_sha256": "a01b652817a8e54ea9ee5bd677da1dac221962d2726675051f796ed5b7b1e455",
+  "result_bytes": 9952256,
+  "result_sha256": "1d16d7e3c9d1a7ed3f240224a6eb4e725140035188b45a2cc48fd17733d41808",
+  "changed_bytes": 8,
+  "changes": [
+    {
+      "part": "COROLLA_KIT00_BODY_A",
+      "offset": 77732,
+      "offset_hex": "0x12fa4",
+      "length": 4,
+      "old_hex": "ad 40 b0 38",
+      "new_hex": "ad 40 00 00",
+      "old_u32": 951074989,
+      "new_u32": 16557
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_B",
+      "offset": 713508,
+      "offset_hex": "0xae324",
+      "length": 4,
+      "old_hex": "ad 40 b0 38",
+      "new_hex": "ad 40 00 00",
+      "old_u32": 951074989,
+      "new_u32": 16557
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_C",
+      "offset": 1341732,
+      "offset_hex": "0x147924",
+      "length": 4,
+      "old_hex": "ad 40 b0 38",
+      "new_hex": "ad 40 00 00",
+      "old_u32": 951074989,
+      "new_u32": 16557
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_D",
+      "offset": 1967652,
+      "offset_hex": "0x1e0624",
+      "length": 4,
+      "old_hex": "ad 40 b0 38",
+      "new_hex": "ad 40 00 00",
+      "old_u32": 951074989,
+      "new_u32": 16557
+    }
+  ],
+  "backup": "CARS/COROLLA/GEOMETRY.BIN.bak",
+  "temporary_atomic_output": "CARS/COROLLA/GEOMETRY.BIN.uma-header.tmp",
+  "checkpoint": "Commit the exact .bak and this plan before replacing GEOMETRY.BIN; require clean tracked state first",
+  "resources_not_changed": [
+    "TEXTURES.BIN",
+    "GLOBAL",
+    "NIS",
+    "SOUND",
+    "executables",
+    "plugins"
+  ],
+  "approval_required": true,
+  "game_tested": false,
+  "limits": "Repairs a demonstrably malformed header count only. Does not prove race visibility, fix non-stock kits, remove wheels, or animate the character."
+}

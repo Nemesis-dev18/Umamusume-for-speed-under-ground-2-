@@ -1,0 +1,23 @@
+{
+  "target": "FRONTEND/FrontB.lzc",
+  "backup": "FRONTEND/FrontB.lzc.before-uma-tiremask.bak",
+  "candidate": "modding/staged-runtime/FrontB.no-tiremask.lzc",
+  "before_bytes": 1750771,
+  "bytes": 1750852,
+  "before_sha256": "813e8f966ca9af9a5374454199b3a1e57460ff9374a8c3cc7822bfbcd017418e",
+  "after_sha256": "2a59e9063ca54e3253a6a77ad1fe20a93133b89c38f0ed7b32e4d1ab612b6949",
+  "decoded_pixel_ranges": [
+    {
+      "texture": "TIREMASK",
+      "texture_info_offset": 260432,
+      "pixel_offset": 4125952,
+      "pixel_bytes": 10912,
+      "format": "DXT1",
+      "width": 128,
+      "height": 128,
+      "mips": 5
+    }
+  ],
+  "installed": false,
+  "gameplay_verified": false
+}

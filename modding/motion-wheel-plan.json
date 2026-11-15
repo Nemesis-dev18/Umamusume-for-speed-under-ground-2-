@@ -1,0 +1,26 @@
+{
+  "geometry_before_sha256": "4d270e7521067463654b953d30b7e79ce8ac2241840d9a10c9297535c444dfdf",
+  "geometry_after_sha256": "ed7e51a5895c859708a29cb92ebed6481d25d519d8dc392d2d13354175e90f18",
+  "marker_changes": [
+    {
+      "name": "SPOILER",
+      "offset": 20560,
+      "before": "fd733bc9",
+      "after": "197eb6cc"
+    },
+    {
+      "name": "SPOILER",
+      "offset": 23888,
+      "before": "fd733bc9",
+      "after": "197eb6cc"
+    }
+  ],
+  "texture_before_sha256": "7804f9d06d8bd136051e2c8978feeec96eef17433fc136aefb195e113164aab0",
+  "texture_after_sha256": "0ad09f89b7eb3c82cade7c76ea9c727dc28d43e48f79226e2159bf4add2c2094",
+  "other_55_texture_pools_unchanged": true,
+  "neon_format": "DXT1 128x64 four mips; RGB and alpha zero",
+  "installed": false,
+  "module_sha256": "6f3263288070c497617db2a926061dae1f1c29d0fbbde0638cd54917e8425d05",
+  "module_bytes": 291144,
+  "python_tests_passed": 40
+}

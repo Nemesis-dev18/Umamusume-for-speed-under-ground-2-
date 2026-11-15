@@ -1,0 +1,22 @@
+{
+  "checkpoint": "9336a5e3b1ffcd7dc0e273fb868ecd8909bb4b16",
+  "replaced": [
+    {
+      "path": "CARS/COROLLA/GEOMETRY.BIN",
+      "backup": "CARS/COROLLA/GEOMETRY.BIN.before-effects.bak",
+      "sha256": "4d270e7521067463654b953d30b7e79ce8ac2241840d9a10c9297535c444dfdf"
+    },
+    {
+      "path": "CARS/COROLLA/TEXTURES.BIN",
+      "backup": "CARS/COROLLA/TEXTURES.BIN.before-foot-shadow.bak",
+      "sha256": "7804f9d06d8bd136051e2c8978feeec96eef17433fc136aefb195e113164aab0"
+    },
+    {
+      "path": "scripts/UmaRunner.asi",
+      "backup": "modding/runtime/UmaRunner.before-effects.asi",
+      "sha256": "34e6a93c64196f5f01a2f01b5582b3c852053c285781f0e4aa7401ccad8a0aad"
+    }
+  ],
+  "unchanged_data": 714,
+  "gameplay_verified": false
+}

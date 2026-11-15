@@ -1,0 +1,62 @@
+[
+  {
+    "name": "3d/motion/racemain/body/type01/anm_rac_type01_overrun02_loop_l",
+    "hash": "SLU6PHADE7Q4RQEHNHEV7ROPY7MJQQUX",
+    "bundle_key": 7684155514644470800,
+    "downloaded": true
+  },
+  {
+    "name": "3d/motion/racemain/body/type01/anm_rac_type01_overrun02_loop_r",
+    "hash": "2DTTH62ROFCYO6K4R5ROHSBK36MN2FMD",
+    "bundle_key": -5979031582206863625,
+    "downloaded": false
+  },
+  {
+    "name": "3d/motion/racemain/body/type01/anm_rac_type01_overrun02_start_l",
+    "hash": "QUJGDG4GDV57MT5XRUYESCPTLEW36YIT",
+    "bundle_key": -2240205450344267632,
+    "downloaded": true
+  },
+  {
+    "name": "3d/motion/racemain/body/type01/anm_rac_type01_overrun02_start_r",
+    "hash": "AIZ4KZJJ32ZIFJVNLLCOIYJPVZ6YC6JN",
+    "bundle_key": -4910139076119817395,
+    "downloaded": false
+  },
+  {
+    "name": "3d/motion/racemain/body/type01/anm_rac_type01_run02_base",
+    "hash": "3YWYKD7X2YL3AKX2DPP4G3PIVKZO2CMU",
+    "bundle_key": -714640484387452480,
+    "downloaded": true
+  },
+  {
+    "name": "3d/motion/racemain/body/type01/anm_rac_type01_run02_pitch",
+    "hash": "YZ6WYZAYUTUVEKWOIZJZTCIK5A7ZHRZI",
+    "bundle_key": -7649460927912376083,
+    "downloaded": true
+  },
+  {
+    "name": "3d/motion/racemain/body/type01/anm_rac_type01_run02_stride",
+    "hash": "NO6V3RSC56OJ5PMVYSPESJITOO45NQRG",
+    "bundle_key": -7917371213643041424,
+    "downloaded": false
+  },
+  {
+    "name": "3d/motion/racemain/body/type01/anm_rac_type01_run02_sweat_base",
+    "hash": "Y5SQ6NQEEYG7Z7ARZDAEKX7CNOV7YX6W",
+    "bundle_key": -2255343987791181385,
+    "downloaded": false
+  },
+  {
+    "name": "3d/motion/racemain/body/type01/anm_rac_type01_run02_sweat_pitch",
+    "hash": "I5PVSQN2OXXBS7HDRBUDGVDI3VQIDS3G",
+    "bundle_key": -246948533774235885,
+    "downloaded": false
+  },
+  {
+    "name": "3d/motion/racemain/body/type01/anm_rac_type01_run02_sweat_stride",
+    "hash": "TDIE4YHUL7F5WC6WYY4YXFWREARXXXXH",
+    "bundle_key": -130198774997814471,
+    "downloaded": false
+  }
+]

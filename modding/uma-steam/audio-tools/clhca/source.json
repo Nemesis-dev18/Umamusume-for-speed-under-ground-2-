@@ -1,0 +1,9 @@
+{
+  "repository": "https://github.com/vgmstream/vgmstream",
+  "commit": "24ffd6ce3e1f34fdebf9f5316d18ad2e162838ce",
+  "files": {
+    "clhca.c": "4ef480d075acd8da35271aba34a048fc7012fa7a0ca1f014a025080be70043f1",
+    "clhca.h": "083ee638ed41ecb295423cede35c24a2de3659c35b6f6ea5554d7c2ab96af359",
+    "clhca_data.h": "bad3edd920331b506e2d141e115c3638d3ab118b4af1752fcec96e9bd64d542c"
+  }
+}

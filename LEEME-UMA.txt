@@ -1,0 +1,12 @@
+ESTADO REAL: PROTOTIPO INCOMPLETO
+
+Se restauraron los archivos exactos de la primera versión que mostró Kitasan en pantalla.
+Problemas conocidos: personaje oscuro, rueda residual y sombra de carro. Sin animación de carrera.
+Los cambios posteriores no están instalados, porque fallaron las pruebas.
+La carpeta original Need for Speed Underground 2 permanece intacta.
+
+Archivos modificados en NFSU2-Uma-Prueba:
+CARS/COROLLA/GEOMETRY.BIN
+CARS/COROLLA/TEXTURES.BIN
+
+Para volver al juego original: copiar esos dos archivos desde la carpeta original.

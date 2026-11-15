@@ -1,0 +1,19 @@
+{
+  "standalone_test": "PASS: six Python-reference poses, max error 7.15255737e-07; UV/colour preservation; transitions, pause, invalid inputs, alias rejection and nine malformed packages. 240 grounded transition poses; CPU sample 0.906 ms (standalone, not game FPS).",
+  "key_poses_match_reference_clips": true,
+  "reference_clip_directory": "modding/animation-steam-retarget",
+  "asset": "modding/runtime/kitasan.umab",
+  "blended_bone_lengths_checked": true,
+  "surface_min_z_before_root_correction_by_case": [
+    -3.0326423500499376e-05,
+    0.1920999331345785,
+    -0.024792430258529067,
+    -0.01958926982385223,
+    -9.991893895155632e-05,
+    -3.0326423500499376e-05
+  ],
+  "grounded_transition_poses_checked": 240,
+  "support_plane_tolerance_m": 0.000101,
+  "game_launched": false,
+  "game_integrated": false
+}

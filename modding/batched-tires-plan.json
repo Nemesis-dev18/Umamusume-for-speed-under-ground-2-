@@ -1,0 +1,15 @@
+{
+  "target": "scripts/UmaRunner.asi",
+  "backup": "modding/runtime/UmaRunner.before-batched-tires.asi",
+  "before_sha256": "72ef068ca839e934ea647d8b3df6074ecaca4c929b98efd73a1fa88c57210cde",
+  "after_sha256": "5ae14a5f7de525e2e402cd60d4ca009a9c99a54e95f8ddc55613503a45941306",
+  "bytes": 293212,
+  "changes": [
+    "Classify union of four tire regions per vertex rather than whole-batch AABB",
+    "Allow bounded suspension displacement in tire mesh classification",
+    "Filter car-shader pieces at symmetric Corolla side attachment origins",
+    "Record up to 96 distinct rejected/accepted geometry signatures and raw bounds"
+  ],
+  "tests": "Standalone C and D3D9 integration passed, all four draw paths and foreign actors",
+  "installed": false
+}

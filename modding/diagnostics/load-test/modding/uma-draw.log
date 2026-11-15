@@ -1,0 +1,2 @@
+START draw-only diagnostics; no executable addresses; no shader/state changes
+HOOK installed=1 deviceHR=00000000

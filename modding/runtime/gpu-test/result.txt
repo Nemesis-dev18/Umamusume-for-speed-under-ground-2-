@@ -1,0 +1,16 @@
+START independent renderer test; not NFSU2
+PASS full upload identity, one-byte impostor, partial/nested overwrite, READONLY, DISCARD and hook removal
+PASS captured shader bridge parsing; UV-space composition passes rejected
+PASS exact captured game shader profiles: 15 programs; read-only camera extraction
+PASS fixed-function and direct VS1.1/VS2 camera extraction; malformed and unsupported shaders rejected
+PASS seven invalid DDS inputs rejected without publishing a texture
+PASS half-alpha texture produces opaque RGB without background blending
+PASS zero-alpha texture is discarded
+PASS animated frame 0; 22159 non-background pixels; unrelated quad remains white
+PASS animated frame 1; 21764 non-background pixels; unrelated quad remains white
+PASS animated frame 2; 22164 non-background pixels; unrelated quad remains white
+PASS animated frame 3; 21748 non-background pixels; unrelated quad remains white
+PASS invalid pose invalidates upload cache; repeated valid pose recovers identical GPU pixels
+PASS position-only depth shader gains UV input on private clone; color writes remain disabled and pixels unchanged
+PASS native vertex shader/declaration preserved, native diffuse lighting applied and texture alpha retained without blending
+PASS all renderer checks, failure restoration and device reset; 13 intercepted draws. No game integration tested.

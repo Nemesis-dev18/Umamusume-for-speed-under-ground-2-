@@ -1,0 +1,726 @@
+INFO:root:****************************************
+INFO:root: mmd_tools.pmx module
+INFO:root:----------------------------------------
+INFO:root: Start to load model data form a pmx file
+INFO:root:            by the mmd_tools.pmx modlue.
+INFO:root:
+INFO:root:----------------------------
+INFO:root:pmx header information
+INFO:root:----------------------------
+INFO:root:pmx version: 2.0
+INFO:root:encoding: <Encoding charset utf-16-le>
+INFO:root:number of uvs: 0
+INFO:root:vertex index size: 2 byte(s)
+INFO:root:texture index: 1 byte(s)
+INFO:root:material index: 1 byte(s)
+INFO:root:bone index: 2 byte(s)
+INFO:root:morph index: 1 byte(s)
+INFO:root:rigid index: 1 byte(s)
+INFO:root:----------------------------
+INFO:root:Model name: ShiniNet式 オグリ〇ャップ
+INFO:root:Model name(english): Ogurixxxxp Type ShiniNet
+INFO:root:Comment:モデル製作　：ShiniNet
+INFO:root:Comment(english):
+INFO:root:
+INFO:root:------------------------------
+INFO:root:Load Vertices
+INFO:root:------------------------------
+INFO:root:----- Loaded 34537 vertices
+INFO:root:
+INFO:root:------------------------------
+INFO:root: Load Faces
+INFO:root:------------------------------
+INFO:root: Load 53024 faces
+INFO:root:
+INFO:root:------------------------------
+INFO:root: Load Textures
+INFO:root:------------------------------
+INFO:root:Texture 0: /home/nemesis/Vídeos/proyecto inginversa/NFSU2-Uma-Prueba/modding/model-sources/00/ShiniNet式_オグリ〇ャップ_v1.1/textures/MAT_BODY1.png
+INFO:root:Texture 1: /home/nemesis/Vídeos/proyecto inginversa/NFSU2-Uma-Prueba/modding/model-sources/00/ShiniNet式_オグリ〇ャップ_v1.1/textures/SP_体.png
+INFO:root:Texture 2: /home/nemesis/Vídeos/proyecto inginversa/NFSU2-Uma-Prueba/modding/model-sources/00/ShiniNet式_オグリ〇ャップ_v1.1/textures/Toon_服白.png
+INFO:root:Texture 3: /home/nemesis/Vídeos/proyecto inginversa/NFSU2-Uma-Prueba/modding/model-sources/00/ShiniNet式_オグリ〇ャップ_v1.1/textures/Toon_タイツ.png
+INFO:root:Texture 4: /home/nemesis/Vídeos/proyecto inginversa/NFSU2-Uma-Prueba/modding/model-sources/00/ShiniNet式_オグリ〇ャップ_v1.1/textures/MAT_BODY2.png
+INFO:root:Texture 5: /home/nemesis/Vídeos/proyecto inginversa/NFSU2-Uma-Prueba/modding/model-sources/00/ShiniNet式_オグリ〇ャップ_v1.1/textures/SP_装飾.png
+INFO:root:Texture 6: /home/nemesis/Vídeos/proyecto inginversa/NFSU2-Uma-Prueba/modding/model-sources/00/ShiniNet式_オグリ〇ャップ_v1.1/textures/Toon_金.png
+INFO:root:Texture 7: /home/nemesis/Vídeos/proyecto inginversa/NFSU2-Uma-Prueba/modding/model-sources/00/ShiniNet式_オグリ〇ャップ_v1.1/textures/SP_髪.png
+INFO:root:Texture 8: /home/nemesis/Vídeos/proyecto inginversa/NFSU2-Uma-Prueba/modding/model-sources/00/ShiniNet式_オグリ〇ャップ_v1.1/textures/Toon_髪.png
+INFO:root:Texture 9: /home/nemesis/Vídeos/proyecto inginversa/NFSU2-Uma-Prueba/modding/model-sources/00/ShiniNet式_オグリ〇ャップ_v1.1/textures/SP_ブーツ.png
+INFO:root:Texture 10: /home/nemesis/Vídeos/proyecto inginversa/NFSU2-Uma-Prueba/modding/model-sources/00/ShiniNet式_オグリ〇ャップ_v1.1/textures/Toon_ブーツ.png
+INFO:root:Texture 11: /home/nemesis/Vídeos/proyecto inginversa/NFSU2-Uma-Prueba/modding/model-sources/00/ShiniNet式_オグリ〇ャップ_v1.1/textures/MAT_FACE.png
+INFO:root:Texture 12: /home/nemesis/Vídeos/proyecto inginversa/NFSU2-Uma-Prueba/modding/model-sources/00/ShiniNet式_オグリ〇ャップ_v1.1/textures/MAT_Hair.png
+INFO:root:Texture 13: /home/nemesis/Vídeos/proyecto inginversa/NFSU2-Uma-Prueba/modding/model-sources/00/ShiniNet式_オグリ〇ャップ_v1.1/textures/その他.png
+INFO:root: ----- Loaded 14 textures
+INFO:root:
+INFO:root:------------------------------
+INFO:root: Load Materials
+INFO:root:------------------------------
+INFO:root:Material 0: 肌
+INFO:root:Material 1: インナー
+INFO:root:Material 2: タイツ
+INFO:root:Material 3: スカート
+INFO:root:Material 4: ベルト
+INFO:root:Material 5: コート
+INFO:root:Material 6: スカーフ
+INFO:root:Material 7: 金色
+INFO:root:Material 8: 装飾
+INFO:root:Material 9: 尻尾
+INFO:root:Material 10: ブーツ
+INFO:root:Material 11: ブーツ_タイツ部分
+INFO:root:Material 12: モフモフ
+INFO:root:Material 13: 舌
+INFO:root:Material 14: 歯
+INFO:root:Material 15: 顔_線無し
+INFO:root:Material 16: 顔
+INFO:root:Material 17: 白目
+INFO:root:Material 18: 口内
+INFO:root:Material 19: 瞳
+INFO:root:Material 20: 瞳ハイライト
+INFO:root:Material 21: 瞳ハイライト透過
+INFO:root:Material 22: 睫毛眉毛
+INFO:root:Material 23: 髪
+INFO:root:Material 24: 髪裏面
+INFO:root:Material 25: 額飾り
+INFO:root:Material 26: 耳
+INFO:root:Material 27: 耳飾り
+INFO:root:Material 28: カミカゲ
+INFO:root:Material 29: 照れ
+INFO:root:Material 30: 涙
+INFO:root:Material 31: 青ざめ
+INFO:root:----- Loaded 32  materials.
+INFO:root:
+INFO:root:------------------------------
+INFO:root: Load Bones
+INFO:root:------------------------------
+INFO:root:Bone 0: 全ての親
+INFO:root:Bone 1: センター
+INFO:root:Bone 2: グルーブ
+INFO:root:Bone 3: 腰
+INFO:root:Bone 4: 上半身
+INFO:root:Bone 5: 上半身2
+INFO:root:Bone 6: 首
+INFO:root:Bone 7: 頭
+INFO:root:Bone 8: 両目
+INFO:root:Bone 9: 左目
+INFO:root:Bone 10: 右目
+INFO:root:Bone 11: 舌親
+INFO:root:Bone 12: 舌0
+INFO:root:Bone 13: 舌1
+INFO:root:Bone 14: 歯親
+INFO:root:Bone 15: 歯上
+INFO:root:Bone 16: 歯下
+INFO:root:Bone 17: 左肩P
+INFO:root:Bone 18: 左肩
+INFO:root:Bone 19: 左肩C
+INFO:root:Bone 20: 左腕
+INFO:root:Bone 21: 左腕捩
+INFO:root:Bone 22: 左腕捩1
+INFO:root:Bone 23: 左腕捩2
+INFO:root:Bone 24: 左腕捩3
+INFO:root:Bone 25: 左ひじ
+INFO:root:Bone 26: 左手捩
+INFO:root:Bone 27: 左手捩1
+INFO:root:Bone 28: 左手捩2
+INFO:root:Bone 29: 左手捩3
+INFO:root:Bone 30: 左手首
+INFO:root:Bone 31: 右肩P
+INFO:root:Bone 32: 右肩
+INFO:root:Bone 33: 右肩C
+INFO:root:Bone 34: 右腕
+INFO:root:Bone 35: 右腕捩
+INFO:root:Bone 36: 右腕捩1
+INFO:root:Bone 37: 右腕捩2
+INFO:root:Bone 38: 右腕捩3
+INFO:root:Bone 39: 右ひじ
+INFO:root:Bone 40: 右手捩
+INFO:root:Bone 41: 右手捩1
+INFO:root:Bone 42: 右手捩2
+INFO:root:Bone 43: 右手捩3
+INFO:root:Bone 44: 右手首
+INFO:root:Bone 45: 左小指０
+INFO:root:Bone 46: 左小指１
+INFO:root:Bone 47: 左小指２
+INFO:root:Bone 48: 左小指３
+INFO:root:Bone 49: 左薬指０
+INFO:root:Bone 50: 左薬指１
+INFO:root:Bone 51: 左薬指２
+INFO:root:Bone 52: 左薬指３
+INFO:root:Bone 53: 左中指０
+INFO:root:Bone 54: 左中指１
+INFO:root:Bone 55: 左中指２
+INFO:root:Bone 56: 左中指３
+INFO:root:Bone 57: 左人指０
+INFO:root:Bone 58: 左人指１
+INFO:root:Bone 59: 左人指２
+INFO:root:Bone 60: 左人指３
+INFO:root:Bone 61: 左親指０
+INFO:root:Bone 62: 左親指１
+INFO:root:Bone 63: 左親指２
+INFO:root:Bone 64: 右小指０
+INFO:root:Bone 65: 右小指１
+INFO:root:Bone 66: 右小指２
+INFO:root:Bone 67: 右小指３
+INFO:root:Bone 68: 右薬指０
+INFO:root:Bone 69: 右薬指１
+INFO:root:Bone 70: 右薬指２
+INFO:root:Bone 71: 右薬指３
+INFO:root:Bone 72: 右中指０
+INFO:root:Bone 73: 右中指１
+INFO:root:Bone 74: 右中指２
+INFO:root:Bone 75: 右中指３
+INFO:root:Bone 76: 右人指０
+INFO:root:Bone 77: 右人指１
+INFO:root:Bone 78: 右人指２
+INFO:root:Bone 79: 右人指３
+INFO:root:Bone 80: 右親指０
+INFO:root:Bone 81: 右親指１
+INFO:root:Bone 82: 右親指２
+INFO:root:Bone 83: 下半身
+INFO:root:Bone 84: 腰キャンセル左
+INFO:root:Bone 85: 左足
+INFO:root:Bone 86: 左ひざ
+INFO:root:Bone 87: 左足首
+INFO:root:Bone 88: 左つま先
+INFO:root:Bone 89: 左足ＩＫ
+INFO:root:Bone 90: 左足ＩＫ先
+INFO:root:Bone 91: 左つま先ＩＫ
+INFO:root:Bone 92: 左つま先ＩＫ先
+INFO:root:Bone 93: 腰キャンセル右
+INFO:root:Bone 94: 右足
+INFO:root:Bone 95: 右ひざ
+INFO:root:Bone 96: 右足首
+INFO:root:Bone 97: 右つま先
+INFO:root:Bone 98: 右足ＩＫ
+INFO:root:Bone 99: 右足ＩＫ先
+INFO:root:Bone 100: 右つま先ＩＫ
+INFO:root:Bone 101: 右つま先ＩＫ先
+INFO:root:Bone 102: 左尻補助腰C
+INFO:root:Bone 103: 左尻補助
+INFO:root:Bone 104: 左ひざ補助
+INFO:root:Bone 105: 右尻補助腰C
+INFO:root:Bone 106: 右尻補助
+INFO:root:Bone 107: 右ひざ補助
+INFO:root:Bone 108: 左リボン0
+INFO:root:Bone 109: 左リボン1
+INFO:root:Bone 110: 右リボン0
+INFO:root:Bone 111: 右リボン1
+INFO:root:Bone 112: 左触覚0
+INFO:root:Bone 113: 左触覚1
+INFO:root:Bone 114: 右触覚0
+INFO:root:Bone 115: 右触覚1
+INFO:root:Bone 116: 左後髪0
+INFO:root:Bone 117: 左後髪1
+INFO:root:Bone 118: 左後髪2
+INFO:root:Bone 119: 左後髪3
+INFO:root:Bone 120: 右後髪0
+INFO:root:Bone 121: 右後髪1
+INFO:root:Bone 122: 右後髪2
+INFO:root:Bone 123: 右後髪3
+INFO:root:Bone 124: 左耳親
+INFO:root:Bone 125: 左耳0
+INFO:root:Bone 126: 左耳1
+INFO:root:Bone 127: 右耳親
+INFO:root:Bone 128: 右耳0
+INFO:root:Bone 129: 右耳1
+INFO:root:Bone 130: アホ毛0
+INFO:root:Bone 131: 尻尾親
+INFO:root:Bone 132: 尻尾0
+INFO:root:Bone 133: 尻尾1
+INFO:root:Bone 134: 尻尾2
+INFO:root:Bone 135: 尻尾3
+INFO:root:Bone 136: スカート_0_0
+INFO:root:Bone 137: スカート_0_1
+INFO:root:Bone 138: スカート_0_2
+INFO:root:Bone 139: スカート_0_3
+INFO:root:Bone 140: スカート_0_4
+INFO:root:Bone 141: スカート_0_5
+INFO:root:Bone 142: スカート_0_6
+INFO:root:Bone 143: スカート_0_7
+INFO:root:Bone 144: スカート_0_8
+INFO:root:Bone 145: スカート_0_9
+INFO:root:Bone 146: スカート_0_10
+INFO:root:Bone 147: スカート_0_11
+INFO:root:Bone 148: スカート_0_12
+INFO:root:Bone 149: スカート_0_13
+INFO:root:Bone 150: スカート_0_14
+INFO:root:Bone 151: スカート_0_15
+INFO:root:Bone 152: スカート_1_0
+INFO:root:Bone 153: スカート_1_1
+INFO:root:Bone 154: スカート_1_2
+INFO:root:Bone 155: スカート_1_3
+INFO:root:Bone 156: スカート_1_4
+INFO:root:Bone 157: スカート_1_5
+INFO:root:Bone 158: スカート_1_6
+INFO:root:Bone 159: スカート_1_7
+INFO:root:Bone 160: スカート_1_8
+INFO:root:Bone 161: スカート_1_9
+INFO:root:Bone 162: スカート_1_10
+INFO:root:Bone 163: スカート_1_11
+INFO:root:Bone 164: スカート_1_12
+INFO:root:Bone 165: スカート_1_13
+INFO:root:Bone 166: スカート_1_14
+INFO:root:Bone 167: スカート_1_15
+INFO:root:Bone 168: スカート_2_0
+INFO:root:Bone 169: スカート_2_1
+INFO:root:Bone 170: スカート_2_2
+INFO:root:Bone 171: スカート_2_3
+INFO:root:Bone 172: スカート_2_4
+INFO:root:Bone 173: スカート_2_5
+INFO:root:Bone 174: スカート_2_6
+INFO:root:Bone 175: スカート_2_7
+INFO:root:Bone 176: スカート_2_8
+INFO:root:Bone 177: スカート_2_9
+INFO:root:Bone 178: スカート_2_10
+INFO:root:Bone 179: スカート_2_11
+INFO:root:Bone 180: スカート_2_12
+INFO:root:Bone 181: スカート_2_13
+INFO:root:Bone 182: スカート_2_14
+INFO:root:Bone 183: スカート_2_15
+INFO:root:Bone 184: スカート_3_0
+INFO:root:Bone 185: スカート_3_1
+INFO:root:Bone 186: スカート_3_2
+INFO:root:Bone 187: スカート_3_3
+INFO:root:Bone 188: スカート_3_4
+INFO:root:Bone 189: スカート_3_5
+INFO:root:Bone 190: スカート_3_6
+INFO:root:Bone 191: スカート_3_7
+INFO:root:Bone 192: スカート_3_8
+INFO:root:Bone 193: スカート_3_9
+INFO:root:Bone 194: スカート_3_10
+INFO:root:Bone 195: スカート_3_11
+INFO:root:Bone 196: スカート_3_12
+INFO:root:Bone 197: スカート_3_13
+INFO:root:Bone 198: スカート_3_14
+INFO:root:Bone 199: スカート_3_15
+INFO:root:Bone 200: スカート_4_0
+INFO:root:Bone 201: スカート_4_1
+INFO:root:Bone 202: スカート_4_2
+INFO:root:Bone 203: スカート_4_3
+INFO:root:Bone 204: スカート_4_4
+INFO:root:Bone 205: スカート_4_5
+INFO:root:Bone 206: スカート_4_6
+INFO:root:Bone 207: スカート_4_7
+INFO:root:Bone 208: スカート_4_8
+INFO:root:Bone 209: スカート_4_9
+INFO:root:Bone 210: スカート_4_10
+INFO:root:Bone 211: スカート_4_11
+INFO:root:Bone 212: スカート_4_12
+INFO:root:Bone 213: スカート_4_13
+INFO:root:Bone 214: スカート_4_14
+INFO:root:Bone 215: スカート_4_15
+INFO:root:Bone 216: 右後髪3錘
+INFO:root:Bone 217: 右後髪2錘
+INFO:root:Bone 218: 右後髪1錘
+INFO:root:Bone 219: 右後髪0錘
+INFO:root:Bone 220: 左後髪3錘
+INFO:root:Bone 221: 左後髪2錘
+INFO:root:Bone 222: 左後髪1錘
+INFO:root:Bone 223: 左後髪0錘
+INFO:root:----- Loaded 224 bones.
+INFO:root:
+INFO:root:------------------------------
+INFO:root: Load Morphs
+INFO:root:------------------------------
+INFO:root:VertexMorph 0: まばたき
+INFO:root:VertexMorph 1: ウィンク２
+INFO:root:VertexMorph 2: ｳｨﾝｸ２右
+INFO:root:VertexMorph 3: 笑い
+INFO:root:VertexMorph 4: ウィンク
+INFO:root:VertexMorph 5: ウィンク右
+INFO:root:VertexMorph 6: なごみ
+INFO:root:VertexMorph 7: 見開き
+INFO:root:VertexMorph 8: 瞳小
+INFO:root:VertexMorph 9: 下瞼上げ
+INFO:root:VertexMorph 10: 下瞼下げ
+INFO:root:VertexMorph 11: 上瞼上げ
+INFO:root:VertexMorph 12: 上瞼下げ
+INFO:root:VertexMorph 13: あ
+INFO:root:VertexMorph 14: い
+INFO:root:VertexMorph 15: う
+INFO:root:VertexMorph 16: え
+INFO:root:VertexMorph 17: お
+INFO:root:VertexMorph 18: あわわ
+INFO:root:VertexMorph 19: おーい
+INFO:root:VertexMorph 20: 叫び
+INFO:root:VertexMorph 21: 大口
+INFO:root:VertexMorph 22: ∧
+INFO:root:VertexMorph 23: ぐぬぬ
+INFO:root:VertexMorph 24: 怒り口
+INFO:root:VertexMorph 25: にやり
+INFO:root:VertexMorph 26: 横伸ばし
+INFO:root:VertexMorph 27: 口角上げ左
+INFO:root:VertexMorph 28: 口角上げ右
+INFO:root:VertexMorph 29: 口角下げ左
+INFO:root:VertexMorph 30: 口角下げ右
+INFO:root:VertexMorph 31: 口上
+INFO:root:VertexMorph 32: 口下
+INFO:root:VertexMorph 33: 左ほっぺた
+INFO:root:VertexMorph 34: 右ほっぺた
+INFO:root:VertexMorph 35: アゴ上げ
+INFO:root:VertexMorph 36: アゴ下げ
+INFO:root:VertexMorph 37: 上
+INFO:root:VertexMorph 38: 下
+INFO:root:VertexMorph 39: 真面目
+INFO:root:VertexMorph 40: 怒り
+INFO:root:VertexMorph 41: 八
+INFO:root:VertexMorph 42: 困る
+INFO:root:VertexMorph 43: 悲しい
+INFO:root:VertexMorph 44: にこり
+INFO:root:VertexMorph 45: フラット
+INFO:root:VertexMorph 46: 眉太
+INFO:root:VertexMorph 47: 耳反り
+INFO:root:VertexMorph 48: 耳タレ
+INFO:root:VertexMorph 49: 青ざめ
+INFO:root:MaterialMorph 50: 青ざめ_透過
+INFO:root:VertexMorph 51: 照れ
+INFO:root:MaterialMorph 52: 照れ_透過
+INFO:root:VertexMorph 53: 涙
+INFO:root:VertexMorph 54: 髪影隠し
+INFO:root:MaterialMorph 55: ハイライト消し
+INFO:root:VertexMorph 56: あげません
+INFO:root:----- Loaded 57 morphs.
+INFO:root:
+INFO:root:------------------------------
+INFO:root: Load Display Items
+INFO:root:------------------------------
+INFO:root:Display Item 0: Root
+INFO:root:Display Item 1: 表情
+INFO:root:Display Item 2: センター
+INFO:root:Display Item 3: IK
+INFO:root:Display Item 4: 体
+INFO:root:Display Item 5: 顔
+INFO:root:Display Item 6: 腕
+INFO:root:Display Item 7: 指
+INFO:root:Display Item 8: 足
+INFO:root:Display Item 9: 耳
+INFO:root:Display Item 10: 髪
+INFO:root:Display Item 11: 尻尾
+INFO:root:Display Item 12: スカート
+INFO:root:Display Item 13: 物理
+INFO:root:----- Loaded 14 display items.
+INFO:root:
+INFO:root:------------------------------
+INFO:root: Load Rigid Bodies
+INFO:root:------------------------------
+INFO:root:Rigid Body 0: 上半身1
+INFO:root:Rigid Body 1: 上半身2
+INFO:root:Rigid Body 2: 胸
+INFO:root:Rigid Body 3: 首
+INFO:root:Rigid Body 4: 頭
+INFO:root:Rigid Body 5: 左肩
+INFO:root:Rigid Body 6: 右肩
+INFO:root:Rigid Body 7: 左腕
+INFO:root:Rigid Body 8: 右腕
+INFO:root:Rigid Body 9: 左ひじ
+INFO:root:Rigid Body 10: 右ひじ
+INFO:root:Rigid Body 11: 左手首
+INFO:root:Rigid Body 12: 右手首
+INFO:root:Rigid Body 13: 下半身
+INFO:root:Rigid Body 14: 左足
+INFO:root:Rigid Body 15: 左ひざ
+INFO:root:Rigid Body 16: 左足首
+INFO:root:Rigid Body 17: 右足
+INFO:root:Rigid Body 18: 右ひざ
+INFO:root:Rigid Body 19: 右足首
+INFO:root:Rigid Body 20: 尻尾親
+INFO:root:Rigid Body 21: 尻尾0
+INFO:root:Rigid Body 22: 尻尾1
+INFO:root:Rigid Body 23: 尻尾2
+INFO:root:Rigid Body 24: 尻尾3
+INFO:root:Rigid Body 25: 左リボン0
+INFO:root:Rigid Body 26: 左リボン1
+INFO:root:Rigid Body 27: 右リボン0
+INFO:root:Rigid Body 28: 右リボン1
+INFO:root:Rigid Body 29: 左触覚0
+INFO:root:Rigid Body 30: 左触覚1
+INFO:root:Rigid Body 31: 右触覚0
+INFO:root:Rigid Body 32: 右触覚1
+INFO:root:Rigid Body 33: 左耳0
+INFO:root:Rigid Body 34: 左耳1
+INFO:root:Rigid Body 35: 右耳0
+INFO:root:Rigid Body 36: 右耳1
+INFO:root:Rigid Body 37: アホ毛0
+INFO:root:Rigid Body 38: 左後髪0
+INFO:root:Rigid Body 39: 左後髪1
+INFO:root:Rigid Body 40: 左後髪2
+INFO:root:Rigid Body 41: 左後髪3
+INFO:root:Rigid Body 42: 右後髪0
+INFO:root:Rigid Body 43: 右後髪1
+INFO:root:Rigid Body 44: 右後髪2
+INFO:root:Rigid Body 45: 右後髪3
+INFO:root:Rigid Body 46: 髪避け
+INFO:root:Rigid Body 47: スカート_0_0
+INFO:root:Rigid Body 48: スカート_0_1
+INFO:root:Rigid Body 49: スカート_0_2
+INFO:root:Rigid Body 50: スカート_0_3
+INFO:root:Rigid Body 51: スカート_0_4
+INFO:root:Rigid Body 52: スカート_0_5
+INFO:root:Rigid Body 53: スカート_0_6
+INFO:root:Rigid Body 54: スカート_0_7
+INFO:root:Rigid Body 55: スカート_0_8
+INFO:root:Rigid Body 56: スカート_0_9
+INFO:root:Rigid Body 57: スカート_0_10
+INFO:root:Rigid Body 58: スカート_0_11
+INFO:root:Rigid Body 59: スカート_0_12
+INFO:root:Rigid Body 60: スカート_0_13
+INFO:root:Rigid Body 61: スカート_0_14
+INFO:root:Rigid Body 62: スカート_0_15
+INFO:root:Rigid Body 63: スカート_1_0
+INFO:root:Rigid Body 64: スカート_1_1
+INFO:root:Rigid Body 65: スカート_1_2
+INFO:root:Rigid Body 66: スカート_1_3
+INFO:root:Rigid Body 67: スカート_1_4
+INFO:root:Rigid Body 68: スカート_1_5
+INFO:root:Rigid Body 69: スカート_1_6
+INFO:root:Rigid Body 70: スカート_1_7
+INFO:root:Rigid Body 71: スカート_1_8
+INFO:root:Rigid Body 72: スカート_1_9
+INFO:root:Rigid Body 73: スカート_1_10
+INFO:root:Rigid Body 74: スカート_1_11
+INFO:root:Rigid Body 75: スカート_1_12
+INFO:root:Rigid Body 76: スカート_1_13
+INFO:root:Rigid Body 77: スカート_1_14
+INFO:root:Rigid Body 78: スカート_1_15
+INFO:root:Rigid Body 79: スカート_2_0
+INFO:root:Rigid Body 80: スカート_2_1
+INFO:root:Rigid Body 81: スカート_2_2
+INFO:root:Rigid Body 82: スカート_2_3
+INFO:root:Rigid Body 83: スカート_2_4
+INFO:root:Rigid Body 84: スカート_2_5
+INFO:root:Rigid Body 85: スカート_2_6
+INFO:root:Rigid Body 86: スカート_2_7
+INFO:root:Rigid Body 87: スカート_2_8
+INFO:root:Rigid Body 88: スカート_2_9
+INFO:root:Rigid Body 89: スカート_2_10
+INFO:root:Rigid Body 90: スカート_2_11
+INFO:root:Rigid Body 91: スカート_2_12
+INFO:root:Rigid Body 92: スカート_2_13
+INFO:root:Rigid Body 93: スカート_2_14
+INFO:root:Rigid Body 94: スカート_2_15
+INFO:root:Rigid Body 95: スカート_3_0
+INFO:root:Rigid Body 96: スカート_3_1
+INFO:root:Rigid Body 97: スカート_3_2
+INFO:root:Rigid Body 98: スカート_3_3
+INFO:root:Rigid Body 99: スカート_3_4
+INFO:root:Rigid Body 100: スカート_3_5
+INFO:root:Rigid Body 101: スカート_3_6
+INFO:root:Rigid Body 102: スカート_3_7
+INFO:root:Rigid Body 103: スカート_3_8
+INFO:root:Rigid Body 104: スカート_3_9
+INFO:root:Rigid Body 105: スカート_3_10
+INFO:root:Rigid Body 106: スカート_3_11
+INFO:root:Rigid Body 107: スカート_3_12
+INFO:root:Rigid Body 108: スカート_3_13
+INFO:root:Rigid Body 109: スカート_3_14
+INFO:root:Rigid Body 110: スカート_3_15
+INFO:root:Rigid Body 111: 左後髪0錘
+INFO:root:Rigid Body 112: 左後髪2錘
+INFO:root:Rigid Body 113: 左後髪3錘
+INFO:root:Rigid Body 114: 右後髪0錘
+INFO:root:Rigid Body 115: 左後髪1錘
+INFO:root:Rigid Body 116: 右後髪1錘
+INFO:root:Rigid Body 117: 右後髪2錘
+INFO:root:Rigid Body 118: 右後髪3錘
+INFO:root:----- Loaded 119 rigid bodies.
+INFO:root:
+INFO:root:------------------------------
+INFO:root: Load Joints
+INFO:root:------------------------------
+INFO:root:Joint 0: 尻尾0
+INFO:root:Joint 1: 尻尾1
+INFO:root:Joint 2: 尻尾2
+INFO:root:Joint 3: 尻尾3
+INFO:root:Joint 4: 左リボン0
+INFO:root:Joint 5: 左リボン1
+INFO:root:Joint 6: 右リボン0
+INFO:root:Joint 7: 右リボン1
+INFO:root:Joint 8: 左触覚0
+INFO:root:Joint 9: 左触覚1
+INFO:root:Joint 10: 右触覚0
+INFO:root:Joint 11: 右触覚1
+INFO:root:Joint 12: 左耳0
+INFO:root:Joint 13: 左耳1
+INFO:root:Joint 14: 右耳0
+INFO:root:Joint 15: 右耳1
+INFO:root:Joint 16: アホ毛0
+INFO:root:Joint 17: 左後髪0
+INFO:root:Joint 18: 左後髪1
+INFO:root:Joint 19: 左後髪2
+INFO:root:Joint 20: 左後髪3
+INFO:root:Joint 21: 右後髪0
+INFO:root:Joint 22: 右後髪1
+INFO:root:Joint 23: 右後髪2
+INFO:root:Joint 24: 右後髪3
+INFO:root:Joint 25: スカート_0_0
+INFO:root:Joint 26: スカート_0_1
+INFO:root:Joint 27: スカート_0_2
+INFO:root:Joint 28: スカート_0_3
+INFO:root:Joint 29: スカート_0_4
+INFO:root:Joint 30: スカート_0_5
+INFO:root:Joint 31: スカート_0_6
+INFO:root:Joint 32: スカート_0_7
+INFO:root:Joint 33: スカート_0_8
+INFO:root:Joint 34: スカート_0_9
+INFO:root:Joint 35: スカート_0_10
+INFO:root:Joint 36: スカート_0_11
+INFO:root:Joint 37: スカート_0_12
+INFO:root:Joint 38: スカート_0_13
+INFO:root:Joint 39: スカート_0_14
+INFO:root:Joint 40: スカート_0_15
+INFO:root:Joint 41: スカート_1_0
+INFO:root:Joint 42: スカート_1_1
+INFO:root:Joint 43: スカート_1_2
+INFO:root:Joint 44: スカート_1_3
+INFO:root:Joint 45: スカート_1_4
+INFO:root:Joint 46: スカート_1_5
+INFO:root:Joint 47: スカート_1_6
+INFO:root:Joint 48: スカート_1_7
+INFO:root:Joint 49: スカート_1_8
+INFO:root:Joint 50: スカート_1_9
+INFO:root:Joint 51: スカート_1_10
+INFO:root:Joint 52: スカート_1_11
+INFO:root:Joint 53: スカート_1_12
+INFO:root:Joint 54: スカート_1_13
+INFO:root:Joint 55: スカート_1_14
+INFO:root:Joint 56: スカート_1_15
+INFO:root:Joint 57: スカート_2_0
+INFO:root:Joint 58: スカート_2_1
+INFO:root:Joint 59: スカート_2_2
+INFO:root:Joint 60: スカート_2_3
+INFO:root:Joint 61: スカート_2_4
+INFO:root:Joint 62: スカート_2_5
+INFO:root:Joint 63: スカート_2_6
+INFO:root:Joint 64: スカート_2_7
+INFO:root:Joint 65: スカート_2_8
+INFO:root:Joint 66: スカート_2_9
+INFO:root:Joint 67: スカート_2_10
+INFO:root:Joint 68: スカート_2_11
+INFO:root:Joint 69: スカート_2_12
+INFO:root:Joint 70: スカート_2_13
+INFO:root:Joint 71: スカート_2_14
+INFO:root:Joint 72: スカート_2_15
+INFO:root:Joint 73: スカート_3_0
+INFO:root:Joint 74: スカート_3_1
+INFO:root:Joint 75: スカート_3_2
+INFO:root:Joint 76: スカート_3_3
+INFO:root:Joint 77: スカート_3_4
+INFO:root:Joint 78: スカート_3_5
+INFO:root:Joint 79: スカート_3_6
+INFO:root:Joint 80: スカート_3_7
+INFO:root:Joint 81: スカート_3_8
+INFO:root:Joint 82: スカート_3_9
+INFO:root:Joint 83: スカート_3_10
+INFO:root:Joint 84: スカート_3_11
+INFO:root:Joint 85: スカート_3_12
+INFO:root:Joint 86: スカート_3_13
+INFO:root:Joint 87: スカート_3_14
+INFO:root:Joint 88: スカート_3_15
+INFO:root:Joint 89: スカート横_0_0
+INFO:root:Joint 90: スカート横_0_1
+INFO:root:Joint 91: スカート横_0_2
+INFO:root:Joint 92: スカート横_0_3
+INFO:root:Joint 93: スカート横_0_4
+INFO:root:Joint 94: スカート横_0_5
+INFO:root:Joint 95: スカート横_0_6
+INFO:root:Joint 96: スカート横_0_7
+INFO:root:Joint 97: スカート横_0_8
+INFO:root:Joint 98: スカート横_0_9
+INFO:root:Joint 99: スカート横_0_10
+INFO:root:Joint 100: スカート横_0_11
+INFO:root:Joint 101: スカート横_0_12
+INFO:root:Joint 102: スカート横_0_13
+INFO:root:Joint 103: スカート横_0_14
+INFO:root:Joint 104: スカート横_0_15
+INFO:root:Joint 105: スカート横_1_0
+INFO:root:Joint 106: スカート横_1_1
+INFO:root:Joint 107: スカート横_1_2
+INFO:root:Joint 108: スカート横_1_3
+INFO:root:Joint 109: スカート横_1_4
+INFO:root:Joint 110: スカート横_1_5
+INFO:root:Joint 111: スカート横_1_6
+INFO:root:Joint 112: スカート横_1_7
+INFO:root:Joint 113: スカート横_1_8
+INFO:root:Joint 114: スカート横_1_9
+INFO:root:Joint 115: スカート横_1_10
+INFO:root:Joint 116: スカート横_1_11
+INFO:root:Joint 117: スカート横_1_12
+INFO:root:Joint 118: スカート横_1_13
+INFO:root:Joint 119: スカート横_1_14
+INFO:root:Joint 120: スカート横_1_15
+INFO:root:Joint 121: スカート横_2_0
+INFO:root:Joint 122: スカート横_2_1
+INFO:root:Joint 123: スカート横_2_2
+INFO:root:Joint 124: スカート横_2_3
+INFO:root:Joint 125: スカート横_2_4
+INFO:root:Joint 126: スカート横_2_5
+INFO:root:Joint 127: スカート横_2_6
+INFO:root:Joint 128: スカート横_2_7
+INFO:root:Joint 129: スカート横_2_8
+INFO:root:Joint 130: スカート横_2_9
+INFO:root:Joint 131: スカート横_2_10
+INFO:root:Joint 132: スカート横_2_11
+INFO:root:Joint 133: スカート横_2_12
+INFO:root:Joint 134: スカート横_2_13
+INFO:root:Joint 135: スカート横_2_14
+INFO:root:Joint 136: スカート横_2_15
+INFO:root:Joint 137: スカート横_3_0
+INFO:root:Joint 138: スカート横_3_1
+INFO:root:Joint 139: スカート横_3_2
+INFO:root:Joint 140: スカート横_3_3
+INFO:root:Joint 141: スカート横_3_4
+INFO:root:Joint 142: スカート横_3_5
+INFO:root:Joint 143: スカート横_3_6
+INFO:root:Joint 144: スカート横_3_7
+INFO:root:Joint 145: スカート横_3_8
+INFO:root:Joint 146: スカート横_3_9
+INFO:root:Joint 147: スカート横_3_10
+INFO:root:Joint 148: スカート横_3_11
+INFO:root:Joint 149: スカート横_3_12
+INFO:root:Joint 150: スカート横_3_13
+INFO:root:Joint 151: スカート横_3_14
+INFO:root:Joint 152: スカート横_3_15
+INFO:root:Joint 153: 横J.後髪1
+INFO:root:Joint 154: 右後髪3錘
+INFO:root:Joint 155: 右後髪2錘
+INFO:root:Joint 156: 右後髪1錘
+INFO:root:Joint 157: 右後髪0錘
+INFO:root:Joint 158: 左後髪3錘
+INFO:root:Joint 159: 左後髪2錘
+INFO:root:Joint 160: 左後髪1錘
+INFO:root:Joint 161: 左後髪0錘
+INFO:root:Joint 162: 左後髪0補
+INFO:root:Joint 163: 左後髪2補
+INFO:root:Joint 164: 左後髪3補
+INFO:root:Joint 165: 右後髪0補
+INFO:root:Joint 166: 左後髪1補
+INFO:root:Joint 167: 右後髪1補
+INFO:root:Joint 168: 右後髪2補
+INFO:root:Joint 169: 右後髪3補
+INFO:root:----- Loaded 170 joints.
+INFO:root: Finished loading.
+INFO:root:----------------------------------------
+INFO:root: mmd_tools.pmx module
+INFO:root:****************************************
+INFO:root:****************************************
+INFO:root: mmd_tools.import_pmx module
+INFO:root:----------------------------------------
+INFO:root: Start to load model data form a pmx file
+INFO:root:            by the mmd_tools.pmx modlue.
+INFO:root:
+INFO:root:Setting custom normals...
+INFO:root:   - Marked 4/86975 (0.00%) sharp edges with angle: 179 degrees
+INFO:root:   - Done!!
+INFO:root:Update IK of ひざ.L: 40 -> 200
+INFO:root:Update IK of 足首.L: 3 -> 15
+INFO:root:Update IK of ひざ.R: 40 -> 200
+INFO:root:Update IK of 足首.R: 3 -> 15
+INFO:root: Finished importing the model in 2.774581 seconds.
+INFO:root:----------------------------------------
+INFO:root: mmd_tools.import_pmx module
+INFO:root:****************************************
+Info: Imported MMD model from "/home/nemesis/Vídeos/proyecto inginversa/NFSU2-Uma-Prueba/modding/model-sources/00/ShiniNet式_オグリ〇ャップ_v1.1/ShiniNet式_オグリ〇ャップ_v1.1.pmx"
+Info: Packed 16 file(s)
+Info: Saved as "oguri-source.blend"
+{"source_sha256": "94215b3fe854e508209bbf58dcda0d8a79a214a4dd07414b23108dbd590ea36d", "reader_commit": "f1d8a98db5e185cfa73c9b8a8a67fa42d9eb4b14", "mesh_objects": 1, "vertices": 34537, "triangles": 53024, "bones": 272, "materials": 34, "images": 18, "missing_textures": [], "scope": "Source import only, no runtime export or game installation"}
+Blender 4.5.16 LTS (hash 3f6797307da5 built 2026-11-10 01:31:21)
+
+Blender quit

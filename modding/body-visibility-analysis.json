@@ -1,0 +1,261 @@
+{
+  "source_sha256": "a01b652817a8e54ea9ee5bd677da1dac221962d2726675051f796ed5b7b1e455",
+  "parts": [
+    {
+      "name": "COROLLA_BASE_A",
+      "solid_offset": 18560,
+      "vertices": 449,
+      "extent": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "collapsed": true
+    },
+    {
+      "name": "COROLLA_BASE_B",
+      "solid_offset": 40704,
+      "vertices": 271,
+      "extent": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "collapsed": true
+    },
+    {
+      "name": "COROLLA_BASE_C",
+      "solid_offset": 56320,
+      "vertices": 78,
+      "extent": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "collapsed": true
+    },
+    {
+      "name": "COROLLA_KIT00_BODY_A",
+      "solid_offset": 77696,
+      "vertices": 14512,
+      "extent": [
+        1.0151011943817139,
+        1.3266421556472778,
+        2.1581709384918213
+      ],
+      "collapsed": false
+    },
+    {
+      "name": "COROLLA_KIT00_BODY_B",
+      "solid_offset": 713472,
+      "vertices": 14512,
+      "extent": [
+        1.0151011943817139,
+        1.3266421556472778,
+        2.1581709384918213
+      ],
+      "collapsed": false
+    },
+    {
+      "name": "COROLLA_KIT00_BODY_C",
+      "solid_offset": 1341696,
+      "vertices": 14512,
+      "extent": [
+        1.0151011943817139,
+        1.3266421556472778,
+        2.1581709384918213
+      ],
+      "collapsed": false
+    },
+    {
+      "name": "COROLLA_KIT00_BODY_D",
+      "solid_offset": 1967616,
+      "vertices": 14512,
+      "extent": [
+        1.0151011943817139,
+        1.3266421556472778,
+        2.1581709384918213
+      ],
+      "collapsed": false
+    },
+    {
+      "name": "COROLLA_KITW01_BODY_A",
+      "solid_offset": 7159040,
+      "vertices": 1989,
+      "extent": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "collapsed": true
+    },
+    {
+      "name": "COROLLA_KITW01_BODY_B",
+      "solid_offset": 7266432,
+      "vertices": 1295,
+      "extent": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "collapsed": true
+    },
+    {
+      "name": "COROLLA_KITW01_BODY_C",
+      "solid_offset": 7330048,
+      "vertices": 657,
+      "extent": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "collapsed": true
+    },
+    {
+      "name": "COROLLA_KITW01_BODY_D",
+      "solid_offset": 7362560,
+      "vertices": 202,
+      "extent": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "collapsed": true
+    },
+    {
+      "name": "COROLLA_KITW02_BODY_A",
+      "solid_offset": 7404800,
+      "vertices": 2240,
+      "extent": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "collapsed": true
+    },
+    {
+      "name": "COROLLA_KITW02_BODY_B",
+      "solid_offset": 7527296,
+      "vertices": 1439,
+      "extent": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "collapsed": true
+    },
+    {
+      "name": "COROLLA_KITW02_BODY_C",
+      "solid_offset": 7599488,
+      "vertices": 727,
+      "extent": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "collapsed": true
+    },
+    {
+      "name": "COROLLA_KITW02_BODY_D",
+      "solid_offset": 7635328,
+      "vertices": 206,
+      "extent": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "collapsed": true
+    },
+    {
+      "name": "COROLLA_KITW03_BODY_A",
+      "solid_offset": 7679104,
+      "vertices": 2274,
+      "extent": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "collapsed": true
+    },
+    {
+      "name": "COROLLA_KITW03_BODY_B",
+      "solid_offset": 7808768,
+      "vertices": 1425,
+      "extent": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "collapsed": true
+    },
+    {
+      "name": "COROLLA_KITW03_BODY_C",
+      "solid_offset": 7879808,
+      "vertices": 729,
+      "extent": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "collapsed": true
+    },
+    {
+      "name": "COROLLA_KITW03_BODY_D",
+      "solid_offset": 7918208,
+      "vertices": 210,
+      "extent": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "collapsed": true
+    },
+    {
+      "name": "COROLLA_KITW04_BODY_A",
+      "solid_offset": 7969920,
+      "vertices": 1707,
+      "extent": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "collapsed": true
+    },
+    {
+      "name": "COROLLA_KITW04_BODY_B",
+      "solid_offset": 8067840,
+      "vertices": 1219,
+      "extent": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "collapsed": true
+    },
+    {
+      "name": "COROLLA_KITW04_BODY_C",
+      "solid_offset": 8135040,
+      "vertices": 668,
+      "extent": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "collapsed": true
+    },
+    {
+      "name": "COROLLA_KITW04_BODY_D",
+      "solid_offset": 8171648,
+      "vertices": 214,
+      "extent": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "collapsed": true
+    }
+  ],
+  "inference": "Non-stock body kits are collapsed; this could hide characters when those kits are selected. Runtime kit selection has not been observed.",
+  "native_skeleton_transform_max_error": 2.8742829272232484e-07,
+  "native_skeletons_validated": 83
+}

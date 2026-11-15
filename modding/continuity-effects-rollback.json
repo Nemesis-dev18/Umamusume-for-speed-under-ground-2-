@@ -1,0 +1,12 @@
+{
+  "rollback_of": "modding/continuity-effects-installed.json",
+  "reason": "User reports game closes when starting race; Proton process exited5, no exception stack captured",
+  "restored_files": [
+    "GLOBAL/InGameCommon.bun",
+    "GLOBAL/InGameCommon.lzc",
+    "GLOBAL/GLOBALB.BUN",
+    "GLOBAL/GlobalB.lzc",
+    "scripts/UmaRunner.asi"
+  ],
+  "gameplay_verified": false
+}

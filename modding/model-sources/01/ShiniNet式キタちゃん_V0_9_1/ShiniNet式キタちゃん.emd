@@ -1,0 +1,22 @@
+[Info]
+Version = 3
+
+[Effect]
+Obj = none
+Obj[0] = Shaders\Kita_Clothes.fx
+Obj[1] = Shaders\Kita_Clothes.fx
+Obj[2] = Shaders\Kita_Clothes.fx
+Obj[3] = Shaders\Kita_Clothes.fx
+Obj[4] = Shaders\Kita_Clothes.fx
+Obj[5] = Shaders\Kita_Clothes.fx
+Obj[6] = Shaders\Kita_Clothes.fx
+Obj[7] = Shaders\Kita_Clothes.fx
+Obj[8] = Shaders\Kita_Face.fx
+Obj[9] = Shaders\Kita_Face.fx
+Obj[13] = none
+Obj[14] = Shaders\Kita_Hair.fx
+Obj[15] = Shaders\Kita_Hair.fx
+Obj[16] = Shaders\Kita_Face.fx
+Obj[19] = none
+Obj[20] = Shaders\Kita_Clothes_Metal.fx
+

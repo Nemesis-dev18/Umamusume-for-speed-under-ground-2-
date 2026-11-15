@@ -1,0 +1,11 @@
+{
+  "replace": "scripts/UmaRunner.asi",
+  "before_sha256": "6f3263288070c497617db2a926061dae1f1c29d0fbbde0638cd54917e8425d05",
+  "candidate_sha256": "548cc46e928cdf3debf5e7c3e36586bcbff3a65d4d69993b99c24f2451eca5ef",
+  "candidate_bytes": 291169,
+  "backup": "modding/runtime/UmaRunner.before-upload-ranges.asi",
+  "geometry_and_texture_changes": false,
+  "installed": false,
+  "gameplay_verified": false,
+  "animation_source": "Waiting for user-provided local Umamusume files; current authored clip unchanged"
+}

@@ -1,0 +1,229 @@
+AUDIO originalVariants=20 outputStreams=2 installed=1; sample playback only, no game data patch
+START native lighting runner installed=1; graphics-derived speed uncalibrated; independent actor gait, spatial association
+FRAME 120 candidates=0 owned=0 replaced=0 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000 projectionValid=0 recoveredSceneRefs=0 hiddenWheels=0 groups=0 best=0 second=0 hoofPlayed=0 audioActive=1
+FRAME 240 candidates=0 owned=0 replaced=0 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000 projectionValid=0 recoveredSceneRefs=0 hiddenWheels=0 groups=0 best=0 second=0 hoofPlayed=0 audioActive=1
+FRAME 360 candidates=0 owned=0 replaced=0 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000 projectionValid=0 recoveredSceneRefs=0 hiddenWheels=0 groups=0 best=0 second=0 hoofPlayed=0 audioActive=1
+FRAME 480 candidates=0 owned=0 replaced=0 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000 projectionValid=0 recoveredSceneRefs=0 hiddenWheels=0 groups=0 best=0 second=0 hoofPlayed=0 audioActive=1
+FRAME 600 candidates=0 owned=0 replaced=0 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000 projectionValid=0 recoveredSceneRefs=0 hiddenWheels=0 groups=0 best=0 second=0 hoofPlayed=0 audioActive=1
+FRAME 720 candidates=0 owned=0 replaced=0 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000 projectionValid=0 recoveredSceneRefs=0 hiddenWheels=0 groups=0 best=0 second=0 hoofPlayed=0 audioActive=1
+FRAME 840 candidates=0 owned=0 replaced=0 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000 projectionValid=0 recoveredSceneRefs=0 hiddenWheels=0 groups=0 best=0 second=0 hoofPlayed=0 audioActive=1
+OWNED frame=866 base=0 min=0 start=0 offset=0 stride=36 color=7 shaderBytes=1792 supported=1
+WHEEL method=DIP frame=866 vertices=150 primitives=144 shaderBytes=420 match=0 bodies=1 origin=0.0000,1.3497,4.0171 rawBounds=-7.6734,-5.6831,-0.0642:7.6734,8.4019,0.0791
+WHEEL method=DIP frame=866 vertices=539 primitives=787 shaderBytes=628 match=0 bodies=1 origin=0.0000,1.3497,4.0171 rawBounds=-11.3374,-8.7186,0.0000:15.0603,99.5738,0.1500
+WHEEL method=DIP frame=866 vertices=371 primitives=192 shaderBytes=628 match=0 bodies=1 origin=-4.8489,1.3196,6.4395 rawBounds=-3.1106,-3.1106,0.0131:3.1106,3.1106,0.1597
+WHEEL method=DIP frame=866 vertices=371 primitives=216 shaderBytes=628 match=0 bodies=1 origin=-4.8489,1.3196,6.4395 rawBounds=-3.1106,-3.1106,0.0131:3.1106,3.1106,0.1597
+WHEEL method=DIP frame=866 vertices=371 primitives=72 shaderBytes=628 match=0 bodies=1 origin=-4.8489,1.3196,6.4395 rawBounds=-3.1106,-3.1106,0.0131:3.1106,3.1106,0.1597
+WHEEL method=DPUP frame=866 vertices=4 primitives=2 shaderBytes=584 match=0 bodies=1 origin=-3.3282,0.8294,5.9148 rawBounds=-0.4435,0.1220,-0.4435:0.4435,0.1220,0.4435
+WHEEL method=DIP frame=866 vertices=1777 primitives=16 shaderBytes=1792 match=0 bodies=1 origin=-4.8489,1.0144,6.4357 rawBounds=-2.1432,-0.9631,-0.0375:2.2142,0.9631,0.8113
+WHEEL method=DIP frame=866 vertices=1777 primitives=126 shaderBytes=1792 match=0 bodies=1 origin=-4.8489,1.0144,6.4357 rawBounds=-2.1432,-0.9631,-0.0375:2.2142,0.9631,0.8113
+WHEEL method=DIP frame=866 vertices=1777 primitives=1000 shaderBytes=1792 match=0 bodies=1 origin=-4.8489,1.0144,6.4357 rawBounds=-2.1432,-0.9631,-0.0375:2.2142,0.9631,0.8113
+WHEEL method=DIP frame=866 vertices=1777 primitives=90 shaderBytes=1792 match=0 bodies=1 origin=-4.8489,1.0144,6.4357 rawBounds=-2.1432,-0.9631,-0.0375:2.2142,0.9631,0.8113
+WHEEL method=DIP frame=866 vertices=1777 primitives=62 shaderBytes=1792 match=0 bodies=1 origin=-4.8489,1.0144,6.4357 rawBounds=-2.1432,-0.9631,-0.0375:2.2142,0.9631,0.8113
+OWNED frame=866 base=0 min=0 start=0 offset=0 stride=36 color=7 shaderBytes=1792 supported=1
+WHEEL method=DIP frame=866 vertices=136 primitives=68 shaderBytes=420 match=0 bodies=2 origin=0.0000,1.3497,4.0171 rawBounds=-4.2893,0.0000,-0.1452:0.0000,9.7821,2.2733
+OWNED frame=867 base=0 min=0 start=0 offset=0 stride=36 color=7 shaderBytes=1792 supported=1
+OWNED frame=867 base=0 min=0 start=0 offset=0 stride=36 color=7 shaderBytes=1792 supported=1
+OWNED frame=868 base=0 min=0 start=0 offset=0 stride=36 color=7 shaderBytes=1792 supported=1
+OWNED frame=868 base=0 min=0 start=0 offset=0 stride=36 color=7 shaderBytes=1792 supported=1
+OWNED frame=869 base=0 min=0 start=0 offset=0 stride=36 color=7 shaderBytes=1792 supported=1
+OWNED frame=869 base=0 min=0 start=0 offset=0 stride=36 color=7 shaderBytes=1792 supported=1
+WHEEL method=DIP frame=869 vertices=140 primitives=70 shaderBytes=420 match=0 bodies=2 origin=0.0000,1.3497,4.0171 rawBounds=-4.2917,0.0000,-0.1339:0.0000,9.7821,2.3045
+WHEEL method=DIP frame=875 vertices=144 primitives=72 shaderBytes=420 match=0 bodies=2 origin=0.0000,1.3497,4.0171 rawBounds=-4.3058,0.0000,-0.1107:0.0000,9.7821,2.3252
+WHEEL method=DIP frame=881 vertices=148 primitives=74 shaderBytes=420 match=0 bodies=2 origin=0.0000,1.3497,4.0171 rawBounds=-4.3214,0.0000,-0.1026:0.0000,9.7822,2.1397
+WHEEL method=DIP frame=887 vertices=152 primitives=76 shaderBytes=420 match=0 bodies=2 origin=0.0000,1.3497,4.0171 rawBounds=-4.3335,0.0000,-0.1922:0.0000,9.7822,2.1747
+WHEEL method=DIP frame=893 vertices=156 primitives=78 shaderBytes=420 match=0 bodies=2 origin=0.0000,1.3497,4.0171 rawBounds=-4.3432,0.0000,-0.1737:0.0000,9.7822,2.2321
+WHEEL method=DIP frame=898 vertices=160 primitives=80 shaderBytes=420 match=0 bodies=2 origin=0.0000,1.3497,4.0171 rawBounds=-4.3504,0.0000,-0.1595:0.0000,9.7823,2.1040
+WHEEL method=DIP frame=904 vertices=164 primitives=82 shaderBytes=420 match=0 bodies=2 origin=0.0000,1.3497,4.0171 rawBounds=-4.3578,0.0000,-0.1368:0.0000,9.7823,2.1607
+WHEEL method=DIP frame=910 vertices=168 primitives=84 shaderBytes=420 match=0 bodies=2 origin=0.0000,1.3497,4.0171 rawBounds=-4.3642,0.0000,-0.1123:0.0000,9.7824,2.2187
+WHEEL method=DIP frame=916 vertices=172 primitives=86 shaderBytes=420 match=0 bodies=2 origin=0.0000,1.3497,4.0171 rawBounds=-4.3699,0.0000,-0.1937:0.0000,9.7825,2.2501
+WHEEL method=DIP frame=922 vertices=176 primitives=88 shaderBytes=420 match=0 bodies=2 origin=0.0000,1.3497,4.0171 rawBounds=-4.3744,0.0000,-0.1764:0.0000,9.7826,2.3087
+WHEEL method=DIP frame=928 vertices=180 primitives=90 shaderBytes=420 match=0 bodies=2 origin=0.0000,1.3497,4.0171 rawBounds=-4.3786,0.0000,-0.1564:0.0000,9.7827,2.1866
+WHEEL method=DIP frame=934 vertices=184 primitives=92 shaderBytes=420 match=0 bodies=2 origin=0.0000,1.3497,4.0171 rawBounds=-4.3822,0.0000,-0.1343:0.0000,9.7828,2.1441
+WHEEL method=DIP frame=940 vertices=188 primitives=94 shaderBytes=420 match=0 bodies=2 origin=0.0000,1.3497,4.0171 rawBounds=-4.3854,0.0000,-0.1106:0.0000,9.7545,2.2039
+WHEEL method=DIP frame=947 vertices=192 primitives=96 shaderBytes=420 match=0 bodies=2 origin=0.0000,1.3497,4.0171 rawBounds=-4.3886,0.0000,-0.0837:0.0000,9.7546,2.2694
+WHEEL method=DIP frame=951 vertices=196 primitives=98 shaderBytes=420 match=0 bodies=2 origin=0.0000,1.3497,4.0171 rawBounds=-4.3915,0.0000,-0.1453:0.0000,9.7547,2.2874
+WHEEL method=DIP frame=957 vertices=200 primitives=100 shaderBytes=420 match=0 bodies=2 origin=0.0000,1.3497,4.0171 rawBounds=-4.3944,0.0000,-0.1207:0.0000,9.7899,2.1917
+CAMERA frame=959 groups=40 best=1 second=1 inverseProjection=0.400005,-1.96086e-10,1.19211e-08,7.97584e-13,-9.80496e-11,-0.263179,-1.42161e-07,-4.99682e-10,2.81626e-07,-2.50978e-07,1.84774e-06,-1.99993,-2.33951e-07,2.43143e-07,0.999998,2,
+REF votes=1 1,-4.90209e-10,2.98023e-08,4.76806e-08,-0.0124615,0.999922,5.94219e-10,0.999922,0.0124615,5.07366e-08,1.34975,4.01713,
+REF votes=1 1,-4.90209e-10,2.98023e-08,4.76806e-08,-0.0124615,0.999922,5.94219e-10,0.999922,0.0124615,5.07366e-08,1.34975,4.01713,
+REF votes=1 1,-4.90209e-10,2.98023e-08,4.76806e-08,-0.0124615,0.999922,5.94219e-10,0.999922,0.0124615,5.07366e-08,1.34975,4.01713,
+REF votes=1 1,-4.90209e-10,2.98023e-08,4.76806e-08,-0.0124615,0.999922,5.94219e-10,0.999922,0.0124615,5.07366e-08,1.34975,4.01713,
+BODY 0.584554,0.0101107,-0.811292,0.811355,-0.00728444,0.584509,0,0.999923,0.0124615,0.0120769,1.14671,9.43534,
+FRAME 960 candidates=188 owned=188 replaced=188 shaderFailures=0 references=40 bodies=2 graphicsSpeedValid=1 graphicsSpeed=0.0000 blend=0.0001 projectionValid=1 recoveredSceneRefs=3384 hiddenWheels=0 groups=40 best=1 second=1 hoofPlayed=0 audioActive=1
+ACTOR slot=0 speed=0.0000 blend=0.0001 position=0.0121,5.4203,-0.1355
+WHEEL method=DIP frame=963 vertices=204 primitives=102 shaderBytes=420 match=0 bodies=2 origin=0.0000,1.3497,4.0171 rawBounds=-4.3975,0.0000,-0.0943:0.0000,9.8025,2.0667
+WHEEL method=DIP frame=969 vertices=208 primitives=104 shaderBytes=420 match=0 bodies=2 origin=0.0000,1.3497,4.0171 rawBounds=-4.4009,0.0000,-0.1972:0.0000,9.8130,2.1091
+WHEEL method=DIP frame=975 vertices=212 primitives=106 shaderBytes=420 match=0 bodies=2 origin=0.0000,1.3497,4.0171 rawBounds=-4.4047,0.0000,-0.1799:0.0000,9.8213,2.1687
+WHEEL method=DIP frame=981 vertices=216 primitives=108 shaderBytes=420 match=0 bodies=2 origin=0.0000,1.3497,4.0171 rawBounds=-4.4091,0.0000,-0.1614:0.0000,9.8273,2.2278
+WHEEL method=DIP frame=987 vertices=220 primitives=110 shaderBytes=420 match=0 bodies=2 origin=0.0000,1.3497,4.0171 rawBounds=-4.4143,0.0000,-0.1596:0.0000,9.8312,2.2896
+WHEEL method=DIP frame=993 vertices=224 primitives=112 shaderBytes=420 match=0 bodies=2 origin=0.0000,1.3497,4.0171 rawBounds=-4.4203,0.0000,-0.1375:0.0000,9.8327,2.2804
+WHEEL method=DIP frame=999 vertices=228 primitives=114 shaderBytes=420 match=0 bodies=2 origin=0.0000,1.3497,4.0171 rawBounds=-4.4273,0.0000,-0.1135:0.0000,9.8328,2.0734
+WHEEL method=DIP frame=1005 vertices=232 primitives=116 shaderBytes=420 match=0 bodies=2 origin=0.0000,1.3497,4.0171 rawBounds=-4.4356,0.0000,-0.0878:0.0000,9.8329,2.1302
+WHEEL method=DIP frame=1011 vertices=236 primitives=118 shaderBytes=420 match=0 bodies=2 origin=0.0000,1.3497,4.0171 rawBounds=-4.4450,0.0000,-0.0602:0.0000,9.8330,2.1865
+WHEEL method=DIP frame=1017 vertices=240 primitives=120 shaderBytes=420 match=0 bodies=2 origin=0.0000,1.3497,4.0171 rawBounds=-4.3489,0.0000,-0.0313:0.0000,9.8330,2.2128
+WHEEL method=DIP frame=1023 vertices=244 primitives=122 shaderBytes=420 match=0 bodies=2 origin=0.0000,1.3497,4.0171 rawBounds=-4.3535,0.0000,-0.0897:0.0000,9.8331,2.2729
+FRAME 1080 candidates=328 owned=328 replaced=328 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000 projectionValid=1 recoveredSceneRefs=5904 hiddenWheels=0 groups=0 best=0 second=0 hoofPlayed=0 audioActive=1
+WHEEL method=DIP frame=1189 vertices=121 primitives=10 shaderBytes=1792 match=0 bodies=1 origin=-2.2300,1.3415,5.9005 rawBounds=-0.1372,-0.0115,-0.0834:0.0516,0.2349,0.0468
+WHEEL method=DIP frame=1189 vertices=132 primitives=110 shaderBytes=1792 match=1 bodies=2 origin=-1.3462,0.4108,6.2605 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=1189 vertices=102 primitives=4 shaderBytes=1792 match=0 bodies=2 origin=-1.5875,1.6790,6.4277 rawBounds=-0.4861,-0.1669,-0.0030:0.0004,0.1669,0.1185
+WHEEL method=DIP frame=1189 vertices=121 primitives=98 shaderBytes=1792 match=1 bodies=2 origin=-2.2300,1.3415,5.9005 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=1189 vertices=102 primitives=58 shaderBytes=1792 match=0 bodies=2 origin=-1.5875,1.6790,6.4277 rawBounds=-0.4861,-0.1669,-0.0030:0.0004,0.1669,0.1185
+WHEEL method=DIP frame=1189 vertices=60 primitives=38 shaderBytes=420 match=0 bodies=4 origin=20.1521,-1.7157,41.5882 rawBounds=-16.0796,-35.5504,0.0563:15.2686,35.3991,10.4740
+WHEEL method=DIP frame=1189 vertices=144 primitives=12 shaderBytes=420 match=0 bodies=4 origin=-27.8960,-17.8749,160.6111 rawBounds=-15.5621,-0.4084,-0.0319:15.3392,0.4028,13.3098
+WHEEL method=DIP frame=1189 vertices=144 primitives=60 shaderBytes=420 match=0 bodies=4 origin=-27.8960,-17.8749,160.6111 rawBounds=-15.5621,-0.4084,-0.0319:15.3392,0.4028,13.3098
+WHEEL method=DIP frame=1189 vertices=21 primitives=12 shaderBytes=420 match=0 bodies=4 origin=-39.5261,-4.0943,67.6572 rawBounds=-38.3086,-12.4654,0.3673:38.3259,14.4360,36.2349
+WHEEL method=DIP frame=1189 vertices=12 primitives=6 shaderBytes=420 match=0 bodies=4 origin=36.9185,3.8074,127.0382 rawBounds=-4.3411,-2.4370,0.0000:4.3411,2.4369,11.9948
+WHEEL method=DIP frame=1189 vertices=173 primitives=80 shaderBytes=584 match=0 bodies=4 origin=34.4871,-20.0572,78.2787 rawBounds=-0.3575,-6.4659,-1.6071:0.3533,0.3667,13.5892
+WHEEL method=DIP frame=1189 vertices=173 primitives=80 shaderBytes=484 match=0 bodies=4 origin=34.4871,-20.0572,78.2787 rawBounds=-0.3575,-6.4659,-1.6071:0.3533,0.3667,13.5892
+WHEEL method=DIP frame=1189 vertices=173 primitives=20 shaderBytes=584 match=0 bodies=4 origin=34.4871,-20.0572,78.2787 rawBounds=-0.3575,-6.4659,-1.6071:0.3533,0.3667,13.5892
+WHEEL method=DIP frame=1189 vertices=173 primitives=20 shaderBytes=484 match=0 bodies=4 origin=34.4871,-20.0572,78.2787 rawBounds=-0.3575,-6.4659,-1.6071:0.3533,0.3667,13.5892
+WHEEL method=DIP frame=1189 vertices=173 primitives=10 shaderBytes=584 match=0 bodies=4 origin=34.4871,-20.0572,78.2787 rawBounds=-0.3575,-6.4659,-1.6071:0.3533,0.3667,13.5892
+WHEEL method=DIP frame=1189 vertices=173 primitives=10 shaderBytes=484 match=0 bodies=4 origin=34.4871,-20.0572,78.2787 rawBounds=-0.3575,-6.4659,-1.6071:0.3533,0.3667,13.5892
+WHEEL method=DIP frame=1189 vertices=258 primitives=9 shaderBytes=584 match=0 bodies=4 origin=42.8540,4.9554,99.0133 rawBounds=-18.8384,-11.2371,0.0000:9.3177,11.4438,8.0000
+WHEEL method=DIP frame=1189 vertices=258 primitives=9 shaderBytes=484 match=0 bodies=4 origin=42.8540,4.9554,99.0133 rawBounds=-18.8384,-11.2371,0.0000:9.3177,11.4438,8.0000
+WHEEL method=DIP frame=1189 vertices=258 primitives=95 shaderBytes=584 match=0 bodies=4 origin=42.8540,4.9554,99.0133 rawBounds=-18.8384,-11.2371,0.0000:9.3177,11.4438,8.0000
+WHEEL method=DIP frame=1189 vertices=258 primitives=95 shaderBytes=484 match=0 bodies=4 origin=42.8540,4.9554,99.0133 rawBounds=-18.8384,-11.2371,0.0000:9.3177,11.4438,8.0000
+WHEEL method=DIP frame=1189 vertices=258 primitives=82 shaderBytes=584 match=0 bodies=4 origin=42.8540,4.9554,99.0133 rawBounds=-18.8384,-11.2371,0.0000:9.3177,11.4438,8.0000
+WHEEL method=DIP frame=1189 vertices=258 primitives=82 shaderBytes=484 match=0 bodies=4 origin=42.8540,4.9554,99.0133 rawBounds=-18.8384,-11.2371,0.0000:9.3177,11.4438,8.0000
+WHEEL method=DIP frame=1189 vertices=173 primitives=12 shaderBytes=584 match=0 bodies=4 origin=16.9520,-18.1283,136.4676 rawBounds=-0.3575,-6.4659,-1.6071:0.3533,0.3667,13.5892
+WHEEL method=DIP frame=1189 vertices=173 primitives=12 shaderBytes=484 match=0 bodies=4 origin=16.9520,-18.1283,136.4676 rawBounds=-0.3575,-6.4659,-1.6071:0.3533,0.3667,13.5892
+WHEEL method=DIP frame=1189 vertices=27 primitives=16 shaderBytes=584 match=0 bodies=4 origin=-30.9977,-17.2973,154.9554 rawBounds=-5.8043,-0.5680,8.2173:5.7147,-0.2214,15.8726
+WHEEL method=DIP frame=1189 vertices=27 primitives=16 shaderBytes=484 match=0 bodies=4 origin=-30.9977,-17.2973,154.9554 rawBounds=-5.8043,-0.5680,8.2173:5.7147,-0.2214,15.8726
+WHEEL method=DIP frame=1189 vertices=27 primitives=2 shaderBytes=584 match=0 bodies=4 origin=-30.9977,-17.2973,154.9554 rawBounds=-5.8043,-0.5680,8.2173:5.7147,-0.2214,15.8726
+WHEEL method=DIP frame=1189 vertices=27 primitives=2 shaderBytes=484 match=0 bodies=4 origin=-30.9977,-17.2973,154.9554 rawBounds=-5.8043,-0.5680,8.2173:5.7147,-0.2214,15.8726
+WHEEL method=DIP frame=1189 vertices=151 primitives=67 shaderBytes=584 match=0 bodies=4 origin=182.6092,16.4365,-144.3895 rawBounds=-235.2301,97.1084,19.1601:-195.9836,165.5713,24.6350
+WHEEL method=DIP frame=1189 vertices=151 primitives=67 shaderBytes=484 match=0 bodies=4 origin=182.6092,16.4365,-144.3895 rawBounds=-235.2301,97.1084,19.1601:-195.9836,165.5713,24.6350
+WHEEL method=DIP frame=1189 vertices=151 primitives=32 shaderBytes=584 match=0 bodies=4 origin=182.6092,16.4365,-144.3895 rawBounds=-235.2301,97.1084,19.1601:-195.9836,165.5713,24.6350
+WHEEL method=DIP frame=1189 vertices=151 primitives=32 shaderBytes=484 match=0 bodies=4 origin=182.6092,16.4365,-144.3895 rawBounds=-235.2301,97.1084,19.1601:-195.9836,165.5713,24.6350
+WHEEL method=DIP frame=1189 vertices=66 primitives=67 shaderBytes=584 match=0 bodies=4 origin=182.6092,16.4365,-144.3895 rawBounds=-235.2045,96.0046,18.8776:-196.0096,165.4927,21.7908
+WHEEL method=DIP frame=1189 vertices=66 primitives=67 shaderBytes=484 match=0 bodies=4 origin=182.6092,16.4365,-144.3895 rawBounds=-235.2045,96.0046,18.8776:-196.0096,165.4927,21.7908
+WHEEL method=DIP frame=1189 vertices=454 primitives=132 shaderBytes=584 match=0 bodies=4 origin=182.6092,16.4365,-144.3895 rawBounds=-250.5991,203.2871,-6.8006:-162.0008,274.0712,33.9333
+WHEEL method=DIP frame=1189 vertices=454 primitives=132 shaderBytes=484 match=0 bodies=4 origin=182.6092,16.4365,-144.3895 rawBounds=-250.5991,203.2871,-6.8006:-162.0008,274.0712,33.9333
+WHEEL method=DIP frame=1189 vertices=251 primitives=72 shaderBytes=584 match=0 bodies=4 origin=182.6092,16.4365,-144.3895 rawBounds=-220.6249,267.3878,-5.8938:-162.9796,336.1516,34.0171
+WHEEL method=DIP frame=1189 vertices=251 primitives=72 shaderBytes=484 match=0 bodies=4 origin=182.6092,16.4365,-144.3895 rawBounds=-220.6249,267.3878,-5.8938:-162.9796,336.1516,34.0171
+WHEEL method=DIP frame=1189 vertices=201 primitives=52 shaderBytes=584 match=0 bodies=4 origin=182.6092,16.4365,-144.3895 rawBounds=-267.6292,269.0022,10.9265:-211.1855,307.7392,34.0171
+WHEEL method=DIP frame=1189 vertices=201 primitives=52 shaderBytes=484 match=0 bodies=4 origin=182.6092,16.4365,-144.3895 rawBounds=-267.6292,269.0022,10.9265:-211.1855,307.7392,34.0171
+WHEEL method=DIP frame=1189 vertices=44 primitives=16 shaderBytes=584 match=0 bodies=4 origin=51.2175,-1.8769,120.6257 rawBounds=-4.1559,-1.8151,-7.9068:4.1312,1.8191,19.6625
+WHEEL method=DIP frame=1189 vertices=44 primitives=16 shaderBytes=484 match=0 bodies=4 origin=51.2175,-1.8769,120.6257 rawBounds=-4.1559,-1.8151,-7.9068:4.1312,1.8191,19.6625
+WHEEL method=DIP frame=1189 vertices=44 primitives=10 shaderBytes=584 match=0 bodies=4 origin=51.2175,-1.8769,120.6257 rawBounds=-4.1559,-1.8151,-7.9068:4.1312,1.8191,19.6625
+WHEEL method=DIP frame=1189 vertices=44 primitives=10 shaderBytes=484 match=0 bodies=4 origin=51.2175,-1.8769,120.6257 rawBounds=-4.1559,-1.8151,-7.9068:4.1312,1.8191,19.6625
+WHEEL method=DIP frame=1189 vertices=76 primitives=50 shaderBytes=584 match=0 bodies=4 origin=36.9185,3.8074,127.0382 rawBounds=-4.3411,-2.4916,0.0000:4.3411,2.4369,11.9948
+WHEEL method=DIP frame=1189 vertices=76 primitives=50 shaderBytes=484 match=0 bodies=4 origin=36.9185,3.8074,127.0382 rawBounds=-4.3411,-2.4916,0.0000:4.3411,2.4369,11.9948
+WHEEL method=DIP frame=1189 vertices=385 primitives=213 shaderBytes=584 match=0 bodies=4 origin=182.6092,16.4365,-144.3895 rawBounds=-250.5991,198.4766,-0.5350:-162.1150,272.1147,30.7867
+WHEEL method=DIP frame=1189 vertices=385 primitives=213 shaderBytes=484 match=0 bodies=4 origin=182.6092,16.4365,-144.3895 rawBounds=-250.5991,198.4766,-0.5350:-162.1150,272.1147,30.7867
+WHEEL method=DIP frame=1189 vertices=222 primitives=120 shaderBytes=584 match=0 bodies=4 origin=182.6092,16.4365,-144.3895 rawBounds=-220.8145,262.7930,-0.5350:-164.8433,335.9425,31.0454
+WHEEL method=DIP frame=1189 vertices=222 primitives=120 shaderBytes=484 match=0 bodies=4 origin=182.6092,16.4365,-144.3895 rawBounds=-220.8145,262.7930,-0.5350:-164.8433,335.9425,31.0454
+WHEEL method=DIP frame=1189 vertices=122 primitives=61 shaderBytes=584 match=0 bodies=4 origin=182.6092,16.4365,-144.3895 rawBounds=-267.7410,260.3111,7.9241:-211.2601,306.9776,31.0454
+WHEEL method=DIP frame=1189 vertices=122 primitives=61 shaderBytes=484 match=0 bodies=4 origin=182.6092,16.4365,-144.3895 rawBounds=-267.7410,260.3111,7.9241:-211.2601,306.9776,31.0454
+WHEEL method=DIP frame=1189 vertices=385 primitives=106 shaderBytes=584 match=0 bodies=4 origin=182.6092,16.4365,-144.3895 rawBounds=-250.5991,198.4766,-0.5350:-162.1150,272.1147,30.7867
+WHEEL method=DIP frame=1189 vertices=385 primitives=106 shaderBytes=484 match=0 bodies=4 origin=182.6092,16.4365,-144.3895 rawBounds=-250.5991,198.4766,-0.5350:-162.1150,272.1147,30.7867
+WHEEL method=DIP frame=1189 vertices=222 primitives=60 shaderBytes=584 match=0 bodies=4 origin=182.6092,16.4365,-144.3895 rawBounds=-220.8145,262.7930,-0.5350:-164.8433,335.9425,31.0454
+WHEEL method=DIP frame=1189 vertices=222 primitives=60 shaderBytes=484 match=0 bodies=4 origin=182.6092,16.4365,-144.3895 rawBounds=-220.8145,262.7930,-0.5350:-164.8433,335.9425,31.0454
+WHEEL method=DIP frame=1189 vertices=122 primitives=31 shaderBytes=584 match=0 bodies=4 origin=182.6092,16.4365,-144.3895 rawBounds=-267.7410,260.3111,7.9241:-211.2601,306.9776,31.0454
+CAMERA frame=1199 groups=67 best=6 second=1 inverseProjection=0.445202,3.88862e-09,5.07918e-09,2.32166e-07,4.86106e-10,-0.293098,-1.09188e-09,-7.1047e-14,5.94344e-05,9.78215e-06,0,-9.99891,-5.93987e-05,-9.76911e-06,1,9.99898,
+REF votes=1 -0.434493,0.0524401,-0.899141,0.900666,0.0252978,-0.433758,-1.71013e-09,0.998307,0.0582241,-28.0366,-17.6115,160.163,
+REF votes=1 0.940774,0.0197404,-0.33847,0.339044,-0.0547753,0.939181,0,-0.998307,-0.0582241,-0.00128174,-0.000116348,0.00201416,
+REF votes=6 0.249701,-0.056378,0.966662,-0.968301,-0.0145385,0.249279,0,-0.998307,-0.0582241,34.3467,-19.9122,77.8337,
+REF votes=1 0.297384,-0.0120233,0.954635,-0.954631,-0.0192839,0.297097,0.0147752,-0.999719,-0.0172385,42.7136,5.13016,98.5323,
+BODY -0.938799,-0.0410028,0.342029,-0.343905,0.0544101,-0.937434,-0.0198275,0.99768,0.0651812,-0.313446,0.274378,8.83099,
+FRAME 1200 candidates=460 owned=460 replaced=416 shaderFailures=0 references=72 bodies=8 graphicsSpeedValid=1 graphicsSpeed=0.0000 blend=0.0000 projectionValid=1 recoveredSceneRefs=7322 hiddenWheels=88 groups=67 best=6 second=1 hoofPlayed=0 audioActive=1
+ACTOR slot=0 speed=0.0000 blend=0.0000 position=-224.3638,80.0057,7.0699
+ACTOR slot=1 speed=0.0000 blend=0.0000 position=-224.3043,86.3794,7.1142
+ACTOR slot=2 speed=0.0000 blend=0.0000 position=-224.3014,83.2730,7.0668
+ACTOR slot=3 speed=0.0000 blend=0.0000 position=-224.2436,77.1145,7.1601
+CAMERA frame=1319 groups=69 best=4 second=4 inverseProjection=1.03337,-1.58962e-08,-1.84571e-07,-1.87698e-09,-5.29872e-09,-0.688214,-6.40949e-09,9.61015e-10,-1.2319e-05,-1.64086e-06,-9.53674e-07,-2.00004,1.22945e-05,1.65726e-06,1,2.00011,
+REF votes=1 -0.0749979,-0.0201693,-0.997001,0.997205,-0.00153426,-0.0749822,1.7355e-05,0.999795,-0.0202271,65.4616,4.11701,224.33,
+REF votes=1 0.0122,-0.0202258,-0.999721,0.999926,0.000229449,0.0121978,1.7355e-05,0.999795,-0.0202271,-46.7503,-0.292769,219.282,
+REF votes=1 0.0122,-0.0202258,-0.999721,0.999926,0.000229449,0.0121978,1.7355e-05,0.999795,-0.0202271,-46.7503,-0.292769,219.282,
+REF votes=1 -0.872002,0.0099142,0.489298,-0.489398,-0.0176296,-0.871824,1.7355e-05,0.999795,-0.0202271,-30.8516,-1.68959,163.098,
+BODY 0.00156672,0.00777669,0.999969,-0.999999,-0.000541204,0.00157098,-0.000553404,0.99997,-0.00777583,6.10352e-05,1.72209,6.2262,
+FRAME 1320 candidates=1456 owned=1456 replaced=1376 shaderFailures=0 references=81 bodies=8 graphicsSpeedValid=1 graphicsSpeed=3.1102 blend=0.7990 projectionValid=1 recoveredSceneRefs=24548 hiddenWheels=1407 groups=69 best=4 second=4 hoofPlayed=1 audioActive=1
+ACTOR slot=4 speed=5.0526 blend=0.9877 position=212.3578,40.9598,-6.2480
+ACTOR slot=5 speed=3.6001 blend=0.8398 position=213.6942,47.1734,-6.2338
+ACTOR slot=6 speed=3.1102 blend=0.7990 position=213.5261,44.1486,-6.2914
+ACTOR slot=7 speed=4.6316 blend=0.9593 position=212.6484,38.0373,-6.1781
+CAMERA frame=1439 groups=61 best=4 second=4 inverseProjection=1.03337,-1.32468e-09,9.29322e-09,-7.03704e-09,2.70811e-17,-0.688214,-1.2819e-08,-8.56242e-13,-6.81389e-07,8.88178e-16,0,-2.00002,6.79277e-07,7.69139e-09,1,2.00009,
+REF votes=1 -0.11638,-0.0146133,-0.993119,0.993215,0.00306575,-0.116436,-0.00474596,0.999889,-0.014157,73.079,3.49816,187.292,
+REF votes=1 -0.0293711,-0.0142902,-0.999466,0.999557,0.00432763,-0.0294356,-0.00474596,0.999889,-0.014157,-39.2277,-1.34975,186.892,
+REF votes=1 -0.0293711,-0.0142902,-0.999466,0.999557,0.00432763,-0.0294356,-0.00474596,0.999889,-0.014157,-39.2277,-1.34975,186.892,
+REF votes=1 -0.850898,0.00339751,0.525223,-0.525213,-0.0145386,-0.850787,-0.00474596,0.999889,-0.014157,-25.6776,-2.34954,130.088,
+BODY -0.0537993,0.0403501,0.997736,-0.99849,-0.0133122,-0.0533016,-0.0111313,0.999097,-0.0410054,-0.00786591,1.7017,6.2413,
+FRAME 1440 candidates=2317 owned=2317 replaced=2237 shaderFailures=0 references=74 bodies=5 graphicsSpeedValid=1 graphicsSpeed=12.6356 blend=1.0000 projectionValid=1 recoveredSceneRefs=60980 hiddenWheels=2720 groups=61 best=4 second=4 hoofPlayed=17 audioActive=1
+ACTOR slot=4 speed=18.7598 blend=1.0000 position=153.5325,44.7704,-5.4257
+ACTOR slot=5 speed=17.3366 blend=1.0000 position=163.5737,46.0277,-5.3660
+ACTOR slot=6 speed=12.6356 blend=1.0000 position=179.3591,44.5333,-5.4095
+ACTOR slot=7 speed=17.2192 blend=1.0000 position=163.2238,41.8514,-5.4229
+CAMERA frame=1559 groups=53 best=5 second=5 inverseProjection=1.03337,1.05974e-08,2.33383e-08,7.69995e-09,1.05974e-08,-0.688214,2.05104e-08,-5.12567e-09,-3.31031e-06,9.84391e-07,-5.96046e-08,-1.99978,3.30898e-06,-9.63914e-07,1,1.99985,
+REF votes=1 -0.102325,-0.00435115,-0.994763,0.994772,-0.000800891,-0.102322,0.000351471,0.99999,-0.00440982,75.5386,1.26364,147.724,
+REF votes=1 -0.0152341,-0.0044043,-0.999874,0.999884,-0.000418604,-0.0152324,0.000351471,0.99999,-0.00440982,-36.7735,-3.01463,145.687,
+REF votes=1 -0.0152341,-0.0044043,-0.999874,0.999884,-0.000418604,-0.0152324,0.000351471,0.99999,-0.00440982,-36.7735,-3.01463,145.687,
+REF votes=1 -0.858249,0.00256465,0.513128,-0.513134,-0.00360468,-0.858242,0.000351471,0.99999,-0.00440982,-22.4225,-3.52918,89.0727,
+BODY -0.0189464,0.0363533,0.99916,-0.997486,-0.0689448,-0.0164062,-0.0682904,0.996958,-0.0375681,-0.00974274,1.67033,6.20889,
+FRAME 1560 candidates=2917 owned=2917 replaced=2837 shaderFailures=0 references=61 bodies=5 graphicsSpeedValid=1 graphicsSpeed=19.3445 blend=1.0000 projectionValid=1 recoveredSceneRefs=84742 hiddenWheels=3566 groups=53 best=5 second=5 hoofPlayed=26 audioActive=1
+ACTOR slot=4 speed=21.2778 blend=1.0000 position=101.3708,53.8929,-4.8311
+ACTOR slot=5 speed=20.9181 blend=1.0000 position=111.8247,50.3996,-5.1171
+ACTOR slot=6 speed=19.3445 blend=1.0000 position=138.8796,38.8821,-5.3314
+ACTOR slot=7 speed=22.3690 blend=1.0000 position=111.4798,47.2160,-5.2146
+CAMERA frame=1679 groups=37 best=5 second=5 inverseProjection=1.03337,5.17094e-14,-8.72179e-10,-3.15183e-08,-6.10746e-15,-0.688214,-2.30742e-08,2.56222e-09,5.17187e-06,3.2816e-06,0,-1.99997,-5.19451e-06,-3.27402e-06,1,2.00003,
+REF votes=1 0.37761,-0.0278987,-0.925567,0.92596,0.00360313,0.377661,0.00720102,0.999604,-0.0271927,6.79665,4.33978,121.902,
+REF votes=1 0.456867,-0.0274779,-0.889111,0.889506,0.00602083,0.456884,0.00720102,0.999604,-0.0271927,-91.3749,-0.746671,67.3775,
+REF votes=1 0.456867,-0.0274779,-0.889111,0.889506,0.00602083,0.456884,0.00720102,0.999604,-0.0271927,-91.3749,-0.746671,67.3775,
+REF votes=1 -0.998716,0.00852511,0.0489093,-0.0491217,-0.0268054,-0.998382,0.00720102,0.999604,-0.0271927,-52.0828,-2.46429,24.1972,
+BODY 0.00330677,0.0261099,0.999654,-0.99998,0.0055638,0.00316251,0.0054793,0.999644,-0.0261277,0.0107956,1.66631,5.74042,
+FRAME 1680 candidates=3517 owned=3517 replaced=3437 shaderFailures=0 references=45 bodies=5 graphicsSpeedValid=1 graphicsSpeed=21.6330 blend=1.0000 projectionValid=1 recoveredSceneRefs=112438 hiddenWheels=4406 groups=37 best=5 second=5 hoofPlayed=33 audioActive=1
+ACTOR slot=4 speed=26.4880 blend=1.0000 position=52.6724,71.3876,-3.2391
+ACTOR slot=5 speed=26.1122 blend=1.0000 position=64.4352,68.2291,-3.5925
+ACTOR slot=6 speed=21.6330 blend=1.0000 position=96.4870,53.1417,-4.7676
+ACTOR slot=7 speed=26.9312 blend=1.0000 position=60.9129,63.4761,-3.4619
+CAMERA frame=1799 groups=32 best=3 second=3 inverseProjection=1.03337,-6.62365e-10,-5.18821e-10,-5.0657e-08,8.27896e-10,-0.688214,-7.69139e-09,-5.12764e-09,-1.16094e-05,-9.84408e-07,-9.53674e-07,-1.99982,1.16048e-05,9.74186e-07,1,1.99988,
+REF votes=1 0.41401,-0.0329794,-0.909698,0.910189,-0.000329921,0.414245,0.0139611,0.999456,-0.0298795,4.93518,4.7632,75.5023,
+REF votes=1 0.491753,-0.032882,-0.870114,0.870623,0.00254564,0.491944,0.0139611,0.999456,-0.0298795,-91.0142,0.0471782,17.1248,
+REF votes=1 0.491753,-0.032882,-0.870114,0.870623,0.00254564,0.491944,0.0139611,0.999456,-0.0298795,-91.0142,0.0471782,17.1248,
+REF votes=1 0.491753,-0.032882,-0.870114,0.870623,0.00254564,0.491944,-0.0139611,-0.999456,0.0298796,0,0,3.05176e-05,
+BODY -0.0271714,0.0342083,0.999045,-0.999625,0.00261238,-0.0272766,0.00354297,0.999411,-0.0341245,0.0215073,1.66753,5.97052,
+FRAME 1800 candidates=4117 owned=4117 replaced=4037 shaderFailures=0 references=36 bodies=5 graphicsSpeedValid=1 graphicsSpeed=23.6829 blend=1.0000 projectionValid=1 recoveredSceneRefs=162640 hiddenWheels=4992 groups=32 best=3 second=3 hoofPlayed=40 audioActive=1
+ACTOR slot=4 speed=26.4161 blend=1.0000 position=0.5249,90.7975,-2.3515
+ACTOR slot=5 speed=28.2445 blend=1.0000 position=10.4519,86.7623,-2.4446
+ACTOR slot=6 speed=23.6829 blend=1.0000 position=54.4192,73.7747,-3.2441
+ACTOR slot=7 speed=29.5862 blend=1.0000 position=7.0537,87.9552,-2.4069
+CAMERA frame=1919 groups=42 best=3 second=3 inverseProjection=1.03337,6.6234e-09,5.95488e-09,-6.01442e-09,-3.09199e-16,-0.688214,-8.97329e-09,-6.00408e-13,-1.0536e-05,-3.28154e-07,0,-1.99993,1.05705e-05,3.1791e-07,1,2,
+REF votes=1 0.285785,-0.00606795,-0.958275,0.958235,0.0129172,0.285691,-0.0106446,0.999898,-0.00950611,-51.6879,10.475,286.586,
+REF votes=1 0.285785,-0.00606795,-0.958275,0.958235,0.0129172,0.285691,-0.0106446,0.999898,-0.00950611,-45.8695,6.97373,181.108,
+REF votes=1 0.285785,-0.00606795,-0.958275,0.958235,0.0129172,0.285691,-0.0106446,0.999898,-0.00950611,-45.8695,6.97373,181.108,
+REF votes=1 0.285785,-0.00606795,-0.958275,0.958235,0.0129172,0.285691,-0.0106446,0.999898,-0.00950611,-45.8695,6.97373,181.108,
+BODY -0.00950812,0.0299967,0.999505,-0.999769,-0.0195526,-0.00892381,-0.0192753,0.999359,-0.0301757,-0.0168997,1.64876,6.01749,
+FRAME 1920 candidates=4717 owned=4717 replaced=4637 shaderFailures=0 references=49 bodies=5 graphicsSpeedValid=1 graphicsSpeed=25.3871 blend=1.0000 projectionValid=1 recoveredSceneRefs=226123 hiddenWheels=5024 groups=42 best=3 second=3 hoofPlayed=47 audioActive=1
+ACTOR slot=4 speed=26.7004 blend=1.0000 position=-55.8928,85.9471,-2.0187
+ACTOR slot=5 speed=27.2188 blend=1.0000 position=-48.8273,88.3991,-2.0236
+ACTOR slot=6 speed=25.3871 blend=1.0000 position=5.1376,92.7163,-2.4718
+ACTOR slot=7 speed=27.5336 blend=1.0000 position=-54.3666,86.9088,-2.0415
+CAMERA frame=2039 groups=44 best=4 second=1 inverseProjection=1.03337,-5.29873e-09,-1.43759e-08,5.65296e-09,-2.49113e-16,-0.688214,-2.38433e-07,-1.58593e-11,-5.85428e-05,1.64077e-06,1.90735e-06,-1.99993,5.85438e-05,-1.62288e-06,0.999998,1.99999,
+REF votes=1 -0.0406447,-0.00278074,-0.99917,0.999084,0.0133087,-0.0406782,-0.0134108,0.999908,-0.00223717,37.6883,9.72033,230.134,
+REF votes=1 -0.0406447,-0.00278074,-0.99917,0.999084,0.0133087,-0.0406782,-0.0134108,0.999908,-0.00223717,8.96464,6.54719,128.465,
+REF votes=1 -0.0406447,-0.00278074,-0.99917,0.999084,0.0133087,-0.0406782,-0.0134108,0.999908,-0.00223717,8.96464,6.54719,128.465,
+REF votes=1 -0.0406447,-0.00278074,-0.99917,0.999084,0.0133087,-0.0406782,-0.0134108,0.999908,-0.00223717,8.96464,6.54719,128.465,
+BODY -0.111039,0.0311691,0.993327,-0.993415,-0.0318774,-0.110049,-0.0282346,0.999006,-0.0345035,-0.0197601,1.65658,6.01956,
+FRAME 2040 candidates=5287 owned=5287 replaced=5207 shaderFailures=0 references=47 bodies=2 graphicsSpeedValid=1 graphicsSpeed=30.5155 blend=1.0000 projectionValid=1 recoveredSceneRefs=274852 hiddenWheels=5024 groups=44 best=4 second=1 hoofPlayed=54 audioActive=1
+ACTOR slot=6 speed=30.5155 blend=1.0000 position=-53.0614,94.8090,-2.1224
+CAMERA frame=2159 groups=64 best=15 second=15 inverseProjection=1.03337,1.12598e-08,-1.30526e-07,7.13051e-10,-1.32468e-09,-0.688214,-5.12759e-09,-3.42841e-13,-4.7303e-05,-1.96895e-06,2.28882e-05,-1.99995,4.72544e-05,1.96902e-06,0.999977,2.00002,
+REF votes=1 -0.965609,-0.0534552,0.254446,-0.254015,-0.0148215,-0.967087,-0.0554671,0.99846,-0.000733233,-85.5812,-4.93921,45.2833,
+REF votes=1 -0.965609,-0.0534552,0.254446,-0.254015,-0.0148215,-0.967087,-0.0554671,0.99846,-0.000733233,-85.5812,-4.93921,45.2833,
+REF votes=1 -0.965609,-0.0534552,0.254446,-0.254015,-0.0148215,-0.967087,-0.0554671,0.99846,-0.000733233,-50.2425,-13.0155,217.004,
+REF votes=1 -0.965609,-0.0534552,0.254446,-0.254015,-0.0148215,-0.967087,-0.0554671,0.99846,-0.000733233,-61.3177,-4.18965,110.678,
+BODY 0.128333,0.0330375,0.991181,-0.991066,-0.0323385,0.129396,-0.0363282,0.998931,-0.0285922,-0.0867615,1.64689,5.53784,
+FRAME 2160 candidates=5786 owned=5786 replaced=5706 shaderFailures=0 references=96 bodies=5 graphicsSpeedValid=1 graphicsSpeed=25.4115 blend=1.0000 projectionValid=1 recoveredSceneRefs=350646 hiddenWheels=5251 groups=64 best=15 second=15 hoofPlayed=66 audioActive=1
+ACTOR slot=0 speed=14.1210 blend=1.0000 position=-75.9157,-1.7503,-1.6262
+ACTOR slot=1 speed=24.9702 blend=1.0000 position=-36.7998,-26.8744,-1.0790
+ACTOR slot=2 speed=19.8728 blend=1.0000 position=-42.7178,-17.0505,-1.1645
+ACTOR slot=6 speed=25.4115 blend=1.0000 position=-93.0193,16.6228,-1.9031
+CAMERA frame=2279 groups=55 best=7 second=6 inverseProjection=1.03337,2.64936e-09,-8.71577e-08,-2.74318e-08,2.64937e-09,-0.688214,3.20475e-09,2.56378e-09,-7.88329e-06,-3.28136e-07,0,-1.99982,7.92662e-06,3.28147e-07,1,1.99988,
+REF votes=1 0.145042,0.0209597,0.989204,-0.989425,0.00234152,0.145025,-0.000723428,0.999778,-0.0210775,-15.0839,1.3942,34.6793,
+REF votes=1 0.145042,0.0209597,0.989204,-0.989425,0.00234152,0.145025,-0.000723428,0.999778,-0.0210775,-15.0839,1.3942,34.6793,
+REF votes=1 0.784289,-0.0125075,-0.620188,0.620314,0.0169796,0.784105,-0.000723428,0.999778,-0.0210775,-21.9557,2.35198,92.6725,
+REF votes=1 0.784289,-0.0125075,-0.620188,0.620314,0.0169796,0.784105,-0.000723428,0.999778,-0.0210775,-21.9557,2.35198,92.6725,
+BODY -0.161956,0.0212377,0.986569,-0.985329,-0.058011,-0.160504,-0.0538232,0.99809,-0.0303214,-0.00349426,1.72009,5.81415,
+FRAME 2280 candidates=6270 owned=6270 replaced=6190 shaderFailures=0 references=71 bodies=5 graphicsSpeedValid=1 graphicsSpeed=30.1707 blend=1.0000 projectionValid=1 recoveredSceneRefs=419736 hiddenWheels=5533 groups=55 best=7 second=6 hoofPlayed=78 audioActive=1
+ACTOR slot=0 speed=29.5297 blend=1.0000 position=-7.2347,-19.4706,-0.5072
+ACTOR slot=1 speed=31.4480 blend=1.0000 position=53.7445,-53.7232,0.1283
+ACTOR slot=2 speed=29.3573 blend=1.0000 position=44.5194,-27.7557,0.1639
+ACTOR slot=6 speed=30.1707 blend=1.0000 position=-26.3594,-19.1063,-0.8967

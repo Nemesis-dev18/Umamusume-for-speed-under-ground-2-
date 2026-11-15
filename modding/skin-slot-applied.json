@@ -1,0 +1,263 @@
+{
+  "before_sha256": "70672ce2ce71e9e931e12f45cb8b6ef33b9ed9fab303f6641a39ad3845275692",
+  "after_sha256": "20498c7d93be4bdc57a19db72d246ae79f56cfbd3bd13235199524ebc545cf28",
+  "bytes": 4570240,
+  "fields": [
+    {
+      "part": "COROLLA_KIT00_BODY_A",
+      "range": 0,
+      "offset": 558044,
+      "before": "07c20000",
+      "after": "00000000"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_A",
+      "range": 1,
+      "offset": 558104,
+      "before": "00000000",
+      "after": "07c20000"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_A",
+      "range": 1,
+      "offset": 558144,
+      "before": "07c20000",
+      "after": "00000000"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_A",
+      "range": 1,
+      "offset": 558092,
+      "before": "91a4f7bf",
+      "after": "bf996fbf"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_A",
+      "range": 1,
+      "offset": 558096,
+      "before": "2ca04fbf",
+      "after": "2f6950bf"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_A",
+      "range": 1,
+      "offset": 558100,
+      "before": "6a5c0b3f",
+      "after": "8fa119be"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_A",
+      "range": 1,
+      "offset": 558108,
+      "before": "bd8b0340",
+      "after": "3b18343f"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_A",
+      "range": 1,
+      "offset": 558112,
+      "before": "2ba04f3f",
+      "after": "6f02503f"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_A",
+      "range": 1,
+      "offset": 558116,
+      "before": "1a75783f",
+      "after": "94b81340"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_B",
+      "range": 0,
+      "offset": 1193948,
+      "before": "07c20000",
+      "after": "00000000"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_B",
+      "range": 1,
+      "offset": 1194008,
+      "before": "00000000",
+      "after": "07c20000"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_B",
+      "range": 1,
+      "offset": 1194048,
+      "before": "07c20000",
+      "after": "00000000"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_B",
+      "range": 1,
+      "offset": 1193996,
+      "before": "8211f7bf",
+      "after": "bf996fbf"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_B",
+      "range": 1,
+      "offset": 1194000,
+      "before": "100b51bf",
+      "after": "2f6950bf"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_B",
+      "range": 1,
+      "offset": 1194004,
+      "before": "b524933e",
+      "after": "8fa119be"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_B",
+      "range": 1,
+      "offset": 1194012,
+      "before": "bb8b0340",
+      "after": "3b18343f"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_B",
+      "range": 1,
+      "offset": 1194016,
+      "before": "0f0b513f",
+      "after": "6f02503f"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_B",
+      "range": 1,
+      "offset": 1194020,
+      "before": "7959a83f",
+      "after": "94b81340"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_C",
+      "range": 0,
+      "offset": 1822172,
+      "before": "07c20000",
+      "after": "00000000"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_C",
+      "range": 1,
+      "offset": 1822232,
+      "before": "00000000",
+      "after": "07c20000"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_C",
+      "range": 1,
+      "offset": 1822272,
+      "before": "07c20000",
+      "after": "00000000"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_C",
+      "range": 1,
+      "offset": 1822220,
+      "before": "1cdcf6bf",
+      "after": "bf996fbf"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_C",
+      "range": 1,
+      "offset": 1822224,
+      "before": "2aa04fbf",
+      "after": "2f6950bf"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_C",
+      "range": 1,
+      "offset": 1822228,
+      "before": "b524933e",
+      "after": "8fa119be"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_C",
+      "range": 1,
+      "offset": 1822236,
+      "before": "be8b0340",
+      "after": "3b18343f"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_C",
+      "range": 1,
+      "offset": 1822240,
+      "before": "2ba04f3f",
+      "after": "6f02503f"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_C",
+      "range": 1,
+      "offset": 1822244,
+      "before": "7b59a83f",
+      "after": "94b81340"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_D",
+      "range": 0,
+      "offset": 2447964,
+      "before": "07c20000",
+      "after": "00000000"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_D",
+      "range": 1,
+      "offset": 2448024,
+      "before": "00000000",
+      "after": "07c20000"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_D",
+      "range": 1,
+      "offset": 2448064,
+      "before": "07c20000",
+      "after": "00000000"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_D",
+      "range": 1,
+      "offset": 2448012,
+      "before": "8df400c0",
+      "after": "bf996fbf"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_D",
+      "range": 1,
+      "offset": 2448016,
+      "before": "794353bf",
+      "after": "2f6950bf"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_D",
+      "range": 1,
+      "offset": 2448020,
+      "before": "4d89543e",
+      "after": "8fa119be"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_D",
+      "range": 1,
+      "offset": 2448028,
+      "before": "b0be0b40",
+      "after": "3b18343f"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_D",
+      "range": 1,
+      "offset": 2448032,
+      "before": "6f43533f",
+      "after": "6f02503f"
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_D",
+      "range": 1,
+      "offset": 2448036,
+      "before": "90e1a43f",
+      "after": "94b81340"
+    }
+  ],
+  "backup": "CARS/COROLLA/GEOMETRY.BIN.before-skin-slot.bak",
+  "reason": "Full body was in DOORLINE overlay; activate existing CARSKIN material range",
+  "installed": true,
+  "checkpoint": "fdae24e"
+}

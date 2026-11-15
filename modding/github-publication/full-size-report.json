@@ -1,0 +1,30 @@
+{
+  "files": 12013,
+  "bytes": 5180999091,
+  "over_100_mib": [
+    {
+      "path": "modding/tools/blender-portable/blender-4.5.16-linux-x64.tar.xz",
+      "bytes": 377826288
+    },
+    {
+      "path": "SDATA/sdat.viv",
+      "bytes": 259484480
+    },
+    {
+      "path": "Need for Speed Underground 2 - Winter Mod/TexMod/NFSU2 Real Winter Mod 2021.tpf",
+      "bytes": 227817199
+    },
+    {
+      "path": "modding/tools/blender-portable/blender-4.5.16-linux-x64/blender",
+      "bytes": 163629720
+    },
+    {
+      "path": "TRACKS/STREAML4RD.BUN",
+      "bytes": 120586240
+    },
+    {
+      "path": "TRACKS/STREAML4RA.BUN",
+      "bytes": 118489088
+    }
+  ]
+}

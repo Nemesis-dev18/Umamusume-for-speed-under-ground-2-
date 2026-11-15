@@ -1,0 +1,244 @@
+{
+  "source": "CARS/COROLLA/GEOMETRY.BIN",
+  "source_sha256": "cedf717c16c342b449c32e312351bd2f93d21533446b9501488dd0b5a3664389",
+  "result_sha256": "604ff860b01ccc0a6f9d85356935e0b8d9ef283e67940f9f1786394707a47594",
+  "bytes_before": 9952256,
+  "bytes_after": 9952256,
+  "field_bytes": 96,
+  "changed_bytes": 85,
+  "changes": [
+    {
+      "part": "COROLLA_KIT00_BODY_A",
+      "old_min": [
+        -1.3714059591293335,
+        -0.8203256130218506,
+        0.5535224676132202
+      ],
+      "old_max": [
+        1.642363429069519,
+        0.820325493812561,
+        0.7170616388320923
+      ],
+      "fields": [
+        {
+          "offset": 600528,
+          "offset_hex": "0x929d0",
+          "old_hex": "3b 8a af bf",
+          "new_hex": "de 36 42 bf",
+          "new_value": -0.7586497068405151
+        },
+        {
+          "offset": 600532,
+          "offset_hex": "0x929d4",
+          "old_hex": "dc 00 52 bf",
+          "new_hex": "25 92 2c bf",
+          "new_value": -0.6741049885749817
+        },
+        {
+          "offset": 600536,
+          "offset_hex": "0x929d8",
+          "old_hex": "a6 b3 0d 3f",
+          "new_hex": "5c 56 24 bc",
+          "new_value": -0.010030355304479599
+        },
+        {
+          "offset": 600544,
+          "offset_hex": "0x929e0",
+          "old_hex": "f7 38 d2 3f",
+          "new_hex": "0a 8b 8d 3e",
+          "new_value": 0.2764514088630676
+        },
+        {
+          "offset": 600548,
+          "offset_hex": "0x929e4",
+          "old_hex": "da 00 52 3f",
+          "new_hex": "65 2b 2c 3f",
+          "new_value": 0.6725371479988098
+        },
+        {
+          "offset": 600552,
+          "offset_hex": "0x929e8",
+          "old_hex": "5a 91 37 3f",
+          "new_hex": "d1 c2 0a 40",
+          "new_value": 2.1681406497955322
+        }
+      ]
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_B",
+      "old_min": [
+        -1.3714056015014648,
+        -0.8254890441894531,
+        0.5535224676132202
+      ],
+      "old_max": [
+        1.6423629522323608,
+        0.8254886269569397,
+        0.7170616984367371
+      ],
+      "fields": [
+        {
+          "offset": 1236432,
+          "offset_hex": "0x12ddd0",
+          "old_hex": "38 8a af bf",
+          "new_hex": "de 36 42 bf",
+          "new_value": -0.7586497068405151
+        },
+        {
+          "offset": 1236436,
+          "offset_hex": "0x12ddd4",
+          "old_hex": "40 53 53 bf",
+          "new_hex": "25 92 2c bf",
+          "new_value": -0.6741049885749817
+        },
+        {
+          "offset": 1236440,
+          "offset_hex": "0x12ddd8",
+          "old_hex": "a6 b3 0d 3f",
+          "new_hex": "5c 56 24 bc",
+          "new_value": -0.010030355304479599
+        },
+        {
+          "offset": 1236448,
+          "offset_hex": "0x12dde0",
+          "old_hex": "f3 38 d2 3f",
+          "new_hex": "0a 8b 8d 3e",
+          "new_value": 0.2764514088630676
+        },
+        {
+          "offset": 1236452,
+          "offset_hex": "0x12dde4",
+          "old_hex": "39 53 53 3f",
+          "new_hex": "65 2b 2c 3f",
+          "new_value": 0.6725371479988098
+        },
+        {
+          "offset": 1236456,
+          "offset_hex": "0x12dde8",
+          "old_hex": "5b 91 37 3f",
+          "new_hex": "d1 c2 0a 40",
+          "new_value": 2.1681406497955322
+        }
+      ]
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_C",
+      "old_min": [
+        -1.3714056015014648,
+        -0.825488805770874,
+        0.5535224676132202
+      ],
+      "old_max": [
+        1.642363429069519,
+        0.8254889249801636,
+        0.7170616388320923
+      ],
+      "fields": [
+        {
+          "offset": 1864656,
+          "offset_hex": "0x1c73d0",
+          "old_hex": "38 8a af bf",
+          "new_hex": "de 36 42 bf",
+          "new_value": -0.7586497068405151
+        },
+        {
+          "offset": 1864660,
+          "offset_hex": "0x1c73d4",
+          "old_hex": "3c 53 53 bf",
+          "new_hex": "25 92 2c bf",
+          "new_value": -0.6741049885749817
+        },
+        {
+          "offset": 1864664,
+          "offset_hex": "0x1c73d8",
+          "old_hex": "a6 b3 0d 3f",
+          "new_hex": "5c 56 24 bc",
+          "new_value": -0.010030355304479599
+        },
+        {
+          "offset": 1864672,
+          "offset_hex": "0x1c73e0",
+          "old_hex": "f7 38 d2 3f",
+          "new_hex": "0a 8b 8d 3e",
+          "new_value": 0.2764514088630676
+        },
+        {
+          "offset": 1864676,
+          "offset_hex": "0x1c73e4",
+          "old_hex": "3e 53 53 3f",
+          "new_hex": "65 2b 2c 3f",
+          "new_value": 0.6725371479988098
+        },
+        {
+          "offset": 1864680,
+          "offset_hex": "0x1c73e8",
+          "old_hex": "5a 91 37 3f",
+          "new_hex": "d1 c2 0a 40",
+          "new_value": 2.1681406497955322
+        }
+      ]
+    },
+    {
+      "part": "COROLLA_KIT00_BODY_D",
+      "old_min": [
+        -2.0088512897491455,
+        -0.7926381230354309,
+        0.20755501091480255
+      ],
+      "old_max": [
+        2.1040802001953125,
+        0.7926389575004578,
+        0.3744056224822998
+      ],
+      "fields": [
+        {
+          "offset": 2490448,
+          "offset_hex": "0x260050",
+          "old_hex": "05 91 00 c0",
+          "new_hex": "de 36 42 bf",
+          "new_value": -0.7586497068405151
+        },
+        {
+          "offset": 2490452,
+          "offset_hex": "0x260054",
+          "old_hex": "55 ea 4a bf",
+          "new_hex": "25 92 2c bf",
+          "new_value": -0.6741049885749817
+        },
+        {
+          "offset": 2490456,
+          "offset_hex": "0x260058",
+          "old_hex": "4d 89 54 3e",
+          "new_hex": "5c 56 24 bc",
+          "new_value": -0.010030355304479599
+        },
+        {
+          "offset": 2490464,
+          "offset_hex": "0x260060",
+          "old_hex": "40 a9 06 40",
+          "new_hex": "0a 8b 8d 3e",
+          "new_value": 0.2764514088630676
+        },
+        {
+          "offset": 2490468,
+          "offset_hex": "0x260064",
+          "old_hex": "63 ea 4a 3f",
+          "new_hex": "65 2b 2c 3f",
+          "new_value": 0.6725371479988098
+        },
+        {
+          "offset": 2490472,
+          "offset_hex": "0x260068",
+          "old_hex": "18 b2 bf 3e",
+          "new_hex": "d1 c2 0a 40",
+          "new_value": 2.1681406497955322
+        }
+      ]
+    }
+  ],
+  "backup": "CARS/COROLLA/GEOMETRY.BIN.before-bounds.bak",
+  "temporary": "CARS/COROLLA/GEOMETRY.BIN.uma-bounds.tmp",
+  "approval_required": true,
+  "purpose": "Repair first material range AABBs that do not contain the actual character geometry",
+  "limits": "Does not prove race visibility, alter pose, animate the character, remove wheels, or change materials"
+}
