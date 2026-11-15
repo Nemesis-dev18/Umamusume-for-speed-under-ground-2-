@@ -26,6 +26,7 @@ static inline int uma_selection_read(IDirect3DDevice9 *device,DWORD *pixels){
  IDirect3DSurface9_UnlockRect(uma_selection.cpu);return 1;
 }
 static inline void uma_selection_texture(IDirect3DDevice9 *device,UINT sampler){
+ WCHAR path[4096];swprintf(path,4096,L"%ls\\top-texture-%u.dds",uma_selection.folder,sampler);DeleteFileW(path);
  IDirect3DBaseTexture9 *base=NULL;if(FAILED(IDirect3DDevice9_GetTexture(device,sampler,&base)) || !base)return;
  if(IDirect3DBaseTexture9_GetType(base)==D3DRTYPE_TEXTURE){
   IDirect3DTexture9 *texture=(IDirect3DTexture9*)base;D3DSURFACE_DESC desc;D3DLOCKED_RECT locked;
@@ -35,7 +36,7 @@ static inline void uma_selection_texture(IDirect3DDevice9 *device,UINT sampler){
    if(desc.Format==D3DFMT_DXT1 || desc.Format==D3DFMT_DXT3 || desc.Format==D3DFMT_DXT5){rows=(desc.Height+3)/4;row_bytes=((desc.Width+3)/4)*(desc.Format==D3DFMT_DXT1?8:16);header[2]|=0x80000;header[5]=rows*row_bytes;header[20]=4;header[21]=desc.Format;}
    else if(desc.Format==D3DFMT_A8R8G8B8 || desc.Format==D3DFMT_X8R8G8B8){header[2]|=8;header[5]=row_bytes;header[20]=desc.Format==D3DFMT_A8R8G8B8?0x41:0x40;header[22]=32;header[23]=0xff0000;header[24]=0xff00;header[25]=0xff;header[26]=desc.Format==D3DFMT_A8R8G8B8?0xff000000:0;}
    else supported=0;
-   if(supported && locked.Pitch>0 && (UINT)locked.Pitch>=row_bytes){WCHAR path[4096];swprintf(path,4096,L"%ls\\top-texture-%u.dds",uma_selection.folder,sampler);FILE *file=_wfopen(path,L"wb");if(file){fwrite(header,1,128,file);for(UINT y=0;y<rows;y++)fwrite((BYTE*)locked.pBits+y*locked.Pitch,1,row_bytes,file);fclose(file);}}
+   if(supported && locked.Pitch>0 && (UINT)locked.Pitch>=row_bytes){FILE *file=_wfopen(path,L"wb");if(file){fwrite(header,1,128,file);for(UINT y=0;y<rows;y++)fwrite((BYTE*)locked.pBits+y*locked.Pitch,1,row_bytes,file);fclose(file);}}
    IDirect3DTexture9_UnlockRect(texture,0);
   }
  }

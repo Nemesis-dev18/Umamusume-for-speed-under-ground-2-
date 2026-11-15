@@ -40,10 +40,18 @@ Con el juego cerrado, `python modding/scripts/verify_runtime.py` compila el mód
 
 ## Instalación actual y vuelta atrás
 
-`modding/steam-motion-installed.json` registra el checkpoint, rutas, hashes y respaldos de los tres archivos instalados. La ampliación de cajas está descrita campo por campo en `modding/steam-motion-bounds-plan.json`: conserva tamaño, chunks y alineaciones. No cambiar cajas ni instalar otro módulo con el juego abierto.
+El recibo vigente se encuentra en `modding/runner-installed.json`, campo `current_receipt`. Los cambios de colisión y los doce archivos de accesorios están en `modding/character-package-installed.json`; las mejoras posteriores del módulo/audio tienen su propio recibo. `steam-motion-installed.json` conserva el paso histórico que integró el clip, y no representa por sí solo todo lo instalado actualmente.
 
-Para volver al punto anterior, cerrar el juego y restaurar los tres respaldos indicados en ese recibo. Restaurar también `modding/runtime/kitasan.before-steam.json` como `kitasan.json` para que las referencias del verificador vuelvan al ciclo anterior. Conservar los registros de gameplay antes de otra prueba. `CLAUDE.md` contiene las pruebas reales y los cambios anteriores.
+Para volver atrás, cerrar el juego y restaurar primero los archivos del recibo más reciente desde sus respaldos; después, si se quiere retirar también colisión/accesorios, restaurar los catorce respaldos del paquete de personaje. No basta restaurar tres archivos del recibo histórico de Steam. Conservar los logs antes de otra prueba. No restaurar el JSON del ciclo antiguo si se mantiene el UMAB nuevo.
+
+Los generadores de colisión y accesorios usan sus respaldos como baseline cuando existen; pueden volver a preparar los mismos candidatos sin transformar dos veces el estado instalado. Se comprobó reproducción exacta de planes y SHA tras instalar.
+
+## Pasos originales
+
+`extract_uma_footsteps.py` lee la copia privada de `snd_sfx_race_000.acb` y resuelve cues de pista por las tablas CRI, no por el orden supuesto del archivo. Usa clHCA fijado y comprobado por SHA para decodificar, valida la clave/bloques y contrasta duración/canales/frecuencia con WaveformTable. Convierte a PCM16 mono22050Hz sin síntesis ni cambios de pitch o ganancia. Exporta diez variantes por pie y un manifiesto con procedencia/hashes. `make_hoof_audio.py` se conserva como experimento anterior, pero sus cascos sintéticos ya no corresponden a esta mejora.
+
+El módulo utiliza dos salidas WaveOut para solapar las colas izquierda/derecha. La ruta silenciosa exclusiva del Corolla modifica únicamente datos de audio en memoria cuando encuentra una coincidencia única de las tablas completas; archivos SOUND y ejecutable sin modificar. Una clave incorrecta, muestras corruptas o perfiles distintos se rechazan. Fallos de reproducción restauran los parámetros originales si aún coinciden con los propios.
 
 ## Límites pendientes
 
-El reposo y la dinámica secundaria de pelo/cola siguen siendo propios; no hay simulación completa de tela de Uma. Las catorce rutas del clip ausentes del prefab se excluyen explícitamente. Todos los Corolla reciben Kitasan y comparten el estado de movimiento; no se identifica exclusivamente al jugador. Otros tipos de coche conservan sus recursos. Las ruedas/accesorios y la calidad visual final requieren prueba dentro de NFS; tests gráficos independientes no los demuestran.
+El reposo y la dinámica secundaria de pelo/cola siguen siendo propios; no hay simulación completa de tela de Uma. Las catorce rutas del clip ausentes del prefab se excluyen explícitamente. Todos los Corolla reciben Kitasan y comparten el estado de movimiento; no se identifica exclusivamente al jugador. Las carrocerías principales de otros tipos se conservan; los accesorios compartidos se han retirado globalmente por instrucción del usuario. Las ruedas/accesorios y la calidad visual final requieren prueba dentro de NFS; tests gráficos independientes no los demuestran.

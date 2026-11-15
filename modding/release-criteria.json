@@ -89,13 +89,15 @@
         1.95
       ]
     ],
-    "physics_gameplay_verified": false
+    "physics_gameplay_verified": true,
+    "user_result": "User confirmed collision fits Kitasan better; no handling changes in next step"
   },
   "hoof_audio": {
     "installed": true,
     "scope": "Corolla characters only",
     "native_profile_verified": true,
-    "listening_test_verified": false
+    "listening_test_verified": false,
+    "user_result": "Synthetic impacts audible but rejected; actual Uma footsteps prepared, pending listening test"
   },
   "shared_car_parts": {
     "installed": true,

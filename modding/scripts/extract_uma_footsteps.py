@@ -46,10 +46,19 @@ def cue_waves(header,name):
     return list({r['awb_id']:r for r in found}.values())
 
 def main():
-    bank=FOLDER/'snd_sfx_race_000.acb';data=bank.read_bytes();name,rows=utf(data)
+    bank=FOLDER/'snd_sfx_race_000.acb';data=bank.read_bytes()
+    provenance=json.loads((FOLDER/'source.json').read_text())
+    if hashlib.sha256(data).hexdigest()!=provenance['sha256']:raise ValueError('Staged race bank changed')
+    tool=ROOT/'modding/uma-steam/audio-tools/clhca';reader=json.loads((tool/'source.json').read_text())
+    for filename,expected in reader['files'].items():
+        if hashlib.sha256((tool/filename).read_bytes()).hexdigest()!=expected:raise ValueError('Pinned HCA reader source changed')
+    subprocess.run(['gcc','-std=c11','-O2','-c',str(tool/'clhca.c'),'-o',str(tool/'clhca.o')],check=True)
+    subprocess.run(['gcc','-std=c11','-O2','-Wall','-Wextra','-Werror',str(tool/'decode_local.c'),str(tool/'clhca.o'),'-lm','-o',str(tool/'decode-local')],check=True)
+    name,rows=utf(data)
     if name!='Header' or len(rows)!=1:raise ValueError('Expected one ACB header')
     header=rows[0];subkey,entries=awb(header['AwbFile']);waves=dict(entries)
     viewer=ROOT/'modding/uma-steam/tools/UmaViewer'
+    if subprocess.check_output(['git','-C',str(viewer),'rev-parse','HEAD'],text=True).strip()!='9bc1dd8fcb10ab13c17ada92e005643b463f8e2c':raise ValueError('Pinned UmaViewer reader revision changed')
     config=subprocess.check_output(['git','-C',str(viewer),'show','HEAD:Assets/Scripts/Config.cs'],text=True)
     match=re.search(r'DefaultAudioKeyText\s*=\s*"([0-9A-Fa-f]+)"',config)
     if not match:raise ValueError('Pinned reader audio key absent')
