@@ -11,12 +11,18 @@ int main(void){
   UmaMatrix camera={0},stationary={0},moving={0};for(int k=0;k<4;k++)camera.m[k][k]=stationary.m[k][k]=moving.m[k][k]=1;
   float angle=(float)f*.01f;camera.m[0][0]=camera.m[1][1]=cosf(angle);camera.m[0][1]=sinf(angle);camera.m[1][0]=-sinf(angle);camera.m[3][1]=-10;camera.m[3][2]=-2;
   stationary.m[3][2]=.05f*sinf((float)f*.2f);moving.m[3][0]=10+fminf((float)f,100)*.1f;
+  moving.m[3][2]=(moving.m[3][0]-10)*.3f;moving.m[0][0]=moving.m[2][2]=cosf(.3f);moving.m[0][2]=sinf(.3f);moving.m[2][0]=-sinf(.3f);
   UmaMatrix still_view=uma_matrix_product(&stationary,&camera),run_view=uma_matrix_product(&moving,&camera),actors[2];actors[f&1]=still_view;actors[!(f&1)]=run_view;
-  runner_scene.anchor=camera;runner_frames=100+(unsigned)f;assert(runner_actor_update(actors,2,.01f));
+  UmaMatrix other_anchor=camera;for(int k=0;k<3;k++)other_anchor.m[3][k]+=37*camera.m[0][k]-12*camera.m[1][k];
+  runner_scene.anchor=f<80?camera:other_anchor;runner_scene.anchor_key.buffer=f<80?777:(f<90?778:779);runner_scene.anchor_valid=f!=60 && f!=61;runner_frames=100+(unsigned)f;assert(runner_actor_update(actors,2,.01f));
   UmaMotionState *still=runner_actor_pose(&still_view),*running=runner_actor_pose(&run_view);
   assert(still!=running && still!=&runner_idle_state && running!=&runner_idle_state);assert(still->run_blend<.001f);
   if(f==99)assert(running->run_blend>.99f);
+  if(f==80)assert(running->run_blend>.99f);
+  if(f==60 || f==61 || f==62)assert(running->run_blend>.95f);
+  if(f==90)assert(running->run_blend>.99f);
   if(f==179)assert(running->run_blend<.01f);
+  runner_previous_anchor=runner_scene.anchor;runner_previous_reference_count=1;runner_previous_references[0]=(UmaReference){.matrix=other_anchor,.key={.buffer=778}};
  }
  UmaMatrix unknown={0};for(int k=0;k<4;k++)unknown.m[k][k]=1;unknown.m[3][0]=1000;assert(runner_actor_pose(&unknown)==&runner_idle_state);
  runner_scene.bodies=0;uma_scene_body(&runner_scene,&unknown);uma_scene_body(&runner_scene,&unknown);assert(runner_scene.bodies==1);

@@ -7,6 +7,9 @@ static UmaMatrix multiply(UmaMatrix a,UmaMatrix b){UmaMatrix r={0};for(int i=0;i
 static const UmaSceneKey ground_key={.buffer=1,.index=1,.vertices=256,.primitives=128};
 static void frame(UmaSceneSpeed *scene,UmaMatrix body,UmaMatrix view){for(int i=0;i<10;i++)uma_scene_reference(scene,&view,&ground_key);uma_scene_body(scene,&body);}
 int main(void){
+ UmaSceneSpeed capped={0};UmaMatrix anchor={0};for(int k=0;k<4;k++)anchor.m[k][k]=1;capped.tracked=1;capped.previous_key=(UmaSceneKey){.buffer=1000};
+ for(unsigned i=1;i<=96;i++){UmaSceneKey key={.buffer=i};uma_scene_reference(&capped,&anchor,&key);}
+ uma_scene_reference(&capped,&anchor,&capped.previous_key);assert(capped.references==96 && capped.reference[95].key.buffer==1000);
  UmaSceneSpeed scene={0};UmaMatrix view=identity(),body=identity(),world,wv;float speed=99;
  view.m[3][0]=-100;body.m[3][0]=5;wv=multiply(body,view);
  assert(uma_relative_world(&wv,&view,&world));assert(fabsf(world.m[3][0]-5)<1e-5f);

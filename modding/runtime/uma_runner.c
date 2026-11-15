@@ -27,6 +27,11 @@ static UmaMotionState runner_idle_state;
 typedef struct {UmaMatrix world,view;UmaMotionState state;float velocity[3],speed;unsigned seen;int used;} RunnerActor;
 static RunnerActor runner_actors[16];
 static UmaSceneKey runner_actor_anchor;
+static UmaMatrix runner_previous_anchor;
+static UmaReference runner_previous_references[96];
+static unsigned runner_previous_reference_count;
+static int runner_actor_world_valid;
+static float runner_tracking_gap;
 static UmaD3D runner_renderer;
 static UmaSceneSpeed runner_scene;
 static WCHAR runner_atlas[4096];
@@ -51,16 +56,34 @@ static UmaMotionState *runner_actor_pose(const UmaMatrix *view){
 /* Associate actors in one immutable scenery coordinate frame, independent of draw order. */
 /* shortcut: overlapping identical actors can be ambiguous; add native instance IDs before per-actor customization. */
 static RunnerActor *runner_actor_update(const UmaMatrix *bodies,unsigned count,float seconds){
- if(!runner_scene.anchor_valid || !isfinite(seconds) || seconds<=0 || seconds>.1f){memset(runner_actors,0,sizeof(runner_actors));return NULL;}
- if(memcmp(&runner_actor_anchor,&runner_scene.anchor_key,sizeof(runner_actor_anchor))){memset(runner_actors,0,sizeof(runner_actors));runner_actor_anchor=runner_scene.anchor_key;}
+ if(!isfinite(seconds) || seconds<=0 || seconds>.25f)return NULL;
+ int handoff=!runner_scene.anchor_valid || !runner_actor_world_valid;
+ runner_tracking_gap=runner_scene.anchor_valid?0:runner_tracking_gap+seconds;
+ if(runner_scene.anchor_valid && memcmp(&runner_actor_anchor,&runner_scene.anchor_key,sizeof(runner_actor_anchor))){
+  int rebased=0;
+  for(unsigned i=0;runner_actor_world_valid && i<runner_previous_reference_count;i++){
+   UmaReference *reference=&runner_previous_references[i];UmaMatrix inverse;
+   if(reference->ambiguous || memcmp(&reference->key,&runner_scene.anchor_key,sizeof(reference->key)) || !uma_matrix_inverse(&reference->matrix,&inverse))continue;
+   UmaMatrix change=uma_matrix_product(&runner_previous_anchor,&inverse);if(!uma_rigid(&change))continue;
+   for(int actor=0;actor<16;actor++)if(runner_actors[actor].used){
+    runner_actors[actor].world=uma_matrix_product(&runner_actors[actor].world,&change);
+    float velocity[3]={0};for(int r=0;r<3;r++)for(int c=0;c<3;c++)velocity[c]+=runner_actors[actor].velocity[r]*change.m[r][c];
+    memcpy(runner_actors[actor].velocity,velocity,sizeof(velocity));
+   }
+   rebased=1;break;
+  }
+  if(!rebased)handoff=1;
+  runner_actor_anchor=runner_scene.anchor_key;
+ }
  UmaMatrix world[16];int assignment[16],taken[16]={0};
- for(unsigned j=0;j<count;j++){assignment[j]=-1;if(!uma_relative_world(&bodies[j],&runner_scene.anchor,&world[j]))taken[j]=1;}
+ for(unsigned j=0;j<count;j++){assignment[j]=-1;if(!runner_scene.anchor_valid)world[j]=bodies[j];else if(!uma_relative_world(&bodies[j],&runner_scene.anchor,&world[j]))taken[j]=1;}
  int used[16]={0};float limit=120*seconds+.25f;
  for(unsigned pair=0;pair<count;pair++){
   int actor=-1,body=-1;float best=limit*limit;
   for(int i=0;i<16;i++)if(runner_actors[i].used && !used[i] && runner_frames-runner_actors[i].seen<=2){
    for(unsigned j=0;j<count;j++)if(!taken[j]){
-    float distance=0,orientation=0;for(int k=0;k<3;k++){float d=world[j].m[3][k]-runner_actors[i].world.m[3][k]-runner_actors[i].velocity[k]*seconds;distance+=d*d;orientation+=world[j].m[0][k]*runner_actors[i].world.m[0][k];}
+    const UmaMatrix *current=handoff?&bodies[j]:&world[j],*previous=handoff?&runner_actors[i].view:&runner_actors[i].world;
+    float distance=0,orientation=0;for(int k=0;k<3;k++){float d=current->m[3][k]-previous->m[3][k]-(handoff?0:runner_actors[i].velocity[k]*seconds);distance+=d*d;orientation+=current->m[0][k]*previous->m[0][k];}
     if(orientation>.5f && distance<best){best=distance;actor=i;body=(int)j;}
    }
   }
@@ -75,16 +98,17 @@ static RunnerActor *runner_actor_update(const UmaMatrix *bodies,unsigned count,f
  RunnerActor *primary=NULL;float nearest=FLT_MAX;
  for(unsigned j=0;j<count;j++)if(assignment[j]>=0){
   RunnerActor *actor=&runner_actors[assignment[j]];float forward=0,lateral=0;
-  if(actor->used && runner_frames-actor->seen==1){
+  if(!handoff && actor->used && runner_frames-actor->seen==1){
    for(int k=0;k<3;k++){actor->velocity[k]=(world[j].m[3][k]-actor->world.m[3][k])/seconds;forward+=actor->velocity[k]*world[j].m[0][k];lateral+=actor->velocity[k]*world[j].m[1][k];}
    float speed=hypotf(forward,lateral);actor->speed=speed<=120 && speed>.35f?(forward<0?-speed:speed):0;
-  }else{actor->speed=0;memset(actor->velocity,0,sizeof(actor->velocity));}
+  }else{if(!actor->used || runner_tracking_gap>.2f)actor->speed=0;memset(actor->velocity,0,sizeof(actor->velocity));}
   actor->world=world[j];actor->view=bodies[j];actor->seen=runner_frames;actor->used=1;
   uma_motion_step(&actor->state,seconds,actor->speed,0);
   float distance=0;for(int k=0;k<3;k++)distance+=bodies[j].m[3][k]*bodies[j].m[3][k];
   if(distance<nearest){nearest=distance;primary=actor;}
  }
  for(int i=0;i<16;i++)if(!used[i] && runner_frames-runner_actors[i].seen>2)runner_actors[i].used=0;
+ runner_actor_world_valid=runner_scene.anchor_valid;
  return primary;
 }
 static int runner_combined(IDirect3DDevice9 *device,const UmaShaderEntry *entry,UmaMatrix *output){
@@ -270,10 +294,12 @@ static HRESULT WINAPI runner_present(IDirect3DDevice9 *device,const RECT *source
  }
  uma_selection_finish(device,bodies);
  UmaMatrix actor_bodies[16];memcpy(actor_bodies,runner_scene.body,bodies*sizeof(*actor_bodies));
+ UmaReference current_references[96];unsigned current_reference_count=runner_scene.references;memcpy(current_references,runner_scene.reference,current_reference_count*sizeof(*current_references));
  runner_speed_valid=uma_scene_finish(&runner_scene,seconds,&runner_speed);
  float previous_phase=runner_state.run_phase;RunnerActor *primary=runner_actor_update(actor_bodies,bodies,seconds);
+ if(runner_scene.anchor_valid){runner_previous_anchor=runner_scene.anchor;runner_previous_reference_count=current_reference_count;memcpy(runner_previous_references,current_references,current_reference_count*sizeof(*current_references));}
  runner_speed_valid=primary!=NULL;runner_speed=primary?primary->speed:0;
- if(seconds>0 && seconds<=.1f){
+ if(seconds>0 && seconds<=.25f){
   uma_motion_step(&runner_idle_state,seconds,0,0);
   if(primary)runner_state=primary->state;else uma_motion_step(&runner_state,seconds,0,0);
   uma_audio_step(previous_phase,runner_state.run_phase,runner_state.run_blend,runner_speed_valid?runner_speed:0,seconds,runner_log);
@@ -287,7 +313,7 @@ static HRESULT WINAPI runner_present(IDirect3DDevice9 *device,const RECT *source
  LeaveCriticalSection(&runner_lock);return runner_original_present(device,source,destination,window,dirty);
 }
 static HRESULT WINAPI runner_reset(IDirect3DDevice9 *device,D3DPRESENT_PARAMETERS *parameters){
- EnterCriticalSection(&runner_lock);uma_selection_release();uma_d3d_close(&runner_renderer);memset(&runner_scene,0,sizeof(runner_scene));memset(runner_actors,0,sizeof(runner_actors));runner_state=runner_idle_state=(UmaMotionState){0};runner_last_tick=0;runner_projection_valid=0;LeaveCriticalSection(&runner_lock);
+ EnterCriticalSection(&runner_lock);uma_selection_release();uma_d3d_close(&runner_renderer);memset(&runner_scene,0,sizeof(runner_scene));memset(runner_actors,0,sizeof(runner_actors));runner_state=runner_idle_state=(UmaMotionState){0};runner_last_tick=0;runner_projection_valid=0;runner_actor_world_valid=0;runner_tracking_gap=0;runner_previous_reference_count=0;LeaveCriticalSection(&runner_lock);
  return runner_original_reset(device,parameters);
 }
 static int runner_install(IDirect3DDevice9 *device){

@@ -52,7 +52,7 @@ static void uma_scene_reference(UmaSceneSpeed *scene,const UmaMatrix *matrix,con
   for(int r=0;r<4;r++)for(int c=0;c<3;c++)if(fabsf(entry->matrix.m[r][c]-matrix->m[r][c])>.003f)entry->ambiguous=1;
   entry->votes++;return;
  }
- if(scene->references<96){UmaReference *entry=&scene->reference[scene->references++];entry->matrix=*matrix;entry->key=*key;entry->votes=1;entry->ambiguous=0;}
+ if(scene->references<96 || (scene->tracked && !memcmp(key,&scene->previous_key,sizeof(*key)))){unsigned slot=scene->references<96?scene->references++:95;UmaReference *entry=&scene->reference[slot];entry->matrix=*matrix;entry->key=*key;entry->votes=1;entry->ambiguous=0;}
 }
 static void uma_scene_body(UmaSceneSpeed *scene,const UmaMatrix *matrix){
  if(!uma_rigid(matrix))return;
