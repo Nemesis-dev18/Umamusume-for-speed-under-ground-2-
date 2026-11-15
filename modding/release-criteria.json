@@ -121,7 +121,7 @@
     "gameplay_verified": true,
     "association_limit": "Spatial prediction of identical actors; overlap can be ambiguous",
     "user_result": "Wheel circles gone, walking/running work; user later reported interruptions and idle on slopes. Continuity repair now installed, not yet verified in game.",
-    "continuity_candidate_installed": true,
+    "continuity_candidate_installed": false,
     "continuity_gameplay_verified": false
   },
   "global_wheel_cleanup": {
@@ -135,8 +135,8 @@
     "smoke_removal_requested": true,
     "one_other_vehicle_light": true,
     "light_type_pending": false,
-    "smoke_cleanup_installed": true,
-    "underbody_glow_cleanup_installed": true,
+    "smoke_cleanup_installed": false,
+    "underbody_glow_cleanup_installed": false,
     "gameplay_verified": false
   }
 }
