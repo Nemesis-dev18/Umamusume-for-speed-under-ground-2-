@@ -423,3 +423,5 @@ Prueba controlada arrancó: PID67149, AUDIO instalado1, render Present supera108
 Auditoría durante espera de selección:65 archivos instalados siguen coincidiendo con receipt final. Proceso67149 confirmado activo, registro aún sin draws de personaje. Corregido únicamente texto START del fuente para indicar estado independiente por actor; no se compila ni instala mientras esta prueba está abierta. Módulo en ejecución conserva hash verificado anterior.
 
 Inventario de fuentes para siguientes personajes: inspección solo lectura de directoriosZIP y SHA en modding/model-source-inventory.json. Sin extraer ni modificar archivos fuente. Vestuario/calidad no se deducen por nombre y requieren previsualización antes de integrar. La prueba de Kitasan permanece abierta sin cambios.
+
+Fuentes PMX: lector Reader existente reutilizado solo en memoria, sin extraer ZIP ni escribir fuera del proyecto. Verificados magicPMX, versión2.0/2.1, codificación, nombres internos y cuenta de vértices en inventario. No equivale a validación de topología/rig/vestuario. Blender MCP no figura entre herramientas activas y no hay ejecutable blender disponible en PATH.

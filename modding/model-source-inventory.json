@@ -8,7 +8,11 @@
         {
           "path": "ShiniNet式_オグリ〇ャップ_v1.1/ShiniNet式_オグリ〇ャップ_v1.1.pmx",
           "bytes": 2351207,
-          "entry_index": 2
+          "entry_index": 2,
+          "model_name": "ShiniNet式 オグリ〇ャップ",
+          "english_name": "Ogurixxxxp Type ShiniNet",
+          "pmx_version": 2.0,
+          "source_vertices": 34537
         }
       ],
       "textures": 14
@@ -20,7 +24,11 @@
         {
           "path": "ShiniNet式キタちゃん_V0_9_1/ShiniNet式キタちゃん.pmx",
           "bytes": 1450867,
-          "entry_index": 21
+          "entry_index": 21,
+          "model_name": "キタサンブラック",
+          "english_name": "KitasanBlack",
+          "pmx_version": 2.0,
+          "source_vertices": 21041
         }
       ],
       "textures": 15
@@ -32,7 +40,11 @@
         {
           "path": "おナス式キタサンブラック配布用ver0.0/おナス式キタサンブラックVer0.0.pmx",
           "bytes": 2779030,
-          "entry_index": 32
+          "entry_index": 32,
+          "model_name": "キタサンブラック",
+          "english_name": "VRM",
+          "pmx_version": 2.0,
+          "source_vertices": 41058
         }
       ],
       "textures": 31
@@ -44,12 +56,20 @@
         {
           "path": "だいやv1.3配布用/だいや_v1.3.pmx",
           "bytes": 3558052,
-          "entry_index": 16
+          "entry_index": 16,
+          "model_name": "だいや",
+          "english_name": "",
+          "pmx_version": 2.0,
+          "source_vertices": 53144
         },
         {
           "path": "だいやv1.3配布用/水筒/水筒.pmx",
           "bytes": 89660,
-          "entry_index": 21
+          "entry_index": 21,
+          "model_name": "水筒",
+          "english_name": "",
+          "pmx_version": 2.0,
+          "source_vertices": 1119
         }
       ],
       "textures": 12
@@ -61,12 +81,20 @@
         {
           "path": "つかさ式うらら/つかさ式うららα.pmx",
           "bytes": 3512784,
-          "entry_index": 16
+          "entry_index": 16,
+          "model_name": "うらら",
+          "english_name": "",
+          "pmx_version": 2.0,
+          "source_vertices": 32997
         },
         {
           "path": "つかさ式うらら/つかさ式うららβ.pmx",
           "bytes": 3505586,
-          "entry_index": 17
+          "entry_index": 17,
+          "model_name": "うらら",
+          "english_name": "",
+          "pmx_version": 2.0,
+          "source_vertices": 32997
         }
       ],
       "textures": 12
@@ -78,7 +106,11 @@
         {
           "path": "まっちさん式アグネスタキオン v1.15/アグネスタキオン.pmx",
           "bytes": 9275900,
-          "entry_index": 39
+          "entry_index": 39,
+          "model_name": "まっちさん式 アグネスタキオンVer1.15",
+          "english_name": "New MMD Model",
+          "pmx_version": 2.0,
+          "source_vertices": 117159
         }
       ],
       "textures": 36
