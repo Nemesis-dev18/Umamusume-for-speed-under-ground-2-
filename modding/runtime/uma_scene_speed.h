@@ -7,7 +7,7 @@
 typedef struct {float m[4][4];} UmaMatrix;
 typedef struct {uint32_t buffer,index,base,minimum,start,vertices,primitives,offset,pass,width,height;} UmaSceneKey;
 typedef struct {UmaMatrix matrix;UmaSceneKey key;unsigned votes;int ambiguous;} UmaReference;
-typedef struct {UmaReference reference[96];UmaMatrix body[16];UmaSceneKey previous_key;unsigned references,bodies,samples;float previous[3];int tracked;} UmaSceneSpeed;
+typedef struct {UmaReference reference[96];UmaMatrix body[16],anchor;UmaSceneKey previous_key,anchor_key;unsigned references,bodies,samples;float previous[3];int tracked,anchor_valid;} UmaSceneSpeed;
 static UmaMatrix uma_matrix_product(const UmaMatrix *a,const UmaMatrix *b){
  UmaMatrix result={0};for(int i=0;i<4;i++)for(int j=0;j<4;j++)for(int k=0;k<4;k++)result.m[i][j]+=a->m[i][k]*b->m[k][j];return result;
 }
@@ -54,10 +54,17 @@ static void uma_scene_reference(UmaSceneSpeed *scene,const UmaMatrix *matrix,con
  }
  if(scene->references<96){UmaReference *entry=&scene->reference[scene->references++];entry->matrix=*matrix;entry->key=*key;entry->votes=1;entry->ambiguous=0;}
 }
-static void uma_scene_body(UmaSceneSpeed *scene,const UmaMatrix *matrix){if(scene->bodies<16 && uma_rigid(matrix))scene->body[scene->bodies++]=*matrix;}
+static void uma_scene_body(UmaSceneSpeed *scene,const UmaMatrix *matrix){
+ if(!uma_rigid(matrix))return;
+ for(unsigned i=0;i<scene->bodies;i++){
+  int same=1;for(int r=0;r<4;r++)for(int c=0;c<4;c++)if(fabsf(scene->body[i].m[r][c]-matrix->m[r][c])>.001f)same=0;
+  if(same)return;
+ }
+ if(scene->bodies<16)scene->body[scene->bodies++]=*matrix;
+}
 /* Track one immutable scenery draw across frames; independent objects need not share a matrix. */
 static int uma_scene_finish(UmaSceneSpeed *scene,float seconds,float *speed){
- int best=-1,valid=0,same=0;float distance=FLT_MAX;UmaMatrix chosen={0};
+ int best=-1,valid=0,same=0;float distance=FLT_MAX;UmaMatrix chosen={0};scene->anchor_valid=0;
  if(!isfinite(seconds) || seconds<=0 || seconds>.25f || !scene->references || !scene->bodies)goto done;
  for(unsigned i=0;i<scene->references;i++){
   UmaReference *entry=&scene->reference[i];if(entry->ambiguous)continue;
@@ -80,6 +87,7 @@ static int uma_scene_finish(UmaSceneSpeed *scene,float seconds,float *speed){
   }
   for(int k=0;k<3;k++)scene->previous[k]=chosen.m[3][k];
   scene->previous_key=scene->reference[best].key;*speed=result;
+  scene->anchor=scene->reference[best].matrix;scene->anchor_key=scene->reference[best].key;scene->anchor_valid=1;
  }
 done:
  scene->tracked=valid;scene->references=scene->bodies=scene->samples=0;return valid;

@@ -85,6 +85,50 @@
       ]
     },
     {
+      "target": "CARS/4DR_SEDAN/GEOMETRY.BIN",
+      "candidate": "modding/staged-runtime/global-wheels/CARS/4DR_SEDAN/GEOMETRY.BIN",
+      "backup": "CARS/4DR_SEDAN/GEOMETRY.BIN.before-global-wheels.bak",
+      "bytes": 63536,
+      "before_sha256": "5818399288eede4e12a007e7aa061834048adda288f29977868f76e0860fef60",
+      "after_sha256": "9d0fedaa631fdb8e3ba4257f29dd225919965016145b67cfc2bf162c50c633e9",
+      "index_ranges": [
+        {
+          "name": "4DR_SEDAN_TIRE_FRONT_A",
+          "offset": 59408,
+          "bytes": 168,
+          "triangles": 28
+        },
+        {
+          "name": "4DR_SEDAN_TIRE_FRONT_B",
+          "offset": 61072,
+          "bytes": 126,
+          "triangles": 21
+        }
+      ]
+    },
+    {
+      "target": "CARS/4DR_SEDAN02/GEOMETRY.BIN",
+      "candidate": "modding/staged-runtime/global-wheels/CARS/4DR_SEDAN02/GEOMETRY.BIN",
+      "backup": "CARS/4DR_SEDAN02/GEOMETRY.BIN.before-global-wheels.bak",
+      "bytes": 61952,
+      "before_sha256": "1b65d63ce7170007eb47f87119a4465f014a10c63fbbec028b6536a53496a998",
+      "after_sha256": "f73a84996d0003f4ffc4e4c1771128e12c5c526d2638b30c43c2f1960eaf57a5",
+      "index_ranges": [
+        {
+          "name": "4DR_SEDAN02_TIRE_FRONT_A",
+          "offset": 57984,
+          "bytes": 192,
+          "triangles": 32
+        },
+        {
+          "name": "4DR_SEDAN02_TIRE_FRONT_B",
+          "offset": 59552,
+          "bytes": 108,
+          "triangles": 18
+        }
+      ]
+    },
+    {
       "target": "CARS/A3/GEOMETRY.BIN",
       "candidate": "modding/staged-runtime/global-wheels/CARS/A3/GEOMETRY.BIN",
       "backup": "CARS/A3/GEOMETRY.BIN.before-global-wheels.bak",
@@ -109,6 +153,50 @@
           "offset": 450288,
           "bytes": 684,
           "triangles": 114
+        }
+      ]
+    },
+    {
+      "target": "CARS/AMBULANCE/GEOMETRY.BIN",
+      "candidate": "modding/staged-runtime/global-wheels/CARS/AMBULANCE/GEOMETRY.BIN",
+      "backup": "CARS/AMBULANCE/GEOMETRY.BIN.before-global-wheels.bak",
+      "bytes": 60096,
+      "before_sha256": "bd1dde1a1778162e78cf34d8496b40cbd30ac541a9d028b4ec2870db768b829d",
+      "after_sha256": "158c992ffc40b376a94fa7728ab1b7e5bb1307b79cda237fd8c54ca9f8a523f0",
+      "index_ranges": [
+        {
+          "name": "AMBULANCE_TIRE_FRONT_A",
+          "offset": 56192,
+          "bytes": 192,
+          "triangles": 32
+        },
+        {
+          "name": "AMBULANCE_TIRE_FRONT_B",
+          "offset": 57904,
+          "bytes": 138,
+          "triangles": 23
+        }
+      ]
+    },
+    {
+      "target": "CARS/BUS/GEOMETRY.BIN",
+      "candidate": "modding/staged-runtime/global-wheels/CARS/BUS/GEOMETRY.BIN",
+      "backup": "CARS/BUS/GEOMETRY.BIN.before-global-wheels.bak",
+      "bytes": 66960,
+      "before_sha256": "d0dae93750656055c71b817c0b68771d9b478c7f718458e12a4d3b167f8b9e08",
+      "after_sha256": "b1b76b536ba294076279c0e2871a762afdd4fc6aef23e2f9b2738b1a38ae1c2d",
+      "index_ranges": [
+        {
+          "name": "BUS_TIRE_FRONT_A",
+          "offset": 63312,
+          "bytes": 180,
+          "triangles": 30
+        },
+        {
+          "name": "BUS_TIRE_FRONT_B",
+          "offset": 64928,
+          "bytes": 108,
+          "triangles": 18
         }
       ]
     },
@@ -146,8 +234,212 @@
       "backup": "CARS/COROLLA/GEOMETRY.BIN.before-global-wheels.bak",
       "bytes": 4570240,
       "before_sha256": "4b3d213ccc8c52a0e3000c4117845439a900aa6b6590bcb517f9d98ef083714c",
-      "after_sha256": "05e69b803d7b10e9b7f48bd17f397304353acce2d914ae62c8e8932e7363c094",
+      "after_sha256": "e71d2b52a168546043300285aab71732c02f7ea8c019d760f711eb6c82840e32",
       "index_ranges": [
+        {
+          "name": "COROLLA_BASE_A",
+          "offset": 21792,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_BASE_B",
+          "offset": 25120,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_BASE_C",
+          "offset": 27200,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_DECAL_FRONT_WINDOW_",
+          "offset": 27856,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_DECAL_HOOD_RECT_MED",
+          "offset": 28672,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_DECAL_HOOD_RECT_SMA",
+          "offset": 29936,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_DECAL_LEFT_DOOR_REC",
+          "offset": 30832,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_DECAL_LEFT_QUARTER_",
+          "offset": 31440,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_DECAL_LEFT_QUARTER_",
+          "offset": 32128,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_DECAL_REAR_WINDOW_W",
+          "offset": 32848,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_DECAL_RIGHT_DOOR_RE",
+          "offset": 33776,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_DECAL_RIGHT_QUARTER",
+          "offset": 34384,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_DECAL_RIGHT_QUARTER",
+          "offset": 35072,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT00_BRAKELIGHT_A",
+          "offset": 2550144,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT00_BRAKELIGHT_B",
+          "offset": 2551424,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT00_BRAKELIGHT_C",
+          "offset": 2552192,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT00_DOOR_LEFT_A",
+          "offset": 2553280,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT00_DOOR_LEFT_B",
+          "offset": 2556624,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT00_DOOR_LEFT_C",
+          "offset": 2557264,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT00_DOOR_PANEL_LE",
+          "offset": 2557904,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT00_DOOR_PANEL_RI",
+          "offset": 2559696,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT00_DOOR_RIGHT_A",
+          "offset": 2561856,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT00_DOOR_RIGHT_B",
+          "offset": 2565200,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT00_DOOR_RIGHT_C",
+          "offset": 2565840,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT00_DOOR_SILL_LEF",
+          "offset": 2566480,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT00_DOOR_SILL_RIG",
+          "offset": 2567632,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT00_ENGINE_A",
+          "offset": 2569072,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT00_ENGINE_UNLIT_",
+          "offset": 2569792,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT00_EXHAUST_A",
+          "offset": 2570496,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT00_FRONT_BRAKE_A",
+          "offset": 2571328,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT00_FRONT_BRAKE_B",
+          "offset": 2572032,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT00_FRONT_BUMPER_",
+          "offset": 2573504,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT00_FRONT_BUMPER_",
+          "offset": 2586368,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT00_FRONT_BUMPER_",
+          "offset": 2590336,
+          "bytes": 6,
+          "triangles": 1
+        },
         {
           "name": "COROLLA_KIT00_FRONT_WHEEL_A",
           "offset": 2593856,
@@ -163,6 +455,3186 @@
         {
           "name": "COROLLA_KIT00_FRONT_WHEEL_C",
           "offset": 2595520,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT00_HEADLIGHT_LEF",
+          "offset": 2596608,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT00_HEADLIGHT_LEF",
+          "offset": 2598528,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT00_HEADLIGHT_LEF",
+          "offset": 2599616,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT00_HEADLIGHT_RIG",
+          "offset": 2600576,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT00_HEADLIGHT_RIG",
+          "offset": 2602240,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT00_HEADLIGHT_RIG",
+          "offset": 2603328,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT00_HOOD_A",
+          "offset": 2604160,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT00_HOOD_B",
+          "offset": 2606032,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT00_HOOD_C",
+          "offset": 2607056,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT00_HOOD_UNDER_A",
+          "offset": 2607824,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT00_LEFT_SIDE_MIR",
+          "offset": 2608512,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT00_LEFT_SIDE_MIR",
+          "offset": 2611072,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT00_LEFT_SIDE_MIR",
+          "offset": 2612096,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT00_REAR_BRAKE_A",
+          "offset": 2613184,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT00_REAR_BRAKE_B",
+          "offset": 2613888,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT00_REAR_BRAKE_C",
+          "offset": 2614656,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT00_REAR_BUMPER_A",
+          "offset": 2616048,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT00_REAR_BUMPER_B",
+          "offset": 2622064,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT00_REAR_BUMPER_C",
+          "offset": 2624000,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT00_RIGHT_SIDE_MI",
+          "offset": 2626176,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT00_RIGHT_SIDE_MI",
+          "offset": 2628736,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT00_RIGHT_SIDE_MI",
+          "offset": 2629760,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT00_ROOF_A",
+          "offset": 2630784,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT00_ROOF_B",
+          "offset": 2634496,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT00_ROOF_C",
+          "offset": 2636112,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT00_SKIRT_A",
+          "offset": 2637936,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT00_SKIRT_B",
+          "offset": 2645744,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT00_SKIRT_C",
+          "offset": 2649024,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT00_TRUNK_A",
+          "offset": 2651184,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT00_TRUNK_AUDIO_A",
+          "offset": 2655568,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT00_TRUNK_AUDIO_U",
+          "offset": 2656320,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT00_TRUNK_B",
+          "offset": 2657456,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT00_TRUNK_C",
+          "offset": 2659696,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT00_TRUNK_UNDER_A",
+          "offset": 2661584,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT01_FRONT_BUMPER_",
+          "offset": 2663088,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT01_FRONT_BUMPER_",
+          "offset": 2671168,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT01_FRONT_BUMPER_",
+          "offset": 2676800,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT01_REAR_BUMPER_A",
+          "offset": 2679552,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT01_REAR_BUMPER_B",
+          "offset": 2684352,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT01_REAR_BUMPER_C",
+          "offset": 2687424,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT01_SKIRT_A",
+          "offset": 2689776,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT01_SKIRT_B",
+          "offset": 2695488,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT01_SKIRT_C",
+          "offset": 2699136,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT01_TRUNK_AUDIO_A",
+          "offset": 2701248,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT01_TRUNK_AUDIO_U",
+          "offset": 2701952,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT02_TRUNK_AUDIO_A",
+          "offset": 2703168,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT02_TRUNK_AUDIO_U",
+          "offset": 2703872,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT03_FRONT_BUMPER_",
+          "offset": 2705584,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT03_FRONT_BUMPER_",
+          "offset": 2714240,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT03_FRONT_BUMPER_",
+          "offset": 2717952,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT03_REAR_BUMPER_A",
+          "offset": 2720128,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT03_REAR_BUMPER_B",
+          "offset": 2726848,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT03_REAR_BUMPER_C",
+          "offset": 2730944,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT03_SKIRT_A",
+          "offset": 2733808,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT03_SKIRT_B",
+          "offset": 2739200,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT03_SKIRT_C",
+          "offset": 2743552,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT03_TRUNK_AUDIO_A",
+          "offset": 2746320,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT03_TRUNK_AUDIO_U",
+          "offset": 2747072,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT04_FRONT_BUMPER_",
+          "offset": 2748720,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT04_FRONT_BUMPER_",
+          "offset": 2757632,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT04_FRONT_BUMPER_",
+          "offset": 2761344,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT04_REAR_BUMPER_A",
+          "offset": 2763520,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT04_REAR_BUMPER_B",
+          "offset": 2771264,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT04_REAR_BUMPER_C",
+          "offset": 2774976,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT04_SKIRT_A",
+          "offset": 2777712,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT04_SKIRT_B",
+          "offset": 2784320,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT04_SKIRT_C",
+          "offset": 2787904,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT08_FRONT_BUMPER_",
+          "offset": 2790576,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT08_FRONT_BUMPER_",
+          "offset": 2799744,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT08_FRONT_BUMPER_",
+          "offset": 2803584,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT08_REAR_BUMPER_A",
+          "offset": 2806016,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT08_REAR_BUMPER_B",
+          "offset": 2814080,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT08_REAR_BUMPER_C",
+          "offset": 2817152,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT08_SKIRT_A",
+          "offset": 2819696,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT08_SKIRT_B",
+          "offset": 2826048,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT08_SKIRT_C",
+          "offset": 2829312,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT09_FRONT_BUMPER_",
+          "offset": 2831920,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT09_FRONT_BUMPER_",
+          "offset": 2840960,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT09_FRONT_BUMPER_",
+          "offset": 2844800,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT09_REAR_BUMPER_A",
+          "offset": 2847808,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT09_REAR_BUMPER_B",
+          "offset": 2856064,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT09_REAR_BUMPER_C",
+          "offset": 2859776,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT09_SKIRT_A",
+          "offset": 2862704,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT09_SKIRT_B",
+          "offset": 2868800,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT09_SKIRT_C",
+          "offset": 2872512,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT10_FRONT_BUMPER_",
+          "offset": 2874928,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT10_FRONT_BUMPER_",
+          "offset": 2886848,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT10_FRONT_BUMPER_",
+          "offset": 2893248,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT10_REAR_BUMPER_A",
+          "offset": 2896448,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT10_REAR_BUMPER_B",
+          "offset": 2905216,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT10_REAR_BUMPER_C",
+          "offset": 2908800,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT10_SKIRT_A",
+          "offset": 2911728,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT10_SKIRT_B",
+          "offset": 2917632,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT10_SKIRT_C",
+          "offset": 2922048,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT11_FRONT_BUMPER_",
+          "offset": 2925104,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT11_FRONT_BUMPER_",
+          "offset": 2935680,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT11_FRONT_BUMPER_",
+          "offset": 2942592,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT11_REAR_BUMPER_A",
+          "offset": 2945344,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT11_REAR_BUMPER_B",
+          "offset": 2953216,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT11_REAR_BUMPER_C",
+          "offset": 2958592,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT11_SKIRT_A",
+          "offset": 2960880,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT11_SKIRT_B",
+          "offset": 2967872,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT11_SKIRT_C",
+          "offset": 2972736,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT12_FRONT_BUMPER_",
+          "offset": 2975408,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT12_FRONT_BUMPER_",
+          "offset": 2983552,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT12_FRONT_BUMPER_",
+          "offset": 2987904,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT12_REAR_BUMPER_A",
+          "offset": 2990720,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT12_REAR_BUMPER_B",
+          "offset": 2997696,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT12_REAR_BUMPER_C",
+          "offset": 3001152,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT12_SKIRT_A",
+          "offset": 3003504,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT12_SKIRT_B",
+          "offset": 3010880,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT12_SKIRT_C",
+          "offset": 3015488,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT13_FRONT_BUMPER_",
+          "offset": 3017920,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT13_FRONT_BUMPER_",
+          "offset": 3028480,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT13_FRONT_BUMPER_",
+          "offset": 3034112,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT13_REAR_BUMPER_A",
+          "offset": 3037696,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT13_REAR_BUMPER_B",
+          "offset": 3043648,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT13_REAR_BUMPER_C",
+          "offset": 3046464,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT13_SKIRT_A",
+          "offset": 3048816,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT13_SKIRT_B",
+          "offset": 3054656,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT13_SKIRT_C",
+          "offset": 3059136,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT14_FRONT_BUMPER_",
+          "offset": 3061872,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT14_FRONT_BUMPER_",
+          "offset": 3069760,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT14_FRONT_BUMPER_",
+          "offset": 3073856,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT14_REAR_BUMPER_A",
+          "offset": 3076592,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT14_REAR_BUMPER_B",
+          "offset": 3085504,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT14_REAR_BUMPER_C",
+          "offset": 3089600,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT14_SKIRT_A",
+          "offset": 3092016,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT14_SKIRT_B",
+          "offset": 3097712,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT14_SKIRT_C",
+          "offset": 3101168,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT16_FRONT_BUMPER_",
+          "offset": 3103856,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT16_FRONT_BUMPER_",
+          "offset": 3110720,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT16_FRONT_BUMPER_",
+          "offset": 3114816,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT16_REAR_BUMPER_A",
+          "offset": 3116976,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT16_REAR_BUMPER_B",
+          "offset": 3124592,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT16_REAR_BUMPER_C",
+          "offset": 3128432,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT16_SKIRT_A",
+          "offset": 3131056,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT16_SKIRT_B",
+          "offset": 3137776,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT16_SKIRT_C",
+          "offset": 3142128,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT17_FRONT_BUMPER_",
+          "offset": 3145840,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT17_FRONT_BUMPER_",
+          "offset": 3154368,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT17_FRONT_BUMPER_",
+          "offset": 3159744,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT17_REAR_BUMPER_A",
+          "offset": 3162816,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT17_REAR_BUMPER_B",
+          "offset": 3170176,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT17_REAR_BUMPER_C",
+          "offset": 3174912,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT17_SKIRT_A",
+          "offset": 3177776,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT17_SKIRT_B",
+          "offset": 3183856,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT17_SKIRT_C",
+          "offset": 3187952,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT18_FRONT_BUMPER_",
+          "offset": 3190832,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT18_FRONT_BUMPER_",
+          "offset": 3197440,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT18_FRONT_BUMPER_",
+          "offset": 3200256,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT18_REAR_BUMPER_A",
+          "offset": 3202624,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT18_REAR_BUMPER_B",
+          "offset": 3209472,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT18_REAR_BUMPER_C",
+          "offset": 3212160,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT18_SKIRT_A",
+          "offset": 3214704,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT18_SKIRT_B",
+          "offset": 3220672,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT18_SKIRT_C",
+          "offset": 3224192,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT19_FRONT_BUMPER_",
+          "offset": 3226672,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT19_FRONT_BUMPER_",
+          "offset": 3234944,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT19_FRONT_BUMPER_",
+          "offset": 3238784,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT19_REAR_BUMPER_A",
+          "offset": 3241664,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT19_REAR_BUMPER_B",
+          "offset": 3247744,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT19_REAR_BUMPER_C",
+          "offset": 3250944,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT19_SKIRT_A",
+          "offset": 3253360,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT19_SKIRT_B",
+          "offset": 3259968,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT19_SKIRT_C",
+          "offset": 3263600,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT20_FRONT_BUMPER_",
+          "offset": 3266352,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT20_FRONT_BUMPER_",
+          "offset": 3274624,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT20_FRONT_BUMPER_",
+          "offset": 3278464,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT20_REAR_BUMPER_A",
+          "offset": 3280960,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT20_REAR_BUMPER_B",
+          "offset": 3287040,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT20_REAR_BUMPER_C",
+          "offset": 3289856,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT20_SKIRT_A",
+          "offset": 3292144,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT20_SKIRT_B",
+          "offset": 3298624,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT20_SKIRT_C",
+          "offset": 3302848,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT21_FRONT_BUMPER_",
+          "offset": 3306224,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT21_FRONT_BUMPER_",
+          "offset": 3314752,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT21_FRONT_BUMPER_",
+          "offset": 3318208,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT21_HOOD_UNDER_LE",
+          "offset": 3320400,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT21_HOOD_UNDER_RI",
+          "offset": 3321040,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT21_REAR_BUMPER_A",
+          "offset": 3322352,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT21_REAR_BUMPER_B",
+          "offset": 3331264,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT21_REAR_BUMPER_C",
+          "offset": 3334976,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT21_SKIRT_A",
+          "offset": 3338096,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT21_SKIRT_B",
+          "offset": 3345072,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT21_SKIRT_C",
+          "offset": 3349424,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT22_FRONT_BUMPER_",
+          "offset": 3351872,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT22_FRONT_BUMPER_",
+          "offset": 3357952,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT22_FRONT_BUMPER_",
+          "offset": 3360384,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT22_HOOD_UNDER_LE",
+          "offset": 3362000,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT22_HOOD_UNDER_RI",
+          "offset": 3362640,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT22_REAR_BUMPER_A",
+          "offset": 3363904,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT22_REAR_BUMPER_B",
+          "offset": 3369472,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT22_REAR_BUMPER_C",
+          "offset": 3372032,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT22_SKIRT_A",
+          "offset": 3374384,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT22_SKIRT_B",
+          "offset": 3379312,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT22_SKIRT_C",
+          "offset": 3383360,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT23_FRONT_BUMPER_",
+          "offset": 3386304,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT23_FRONT_BUMPER_",
+          "offset": 3395264,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT23_FRONT_BUMPER_",
+          "offset": 3399424,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT23_HOOD_UNDER_LE",
+          "offset": 3401552,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT23_HOOD_UNDER_RI",
+          "offset": 3402192,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT23_REAR_BUMPER_A",
+          "offset": 3403392,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT23_REAR_BUMPER_B",
+          "offset": 3410880,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT23_REAR_BUMPER_C",
+          "offset": 3414464,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT23_SKIRT_A",
+          "offset": 3417200,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT23_SKIRT_B",
+          "offset": 3422016,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT23_SKIRT_C",
+          "offset": 3425600,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT24_FRONT_BUMPER_",
+          "offset": 3428272,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT24_FRONT_BUMPER_",
+          "offset": 3436800,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT24_FRONT_BUMPER_",
+          "offset": 3442688,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT24_HOOD_UNDER_LE",
+          "offset": 3444944,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT24_HOOD_UNDER_RI",
+          "offset": 3445584,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT24_REAR_BUMPER_A",
+          "offset": 3446848,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT24_REAR_BUMPER_B",
+          "offset": 3454080,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT24_REAR_BUMPER_C",
+          "offset": 3457792,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT24_SKIRT_A",
+          "offset": 3460336,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT24_SKIRT_B",
+          "offset": 3466432,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT24_SKIRT_C",
+          "offset": 3470912,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT25_FRONT_BUMPER_",
+          "offset": 3474032,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT25_FRONT_BUMPER_",
+          "offset": 3486576,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT25_FRONT_BUMPER_",
+          "offset": 3492288,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT25_HOOD_UNDER_LE",
+          "offset": 3495248,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT25_HOOD_UNDER_RI",
+          "offset": 3495888,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT25_REAR_BUMPER_A",
+          "offset": 3497200,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT25_REAR_BUMPER_B",
+          "offset": 3507520,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT25_REAR_BUMPER_C",
+          "offset": 3513024,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT25_SKIRT_A",
+          "offset": 3516208,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT25_SKIRT_B",
+          "offset": 3523312,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT25_SKIRT_C",
+          "offset": 3528688,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT26_FRONT_BUMPER_",
+          "offset": 3532080,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT26_FRONT_BUMPER_",
+          "offset": 3540224,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT26_FRONT_BUMPER_",
+          "offset": 3544192,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT26_REAR_BUMPER_A",
+          "offset": 3546432,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT26_REAR_BUMPER_B",
+          "offset": 3553152,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT26_REAR_BUMPER_C",
+          "offset": 3556224,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT26_SKIRT_A",
+          "offset": 3558448,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT26_SKIRT_B",
+          "offset": 3565168,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT26_SKIRT_C",
+          "offset": 3569520,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT27_FRONT_BUMPER_",
+          "offset": 3572400,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT27_FRONT_BUMPER_",
+          "offset": 3582016,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT27_FRONT_BUMPER_",
+          "offset": 3586112,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT27_REAR_BUMPER_A",
+          "offset": 3589184,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT27_REAR_BUMPER_B",
+          "offset": 3598720,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT27_REAR_BUMPER_C",
+          "offset": 3603456,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT27_SKIRT_A",
+          "offset": 3606320,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT27_SKIRT_B",
+          "offset": 3614576,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT27_SKIRT_C",
+          "offset": 3618496,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT28_FRONT_BUMPER_",
+          "offset": 3621104,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT28_FRONT_BUMPER_",
+          "offset": 3629552,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT28_FRONT_BUMPER_",
+          "offset": 3633600,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT28_REAR_BUMPER_A",
+          "offset": 3636224,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT28_REAR_BUMPER_B",
+          "offset": 3641920,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT28_REAR_BUMPER_C",
+          "offset": 3644416,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT28_SKIRT_A",
+          "offset": 3646640,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT28_SKIRT_B",
+          "offset": 3651568,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT28_SKIRT_C",
+          "offset": 3655104,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT29_FRONT_BUMPER_",
+          "offset": 3657696,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT29_FRONT_BUMPER_",
+          "offset": 3668336,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT29_FRONT_BUMPER_",
+          "offset": 3673200,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT29_REAR_BUMPER_A",
+          "offset": 3676400,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT29_REAR_BUMPER_B",
+          "offset": 3685248,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT29_REAR_BUMPER_C",
+          "offset": 3688640,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT29_SKIRT_A",
+          "offset": 3691056,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT29_SKIRT_B",
+          "offset": 3701488,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT29_SKIRT_C",
+          "offset": 3707248,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT30_FRONT_BUMPER_",
+          "offset": 3711024,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT30_FRONT_BUMPER_",
+          "offset": 3724272,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT30_FRONT_BUMPER_",
+          "offset": 3730032,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT30_REAR_BUMPER_A",
+          "offset": 3734080,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT30_REAR_BUMPER_B",
+          "offset": 3743744,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT30_REAR_BUMPER_C",
+          "offset": 3747392,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT30_SKIRT_A",
+          "offset": 3750576,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT30_SKIRT_B",
+          "offset": 3759088,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KIT30_SKIRT_C",
+          "offset": 3763648,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KITW01_BODY_A",
+          "offset": 3767664,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KITW01_BODY_B",
+          "offset": 3793712,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KITW01_BODY_C",
+          "offset": 3803696,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KITW01_BODY_D",
+          "offset": 3809728,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KITW01_DOOR_LEFT_A",
+          "offset": 3812288,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KITW01_DOOR_LEFT_B",
+          "offset": 3813840,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KITW01_DOOR_LEFT_C",
+          "offset": 3814480,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KITW01_DOOR_PANEL_L",
+          "offset": 3815120,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KITW01_DOOR_PANEL_R",
+          "offset": 3816528,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KITW01_DOOR_RIGHT_A",
+          "offset": 3818688,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KITW01_DOOR_RIGHT_B",
+          "offset": 3820240,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KITW01_DOOR_RIGHT_C",
+          "offset": 3820880,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KITW01_DOOR_SILL_LE",
+          "offset": 3821520,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KITW01_DOOR_SILL_RI",
+          "offset": 3822544,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KITW02_BODY_A",
+          "offset": 3825568,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KITW02_BODY_B",
+          "offset": 3856240,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KITW02_BODY_C",
+          "offset": 3868784,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KITW02_BODY_D",
+          "offset": 3875136,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KITW02_DOOR_LEFT_A",
+          "offset": 3877312,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KITW02_DOOR_LEFT_B",
+          "offset": 3879120,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KITW02_DOOR_LEFT_C",
+          "offset": 3879760,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KITW02_DOOR_PANEL_L",
+          "offset": 3880400,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KITW02_DOOR_PANEL_R",
+          "offset": 3881808,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KITW02_DOOR_RIGHT_A",
+          "offset": 3883840,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KITW02_DOOR_RIGHT_B",
+          "offset": 3885648,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KITW02_DOOR_RIGHT_C",
+          "offset": 3886288,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KITW02_DOOR_SILL_LE",
+          "offset": 3886928,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KITW02_DOOR_SILL_RI",
+          "offset": 3887952,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KITW03_BODY_A",
+          "offset": 3890480,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KITW03_BODY_B",
+          "offset": 3927216,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KITW03_BODY_C",
+          "offset": 3939184,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KITW03_BODY_D",
+          "offset": 3948096,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KITW03_DOOR_LEFT_A",
+          "offset": 3950464,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KITW03_DOOR_LEFT_B",
+          "offset": 3953744,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KITW03_DOOR_LEFT_C",
+          "offset": 3954384,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KITW03_DOOR_PANEL_L",
+          "offset": 3955024,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KITW03_DOOR_PANEL_R",
+          "offset": 3956432,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KITW03_DOOR_RIGHT_A",
+          "offset": 3958528,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KITW03_DOOR_RIGHT_B",
+          "offset": 3962576,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KITW03_DOOR_RIGHT_C",
+          "offset": 3963216,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KITW03_DOOR_SILL_LE",
+          "offset": 3963856,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KITW03_DOOR_SILL_RI",
+          "offset": 3965008,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KITW04_BODY_A",
+          "offset": 3967856,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KITW04_BODY_B",
+          "offset": 3995888,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KITW04_BODY_C",
+          "offset": 4012608,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KITW04_BODY_D",
+          "offset": 4022336,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KITW04_DOOR_LEFT_A",
+          "offset": 4024896,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KITW04_DOOR_LEFT_B",
+          "offset": 4026704,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KITW04_DOOR_LEFT_C",
+          "offset": 4027344,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KITW04_DOOR_PANEL_L",
+          "offset": 4027984,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KITW04_DOOR_PANEL_R",
+          "offset": 4029776,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KITW04_DOOR_RIGHT_A",
+          "offset": 4031936,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KITW04_DOOR_RIGHT_B",
+          "offset": 4033744,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KITW04_DOOR_RIGHT_C",
+          "offset": 4034384,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KITW04_DOOR_SILL_LE",
+          "offset": 4035024,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_KITW04_DOOR_SILL_RI",
+          "offset": 4036048,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE01_ENGINE_A",
+          "offset": 4037488,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE01_ENGINE_UNLI",
+          "offset": 4038336,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE01_HOOD_A",
+          "offset": 4039104,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE01_HOOD_B",
+          "offset": 4042496,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE01_HOOD_C",
+          "offset": 4044672,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE02_ENGINE_A",
+          "offset": 4047280,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE02_ENGINE_UNLI",
+          "offset": 4048064,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE02_HOOD_A",
+          "offset": 4048832,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE02_HOOD_B",
+          "offset": 4051456,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE02_HOOD_C",
+          "offset": 4053248,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE03_HOOD_A",
+          "offset": 4054592,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE03_HOOD_B",
+          "offset": 4057936,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE03_HOOD_C",
+          "offset": 4060880,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE04_HOOD_A",
+          "offset": 4062144,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE04_HOOD_B",
+          "offset": 4065536,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE04_HOOD_C",
+          "offset": 4067840,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE05_BRAKELIGHT_",
+          "offset": 4069824,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE05_BRAKELIGHT_",
+          "offset": 4073664,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE05_BRAKELIGHT_",
+          "offset": 4075392,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE05_HEADLIGHT_L",
+          "offset": 4076608,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE05_HEADLIGHT_L",
+          "offset": 4078272,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE05_HEADLIGHT_L",
+          "offset": 4079488,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE05_HEADLIGHT_R",
+          "offset": 4080576,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE05_HEADLIGHT_R",
+          "offset": 4081984,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE05_HEADLIGHT_R",
+          "offset": 4083200,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE05_HOOD_A",
+          "offset": 4084160,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE05_HOOD_B",
+          "offset": 4088192,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE05_HOOD_C",
+          "offset": 4090880,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE06_BRAKELIGHT_",
+          "offset": 4092992,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE06_BRAKELIGHT_",
+          "offset": 4096832,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE06_BRAKELIGHT_",
+          "offset": 4098512,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE06_HEADLIGHT_L",
+          "offset": 4099696,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE06_HEADLIGHT_L",
+          "offset": 4102384,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE06_HEADLIGHT_L",
+          "offset": 4104000,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE06_HEADLIGHT_R",
+          "offset": 4105200,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE06_HEADLIGHT_R",
+          "offset": 4107760,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE06_HEADLIGHT_R",
+          "offset": 4109376,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE06_HOOD_A",
+          "offset": 4110272,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE06_HOOD_B",
+          "offset": 4114688,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE06_HOOD_C",
+          "offset": 4117376,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE07_BRAKELIGHT_",
+          "offset": 4119792,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE07_BRAKELIGHT_",
+          "offset": 4126064,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE07_BRAKELIGHT_",
+          "offset": 4129408,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE07_HEADLIGHT_L",
+          "offset": 4130880,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE07_HEADLIGHT_L",
+          "offset": 4133104,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE07_HEADLIGHT_L",
+          "offset": 4134592,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE07_HEADLIGHT_R",
+          "offset": 4135744,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE07_HEADLIGHT_R",
+          "offset": 4137840,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE07_HEADLIGHT_R",
+          "offset": 4139328,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE07_HOOD_A",
+          "offset": 4140352,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE07_HOOD_B",
+          "offset": 4143872,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE07_HOOD_C",
+          "offset": 4145536,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE08_BRAKELIGHT_",
+          "offset": 4146944,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE08_BRAKELIGHT_",
+          "offset": 4152576,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE08_BRAKELIGHT_",
+          "offset": 4155264,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE08_HEADLIGHT_L",
+          "offset": 4156592,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE08_HEADLIGHT_L",
+          "offset": 4158512,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE08_HEADLIGHT_L",
+          "offset": 4159936,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE08_HEADLIGHT_R",
+          "offset": 4161328,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE08_HEADLIGHT_R",
+          "offset": 4163120,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE08_HEADLIGHT_R",
+          "offset": 4164544,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE08_HOOD_A",
+          "offset": 4165568,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE08_HOOD_B",
+          "offset": 4167808,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE08_HOOD_C",
+          "offset": 4169216,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE09_BRAKELIGHT_",
+          "offset": 4170816,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE09_BRAKELIGHT_",
+          "offset": 4174656,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE09_BRAKELIGHT_",
+          "offset": 4176336,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE09_HEADLIGHT_L",
+          "offset": 4177520,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE09_HEADLIGHT_L",
+          "offset": 4179824,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE09_HEADLIGHT_L",
+          "offset": 4181184,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE09_HEADLIGHT_R",
+          "offset": 4182384,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE09_HEADLIGHT_R",
+          "offset": 4184560,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE09_HEADLIGHT_R",
+          "offset": 4185920,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE09_HOOD_A",
+          "offset": 4186816,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE09_HOOD_B",
+          "offset": 4190720,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE09_HOOD_C",
+          "offset": 4193024,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE10_BRAKELIGHT_",
+          "offset": 4195072,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE10_BRAKELIGHT_",
+          "offset": 4197440,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE10_BRAKELIGHT_",
+          "offset": 4199248,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE10_HEADLIGHT_L",
+          "offset": 4200320,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE10_HEADLIGHT_L",
+          "offset": 4203136,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE10_HEADLIGHT_L",
+          "offset": 4204480,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE10_HEADLIGHT_R",
+          "offset": 4205696,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE10_HEADLIGHT_R",
+          "offset": 4208256,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE10_HEADLIGHT_R",
+          "offset": 4209600,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE10_HOOD_A",
+          "offset": 4210752,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE10_HOOD_B",
+          "offset": 4214272,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE10_HOOD_C",
+          "offset": 4216448,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE11_BRAKELIGHT_",
+          "offset": 4218496,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE11_BRAKELIGHT_",
+          "offset": 4222336,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE11_BRAKELIGHT_",
+          "offset": 4223952,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE11_HEADLIGHT_L",
+          "offset": 4225024,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE11_HEADLIGHT_L",
+          "offset": 4228864,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE11_HEADLIGHT_L",
+          "offset": 4231424,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE11_HEADLIGHT_R",
+          "offset": 4232448,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE11_HEADLIGHT_R",
+          "offset": 4236032,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE11_HEADLIGHT_R",
+          "offset": 4238592,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE11_HOOD_A",
+          "offset": 4239552,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE11_HOOD_B",
+          "offset": 4242176,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE11_HOOD_C",
+          "offset": 4243968,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE12_BRAKELIGHT_",
+          "offset": 4245696,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE12_BRAKELIGHT_",
+          "offset": 4251072,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE12_BRAKELIGHT_",
+          "offset": 4254912,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE12_HEADLIGHT_L",
+          "offset": 4256496,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE12_HEADLIGHT_L",
+          "offset": 4259568,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE12_HEADLIGHT_L",
+          "offset": 4261104,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE12_HEADLIGHT_R",
+          "offset": 4262640,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE12_HEADLIGHT_R",
+          "offset": 4265584,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE12_HEADLIGHT_R",
+          "offset": 4267120,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE12_HOOD_A",
+          "offset": 4268416,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE12_HOOD_B",
+          "offset": 4271936,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE12_HOOD_C",
+          "offset": 4274112,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE13_BRAKELIGHT_",
+          "offset": 4276160,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE13_BRAKELIGHT_",
+          "offset": 4278592,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE13_BRAKELIGHT_",
+          "offset": 4280272,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE13_HEADLIGHT_L",
+          "offset": 4281456,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE13_HEADLIGHT_L",
+          "offset": 4283504,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE13_HEADLIGHT_L",
+          "offset": 4284800,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE13_HEADLIGHT_R",
+          "offset": 4286064,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE13_HEADLIGHT_R",
+          "offset": 4287984,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE13_HEADLIGHT_R",
+          "offset": 4289280,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE13_HOOD_A",
+          "offset": 4290240,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE13_HOOD_B",
+          "offset": 4294848,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE13_HOOD_C",
+          "offset": 4297600,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE14_BRAKELIGHT_",
+          "offset": 4299648,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE14_BRAKELIGHT_",
+          "offset": 4301504,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE14_BRAKELIGHT_",
+          "offset": 4303184,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE14_HEADLIGHT_L",
+          "offset": 4304368,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE14_HEADLIGHT_L",
+          "offset": 4307184,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE14_HEADLIGHT_L",
+          "offset": 4308672,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE14_HEADLIGHT_R",
+          "offset": 4310000,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE14_HEADLIGHT_R",
+          "offset": 4312688,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE14_HEADLIGHT_R",
+          "offset": 4314176,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE14_HOOD_A",
+          "offset": 4315264,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE14_HOOD_B",
+          "offset": 4317632,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE14_HOOD_C",
+          "offset": 4319424,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE15_HOOD_A",
+          "offset": 4320960,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE15_HOOD_B",
+          "offset": 4326400,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE15_HOOD_C",
+          "offset": 4330368,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE16_HOOD_A",
+          "offset": 4331840,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE16_HOOD_B",
+          "offset": 4333824,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE16_HOOD_C",
+          "offset": 4335232,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE17_HOOD_A",
+          "offset": 4336320,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE17_HOOD_B",
+          "offset": 4338688,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE17_HOOD_C",
+          "offset": 4340352,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE18_HOOD_A",
+          "offset": 4341760,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE18_HOOD_B",
+          "offset": 4346304,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE18_HOOD_C",
+          "offset": 4349184,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE19_HOOD_A",
+          "offset": 4351104,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE19_HOOD_B",
+          "offset": 4354112,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE19_HOOD_C",
+          "offset": 4356288,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE20_HOOD_A",
+          "offset": 4358208,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE20_HOOD_B",
+          "offset": 4361920,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE20_HOOD_C",
+          "offset": 4364496,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE21_HOOD_LEFT_A",
+          "offset": 4365696,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE21_HOOD_LEFT_B",
+          "offset": 4367104,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE21_HOOD_LEFT_C",
+          "offset": 4368768,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE21_HOOD_RIGHT_",
+          "offset": 4370240,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE22_HOOD_LEFT_A",
+          "offset": 4372416,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE22_HOOD_LEFT_B",
+          "offset": 4375040,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE22_HOOD_LEFT_C",
+          "offset": 4376832,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE22_HOOD_RIGHT_",
+          "offset": 4378432,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE23_HOOD_LEFT_A",
+          "offset": 4380992,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE23_HOOD_LEFT_B",
+          "offset": 4384000,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE23_HOOD_LEFT_C",
+          "offset": 4385920,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE23_HOOD_RIGHT_",
+          "offset": 4387456,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE24_HOOD_LEFT_A",
+          "offset": 4389056,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE24_HOOD_LEFT_B",
+          "offset": 4392256,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE24_HOOD_LEFT_C",
+          "offset": 4394560,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE24_HOOD_RIGHT_",
+          "offset": 4396800,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE25_HOOD_LEFT_A",
+          "offset": 4400192,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE25_HOOD_LEFT_B",
+          "offset": 4402688,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE25_HOOD_LEFT_C",
+          "offset": 4404480,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE25_HOOD_RIGHT_",
+          "offset": 4406016,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE26_HOOD_A",
+          "offset": 4408384,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE26_HOOD_B",
+          "offset": 4410880,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE26_HOOD_C",
+          "offset": 4412544,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE27_HOOD_A",
+          "offset": 4413888,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE27_HOOD_B",
+          "offset": 4417152,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE27_HOOD_C",
+          "offset": 4419328,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE28_HOOD_A",
+          "offset": 4421056,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE28_HOOD_B",
+          "offset": 4423808,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_STYLE28_HOOD_C",
+          "offset": 4426112,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_WIDE1_DECAL_LEFT_DO",
+          "offset": 4428656,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_WIDE1_DECAL_LEFT_QU",
+          "offset": 4429264,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_WIDE1_DECAL_RIGHT_D",
+          "offset": 4430192,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_WIDE1_DECAL_RIGHT_Q",
+          "offset": 4430800,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_WIDE2_DECAL_LEFT_DO",
+          "offset": 4431728,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_WIDE2_DECAL_LEFT_QU",
+          "offset": 4432336,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_WIDE2_DECAL_RIGHT_D",
+          "offset": 4433264,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_WIDE2_DECAL_RIGHT_Q",
+          "offset": 4433872,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_WIDE3_DECAL_LEFT_DO",
+          "offset": 4434800,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_WIDE3_DECAL_LEFT_QU",
+          "offset": 4435408,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_WIDE3_DECAL_RIGHT_D",
+          "offset": 4436336,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_WIDE3_DECAL_RIGHT_Q",
+          "offset": 4436944,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_WIDE4_DECAL_LEFT_DO",
+          "offset": 4437872,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_WIDE4_DECAL_LEFT_QU",
+          "offset": 4438480,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_WIDE4_DECAL_RIGHT_D",
+          "offset": 4439408,
+          "bytes": 6,
+          "triangles": 1
+        },
+        {
+          "name": "COROLLA_WIDE4_DECAL_RIGHT_Q",
+          "offset": 4440016,
           "bytes": 6,
           "triangles": 1
         }
@@ -193,6 +3665,28 @@
           "offset": 433056,
           "bytes": 720,
           "triangles": 120
+        }
+      ]
+    },
+    {
+      "target": "CARS/COUPE/GEOMETRY.BIN",
+      "candidate": "modding/staged-runtime/global-wheels/CARS/COUPE/GEOMETRY.BIN",
+      "backup": "CARS/COUPE/GEOMETRY.BIN.before-global-wheels.bak",
+      "bytes": 68656,
+      "before_sha256": "6d8deca3f99cc3cde2539fca6aff5f041f037a8a7b5acd246bdb26a282f9dbdb",
+      "after_sha256": "90105f7d187231ea9694cc51046fd350dec60b7be5afc5bdf7d4f0ae5041534a",
+      "index_ranges": [
+        {
+          "name": "COUPE_TIRE_FRONT_A",
+          "offset": 64384,
+          "bytes": 192,
+          "triangles": 32
+        },
+        {
+          "name": "COUPE_TIRE_FRONT_B",
+          "offset": 66096,
+          "bytes": 138,
+          "triangles": 23
         }
       ]
     },
@@ -249,6 +3743,28 @@
           "offset": 424304,
           "bytes": 582,
           "triangles": 97
+        }
+      ]
+    },
+    {
+      "target": "CARS/FIRETRUCK/GEOMETRY.BIN",
+      "candidate": "modding/staged-runtime/global-wheels/CARS/FIRETRUCK/GEOMETRY.BIN",
+      "backup": "CARS/FIRETRUCK/GEOMETRY.BIN.before-global-wheels.bak",
+      "bytes": 78656,
+      "before_sha256": "2988165634471fb39b18cbda29b414fe0a26caa38eac81acdf257eff511aae6d",
+      "after_sha256": "768a7689daa37d71269a450f5fb8d4c19faf00907fbb9ee91d63d5b84827f390",
+      "index_ranges": [
+        {
+          "name": "FIRETRUCK_TIRE_FRONT_A",
+          "offset": 74624,
+          "bytes": 192,
+          "triangles": 32
+        },
+        {
+          "name": "FIRETRUCK_TIRE_FRONT_B",
+          "offset": 76336,
+          "bytes": 108,
+          "triangles": 18
         }
       ]
     },
@@ -365,6 +3881,50 @@
       ]
     },
     {
+      "target": "CARS/HATCHBACK/GEOMETRY.BIN",
+      "candidate": "modding/staged-runtime/global-wheels/CARS/HATCHBACK/GEOMETRY.BIN",
+      "backup": "CARS/HATCHBACK/GEOMETRY.BIN.before-global-wheels.bak",
+      "bytes": 62704,
+      "before_sha256": "3b384e8f8c2a312bac6fe5f6035fd9c5fe45b310ede296437d20865e8b389259",
+      "after_sha256": "609f7bc392ca484a8514e3250ea2b1b6289da65c75c5efbc52eaa1aee225bdc0",
+      "index_ranges": [
+        {
+          "name": "HATCHBACK_TIRE_FRONT_A",
+          "offset": 58624,
+          "bytes": 192,
+          "triangles": 32
+        },
+        {
+          "name": "HATCHBACK_TIRE_FRONT_B",
+          "offset": 60336,
+          "bytes": 138,
+          "triangles": 23
+        }
+      ]
+    },
+    {
+      "target": "CARS/HATCHBACK02/GEOMETRY.BIN",
+      "candidate": "modding/staged-runtime/global-wheels/CARS/HATCHBACK02/GEOMETRY.BIN",
+      "backup": "CARS/HATCHBACK02/GEOMETRY.BIN.before-global-wheels.bak",
+      "bytes": 65392,
+      "before_sha256": "8186b0aa3461e4ac041134df5b3e0903f228055ba6a9607696cee654d1651eaf",
+      "after_sha256": "6114715cbe09646983e33ba36422e32a7d9f459e7e130833969b1ade6cb91fc7",
+      "index_ranges": [
+        {
+          "name": "HATCHBACK02_TIRE_FRONT_A",
+          "offset": 61472,
+          "bytes": 180,
+          "triangles": 30
+        },
+        {
+          "name": "HATCHBACK02_TIRE_FRONT_B",
+          "offset": 63008,
+          "bytes": 108,
+          "triangles": 18
+        }
+      ]
+    },
+    {
       "target": "CARS/HUMMER/GEOMETRY.BIN",
       "candidate": "modding/staged-runtime/global-wheels/CARS/HUMMER/GEOMETRY.BIN",
       "backup": "CARS/HUMMER/GEOMETRY.BIN.before-global-wheels.bak",
@@ -449,6 +4009,72 @@
       ]
     },
     {
+      "target": "CARS/MINIVAN/GEOMETRY.BIN",
+      "candidate": "modding/staged-runtime/global-wheels/CARS/MINIVAN/GEOMETRY.BIN",
+      "backup": "CARS/MINIVAN/GEOMETRY.BIN.before-global-wheels.bak",
+      "bytes": 69424,
+      "before_sha256": "490ce9d05e6ce547d6dbbc962d7ba52dc05fe626733a02c818c4e0fb0b28befd",
+      "after_sha256": "8eb3171db38aabe8813c59b56d0bd269d54f16d6a23aa6cb36f535c2cd29ab86",
+      "index_ranges": [
+        {
+          "name": "MINIVAN_TIRE_FRONT_A",
+          "offset": 65360,
+          "bytes": 180,
+          "triangles": 30
+        },
+        {
+          "name": "MINIVAN_TIRE_FRONT_B",
+          "offset": 66976,
+          "bytes": 108,
+          "triangles": 18
+        }
+      ]
+    },
+    {
+      "target": "CARS/PANELVAN/GEOMETRY.BIN",
+      "candidate": "modding/staged-runtime/global-wheels/CARS/PANELVAN/GEOMETRY.BIN",
+      "backup": "CARS/PANELVAN/GEOMETRY.BIN.before-global-wheels.bak",
+      "bytes": 64624,
+      "before_sha256": "c7d44f92315d080d45212ad6fbde740ae8e1c180c3f4ee02efc604eb881c507d",
+      "after_sha256": "feb449409581ac984e5cc157118578d4fca075f1f5e0f410973e6e3b2f75c7a4",
+      "index_ranges": [
+        {
+          "name": "PANELVAN_TIRE_FRONT_A",
+          "offset": 60544,
+          "bytes": 192,
+          "triangles": 32
+        },
+        {
+          "name": "PANELVAN_TIRE_FRONT_B",
+          "offset": 62256,
+          "bytes": 138,
+          "triangles": 23
+        }
+      ]
+    },
+    {
+      "target": "CARS/PARCELVAN/GEOMETRY.BIN",
+      "candidate": "modding/staged-runtime/global-wheels/CARS/PARCELVAN/GEOMETRY.BIN",
+      "backup": "CARS/PARCELVAN/GEOMETRY.BIN.before-global-wheels.bak",
+      "bytes": 66752,
+      "before_sha256": "3311e5155b8da72d73870f9dbae3ea7fc533c6154b1b68a43287258b1fc58081",
+      "after_sha256": "dadfece3d1c8caeabc450ed876b81ee0cf87d787e8f2b3762d01d1ae45e47256",
+      "index_ranges": [
+        {
+          "name": "PARCELVAN_TIRE_FRONT_A",
+          "offset": 62720,
+          "bytes": 192,
+          "triangles": 32
+        },
+        {
+          "name": "PARCELVAN_TIRE_FRONT_B",
+          "offset": 64432,
+          "bytes": 138,
+          "triangles": 23
+        }
+      ]
+    },
+    {
       "target": "CARS/PEUGOT/GEOMETRY.BIN",
       "candidate": "modding/staged-runtime/global-wheels/CARS/PEUGOT/GEOMETRY.BIN",
       "backup": "CARS/PEUGOT/GEOMETRY.BIN.before-global-wheels.bak",
@@ -473,6 +4099,28 @@
           "offset": 437616,
           "bytes": 816,
           "triangles": 136
+        }
+      ]
+    },
+    {
+      "target": "CARS/PICKUP/GEOMETRY.BIN",
+      "candidate": "modding/staged-runtime/global-wheels/CARS/PICKUP/GEOMETRY.BIN",
+      "backup": "CARS/PICKUP/GEOMETRY.BIN.before-global-wheels.bak",
+      "bytes": 68304,
+      "before_sha256": "fa0d837e0d48aa1e358c0f6d8b1eb850c9bb8de92dec1b24b9ec87c152992a73",
+      "after_sha256": "a6c7f6f6dfc7c155b6ee958429ea84ac49e33fac735b040b5784b70bcc1715a6",
+      "index_ranges": [
+        {
+          "name": "PICKUP_TIRE_FRONT_A",
+          "offset": 64256,
+          "bytes": 192,
+          "triangles": 32
+        },
+        {
+          "name": "PICKUP_TIRE_FRONT_B",
+          "offset": 65824,
+          "bytes": 108,
+          "triangles": 18
         }
       ]
     },
@@ -613,6 +4261,72 @@
           "offset": 413216,
           "bytes": 354,
           "triangles": 59
+        }
+      ]
+    },
+    {
+      "target": "CARS/SUV/GEOMETRY.BIN",
+      "candidate": "modding/staged-runtime/global-wheels/CARS/SUV/GEOMETRY.BIN",
+      "backup": "CARS/SUV/GEOMETRY.BIN.before-global-wheels.bak",
+      "bytes": 73456,
+      "before_sha256": "7702503228db225a692d1c37308548badfb4de5be2eb1639fcb355505a2543ec",
+      "after_sha256": "2d7231acb644cb2590a57f728fed81ee014e16860e14bf46f04e9c841da89eaf",
+      "index_ranges": [
+        {
+          "name": "SUV_TIRE_FRONT_A",
+          "offset": 69200,
+          "bytes": 180,
+          "triangles": 30
+        },
+        {
+          "name": "SUV_TIRE_FRONT_B",
+          "offset": 70928,
+          "bytes": 126,
+          "triangles": 21
+        }
+      ]
+    },
+    {
+      "target": "CARS/TAXI/GEOMETRY.BIN",
+      "candidate": "modding/staged-runtime/global-wheels/CARS/TAXI/GEOMETRY.BIN",
+      "backup": "CARS/TAXI/GEOMETRY.BIN.before-global-wheels.bak",
+      "bytes": 64688,
+      "before_sha256": "75539f4b736fce2c56496e3f5b461f56042fece1a14c31b4c7099fcd4aef8900",
+      "after_sha256": "f7c444d8a907582ed040773d6411dc70d83bbff76bbdd3ce591a5d6fc8eb3d27",
+      "index_ranges": [
+        {
+          "name": "TAXI_TIRE_FRONT_A",
+          "offset": 60560,
+          "bytes": 192,
+          "triangles": 32
+        },
+        {
+          "name": "TAXI_TIRE_FRONT_B",
+          "offset": 62224,
+          "bytes": 126,
+          "triangles": 21
+        }
+      ]
+    },
+    {
+      "target": "CARS/TAXI02/GEOMETRY.BIN",
+      "candidate": "modding/staged-runtime/global-wheels/CARS/TAXI02/GEOMETRY.BIN",
+      "backup": "CARS/TAXI02/GEOMETRY.BIN.before-global-wheels.bak",
+      "bytes": 65520,
+      "before_sha256": "052d1c67458e4c330ef3f30b8358364f1c4d1e896427014c2e8959e702b7b2fa",
+      "after_sha256": "5e1e76b32fdce94f1dc929d58a4d0714bdebb7d8596960312110fb0a22ab9f98",
+      "index_ranges": [
+        {
+          "name": "TAXI02_TIRE_FRONT_A",
+          "offset": 61440,
+          "bytes": 192,
+          "triangles": 32
+        },
+        {
+          "name": "TAXI02_TIRE_FRONT_B",
+          "offset": 63008,
+          "bytes": 108,
+          "triangles": 18
         }
       ]
     },
@@ -31358,5 +35072,5 @@
     }
   ],
   "installed": false,
-  "scope": "All stock wheel meshes and all aftermarket rim meshes; only triangle indices changed. Procedural tire drawing still requires trace attribution. Collision, suspension and wheel radii untouched."
+  "scope": "All named stock wheel/tire meshes and all aftermarket rims; Corolla preserves only the four character BODY LODs. Only triangle indices changed. Separate front-end TIREMASK fix is required. Collision, suspension and wheel radii untouched."
 }

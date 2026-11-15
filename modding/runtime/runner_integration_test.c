@@ -5,6 +5,23 @@
 #undef main
 int main(void){
  freopen("modding/runtime/integration-test/result.txt","w",stdout);freopen("modding/runtime/integration-test/errors.txt","w",stderr);
+ /* A stationary actor must remain idle while another runs and the camera orbits. */
+ runner_scene.anchor_key=(UmaSceneKey){.buffer=777};runner_scene.anchor_valid=1;
+ for(int f=0;f<180;f++){
+  UmaMatrix camera={0},stationary={0},moving={0};for(int k=0;k<4;k++)camera.m[k][k]=stationary.m[k][k]=moving.m[k][k]=1;
+  float angle=(float)f*.01f;camera.m[0][0]=camera.m[1][1]=cosf(angle);camera.m[0][1]=sinf(angle);camera.m[1][0]=-sinf(angle);camera.m[3][1]=-10;camera.m[3][2]=-2;
+  stationary.m[3][2]=.05f*sinf((float)f*.2f);moving.m[3][0]=10+fminf((float)f,100)*.1f;
+  UmaMatrix still_view=uma_matrix_product(&stationary,&camera),run_view=uma_matrix_product(&moving,&camera),actors[2];actors[f&1]=still_view;actors[!(f&1)]=run_view;
+  runner_scene.anchor=camera;runner_frames=100+(unsigned)f;assert(runner_actor_update(actors,2,.01f));
+  UmaMotionState *still=runner_actor_pose(&still_view),*running=runner_actor_pose(&run_view);
+  assert(still!=running && still!=&runner_idle_state && running!=&runner_idle_state);assert(still->run_blend<.001f);
+  if(f==99)assert(running->run_blend>.99f);
+  if(f==179)assert(running->run_blend<.01f);
+ }
+ UmaMatrix unknown={0};for(int k=0;k<4;k++)unknown.m[k][k]=1;unknown.m[3][0]=1000;assert(runner_actor_pose(&unknown)==&runner_idle_state);
+ runner_scene.bodies=0;uma_scene_body(&runner_scene,&unknown);uma_scene_body(&runner_scene,&unknown);assert(runner_scene.bodies==1);
+ puts("PASS independent actor gait: draw-order reversal, camera orbit and vertical suspension cannot animate a stopped actor; another runs then returns to idle");
+ runner_scene=(UmaSceneSpeed){0};memset(runner_actors,0,sizeof(runner_actors));runner_frames=0;
  FILE *asset=fopen("modding/runtime/kitasan.umab","rb");assert(asset);assert(uma_motion_load(asset,&runner_motion));fclose(asset);
  InitializeCriticalSection(&runner_lock);runner_log=fopen("modding/runtime/integration-test/runner.log","w");assert(runner_log);wcscpy(runner_atlas,L"modding\\runtime\\atlas.dds");
  HWND window=CreateWindowA("STATIC","Independent runtime routing test",WS_POPUP,0,0,640,480,NULL,NULL,GetModuleHandle(NULL),NULL);assert(window);IDirect3D9 *api=Direct3DCreate9(D3D_SDK_VERSION);assert(api);
@@ -20,7 +37,7 @@ int main(void){
  CHECK(IDirect3DDevice9_SetVertexShader(device,shader));CHECK(IDirect3DDevice9_SetVertexDeclaration(device,declaration));CHECK(IDirect3DDevice9_SetPixelShader(device,white));CHECK(IDirect3DDevice9_SetIndices(device,indices));CHECK(IDirect3DDevice9_SetRenderState(device,D3DRS_ZENABLE,TRUE));CHECK(IDirect3DDevice9_SetRenderState(device,D3DRS_CULLMODE,D3DCULL_NONE));
  float captured[256][4];FILE *lighting=fopen("modding/runtime/captured-lighting.bin","rb");assert(lighting);assert(fread(captured,1,sizeof(captured),lighting)==sizeof(captured));fclose(lighting);CHECK(IDirect3DDevice9_SetVertexShaderConstantF(device,0,&captured[0][0],256));
  D3DMATRIX combined={0};combined.m[1][0]=.6f;combined.m[2][1]=.8f;combined.m[0][2]=-.1f;combined.m[3][1]=-.85f;combined.m[3][2]=.5f;combined.m[3][3]=1;float matrix[4][4];for(int r=0;r<4;r++)for(int c=0;c<4;c++)matrix[r][c]=combined.m[c][r];CHECK(IDirect3DDevice9_SetVertexShaderConstantF(device,10,&matrix[0][0],4));
- float eye[]={2,-6,1.3f,1},view[3][4]={{1,0,0,0},{0,1,0,0},{0,0,1,0}};CHECK(IDirect3DDevice9_SetVertexShaderConstantF(device,14,&view[0][0],3));CHECK(IDirect3DDevice9_SetVertexShaderConstantF(device,17,eye,1));float paint[]={.4f,0,0,1};CHECK(IDirect3DDevice9_SetVertexShaderConstantF(device,18,paint,1));runner_state=(UmaMotionState){0,.25f,1};
+ float eye[]={2,-6,1.3f,1},view[3][4]={{1,0,0,0},{0,1,0,0},{0,0,1,0}};CHECK(IDirect3DDevice9_SetVertexShaderConstantF(device,14,&view[0][0],3));CHECK(IDirect3DDevice9_SetVertexShaderConstantF(device,17,eye,1));float paint[]={.4f,0,0,1};CHECK(IDirect3DDevice9_SetVertexShaderConstantF(device,18,paint,1));runner_state=runner_idle_state=(UmaMotionState){0,.25f,1};
  for(int kind=0;kind<3;kind++){
   CHECK(IDirect3DDevice9_SetStreamSource(device,0,kind==1?other:vb,kind==0?72:0,36));CHECK(IDirect3DDevice9_Clear(device,0,NULL,D3DCLEAR_TARGET|D3DCLEAR_ZBUFFER,0xff252a32,1,0));CHECK(IDirect3DDevice9_BeginScene(device));CHECK(IDirect3DDevice9_DrawIndexedPrimitive(device,D3DPT_TRIANGLELIST,kind==2?2:0,0,runner_motion.vertices,0,runner_motion.indices/3));CHECK(IDirect3DDevice9_EndScene(device));
   assert(runner_replaced==(kind==2?2u:1u) && runner_owned==runner_replaced);DWORD *pixels=read_pixels(device);UINT changed=0,colored=0,textured=0,not_red=0;

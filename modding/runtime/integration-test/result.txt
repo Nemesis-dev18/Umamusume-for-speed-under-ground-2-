@@ -1,3 +1,4 @@
+PASS independent actor gait: draw-order reversal, camera orbit and vertical suspension cannot animate a stopped actor; another runs then returns to idle
 PASS CPU-baked wheel vertices across all four draw APIs; foreign pixels intact; partial writes invalidate bounds
 PASS four-tire shared upload batch through all draw APIs with suspension offset; foreign actor not hidden
 PASS car-style side anchor attachment hidden at Corolla socket; foreign actor preserved
