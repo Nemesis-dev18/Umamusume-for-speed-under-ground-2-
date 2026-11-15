@@ -1,0 +1,12 @@
+{
+  "source_sha256": "94215b3fe854e508209bbf58dcda0d8a79a214a4dd07414b23108dbd590ea36d",
+  "reader_commit": "f1d8a98db5e185cfa73c9b8a8a67fa42d9eb4b14",
+  "mesh_objects": 1,
+  "vertices": 34537,
+  "triangles": 53024,
+  "bones": 272,
+  "materials": 34,
+  "images": 18,
+  "missing_textures": [],
+  "scope": "Source import only, no runtime export or game installation"
+}
