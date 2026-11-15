@@ -13151,5 +13151,13 @@
   ],
   "scope": "Native engine, engine sweetener, shifting, turbo, skids and road noise for all cars; original Uma footsteps remain character-only. Music, voices, general ambience and impacts untouched.",
   "installed": false,
-  "gameplay_verified": false
+  "gameplay_verified": false,
+  "module": {
+    "target": "scripts/UmaRunner.asi",
+    "candidate": "modding/runtime/UmaRunner.asi",
+    "backup": "modding/runtime/UmaRunner.before-mechanical-silence.asi",
+    "before_sha256": "f317c423309b49a506201efc3467608ce55ab7fee9be03d5989b4872a0a4e004",
+    "after_sha256": "50fe07a1ed1127f824c6112022cf5c34cebc35457f7b34784321b29f8b4c3d0e",
+    "bytes": 358147
+  }
 }

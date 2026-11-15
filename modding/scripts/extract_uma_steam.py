@@ -1,4 +1,4 @@
-"""Extract three local Unity bundles; never open Steam sources for writing."""
+"""Extract local rig, motion and motion-SE bundles without writing Steam sources."""
 import hashlib
 import importlib.util
 import json
@@ -19,6 +19,7 @@ ASSETS={
  'anm_rac_type03_run02_base':'3d/motion/racemain/body/type03/anm_rac_type03_run02_base',
  'anm_rac_type03_run03_base':'3d/motion/racemain/body/type03/anm_rac_type03_run03_base',
  'kitasan-body':'3d/chara/body/bdy1068_00/pfb_bdy1068_00',
+ 'run02-motion-se':'3d/motionse/racemain/body/type03/anm_rac_type03_run02_base',
 }
 
 def digest(data):return hashlib.sha256(data).hexdigest()
@@ -47,6 +48,11 @@ def main():
             data=[{'path_id':obj.path_id,'type':obj.type.name,'data':obj.read_typetree()} for obj in env.objects if obj.type.name in ('GameObject','Transform','Avatar','Animator')]
             if sum(x['type']=='Avatar' for x in data)!=1:raise ValueError('Expected single source avatar')
             destination=output/'kitasan-body-rig.json'
+        elif name=='run02-motion-se':
+            events=[obj.read_typetree() for obj in env.objects if obj.type.name=='MonoBehaviour']
+            events=[item for item in events if item.get('m_Name')=='anm_rac_type03_run02_base' and 'KeyframeArray' in item]
+            if len(events)!=1:raise ValueError('Unexpected motion sound-event object')
+            data=events[0];destination=output/(name+'.json')
         else:
             clips=[obj.read_typetree() for obj in env.objects if obj.type.name=='AnimationClip']
             if len(clips)!=1 or clips[0]['m_Name']!=name:raise ValueError('Unexpected animation clip')

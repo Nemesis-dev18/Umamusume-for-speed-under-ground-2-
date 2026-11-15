@@ -1,0 +1,10 @@
+{
+  "logical_name": "3d/motionse/racemain/body/type03/anm_rac_type03_run02_base",
+  "physical_file": "/home/nemesis/.local/share/Steam/steamapps/common/UmamusumePrettyDerby/UmamusumePrettyDerby_Data/Persistent/dat/B3/B3ND32S4BNNGPY2MCFCYWWAFMZZOSGEN",
+  "source_sha256": "034a85f028f47a84686689d46328d01ad442fe063b878f48320b7c388c98f03c",
+  "decoded_sha256": "49195030dc1176ba78f72b56febc2585f3b00f4bc87dac4e144cbbb03ca45528",
+  "catalog_region": "global",
+  "bundle_base_keys": "upstream JP constant validated by successful parsing",
+  "game_source_unchanged": true,
+  "reader_commit": "dca091dad2947d13f99a0510bcccdec82941df0c"
+}
