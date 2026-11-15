@@ -1,0 +1,98 @@
+{
+  "files": [
+    {
+      "target": "GLOBAL/InGameCommon.bun",
+      "candidate": "modding/staged-runtime/smoke-neon/GLOBAL/InGameCommon.bun",
+      "backup": "GLOBAL/InGameCommon.bun.before-smoke-neon.bak",
+      "before_sha256": "6b83fb688c56c2a7f1a5224b52b39e0db76cd064e4b54a6462b9adc881b7551d",
+      "after_sha256": "f7c3175ff6c6c6368072a6d944d50f361f55011292cea6fa358f9742d5bf8fd9",
+      "before_bytes": 1595640,
+      "bytes": 1595640,
+      "decoded_pixel_ranges": [
+        {
+          "name": "SFX_SMOKE_A_CS",
+          "offset": 72704,
+          "bytes": 5440,
+          "width": 64,
+          "height": 64,
+          "mips": 4
+        },
+        {
+          "name": "SFX_SMOKE_B_CS",
+          "offset": 78208,
+          "bytes": 21824,
+          "width": 128,
+          "height": 128,
+          "mips": 5
+        }
+      ]
+    },
+    {
+      "target": "GLOBAL/InGameCommon.lzc",
+      "candidate": "modding/staged-runtime/smoke-neon/GLOBAL/InGameCommon.lzc",
+      "backup": "GLOBAL/InGameCommon.lzc.before-smoke-neon.bak",
+      "before_sha256": "9c1fd5ae22101a969508a7f3febf9a2ae417cd436b0abb035108b9ea902d206c",
+      "after_sha256": "83479341a46c9a39fdb7918b66e225556d73cc3fcc0a7b41113b488f4a7b01e5",
+      "before_bytes": 479938,
+      "bytes": 479953,
+      "decoded_pixel_ranges": [
+        {
+          "name": "SFX_SMOKE_A_CS",
+          "offset": 72704,
+          "bytes": 5440,
+          "width": 64,
+          "height": 64,
+          "mips": 4
+        },
+        {
+          "name": "SFX_SMOKE_B_CS",
+          "offset": 78208,
+          "bytes": 21824,
+          "width": 128,
+          "height": 128,
+          "mips": 5
+        }
+      ]
+    },
+    {
+      "target": "GLOBAL/GLOBALB.BUN",
+      "candidate": "modding/staged-runtime/smoke-neon/GLOBAL/GLOBALB.BUN",
+      "backup": "GLOBAL/GLOBALB.BUN.before-smoke-neon.bak",
+      "before_sha256": "07e1c37a2e5ba4b3e6a17b257e653409c31d5f0b3f9df3464aec36adbbced9d0",
+      "after_sha256": "9aae5650ca3da23e94f673ae41eb9c38c06d451203b9f76e87feaad7030d56c6",
+      "before_bytes": 8008064,
+      "bytes": 8008064,
+      "decoded_pixel_ranges": [
+        {
+          "name": "NEONBLUR",
+          "offset": 117632,
+          "bytes": 5440,
+          "width": 64,
+          "height": 64,
+          "mips": 4
+        }
+      ]
+    },
+    {
+      "target": "GLOBAL/GlobalB.lzc",
+      "candidate": "modding/staged-runtime/smoke-neon/GLOBAL/GlobalB.lzc",
+      "backup": "GLOBAL/GlobalB.lzc.before-smoke-neon.bak",
+      "before_sha256": "ad015fdb24e3bfce3aff8bcdfbbef3cb981b524115884a8eed4bf3ce4a2d6e90",
+      "after_sha256": "dcca8a3a9d7ec540fc1c9beb1474cacdd6e9821a7dd15a3b09b3f91e394a8596",
+      "before_bytes": 5145778,
+      "bytes": 5145827,
+      "decoded_pixel_ranges": [
+        {
+          "name": "NEONBLUR",
+          "offset": 117632,
+          "bytes": 5440,
+          "width": 64,
+          "height": 64,
+          "mips": 4
+        }
+      ]
+    }
+  ],
+  "installed": false,
+  "gameplay_verified": false
+}

@@ -4,7 +4,7 @@
   "selection": {
     "opaque_correctly_textured_character": false,
     "idle_without_import_pose": "Confirmed by user in real game: no import pose, slight idle movement",
-    "no_residual_car_wheel_or_shadow": false
+    "no_residual_car_wheel_or_shadow": true
   },
   "race": {
     "player_character_visible": true,
@@ -118,14 +118,20 @@
   "per_actor_motion": {
     "installed": true,
     "independent_idle_run_host_test_passed": true,
-    "gameplay_verified": false,
-    "association_limit": "Spatial prediction of identical actors; overlap can be ambiguous"
+    "gameplay_verified": true,
+    "association_limit": "Spatial prediction of identical actors; overlap can be ambiguous",
+    "user_result": "User confirms circles gone and normal walking/running after separate actor gait"
   },
   "global_wheel_cleanup": {
     "installed": true,
     "geometry_files": 63,
     "meshes": 5740,
     "transparent_tiremask": true,
-    "gameplay_verified": false
+    "gameplay_verified": true
+  },
+  "remaining_effects": {
+    "smoke_removal_requested": true,
+    "one_other_vehicle_light": true,
+    "light_type_pending": true
   }
 }
