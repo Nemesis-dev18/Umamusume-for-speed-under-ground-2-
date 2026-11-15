@@ -95,9 +95,10 @@
   "hoof_audio": {
     "installed": true,
     "scope": "Corolla characters only",
-    "native_profile_verified": true,
+    "native_profile_verified": false,
     "listening_test_verified": false,
-    "user_result": "Synthetic impacts audible but rejected; actual Uma footsteps prepared, pending listening test"
+    "user_result": "Original footsteps installed after synthetic impacts were rejected; listening pending",
+    "source": "Actual local Uma race turf left/right cues, 20 variants"
   },
   "shared_car_parts": {
     "installed": true,
