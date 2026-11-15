@@ -5,16 +5,17 @@
     "integration": "PASS native shader 5 renders animated textured body through runtime hook; stream offset and base vertex pass, cross-device hooks pass, same-size impostor retains original white output; Present, Reset and hook removal pass. Not NFSU2 gameplay."
   },
   "sha256": {
-    "UmaRunner.asi": "f317c423309b49a506201efc3467608ce55ab7fee9be03d5989b4872a0a4e004",
+    "UmaRunner.asi": "50fe07a1ed1127f824c6112022cf5c34cebc35457f7b34784321b29f8b4c3d0e",
     "kitasan.umab": "c1701a3227ce720bf2f4166b96f96219e96b4f307251a579d9c2f0059c8e0581",
     "atlas.dds": "cb40a42c64d1f97fb69734ad30caa78776c97330472d1152bcda44d69470920d"
   },
   "audio_tests": [
-    "exact mutable-image profile",
-    "ambiguous/incompatible profile rejection",
-    "WinMM playback",
+    "main-image audio data untouched",
+    "overlapping original footsteps",
+    "contact lead",
+    "gain saturation",
     "idle silence",
-    "restore on playback failure"
+    "own-output shutdown on playback failure"
   ],
   "gameplay_verified": false
 }

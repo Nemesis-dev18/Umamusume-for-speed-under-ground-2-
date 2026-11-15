@@ -1,9 +1,9 @@
 #ifndef UMA_SELECTION_CAPTURE_H
 #define UMA_SELECTION_CAPTURE_H
 /* One requested frame only: identify which draw adds the black selection artifact. */
-typedef struct {int enabled,armed,done;unsigned seen,draws,best;IDirect3DSurface9 *small,*cpu;D3DFORMAT format;FILE *log;WCHAR folder[4096];DWORD before[64*64];} UmaSelectionCapture;
+typedef struct {int enabled,armed,done;unsigned seen,draws,best;IDirect3DSurface9 *small,*cpu,*resolved;UINT resolved_width,resolved_height;D3DFORMAT format;FILE *log;WCHAR folder[4096];DWORD before[64*64];} UmaSelectionCapture;
 static UmaSelectionCapture uma_selection;
-static inline void uma_selection_release(void){if(uma_selection.small)IDirect3DSurface9_Release(uma_selection.small);if(uma_selection.cpu)IDirect3DSurface9_Release(uma_selection.cpu);uma_selection.small=uma_selection.cpu=NULL;}
+static inline void uma_selection_release(void){if(uma_selection.small)IDirect3DSurface9_Release(uma_selection.small);if(uma_selection.cpu)IDirect3DSurface9_Release(uma_selection.cpu);if(uma_selection.resolved)IDirect3DSurface9_Release(uma_selection.resolved);uma_selection.small=uma_selection.cpu=uma_selection.resolved=NULL;}
 static inline void uma_selection_ppm(const WCHAR *name,const DWORD *pixels,UINT width,UINT height){
  WCHAR path[4096];if(wcslen(uma_selection.folder)>3900)return;swprintf(path,4096,L"%ls\\%ls",uma_selection.folder,name);FILE *file=_wfopen(path,L"wb");if(!file)return;
  fprintf(file,"P6\n%u %u\n255\n",width,height);for(UINT i=0;i<width*height;i++){BYTE rgb[3]={(BYTE)(pixels[i]>>16),(BYTE)(pixels[i]>>8),(BYTE)pixels[i]};fwrite(rgb,1,3,file);}fclose(file);
@@ -11,12 +11,23 @@ static inline void uma_selection_ppm(const WCHAR *name,const DWORD *pixels,UINT 
 static inline int uma_selection_read(IDirect3DDevice9 *device,DWORD *pixels){
  IDirect3DSurface9 *source=NULL;D3DSURFACE_DESC desc;if(FAILED(IDirect3DDevice9_GetRenderTarget(device,0,&source)) || !source)return 0;
  HRESULT result=IDirect3DSurface9_GetDesc(source,&desc);
- if(FAILED(result) || desc.Width<640 || desc.Height<480 || desc.MultiSampleType!=D3DMULTISAMPLE_NONE || (desc.Format!=D3DFMT_A8R8G8B8 && desc.Format!=D3DFMT_X8R8G8B8)){IDirect3DSurface9_Release(source);return 0;}
+ if(SUCCEEDED(result) && uma_selection.log){
+  static D3DSURFACE_DESC seen[32];static unsigned count;int known=0;
+  for(unsigned i=0;i<count;i++)if(seen[i].Width==desc.Width && seen[i].Height==desc.Height && seen[i].Format==desc.Format && seen[i].MultiSampleType==desc.MultiSampleType)known=1;
+  if(!known && count<32){seen[count++]=desc;fprintf(uma_selection.log,"TARGET width=%u height=%u format=%u multisample=%u\n",desc.Width,desc.Height,desc.Format,desc.MultiSampleType);fflush(uma_selection.log);}
+ }
+ if(FAILED(result) || desc.Width<640 || desc.Height<480 || (desc.Format!=D3DFMT_A8R8G8B8 && desc.Format!=D3DFMT_X8R8G8B8)){IDirect3DSurface9_Release(source);return 0;}
  if(uma_selection.small && uma_selection.format!=desc.Format)uma_selection_release();
  if(!uma_selection.small){
   result=IDirect3DDevice9_CreateRenderTarget(device,64,64,desc.Format,D3DMULTISAMPLE_NONE,0,FALSE,&uma_selection.small,NULL);
   if(SUCCEEDED(result))result=IDirect3DDevice9_CreateOffscreenPlainSurface(device,64,64,desc.Format,D3DPOOL_SYSTEMMEM,&uma_selection.cpu,NULL);
   if(FAILED(result)){uma_selection_release();IDirect3DSurface9_Release(source);return 0;}uma_selection.format=desc.Format;
+ }
+ if(desc.MultiSampleType!=D3DMULTISAMPLE_NONE){
+  if(uma_selection.resolved && (uma_selection.resolved_width!=desc.Width || uma_selection.resolved_height!=desc.Height)){IDirect3DSurface9_Release(uma_selection.resolved);uma_selection.resolved=NULL;}
+  if(!uma_selection.resolved){result=IDirect3DDevice9_CreateRenderTarget(device,desc.Width,desc.Height,desc.Format,D3DMULTISAMPLE_NONE,0,FALSE,&uma_selection.resolved,NULL);uma_selection.resolved_width=desc.Width;uma_selection.resolved_height=desc.Height;}
+  if(SUCCEEDED(result))result=IDirect3DDevice9_StretchRect(device,source,NULL,uma_selection.resolved,NULL,D3DTEXF_NONE);
+  IDirect3DSurface9_Release(source);source=uma_selection.resolved;if(FAILED(result) || !source)return 0;IDirect3DSurface9_AddRef(source);
  }
  RECT rect={(LONG)(desc.Width*.55f),(LONG)(desc.Height*.45f),(LONG)(desc.Width*.9f),(LONG)(desc.Height*.85f)};
  result=IDirect3DDevice9_StretchRect(device,source,&rect,uma_selection.small,NULL,D3DTEXF_POINT);IDirect3DSurface9_Release(source);

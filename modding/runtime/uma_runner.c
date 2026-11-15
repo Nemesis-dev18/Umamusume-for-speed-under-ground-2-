@@ -225,7 +225,7 @@ static HRESULT WINAPI runner_present(IDirect3DDevice9 *device,const RECT *source
  }
  runner_frames++;
  if(runner_log && runner_frames%120==0){
-  fprintf(runner_log,"FRAME %u candidates=%u owned=%u replaced=%u shaderFailures=%u references=%u bodies=%u graphicsSpeedValid=%d graphicsSpeed=%.4f blend=%.4f projectionValid=%d recoveredSceneRefs=%u hiddenWheels=%u groups=%u best=%u second=%u hoofPlayed=%u audioActive=%d\n",runner_frames,runner_candidates,runner_owned,runner_replaced,runner_shader_failures,references,bodies,runner_speed_valid,runner_speed,runner_state.run_blend,runner_projection_valid,runner_projected_references,runner_hidden_wheels,groups,best_votes,second_votes,uma_hoof_played,uma_engine_patch.active);fflush(runner_log);
+  fprintf(runner_log,"FRAME %u candidates=%u owned=%u replaced=%u shaderFailures=%u references=%u bodies=%u graphicsSpeedValid=%d graphicsSpeed=%.4f blend=%.4f projectionValid=%d recoveredSceneRefs=%u hiddenWheels=%u groups=%u best=%u second=%u hoofPlayed=%u audioActive=%d\n",runner_frames,runner_candidates,runner_owned,runner_replaced,runner_shader_failures,references,bodies,runner_speed_valid,runner_speed,runner_state.run_blend,runner_projection_valid,runner_projected_references,runner_hidden_wheels,groups,best_votes,second_votes,uma_hoof_played,uma_audio_active);fflush(runner_log);
   if(ftell(runner_log)>2*1024*1024){fclose(runner_log);runner_log=NULL;}
  }
  LeaveCriticalSection(&runner_lock);return runner_original_present(device,source,destination,window,dirty);

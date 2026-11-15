@@ -21,6 +21,13 @@ int main(void){
  DWORD after[64*64];assert(uma_selection_read(device,after));unsigned black=0;for(unsigned i=0;i<64*64;i++)black+=uma_selection_dark(after[i]);assert(black==uma_selection.best);
  IDirect3DBaseTexture9 *same=NULL;CHECK(IDirect3DDevice9_GetTexture(device,0,&same));assert(same==(IDirect3DBaseTexture9*)texture);IDirect3DBaseTexture9_Release(same);DWORD color;CHECK(IDirect3DDevice9_GetRenderState(device,D3DRS_COLORWRITEENABLE,&color));assert((color&7)==7);
  CHECK(IDirect3DDevice9_EndScene(device));uma_selection_finish(device,1);assert(uma_selection.done && !uma_selection.armed && !uma_selection.small && !uma_selection.cpu);
+ IDirect3DSurface9 *back=NULL,*multi=NULL;CHECK(IDirect3DDevice9_GetRenderTarget(device,0,&back));
+ DWORD quality=0;CHECK(IDirect3D9_CheckDeviceMultiSampleType(api,0,D3DDEVTYPE_HAL,D3DFMT_A8R8G8B8,TRUE,D3DMULTISAMPLE_2_SAMPLES,&quality));
+ CHECK(IDirect3DDevice9_CreateRenderTarget(device,640,480,D3DFMT_A8R8G8B8,D3DMULTISAMPLE_2_SAMPLES,0,FALSE,&multi,NULL));CHECK(IDirect3DDevice9_SetRenderTarget(device,0,multi));
+ CHECK(IDirect3DDevice9_Clear(device,0,NULL,D3DCLEAR_TARGET,0xffa0a0a0,1,0));CHECK(IDirect3DDevice9_BeginScene(device));CHECK(IDirect3DDevice9_DrawPrimitiveUP(device,D3DPT_TRIANGLESTRIP,2,quad,sizeof(quad[0])));assert(uma_selection_read(device,after));CHECK(IDirect3DDevice9_EndScene(device));
+ black=0;for(unsigned i=0;i<64*64;i++)black+=uma_selection_dark(after[i]);assert(black>1000);IDirect3DSurface9 *bound=NULL;CHECK(IDirect3DDevice9_GetRenderTarget(device,0,&bound));assert(bound==multi);IDirect3DSurface9_Release(bound);
+ CHECK(IDirect3DDevice9_SetRenderTarget(device,0,back));IDirect3DSurface9_Release(back);IDirect3DSurface9_Release(multi);uma_selection_release();
+ puts("PASS multisample color resolve inside scene preserves the original render target");
  CHECK(IDirect3DDevice9_SetTexture(device,0,NULL));IDirect3DTexture9_Release(texture);CHECK(IDirect3DDevice9_Reset(device,&pp));IDirect3DDevice9_Release(device);IDirect3D9_Release(api);DestroyWindow(window);
  puts("PASS one-frame ROI readback inside scene, exact black-pixel attribution, texture binding/color state unchanged, DDS dump and Reset; no game capture yet");return 0;
 }

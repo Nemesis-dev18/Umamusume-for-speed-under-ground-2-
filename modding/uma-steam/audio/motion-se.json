@@ -1,0 +1,38 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -240629165753158506
+  },
+  "m_Name": "anm_rac_type03_run02_base",
+  "KeyframeArray": [
+    {
+      "TimeMs": 30.0,
+      "Type": 205,
+      "DefaultCueName": "",
+      "UseCueNameAsSheetName": 0
+    },
+    {
+      "TimeMs": 260.0,
+      "Type": 104,
+      "DefaultCueName": "",
+      "UseCueNameAsSheetName": 0
+    },
+    {
+      "TimeMs": 330.0,
+      "Type": 205,
+      "DefaultCueName": "",
+      "UseCueNameAsSheetName": 0
+    },
+    {
+      "TimeMs": 560.0,
+      "Type": 104,
+      "DefaultCueName": "",
+      "UseCueNameAsSheetName": 0
+    }
+  ]
+}
