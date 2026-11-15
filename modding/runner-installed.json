@@ -1,8 +1,8 @@
 {
   "module": "scripts/UmaRunner.asi",
-  "sha256": "d2d463f90eb729e9aad12ca4a818953bdfc212e88be2836c83b419b1ecb9df59",
-  "bytes": 367507,
-  "checkpoint": "ef5b4f8760e20dd288b58a70f61997b52488a779",
+  "sha256": "e7c23bc9c9c1a7af316e70e185713a4b2e8a9d1c3a0a7df2d35aadc67fa0e2a7",
+  "bytes": 368695,
+  "checkpoint": "4ef96aee33b55244d6d939596f3a6b5a144027da",
   "inventory_files": 716,
   "changed_data": [
     "CARS/240SX/GEOMETRY.BIN",
@@ -81,6 +81,10 @@
     "CARS/WHEELS/GEOMETRY_VOLK.BIN",
     "CARS/WHEELS/GEOMETRY_WELDWHEEL.BIN",
     "CARS/WHEELS/GEOMETRY_WORK.BIN",
+    "GLOBAL/GLOBALB.BUN",
+    "GLOBAL/GlobalB.lzc",
+    "GLOBAL/InGameCommon.bun",
+    "GLOBAL/InGameCommon.lzc",
     "SOUND/ENGINE/CAR_00_ENG_MB_EE.abk",
     "SOUND/ENGINE/CAR_00_ENG_MB_SPU.abk",
     "SOUND/ENGINE/CAR_01_ENG_MB_EE.abk",
@@ -329,9 +333,9 @@
     "SOUND/TURBO/TURBO_TRUCK_2_MB.abk",
     "FRONTEND/FrontB.lzc"
   ],
-  "unchanged_data": 393,
-  "game_running": true,
+  "unchanged_data": 389,
+  "game_running": false,
   "gameplay_verified": false,
   "previous_sha256": "34e6a93c64196f5f01a2f01b5582b3c852053c285781f0e4aa7401ccad8a0aad",
-  "current_receipt": "modding/wheel-idle-package-installed.json"
+  "current_receipt": "modding/continuity-effects-installed.json"
 }

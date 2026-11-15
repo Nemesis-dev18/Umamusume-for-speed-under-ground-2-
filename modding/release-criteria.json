@@ -120,7 +120,9 @@
     "independent_idle_run_host_test_passed": true,
     "gameplay_verified": true,
     "association_limit": "Spatial prediction of identical actors; overlap can be ambiguous",
-    "user_result": "User confirms circles gone and normal walking/running after separate actor gait"
+    "user_result": "Wheel circles gone, walking/running work; user later reported interruptions and idle on slopes. Continuity repair now installed, not yet verified in game.",
+    "continuity_candidate_installed": true,
+    "continuity_gameplay_verified": false
   },
   "global_wheel_cleanup": {
     "installed": true,
@@ -132,6 +134,9 @@
   "remaining_effects": {
     "smoke_removal_requested": true,
     "one_other_vehicle_light": true,
-    "light_type_pending": true
+    "light_type_pending": false,
+    "smoke_cleanup_installed": true,
+    "underbody_glow_cleanup_installed": true,
+    "gameplay_verified": false
   }
 }
