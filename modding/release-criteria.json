@@ -95,15 +95,22 @@
   "hoof_audio": {
     "installed": true,
     "scope": "Corolla characters only",
-    "native_profile_verified": false,
+    "native_profile_verified": "Removed native-table memory modifications; sample-only playback",
     "listening_test_verified": false,
-    "user_result": "Original footsteps installed after synthetic impacts were rejected; listening pending",
-    "source": "Actual local Uma race turf left/right cues, 20 variants"
+    "user_result": "Original footsteps audible but timing, tone and level rejected; motors/skids still audible in previous test",
+    "source": "Actual local Uma race turf left/right cues, 20 variants",
+    "candidate": "Global mechanical sample silence, 1.5x cached PCM gain, original paired motion event lead"
   },
   "shared_car_parts": {
     "installed": true,
     "files": 12,
     "meshes": 2192,
     "gameplay_verified": false
+  },
+  "mechanical_silence": {
+    "installed": true,
+    "files": 246,
+    "gameplay_verified": false,
+    "scope": "Native engine, engine sweetener, shifting, turbo, skids and road noise for all cars; original Uma footsteps remain character-only. Music, voices, general ambience and impacts untouched."
   }
 }
