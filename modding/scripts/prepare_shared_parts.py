@@ -6,8 +6,8 @@ from extract_assets import geometry
 
 PARTS=('MIRRORS_BODY','MIRRORS_POST','MIRRORS_SUV','MIRRORS_HUMMER','SPOILER','SPOILER_HATCH','SPOILER_SUV','PLATES','EXHAUST','ROOF','BRAKES','AUDIO')
 
-def prepare(source):
-    meshes=geometry(source,'');out=bytearray(source);ranges=[]
+def prepare(source,include=None):
+    meshes=[mesh for mesh in geometry(source,'') if include is None or include(mesh['name'])];out=bytearray(source);ranges=[]
     if not meshes:raise ValueError('Shared part file contains no supported meshes')
     for mesh in meshes:
         start=mesh['index_data_offset'];size=len(mesh['indices'])*2

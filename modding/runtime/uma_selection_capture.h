@@ -1,7 +1,7 @@
 #ifndef UMA_SELECTION_CAPTURE_H
 #define UMA_SELECTION_CAPTURE_H
 /* One requested frame only: identify which draw adds the black selection artifact. */
-typedef struct {int enabled,armed,done;unsigned seen,draws,best;IDirect3DSurface9 *small,*cpu,*resolved;UINT resolved_width,resolved_height;D3DFORMAT format;FILE *log;WCHAR folder[4096];DWORD before[64*64];} UmaSelectionCapture;
+typedef struct {int enabled,armed,done;unsigned seen,draws,best,geometry_best;IDirect3DSurface9 *small,*cpu,*resolved;UINT resolved_width,resolved_height;D3DFORMAT format;FILE *log;WCHAR folder[4096];DWORD before[64*64];} UmaSelectionCapture;
 static UmaSelectionCapture uma_selection;
 static inline void uma_selection_release(void){if(uma_selection.small)IDirect3DSurface9_Release(uma_selection.small);if(uma_selection.cpu)IDirect3DSurface9_Release(uma_selection.cpu);if(uma_selection.resolved)IDirect3DSurface9_Release(uma_selection.resolved);uma_selection.small=uma_selection.cpu=uma_selection.resolved=NULL;}
 static inline void uma_selection_ppm(const WCHAR *name,const DWORD *pixels,UINT width,UINT height){
@@ -36,8 +36,8 @@ static inline int uma_selection_read(IDirect3DDevice9 *device,DWORD *pixels){
  for(UINT y=0;y<64;y++)memcpy(pixels+y*64,(BYTE*)locked.pBits+y*locked.Pitch,64*4);
  IDirect3DSurface9_UnlockRect(uma_selection.cpu);return 1;
 }
-static inline void uma_selection_texture(IDirect3DDevice9 *device,UINT sampler){
- WCHAR path[4096];swprintf(path,4096,L"%ls\\top-texture-%u.dds",uma_selection.folder,sampler);DeleteFileW(path);
+static inline void uma_selection_texture(IDirect3DDevice9 *device,UINT sampler,const WCHAR *prefix){
+ WCHAR path[4096];swprintf(path,4096,L"%ls\\%ls-texture-%u.dds",uma_selection.folder,prefix,sampler);DeleteFileW(path);
  IDirect3DBaseTexture9 *base=NULL;if(FAILED(IDirect3DDevice9_GetTexture(device,sampler,&base)) || !base)return;
  if(IDirect3DBaseTexture9_GetType(base)==D3DRTYPE_TEXTURE){
   IDirect3DTexture9 *texture=(IDirect3DTexture9*)base;D3DSURFACE_DESC desc;D3DLOCKED_RECT locked;
@@ -64,7 +64,12 @@ static inline void uma_selection_after(IDirect3DDevice9 *device,int pending,cons
   IDirect3DVertexShader9 *shader=NULL;UINT bytes=0;IDirect3DDevice9_GetVertexShader(device,&shader);if(shader){IDirect3DVertexShader9_GetFunction(shader,NULL,&bytes);IDirect3DVertexShader9_Release(shader);}
   fprintf(uma_selection.log,"DRAW number=%u method=%s vertices=%u primitives=%u blackGain=%u blackLost=%u shaderBytes=%u stride=%u offset=%u\n",uma_selection.draws,method,vertices,primitives,gain,lost,bytes,stride,offset);fflush(uma_selection.log);
  }
- if(gain>uma_selection.best){uma_selection.best=gain;uma_selection_ppm(L"before.ppm",uma_selection.before,64,64);uma_selection_ppm(L"after.ppm",pixels,64,64);uma_selection_texture(device,0);uma_selection_texture(device,1);}
+ DWORD depth=0;
+ if(gain>uma_selection.geometry_best && SUCCEEDED(IDirect3DDevice9_GetRenderState(device,D3DRS_ZENABLE,&depth)) && depth){
+  uma_selection.geometry_best=gain;uma_selection_ppm(L"geometry-before.ppm",uma_selection.before,64,64);uma_selection_ppm(L"geometry-after.ppm",pixels,64,64);uma_selection_texture(device,0,L"geometry");uma_selection_texture(device,1,L"geometry");
+  if(uma_selection.log){fprintf(uma_selection.log,"GEOMETRY bestDraw=%u blackGain=%u\n",uma_selection.draws,gain);fflush(uma_selection.log);}
+ }
+ if(gain>uma_selection.best){uma_selection.best=gain;uma_selection_ppm(L"before.ppm",uma_selection.before,64,64);uma_selection_ppm(L"after.ppm",pixels,64,64);uma_selection_texture(device,0,L"top");uma_selection_texture(device,1,L"top");}
 }
 static inline void uma_selection_finish(IDirect3DDevice9 *device,unsigned bodies){
  if(!uma_selection.enabled || uma_selection.done)return;

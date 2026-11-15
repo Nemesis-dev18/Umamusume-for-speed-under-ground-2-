@@ -17,7 +17,10 @@ int main(void){
  IDirect3DTexture9 *texture=NULL;CHECK(IDirect3DDevice9_CreateTexture(device,16,16,1,0,D3DFMT_A8R8G8B8,D3DPOOL_MANAGED,&texture,NULL));D3DLOCKED_RECT locked;CHECK(IDirect3DTexture9_LockRect(texture,0,&locked,NULL,0));for(UINT y=0;y<16;y++)memset((BYTE*)locked.pBits+y*locked.Pitch,255,16*4);CHECK(IDirect3DTexture9_UnlockRect(texture,0));CHECK(IDirect3DDevice9_SetTexture(device,0,(IDirect3DBaseTexture9*)texture));
  struct {float x,y,z,w;DWORD color;} quad[]={{360,220,.5f,1,0xff000000},{570,220,.5f,1,0xff000000},{360,400,.5f,1,0xff000000},{570,400,.5f,1,0xff000000}};
  CHECK(IDirect3DDevice9_Clear(device,0,NULL,D3DCLEAR_TARGET,0xffa0a0a0,1,0));CHECK(IDirect3DDevice9_BeginScene(device));uma_selection.enabled=uma_selection.armed=1;
- int pending=uma_selection_before(device);assert(pending);CHECK(IDirect3DDevice9_DrawPrimitiveUP(device,D3DPT_TRIANGLESTRIP,2,quad,sizeof(quad[0])));uma_selection_after(device,pending,"DPUP",4,2);assert(uma_selection.best>1000);
+ CHECK(IDirect3DDevice9_SetRenderState(device,D3DRS_ZENABLE,TRUE));
+ int pending=uma_selection_before(device);assert(pending);CHECK(IDirect3DDevice9_DrawPrimitiveUP(device,D3DPT_TRIANGLESTRIP,2,quad,sizeof(quad[0])));uma_selection_after(device,pending,"DPUP",4,2);assert(uma_selection.best>1000);assert(uma_selection.geometry_best==uma_selection.best);
+ assert(GetFileAttributesW(L"modding\\runtime\\selection-test\\geometry-after.ppm")!=INVALID_FILE_ATTRIBUTES);
+ assert(GetFileAttributesW(L"modding\\runtime\\selection-test\\geometry-texture-0.dds")!=INVALID_FILE_ATTRIBUTES);
  DWORD after[64*64];assert(uma_selection_read(device,after));unsigned black=0;for(unsigned i=0;i<64*64;i++)black+=uma_selection_dark(after[i]);assert(black==uma_selection.best);
  IDirect3DBaseTexture9 *same=NULL;CHECK(IDirect3DDevice9_GetTexture(device,0,&same));assert(same==(IDirect3DBaseTexture9*)texture);IDirect3DBaseTexture9_Release(same);DWORD color;CHECK(IDirect3DDevice9_GetRenderState(device,D3DRS_COLORWRITEENABLE,&color));assert((color&7)==7);
  CHECK(IDirect3DDevice9_EndScene(device));uma_selection_finish(device,1);assert(uma_selection.done && !uma_selection.armed && !uma_selection.small && !uma_selection.cpu);

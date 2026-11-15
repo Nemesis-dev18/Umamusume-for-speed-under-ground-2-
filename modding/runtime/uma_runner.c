@@ -261,6 +261,7 @@ static DWORD WINAPI runner_start(void *module){
  wcscpy(path,root);wcscat(path,L"\\modding\\selection-trace.request");
  if(GetFileAttributesW(path)!=INVALID_FILE_ATTRIBUTES){
   wcscpy(uma_selection.folder,root);wcscat(uma_selection.folder,L"\\modding\\diagnostics\\selection-capture");
+  CreateDirectoryW(uma_selection.folder,NULL);
   swprintf(path,4096,L"%ls\\trace.log",uma_selection.folder);uma_selection.log=_wfopen(path,L"w");uma_selection.enabled=uma_selection.log!=NULL;
  }
  wcscpy(path,root);wcscat(path,L"\\modding\\runtime\\kitasan.umab");FILE *asset=_wfopen(path,L"rb");if(!asset)return 1;int loaded=uma_motion_load(asset,&runner_motion);fclose(asset);if(!loaded)return 1;
