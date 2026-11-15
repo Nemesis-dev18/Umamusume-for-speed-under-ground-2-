@@ -1,3 +1,4 @@
 TARGET width=640 height=480 format=21 multisample=0
 DRAW number=1 method=DPUP vertices=4 primitives=2 blackGain=3600 blackLost=0 shaderBytes=0 stride=0 offset=0
+GEOMETRY bestDraw=1 blackGain=3600
 DONE draws=1 largestBlackGain=3600

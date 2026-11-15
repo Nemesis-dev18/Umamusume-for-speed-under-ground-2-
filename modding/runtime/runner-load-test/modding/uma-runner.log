@@ -1,2 +1,2 @@
 AUDIO originalVariants=20 outputStreams=2 installed=1; sample playback only, no game data patch
-START native lighting runner installed=1; graphics-derived speed uncalibrated; shared motion state for Corolla instances
+START native lighting runner installed=1; graphics-derived speed uncalibrated; independent actor gait, spatial association
