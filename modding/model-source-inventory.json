@@ -1,0 +1,87 @@
+{
+  "scope": "Read-only ZIP directory inspection; no costume or model quality verified",
+  "archives": [
+    {
+      "archive": "ShiniNet式_オグリ〇ャップ_v1.1.zip",
+      "sha256": "0f47799a0d3fbddb65ba4eded52cfa576bd8e5701e57ec9ec50f06eb851b584d",
+      "models": [
+        {
+          "path": "ShiniNet式_オグリ〇ャップ_v1.1/ShiniNet式_オグリ〇ャップ_v1.1.pmx",
+          "bytes": 2351207,
+          "entry_index": 2
+        }
+      ],
+      "textures": 14
+    },
+    {
+      "archive": "ShiniNet式キタちゃん_V0_9_1.zip",
+      "sha256": "d7a05ae88151aa1785f8936f10ad150eb842855e4b57de4e3e6603763ec7edaf",
+      "models": [
+        {
+          "path": "ShiniNet式キタちゃん_V0_9_1/ShiniNet式キタちゃん.pmx",
+          "bytes": 1450867,
+          "entry_index": 21
+        }
+      ],
+      "textures": 15
+    },
+    {
+      "archive": "おナス式キタサンブラック配布用ver0.0.zip",
+      "sha256": "5f828056473061e0fb9e6b707dfd4e3e83d2065790245c487025abf1b794ce70",
+      "models": [
+        {
+          "path": "おナス式キタサンブラック配布用ver0.0/おナス式キタサンブラックVer0.0.pmx",
+          "bytes": 2779030,
+          "entry_index": 32
+        }
+      ],
+      "textures": 31
+    },
+    {
+      "archive": "だいやv1.3配布用.zip",
+      "sha256": "3e1830fcd2d502724b2e07404ff03a95b31d1ce49b770047d389a096468af234",
+      "models": [
+        {
+          "path": "だいやv1.3配布用/だいや_v1.3.pmx",
+          "bytes": 3558052,
+          "entry_index": 16
+        },
+        {
+          "path": "だいやv1.3配布用/水筒/水筒.pmx",
+          "bytes": 89660,
+          "entry_index": 21
+        }
+      ],
+      "textures": 12
+    },
+    {
+      "archive": "つかさ式うらら.zip",
+      "sha256": "bf0ece4a5750feec654eb626d644d9f1256d82d3d39c0bb691880e80eefc05b5",
+      "models": [
+        {
+          "path": "つかさ式うらら/つかさ式うららα.pmx",
+          "bytes": 3512784,
+          "entry_index": 16
+        },
+        {
+          "path": "つかさ式うらら/つかさ式うららβ.pmx",
+          "bytes": 3505586,
+          "entry_index": 17
+        }
+      ],
+      "textures": 12
+    },
+    {
+      "archive": "まっちさん式アグネスタキオン+v1.15.zip",
+      "sha256": "f6d2c5d392183589e6ea6fe09025bf71b9d9fb05234918a87002771c1f9ecd8e",
+      "models": [
+        {
+          "path": "まっちさん式アグネスタキオン v1.15/アグネスタキオン.pmx",
+          "bytes": 9275900,
+          "entry_index": 39
+        }
+      ],
+      "textures": 36
+    }
+  ]
+}
