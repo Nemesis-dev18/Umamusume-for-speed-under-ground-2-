@@ -1,0 +1,11 @@
+{
+  "temporary_logger": "scripts/UmaExceptionLog.asi",
+  "logger_sha256": "a2634f3a24ece3bdccaf78bd7d5e8ea512517dfd070b15fece5016a391ac7539",
+  "runner_sha256": "e7c23bc9c9c1a7af316e70e185713a4b2e8a9d1c3a0a7df2d35aadc67fa0e2a7",
+  "native_effects": "All four files original SHA verified",
+  "gameplay_verified": false,
+  "logger_active": true,
+  "observed_last_frame": "FRAME 4800 candidates=10610 owned=10610 replaced=10610 shaderFailures=0 references=96 bodies=2 graphicsSpeedValid=1 graphicsSpeed=19.1700 blend=1.0000 projectionValid=1 recoveredSceneRefs=1117389 hiddenWheels=6342 groups=65 best=6 second=6 hoofPlayed=232 audioActive=1",
+  "exception_records": 0,
+  "user_gameplay_confirmation_pending": true
+}

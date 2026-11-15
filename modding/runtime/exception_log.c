@@ -1,5 +1,6 @@
 #include <windows.h>
 #include <stdio.h>
+#include <wchar.h>
 static HANDLE output=INVALID_HANDLE_VALUE;
 static PVOID handler;
 static LONG events;
@@ -15,9 +16,14 @@ static LONG CALLBACK record_exception(EXCEPTION_POINTERS *exception){
  return EXCEPTION_CONTINUE_SEARCH;
 }
 BOOL WINAPI DllMain(HINSTANCE module,DWORD reason,LPVOID reserved){
- (void)module;(void)reserved;
+ (void)reserved;
  if(reason==DLL_PROCESS_ATTACH){
-  output=CreateFileW(L"modding\\uma-exception.log",GENERIC_WRITE,FILE_SHARE_READ,NULL,OPEN_ALWAYS,FILE_ATTRIBUTE_NORMAL,NULL);
+  WCHAR path[4096];DWORD length=GetModuleFileNameW(module,path,4096);if(!length || length>=3900)return TRUE;
+  WCHAR *last=wcsrchr(path,L'\\');if(!last)return TRUE;*last=0;last=wcsrchr(path,L'\\');if(!last)return TRUE;
+  if(!_wcsicmp(last+1,L"runtime")){*last=0;last=wcsrchr(path,L'\\');if(!last || _wcsicmp(last+1,L"modding"))return TRUE;}
+  else if(_wcsicmp(last+1,L"scripts"))return TRUE;
+  *last=0;wcscat(path,L"\\modding\\uma-exception.log");
+  output=CreateFileW(path,GENERIC_WRITE,FILE_SHARE_READ,NULL,OPEN_ALWAYS,FILE_ATTRIBUTE_NORMAL,NULL);
   if(output!=INVALID_HANDLE_VALUE){SetFilePointer(output,0,NULL,FILE_END);DWORD written;const char text[]="EXCEPTION LOGGER attached; observe only\r\n";WriteFile(output,text,sizeof(text)-1,&written,NULL);handler=AddVectoredExceptionHandler(1,record_exception);}
  }else if(reason==DLL_PROCESS_DETACH){if(handler)RemoveVectoredExceptionHandler(handler);if(output!=INVALID_HANDLE_VALUE)CloseHandle(output);}
  return TRUE;
