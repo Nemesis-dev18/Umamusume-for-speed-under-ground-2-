@@ -411,3 +411,5 @@ Animación: se elimina estado de zancada compartido para dibujar. Se deduplican 
 Host de integración pasó180 frames con cámara orbitando, orden invertido, actor quieto con oscilación vertical y otro a10m/s que se detiene: blend del primero<0,001, segundo>0,99 corriendo y<0,01 tras detenerse. Desconocido permaneceidle y pasadas duplicadas no crean actores. Renderer/Reset/carga DLL/audio/captura también pasaron.57 pruebas Python pasaron antes de ampliar63 archivos (pruebas de ruedas se repiten con alcance final). No es prueba de funcionamiento definitivo en NFS.
 
 Juego confirmado cerrado; respaldos65 archivos y plan wheel-idle-package-plan.json verificados antes de checkpoint. Log real de prueba sin derrapes preservado como sesión8. Pendiente sustitución.
+
+Instalación wheel-idle realizada tras checkpoint ef5b4f8760e20dd288b58a70f61997b52488a779:65 archivos verificados por SHA,323 datos distintos/716 y393 intactos. Collision80034020 idéntico byte por byte al confirmado. Módulo d2d463f90eb729e9aad12ca4a818953bdfc212e88be2836c83b419b1ecb9df59. Captura de un frame desactivada para comprobar visual sin pausa. Resultados de juego pendientes.

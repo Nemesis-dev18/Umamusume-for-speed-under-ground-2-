@@ -90,7 +90,8 @@
       ]
     ],
     "physics_gameplay_verified": true,
-    "user_result": "User confirmed collision fits Kitasan better; no handling changes in next step"
+    "user_result": "User confirmed collision fits Kitasan better; no handling changes in next step",
+    "installed_geometry_sha256": "e71d2b52a168546043300285aab71732c02f7ea8c019d760f711eb6c82840e32"
   },
   "hoof_audio": {
     "installed": true,
@@ -111,6 +112,20 @@
     "installed": true,
     "files": 246,
     "gameplay_verified": false,
-    "scope": "Native engine, engine sweetener, shifting, turbo, skids and road noise for all cars; original Uma footsteps remain character-only. Music, voices, general ambience and impacts untouched."
+    "scope": "Native engine, engine sweetener, shifting, turbo, skids and road noise for all cars; original Uma footsteps remain character-only. Music, voices, general ambience and impacts untouched.",
+    "skids_user_verified": true
+  },
+  "per_actor_motion": {
+    "installed": true,
+    "independent_idle_run_host_test_passed": true,
+    "gameplay_verified": false,
+    "association_limit": "Spatial prediction of identical actors; overlap can be ambiguous"
+  },
+  "global_wheel_cleanup": {
+    "installed": true,
+    "geometry_files": 63,
+    "meshes": 5740,
+    "transparent_tiremask": true,
+    "gameplay_verified": false
   }
 }
