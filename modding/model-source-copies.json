@@ -1,0 +1,832 @@
+{
+  "scope": "Source copies only; no game geometry or runtime modified",
+  "archives": [
+    {
+      "archive": "ShiniNet式_オグリ〇ャップ_v1.1.zip",
+      "source_sha256": "0f47799a0d3fbddb65ba4eded52cfa576bd8e5701e57ec9ec50f06eb851b584d",
+      "destination": "modding/model-sources/00",
+      "files": [
+        {
+          "path": "modding/model-sources/00/ShiniNet式_オグリ〇ャップ_v1.1/license(WEB).url",
+          "bytes": 72,
+          "sha256": "0d10ff2d98480640a0f0bb9d7c9af386e975aa626962a64774d3b5229c4fae66"
+        },
+        {
+          "path": "modding/model-sources/00/ShiniNet式_オグリ〇ャップ_v1.1/ReadMe.txt",
+          "bytes": 1410,
+          "sha256": "da805dc01f5cbd5eb0983364ea7bc6a1d77a5ec32cb35ca70bcade5e642ff03f"
+        },
+        {
+          "path": "modding/model-sources/00/ShiniNet式_オグリ〇ャップ_v1.1/ShiniNet式_オグリ〇ャップ_v1.1.pmx",
+          "bytes": 2351207,
+          "sha256": "94215b3fe854e508209bbf58dcda0d8a79a214a4dd07414b23108dbd590ea36d"
+        },
+        {
+          "path": "modding/model-sources/00/ShiniNet式_オグリ〇ャップ_v1.1/textures/MAT_BODY1.png",
+          "bytes": 247994,
+          "sha256": "3053313a2bf5abbe53e19ce8ac2cbe7d2720b55279174c7d0673c82ffdbf4f81"
+        },
+        {
+          "path": "modding/model-sources/00/ShiniNet式_オグリ〇ャップ_v1.1/textures/MAT_BODY2.png",
+          "bytes": 813677,
+          "sha256": "c39d24475a64ab59e1e0d344f02c0727edbf41cfb2b17c6d5931cb13c78aa7ce"
+        },
+        {
+          "path": "modding/model-sources/00/ShiniNet式_オグリ〇ャップ_v1.1/textures/MAT_FACE.png",
+          "bytes": 414675,
+          "sha256": "651877c074967bc9d2de41570c77a2904c23d115e3cf0e1e5bdc591c12ad8270"
+        },
+        {
+          "path": "modding/model-sources/00/ShiniNet式_オグリ〇ャップ_v1.1/textures/MAT_Hair.png",
+          "bytes": 1110553,
+          "sha256": "274e0e12b311ca6c4b69a1a91bc948b113cbc3e2ec90216740913da367e281cc"
+        },
+        {
+          "path": "modding/model-sources/00/ShiniNet式_オグリ〇ャップ_v1.1/textures/SP_ブーツ.png",
+          "bytes": 5024,
+          "sha256": "137618ac9f780ee035d23618eee59d83eb27c7a3e121132d687633e4a9557f6c"
+        },
+        {
+          "path": "modding/model-sources/00/ShiniNet式_オグリ〇ャップ_v1.1/textures/SP_装飾.png",
+          "bytes": 5395,
+          "sha256": "3b363c91a17644ca3d6b4b36ad39598603987d44680d6f8e16f942eaecf7234e"
+        },
+        {
+          "path": "modding/model-sources/00/ShiniNet式_オグリ〇ャップ_v1.1/textures/SP_体.png",
+          "bytes": 5501,
+          "sha256": "de1ef15e7554e8fdf50ffaf0de724a1ee2c52e3fea4a76f0e514958073c5cbe7"
+        },
+        {
+          "path": "modding/model-sources/00/ShiniNet式_オグリ〇ャップ_v1.1/textures/SP_髪.png",
+          "bytes": 11684,
+          "sha256": "0af871715ca9e22158ddfe1f6efe2ce0bd64ca68213d4c8c8aacf56b944852da"
+        },
+        {
+          "path": "modding/model-sources/00/ShiniNet式_オグリ〇ャップ_v1.1/textures/Toon_タイツ.png",
+          "bytes": 2833,
+          "sha256": "2563c35919ffc96c2137131ee0eed670ef9742d2217a871831f0dc2d9c49b080"
+        },
+        {
+          "path": "modding/model-sources/00/ShiniNet式_オグリ〇ャップ_v1.1/textures/Toon_ブーツ.png",
+          "bytes": 2833,
+          "sha256": "de9b4fb202c14e8eec236b0275cf9ca1f4273582d6303dc3f94d7ee10ceadbf0"
+        },
+        {
+          "path": "modding/model-sources/00/ShiniNet式_オグリ〇ャップ_v1.1/textures/Toon_金.png",
+          "bytes": 2832,
+          "sha256": "d8ae5753d62fa887aa9206536a8e4f603f252308586535f73d4fd3e3cd23b864"
+        },
+        {
+          "path": "modding/model-sources/00/ShiniNet式_オグリ〇ャップ_v1.1/textures/Toon_髪.png",
+          "bytes": 2832,
+          "sha256": "f7e7069f0df4bc9e7e5d7c8d348613a662cda9ef25c5bbfa9b030f4ee14c6c60"
+        },
+        {
+          "path": "modding/model-sources/00/ShiniNet式_オグリ〇ャップ_v1.1/textures/Toon_服白.png",
+          "bytes": 2834,
+          "sha256": "8b382961f41ad9f645a7153b646df458f6fb0cf952c9fd58f17dc468e2e6a56c"
+        },
+        {
+          "path": "modding/model-sources/00/ShiniNet式_オグリ〇ャップ_v1.1/textures/その他.png",
+          "bytes": 49609,
+          "sha256": "f78d692dc2848eff5d33804fefa17cd75d4c3aeafd8aa2a1fda70ca3bafb3978"
+        }
+      ]
+    },
+    {
+      "archive": "ShiniNet式キタちゃん_V0_9_1.zip",
+      "source_sha256": "d7a05ae88151aa1785f8936f10ad150eb842855e4b57de4e3e6603763ec7edaf",
+      "destination": "modding/model-sources/01",
+      "files": [
+        {
+          "path": "modding/model-sources/01/ShiniNet式キタちゃん_V0_9_1/Pose/Pose01.vmd",
+          "bytes": 32538,
+          "sha256": "7ca6a529754a16f7a958989f446763c2aa200238b770ac29c8aa7a5a4a15941a"
+        },
+        {
+          "path": "modding/model-sources/01/ShiniNet式キタちゃん_V0_9_1/PostAlphaEye/DrawEye1_Kitachan.fx",
+          "bytes": 7118,
+          "sha256": "b625dcbd8ca5532ccde483e521dde3d9692659fbde0709cab4fc57ee961c31c6"
+        },
+        {
+          "path": "modding/model-sources/01/ShiniNet式キタちゃん_V0_9_1/PostAlphaEye/DrawMask.fx",
+          "bytes": 1560,
+          "sha256": "9f3ca74cd38cc83c8708a306c73fc12f44c0472b3de5539625c80c9b4d4de435"
+        },
+        {
+          "path": "modding/model-sources/01/ShiniNet式キタちゃん_V0_9_1/PostAlphaEye/PostAlphaEye.fx",
+          "bytes": 3462,
+          "sha256": "9b91271ee5712848608721a4128e2a5f4edd16c44c86d5727cd937c017b19d53"
+        },
+        {
+          "path": "modding/model-sources/01/ShiniNet式キタちゃん_V0_9_1/PostAlphaEye/PostAlphaEye.x",
+          "bytes": 516,
+          "sha256": "a90c4ec45818ab21dfe8e0b4fc538ce7852ddd4fba390aa5e540e3119552b198"
+        },
+        {
+          "path": "modding/model-sources/01/ShiniNet式キタちゃん_V0_9_1/PostAlphaEye/Readme.txt",
+          "bytes": 1224,
+          "sha256": "3acac33b9b442e68d73b09839b3a5bf1d8d09644fdb0f25174364af4bfdecbc5"
+        },
+        {
+          "path": "modding/model-sources/01/ShiniNet式キタちゃん_V0_9_1/ReadMe.txt",
+          "bytes": 2240,
+          "sha256": "d62845696731ec336d2ba9ade96cf8c6870b7758099f394757fe5fc343c6acc6"
+        },
+        {
+          "path": "modding/model-sources/01/ShiniNet式キタちゃん_V0_9_1/Shaders/00_readme.txt",
+          "bytes": 9918,
+          "sha256": "7cb230f68d7973b8e0324b955c6d64ab42a74453aad30c9d8df3e3aea192f370"
+        },
+        {
+          "path": "modding/model-sources/01/ShiniNet式キタちゃん_V0_9_1/Shaders/AlternativeFull.fxsub",
+          "bytes": 72113,
+          "sha256": "74da045bd384d3efc0fe57ecb3f893426611125f5e0dbabfc7fca2dacfd281ec"
+        },
+        {
+          "path": "modding/model-sources/01/ShiniNet式キタちゃん_V0_9_1/Shaders/Kita_Clothes.fx",
+          "bytes": 587,
+          "sha256": "f8029bea680e1c18a3aa36a68f86fd5003c06979eae52dbd27241207f947c5b9"
+        },
+        {
+          "path": "modding/model-sources/01/ShiniNet式キタちゃん_V0_9_1/Shaders/Kita_Clothes_Metal.fx",
+          "bytes": 593,
+          "sha256": "3fd128018466a6b6099cc96dd3a5b949ed96aea0936c307ba7164bf62d5d5b95"
+        },
+        {
+          "path": "modding/model-sources/01/ShiniNet式キタちゃん_V0_9_1/Shaders/Kita_Face.fx",
+          "bytes": 684,
+          "sha256": "63d828935c19bb0d1f92cd655fa29d282be39263df39446bdc0ac563399580ef"
+        },
+        {
+          "path": "modding/model-sources/01/ShiniNet式キタちゃん_V0_9_1/Shaders/Kita_Hair.fx",
+          "bytes": 584,
+          "sha256": "db38f2eb3836fe70fc6a4780a8ff6c4443c71aafb2f9bda048642b47f1ccb97c"
+        },
+        {
+          "path": "modding/model-sources/01/ShiniNet式キタちゃん_V0_9_1/Shaders/Kita_M_Clothes_Metal_S.png",
+          "bytes": 451459,
+          "sha256": "d4c2a0c05a9604184cbe955b184d10f6da634ce6ed709b889a3140a82d892884"
+        },
+        {
+          "path": "modding/model-sources/01/ShiniNet式キタちゃん_V0_9_1/Shaders/shading_hint_face.png",
+          "bytes": 2842,
+          "sha256": "5571be77e34e423fac1dfc688d5aebef873edd89abe06ddffab44eac09b88cf4"
+        },
+        {
+          "path": "modding/model-sources/01/ShiniNet式キタちゃん_V0_9_1/Shaders/shading_hint_katturi.png",
+          "bytes": 285,
+          "sha256": "d719fec60b9760c5eb90c19809d14a62c48fd5876bd813d8c0797a207db58c1f"
+        },
+        {
+          "path": "modding/model-sources/01/ShiniNet式キタちゃん_V0_9_1/Shaders/Shadow_Bias.png",
+          "bytes": 5425,
+          "sha256": "57c300d122e749aed86ab6a2ac371a87d3ea51c111abf83f3da49df64d1c3119"
+        },
+        {
+          "path": "modding/model-sources/01/ShiniNet式キタちゃん_V0_9_1/ShiniNet式キタちゃん.emd",
+          "bytes": 550,
+          "sha256": "d7cc3448b8e3b148e71f455cb400f0f508097f0a8f613a75f974ada106b1f238"
+        },
+        {
+          "path": "modding/model-sources/01/ShiniNet式キタちゃん_V0_9_1/ShiniNet式キタちゃん.pmx",
+          "bytes": 1450867,
+          "sha256": "17cff38bc2e174d1136738395b51bee3eee8ab96104e2fbfa9cf0b82b1a7b3bd"
+        },
+        {
+          "path": "modding/model-sources/01/ShiniNet式キタちゃん_V0_9_1/Textures/Kita_M_Clothes.tga",
+          "bytes": 12582956,
+          "sha256": "19c8a0e2bb8d96f292ce356e56f70c50fe0d0e464e90127b34e1ee2499b24120"
+        },
+        {
+          "path": "modding/model-sources/01/ShiniNet式キタちゃん_V0_9_1/Textures/Kita_M_Clothes_Metal.png",
+          "bytes": 620772,
+          "sha256": "f3786a408be4903069ff54233d90433604692fe2471fae77c64b086ef296b7c2"
+        },
+        {
+          "path": "modding/model-sources/01/ShiniNet式キタちゃん_V0_9_1/Textures/Kita_M_Clothes_Metal.tga",
+          "bytes": 4195116,
+          "sha256": "c7901ee97e1ab534fdbd02105a6acd25bf59bd340471240c2b599cd56139698c"
+        },
+        {
+          "path": "modding/model-sources/01/ShiniNet式キタちゃん_V0_9_1/Textures/Kita_M_Clothes_Metal_S.png",
+          "bytes": 469696,
+          "sha256": "9e4038b8c8f06f1ac1c829508051f6fef15a357d64379a04e3b6db16c7ce815a"
+        },
+        {
+          "path": "modding/model-sources/01/ShiniNet式キタちゃん_V0_9_1/Textures/Kita_M_Clothes_S.tga",
+          "bytes": 12582956,
+          "sha256": "4bfa6c84df58c4e4840b20957e11e425fa7e31ef34eb948419c29961dc325be1"
+        },
+        {
+          "path": "modding/model-sources/01/ShiniNet式キタちゃん_V0_9_1/Textures/Kita_M_Face.tga",
+          "bytes": 1493169,
+          "sha256": "7d80e26029a02f701f1903ef426cf8a3a1b496004fdec78a0e95b8967c152240"
+        },
+        {
+          "path": "modding/model-sources/01/ShiniNet式キタちゃん_V0_9_1/Textures/Kita_M_Face_S.tga",
+          "bytes": 12582956,
+          "sha256": "5cb2f0f4e5ec4b5c8fcc7633ac4be36ad535facc0f66d48aaeda38a61b3f54fd"
+        },
+        {
+          "path": "modding/model-sources/01/ShiniNet式キタちゃん_V0_9_1/Textures/Kita_M_Hair.tga",
+          "bytes": 12582956,
+          "sha256": "4d53404812b76f5cb09667083f4c5f6b32308222e21487646a6cebaad32b2b18"
+        },
+        {
+          "path": "modding/model-sources/01/ShiniNet式キタちゃん_V0_9_1/Textures/Kita_M_Hair_S.tga",
+          "bytes": 12582956,
+          "sha256": "76135d110c34cc8a6fd97d97dbf2641d5b7d909715dccfd6c6a01ff29af29c84"
+        },
+        {
+          "path": "modding/model-sources/01/ShiniNet式キタちゃん_V0_9_1/ToonSp/SPA_Black.png",
+          "bytes": 16107,
+          "sha256": "47d070f9717c8d37d250f7ac4adc15f357572c2d34cc5f8d3e98df24a6936075"
+        },
+        {
+          "path": "modding/model-sources/01/ShiniNet式キタちゃん_V0_9_1/ToonSp/SPA_Metal1.png",
+          "bytes": 20466,
+          "sha256": "0c374a9cb193b7cf0704a31fbe8f97a161caf1f0a4300de07764df4cf0647a2a"
+        }
+      ]
+    },
+    {
+      "archive": "おナス式キタサンブラック配布用ver0.0.zip",
+      "source_sha256": "5f828056473061e0fb9e6b707dfd4e3e83d2065790245c487025abf1b794ce70",
+      "destination": "modding/model-sources/02",
+      "files": [
+        {
+          "path": "modding/model-sources/02/おナス式キタサンブラック配布用ver0.0/Texture/F00_000_00_EyeExtra_01_EYE.png",
+          "bytes": 27387,
+          "sha256": "49387c47ca2a906fa0300b5980163cf20d8cc51fd55559705ef7e68f7226424f"
+        },
+        {
+          "path": "modding/model-sources/02/おナス式キタサンブラック配布用ver0.0/Texture/F00_000_00_EyeExtra_01_EYEコメ.png",
+          "bytes": 6790,
+          "sha256": "4f16f43dcb685228b10472abc16353f9a4ce6e48995eaccf2f54ee4cfe85e701"
+        },
+        {
+          "path": "modding/model-sources/02/おナス式キタサンブラック配布用ver0.0/Texture/F00_000_00_EyeHighlight_00_EYE.png",
+          "bytes": 8271,
+          "sha256": "e86161e80db4636306d61c36785f2bf8d465ae019e4a1ad5732054578dd8cfb5"
+        },
+        {
+          "path": "modding/model-sources/02/おナス式キタサンブラック配布用ver0.0/Texture/F00_000_00_EyeIris_00_EYE.png",
+          "bytes": 171240,
+          "sha256": "095b5500e6716f9ee93fc90fe2df65073f545859399ed97374775cc589ba4770"
+        },
+        {
+          "path": "modding/model-sources/02/おナス式キタサンブラック配布用ver0.0/Texture/F00_000_00_EyeWhite_00_EYE.png",
+          "bytes": 200710,
+          "sha256": "a854671b85bb761f2449446a7fe476ced9a9a48162d8f7581534fb3e3a2d024c"
+        },
+        {
+          "path": "modding/model-sources/02/おナス式キタサンブラック配布用ver0.0/Texture/F00_000_00_Face_00_SKIN.png",
+          "bytes": 223755,
+          "sha256": "dc459e7d6fedca1bef8d00ee03d2fd099eda98439ba7531496315d5c9672221f"
+        },
+        {
+          "path": "modding/model-sources/02/おナス式キタサンブラック配布用ver0.0/Texture/F00_000_00_FaceBrow_00_FACE.png",
+          "bytes": 6170,
+          "sha256": "3a54ce82d991a177b7e8f41d3199983e5449993050a2d62974686b2b0257e7af"
+        },
+        {
+          "path": "modding/model-sources/02/おナス式キタサンブラック配布用ver0.0/Texture/F00_000_00_FaceEyelash_00_FACE.png",
+          "bytes": 1146,
+          "sha256": "90cfd9013d44541eb5c2e168470fbbfd4b0305f739fa2e1e9dbfe5f92447bf29"
+        },
+        {
+          "path": "modding/model-sources/02/おナス式キタサンブラック配布用ver0.0/Texture/F00_000_00_FaceEyeline_00_FACE.png",
+          "bytes": 39684,
+          "sha256": "73ffc842e6800179ac6e2af748014922b3796e8a904fdf63273f0c0f1262c95d"
+        },
+        {
+          "path": "modding/model-sources/02/おナス式キタサンブラック配布用ver0.0/Texture/F00_000_00_FaceMouth_00_FACE.png",
+          "bytes": 13748,
+          "sha256": "f310f7e000ef798cf3d241b8bbd6025e07077caacfaec792ad61dffb98393fee"
+        },
+        {
+          "path": "modding/model-sources/02/おナス式キタサンブラック配布用ver0.0/Texture/F00_000_Hair_00_HAIR_01.png",
+          "bytes": 71259,
+          "sha256": "ea8855cf0914d662db3a02b9d361bf978c3d36b39e8c535d53e6feca7c9e828a"
+        },
+        {
+          "path": "modding/model-sources/02/おナス式キタサンブラック配布用ver0.0/Texture/F00_000_Hair_00_HAIR_02.png",
+          "bytes": 121998,
+          "sha256": "4f258274842e9c1e28693adc5ffc2c30574819f50e7a6cb7f31e782bc4f5c0f8"
+        },
+        {
+          "path": "modding/model-sources/02/おナス式キタサンブラック配布用ver0.0/Texture/F00_000_Hair_00_HAIR_02A.png",
+          "bytes": 6328,
+          "sha256": "413376a7f1447a1c98e3b7c737b5925912382f8a73555cc721beed8efb5b80e5"
+        },
+        {
+          "path": "modding/model-sources/02/おナス式キタサンブラック配布用ver0.0/Texture/F00_000_Hair_00_HAIR_03.png",
+          "bytes": 4334,
+          "sha256": "6e58ea3484fa0e74003ccfe3d6f5bef03cca3aecfb32aa57476c2abd477a9743"
+        },
+        {
+          "path": "modding/model-sources/02/おナス式キタサンブラック配布用ver0.0/Texture/F00_000_Hair_00_HAIR_04.png",
+          "bytes": 149342,
+          "sha256": "8d567171fd6148210f0e5e7d8f729ab12c846fecf9c266a8fdb97656da73ec84"
+        },
+        {
+          "path": "modding/model-sources/02/おナス式キタサンブラック配布用ver0.0/Texture/F00_000_HairBack_00_HAIR.png",
+          "bytes": 31794,
+          "sha256": "3b0c176be77fb51c8614ea81c2f5e4c34f83866f947ffc7c17cc33f98048cc05"
+        },
+        {
+          "path": "modding/model-sources/02/おナス式キタサンブラック配布用ver0.0/Texture/F00_001_01_Body_00_SKIN.png",
+          "bytes": 21253,
+          "sha256": "654da7698c0c88f3c830411acda06e8a306c677da6d7adca2cb05c156f60d3dc"
+        },
+        {
+          "path": "modding/model-sources/02/おナス式キタサンブラック配布用ver0.0/Texture/F00_001_01_Bottoms_01_CLOTH.png",
+          "bytes": 154310,
+          "sha256": "503b02820aa1b863314f464a0a9c18d29ffdf084f1c32385b094cb3a29e6d823"
+        },
+        {
+          "path": "modding/model-sources/02/おナス式キタサンブラック配布用ver0.0/Texture/M00_000_00_Face_00頬染めモーフ用.png",
+          "bytes": 100812,
+          "sha256": "dc3b376c39f63f35e211f984c42d1167169d2318eacc21f0a515b71d192f6f2b"
+        },
+        {
+          "path": "modding/model-sources/02/おナス式キタサンブラック配布用ver0.0/Texture/Matcap_Rim.png",
+          "bytes": 5626,
+          "sha256": "c4b9659421340bba05ff0fcd5c1a07842d96f45b38f954d645d8795be771bf03"
+        },
+        {
+          "path": "modding/model-sources/02/おナス式キタサンブラック配布用ver0.0/Texture/Matcap_RimHair.png",
+          "bytes": 5626,
+          "sha256": "c4b9659421340bba05ff0fcd5c1a07842d96f45b38f954d645d8795be771bf03"
+        },
+        {
+          "path": "modding/model-sources/02/おナス式キタサンブラック配布用ver0.0/Texture/Matcap_RimHair2.png",
+          "bytes": 97946,
+          "sha256": "cf72fa631ebfa8a4c2b5c21ca9397385aa0536770b3250de5d695a232023cdec"
+        },
+        {
+          "path": "modding/model-sources/02/おナス式キタサンブラック配布用ver0.0/Texture/Matcap_RimHair2耳.png",
+          "bytes": 81560,
+          "sha256": "63088ff18a1b4b5a3fc961a10c27c913b38621558c9c4eb1e4d88f91dae4e608"
+        },
+        {
+          "path": "modding/model-sources/02/おナス式キタサンブラック配布用ver0.0/Texture/Plane Plane.001耳.png",
+          "bytes": 13253,
+          "sha256": "5d71ebc96db7a9f30cfe0559f5151d673054aff928ab36c4bfb40bd24a61f738"
+        },
+        {
+          "path": "modding/model-sources/02/おナス式キタサンブラック配布用ver0.0/Texture/Shader_NoneBlack.png",
+          "bytes": 81,
+          "sha256": "f3d3041bd0fd91f762bbae71c920be829305acaa8b2bef824f1ed65b757e0fc2"
+        },
+        {
+          "path": "modding/model-sources/02/おナス式キタサンブラック配布用ver0.0/Texture/金属スフィアa.png",
+          "bytes": 234149,
+          "sha256": "7d30e344a7265b7c38f843493eacfc7ff0bc3da71c923a8666de3d840c5e6bb5"
+        },
+        {
+          "path": "modding/model-sources/02/おナス式キタサンブラック配布用ver0.0/Texture/靴のみ_mesh.png",
+          "bytes": 13437,
+          "sha256": "c2316c8a41ae6fbd4b4169c1aba2ff060bbfeedba66e9f958ca427d391868cfd"
+        },
+        {
+          "path": "modding/model-sources/02/おナス式キタサンブラック配布用ver0.0/Texture/腰梅.png",
+          "bytes": 10579,
+          "sha256": "4bfa0478930f167b7820d85519f4f57a8f5bf256add80a35ebd02935f3fd5e2b"
+        },
+        {
+          "path": "modding/model-sources/02/おナス式キタサンブラック配布用ver0.0/Texture/身体UV.png",
+          "bytes": 17371,
+          "sha256": "135083f9bbcf2665c929bdd26e3859cd3305d5f9e13788154f589d5d3a5cd148"
+        },
+        {
+          "path": "modding/model-sources/02/おナス式キタサンブラック配布用ver0.0/Texture/服1uv.png",
+          "bytes": 102864,
+          "sha256": "862c55090bc880301459c10e77eae2579ca476adebf3b334b8ffdd50df32cb72"
+        },
+        {
+          "path": "modding/model-sources/02/おナス式キタサンブラック配布用ver0.0/Texture/服2uv.png",
+          "bytes": 89203,
+          "sha256": "6c281c406d46852c3229d1d581d3cc91717bc77c453bccf116c2c75116423dbb"
+        },
+        {
+          "path": "modding/model-sources/02/おナス式キタサンブラック配布用ver0.0/おナス式キタサンブラックVer0.0.pmx",
+          "bytes": 2779030,
+          "sha256": "53ce348710ca53ad1831909f1970a7259488ea0de00a1135d50021e003de9717"
+        },
+        {
+          "path": "modding/model-sources/02/おナス式キタサンブラック配布用ver0.0/りどみ　最初に必ず読んでください.txt",
+          "bytes": 1225,
+          "sha256": "beba3ba6963488408293f601fe28278ab04c9fd3367ffcd252b4d352487a6b4e"
+        }
+      ]
+    },
+    {
+      "archive": "だいやv1.3配布用.zip",
+      "source_sha256": "3e1830fcd2d502724b2e07404ff03a95b31d1ce49b770047d389a096468af234",
+      "destination": "modding/model-sources/03",
+      "files": [
+        {
+          "path": "modding/model-sources/03/だいやv1.3配布用/_Config.fxsub",
+          "bytes": 186,
+          "sha256": "9d472278cd867344c7a26bb5cf1211c62f8c80c7a8fe9cb79bc8c2bfb4fa746c"
+        },
+        {
+          "path": "modding/model-sources/03/だいやv1.3配布用/_DrawChara.fx",
+          "bytes": 4654,
+          "sha256": "39c1aca2f8e866c173729742d115004cbeb34964401edc101dc0f8626820858d"
+        },
+        {
+          "path": "modding/model-sources/03/だいやv1.3配布用/_DrawEtc.fx",
+          "bytes": 4276,
+          "sha256": "f29071b0335dd2d2d66be8cc494496ac4d50a2a02ef3e6a0f213c40a65cbdfec"
+        },
+        {
+          "path": "modding/model-sources/03/だいやv1.3配布用/_Main.fxsub",
+          "bytes": 3140,
+          "sha256": "8684388164dbebc3f4b10e9af2d31aef2d8b8af6e75e090df06df4dd6736371c"
+        },
+        {
+          "path": "modding/model-sources/03/だいやv1.3配布用/postα/DrawEye sato.fx",
+          "bytes": 7116,
+          "sha256": "96ced9d774ba3e77f2910884aa42c7d10fecb99f38e5afe3ae5a03d464d548cc"
+        },
+        {
+          "path": "modding/model-sources/03/だいやv1.3配布用/postα/DrawMask.fx",
+          "bytes": 1560,
+          "sha256": "9f3ca74cd38cc83c8708a306c73fc12f44c0472b3de5539625c80c9b4d4de435"
+        },
+        {
+          "path": "modding/model-sources/03/だいやv1.3配布用/postα/PostAlphaEye sato.fx",
+          "bytes": 3371,
+          "sha256": "5d34d3aa463543da2dbca4ca57f30fbd5f2df5fc60cd1e22994406d2038822a0"
+        },
+        {
+          "path": "modding/model-sources/03/だいやv1.3配布用/postα/PostAlphaEye sato.x",
+          "bytes": 516,
+          "sha256": "a90c4ec45818ab21dfe8e0b4fc538ce7852ddd4fba390aa5e540e3119552b198"
+        },
+        {
+          "path": "modding/model-sources/03/だいやv1.3配布用/readme(★まずはこちらをお読み下さい★).txt",
+          "bytes": 2692,
+          "sha256": "1df90ac75447c91d400f287d79498c2563ad534086a5ab99620aafcaaa6d92b9"
+        },
+        {
+          "path": "modding/model-sources/03/だいやv1.3配布用/sphere.png",
+          "bytes": 6543,
+          "sha256": "aa1f23f55a9768772f5b8ec89f1dd493bfd37e773dda411e9eb81968884c246c"
+        },
+        {
+          "path": "modding/model-sources/03/だいやv1.3配布用/toon_body.bmp",
+          "bytes": 4150,
+          "sha256": "7dd976940f8071fcbc711ef53d5b415a6ec3936cd83863eb6121d99b3b939620"
+        },
+        {
+          "path": "modding/model-sources/03/だいやv1.3配布用/toon_clothes.bmp",
+          "bytes": 4150,
+          "sha256": "02d9ec61a2801534077656f3827c3a4cf87e531033f428c7b426aa61ce69621a"
+        },
+        {
+          "path": "modding/model-sources/03/だいやv1.3配布用/toon_face.bmp",
+          "bytes": 3126,
+          "sha256": "fa19b80fcb99de657fae44c82d19581e7b05e7e5d2e8306d1006653502cb70ff"
+        },
+        {
+          "path": "modding/model-sources/03/だいやv1.3配布用/toon_hair.bmp",
+          "bytes": 4150,
+          "sha256": "edc080f99fb5947ed3f9c1b8b48a6c43e7f62731b810b27bfcd0d9c90771d3d9"
+        },
+        {
+          "path": "modding/model-sources/03/だいやv1.3配布用/だいや_v1.3.fx",
+          "bytes": 12793,
+          "sha256": "9efbcce3ac1cbdcf1a3251bfa935a9ad0731bab744b9f9f81206a99957e0f177"
+        },
+        {
+          "path": "modding/model-sources/03/だいやv1.3配布用/だいや_v1.3.pmx",
+          "bytes": 3558052,
+          "sha256": "99fb8bc4a01aef2ff83735407a738cc950abaeeeaa55086fb546f27d0ad2fd51"
+        },
+        {
+          "path": "modding/model-sources/03/だいやv1.3配布用/下半身.png",
+          "bytes": 5121103,
+          "sha256": "d9cd481c107e88dc7640f6d7382f95492d55b70fe04d338a584c7cbf2f42c8ab"
+        },
+        {
+          "path": "modding/model-sources/03/だいやv1.3配布用/顔.png",
+          "bytes": 97011,
+          "sha256": "afe93f9f1943af87054275665a0dc74d941fbcd638feecff919e124427755429"
+        },
+        {
+          "path": "modding/model-sources/03/だいやv1.3配布用/上半身.png",
+          "bytes": 2123551,
+          "sha256": "e60e0303118a1eb8fa1ceec2ea473bedb1c0662e7e8457c2c303bba046d02553"
+        },
+        {
+          "path": "modding/model-sources/03/だいやv1.3配布用/水筒/水筒.pmx",
+          "bytes": 89660,
+          "sha256": "6c27781f92e400caceba3277e7bbbf6680f752ba6f0676a99e35fce7562ccd2a"
+        },
+        {
+          "path": "modding/model-sources/03/だいやv1.3配布用/水筒/水筒テクスチャ.png",
+          "bytes": 107175,
+          "sha256": "403668036613cad815810be5a1ff9e5336724d8b263783ac5f3ca60b2826aa24"
+        },
+        {
+          "path": "modding/model-sources/03/だいやv1.3配布用/髪.png",
+          "bytes": 1084258,
+          "sha256": "5b12b138020af3024ab40cf8ab50158f1b02e02dbf3cba8dab4a8d61844dc26d"
+        },
+        {
+          "path": "modding/model-sources/03/だいやv1.3配布用/表情.png",
+          "bytes": 90776,
+          "sha256": "5b4b717b5e24e81449eb861f446e4998bba00f68289d8c80a02ae19cec4fbfcf"
+        },
+        {
+          "path": "modding/model-sources/03/だいやv1.3配布用/目.png",
+          "bytes": 227136,
+          "sha256": "5e2a3650c21695f17eeb6ca836c1d5482f0927fc9d3e36031d13333e0d1abb70"
+        }
+      ]
+    },
+    {
+      "archive": "つかさ式うらら.zip",
+      "source_sha256": "bf0ece4a5750feec654eb626d644d9f1256d82d3d39c0bb691880e80eefc05b5",
+      "destination": "modding/model-sources/04",
+      "files": [
+        {
+          "path": "modding/model-sources/04/つかさ式うらら/Readme.txt",
+          "bytes": 2224,
+          "sha256": "261e377b908efbd45a096688872797edeae84f604f31516afaffd4d1f3887d7f"
+        },
+        {
+          "path": "modding/model-sources/04/つかさ式うらら/Sphere/sne03.bmp",
+          "bytes": 196662,
+          "sha256": "1dbf91e0b28ec65374b134e57367110cec8e43fc29922a9b3fa604d51ad8988c"
+        },
+        {
+          "path": "modding/model-sources/04/つかさ式うらら/Sphere/sne04.bmp",
+          "bytes": 196662,
+          "sha256": "8417a9b594eac00ba07a83fa1a04755edc833c4898fa62a52d8a7cda8bac6ea8"
+        },
+        {
+          "path": "modding/model-sources/04/つかさ式うらら/Sphere/ハイライト2.png",
+          "bytes": 59085,
+          "sha256": "c36cd0b616a877982d50ddc8d9fdb89a5e0e7aebb556afffa6b36227e4f86033"
+        },
+        {
+          "path": "modding/model-sources/04/つかさ式うらら/Texture/haru01.png",
+          "bytes": 768292,
+          "sha256": "cc6496090046c2f51a94ec0008a83eb30f3820521db9acd0b4ee51f491585488"
+        },
+        {
+          "path": "modding/model-sources/04/つかさ式うらら/Texture/haru02.png",
+          "bytes": 712981,
+          "sha256": "b245768988ccacfe1e632acb96cdc2dcc4f8065a624814085d9411e442ec884c"
+        },
+        {
+          "path": "modding/model-sources/04/つかさ式うらら/Texture/kahada2.png",
+          "bytes": 493063,
+          "sha256": "8779fd6167b8f2e57e632ed85ce195a3aa55d62f0329659f68e6ba7ef8e778fd"
+        },
+        {
+          "path": "modding/model-sources/04/つかさ式うらら/Texture/mahirufuku01.png",
+          "bytes": 483504,
+          "sha256": "41d0b12aec8de570bd1f494931638b7b6d611db0260d8e28e753739443a074c3"
+        },
+        {
+          "path": "modding/model-sources/04/つかさ式うらら/Texture/口.png",
+          "bytes": 30284,
+          "sha256": "df14d257018fcbdd6161293d74e164c97b07208295b2577c7f200343c883b3de"
+        },
+        {
+          "path": "modding/model-sources/04/つかさ式うらら/Texture/瞳hru01.png",
+          "bytes": 495133,
+          "sha256": "3cd9b11c68b3deb7cf05af7c786d158513edb22748f51fb120eff2f07a7be610"
+        },
+        {
+          "path": "modding/model-sources/04/つかさ式うらら/Texture/特殊目01oyo.png",
+          "bytes": 49264,
+          "sha256": "b9e2511130ff3115a8265d80972f5982760bfd2af494360ec6d044200f2db971"
+        },
+        {
+          "path": "modding/model-sources/04/つかさ式うらら/Toon/ne01.bmp",
+          "bytes": 3126,
+          "sha256": "3ef8c2b4d174e9a3c5114e799f001e893ebac5055adfd7500b5a03178199d77f"
+        },
+        {
+          "path": "modding/model-sources/04/つかさ式うらら/Toon/ura02.bmp",
+          "bytes": 3126,
+          "sha256": "3dbcc437d4f28c582d17871e949cf8f8a281535fefdfa14874fc16290abdfc7e"
+        },
+        {
+          "path": "modding/model-sources/04/つかさ式うらら/つかさ式うららα.pmx",
+          "bytes": 3512784,
+          "sha256": "dacc1efecc9cd4d420eba1bc3043d1cfdb712d941162ecc663963b794b8e8222"
+        },
+        {
+          "path": "modding/model-sources/04/つかさ式うらら/つかさ式うららβ.pmx",
+          "bytes": 3505586,
+          "sha256": "00a7deefeb1645aad4bd475614d431f81631037c4261b7293287526fa5d33057"
+        }
+      ]
+    },
+    {
+      "archive": "まっちさん式アグネスタキオン+v1.15.zip",
+      "source_sha256": "f6d2c5d392183589e6ea6fe09025bf71b9d9fb05234918a87002771c1f9ecd8e",
+      "destination": "modding/model-sources/05",
+      "files": [
+        {
+          "path": "modding/model-sources/05/まっちさん式アグネスタキオン v1.15/Readme.txt",
+          "bytes": 1938,
+          "sha256": "f30f2cd8ee4764c98a3ef044189bb437d8859468d17029fc6233a2ee8b13598e"
+        },
+        {
+          "path": "modding/model-sources/05/まっちさん式アグネスタキオン v1.15/Tex/b.png",
+          "bytes": 6959,
+          "sha256": "b8df2e05ed7e7abc9d32af839b77a9841a1d7ea63bd47005ac006df024e055f1"
+        },
+        {
+          "path": "modding/model-sources/05/まっちさん式アグネスタキオン v1.15/Tex/body.png",
+          "bytes": 24968,
+          "sha256": "84c191a95642cd21e800a5bd38c000b264c3e7a85de7579bd7b2d576a6e68bda"
+        },
+        {
+          "path": "modding/model-sources/05/まっちさん式アグネスタキオン v1.15/Tex/button.png",
+          "bytes": 398,
+          "sha256": "64433e8ad3528d717f9c1dfdce5af5449457d5426d48d55c97e53053097264c0"
+        },
+        {
+          "path": "modding/model-sources/05/まっちさん式アグネスタキオン v1.15/Tex/cork.png",
+          "bytes": 343832,
+          "sha256": "6ec208982d4376a96cc7f3c2c2c06083efe7e56f2e2362ea15ceffb70c301b2d"
+        },
+        {
+          "path": "modding/model-sources/05/まっちさん式アグネスタキオン v1.15/Tex/ear.png",
+          "bytes": 58895,
+          "sha256": "21340c86a3c1d2d7e69b18e175f698b8037aa32eb1cbb3bd80edd9652f700a5c"
+        },
+        {
+          "path": "modding/model-sources/05/まっちさん式アグネスタキオン v1.15/Tex/earring.png",
+          "bytes": 10166,
+          "sha256": "54f5b5ccc43033bc11e15e375cf891891481fa4c2fc490a5114eb4ccf084c16c"
+        },
+        {
+          "path": "modding/model-sources/05/まっちさん式アグネスタキオン v1.15/Tex/eye.png",
+          "bytes": 511899,
+          "sha256": "934ec296e14da0be05466b0c8750e5be1938f3eed052fcf621f1bbe7457e60b9"
+        },
+        {
+          "path": "modding/model-sources/05/まっちさん式アグネスタキオン v1.15/Tex/eye2.png",
+          "bytes": 10590,
+          "sha256": "1a9d35bdae6a8e74da516165f966b308f0d2dc69cb2b5de8558d5007f43ce372"
+        },
+        {
+          "path": "modding/model-sources/05/まっちさん式アグネスタキオン v1.15/Tex/face.png",
+          "bytes": 93850,
+          "sha256": "8280f53facf3cea2ad933ba3d556478088a223faa27bc09e3ca1b2578067d016"
+        },
+        {
+          "path": "modding/model-sources/05/まっちさん式アグネスタキオン v1.15/Tex/face_parts.png",
+          "bytes": 2737,
+          "sha256": "6c749feddb8ae76a3b88fb4c5e4ca2b61d1cae0ddebdb9c2b72981f31d7de62a"
+        },
+        {
+          "path": "modding/model-sources/05/まっちさん式アグネスタキオン v1.15/Tex/hair.png",
+          "bytes": 91380,
+          "sha256": "7595ac707fea4406b05899dff08a47f1d52d27da00131e44abcc64ea90f1eb9c"
+        },
+        {
+          "path": "modding/model-sources/05/まっちさん式アグネスタキオン v1.15/Tex/hair1.png",
+          "bytes": 660886,
+          "sha256": "f4127d8de86c3a404b08e34af0c0cf80e087c45d2069e517b25a467bdff69b1f"
+        },
+        {
+          "path": "modding/model-sources/05/まっちさん式アグネスタキオン v1.15/Tex/hair2.png",
+          "bytes": 96532,
+          "sha256": "53f9d38ba5b65ce028453c4d5d3e2670375c51d8aca03e926c93e5468b69912a"
+        },
+        {
+          "path": "modding/model-sources/05/まっちさん式アグネスタキオン v1.15/Tex/hairS.png",
+          "bytes": 34876,
+          "sha256": "a0871c2cb72b21f5e8d5ce02f20a34886c40bfbf367fd9200d19721012875d3d"
+        },
+        {
+          "path": "modding/model-sources/05/まっちさん式アグネスタキオン v1.15/Tex/hakui.png",
+          "bytes": 561208,
+          "sha256": "964914aabbb92475f6ae1ebbfe3c2a9861ad4939dd2e03cfc8df09c4ff675bc2"
+        },
+        {
+          "path": "modding/model-sources/05/まっちさん式アグネスタキオン v1.15/Tex/ita.png",
+          "bytes": 2490,
+          "sha256": "50418387780a2d9d6ec61e01ca5db046eda5e170bc1add0a96b44a0c9ba03649"
+        },
+        {
+          "path": "modding/model-sources/05/まっちさん式アグネスタキオン v1.15/Tex/kin.png",
+          "bytes": 213166,
+          "sha256": "d1106f59685e8b49fd2f421024088c715ae3a1ea1bff4a5ec5ca9a97ee2f8d09"
+        },
+        {
+          "path": "modding/model-sources/05/まっちさん式アグネスタキオン v1.15/Tex/kinzoku.jpg",
+          "bytes": 74267,
+          "sha256": "d9efc4d5b7976d672b99dde3e117a6a2804ba428ea191ec66a6a185e5625b40d"
+        },
+        {
+          "path": "modding/model-sources/05/まっちさん式アグネスタキオン v1.15/Tex/shoes.png",
+          "bytes": 194381,
+          "sha256": "1dbbe0796c0e27a08b60c5cc355726ef0faf87c899e6c43cbeeb815875f560fa"
+        },
+        {
+          "path": "modding/model-sources/05/まっちさん式アグネスタキオン v1.15/Tex/socks.png",
+          "bytes": 27478,
+          "sha256": "71587d38c9547cb38a1bec7cede6d1293ef98690f560c30102bed1977bd8500c"
+        },
+        {
+          "path": "modding/model-sources/05/まっちさん式アグネスタキオン v1.15/Tex/socksS.png",
+          "bytes": 14222,
+          "sha256": "70ac0e4d9a7f4aa4266e75d1c950a33c0f6e44a1e0361b382e954d4d3cfc76b5"
+        },
+        {
+          "path": "modding/model-sources/05/まっちさん式アグネスタキオン v1.15/Tex/sp-.jpg",
+          "bytes": 2147,
+          "sha256": "386c1717ab3c4556735d9e6a4afa6de488c3511b556d97817c0685ef7c5e3593"
+        },
+        {
+          "path": "modding/model-sources/05/まっちさん式アグネスタキオン v1.15/Tex/sweater2.png",
+          "bytes": 63351,
+          "sha256": "6a02de8d7956807dce3e074efef25e618d93fffd6c43e0fb2bc33056abd46f63"
+        },
+        {
+          "path": "modding/model-sources/05/まっちさん式アグネスタキオン v1.15/Tex/tail.png",
+          "bytes": 41474,
+          "sha256": "8fb6018ce2dfb12687cb0a154ede3932a97f4565a9d6936295c956cab22eecfe"
+        },
+        {
+          "path": "modding/model-sources/05/まっちさん式アグネスタキオン v1.15/Tex/teitetu.png",
+          "bytes": 56244,
+          "sha256": "f1aab235e24c3fce2ec9b3c27b91ed8131b169ab8c374000b2631c371fec2eea"
+        },
+        {
+          "path": "modding/model-sources/05/まっちさん式アグネスタキオン v1.15/Tex/tongue.png",
+          "bytes": 338,
+          "sha256": "ad6fb4124e4f47afb3ca1e24a8621e9b89bd2a38efa608b359fa1b11e61f5be8"
+        },
+        {
+          "path": "modding/model-sources/05/まっちさん式アグネスタキオン v1.15/Tex/Toon_df.png",
+          "bytes": 164,
+          "sha256": "8f923156da57a7677b72a2f3260cc7565d8ac73ecb9bb1bf3cd7afc57b0f0220"
+        },
+        {
+          "path": "modding/model-sources/05/まっちさん式アグネスタキオン v1.15/Tex/Toon_hakui.png",
+          "bytes": 187,
+          "sha256": "d9c313b45e729dfc9eb0a5f51dbc827b363c137f8fcc0fc2121dac9971e18d26"
+        },
+        {
+          "path": "modding/model-sources/05/まっちさん式アグネスタキオン v1.15/Tex/Toon_shoes.png",
+          "bytes": 164,
+          "sha256": "8f923156da57a7677b72a2f3260cc7565d8ac73ecb9bb1bf3cd7afc57b0f0220"
+        },
+        {
+          "path": "modding/model-sources/05/まっちさん式アグネスタキオン v1.15/Tex/Toon_socks.png",
+          "bytes": 182,
+          "sha256": "4d97ab636f5dbecea96fe1c4ed1fea596c1a0470dc44407aac682200686fef3a"
+        },
+        {
+          "path": "modding/model-sources/05/まっちさん式アグネスタキオン v1.15/Tex/Toon_sweateer.png",
+          "bytes": 159,
+          "sha256": "330a5427bfb118483a3689590a2913f294e061ebc1a8f6a69cfa9e4b76e6ece1"
+        },
+        {
+          "path": "modding/model-sources/05/まっちさん式アグネスタキオン v1.15/Tex/Toon_肌.png",
+          "bytes": 148,
+          "sha256": "0e52d8054eb095a091281a7029bdcf18752c239243a1e11c1a51dac15572d94f"
+        },
+        {
+          "path": "modding/model-sources/05/まっちさん式アグネスタキオン v1.15/Tex/Toon_髪.png",
+          "bytes": 177,
+          "sha256": "4342091efe80a3e85dd139ad3e4f3e25f3e5a224df00172797b14d3c8565ccf8"
+        },
+        {
+          "path": "modding/model-sources/05/まっちさん式アグネスタキオン v1.15/Tex/vest.png",
+          "bytes": 24020,
+          "sha256": "76464ddba47f7a889d8408ddb686b91bba38b25ae937c6dc4bffe124762c3316"
+        },
+        {
+          "path": "modding/model-sources/05/まっちさん式アグネスタキオン v1.15/Tex/w.png",
+          "bytes": 33291,
+          "sha256": "5434908ed91502804f8b12d986c5956b83766c58e68e1c01222b1218725fa1f8"
+        },
+        {
+          "path": "modding/model-sources/05/まっちさん式アグネスタキオン v1.15/Tex/zipper.png",
+          "bytes": 21104,
+          "sha256": "51dd1599683b8ee9cfee5219c5b0ed2ea443730af0f569d1ee7ceb211bc24173"
+        },
+        {
+          "path": "modding/model-sources/05/まっちさん式アグネスタキオン v1.15/アグネスタキオン.pmx",
+          "bytes": 9275900,
+          "sha256": "71d90999b00ced1da5c1c95a11770080f250de7b182db7864acf1aca6e7a1800"
+        }
+      ]
+    }
+  ]
+}
