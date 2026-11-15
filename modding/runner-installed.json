@@ -330,7 +330,7 @@
     "FRONTEND/FrontB.lzc"
   ],
   "unchanged_data": 393,
-  "game_running": false,
+  "game_running": true,
   "gameplay_verified": false,
   "previous_sha256": "34e6a93c64196f5f01a2f01b5582b3c852053c285781f0e4aa7401ccad8a0aad",
   "current_receipt": "modding/wheel-idle-package-installed.json"

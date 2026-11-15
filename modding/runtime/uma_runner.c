@@ -327,7 +327,7 @@ static DWORD WINAPI runner_start(void *module){
  HRESULT result=window && api?IDirect3D9_CreateDevice(api,0,D3DDEVTYPE_HAL,window,D3DCREATE_SOFTWARE_VERTEXPROCESSING,&pp,&device):E_FAIL;
  int installed=SUCCEEDED(result) && runner_install(device);
  if(installed)(void)uma_audio_start(root,runner_log);
- if(runner_log){fprintf(runner_log,"START native lighting runner installed=%d; graphics-derived speed uncalibrated; shared motion state for Corolla instances\n",installed);fflush(runner_log);}
+ if(runner_log){fprintf(runner_log,"START native lighting runner installed=%d; graphics-derived speed uncalibrated; independent actor gait, spatial association\n",installed);fflush(runner_log);}
  if(device){IDirect3DDevice9_Release(device);}if(api){IDirect3D9_Release(api);}if(window){DestroyWindow(window);}
  if(!installed){uma_motion_free(&runner_motion);}return installed?0:1;
 }
