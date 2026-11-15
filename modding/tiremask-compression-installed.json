@@ -1,0 +1,27 @@
+{
+  "target": "FRONTEND/FrontB.lzc",
+  "backup": "FRONTEND/FrontB.lzc.before-jdlz-rewrite.bak",
+  "candidate": "modding/staged-runtime/FrontB.no-tiremask.lzc",
+  "before_bytes": 6715547,
+  "bytes": 1750852,
+  "before_sha256": "409eaa47548005c96c7b1c3d2c575291a51abd5ac7c00ef71f71a5e83b3437e7",
+  "after_sha256": "2a59e9063ca54e3253a6a77ad1fe20a93133b89c38f0ed7b32e4d1ab612b6949",
+  "decoded_pixel_ranges": [
+    {
+      "texture": "TIREMASK",
+      "texture_info_offset": 260432,
+      "pixel_offset": 4125952,
+      "pixel_bytes": 10912,
+      "format": "DXT1",
+      "width": 128,
+      "height": 128,
+      "mips": 5
+    }
+  ],
+  "installed": true,
+  "gameplay_verified": false,
+  "original_backup": "FRONTEND/FrontB.lzc.before-uma-tiremask.bak",
+  "scope": "Replace provisional literal JDLZ encoding with original-token rewrite; decoded bytes identical to installed transparent mask",
+  "checkpoint": "3b593fb672f7a8e3fe302b4a468a033cc97907c4",
+  "decoded_identical_to_previous_install": true
+}
