@@ -4,6 +4,15 @@
 
 Modificación no oficial de *Need for Speed Underground 2* (PC) con temática de *Uma Musume Pretty Derby*. Por ahora el mod modifica el Toyota Corolla (geometría y texturas) y también incluye archivos de traducción al español y una variante invernal.
 
+
+
+
+
+
+https://github.com/user-attachments/assets/fd885caf-bba9-4598-886e-1f4b0b8e03ca
+
+
+
 ## Tabla de contenidos
 
 - [Estado actual](#estado-actual-y-problemas-conocidos)
