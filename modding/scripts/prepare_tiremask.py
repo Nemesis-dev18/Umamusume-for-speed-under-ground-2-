@@ -2,18 +2,38 @@
 import hashlib
 import json
 import struct
-from inspect_assets import ROOT,chunks,flatten,jdlz,MAX_OUTPUT
+from inspect_assets import ROOT,chunks,flatten,jdlz
 
 
-def literal_jdlz(data):
-    if not data or len(data)>MAX_OUTPUT:raise ValueError('Invalid JDLZ input size')
-    # shortcut: literal-only encoding increases disk size; use a match finder if startup I/O becomes material.
-    stream=bytearray()
-    for at in range(0,len(data),8):
-        stream.append(0)
-        if not at:stream.append(0)
-        stream.extend(data[at:at+8])
-    return b'JDLZ\x02\x10\0\0'+struct.pack('<2I',len(data),len(stream)+16)+stream
+def rewrite_jdlz(source,data):
+    original=jdlz(source)
+    if not data or len(data)!=len(original):raise ValueError('JDLZ decoded size changed')
+    stream=bytearray();bit1=bit2=8;flag1=flag2=0
+    def emit(literal,a,b=0,near=0):
+        nonlocal bit1,bit2,flag1,flag2
+        if bit1==8:flag1=len(stream);stream.append(0);bit1=0
+        if bit2==8:flag2=len(stream);stream.append(0);bit2=0
+        if literal:stream.append(a)
+        else:
+            stream[flag1]|=1<<bit1;stream[flag2]|=near<<bit2;bit2+=1;stream.extend((a,b))
+        bit1+=1
+    at=16;position=0;flags1=flags2=1
+    while position<len(data):
+        if flags1==1:flags1=source[at]|256;at+=1
+        if flags2==1:flags2=source[at]|256;at+=1
+        if flags1&1:
+            a,b=source[at:at+2];at+=2;near=flags2&1
+            length,distance=(((a&240)<<4|b)+3,(a&15)+1) if near else ((a&31)+3,(b|((a&224)<<3))+17)
+            # A changed source pixel must never leak through a back-reference into another texture.
+            if all(data[position+k]==data[position+k-distance] for k in range(length)):emit(False,a,b,near)
+            else:
+                for value in data[position:position+length]:emit(True,value)
+            position+=length;flags2>>=1
+        else:emit(True,data[position]);position+=1;at+=1
+        flags1>>=1
+    encoded=b'JDLZ\x02\x10\0\0'+struct.pack('<2I',len(data),len(stream)+16)+stream
+    if jdlz(encoded)!=data:raise ValueError('JDLZ rewrite failed')
+    return encoded
 
 
 def prepare(source):
@@ -39,7 +59,7 @@ def prepare(source):
             matches.append({'texture':'TIREMASK','texture_info_offset':at,'pixel_offset':begin,'pixel_bytes':size,'format':'DXT1','width':width,'height':height,'mips':mips})
     if len(matches)!=1:raise ValueError('Tire mask absent or ambiguous')
     if chunks(result)!=chunks(original):raise ValueError('Decoded chunk layout changed')
-    encoded=literal_jdlz(result)
+    encoded=rewrite_jdlz(source,result)
     if jdlz(encoded)!=result:raise ValueError('JDLZ round trip failed')
     return encoded,matches
 

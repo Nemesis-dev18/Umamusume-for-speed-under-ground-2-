@@ -3,9 +3,9 @@
   "backup": "FRONTEND/FrontB.lzc.before-uma-tiremask.bak",
   "candidate": "modding/staged-runtime/FrontB.no-tiremask.lzc",
   "before_bytes": 1750771,
-  "bytes": 6715547,
+  "bytes": 1750852,
   "before_sha256": "813e8f966ca9af9a5374454199b3a1e57460ff9374a8c3cc7822bfbcd017418e",
-  "after_sha256": "409eaa47548005c96c7b1c3d2c575291a51abd5ac7c00ef71f71a5e83b3437e7",
+  "after_sha256": "2a59e9063ca54e3253a6a77ad1fe20a93133b89c38f0ed7b32e4d1ab612b6949",
   "decoded_pixel_ranges": [
     {
       "texture": "TIREMASK",
