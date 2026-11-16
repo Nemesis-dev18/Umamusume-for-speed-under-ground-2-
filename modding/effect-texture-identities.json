@@ -1,0 +1,42 @@
+{
+  "format": "DXT3 compressed block bytes; texture row pitch must be excluded before comparing",
+  "textures": [
+    {
+      "name": "SFX_SMOKE_A_CS",
+      "offset": 72704,
+      "bytes": 5440,
+      "width": 64,
+      "height": 64,
+      "mips": 4,
+      "source": "GLOBAL/InGameCommon.bun",
+      "top_mip_bytes": 4096,
+      "top_mip_sha256": "cc4448e513892f65f3a32bda4db21afd545c604c48ef5d24be8765769e8195d9",
+      "top_mip_fnv1a32": "91fe5fa0"
+    },
+    {
+      "name": "SFX_SMOKE_B_CS",
+      "offset": 78208,
+      "bytes": 21824,
+      "width": 128,
+      "height": 128,
+      "mips": 5,
+      "source": "GLOBAL/InGameCommon.bun",
+      "top_mip_bytes": 16384,
+      "top_mip_sha256": "ba02376ae5f6b5fdbba86e6173ca9dbf4d2c42283aac0663e95bc9bf5dcea5a4",
+      "top_mip_fnv1a32": "c6121c04"
+    },
+    {
+      "name": "NEONBLUR",
+      "offset": 117632,
+      "bytes": 5440,
+      "width": 64,
+      "height": 64,
+      "mips": 4,
+      "source": "GLOBAL/GLOBALB.BUN",
+      "top_mip_bytes": 4096,
+      "top_mip_sha256": "ab0789469221c3c4d953b37bb5cbc6a4f48cc0c67f00f4807a796500e21e9e06",
+      "top_mip_fnv1a32": "c2c8ac0e"
+    }
+  ],
+  "installed": false
+}

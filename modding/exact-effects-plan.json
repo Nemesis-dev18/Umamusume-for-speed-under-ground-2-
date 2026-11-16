@@ -1,0 +1,9 @@
+{
+  "target": "scripts/UmaRunner.asi",
+  "candidate": "modding/runtime/UmaRunner.asi",
+  "backup": "modding/runtime/UmaRunner.before-exact-effects.asi",
+  "before_sha256": "e7c23bc9c9c1a7af316e70e185713a4b2e8a9d1c3a0a7df2d35aadc67fa0e2a7",
+  "after_sha256": "de69bd92d7b1582e6b0fd024931a87f2ef8d912694167df8d0c4dd3be54fc570",
+  "installed": false,
+  "gameplay_verified": false
+}

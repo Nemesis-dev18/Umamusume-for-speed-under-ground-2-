@@ -8,6 +8,7 @@
 #include "uma_wheels.h"
 #include "uma_audio_win.h"
 #include "uma_selection_capture.h"
+#include "uma_effects.h"
 typedef HRESULT (WINAPI *RunnerPresent)(IDirect3DDevice9*,const RECT*,const RECT*,HWND,const RGNDATA*);
 typedef HRESULT (WINAPI *RunnerReset)(IDirect3DDevice9*,D3DPRESENT_PARAMETERS*);
 typedef HRESULT (WINAPI *RunnerPrimitive)(IDirect3DDevice9*,D3DPRIMITIVETYPE,UINT,UINT);
@@ -224,17 +225,17 @@ static UINT runner_primitive_vertices(D3DPRIMITIVETYPE type,UINT count){
  return type==D3DPT_TRIANGLELIST?count*3:((type==D3DPT_TRIANGLESTRIP || type==D3DPT_TRIANGLEFAN)?count+2:0);
 }
 static HRESULT WINAPI runner_primitive(IDirect3DDevice9 *device,D3DPRIMITIVETYPE type,UINT start,UINT count){
- EnterCriticalSection(&runner_lock);int capture=uma_selection_before(device);int hide=runner_wheel_draw(device,type,runner_primitive_vertices(type,count),count,"DP",NULL,0,start);LeaveCriticalSection(&runner_lock);
+ EnterCriticalSection(&runner_lock);int capture=uma_selection_before(device);int hide=uma_effect_draw(device) || runner_wheel_draw(device,type,runner_primitive_vertices(type,count),count,"DP",NULL,0,start);LeaveCriticalSection(&runner_lock);
  HRESULT result=hide?S_OK:runner_original_primitive(device,type,start,count);
  if(capture){EnterCriticalSection(&runner_lock);uma_selection_after(device,capture,"DP",runner_primitive_vertices(type,count),count);LeaveCriticalSection(&runner_lock);}return result;
 }
 static HRESULT WINAPI runner_primitive_up(IDirect3DDevice9 *device,D3DPRIMITIVETYPE type,UINT count,const void *vertices,UINT stride){
- EnterCriticalSection(&runner_lock);int capture=uma_selection_before(device);int hide=vertices && stride && runner_wheel_draw(device,type,runner_primitive_vertices(type,count),count,"DPUP",vertices,stride,0);LeaveCriticalSection(&runner_lock);
+ EnterCriticalSection(&runner_lock);int capture=uma_selection_before(device);int hide=uma_effect_draw(device) || (vertices && stride && runner_wheel_draw(device,type,runner_primitive_vertices(type,count),count,"DPUP",vertices,stride,0));LeaveCriticalSection(&runner_lock);
  HRESULT result=hide?IDirect3DDevice9_SetStreamSource(device,0,NULL,0,0):runner_original_primitive_up(device,type,count,vertices,stride);
  if(capture){EnterCriticalSection(&runner_lock);uma_selection_after(device,capture,"DPUP",runner_primitive_vertices(type,count),count);LeaveCriticalSection(&runner_lock);}return result;
 }
 static HRESULT WINAPI runner_indexed_up(IDirect3DDevice9 *device,D3DPRIMITIVETYPE type,UINT minimum,UINT vertices,UINT count,const void *indices,D3DFORMAT format,const void *data,UINT stride){
- EnterCriticalSection(&runner_lock);int capture=uma_selection_before(device);int hide=data && indices && stride && runner_wheel_draw(device,type,vertices,count,"DIPUP",minimum?NULL:data,stride,minimum);LeaveCriticalSection(&runner_lock);
+ EnterCriticalSection(&runner_lock);int capture=uma_selection_before(device);int hide=uma_effect_draw(device) || (data && indices && stride && runner_wheel_draw(device,type,vertices,count,"DIPUP",minimum?NULL:data,stride,minimum));LeaveCriticalSection(&runner_lock);
  HRESULT result;
  if(hide){result=IDirect3DDevice9_SetStreamSource(device,0,NULL,0,0);HRESULT cleared=IDirect3DDevice9_SetIndices(device,NULL);if(SUCCEEDED(result))result=cleared;}
  else result=runner_original_indexed_up(device,type,minimum,vertices,count,indices,format,data,stride);
@@ -242,6 +243,7 @@ static HRESULT WINAPI runner_indexed_up(IDirect3DDevice9 *device,D3DPRIMITIVETYP
 }
 static HRESULT WINAPI runner_draw(IDirect3DDevice9 *device,D3DPRIMITIVETYPE type,INT base,UINT minimum,UINT vertices,UINT start,UINT triangles){
  HRESULT result=E_FAIL;int replaced=0;EnterCriticalSection(&runner_lock);int capture=uma_selection_before(device);
+ if(uma_effect_draw(device)){LeaveCriticalSection(&runner_lock);return S_OK;}
  int candidate=type==D3DPT_TRIANGLELIST && vertices==runner_motion.vertices && triangles==runner_motion.indices/3;
  if(candidate)runner_candidates++;
  if(candidate || (runner_renderer.device==device && runner_frames-runner_last_owned<3 && (runner_scene.references<96 || (vertices<=4096 && type==D3DPT_TRIANGLELIST) || (runner_scene.tracked && vertices==runner_scene.previous_key.vertices && triangles==runner_scene.previous_key.primitives)))){
@@ -352,7 +354,7 @@ static DWORD WINAPI runner_start(void *module){
  D3DPRESENT_PARAMETERS pp={0};pp.Windowed=TRUE;pp.SwapEffect=D3DSWAPEFFECT_DISCARD;pp.hDeviceWindow=window;pp.BackBufferWidth=16;pp.BackBufferHeight=16;pp.BackBufferFormat=D3DFMT_A8R8G8B8;
  HRESULT result=window && api?IDirect3D9_CreateDevice(api,0,D3DDEVTYPE_HAL,window,D3DCREATE_SOFTWARE_VERTEXPROCESSING,&pp,&device):E_FAIL;
  int installed=SUCCEEDED(result) && runner_install(device);
- if(installed)(void)uma_audio_start(root,runner_log);
+ if(installed){(void)uma_audio_start(root,runner_log);int effects=uma_effects_load(root);if(runner_log){fprintf(runner_log,"EFFECTS exact source textures ready=%d\n",effects);fflush(runner_log);}}
  if(runner_log){fprintf(runner_log,"START native lighting runner installed=%d; graphics-derived speed uncalibrated; independent actor gait, spatial association\n",installed);fflush(runner_log);}
  if(device){IDirect3DDevice9_Release(device);}if(api){IDirect3D9_Release(api);}if(window){DestroyWindow(window);}
  if(!installed){uma_motion_free(&runner_motion);}return installed?0:1;
