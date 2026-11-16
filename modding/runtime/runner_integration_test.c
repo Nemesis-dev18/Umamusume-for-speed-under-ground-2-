@@ -38,6 +38,7 @@ int main(void){
   IDirect3DTexture9 *sample=NULL;UINT width=uma_effects[effect].width;CHECK(IDirect3DDevice9_CreateTexture(device,width,width,1,0,D3DFMT_DXT3,D3DPOOL_MANAGED,&sample,NULL));
   D3DLOCKED_RECT lock;CHECK(IDirect3DTexture9_LockRect(sample,0,&lock,NULL,0));for(UINT y=0;y<width/4;y++)memcpy((BYTE*)lock.pBits+y*lock.Pitch,uma_effects[effect].pixels+y*width*4,width*4);CHECK(IDirect3DTexture9_UnlockRect(sample,0));
   assert(uma_effect_texture(sample));CHECK(IDirect3DDevice9_SetTexture(device,0,(IDirect3DBaseTexture9*)sample));assert(uma_effect_draw(device));
+  IDirect3DBaseTexture9 *retained=NULL;CHECK(IDirect3DDevice9_GetTexture(device,0,&retained));assert(retained==(IDirect3DBaseTexture9*)sample);IDirect3DBaseTexture9_Release(retained);
   CHECK(IDirect3DTexture9_LockRect(sample,0,&lock,NULL,0));((BYTE*)lock.pBits)[0]^=1;CHECK(IDirect3DTexture9_UnlockRect(sample,0));assert(!uma_effect_texture(sample));assert(!uma_effect_draw(device));
   CHECK(IDirect3DDevice9_SetTexture(device,0,NULL));IDirect3DTexture9_Release(sample);
  }

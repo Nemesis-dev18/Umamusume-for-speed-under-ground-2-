@@ -8,5 +8,7 @@
   "gameplay_verified": false,
   "checkpoint": "feef6a68bb8191c4e1d130dd56b8906f86e58c23",
   "global_banks_original": true,
-  "bytes": 370565
+  "bytes": 370565,
+  "startup_profile_ready": true,
+  "live_pid": 95021
 }
