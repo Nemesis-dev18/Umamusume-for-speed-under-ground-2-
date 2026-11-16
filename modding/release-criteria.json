@@ -137,6 +137,8 @@
     "light_type_pending": false,
     "smoke_cleanup_installed": false,
     "underbody_glow_cleanup_installed": false,
-    "gameplay_verified": false
+    "gameplay_verified": false,
+    "exact_texture_filter_installed": true,
+    "global_banks_modified": false
   }
 }
