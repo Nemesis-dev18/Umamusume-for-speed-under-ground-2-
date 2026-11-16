@@ -1,0 +1,270 @@
+{
+  "scope": "Read-only Blender source audit; no optimization or export applied",
+  "bones": 272,
+  "meshes": [
+    {
+      "object": "ShiniNet式_オグリ〇ャップ_v1.1_mesh",
+      "vertices": 34537,
+      "triangles": 53024,
+      "unweighted_vertices": 0,
+      "more_than_four_influences": 0,
+      "weight_sum_range": [
+        0.9999992225784808,
+        1.0000000428408384
+      ],
+      "uv_present": true,
+      "uv_loops_outside_unit": 0,
+      "materials": [
+        {
+          "name": "肌",
+          "triangles": 10196
+        },
+        {
+          "name": "インナー",
+          "triangles": 2340
+        },
+        {
+          "name": "タイツ",
+          "triangles": 2164
+        },
+        {
+          "name": "スカート",
+          "triangles": 475
+        },
+        {
+          "name": "ベルト",
+          "triangles": 812
+        },
+        {
+          "name": "コート",
+          "triangles": 10450
+        },
+        {
+          "name": "スカーフ",
+          "triangles": 1344
+        },
+        {
+          "name": "金色",
+          "triangles": 256
+        },
+        {
+          "name": "装飾",
+          "triangles": 56
+        },
+        {
+          "name": "尻尾",
+          "triangles": 1080
+        },
+        {
+          "name": "ブーツ",
+          "triangles": 6472
+        },
+        {
+          "name": "ブーツ_タイツ部分",
+          "triangles": 160
+        },
+        {
+          "name": "モフモフ",
+          "triangles": 528
+        },
+        {
+          "name": "舌",
+          "triangles": 224
+        },
+        {
+          "name": "歯",
+          "triangles": 392
+        },
+        {
+          "name": "顔_線無し",
+          "triangles": 1077
+        },
+        {
+          "name": "顔",
+          "triangles": 2122
+        },
+        {
+          "name": "白目",
+          "triangles": 640
+        },
+        {
+          "name": "口内",
+          "triangles": 657
+        },
+        {
+          "name": "瞳",
+          "triangles": 640
+        },
+        {
+          "name": "瞳ハイライト",
+          "triangles": 192
+        },
+        {
+          "name": "瞳ハイライト透過",
+          "triangles": 64
+        },
+        {
+          "name": "睫毛眉毛",
+          "triangles": 252
+        },
+        {
+          "name": "髪",
+          "triangles": 6903
+        },
+        {
+          "name": "髪裏面",
+          "triangles": 760
+        },
+        {
+          "name": "額飾り",
+          "triangles": 140
+        },
+        {
+          "name": "耳",
+          "triangles": 1888
+        },
+        {
+          "name": "耳飾り",
+          "triangles": 192
+        },
+        {
+          "name": "カミカゲ",
+          "triangles": 480
+        },
+        {
+          "name": "照れ",
+          "triangles": 16
+        },
+        {
+          "name": "涙",
+          "triangles": 4
+        },
+        {
+          "name": "青ざめ",
+          "triangles": 48
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "name": "MAT_BODY1.png",
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "name": "MAT_BODY2.png",
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "name": "MAT_FACE.png",
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "name": "MAT_Hair.png",
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "name": "Render Result",
+      "size": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "SP_ブーツ.png",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "name": "SP_体.png",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "name": "SP_装飾.png",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "name": "SP_髪.png",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "name": "toon01.bmp",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "toon05.bmp",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "Toon_タイツ.png",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "Toon_ブーツ.png",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "Toon_服白.png",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "Toon_金.png",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "Toon_髪.png",
+      "size": [
+        32,
+        32
+      ]
+    },
+    {
+      "name": "その他.png",
+      "size": [
+        1024,
+        1024
+      ]
+    }
+  ]
+}
