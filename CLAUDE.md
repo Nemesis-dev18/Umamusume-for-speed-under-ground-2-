@@ -473,3 +473,5 @@ prepare_character_name.py prepara English/Spanish: STRchunk00039000, payloadhead
 Marcas identificadas por nombreexacto enInGameCommon:SKID_ROAD64x32formato8/P8, SKID_DIRT/GRASS64x32DXT3, TIREPATCH64x64DXT3. Se decodifican mip0conpaletteBGRA1024bytes y se guardan previews/identidadesSHA enskid-texture-identities.json. Filtro actualDXT3 no puede reconocerP8/copia expandidaRGBA deSKID_ROAD: requiere comparación contra representaciónreal GPU, no asumir todoslos efectosDXT3. No se modifica juego enejecución.
 
 Cambio nombre: dos pruebasunittest permanentes pasaron. Comparaciónexacta preserva tabla salvo puntero objetivo,tamaño ybytesañadidos; todaslasotrascadenas iguales ychunks posteriores idénticos. Rechazaoffsetinválido,100001entradas, clavesduplicadas,truncados yreaplicación. RespaldosEnglish/Spanish exactos antescheckpoint; juego cerrado. No se cambiaToyota/logotipo.
+
+InstaladasEnglish/SpanishKitasanBlack conSHAverificado trascheckpoint 8190f25fe787584b6b4a50dfcb58d0cbbbf786b3. No se lanza aún; nombrevisible ycentrado pendientes. Modelo/collider/runtime intactos.

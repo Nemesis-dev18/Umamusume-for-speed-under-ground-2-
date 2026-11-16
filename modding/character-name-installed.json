@@ -1,0 +1,25 @@
+{
+  "files": [
+    {
+      "target": "LANGUAGES/English.bin",
+      "candidate": "modding/staged-runtime/English.kitasan.bin",
+      "backup": "LANGUAGES/English.bin.before-kitasan-name.bak",
+      "before_sha256": "86cc5bdb5ca051b2fcb01e953fb6216520df5978c521fbeeec0ba3158e9a4448",
+      "after_sha256": "707a72ebca20bb8dfedf76db196f665df80ed92721c6fa9064602a8d71ce02b6",
+      "before_bytes": 270456,
+      "bytes": 270472
+    },
+    {
+      "target": "LANGUAGES/Spanish.bin",
+      "candidate": "modding/staged-runtime/Spanish.kitasan.bin",
+      "backup": "LANGUAGES/Spanish.bin.before-kitasan-name.bak",
+      "before_sha256": "5faaed7b161167976cf241c406e273601eeee1de31bfddf669b2c041815df06f",
+      "after_sha256": "2c9bfeff1a0b5508197b651a614875fa95feaa52d00541e6abfb2eb0bc5e44a8",
+      "before_bytes": 280312,
+      "bytes": 280332
+    }
+  ],
+  "installed": true,
+  "gameplay_verified": false,
+  "checkpoint": "8190f25fe787584b6b4a50dfcb58d0cbbbf786b3"
+}
