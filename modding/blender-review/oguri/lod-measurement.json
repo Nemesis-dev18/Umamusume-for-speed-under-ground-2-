@@ -11,5 +11,8 @@
     0.999998440989657,
     1.0000001327134669
   ],
+  "top_four_discarded_weight_max": 0.21922113560140133,
+  "top_four_discarded_weight_mean": 0.0001624263342148313,
+  "top_four_vertices_over_two_percent_loss": 34,
   "scope": "Measurement only: no mesh export, rig retarget, silhouette or deformation approval"
 }
