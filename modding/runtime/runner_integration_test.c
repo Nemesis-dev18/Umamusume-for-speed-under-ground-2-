@@ -3,8 +3,42 @@
 #define main renderer_component_main
 #include "renderer_test.c"
 #undef main
+static int headlight_expected,headlight_fail;static float headlight_original[16];
+static HRESULT WINAPI headlight_probe(IDirect3DDevice9 *d,D3DPRIMITIVETYPE t,INT b,UINT m,UINT v,UINT s,UINT n){
+ (void)t;(void)b;(void)m;(void)v;(void)s;(void)n;float current[16];assert(SUCCEEDED(IDirect3DDevice9_GetVertexShaderConstantF(d,4,current,4)));
+ if(headlight_expected){for(int i=0;i<16;i++)assert(current[i]==(i==15?-100.f:0));}else assert(!memcmp(current,headlight_original,sizeof(current)));
+ return headlight_fail?E_FAIL:S_OK;
+}
+static UmaMatrix headlight_fixture(void){
+ UmaMatrix view={0},projection={0},bias={0};view.m[0][2]=1;view.m[1][0]=-1;view.m[2][1]=-1;view.m[3][1]=.75f;view.m[3][2]=-10;view.m[3][3]=1;
+ projection.m[0][0]=projection.m[1][1]=1;projection.m[2][2]=100.f/99;projection.m[2][3]=1;projection.m[3][2]=-100.f/99;
+ for(int k=0;k<4;k++){bias.m[k][k]=1;}bias.m[3][0]=bias.m[3][1]=.5f;
+ UmaMatrix vp=uma_matrix_product(&view,&projection);return uma_matrix_product(&vp,&bias);
+}
 int main(void){
  freopen("modding/runtime/integration-test/result.txt","w",stdout);freopen("modding/runtime/integration-test/errors.txt","w",stderr);
+ /* Visual root stays upright through a complete car roll and pitch, without translation changes. */
+ runner_scene.anchor_valid=1;runner_actors[0].up_valid=1;runner_actors[0].up[2]=1;runner_actors[0].heading[0]=1;
+ for(int axis=0;axis<2;axis++)for(int angle=0;angle<=360;angle+=15){
+  float t=angle*3.14159265f/180,root[9];UmaMatrix body={0};for(int k=0;k<4;k++)body.m[k][k]=1;
+  int a=axis?0:1,b=2;body.m[a][a]=body.m[b][b]=cosf(t);body.m[a][b]=sinf(t);body.m[b][a]=-sinf(t);body.m[3][0]=23;
+  runner_actors[0].world=body;assert(runner_actor_root(&runner_actors[0].state,root));
+  for(int r=0;r<3;r++)for(int c=0;c<3;c++){float v=0;for(int k=0;k<3;k++)v+=root[r*3+k]*body.m[k][c];assert(fabsf(v-(r==c))<.0001f);}
+  assert(runner_actors[0].world.m[3][0]==23);
+ }
+ memset(runner_actors,0,sizeof(runner_actors));puts("PASS visual root: full roll/pitch cancellation with position unchanged");
+ UmaMatrix light=headlight_fixture(),identity={0};for(int k=0;k<4;k++)identity.m[k][k]=1;
+ runner_previous_reference_count=runner_scene.references=1;
+ runner_previous_references[0]=(UmaReference){.matrix=identity,.key={.buffer=123}};
+ runner_scene.reference[0]=runner_previous_references[0];runner_previous_anchor=identity;
+ runner_actors[0].used=1;runner_actors[0].view=identity;runner_actors[0].view.m[3][0]=10;
+ assert(runner_character_projector(&light,&identity));
+ UmaMatrix cut=identity;cut.m[0][0]=cut.m[1][1]=0;cut.m[0][1]=1;cut.m[1][0]=-1;cut.m[3][0]=42;cut.m[3][1]=-31;
+ runner_scene.reference[0].matrix=cut;assert(runner_character_projector(&light,&cut));
+ runner_actors[0].view.m[3][0]+=5;assert(!runner_character_projector(&light,&cut));
+ runner_scene.reference[0].key.buffer=999;assert(!runner_character_projector(&light,&cut));
+ runner_scene=(UmaSceneSpeed){0};runner_previous_reference_count=0;memset(runner_actors,0,sizeof(runner_actors));
+ puts("PASS headlight projector ownership: inverse projection survives a camera cut; foreign car and missing shared reference fail open");
  /* A stationary actor must remain idle while another runs and the camera orbits. */
  runner_scene.anchor_key=(UmaSceneKey){.buffer=777};runner_scene.anchor_valid=1;
  for(int f=0;f<180;f++){
@@ -81,6 +115,24 @@ int main(void){
   for(int i=0;i<640*480;i++)if(pixels[i]!=0xff252a32){changed++;if(pixels[i]!=0xffffffff)colored++;unsigned r=(pixels[i]>>16)&255,g=(pixels[i]>>8)&255,b=pixels[i]&255;if(g>25 && b>25)not_red++;if(r+g+b>60 && (abs((int)r-(int)b)>8 || abs((int)r-(int)g)>8))textured++;}
   assert(changed>1000);if(kind==1)assert(colored==0);else{assert(colored>1000 && textured>1000 && not_red>100);float restored_paint[4];CHECK(IDirect3DDevice9_GetVertexShaderConstantF(device,18,restored_paint,1));assert(!memcmp(restored_paint,paint,sizeof(paint)));save_ppm("modding/runtime/integration-test/replaced.ppm",pixels);}free(pixels);
  }
+ /* Exercise the real DIP wrapper, including constant restoration after a failed native draw. */
+ float before_headlight[256][4];CHECK(IDirect3DDevice9_GetVertexShaderConstantF(device,0,&before_headlight[0][0],256));
+ IDirect3DVertexShader9 *headlight_shader=NULL;CHECK(IDirect3DDevice9_CreateVertexShader(device,uma_vs_7,&headlight_shader));
+ CHECK(IDirect3DDevice9_SetVertexShader(device,headlight_shader));CHECK(IDirect3DDevice9_SetStreamSource(device,0,other,0,36));
+ for(int r=0;r<4;r++)for(int c=0;c<4;c++)headlight_original[r*4+c]=light.m[c][r];
+ CHECK(IDirect3DDevice9_SetVertexShaderConstantF(device,4,headlight_original,4));
+ float geometry[3][4]={{1,0,0,0},{0,1,0,0},{0,0,1,0}};CHECK(IDirect3DDevice9_SetVertexShaderConstantF(device,8,&geometry[0][0],3));
+ memset(runner_actors,0,sizeof(runner_actors));runner_actors[0].used=1;runner_actors[0].seen=runner_frames;runner_actors[0].view=identity;runner_actors[0].view.m[3][0]=10;
+ runner_scene.references=runner_previous_reference_count=1;runner_scene.reference[0]=(UmaReference){.matrix=identity,.key={.buffer=123}};runner_previous_references[0]=runner_scene.reference[0];runner_previous_anchor=identity;
+ UmaDrawIndexed real_draw=runner_original_draw;runner_original_draw=headlight_probe;
+ for(int pass=0;pass<3;pass++){
+  headlight_expected=pass!=1;headlight_fail=pass==2;runner_actors[0].view.m[3][0]=pass==1?15:10;
+  CHECK(IDirect3DDevice9_BeginScene(device));HRESULT status=IDirect3DDevice9_DrawIndexedPrimitive(device,D3DPT_TRIANGLELIST,0,0,runner_motion.vertices,0,runner_motion.indices/3);assert(status==(headlight_fail?E_FAIL:S_OK));CHECK(IDirect3DDevice9_EndScene(device));
+  float restored[16];CHECK(IDirect3DDevice9_GetVertexShaderConstantF(device,4,restored,4));assert(!memcmp(restored,headlight_original,sizeof(restored)));
+ }
+ runner_original_draw=real_draw;CHECK(IDirect3DDevice9_SetVertexShader(device,shader));CHECK(IDirect3DDevice9_SetVertexShaderConstantF(device,0,&before_headlight[0][0],256));IDirect3DVertexShader9_Release(headlight_shader);
+ runner_scene.references=runner_previous_reference_count=0;memset(runner_actors,0,sizeof(runner_actors));
+ puts("PASS headlight DIP: own projector suppressed, foreign projector retained, exact constants restored after success and native draw failure");
  /* Route every material at the Corolla's own wheel mount; a foreign car must pass through. */
  IDirect3DVertexBuffer9 *wheel_vb=NULL;IDirect3DIndexBuffer9 *wheel_ib=NULL;IDirect3DTexture9 *tire=NULL,*non_tire=NULL;
  UmaVertex quad[4]={0};for(int i=0;i<4;i++){quad[i].position[1]=(i&1)?.2f:-.2f;quad[i].position[2]=(i&2)?1.2f:.7f;quad[i].normal[0]=1;memset(quad[i].bgra,255,4);}const WORD wheel_indices[]={0,1,2,2,1,3};

@@ -1,7 +1,7 @@
 #ifndef UMA_SHADER_BRIDGE_H
 #define UMA_SHADER_BRIDGE_H
 /* GPU shader objects only. The original program is never modified. */
-typedef struct {IDirect3DVertexShader9 *original,*clone;DWORD *code;UINT bytes,declaration_at,used_inputs;int uv,worldview,worldviewproj,diffuse_min,diffuse_range;BOOL reference,supported,declare_uv;} UmaShaderEntry;
+typedef struct {IDirect3DVertexShader9 *original,*clone;DWORD *code;UINT bytes,declaration_at,used_inputs;int uv,worldview,worldviewproj,headlight,diffuse_min,diffuse_range;BOOL reference,supported,declare_uv;} UmaShaderEntry;
 typedef struct {UmaShaderEntry entries[32];unsigned next;} UmaShaderCache;
 static void uma_shader_entry_clear(UmaShaderEntry *entry){if(entry->original)IDirect3DVertexShader9_Release(entry->original);if(entry->clone)IDirect3DVertexShader9_Release(entry->clone);free(entry->code);memset(entry,0,sizeof(*entry));}
 static void uma_shader_cache_clear(UmaShaderCache *cache){for(unsigned i=0;i<32;i++)uma_shader_entry_clear(&cache->entries[i]);cache->next=0;}
@@ -16,6 +16,7 @@ static void uma_shader_ctab(UmaShaderEntry *entry,const DWORD *comment,UINT word
  for(DWORD i=0;i<number;i++){
   const BYTE *record=data+info+i*20;DWORD name=uma_le32(record);WORD kind,reg,count;memcpy(&kind,record+4,2);memcpy(&reg,record+6,2);memcpy(&count,record+8,2);
   if(name>bytes || kind!=2)continue;
+  if(count==4 && reg<=252 && bytes-name>=sizeof("HeadlightWVP") && !memcmp(data+name,"HeadlightWVP",sizeof("HeadlightWVP")))entry->headlight=reg;
   if(count==4 && reg<=252 && bytes-name>=sizeof("WorldViewProj") && !memcmp(data+name,"WorldViewProj",sizeof("WorldViewProj")))entry->worldviewproj=reg;
   if(count==3 && reg<=253 && bytes-name>=sizeof("WorldView") && !memcmp(data+name,"WorldView",sizeof("WorldView")))entry->worldview=reg;
   if(count==1 && reg<=255 && bytes-name>=sizeof("DiffuseMin") && !memcmp(data+name,"DiffuseMin",sizeof("DiffuseMin")))entry->diffuse_min=reg;
@@ -34,7 +35,7 @@ static void uma_shader_input_flags(DWORD token,const unsigned input[16],unsigned
  }
 }
 static void uma_shader_parse(UmaShaderEntry *entry){
- entry->uv=-1;entry->worldview=entry->worldviewproj=-1;entry->diffuse_min=entry->diffuse_range=-1;if(entry->bytes<8 || entry->code[0]!=0xfffe0101)return;
+ entry->uv=-1;entry->worldview=entry->worldviewproj=entry->headlight=-1;entry->diffuse_min=entry->diffuse_range=-1;if(entry->bytes<8 || entry->code[0]!=0xfffe0101)return;
  UINT words=entry->bytes/4,at=1;int canonical=1;unsigned input[16],temp[32][4]={{0}},address[4]={0},position[4]={0};for(unsigned i=0;i<16;i++)input[i]=4;
  while(at<words){
   DWORD instruction=entry->code[at++];unsigned op=instruction&65535;

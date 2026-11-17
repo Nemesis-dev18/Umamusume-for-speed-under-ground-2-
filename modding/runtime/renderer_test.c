@@ -41,14 +41,24 @@ static int check_native_lighting(IDirect3DDevice9 *device,const UmaMotion *motio
  float matrix[4][4];for(int r=0;r<4;r++)for(int c=0;c<4;c++)matrix[r][c]=combined->m[c][r];float diffuse[]={.25f,.25f,.25f,.125f};
  CHECK(IDirect3DDevice9_SetVertexShaderConstantF(device,0,&matrix[0][0],4));CHECK(IDirect3DDevice9_SetVertexShaderConstantF(device,4,diffuse,1));
  FILE *texture=fopen("modding/runtime/gpu-test/half-alpha.dds","rb");assert(texture);UmaD3D renderer={0};CHECK(uma_d3d_open(&renderer,device,motion,texture,observed_draw));fclose(texture);
- UmaMotionState state={0,.25f,1};CHECK(IDirect3DDevice9_Clear(device,0,NULL,D3DCLEAR_TARGET|D3DCLEAR_ZBUFFER,0xff252a32,1,0));CHECK(IDirect3DDevice9_BeginScene(device));CHECK(uma_d3d_draw(&renderer,&state,combined,0));CHECK(IDirect3DDevice9_EndScene(device));
+ UmaMotionState state={0,.25f,1};CHECK(IDirect3DDevice9_Clear(device,0,NULL,D3DCLEAR_TARGET|D3DCLEAR_ZBUFFER,0xff252a32,1,0));CHECK(IDirect3DDevice9_BeginScene(device));CHECK(uma_d3d_draw(&renderer,&state,combined,0,NULL));CHECK(IDirect3DDevice9_EndScene(device));
  IDirect3DVertexShader9 *same_shader=NULL;IDirect3DVertexDeclaration9 *same_declaration=NULL;CHECK(IDirect3DDevice9_GetVertexShader(device,&same_shader));CHECK(IDirect3DDevice9_GetVertexDeclaration(device,&same_declaration));assert(same_shader==shader && same_declaration==declaration);IDirect3DVertexShader9_Release(same_shader);IDirect3DVertexDeclaration9_Release(same_declaration);
  DWORD *pixels=read_pixels(device);UINT count=0;for(int i=0;i<640*480;i++)if(pixels[i]!=0xff252a32){DWORD rgb=pixels[i]&0xffffff;assert(rgb==0x804020 || rgb==0x7f4020);count++;}assert(count>1000);free(pixels);
  const DWORD depth_code[]={0xfffe0101,31,0x80000000,0x900f0000,20,0xc00f0000,0x90e40000,0xa0e40000,0xffff};IDirect3DVertexShader9 *depth_shader=NULL;
  CHECK(IDirect3DDevice9_CreateVertexShader(device,depth_code,&depth_shader));CHECK(IDirect3DDevice9_SetVertexShader(device,depth_shader));CHECK(IDirect3DDevice9_SetRenderState(device,D3DRS_COLORWRITEENABLE,0));
- DWORD *before=read_pixels(device);CHECK(IDirect3DDevice9_BeginScene(device));CHECK(uma_d3d_draw(&renderer,&state,combined,0));CHECK(IDirect3DDevice9_EndScene(device));pixels=read_pixels(device);assert(!memcmp(before,pixels,640*480*4));free(before);free(pixels);
+ DWORD *before=read_pixels(device);CHECK(IDirect3DDevice9_BeginScene(device));CHECK(uma_d3d_draw(&renderer,&state,combined,0,NULL));CHECK(IDirect3DDevice9_EndScene(device));pixels=read_pixels(device);assert(!memcmp(before,pixels,640*480*4));free(before);free(pixels);
  DWORD write=99;CHECK(IDirect3DDevice9_GetRenderState(device,D3DRS_COLORWRITEENABLE,&write));assert(write==0);CHECK(IDirect3DDevice9_SetRenderState(device,D3DRS_COLORWRITEENABLE,7));IDirect3DVertexShader9_Release(depth_shader);
  puts("PASS position-only depth shader gains UV input on private clone; color writes remain disabled and pixels unchanged");
+ CHECK(IDirect3DDevice9_SetVertexShader(device,shader));
+ DWORD *root_pixels[3];const float root_rotation[9]={1,0,0,0,0,1,0,-1,0};
+ for(int pass=0;pass<3;pass++){
+  CHECK(IDirect3DDevice9_Clear(device,0,NULL,D3DCLEAR_TARGET|D3DCLEAR_ZBUFFER,0xff252a32,1,0));
+  CHECK(IDirect3DDevice9_BeginScene(device));CHECK(uma_d3d_draw(&renderer,&state,combined,0,pass==1?root_rotation:NULL));CHECK(IDirect3DDevice9_EndScene(device));
+  assert(renderer.uploaded_root_valid==(pass==1));root_pixels[pass]=read_pixels(device);
+ }
+ assert(memcmp(root_pixels[0],root_pixels[1],640*480*4));assert(!memcmp(root_pixels[0],root_pixels[2],640*480*4));
+ for(int pass=0;pass<3;pass++)free(root_pixels[pass]);
+ puts("PASS visual root rotates the skinned GPU body and invalidates cache; removing correction restores exact baseline pixels");
  uma_d3d_close(&renderer);CHECK(IDirect3DDevice9_SetVertexShader(device,NULL));IDirect3DVertexShader9_Release(shader);IDirect3DVertexDeclaration9_Release(declaration);
  puts("PASS native vertex shader/declaration preserved, native diffuse lighting applied and texture alpha retained without blending");return 0;
 }
@@ -171,7 +181,7 @@ int main(int argc,char **argv){
   FILE *tex=fopen(textures[kind],"rb");assert(tex);CHECK(uma_d3d_open(&renderer,device,&motion,tex,observed_draw));fclose(tex);
   for(int frame=0;frame<(kind==2?4:1);frame++){
    state.idle_phase=0;state.run_phase=frame*.25f;state.run_blend=kind==2?1:0;
-   CHECK(IDirect3DDevice9_Clear(device,0,NULL,D3DCLEAR_TARGET|D3DCLEAR_ZBUFFER,0xff252a32,1,0));CHECK(IDirect3DDevice9_BeginScene(device));CHECK(uma_d3d_draw(&renderer,&state,&combined,-1));check_restored(device,white,vb,ib,&original);
+   CHECK(IDirect3DDevice9_Clear(device,0,NULL,D3DCLEAR_TARGET|D3DCLEAR_ZBUFFER,0xff252a32,1,0));CHECK(IDirect3DDevice9_BeginScene(device));CHECK(uma_d3d_draw(&renderer,&state,&combined,-1,NULL));check_restored(device,white,vb,ib,&original);
    CHECK(IDirect3DDevice9_DrawIndexedPrimitive(device,D3DPT_TRIANGLELIST,0,0,4,0,2));CHECK(IDirect3DDevice9_EndScene(device));
    DWORD *pixels=read_pixels(device);assert(pixels[8*640+8]==0xffffffff);UINT different=0,orange=0;DWORD hash=2166136261u;
    for(int y=20;y<480;y++)for(int x=0;x<640;x++){DWORD p=pixels[y*640+x];if(p!=0xff252a32)different++;if(p==0xffff8040)orange++;hash=(hash^p)*16777619u;}
@@ -181,14 +191,14 @@ int main(int argc,char **argv){
    free(pixels);
   }
   if(kind==2){
-   UmaMotionState invalid=state;invalid.idle_phase=NAN;CHECK(IDirect3DDevice9_BeginScene(device));assert(uma_d3d_draw(&renderer,&invalid,&combined,-1)==E_INVALIDARG);assert(!renderer.has_uploaded);CHECK(uma_d3d_draw(&renderer,&state,&combined,-1));CHECK(IDirect3DDevice9_EndScene(device));assert(renderer.has_uploaded);
+   UmaMotionState invalid=state;invalid.idle_phase=NAN;CHECK(IDirect3DDevice9_BeginScene(device));assert(uma_d3d_draw(&renderer,&invalid,&combined,-1,NULL)==E_INVALIDARG);assert(!renderer.has_uploaded);CHECK(uma_d3d_draw(&renderer,&state,&combined,-1,NULL));CHECK(IDirect3DDevice9_EndScene(device));assert(renderer.has_uploaded);
    DWORD *recovered=read_pixels(device);DWORD recovered_hash=2166136261u;for(int y=20;y<480;y++)for(int x=0;x<640;x++)recovered_hash=(recovered_hash^recovered[y*640+x])*16777619u;assert(recovered_hash==previous_hash);free(recovered);puts("PASS invalid pose invalidates upload cache; repeated valid pose recovers identical GPU pixels");
   }
-  fail_draw=1;CHECK(IDirect3DDevice9_BeginScene(device));assert(uma_d3d_draw(&renderer,&state,&combined,-1)==E_FAIL);check_restored(device,white,vb,ib,&original);CHECK(IDirect3DDevice9_EndScene(device));fail_draw=0;
+  fail_draw=1;CHECK(IDirect3DDevice9_BeginScene(device));assert(uma_d3d_draw(&renderer,&state,&combined,-1,NULL)==E_FAIL);check_restored(device,white,vb,ib,&original);CHECK(IDirect3DDevice9_EndScene(device));fail_draw=0;
   uma_d3d_close(&renderer);
  }
  assert(check_native_lighting(device,&motion,&combined)==0);
- CHECK(IDirect3DDevice9_Reset(device,&pp));input=fopen("modding/runtime/atlas.dds","rb");assert(input);CHECK(uma_d3d_open(&renderer,device,&motion,input,observed_draw));fclose(input);CHECK(IDirect3DDevice9_BeginScene(device));CHECK(uma_d3d_draw(&renderer,&state,&combined,-1));CHECK(IDirect3DDevice9_EndScene(device));uma_d3d_close(&renderer);
+ CHECK(IDirect3DDevice9_Reset(device,&pp));input=fopen("modding/runtime/atlas.dds","rb");assert(input);CHECK(uma_d3d_open(&renderer,device,&motion,input,observed_draw));fclose(input);CHECK(IDirect3DDevice9_BeginScene(device));CHECK(uma_d3d_draw(&renderer,&state,&combined,-1,NULL));CHECK(IDirect3DDevice9_EndScene(device));uma_d3d_close(&renderer);
  assert(uma_motion_step(&state,1.f/60,6,0));uma_motion_free(&motion);IDirect3DVertexBuffer9_Release(vb);IDirect3DIndexBuffer9_Release(ib);IDirect3DPixelShader9_Release(white);IDirect3DDevice9_Release(device);IDirect3D9_Release(api);DestroyWindow(window);
  printf("PASS all renderer checks, failure restoration and device reset; %u intercepted draws. No game integration tested.\n",draws);return 0;
 }
