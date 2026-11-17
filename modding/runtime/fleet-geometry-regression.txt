@@ -1,0 +1,6 @@
+test_all_slots_have_only_carriers_and_correct_hulls (test_fleet_geometry.FleetGeometry.test_all_slots_have_only_carriers_and_correct_hulls) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 1.189s
+
+OK

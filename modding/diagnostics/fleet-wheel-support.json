@@ -1,0 +1,233 @@
+[
+  {
+    "name": "PEUGOT",
+    "offset": 7101712,
+    "record_bytes": 2192,
+    "mass_stored": 1.0550000667572021,
+    "wheels": [
+      {
+        "longitudinal": 1.1850000619888306,
+        "height": 0.09754001349210739,
+        "radius": 0.29545003175735474,
+        "lateral": 0.8000000715255737
+      },
+      {
+        "longitudinal": 1.1850000619888306,
+        "height": 0.09754001349210739,
+        "radius": 0.29545003175735474,
+        "lateral": -0.8000000715255737
+      },
+      {
+        "longitudinal": -1.308000087738037,
+        "height": 0.09754001349210739,
+        "radius": 0.29545003175735474,
+        "lateral": -0.8100000619888306
+      },
+      {
+        "longitudinal": -1.308000087738037,
+        "height": 0.09754001349210739,
+        "radius": 0.29545003175735474,
+        "lateral": 0.8100000619888306
+      }
+    ],
+    "interpretation": "Candidate units from NFSU2 format reference; no physics edits"
+  },
+  {
+    "name": "FOCUS",
+    "offset": 7103904,
+    "record_bytes": 2192,
+    "mass_stored": 1.149999976158142,
+    "wheels": [
+      {
+        "longitudinal": 1.1800000667572021,
+        "height": 0.09754001349210739,
+        "radius": 0.30750003457069397,
+        "lateral": 0.8300000429153442
+      },
+      {
+        "longitudinal": 1.1800000667572021,
+        "height": 0.09754001349210739,
+        "radius": 0.30750003457069397,
+        "lateral": -0.8300000429153442
+      },
+      {
+        "longitudinal": -1.440000057220459,
+        "height": 0.09754001349210739,
+        "radius": 0.30750003457069397,
+        "lateral": -0.8300000429153442
+      },
+      {
+        "longitudinal": -1.440000057220459,
+        "height": 0.09754001349210739,
+        "radius": 0.30750003457069397,
+        "lateral": 0.8300000429153442
+      }
+    ],
+    "interpretation": "Candidate units from NFSU2 format reference; no physics edits"
+  },
+  {
+    "name": "COROLLA",
+    "offset": 7106096,
+    "record_bytes": 2192,
+    "mass_stored": 0.9700000882148743,
+    "wheels": [
+      {
+        "longitudinal": 1.350000023841858,
+        "height": 0.27500003576278687,
+        "radius": 0.26500004529953003,
+        "lateral": 0.7800000905990601
+      },
+      {
+        "longitudinal": 1.350000023841858,
+        "height": 0.27500003576278687,
+        "radius": 0.26500004529953003,
+        "lateral": -0.7800000905990601
+      },
+      {
+        "longitudinal": -1.0499999523162842,
+        "height": 0.27500003576278687,
+        "radius": 0.33400002121925354,
+        "lateral": -0.7800000905990601
+      },
+      {
+        "longitudinal": -1.0499999523162842,
+        "height": 0.27500003576278687,
+        "radius": 0.33400002121925354,
+        "lateral": 0.7800000905990601
+      }
+    ],
+    "interpretation": "Candidate units from NFSU2 format reference; no physics edits"
+  },
+  {
+    "name": "240SX",
+    "offset": 7108288,
+    "record_bytes": 2192,
+    "mass_stored": 1.2200000286102295,
+    "wheels": [
+      {
+        "longitudinal": 1.3900001049041748,
+        "height": 0.08000001311302185,
+        "radius": 0.3135000467300415,
+        "lateral": 0.8209400773048401
+      },
+      {
+        "longitudinal": 1.3900001049041748,
+        "height": 0.08000001311302185,
+        "radius": 0.3135000467300415,
+        "lateral": -0.8209400773048401
+      },
+      {
+        "longitudinal": -1.0487799644470215,
+        "height": 0.08000001311302185,
+        "radius": 0.3135000467300415,
+        "lateral": -0.8006700873374939
+      },
+      {
+        "longitudinal": -1.0487799644470215,
+        "height": 0.08000001311302185,
+        "radius": 0.3135000467300415,
+        "lateral": 0.8006700873374939
+      }
+    ],
+    "interpretation": "Candidate units from NFSU2 format reference; no physics edits"
+  },
+  {
+    "name": "MIATA",
+    "offset": 7110480,
+    "record_bytes": 2192,
+    "mass_stored": 1.0399999618530273,
+    "wheels": [
+      {
+        "longitudinal": 1.0299999713897705,
+        "height": 0.12200000882148743,
+        "radius": 0.30150002241134644,
+        "lateral": 0.815000057220459
+      },
+      {
+        "longitudinal": 1.0299999713897705,
+        "height": 0.12200000882148743,
+        "radius": 0.30150002241134644,
+        "lateral": -0.815000057220459
+      },
+      {
+        "longitudinal": -1.2599999904632568,
+        "height": 0.12200000882148743,
+        "radius": 0.30150002241134644,
+        "lateral": -0.815000057220459
+      },
+      {
+        "longitudinal": -1.2599999904632568,
+        "height": 0.12200000882148743,
+        "radius": 0.30150002241134644,
+        "lateral": 0.815000057220459
+      }
+    ],
+    "interpretation": "Candidate units from NFSU2 format reference; no physics edits"
+  },
+  {
+    "name": "PEUGOT106",
+    "offset": 7114864,
+    "record_bytes": 2192,
+    "mass_stored": 0.9610000848770142,
+    "wheels": [
+      {
+        "longitudinal": 1.190000057220459,
+        "height": 0.10500001162290573,
+        "radius": 0.28060004115104675,
+        "lateral": 0.7700001001358032
+      },
+      {
+        "longitudinal": 1.190000057220459,
+        "height": 0.10500001162290573,
+        "radius": 0.28060004115104675,
+        "lateral": -0.7700001001358032
+      },
+      {
+        "longitudinal": -1.1850000619888306,
+        "height": 0.10500001162290573,
+        "radius": 0.28060004115104675,
+        "lateral": -0.7600000500679016
+      },
+      {
+        "longitudinal": -1.1850000619888306,
+        "height": 0.10500001162290573,
+        "radius": 0.28060004115104675,
+        "lateral": 0.7600000500679016
+      }
+    ],
+    "interpretation": "Candidate units from NFSU2 format reference; no physics edits"
+  },
+  {
+    "name": "CORSA",
+    "offset": 7117056,
+    "record_bytes": 2192,
+    "mass_stored": 1.0820000171661377,
+    "wheels": [
+      {
+        "longitudinal": 1.146340012550354,
+        "height": 0.19510002434253693,
+        "radius": 0.29225003719329834,
+        "lateral": 0.8209400773048401
+      },
+      {
+        "longitudinal": 1.146340012550354,
+        "height": 0.19510002434253693,
+        "radius": 0.29225003719329834,
+        "lateral": -0.8209400773048401
+      },
+      {
+        "longitudinal": -1.3414599895477295,
+        "height": 0.19510002434253693,
+        "radius": 0.29225003719329834,
+        "lateral": -0.8209400773048401
+      },
+      {
+        "longitudinal": -1.3414599895477295,
+        "height": 0.19510002434253693,
+        "radius": 0.29225003719329834,
+        "lateral": 0.8209400773048401
+      }
+    ],
+    "interpretation": "Candidate units from NFSU2 format reference; no physics edits"
+  }
+]

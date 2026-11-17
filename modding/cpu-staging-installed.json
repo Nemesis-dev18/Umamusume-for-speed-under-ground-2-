@@ -1,0 +1,14 @@
+{
+  "target": "scripts/UmaRunner.asi",
+  "candidate": "modding/runtime/UmaRunner.cpu-staging.asi",
+  "backup": "scripts/UmaRunner.asi.before-cpu-staging.bak",
+  "before_sha256": "a2861b402ca560c0b4ecaa0b56a048aea4eebd6468757e4a6cce60b0eef7c63c",
+  "after_sha256": "a60466bbe2cf94358e60e09c7113b5e149a3c852d7bc19bc77f0e9ce2ac7ed8a",
+  "bytes": 384447,
+  "checkpoint": "e10c8d5",
+  "gpu_images_identical": 4,
+  "seven_models_verified": true,
+  "visual_orientation_logging": true,
+  "gameplay_verified": false,
+  "shadows_unchanged": true
+}

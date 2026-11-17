@@ -1,0 +1,15 @@
+{
+  "restored_texture_files": [
+    "CARS/COROLLA/TEXTURES.BIN",
+    "CARS/240SX/TEXTURES.BIN",
+    "CARS/MIATA/TEXTURES.BIN",
+    "CARS/FOCUS/TEXTURES.BIN",
+    "CARS/PEUGOT/TEXTURES.BIN",
+    "CARS/PEUGOT106/TEXTURES.BIN",
+    "CARS/CORSA/TEXTURES.BIN"
+  ],
+  "module_unchanged": true,
+  "models_unchanged": true,
+  "menu_remains_pre_chibi": true,
+  "cause_confirmed": false
+}

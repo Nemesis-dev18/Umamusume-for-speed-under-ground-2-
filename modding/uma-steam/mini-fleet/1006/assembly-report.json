@@ -1,0 +1,18 @@
+{
+  "name": "Oguri Cap",
+  "vertices": 8831,
+  "skins": 3,
+  "head_attachment": "Neck rest transform",
+  "tail_attachment": null,
+  "game_integrated": false,
+  "visual_approved": false,
+  "unbound_submeshes_skipped": [
+    {
+      "mesh": "M_Body",
+      "submesh": 1
+    }
+  ],
+  "native_neutral_transforms": 6,
+  "body_scale": 1,
+  "eye_depth_pass_required": true
+}

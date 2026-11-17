@@ -1,0 +1,44 @@
+{
+  "source_sha256": "2208f3e6a1323947bff073f14be2ddcf25af4c3a2f4c3a73a9162501df08b731",
+  "characters": [
+    {
+      "id": 1068,
+      "slot": "COROLLA",
+      "installed_badge_and_label_decoded": true
+    },
+    {
+      "id": 1052,
+      "slot": "240SX",
+      "installed_badge_and_label_decoded": true
+    },
+    {
+      "id": 1032,
+      "slot": "MIATA",
+      "installed_badge_and_label_decoded": true
+    },
+    {
+      "id": 1062,
+      "slot": "FOCUS",
+      "installed_badge_and_label_decoded": true
+    },
+    {
+      "id": 1015,
+      "slot": "PEUGOT",
+      "installed_badge_and_label_decoded": true
+    },
+    {
+      "id": 1006,
+      "slot": "PEUGOT106",
+      "installed_badge_and_label_decoded": true
+    },
+    {
+      "id": 1058,
+      "slot": "CORSA",
+      "installed_badge_and_label_decoded": true
+    }
+  ],
+  "scope": "Decoded installed textures laid out for inspection; not an in-game screenshot",
+  "game_menu_verified": false,
+  "texture_sheet_inspected": true,
+  "inspection": "Seven distinct decoded chibis and correct readable labels; transparent backgrounds; no text clipping on review sheet. Native game layout not verified."
+}

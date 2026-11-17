@@ -1,0 +1,11 @@
+{
+  "target": "scripts/UmaRunner.asi",
+  "candidate": "modding/runtime/UmaRunner.state-reuse.asi",
+  "backup": "scripts/UmaRunner.asi.before-state-reuse.bak",
+  "before_sha256": "90063d9a4e47342d0bc931e381e18f12b888efcc7713f9f5a242bfa16b55f48c",
+  "after_sha256": "a2861b402ca560c0b4ecaa0b56a048aea4eebd6468757e4a6cce60b0eef7c63c",
+  "bytes": 383935,
+  "independent_hosts_passed": true,
+  "gameplay_verified": false,
+  "shadow_textures_changed": false
+}

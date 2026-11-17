@@ -1,0 +1,47 @@
+INFO Draco mesh compression is available, use library at /home/nemesis/Vídeos/proyecto inginversa/NFSU2-Uma-Prueba/modding/tools/blender-portable/blender-4.5.16-linux-x64/4.5/scripts/addons_core/io_scene_gltf2/libextern_draco.so
+19:37:19 | INFO: Starting glTF 2.0 export
+19:37:19 | INFO: Extracting primitive: ShiniNet式_オグリ〇ャップ_v1.1
+19:37:19 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+19:37:19 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+19:37:19 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+19:37:19 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+19:37:19 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+19:37:19 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+19:37:19 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+19:37:19 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+19:37:20 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+19:37:20 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+19:37:20 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+19:37:20 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+19:37:20 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+19:37:20 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+19:37:20 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+19:37:20 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+19:37:20 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+19:37:20 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+19:37:20 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+19:37:20 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+19:37:20 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+19:37:20 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+19:37:20 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+19:37:20 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+19:37:20 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+19:37:20 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+19:37:20 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+19:37:20 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+19:37:20 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+19:37:20 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+19:37:20 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+19:37:20 | INFO: Primitives created: 32
+19:37:20 | INFO: Finished glTF 2.0 export in 0.8192367553710938 s
+
+19:37:20 | INFO: Data are loaded, start creating Blender stuff
+19:37:20 | INFO: Blender create Mesh node ShiniNet式_オグリ〇ャップ_v1.1
+19:37:20 | INFO: glTF import finished in 0.38s
+REIMPORT OBJECTS [('Icosphere', 42, [], False), ('ShiniNet式_オグリ〇ャップ_v1.1_mesh', 34705, [('ARMATURE', 'ShiniNet式_オグリ〇ャップ_v1.1_arm')], False)]
+WEIGHT AUDIT 34705 34705
+{"source_scene_sha256": "4055e79eab2b56a5dd8962ef89846d3bf2d359ce7d04fb6a1f449fe87d45c78a", "exchange_sha256": "7655530107ce72f687d54da22f7e91177ebcc2eb1f327d455be9a7aa822c1e6d", "bytes": 4886840, "excluded_bone_display_helpers": [{"name": "Icosphere", "vertices": 42}], "reimport_meshes": 1, "reimport_vertices": 34705, "weighted_vertices": 34705, "unweighted_vertices": 0, "weight_roundtrip_passed": true, "rigs": 1, "bones": 272, "images": 5, "scope": "Exchange model with skins, no morphs, physics or animation; material translation requires visual review; not runtime-ready", "unmatched_vertices": 0, "max_normalized_weight_l1_error": 3.4430237662330145e-08, "comparison_policy": "Expected Blender export threshold: omit weights <=0.0001 then normalize; exact source weights preserved separately", "exact_source_weight_sidecar": "exact-source-weights.json"}
+Blender 4.5.16 LTS (hash 3f6797307da5 built 2026-11-10 01:31:21)
+Read blend: "/home/nemesis/Vídeos/proyecto inginversa/NFSU2-Uma-Prueba/modding/blender-review/oguri/oguri-source.blend"
+
+Blender quit

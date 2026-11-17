@@ -1,0 +1,189 @@
+{
+  "files": [
+    {
+      "target": "CARS/COROLLA/GEOMETRY.BIN",
+      "after_sha256": "5dda898e1baeab3fb41787c8d59e768ba2f04d593b930b5848ee50f1cd72351b",
+      "existed": true,
+      "backup": "CARS/COROLLA/GEOMETRY.BIN.before-fleet-integration.bak",
+      "before_sha256": "e71d2b52a168546043300285aab71732c02f7ea8c019d760f711eb6c82840e32"
+    },
+    {
+      "target": "CARS/240SX/GEOMETRY.BIN",
+      "after_sha256": "548c56381a4b915ce3df02c6217c9e6ed0042a50d6c9a5448edb64aefce198a7",
+      "existed": true,
+      "backup": "CARS/240SX/GEOMETRY.BIN.before-fleet-integration.bak",
+      "before_sha256": "4c5c3466006759c765fdf1b0ae10e93f25591d88326f899ca5a86d3772c0bd82"
+    },
+    {
+      "target": "CARS/MIATA/GEOMETRY.BIN",
+      "after_sha256": "407d0e2438fc18da2157063e25b9a27ca80698ba146c795a6b9b626ef759969b",
+      "existed": true,
+      "backup": "CARS/MIATA/GEOMETRY.BIN.before-fleet-integration.bak",
+      "before_sha256": "c41b761034837be52ef9d31e089090e3ef8a38781ea729680680c5ec5907903f"
+    },
+    {
+      "target": "CARS/FOCUS/GEOMETRY.BIN",
+      "after_sha256": "bd6650213dfc32ba530d6f7750c68d441cadd2286fc7064d69aba51cf37ab439",
+      "existed": true,
+      "backup": "CARS/FOCUS/GEOMETRY.BIN.before-fleet-integration.bak",
+      "before_sha256": "f527d413d283eb528fcf4ba32b2236908cd200bdeb2122154cbfd9ecb9c90c31"
+    },
+    {
+      "target": "CARS/PEUGOT/GEOMETRY.BIN",
+      "after_sha256": "e593f8b17532431ef2a1a140bc7abeeb8bef30bfe7f7503eb977e04c5bcd109e",
+      "existed": true,
+      "backup": "CARS/PEUGOT/GEOMETRY.BIN.before-fleet-integration.bak",
+      "before_sha256": "02227d62785eac6014a33de226c2ba0860a9cf1d4913a6dfd13f4d8735b7102c"
+    },
+    {
+      "target": "CARS/PEUGOT106/GEOMETRY.BIN",
+      "after_sha256": "ecb27b0d5de71de0fac49f8c9238b38610bd41601667f5e09e91e89ea896727d",
+      "existed": true,
+      "backup": "CARS/PEUGOT106/GEOMETRY.BIN.before-fleet-integration.bak",
+      "before_sha256": "ca7893022fb04aa5673288291a196454441381a4b7e52693d53dfa22dda6203d"
+    },
+    {
+      "target": "CARS/CORSA/GEOMETRY.BIN",
+      "after_sha256": "d2fe395aafe5e37c541f225a9728f7fb85f0c182b17238882e9b50825337c19a",
+      "existed": true,
+      "backup": "CARS/CORSA/GEOMETRY.BIN.before-fleet-integration.bak",
+      "before_sha256": "a0d328a7cbda5098ff48b1bd467c8e5cca8a764ecc78813730e99fa8a5281ed1"
+    },
+    {
+      "target": "LANGUAGES/English.bin",
+      "after_sha256": "a8930a998e45abca1ef53d04977aee06df5f6881ba1a677c00e43cdd77a1dd08",
+      "existed": true,
+      "backup": "LANGUAGES/English.bin.before-fleet-integration.bak",
+      "before_sha256": "707a72ebca20bb8dfedf76db196f665df80ed92721c6fa9064602a8d71ce02b6"
+    },
+    {
+      "target": "LANGUAGES/Spanish.bin",
+      "after_sha256": "7acbf6271028639634dee28130922545a8257ef949eea81d35ebb87cd6ea4a9c",
+      "existed": true,
+      "backup": "LANGUAGES/Spanish.bin.before-fleet-integration.bak",
+      "before_sha256": "2c9bfeff1a0b5508197b651a614875fa95feaa52d00541e6abfb2eb0bc5e44a8"
+    },
+    {
+      "target": "FRONTEND/FrontB.lzc",
+      "after_sha256": "6acdf043e47c9c7ee58e7781f0926e2cf8f109bdfe57e60e330657b24de8703e",
+      "existed": true,
+      "backup": "FRONTEND/FrontB.lzc.before-fleet-integration.bak",
+      "before_sha256": "38d74d00a3eb986340b2efd47c114955c44a56b39600e7f51fa54331a34cc725"
+    },
+    {
+      "target": "scripts/UmaRunner.asi",
+      "after_sha256": "92470b9a3ca87d621196d9ae6101af3deae6187d33cc0882ecb4badbe0aa8ffc",
+      "existed": true,
+      "backup": "scripts/UmaRunner.asi.before-fleet-integration.bak",
+      "before_sha256": "3c4396d7f66fc5884c8a49a6ea681040b1533b2d1c1ee9e24838fee6041c09a0"
+    },
+    {
+      "target": "modding/runtime/fleet/1068/model.umab",
+      "after_sha256": "032337ee56dc1af0c47a7367786dfc5b5b3418b1a23783370cfd915c1ceb54dd",
+      "existed": false
+    },
+    {
+      "target": "modding/runtime/fleet/1068/atlas.dds",
+      "after_sha256": "2fa4c5842646097d4bc3dff1390f7a536b52bd36ddd7e7f752044974b7a2c2e5",
+      "existed": false
+    },
+    {
+      "target": "modding/runtime/fleet/1068/anchors.bin",
+      "after_sha256": "c0bd5b0733323eda34590d68e83feee9d6a787ece4d55aa14cb995f184c3d262",
+      "existed": false
+    },
+    {
+      "target": "modding/runtime/fleet/1052/model.umab",
+      "after_sha256": "1fe27029ff344083ff308b94688947ce9e9dbf821d35788ba9210c1591924d0d",
+      "existed": false
+    },
+    {
+      "target": "modding/runtime/fleet/1052/atlas.dds",
+      "after_sha256": "7db3f5c632272591f46e89ea26c2a65db01fcce8d0871adb8d0b8b8c5aac6ff1",
+      "existed": false
+    },
+    {
+      "target": "modding/runtime/fleet/1052/anchors.bin",
+      "after_sha256": "d82a06bacfad64dbb373e96198737e31f9327cbc88c86db16ea7108666861354",
+      "existed": false
+    },
+    {
+      "target": "modding/runtime/fleet/1032/model.umab",
+      "after_sha256": "ab7899ca62ac0abbe6b319722bb16d608005f15e338cfcfabfb41ed37144380b",
+      "existed": false
+    },
+    {
+      "target": "modding/runtime/fleet/1032/atlas.dds",
+      "after_sha256": "94a10272ba24ba38c6106f296e105bc84b8b466029fc1ca74f3da0d93cf60819",
+      "existed": false
+    },
+    {
+      "target": "modding/runtime/fleet/1032/anchors.bin",
+      "after_sha256": "19325e47b8dbb7bdd0be0aa8322121551c7a1e22494de0dcab423bc836782b5c",
+      "existed": false
+    },
+    {
+      "target": "modding/runtime/fleet/1062/model.umab",
+      "after_sha256": "0390604f3016c946fb2ff89d095c84e32948513722c88770a4141ea1b7d4edb2",
+      "existed": false
+    },
+    {
+      "target": "modding/runtime/fleet/1062/atlas.dds",
+      "after_sha256": "34891ba0a42892d9262bfea0b13a0f25635031eab06247a32a0694c38c7225e1",
+      "existed": false
+    },
+    {
+      "target": "modding/runtime/fleet/1062/anchors.bin",
+      "after_sha256": "22404d43cfdeba57bcb8952030d10f3df03e13c3d1c69cfdbd9866ad5f87150c",
+      "existed": false
+    },
+    {
+      "target": "modding/runtime/fleet/1015/model.umab",
+      "after_sha256": "84e48ae2ce27ae03f57d163e5978f5f4442665489a155421db4863e70f09ad9c",
+      "existed": false
+    },
+    {
+      "target": "modding/runtime/fleet/1015/atlas.dds",
+      "after_sha256": "6b6831e620d7de04feb5891f0b0162928d4097e754866cb066895312def17ace",
+      "existed": false
+    },
+    {
+      "target": "modding/runtime/fleet/1015/anchors.bin",
+      "after_sha256": "a4f972caf9c5992789f868291e22f8c06c1e6508dfaa4770f57c3ec420089c90",
+      "existed": false
+    },
+    {
+      "target": "modding/runtime/fleet/1006/model.umab",
+      "after_sha256": "f56289617fde3971b1c093717773406c47d256292f7c69a1fca2139b905885a7",
+      "existed": false
+    },
+    {
+      "target": "modding/runtime/fleet/1006/atlas.dds",
+      "after_sha256": "c08ba84ac09c5062c2b614632d56ea6b9320e8e5390103ca902f6fceace34d15",
+      "existed": false
+    },
+    {
+      "target": "modding/runtime/fleet/1006/anchors.bin",
+      "after_sha256": "2e4237d10089333d1fee7c88d63262c77e7cfd76a0680f46dcf0f8ece02e578f",
+      "existed": false
+    },
+    {
+      "target": "modding/runtime/fleet/1058/model.umab",
+      "after_sha256": "7f40e5f297fde55ee860359055361df7c98b6036a783af9ea7feb4492003b6a4",
+      "existed": false
+    },
+    {
+      "target": "modding/runtime/fleet/1058/atlas.dds",
+      "after_sha256": "3666a316414d70f6dad793912e9836f432bc92710042518b69778064f17b06b7",
+      "existed": false
+    },
+    {
+      "target": "modding/runtime/fleet/1058/anchors.bin",
+      "after_sha256": "920a99bccebead44e2cbb314519556232ff5a79a0109c366f1cb2d47889b5c04",
+      "existed": false
+    }
+  ],
+  "installed": true,
+  "gameplay_verified": false,
+  "menu_badges_finished": false
+}

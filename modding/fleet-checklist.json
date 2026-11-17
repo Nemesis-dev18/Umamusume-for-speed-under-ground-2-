@@ -29,9 +29,9 @@
       ],
       "target_eye_material_pass": false,
       "game_motion_asset_packed": true,
-      "geometry_container_rebuilt": false,
+      "geometry_container_rebuilt": true,
       "collider_adapted": false,
-      "unique_runtime_model_identity": false,
+      "unique_runtime_model_identity": true,
       "menu_art_approved": false,
       "selection_verified": false,
       "race_verified": false,
@@ -41,8 +41,10 @@
       "neutral_iris_bake_verified_standalone": true,
       "native_atlas_mips_packed": true,
       "runtime_upload_multi_model_support_tested": true,
-      "installed_new_model": false,
-      "neutral_expression_limit": "Iris baked to face UVs; animated facial expressions are not implemented."
+      "installed_new_model": true,
+      "neutral_expression_limit": "Iris baked to face UVs; animated facial expressions are not implemented.",
+      "collider_data_adapted": true,
+      "qualitative_fleet_performance_feedback": "User reports clear improvement after single-pass upload recognition; per-model FPS unmeasured"
     },
     {
       "id": 1052,
@@ -70,9 +72,9 @@
       ],
       "target_eye_material_pass": false,
       "game_motion_asset_packed": true,
-      "geometry_container_rebuilt": false,
+      "geometry_container_rebuilt": true,
       "collider_adapted": false,
-      "unique_runtime_model_identity": false,
+      "unique_runtime_model_identity": true,
       "menu_art_approved": false,
       "selection_verified": false,
       "race_verified": false,
@@ -82,8 +84,10 @@
       "neutral_iris_bake_verified_standalone": true,
       "native_atlas_mips_packed": true,
       "runtime_upload_multi_model_support_tested": true,
-      "installed_new_model": false,
-      "neutral_expression_limit": "Iris baked to face UVs; animated facial expressions are not implemented."
+      "installed_new_model": true,
+      "neutral_expression_limit": "Iris baked to face UVs; animated facial expressions are not implemented.",
+      "collider_data_adapted": true,
+      "qualitative_fleet_performance_feedback": "User reports clear improvement after single-pass upload recognition; per-model FPS unmeasured"
     },
     {
       "id": 1032,
@@ -111,9 +115,9 @@
       ],
       "target_eye_material_pass": false,
       "game_motion_asset_packed": true,
-      "geometry_container_rebuilt": false,
+      "geometry_container_rebuilt": true,
       "collider_adapted": false,
-      "unique_runtime_model_identity": false,
+      "unique_runtime_model_identity": true,
       "menu_art_approved": false,
       "selection_verified": false,
       "race_verified": false,
@@ -123,8 +127,10 @@
       "neutral_iris_bake_verified_standalone": true,
       "native_atlas_mips_packed": true,
       "runtime_upload_multi_model_support_tested": true,
-      "installed_new_model": false,
-      "neutral_expression_limit": "Iris baked to face UVs; animated facial expressions are not implemented."
+      "installed_new_model": true,
+      "neutral_expression_limit": "Iris baked to face UVs; animated facial expressions are not implemented.",
+      "collider_data_adapted": true,
+      "qualitative_fleet_performance_feedback": "User reports clear improvement after single-pass upload recognition; per-model FPS unmeasured"
     },
     {
       "id": 1062,
@@ -152,9 +158,9 @@
       ],
       "target_eye_material_pass": false,
       "game_motion_asset_packed": true,
-      "geometry_container_rebuilt": false,
+      "geometry_container_rebuilt": true,
       "collider_adapted": false,
-      "unique_runtime_model_identity": false,
+      "unique_runtime_model_identity": true,
       "menu_art_approved": false,
       "selection_verified": false,
       "race_verified": false,
@@ -164,8 +170,10 @@
       "neutral_iris_bake_verified_standalone": true,
       "native_atlas_mips_packed": true,
       "runtime_upload_multi_model_support_tested": true,
-      "installed_new_model": false,
-      "neutral_expression_limit": "Iris baked to face UVs; animated facial expressions are not implemented."
+      "installed_new_model": true,
+      "neutral_expression_limit": "Iris baked to face UVs; animated facial expressions are not implemented.",
+      "collider_data_adapted": true,
+      "qualitative_fleet_performance_feedback": "User reports clear improvement after single-pass upload recognition; per-model FPS unmeasured"
     },
     {
       "id": 1015,
@@ -193,9 +201,9 @@
       ],
       "target_eye_material_pass": false,
       "game_motion_asset_packed": true,
-      "geometry_container_rebuilt": false,
+      "geometry_container_rebuilt": true,
       "collider_adapted": false,
-      "unique_runtime_model_identity": false,
+      "unique_runtime_model_identity": true,
       "menu_art_approved": false,
       "selection_verified": false,
       "race_verified": false,
@@ -205,8 +213,10 @@
       "neutral_iris_bake_verified_standalone": true,
       "native_atlas_mips_packed": true,
       "runtime_upload_multi_model_support_tested": true,
-      "installed_new_model": false,
-      "neutral_expression_limit": "Iris baked to face UVs; animated facial expressions are not implemented."
+      "installed_new_model": true,
+      "neutral_expression_limit": "Iris baked to face UVs; animated facial expressions are not implemented.",
+      "collider_data_adapted": true,
+      "qualitative_fleet_performance_feedback": "User reports clear improvement after single-pass upload recognition; per-model FPS unmeasured"
     },
     {
       "id": 1006,
@@ -234,9 +244,9 @@
       ],
       "target_eye_material_pass": false,
       "game_motion_asset_packed": true,
-      "geometry_container_rebuilt": false,
+      "geometry_container_rebuilt": true,
       "collider_adapted": false,
-      "unique_runtime_model_identity": false,
+      "unique_runtime_model_identity": true,
       "menu_art_approved": false,
       "selection_verified": false,
       "race_verified": false,
@@ -246,8 +256,10 @@
       "neutral_iris_bake_verified_standalone": true,
       "native_atlas_mips_packed": true,
       "runtime_upload_multi_model_support_tested": true,
-      "installed_new_model": false,
-      "neutral_expression_limit": "Iris baked to face UVs; animated facial expressions are not implemented."
+      "installed_new_model": true,
+      "neutral_expression_limit": "Iris baked to face UVs; animated facial expressions are not implemented.",
+      "collider_data_adapted": true,
+      "qualitative_fleet_performance_feedback": "User reports clear improvement after single-pass upload recognition; per-model FPS unmeasured"
     },
     {
       "id": 1058,
@@ -275,9 +287,9 @@
       ],
       "target_eye_material_pass": false,
       "game_motion_asset_packed": true,
-      "geometry_container_rebuilt": false,
+      "geometry_container_rebuilt": true,
       "collider_adapted": false,
-      "unique_runtime_model_identity": false,
+      "unique_runtime_model_identity": true,
       "menu_art_approved": false,
       "selection_verified": false,
       "race_verified": false,
@@ -287,12 +299,14 @@
       "neutral_iris_bake_verified_standalone": true,
       "native_atlas_mips_packed": true,
       "runtime_upload_multi_model_support_tested": true,
-      "installed_new_model": false,
-      "neutral_expression_limit": "Iris baked to face UVs; animated facial expressions are not implemented."
+      "installed_new_model": true,
+      "neutral_expression_limit": "Iris baked to face UVs; animated facial expressions are not implemented.",
+      "collider_data_adapted": true,
+      "qualitative_fleet_performance_feedback": "User reports clear improvement after single-pass upload recognition; per-model FPS unmeasured"
     }
   ],
   "release_ready": false,
-  "latest_user_instruction": "Use all lessons from Kitasan, review as a demanding player, then launch the completed test. Do not launch unintegrated fleet as if ready.",
+  "latest_user_instruction": "Seven-character test was explicitly requested and is installed; finish visual/menu/race verification. User reports clear performance improvement after upload optimization.",
   "earlier_request_pending": [
     "Satono Diamond was requested earlier and has not been explicitly canceled; retain after the current six-character batch."
   ],
@@ -300,5 +314,14 @@
     "tests": 73,
     "passed": true,
     "scope": "Python data plus independent C native skin comparisons and material checks; no NFS gameplay proof"
-  }
+  },
+  "live_session_observed_model_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ]
 }

@@ -1,0 +1,14 @@
+22:07:08 | INFO: Data are loaded, start creating Blender stuff
+22:07:08 | INFO: Blender create Mesh node M_Body
+22:07:08 | INFO: Blender create Mesh node M_Face
+22:07:08 | INFO: Blender create Mesh node M_Mayu
+22:07:08 | INFO: Blender create Mesh node M_Hair
+22:07:08 | INFO: Blender create Mesh node M_Cheek
+22:07:08 | INFO: Blender create Mesh node M_Tail
+22:07:08 | INFO: glTF import finished in 0.17s
+NATIVE_ARMATURE pfb_bdy1052_00 258
+ACTION idle TRACKS [('run', [('run', 'run')]), ('idle', [('idle', 'idle')])]
+ACTIONS [('idle', [0.0, 55.20000457763672]), ('run', [0.0, 14.40000057220459])]
+Blender 4.5.16 LTS (hash 3f6797307da5 built 2026-11-10 01:31:21)
+
+Blender quit

@@ -1,0 +1,13 @@
+{
+  "active_files_checked": 41,
+  "backups_checked": 23,
+  "all_hashes_match": true,
+  "restore_executed": false,
+  "game_launched": false,
+  "receipts": [
+    "modding/fleet-installed.json",
+    "modding/upload-scan-installed.json",
+    "modding/compact-shadows-motion-installed.json",
+    "modding/fleet-badges-installed.json"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "user_feedback": "All seven selection slots loaded and shadows improved; Tachyon slot absent; Oguri disappeared during race then game closed",
+  "runner_log_sha256": "e3d8492238235095667d3eee039542949806cb0e0cae88139a09c971fdfe34ad",
+  "last_frame": 6240,
+  "last_model": 5,
+  "shader_failures": 0,
+  "game_process_absent": true,
+  "exception_capture_active": false,
+  "cause_confirmed": false
+}

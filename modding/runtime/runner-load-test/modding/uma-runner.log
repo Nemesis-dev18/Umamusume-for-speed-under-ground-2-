@@ -1,2 +1,3 @@
 AUDIO originalVariants=20 outputStreams=2 installed=1; sample playback only, no game data patch
-START native lighting runner installed=1; graphics-derived speed uncalibrated; independent actor gait, spatial association
+EFFECTS exact source textures ready=0
+START native lighting runner installed=1; graphics-derived speed uncalibrated; independent actor gait, spatial association; models=1

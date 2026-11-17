@@ -1,0 +1,77 @@
+{
+  "scope": "Cumulative costs over logging windows, not controlled FPS benchmark",
+  "windows": [
+    {
+      "frame": "120",
+      "draws": "0",
+      "uploads": "0",
+      "skinMs": "0.000",
+      "uploadMs": "0.000",
+      "drawMs": "0.000"
+    },
+    {
+      "frame": "240",
+      "draws": "0",
+      "uploads": "0",
+      "skinMs": "0.000",
+      "uploadMs": "0.000",
+      "drawMs": "0.000"
+    },
+    {
+      "frame": "360",
+      "draws": "0",
+      "uploads": "0",
+      "skinMs": "0.000",
+      "uploadMs": "0.000",
+      "drawMs": "0.000"
+    },
+    {
+      "frame": "480",
+      "draws": "0",
+      "uploads": "0",
+      "skinMs": "0.000",
+      "uploadMs": "0.000",
+      "drawMs": "0.000"
+    },
+    {
+      "frame": "600",
+      "draws": "0",
+      "uploads": "0",
+      "skinMs": "0.000",
+      "uploadMs": "0.000",
+      "drawMs": "0.000"
+    },
+    {
+      "frame": "720",
+      "draws": "0",
+      "uploads": "0",
+      "skinMs": "0.000",
+      "uploadMs": "0.000",
+      "drawMs": "0.000"
+    },
+    {
+      "frame": "840",
+      "draws": "0",
+      "uploads": "0",
+      "skinMs": "0.000",
+      "uploadMs": "0.000",
+      "drawMs": "0.000"
+    },
+    {
+      "frame": "960",
+      "draws": "22",
+      "uploads": "11",
+      "skinMs": "25.225",
+      "uploadMs": "52.519",
+      "drawMs": "55.261"
+    },
+    {
+      "frame": "1080",
+      "draws": "296",
+      "uploads": "150",
+      "skinMs": "413.284",
+      "uploadMs": "855.925",
+      "drawMs": "873.332"
+    }
+  ]
+}

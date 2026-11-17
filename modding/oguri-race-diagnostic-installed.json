@@ -1,0 +1,22 @@
+{
+  "files": [
+    {
+      "source": "modding/runtime/UmaRunner.profile.asi",
+      "target": "scripts/UmaRunner.asi",
+      "before_sha256": "a2861b402ca560c0b4ecaa0b56a048aea4eebd6468757e4a6cce60b0eef7c63c",
+      "after_sha256": "7e2360871a9400643504a17aadc5b2c03f316f66cc553c818076a72e6ba65993",
+      "bytes": 385099
+    },
+    {
+      "source": "modding/runtime/UmaExceptionLog.current.asi",
+      "target": "scripts/UmaExceptionLog.asi",
+      "before_sha256": null,
+      "after_sha256": "57b44fb691f3322db4be4af6ceb77ab5357c92fbbd09c9141107bd835ed58040",
+      "bytes": 234139
+    }
+  ],
+  "reuse_validated_diagnostic": true,
+  "temporary": true,
+  "models_and_shadows_unchanged": true,
+  "game_verified": false
+}

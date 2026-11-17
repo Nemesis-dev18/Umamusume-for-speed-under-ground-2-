@@ -1,5 +1,7 @@
 OWNED frame=0 base=0 min=0 start=0 offset=72 stride=36 color=15 shaderBytes=1792 supported=1
+VISUAL frame=0 model=0 idleFallback=1 corrected=0 color=15 upView=0.00000,0.00000,1.00000 originView=0.00000,0.00000,0.00000
 OWNED frame=0 base=2 min=0 start=0 offset=0 stride=36 color=15 shaderBytes=1792 supported=1
+VISUAL frame=0 model=0 idleFallback=1 corrected=0 color=15 upView=0.00000,0.00000,1.00000 originView=0.00000,0.00000,0.00000
 WHEEL method=DIP frame=0 vertices=4 primitives=2 shaderBytes=1792 match=1 bodies=1 origin=1.3500,0.7800,0.2750 rawBounds=nan,nan,nan:nan,nan,nan
 WHEEL method=DIP frame=0 vertices=4 primitives=2 shaderBytes=1792 match=0 bodies=1 origin=11.3500,0.7800,0.2750 rawBounds=0.0000,-0.2000,0.7000:0.0000,0.2000,1.2000
 WHEEL method=DP frame=0 vertices=4 primitives=2 shaderBytes=1792 match=1 bodies=1 origin=1.3500,0.7800,0.2750 rawBounds=nan,nan,nan:nan,nan,nan
@@ -17,5 +19,8 @@ WHEEL method=DPUP frame=0 vertices=16 primitives=14 shaderBytes=1792 match=0 bod
 WHEEL method=DIPUP frame=0 vertices=16 primitives=8 shaderBytes=1792 match=1 bodies=1 origin=0.0000,0.0000,0.2000 rawBounds=-1.2500,-0.7800,0.0750:1.5500,0.7800,0.4750
 WHEEL method=DIPUP frame=0 vertices=16 primitives=8 shaderBytes=1792 match=0 bodies=1 origin=10.0000,0.0000,0.2000 rawBounds=-1.2500,-0.7800,0.0750:1.5500,0.7800,0.4750
 OWNED frame=0 base=0 min=0 start=0 offset=72 stride=36 color=15 shaderBytes=1792 supported=1
+VISUAL frame=0 model=0 idleFallback=1 corrected=0 color=15 upView=0.00000,0.00000,1.00000 originView=-95.00000,0.00000,0.00000
 OWNED frame=0 base=0 min=0 start=0 offset=72 stride=36 color=15 shaderBytes=1792 supported=1
+VISUAL frame=0 model=0 idleFallback=1 corrected=0 color=15 upView=0.00000,0.00000,1.00000 originView=-96.90000,0.00000,0.00000
 OWNED frame=0 base=0 min=0 start=0 offset=72 stride=36 color=15 shaderBytes=1792 supported=1
+VISUAL frame=0 model=0 idleFallback=1 corrected=0 color=15 upView=0.00000,0.00000,1.00000 originView=-98.80000,0.00000,0.00000

@@ -17,7 +17,7 @@ PASS one-frame ROI readback inside scene, exact black-pixel attribution, texture
     "integration": "PASS native shader 5 renders animated textured body through runtime hook; stream offset and base vertex pass, cross-device hooks pass, same-size impostor retains original white output; Present, Reset and hook removal pass. Not NFSU2 gameplay."
   },
   "sha256": {
-    "UmaRunner.asi": "e7c23bc9c9c1a7af316e70e185713a4b2e8a9d1c3a0a7df2d35aadc67fa0e2a7",
+    "UmaRunner.asi": "6c56b6c8504dbdf7d0d300b839b460bb1eef2a06e57efa6aef06e74087e032b6",
     "kitasan.umab": "c1701a3227ce720bf2f4166b96f96219e96b4f307251a579d9c2f0059c8e0581",
     "atlas.dds": "cb40a42c64d1f97fb69734ad30caa78776c97330472d1152bcda44d69470920d"
   },

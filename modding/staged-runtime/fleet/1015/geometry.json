@@ -1,0 +1,1819 @@
+{
+  "id": 1015,
+  "slot": "PEUGOT",
+  "target": "CARS/PEUGOT/GEOMETRY.BIN",
+  "candidate": "modding/staged-runtime/fleet/1015/GEOMETRY.BIN",
+  "before_sha256": "02227d62785eac6014a33de226c2ba0860a9cf1d4913a6dfd13f4d8735b7102c",
+  "after_sha256": "e593f8b17532431ef2a1a140bc7abeeb8bef30bfe7f7503eb977e04c5bcd109e",
+  "bytes_before": 7639488,
+  "bytes_after": 2133184,
+  "verification": {
+    "solids": 605,
+    "body_carriers": 20,
+    "hidden_original_parts": 585,
+    "directory_records": 605,
+    "collision_relocated": true,
+    "opaque_leaves_preserved": true,
+    "bytes": 2133184
+  },
+  "bounds": [
+    -2.25,
+    -2.25,
+    -2.25,
+    2.25,
+    2.25,
+    2.25
+  ],
+  "collision_hulls": [
+    {
+      "name": "PEUGOT_CV",
+      "vertices": 46,
+      "old_minimum": [
+        -1.926827311515808,
+        -0.8421037197113037,
+        0.19421054422855377
+      ],
+      "old_maximum": [
+        1.9393514394760132,
+        0.8440497517585754,
+        1.246468424797058
+      ],
+      "new_minimum": [
+        -0.337037037037037,
+        -0.2792592592592592,
+        0.04814814814814815
+      ],
+      "new_maximum": [
+        0.6259259259259259,
+        0.2792592592592592,
+        1.8777777777777775
+      ],
+      "scale": [
+        0.24907357496492535,
+        0.3312382460842299,
+        1.7387654332806077
+      ]
+    },
+    {
+      "name": "PEUGOT_W01_CV",
+      "vertices": 46,
+      "old_minimum": [
+        -2.018982172012329,
+        -0.9782334566116333,
+        0.19421058893203735
+      ],
+      "old_maximum": [
+        2.024099349975586,
+        0.9803197979927063,
+        1.2464683055877686
+      ],
+      "new_minimum": [
+        -0.337037037037037,
+        -0.2792592592592592,
+        0.04814814814814815
+      ],
+      "new_maximum": [
+        0.6259259259259259,
+        0.2792592592592592,
+        1.8777777777777775
+      ],
+      "scale": [
+        0.2381754999808884,
+        0.28516892109290565,
+        1.7387657041323767
+      ]
+    },
+    {
+      "name": "PEUGOT_W02_CV",
+      "vertices": 46,
+      "old_minimum": [
+        -2.018982172012329,
+        -0.9782334566116333,
+        0.19421058893203735
+      ],
+      "old_maximum": [
+        2.024099349975586,
+        0.9803197383880615,
+        1.2578026056289673
+      ],
+      "new_minimum": [
+        -0.337037037037037,
+        -0.2792592592592592,
+        0.04814814814814815
+      ],
+      "new_maximum": [
+        0.6259259259259259,
+        0.2792592592592592,
+        1.8777777777777775
+      ],
+      "scale": [
+        0.2381754999808884,
+        0.28516892977145075,
+        1.720236332077492
+      ]
+    },
+    {
+      "name": "PEUGOT_W03_CV",
+      "vertices": 46,
+      "old_minimum": [
+        -1.9840072393417358,
+        -0.952562689781189,
+        0.19421058893203735
+      ],
+      "old_maximum": [
+        1.978702187538147,
+        0.9546225666999817,
+        1.2464683055877686
+      ],
+      "new_minimum": [
+        -0.337037037037037,
+        -0.2792592592592592,
+        0.04814814814814815
+      ],
+      "new_maximum": [
+        0.6259259259259259,
+        0.2792592592592592,
+        1.8777777777777775
+      ],
+      "scale": [
+        0.24300620086625194,
+        0.2928496414391365,
+        1.7387657041323767
+      ]
+    },
+    {
+      "name": "PEUGOT_W04_CV",
+      "vertices": 46,
+      "old_minimum": [
+        -1.9840072393417358,
+        -0.9446626305580139,
+        0.19421058893203735
+      ],
+      "old_maximum": [
+        1.999104380607605,
+        0.9424423575401306,
+        1.2464683055877686
+      ],
+      "new_minimum": [
+        -0.337037037037037,
+        -0.2792592592592592,
+        0.04814814814814815
+      ],
+      "new_maximum": [
+        0.6259259259259259,
+        0.2792592592592592,
+        1.8777777777777775
+      ],
+      "scale": [
+        0.24176148068258513,
+        0.2959657899486571,
+        1.7387657041323767
+      ]
+    }
+  ],
+  "collision_point_ranges": [
+    {
+      "offset": 2119168,
+      "bytes": 12
+    },
+    {
+      "offset": 2119216,
+      "bytes": 12
+    },
+    {
+      "offset": 2119264,
+      "bytes": 12
+    },
+    {
+      "offset": 2119312,
+      "bytes": 12
+    },
+    {
+      "offset": 2119360,
+      "bytes": 12
+    },
+    {
+      "offset": 2119408,
+      "bytes": 12
+    },
+    {
+      "offset": 2119456,
+      "bytes": 12
+    },
+    {
+      "offset": 2119504,
+      "bytes": 12
+    },
+    {
+      "offset": 2119552,
+      "bytes": 12
+    },
+    {
+      "offset": 2119600,
+      "bytes": 12
+    },
+    {
+      "offset": 2119648,
+      "bytes": 12
+    },
+    {
+      "offset": 2119696,
+      "bytes": 12
+    },
+    {
+      "offset": 2119744,
+      "bytes": 12
+    },
+    {
+      "offset": 2119792,
+      "bytes": 12
+    },
+    {
+      "offset": 2119840,
+      "bytes": 12
+    },
+    {
+      "offset": 2119888,
+      "bytes": 12
+    },
+    {
+      "offset": 2119936,
+      "bytes": 12
+    },
+    {
+      "offset": 2119984,
+      "bytes": 12
+    },
+    {
+      "offset": 2120032,
+      "bytes": 12
+    },
+    {
+      "offset": 2120080,
+      "bytes": 12
+    },
+    {
+      "offset": 2120128,
+      "bytes": 12
+    },
+    {
+      "offset": 2120176,
+      "bytes": 12
+    },
+    {
+      "offset": 2120224,
+      "bytes": 12
+    },
+    {
+      "offset": 2120272,
+      "bytes": 12
+    },
+    {
+      "offset": 2120320,
+      "bytes": 12
+    },
+    {
+      "offset": 2120368,
+      "bytes": 12
+    },
+    {
+      "offset": 2120416,
+      "bytes": 12
+    },
+    {
+      "offset": 2120464,
+      "bytes": 12
+    },
+    {
+      "offset": 2120512,
+      "bytes": 12
+    },
+    {
+      "offset": 2120560,
+      "bytes": 12
+    },
+    {
+      "offset": 2120608,
+      "bytes": 12
+    },
+    {
+      "offset": 2120656,
+      "bytes": 12
+    },
+    {
+      "offset": 2120704,
+      "bytes": 12
+    },
+    {
+      "offset": 2120752,
+      "bytes": 12
+    },
+    {
+      "offset": 2120800,
+      "bytes": 12
+    },
+    {
+      "offset": 2120848,
+      "bytes": 12
+    },
+    {
+      "offset": 2120896,
+      "bytes": 12
+    },
+    {
+      "offset": 2120944,
+      "bytes": 12
+    },
+    {
+      "offset": 2120992,
+      "bytes": 12
+    },
+    {
+      "offset": 2121040,
+      "bytes": 12
+    },
+    {
+      "offset": 2121088,
+      "bytes": 12
+    },
+    {
+      "offset": 2121136,
+      "bytes": 12
+    },
+    {
+      "offset": 2121184,
+      "bytes": 12
+    },
+    {
+      "offset": 2121232,
+      "bytes": 12
+    },
+    {
+      "offset": 2121280,
+      "bytes": 12
+    },
+    {
+      "offset": 2121328,
+      "bytes": 12
+    },
+    {
+      "offset": 2121968,
+      "bytes": 12
+    },
+    {
+      "offset": 2122016,
+      "bytes": 12
+    },
+    {
+      "offset": 2122064,
+      "bytes": 12
+    },
+    {
+      "offset": 2122112,
+      "bytes": 12
+    },
+    {
+      "offset": 2122160,
+      "bytes": 12
+    },
+    {
+      "offset": 2122208,
+      "bytes": 12
+    },
+    {
+      "offset": 2122256,
+      "bytes": 12
+    },
+    {
+      "offset": 2122304,
+      "bytes": 12
+    },
+    {
+      "offset": 2122352,
+      "bytes": 12
+    },
+    {
+      "offset": 2122400,
+      "bytes": 12
+    },
+    {
+      "offset": 2122448,
+      "bytes": 12
+    },
+    {
+      "offset": 2122496,
+      "bytes": 12
+    },
+    {
+      "offset": 2122544,
+      "bytes": 12
+    },
+    {
+      "offset": 2122592,
+      "bytes": 12
+    },
+    {
+      "offset": 2122640,
+      "bytes": 12
+    },
+    {
+      "offset": 2122688,
+      "bytes": 12
+    },
+    {
+      "offset": 2122736,
+      "bytes": 12
+    },
+    {
+      "offset": 2122784,
+      "bytes": 12
+    },
+    {
+      "offset": 2122832,
+      "bytes": 12
+    },
+    {
+      "offset": 2122880,
+      "bytes": 12
+    },
+    {
+      "offset": 2122928,
+      "bytes": 12
+    },
+    {
+      "offset": 2122976,
+      "bytes": 12
+    },
+    {
+      "offset": 2123024,
+      "bytes": 12
+    },
+    {
+      "offset": 2123072,
+      "bytes": 12
+    },
+    {
+      "offset": 2123120,
+      "bytes": 12
+    },
+    {
+      "offset": 2123168,
+      "bytes": 12
+    },
+    {
+      "offset": 2123216,
+      "bytes": 12
+    },
+    {
+      "offset": 2123264,
+      "bytes": 12
+    },
+    {
+      "offset": 2123312,
+      "bytes": 12
+    },
+    {
+      "offset": 2123360,
+      "bytes": 12
+    },
+    {
+      "offset": 2123408,
+      "bytes": 12
+    },
+    {
+      "offset": 2123456,
+      "bytes": 12
+    },
+    {
+      "offset": 2123504,
+      "bytes": 12
+    },
+    {
+      "offset": 2123552,
+      "bytes": 12
+    },
+    {
+      "offset": 2123600,
+      "bytes": 12
+    },
+    {
+      "offset": 2123648,
+      "bytes": 12
+    },
+    {
+      "offset": 2123696,
+      "bytes": 12
+    },
+    {
+      "offset": 2123744,
+      "bytes": 12
+    },
+    {
+      "offset": 2123792,
+      "bytes": 12
+    },
+    {
+      "offset": 2123840,
+      "bytes": 12
+    },
+    {
+      "offset": 2123888,
+      "bytes": 12
+    },
+    {
+      "offset": 2123936,
+      "bytes": 12
+    },
+    {
+      "offset": 2123984,
+      "bytes": 12
+    },
+    {
+      "offset": 2124032,
+      "bytes": 12
+    },
+    {
+      "offset": 2124080,
+      "bytes": 12
+    },
+    {
+      "offset": 2124128,
+      "bytes": 12
+    },
+    {
+      "offset": 2124800,
+      "bytes": 12
+    },
+    {
+      "offset": 2124848,
+      "bytes": 12
+    },
+    {
+      "offset": 2124896,
+      "bytes": 12
+    },
+    {
+      "offset": 2124944,
+      "bytes": 12
+    },
+    {
+      "offset": 2124992,
+      "bytes": 12
+    },
+    {
+      "offset": 2125040,
+      "bytes": 12
+    },
+    {
+      "offset": 2125088,
+      "bytes": 12
+    },
+    {
+      "offset": 2125136,
+      "bytes": 12
+    },
+    {
+      "offset": 2125184,
+      "bytes": 12
+    },
+    {
+      "offset": 2125232,
+      "bytes": 12
+    },
+    {
+      "offset": 2125280,
+      "bytes": 12
+    },
+    {
+      "offset": 2125328,
+      "bytes": 12
+    },
+    {
+      "offset": 2125376,
+      "bytes": 12
+    },
+    {
+      "offset": 2125424,
+      "bytes": 12
+    },
+    {
+      "offset": 2125472,
+      "bytes": 12
+    },
+    {
+      "offset": 2125520,
+      "bytes": 12
+    },
+    {
+      "offset": 2125568,
+      "bytes": 12
+    },
+    {
+      "offset": 2125616,
+      "bytes": 12
+    },
+    {
+      "offset": 2125664,
+      "bytes": 12
+    },
+    {
+      "offset": 2125712,
+      "bytes": 12
+    },
+    {
+      "offset": 2125760,
+      "bytes": 12
+    },
+    {
+      "offset": 2125808,
+      "bytes": 12
+    },
+    {
+      "offset": 2125856,
+      "bytes": 12
+    },
+    {
+      "offset": 2125904,
+      "bytes": 12
+    },
+    {
+      "offset": 2125952,
+      "bytes": 12
+    },
+    {
+      "offset": 2126000,
+      "bytes": 12
+    },
+    {
+      "offset": 2126048,
+      "bytes": 12
+    },
+    {
+      "offset": 2126096,
+      "bytes": 12
+    },
+    {
+      "offset": 2126144,
+      "bytes": 12
+    },
+    {
+      "offset": 2126192,
+      "bytes": 12
+    },
+    {
+      "offset": 2126240,
+      "bytes": 12
+    },
+    {
+      "offset": 2126288,
+      "bytes": 12
+    },
+    {
+      "offset": 2126336,
+      "bytes": 12
+    },
+    {
+      "offset": 2126384,
+      "bytes": 12
+    },
+    {
+      "offset": 2126432,
+      "bytes": 12
+    },
+    {
+      "offset": 2126480,
+      "bytes": 12
+    },
+    {
+      "offset": 2126528,
+      "bytes": 12
+    },
+    {
+      "offset": 2126576,
+      "bytes": 12
+    },
+    {
+      "offset": 2126624,
+      "bytes": 12
+    },
+    {
+      "offset": 2126672,
+      "bytes": 12
+    },
+    {
+      "offset": 2126720,
+      "bytes": 12
+    },
+    {
+      "offset": 2126768,
+      "bytes": 12
+    },
+    {
+      "offset": 2126816,
+      "bytes": 12
+    },
+    {
+      "offset": 2126864,
+      "bytes": 12
+    },
+    {
+      "offset": 2126912,
+      "bytes": 12
+    },
+    {
+      "offset": 2126960,
+      "bytes": 12
+    },
+    {
+      "offset": 2127632,
+      "bytes": 12
+    },
+    {
+      "offset": 2127680,
+      "bytes": 12
+    },
+    {
+      "offset": 2127728,
+      "bytes": 12
+    },
+    {
+      "offset": 2127776,
+      "bytes": 12
+    },
+    {
+      "offset": 2127824,
+      "bytes": 12
+    },
+    {
+      "offset": 2127872,
+      "bytes": 12
+    },
+    {
+      "offset": 2127920,
+      "bytes": 12
+    },
+    {
+      "offset": 2127968,
+      "bytes": 12
+    },
+    {
+      "offset": 2128016,
+      "bytes": 12
+    },
+    {
+      "offset": 2128064,
+      "bytes": 12
+    },
+    {
+      "offset": 2128112,
+      "bytes": 12
+    },
+    {
+      "offset": 2128160,
+      "bytes": 12
+    },
+    {
+      "offset": 2128208,
+      "bytes": 12
+    },
+    {
+      "offset": 2128256,
+      "bytes": 12
+    },
+    {
+      "offset": 2128304,
+      "bytes": 12
+    },
+    {
+      "offset": 2128352,
+      "bytes": 12
+    },
+    {
+      "offset": 2128400,
+      "bytes": 12
+    },
+    {
+      "offset": 2128448,
+      "bytes": 12
+    },
+    {
+      "offset": 2128496,
+      "bytes": 12
+    },
+    {
+      "offset": 2128544,
+      "bytes": 12
+    },
+    {
+      "offset": 2128592,
+      "bytes": 12
+    },
+    {
+      "offset": 2128640,
+      "bytes": 12
+    },
+    {
+      "offset": 2128688,
+      "bytes": 12
+    },
+    {
+      "offset": 2128736,
+      "bytes": 12
+    },
+    {
+      "offset": 2128784,
+      "bytes": 12
+    },
+    {
+      "offset": 2128832,
+      "bytes": 12
+    },
+    {
+      "offset": 2128880,
+      "bytes": 12
+    },
+    {
+      "offset": 2128928,
+      "bytes": 12
+    },
+    {
+      "offset": 2128976,
+      "bytes": 12
+    },
+    {
+      "offset": 2129024,
+      "bytes": 12
+    },
+    {
+      "offset": 2129072,
+      "bytes": 12
+    },
+    {
+      "offset": 2129120,
+      "bytes": 12
+    },
+    {
+      "offset": 2129168,
+      "bytes": 12
+    },
+    {
+      "offset": 2129216,
+      "bytes": 12
+    },
+    {
+      "offset": 2129264,
+      "bytes": 12
+    },
+    {
+      "offset": 2129312,
+      "bytes": 12
+    },
+    {
+      "offset": 2129360,
+      "bytes": 12
+    },
+    {
+      "offset": 2129408,
+      "bytes": 12
+    },
+    {
+      "offset": 2129456,
+      "bytes": 12
+    },
+    {
+      "offset": 2129504,
+      "bytes": 12
+    },
+    {
+      "offset": 2129552,
+      "bytes": 12
+    },
+    {
+      "offset": 2129600,
+      "bytes": 12
+    },
+    {
+      "offset": 2129648,
+      "bytes": 12
+    },
+    {
+      "offset": 2129696,
+      "bytes": 12
+    },
+    {
+      "offset": 2129744,
+      "bytes": 12
+    },
+    {
+      "offset": 2129792,
+      "bytes": 12
+    },
+    {
+      "offset": 2130464,
+      "bytes": 12
+    },
+    {
+      "offset": 2130512,
+      "bytes": 12
+    },
+    {
+      "offset": 2130560,
+      "bytes": 12
+    },
+    {
+      "offset": 2130608,
+      "bytes": 12
+    },
+    {
+      "offset": 2130656,
+      "bytes": 12
+    },
+    {
+      "offset": 2130704,
+      "bytes": 12
+    },
+    {
+      "offset": 2130752,
+      "bytes": 12
+    },
+    {
+      "offset": 2130800,
+      "bytes": 12
+    },
+    {
+      "offset": 2130848,
+      "bytes": 12
+    },
+    {
+      "offset": 2130896,
+      "bytes": 12
+    },
+    {
+      "offset": 2130944,
+      "bytes": 12
+    },
+    {
+      "offset": 2130992,
+      "bytes": 12
+    },
+    {
+      "offset": 2131040,
+      "bytes": 12
+    },
+    {
+      "offset": 2131088,
+      "bytes": 12
+    },
+    {
+      "offset": 2131136,
+      "bytes": 12
+    },
+    {
+      "offset": 2131184,
+      "bytes": 12
+    },
+    {
+      "offset": 2131232,
+      "bytes": 12
+    },
+    {
+      "offset": 2131280,
+      "bytes": 12
+    },
+    {
+      "offset": 2131328,
+      "bytes": 12
+    },
+    {
+      "offset": 2131376,
+      "bytes": 12
+    },
+    {
+      "offset": 2131424,
+      "bytes": 12
+    },
+    {
+      "offset": 2131472,
+      "bytes": 12
+    },
+    {
+      "offset": 2131520,
+      "bytes": 12
+    },
+    {
+      "offset": 2131568,
+      "bytes": 12
+    },
+    {
+      "offset": 2131616,
+      "bytes": 12
+    },
+    {
+      "offset": 2131664,
+      "bytes": 12
+    },
+    {
+      "offset": 2131712,
+      "bytes": 12
+    },
+    {
+      "offset": 2131760,
+      "bytes": 12
+    },
+    {
+      "offset": 2131808,
+      "bytes": 12
+    },
+    {
+      "offset": 2131856,
+      "bytes": 12
+    },
+    {
+      "offset": 2131904,
+      "bytes": 12
+    },
+    {
+      "offset": 2131952,
+      "bytes": 12
+    },
+    {
+      "offset": 2132000,
+      "bytes": 12
+    },
+    {
+      "offset": 2132048,
+      "bytes": 12
+    },
+    {
+      "offset": 2132096,
+      "bytes": 12
+    },
+    {
+      "offset": 2132144,
+      "bytes": 12
+    },
+    {
+      "offset": 2132192,
+      "bytes": 12
+    },
+    {
+      "offset": 2132240,
+      "bytes": 12
+    },
+    {
+      "offset": 2132288,
+      "bytes": 12
+    },
+    {
+      "offset": 2132336,
+      "bytes": 12
+    },
+    {
+      "offset": 2132384,
+      "bytes": 12
+    },
+    {
+      "offset": 2132432,
+      "bytes": 12
+    },
+    {
+      "offset": 2132480,
+      "bytes": 12
+    },
+    {
+      "offset": 2132528,
+      "bytes": 12
+    },
+    {
+      "offset": 2132576,
+      "bytes": 12
+    },
+    {
+      "offset": 2132624,
+      "bytes": 12
+    }
+  ],
+  "disabled_markers": [
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 134400,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 134480,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 141312,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 141392,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 202240,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 202320,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 210048,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 210128,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 245760,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 245840,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 251776,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 251856,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 285696,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 285776,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 294784,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 294864,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 332272,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 332352,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 340720,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 340800,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 372224,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 372304,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 378624,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 378704,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 415872,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 415952,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 424320,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 424400,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 459760,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 459840,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 465392,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 465472,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 499712,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 499792,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 507008,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 507088,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 541184,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 541264,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 549120,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 549200,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 588672,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 588752,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 596864,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 596944,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 633216,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 633296,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 641152,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 641232,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 677760,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 677840,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 683648,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 683728,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 718192,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 718272,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 724848,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 724928,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 757904,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 757984,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 765200,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 765280,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 801024,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 801104,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 809856,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 809936,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 845728,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 845808,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 852896,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 852976,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 887680,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 887760,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 894848,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 894928,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 925824,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 925904,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 932096,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 932176,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 957312,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 957392,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 963456,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 963536,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 993296,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 993376,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 1001104,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 1001184,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 1031936,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 1032016,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 1037568,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 1037648,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 1069552,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 1069632,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 1076480,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 1076560,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 1112976,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 1113056,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 1123088,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 1123168,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 1159168,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 1159248,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 1165952,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 1166032,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 1198208,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 1198288,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 1207552,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 1207632,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 1227200,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 1227360,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 1255840,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 1256000,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 1293104,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 1293264,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 1327120,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 1327280,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 1369136,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 1369296,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 1401664,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 1401824,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 1446576,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 1446736,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 1478336,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 1478496,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    }
+  ],
+  "installed": false
+}

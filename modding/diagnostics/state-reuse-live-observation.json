@@ -1,0 +1,39 @@
+{
+  "scope": "Live process and cumulative Present log; not a controlled FPS benchmark",
+  "samples": [
+    {
+      "monotonic_seconds": 34788.698063779,
+      "pid": 216831,
+      "alive": true,
+      "process_name": "SPEED2.EXE",
+      "last_frame": "FRAME 1560 candidates=434 owned=434 replaced=434 shaderFailures=0 references=40 bodies=2 graphicsSpeedValid=1 graphicsSpeed=0.0000 blend=0.0081 projectionValid=1 recoveredSceneRefs=6324 hiddenWheels=0 groups=40 best=1 second=1 hoofPlayed=2 audioActive=1 hiddenEffects=349 hiddenHeadlights=0 effectReads=8 effectCacheHits=177066",
+      "actors": [
+        "ACTOR slot=0 model=0 speed=0.0000 blend=0.0194 position=0.0121,5.4203,-0.1355",
+        "ACTOR slot=1 model=3 speed=0.0000 blend=0.0081 position=-0.0116,5.4203,0.0500"
+      ]
+    },
+    {
+      "monotonic_seconds": 34793.698316399,
+      "pid": 216831,
+      "alive": true,
+      "process_name": "SPEED2.EXE",
+      "last_frame": "FRAME 1560 candidates=434 owned=434 replaced=434 shaderFailures=0 references=40 bodies=2 graphicsSpeedValid=1 graphicsSpeed=0.0000 blend=0.0081 projectionValid=1 recoveredSceneRefs=6324 hiddenWheels=0 groups=40 best=1 second=1 hoofPlayed=2 audioActive=1 hiddenEffects=349 hiddenHeadlights=0 effectReads=8 effectCacheHits=177066",
+      "actors": [
+        "ACTOR slot=0 model=0 speed=0.0000 blend=0.0194 position=0.0121,5.4203,-0.1355",
+        "ACTOR slot=1 model=3 speed=0.0000 blend=0.0081 position=-0.0116,5.4203,0.0500"
+      ]
+    },
+    {
+      "monotonic_seconds": 34798.698719642,
+      "pid": 216831,
+      "alive": true,
+      "process_name": "SPEED2.EXE",
+      "last_frame": "FRAME 1680 candidates=714 owned=714 replaced=714 shaderFailures=0 references=40 bodies=2 graphicsSpeedValid=1 graphicsSpeed=0.0000 blend=0.0000 projectionValid=1 recoveredSceneRefs=10404 hiddenWheels=0 groups=40 best=1 second=1 hoofPlayed=2 audioActive=1 hiddenEffects=469 hiddenHeadlights=0 effectReads=8 effectCacheHits=208839",
+      "actors": [
+        "ACTOR slot=0 model=0 speed=0.0000 blend=0.0194 position=0.0121,5.4203,-0.1355",
+        "ACTOR slot=1 model=3 speed=0.0000 blend=0.0081 position=-0.0116,5.4203,0.0500",
+        "ACTOR slot=0 model=3 speed=0.0000 blend=0.0000 position=-0.0116,5.4203,0.0500"
+      ]
+    }
+  ]
+}

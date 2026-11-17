@@ -1,0 +1,19 @@
+{
+  "id": 1032,
+  "source_gltf_sha256": "986fffb2e4d19147a61065b973a98e8c73b4501d720af8e0e42177d8edadf890",
+  "bounds_min": [
+    -0.33358147740364075,
+    -0.22368401288986206,
+    2.980330293667066e-08
+  ],
+  "bounds_max": [
+    0.33357614278793335,
+    0.3296732008457184,
+    1.109851360321045
+  ],
+  "rendered": true,
+  "shading": "Unlit diffuse with source alpha for UI badge",
+  "pose": "Arms lowered for static badge review",
+  "visual_approved": false,
+  "installed": false
+}

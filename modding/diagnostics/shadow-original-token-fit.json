@@ -1,0 +1,100 @@
+[
+  {
+    "slot": "COROLLA",
+    "shadow": "FE",
+    "original": 558,
+    "reencoded": 1450,
+    "fits": false
+  },
+  {
+    "slot": "COROLLA",
+    "shadow": "IG",
+    "original": 559,
+    "reencoded": 1451,
+    "fits": false
+  },
+  {
+    "slot": "240SX",
+    "shadow": "FE",
+    "original": 2961,
+    "reencoded": 3879,
+    "fits": false
+  },
+  {
+    "slot": "240SX",
+    "shadow": "IG",
+    "original": 2788,
+    "reencoded": 3936,
+    "fits": false
+  },
+  {
+    "slot": "MIATA",
+    "shadow": "FE",
+    "original": 3054,
+    "reencoded": 3974,
+    "fits": false
+  },
+  {
+    "slot": "MIATA",
+    "shadow": "IG",
+    "original": 2975,
+    "reencoded": 4338,
+    "fits": false
+  },
+  {
+    "slot": "FOCUS",
+    "shadow": "FE",
+    "original": 2694,
+    "reencoded": 3856,
+    "fits": false
+  },
+  {
+    "slot": "FOCUS",
+    "shadow": "IG",
+    "original": 2580,
+    "reencoded": 3775,
+    "fits": false
+  },
+  {
+    "slot": "PEUGOT",
+    "shadow": "FE",
+    "original": 2918,
+    "reencoded": 3822,
+    "fits": false
+  },
+  {
+    "slot": "PEUGOT",
+    "shadow": "IG",
+    "original": 2977,
+    "reencoded": 4339,
+    "fits": false
+  },
+  {
+    "slot": "PEUGOT106",
+    "shadow": "FE",
+    "original": 3004,
+    "reencoded": 3722,
+    "fits": false
+  },
+  {
+    "slot": "PEUGOT106",
+    "shadow": "IG",
+    "original": 2821,
+    "reencoded": 4042,
+    "fits": false
+  },
+  {
+    "slot": "CORSA",
+    "shadow": "FE",
+    "original": 3005,
+    "reencoded": 3885,
+    "fits": false
+  },
+  {
+    "slot": "CORSA",
+    "shadow": "IG",
+    "original": 2818,
+    "reencoded": 4040,
+    "fits": false
+  }
+]

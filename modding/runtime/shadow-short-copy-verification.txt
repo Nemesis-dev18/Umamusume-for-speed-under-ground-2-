@@ -1,0 +1,7 @@
+test_all_seven_candidates (test_fleet_shadows.FleetShadowCandidates.test_all_seven_candidates) ... ok
+test_short_copy_rewrite_preserves_output_and_default_stream (test_fleet_shadows.FleetShadowCandidates.test_short_copy_rewrite_preserves_output_and_default_stream) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 44.019s
+
+OK

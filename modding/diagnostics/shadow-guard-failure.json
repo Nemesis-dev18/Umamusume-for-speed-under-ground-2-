@@ -1,0 +1,7 @@
+{
+  "exit_code": 5,
+  "user_feedback": "Shadows improved; positions still behind; selecting left closed game",
+  "last_logged_model": 3,
+  "cause_confirmed": false,
+  "runner_log_sha256": "7920d7cde093391a67df1ca29c86f808976f9a6e83d3960fa79c7a5603cf6922"
+}

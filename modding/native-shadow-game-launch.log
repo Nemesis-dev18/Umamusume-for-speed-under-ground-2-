@@ -1,0 +1,222 @@
+ntsync: up and running.
+002c:trace:seh:libc_addr_cb found signal trampoline in /lib64/libc.so.6
+002c:fixme:wineboot:read_tsc_frequency TSC frequency calibration failed, unstable TSC?time0 13439391686938366800 ns, time1 13439391686939477000 ns
+002c:fixme:wineboot:read_tsc_frequency tsc2 - tsc0 2989224, tsc3 - tsc1 2992248
+002c:fixme:wineboot:read_tsc_frequency freq0 2692509457 Hz, freq2 2695233291 Hz, error 1011 ppm
+0034:trace:seh:libc_addr_cb found signal trampoline in /lib64/libc.so.6
+0040:trace:seh:libc_addr_cb found signal trampoline in /lib64/libc.so.6
+0068:trace:seh:libc_addr_cb found signal trampoline in /lib64/libc.so.6
+0080:trace:seh:libc_addr_cb found signal trampoline in /lib64/libc.so.6
+009c:trace:seh:libc_addr_cb found signal trampoline in /lib64/libc.so.6
+00a4:err:ntoskrnl:ZwLoadDriver failed to create driver L"\\Registry\\Machine\\System\\CurrentControlSet\\Services\\winebth": c0000142
+0034:fixme:service:scmdatabase_autostart_services Auto-start service L"winebth" failed to start: 1114
+0024:trace:seh:libc_addr_cb found signal trampoline in /lib64/libc.so.6
+00d8:trace:seh:libc_addr_cb found signal trampoline in /lib64/libc.so.6
+00d8:trace:seh:dispatch_exception code=6ba (RPC_S_SERVER_UNAVAILABLE) flags=0 addr=00006FFFFFBFD927
+00d8:trace:seh:dispatch_exception rip=00006fffffbfd927 rsp=000000000031d560 rbp=000000000031d650 eflags=00000206
+00d8:trace:seh:dispatch_exception rax=000000000031d580 rbx=000000000031e420 rcx=000000000031d580 rdx=0000000000000000
+00d8:trace:seh:dispatch_exception rsi=0000000000000064 rdi=0000000000831650  r8=0000000000000000  r9=0000000000000000
+00d8:trace:seh:dispatch_exception r10=0000000000831d80 r11=000000000000ce28 r12=000000000031d728 r13=0000000000000005
+00d8:trace:seh:dispatch_exception r14=00006fffff8fe260 r15=00006ffffe78e414 mxcsr=00001f80 cs=0033 ss=002b
+00d8:trace:seh:call_seh_handlers calling TEB handler 00006FFFFF8E8150 (rec=000000000031D580 frame=000000000031D7B0 context=000000000031D080 dispatch=000000000031C7F0) sp=31e130
+00d8:trace:seh:call_seh_handlers TEB handler at 00006FFFFF8E8150 returned 1
+00d8:trace:seh:call_seh_handlers calling TEB handler 00006FFFFE7664B0 (rec=000000000031D580 frame=000000000031ECA0 context=000000000031D080 dispatch=000000000031C7F0) sp=31edf0
+00d8:trace:seh:RtlUnwindEx code=6ba flags=2 end_frame=000000000031ECA0 target_ip=00006FFFFE754E3A
+00d8:trace:seh:RtlUnwindEx rip=00006ffffff67816 rsp=000000000031bad0 rbp=000000000031bb50 eflags=00000202
+00d8:trace:seh:RtlUnwindEx rax=000000007ffc0000 rbx=000000000031d580 rcx=000000000031c1a0 rdx=00006ffffe754e3a
+00d8:trace:seh:RtlUnwindEx rsi=000000000031d580 rdi=000000000031c1a0  r8=000000000031d580  r9=00006ffffe776530
+00d8:trace:seh:RtlUnwindEx r10=0000000000000000 r11=00007f8e96f5b740 r12=000000000031d7b0 r13=000000000031eca0
+00d8:trace:seh:RtlUnwindEx r14=000000007ffc0000 r15=000000000031bc40 mxcsr=00001f80 cs=0033 ss=002b
+00d8:trace:seh:RtlUnwindEx calling TEB handler 00006FFFFF8E8150 (rec=000000000031D580, frame=000000000031D7B0 context=000000000031C1A0, dispatch=000000000031BB50)
+00d8:trace:seh:RtlUnwindEx handler at 00006FFFFF8E8150 returned 1
+00d8:trace:seh:RtlRestoreContext returning to 00006FFFFE754E3A stack 000000000031EC50
+00f0:trace:seh:libc_addr_cb found signal trampoline in /lib64/libc.so.6
+0118:trace:seh:libc_addr_cb found signal trampoline in /lib64/libc.so.6
+00d8:fixme:file:GetLongPathNameW UNC pathname L"\\\\?\\Z:\\home\\nemesis\\.local\\share\\Steam\\steamapps\\common\\Proton - Experimental\\files\\share\\wine/../xalia/xalia.exe"
+00d8:fixme:file:GetLongPathNameW UNC pathname L"\\\\?\\Z:\\home\\nemesis\\.local\\share\\Steam\\steamapps\\common\\Proton - Experimental\\files\\share\\wine/../xalia/xalia.exe"
+00d8:fixme:file:GetLongPathNameW UNC pathname L"\\\\?\\Z:\\home\\nemesis\\.local\\share\\Steam\\steamapps\\common\\Proton - Experimental\\files\\share\\wine/../xalia/xalia.exe"
+0120:trace:seh:libc_addr_cb found signal trampoline in /lib64/libc.so.6
+0118:fixme:oleacc:find_class_data unhandled window class: L"#32769"
+0118:fixme:uiautomation:uia_get_providers_for_hwnd Override provider callback currently unimplemented.
+0118:fixme:uiautomation:default_uia_provider_callback Default ProviderType_NonClientArea provider unimplemented.
+0118:fixme:oleacc:find_class_data unhandled window class: L"#32769"
+0118:fixme:uiautomation:base_hwnd_fragment_get_FragmentRoot 0000000000829CD8, 000000000031F9A0: stub!
+0118:fixme:uiautomation:base_hwnd_fragment_GetEmbeddedFragmentRoots 0000000000829CD8, 000000000031F9B0: stub!
+0024:fixme:steamclient:setup_steam_registry Game language "english", defaulting LC_CTYPE / LC_MESSAGES to en_US.UTF-8.
+0120:fixme:mscoree:parse_supported_runtime sku=L".NETFramework,Version=v4.8" not implemented
+0120:fixme:mscoree:parse_supported_runtime sku=L".NETFramework,Version=v4.8" not implemented
+0120:fixme:ntdll:NtQuerySystemInformation info_class SYSTEM_PERFORMANCE_INFORMATION
+0120:trace:seh:signal (2, 00006FFFFCFB3CA0)
+0120:trace:seh:signal (15, 00006FFFFCFB3CA0)
+014c:trace:seh:dispatch_exception code=406d1388 (EXCEPTION_WINE_NAME_THREAD) flags=0 addr=00006FFFFFBFD927
+014c:trace:seh:dispatch_exception  info[0]=0000000000001000
+014c:trace:seh:dispatch_exception  info[1]=0000000000B847D0
+014c:trace:seh:dispatch_exception  info[2]=00000000FFFFFFFF
+014c:trace:seh:dispatch_exception rip=00006fffffbfd927 rsp=0000000003cdfd70 rbp=0000000003cdff60 eflags=00000202
+014c:trace:seh:dispatch_exception rax=0000000003cdfdc0 rbx=00006fffffec0bf4 rcx=0000000003cdfd90 rdx=0000000000000000
+014c:trace:seh:dispatch_exception rsi=0000000000b847d0 rdi=0000000000b75f80  r8=00000000ffffffff  r9=0000000003cdfe78
+014c:trace:seh:dispatch_exception r10=0000000000b75f60 r11=00000000001500c0 r12=0000000000000000 r13=0000000000000000
+014c:trace:seh:dispatch_exception r14=0000000000000000 r15=0000000000000000 mxcsr=00001f80 cs=0033 ss=002b
+014c:trace:seh:call_vectored_handlers calling handler at 00006FFFFD0EE610 code=406d1388 flags=0
+014c:trace:seh:call_vectored_handlers handler at 00006FFFFD0EE610 returned ffffffff
+0158:trace:seh:dispatch_exception code=406d1388 (EXCEPTION_WINE_NAME_THREAD) flags=0 addr=00006FFFFFBFD927
+0158:trace:seh:dispatch_exception  info[0]=0000000000001000
+0158:trace:seh:dispatch_exception  info[1]=0000000000BC2680
+0158:trace:seh:dispatch_exception  info[2]=00000000FFFFFFFF
+0158:trace:seh:dispatch_exception rip=00006fffffbfd927 rsp=0000000003edfd70 rbp=0000000003edff60 eflags=00000202
+0158:trace:seh:dispatch_exception rax=0000000003edfdc0 rbx=00006fffffec0bf4 rcx=0000000003edfd90 rdx=0000000000000000
+0158:trace:seh:dispatch_exception rsi=0000000000bc2680 rdi=0000000000bc7420  r8=00000000ffffffff  r9=0000000003edfe78
+0158:trace:seh:dispatch_exception r10=000000000000001f r11=00000000001500c0 r12=0000000000000000 r13=0000000000000000
+0158:trace:seh:dispatch_exception r14=0000000000000000 r15=0000000000000000 mxcsr=00001f80 cs=0033 ss=002b
+0158:trace:seh:call_vectored_handlers calling handler at 00006FFFFD0EE610 code=406d1388 flags=0
+0158:trace:seh:call_vectored_handlers handler at 00006FFFFD0EE610 returned ffffffff
+017c:fixme:ver:GetCurrentPackageId (0383FF00 00000000): stub
+0120:trace:seh:EnumProcessModulesEx (FFFFFFFFFFFFFFFF, 0000000003AC6C20, 8192, 000000000010C7FC, 0)
+0120:trace:seh:EnumProcessModulesEx (FFFFFFFFFFFFFFFF, 0000000003AB9F70, 8192, 000000000010C7EC, 0)
+0120:trace:seh:EnumProcessModulesEx (FFFFFFFFFFFFFFFF, 0000000003AB9F70, 8192, 000000000010C7EC, 0)
+0148:trace:seh:NtGetContextThread 0xfffffffe: eax=00000004 ebx=000000dc ecx=00000000 edx=00000000 esi=00000001 edi=00000000
+0148:trace:seh:NtGetContextThread 0xfffffffe: ebp=0207efa8 esp=0207ef80 eip=7bf1d110 cs=0023 ss=002b flags=00200207
+0148:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=0063 gs=006b
+0148:trace:seh:NtGetContextThread 0xfffffffe: eax=00000004 ebx=000000dc ecx=00000000 edx=00000000 esi=00000001 edi=00000000
+0148:trace:seh:NtGetContextThread 0xfffffffe: ebp=0207efa8 esp=0207ef80 eip=7bf1d110 cs=0023 ss=002b flags=00200207
+0148:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=0063 gs=006b
+0148:trace:seh:NtGetContextThread 0xfffffffe: eax=00000004 ebx=000000dc ecx=00000000 edx=00000000 esi=00000001 edi=00000000
+0148:trace:seh:NtGetContextThread 0xfffffffe: ebp=0207efa8 esp=0207ef80 eip=7bf1d110 cs=0023 ss=002b flags=00000207
+0148:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=0063 gs=006b
+0148:trace:seh:NtGetContextThread 0xfffffffe: eax=00000004 ebx=000000dc ecx=00000000 edx=00000000 esi=00000001 edi=00000000
+0148:trace:seh:NtGetContextThread 0xfffffffe: ebp=0207efa8 esp=0207ef80 eip=7bf1d110 cs=0023 ss=002b flags=00000207
+0148:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=0063 gs=006b
+0138:warn:debugstr:OutputDebugStringA "EZ Wheel Wrapper v4.26\n"
+0138:warn:seh:dispatch_exception "EZ Wheel Wrapper v4.26\n"
+0138:trace:seh:dispatch_exception code=40010006 (DBG_PRINTEXCEPTION_C) flags=0 addr=7BC0B6BF
+0138:trace:seh:dispatch_exception  info[0]=00000018
+0138:trace:seh:dispatch_exception  info[1]=00C2FCEC
+0138:trace:seh:dispatch_exception eip=7bc0b6bf esp=00c2faa0 ebp=00c2fb00 eflags=00000213
+0138:trace:seh:dispatch_exception eax=00c2faa0 ebx=00c2fcec ecx=00000000 edx=00c2fab4
+0138:trace:seh:dispatch_exception esi=00c2fb3c edi=00c2fab8 cs=0023 ds=002b es=002b fs=0063 gs=006b ss=002b
+0138:trace:seh:call_seh_handlers calling handler at 7BEB7990 code=40010006 flags=0
+0138:trace:seh:__regs_RtlUnwind code=40010006 flags=2
+0138:trace:seh:__regs_RtlUnwind eip=7bea0212 esp=00c2ed38 ebp=00c2ed40 eflags=00000212
+0138:trace:seh:__regs_RtlUnwind eax=00000000 ebx=00000000 ecx=40010006 edx=00c2fb40
+0138:trace:seh:__regs_RtlUnwind esi=00c2efc8 edi=00c2fb40 cs=0023 ds=002b es=002b fs=0063 gs=006b ss=002b
+0138:trace:seh:__regs_RtlUnwind calling handler at 7BF75DF0 code=40010006 flags=2
+0138:trace:seh:__regs_RtlUnwind handler at 7BF75DF0 returned 1
+0138:warn:debugstr:OutputDebugStringA "\r\n"
+0138:warn:seh:dispatch_exception "\r\n"
+0138:trace:seh:dispatch_exception code=40010006 (DBG_PRINTEXCEPTION_C) flags=0 addr=7BC0B6BF
+0138:trace:seh:dispatch_exception  info[0]=00000003
+0138:trace:seh:dispatch_exception  info[1]=007A38E4
+0138:trace:seh:dispatch_exception eip=7bc0b6bf esp=00c2faa0 ebp=00c2fb00 eflags=00000213
+0138:trace:seh:dispatch_exception eax=00c2faa0 ebx=007a38e4 ecx=00000000 edx=00c2fab4
+0138:trace:seh:dispatch_exception esi=00c2fb3c edi=00c2fab8 cs=0023 ds=002b es=002b fs=0063 gs=006b ss=002b
+0138:trace:seh:call_seh_handlers calling handler at 7BEB7990 code=40010006 flags=0
+0138:trace:seh:__regs_RtlUnwind code=40010006 flags=2
+0138:trace:seh:__regs_RtlUnwind eip=7bea0212 esp=00c2ed38 ebp=00c2ed40 eflags=00000212
+0138:trace:seh:__regs_RtlUnwind eax=00000000 ebx=00000000 ecx=40010006 edx=00c2fb40
+0138:trace:seh:__regs_RtlUnwind esi=00c2efc8 edi=00c2fb40 cs=0023 ds=002b es=002b fs=0063 gs=006b ss=002b
+0138:trace:seh:__regs_RtlUnwind calling handler at 7BF75DF0 code=40010006 flags=2
+0138:trace:seh:__regs_RtlUnwind handler at 7BF75DF0 returned 1
+0148:trace:seh:NtGetContextThread 0xfffffffe: eax=00000004 ebx=000000dc ecx=00000000 edx=00000000 esi=00000001 edi=00000000
+0148:trace:seh:NtGetContextThread 0xfffffffe: ebp=0207efa8 esp=0207ef80 eip=7bf1d110 cs=0023 ss=002b flags=00000207
+0148:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=0063 gs=006b
+0148:trace:seh:NtGetContextThread 0xfffffffe: eax=00000004 ebx=000000dc ecx=00000000 edx=00000000 esi=00000001 edi=00000000
+0148:trace:seh:NtGetContextThread 0xfffffffe: ebp=0207ef88 esp=0207ef60 eip=7bf1d110 cs=0023 ss=002b flags=00000207
+0148:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=0063 gs=006b
+0148:trace:seh:NtGetContextThread 0xfffffffe: eax=00000004 ebx=000000dc ecx=00000000 edx=00000000 esi=00000001 edi=00000000
+0148:trace:seh:NtGetContextThread 0xfffffffe: ebp=0207ef88 esp=0207ef60 eip=7bf1d110 cs=0023 ss=002b flags=00000207
+0148:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=0063 gs=006b
+0148:trace:seh:NtGetContextThread 0xfffffffe: eax=00000004 ebx=000000dc ecx=00000000 edx=00000000 esi=00000001 edi=00000000
+0148:trace:seh:NtGetContextThread 0xfffffffe: ebp=0207ef88 esp=0207ef60 eip=7bf1d110 cs=0023 ss=002b flags=00000207
+0148:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=0063 gs=006b
+0148:trace:seh:NtGetContextThread 0xfffffffe: eax=00000004 ebx=000000dc ecx=00000000 edx=00000000 esi=00000001 edi=00000000
+0148:trace:seh:NtGetContextThread 0xfffffffe: ebp=0207ef88 esp=0207ef60 eip=7bf1d110 cs=0023 ss=002b flags=00000207
+0148:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=0063 gs=006b
+0120:trace:seh:EnumProcessModulesEx (00000000000001A4, 000000000010CFB0, 8, 000000000010CFAC, 0)
+0120:trace:seh:EnumProcessModulesEx (00000000000001A4, 000000000010CFB0, 8, 000000000010CFAC, 0)
+0120:trace:seh:EnumProcessModulesEx (00000000000001A4, 000000000010CFB0, 8, 000000000010CFAC, 0)
+0120:trace:seh:EnumProcessModulesEx (00000000000001A4, 000000000010CFB0, 8, 000000000010CFAC, 0)
+0120:trace:seh:EnumProcessModulesEx (00000000000001A4, 000000000010CFB0, 8, 000000000010CFAC, 0)
+0120:trace:seh:EnumProcessModulesEx (00000000000001A4, 000000000010CFB0, 8, 000000000010CFAC, 0)
+0120:trace:seh:EnumProcessModulesEx (00000000000001A4, 000000000010CFB0, 8, 000000000010CFAC, 0)
+0120:trace:seh:EnumProcessModulesEx (00000000000001A4, 000000000010CFB0, 8, 000000000010CFAC, 0)
+0120:trace:seh:EnumProcessModulesEx (00000000000001A4, 000000000010CFB0, 8, 000000000010CFAC, 0)
+0120:trace:seh:EnumProcessModulesEx (00000000000001A4, 000000000010CFB0, 8, 000000000010CFAC, 0)
+0120:trace:seh:EnumProcessModulesEx (00000000000001A4, 000000000010CFB0, 8, 000000000010CFAC, 0)
+0120:trace:seh:EnumProcessModulesEx (00000000000001A4, 000000000010CFB0, 8, 000000000010CFAC, 0)
+0120:trace:seh:EnumProcessModulesEx (00000000000001A4, 000000000010CFB0, 8, 000000000010CFAC, 0)
+0120:trace:seh:EnumProcessModulesEx (00000000000001A4, 000000000010CFB0, 8, 000000000010CFAC, 0)
+0120:trace:seh:EnumProcessModulesEx (00000000000001A4, 000000000010CFB0, 8, 000000000010CFAC, 0)
+0120:trace:seh:EnumProcessModulesEx (00000000000001A4, 000000000010CFB0, 8, 000000000010CFAC, 0)
+0120:trace:seh:EnumProcessModulesEx (00000000000001A4, 000000000010CFB0, 8, 000000000010CFAC, 0)
+0120:fixme:sync:SetWaitableTimerEx (00000000000001A4, 000000000010F030, 0, 0000000000000000, 0000000000000000, 0000000000000000, 0) semi-stub
+0148:trace:seh:NtGetContextThread 0xfffffffe: eax=00000004 ebx=000000dc ecx=00000000 edx=00000000 esi=00000001 edi=00000000
+0148:trace:seh:NtGetContextThread 0xfffffffe: ebp=0207ef88 esp=0207ef60 eip=7bf1d110 cs=0023 ss=002b flags=00000207
+0148:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=0063 gs=006b
+0130:fixme:uiautomation:msaa_provider_GetPatternProvider Unimplemented patternId 10002
+0130:fixme:uiautomation:base_hwnd_provider_GetPatternProvider 000000000088FE90, 10002, 0000000001A5F8A0: stub
+0148:trace:seh:NtGetContextThread 0xfffffffe: eax=00000004 ebx=000000dc ecx=00000000 edx=00000000 esi=00000001 edi=00000000
+0148:trace:seh:NtGetContextThread 0xfffffffe: ebp=0207efa8 esp=0207ef80 eip=7bf1d110 cs=0023 ss=002b flags=00000207
+0148:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=0063 gs=006b
+0148:trace:seh:NtGetContextThread 0xfffffffe: eax=00000004 ebx=000000dc ecx=00000000 edx=00000000 esi=00000001 edi=00000000
+0148:trace:seh:NtGetContextThread 0xfffffffe: ebp=0207efa8 esp=0207ef80 eip=7bf1d110 cs=0023 ss=002b flags=00000207
+0148:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=0063 gs=006b
+0148:trace:seh:NtGetContextThread 0xfffffffe: eax=00000004 ebx=000000dc ecx=00000000 edx=00000000 esi=00000001 edi=00000000
+0148:trace:seh:NtGetContextThread 0xfffffffe: ebp=0207efa8 esp=0207ef80 eip=7bf1d110 cs=0023 ss=002b flags=00000207
+0148:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=0063 gs=006b
+0148:trace:seh:NtGetContextThread 0xfffffffe: eax=00000004 ebx=000000dc ecx=00000000 edx=00000000 esi=00000001 edi=00000000
+0148:trace:seh:NtGetContextThread 0xfffffffe: ebp=0207efa8 esp=0207ef80 eip=7bf1d110 cs=0023 ss=002b flags=00000207
+0148:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=0063 gs=006b
+0148:trace:seh:NtGetContextThread 0xfffffffe: eax=00000004 ebx=000000dc ecx=00000000 edx=00000000 esi=00000001 edi=00000000
+0148:trace:seh:NtGetContextThread 0xfffffffe: ebp=0207efa8 esp=0207ef80 eip=7bf1d110 cs=0023 ss=002b flags=00000207
+0148:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=0063 gs=006b
+0148:trace:seh:NtGetContextThread 0xfffffffe: eax=00000004 ebx=000000dc ecx=00000000 edx=00000000 esi=00000001 edi=00000000
+0148:trace:seh:NtGetContextThread 0xfffffffe: ebp=0207ef88 esp=0207ef60 eip=7bf1d110 cs=0023 ss=002b flags=00000207
+0148:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=0063 gs=006b
+0148:trace:seh:NtGetContextThread 0xfffffffe: eax=00000004 ebx=000000dc ecx=00000000 edx=00000000 esi=00000001 edi=00000000
+0148:trace:seh:NtGetContextThread 0xfffffffe: ebp=0207ef88 esp=0207ef60 eip=7bf1d110 cs=0023 ss=002b flags=00000207
+0148:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=0063 gs=006b
+0148:trace:seh:NtGetContextThread 0xfffffffe: eax=00000004 ebx=000000dc ecx=00000000 edx=00000000 esi=00000001 edi=00000000
+0148:trace:seh:NtGetContextThread 0xfffffffe: ebp=0207ef88 esp=0207ef60 eip=7bf1d110 cs=0023 ss=002b flags=00000207
+0148:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=0063 gs=006b
+0148:trace:seh:NtGetContextThread 0xfffffffe: eax=00000004 ebx=000000dc ecx=00000000 edx=00000000 esi=00000001 edi=00000000
+0148:trace:seh:NtGetContextThread 0xfffffffe: ebp=0207ef88 esp=0207ef60 eip=7bf1d110 cs=0023 ss=002b flags=00000207
+0148:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=0063 gs=006b
+0148:trace:seh:NtGetContextThread 0xfffffffe: eax=00000004 ebx=000000dc ecx=00000000 edx=00000000 esi=00000001 edi=00000000
+0148:trace:seh:NtGetContextThread 0xfffffffe: ebp=0207ef88 esp=0207ef60 eip=7bf1d110 cs=0023 ss=002b flags=00000207
+0148:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=0063 gs=006b
+0148:trace:seh:NtGetContextThread 0xfffffffe: eax=00000004 ebx=000000dc ecx=00000000 edx=00000000 esi=00000001 edi=00000000
+0148:trace:seh:NtGetContextThread 0xfffffffe: ebp=0207efa8 esp=0207ef80 eip=7bf1d110 cs=0023 ss=002b flags=00000207
+0148:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=0063 gs=006b
+0148:trace:seh:NtGetContextThread 0xfffffffe: eax=00000004 ebx=000000dc ecx=00000000 edx=00000000 esi=00000001 edi=00000000
+0148:trace:seh:NtGetContextThread 0xfffffffe: ebp=0207efa8 esp=0207ef80 eip=7bf1d110 cs=0023 ss=002b flags=00000207
+0148:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=0063 gs=006b
+0148:trace:seh:NtGetContextThread 0xfffffffe: eax=00000004 ebx=000000dc ecx=00000000 edx=00000000 esi=00000001 edi=00000000
+0148:trace:seh:NtGetContextThread 0xfffffffe: ebp=0207efa8 esp=0207ef80 eip=7bf1d110 cs=0023 ss=002b flags=00000207
+0148:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=0063 gs=006b
+0148:trace:seh:NtGetContextThread 0xfffffffe: eax=00000004 ebx=000000dc ecx=00000000 edx=00000000 esi=00000001 edi=00000000
+0148:trace:seh:NtGetContextThread 0xfffffffe: ebp=0207efa8 esp=0207ef80 eip=7bf1d110 cs=0023 ss=002b flags=00000207
+0148:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=0063 gs=006b
+0148:trace:seh:NtGetContextThread 0xfffffffe: eax=00000004 ebx=000000dc ecx=00000000 edx=00000000 esi=00000001 edi=00000000
+0148:trace:seh:NtGetContextThread 0xfffffffe: ebp=0207efa8 esp=0207ef80 eip=7bf1d110 cs=0023 ss=002b flags=00000207
+0148:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=0063 gs=006b
+0148:trace:seh:NtGetContextThread 0xfffffffe: eax=00000004 ebx=000000dc ecx=00000000 edx=00000000 esi=00000001 edi=00000000
+0148:trace:seh:NtGetContextThread 0xfffffffe: ebp=0207efa8 esp=0207ef80 eip=7bf1d110 cs=0023 ss=002b flags=00000207
+0148:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=0063 gs=006b
+0148:trace:seh:NtGetContextThread 0xfffffffe: eax=00000004 ebx=000000dc ecx=00000000 edx=00000000 esi=00000001 edi=00000000
+0148:trace:seh:NtGetContextThread 0xfffffffe: ebp=0207ef88 esp=0207ef60 eip=7bf1d110 cs=0023 ss=002b flags=00000207
+0148:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=0063 gs=006b
+0148:trace:seh:NtGetContextThread 0xfffffffe: eax=00000004 ebx=000000dc ecx=00000000 edx=00000000 esi=00000001 edi=00000000
+0148:trace:seh:NtGetContextThread 0xfffffffe: ebp=0207ef88 esp=0207ef60 eip=7bf1d110 cs=0023 ss=002b flags=00000207
+0148:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=0063 gs=006b
+0148:trace:seh:NtGetContextThread 0xfffffffe: eax=00000004 ebx=000000dc ecx=00000000 edx=00000000 esi=00000001 edi=00000000
+0148:trace:seh:NtGetContextThread 0xfffffffe: ebp=0207ef88 esp=0207ef60 eip=7bf1d110 cs=0023 ss=002b flags=00000207
+0148:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=0063 gs=006b
+0148:trace:seh:NtGetContextThread 0xfffffffe: eax=00000004 ebx=000000dc ecx=00000000 edx=00000000 esi=00000001 edi=00000000
+0148:trace:seh:NtGetContextThread 0xfffffffe: ebp=0207ef88 esp=0207ef60 eip=7bf1d110 cs=0023 ss=002b flags=00000207
+0148:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=0063 gs=006b
+0148:trace:seh:NtGetContextThread 0xfffffffe: eax=00000004 ebx=000000dc ecx=00000000 edx=00000000 esi=00000001 edi=00000000
+0148:trace:seh:NtGetContextThread 0xfffffffe: ebp=0207ef88 esp=0207ef60 eip=7bf1d110 cs=0023 ss=002b flags=00000207
+0148:trace:seh:NtGetContextThread 0xfffffffe: ds=002b es=002b fs=0063 gs=006b
+0120:trace:seh:EnumProcessModulesEx (000000000000016C, 000000000010CFB0, 8, 000000000010CFAC, 0)
+0130:fixme:uiautomation:msaa_provider_GetPatternProvider Unimplemented patternId 10002
+0130:fixme:uiautomation:base_hwnd_provider_GetPatternProvider 0000000000876CD0, 10002, 0000000001A5F8A0: stub

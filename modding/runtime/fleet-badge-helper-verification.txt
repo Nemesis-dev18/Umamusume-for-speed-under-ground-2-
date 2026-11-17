@@ -1,0 +1,8 @@
+test_compressed_roundtrip (test_kitasan_badge.BadgeTests.test_compressed_roundtrip) ... ok
+test_existing_textures_preserved (test_kitasan_badge.BadgeTests.test_existing_textures_preserved) ... ok
+test_literal_roundtrip (test_kitasan_badge.BadgeTests.test_literal_roundtrip) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 1.781s
+
+OK

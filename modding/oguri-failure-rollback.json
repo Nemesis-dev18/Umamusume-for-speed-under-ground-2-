@@ -1,0 +1,37 @@
+{
+  "restored": [
+    {
+      "path": "CARS/COROLLA/TEXTURES.BIN",
+      "sha256": "0ad09f89b7eb3c82cade7c76ea9c727dc28d43e48f79226e2159bf4add2c2094"
+    },
+    {
+      "path": "CARS/240SX/TEXTURES.BIN",
+      "sha256": "797953b0aad7be50ebbf81144dedfb39c9fab513a41a02886935026c879d0ea1"
+    },
+    {
+      "path": "CARS/MIATA/TEXTURES.BIN",
+      "sha256": "4fe9f1bc5df58e47273c87586d278b0795121b7893844a415630a8e83025369b"
+    },
+    {
+      "path": "CARS/FOCUS/TEXTURES.BIN",
+      "sha256": "6e601790adb3856bd637e1e62ef69bc2c8912ca795a22ffc9cb41f90a3e94156"
+    },
+    {
+      "path": "CARS/PEUGOT/TEXTURES.BIN",
+      "sha256": "a2eff8c083c37a5f6ded202b0a181db04f4c0147fe2b9d6650fb0e848f7de838"
+    },
+    {
+      "path": "CARS/PEUGOT106/TEXTURES.BIN",
+      "sha256": "cd2f633cd7a32614f7fb81bf785a4dcf067dcfca22bb84c26af9dff94e7a1bd3"
+    },
+    {
+      "path": "CARS/CORSA/TEXTURES.BIN",
+      "sha256": "f7d8e61a42cc96365b66e68fd1214e3e372fc133e68812cb8d75c2fe21ccbcb7"
+    }
+  ],
+  "temporary_diagnostics_removed": true,
+  "runtime_sha256": "a2861b402ca560c0b4ecaa0b56a048aea4eebd6468757e4a6cce60b0eef7c63c",
+  "game_running": false,
+  "shadows_compact_active": false,
+  "gameplay_verified": false
+}

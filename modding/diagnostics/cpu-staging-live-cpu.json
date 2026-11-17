@@ -1,0 +1,18 @@
+{
+  "pid": 254685,
+  "clock_ticks": 100,
+  "samples": [
+    {
+      "time": 38629.650250976,
+      "utime": 23687,
+      "stime": 2219
+    },
+    {
+      "time": 38634.650712144,
+      "utime": 23715,
+      "stime": 2231
+    }
+  ],
+  "scope": "Process CPU time; not GPU time or controlled FPS",
+  "cpu_core_percent": 7.999262199253451
+}

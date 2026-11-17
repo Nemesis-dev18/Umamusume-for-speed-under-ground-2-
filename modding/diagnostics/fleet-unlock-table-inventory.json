@@ -1,0 +1,15 @@
+{
+  "source": "GLOBAL/GLOBALB.BUN.before-fleet-chibi.bak",
+  "source_is_backup": true,
+  "chunks_found": 2,
+  "records": [
+    {
+      "slot": "MIATA",
+      "offset": 7744180,
+      "required_event_1": "0x0",
+      "required_event_2": "0x1185ef07"
+    }
+  ],
+  "modified": false,
+  "interpretation": "Static prerequisites only; does not prove live frontend/save eligibility"
+}

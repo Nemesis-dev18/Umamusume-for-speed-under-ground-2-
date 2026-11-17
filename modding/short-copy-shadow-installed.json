@@ -1,0 +1,140 @@
+{
+  "files": [
+    {
+      "target": "CARS/COROLLA/TEXTURES.BIN",
+      "slot": "COROLLA",
+      "candidate": "modding/staged-runtime/fleet-shadows-short-copy/COROLLA/TEXTURES.BIN",
+      "before_sha256": "0ad09f89b7eb3c82cade7c76ea9c727dc28d43e48f79226e2159bf4add2c2094",
+      "after_sha256": "043b53818aea43e67eb379f63bdbd857f2cf9a1eb1b8ab932fc629cc271e4ca0",
+      "streams": [
+        {
+          "hash": "0xb7f6575b",
+          "original_bytes": 558,
+          "short_copy_bytes": 280
+        },
+        {
+          "hash": "0xb7f657c0",
+          "original_bytes": 559,
+          "short_copy_bytes": 281
+        }
+      ]
+    },
+    {
+      "target": "CARS/240SX/TEXTURES.BIN",
+      "slot": "240SX",
+      "candidate": "modding/staged-runtime/fleet-shadows-short-copy/240SX/TEXTURES.BIN",
+      "before_sha256": "797953b0aad7be50ebbf81144dedfb39c9fab513a41a02886935026c879d0ea1",
+      "after_sha256": "9a33e7930eb45bc9d51b683fc17f1df31c3c5872cdc3ec6a4a8643ba589f8c52",
+      "streams": [
+        {
+          "hash": "0xf3659690",
+          "original_bytes": 2961,
+          "short_copy_bytes": 279
+        },
+        {
+          "hash": "0xf36596f5",
+          "original_bytes": 2788,
+          "short_copy_bytes": 279
+        }
+      ]
+    },
+    {
+      "target": "CARS/MIATA/TEXTURES.BIN",
+      "slot": "MIATA",
+      "candidate": "modding/staged-runtime/fleet-shadows-short-copy/MIATA/TEXTURES.BIN",
+      "before_sha256": "4fe9f1bc5df58e47273c87586d278b0795121b7893844a415630a8e83025369b",
+      "after_sha256": "f416384138f6bb98d30154bce76482f6f2bd84d61cefb97c2abe5cee0c3007ee",
+      "streams": [
+        {
+          "hash": "0x1e8a50db",
+          "original_bytes": 3054,
+          "short_copy_bytes": 279
+        },
+        {
+          "hash": "0x1e8a5140",
+          "original_bytes": 2975,
+          "short_copy_bytes": 278
+        }
+      ]
+    },
+    {
+      "target": "CARS/FOCUS/TEXTURES.BIN",
+      "slot": "FOCUS",
+      "candidate": "modding/staged-runtime/fleet-shadows-short-copy/FOCUS/TEXTURES.BIN",
+      "before_sha256": "6e601790adb3856bd637e1e62ef69bc2c8912ca795a22ffc9cb41f90a3e94156",
+      "after_sha256": "23ef8533cdcad06a1e490bd33988c404327e9a3fc3d9a097e6d42f111e4bcc21",
+      "streams": [
+        {
+          "hash": "0x8c049acf",
+          "original_bytes": 2694,
+          "short_copy_bytes": 279
+        },
+        {
+          "hash": "0x8c049b34",
+          "original_bytes": 2580,
+          "short_copy_bytes": 278
+        }
+      ]
+    },
+    {
+      "target": "CARS/PEUGOT/TEXTURES.BIN",
+      "slot": "PEUGOT",
+      "candidate": "modding/staged-runtime/fleet-shadows-short-copy/PEUGOT/TEXTURES.BIN",
+      "before_sha256": "a2eff8c083c37a5f6ded202b0a181db04f4c0147fe2b9d6650fb0e848f7de838",
+      "after_sha256": "9772602aca09c40100e58ad679490761fe35f243b9c5613f9b962afa8fea7b05",
+      "streams": [
+        {
+          "hash": "0x720ef583",
+          "original_bytes": 2918,
+          "short_copy_bytes": 279
+        },
+        {
+          "hash": "0x720ef5e8",
+          "original_bytes": 2977,
+          "short_copy_bytes": 280
+        }
+      ]
+    },
+    {
+      "target": "CARS/PEUGOT106/TEXTURES.BIN",
+      "slot": "PEUGOT106",
+      "candidate": "modding/staged-runtime/fleet-shadows-short-copy/PEUGOT106/TEXTURES.BIN",
+      "before_sha256": "cd2f633cd7a32614f7fb81bf785a4dcf067dcfca22bb84c26af9dff94e7a1bd3",
+      "after_sha256": "6743c5b1a50e2ad9f729f357d44e7ec915f5317338ead37a971ead37e11efb2c",
+      "streams": [
+        {
+          "hash": "0x45f33d5a",
+          "original_bytes": 3004,
+          "short_copy_bytes": 284
+        },
+        {
+          "hash": "0x45f33dbf",
+          "original_bytes": 2821,
+          "short_copy_bytes": 283
+        }
+      ]
+    },
+    {
+      "target": "CARS/CORSA/TEXTURES.BIN",
+      "slot": "CORSA",
+      "candidate": "modding/staged-runtime/fleet-shadows-short-copy/CORSA/TEXTURES.BIN",
+      "before_sha256": "f7d8e61a42cc96365b66e68fd1214e3e372fc133e68812cb8d75c2fe21ccbcb7",
+      "after_sha256": "f64066d58c4e0b4a804a84fcbb94926a9df093384993de8552a318e6acf9c679",
+      "streams": [
+        {
+          "hash": "0x650ec7c7",
+          "original_bytes": 3005,
+          "short_copy_bytes": 278
+        },
+        {
+          "hash": "0x650ec82c",
+          "original_bytes": 2818,
+          "short_copy_bytes": 279
+        }
+      ]
+    }
+  ],
+  "backup_suffix": ".before-short-copy-shadow.bak",
+  "runtime_unchanged": true,
+  "game_verified": false
+}

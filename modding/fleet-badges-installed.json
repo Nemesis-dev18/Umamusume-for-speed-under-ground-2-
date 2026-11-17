@@ -1,0 +1,24 @@
+{
+  "files": [
+    {
+      "target": "FRONTEND/FrontB.lzc",
+      "backup": "FRONTEND/FrontB.lzc.before-fleet-chibi.bak",
+      "before_sha256": "6acdf043e47c9c7ee58e7781f0926e2cf8f109bdfe57e60e330657b24de8703e",
+      "after_sha256": "2208f3e6a1323947bff073f14be2ddcf25af4c3a2f4c3a73a9162501df08b731"
+    },
+    {
+      "target": "GLOBAL/GLOBALB.BUN",
+      "backup": "GLOBAL/GLOBALB.BUN.before-fleet-chibi.bak",
+      "before_sha256": "e2a0c769aa3f4b4f8d5e547e76ecbf83727a100f2486cf942e7c7333d9c5c1d0",
+      "after_sha256": "e8a11d592432df30bead63697dbcb3d4db145b7f356f67168c40c5eb910c6e78"
+    },
+    {
+      "target": "GLOBAL/GlobalB.lzc",
+      "backup": "GLOBAL/GlobalB.lzc.before-fleet-chibi.bak",
+      "before_sha256": "d3d77b40c95d0d6adaccd925cca0ff280c5043afc90060909b7b6a927da2894b",
+      "after_sha256": "2c4c57e66a3504958aa08defd9f36622a50916499ee3216551b6ff5c3346bc31"
+    }
+  ],
+  "installed": true,
+  "menu_visual_verified": false
+}

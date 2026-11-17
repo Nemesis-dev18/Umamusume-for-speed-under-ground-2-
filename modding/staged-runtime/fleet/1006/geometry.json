@@ -1,0 +1,955 @@
+{
+  "id": 1006,
+  "slot": "PEUGOT106",
+  "target": "CARS/PEUGOT106/GEOMETRY.BIN",
+  "candidate": "modding/staged-runtime/fleet/1006/GEOMETRY.BIN",
+  "before_sha256": "ca7893022fb04aa5673288291a196454441381a4b7e52693d53dfa22dda6203d",
+  "after_sha256": "ecb27b0d5de71de0fac49f8c9238b38610bd41601667f5e09e91e89ea896727d",
+  "bytes_before": 7456896,
+  "bytes_after": 2260928,
+  "verification": {
+    "solids": 571,
+    "body_carriers": 20,
+    "hidden_original_parts": 551,
+    "directory_records": 571,
+    "collision_relocated": true,
+    "opaque_leaves_preserved": true,
+    "bytes": 2260928
+  },
+  "bounds": [
+    -2.25,
+    -2.25,
+    -2.25,
+    2.25,
+    2.25,
+    2.25
+  ],
+  "collision_hulls": [
+    {
+      "name": "PEUGOT106_CV",
+      "vertices": 43,
+      "old_minimum": [
+        -1.7600913047790527,
+        -0.7967216968536377,
+        0.2055811882019043
+      ],
+      "old_maximum": [
+        1.9813590049743652,
+        0.7963354587554932,
+        1.2139939069747925
+      ],
+      "new_minimum": [
+        -0.36080246913580244,
+        -0.29895061728395056,
+        0.051543209876543206
+      ],
+      "new_maximum": [
+        0.6700617283950617,
+        0.29895061728395056,
+        2.010185185185185
+      ],
+      "scale": [
+        0.27552529425382205,
+        0.37531687577102907,
+        1.9423019353544682
+      ]
+    }
+  ],
+  "collision_point_ranges": [
+    {
+      "offset": 2258432,
+      "bytes": 12
+    },
+    {
+      "offset": 2258480,
+      "bytes": 12
+    },
+    {
+      "offset": 2258528,
+      "bytes": 12
+    },
+    {
+      "offset": 2258576,
+      "bytes": 12
+    },
+    {
+      "offset": 2258624,
+      "bytes": 12
+    },
+    {
+      "offset": 2258672,
+      "bytes": 12
+    },
+    {
+      "offset": 2258720,
+      "bytes": 12
+    },
+    {
+      "offset": 2258768,
+      "bytes": 12
+    },
+    {
+      "offset": 2258816,
+      "bytes": 12
+    },
+    {
+      "offset": 2258864,
+      "bytes": 12
+    },
+    {
+      "offset": 2258912,
+      "bytes": 12
+    },
+    {
+      "offset": 2258960,
+      "bytes": 12
+    },
+    {
+      "offset": 2259008,
+      "bytes": 12
+    },
+    {
+      "offset": 2259056,
+      "bytes": 12
+    },
+    {
+      "offset": 2259104,
+      "bytes": 12
+    },
+    {
+      "offset": 2259152,
+      "bytes": 12
+    },
+    {
+      "offset": 2259200,
+      "bytes": 12
+    },
+    {
+      "offset": 2259248,
+      "bytes": 12
+    },
+    {
+      "offset": 2259296,
+      "bytes": 12
+    },
+    {
+      "offset": 2259344,
+      "bytes": 12
+    },
+    {
+      "offset": 2259392,
+      "bytes": 12
+    },
+    {
+      "offset": 2259440,
+      "bytes": 12
+    },
+    {
+      "offset": 2259488,
+      "bytes": 12
+    },
+    {
+      "offset": 2259536,
+      "bytes": 12
+    },
+    {
+      "offset": 2259584,
+      "bytes": 12
+    },
+    {
+      "offset": 2259632,
+      "bytes": 12
+    },
+    {
+      "offset": 2259680,
+      "bytes": 12
+    },
+    {
+      "offset": 2259728,
+      "bytes": 12
+    },
+    {
+      "offset": 2259776,
+      "bytes": 12
+    },
+    {
+      "offset": 2259824,
+      "bytes": 12
+    },
+    {
+      "offset": 2259872,
+      "bytes": 12
+    },
+    {
+      "offset": 2259920,
+      "bytes": 12
+    },
+    {
+      "offset": 2259968,
+      "bytes": 12
+    },
+    {
+      "offset": 2260016,
+      "bytes": 12
+    },
+    {
+      "offset": 2260064,
+      "bytes": 12
+    },
+    {
+      "offset": 2260112,
+      "bytes": 12
+    },
+    {
+      "offset": 2260160,
+      "bytes": 12
+    },
+    {
+      "offset": 2260208,
+      "bytes": 12
+    },
+    {
+      "offset": 2260256,
+      "bytes": 12
+    },
+    {
+      "offset": 2260304,
+      "bytes": 12
+    },
+    {
+      "offset": 2260352,
+      "bytes": 12
+    },
+    {
+      "offset": 2260400,
+      "bytes": 12
+    },
+    {
+      "offset": 2260448,
+      "bytes": 12
+    }
+  ],
+  "disabled_markers": [
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 144112,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 144192,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 153328,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 153408,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 231552,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 231632,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 240256,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 240336,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 275200,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 275280,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 284416,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 284496,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 327920,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 328000,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 337136,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 337216,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 377088,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 377168,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 385280,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 385360,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 427008,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 427088,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 436096,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 436176,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 478592,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 478672,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 486656,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 486736,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 524928,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 525008,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 532992,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 533072,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 570368,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 570448,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 577280,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 577360,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 616816,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 616896,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 626160,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 626240,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 662416,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 662496,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 669712,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 669792,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 700832,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 700912,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 707360,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 707440,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 746112,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 746192,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 753408,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 753488,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 789376,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 789456,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 796288,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 796368,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 825472,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 825552,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 832256,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 832336,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 863744,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 863824,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 870272,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 870352,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 910352,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 910432,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 918928,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 919008,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 953344,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 953424,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 961152,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 961232,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 994672,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 994752,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 1001840,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 1001920,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 1032192,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 1032272,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 1040128,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 1040208,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 1080592,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 1080672,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 1090704,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 1090784,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 1130112,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 1130192,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 1136896,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 1136976,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 1172736,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 1172816,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 1183104,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 1183184,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 1216256,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 1216336,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 1221632,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 1221712,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 1250432,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 1250512,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 1258880,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 1258960,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 1297536,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 1297616,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 1306112,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 1306192,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 1331136,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 1331296,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 1364800,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 1364960,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 1421504,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 1421664,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 1456576,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 1456736,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 1516352,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 1516512,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 1555904,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 1556064,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 1608640,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 1608800,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    },
+    {
+      "name": "LEFT_EXHAUST",
+      "offset": 1645760,
+      "before": "8ba1f8bc",
+      "after": "275d3aba"
+    },
+    {
+      "name": "REAR_LICENSE_PLATE",
+      "offset": 1645920,
+      "before": "e0f705c8",
+      "after": "7cf8e4a4"
+    }
+  ],
+  "installed": false
+}

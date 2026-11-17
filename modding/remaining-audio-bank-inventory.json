@@ -1,0 +1,221 @@
+[
+  {
+    "file": "SOUND/IG_GLOBAL/ENV_COMMON_MB.abk",
+    "samples": 8,
+    "sample_counts": [
+      77588,
+      126043,
+      33778,
+      26746,
+      26964,
+      25832,
+      29718,
+      46493
+    ],
+    "scope": "Read-only bank inventory; no sound attribution inferred"
+  },
+  {
+    "file": "SOUND/IG_GLOBAL/FX_MAIN_MEM_MB.abk",
+    "samples": 4,
+    "sample_counts": [
+      125977,
+      145573,
+      92842,
+      87014
+    ],
+    "scope": "Read-only bank inventory; no sound attribution inferred"
+  },
+  {
+    "file": "SOUND/IG_GLOBAL/FX_Misc_MB.abk",
+    "samples": 2,
+    "sample_counts": [
+      69144,
+      19111
+    ],
+    "scope": "Read-only bank inventory; no sound attribution inferred"
+  },
+  {
+    "file": "SOUND/IG_GLOBAL/FX_Rain_MB.abk",
+    "samples": 2,
+    "sample_counts": [
+      88079,
+      43285
+    ],
+    "scope": "Read-only bank inventory; no sound attribution inferred"
+  },
+  {
+    "file": "SOUND/IG_GLOBAL/MB_Stich_Collision.abk",
+    "samples": 94,
+    "sample_counts": [
+      4906,
+      4894,
+      1719,
+      9091,
+      15063,
+      3879,
+      1956,
+      15632,
+      18621,
+      25725,
+      8229,
+      11636,
+      16094,
+      14163,
+      1106,
+      7149,
+      6916,
+      22272,
+      6720,
+      6447,
+      8532,
+      17691,
+      30868,
+      25676,
+      32801,
+      17379,
+      18133,
+      21449,
+      12736,
+      15809,
+      11310,
+      17640,
+      4507,
+      7635,
+      7017,
+      13600,
+      42732,
+      20531,
+      7649,
+      5961,
+      6343,
+      3612,
+      10500,
+      7411,
+      17070,
+      53180,
+      21477,
+      21858,
+      11417,
+      12361,
+      9171,
+      14711,
+      8415,
+      4321,
+      14655,
+      14379,
+      7816,
+      14811,
+      8583,
+      10807,
+      17594,
+      10454,
+      10510,
+      7455,
+      4952,
+      2760,
+      1212,
+      17662,
+      13059,
+      7954,
+      12257,
+      2059,
+      5928,
+      4422,
+      17409,
+      14016,
+      7047,
+      12819,
+      14972,
+      10842,
+      4138,
+      10605,
+      10552,
+      16605,
+      17851,
+      24315,
+      13163,
+      3804,
+      3083,
+      5180,
+      24577,
+      13919,
+      2967,
+      17399
+    ],
+    "scope": "Read-only bank inventory; no sound attribution inferred"
+  },
+  {
+    "file": "SOUND/IG_GLOBAL/MB_Stitch_Whoosh.abk",
+    "samples": 16,
+    "sample_counts": [
+      13922,
+      18801,
+      13654,
+      15774,
+      22008,
+      13557,
+      15332,
+      11011,
+      5014,
+      21751,
+      19953,
+      7916,
+      7653,
+      11901,
+      36639,
+      33550
+    ],
+    "scope": "Read-only bank inventory; no sound attribution inferred"
+  },
+  {
+    "file": "SOUND/IG_GLOBAL/ROADNOISE_00_MB.abk",
+    "samples": 14,
+    "sample_counts": [
+      28090,
+      30669,
+      17295,
+      23126,
+      35597,
+      59044,
+      34974,
+      13099,
+      16228,
+      16702,
+      4260,
+      11556,
+      12964,
+      43979
+    ],
+    "scope": "Read-only bank inventory; no sound attribution inferred"
+  },
+  {
+    "file": "SOUND/IG_GLOBAL/TRAFFIC_MB.abk",
+    "samples": 2,
+    "sample_counts": [
+      46240,
+      47900
+    ],
+    "scope": "Read-only bank inventory; no sound attribution inferred"
+  },
+  {
+    "file": "SOUND/IG_GLOBAL/WIND_00_MB.abk",
+    "samples": 4,
+    "sample_counts": [
+      73465,
+      53314,
+      46730,
+      35135
+    ],
+    "scope": "Read-only bank inventory; no sound attribution inferred"
+  },
+  {
+    "file": "SOUND/IG_GLOBAL/WIND_01_MB.abk",
+    "samples": 3,
+    "sample_counts": [
+      57853,
+      43811,
+      36800
+    ],
+    "scope": "Read-only bank inventory; no sound attribution inferred"
+  }
+]

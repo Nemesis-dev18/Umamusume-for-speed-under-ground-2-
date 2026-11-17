@@ -1,0 +1,89 @@
+{
+  "scope": "Shared run clip against original body reference; not proof of installed retarget completeness",
+  "bindings": [
+    {
+      "hash": "0x662466c1",
+      "attribute": 1,
+      "known_paths": [],
+      "maximum_component_span": 0.6280479970314097
+    },
+    {
+      "hash": "0x5ff8052a",
+      "attribute": 1,
+      "known_paths": [],
+      "maximum_component_span": 0.6280098631349136
+    },
+    {
+      "hash": "0xefe874cb",
+      "attribute": 1,
+      "known_paths": [],
+      "maximum_component_span": 1.050049763087931
+    },
+    {
+      "hash": "0x86d957d2",
+      "attribute": 1,
+      "known_paths": [],
+      "maximum_component_span": 1.0500282604336895
+    },
+    {
+      "hash": "0xcadfaee4",
+      "attribute": 2,
+      "known_paths": [],
+      "maximum_component_span": 0.39486452587486404
+    },
+    {
+      "hash": "0x45ec6478",
+      "attribute": 2,
+      "known_paths": [],
+      "maximum_component_span": 0.11777834670628497
+    },
+    {
+      "hash": "0x6a2d3e98",
+      "attribute": 2,
+      "known_paths": [],
+      "maximum_component_span": 0.2193060977963539
+    },
+    {
+      "hash": "0x4ede7ca0",
+      "attribute": 2,
+      "known_paths": [],
+      "maximum_component_span": 0.2834001234753193
+    },
+    {
+      "hash": "0x2be8692e",
+      "attribute": 2,
+      "known_paths": [],
+      "maximum_component_span": 0.3917897815705971
+    },
+    {
+      "hash": "0xefe874cb",
+      "attribute": 2,
+      "known_paths": [],
+      "maximum_component_span": 1.3384001868712878
+    },
+    {
+      "hash": "0x86d957d2",
+      "attribute": 2,
+      "known_paths": [],
+      "maximum_component_span": 1.3384002480216408
+    },
+    {
+      "hash": "0x662466c1",
+      "attribute": 2,
+      "known_paths": [],
+      "maximum_component_span": 0.0
+    },
+    {
+      "hash": "0x5ff8052a",
+      "attribute": 2,
+      "known_paths": [],
+      "maximum_component_span": 0.0
+    },
+    {
+      "hash": "0xcadfaee4",
+      "attribute": 3,
+      "known_paths": [],
+      "maximum_component_span": 0.0
+    }
+  ]
+}

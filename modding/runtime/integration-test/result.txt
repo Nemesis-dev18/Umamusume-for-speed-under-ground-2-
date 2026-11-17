@@ -1,4 +1,10 @@
+PASS visual root: full roll/pitch cancellation with position unchanged
 PASS independent actor gait: draw-order reversal, camera orbit and vertical suspension cannot animate a stopped actor; another runs then returns to idle
+PASS ballistic jump with stable scenery: horizontal motion, pitch and chase camera preserve running phase; missing-scene jump still needs live evidence
+PASS pose lookup admits six-meter high-speed frame displacement but rejects a remote actor
+PASS pose association through a 90-degree camera cut and 100m view translation; distant impostor still rejected
+PASS eight exact effect textures: 8000 cached queries add zero readbacks; texture and surface writes invalidate positive/negative cache; impostors and bindings preserved
+PASS headlight DIP: all car projectors suppressed under expanded user scope, exact constants restored after success and native draw failure
 PASS CPU-baked wheel vertices across all four draw APIs; foreign pixels intact; partial writes invalidate bounds
 PASS four-tire shared upload batch through all draw APIs with suspension offset; foreign actor not hidden
 PASS car-style side anchor attachment hidden at Corolla socket; foreign actor preserved

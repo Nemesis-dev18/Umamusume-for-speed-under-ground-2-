@@ -1,0 +1,1732 @@
+{
+  "characters": [
+    {
+      "id": 1068,
+      "name": "Kitasan Black",
+      "bundles": [
+        "2LFUZQIXJMD7ODDJWIEEWM2Q7WPJ7MUG",
+        "33ZKK5XZFHZVNPBAKJOZB2XM4QGJTUJF",
+        "72WO5BMUXNNY3QNHIOALAHGDY7O2YYPS",
+        "DKFGN5Z4AWHSS2VTBWHMG5KI3ACSQF5I",
+        "DO5DWD2Z64K45KB6PQBKUZJMBLXZ5CIW",
+        "DZ3FCUVT5QMZBIN6LWDWYX4HCVWUSA4V",
+        "EMEGPDP6EOEOSXYWPSAJFJBYLUCLOPLN",
+        "F4LZCRNKHUUKG6XTZ4DUJHZ3ZC7KB6T4",
+        "FTPIYZH3FFSCL4B346B47UZQLGKPBSGR",
+        "GV3P63HY4QJUIJOI6WOZ7K753DEEMVUM",
+        "HTW2HKOTWXJHPUXM6OR2HMNDXB6N7ISF",
+        "HZHSGI7EU4GZ5FXX5AO4VP24N3ZHDVD2",
+        "IXWRDRBWO2RJWZDHXYDF7M3IDZJPTM4T",
+        "JXHJR6AD3W2XCQLQ4WH7Z6J3QQ76PXZB",
+        "MHEQKJ5KRNONJPL5UM5SVFA235AL452V",
+        "MQSYXLI3KIXF4JSTMMR3IUWQKTZK3Y2X",
+        "MZSH44KIW33SZL4BS5SFEBJOVZWNP2UK",
+        "NI3IDC6WIP5BOHJNPWFLFZ7WLSHPQBNH",
+        "O4PH65IITTPN6AKOLNEF44JCIVYFGEUX",
+        "Q5PJYUXSHAHS25D6RUQZX7O57CWPSICE",
+        "SUAPGN5RA5EL3WELABVXWYQFU7KELZ3S",
+        "SWPWFG4MA7GWXP2VLS3W4NXLY5QH3TX6",
+        "SYKJYTSZM4QB7HE4H7EUSYCTARFQO3HR",
+        "UI23XCWGO3JXU3UBBHTWMR7KZKMRBEPE",
+        "UUZG3A34V4ULEWFH4RZ5RP4QK4Y2AJYT",
+        "VPQ2RHW5FEJRJDW3YIRJYDMGEAMKJOS5",
+        "WI74ZZE37SS4ZII7WEQV5WWZWW2IWFBK",
+        "X5HVOTUO4WFBJ343DJ4JUGBWANYYFVNI"
+      ],
+      "meshes": [
+        {
+          "name": "M_Body",
+          "path_id": -8522106266559022549,
+          "vertices": 9018
+        },
+        {
+          "name": "M_Hair",
+          "path_id": -39309804268295128,
+          "vertices": 3066
+        },
+        {
+          "name": "M_Mayu_L",
+          "path_id": -7577271734423875064,
+          "vertices": 38
+        },
+        {
+          "name": "M_Mayu_R",
+          "path_id": -3042150856709496563,
+          "vertices": 38
+        },
+        {
+          "name": "M_Face",
+          "path_id": -509326898299400486,
+          "vertices": 532
+        },
+        {
+          "name": "M_Cheek",
+          "path_id": 865390800033585858,
+          "vertices": 88
+        },
+        {
+          "name": "M_Eye",
+          "path_id": 4056470599689206541,
+          "vertices": 120
+        },
+        {
+          "name": "M_Mouth",
+          "path_id": 6064411396435038215,
+          "vertices": 150
+        }
+      ],
+      "textures": [
+        {
+          "name": "tex_mbdy1068_00_diff",
+          "path_id": -3120422002022908398,
+          "width": 1024,
+          "height": 1024
+        },
+        {
+          "name": "tex_mchr1068_00_hair_diff",
+          "path_id": 8360639039410637755,
+          "width": 1024,
+          "height": 1024
+        },
+        {
+          "name": "tex_mchr1068_00_eye_diff",
+          "path_id": -1737548788687665066,
+          "width": 1024,
+          "height": 1024
+        },
+        {
+          "name": "tex_mchr1068_00_mayu_diff",
+          "path_id": -3829009677623102844,
+          "width": 1024,
+          "height": 1024
+        },
+        {
+          "name": "tex_mchr1068_00_mouth_diff",
+          "path_id": 6272885170963985430,
+          "width": 512,
+          "height": 1024
+        },
+        {
+          "name": "tex_mchr0001_00_face0_0_cheek0",
+          "path_id": -7918191785742835035,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "name": "tex_mchr0001_00_face0_0_cheek1",
+          "path_id": -1692663286144042095,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "name": "tex_mchr0001_00_face0_0_diff",
+          "path_id": -254661392459554085,
+          "width": 512,
+          "height": 512
+        },
+        {
+          "name": "tex_mchr0001_00_face0_1_cheek0",
+          "path_id": -6118956462383678825,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "name": "tex_mchr0001_00_face0_1_cheek1",
+          "path_id": -3246007231593389406,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "name": "tex_mchr0001_00_face0_1_diff",
+          "path_id": -6155480951377235958,
+          "width": 512,
+          "height": 512
+        },
+        {
+          "name": "tex_mchr0001_00_face0_2_cheek0",
+          "path_id": 7422393320378779858,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "name": "tex_mchr0001_00_face0_2_cheek1",
+          "path_id": -1477141017915944173,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "name": "tex_mchr0001_00_face0_2_diff",
+          "path_id": 7659526039680451130,
+          "width": 512,
+          "height": 512
+        },
+        {
+          "name": "tex_mchr0001_00_face0_3_cheek0",
+          "path_id": -1570808316252374122,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "name": "tex_mchr0001_00_face0_3_cheek1",
+          "path_id": 3191741102734080162,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "name": "tex_mchr0001_00_face0_3_diff",
+          "path_id": 2114751434321871555,
+          "width": 512,
+          "height": 512
+        }
+      ],
+      "rendered": false
+    },
+    {
+      "id": 1052,
+      "name": "Haru Urara",
+      "bundles": [
+        "2PRLJCJ75FFQAUP7UARO4OJVHDYWL32U",
+        "33ZKK5XZFHZVNPBAKJOZB2XM4QGJTUJF",
+        "72WO5BMUXNNY3QNHIOALAHGDY7O2YYPS",
+        "CFGBY3DTYELIH3AJASYVRWDBQKJD7EXR",
+        "D3FTT7SAXJ2MUL7FMIYKLNBQAP3SEIL4",
+        "DKFGN5Z4AWHSS2VTBWHMG5KI3ACSQF5I",
+        "DZ3FCUVT5QMZBIN6LWDWYX4HCVWUSA4V",
+        "FJQXCKSRJJKQ4JFUVPTOG2HCFRZXU5XM",
+        "FTPIYZH3FFSCL4B346B47UZQLGKPBSGR",
+        "GQHTMDZKBQRDS5IFG4F65IDACVLGCRSX",
+        "GV3P63HY4QJUIJOI6WOZ7K753DEEMVUM",
+        "HTW2HKOTWXJHPUXM6OR2HMNDXB6N7ISF",
+        "I6AIOCL3HCUJFKXEMS3B75BRNK2SPNJF",
+        "IXWRDRBWO2RJWZDHXYDF7M3IDZJPTM4T",
+        "JXHJR6AD3W2XCQLQ4WH7Z6J3QQ76PXZB",
+        "M2C7DDGTFAE3OYOT6GDPHTJGP2UCTJXW",
+        "MHEQKJ5KRNONJPL5UM5SVFA235AL452V",
+        "MZSH44KIW33SZL4BS5SFEBJOVZWNP2UK",
+        "NI3IDC6WIP5BOHJNPWFLFZ7WLSHPQBNH",
+        "O4PH65IITTPN6AKOLNEF44JCIVYFGEUX",
+        "Q5PJYUXSHAHS25D6RUQZX7O57CWPSICE",
+        "RHVXDGE4FSIZZSUURWUBJQ6VLWQ7TI22",
+        "SUAPGN5RA5EL3WELABVXWYQFU7KELZ3S",
+        "SWPWFG4MA7GWXP2VLS3W4NXLY5QH3TX6",
+        "UUZG3A34V4ULEWFH4RZ5RP4QK4Y2AJYT",
+        "VPQ2RHW5FEJRJDW3YIRJYDMGEAMKJOS5",
+        "WI74ZZE37SS4ZII7WEQV5WWZWW2IWFBK",
+        "X5HVOTUO4WFBJ343DJ4JUGBWANYYFVNI"
+      ],
+      "meshes": [
+        {
+          "name": "M_Body",
+          "path_id": 2259996983367016943,
+          "vertices": 5785
+        },
+        {
+          "name": "M_Hair",
+          "path_id": -5622106584034395737,
+          "vertices": 2367
+        },
+        {
+          "name": "M_Mayu_L",
+          "path_id": -7577271734423875064,
+          "vertices": 38
+        },
+        {
+          "name": "M_Mayu_R",
+          "path_id": -3042150856709496563,
+          "vertices": 38
+        },
+        {
+          "name": "M_Face",
+          "path_id": -509326898299400486,
+          "vertices": 532
+        },
+        {
+          "name": "M_Cheek",
+          "path_id": 865390800033585858,
+          "vertices": 88
+        },
+        {
+          "name": "M_Eye",
+          "path_id": 4056470599689206541,
+          "vertices": 120
+        },
+        {
+          "name": "M_Mouth",
+          "path_id": 6064411396435038215,
+          "vertices": 150
+        }
+      ],
+      "textures": [
+        {
+          "name": "tex_mbdy1052_00_diff",
+          "path_id": -6440725029324959751,
+          "width": 1024,
+          "height": 1024
+        },
+        {
+          "name": "tex_mchr1052_00_hair_diff",
+          "path_id": -967617753081889257,
+          "width": 1024,
+          "height": 1024
+        },
+        {
+          "name": "tex_mchr1052_00_eye_diff",
+          "path_id": 4025039316637045274,
+          "width": 1024,
+          "height": 1024
+        },
+        {
+          "name": "tex_mchr1052_00_mayu_diff",
+          "path_id": -5105105054518938870,
+          "width": 1024,
+          "height": 1024
+        },
+        {
+          "name": "tex_mchr1052_00_mouth_diff",
+          "path_id": -3082401584390567863,
+          "width": 512,
+          "height": 1024
+        },
+        {
+          "name": "tex_mchr0001_00_face0_0_cheek0",
+          "path_id": -7918191785742835035,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "name": "tex_mchr0001_00_face0_0_cheek1",
+          "path_id": -1692663286144042095,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "name": "tex_mchr0001_00_face0_0_diff",
+          "path_id": -254661392459554085,
+          "width": 512,
+          "height": 512
+        },
+        {
+          "name": "tex_mchr0001_00_face0_1_cheek0",
+          "path_id": -6118956462383678825,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "name": "tex_mchr0001_00_face0_1_cheek1",
+          "path_id": -3246007231593389406,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "name": "tex_mchr0001_00_face0_1_diff",
+          "path_id": -6155480951377235958,
+          "width": 512,
+          "height": 512
+        },
+        {
+          "name": "tex_mchr0001_00_face0_2_cheek0",
+          "path_id": 7422393320378779858,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "name": "tex_mchr0001_00_face0_2_cheek1",
+          "path_id": -1477141017915944173,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "name": "tex_mchr0001_00_face0_2_diff",
+          "path_id": 7659526039680451130,
+          "width": 512,
+          "height": 512
+        },
+        {
+          "name": "tex_mchr0001_00_face0_3_cheek0",
+          "path_id": -1570808316252374122,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "name": "tex_mchr0001_00_face0_3_cheek1",
+          "path_id": 3191741102734080162,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "name": "tex_mchr0001_00_face0_3_diff",
+          "path_id": 2114751434321871555,
+          "width": 512,
+          "height": 512
+        }
+      ],
+      "rendered": false
+    },
+    {
+      "id": 1032,
+      "name": "Agnes Tachyon",
+      "bundles": [
+        "33ZKK5XZFHZVNPBAKJOZB2XM4QGJTUJF",
+        "3QG5FAIVGTMMVBNEZ426RFKVBQEECSHW",
+        "72WO5BMUXNNY3QNHIOALAHGDY7O2YYPS",
+        "APTL7MA7MRETUHELCHOISIGH2NTBTXZ2",
+        "D5NHSZU467DDRSJ2MH3ZR4N3KY6DVOZ2",
+        "DKFGN5Z4AWHSS2VTBWHMG5KI3ACSQF5I",
+        "DZ3FCUVT5QMZBIN6LWDWYX4HCVWUSA4V",
+        "FTPIYZH3FFSCL4B346B47UZQLGKPBSGR",
+        "GV3P63HY4QJUIJOI6WOZ7K753DEEMVUM",
+        "HGCVOTBDUBOSKZRMFNMBI2UIVZ4DLWI4",
+        "HTW2HKOTWXJHPUXM6OR2HMNDXB6N7ISF",
+        "IXWRDRBWO2RJWZDHXYDF7M3IDZJPTM4T",
+        "JXHJR6AD3W2XCQLQ4WH7Z6J3QQ76PXZB",
+        "MHEQKJ5KRNONJPL5UM5SVFA235AL452V",
+        "MZSH44KIW33SZL4BS5SFEBJOVZWNP2UK",
+        "NI3IDC6WIP5BOHJNPWFLFZ7WLSHPQBNH",
+        "O4PH65IITTPN6AKOLNEF44JCIVYFGEUX",
+        "OHIHX6CC54L74HHJBQ7TK4PTS7YLDFFG",
+        "Q5PJYUXSHAHS25D6RUQZX7O57CWPSICE",
+        "QTKRDF42WI4BXP2ME4QZXG2X6LNOL2F4",
+        "SUAPGN5RA5EL3WELABVXWYQFU7KELZ3S",
+        "SWPWFG4MA7GWXP2VLS3W4NXLY5QH3TX6",
+        "UIRX7J72TWLKD3DB4UQDSRSJTFU4LITW",
+        "UUZG3A34V4ULEWFH4RZ5RP4QK4Y2AJYT",
+        "VPQ2RHW5FEJRJDW3YIRJYDMGEAMKJOS5",
+        "WI74ZZE37SS4ZII7WEQV5WWZWW2IWFBK",
+        "X5HVOTUO4WFBJ343DJ4JUGBWANYYFVNI",
+        "YSSPGJMNH62HQLMQIR7JWVSNQ43UMAV5"
+      ],
+      "meshes": [
+        {
+          "name": "M_Body",
+          "path_id": -4731536686347296070,
+          "vertices": 5291
+        },
+        {
+          "name": "M_Hair",
+          "path_id": 151798922304653678,
+          "vertices": 2722
+        },
+        {
+          "name": "M_Mayu_L",
+          "path_id": -7577271734423875064,
+          "vertices": 38
+        },
+        {
+          "name": "M_Mayu_R",
+          "path_id": -3042150856709496563,
+          "vertices": 38
+        },
+        {
+          "name": "M_Face",
+          "path_id": -509326898299400486,
+          "vertices": 532
+        },
+        {
+          "name": "M_Cheek",
+          "path_id": 865390800033585858,
+          "vertices": 88
+        },
+        {
+          "name": "M_Eye",
+          "path_id": 4056470599689206541,
+          "vertices": 120
+        },
+        {
+          "name": "M_Mouth",
+          "path_id": 6064411396435038215,
+          "vertices": 150
+        }
+      ],
+      "textures": [
+        {
+          "name": "tex_mbdy1032_00_diff",
+          "path_id": 7154626980075577761,
+          "width": 1024,
+          "height": 1024
+        },
+        {
+          "name": "tex_mchr1032_00_hair_diff",
+          "path_id": 3499560318562201910,
+          "width": 1024,
+          "height": 1024
+        },
+        {
+          "name": "tex_mchr1032_00_eye_diff",
+          "path_id": 149036710233826136,
+          "width": 1024,
+          "height": 1024
+        },
+        {
+          "name": "tex_mchr1032_00_mayu_diff",
+          "path_id": -5206783755318543499,
+          "width": 1024,
+          "height": 1024
+        },
+        {
+          "name": "tex_mchr1032_00_mouth_diff",
+          "path_id": -5418378789069723897,
+          "width": 512,
+          "height": 1024
+        },
+        {
+          "name": "tex_mchr0001_00_face0_0_cheek0",
+          "path_id": -7918191785742835035,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "name": "tex_mchr0001_00_face0_0_cheek1",
+          "path_id": -1692663286144042095,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "name": "tex_mchr0001_00_face0_0_diff",
+          "path_id": -254661392459554085,
+          "width": 512,
+          "height": 512
+        },
+        {
+          "name": "tex_mchr0001_00_face0_1_cheek0",
+          "path_id": -6118956462383678825,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "name": "tex_mchr0001_00_face0_1_cheek1",
+          "path_id": -3246007231593389406,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "name": "tex_mchr0001_00_face0_1_diff",
+          "path_id": -6155480951377235958,
+          "width": 512,
+          "height": 512
+        },
+        {
+          "name": "tex_mchr0001_00_face0_2_cheek0",
+          "path_id": 7422393320378779858,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "name": "tex_mchr0001_00_face0_2_cheek1",
+          "path_id": -1477141017915944173,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "name": "tex_mchr0001_00_face0_2_diff",
+          "path_id": 7659526039680451130,
+          "width": 512,
+          "height": 512
+        },
+        {
+          "name": "tex_mchr0001_00_face0_3_cheek0",
+          "path_id": -1570808316252374122,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "name": "tex_mchr0001_00_face0_3_cheek1",
+          "path_id": 3191741102734080162,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "name": "tex_mchr0001_00_face0_3_diff",
+          "path_id": 2114751434321871555,
+          "width": 512,
+          "height": 512
+        }
+      ],
+      "rendered": false
+    },
+    {
+      "id": 1062,
+      "name": "Matikanetannhauser",
+      "bundles": [
+        "33ZKK5XZFHZVNPBAKJOZB2XM4QGJTUJF",
+        "5XLTD645BPWDIZBVOQCHXRAMCXW7C4X5",
+        "72WO5BMUXNNY3QNHIOALAHGDY7O2YYPS",
+        "AUOD3SU4YXAUI67BJLDT5XM56I64SSH5",
+        "BQ6LB3NWO6BYFLNOSYFHTK2WWANHL5VC",
+        "CF3AFB6MGUWBSWMIW4MC42KML7OCNFA3",
+        "DKFGN5Z4AWHSS2VTBWHMG5KI3ACSQF5I",
+        "DZ3FCUVT5QMZBIN6LWDWYX4HCVWUSA4V",
+        "FTPIYZH3FFSCL4B346B47UZQLGKPBSGR",
+        "GV3P63HY4QJUIJOI6WOZ7K753DEEMVUM",
+        "HTW2HKOTWXJHPUXM6OR2HMNDXB6N7ISF",
+        "IUBENSFKSHOLHU5ZRQ74SR77JDETZNFM",
+        "IXWRDRBWO2RJWZDHXYDF7M3IDZJPTM4T",
+        "JXHJR6AD3W2XCQLQ4WH7Z6J3QQ76PXZB",
+        "MHEQKJ5KRNONJPL5UM5SVFA235AL452V",
+        "MZSH44KIW33SZL4BS5SFEBJOVZWNP2UK",
+        "NI3IDC6WIP5BOHJNPWFLFZ7WLSHPQBNH",
+        "O4PH65IITTPN6AKOLNEF44JCIVYFGEUX",
+        "Q5PJYUXSHAHS25D6RUQZX7O57CWPSICE",
+        "SUAPGN5RA5EL3WELABVXWYQFU7KELZ3S",
+        "SWPWFG4MA7GWXP2VLS3W4NXLY5QH3TX6",
+        "UNZAUCIZU6SLFHQXKV4VV6JGEB73IHON",
+        "UUZG3A34V4ULEWFH4RZ5RP4QK4Y2AJYT",
+        "VPQ2RHW5FEJRJDW3YIRJYDMGEAMKJOS5",
+        "WI74ZZE37SS4ZII7WEQV5WWZWW2IWFBK",
+        "WJPMXA6VW4OZ6E46KAUBUJISKWKJKTQA",
+        "X5HVOTUO4WFBJ343DJ4JUGBWANYYFVNI",
+        "YHPQEWELSSTTN5PFHFSJPGAEPMD5GJTI"
+      ],
+      "meshes": [
+        {
+          "name": "M_Body",
+          "path_id": -2238132866389869144,
+          "vertices": 10484
+        },
+        {
+          "name": "M_Hair",
+          "path_id": -946949679181427969,
+          "vertices": 3182
+        },
+        {
+          "name": "M_Mayu_L",
+          "path_id": -7577271734423875064,
+          "vertices": 38
+        },
+        {
+          "name": "M_Mayu_R",
+          "path_id": -3042150856709496563,
+          "vertices": 38
+        },
+        {
+          "name": "M_Face",
+          "path_id": -509326898299400486,
+          "vertices": 532
+        },
+        {
+          "name": "M_Cheek",
+          "path_id": 865390800033585858,
+          "vertices": 88
+        },
+        {
+          "name": "M_Eye",
+          "path_id": 4056470599689206541,
+          "vertices": 120
+        },
+        {
+          "name": "M_Mouth",
+          "path_id": 6064411396435038215,
+          "vertices": 150
+        }
+      ],
+      "textures": [
+        {
+          "name": "tex_mbdy1062_00_diff",
+          "path_id": 4718131889038497491,
+          "width": 1024,
+          "height": 1024
+        },
+        {
+          "name": "tex_mchr1062_00_hair_diff",
+          "path_id": -228915612865279180,
+          "width": 1024,
+          "height": 1024
+        },
+        {
+          "name": "tex_mchr1062_00_eye_diff",
+          "path_id": 4591941246220483905,
+          "width": 1024,
+          "height": 1024
+        },
+        {
+          "name": "tex_mchr1062_00_mayu_diff",
+          "path_id": -8920091471276206825,
+          "width": 1024,
+          "height": 1024
+        },
+        {
+          "name": "tex_mchr1062_00_mouth_diff",
+          "path_id": -1926484531263472064,
+          "width": 512,
+          "height": 1024
+        },
+        {
+          "name": "tex_mchr0001_00_face0_0_cheek0",
+          "path_id": -7918191785742835035,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "name": "tex_mchr0001_00_face0_0_cheek1",
+          "path_id": -1692663286144042095,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "name": "tex_mchr0001_00_face0_0_diff",
+          "path_id": -254661392459554085,
+          "width": 512,
+          "height": 512
+        },
+        {
+          "name": "tex_mchr0001_00_face0_1_cheek0",
+          "path_id": -6118956462383678825,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "name": "tex_mchr0001_00_face0_1_cheek1",
+          "path_id": -3246007231593389406,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "name": "tex_mchr0001_00_face0_1_diff",
+          "path_id": -6155480951377235958,
+          "width": 512,
+          "height": 512
+        },
+        {
+          "name": "tex_mchr0001_00_face0_2_cheek0",
+          "path_id": 7422393320378779858,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "name": "tex_mchr0001_00_face0_2_cheek1",
+          "path_id": -1477141017915944173,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "name": "tex_mchr0001_00_face0_2_diff",
+          "path_id": 7659526039680451130,
+          "width": 512,
+          "height": 512
+        },
+        {
+          "name": "tex_mchr0001_00_face0_3_cheek0",
+          "path_id": -1570808316252374122,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "name": "tex_mchr0001_00_face0_3_cheek1",
+          "path_id": 3191741102734080162,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "name": "tex_mchr0001_00_face0_3_diff",
+          "path_id": 2114751434321871555,
+          "width": 512,
+          "height": 512
+        }
+      ],
+      "rendered": false
+    },
+    {
+      "id": 1015,
+      "name": "T.M. Opera O",
+      "bundles": [
+        "33ZKK5XZFHZVNPBAKJOZB2XM4QGJTUJF",
+        "3PZ73SNJ3OO2OICS5BXY2N3S4TNSTFJB",
+        "4ZNOBDDXACMEVD6ANPFFZ5Y43EVQ3XS6",
+        "72WO5BMUXNNY3QNHIOALAHGDY7O2YYPS",
+        "DKFGN5Z4AWHSS2VTBWHMG5KI3ACSQF5I",
+        "DZ3FCUVT5QMZBIN6LWDWYX4HCVWUSA4V",
+        "EQMIHHQRFMA6MBNPLDU4QLIRZWACTAWH",
+        "FTPIYZH3FFSCL4B346B47UZQLGKPBSGR",
+        "GV3P63HY4QJUIJOI6WOZ7K753DEEMVUM",
+        "HTW2HKOTWXJHPUXM6OR2HMNDXB6N7ISF",
+        "IXWRDRBWO2RJWZDHXYDF7M3IDZJPTM4T",
+        "JXHJR6AD3W2XCQLQ4WH7Z6J3QQ76PXZB",
+        "L7JJLF2LSKI2LRJIZOK6MAJFRP3W7DSZ",
+        "M3PZCD4UIWCVZQSSNRJVKS4OJPG3T3WI",
+        "MHEQKJ5KRNONJPL5UM5SVFA235AL452V",
+        "MZSH44KIW33SZL4BS5SFEBJOVZWNP2UK",
+        "NI3IDC6WIP5BOHJNPWFLFZ7WLSHPQBNH",
+        "O4PH65IITTPN6AKOLNEF44JCIVYFGEUX",
+        "OLHWT3W5LWNSHIKPISP6RDWG6B5KKPUA",
+        "PADKYHKPQSB7OBB7BICVNVRBQF4FOCXY",
+        "Q5PJYUXSHAHS25D6RUQZX7O57CWPSICE",
+        "SUAPGN5RA5EL3WELABVXWYQFU7KELZ3S",
+        "SWPWFG4MA7GWXP2VLS3W4NXLY5QH3TX6",
+        "UUZG3A34V4ULEWFH4RZ5RP4QK4Y2AJYT",
+        "VPQ2RHW5FEJRJDW3YIRJYDMGEAMKJOS5",
+        "WB5JHLMMW6PHHCJBTUR5QCZUMQCCJDIA",
+        "WI74ZZE37SS4ZII7WEQV5WWZWW2IWFBK",
+        "X5HVOTUO4WFBJ343DJ4JUGBWANYYFVNI"
+      ],
+      "meshes": [
+        {
+          "name": "M_Body",
+          "path_id": -6661844273330967926,
+          "vertices": 10387
+        },
+        {
+          "name": "M_Hair",
+          "path_id": -8199160070673835052,
+          "vertices": 2985
+        },
+        {
+          "name": "M_Mayu_L",
+          "path_id": -7577271734423875064,
+          "vertices": 38
+        },
+        {
+          "name": "M_Mayu_R",
+          "path_id": -3042150856709496563,
+          "vertices": 38
+        },
+        {
+          "name": "M_Face",
+          "path_id": -509326898299400486,
+          "vertices": 532
+        },
+        {
+          "name": "M_Cheek",
+          "path_id": 865390800033585858,
+          "vertices": 88
+        },
+        {
+          "name": "M_Eye",
+          "path_id": 4056470599689206541,
+          "vertices": 120
+        },
+        {
+          "name": "M_Mouth",
+          "path_id": 6064411396435038215,
+          "vertices": 150
+        }
+      ],
+      "textures": [
+        {
+          "name": "tex_mbdy1015_00_diff",
+          "path_id": 4729104261775632902,
+          "width": 1024,
+          "height": 1024
+        },
+        {
+          "name": "tex_mchr1015_00_hair_diff",
+          "path_id": -3720365202885138794,
+          "width": 1024,
+          "height": 1024
+        },
+        {
+          "name": "tex_mchr1015_00_eye_diff",
+          "path_id": -5424380556017192304,
+          "width": 1024,
+          "height": 1024
+        },
+        {
+          "name": "tex_mchr1015_00_mayu_diff",
+          "path_id": 1387645450959440779,
+          "width": 1024,
+          "height": 1024
+        },
+        {
+          "name": "tex_mchr1015_00_mouth_diff",
+          "path_id": 5668534541715798232,
+          "width": 512,
+          "height": 1024
+        },
+        {
+          "name": "tex_mchr0001_00_face0_0_cheek0",
+          "path_id": -7918191785742835035,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "name": "tex_mchr0001_00_face0_0_cheek1",
+          "path_id": -1692663286144042095,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "name": "tex_mchr0001_00_face0_0_diff",
+          "path_id": -254661392459554085,
+          "width": 512,
+          "height": 512
+        },
+        {
+          "name": "tex_mchr0001_00_face0_1_cheek0",
+          "path_id": -6118956462383678825,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "name": "tex_mchr0001_00_face0_1_cheek1",
+          "path_id": -3246007231593389406,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "name": "tex_mchr0001_00_face0_1_diff",
+          "path_id": -6155480951377235958,
+          "width": 512,
+          "height": 512
+        },
+        {
+          "name": "tex_mchr0001_00_face0_2_cheek0",
+          "path_id": 7422393320378779858,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "name": "tex_mchr0001_00_face0_2_cheek1",
+          "path_id": -1477141017915944173,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "name": "tex_mchr0001_00_face0_2_diff",
+          "path_id": 7659526039680451130,
+          "width": 512,
+          "height": 512
+        },
+        {
+          "name": "tex_mchr0001_00_face0_3_cheek0",
+          "path_id": -1570808316252374122,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "name": "tex_mchr0001_00_face0_3_cheek1",
+          "path_id": 3191741102734080162,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "name": "tex_mchr0001_00_face0_3_diff",
+          "path_id": 2114751434321871555,
+          "width": 512,
+          "height": 512
+        }
+      ],
+      "rendered": false
+    },
+    {
+      "id": 1006,
+      "name": "Oguri Cap",
+      "bundles": [
+        "33ZKK5XZFHZVNPBAKJOZB2XM4QGJTUJF",
+        "34NHH6HYDASUWNMR3LL2YNWB7FC74H3V",
+        "47MHTSDIMFLYNWPHHORL5CVSSXNVUTMY",
+        "6DJUCRGUNJG5HKSG6VRX7OHCZMV2DT4W",
+        "72WO5BMUXNNY3QNHIOALAHGDY7O2YYPS",
+        "7J3IKIOU2KRIHGWHPCQLFN5OL3V2ZP47",
+        "DKFGN5Z4AWHSS2VTBWHMG5KI3ACSQF5I",
+        "DZ3FCUVT5QMZBIN6LWDWYX4HCVWUSA4V",
+        "FTPIYZH3FFSCL4B346B47UZQLGKPBSGR",
+        "GV3P63HY4QJUIJOI6WOZ7K753DEEMVUM",
+        "H5GL2NLGGSOOA4Q74CEQCDCABL4HSVYY",
+        "HTW2HKOTWXJHPUXM6OR2HMNDXB6N7ISF",
+        "IXWRDRBWO2RJWZDHXYDF7M3IDZJPTM4T",
+        "JXHJR6AD3W2XCQLQ4WH7Z6J3QQ76PXZB",
+        "KP7F3W4DEYSZJESXIXJCNG3UXLLAO5IH",
+        "LMVO3JJOYFMN5L4YVPOTOWFZI4C3P7FD",
+        "MHEQKJ5KRNONJPL5UM5SVFA235AL452V",
+        "MZSH44KIW33SZL4BS5SFEBJOVZWNP2UK",
+        "NI3IDC6WIP5BOHJNPWFLFZ7WLSHPQBNH",
+        "O4PH65IITTPN6AKOLNEF44JCIVYFGEUX",
+        "Q5PJYUXSHAHS25D6RUQZX7O57CWPSICE",
+        "SUAPGN5RA5EL3WELABVXWYQFU7KELZ3S",
+        "SWPWFG4MA7GWXP2VLS3W4NXLY5QH3TX6",
+        "UUZG3A34V4ULEWFH4RZ5RP4QK4Y2AJYT",
+        "VKBEYC5GF4LB7B4SEXMIVMK3FNFJ7HAC",
+        "VPQ2RHW5FEJRJDW3YIRJYDMGEAMKJOS5",
+        "WI74ZZE37SS4ZII7WEQV5WWZWW2IWFBK",
+        "X5HVOTUO4WFBJ343DJ4JUGBWANYYFVNI"
+      ],
+      "meshes": [
+        {
+          "name": "M_Body",
+          "path_id": 6788909898585424726,
+          "vertices": 5496
+        },
+        {
+          "name": "M_Hair",
+          "path_id": 419697448215756677,
+          "vertices": 2457
+        },
+        {
+          "name": "M_Mayu_L",
+          "path_id": -7577271734423875064,
+          "vertices": 38
+        },
+        {
+          "name": "M_Mayu_R",
+          "path_id": -3042150856709496563,
+          "vertices": 38
+        },
+        {
+          "name": "M_Face",
+          "path_id": -509326898299400486,
+          "vertices": 532
+        },
+        {
+          "name": "M_Cheek",
+          "path_id": 865390800033585858,
+          "vertices": 88
+        },
+        {
+          "name": "M_Eye",
+          "path_id": 4056470599689206541,
+          "vertices": 120
+        },
+        {
+          "name": "M_Mouth",
+          "path_id": 6064411396435038215,
+          "vertices": 150
+        }
+      ],
+      "textures": [
+        {
+          "name": "tex_mbdy1006_00_diff",
+          "path_id": -867941227407554410,
+          "width": 1024,
+          "height": 1024
+        },
+        {
+          "name": "tex_mchr1006_00_hair_diff",
+          "path_id": -5771381902260227723,
+          "width": 1024,
+          "height": 1024
+        },
+        {
+          "name": "tex_mchr1006_00_eye_diff",
+          "path_id": -5178772702895204399,
+          "width": 1024,
+          "height": 1024
+        },
+        {
+          "name": "tex_mchr1006_00_mayu_diff",
+          "path_id": -1766503950061113369,
+          "width": 1024,
+          "height": 1024
+        },
+        {
+          "name": "tex_mchr1006_00_mouth_diff",
+          "path_id": 1431855926672212537,
+          "width": 512,
+          "height": 1024
+        },
+        {
+          "name": "tex_mchr0001_00_face0_0_cheek0",
+          "path_id": -7918191785742835035,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "name": "tex_mchr0001_00_face0_0_cheek1",
+          "path_id": -1692663286144042095,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "name": "tex_mchr0001_00_face0_0_diff",
+          "path_id": -254661392459554085,
+          "width": 512,
+          "height": 512
+        },
+        {
+          "name": "tex_mchr0001_00_face0_1_cheek0",
+          "path_id": -6118956462383678825,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "name": "tex_mchr0001_00_face0_1_cheek1",
+          "path_id": -3246007231593389406,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "name": "tex_mchr0001_00_face0_1_diff",
+          "path_id": -6155480951377235958,
+          "width": 512,
+          "height": 512
+        },
+        {
+          "name": "tex_mchr0001_00_face0_2_cheek0",
+          "path_id": 7422393320378779858,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "name": "tex_mchr0001_00_face0_2_cheek1",
+          "path_id": -1477141017915944173,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "name": "tex_mchr0001_00_face0_2_diff",
+          "path_id": 7659526039680451130,
+          "width": 512,
+          "height": 512
+        },
+        {
+          "name": "tex_mchr0001_00_face0_3_cheek0",
+          "path_id": -1570808316252374122,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "name": "tex_mchr0001_00_face0_3_cheek1",
+          "path_id": 3191741102734080162,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "name": "tex_mchr0001_00_face0_3_diff",
+          "path_id": 2114751434321871555,
+          "width": 512,
+          "height": 512
+        }
+      ],
+      "rendered": false
+    },
+    {
+      "id": 1058,
+      "name": "Meisho Doto",
+      "bundles": [
+        "33ZKK5XZFHZVNPBAKJOZB2XM4QGJTUJF",
+        "6KQGI3GW4B66SIQ3U4SG4GS7UMHADIXS",
+        "72WO5BMUXNNY3QNHIOALAHGDY7O2YYPS",
+        "733Q6YXUKZNCPTAD2NOLNP3HFJHOXAMU",
+        "DKFGN5Z4AWHSS2VTBWHMG5KI3ACSQF5I",
+        "DZ3FCUVT5QMZBIN6LWDWYX4HCVWUSA4V",
+        "ECZGDPGOAHCZS5LPRXQGTP7XQEUV54YT",
+        "FJ2KWV4FGEHWWP5KR2WMPT5WAWHS74OB",
+        "FTPIYZH3FFSCL4B346B47UZQLGKPBSGR",
+        "GV3P63HY4QJUIJOI6WOZ7K753DEEMVUM",
+        "HTW2HKOTWXJHPUXM6OR2HMNDXB6N7ISF",
+        "IXWRDRBWO2RJWZDHXYDF7M3IDZJPTM4T",
+        "JXHJR6AD3W2XCQLQ4WH7Z6J3QQ76PXZB",
+        "LHJYLSJ2CVYMNQPUN3XAVRXX6LASZ23G",
+        "MHEQKJ5KRNONJPL5UM5SVFA235AL452V",
+        "MZSH44KIW33SZL4BS5SFEBJOVZWNP2UK",
+        "NI3IDC6WIP5BOHJNPWFLFZ7WLSHPQBNH",
+        "O4PH65IITTPN6AKOLNEF44JCIVYFGEUX",
+        "Q5PJYUXSHAHS25D6RUQZX7O57CWPSICE",
+        "SUAPGN5RA5EL3WELABVXWYQFU7KELZ3S",
+        "SWPWFG4MA7GWXP2VLS3W4NXLY5QH3TX6",
+        "UUZG3A34V4ULEWFH4RZ5RP4QK4Y2AJYT",
+        "VPQ2RHW5FEJRJDW3YIRJYDMGEAMKJOS5",
+        "WI74ZZE37SS4ZII7WEQV5WWZWW2IWFBK",
+        "X5HVOTUO4WFBJ343DJ4JUGBWANYYFVNI",
+        "XXLBJKDECANWKZYO3JWTIT7Y7RD35N7Y",
+        "YNUGPLUWU546KU7OCCMMUWQWVE6TWOFY",
+        "YV6URRUKJBLXKGCACP3ZGYKOXSVSBTM5"
+      ],
+      "meshes": [
+        {
+          "name": "M_Body",
+          "path_id": -3010358200356176700,
+          "vertices": 9806
+        },
+        {
+          "name": "M_Hair",
+          "path_id": -2729276340472565258,
+          "vertices": 2990
+        },
+        {
+          "name": "M_Mayu_L",
+          "path_id": -7577271734423875064,
+          "vertices": 38
+        },
+        {
+          "name": "M_Mayu_R",
+          "path_id": -3042150856709496563,
+          "vertices": 38
+        },
+        {
+          "name": "M_Face",
+          "path_id": -509326898299400486,
+          "vertices": 532
+        },
+        {
+          "name": "M_Cheek",
+          "path_id": 865390800033585858,
+          "vertices": 88
+        },
+        {
+          "name": "M_Eye",
+          "path_id": 4056470599689206541,
+          "vertices": 120
+        },
+        {
+          "name": "M_Mouth",
+          "path_id": 6064411396435038215,
+          "vertices": 150
+        }
+      ],
+      "textures": [
+        {
+          "name": "tex_mbdy1058_00_diff",
+          "path_id": -2032596700212127480,
+          "width": 1024,
+          "height": 1024
+        },
+        {
+          "name": "tex_mchr1058_00_hair_diff",
+          "path_id": -845490861775917420,
+          "width": 1024,
+          "height": 1024
+        },
+        {
+          "name": "tex_mchr1058_00_eye_diff",
+          "path_id": -1215848084141776144,
+          "width": 1024,
+          "height": 1024
+        },
+        {
+          "name": "tex_mchr1058_00_mayu_diff",
+          "path_id": 2054924559789509943,
+          "width": 1024,
+          "height": 1024
+        },
+        {
+          "name": "tex_mchr1058_00_mouth_diff",
+          "path_id": 1755907337282376150,
+          "width": 512,
+          "height": 1024
+        },
+        {
+          "name": "tex_mchr0001_00_face0_0_cheek0",
+          "path_id": -7918191785742835035,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "name": "tex_mchr0001_00_face0_0_cheek1",
+          "path_id": -1692663286144042095,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "name": "tex_mchr0001_00_face0_0_diff",
+          "path_id": -254661392459554085,
+          "width": 512,
+          "height": 512
+        },
+        {
+          "name": "tex_mchr0001_00_face0_1_cheek0",
+          "path_id": -6118956462383678825,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "name": "tex_mchr0001_00_face0_1_cheek1",
+          "path_id": -3246007231593389406,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "name": "tex_mchr0001_00_face0_1_diff",
+          "path_id": -6155480951377235958,
+          "width": 512,
+          "height": 512
+        },
+        {
+          "name": "tex_mchr0001_00_face0_2_cheek0",
+          "path_id": 7422393320378779858,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "name": "tex_mchr0001_00_face0_2_cheek1",
+          "path_id": -1477141017915944173,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "name": "tex_mchr0001_00_face0_2_diff",
+          "path_id": 7659526039680451130,
+          "width": 512,
+          "height": 512
+        },
+        {
+          "name": "tex_mchr0001_00_face0_3_cheek0",
+          "path_id": -1570808316252374122,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "name": "tex_mchr0001_00_face0_3_cheek1",
+          "path_id": 3191741102734080162,
+          "width": 256,
+          "height": 256
+        },
+        {
+          "name": "tex_mchr0001_00_face0_3_diff",
+          "path_id": 2114751434321871555,
+          "width": 512,
+          "height": 512
+        }
+      ],
+      "rendered": false
+    }
+  ],
+  "reader_revision": "dca091dad2947d13f99a0510bcccdec82941df0c",
+  "receipts": {
+    "F4LZCRNKHUUKG6XTZ4DUJHZ3ZC7KB6T4": {
+      "logical": "3d/chara/mini/body/mbdy1068_00/pfb_mbdy1068_00",
+      "source_sha256": "169519aa78e22c8dc45e6d920381506a5fbdf8d9eb20cddbaa23c985933b1569",
+      "decoded_sha256": "01506d6e3cc613fb3acbcb227801bb7161b4afe52c2f33baf84cc15f55cee77a",
+      "source_unchanged": true
+    },
+    "SYKJYTSZM4QB7HE4H7EUSYCTARFQO3HR": {
+      "logical": "sourceresources/3d/chara/mini/body/mbdy1068_00/materials/mtl_mbdy1068_00",
+      "source_sha256": "43dad80766857a021b27268b5643a5159b556211a660e7cdd13c49d22199f5ef",
+      "decoded_sha256": "13dd12d95b6353ed114bec340fee4250b6cb89eb0bef7dd2286c7f99e4165d14",
+      "source_unchanged": true
+    },
+    "DKFGN5Z4AWHSS2VTBWHMG5KI3ACSQF5I": {
+      "logical": "shader",
+      "source_sha256": "6836cfb630bc35fd873a14a800946f037e2aeaddfa177556a560dcccaa3945a9",
+      "decoded_sha256": "ab1f21fcfb7528de8c093c89fac12b931dfa2f4b9ae922d95f176a0774f8e44d",
+      "source_unchanged": true
+    },
+    "EMEGPDP6EOEOSXYWPSAJFJBYLUCLOPLN": {
+      "logical": "3d/chara/mini/head/mchr1068_00/pfb_mchr1068_00_hair",
+      "source_sha256": "0b3f552a77e7f0f93d9c1978f803cd3d7babc6e221e92897e28444b1ca6d0543",
+      "decoded_sha256": "5cbe69a3d3fc2945596d6937f6700444ed061cd1b566953dd80cb078cff893d3",
+      "source_unchanged": true
+    },
+    "HZHSGI7EU4GZ5FXX5AO4VP24N3ZHDVD2": {
+      "logical": "sourceresources/3d/chara/head/chr1068_00/facial/ast_chr1068_00_ear_target",
+      "source_sha256": "a2eefabe67f77b6b5ddeca079af834a85118bedc2b87da9c9010f43f1e0855df",
+      "decoded_sha256": "1bd60dbef20b4523882a3cd42b7adde76510c23896381970df4f2c0f09b63455",
+      "source_unchanged": true
+    },
+    "MQSYXLI3KIXF4JSTMMR3IUWQKTZK3Y2X": {
+      "logical": "sourceresources/3d/chara/mini/head/mchr1068_00/materials/mtl_mchr1068_00_hair",
+      "source_sha256": "a3265c0cf3011d51bc3e5619261a3f40f4e84480d1b23982154f3ed05e8fcae8",
+      "decoded_sha256": "c1e48b231d0bbd52a2e8990c5bf51dbcdbadb77ea8dd1bfb0fbd43660196e2f1",
+      "source_unchanged": true
+    },
+    "O4PH65IITTPN6AKOLNEF44JCIVYFGEUX": {
+      "logical": "3d/chara/mini/head/mchr0001_00/pfb_mchr0001_00_face0",
+      "source_sha256": "108ef217807b2cc33ab7f62880d629b58ab707cfc46407f4ea49fd54ac21a46b",
+      "decoded_sha256": "f8b50539f71f52e9f82d063ad2a05edeb07c0406771da19e86ed177fe8c700db",
+      "source_unchanged": true
+    },
+    "WI74ZZE37SS4ZII7WEQV5WWZWW2IWFBK": {
+      "logical": "sourceresources/3d/chara/mini/head/mchr0001_00/materials/mtl_mchr0001_00_cheek",
+      "source_sha256": "fab12386abcefead4705637598cfa1f57e7a9c25e762d8a3fb88413fde3afa0a",
+      "decoded_sha256": "862f35d237fee303833d0deb3b40c0ba44a9f75507fd18750467996bc48aed3d",
+      "source_unchanged": true
+    },
+    "MZSH44KIW33SZL4BS5SFEBJOVZWNP2UK": {
+      "logical": "sourceresources/3d/chara/mini/head/mchr0001_00/materials/mtl_mchr0001_00_eye",
+      "source_sha256": "9eeb5999b69a2430e2480a22bfa880c3ba40525971399fb925dc81a8bf024f65",
+      "decoded_sha256": "7d73fab71c2ae0aba479a156d5c504ae925ee9b65bfc41c781caa632c220f23b",
+      "source_unchanged": true
+    },
+    "NI3IDC6WIP5BOHJNPWFLFZ7WLSHPQBNH": {
+      "logical": "sourceresources/3d/chara/mini/head/mchr0001_00/materials/mtl_mchr0001_00_face0",
+      "source_sha256": "ba8127061cc2f1962ec60a2eb1d5682ec2cf5feb0fda2437ad84211e035dacde",
+      "decoded_sha256": "a03accc2a7094d3de1de5257667c49b244f0bcfba4c2977262eeb54be105447e",
+      "source_unchanged": true
+    },
+    "Q5PJYUXSHAHS25D6RUQZX7O57CWPSICE": {
+      "logical": "sourceresources/3d/chara/mini/head/mchr0001_00/materials/mtl_mchr0001_00_mayu_l",
+      "source_sha256": "59142522a2b377db5fe2434c0a5cbc03885fd3f1a225749d70a95b2e572f84e0",
+      "decoded_sha256": "3d231d2be68193dcf05633f5231da38c13645a7bfe436d9a2fa961561772a9f6",
+      "source_unchanged": true
+    },
+    "DZ3FCUVT5QMZBIN6LWDWYX4HCVWUSA4V": {
+      "logical": "sourceresources/3d/chara/mini/head/mchr0001_00/materials/mtl_mchr0001_00_mayu_r",
+      "source_sha256": "a1631c9c18aa0467fbf9cb34b49c9ba656e3d68090c42be2a4fbe489c6c5d2f2",
+      "decoded_sha256": "e5547f0577f4567c9c144469328d38263b5b73fdd30507a95da84be6cd6b3b64",
+      "source_unchanged": true
+    },
+    "VPQ2RHW5FEJRJDW3YIRJYDMGEAMKJOS5": {
+      "logical": "sourceresources/3d/chara/mini/head/mchr0001_00/materials/mtl_mchr0001_00_mouth",
+      "source_sha256": "1098dcf37dec68afb6792dccb0744711b98a3da535a7baacd0800aca85d88530",
+      "decoded_sha256": "12c310e9f88a2cb3d704d13d9dabfaa14a35c9c15b6fb0afaf95e21ed7df6fd2",
+      "source_unchanged": true
+    },
+    "DO5DWD2Z64K45KB6PQBKUZJMBLXZ5CIW": {
+      "logical": "3d/chara/mini/head/mchr1068_00/textures/tex_mchr1068_00_eye_diff",
+      "source_sha256": "50b5cd63808d21b37c939b2ead714326a72f2abedcde4372da4fbf6c7fef1aa1",
+      "decoded_sha256": "e517a872dacc26b8269c30d8376a81b845e3ea9579e05c9f8ee3fae6bb682063",
+      "source_unchanged": true
+    },
+    "2LFUZQIXJMD7ODDJWIEEWM2Q7WPJ7MUG": {
+      "logical": "3d/chara/mini/head/mchr1068_00/textures/tex_mchr1068_00_mayu_diff",
+      "source_sha256": "81709aefca8ad81fe5891fe4b61b6be37bb5202275953098a65784893bf763e2",
+      "decoded_sha256": "66bba02264a1ff7eaa84e38282f07067df81b9d70b4bdc891fd3e3445d13e966",
+      "source_unchanged": true
+    },
+    "UI23XCWGO3JXU3UBBHTWMR7KZKMRBEPE": {
+      "logical": "3d/chara/mini/head/mchr1068_00/textures/tex_mchr1068_00_mouth_diff",
+      "source_sha256": "d269ee80c8bfc4b814b4334afeffd1f14b4660a60f5aa89fcbe331bb2aefa627",
+      "decoded_sha256": "e812c667708fe0175dd3766e1d0cd69b9bf85370782c850d5ac610d3982a4b84",
+      "source_unchanged": true
+    },
+    "33ZKK5XZFHZVNPBAKJOZB2XM4QGJTUJF": {
+      "logical": "3d/chara/mini/head/mchr0001_00/textures/tex_mchr0001_00_face0_0_cheek0",
+      "source_sha256": "e7830420fb17d0d9cff0d8d98a383489a95a6c47c2d1aa157b3fc20667e0ccb2",
+      "decoded_sha256": "671969e22f201e13d282b5b2d1d998821fbd495f8e8ce2c1406e24de284157bd",
+      "source_unchanged": true
+    },
+    "GV3P63HY4QJUIJOI6WOZ7K753DEEMVUM": {
+      "logical": "3d/chara/mini/head/mchr0001_00/textures/tex_mchr0001_00_face0_0_cheek1",
+      "source_sha256": "3b1de88efbf78925bb457d0db4f05d00b5d15238d8e96b39242553181afd7f22",
+      "decoded_sha256": "c4f66112631881694cae67302cda3775c804961fa444a09bc1f003e85d9487ca",
+      "source_unchanged": true
+    },
+    "HTW2HKOTWXJHPUXM6OR2HMNDXB6N7ISF": {
+      "logical": "3d/chara/mini/head/mchr0001_00/textures/tex_mchr0001_00_face0_0_diff",
+      "source_sha256": "8ca84f1f08bfc21d738f436e9083f7b1d4de8524204659d854fe7a3535b53843",
+      "decoded_sha256": "d537cb581d2680f908486fc736f0e5112f92cd6f54fe0b32b133a57606acbdbf",
+      "source_unchanged": true
+    },
+    "SUAPGN5RA5EL3WELABVXWYQFU7KELZ3S": {
+      "logical": "3d/chara/mini/head/mchr0001_00/textures/tex_mchr0001_00_face0_1_cheek0",
+      "source_sha256": "a7afe2c2162d3483dfe445a798ad58885d8621a50a6e44c3729a8956c434710c",
+      "decoded_sha256": "140a4666fa2fdfadcec75e051e4ff30408b579305fc989b0810c323444ae306d",
+      "source_unchanged": true
+    },
+    "72WO5BMUXNNY3QNHIOALAHGDY7O2YYPS": {
+      "logical": "3d/chara/mini/head/mchr0001_00/textures/tex_mchr0001_00_face0_1_cheek1",
+      "source_sha256": "c99d6ce968fdade70b5162f02be6f6a6d2916ec26d28db7fe61e6d8034737ba4",
+      "decoded_sha256": "94be5cebd81eba583ff9b4ed44377f1ed03a7ad8a5ea7082c7f55ced605c0b13",
+      "source_unchanged": true
+    },
+    "MHEQKJ5KRNONJPL5UM5SVFA235AL452V": {
+      "logical": "3d/chara/mini/head/mchr0001_00/textures/tex_mchr0001_00_face0_1_diff",
+      "source_sha256": "131a8f049239ebcf367f27742d54eb0ab10993a26a63de727138ffde8e94efe6",
+      "decoded_sha256": "d0e867d41d85f260a467a795a84f86fed7d69e550f57b0bcd345b07cac863d85",
+      "source_unchanged": true
+    },
+    "IXWRDRBWO2RJWZDHXYDF7M3IDZJPTM4T": {
+      "logical": "3d/chara/mini/head/mchr0001_00/textures/tex_mchr0001_00_face0_2_cheek0",
+      "source_sha256": "f1a7bb44d04f19f85beecd3b6c0dfe6531992b0582bbd4c1d23e6ff6b3b3f050",
+      "decoded_sha256": "4a2832fcd2fed39d7be87efaa57dc4532656936e3014c007b040997ee7cf0f1d",
+      "source_unchanged": true
+    },
+    "SWPWFG4MA7GWXP2VLS3W4NXLY5QH3TX6": {
+      "logical": "3d/chara/mini/head/mchr0001_00/textures/tex_mchr0001_00_face0_2_cheek1",
+      "source_sha256": "2938d04cb3d900cc00eea4c2d05bcec7a3cf335c1101689fd360e25dee236ee3",
+      "decoded_sha256": "3141791f3bba5329996175539296a3b52d05c83c3148a3579caf8b5d2ce42e7e",
+      "source_unchanged": true
+    },
+    "JXHJR6AD3W2XCQLQ4WH7Z6J3QQ76PXZB": {
+      "logical": "3d/chara/mini/head/mchr0001_00/textures/tex_mchr0001_00_face0_2_diff",
+      "source_sha256": "7549af8dbc3095e6c6c2385a0b72ec935acaaa81806bc02abbe31554871cb176",
+      "decoded_sha256": "daf621f784baa93f5b05396460a62c7093ae407b5150dd025c3b6a7d423917c1",
+      "source_unchanged": true
+    },
+    "X5HVOTUO4WFBJ343DJ4JUGBWANYYFVNI": {
+      "logical": "3d/chara/mini/head/mchr0001_00/textures/tex_mchr0001_00_face0_3_cheek0",
+      "source_sha256": "1c4e5f3e4df057e24c39dab021cb22c3a742ffbb6f375f749ce30da5feda8a76",
+      "decoded_sha256": "28718f72f2e2d9dcd51550410c534a8b474195f6b003fa041d58bba7fd0cd6b0",
+      "source_unchanged": true
+    },
+    "FTPIYZH3FFSCL4B346B47UZQLGKPBSGR": {
+      "logical": "3d/chara/mini/head/mchr0001_00/textures/tex_mchr0001_00_face0_3_cheek1",
+      "source_sha256": "c52799c976d45375b6f016f807363b6776dce4c24ffa189e81e0b9fc2e644bb2",
+      "decoded_sha256": "eafff985c3411bc57bb350d1c4b18d457d43ee2423ae0164ca6f730fcbf38b9c",
+      "source_unchanged": true
+    },
+    "UUZG3A34V4ULEWFH4RZ5RP4QK4Y2AJYT": {
+      "logical": "3d/chara/mini/head/mchr0001_00/textures/tex_mchr0001_00_face0_3_diff",
+      "source_sha256": "58b664535f027826871ce5e06c75d13707508f1e8d7d3e061b548126118eab2e",
+      "decoded_sha256": "d0ff489ed36c13878f64a1daafad28283ebd3063cd9e75dd4abbc036a71f380c",
+      "source_unchanged": true
+    },
+    "CFGBY3DTYELIH3AJASYVRWDBQKJD7EXR": {
+      "logical": "3d/chara/mini/body/mbdy1052_00/pfb_mbdy1052_00",
+      "source_sha256": "78a155b2860c482431cfa143d6411a47af19b5c2742238c5799c427ccf95a61c",
+      "decoded_sha256": "bd974f74ae576fe2888efaa1b02cd2408095f256aa1df17c95f895634c460687",
+      "source_unchanged": true
+    },
+    "FJQXCKSRJJKQ4JFUVPTOG2HCFRZXU5XM": {
+      "logical": "sourceresources/3d/chara/mini/body/mbdy1052_00/materials/mtl_mbdy1052_00",
+      "source_sha256": "6905dc5f9822ed6730988f9fcffee72fa67f409f57f42fbfb8a9d488ba75afae",
+      "decoded_sha256": "ebcecf939dfcff69c38c1afb347c1d467617e092965dcd712c2ae5347fcccf3e",
+      "source_unchanged": true
+    },
+    "2PRLJCJ75FFQAUP7UARO4OJVHDYWL32U": {
+      "logical": "3d/chara/mini/head/mchr1052_00/pfb_mchr1052_00_hair",
+      "source_sha256": "cf6434d22e1750caef5b875290afa663da20cc170c4454a3a88e6657edfebd12",
+      "decoded_sha256": "46c4bec665cf857556098b3f7ff606bd6566bfd5aedaf4da424ca440e6185ef6",
+      "source_unchanged": true
+    },
+    "RHVXDGE4FSIZZSUURWUBJQ6VLWQ7TI22": {
+      "logical": "sourceresources/3d/chara/head/chr1052_00/facial/ast_chr1052_00_ear_target",
+      "source_sha256": "0a206c9fb67ba04f378bc9f39f5c4e0ffadfb3178303d9cd0af4f6a5769edaf4",
+      "decoded_sha256": "46877011007459b83eca127c7e7e9906c8a0b272df95b1e955838b637419977e",
+      "source_unchanged": true
+    },
+    "D3FTT7SAXJ2MUL7FMIYKLNBQAP3SEIL4": {
+      "logical": "sourceresources/3d/chara/mini/head/mchr1052_00/materials/mtl_mchr1052_00_hair",
+      "source_sha256": "13f8d639dab5c55e817b7cd02f36890c722b7fcf3fa39ed404ecb157d1927cf8",
+      "decoded_sha256": "23a0a0727ada74c621411c1b221aebf1b9154534eb0983f37ad0f2d509a1f07f",
+      "source_unchanged": true
+    },
+    "GQHTMDZKBQRDS5IFG4F65IDACVLGCRSX": {
+      "logical": "3d/chara/mini/head/mchr1052_00/textures/tex_mchr1052_00_eye_diff",
+      "source_sha256": "0da5f8d558e2a7525685016119ebe05d22acbd5a5edabf4ab8a809d69466b128",
+      "decoded_sha256": "77a90c79884d65b0bbbaac46c2fb69f0082c02a3841e778808d556bf77ee7879",
+      "source_unchanged": true
+    },
+    "I6AIOCL3HCUJFKXEMS3B75BRNK2SPNJF": {
+      "logical": "3d/chara/mini/head/mchr1052_00/textures/tex_mchr1052_00_mayu_diff",
+      "source_sha256": "581c053f35e3dfa93bd2943fb2f89ce372686c739dd932e0a795a6695c75dfd8",
+      "decoded_sha256": "7bb263c62a2c43f5bf349796b0ccdf38c8c6be69e771551df7106f2b70a35769",
+      "source_unchanged": true
+    },
+    "M2C7DDGTFAE3OYOT6GDPHTJGP2UCTJXW": {
+      "logical": "3d/chara/mini/head/mchr1052_00/textures/tex_mchr1052_00_mouth_diff",
+      "source_sha256": "f5015a42d8c3a5fb15e3d1936d9ab21963e75838f833ebed0f55ede8571b5028",
+      "decoded_sha256": "335fb94a7c2d16b7af7fd56f031b9fb92d10c672af3dacb05bfc890536a23622",
+      "source_unchanged": true
+    },
+    "D5NHSZU467DDRSJ2MH3ZR4N3KY6DVOZ2": {
+      "logical": "3d/chara/mini/body/mbdy1032_00/pfb_mbdy1032_00",
+      "source_sha256": "c8c58761d1f4926725ec862062df404e414df10f64b117fe75ed70416d946e61",
+      "decoded_sha256": "222001375641ff3717afa0c7261e47db80004e10cea4a940d6728696e7197cd5",
+      "source_unchanged": true
+    },
+    "UIRX7J72TWLKD3DB4UQDSRSJTFU4LITW": {
+      "logical": "sourceresources/3d/chara/mini/body/mbdy1032_00/materials/mtl_mbdy1032_00",
+      "source_sha256": "2ef99349cb0038b1939abb5eca80888872fc2d1abd209b547bd5ad2089568168",
+      "decoded_sha256": "dbe37883c9d68d54fc475a548298a4bcf8506f6082369bf6ccf4c7dc8b98b79e",
+      "source_unchanged": true
+    },
+    "YSSPGJMNH62HQLMQIR7JWVSNQ43UMAV5": {
+      "logical": "3d/chara/mini/head/mchr1032_00/pfb_mchr1032_00_hair",
+      "source_sha256": "df26005fe3324d8c636f182c0f91eafefe5c4257dcb8384d3e6e82f55dc06303",
+      "decoded_sha256": "54c71edd0dc9e09e2b6b753d5f8b3ce2597e92ba3a93086e756d7a8b53e83209",
+      "source_unchanged": true
+    },
+    "QTKRDF42WI4BXP2ME4QZXG2X6LNOL2F4": {
+      "logical": "sourceresources/3d/chara/head/chr1032_00/facial/ast_chr1032_00_ear_target",
+      "source_sha256": "aebd5e3954e74ef076bea173ad4994f120b87affd003b48add4b739849477d03",
+      "decoded_sha256": "a1fc57c81951d00c0588e02a5714dfc349202552ec02424068c564c3b5d9d9b4",
+      "source_unchanged": true
+    },
+    "APTL7MA7MRETUHELCHOISIGH2NTBTXZ2": {
+      "logical": "sourceresources/3d/chara/mini/head/mchr1032_00/materials/mtl_mchr1032_00_hair",
+      "source_sha256": "c0d4fc562af3842798f095ebfe02a416b722dc6755db11a1cd41913ec973a7c0",
+      "decoded_sha256": "d7000fcbdaf4d2b6adedeb5b2493b33f162ea1fe5ab7769bd2305dcbae3ac464",
+      "source_unchanged": true
+    },
+    "HGCVOTBDUBOSKZRMFNMBI2UIVZ4DLWI4": {
+      "logical": "3d/chara/mini/head/mchr1032_00/textures/tex_mchr1032_00_eye_diff",
+      "source_sha256": "7be3157cec7b69023e1c3a2b72e0ec026a64049f5125cb3c9d576ac2c48ab4e0",
+      "decoded_sha256": "f395365cd2bffbf9f0becd3ab68c64f195c73c6e41c23c6aa21331c9b532aea5",
+      "source_unchanged": true
+    },
+    "3QG5FAIVGTMMVBNEZ426RFKVBQEECSHW": {
+      "logical": "3d/chara/mini/head/mchr1032_00/textures/tex_mchr1032_00_mayu_diff",
+      "source_sha256": "1b4f8da2d374bacf07364825a8988077808f30f322140c10b9d74a7321b21d5b",
+      "decoded_sha256": "3c5ae00173f7a894315115b710d1cbb2d7fd097f6ecc6aaab8d388d7f5f0a84b",
+      "source_unchanged": true
+    },
+    "OHIHX6CC54L74HHJBQ7TK4PTS7YLDFFG": {
+      "logical": "3d/chara/mini/head/mchr1032_00/textures/tex_mchr1032_00_mouth_diff",
+      "source_sha256": "5d9abc025466d024cc77afe77ca21ae9bff892c9ce31098da41a9e13d37a0074",
+      "decoded_sha256": "82f7ff235d8a985d4fb6915ebffc511979b279152a41a0f7ef04f36350015c57",
+      "source_unchanged": true
+    },
+    "YHPQEWELSSTTN5PFHFSJPGAEPMD5GJTI": {
+      "logical": "3d/chara/mini/body/mbdy1062_00/pfb_mbdy1062_00",
+      "source_sha256": "d144d385e8e53c52a384e35faa74375d3d961a898ddb7e21643a6ab305e93285",
+      "decoded_sha256": "7933ce492464bfb0cdf9e366d6a9c5124e3624ccfdb74acf2e2079e82d20e59a",
+      "source_unchanged": true
+    },
+    "CF3AFB6MGUWBSWMIW4MC42KML7OCNFA3": {
+      "logical": "sourceresources/3d/chara/mini/body/mbdy1062_00/materials/mtl_mbdy1062_00",
+      "source_sha256": "bfa0ceefb591969e48093b8dc5205adbb3776070d0b34faa1cd50782961523ac",
+      "decoded_sha256": "8db5905af73d61722e3022ffb956d0e785be172cc21efcc2c6ce91bb428df6eb",
+      "source_unchanged": true
+    },
+    "UNZAUCIZU6SLFHQXKV4VV6JGEB73IHON": {
+      "logical": "3d/chara/mini/head/mchr1062_00/pfb_mchr1062_00_hair",
+      "source_sha256": "bb408c95c2d39263f3b806e4aa21b29a50588dbfbb6f21122c015cb5279646da",
+      "decoded_sha256": "cb408f5ebc999aa7c72100936c4f066550047525528441cfd5dece5cadeb3a2d",
+      "source_unchanged": true
+    },
+    "5XLTD645BPWDIZBVOQCHXRAMCXW7C4X5": {
+      "logical": "sourceresources/3d/chara/head/chr1062_00/facial/ast_chr1062_00_ear_target",
+      "source_sha256": "ca0f723f6b4f6c0a78d8b9149088aa5e3ccfe5ebd237eb8cfed322413a53e56a",
+      "decoded_sha256": "53eafca4d2b2a6b777bcede88f4b592decaf19b0e3895f105f86cb28d779bd88",
+      "source_unchanged": true
+    },
+    "AUOD3SU4YXAUI67BJLDT5XM56I64SSH5": {
+      "logical": "sourceresources/3d/chara/mini/head/mchr1062_00/materials/mtl_mchr1062_00_hair",
+      "source_sha256": "e0b1a5b8178b03375a522582d22a366aaa69065eb436193435563ceb3bdefd90",
+      "decoded_sha256": "ea4770fdc4e84b67d344a8f48024b3f213d2a59a7db9f73451d043682a0c9aa6",
+      "source_unchanged": true
+    },
+    "BQ6LB3NWO6BYFLNOSYFHTK2WWANHL5VC": {
+      "logical": "3d/chara/mini/head/mchr1062_00/textures/tex_mchr1062_00_eye_diff",
+      "source_sha256": "87dd2d354b683d5e72b22c497bc5d7b88203fa76180c0914e8e049a9e297c0c1",
+      "decoded_sha256": "274ceaada6030228000a75300da25d5af543e1a4d32a6b33614fd9d3d75caa75",
+      "source_unchanged": true
+    },
+    "WJPMXA6VW4OZ6E46KAUBUJISKWKJKTQA": {
+      "logical": "3d/chara/mini/head/mchr1062_00/textures/tex_mchr1062_00_mayu_diff",
+      "source_sha256": "8fac080429781d120072ce5f7ea13b2f0d7313b9b49c1973b43f758252c5c7c1",
+      "decoded_sha256": "eda1ac17a9b448f2764327f3d1f8b9a301dec615e4c1242a3fb4ecc565bab68d",
+      "source_unchanged": true
+    },
+    "IUBENSFKSHOLHU5ZRQ74SR77JDETZNFM": {
+      "logical": "3d/chara/mini/head/mchr1062_00/textures/tex_mchr1062_00_mouth_diff",
+      "source_sha256": "cfb22353b2147ebee065eddd647277aba4bd69b77144873f294865b3121be2b1",
+      "decoded_sha256": "668cab05658b0e0ec55c0f5d422a260e4b661ab21efa6c4f82a22dbcbb74b2ac",
+      "source_unchanged": true
+    },
+    "WB5JHLMMW6PHHCJBTUR5QCZUMQCCJDIA": {
+      "logical": "3d/chara/mini/body/mbdy1015_00/pfb_mbdy1015_00",
+      "source_sha256": "be6f9e144b5be6088f52cf46b5a2a78e1a0819f85882a97790407cac09375374",
+      "decoded_sha256": "80304790077a866b1d6ddaebbf44b63d7f29699c8d54e83ccd373db5df944a6a",
+      "source_unchanged": true
+    },
+    "4ZNOBDDXACMEVD6ANPFFZ5Y43EVQ3XS6": {
+      "logical": "sourceresources/3d/chara/mini/body/mbdy1015_00/materials/mtl_mbdy1015_00",
+      "source_sha256": "fef7e66f73f0c42a3311263c8f0e021f9b0fbebeb95fe20da2b392995f2b9eab",
+      "decoded_sha256": "de5352d141c6ecd0b0e27baaced69b6b53133fc025b49f23706830b1af018df2",
+      "source_unchanged": true
+    },
+    "L7JJLF2LSKI2LRJIZOK6MAJFRP3W7DSZ": {
+      "logical": "3d/chara/mini/head/mchr1015_00/pfb_mchr1015_00_hair",
+      "source_sha256": "6d061054236ef7561c9762fe1dc58f48e643f60566bd4345a7ce0c3ebc707130",
+      "decoded_sha256": "8b1aed5b932d54e964af205268fa09ee9877872de596979c684e3f029817a11a",
+      "source_unchanged": true
+    },
+    "EQMIHHQRFMA6MBNPLDU4QLIRZWACTAWH": {
+      "logical": "sourceresources/3d/chara/head/chr1015_00/facial/ast_chr1015_00_ear_target",
+      "source_sha256": "0c346308f65197328a2857a898ad32c3f973344c1f11632b2d341999ba451f2e",
+      "decoded_sha256": "a4981cc3674b5c539968e8e4909e70a8e436ff138363c80e4d8c719af3be9dff",
+      "source_unchanged": true
+    },
+    "PADKYHKPQSB7OBB7BICVNVRBQF4FOCXY": {
+      "logical": "sourceresources/3d/chara/mini/head/mchr1015_00/materials/mtl_mchr1015_00_hair",
+      "source_sha256": "d3419eec34f09871a21164b879d3b50e875df5c500bbca7ae7e7e31549f4f4c8",
+      "decoded_sha256": "b2f1da6fc9e1be5dabf497c9d2da30b12e215cbddb0968858a787f243a9fffea",
+      "source_unchanged": true
+    },
+    "OLHWT3W5LWNSHIKPISP6RDWG6B5KKPUA": {
+      "logical": "3d/chara/mini/head/mchr1015_00/textures/tex_mchr1015_00_eye_diff",
+      "source_sha256": "24b6192c47cbf3b3f4529c6a804802337318a0fb161380a1a5713b9d2239bf19",
+      "decoded_sha256": "32bc751d419fc161588139c64c15f981961c41c22ded0a1a7f950e65f759e05d",
+      "source_unchanged": true
+    },
+    "M3PZCD4UIWCVZQSSNRJVKS4OJPG3T3WI": {
+      "logical": "3d/chara/mini/head/mchr1015_00/textures/tex_mchr1015_00_mayu_diff",
+      "source_sha256": "439abdb6eb09375e2969115782b7221bd6e37b3bfd856df083ec3f564d59c037",
+      "decoded_sha256": "c12782762afd3893c049384ce5f9dbad68a937d347abf9935e82b958224fc71b",
+      "source_unchanged": true
+    },
+    "3PZ73SNJ3OO2OICS5BXY2N3S4TNSTFJB": {
+      "logical": "3d/chara/mini/head/mchr1015_00/textures/tex_mchr1015_00_mouth_diff",
+      "source_sha256": "25f4001e21a4b38c5c53e34231119c399e7ae5242459de86ca9faac3ba1395a8",
+      "decoded_sha256": "ea3a8a0389eae513635cf0ce91a7fb8eba7994802de0e3b797c2318169606f45",
+      "source_unchanged": true
+    },
+    "7J3IKIOU2KRIHGWHPCQLFN5OL3V2ZP47": {
+      "logical": "3d/chara/mini/body/mbdy1006_00/pfb_mbdy1006_00",
+      "source_sha256": "cf9fca08c2150270f927c2e85b1c7e05ac29e2a0b38456cb458886a521660f6b",
+      "decoded_sha256": "cbfdd0cd2ebb86449c5d347b28b29eea8e015899621cd59c164e18f26af6d495",
+      "source_unchanged": true
+    },
+    "VKBEYC5GF4LB7B4SEXMIVMK3FNFJ7HAC": {
+      "logical": "sourceresources/3d/chara/mini/body/mbdy1006_00/materials/mtl_mbdy1006_00",
+      "source_sha256": "56aba4f9663975fd5ee08127276e93e4b434085d3880d9d7cea107619a9790b4",
+      "decoded_sha256": "df5478c8d2a8e73a413a77aa343a11dce632a8dc202840f3e8dae8b2f33ba657",
+      "source_unchanged": true
+    },
+    "34NHH6HYDASUWNMR3LL2YNWB7FC74H3V": {
+      "logical": "3d/chara/mini/head/mchr1006_00/pfb_mchr1006_00_hair",
+      "source_sha256": "ea7629108832431bf27142cc1e823c44cfb458af9ed7385a0075851a66a1aca3",
+      "decoded_sha256": "4fa9fd8cf39ad0b42a6e0dff60c8575ac4239f431a36f87e4c32dbbd443f2095",
+      "source_unchanged": true
+    },
+    "H5GL2NLGGSOOA4Q74CEQCDCABL4HSVYY": {
+      "logical": "sourceresources/3d/chara/head/chr1006_00/facial/ast_chr1006_00_ear_target",
+      "source_sha256": "482363e6288a69b2bde5eb548c6acac92eed11bb59eb1c0634961ae0e5942884",
+      "decoded_sha256": "1765fe7f5521355b0335ade4ca44210b87abfe6e9ffcd1318575e7cbb8599c20",
+      "source_unchanged": true
+    },
+    "LMVO3JJOYFMN5L4YVPOTOWFZI4C3P7FD": {
+      "logical": "sourceresources/3d/chara/mini/head/mchr1006_00/materials/mtl_mchr1006_00_hair",
+      "source_sha256": "7f3de02ae2ab528745ea6068e15624a6637f82d91d8a4131f3c6be0b589ca726",
+      "decoded_sha256": "46a2e6bd34c59208b74def93ebf72c33adda842ab1e95cbeaf122866f2029d24",
+      "source_unchanged": true
+    },
+    "6DJUCRGUNJG5HKSG6VRX7OHCZMV2DT4W": {
+      "logical": "3d/chara/mini/head/mchr1006_00/textures/tex_mchr1006_00_eye_diff",
+      "source_sha256": "ddc642f6076f54ce9de20837a2068b6a119af216227d911a68974e287e801250",
+      "decoded_sha256": "5202a3bba137fd5d9979d53a93259e68948994c0181dea13ae8a7cbb39460db6",
+      "source_unchanged": true
+    },
+    "47MHTSDIMFLYNWPHHORL5CVSSXNVUTMY": {
+      "logical": "3d/chara/mini/head/mchr1006_00/textures/tex_mchr1006_00_mayu_diff",
+      "source_sha256": "19a851a85a1538551dd78c3b8048fbb0b973e3df948ea007d4ed303c9653e63c",
+      "decoded_sha256": "fff0792ff774eaa02fce2abeee232084fa9f345aaf837565a279ea0a3f5de63e",
+      "source_unchanged": true
+    },
+    "KP7F3W4DEYSZJESXIXJCNG3UXLLAO5IH": {
+      "logical": "3d/chara/mini/head/mchr1006_00/textures/tex_mchr1006_00_mouth_diff",
+      "source_sha256": "f17be248831096ea915d990ce9c5a0c2eed249ebd81a8359b64511ad5e0bdab1",
+      "decoded_sha256": "7b08859837b4fd6e11cfda4537d25ad8fe2582f8942b4ed1d28a6390a3b3e4b7",
+      "source_unchanged": true
+    },
+    "YNUGPLUWU546KU7OCCMMUWQWVE6TWOFY": {
+      "logical": "3d/chara/mini/body/mbdy1058_00/pfb_mbdy1058_00",
+      "source_sha256": "9ee28c3a2ddd4fa5cb60bfb0a5488cf7b71a1d2658a4499e16114b10ffeddc09",
+      "decoded_sha256": "2291cd09cf4e3bf0fa0ad03a9e14cf37c26244d233d74ea1be0a8de9ed4a738c",
+      "source_unchanged": true
+    },
+    "FJ2KWV4FGEHWWP5KR2WMPT5WAWHS74OB": {
+      "logical": "sourceresources/3d/chara/mini/body/mbdy1058_00/materials/mtl_mbdy1058_00",
+      "source_sha256": "f78dc0706eb93dcd1ad917da8a1ae5cdbec8bccae2eb78ca4e203047fe30e583",
+      "decoded_sha256": "3711d511bdd8058056097a2340b6b76da3aca9cc83fdeaf4fcdb115ba3eab748",
+      "source_unchanged": true
+    },
+    "YV6URRUKJBLXKGCACP3ZGYKOXSVSBTM5": {
+      "logical": "3d/chara/mini/head/mchr1058_00/pfb_mchr1058_00_hair",
+      "source_sha256": "98c6958559229e6225d85fd411d7717ee2d263661917e88d6141f2044a76238e",
+      "decoded_sha256": "846072a86919c3c6a8ef2166d69fc95b4810c02ce6eb05e7aaad60fbebe5df13",
+      "source_unchanged": true
+    },
+    "6KQGI3GW4B66SIQ3U4SG4GS7UMHADIXS": {
+      "logical": "sourceresources/3d/chara/head/chr1058_00/facial/ast_chr1058_00_ear_target",
+      "source_sha256": "d67b201085ca56b147ae884123888cc927a771f6afe59757117c8114a5e78001",
+      "decoded_sha256": "c3c76fb94f55b80a9cd0d0c4548a7f595ed218caa443bc980e6b42fa2216aea0",
+      "source_unchanged": true
+    },
+    "LHJYLSJ2CVYMNQPUN3XAVRXX6LASZ23G": {
+      "logical": "sourceresources/3d/chara/mini/head/mchr1058_00/materials/mtl_mchr1058_00_hair",
+      "source_sha256": "f3c2b1226f3aa5577e827df531485b7b1d6a1c00f6d8d3363c47755585060b85",
+      "decoded_sha256": "9154b59faa70a572458cfe833cec7ae270cb313a3d7689892d4a8256d0edb99d",
+      "source_unchanged": true
+    },
+    "733Q6YXUKZNCPTAD2NOLNP3HFJHOXAMU": {
+      "logical": "3d/chara/mini/head/mchr1058_00/textures/tex_mchr1058_00_eye_diff",
+      "source_sha256": "e3f312d701bbe0524da8b62fb4f6b79473cda80982291db87d0c04bbbd312d93",
+      "decoded_sha256": "4aa8f3527fd10f5f365c1b945e229c9e334f06145db6fdfc9caa9335be3f1ea3",
+      "source_unchanged": true
+    },
+    "ECZGDPGOAHCZS5LPRXQGTP7XQEUV54YT": {
+      "logical": "3d/chara/mini/head/mchr1058_00/textures/tex_mchr1058_00_mayu_diff",
+      "source_sha256": "e33ba45c20ad9dd3dc3c8b729ffb81b036a6542cf25609257d0be3adde40ada7",
+      "decoded_sha256": "9e9432af77e1ab9d4cca2e91309ead40d08bfc3bc6395bd320ed4b2e4d46a4e8",
+      "source_unchanged": true
+    },
+    "XXLBJKDECANWKZYO3JWTIT7Y7RD35N7Y": {
+      "logical": "3d/chara/mini/head/mchr1058_00/textures/tex_mchr1058_00_mouth_diff",
+      "source_sha256": "ea73951c7c2048855432d037800782104ed5183d44551c56500550d7e2489afb",
+      "decoded_sha256": "567c01a72638e95a5e66cfa965d9c7ff85791591d3a3c9a5784c6180754bdd44",
+      "source_unchanged": true
+    }
+  },
+  "steam_modified": false,
+  "game_integrated": false
+}

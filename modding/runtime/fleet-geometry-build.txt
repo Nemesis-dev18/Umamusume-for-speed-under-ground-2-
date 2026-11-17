@@ -1,0 +1,7 @@
+COROLLA retained verified staged container
+240SX retained verified staged container
+MIATA retained verified staged container
+FOCUS retained verified staged container
+PEUGOT retained verified staged container
+PEUGOT106 7456896 -> 2260928 bytes; 1 humanoid hulls
+CORSA 7730192 -> 2330960 bytes; 1 humanoid hulls

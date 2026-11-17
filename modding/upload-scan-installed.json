@@ -1,0 +1,10 @@
+{
+  "target": "scripts/UmaRunner.asi",
+  "backup": "scripts/UmaRunner.asi.before-upload-scan.bak",
+  "before_sha256": "92470b9a3ca87d621196d9ae6101af3deae6187d33cc0882ecb4badbe0aa8ffc",
+  "after_sha256": "302e3f0e47b4206ae0068f6c9484b05fcbd32b3418211870bb7d84fcc0fc822a",
+  "installed": true,
+  "live_fps_verified": false,
+  "user_feedback": "Mejor\u00f3 claramente",
+  "qualitative_improvement_confirmed": true
+}

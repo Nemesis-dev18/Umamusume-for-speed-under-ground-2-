@@ -1,0 +1,33 @@
+{
+  "game_pid": 99642,
+  "game_cwd": "/home/nemesis/V\u00eddeos/proyecto inginversa/NFSU2-Uma-Prueba",
+  "open_audio_files": [],
+  "skid_bank_hashes": [
+    {
+      "file": "SOUND/SKIDS/SKIDS_DRIFT2_MB.abk",
+      "actual_sha256": "fb340c636b5ea0e1fc6ef9acf6619d22705f06179c622da8ec6ec7d6be80f7b8",
+      "expected_sha256": "fb340c636b5ea0e1fc6ef9acf6619d22705f06179c622da8ec6ec7d6be80f7b8",
+      "sample_ranges": 5
+    },
+    {
+      "file": "SOUND/SKIDS/SKIDS_DRIFT_MB.abk",
+      "actual_sha256": "c1af289b8443d82dae37852344c962478a7b011bb87280d6d8b3b1b9889de141",
+      "expected_sha256": "c1af289b8443d82dae37852344c962478a7b011bb87280d6d8b3b1b9889de141",
+      "sample_ranges": 5
+    },
+    {
+      "file": "SOUND/SKIDS/SKID_PAV2_MB.abk",
+      "actual_sha256": "381b2510bc86edca202b886bffed175273785e06a388309c65c64aeb48e87759",
+      "expected_sha256": "381b2510bc86edca202b886bffed175273785e06a388309c65c64aeb48e87759",
+      "sample_ranges": 5
+    },
+    {
+      "file": "SOUND/SKIDS/SKID_PAV_MB.abk",
+      "actual_sha256": "bc518e2d364d15659a8930f81cc1835d8955e41c741f4a770bb3ca54cd4dbb9d",
+      "expected_sha256": "bc518e2d364d15659a8930f81cc1835d8955e41c741f4a770bb3ca54cd4dbb9d",
+      "sample_ranges": 5
+    }
+  ],
+  "duplicate_active_banks_found": false,
+  "limits": "Open files are a snapshot; closed or memory-cached audio cannot be attributed by this inventory"
+}

@@ -48,14 +48,15 @@ def main():
             finally:watch.close()
         print('PASS real filesystem open observed; temporary fixture removed');return
     if sys.argv[1:]:raise ValueError('Unexpected arguments')
-    watch=Watch([p for p in (ROOT/'CARS').iterdir() if p.is_dir()]);started=time.monotonic();seen=False
+    paths=[p for p in (ROOT/'CARS').iterdir() if p.is_dir()]+[ROOT/name for name in ('TRACKS','GLOBAL','NIS') if (ROOT/name).is_dir()]
+    watch=Watch(paths);started=time.monotonic();seen=False
     log=ROOT/'modding/diagnostics/car-open-trace.jsonl'
     try:
         with log.open('x') as out:
-            out.write(json.dumps({'scope':'inotify opens in isolated CARS; opener PID unavailable','started':time.time()})+'\n');out.flush()
+            out.write(json.dumps({'scope':'inotify opens in isolated CARS/TRACKS/GLOBAL/NIS; opener PID unavailable','started':time.time()})+'\n');out.flush()
             while time.monotonic()-started<600:
                 for path in watch.read(.5):
-                    if path.name.upper() in ('GEOMETRY.BIN','TEXTURES.BIN'):
+                    if path.suffix.upper() in ('.BIN','.BUN','.LZC','.BIK'):
                         out.write(json.dumps({'time':time.time(),'path':str(path.relative_to(ROOT))})+'\n');out.flush()
                 live=subprocess.run(['pgrep','-x','SPEED2.EXE'],capture_output=True).returncode
                 if live not in (0,1):raise RuntimeError('Process status unavailable')

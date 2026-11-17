@@ -1,0 +1,54 @@
+{
+  "files": [
+    {
+      "target": "CARS/COROLLA/TEXTURES.BIN",
+      "backup": "CARS/COROLLA/TEXTURES.BIN.before-compact-shadows-motion.bak",
+      "before_sha256": "0ad09f89b7eb3c82cade7c76ea9c727dc28d43e48f79226e2159bf4add2c2094",
+      "after_sha256": "9cdba845b52eecf021767c413b68cca50e1da38c1028b87a89baf07f73a97daf"
+    },
+    {
+      "target": "CARS/240SX/TEXTURES.BIN",
+      "backup": "CARS/240SX/TEXTURES.BIN.before-compact-shadows-motion.bak",
+      "before_sha256": "797953b0aad7be50ebbf81144dedfb39c9fab513a41a02886935026c879d0ea1",
+      "after_sha256": "010ee70d2852c5c079c03fdb434b25cf1f6eea8db29db71d2792c4ff48b0752d"
+    },
+    {
+      "target": "CARS/MIATA/TEXTURES.BIN",
+      "backup": "CARS/MIATA/TEXTURES.BIN.before-compact-shadows-motion.bak",
+      "before_sha256": "4fe9f1bc5df58e47273c87586d278b0795121b7893844a415630a8e83025369b",
+      "after_sha256": "c2a60e833d9193913cc667f31a6cf7a809140883669563465b157d19f303cf84"
+    },
+    {
+      "target": "CARS/FOCUS/TEXTURES.BIN",
+      "backup": "CARS/FOCUS/TEXTURES.BIN.before-compact-shadows-motion.bak",
+      "before_sha256": "6e601790adb3856bd637e1e62ef69bc2c8912ca795a22ffc9cb41f90a3e94156",
+      "after_sha256": "6a295e48106c153ace0f59f788efa9e665a62bd0d31d5a062a7778f28d5ae8e6"
+    },
+    {
+      "target": "CARS/PEUGOT/TEXTURES.BIN",
+      "backup": "CARS/PEUGOT/TEXTURES.BIN.before-compact-shadows-motion.bak",
+      "before_sha256": "a2eff8c083c37a5f6ded202b0a181db04f4c0147fe2b9d6650fb0e848f7de838",
+      "after_sha256": "c8dae8b87be1bdfceb9d6e20bf506119ee1c9a3608290366842efc4805bd86d8"
+    },
+    {
+      "target": "CARS/PEUGOT106/TEXTURES.BIN",
+      "backup": "CARS/PEUGOT106/TEXTURES.BIN.before-compact-shadows-motion.bak",
+      "before_sha256": "cd2f633cd7a32614f7fb81bf785a4dcf067dcfca22bb84c26af9dff94e7a1bd3",
+      "after_sha256": "ade45e9e894889cda87d7363b5d97e352b2f05dd8cebb3db53d7688b0ee5bdf4"
+    },
+    {
+      "target": "CARS/CORSA/TEXTURES.BIN",
+      "backup": "CARS/CORSA/TEXTURES.BIN.before-compact-shadows-motion.bak",
+      "before_sha256": "f7d8e61a42cc96365b66e68fd1214e3e372fc133e68812cb8d75c2fe21ccbcb7",
+      "after_sha256": "ecd4801d41584f230d5b3e7028f5e37ad74b6213eae5b046f69178afded99079"
+    },
+    {
+      "target": "scripts/UmaRunner.asi",
+      "backup": "scripts/UmaRunner.asi.before-compact-shadows-motion.bak",
+      "before_sha256": "302e3f0e47b4206ae0068f6c9484b05fcbd32b3418211870bb7d84fcc0fc822a",
+      "after_sha256": "90063d9a4e47342d0bc931e381e18f12b888efcc7713f9f5a242bfa16b55f48c"
+    }
+  ],
+  "installed": true,
+  "gameplay_verified": false
+}

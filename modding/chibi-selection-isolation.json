@@ -1,0 +1,12 @@
+{
+  "restored_menu_files": [
+    "FRONTEND/FrontB.lzc",
+    "GLOBAL/GLOBALB.BUN",
+    "GLOBAL/GlobalB.lzc"
+  ],
+  "models_unchanged": true,
+  "compact_shadows_unchanged": true,
+  "motion_fix_unchanged": true,
+  "cause_confirmed": false,
+  "test_pending": true
+}

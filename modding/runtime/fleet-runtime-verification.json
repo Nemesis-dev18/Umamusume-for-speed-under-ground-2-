@@ -10,7 +10,7 @@
         "atlas.dds": "2fa4c5842646097d4bc3dff1390f7a536b52bd36ddd7e7f752044974b7a2c2e5",
         "face-baked.png": "e4ef3045ddbd1396d1ef5e96f8a139a278aff14188913fd706f74f71eb5bd13d"
       },
-      "gpu_result": "PASS id=1068 vertices=14616 bones=79; idle/run visible; full depth occlusion; CPU skin 2.670 ms"
+      "gpu_result": "PASS id=1068 vertices=14616 bones=79; idle/run visible; full depth occlusion; CPU skin 2.640 ms"
     },
     {
       "id": 1052,
@@ -21,7 +21,7 @@
         "atlas.dds": "7db3f5c632272591f46e89ea26c2a65db01fcce8d0871adb8d0b8b8c5aac6ff1",
         "face-baked.png": "7f54e15aed131f21608e35f84a02e5d4e85972a64884e79b5c1edeb7f4387d44"
       },
-      "gpu_result": "PASS id=1052 vertices=10418 bones=79; idle/run visible; full depth occlusion; CPU skin 1.920 ms"
+      "gpu_result": "PASS id=1052 vertices=10418 bones=79; idle/run visible; full depth occlusion; CPU skin 1.860 ms"
     },
     {
       "id": 1032,
@@ -32,7 +32,7 @@
         "atlas.dds": "94a10272ba24ba38c6106f296e105bc84b8b466029fc1ca74f3da0d93cf60819",
         "face-baked.png": "52a775c5cbb22a9b449043b0a467a6ea058e537f23d70f307a5d4195ff9b985e"
       },
-      "gpu_result": "PASS id=1032 vertices=12949 bones=79; idle/run visible; full depth occlusion; CPU skin 2.330 ms"
+      "gpu_result": "PASS id=1032 vertices=12949 bones=79; idle/run visible; full depth occlusion; CPU skin 2.280 ms"
     },
     {
       "id": 1062,
@@ -43,7 +43,7 @@
         "atlas.dds": "34891ba0a42892d9262bfea0b13a0f25635031eab06247a32a0694c38c7225e1",
         "face-baked.png": "1c49ce53bfb3f7bc14e83e4ef6916658ed5e9a0d98863eec56cd73f86de2a941"
       },
-      "gpu_result": "PASS id=1062 vertices=15626 bones=79; idle/run visible; full depth occlusion; CPU skin 2.750 ms"
+      "gpu_result": "PASS id=1062 vertices=15626 bones=79; idle/run visible; full depth occlusion; CPU skin 2.770 ms"
     },
     {
       "id": 1015,
@@ -65,7 +65,7 @@
         "atlas.dds": "c08ba84ac09c5062c2b614632d56ea6b9320e8e5390103ca902f6fceace34d15",
         "face-baked.png": "34af419353fd7783cb42784e6966fd46a0d93529960b470b42089252e2203055"
       },
-      "gpu_result": "PASS id=1006 vertices=11975 bones=79; idle/run visible; full depth occlusion; CPU skin 2.160 ms"
+      "gpu_result": "PASS id=1006 vertices=11975 bones=79; idle/run visible; full depth occlusion; CPU skin 2.150 ms"
     },
     {
       "id": 1058,
@@ -76,10 +76,11 @@
         "atlas.dds": "3666a316414d70f6dad793912e9836f432bc92710042518b69778064f17b06b7",
         "face-baked.png": "7161418be653a83113c3696730a05e3095abe90832ea9ad0e5e6abdf0efa972e"
       },
-      "gpu_result": "PASS id=1058 vertices=14804 bones=79; idle/run visible; full depth occlusion; CPU skin 2.570 ms"
+      "gpu_result": "PASS id=1058 vertices=14804 bones=79; idle/run visible; full depth occlusion; CPU skin 2.650 ms"
     }
   ],
   "native_skin_reference_cases": 56,
+  "runtime_routing": "PASS seven exact native models through runtime hook; distinct textures, reverse-order pixel identity, per-model actor gait/durations, stationary actor, impostor preservation, all-renderer reset and hook removal; not NFSU2 gameplay",
   "iris": "Neutral face texture bake; original animated gaze and blink are not implemented",
   "gameplay_verified": false,
   "installed": false

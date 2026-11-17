@@ -1,0 +1,114 @@
+[
+  {
+    "slot": "COROLLA",
+    "name": "COROLLA_SHADOWFE",
+    "hash": "0xb7f6575b",
+    "width": 128,
+    "height": 64,
+    "format": 36
+  },
+  {
+    "slot": "COROLLA",
+    "name": "COROLLA_SHADOWIG",
+    "hash": "0xb7f657c0",
+    "width": 128,
+    "height": 64,
+    "format": 36
+  },
+  {
+    "slot": "240SX",
+    "name": "240SX_SHADOWFE",
+    "hash": "0xf3659690",
+    "width": 128,
+    "height": 64,
+    "format": 36
+  },
+  {
+    "slot": "240SX",
+    "name": "240SX_SHADOWIG",
+    "hash": "0xf36596f5",
+    "width": 128,
+    "height": 64,
+    "format": 36
+  },
+  {
+    "slot": "MIATA",
+    "name": "MIATA_SHADOWFE",
+    "hash": "0x1e8a50db",
+    "width": 128,
+    "height": 64,
+    "format": 36
+  },
+  {
+    "slot": "MIATA",
+    "name": "MIATA_SHADOWIG",
+    "hash": "0x1e8a5140",
+    "width": 128,
+    "height": 64,
+    "format": 36
+  },
+  {
+    "slot": "FOCUS",
+    "name": "FOCUS_SHADOWFE",
+    "hash": "0x8c049acf",
+    "width": 128,
+    "height": 64,
+    "format": 36
+  },
+  {
+    "slot": "FOCUS",
+    "name": "FOCUS_SHADOWIG",
+    "hash": "0x8c049b34",
+    "width": 128,
+    "height": 64,
+    "format": 36
+  },
+  {
+    "slot": "PEUGOT",
+    "name": "PEUGOT_SHADOWFE",
+    "hash": "0x720ef583",
+    "width": 128,
+    "height": 64,
+    "format": 36
+  },
+  {
+    "slot": "PEUGOT",
+    "name": "PEUGOT_SHADOWIG",
+    "hash": "0x720ef5e8",
+    "width": 128,
+    "height": 64,
+    "format": 36
+  },
+  {
+    "slot": "PEUGOT106",
+    "name": "PEUGOT106_SHADOWFE",
+    "hash": "0x45f33d5a",
+    "width": 128,
+    "height": 64,
+    "format": 36
+  },
+  {
+    "slot": "PEUGOT106",
+    "name": "PEUGOT106_SHADOWIG",
+    "hash": "0x45f33dbf",
+    "width": 128,
+    "height": 64,
+    "format": 36
+  },
+  {
+    "slot": "CORSA",
+    "name": "CORSA_SHADOWFE",
+    "hash": "0x650ec7c7",
+    "width": 128,
+    "height": 64,
+    "format": 36
+  },
+  {
+    "slot": "CORSA",
+    "name": "CORSA_SHADOWIG",
+    "hash": "0x650ec82c",
+    "width": 128,
+    "height": 64,
+    "format": 36
+  }
+]
