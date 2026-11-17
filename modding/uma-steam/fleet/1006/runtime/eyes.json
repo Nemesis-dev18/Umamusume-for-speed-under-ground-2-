@@ -1,0 +1,12 @@
+{
+  "mode": "Neutral iris texture overlay; source geometry and clips unchanged",
+  "painted_pixels": 3630,
+  "face_size": [
+    512,
+    512
+  ],
+  "eye_depth_test_disabled": false,
+  "neutral_cheek_effect": 0,
+  "game_integrated": false,
+  "expressions_supported": false
+}

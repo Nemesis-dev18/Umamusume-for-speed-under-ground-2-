@@ -154,8 +154,15 @@ static int check_upload_identity(IDirect3DDevice9 *device,const UmaMotion *motio
  assert(!uma_upload_is_character(batched) && uma_upload_matches_at(batched,72) && !uma_upload_matches_at(batched,36));
  CHECK(IDirect3DVertexBuffer9_Lock(batched,72,size,&mapped,0));memcpy(mapped,motion->rest,size);CHECK(IDirect3DVertexBuffer9_Unlock(batched));assert(uma_upload_matches_at(batched,72));
  CHECK(IDirect3DVertexBuffer9_Lock(batched,72,4,&mapped,0));memset(mapped,0,4);CHECK(IDirect3DVertexBuffer9_Unlock(batched));assert(!uma_upload_matches_at(batched,72));IDirect3DVertexBuffer9_Release(batched);
+ UmaVertex first[6],second_model[6];memcpy(first,motion->rest,sizeof(first));memcpy(second_model,first,sizeof(first));first[0].uv[0]+=.1f;second_model[0].uv[0]+=.2f;
+ assert(uma_upload_add_model(first,sizeof(first),1));assert(uma_upload_add_model(second_model,sizeof(second_model),2));assert(!uma_upload_add_model(second_model,sizeof(second_model),3));assert(!uma_upload_add_model(first,sizeof(first),2));
+ IDirect3DVertexBuffer9 *fleet=NULL;CHECK(IDirect3DDevice9_CreateVertexBuffer(device,13*36,D3DUSAGE_DYNAMIC|D3DUSAGE_WRITEONLY,0,D3DPOOL_DEFAULT,&fleet,NULL));
+ CHECK(IDirect3DVertexBuffer9_Lock(fleet,0,0,&mapped,D3DLOCK_DISCARD));memset(mapped,0,13*36);memcpy(mapped,first,sizeof(first));memcpy((BYTE*)mapped+7*36,second_model,sizeof(second_model));CHECK(IDirect3DVertexBuffer9_Unlock(fleet));
+ UINT model=99;assert(uma_upload_model_at(fleet,0,&model) && model==1);assert(uma_upload_model_at(fleet,7*36,&model) && model==2);assert(!uma_upload_model_at(fleet,6*36,&model) && model==2);
+ CHECK(IDirect3DVertexBuffer9_Lock(fleet,0,0,&mapped,D3DLOCK_DISCARD));memset(mapped,0,13*36);memcpy(mapped,first,sizeof(first));memcpy((BYTE*)mapped+7*36,second_model,sizeof(second_model));((BYTE*)mapped)[24]^=127;((BYTE*)mapped)[13*36-1]^=1;CHECK(IDirect3DVertexBuffer9_Unlock(fleet));
+ assert(uma_upload_model_at(fleet,0,&model) && model==1);assert(!uma_upload_model_at(fleet,7*36,&model));IDirect3DVertexBuffer9_Release(fleet);
  IDirect3DVertexBuffer9_Release(managed);IDirect3DVertexBuffer9_Release(other);IDirect3DVertexBuffer9_Release(candidate);assert(uma_upload_remove());assert(!uma_upload_remove());
- puts("PASS full upload identity, one-byte impostor, partial/nested overwrite, READONLY, DISCARD and hook removal");return 0;
+ puts("PASS full upload identity, distinct same-size fleet models, batched offsets, one-byte impostor, partial/nested overwrite, READONLY, DISCARD and hook removal");return 0;
 }
 int main(int argc,char **argv){
  const char *asset_path=argc>1?argv[1]:"modding/runtime/kitasan.umab";

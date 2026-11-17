@@ -28,7 +28,7 @@
         }
       ],
       "target_eye_material_pass": false,
-      "game_motion_asset_packed": false,
+      "game_motion_asset_packed": true,
       "geometry_container_rebuilt": false,
       "collider_adapted": false,
       "unique_runtime_model_identity": false,
@@ -36,7 +36,13 @@
       "selection_verified": false,
       "race_verified": false,
       "mixed_rivals_verified": false,
-      "live_fps_verified": false
+      "live_fps_verified": false,
+      "standalone_native_skinning_verified": true,
+      "neutral_iris_bake_verified_standalone": true,
+      "native_atlas_mips_packed": true,
+      "runtime_upload_multi_model_support_tested": true,
+      "installed_new_model": false,
+      "neutral_expression_limit": "Iris baked to face UVs; animated facial expressions are not implemented."
     },
     {
       "id": 1052,
@@ -63,7 +69,7 @@
         }
       ],
       "target_eye_material_pass": false,
-      "game_motion_asset_packed": false,
+      "game_motion_asset_packed": true,
       "geometry_container_rebuilt": false,
       "collider_adapted": false,
       "unique_runtime_model_identity": false,
@@ -71,7 +77,13 @@
       "selection_verified": false,
       "race_verified": false,
       "mixed_rivals_verified": false,
-      "live_fps_verified": false
+      "live_fps_verified": false,
+      "standalone_native_skinning_verified": true,
+      "neutral_iris_bake_verified_standalone": true,
+      "native_atlas_mips_packed": true,
+      "runtime_upload_multi_model_support_tested": true,
+      "installed_new_model": false,
+      "neutral_expression_limit": "Iris baked to face UVs; animated facial expressions are not implemented."
     },
     {
       "id": 1032,
@@ -98,7 +110,7 @@
         }
       ],
       "target_eye_material_pass": false,
-      "game_motion_asset_packed": false,
+      "game_motion_asset_packed": true,
       "geometry_container_rebuilt": false,
       "collider_adapted": false,
       "unique_runtime_model_identity": false,
@@ -106,7 +118,13 @@
       "selection_verified": false,
       "race_verified": false,
       "mixed_rivals_verified": false,
-      "live_fps_verified": false
+      "live_fps_verified": false,
+      "standalone_native_skinning_verified": true,
+      "neutral_iris_bake_verified_standalone": true,
+      "native_atlas_mips_packed": true,
+      "runtime_upload_multi_model_support_tested": true,
+      "installed_new_model": false,
+      "neutral_expression_limit": "Iris baked to face UVs; animated facial expressions are not implemented."
     },
     {
       "id": 1062,
@@ -133,7 +151,7 @@
         }
       ],
       "target_eye_material_pass": false,
-      "game_motion_asset_packed": false,
+      "game_motion_asset_packed": true,
       "geometry_container_rebuilt": false,
       "collider_adapted": false,
       "unique_runtime_model_identity": false,
@@ -141,7 +159,13 @@
       "selection_verified": false,
       "race_verified": false,
       "mixed_rivals_verified": false,
-      "live_fps_verified": false
+      "live_fps_verified": false,
+      "standalone_native_skinning_verified": true,
+      "neutral_iris_bake_verified_standalone": true,
+      "native_atlas_mips_packed": true,
+      "runtime_upload_multi_model_support_tested": true,
+      "installed_new_model": false,
+      "neutral_expression_limit": "Iris baked to face UVs; animated facial expressions are not implemented."
     },
     {
       "id": 1015,
@@ -168,7 +192,7 @@
         }
       ],
       "target_eye_material_pass": false,
-      "game_motion_asset_packed": false,
+      "game_motion_asset_packed": true,
       "geometry_container_rebuilt": false,
       "collider_adapted": false,
       "unique_runtime_model_identity": false,
@@ -176,7 +200,13 @@
       "selection_verified": false,
       "race_verified": false,
       "mixed_rivals_verified": false,
-      "live_fps_verified": false
+      "live_fps_verified": false,
+      "standalone_native_skinning_verified": true,
+      "neutral_iris_bake_verified_standalone": true,
+      "native_atlas_mips_packed": true,
+      "runtime_upload_multi_model_support_tested": true,
+      "installed_new_model": false,
+      "neutral_expression_limit": "Iris baked to face UVs; animated facial expressions are not implemented."
     },
     {
       "id": 1006,
@@ -203,7 +233,7 @@
         }
       ],
       "target_eye_material_pass": false,
-      "game_motion_asset_packed": false,
+      "game_motion_asset_packed": true,
       "geometry_container_rebuilt": false,
       "collider_adapted": false,
       "unique_runtime_model_identity": false,
@@ -211,7 +241,13 @@
       "selection_verified": false,
       "race_verified": false,
       "mixed_rivals_verified": false,
-      "live_fps_verified": false
+      "live_fps_verified": false,
+      "standalone_native_skinning_verified": true,
+      "neutral_iris_bake_verified_standalone": true,
+      "native_atlas_mips_packed": true,
+      "runtime_upload_multi_model_support_tested": true,
+      "installed_new_model": false,
+      "neutral_expression_limit": "Iris baked to face UVs; animated facial expressions are not implemented."
     },
     {
       "id": 1058,
@@ -238,7 +274,7 @@
         }
       ],
       "target_eye_material_pass": false,
-      "game_motion_asset_packed": false,
+      "game_motion_asset_packed": true,
       "geometry_container_rebuilt": false,
       "collider_adapted": false,
       "unique_runtime_model_identity": false,
@@ -246,7 +282,13 @@
       "selection_verified": false,
       "race_verified": false,
       "mixed_rivals_verified": false,
-      "live_fps_verified": false
+      "live_fps_verified": false,
+      "standalone_native_skinning_verified": true,
+      "neutral_iris_bake_verified_standalone": true,
+      "native_atlas_mips_packed": true,
+      "runtime_upload_multi_model_support_tested": true,
+      "installed_new_model": false,
+      "neutral_expression_limit": "Iris baked to face UVs; animated facial expressions are not implemented."
     }
   ],
   "release_ready": false,
@@ -255,8 +297,8 @@
     "Satono Diamond was requested earlier and has not been explicitly canceled; retain after the current six-character batch."
   ],
   "authoring_regression": {
-    "tests": 70,
+    "tests": 73,
     "passed": true,
-    "scope": "Python data, motion and file integrity tests; independent of NFS gameplay"
+    "scope": "Python data plus independent C native skin comparisons and material checks; no NFS gameplay proof"
   }
 }

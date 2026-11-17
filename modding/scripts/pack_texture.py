@@ -8,8 +8,10 @@ from extract_assets import dds_header
 from inspect_assets import ROOT
 
 
-def pack_texture():
-    with Image.open(ROOT/'modding/character-source/atlas.png') as source:image=source.convert('RGBA')
+def pack_texture(image=None):
+    if image is None:
+        with Image.open(ROOT/'modding/character-source/atlas.png') as source:image=source.convert('RGBA')
+    else:image=image.convert('RGBA')
     w,h=image.size
     if w>4096 or h>4096 or w&(w-1) or h&(h-1):raise ValueError('Expected power-of-two texture')
     data=[];levels=[];top=image.copy()

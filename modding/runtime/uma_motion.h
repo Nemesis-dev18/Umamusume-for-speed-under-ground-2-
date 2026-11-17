@@ -12,6 +12,7 @@ typedef struct {uint16_t bone[4];float weight[4];} UmaSkin;
 typedef struct {int16_t parent;uint16_t reserved;float rest[3];} UmaJoint;
 typedef struct {
  uint32_t vertices,indices,bones,idle_frames,run_frames;
+ float idle_seconds,run_seconds;
  size_t memory_bytes;unsigned char *memory;
  UmaVertex *rest;UmaSkin *skin;UmaJoint *joint;uint16_t *index;float *idle,*run;
 } UmaMotion;
@@ -24,7 +25,10 @@ static void uma_motion_free(UmaMotion *asset){if(asset){free(asset->memory);mems
 /* Caller zero-initializes asset; a failed load leaves it unchanged. */
 static int uma_motion_load(FILE *file,UmaMotion *asset){
  unsigned char h[32];uint16_t endian=1;UmaMotion a={0};
- if(!file || !asset || asset->memory || *(unsigned char*)&endian!=1 || fread(h,1,32,file)!=32 || memcmp(h,"UMAB",4) || uma_le32(h+4)!=2 || uma_le32(h+28))return 0;
+ if(!file || !asset || asset->memory || *(unsigned char*)&endian!=1 || fread(h,1,32,file)!=32 || memcmp(h,"UMAB",4) || (uma_le32(h+4)!=2 && uma_le32(h+4)!=3) || uma_le32(h+28))return 0;
+ a.idle_seconds=2.f;a.run_seconds=.6f;
+ if(uma_le32(h+4)==3){float durations[2];if(fread(durations,4,2,file)!=2)return 0;a.idle_seconds=durations[0];a.run_seconds=durations[1];}
+ if(!isfinite(a.idle_seconds) || !isfinite(a.run_seconds) || a.idle_seconds<.05f || a.idle_seconds>60 || a.run_seconds<.05f || a.run_seconds>60)return 0;
  a.vertices=uma_le32(h+8);a.indices=uma_le32(h+12);a.bones=uma_le32(h+16);a.idle_frames=uma_le32(h+20);a.run_frames=uma_le32(h+24);
  if(!a.vertices || a.vertices>65535 || !a.indices || a.indices>786432 || a.indices%3 || !a.bones || a.bones>512 || a.idle_frames<2 || a.idle_frames>128 || a.run_frames<2 || a.run_frames>128)return 0;
  size_t index_bytes=((size_t)a.indices*2+3)&~(size_t)3;
@@ -125,15 +129,16 @@ static int uma_motion_sample(const UmaMotion *asset,float idle_phase,float run_p
  return 1;
 }
 /* Speed/paused are explicit inputs; this code does not inspect game memory. */
-static int uma_motion_step(UmaMotionState *state,float seconds,float speed_mps,int paused){
- if(!state || !isfinite(seconds) || seconds<0 || seconds>.25f || !isfinite(speed_mps) || !isfinite(state->idle_phase) || !isfinite(state->run_phase) || !isfinite(state->run_blend) || state->run_blend<0 || state->run_blend>1)return 0;
+static inline int uma_motion_step_timed(UmaMotionState *state,float seconds,float speed_mps,int paused,float idle_seconds,float run_seconds){
+ if(!state || !isfinite(seconds) || seconds<0 || seconds>.25f || !isfinite(speed_mps) || !isfinite(state->idle_phase) || !isfinite(state->run_phase) || !isfinite(state->run_blend) || state->run_blend<0 || state->run_blend>1 || !isfinite(idle_seconds) || idle_seconds<.05f || idle_seconds>60 || !isfinite(run_seconds) || run_seconds<.05f || run_seconds>60)return 0;
  if(paused)return 1;
  float speed=fminf(fabsf(speed_mps),100),target=fminf(fmaxf((speed-.2f)/2.8f,0),1);
  state->run_blend+=(target-state->run_blend)*(1-expf(-seconds/.15f));
- state->idle_phase=uma_fraction(state->idle_phase+seconds*.5f);
+ state->idle_phase=uma_fraction(state->idle_phase+seconds/idle_seconds);
  /* Original race loop lasts 0.6 seconds; avoid the earlier rapid small-step cadence. */
- float cadence=1.f/.6f;
+ float cadence=1.f/run_seconds;
  state->run_phase=uma_fraction(state->run_phase+(speed_mps<0?-1:1)*seconds*cadence);
  return 1;
 }
+static inline int uma_motion_step(UmaMotionState *state,float seconds,float speed_mps,int paused){return uma_motion_step_timed(state,seconds,speed_mps,paused,2.f,.6f);}
 #endif

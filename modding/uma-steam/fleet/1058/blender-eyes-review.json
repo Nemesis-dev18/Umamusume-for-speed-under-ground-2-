@@ -1,0 +1,23 @@
+{
+  "name": "Meisho Doto",
+  "bounds_min": [
+    -0.37953105568885803,
+    -0.2800927758216858,
+    -0.0020096958614885807
+  ],
+  "bounds_max": [
+    0.20568017661571503,
+    0.3373042941093445,
+    1.552425742149353
+  ],
+  "height": 1.5544354380108416,
+  "mesh_count": 6,
+  "armatures": 1,
+  "rendered": true,
+  "visual_approved": false,
+  "game_integrated": false,
+  "gltf_sha256": "9c76e542acb62be9c58259a9750ffddf6ffaa739ad73fbaf2f69fbe805ff0627",
+  "buffer_sha256": "4a23d0bc3d6513bd8cb1259034d114cced274913b19fdcf14d84520e37619363",
+  "native_idle_and_run_rendered": true,
+  "eye_depth_material_pending": false
+}

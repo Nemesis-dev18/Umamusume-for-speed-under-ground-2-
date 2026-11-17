@@ -13,8 +13,9 @@ static const GUID uma_identity_guid={0xd79bb88d,0x7a42,0x4d21,{0xa2,0x03,0x54,0x
 static UmaVertexLock uma_native_lock;
 static UmaVertexUnlock uma_native_unlock;
 static void **uma_upload_table;
-static const void *uma_upload_expected;
-static UINT uma_upload_bytes;
+typedef struct {const void *expected;UINT bytes,model;} UmaUploadModel;
+static UmaUploadModel uma_upload_models[8];
+static UINT uma_upload_model_count;
 typedef struct {void *pointer;UINT bytes,offset,depth;BOOL whole;} UmaPendingUpload;
 /* Retain only bounded CPU upload bytes; decode the actual declaration/range at draw time. */
 typedef struct {UINT offset,bytes;BYTE data[131072];} UmaUploadSnapshot;
@@ -24,13 +25,14 @@ static inline int uma_upload_bounds(IDirect3DVertexBuffer9 *buffer,UINT offset,U
  if(!buffer || FAILED(IDirect3DVertexBuffer9_GetPrivateData(buffer,&uma_bounds_guid,&snapshot,&size)) || size<8 || snapshot.bytes>sizeof(snapshot.data) || size!=8+snapshot.bytes || offset<snapshot.offset || offset-snapshot.offset>snapshot.bytes)return 0;
  UINT first=offset-snapshot.offset;return uma_vertex_bounds(snapshot.data+first,snapshot.bytes-first,vertices,stride,position,output);
 }
-typedef struct {UINT count,offsets[16];} UmaUploadIdentity;
-static BOOL uma_upload_matches_at(IDirect3DVertexBuffer9 *buffer,UINT offset){
+typedef struct {UINT count,offsets[16],models[16];} UmaUploadIdentity;
+static BOOL uma_upload_model_at(IDirect3DVertexBuffer9 *buffer,UINT offset,UINT *model){
  UmaUploadIdentity identity={0};DWORD size=sizeof(identity);
  if(!buffer || FAILED(IDirect3DVertexBuffer9_GetPrivateData(buffer,&uma_identity_guid,&identity,&size)) || size!=sizeof(identity) || identity.count>16)return FALSE;
- for(UINT i=0;i<identity.count;i++)if(identity.offsets[i]==offset)return TRUE;
+ for(UINT i=0;i<identity.count;i++)if(identity.offsets[i]==offset){if(model)*model=identity.models[i];return TRUE;}
  return FALSE;
 }
+static BOOL uma_upload_matches_at(IDirect3DVertexBuffer9 *buffer,UINT offset){return uma_upload_model_at(buffer,offset,NULL);}
 static BOOL uma_upload_is_character(IDirect3DVertexBuffer9 *buffer){return uma_upload_matches_at(buffer,0);}
 static HRESULT WINAPI uma_observe_lock(IDirect3DVertexBuffer9 *buffer,UINT offset,UINT bytes,void **data,DWORD flags){
  HRESULT result=uma_native_lock(buffer,offset,bytes,data,flags);if(FAILED(result))return result;
@@ -49,12 +51,19 @@ static HRESULT WINAPI uma_observe_lock(IDirect3DVertexBuffer9 *buffer,UINT offse
  }
  return result;
 }
-static int uma_upload_geometry_equal(const void *mapped){
- const BYTE *actual=mapped,*expected=uma_upload_expected;
- if(!memcmp(actual,expected,uma_upload_bytes))return 1;
+static int uma_upload_geometry_equal(const void *mapped,const UmaUploadModel *profile){
+ const BYTE *actual=mapped,*expected=profile->expected;
+ if(!memcmp(actual,expected,profile->bytes))return 1;
  /* Runtime paint/color updates do not change the identity of the mesh. */
- for(UINT at=0;at<uma_upload_bytes;at+=36)if(memcmp(actual+at,expected+at,24) || memcmp(actual+at+28,expected+at+28,8))return 0;
+ for(UINT at=0;at<profile->bytes;at+=36)if(memcmp(actual+at,expected+at,24) || memcmp(actual+at+28,expected+at+28,8))return 0;
  return 1;
+}
+/* Register before uploads; all borrowed profile bytes must remain alive until removal. */
+static inline BOOL uma_upload_add_model(const void *expected,UINT bytes,UINT model){
+ if(!uma_upload_table || !expected || !bytes || bytes%36 || bytes>4*1024*1024 || uma_upload_model_count>=8)return FALSE;
+ UmaUploadModel profile={expected,bytes,model};
+ for(UINT i=0;i<uma_upload_model_count;i++)if(uma_upload_models[i].model==model || (uma_upload_models[i].bytes==bytes && uma_upload_geometry_equal(uma_upload_models[i].expected,&profile)))return FALSE;
+ uma_upload_models[uma_upload_model_count++]=profile;return TRUE;
 }
 static HRESULT WINAPI uma_observe_unlock(IDirect3DVertexBuffer9 *buffer){
  UmaPendingUpload pending={0};DWORD bytes=sizeof(pending);
@@ -63,11 +72,12 @@ static HRESULT WINAPI uma_observe_unlock(IDirect3DVertexBuffer9 *buffer){
  if(tracked && pending.depth==1 && pending.pointer && pending.bytes>=12 && pending.bytes<=sizeof(snapshot.data)){
   snapshot.offset=pending.offset;snapshot.bytes=pending.bytes;memcpy(snapshot.data,pending.pointer,pending.bytes);
  }
- if(tracked && pending.depth==1 && pending.pointer && pending.bytes>=uma_upload_bytes){
-  const BYTE *mapped=pending.pointer,*expected=uma_upload_expected;
-  for(UINT at=0;at<=pending.bytes-uma_upload_bytes && identity.count<16;at+=4){
-   if(!memcmp(mapped+at,expected,24) && !memcmp(mapped+at+28,expected+28,8) && uma_upload_geometry_equal(mapped+at)){
-    identity.offsets[identity.count++]=pending.offset+at;at+=uma_upload_bytes-4;
+ if(tracked && pending.depth==1 && pending.pointer)for(UINT p=0;p<uma_upload_model_count;p++){
+  const UmaUploadModel *profile=&uma_upload_models[p];const BYTE *mapped=pending.pointer,*expected=profile->expected;
+  if(pending.bytes<profile->bytes)continue;
+  for(UINT at=0;at<=pending.bytes-profile->bytes && identity.count<16;at+=4){
+   if(!memcmp(mapped+at,expected,24) && !memcmp(mapped+at+28,expected+28,8) && uma_upload_geometry_equal(mapped+at,profile)){
+    identity.offsets[identity.count]=pending.offset+at;identity.models[identity.count++]=profile->model;at+=profile->bytes-4;
    }
   }
  }
@@ -84,7 +94,7 @@ static BOOL uma_upload_install(IDirect3DVertexBuffer9 *sample,const void *expect
  void **table=*(void***)sample;DWORD protection;
  if(!VirtualProtect(table+11,2*sizeof(void*),PAGE_READWRITE,&protection))return FALSE;
  uma_native_lock=(UmaVertexLock)table[11];uma_native_unlock=(UmaVertexUnlock)table[12];
- uma_upload_expected=expected;uma_upload_bytes=bytes;uma_upload_table=table;
+ uma_upload_table=table;uma_upload_models[0]=(UmaUploadModel){expected,bytes,0};uma_upload_model_count=1;
  InterlockedExchangePointer(table+11,(void*)uma_observe_lock);InterlockedExchangePointer(table+12,(void*)uma_observe_unlock);
  DWORD ignored;VirtualProtect(table+11,2*sizeof(void*),protection,&ignored);return TRUE;
 }
@@ -95,6 +105,6 @@ static BOOL uma_upload_remove(void){
  if(table[11]!=(void*)uma_observe_lock || table[12]!=(void*)uma_observe_unlock || !VirtualProtect(table+11,2*sizeof(void*),PAGE_READWRITE,&protection))return FALSE;
  InterlockedExchangePointer(table+11,(void*)uma_native_lock);InterlockedExchangePointer(table+12,(void*)uma_native_unlock);
  DWORD ignored;VirtualProtect(table+11,2*sizeof(void*),protection,&ignored);
- uma_upload_table=NULL;uma_upload_expected=NULL;uma_upload_bytes=0;return TRUE;
+ uma_upload_table=NULL;memset(uma_upload_models,0,sizeof(uma_upload_models));uma_upload_model_count=0;return TRUE;
 }
 #endif

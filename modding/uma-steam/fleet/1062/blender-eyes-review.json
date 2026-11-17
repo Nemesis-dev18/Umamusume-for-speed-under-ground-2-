@@ -1,0 +1,23 @@
+{
+  "name": "Matikanetannhauser",
+  "bounds_min": [
+    -0.3647213578224182,
+    -0.257907509803772,
+    0.0
+  ],
+  "bounds_max": [
+    0.3948802351951599,
+    0.6247934103012085,
+    1.6089426279067993
+  ],
+  "height": 1.6089426279067993,
+  "mesh_count": 5,
+  "armatures": 1,
+  "rendered": true,
+  "visual_approved": false,
+  "game_integrated": false,
+  "gltf_sha256": "eb213c212d3eb59e8980a043c03d2295ec67cdbbf1f65c34b28d59aec6acf0ca",
+  "buffer_sha256": "c1e1eb5b8cf29395f27180b5306e18db1262954e809f2594d162da9e5f619ddf",
+  "native_idle_and_run_rendered": true,
+  "eye_depth_material_pending": false
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Kitasan Black",
+  "bounds_min": [
+    -0.31097957491874695,
+    -0.2572324275970459,
+    -0.0007386338547803462
+  ],
+  "bounds_max": [
+    0.4466574192047119,
+    0.6166321039199829,
+    1.6711493730545044
+  ],
+  "height": 1.6718880069092847,
+  "mesh_count": 6,
+  "armatures": 1,
+  "rendered": true,
+  "visual_approved": false,
+  "game_integrated": false,
+  "gltf_sha256": "6efcb60f087c74f71a18863968ed086664a8af939237f04cd85e1be2a50401a9",
+  "buffer_sha256": "b3a72ef0c57126071d8116753603c3595312023f99d89e1d68e151f1f5c5ad31",
+  "native_idle_and_run_rendered": true,
+  "eye_depth_material_pending": false
+}

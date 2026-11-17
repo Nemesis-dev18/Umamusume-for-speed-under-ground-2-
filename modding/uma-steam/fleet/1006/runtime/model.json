@@ -1,0 +1,98 @@
+{
+  "id": 1006,
+  "vertices": 11975,
+  "indices": 46146,
+  "bones": 79,
+  "clips": [
+    {
+      "name": "idle",
+      "frames": 32,
+      "seconds": 3.8333334922790527,
+      "duplicate_endpoint_removed": true
+    },
+    {
+      "name": "run",
+      "frames": 48,
+      "seconds": 0.6000000238418579,
+      "duplicate_endpoint_removed": true
+    }
+  ],
+  "groups": [
+    {
+      "material": "mtl_tail0001_00",
+      "first_index": 0,
+      "index_count": 1164,
+      "first_vertex": 0,
+      "vertex_count": 281,
+      "texture": 17,
+      "eye_depth_off": false,
+      "static_degenerate_triangles_removed": 0
+    },
+    {
+      "material": "mtl_chr1006_00_hair",
+      "first_index": 1164,
+      "index_count": 10548,
+      "first_vertex": 281,
+      "vertex_count": 2728,
+      "texture": 18,
+      "eye_depth_off": false,
+      "static_degenerate_triangles_removed": 0
+    },
+    {
+      "material": "mtl_chr1006_00_cheek",
+      "first_index": 11712,
+      "index_count": 228,
+      "first_vertex": 3009,
+      "vertex_count": 59,
+      "texture": 16,
+      "eye_depth_off": false,
+      "static_degenerate_triangles_removed": 0
+    },
+    {
+      "material": "mtl_chr1006_00_face",
+      "first_index": 11940,
+      "index_count": 5646,
+      "first_vertex": 3068,
+      "vertex_count": 1294,
+      "texture": 3,
+      "eye_depth_off": false,
+      "static_degenerate_triangles_removed": 8
+    },
+    {
+      "material": "mtl_chr1006_00_eye",
+      "first_index": 17586,
+      "index_count": 144,
+      "first_vertex": 4362,
+      "vertex_count": 46,
+      "texture": 6,
+      "eye_depth_off": true,
+      "static_degenerate_triangles_removed": 0
+    },
+    {
+      "material": "mtl_chr1006_00_mayu",
+      "first_index": 17730,
+      "index_count": 120,
+      "first_vertex": 4408,
+      "vertex_count": 46,
+      "texture": 3,
+      "eye_depth_off": false,
+      "static_degenerate_triangles_removed": 8
+    },
+    {
+      "material": "mtl_bdy1006_00",
+      "first_index": 17850,
+      "index_count": 28296,
+      "first_vertex": 4454,
+      "vertex_count": 7521,
+      "texture": 10,
+      "eye_depth_off": false,
+      "static_degenerate_triangles_removed": 0
+    }
+  ],
+  "sha256": "f58ff0f2135d067e4412327344165cc5954f0764d808ecb45b46661b14a30c89",
+  "source_sha256": "b00266011ef959231d4f873532407652577b52745ad48afc6594fc7654ea0170",
+  "source_buffer_sha256": "ae7b54f9d8116b0c97f472fc05be55c1c2fe143301e5eb825754ec2606933363",
+  "game_integrated": false,
+  "atlas_pending": true,
+  "eye_depth_pass_pending": true
+}

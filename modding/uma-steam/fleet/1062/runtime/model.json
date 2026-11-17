@@ -1,0 +1,88 @@
+{
+  "id": 1062,
+  "vertices": 15626,
+  "indices": 55242,
+  "bones": 79,
+  "clips": [
+    {
+      "name": "idle",
+      "frames": 32,
+      "seconds": 2.000000238418579,
+      "duplicate_endpoint_removed": true
+    },
+    {
+      "name": "run",
+      "frames": 48,
+      "seconds": 0.6000000238418579,
+      "duplicate_endpoint_removed": true
+    }
+  ],
+  "groups": [
+    {
+      "material": "mtl_tail0001_00",
+      "first_index": 0,
+      "index_count": 1164,
+      "first_vertex": 0,
+      "vertex_count": 281,
+      "texture": 10,
+      "eye_depth_off": false,
+      "static_degenerate_triangles_removed": 0
+    },
+    {
+      "material": "mtl_bdy1062_00",
+      "first_index": 1164,
+      "index_count": 37218,
+      "first_vertex": 281,
+      "vertex_count": 10872,
+      "texture": 20,
+      "eye_depth_off": false,
+      "static_degenerate_triangles_removed": 0
+    },
+    {
+      "material": "mtl_chr1062_00_face",
+      "first_index": 38382,
+      "index_count": 5361,
+      "first_vertex": 11153,
+      "vertex_count": 1238,
+      "texture": 8,
+      "eye_depth_off": false,
+      "static_degenerate_triangles_removed": 8
+    },
+    {
+      "material": "mtl_chr1062_00_eye",
+      "first_index": 43743,
+      "index_count": 144,
+      "first_vertex": 12391,
+      "vertex_count": 46,
+      "texture": 14,
+      "eye_depth_off": true,
+      "static_degenerate_triangles_removed": 0
+    },
+    {
+      "material": "mtl_chr1062_00_hair",
+      "first_index": 43887,
+      "index_count": 11229,
+      "first_vertex": 12437,
+      "vertex_count": 3151,
+      "texture": 3,
+      "eye_depth_off": false,
+      "static_degenerate_triangles_removed": 0
+    },
+    {
+      "material": "mtl_chr1062_00_cheek",
+      "first_index": 55116,
+      "index_count": 126,
+      "first_vertex": 15588,
+      "vertex_count": 38,
+      "texture": 9,
+      "eye_depth_off": false,
+      "static_degenerate_triangles_removed": 0
+    }
+  ],
+  "sha256": "1ba403fd5ecd3f1ed7bc72eea4b0bfeecd5bb3d5101e80148079ea3ce7b338aa",
+  "source_sha256": "ff6fa0eb1f4524fc37696096cc3fda49b352d02f3342d77cdab6dba8ef29ad16",
+  "source_buffer_sha256": "c1e1eb5b8cf29395f27180b5306e18db1262954e809f2594d162da9e5f619ddf",
+  "game_integrated": false,
+  "atlas_pending": true,
+  "eye_depth_pass_pending": true
+}

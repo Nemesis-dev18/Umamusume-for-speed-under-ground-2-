@@ -1,0 +1,98 @@
+{
+  "id": 1068,
+  "vertices": 14616,
+  "indices": 55281,
+  "bones": 79,
+  "clips": [
+    {
+      "name": "idle",
+      "frames": 32,
+      "seconds": 2.000000238418579,
+      "duplicate_endpoint_removed": true
+    },
+    {
+      "name": "run",
+      "frames": 48,
+      "seconds": 0.6000000238418579,
+      "duplicate_endpoint_removed": true
+    }
+  ],
+  "groups": [
+    {
+      "material": "mtl_tail0001_00",
+      "first_index": 0,
+      "index_count": 1164,
+      "first_vertex": 0,
+      "vertex_count": 281,
+      "texture": 5,
+      "eye_depth_off": false,
+      "static_degenerate_triangles_removed": 0
+    },
+    {
+      "material": "mtl_bdy1068_00",
+      "first_index": 1164,
+      "index_count": 37248,
+      "first_vertex": 281,
+      "vertex_count": 9751,
+      "texture": 16,
+      "eye_depth_off": false,
+      "static_degenerate_triangles_removed": 0
+    },
+    {
+      "material": "mtl_chr1068_00_hair",
+      "first_index": 38412,
+      "index_count": 10611,
+      "first_vertex": 10032,
+      "vertex_count": 3076,
+      "texture": 3,
+      "eye_depth_off": false,
+      "static_degenerate_triangles_removed": 0
+    },
+    {
+      "material": "mtl_chr1068_00_cheek",
+      "first_index": 49023,
+      "index_count": 138,
+      "first_vertex": 13108,
+      "vertex_count": 39,
+      "texture": 13,
+      "eye_depth_off": false,
+      "static_degenerate_triangles_removed": 0
+    },
+    {
+      "material": "mtl_chr1068_00_face",
+      "first_index": 49161,
+      "index_count": 5856,
+      "first_vertex": 13147,
+      "vertex_count": 1377,
+      "texture": 6,
+      "eye_depth_off": false,
+      "static_degenerate_triangles_removed": 8
+    },
+    {
+      "material": "mtl_chr1068_00_eye",
+      "first_index": 55017,
+      "index_count": 144,
+      "first_vertex": 14524,
+      "vertex_count": 46,
+      "texture": 19,
+      "eye_depth_off": true,
+      "static_degenerate_triangles_removed": 0
+    },
+    {
+      "material": "mtl_chr1068_00_mayu",
+      "first_index": 55161,
+      "index_count": 120,
+      "first_vertex": 14570,
+      "vertex_count": 46,
+      "texture": 6,
+      "eye_depth_off": false,
+      "static_degenerate_triangles_removed": 8
+    }
+  ],
+  "sha256": "1caf9b7984d643790816e380698b1bc5c43110aa2e73c777a6421fb676ef086f",
+  "source_sha256": "8e7c1807618b8ad27af384e0191b4f274c0f6e45fc2e82c60f8c90667c0bf16a",
+  "source_buffer_sha256": "b3a72ef0c57126071d8116753603c3595312023f99d89e1d68e151f1f5c5ad31",
+  "game_integrated": false,
+  "atlas_pending": true,
+  "eye_depth_pass_pending": true
+}
