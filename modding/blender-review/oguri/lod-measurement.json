@@ -1,0 +1,15 @@
+{
+  "source_sha256": "4055e79eab2b56a5dd8962ef89846d3bf2d359ce7d04fb6a1f449fe87d45c78a",
+  "ratio": 0.4,
+  "vertices": 16865,
+  "triangles": 21208,
+  "uv_layers": 1,
+  "materials": 32,
+  "unweighted_vertices": 0,
+  "vertices_over_four_weights": 153,
+  "weight_sum_range": [
+    0.999998440989657,
+    1.0000001327134669
+  ],
+  "scope": "Measurement only: no mesh export, rig retarget, silhouette or deformation approval"
+}
