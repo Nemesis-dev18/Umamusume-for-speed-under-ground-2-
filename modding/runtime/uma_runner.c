@@ -156,7 +156,7 @@ static RunnerActor *runner_actor_update_models(const UmaMatrix *bodies,const uns
   RunnerActor *actor=&runner_actors[assignment[j]];float forward=0,lateral=0;
   if(!handoff && actor->used && runner_frames-actor->seen==1){
    for(int k=0;k<3;k++){actor->velocity[k]=(world[j].m[3][k]-actor->world.m[3][k])/seconds;forward+=actor->velocity[k]*world[j].m[0][k];lateral+=actor->velocity[k]*world[j].m[1][k];}
-   float speed=hypotf(forward,lateral);actor->speed=speed<=120 && speed>.35f?(forward<0?-speed:speed):0;
+   float speed=hypotf(forward,lateral);if(speed<=120)actor->speed=speed>.35f?(forward<0?-speed:speed):0;
   }else{if(!actor->used || runner_tracking_gap>.2f)actor->speed=0;memset(actor->velocity,0,sizeof(actor->velocity));}
   if(runner_scene.anchor_valid && !actor->up_valid){memcpy(actor->up,world[j].m[2],sizeof(actor->up));memcpy(actor->heading,world[j].m[0],sizeof(actor->heading));actor->up_valid=1;}
   if(runner_scene.anchor_valid && actor->up_valid){

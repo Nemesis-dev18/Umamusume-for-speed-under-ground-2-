@@ -1,0 +1,111 @@
+{
+  "files": [
+    {
+      "slot": "COROLLA",
+      "target": "CARS/COROLLA/TEXTURES.BIN",
+      "candidate": "modding/staged-runtime/fleet-shadows/COROLLA/TEXTURES.BIN",
+      "before_sha256": "0ad09f89b7eb3c82cade7c76ea9c727dc28d43e48f79226e2159bf4add2c2094",
+      "after_sha256": "9cdba845b52eecf021767c413b68cca50e1da38c1028b87a89baf07f73a97daf",
+      "verification": {
+        "textures": 56,
+        "only_two_shadows_changed": true,
+        "format": "DXT3 128x64, four mips",
+        "metadata_unchanged": true,
+        "sha256": "9cdba845b52eecf021767c413b68cca50e1da38c1028b87a89baf07f73a97daf"
+      },
+      "installed": false
+    },
+    {
+      "slot": "240SX",
+      "target": "CARS/240SX/TEXTURES.BIN",
+      "candidate": "modding/staged-runtime/fleet-shadows/240SX/TEXTURES.BIN",
+      "before_sha256": "797953b0aad7be50ebbf81144dedfb39c9fab513a41a02886935026c879d0ea1",
+      "after_sha256": "010ee70d2852c5c079c03fdb434b25cf1f6eea8db29db71d2792c4ff48b0752d",
+      "verification": {
+        "textures": 73,
+        "only_two_shadows_changed": true,
+        "format": "DXT3 128x64, four mips",
+        "metadata_unchanged": true,
+        "sha256": "010ee70d2852c5c079c03fdb434b25cf1f6eea8db29db71d2792c4ff48b0752d"
+      },
+      "installed": false
+    },
+    {
+      "slot": "MIATA",
+      "target": "CARS/MIATA/TEXTURES.BIN",
+      "candidate": "modding/staged-runtime/fleet-shadows/MIATA/TEXTURES.BIN",
+      "before_sha256": "4fe9f1bc5df58e47273c87586d278b0795121b7893844a415630a8e83025369b",
+      "after_sha256": "c2a60e833d9193913cc667f31a6cf7a809140883669563465b157d19f303cf84",
+      "verification": {
+        "textures": 76,
+        "only_two_shadows_changed": true,
+        "format": "DXT3 128x64, four mips",
+        "metadata_unchanged": true,
+        "sha256": "c2a60e833d9193913cc667f31a6cf7a809140883669563465b157d19f303cf84"
+      },
+      "installed": false
+    },
+    {
+      "slot": "FOCUS",
+      "target": "CARS/FOCUS/TEXTURES.BIN",
+      "candidate": "modding/staged-runtime/fleet-shadows/FOCUS/TEXTURES.BIN",
+      "before_sha256": "6e601790adb3856bd637e1e62ef69bc2c8912ca795a22ffc9cb41f90a3e94156",
+      "after_sha256": "6a295e48106c153ace0f59f788efa9e665a62bd0d31d5a062a7778f28d5ae8e6",
+      "verification": {
+        "textures": 72,
+        "only_two_shadows_changed": true,
+        "format": "DXT3 128x64, four mips",
+        "metadata_unchanged": true,
+        "sha256": "6a295e48106c153ace0f59f788efa9e665a62bd0d31d5a062a7778f28d5ae8e6"
+      },
+      "installed": false
+    },
+    {
+      "slot": "PEUGOT",
+      "target": "CARS/PEUGOT/TEXTURES.BIN",
+      "candidate": "modding/staged-runtime/fleet-shadows/PEUGOT/TEXTURES.BIN",
+      "before_sha256": "a2eff8c083c37a5f6ded202b0a181db04f4c0147fe2b9d6650fb0e848f7de838",
+      "after_sha256": "c8dae8b87be1bdfceb9d6e20bf506119ee1c9a3608290366842efc4805bd86d8",
+      "verification": {
+        "textures": 73,
+        "only_two_shadows_changed": true,
+        "format": "DXT3 128x64, four mips",
+        "metadata_unchanged": true,
+        "sha256": "c8dae8b87be1bdfceb9d6e20bf506119ee1c9a3608290366842efc4805bd86d8"
+      },
+      "installed": false
+    },
+    {
+      "slot": "PEUGOT106",
+      "target": "CARS/PEUGOT106/TEXTURES.BIN",
+      "candidate": "modding/staged-runtime/fleet-shadows/PEUGOT106/TEXTURES.BIN",
+      "before_sha256": "cd2f633cd7a32614f7fb81bf785a4dcf067dcfca22bb84c26af9dff94e7a1bd3",
+      "after_sha256": "ade45e9e894889cda87d7363b5d97e352b2f05dd8cebb3db53d7688b0ee5bdf4",
+      "verification": {
+        "textures": 60,
+        "only_two_shadows_changed": true,
+        "format": "DXT3 128x64, four mips",
+        "metadata_unchanged": true,
+        "sha256": "ade45e9e894889cda87d7363b5d97e352b2f05dd8cebb3db53d7688b0ee5bdf4"
+      },
+      "installed": false
+    },
+    {
+      "slot": "CORSA",
+      "target": "CARS/CORSA/TEXTURES.BIN",
+      "candidate": "modding/staged-runtime/fleet-shadows/CORSA/TEXTURES.BIN",
+      "before_sha256": "f7d8e61a42cc96365b66e68fd1214e3e372fc133e68812cb8d75c2fe21ccbcb7",
+      "after_sha256": "ecd4801d41584f230d5b3e7028f5e37ad74b6213eae5b046f69178afded99079",
+      "verification": {
+        "textures": 57,
+        "only_two_shadows_changed": true,
+        "format": "DXT3 128x64, four mips",
+        "metadata_unchanged": true,
+        "sha256": "ecd4801d41584f230d5b3e7028f5e37ad74b6213eae5b046f69178afded99079"
+      },
+      "installed": false
+    }
+  ],
+  "installed": false,
+  "visual_verified": false
+}

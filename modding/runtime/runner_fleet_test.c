@@ -26,6 +26,9 @@ int main(int argc,char **argv){
    for(unsigned k=j+1;k<7;k++)assert(state!=runner_actor_pose_model(&bodies[k],models[k]));
   }
  }
+ RunnerActor *moving=NULL;for(int i=0;i<16;i++)if(runner_actors[i].used && runner_actors[i].model==0)moving=&runner_actors[i];assert(moving);moving->speed=20;moving->state.run_blend=1;memset(moving->velocity,0,sizeof(moving->velocity));
+ UmaMatrix noisy=moving->view;noisy.m[3][0]+=1.3f;unsigned model_zero=0;runner_frames++;RunnerActor *held=runner_actor_update_models(&noisy,&model_zero,1,.01f,NULL);assert(held==moving && held->speed==20 && held->state.run_blend>.99f);
+ runner_frames++;RunnerActor *stopped=runner_actor_update_models(&noisy,&model_zero,1,.01f,NULL);assert(stopped==moving && stopped->speed==0);
  assert(!runner_actor_pose_model(&runner_actors[0].view,7));memset(runner_actors,0,sizeof(runner_actors));runner_scene=(UmaSceneSpeed){0};runner_frames=0;runner_actor_world_valid=0;
  InitializeCriticalSection(&runner_lock);HWND window=CreateWindowA("STATIC","Independent seven-model routing",WS_POPUP,0,0,640,480,NULL,NULL,GetModuleHandle(NULL),NULL);assert(window);IDirect3D9 *api=Direct3DCreate9(D3D_SDK_VERSION);assert(api);
  D3DPRESENT_PARAMETERS pp={0};pp.Windowed=TRUE;pp.SwapEffect=D3DSWAPEFFECT_DISCARD;pp.hDeviceWindow=window;pp.BackBufferWidth=640;pp.BackBufferHeight=480;pp.BackBufferFormat=D3DFMT_A8R8G8B8;pp.EnableAutoDepthStencil=TRUE;pp.AutoDepthStencilFormat=D3DFMT_D24S8;
