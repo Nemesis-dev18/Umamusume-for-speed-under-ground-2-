@@ -119,7 +119,7 @@
       "collider_adapted": false,
       "unique_runtime_model_identity": true,
       "menu_art_approved": false,
-      "selection_verified": false,
+      "selection_verified": true,
       "race_verified": false,
       "mixed_rivals_verified": false,
       "live_fps_verified": false,
@@ -249,7 +249,7 @@
       "unique_runtime_model_identity": true,
       "menu_art_approved": false,
       "selection_verified": false,
-      "race_verified": false,
+      "race_verified": true,
       "mixed_rivals_verified": false,
       "live_fps_verified": false,
       "standalone_native_skinning_verified": true,
@@ -259,7 +259,8 @@
       "installed_new_model": true,
       "neutral_expression_limit": "Iris baked to face UVs; animated facial expressions are not implemented.",
       "collider_data_adapted": true,
-      "qualitative_fleet_performance_feedback": "User reports clear improvement after single-pass upload recognition; per-model FPS unmeasured"
+      "qualitative_fleet_performance_feedback": "User reports clear improvement after single-pass upload recognition; per-model FPS unmeasured",
+      "race_verification_scope": "User completed a lap after native JDLZ terminal refill fix; later crash sinking fixed in shared runtime manual test."
     },
     {
       "id": 1058,
@@ -306,7 +307,7 @@
     }
   ],
   "release_ready": false,
-  "latest_user_instruction": "Seven-character test was explicitly requested and is installed; finish visual/menu/race verification. User reports clear performance improvement after upload optimization.",
+  "latest_user_instruction": "Add natural secondary cloth physics for all seven while preserving newly verified stability and acceptable performance.",
   "earlier_request_pending": [
     "Satono Diamond was requested earlier and has not been explicitly canceled; retain after the current six-character batch."
   ],
@@ -323,5 +324,23 @@
     4,
     5,
     6
-  ]
+  ],
+  "latest_live_feedback": {
+    "tachyon_available_in_selection": true,
+    "collision_no_sinking_user_confirmed": [
+      "Oguri Cap",
+      "another unspecified character"
+    ],
+    "fps_approximately_user_reported": 37,
+    "performance_acceptable_to_user": true,
+    "scope": "Single manual test; no claim of all-model endurance or release completion"
+  },
+  "secondary_motion": {
+    "installed": true,
+    "characters": 7,
+    "method": "bounded original garment/hair/tail bone springs",
+    "offline_verification": "modding/runtime/secondary-verification.json",
+    "gameplay_verified": false,
+    "backup_checkpoint": "703263125fef92191640bc9b474eca7813f71617"
+  }
 }

@@ -1,0 +1,98 @@
+{
+  "backup": "modding/backups/before-secondary-20261117-083149",
+  "files": [
+    {
+      "path": "modding/runtime/fleet/1068/model.umab",
+      "before": "032337ee56dc1af0c47a7367786dfc5b5b3418b1a23783370cfd915c1ceb54dd",
+      "after": "d66cf8a605c13e4e9c26881f584f062dfa581e931bc606303d9780daeb415dea",
+      "bytes": 1337244
+    },
+    {
+      "path": "modding/runtime/fleet/1068/secondary.bin",
+      "before": null,
+      "after": "641f859ceb77e9c8adbf3da0193cea5de46b7a20e4d3105c2cb847b02648b0e2",
+      "bytes": 4636
+    },
+    {
+      "path": "modding/runtime/fleet/1052/model.umab",
+      "before": "1fe27029ff344083ff308b94688947ce9e9dbf821d35788ba9210c1591924d0d",
+      "after": "886c1d49eed57496cb7fb0bd034764a2f5c664214a4b0b1a5a43a4b3126f93e9",
+      "bytes": 1052800
+    },
+    {
+      "path": "modding/runtime/fleet/1052/secondary.bin",
+      "before": null,
+      "after": "7c2599c156f40d222349495a61fff11474c66eb099ab1e047fc79365f26bff02",
+      "bytes": 5344
+    },
+    {
+      "path": "modding/runtime/fleet/1032/model.umab",
+      "before": "ab7899ca62ac0abbe6b319722bb16d608005f15e338cfcfabfb41ed37144380b",
+      "after": "ef5c58e2118d2c8b41d0ddaa5ac76272223a702ebba81420cc819973928d4e4d",
+      "bytes": 1200400
+    },
+    {
+      "path": "modding/runtime/fleet/1032/secondary.bin",
+      "before": null,
+      "after": "08074aa4266d78947d92ed96b1d797d6d3f8acc06983d65a2de691481aabe6fc",
+      "bytes": 4652
+    },
+    {
+      "path": "modding/runtime/fleet/1062/model.umab",
+      "before": "0390604f3016c946fb2ff89d095c84e32948513722c88770a4141ea1b7d4edb2",
+      "after": "bcb9ce73e4873bf39f697dac8736b6e91c4c22ecb8e3e6f4c355e7cf05ebab7a",
+      "bytes": 1400020
+    },
+    {
+      "path": "modding/runtime/fleet/1062/secondary.bin",
+      "before": null,
+      "after": "9e2a0b36f3ede87675b1cb4634e1b67a2d901d84b35fd73e9b92ecdcce20bf3e",
+      "bytes": 5780
+    },
+    {
+      "path": "modding/runtime/fleet/1015/model.umab",
+      "before": "84e48ae2ce27ae03f57d163e5978f5f4442665489a155421db4863e70f09ad9c",
+      "after": "b18f83f2ebd5125b2c3ca35f03aef584dab829d55041204bcfa3eb2d1eaff9fc",
+      "bytes": 1379968
+    },
+    {
+      "path": "modding/runtime/fleet/1015/secondary.bin",
+      "before": null,
+      "after": "5d5b74b2fe2e3ac66f504558d808f3d2e7c4d46f5336a0bc32b19a34f137a598",
+      "bytes": 4348
+    },
+    {
+      "path": "modding/runtime/fleet/1006/model.umab",
+      "before": "f56289617fde3971b1c093717773406c47d256292f7c69a1fca2139b905885a7",
+      "after": "7745c41f863278df6cb4e1b52d7799f03ab4abd9c9cc6c472b7c72403eb58569",
+      "bytes": 1142464
+    },
+    {
+      "path": "modding/runtime/fleet/1006/secondary.bin",
+      "before": null,
+      "after": "76b407d58cd0b816a95d70a73d64d32503c1bd6d6e84aed24b10b82eb77ed2c7",
+      "bytes": 4168
+    },
+    {
+      "path": "modding/runtime/fleet/1058/model.umab",
+      "before": "7f40e5f297fde55ee860359055361df7c98b6036a783af9ea7feb4492003b6a4",
+      "after": "45e182a2f7ed74d5642f5d047622a06b65cc06fd25caae18d06882fe2db868bc",
+      "bytes": 1345576
+    },
+    {
+      "path": "modding/runtime/fleet/1058/secondary.bin",
+      "before": null,
+      "after": "2590a93c58d582b056ee66d30a1d838d40b36d295da3063774cca6308670bdd4",
+      "bytes": 5560
+    },
+    {
+      "path": "scripts/UmaRunner.asi",
+      "before": "16bd71006ea3d3a8e88930687ddcdc625bb73cbb9dc54dd18402126ce23bbce8",
+      "after": "aa4a535a7692f0315a6982b853548e2797694b90e8ffe52e82880e0a19e9b47c",
+      "bytes": 394455
+    }
+  ],
+  "installed": true,
+  "gameplay_verified": false,
+  "checkpoint": "703263125fef92191640bc9b474eca7813f71617"
+}

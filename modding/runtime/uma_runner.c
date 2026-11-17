@@ -3,6 +3,7 @@
 #include <d3d9.h>
 #include <wchar.h>
 #include "uma_d3d.h"
+#include "uma_secondary.h"
 #include "uma_upload.h"
 #include "uma_scene_speed.h"
 #include "uma_wheels.h"
@@ -22,7 +23,7 @@ static RunnerPresent runner_original_present;
 static RunnerReset runner_original_reset;
 static void **runner_table;
 static CRITICAL_SECTION runner_lock;
-typedef struct {UmaMotion motion;UmaD3D renderer;WCHAR atlas[4096];UmaMotionState idle;UmaVertex carrier[6];UmaAnchors anchors;} RunnerModel;
+typedef struct {UmaMotion motion;UmaD3D renderer;WCHAR atlas[4096];UmaMotionState idle;UmaVertex carrier[6];UmaAnchors anchors;UmaSecondary secondary;} RunnerModel;
 static RunnerModel runner_models[7];
 static unsigned runner_model_count=1;
 static int runner_fleet_carriers;
@@ -32,7 +33,7 @@ static int runner_fleet_carriers;
 #define runner_idle_state runner_models[0].idle
 static UmaD3D *runner_active_renderer=&runner_models[0].renderer;
 static UmaMotionState runner_state;
-typedef struct {UmaMatrix world,view;UmaMotionState state;float velocity[3],speed,up[3],heading[3];unsigned seen,model;int used,up_valid;} RunnerActor;
+typedef struct {UmaMatrix world,view;UmaMotionState state;float velocity[3],speed,up[3],heading[3];unsigned seen,model;int used,up_valid;UmaSecondaryState secondary;} RunnerActor;
 static RunnerActor runner_actors[16];
 static UmaSceneKey runner_actor_anchor;
 static UmaMatrix runner_previous_anchor;
@@ -53,7 +54,7 @@ static UmaMatrix runner_inverse_projection;
 static int runner_projection_valid;
 static float runner_frame_seconds=1.f/60;
 static void runner_close_renderers(void){for(unsigned i=0;i<7;i++)uma_d3d_close(&runner_models[i].renderer);runner_active_renderer=&runner_models[0].renderer;}
-static void runner_free_models(void){runner_close_renderers();for(unsigned i=0;i<7;i++)uma_motion_free(&runner_models[i].motion);runner_model_count=1;runner_fleet_carriers=0;}
+static void runner_free_models(void){runner_close_renderers();for(unsigned i=0;i<7;i++){uma_motion_free(&runner_models[i].motion);memset(&runner_models[i].secondary,0,sizeof(runner_models[i].secondary));}runner_model_count=1;runner_fleet_carriers=0;}
 static const void *runner_input_vertices(const RunnerModel *model){return runner_fleet_carriers?(const void*)model->carrier:(const void*)model->motion.rest;}
 static UINT runner_input_count(const RunnerModel *model){return runner_fleet_carriers?6:model->motion.vertices;}
 static UINT runner_input_triangles(const RunnerModel *model){return runner_fleet_carriers?2:model->motion.indices/3;}
@@ -66,6 +67,10 @@ static inline int runner_load_models(const WCHAR *root,int fleet){
  for(unsigned i=0;i<count;i++){
   if(fleet)swprintf(path,4096,L"%ls\\modding\\runtime\\fleet\\%u\\model.umab",root,ids[i]);else swprintf(path,4096,L"%ls\\modding\\runtime\\kitasan.umab",root);
   FILE *asset=_wfopen(path,L"rb");if(!asset){runner_free_models();return 0;}int loaded=uma_motion_load(asset,&runner_models[i].motion);fclose(asset);if(!loaded){runner_free_models();return 0;}
+  if(fleet){
+   swprintf(path,4096,L"%ls\\modding\\runtime\\fleet\\%u\\secondary.bin",root,ids[i]);
+   FILE *physics=_wfopen(path,L"rb");if(physics){int valid=uma_secondary_load(physics,&runner_models[i].motion,&runner_models[i].secondary);fclose(physics);if(!valid){runner_free_models();return 0;}runner_models[i].motion.secondary_mask=runner_models[i].secondary.mask;}
+  }
   if(fleet)swprintf(runner_models[i].atlas,4096,L"%ls\\modding\\runtime\\fleet\\%u\\atlas.dds",root,ids[i]);else swprintf(runner_models[i].atlas,4096,L"%ls\\modding\\runtime\\atlas.dds",root);
   FILE *texture=_wfopen(runner_models[i].atlas,L"rb");if(!texture){runner_free_models();return 0;}fclose(texture);
   if(fleet){
@@ -153,7 +158,7 @@ static RunnerActor *runner_actor_update_models(const UmaMatrix *bodies,const uns
  }
  RunnerActor *primary=NULL;float nearest=FLT_MAX;
  for(unsigned j=0;j<count;j++)if(assignment[j]>=0){
-  RunnerActor *actor=&runner_actors[assignment[j]];float forward=0,lateral=0;
+  RunnerActor *actor=&runner_actors[assignment[j]];float forward=0,lateral=0,previous_speed=actor->speed;
   if(!handoff && actor->used && runner_frames-actor->seen==1){
    for(int k=0;k<3;k++){actor->velocity[k]=(world[j].m[3][k]-actor->world.m[3][k])/seconds;forward+=actor->velocity[k]*world[j].m[0][k];lateral+=actor->velocity[k]*world[j].m[1][k];}
    float speed=hypotf(forward,lateral);if(speed<=120)actor->speed=speed>.35f?(forward<0?-speed:speed):0;
@@ -167,6 +172,7 @@ static RunnerActor *runner_actor_update_models(const UmaMatrix *bodies,const uns
   actor->world=world[j];actor->view=bodies[j];actor->seen=runner_frames;actor->used=1;actor->model=models?models[j]:0;
   const UmaMotion *motion=&runner_models[actor->model].motion;
   uma_motion_step_timed(&actor->state,seconds,actor->speed,0,motion->idle_seconds>0?motion->idle_seconds:2.f,motion->run_seconds>0?motion->run_seconds:.6f);
+  if(runner_models[actor->model].secondary.nodes){float acceleration[3]={seconds>0?(actor->speed-previous_speed)/seconds:0,0,0};if(!uma_secondary_step(&runner_models[actor->model].secondary,&actor->secondary,motion,&actor->state,seconds,actor->speed,acceleration))memset(&actor->secondary,0,sizeof(actor->secondary));}
   float distance=0;for(int k=0;k<3;k++)distance+=bodies[j].m[3][k]*bodies[j].m[3][k];
   if(distance<nearest){nearest=distance;primary=actor;}
  }
@@ -370,6 +376,8 @@ static HRESULT WINAPI runner_draw(IDirect3DDevice9 *device,D3DPRIMITIVETYPE type
         float up[3]={0};for(int c=0;c<3;c++)for(int k=0;k<3;k++)up[c]+=(correction?correction[6+k]:(k==2?1.f:0.f))*worldview.m[k][c];
         fprintf(runner_log,"VISUAL frame=%u model=%u idleFallback=%d corrected=%d color=%lu upView=%.5f,%.5f,%.5f originView=%.5f,%.5f,%.5f\n",runner_frames,model,pose==&runner_models[model].idle,correction!=NULL,(unsigned long)color,up[0],up[1],up[2],worldview.m[3][0],worldview.m[3][1],worldview.m[3][2]);
        }
+       runner_active_renderer->secondary=NULL;runner_active_renderer->secondary_revision=0;
+       for(int i=0;i<16;i++)if(pose==&runner_actors[i].state && runner_actors[i].secondary.initialized){runner_active_renderer->secondary=runner_actors[i].secondary.rotation;runner_active_renderer->secondary_revision=runner_actors[i].secondary.revision;break;}
        result=uma_d3d_draw(runner_active_renderer,pose,&combined,0,correction);if(SUCCEEDED(result)){replaced=1;runner_replaced++;}else {runner_shader_failures++;if(runner_log && runner_shader_failures<=8){fprintf(runner_log,"DRAW_FAILURE hr=%08lx shaderBytes=%u supported=%d color=%lu base=%d min=%u start=%u stride=%u\n",(unsigned long)result,entry?entry->bytes:0,entry?entry->supported:0,(unsigned long)color,base,minimum,start,stride);fflush(runner_log);}}}
      }
     }

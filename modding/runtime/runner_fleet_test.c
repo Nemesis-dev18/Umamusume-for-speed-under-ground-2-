@@ -21,6 +21,7 @@ int main(int argc,char **argv){
   assert(runner_actor_update_models(bodies,models,7,.01f,NULL));
   for(unsigned j=0;j<7;j++){
    UmaMotionState *state=runner_actor_pose_model(&bodies[j],models[j]);assert(state && state!=&runner_models[models[j]].idle);
+   if(runner_models[models[j]].secondary.nodes){int found=0;for(int a=0;a<16;a++)if(state==&runner_actors[a].state){assert(runner_actors[a].secondary.initialized);assert(runner_actors[a].secondary.revision>0);found=1;}assert(found);}
    assert(fabsf(state->idle_phase-uma_fraction((frame+1)*.01f/runner_models[models[j]].motion.idle_seconds))<1e-4f);
    if(frame>100)assert(models[j]?state->run_blend>.9f:state->run_blend<.001f);
    for(unsigned k=j+1;k<7;k++)assert(state!=runner_actor_pose_model(&bodies[k],models[k]));

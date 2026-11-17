@@ -1,0 +1,91 @@
+{
+  "characters": [
+    {
+      "id": 1068,
+      "slot": "COROLLA",
+      "candidate_folder": "modding/staged-runtime/fleet-secondary/1068",
+      "bones": 155,
+      "spring_nodes": 51,
+      "sha256": {
+        "model-atlas.umab": "d66cf8a605c13e4e9c26881f584f062dfa581e931bc606303d9780daeb415dea",
+        "atlas.dds": "2fa4c5842646097d4bc3dff1390f7a536b52bd36ddd7e7f752044974b7a2c2e5",
+        "secondary.bin": "641f859ceb77e9c8adbf3da0193cea5de46b7a20e4d3105c2cb847b02648b0e2"
+      }
+    },
+    {
+      "id": 1052,
+      "slot": "240SX",
+      "candidate_folder": "modding/staged-runtime/fleet-secondary/1052",
+      "bones": 152,
+      "spring_nodes": 56,
+      "sha256": {
+        "model-atlas.umab": "886c1d49eed57496cb7fb0bd034764a2f5c664214a4b0b1a5a43a4b3126f93e9",
+        "atlas.dds": "7db3f5c632272591f46e89ea26c2a65db01fcce8d0871adb8d0b8b8c5aac6ff1",
+        "secondary.bin": "7c2599c156f40d222349495a61fff11474c66eb099ab1e047fc79365f26bff02"
+      }
+    },
+    {
+      "id": 1032,
+      "slot": "MIATA",
+      "candidate_folder": "modding/staged-runtime/fleet-secondary/1032",
+      "bones": 146,
+      "spring_nodes": 55,
+      "sha256": {
+        "model-atlas.umab": "ef5c58e2118d2c8b41d0ddaa5ac76272223a702ebba81420cc819973928d4e4d",
+        "atlas.dds": "94a10272ba24ba38c6106f296e105bc84b8b466029fc1ca74f3da0d93cf60819",
+        "secondary.bin": "08074aa4266d78947d92ed96b1d797d6d3f8acc06983d65a2de691481aabe6fc"
+      }
+    },
+    {
+      "id": 1062,
+      "slot": "FOCUS",
+      "candidate_folder": "modding/staged-runtime/fleet-secondary/1062",
+      "bones": 156,
+      "spring_nodes": 68,
+      "sha256": {
+        "model-atlas.umab": "bcb9ce73e4873bf39f697dac8736b6e91c4c22ecb8e3e6f4c355e7cf05ebab7a",
+        "atlas.dds": "34891ba0a42892d9262bfea0b13a0f25635031eab06247a32a0694c38c7225e1",
+        "secondary.bin": "9e2a0b36f3ede87675b1cb4634e1b67a2d901d84b35fd73e9b92ecdcce20bf3e"
+      }
+    },
+    {
+      "id": 1015,
+      "slot": "PEUGOT",
+      "candidate_folder": "modding/staged-runtime/fleet-secondary/1015",
+      "bones": 148,
+      "spring_nodes": 55,
+      "sha256": {
+        "model-atlas.umab": "b18f83f2ebd5125b2c3ca35f03aef584dab829d55041204bcfa3eb2d1eaff9fc",
+        "atlas.dds": "6b6831e620d7de04feb5891f0b0162928d4097e754866cb066895312def17ace",
+        "secondary.bin": "5d5b74b2fe2e3ac66f504558d808f3d2e7c4d46f5336a0bc32b19a34f137a598"
+      }
+    },
+    {
+      "id": 1006,
+      "slot": "PEUGOT106",
+      "candidate_folder": "modding/staged-runtime/fleet-secondary/1006",
+      "bones": 147,
+      "spring_nodes": 50,
+      "sha256": {
+        "model-atlas.umab": "7745c41f863278df6cb4e1b52d7799f03ab4abd9c9cc6c472b7c72403eb58569",
+        "atlas.dds": "c08ba84ac09c5062c2b614632d56ea6b9320e8e5390103ca902f6fceace34d15",
+        "secondary.bin": "76b407d58cd0b816a95d70a73d64d32503c1bd6d6e84aed24b10b82eb77ed2c7"
+      }
+    },
+    {
+      "id": 1058,
+      "slot": "CORSA",
+      "candidate_folder": "modding/staged-runtime/fleet-secondary/1058",
+      "bones": 156,
+      "spring_nodes": 64,
+      "sha256": {
+        "model-atlas.umab": "45e182a2f7ed74d5642f5d047622a06b65cc06fd25caae18d06882fe2db868bc",
+        "atlas.dds": "3666a316414d70f6dad793912e9836f432bc92710042518b69778064f17b06b7",
+        "secondary.bin": "2590a93c58d582b056ee66d30a1d838d40b36d295da3063774cca6308670bdd4"
+      }
+    }
+  ],
+  "installed": false,
+  "visual_reviewed": false,
+  "gameplay_verified": false
+}

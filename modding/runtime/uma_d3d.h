@@ -18,7 +18,7 @@ typedef struct {
  IDirect3DDevice9 *device;IDirect3DVertexBuffer9 *vertices;IDirect3DIndexBuffer9 *indices;
  IDirect3DTexture9 *texture;IDirect3DVertexDeclaration9 *declaration;IDirect3DPixelShader9 *shader,*native_shader;UmaShaderCache shaders;
  IDirect3DStateBlock9 *saved;UmaVertex *pose;
- const UmaMotion *motion;UmaDrawIndexed draw;UmaMotionState uploaded;float uploaded_root[9];int has_uploaded,uploaded_root_valid;
+ const UmaMotion *motion;UmaDrawIndexed draw;UmaMotionState uploaded;float uploaded_root[9];int has_uploaded,uploaded_root_valid;const float *secondary,*uploaded_secondary;uint32_t secondary_revision,uploaded_secondary_revision;
 } UmaD3D;
 static void uma_d3d_close(UmaD3D *renderer){
  if(!renderer)return;
@@ -98,7 +98,7 @@ static HRESULT uma_d3d_draw(UmaD3D *r,const UmaMotionState *state,const D3DMATRI
   if(fabsf(dot-(r==c))>.02f)return E_INVALIDARG;
  }
  /* Main and reflection passes share the same local pose and root correction. */
- if(!r->has_uploaded || state->idle_phase!=r->uploaded.idle_phase || state->run_phase!=r->uploaded.run_phase || state->run_blend!=r->uploaded.run_blend || (!!root)!=r->uploaded_root_valid || (root && memcmp(root,r->uploaded_root,sizeof(r->uploaded_root)))){
+ if(!r->has_uploaded || r->secondary!=r->uploaded_secondary || r->secondary_revision!=r->uploaded_secondary_revision || state->idle_phase!=r->uploaded.idle_phase || state->run_phase!=r->uploaded.run_phase || state->run_blend!=r->uploaded.run_blend || (!!root)!=r->uploaded_root_valid || (root && memcmp(root,r->uploaded_root,sizeof(r->uploaded_root)))){
   r->has_uploaded=0;
 #ifdef UMA_PROFILE
   LONGLONG profile_upload=uma_profile_now();
@@ -106,7 +106,7 @@ static HRESULT uma_d3d_draw(UmaD3D *r,const UmaMotionState *state,const D3DMATRI
 #ifdef UMA_PROFILE
   LONGLONG profile_skin=uma_profile_now();
 #endif
-  int sampled=uma_motion_sample(r->motion,state->idle_phase,state->run_phase,state->run_blend,r->pose,(size_t)r->motion->vertices*36);
+  int sampled=uma_motion_sample_secondary(r->motion,state->idle_phase,state->run_phase,state->run_blend,r->pose,(size_t)r->motion->vertices*36,r->secondary);
 #ifdef UMA_PROFILE
   uma_profile_skin_ticks+=uma_profile_now()-profile_skin;
 #endif
@@ -120,7 +120,7 @@ static HRESULT uma_d3d_draw(UmaD3D *r,const UmaMotionState *state,const D3DMATRI
   memcpy(mapped,r->pose,(size_t)r->motion->vertices*sizeof(*r->pose));
   result=IDirect3DVertexBuffer9_Unlock(r->vertices);if(FAILED(result))return result;
   r->uploaded_root_valid=root!=NULL;if(root)memcpy(r->uploaded_root,root,sizeof(r->uploaded_root));
-  r->uploaded=*state;r->has_uploaded=1;
+  r->uploaded=*state;r->uploaded_secondary=r->secondary;r->uploaded_secondary_revision=r->secondary_revision;r->has_uploaded=1;
 #ifdef UMA_PROFILE
   uma_profile_upload_ticks+=uma_profile_now()-profile_upload;uma_profile_uploads++;
 #endif

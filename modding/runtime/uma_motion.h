@@ -14,7 +14,7 @@ typedef struct {
  uint32_t vertices,indices,bones,idle_frames,run_frames;
  float idle_seconds,run_seconds;
  size_t memory_bytes;unsigned char *memory;
- UmaVertex *rest;UmaSkin *skin;UmaJoint *joint;uint16_t *index;float *idle,*run;
+ UmaVertex *rest;UmaSkin *skin;UmaJoint *joint;uint16_t *index;float *idle,*run;const uint8_t *secondary_mask;
 } UmaMotion;
 typedef struct {float idle_phase,run_phase,run_blend;} UmaMotionState;
 _Static_assert(sizeof(UmaVertex)==36,"Game-compatible vertex stride");
@@ -80,19 +80,22 @@ static void uma_local_pose(const float *clip,size_t stride,uint32_t a,uint32_t b
  uma_quaternion_mix(first,second,t,out);
  for(int k=4;k<7;k++)out[k]=first[k]+(second[k]-first[k])*t;
 }
-static int uma_motion_sample(const UmaMotion *asset,float idle_phase,float run_phase,float blend,UmaVertex *output,size_t output_bytes){
- if(!asset || !asset->memory || !output || !isfinite(idle_phase) || !isfinite(run_phase) || !isfinite(blend) || blend<0 || blend>1)return 0;
- size_t bytes=(size_t)asset->vertices*36;
- uintptr_t dst=(uintptr_t)output,src=(uintptr_t)asset->memory;
- if(output_bytes<bytes || dst>UINTPTR_MAX-bytes || (dst<src+asset->memory_bytes && dst+bytes>src))return 0;
+static int uma_motion_matrices(const UmaMotion *asset,float idle_phase,float run_phase,float blend,const float *secondary,float *mixed){
+ if(!asset || !asset->memory || !mixed || !isfinite(idle_phase) || !isfinite(run_phase) || !isfinite(blend) || blend<0 || blend>1)return 0;
  uint32_t ia,ib,ra,rb;float it,rt;
  uma_frame(idle_phase,asset->idle_frames,&ia,&ib,&it);uma_frame(run_phase,asset->run_frames,&ra,&rb,&rt);
- float mixed[512*12],positions[512*3];size_t stride=(size_t)asset->bones*7;
+ float positions[512*3];size_t stride=(size_t)asset->bones*7;
  for(uint32_t bone=0;bone<asset->bones;bone++){
   float idle[7],run[7],pose[7];
   uma_local_pose(asset->idle,stride,ia,ib,it,bone,idle);uma_local_pose(asset->run,stride,ra,rb,rt,bone,run);
   uma_quaternion_mix(idle,run,blend,pose);
   for(int k=4;k<7;k++)pose[k]=idle[k]+(run[k]-idle[k])*blend;
+  if(secondary){
+   const float *q=secondary+(size_t)bone*4;float length=0;
+   for(int k=0;k<4;k++){if(!isfinite(q[k]))return 0;length+=q[k]*q[k];}if(fabsf(length-1)>1e-3f)return 0;
+   float a=pose[0],b=pose[1],c=pose[2],d=pose[3];
+   pose[0]=d*q[0]+a*q[3]+b*q[2]-c*q[1];pose[1]=d*q[1]-a*q[2]+b*q[3]+c*q[0];pose[2]=d*q[2]+a*q[1]-b*q[0]+c*q[3];pose[3]=d*q[3]-a*q[0]-b*q[1]-c*q[2];
+  }
   float x=pose[0],y=pose[1],z=pose[2],w=pose[3];
   const float local[]={1-2*(y*y+z*z),2*(x*y-z*w),2*(x*z+y*w),2*(x*y+z*w),1-2*(x*x+z*z),2*(y*z-x*w),2*(x*z-y*w),2*(y*z+x*w),1-2*(x*x+y*y)};
   int parent=asset->joint[bone].parent;float *world=mixed+(size_t)bone*12;
@@ -107,6 +110,14 @@ static int uma_motion_sample(const UmaMotion *asset,float idle_phase,float run_p
    float offset=positions[bone*3+axis];for(int k=0;k<3;k++)offset-=world[axis*4+k]*asset->joint[bone].rest[k];world[axis*4+3]=offset;
   }
  }
+ return 1;
+}
+static int uma_motion_sample_secondary(const UmaMotion *asset,float idle_phase,float run_phase,float blend,UmaVertex *output,size_t output_bytes,const float *secondary){
+ if(!asset || !asset->memory || !output || !isfinite(idle_phase) || !isfinite(run_phase) || !isfinite(blend) || blend<0 || blend>1)return 0;
+ size_t bytes=(size_t)asset->vertices*36;
+ uintptr_t dst=(uintptr_t)output,src=(uintptr_t)asset->memory;
+ if(output_bytes<bytes || dst>UINTPTR_MAX-bytes || (dst<src+asset->memory_bytes && dst+bytes>src))return 0;
+ float mixed[512*12];if(!uma_motion_matrices(asset,idle_phase,run_phase,blend,secondary,mixed))return 0;
  memcpy(output,asset->rest,bytes);
  for(uint32_t i=0;i<asset->vertices;i++){
   float p[3]={0},n[3]={0};
@@ -124,10 +135,16 @@ static int uma_motion_sample(const UmaMotion *asset,float idle_phase,float run_p
   for(int axis=0;axis<3;axis++){output[i].position[axis]=p[axis];output[i].normal[axis]=n[axis]/length;}
  }
  // Keep the whole model above its local support plane during clip transitions.
- float lowest=output[0].position[2];for(uint32_t i=1;i<asset->vertices;i++)if(output[i].position[2]<lowest)lowest=output[i].position[2];
+ float lowest=10000;int support=0;
+ for(uint32_t i=0;i<asset->vertices;i++){
+  int cloth=0;if(secondary && asset->secondary_mask)for(int j=0;j<4;j++)if(asset->skin[i].weight[j]>0 && asset->secondary_mask[asset->skin[i].bone[j]])cloth=1;
+  if(!cloth){support=1;if(output[i].position[2]<lowest)lowest=output[i].position[2];}
+ }
+ if(!support)return 0;
  if(lowest<-.0001f){float rise=-.0001f-lowest;for(uint32_t i=0;i<asset->vertices;i++)output[i].position[2]+=rise;}
  return 1;
 }
+static inline int uma_motion_sample(const UmaMotion *asset,float idle_phase,float run_phase,float blend,UmaVertex *output,size_t output_bytes){return uma_motion_sample_secondary(asset,idle_phase,run_phase,blend,output,output_bytes,NULL);}
 /* Speed/paused are explicit inputs; this code does not inspect game memory. */
 static inline int uma_motion_step_timed(UmaMotionState *state,float seconds,float speed_mps,int paused,float idle_seconds,float run_seconds){
  if(!state || !isfinite(seconds) || seconds<0 || seconds>.25f || !isfinite(speed_mps) || !isfinite(state->idle_phase) || !isfinite(state->run_phase) || !isfinite(state->run_blend) || state->run_blend<0 || state->run_blend>1 || !isfinite(idle_seconds) || idle_seconds<.05f || idle_seconds>60 || !isfinite(run_seconds) || run_seconds<.05f || run_seconds>60)return 0;

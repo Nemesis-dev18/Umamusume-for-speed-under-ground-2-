@@ -9,7 +9,7 @@ AXES=np.array([[0.,0.,1.],[-1.,0.,0.],[0.,1.,0.]])
 
 
 class NativeSkin:
-    def __init__(self,folder):
+    def __init__(self,folder,secondary=False):
         self.folder=folder;self.g=json.loads((folder/'source.gltf').read_text());self.blob=(folder/'source.bin').read_bytes()
         if len(self.g['buffers'])!=1 or self.g['buffers'][0]['byteLength']!=len(self.blob):raise ValueError('Source buffer length mismatch')
         self.parents={}
@@ -28,7 +28,15 @@ class NativeSkin:
         self.rest=self.world()
         self.animations={a['name']:a for a in self.g['animations']}
         self.animated={c['target']['node'] for a in self.animations.values() for c in a['channels']}
-        needed=set(self.animated)
+        self.secondary_nodes=set()
+        if secondary:
+            inventory=json.loads((ROOT/'modding/uma-steam/secondary-native/structural-summary.json').read_text())
+            native=next(c for c in inventory if c['id']==int(folder.name))
+            names={n['_boneName'] for a in native['assets'] if a['logical'].endswith('_cloth00') and '_bust_' not in a['logical'] for n in a['nodes'] if '_Bust' not in n['_boneName'] and '_Ear' not in n['_boneName']}
+            self.secondary_nodes={i for i,n in enumerate(self.g['nodes']) if n.get('name') in names}
+            if {self.g['nodes'][i]['name'] for i in self.secondary_nodes}!=names:raise ValueError('Unresolved secondary joint names')
+        self.driven=self.animated|self.secondary_nodes
+        needed=set(self.driven)
         for i in list(needed):
             while i in self.parents:i=self.parents[i];needed.add(i)
         self.bone_order=[i for i in self.order if i in needed]
@@ -36,7 +44,7 @@ class NativeSkin:
         self.remap={i:j for j,i in enumerate(self.bone_order)}
 
     def moving_parent(self,i):
-        while i not in self.animated and i in self.parents:i=self.parents[i]
+        while i not in self.driven and i in self.parents:i=self.parents[i]
         if i not in self.remap:raise ValueError('Unrepresented static root')
         return i
 
@@ -80,9 +88,11 @@ class NativeSkin:
                 a={k:self.array(v) for k,v in p['attributes'].items()};ids=self.array(p['indices']).reshape(-1)
                 bind=np.array([self.rest[j]@b for j,b in zip(skin['joints'],ibm)]);matrices=(bind[a['JOINTS_0']]*a['WEIGHTS_0'][:,:,None,None]).sum(1)
                 points=np.einsum('nij,nj->ni',matrices[:,:3,:3],a['POSITION'])+matrices[:,:3,3];triangles=ids.reshape(-1,3);area=np.linalg.norm(np.cross(points[triangles[:,1]]-points[triangles[:,0]],points[triangles[:,2]]-points[triangles[:,0]]),axis=1);hidden=area<1e-14
-                for tri in triangles[hidden]:
-                    ancestors={self.moving_parent(skin['joints'][int(j)]) for v in tri for j,w in zip(a['JOINTS_0'][v],a['WEIGHTS_0'][v]) if w>0}
-                    if len(ancestors)!=1:raise ValueError('Degenerate triangle may open during animation')
+                for index in np.flatnonzero(hidden):
+                    tri=triangles[index];ancestors={self.moving_parent(skin['joints'][int(j)]) for v in tri for j,w in zip(a['JOINTS_0'][v],a['WEIGHTS_0'][v]) if w>0}
+                    if len(ancestors)!=1:
+                        if self.secondary_nodes:hidden[index]=False
+                        else:raise ValueError('Degenerate triangle may open during animation')
                 ids=triangles[~hidden].reshape(-1)
                 if not len(ids):continue
                 used,inverse=np.unique(ids,return_inverse=True)
@@ -97,8 +107,8 @@ class NativeSkin:
         return positions,normals
 
 
-def pack(folder):
-    source=NativeSkin(folder);primitives=list(source.primitives());nb=len(source.bone_order)
+def pack(folder,secondary=False,output=None):
+    source=NativeSkin(folder,secondary);primitives=list(source.primitives());nb=len(source.bone_order)
     rest=np.array([AXES@source.rest[i][:3,3] for i in source.bone_order]);records=[];skins=[];indices=[];groups=[];offset=0
     for p in primitives:
         a=p['attributes'];positions,normals=source.deform(p,source.rest);positions=positions@AXES.T;normals=normals@AXES.T
@@ -147,8 +157,9 @@ def pack(folder):
         clips.append(data.tobytes());reports.append({'name':label,'frames':frames,'seconds':float(times[-1]),'duplicate_endpoint_removed':True})
     index_data=np.asarray(indices,dtype='<u2').tobytes();header=struct.pack('<4s7I2f',b'UMAB',3,offset,len(indices),nb,*(r['frames'] for r in reports),0,*(r['seconds'] for r in reports))
     data=header+b''.join(records)+b''.join(skins)+skeleton+index_data+bytes((-len(index_data))%4)+b''.join(clips)
-    output=folder/'runtime';output.mkdir(exist_ok=True);(output/'model.umab').write_bytes(data)
+    output=Path(output) if output is not None else folder/'runtime';output.resolve().relative_to(ROOT.resolve());output.mkdir(parents=True,exist_ok=True);(output/'model.umab').write_bytes(data)
     report={'id':int(folder.name),'vertices':offset,'indices':len(indices),'bones':nb,'clips':reports,'groups':groups,'sha256':hashlib.sha256(data).hexdigest(),'source_sha256':hashlib.sha256((folder/'source.gltf').read_bytes()).hexdigest(),'source_buffer_sha256':hashlib.sha256(source.blob).hexdigest(),'game_integrated':False,'atlas_pending':True,'eye_depth_pass_pending':True}
+    if secondary:report.update(secondary_retained=True,bone_names=[source.g['nodes'][i].get('name','') for i in source.bone_order],secondary_bone_indices=[source.remap[i] for i in source.bone_order if i in source.secondary_nodes])
     (output/'model.json').write_text(json.dumps(report,indent=2)+'\n');print(folder.name,offset,len(indices),nb,flush=True)
     return source,primitives,report
 
