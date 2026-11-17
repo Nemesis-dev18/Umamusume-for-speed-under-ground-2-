@@ -1,0 +1,20 @@
+{
+  "source_scene_sha256": "4055e79eab2b56a5dd8962ef89846d3bf2d359ce7d04fb6a1f449fe87d45c78a",
+  "exchange_sha256": "7655530107ce72f687d54da22f7e91177ebcc2eb1f327d455be9a7aa822c1e6d",
+  "bytes": 4886840,
+  "excluded_bone_display_helpers": [
+    {
+      "name": "Icosphere",
+      "vertices": 42
+    }
+  ],
+  "reimport_meshes": 1,
+  "reimport_vertices": 34705,
+  "weighted_vertices": 34705,
+  "unweighted_vertices": 0,
+  "weight_roundtrip_passed": true,
+  "rigs": 1,
+  "bones": 272,
+  "images": 5,
+  "scope": "Exchange model with skins, no morphs, physics or animation; material translation requires visual review; not runtime-ready"
+}
