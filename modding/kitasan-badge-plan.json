@@ -1,0 +1,36 @@
+{
+  "files": [
+    {
+      "target": "FRONTEND/FrontB.lzc",
+      "candidate": "modding/staged-runtime/FrontB.kitasan-badge.lzc",
+      "before_sha256": "e6d9230e37fd24b986a8284a4cc49f9f3fbf64fd9c5c7003399dbdb0b3e83e07",
+      "after_sha256": "7b01775dc3d67d8cd697fb782189376aa4b4215b5404eb20160e87f893158ea4",
+      "bytes": 6725051
+    },
+    {
+      "target": "GLOBAL/GLOBALB.BUN",
+      "candidate": "modding/staged-runtime/badge-GLOBALB.BUN",
+      "before_sha256": "07e1c37a2e5ba4b3e6a17b257e653409c31d5f0b3f9df3464aec36adbbced9d0",
+      "after_sha256": "e2a0c769aa3f4b4f8d5e547e76ecbf83727a100f2486cf942e7c7333d9c5c1d0",
+      "bytes": 8008064,
+      "decoded_changed_range": [
+        7106288,
+        7106304
+      ]
+    },
+    {
+      "target": "GLOBAL/GlobalB.lzc",
+      "candidate": "modding/staged-runtime/badge-GlobalB.lzc",
+      "before_sha256": "ad015fdb24e3bfce3aff8bcdfbbef3cb981b524115884a8eed4bf3ce4a2d6e90",
+      "after_sha256": "d3d77b40c95d0d6adaccd925cca0ff280c5043afc90060909b7b6a927da2894b",
+      "bytes": 5145793,
+      "decoded_changed_range": [
+        7106288,
+        7106304
+      ]
+    }
+  ],
+  "texture_hash": "0xd2dee64b",
+  "installed": false,
+  "gameplay_verified": false
+}
