@@ -1,0 +1,378 @@
+{
+  "files": [
+    {
+      "target": "CARS/240SX/GEOMETRY.BIN",
+      "restore_from": "CARS/240SX/GEOMETRY.BIN.before-global-wheels.bak",
+      "current_sha256": "90b31b8fa25f00f7c842a76abda0271c94d487498210097a0a11361f4e8ab797",
+      "restore_sha256": "122342b8ed9418ccc05515bcad1d2b5720ec45ee90c4fcaedab28751612bd18a"
+    },
+    {
+      "target": "CARS/3000GT/GEOMETRY.BIN",
+      "restore_from": "CARS/3000GT/GEOMETRY.BIN.before-global-wheels.bak",
+      "current_sha256": "e852f877549b9e18f3e0570cd11cf7a7add718ca225a5cad2e6f425e60141580",
+      "restore_sha256": "d61429495b187e7a60dd6438fa09ba962d07fac1e4388da66ffcd54e60f00ac0"
+    },
+    {
+      "target": "CARS/350Z/GEOMETRY.BIN",
+      "restore_from": "CARS/350Z/GEOMETRY.BIN.before-global-wheels.bak",
+      "current_sha256": "43bf8d8571dc2b76370c3940550431862de9f4805078005bc284debda6d63ef5",
+      "restore_sha256": "90b66874fdf16b7bafdd760cdcfcc412bae4eb584b0bbbb755d2569617c57650"
+    },
+    {
+      "target": "CARS/4DR_SEDAN/GEOMETRY.BIN",
+      "restore_from": "CARS/4DR_SEDAN/GEOMETRY.BIN.before-global-wheels.bak",
+      "current_sha256": "9d0fedaa631fdb8e3ba4257f29dd225919965016145b67cfc2bf162c50c633e9",
+      "restore_sha256": "5818399288eede4e12a007e7aa061834048adda288f29977868f76e0860fef60"
+    },
+    {
+      "target": "CARS/4DR_SEDAN02/GEOMETRY.BIN",
+      "restore_from": "CARS/4DR_SEDAN02/GEOMETRY.BIN.before-global-wheels.bak",
+      "current_sha256": "f73a84996d0003f4ffc4e4c1771128e12c5c526d2638b30c43c2f1960eaf57a5",
+      "restore_sha256": "1b65d63ce7170007eb47f87119a4465f014a10c63fbbec028b6536a53496a998"
+    },
+    {
+      "target": "CARS/A3/GEOMETRY.BIN",
+      "restore_from": "CARS/A3/GEOMETRY.BIN.before-global-wheels.bak",
+      "current_sha256": "a653922dcbf2c74e67b36ae678180530f06c73869586763f751786bdfb0389ba",
+      "restore_sha256": "56d127df4bc793153da5ad294b52ceb08091e7aa6d5cdca5cada0edbb1914f3e"
+    },
+    {
+      "target": "CARS/AMBULANCE/GEOMETRY.BIN",
+      "restore_from": "CARS/AMBULANCE/GEOMETRY.BIN.before-global-wheels.bak",
+      "current_sha256": "158c992ffc40b376a94fa7728ab1b7e5bb1307b79cda237fd8c54ca9f8a523f0",
+      "restore_sha256": "bd1dde1a1778162e78cf34d8496b40cbd30ac541a9d028b4ec2870db768b829d"
+    },
+    {
+      "target": "CARS/BUS/GEOMETRY.BIN",
+      "restore_from": "CARS/BUS/GEOMETRY.BIN.before-global-wheels.bak",
+      "current_sha256": "b1b76b536ba294076279c0e2871a762afdd4fc6aef23e2f9b2738b1a38ae1c2d",
+      "restore_sha256": "d0dae93750656055c71b817c0b68771d9b478c7f718458e12a4d3b167f8b9e08"
+    },
+    {
+      "target": "CARS/CELICA/GEOMETRY.BIN",
+      "restore_from": "CARS/CELICA/GEOMETRY.BIN.before-global-wheels.bak",
+      "current_sha256": "75d165b82e99996db7077ba023d915181d6e331ecbce1ca47c1257f5ac1e301b",
+      "restore_sha256": "cdb486b204b24b4b7f94d5d92285ec1a7d0d0db9e99f175240a42b394ea5cbe1"
+    },
+    {
+      "target": "CARS/CORSA/GEOMETRY.BIN",
+      "restore_from": "CARS/CORSA/GEOMETRY.BIN.before-global-wheels.bak",
+      "current_sha256": "43d523c5902928a7531c266b22afa9e3dd1527190413bbd69be3e329e98a9fc6",
+      "restore_sha256": "0720c31e17ab027d054114d6c4f5cbc14ce41c25b1b8b956ffa171191b20456c"
+    },
+    {
+      "target": "CARS/COUPE/GEOMETRY.BIN",
+      "restore_from": "CARS/COUPE/GEOMETRY.BIN.before-global-wheels.bak",
+      "current_sha256": "90105f7d187231ea9694cc51046fd350dec60b7be5afc5bdf7d4f0ae5041534a",
+      "restore_sha256": "6d8deca3f99cc3cde2539fca6aff5f041f037a8a7b5acd246bdb26a282f9dbdb"
+    },
+    {
+      "target": "CARS/ECLIPSE/GEOMETRY.BIN",
+      "restore_from": "CARS/ECLIPSE/GEOMETRY.BIN.before-global-wheels.bak",
+      "current_sha256": "56efc21363adc35b744274c85310b2968208690346929e67c90209d636b0ad01",
+      "restore_sha256": "44a013a6b4265bd961909bc626bc50c69ef18376ef9cadfe825175671e285cd0"
+    },
+    {
+      "target": "CARS/ESCALADE/GEOMETRY.BIN",
+      "restore_from": "CARS/ESCALADE/GEOMETRY.BIN.before-global-wheels.bak",
+      "current_sha256": "7b937220cec1f8c2804e61fbdd634937f14d7ba3ff79dacb2d4e8055e14b2a9a",
+      "restore_sha256": "ef55ed85a361e3d067ddd7b252f3b93f56140932ba0b4515ee458eec13b88235"
+    },
+    {
+      "target": "CARS/FIRETRUCK/GEOMETRY.BIN",
+      "restore_from": "CARS/FIRETRUCK/GEOMETRY.BIN.before-global-wheels.bak",
+      "current_sha256": "768a7689daa37d71269a450f5fb8d4c19faf00907fbb9ee91d63d5b84827f390",
+      "restore_sha256": "2988165634471fb39b18cbda29b414fe0a26caa38eac81acdf257eff511aae6d"
+    },
+    {
+      "target": "CARS/FOCUS/GEOMETRY.BIN",
+      "restore_from": "CARS/FOCUS/GEOMETRY.BIN.before-global-wheels.bak",
+      "current_sha256": "c9dfe18c4a4f28a4bee084c7767900b7757e3075c9b15cc88e63d07f85eff49e",
+      "restore_sha256": "d114c0ec57ace4dfa4de994d6b0998cb9b6b6ccaba6773d2a5ff19c396223e67"
+    },
+    {
+      "target": "CARS/G35/GEOMETRY.BIN",
+      "restore_from": "CARS/G35/GEOMETRY.BIN.before-global-wheels.bak",
+      "current_sha256": "e4a8f97a05677d52b49527ae1a9629093523828cbe212c5dbbc479dd7bf0f7ef",
+      "restore_sha256": "bd590339725f6f53d4421f3599ff39ae47260712a3bf97b03e56f118dbba4250"
+    },
+    {
+      "target": "CARS/GOLF/GEOMETRY.BIN",
+      "restore_from": "CARS/GOLF/GEOMETRY.BIN.before-global-wheels.bak",
+      "current_sha256": "7d01326fe374b03c5631b3044acdbd3bb16ca1cf13f7e5c2fb5da1cce96b3abe",
+      "restore_sha256": "ff9123966a2253c537d2d3747d35607e14f61bad35a175063f6ca1eb2b707f99"
+    },
+    {
+      "target": "CARS/GTO/GEOMETRY.BIN",
+      "restore_from": "CARS/GTO/GEOMETRY.BIN.before-global-wheels.bak",
+      "current_sha256": "b5709b2248cd9d2f5d9a3302fe94b9153fedd30c4b0e5d25f6c935bbc8d56a4e",
+      "restore_sha256": "ed81aaabc8e12effd096f6c31886c0c1106a6ed660de5122aca0536ed49e9b43"
+    },
+    {
+      "target": "CARS/HATCHBACK/GEOMETRY.BIN",
+      "restore_from": "CARS/HATCHBACK/GEOMETRY.BIN.before-global-wheels.bak",
+      "current_sha256": "609f7bc392ca484a8514e3250ea2b1b6289da65c75c5efbc52eaa1aee225bdc0",
+      "restore_sha256": "3b384e8f8c2a312bac6fe5f6035fd9c5fe45b310ede296437d20865e8b389259"
+    },
+    {
+      "target": "CARS/HATCHBACK02/GEOMETRY.BIN",
+      "restore_from": "CARS/HATCHBACK02/GEOMETRY.BIN.before-global-wheels.bak",
+      "current_sha256": "6114715cbe09646983e33ba36422e32a7d9f459e7e130833969b1ade6cb91fc7",
+      "restore_sha256": "8186b0aa3461e4ac041134df5b3e0903f228055ba6a9607696cee654d1651eaf"
+    },
+    {
+      "target": "CARS/HUMMER/GEOMETRY.BIN",
+      "restore_from": "CARS/HUMMER/GEOMETRY.BIN.before-global-wheels.bak",
+      "current_sha256": "09845c546762c9fc89c701ac614cc55ea5fde17108e5803fb4b7d55fa933a1cb",
+      "restore_sha256": "243bbd786728d56c480ab9d8a6a7a8c13fe7993f511dc0d7e2aa79f271724209"
+    },
+    {
+      "target": "CARS/IS300/GEOMETRY.BIN",
+      "restore_from": "CARS/IS300/GEOMETRY.BIN.before-global-wheels.bak",
+      "current_sha256": "28c07acb2c3d6feeb2950d324c7c70ef1199f1d2b612f593d605d943b8b5dad2",
+      "restore_sha256": "af19747605a3c22e19911dc19d16c6f5d393a4183edff83b68441ca98d50869a"
+    },
+    {
+      "target": "CARS/MIATA/GEOMETRY.BIN",
+      "restore_from": "CARS/MIATA/GEOMETRY.BIN.before-global-wheels.bak",
+      "current_sha256": "6c5c430b779e985b2eb8defc3ba323f2c32b9ac31812171fb07b5ad4870fb702",
+      "restore_sha256": "c8b0bdfef2731b12030b4f281050d754810a001b51c5777a4098437e51075680"
+    },
+    {
+      "target": "CARS/MINIVAN/GEOMETRY.BIN",
+      "restore_from": "CARS/MINIVAN/GEOMETRY.BIN.before-global-wheels.bak",
+      "current_sha256": "8eb3171db38aabe8813c59b56d0bd269d54f16d6a23aa6cb36f535c2cd29ab86",
+      "restore_sha256": "490ce9d05e6ce547d6dbbc962d7ba52dc05fe626733a02c818c4e0fb0b28befd"
+    },
+    {
+      "target": "CARS/PANELVAN/GEOMETRY.BIN",
+      "restore_from": "CARS/PANELVAN/GEOMETRY.BIN.before-global-wheels.bak",
+      "current_sha256": "feb449409581ac984e5cc157118578d4fca075f1f5e0f410973e6e3b2f75c7a4",
+      "restore_sha256": "c7d44f92315d080d45212ad6fbde740ae8e1c180c3f4ee02efc604eb881c507d"
+    },
+    {
+      "target": "CARS/PARCELVAN/GEOMETRY.BIN",
+      "restore_from": "CARS/PARCELVAN/GEOMETRY.BIN.before-global-wheels.bak",
+      "current_sha256": "dadfece3d1c8caeabc450ed876b81ee0cf87d787e8f2b3762d01d1ae45e47256",
+      "restore_sha256": "3311e5155b8da72d73870f9dbae3ea7fc533c6154b1b68a43287258b1fc58081"
+    },
+    {
+      "target": "CARS/PEUGOT/GEOMETRY.BIN",
+      "restore_from": "CARS/PEUGOT/GEOMETRY.BIN.before-global-wheels.bak",
+      "current_sha256": "fbf58ca6f564b4d52d0918797878374e63796f18c508689b824bb6d49d529349",
+      "restore_sha256": "3bd6e6bc66b67e45dde327714b0220f98c0813064dfbdbc7ffa038c250446357"
+    },
+    {
+      "target": "CARS/PICKUP/GEOMETRY.BIN",
+      "restore_from": "CARS/PICKUP/GEOMETRY.BIN.before-global-wheels.bak",
+      "current_sha256": "a6c7f6f6dfc7c155b6ee958429ea84ac49e33fac735b040b5784b70bcc1715a6",
+      "restore_sha256": "fa0d837e0d48aa1e358c0f6d8b1eb850c9bb8de92dec1b24b9ec87c152992a73"
+    },
+    {
+      "target": "CARS/RX7/GEOMETRY.BIN",
+      "restore_from": "CARS/RX7/GEOMETRY.BIN.before-global-wheels.bak",
+      "current_sha256": "5a08282b967cbe5786869dec2e2842e8dd7ed240d868293a36d681f4f10cd928",
+      "restore_sha256": "8ba07105d1c20ce71edd09247b776e49bb97bab45039c39b7a64a2ebaee88ab6"
+    },
+    {
+      "target": "CARS/RX8/GEOMETRY.BIN",
+      "restore_from": "CARS/RX8/GEOMETRY.BIN.before-global-wheels.bak",
+      "current_sha256": "0c03e7bb25c1ebfbb58f16e74898cb9868ec4d9388e8aaac2e0aff7b3e761705",
+      "restore_sha256": "0b578b23467abf8fe00280bfbbce4a89409ce557ebbb0f92896c2c5b5b37c89c"
+    },
+    {
+      "target": "CARS/SENTRA/GEOMETRY.BIN",
+      "restore_from": "CARS/SENTRA/GEOMETRY.BIN.before-global-wheels.bak",
+      "current_sha256": "82d8bf34aaf9e86a902a4a7fce05027ffeb128f9d8ddcd35af6c675392cd21f2",
+      "restore_sha256": "a5b271f49e5b410c51deced40d06b93bcf7335b19e90af285f7f9e628a2bd74e"
+    },
+    {
+      "target": "CARS/SKYLINE/GEOMETRY.BIN",
+      "restore_from": "CARS/SKYLINE/GEOMETRY.BIN.before-global-wheels.bak",
+      "current_sha256": "b13104600f811aa0e0a80404d93912613738f323a779e5023c733e660ea6ad7a",
+      "restore_sha256": "93cc878329d5783e61abb40cce41da6313c010105fb3c3643963df7e06904037"
+    },
+    {
+      "target": "CARS/SUPRA/GEOMETRY.BIN",
+      "restore_from": "CARS/SUPRA/GEOMETRY.BIN.before-global-wheels.bak",
+      "current_sha256": "4b53449eb53430b5c12b9d2927146918a1ff22a0c166d48d3b27a3777019689c",
+      "restore_sha256": "fa59a57248fad3c2e482b00c86075be13e2b52711eeb9f82eeca48b38a7230d3"
+    },
+    {
+      "target": "CARS/SUV/GEOMETRY.BIN",
+      "restore_from": "CARS/SUV/GEOMETRY.BIN.before-global-wheels.bak",
+      "current_sha256": "2d7231acb644cb2590a57f728fed81ee014e16860e14bf46f04e9c841da89eaf",
+      "restore_sha256": "7702503228db225a692d1c37308548badfb4de5be2eb1639fcb355505a2543ec"
+    },
+    {
+      "target": "CARS/TAXI/GEOMETRY.BIN",
+      "restore_from": "CARS/TAXI/GEOMETRY.BIN.before-global-wheels.bak",
+      "current_sha256": "f7c444d8a907582ed040773d6411dc70d83bbff76bbdd3ce591a5d6fc8eb3d27",
+      "restore_sha256": "75539f4b736fce2c56496e3f5b461f56042fece1a14c31b4c7099fcd4aef8900"
+    },
+    {
+      "target": "CARS/TAXI02/GEOMETRY.BIN",
+      "restore_from": "CARS/TAXI02/GEOMETRY.BIN.before-global-wheels.bak",
+      "current_sha256": "5e1e76b32fdce94f1dc929d58a4d0714bdebb7d8596960312110fb0a22ab9f98",
+      "restore_sha256": "052d1c67458e4c330ef3f30b8358364f1c4d1e896427014c2e8959e702b7b2fa"
+    },
+    {
+      "target": "CARS/TIBURON/GEOMETRY.BIN",
+      "restore_from": "CARS/TIBURON/GEOMETRY.BIN.before-global-wheels.bak",
+      "current_sha256": "02c8052ef1941889791e5c4003c377e53d2d685ff7be313916dcdbe53abc84c3",
+      "restore_sha256": "64edcc311242731561c66d9cc130d33ab08ee51be7e46eaf341a41111c28aaf7"
+    },
+    {
+      "target": "CARS/TT/GEOMETRY.BIN",
+      "restore_from": "CARS/TT/GEOMETRY.BIN.before-global-wheels.bak",
+      "current_sha256": "4b70d7aa9dc787bf9742cbfa1774fb1452d62f2ad79675adfc0f6a97abe5b7c7",
+      "restore_sha256": "7cf22ae19bd31fa7c56f6d9762af90abb669739ec50fa1edb430c3cf89f80c39"
+    },
+    {
+      "target": "CARS/WHEELS/GEOMETRY_5ZIGEN.BIN",
+      "restore_from": "CARS/WHEELS/GEOMETRY_5ZIGEN.BIN.before-global-wheels.bak",
+      "current_sha256": "56751fadab782d942f68e9823ac2a62bf1d3cc19cad1c4bd9d89bfcd01bdfdbf",
+      "restore_sha256": "f059339f487a66d6e1719965b578d93bdb43b494c1def2c96cee05740187ab52"
+    },
+    {
+      "target": "CARS/WHEELS/GEOMETRY_ADVAN.BIN",
+      "restore_from": "CARS/WHEELS/GEOMETRY_ADVAN.BIN.before-global-wheels.bak",
+      "current_sha256": "a60df24a54a1236bc98e2c319cb39f0464f5a905add46ce071963ece3d9f3cb0",
+      "restore_sha256": "2d20bb6df8866fe94f8abc09f5cbcb767ae71e129e55518d1dce4cb32236591c"
+    },
+    {
+      "target": "CARS/WHEELS/GEOMETRY_AVUS.BIN",
+      "restore_from": "CARS/WHEELS/GEOMETRY_AVUS.BIN.before-global-wheels.bak",
+      "current_sha256": "c54e591d7f445d9fccf0be6615e410da192cd83ff3fa526e7eaee83042eac473",
+      "restore_sha256": "7d72f1db1c0e80c371ac7d92423ac5f84a5227543bd88497bd88aa8d5d3fad12"
+    },
+    {
+      "target": "CARS/WHEELS/GEOMETRY_BBS.BIN",
+      "restore_from": "CARS/WHEELS/GEOMETRY_BBS.BIN.before-global-wheels.bak",
+      "current_sha256": "f7c3a7678d4045bfaf007fdb7a64db177d3d0e0f61ea32899e9396cb33ba5a5a",
+      "restore_sha256": "df8c5cf047a3a365b8f53826c3d076f33a7e5f5a23f2bc472e80927c02124481"
+    },
+    {
+      "target": "CARS/WHEELS/GEOMETRY_DAVIN.BIN",
+      "restore_from": "CARS/WHEELS/GEOMETRY_DAVIN.BIN.before-global-wheels.bak",
+      "current_sha256": "d1068760853eddbb6687a4e5dbb71edad3bfbae89254de29bc254183dcd85361",
+      "restore_sha256": "a82b3bcc750e39a3e02bd9b7da9af75224a5713a88f573242efe065fc44375c2"
+    },
+    {
+      "target": "CARS/WHEELS/GEOMETRY_DONZ.BIN",
+      "restore_from": "CARS/WHEELS/GEOMETRY_DONZ.BIN.before-global-wheels.bak",
+      "current_sha256": "e5d91f6bbbd7dff58f6541791ad54c9b9dbce21035dae52b82f36fcf2bfb8558",
+      "restore_sha256": "5edf15087f24dbcb2a6b3943bd3fc4c424a90654116e50c052570e004c88d8bf"
+    },
+    {
+      "target": "CARS/WHEELS/GEOMETRY_ENKEI.BIN",
+      "restore_from": "CARS/WHEELS/GEOMETRY_ENKEI.BIN.before-global-wheels.bak",
+      "current_sha256": "f984ecff47d35909fe7d4497667b61599dc13432b548ee2050c7b37d4aa93d49",
+      "restore_sha256": "75b8f4fb0ffbe49ec2126fa12e32d0ef28fb084a0c963a4ddf91d5363596df69"
+    },
+    {
+      "target": "CARS/WHEELS/GEOMETRY_FOXX.BIN",
+      "restore_from": "CARS/WHEELS/GEOMETRY_FOXX.BIN.before-global-wheels.bak",
+      "current_sha256": "138f3109018fe49b8123cbe87b231a8d0fad343b4a8505aacfc1831eecd1d534",
+      "restore_sha256": "a1cfc1b554fe3569d813bfed4c83d464309b03248e864c9d89b0833ec7248ecc"
+    },
+    {
+      "target": "CARS/WHEELS/GEOMETRY_GIANELLE.BIN",
+      "restore_from": "CARS/WHEELS/GEOMETRY_GIANELLE.BIN.before-global-wheels.bak",
+      "current_sha256": "9425b00cca6c609fe53c32d3a46fa6d155357c941f53d64fb022626d27d83207",
+      "restore_sha256": "e80130a21c786c425e2d15df385591d762bc0345559a05ac37ce6dfb650b6714"
+    },
+    {
+      "target": "CARS/WHEELS/GEOMETRY_GIOVANNA.BIN",
+      "restore_from": "CARS/WHEELS/GEOMETRY_GIOVANNA.BIN.before-global-wheels.bak",
+      "current_sha256": "b8b885b50257cab1ed6eb6507a2eb0c9f0f304d3d8b44c5253be7be58750bff6",
+      "restore_sha256": "0c04bb1c17cc7a6ed04ff13561347cdfadab82a48dd5c71fc09163febfd6d9a4"
+    },
+    {
+      "target": "CARS/WHEELS/GEOMETRY_KAIZER.BIN",
+      "restore_from": "CARS/WHEELS/GEOMETRY_KAIZER.BIN.before-global-wheels.bak",
+      "current_sha256": "b4c42309ce02da4f769f37835ce9e6032afa24297c639a43543253fdbf18c1c5",
+      "restore_sha256": "25dd48323f5d6e69dda81d40ffb08e6e2b5260835ebed272ee4cef22c7a75589"
+    },
+    {
+      "target": "CARS/WHEELS/GEOMETRY_KONIG.BIN",
+      "restore_from": "CARS/WHEELS/GEOMETRY_KONIG.BIN.before-global-wheels.bak",
+      "current_sha256": "92a882e30038f730057c692af3fc717d23aee3f3c3474fda729adac5a093688a",
+      "restore_sha256": "394a6bb23b822a64ebc3bcc66c992077564a5fce777760b88a31a9287f7d3334"
+    },
+    {
+      "target": "CARS/WHEELS/GEOMETRY_LEXANI.BIN",
+      "restore_from": "CARS/WHEELS/GEOMETRY_LEXANI.BIN.before-global-wheels.bak",
+      "current_sha256": "ff8b38879318f7a3ecb10deccdb072d8ae8e696603eeffcaca7952db2ed4567c",
+      "restore_sha256": "98a51a82c51de175fb3ec28d8fa47aa02626180045c8e11505843be43ef64585"
+    },
+    {
+      "target": "CARS/WHEELS/GEOMETRY_LOWENHART.BIN",
+      "restore_from": "CARS/WHEELS/GEOMETRY_LOWENHART.BIN.before-global-wheels.bak",
+      "current_sha256": "f6a0bf3a25cadbb0e212bf209863825a73b8e2abae68b0d8d288725e8bd7e95e",
+      "restore_sha256": "29bdb8f65258471d90dad94070c4b13b03458b5f38f5ae88e0944c821e793ab8"
+    },
+    {
+      "target": "CARS/WHEELS/GEOMETRY_MOMO.BIN",
+      "restore_from": "CARS/WHEELS/GEOMETRY_MOMO.BIN.before-global-wheels.bak",
+      "current_sha256": "4a64dd2d5c30af88637ac773e5b9dcaac4e238609025bad73e7374e13608ea0b",
+      "restore_sha256": "6ec307daf5efa08ca926de230a0c23d66dbb7749c2f074d8b832706586b5523b"
+    },
+    {
+      "target": "CARS/WHEELS/GEOMETRY_NFSU.BIN",
+      "restore_from": "CARS/WHEELS/GEOMETRY_NFSU.BIN.before-global-wheels.bak",
+      "current_sha256": "62b58361e809235e620b911e4724ebbd7f7a89efdcb4b0b3d6158629aff52b8a",
+      "restore_sha256": "a0f3d2f13d09ba4e65d17ee83f38c35086a75e02bd262b9b4cc9c163673d17cd"
+    },
+    {
+      "target": "CARS/WHEELS/GEOMETRY_OASIS.BIN",
+      "restore_from": "CARS/WHEELS/GEOMETRY_OASIS.BIN.before-global-wheels.bak",
+      "current_sha256": "67b803a878e9b05a7a1e988fa79ce9ffeca08173ec9fbcbfb2cc61e9b6baed1f",
+      "restore_sha256": "d651d1d1dd31e12d75b712ddfae34e78ff4c90230a06f66b78b6dfb19576e03b"
+    },
+    {
+      "target": "CARS/WHEELS/GEOMETRY_OZ.BIN",
+      "restore_from": "CARS/WHEELS/GEOMETRY_OZ.BIN.before-global-wheels.bak",
+      "current_sha256": "74c0fef6c089d3cf4f4068edb5490ae4d52a868f9807e3cf9ed060476f85ed0b",
+      "restore_sha256": "8f33189bb9216766a49c9b323d97b830cfaeaf00e3fcbb2f3b17a77631f0f099"
+    },
+    {
+      "target": "CARS/WHEELS/GEOMETRY_RACINGHART.BIN",
+      "restore_from": "CARS/WHEELS/GEOMETRY_RACINGHART.BIN.before-global-wheels.bak",
+      "current_sha256": "bf884c81d5686256ef761aff43ca424ddf274ad3f2763012c07d4852e85011ea",
+      "restore_sha256": "bd7c1e408bec32a09b007c2822ee7be5ce74f603c1472471f01cb4c00de4fb31"
+    },
+    {
+      "target": "CARS/WHEELS/GEOMETRY_ROTA.BIN",
+      "restore_from": "CARS/WHEELS/GEOMETRY_ROTA.BIN.before-global-wheels.bak",
+      "current_sha256": "7cbb6c68082ec4c0c1d92a34ab9b3ea3fe93c0ae5e170d8eb06b13e547cbd468",
+      "restore_sha256": "e9d6ebd54a809fbed3f2d94cc310f812e54b0a5004fab220e972bd5b70701e8a"
+    },
+    {
+      "target": "CARS/WHEELS/GEOMETRY_SPINNER.BIN",
+      "restore_from": "CARS/WHEELS/GEOMETRY_SPINNER.BIN.before-global-wheels.bak",
+      "current_sha256": "4e6e7aec5ff4a68ff0a07c356abc614a820ba297373e038aec477b4e8141d127",
+      "restore_sha256": "73b21f0fbd27d9becb90110e7e68aa81295b0380eee54ccfb53291b4fabd1442"
+    },
+    {
+      "target": "CARS/WHEELS/GEOMETRY_VOLK.BIN",
+      "restore_from": "CARS/WHEELS/GEOMETRY_VOLK.BIN.before-global-wheels.bak",
+      "current_sha256": "4087b99fbb60260eb0d7adadb7d6d12f33a60cc1f3e76b70e7c516c541c8dfa6",
+      "restore_sha256": "5a3b74c46bdd3dc901269a48447adf9f83aac28cf32c73655cdb89e264f5734a"
+    },
+    {
+      "target": "CARS/WHEELS/GEOMETRY_WELDWHEEL.BIN",
+      "restore_from": "CARS/WHEELS/GEOMETRY_WELDWHEEL.BIN.before-global-wheels.bak",
+      "current_sha256": "79f56fcf012336e8830ed6bb4d7560785c4a9ac7034cd40a1bb780de0a0d57fb",
+      "restore_sha256": "0c1d9726211fe47d871e90e120d8d7f64a7141cf9008bab9909bb1fdf1028c69"
+    },
+    {
+      "target": "CARS/WHEELS/GEOMETRY_WORK.BIN",
+      "restore_from": "CARS/WHEELS/GEOMETRY_WORK.BIN.before-global-wheels.bak",
+      "current_sha256": "82dc866475d9028c08717411ed8d1ddad865ca95c28395763435c8a43bac28a2",
+      "restore_sha256": "43b59aeab862d3c8cc8bafb4d8deb301623c97b7636d63f872c3579cb524ee71"
+    }
+  ],
+  "installed": false,
+  "scope": "Restore stock wheel and aftermarket rim geometry on ordinary cars; preserve collapsed Corolla and its character collision"
+}
