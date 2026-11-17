@@ -16,5 +16,9 @@
   "rigs": 1,
   "bones": 272,
   "images": 5,
-  "scope": "Exchange model with skins, no morphs, physics or animation; material translation requires visual review; not runtime-ready"
+  "scope": "Exchange model with skins, no morphs, physics or animation; material translation requires visual review; not runtime-ready",
+  "unmatched_vertices": 0,
+  "max_normalized_weight_l1_error": 3.4430237662330145e-08,
+  "comparison_policy": "Expected Blender export threshold: omit weights <=0.0001 then normalize; exact source weights preserved separately",
+  "exact_source_weight_sidecar": "exact-source-weights.json"
 }
