@@ -1,0 +1,21 @@
+{
+  "files": [
+    {
+      "target": "scripts/UmaRunner.asi",
+      "candidate": "modding/runtime/UmaRunner.asi",
+      "backup": "modding/runtime/UmaRunner.before-upright-headlights.asi",
+      "before_sha256": "6c56b6c8504dbdf7d0d300b839b460bb1eef2a06e57efa6aef06e74087e032b6",
+      "after_sha256": "c5c351dd01c51c5604635dedf15414eab1b74171cd99a8cf81115b022ae97aaa",
+      "bytes": 374691
+    }
+  ],
+  "installed": true,
+  "gameplay_verified": false,
+  "limits": [
+    "No fall/recovery animation yet; cancels roll/pitch visually only",
+    "Root uses initial support up direction and last completed frame; unknown scenery rebase resets support",
+    "Headlight projector uses geometric ownership within 0.6m, not native actor IDs; unknown cases remain unchanged",
+    "Reflection splash and residual flare effects not yet verified"
+  ],
+  "checkpoint": "39f325e"
+}

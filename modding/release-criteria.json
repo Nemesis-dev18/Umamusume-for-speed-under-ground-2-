@@ -4,7 +4,9 @@
   "selection": {
     "opaque_correctly_textured_character": false,
     "idle_without_import_pose": "Confirmed by user in real game: no import pose, slight idle movement",
-    "no_residual_car_wheel_or_shadow": true
+    "no_residual_car_wheel_or_shadow": true,
+    "character_label": "Kitasan Black confirmed by user",
+    "dedicated_portrait_badge": "Installed, real-game appearance pending"
   },
   "race": {
     "player_character_visible": true,
@@ -129,7 +131,8 @@
     "geometry_files": 63,
     "meshes": 5740,
     "transparent_tiremask": true,
-    "gameplay_verified": true
+    "gameplay_verified": true,
+    "latest_scope": "62 ordinary-car and custom-wheel resources restored from before-global-wheels backups; Corolla retains no native triangles"
   },
   "remaining_effects": {
     "smoke_removal_requested": true,
@@ -140,5 +143,16 @@
     "gameplay_verified": false,
     "exact_texture_filter_installed": true,
     "global_banks_modified": false
+  },
+  "visual_rollover": {
+    "installed": true,
+    "offline_tests_passed": true,
+    "gameplay_verified": false,
+    "fall_recovery_animation": false
+  },
+  "own_headlight_projector": {
+    "installed": true,
+    "offline_tests_passed": true,
+    "gameplay_verified": false
   }
 }
