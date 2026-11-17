@@ -1,0 +1,463 @@
+{
+  "profiles": 3,
+  "bytes": 16444,
+  "sha256": "00de104ee8b043bc16ee8e1276b3464ed928822dac1a85e14bdf1ef3da604cf1",
+  "candidate": "modding/staged-runtime/neon-identities.bin",
+  "target": "modding/runtime/neon-identities.bin",
+  "textures": [
+    {
+      "source": "CARS/240SX/TEXTURES.BIN",
+      "name": "240SX_NEON",
+      "descriptor_offset": 852,
+      "blob_offset": 716288,
+      "identity": 0,
+      "width": 128,
+      "height": 64,
+      "format": "DXT1",
+      "sha256": "38991d0d064b2100373e038ed167e40fd1791c69841c932b206289df06aee5e5"
+    },
+    {
+      "source": "CARS/3000GT/TEXTURES.BIN",
+      "name": "3000GT_NEON",
+      "descriptor_offset": 1308,
+      "blob_offset": 509696,
+      "identity": 0,
+      "width": 128,
+      "height": 64,
+      "format": "DXT1",
+      "sha256": "38991d0d064b2100373e038ed167e40fd1791c69841c932b206289df06aee5e5"
+    },
+    {
+      "source": "CARS/350Z/TEXTURES.BIN",
+      "name": "350Z_NEON",
+      "descriptor_offset": 1500,
+      "blob_offset": 425856,
+      "identity": 1,
+      "width": 128,
+      "height": 64,
+      "format": "DXT3",
+      "sha256": "fa9f1f4c4be3920047e87090d454cef441bdced0a1ed4a33971e09a99e905da0"
+    },
+    {
+      "source": "CARS/4DR_SEDAN/TEXTURES.BIN",
+      "name": "4DR_SEDAN_NEON",
+      "absent": true
+    },
+    {
+      "source": "CARS/4DR_SEDAN02/TEXTURES.BIN",
+      "name": "4DR_SEDAN02_NEON",
+      "absent": true
+    },
+    {
+      "source": "CARS/A3/TEXTURES.BIN",
+      "name": "A3_NEON",
+      "descriptor_offset": 820,
+      "blob_offset": 811776,
+      "identity": 0,
+      "width": 128,
+      "height": 64,
+      "format": "DXT1",
+      "sha256": "38991d0d064b2100373e038ed167e40fd1791c69841c932b206289df06aee5e5"
+    },
+    {
+      "source": "CARS/AMBULANCE/TEXTURES.BIN",
+      "name": "AMBULANCE_NEON",
+      "absent": true
+    },
+    {
+      "source": "CARS/AUDIO/TEXTURES.BIN",
+      "name": "AUDIO_NEON",
+      "absent": true
+    },
+    {
+      "source": "CARS/BRAKES/TEXTURES.BIN",
+      "name": "BRAKES_NEON",
+      "absent": true
+    },
+    {
+      "source": "CARS/BUS/TEXTURES.BIN",
+      "name": "BUS_NEON",
+      "absent": true
+    },
+    {
+      "source": "CARS/CELICA/TEXTURES.BIN",
+      "name": "CELICA_NEON",
+      "descriptor_offset": 1708,
+      "blob_offset": 506048,
+      "identity": 1,
+      "width": 128,
+      "height": 64,
+      "format": "DXT3",
+      "sha256": "fa9f1f4c4be3920047e87090d454cef441bdced0a1ed4a33971e09a99e905da0"
+    },
+    {
+      "source": "CARS/COROLLA/TEXTURES.BIN",
+      "name": "COROLLA_NEON",
+      "already_transparent": true
+    },
+    {
+      "source": "CARS/CORSA/TEXTURES.BIN",
+      "name": "CORSA_NEON",
+      "descriptor_offset": 1540,
+      "blob_offset": 602304,
+      "identity": 1,
+      "width": 128,
+      "height": 64,
+      "format": "DXT3",
+      "sha256": "fa9f1f4c4be3920047e87090d454cef441bdced0a1ed4a33971e09a99e905da0"
+    },
+    {
+      "source": "CARS/COUPE/TEXTURES.BIN",
+      "name": "COUPE_NEON",
+      "absent": true
+    },
+    {
+      "source": "CARS/ECLIPSE/TEXTURES.BIN",
+      "name": "ECLIPSE_NEON",
+      "descriptor_offset": 1780,
+      "blob_offset": 504512,
+      "identity": 1,
+      "width": 128,
+      "height": 64,
+      "format": "DXT3",
+      "sha256": "fa9f1f4c4be3920047e87090d454cef441bdced0a1ed4a33971e09a99e905da0"
+    },
+    {
+      "source": "CARS/ESCALADE/TEXTURES.BIN",
+      "name": "ESCALADE_NEON",
+      "descriptor_offset": 1428,
+      "blob_offset": 519360,
+      "identity": 2,
+      "width": 128,
+      "height": 64,
+      "format": "DXT1",
+      "sha256": "6d52b5dacf8adb854398bb452294c821751ff1e333d9702774995e601b85ce45"
+    },
+    {
+      "source": "CARS/EXHAUST/TEXTURES.BIN",
+      "name": "EXHAUST_NEON",
+      "absent": true
+    },
+    {
+      "source": "CARS/FIRETRUCK/TEXTURES.BIN",
+      "name": "FIRETRUCK_NEON",
+      "absent": true
+    },
+    {
+      "source": "CARS/FOCUS/TEXTURES.BIN",
+      "name": "FOCUS_NEON",
+      "descriptor_offset": 1924,
+      "blob_offset": 428800,
+      "identity": 1,
+      "width": 128,
+      "height": 64,
+      "format": "DXT3",
+      "sha256": "fa9f1f4c4be3920047e87090d454cef441bdced0a1ed4a33971e09a99e905da0"
+    },
+    {
+      "source": "CARS/G35/TEXTURES.BIN",
+      "name": "G35_NEON",
+      "descriptor_offset": 1852,
+      "blob_offset": 555200,
+      "identity": 0,
+      "width": 128,
+      "height": 64,
+      "format": "DXT1",
+      "sha256": "38991d0d064b2100373e038ed167e40fd1791c69841c932b206289df06aee5e5"
+    },
+    {
+      "source": "CARS/GOLF/TEXTURES.BIN",
+      "name": "GOLF_NEON",
+      "descriptor_offset": 2060,
+      "blob_offset": 457024,
+      "identity": 0,
+      "width": 128,
+      "height": 64,
+      "format": "DXT1",
+      "sha256": "38991d0d064b2100373e038ed167e40fd1791c69841c932b206289df06aee5e5"
+    },
+    {
+      "source": "CARS/GTO/TEXTURES.BIN",
+      "name": "GTO_NEON",
+      "descriptor_offset": 820,
+      "blob_offset": 706048,
+      "identity": 1,
+      "width": 128,
+      "height": 64,
+      "format": "DXT3",
+      "sha256": "fa9f1f4c4be3920047e87090d454cef441bdced0a1ed4a33971e09a99e905da0"
+    },
+    {
+      "source": "CARS/HATCHBACK/TEXTURES.BIN",
+      "name": "HATCHBACK_NEON",
+      "absent": true
+    },
+    {
+      "source": "CARS/HATCHBACK02/TEXTURES.BIN",
+      "name": "HATCHBACK02_NEON",
+      "absent": true
+    },
+    {
+      "source": "CARS/HUMMER/TEXTURES.BIN",
+      "name": "HUMMER_NEON",
+      "descriptor_offset": 1020,
+      "blob_offset": 424640,
+      "identity": 2,
+      "width": 128,
+      "height": 64,
+      "format": "DXT1",
+      "sha256": "6d52b5dacf8adb854398bb452294c821751ff1e333d9702774995e601b85ce45"
+    },
+    {
+      "source": "CARS/IMPREZAWRX/TEXTURES.BIN",
+      "name": "IMPREZAWRX_NEON",
+      "descriptor_offset": 1300,
+      "blob_offset": 819584,
+      "identity": 1,
+      "width": 128,
+      "height": 64,
+      "format": "DXT3",
+      "sha256": "fa9f1f4c4be3920047e87090d454cef441bdced0a1ed4a33971e09a99e905da0"
+    },
+    {
+      "source": "CARS/IS300/TEXTURES.BIN",
+      "name": "IS300_NEON",
+      "descriptor_offset": 1228,
+      "blob_offset": 515648,
+      "identity": 0,
+      "width": 128,
+      "height": 64,
+      "format": "DXT1",
+      "sha256": "38991d0d064b2100373e038ed167e40fd1791c69841c932b206289df06aee5e5"
+    },
+    {
+      "source": "CARS/LANCEREVO8/TEXTURES.BIN",
+      "name": "LANCEREVO8_NEON",
+      "descriptor_offset": 1892,
+      "blob_offset": 545408,
+      "identity": 1,
+      "width": 128,
+      "height": 64,
+      "format": "DXT3",
+      "sha256": "fa9f1f4c4be3920047e87090d454cef441bdced0a1ed4a33971e09a99e905da0"
+    },
+    {
+      "source": "CARS/MIATA/TEXTURES.BIN",
+      "name": "MIATA_NEON",
+      "descriptor_offset": 2268,
+      "blob_offset": 446400,
+      "identity": 0,
+      "width": 128,
+      "height": 64,
+      "format": "DXT1",
+      "sha256": "38991d0d064b2100373e038ed167e40fd1791c69841c932b206289df06aee5e5"
+    },
+    {
+      "source": "CARS/MINIVAN/TEXTURES.BIN",
+      "name": "MINIVAN_NEON",
+      "absent": true
+    },
+    {
+      "source": "CARS/MIRRORS_BODY/TEXTURES.BIN",
+      "name": "MIRRORS_BODY_NEON",
+      "absent": true
+    },
+    {
+      "source": "CARS/MIRRORS_HUMMER/TEXTURES.BIN",
+      "name": "MIRRORS_HUMMER_NEON",
+      "absent": true
+    },
+    {
+      "source": "CARS/MIRRORS_POST/TEXTURES.BIN",
+      "name": "MIRRORS_POST_NEON",
+      "absent": true
+    },
+    {
+      "source": "CARS/MIRRORS_SUV/TEXTURES.BIN",
+      "name": "MIRRORS_SUV_NEON",
+      "absent": true
+    },
+    {
+      "source": "CARS/MUSTANGGT/TEXTURES.BIN",
+      "name": "MUSTANGGT_NEON",
+      "descriptor_offset": 1132,
+      "blob_offset": 508352,
+      "identity": 0,
+      "width": 128,
+      "height": 64,
+      "format": "DXT1",
+      "sha256": "38991d0d064b2100373e038ed167e40fd1791c69841c932b206289df06aee5e5"
+    },
+    {
+      "source": "CARS/NAVIGATOR/TEXTURES.BIN",
+      "name": "NAVIGATOR_NEON",
+      "descriptor_offset": 1668,
+      "blob_offset": 539264,
+      "identity": 2,
+      "width": 128,
+      "height": 64,
+      "format": "DXT1",
+      "sha256": "6d52b5dacf8adb854398bb452294c821751ff1e333d9702774995e601b85ce45"
+    },
+    {
+      "source": "CARS/PANELVAN/TEXTURES.BIN",
+      "name": "PANELVAN_NEON",
+      "absent": true
+    },
+    {
+      "source": "CARS/PARCELVAN/TEXTURES.BIN",
+      "name": "PARCELVAN_NEON",
+      "absent": true
+    },
+    {
+      "source": "CARS/PEUGOT/TEXTURES.BIN",
+      "name": "PEUGOT_NEON",
+      "descriptor_offset": 1356,
+      "blob_offset": 857344,
+      "identity": 0,
+      "width": 128,
+      "height": 64,
+      "format": "DXT1",
+      "sha256": "38991d0d064b2100373e038ed167e40fd1791c69841c932b206289df06aee5e5"
+    },
+    {
+      "source": "CARS/PEUGOT106/TEXTURES.BIN",
+      "name": "PEUGOT106_NEON",
+      "descriptor_offset": 940,
+      "blob_offset": 693248,
+      "identity": 1,
+      "width": 128,
+      "height": 64,
+      "format": "DXT3",
+      "sha256": "fa9f1f4c4be3920047e87090d454cef441bdced0a1ed4a33971e09a99e905da0"
+    },
+    {
+      "source": "CARS/PICKUP/TEXTURES.BIN",
+      "name": "PICKUP_NEON",
+      "absent": true
+    },
+    {
+      "source": "CARS/PLATES/TEXTURES.BIN",
+      "name": "PLATES_NEON",
+      "absent": true
+    },
+    {
+      "source": "CARS/ROOF/TEXTURES.BIN",
+      "name": "ROOF_NEON",
+      "absent": true
+    },
+    {
+      "source": "CARS/RX7/TEXTURES.BIN",
+      "name": "RX7_NEON",
+      "descriptor_offset": 1308,
+      "blob_offset": 733504,
+      "identity": 0,
+      "width": 128,
+      "height": 64,
+      "format": "DXT1",
+      "sha256": "38991d0d064b2100373e038ed167e40fd1791c69841c932b206289df06aee5e5"
+    },
+    {
+      "source": "CARS/RX8/TEXTURES.BIN",
+      "name": "RX8_NEON",
+      "descriptor_offset": 1004,
+      "blob_offset": 870272,
+      "identity": 0,
+      "width": 128,
+      "height": 64,
+      "format": "DXT1",
+      "sha256": "38991d0d064b2100373e038ed167e40fd1791c69841c932b206289df06aee5e5"
+    },
+    {
+      "source": "CARS/SENTRA/TEXTURES.BIN",
+      "name": "SENTRA_NEON",
+      "descriptor_offset": 1588,
+      "blob_offset": 483904,
+      "identity": 0,
+      "width": 128,
+      "height": 64,
+      "format": "DXT1",
+      "sha256": "38991d0d064b2100373e038ed167e40fd1791c69841c932b206289df06aee5e5"
+    },
+    {
+      "source": "CARS/SKYLINE/TEXTURES.BIN",
+      "name": "SKYLINE_NEON",
+      "descriptor_offset": 1012,
+      "blob_offset": 856064,
+      "identity": 0,
+      "width": 128,
+      "height": 64,
+      "format": "DXT1",
+      "sha256": "38991d0d064b2100373e038ed167e40fd1791c69841c932b206289df06aee5e5"
+    },
+    {
+      "source": "CARS/SPOILER/TEXTURES.BIN",
+      "name": "SPOILER_NEON",
+      "absent": true
+    },
+    {
+      "source": "CARS/SPOILER_HATCH/TEXTURES.BIN",
+      "name": "SPOILER_HATCH_NEON",
+      "absent": true
+    },
+    {
+      "source": "CARS/SPOILER_SUV/TEXTURES.BIN",
+      "name": "SPOILER_SUV_NEON",
+      "absent": true
+    },
+    {
+      "source": "CARS/SUPRA/TEXTURES.BIN",
+      "name": "SUPRA_NEON",
+      "descriptor_offset": 1772,
+      "blob_offset": 526528,
+      "identity": 1,
+      "width": 128,
+      "height": 64,
+      "format": "DXT3",
+      "sha256": "fa9f1f4c4be3920047e87090d454cef441bdced0a1ed4a33971e09a99e905da0"
+    },
+    {
+      "source": "CARS/SUV/TEXTURES.BIN",
+      "name": "SUV_NEON",
+      "absent": true
+    },
+    {
+      "source": "CARS/TAXI/TEXTURES.BIN",
+      "name": "TAXI_NEON",
+      "absent": true
+    },
+    {
+      "source": "CARS/TAXI02/TEXTURES.BIN",
+      "name": "TAXI02_NEON",
+      "absent": true
+    },
+    {
+      "source": "CARS/TIBURON/TEXTURES.BIN",
+      "name": "TIBURON_NEON",
+      "descriptor_offset": 1836,
+      "blob_offset": 804352,
+      "identity": 1,
+      "width": 128,
+      "height": 64,
+      "format": "DXT3",
+      "sha256": "fa9f1f4c4be3920047e87090d454cef441bdced0a1ed4a33971e09a99e905da0"
+    },
+    {
+      "source": "CARS/TT/TEXTURES.BIN",
+      "name": "TT_NEON",
+      "descriptor_offset": 892,
+      "blob_offset": 495360,
+      "identity": 0,
+      "width": 128,
+      "height": 64,
+      "format": "DXT1",
+      "sha256": "38991d0d064b2100373e038ed167e40fd1791c69841c932b206289df06aee5e5"
+    },
+    {
+      "source": "CARS/WHEELS/TEXTURES.BIN",
+      "name": "WHEELS_NEON",
+      "absent": true
+    }
+  ],
+  "installed": false
+}

@@ -1,64 +1,71 @@
 {
-  "backup": "modding/backups/before-secondary-20261117-084501",
+  "backup": "modding/backups/before-secondary-20261117-091756",
   "files": [
     {
       "path": "modding/runtime/fleet/1068/secondary.bin",
-      "before": "641f859ceb77e9c8adbf3da0193cea5de46b7a20e4d3105c2cb847b02648b0e2",
-      "after": "7f7f00f50a57600fbafae289205cebc0a313342bf4d64d872cba1237b7d9f9d3",
+      "before": "7f7f00f50a57600fbafae289205cebc0a313342bf4d64d872cba1237b7d9f9d3",
+      "after": "3246e2e9738726719a0e64a2f8dcc056ff59ddff9288dcbcccc360bb72269383",
       "bytes": 4636,
-      "backup_path": "modding/backups/before-secondary-20261117-084501/modding/runtime/fleet/1068/secondary.bin.bak"
+      "backup_path": "modding/backups/before-secondary-20261117-091756/modding/runtime/fleet/1068/secondary.bin.bak"
     },
     {
       "path": "modding/runtime/fleet/1052/secondary.bin",
-      "before": "7c2599c156f40d222349495a61fff11474c66eb099ab1e047fc79365f26bff02",
-      "after": "675dada920eec1188ff12ddf91c4c4bef2b1f79f4f91fe0b5da713520c4e9f8f",
+      "before": "675dada920eec1188ff12ddf91c4c4bef2b1f79f4f91fe0b5da713520c4e9f8f",
+      "after": "983baea66449065a611cd7151867ca306127383c6ec70fda85c99a0c3f0eaac2",
       "bytes": 5344,
-      "backup_path": "modding/backups/before-secondary-20261117-084501/modding/runtime/fleet/1052/secondary.bin.bak"
+      "backup_path": "modding/backups/before-secondary-20261117-091756/modding/runtime/fleet/1052/secondary.bin.bak"
     },
     {
       "path": "modding/runtime/fleet/1032/secondary.bin",
-      "before": "08074aa4266d78947d92ed96b1d797d6d3f8acc06983d65a2de691481aabe6fc",
-      "after": "f21cb7d4957b852433b865e0c68b81893bfd1c35e2c71d11a0b1f937994e46bd",
+      "before": "f21cb7d4957b852433b865e0c68b81893bfd1c35e2c71d11a0b1f937994e46bd",
+      "after": "a9bd0c6adba779f0c0fd77032e1be97aac816f4e58f90c2640672fdf719dbfc6",
       "bytes": 4652,
-      "backup_path": "modding/backups/before-secondary-20261117-084501/modding/runtime/fleet/1032/secondary.bin.bak"
+      "backup_path": "modding/backups/before-secondary-20261117-091756/modding/runtime/fleet/1032/secondary.bin.bak"
     },
     {
       "path": "modding/runtime/fleet/1062/secondary.bin",
-      "before": "9e2a0b36f3ede87675b1cb4634e1b67a2d901d84b35fd73e9b92ecdcce20bf3e",
-      "after": "fdd7fbad2f8981f0a3a4e9bf6c1c051393c5057138d17731abe894d6d88fef5c",
+      "before": "fdd7fbad2f8981f0a3a4e9bf6c1c051393c5057138d17731abe894d6d88fef5c",
+      "after": "54078f74e88773c4cae561a2fca980d6e34f4aaefb07b8f484af902d035ad77d",
       "bytes": 5780,
-      "backup_path": "modding/backups/before-secondary-20261117-084501/modding/runtime/fleet/1062/secondary.bin.bak"
+      "backup_path": "modding/backups/before-secondary-20261117-091756/modding/runtime/fleet/1062/secondary.bin.bak"
     },
     {
       "path": "modding/runtime/fleet/1015/secondary.bin",
-      "before": "5d5b74b2fe2e3ac66f504558d808f3d2e7c4d46f5336a0bc32b19a34f137a598",
-      "after": "5d38faa61f3f42dedb9eb7907e3d890ec69a55e5a552b6df889954ead98df5fb",
+      "before": "5d38faa61f3f42dedb9eb7907e3d890ec69a55e5a552b6df889954ead98df5fb",
+      "after": "172e7bbca88dbb12e410d273314e7bebba0b4d08a5e9f2e9bd06fc621665c44e",
       "bytes": 4348,
-      "backup_path": "modding/backups/before-secondary-20261117-084501/modding/runtime/fleet/1015/secondary.bin.bak"
+      "backup_path": "modding/backups/before-secondary-20261117-091756/modding/runtime/fleet/1015/secondary.bin.bak"
     },
     {
       "path": "modding/runtime/fleet/1006/secondary.bin",
-      "before": "76b407d58cd0b816a95d70a73d64d32503c1bd6d6e84aed24b10b82eb77ed2c7",
-      "after": "1ac5e990a37fe43b0510998a6ad04c1572cd8db9ec2aa4aad42e83e96aa0e5b5",
+      "before": "1ac5e990a37fe43b0510998a6ad04c1572cd8db9ec2aa4aad42e83e96aa0e5b5",
+      "after": "d73639e75f3700925a9dce4d178c597affa9e23df54445884c298a365822954c",
       "bytes": 4168,
-      "backup_path": "modding/backups/before-secondary-20261117-084501/modding/runtime/fleet/1006/secondary.bin.bak"
+      "backup_path": "modding/backups/before-secondary-20261117-091756/modding/runtime/fleet/1006/secondary.bin.bak"
     },
     {
       "path": "modding/runtime/fleet/1058/secondary.bin",
-      "before": "2590a93c58d582b056ee66d30a1d838d40b36d295da3063774cca6308670bdd4",
-      "after": "2ff41a695c325a5f826b77a0896bd2638b2c9e38cbb0baf8236ed4355d6a80ca",
+      "before": "2ff41a695c325a5f826b77a0896bd2638b2c9e38cbb0baf8236ed4355d6a80ca",
+      "after": "96264f2c8b2cafb67c5d32f6d819df57d980a9b400e2b51029c342c11f904470",
       "bytes": 5560,
-      "backup_path": "modding/backups/before-secondary-20261117-084501/modding/runtime/fleet/1058/secondary.bin.bak"
+      "backup_path": "modding/backups/before-secondary-20261117-091756/modding/runtime/fleet/1058/secondary.bin.bak"
+    },
+    {
+      "path": "modding/runtime/neon-identities.bin",
+      "before": null,
+      "after": "00de104ee8b043bc16ee8e1276b3464ed928822dac1a85e14bdf1ef3da604cf1",
+      "bytes": 16444,
+      "backup_path": null
     },
     {
       "path": "scripts/UmaRunner.asi",
-      "before": "aa4a535a7692f0315a6982b853548e2797694b90e8ffe52e82880e0a19e9b47c",
-      "after": "80773184619cf7a69b54650abb5ec246d61acc2ae965b31a94a094ef250e35cc",
-      "bytes": 396058,
-      "backup_path": "modding/backups/before-secondary-20261117-084501/scripts/UmaRunner.asi.bak"
+      "before": "80773184619cf7a69b54650abb5ec246d61acc2ae965b31a94a094ef250e35cc",
+      "after": "a8e47d80d7a274016d4fd03c114e0ec8116ca1dbd454970a054b0e3ed1bc8ec0",
+      "bytes": 397630,
+      "backup_path": "modding/backups/before-secondary-20261117-091756/scripts/UmaRunner.asi.bak"
     }
   ],
   "installed": true,
   "gameplay_verified": false,
-  "checkpoint": "e91ec6c55bd83702099a6e15aa80cff991f3f5d0"
+  "checkpoint": "21902c128c2c537223b0686352ab13fabf4066a4"
 }

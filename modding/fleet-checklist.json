@@ -357,6 +357,18 @@
       "unmatched_actor_diagnostic": true,
       "cape_coherence_groups": true,
       "gameplay_verified": false
+    },
+    "tail_revision": {
+      "installed": true,
+      "cone_degrees": 8,
+      "quaternion_filter_seconds": 0.2,
+      "user_verified": false
     }
+  },
+  "neon_texture_filter": {
+    "installed": true,
+    "additional_profiles": 3,
+    "selectable_car_neon_textures_scanned": 29,
+    "user_verified": false
   }
 }

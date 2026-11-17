@@ -18,6 +18,9 @@ def main():
   sources.extend([(source/'model-atlas.umab',destination/'model.umab'),(source/'secondary.bin',destination/'secondary.bin')])
  module=ROOT/'modding/runtime/UmaRunner.asi';runtime=json.loads((ROOT/'modding/runtime/verification.json').read_text())
  if sha(module)!=runtime['sha256']['UmaRunner.asi']:raise RuntimeError('Module changed since verification')
+ neon_plan=json.loads((ROOT/'modding/neon-identities-plan.json').read_text());neon=ROOT/neon_plan['candidate']
+ if sha(neon)!=neon_plan['sha256']:raise RuntimeError('Neon identities changed since preparation')
+ sources.append((neon,ROOT/neon_plan['target']))
  sources.append((module,ROOT/'scripts/UmaRunner.asi'))
  sources=[(source,target) for source,target in sources if not target.exists() or sha(source)!=sha(target)]
  if not sources:print('All verified secondary files already installed');return

@@ -16,11 +16,11 @@ static int uma_secondary_load(FILE *file,const UmaMotion *asset,UmaSecondary *ou
  if(fgetc(file)!=EOF)goto done;
  for(unsigned i=0;i<c->nodes;i++){
   UmaSpring *n=c->node+i;float length=0;
-  if(n->bone>=c->bones || n->flags>16 || (i && n->bone<=c->node[i-1].bone) || (unsigned)n->first+n->count>c->refs)goto done;
+  if(n->bone>=c->bones || (n->flags&~0x11fu) || (n->flags&31)>16 || (i && n->bone<=c->node[i-1].bone) || (unsigned)n->first+n->count>c->refs)goto done;
   float values[10];memcpy(values,n->tip,sizeof(values));for(int k=0;k<10;k++)if(!isfinite(values[k]))goto done;
   for(int k=0;k<3;k++)length+=n->tip[k]*n->tip[k];
   if(length<1e-6f || length>.36f || n->hz<.1f || n->hz>10 || n->damping<.1f || n->damping>2 || n->gravity<0 || n->gravity>30 || n->radius<0 || n->radius>.2f || n->cone<.01f || n->cone>1.4f || n->wind<0 || n->wind>.1f || n->apply<0 || n->apply>1)goto done;
-  c->mask[n->bone]=1;if(n->flags)c->groups|=1u<<(n->flags-1);
+  c->mask[n->bone]=1;if(n->flags&31)c->groups|=1u<<((n->flags&31)-1);
  }
  for(unsigned i=0;i<c->bones;i++)if(asset->joint[i].parent>=0 && c->mask[asset->joint[i].parent])c->mask[i]=1;
  for(unsigned i=0;i<c->colliders;i++){
@@ -77,18 +77,19 @@ static int uma_secondary_step(const UmaSecondary *c,UmaSecondaryState *s,const U
    float local[3]={0},from[3],dot=0;for(int a=0;a<3;a++){from[a]=n->tip[a]/length;for(int k=0;k<3;k++)local[a]+=base[k*3+a]*(next[k]-origin[k])/length;dot+=from[a]*local[a];}
    float desired[4]={from[1]*local[2]-from[2]*local[1],from[2]*local[0]-from[0]*local[2],from[0]*local[1]-from[1]*local[0],1+dot};float norm=sqrtf(desired[0]*desired[0]+desired[1]*desired[1]+desired[2]*desired[2]+desired[3]*desired[3]);if(norm<1e-6f)return 0;
    for(int k=0;k<4;k++)desired[k]/=norm;
-   const float identity[4]={0,0,0,1};uma_quaternion_mix(identity,desired,n->apply,q);
+   const float identity[4]={0,0,0,1};float applied[4];uma_quaternion_mix(identity,desired,n->apply,applied);
+   if(n->flags&256)uma_quaternion_mix(q,applied,1-expf(-h/.2f),q);else memcpy(q,applied,16);
   }
   /* Linked cape panels share one bend per depth instead of stretching apart. */
   if(c->groups){
    for(unsigned group=1;group<=16;group++)if(c->groups&(1u<<(group-1))){
     float sum[4]={0};unsigned count=0;
-    for(unsigned i=0;i<c->nodes;i++)if(c->node[i].flags==group){const float *q=s->rotation+c->node[i].bone*4;for(int k=0;k<4;k++)sum[k]+=q[k];count++;}
+    for(unsigned i=0;i<c->nodes;i++)if((c->node[i].flags&31)==group){const float *q=s->rotation+c->node[i].bone*4;for(int k=0;k<4;k++)sum[k]+=q[k];count++;}
     float norm=sqrtf(sum[0]*sum[0]+sum[1]*sum[1]+sum[2]*sum[2]+sum[3]*sum[3]);if(!count || norm<1e-6f)return 0;
-    for(unsigned i=0;i<c->nodes;i++)if(c->node[i].flags==group)for(int k=0;k<4;k++)s->rotation[c->node[i].bone*4+k]=sum[k]/norm;
+    for(unsigned i=0;i<c->nodes;i++)if((c->node[i].flags&31)==group)for(int k=0;k<4;k++)s->rotation[c->node[i].bone*4+k]=sum[k]/norm;
    }
    if(!uma_motion_matrices(asset,pose->idle_phase,pose->run_phase,pose->run_blend,s->rotation,matrices))return 0;
-   for(unsigned i=0;i<c->nodes;i++)if(c->node[i].flags){const UmaSpring *n=c->node+i;float rest[3],tip[3];for(int k=0;k<3;k++)rest[k]=asset->joint[n->bone].rest[k]+n->tip[k];uma_secondary_point(matrices+n->bone*12,rest,tip);for(int k=0;k<3;k++){s->previous[i][k]+=tip[k]-s->tip[i][k];s->tip[i][k]=tip[k];}}
+   for(unsigned i=0;i<c->nodes;i++)if(c->node[i].flags&31){const UmaSpring *n=c->node+i;float rest[3],tip[3];for(int k=0;k<3;k++)rest[k]=asset->joint[n->bone].rest[k]+n->tip[k];uma_secondary_point(matrices+n->bone*12,rest,tip);for(int k=0;k<3;k++){s->previous[i][k]+=tip[k]-s->tip[i][k];s->tip[i][k]=tip[k];}}
   }
   s->revision++;
  }

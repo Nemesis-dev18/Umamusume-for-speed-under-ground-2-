@@ -487,7 +487,7 @@ static DWORD WINAPI runner_start(void *module){
  int textures_valid=SUCCEEDED(result);
  for(unsigned i=0;textures_valid && i<runner_model_count;i++){FILE *texture=_wfopen(runner_models[i].atlas,L"rb");IDirect3DTexture9 *decoded=NULL;textures_valid=texture && SUCCEEDED(uma_texture_load(device,texture,&decoded));if(texture)fclose(texture);if(decoded)IDirect3DTexture9_Release(decoded);}
  int installed=textures_valid && runner_install(device);
- if(installed){(void)uma_audio_start(root,runner_log);int effects=uma_effects_load(root);if(runner_log){fprintf(runner_log,"EFFECTS exact source textures ready=%d\n",effects);fflush(runner_log);}}
+ if(installed){(void)uma_audio_start(root,runner_log);int effects=uma_effects_load(root);if(runner_log){fprintf(runner_log,"EFFECTS exact source textures ready=%d profiles=%u\n",effects,uma_effect_count);fflush(runner_log);}}
  if(runner_log){fprintf(runner_log,"START native lighting runner installed=%d; graphics-derived speed uncalibrated; independent actor gait, spatial association; models=%u\n",installed,runner_model_count);fflush(runner_log);}
  if(device){IDirect3DDevice9_Release(device);}if(api){IDirect3D9_Release(api);}if(window){DestroyWindow(window);}
  if(!installed){runner_free_models();}return installed?0:1;

@@ -1,14 +1,31 @@
 #ifndef UMA_EFFECTS_H
 #define UMA_EFFECTS_H
 typedef struct {UINT width,height,bytes;D3DFORMAT format;BYTE pixels[16384];} UmaEffectTexture;
-static UmaEffectTexture uma_effects[8];
+static UmaEffectTexture uma_effects[16];
+static unsigned uma_effect_count=8;
 static int uma_effects_ready;
 static unsigned uma_effects_hidden;
+static void uma_effect_layout(D3DFORMAT format,UINT width,UINT height,UINT *row,UINT *rows){
+ int compressed=format==D3DFMT_DXT1 || format==D3DFMT_DXT3 || format==D3DFMT_DXT5;
+ *row=compressed?((width+3)/4)*(format==D3DFMT_DXT1?8:16):width*4;*rows=compressed?(height+3)/4:height;
+}
+static int uma_effect_neon_load(FILE *file){
+ uint32_t h[3];UmaEffectTexture *extra=calloc(8,sizeof(*extra));int valid=0;if(!extra)return 0;
+ if(!file || fread(h,4,3,file)!=3 || memcmp(h,"UMAE",4) || h[1]!=1 || !h[2] || h[2]>8)goto done;
+ for(unsigned i=0;i<h[2];i++){
+  uint32_t d[4];if(fread(d,4,4,file)!=4 || !d[0] || !d[1] || d[0]>512 || d[1]>512 || (d[2]!=D3DFMT_DXT1 && d[2]!=D3DFMT_DXT3 && d[2]!=D3DFMT_DXT5))goto done;
+  UINT row,rows;uma_effect_layout((D3DFORMAT)d[2],d[0],d[1],&row,&rows);if(d[3]!=row*rows || d[3]>sizeof(extra[i].pixels))goto done;
+  extra[i].width=d[0];extra[i].height=d[1];extra[i].format=(D3DFORMAT)d[2];extra[i].bytes=d[3];if(fread(extra[i].pixels,1,d[3],file)!=d[3])goto done;
+ }
+ if(fgetc(file)!=EOF)goto done;
+ memcpy(uma_effects+8,extra,h[2]*sizeof(*extra));uma_effect_count=8+h[2];valid=1;
+ done:free(extra);return valid;
+}
 static int uma_effects_load(const WCHAR *root){
  const WCHAR *names[]={L"GLOBAL\\InGameCommon.bun",L"GLOBAL\\InGameCommon.bun",L"GLOBAL\\GLOBALB.BUN",L"GLOBAL\\InGameCommon.bun",L"GLOBAL\\InGameCommon.bun",L"GLOBAL\\InGameCommon.bun",L"GLOBAL\\InGameCommon.bun",L"GLOBAL\\GLOBALB.BUN"};
  const long offsets[]={72704,78208,117632,404736,475648,794112,407424,499200};const UINT widths[]={64,128,64,64,64,64,64,128},heights[]={64,128,64,32,32,64,32,128};
  WCHAR path[4096];if(wcslen(root)>3800)return 0;
- uma_effects_ready=0;
+ uma_effects_ready=0;uma_effect_count=8;
  for(int i=0;i<8;i++){
   swprintf(path,4096,L"%ls\\%ls",root,names[i]);FILE *file=_wfopen(path,L"rb");if(!file)return 0;
   UINT bytes=i==6?2048:widths[i]*heights[i];int valid=!fseek(file,offsets[i],SEEK_SET) && fread(uma_effects[i].pixels,1,bytes,file)==bytes;fclose(file);if(!valid)return 0;
@@ -23,6 +40,7 @@ static int uma_effects_load(const WCHAR *root){
    uma_effects[i].bytes=8192;uma_effects[i].format=D3DFMT_A8R8G8B8;
   }
  }
+ swprintf(path,4096,L"%ls\\modding\\runtime\\neon-identities.bin",root);FILE *neon=_wfopen(path,L"rb");if(neon){int valid=uma_effect_neon_load(neon);fclose(neon);if(!valid)return 0;}
  return uma_effects_ready=1;
 }
 /* Cache managed immutable texture identities; every CPU write invalidates the owning texture. */
@@ -83,11 +101,11 @@ static int uma_effect_texture(IDirect3DTexture9 *texture){
  if(SUCCEEDED(IDirect3DTexture9_GetPrivateData(texture,&uma_effect_cache_guid,&tag,&bytes)) && bytes==sizeof(tag) && (tag==1 || tag==2)){uma_effect_cache_hits++;return tag==2;}
  D3DSURFACE_DESC desc;if(FAILED(IDirect3DTexture9_GetLevelDesc(texture,0,&desc)))return 0;
  int cache=desc.Pool==D3DPOOL_MANAGED && !(desc.Usage&(D3DUSAGE_DYNAMIC|D3DUSAGE_RENDERTARGET|D3DUSAGE_DEPTHSTENCIL)) && uma_effect_watch(texture),possible=0,match=0;
- for(int i=0;i<8;i++)if(desc.Width==uma_effects[i].width && desc.Height==uma_effects[i].height && desc.Format==uma_effects[i].format)possible=1;
+ for(unsigned i=0;i<uma_effect_count;i++)if(desc.Width==uma_effects[i].width && desc.Height==uma_effects[i].height && desc.Format==uma_effects[i].format)possible=1;
  if(possible){
   D3DLOCKED_RECT locked;uma_effect_reads++;if(FAILED(IDirect3DTexture9_LockRect(texture,0,&locked,NULL,D3DLOCK_READONLY)))return 0;
-  UINT row=desc.Width*4,rows=desc.Format==D3DFMT_DXT3?desc.Height/4:desc.Height;
-  for(int i=0;i<8 && !match;i++)if(desc.Width==uma_effects[i].width && desc.Height==uma_effects[i].height && desc.Format==uma_effects[i].format){
+  UINT row,rows;uma_effect_layout(desc.Format,desc.Width,desc.Height,&row,&rows);
+  for(unsigned i=0;i<uma_effect_count && !match;i++)if(desc.Width==uma_effects[i].width && desc.Height==uma_effects[i].height && desc.Format==uma_effects[i].format){
    int same=locked.Pitch>0 && (UINT)locked.Pitch>=row;
    for(UINT y=0;same && y<rows;y++)if(memcmp((BYTE*)locked.pBits+y*locked.Pitch,uma_effects[i].pixels+y*row,row))same=0;
    if(same)match=1;

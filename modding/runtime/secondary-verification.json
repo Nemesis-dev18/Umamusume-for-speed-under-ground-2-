@@ -2,31 +2,31 @@
   "cpu_solver": [
     {
       "id": 1068,
-      "output": "bones=155 springs=51 3600_frames_cpu_seconds=0.8637 motion=26198.5 max_absolute_vertex=1.705"
+      "output": "bones=155 springs=51 3600_frames_cpu_seconds=0.4589 motion=24961.3 max_absolute_vertex=1.705 tail_peak_degrees_per_second=38.278"
     },
     {
       "id": 1052,
-      "output": "bones=152 springs=56 3600_frames_cpu_seconds=0.9164 motion=36457.3 max_absolute_vertex=1.393"
+      "output": "bones=152 springs=56 3600_frames_cpu_seconds=0.5409 motion=35405.1 max_absolute_vertex=1.393 tail_peak_degrees_per_second=40.911"
     },
     {
       "id": 1032,
-      "output": "bones=146 springs=55 3600_frames_cpu_seconds=0.5968 motion=36062.0 max_absolute_vertex=1.609"
+      "output": "bones=146 springs=55 3600_frames_cpu_seconds=0.4829 motion=35029.4 max_absolute_vertex=1.609 tail_peak_degrees_per_second=39.366"
     },
     {
       "id": 1062,
-      "output": "bones=156 springs=68 3600_frames_cpu_seconds=0.7685 motion=28746.3 max_absolute_vertex=1.620"
+      "output": "bones=156 springs=68 3600_frames_cpu_seconds=0.7702 motion=27539.4 max_absolute_vertex=1.620 tail_peak_degrees_per_second=41.797"
     },
     {
       "id": 1015,
-      "output": "bones=148 springs=55 3600_frames_cpu_seconds=0.5024 motion=38010.3 max_absolute_vertex=1.601"
+      "output": "bones=148 springs=55 3600_frames_cpu_seconds=0.5073 motion=36995.2 max_absolute_vertex=1.601 tail_peak_degrees_per_second=42.065"
     },
     {
       "id": 1006,
-      "output": "bones=147 springs=50 3600_frames_cpu_seconds=0.4593 motion=30006.4 max_absolute_vertex=1.749"
+      "output": "bones=147 springs=50 3600_frames_cpu_seconds=0.4623 motion=28995.3 max_absolute_vertex=1.749 tail_peak_degrees_per_second=36.158"
     },
     {
       "id": 1058,
-      "output": "bones=156 springs=64 3600_frames_cpu_seconds=0.5280 motion=33497.3 max_absolute_vertex=1.558"
+      "output": "bones=156 springs=64 3600_frames_cpu_seconds=0.5355 motion=32433.5 max_absolute_vertex=1.558 tail_peak_degrees_per_second=38.571"
     }
   ],
   "routing": "PASS seven exact native models through runtime hook; distinct textures, reverse-order pixel identity, per-model actor gait/durations, stationary actor, impostor preservation, all-renderer reset and hook removal; not NFSU2 gameplay",
