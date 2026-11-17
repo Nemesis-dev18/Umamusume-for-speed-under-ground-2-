@@ -47,34 +47,52 @@ static unsigned runner_last_owned,runner_projected_references;
 static UmaMatrix runner_inverse_projection;
 static int runner_projection_valid;
 static float runner_frame_seconds=1.f/60;
+static int runner_camera_change(UmaMatrix *output){
+ static unsigned frame=UINT32_MAX,index;static UmaSceneKey key;static UmaMatrix matrix,change;static int cached;
+ if(frame!=runner_frames){frame=runner_frames;cached=0;}
+ if(cached && runner_previous_reference_count && index<runner_scene.references){
+  const UmaReference *entry=&runner_scene.reference[index];
+  if(!entry->ambiguous && !memcmp(&entry->key,&key,sizeof(key)) && !memcmp(&entry->matrix,&matrix,sizeof(matrix))){*output=change;return 1;}
+ }
+ cached=0;
+ for(unsigned now=0;now<runner_scene.references;now++)for(unsigned old=0;old<runner_previous_reference_count;old++){
+  const UmaReference *a=&runner_scene.reference[now],*b=&runner_previous_references[old];UmaMatrix inverse;
+  if(a->ambiguous || b->ambiguous || memcmp(&a->key,&b->key,sizeof(a->key)) || !uma_matrix_inverse(&b->matrix,&inverse))continue;
+  change=uma_matrix_product(&inverse,&a->matrix);if(!uma_rigid(&change))continue;
+  index=now;key=a->key;matrix=a->matrix;cached=1;*output=change;return 1;
+ }
+ return 0;
+}
 static UmaMotionState *runner_actor_pose(const UmaMatrix *view){
- float radius=fmaxf(4,120*runner_frame_seconds+.25f);int best=-1;float distance=radius*radius;
+ float radius=fmaxf(4,120*runner_frame_seconds+.25f);int best=-1;float distance=radius*radius;UmaMatrix camera;int rebased=runner_camera_change(&camera);
  for(int i=0;i<16;i++)if(runner_actors[i].used && runner_frames-runner_actors[i].seen<3){
-  float score=0,orientation=0;for(int k=0;k<3;k++){float d=view->m[3][k]-runner_actors[i].view.m[3][k];score+=d*d;orientation+=view->m[0][k]*runner_actors[i].view.m[0][k];}
+  UmaMatrix predicted=rebased?uma_matrix_product(&runner_actors[i].view,&camera):runner_actors[i].view;
+  float score=0,orientation=0;for(int k=0;k<3;k++){float d=view->m[3][k]-predicted.m[3][k];score+=d*d;orientation+=view->m[0][k]*predicted.m[0][k];}
   if(orientation>.5f && score<distance){best=i;distance=score;}
  }
  return best>=0?&runner_actors[best].state:&runner_idle_state;
 }
 /* Associate actors in one immutable scenery coordinate frame, independent of draw order. */
 /* shortcut: overlapping identical actors can be ambiguous; add native instance IDs before per-actor customization. */
-static RunnerActor *runner_actor_update(const UmaMatrix *bodies,unsigned count,float seconds){
+static RunnerActor *runner_actor_update(const UmaMatrix *bodies,unsigned count,float seconds,const UmaMatrix *camera){
  if(!isfinite(seconds) || seconds<=0 || seconds>.25f)return NULL;
  int handoff=!runner_scene.anchor_valid || !runner_actor_world_valid;
  runner_tracking_gap=runner_scene.anchor_valid?0:runner_tracking_gap+seconds;
  if(runner_scene.anchor_valid && memcmp(&runner_actor_anchor,&runner_scene.anchor_key,sizeof(runner_actor_anchor))){
-  int rebased=0;
-  for(unsigned i=0;runner_actor_world_valid && i<runner_previous_reference_count;i++){
-   UmaReference *reference=&runner_previous_references[i];UmaMatrix inverse;
+  int rebased=0;UmaMatrix change,inverse;
+  if(camera && runner_actor_world_valid && uma_matrix_inverse(&runner_scene.anchor,&inverse)){
+   UmaMatrix previous=uma_matrix_product(&runner_previous_anchor,camera);change=uma_matrix_product(&previous,&inverse);rebased=uma_rigid(&change);
+  }
+  for(unsigned i=0;!rebased && runner_actor_world_valid && i<runner_previous_reference_count;i++){
+   UmaReference *reference=&runner_previous_references[i];
    if(reference->ambiguous || memcmp(&reference->key,&runner_scene.anchor_key,sizeof(reference->key)) || !uma_matrix_inverse(&reference->matrix,&inverse))continue;
-   UmaMatrix change=uma_matrix_product(&runner_previous_anchor,&inverse);if(!uma_rigid(&change))continue;
-   for(int actor=0;actor<16;actor++)if(runner_actors[actor].used){
-    runner_actors[actor].world=uma_matrix_product(&runner_actors[actor].world,&change);
-    float velocity[3]={0};for(int r=0;r<3;r++)for(int c=0;c<3;c++)velocity[c]+=runner_actors[actor].velocity[r]*change.m[r][c];
-    memcpy(runner_actors[actor].velocity,velocity,sizeof(velocity));
-    float up[3]={0};for(int r=0;r<3;r++)for(int c=0;c<3;c++)up[c]+=runner_actors[actor].up[r]*change.m[r][c];memcpy(runner_actors[actor].up,up,sizeof(up));
-    float heading[3]={0};for(int r=0;r<3;r++)for(int c=0;c<3;c++)heading[c]+=runner_actors[actor].heading[r]*change.m[r][c];memcpy(runner_actors[actor].heading,heading,sizeof(heading));
-   }
-   rebased=1;break;
+   change=uma_matrix_product(&runner_previous_anchor,&inverse);rebased=uma_rigid(&change);
+  }
+  if(rebased)for(int actor=0;actor<16;actor++)if(runner_actors[actor].used){
+   runner_actors[actor].world=uma_matrix_product(&runner_actors[actor].world,&change);
+   float velocity[3]={0},up[3]={0},heading[3]={0};
+   for(int r=0;r<3;r++)for(int c=0;c<3;c++){velocity[c]+=runner_actors[actor].velocity[r]*change.m[r][c];up[c]+=runner_actors[actor].up[r]*change.m[r][c];heading[c]+=runner_actors[actor].heading[r]*change.m[r][c];}
+   memcpy(runner_actors[actor].velocity,velocity,sizeof(velocity));memcpy(runner_actors[actor].up,up,sizeof(up));memcpy(runner_actors[actor].heading,heading,sizeof(heading));
   }
   if(!rebased){handoff=1;for(int i=0;i<16;i++)runner_actors[i].up_valid=0;}
   runner_actor_anchor=runner_scene.anchor_key;
@@ -162,36 +180,11 @@ static int runner_worldview(IDirect3DDevice9 *device,const UmaShaderEntry *entry
  for(int r=0;r<4;r++)for(int c=0;c<4;c++)if(!isfinite(matrix.m[r][c]))return 0;
  *output=matrix;return 1;
 }
-/* The projector eye is inverse(HeadlightWVP) applied to homogeneous (0,0,1,0). */
-static int runner_character_projector(const UmaMatrix *headlight,const UmaMatrix *geometry_view){
- UmaMatrix inverse;if(!uma_matrix_inverse(headlight,&inverse) || fabsf(inverse.m[2][3])<1e-6f)return 0;
- float eye[3],view_eye[3];for(int c=0;c<3;c++)eye[c]=inverse.m[2][c]/inverse.m[2][3];
- for(int c=0;c<3;c++){view_eye[c]=geometry_view->m[3][c];for(int k=0;k<3;k++)view_eye[c]+=eye[k]*geometry_view->m[k][c];if(!isfinite(view_eye[c]))return 0;}
- /* Rebase last frame's actor views through a shared static draw, so camera cuts cannot claim ownership. */
- for(unsigned now=0;now<runner_scene.references;now++)for(unsigned old=0;old<runner_previous_reference_count;old++){
-  const UmaReference *a=&runner_scene.reference[now],*b=&runner_previous_references[old];
-  if(a->ambiguous || b->ambiguous || memcmp(&a->key,&b->key,sizeof(a->key)) || !uma_matrix_inverse(&b->matrix,&inverse))continue;
-  UmaMatrix camera=uma_matrix_product(&inverse,&a->matrix);if(!uma_rigid(&camera))continue;
-  for(int i=0;i<16;i++)if(runner_actors[i].used && runner_frames-runner_actors[i].seen<=2){
-   const RunnerActor *actor=&runner_actors[i];float predicted[3],position[3],distance=0;
-   for(int c=0;c<3;c++){
-    predicted[c]=actor->view.m[3][c]+.75f*actor->view.m[2][c];
-    for(int k=0;k<3;k++)predicted[c]+=actor->velocity[k]*runner_frame_seconds*runner_previous_anchor.m[k][c];
-   }
-   for(int c=0;c<3;c++){position[c]=camera.m[3][c];for(int k=0;k<3;k++)position[c]+=predicted[k]*camera.m[k][c];float delta=view_eye[c]-position[c];distance+=delta*delta;}
-   if(distance<.36f)return 1;
-  }
-  return 0;
- }
- return 0;
-}
 typedef struct {float saved[16];int reg,active;} RunnerHeadlightScope;
 static unsigned runner_hidden_headlights;
 static void runner_headlight_begin(IDirect3DDevice9 *device,RunnerHeadlightScope *scope){
- HRESULT result;UmaShaderEntry *entry=uma_shader_get(&runner_renderer.shaders,device,&result);UmaMatrix light,view;
- if(FAILED(result) || !entry || entry->headlight<0 || !runner_worldview(device,entry,&view) || FAILED(IDirect3DDevice9_GetVertexShaderConstantF(device,(UINT)entry->headlight,scope->saved,4)))return;
- for(int r=0;r<4;r++)for(int c=0;c<4;c++)light.m[r][c]=scope->saved[c*4+r];
- if(!runner_character_projector(&light,&view))return;
+ HRESULT result;UmaShaderEntry *entry=uma_shader_get(&runner_renderer.shaders,device,&result);
+ if(FAILED(result) || !entry || entry->headlight<0 || FAILED(IDirect3DDevice9_GetVertexShaderConstantF(device,(UINT)entry->headlight,scope->saved,4)))return;
  /* A negative projector depth samples the zero end of the native clip ramp; base scene lighting is untouched. */
  float off[16]={0};off[15]=-100;
  if(SUCCEEDED(IDirect3DDevice9_SetVertexShaderConstantF(device,(UINT)entry->headlight,off,4))){scope->reg=entry->headlight;scope->active=1;runner_hidden_headlights++;}
@@ -269,7 +262,8 @@ static int runner_wheel_draw(IDirect3DDevice9 *device,D3DPRIMITIVETYPE type,UINT
  HRESULT status;UmaShaderEntry *entry=uma_shader_get(&runner_renderer.shaders,device,&status);UmaMatrix worldview;if(FAILED(status) || !runner_worldview(device,entry,&worldview))return 0;
  int match=runner_root_attachment(device,entry,&worldview,vertices);for(unsigned i=0;!match && i<runner_scene.bodies;i++)if(uma_corolla_wheel(&worldview,&runner_scene.body[i]) || (entry && entry->diffuse_min>=0 && uma_corolla_side_attachment(&worldview,&runner_scene.body[i]))){match=1;break;}
  UmaVertexBounds decoded={{NAN,NAN,NAN},{NAN,NAN,NAN}};
- if(!match)match=runner_vertex_wheels(device,vertices,data,stride,first,&worldview,&decoded);
+ /* shortcut: CPU-baked tire billboards have at most 32 vertices; native wheel meshes use their socket transform. */
+ if(!match && vertices<=32)match=runner_vertex_wheels(device,vertices,data,stride,first,&worldview,&decoded);
  if(runner_log && runner_tire_candidates<96){
   UINT shader=entry?entry->bytes:0;int known=0,racing=runner_scene.bodies>2;
   for(unsigned i=0;i<runner_tire_candidates;i++)if(runner_wheel_reports[i].vertices==vertices && runner_wheel_reports[i].primitives==triangles && runner_wheel_reports[i].shader==shader && runner_wheel_reports[i].method==method && runner_wheel_reports[i].match==match && runner_wheel_reports[i].racing==racing)known=1;
@@ -361,8 +355,9 @@ static HRESULT WINAPI runner_present(IDirect3DDevice9 *device,const RECT *source
  uma_selection_finish(device,bodies);
  UmaMatrix actor_bodies[16];memcpy(actor_bodies,runner_scene.body,bodies*sizeof(*actor_bodies));
  UmaReference current_references[96];unsigned current_reference_count=runner_scene.references;memcpy(current_references,runner_scene.reference,current_reference_count*sizeof(*current_references));
+ UmaMatrix camera_change;int camera_valid=runner_camera_change(&camera_change);
  runner_speed_valid=uma_scene_finish(&runner_scene,seconds,&runner_speed);
- float previous_phase=runner_state.run_phase;RunnerActor *primary=runner_actor_update(actor_bodies,bodies,seconds);
+ float previous_phase=runner_state.run_phase;RunnerActor *primary=runner_actor_update(actor_bodies,bodies,seconds,camera_valid?&camera_change:NULL);
  if(runner_scene.anchor_valid){runner_previous_anchor=runner_scene.anchor;runner_previous_reference_count=current_reference_count;memcpy(runner_previous_references,current_references,current_reference_count*sizeof(*current_references));}
  runner_speed_valid=primary!=NULL;runner_speed=primary?primary->speed:0;
  if(seconds>0 && seconds<=.25f){
@@ -372,7 +367,7 @@ static HRESULT WINAPI runner_present(IDirect3DDevice9 *device,const RECT *source
  }
  runner_frames++;
  if(runner_log && runner_frames%120==0){
-  fprintf(runner_log,"FRAME %u candidates=%u owned=%u replaced=%u shaderFailures=%u references=%u bodies=%u graphicsSpeedValid=%d graphicsSpeed=%.4f blend=%.4f projectionValid=%d recoveredSceneRefs=%u hiddenWheels=%u groups=%u best=%u second=%u hoofPlayed=%u audioActive=%d hiddenEffects=%u hiddenHeadlights=%u\n",runner_frames,runner_candidates,runner_owned,runner_replaced,runner_shader_failures,references,bodies,runner_speed_valid,runner_speed,runner_state.run_blend,runner_projection_valid,runner_projected_references,runner_hidden_wheels,groups,best_votes,second_votes,uma_hoof_played,uma_audio_active,uma_effects_hidden,runner_hidden_headlights);fflush(runner_log);
+  fprintf(runner_log,"FRAME %u candidates=%u owned=%u replaced=%u shaderFailures=%u references=%u bodies=%u graphicsSpeedValid=%d graphicsSpeed=%.4f blend=%.4f projectionValid=%d recoveredSceneRefs=%u hiddenWheels=%u groups=%u best=%u second=%u hoofPlayed=%u audioActive=%d hiddenEffects=%u hiddenHeadlights=%u effectReads=%u effectCacheHits=%u\n",runner_frames,runner_candidates,runner_owned,runner_replaced,runner_shader_failures,references,bodies,runner_speed_valid,runner_speed,runner_state.run_blend,runner_projection_valid,runner_projected_references,runner_hidden_wheels,groups,best_votes,second_votes,uma_hoof_played,uma_audio_active,uma_effects_hidden,runner_hidden_headlights,uma_effect_reads,uma_effect_cache_hits);fflush(runner_log);
   for(int i=0;i<16;i++)if(runner_actors[i].used && runner_frames-runner_actors[i].seen<=2)fprintf(runner_log,"ACTOR slot=%d speed=%.4f blend=%.4f position=%.4f,%.4f,%.4f\n",i,runner_actors[i].speed,runner_actors[i].state.run_blend,runner_actors[i].world.m[3][0],runner_actors[i].world.m[3][1],runner_actors[i].world.m[3][2]);
   if(ftell(runner_log)>2*1024*1024){fclose(runner_log);runner_log=NULL;}
  }
@@ -399,7 +394,7 @@ static int runner_remove(void){
  void **table=runner_table;DWORD protection;
  if(table[81]!=(void*)runner_primitive || table[83]!=(void*)runner_primitive_up || table[84]!=(void*)runner_indexed_up || table[82]!=(void*)runner_draw || table[17]!=(void*)runner_present || table[16]!=(void*)runner_reset || !VirtualProtect(table+16,(84-16+1)*sizeof(void*),PAGE_READWRITE,&protection))return 0;
  uma_audio_close();uma_selection_release();uma_d3d_close(&runner_renderer);InterlockedExchangePointer(table+81,(void*)runner_original_primitive);InterlockedExchangePointer(table+83,(void*)runner_original_primitive_up);InterlockedExchangePointer(table+84,(void*)runner_original_indexed_up);InterlockedExchangePointer(table+82,(void*)runner_original_draw);InterlockedExchangePointer(table+17,(void*)runner_original_present);InterlockedExchangePointer(table+16,(void*)runner_original_reset);
- DWORD ignored;VirtualProtect(table+16,(84-16+1)*sizeof(void*),protection,&ignored);runner_table=NULL;return uma_upload_remove();
+ DWORD ignored;VirtualProtect(table+16,(84-16+1)*sizeof(void*),protection,&ignored);runner_table=NULL;uma_effects_remove();return uma_upload_remove();
 }
 #else
 static DWORD WINAPI runner_start(void *module){

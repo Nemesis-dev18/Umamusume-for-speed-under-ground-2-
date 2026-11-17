@@ -27,18 +27,6 @@ int main(void){
   assert(runner_actors[0].world.m[3][0]==23);
  }
  memset(runner_actors,0,sizeof(runner_actors));puts("PASS visual root: full roll/pitch cancellation with position unchanged");
- UmaMatrix light=headlight_fixture(),identity={0};for(int k=0;k<4;k++)identity.m[k][k]=1;
- runner_previous_reference_count=runner_scene.references=1;
- runner_previous_references[0]=(UmaReference){.matrix=identity,.key={.buffer=123}};
- runner_scene.reference[0]=runner_previous_references[0];runner_previous_anchor=identity;
- runner_actors[0].used=1;runner_actors[0].view=identity;runner_actors[0].view.m[3][0]=10;
- assert(runner_character_projector(&light,&identity));
- UmaMatrix cut=identity;cut.m[0][0]=cut.m[1][1]=0;cut.m[0][1]=1;cut.m[1][0]=-1;cut.m[3][0]=42;cut.m[3][1]=-31;
- runner_scene.reference[0].matrix=cut;assert(runner_character_projector(&light,&cut));
- runner_actors[0].view.m[3][0]+=5;assert(!runner_character_projector(&light,&cut));
- runner_scene.reference[0].key.buffer=999;assert(!runner_character_projector(&light,&cut));
- runner_scene=(UmaSceneSpeed){0};runner_previous_reference_count=0;memset(runner_actors,0,sizeof(runner_actors));
- puts("PASS headlight projector ownership: inverse projection survives a camera cut; foreign car and missing shared reference fail open");
  /* A stationary actor must remain idle while another runs and the camera orbits. */
  runner_scene.anchor_key=(UmaSceneKey){.buffer=777};runner_scene.anchor_valid=1;
  for(int f=0;f<180;f++){
@@ -48,7 +36,7 @@ int main(void){
   moving.m[3][2]=(moving.m[3][0]-10)*.3f;moving.m[0][0]=moving.m[2][2]=cosf(.3f);moving.m[0][2]=sinf(.3f);moving.m[2][0]=-sinf(.3f);
   UmaMatrix still_view=uma_matrix_product(&stationary,&camera),run_view=uma_matrix_product(&moving,&camera),actors[2];actors[f&1]=still_view;actors[!(f&1)]=run_view;
   UmaMatrix other_anchor=camera;for(int k=0;k<3;k++)other_anchor.m[3][k]+=37*camera.m[0][k]-12*camera.m[1][k];
-  runner_scene.anchor=f<80?camera:other_anchor;runner_scene.anchor_key.buffer=f<80?777:(f<90?778:779);runner_scene.anchor_valid=f!=60 && f!=61;runner_frames=100+(unsigned)f;assert(runner_actor_update(actors,2,.01f));
+  runner_scene.anchor=f<80?camera:other_anchor;runner_scene.anchor_key.buffer=f<80?777:(f<90?778:779);runner_scene.anchor_valid=f!=60 && f!=61;runner_frames=100+(unsigned)f;assert(runner_actor_update(actors,2,.01f,NULL));
   UmaMotionState *still=runner_actor_pose(&still_view),*running=runner_actor_pose(&run_view);
   assert(still!=running && still!=&runner_idle_state && running!=&runner_idle_state);assert(still->run_blend<.001f);
   if(f==99)assert(running->run_blend>.99f);
@@ -71,7 +59,7 @@ int main(void){
   actor.m[0][0]=actor.m[2][2]=cosf(pitch);actor.m[0][2]=sinf(pitch);actor.m[2][0]=-sinf(pitch);
   camera.m[3][0]=-time*25;camera.m[3][1]=-5;camera.m[3][2]=-2;
   UmaMatrix view=uma_matrix_product(&actor,&camera);runner_scene.anchor=camera;runner_scene.anchor_valid=1;runner_scene.anchor_key=(UmaSceneKey){.buffer=900};runner_frames=1000+(unsigned)frame;
-  RunnerActor *tracked=runner_actor_update(&view,1,.01f);assert(tracked);
+  RunnerActor *tracked=runner_actor_update(&view,1,.01f,NULL);assert(tracked);
   if(frame>40){assert(tracked->state.run_blend>.9f);assert(tracked->state.run_phase!=last_phase);assert(tracked->speed>20);}
   last_phase=tracked->state.run_phase;
  }
@@ -81,6 +69,14 @@ int main(void){
  assert(runner_actor_pose(&fast_view)==&fast->state);
  fast_view.m[3][0]+=100;assert(runner_actor_pose(&fast_view)==&runner_idle_state);runner_frame_seconds=1.f/60;
  puts("PASS pose lookup admits six-meter high-speed frame displacement but rejects a remote actor");
+ /* A cinematic camera cut must not turn a moving actor into the idle fallback. */
+ UmaMatrix old_camera={0},cut_camera={0};for(int k=0;k<4;k++)old_camera.m[k][k]=cut_camera.m[k][k]=1;
+ cut_camera.m[0][0]=cut_camera.m[1][1]=0;cut_camera.m[0][1]=1;cut_camera.m[1][0]=-1;cut_camera.m[3][0]=100;
+ runner_frames++;runner_scene.references=runner_previous_reference_count=1;
+ runner_previous_references[0]=(UmaReference){.matrix=old_camera,.key={.buffer=456}};runner_scene.reference[0]=(UmaReference){.matrix=cut_camera,.key={.buffer=456}};
+ fast->seen=runner_frames;UmaMatrix after_cut=uma_matrix_product(&fast->view,&cut_camera);
+ assert(runner_actor_pose(&after_cut)==&fast->state);after_cut.m[3][2]+=1000;assert(runner_actor_pose(&after_cut)==&runner_idle_state);
+ puts("PASS pose association through a 90-degree camera cut and 100m view translation; distant impostor still rejected");
  runner_scene=(UmaSceneSpeed){0};memset(runner_actors,0,sizeof(runner_actors));runner_frames=0;
  FILE *asset=fopen("modding/runtime/kitasan.umab","rb");assert(asset);assert(uma_motion_load(asset,&runner_motion));fclose(asset);
  InitializeCriticalSection(&runner_lock);runner_log=fopen("modding/runtime/integration-test/runner.log","w");assert(runner_log);wcscpy(runner_atlas,L"modding\\runtime\\atlas.dds");
@@ -88,16 +84,19 @@ int main(void){
  D3DPRESENT_PARAMETERS pp={0};pp.Windowed=TRUE;pp.SwapEffect=D3DSWAPEFFECT_DISCARD;pp.hDeviceWindow=window;pp.BackBufferWidth=640;pp.BackBufferHeight=480;pp.BackBufferFormat=D3DFMT_A8R8G8B8;pp.EnableAutoDepthStencil=TRUE;pp.AutoDepthStencilFormat=D3DFMT_D24S8;
  IDirect3DDevice9 *device=NULL;CHECK(IDirect3D9_CreateDevice(api,0,D3DDEVTYPE_HAL,window,D3DCREATE_HARDWARE_VERTEXPROCESSING,&pp,&device));IDirect3DDevice9 *bootstrap=NULL;D3DPRESENT_PARAMETERS init=pp;init.EnableAutoDepthStencil=FALSE;CHECK(IDirect3D9_CreateDevice(api,0,D3DDEVTYPE_HAL,window,D3DCREATE_SOFTWARE_VERTEXPROCESSING,&init,&bootstrap));assert(runner_install(bootstrap));IDirect3DDevice9_Release(bootstrap);
  WCHAR effect_root[4096];assert(GetCurrentDirectoryW(4096,effect_root));assert(uma_effects_load(effect_root));
- for(int effect=0;effect<7;effect++){
+ for(int effect=0;effect<8;effect++){
   IDirect3DTexture9 *sample=NULL;UINT width=uma_effects[effect].width;CHECK(IDirect3DDevice9_CreateTexture(device,width,uma_effects[effect].height,1,0,uma_effects[effect].format,D3DPOOL_MANAGED,&sample,NULL));
   D3DLOCKED_RECT lock;CHECK(IDirect3DTexture9_LockRect(sample,0,&lock,NULL,0));for(UINT y=0;y<(uma_effects[effect].format==D3DFMT_DXT3?uma_effects[effect].height/4:uma_effects[effect].height);y++)memcpy((BYTE*)lock.pBits+y*lock.Pitch,uma_effects[effect].pixels+y*width*4,width*4);CHECK(IDirect3DTexture9_UnlockRect(sample,0));
-  assert(uma_effect_texture(sample));CHECK(IDirect3DDevice9_SetTexture(device,0,(IDirect3DBaseTexture9*)sample));assert(uma_effect_draw(device));
+  assert(uma_effect_texture(sample));unsigned cached_reads=uma_effect_reads;for(int repeat=0;repeat<1000;repeat++)assert(uma_effect_texture(sample));assert(uma_effect_reads==cached_reads);CHECK(IDirect3DDevice9_SetTexture(device,0,(IDirect3DBaseTexture9*)sample));assert(uma_effect_draw(device));
   IDirect3DBaseTexture9 *retained=NULL;CHECK(IDirect3DDevice9_GetTexture(device,0,&retained));assert(retained==(IDirect3DBaseTexture9*)sample);IDirect3DBaseTexture9_Release(retained);
   CHECK(IDirect3DTexture9_LockRect(sample,0,&lock,NULL,0));((BYTE*)lock.pBits)[0]^=1;CHECK(IDirect3DTexture9_UnlockRect(sample,0));assert(!uma_effect_texture(sample));assert(!uma_effect_draw(device));
+  IDirect3DSurface9 *surface=NULL;CHECK(IDirect3DTexture9_GetSurfaceLevel(sample,0,&surface));
+  CHECK(IDirect3DSurface9_LockRect(surface,&lock,NULL,0));((BYTE*)lock.pBits)[0]^=1;CHECK(IDirect3DSurface9_UnlockRect(surface));assert(uma_effect_texture(sample));
+  IDirect3DSurface9_Release(surface);
   CHECK(IDirect3DDevice9_SetTexture(device,0,NULL));IDirect3DTexture9_Release(sample);
  }
- assert(uma_effects_hidden==7);uma_effects_ready=0;
- puts("PASS all seven exact effect textures match compressed rows, one-byte impostors pass through, bindings preserved");
+ assert(uma_effects_hidden==8);uma_effects_ready=0;
+ puts("PASS eight exact effect textures: 8000 cached queries add zero readbacks; texture and surface writes invalidate positive/negative cache; impostors and bindings preserved");
  IDirect3DVertexBuffer9 *vb=NULL,*other=NULL;UINT bytes=runner_motion.vertices*36;void *mapped=NULL;
  CHECK(IDirect3DDevice9_CreateVertexBuffer(device,bytes+72,D3DUSAGE_DYNAMIC|D3DUSAGE_WRITEONLY,0,D3DPOOL_DEFAULT,&vb,NULL));CHECK(IDirect3DVertexBuffer9_Lock(vb,0,0,&mapped,D3DLOCK_DISCARD));memset(mapped,0,bytes+72);memcpy((BYTE*)mapped+72,runner_motion.rest,bytes);CHECK(IDirect3DVertexBuffer9_Unlock(vb));assert(uma_upload_matches_at(vb,72));
  CHECK(IDirect3DDevice9_CreateVertexBuffer(device,bytes,D3DUSAGE_DYNAMIC|D3DUSAGE_WRITEONLY,0,D3DPOOL_DEFAULT,&other,NULL));CHECK(IDirect3DVertexBuffer9_Lock(other,0,0,&mapped,D3DLOCK_DISCARD));memcpy(mapped,runner_motion.rest,bytes);((BYTE*)mapped)[bytes-1]^=1;CHECK(IDirect3DVertexBuffer9_Unlock(other));assert(!uma_upload_is_character(other));
@@ -115,6 +114,7 @@ int main(void){
   for(int i=0;i<640*480;i++)if(pixels[i]!=0xff252a32){changed++;if(pixels[i]!=0xffffffff)colored++;unsigned r=(pixels[i]>>16)&255,g=(pixels[i]>>8)&255,b=pixels[i]&255;if(g>25 && b>25)not_red++;if(r+g+b>60 && (abs((int)r-(int)b)>8 || abs((int)r-(int)g)>8))textured++;}
   assert(changed>1000);if(kind==1)assert(colored==0);else{assert(colored>1000 && textured>1000 && not_red>100);float restored_paint[4];CHECK(IDirect3DDevice9_GetVertexShaderConstantF(device,18,restored_paint,1));assert(!memcmp(restored_paint,paint,sizeof(paint)));save_ppm("modding/runtime/integration-test/replaced.ppm",pixels);}free(pixels);
  }
+ UmaMatrix light=headlight_fixture(),identity={0};for(int k=0;k<4;k++)identity.m[k][k]=1;
  /* Exercise the real DIP wrapper, including constant restoration after a failed native draw. */
  float before_headlight[256][4];CHECK(IDirect3DDevice9_GetVertexShaderConstantF(device,0,&before_headlight[0][0],256));
  IDirect3DVertexShader9 *headlight_shader=NULL;CHECK(IDirect3DDevice9_CreateVertexShader(device,uma_vs_7,&headlight_shader));
@@ -126,13 +126,13 @@ int main(void){
  runner_scene.references=runner_previous_reference_count=1;runner_scene.reference[0]=(UmaReference){.matrix=identity,.key={.buffer=123}};runner_previous_references[0]=runner_scene.reference[0];runner_previous_anchor=identity;
  UmaDrawIndexed real_draw=runner_original_draw;runner_original_draw=headlight_probe;
  for(int pass=0;pass<3;pass++){
-  headlight_expected=pass!=1;headlight_fail=pass==2;runner_actors[0].view.m[3][0]=pass==1?15:10;
+  headlight_expected=1;headlight_fail=pass==2;runner_actors[0].view.m[3][0]=pass==1?15:10;
   CHECK(IDirect3DDevice9_BeginScene(device));HRESULT status=IDirect3DDevice9_DrawIndexedPrimitive(device,D3DPT_TRIANGLELIST,0,0,runner_motion.vertices,0,runner_motion.indices/3);assert(status==(headlight_fail?E_FAIL:S_OK));CHECK(IDirect3DDevice9_EndScene(device));
   float restored[16];CHECK(IDirect3DDevice9_GetVertexShaderConstantF(device,4,restored,4));assert(!memcmp(restored,headlight_original,sizeof(restored)));
  }
  runner_original_draw=real_draw;CHECK(IDirect3DDevice9_SetVertexShader(device,shader));CHECK(IDirect3DDevice9_SetVertexShaderConstantF(device,0,&before_headlight[0][0],256));IDirect3DVertexShader9_Release(headlight_shader);
  runner_scene.references=runner_previous_reference_count=0;memset(runner_actors,0,sizeof(runner_actors));
- puts("PASS headlight DIP: own projector suppressed, foreign projector retained, exact constants restored after success and native draw failure");
+ puts("PASS headlight DIP: all car projectors suppressed under expanded user scope, exact constants restored after success and native draw failure");
  /* Route every material at the Corolla's own wheel mount; a foreign car must pass through. */
  IDirect3DVertexBuffer9 *wheel_vb=NULL;IDirect3DIndexBuffer9 *wheel_ib=NULL;IDirect3DTexture9 *tire=NULL,*non_tire=NULL;
  UmaVertex quad[4]={0};for(int i=0;i<4;i++){quad[i].position[1]=(i&1)?.2f:-.2f;quad[i].position[2]=(i&2)?1.2f:.7f;quad[i].normal[0]=1;memset(quad[i].bgra,255,4);}const WORD wheel_indices[]={0,1,2,2,1,3};
