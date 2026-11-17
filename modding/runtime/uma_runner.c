@@ -365,7 +365,12 @@ static HRESULT WINAPI runner_draw(IDirect3DDevice9 *device,D3DPRIMITIVETYPE type
       DWORD color=0;IDirect3DDevice9_GetRenderState(device,D3DRS_COLORWRITEENABLE,&color);
       D3DMATRIX combined={0};int transform=entry?1:runner_fixed_combined(device,&combined);
       if(runner_log && runner_owned<=8){fprintf(runner_log,"OWNED frame=%u base=%d min=%u start=%u offset=%u stride=%u color=%lu shaderBytes=%u supported=%d\n",runner_frames,base,minimum,start,offset,stride,(unsigned long)color,entry?entry->bytes:0,entry?entry->supported:0);fflush(runner_log);}
-      if(SUCCEEDED(shader_status) && transform && ((color&7)==7 || color==0)){UmaMotionState *pose=have_worldview?runner_actor_pose_model(&worldview,model):&runner_models[model].idle;float root[9];const float *correction=runner_actor_root(pose,root)?root:NULL;result=uma_d3d_draw(runner_active_renderer,pose,&combined,0,correction);if(SUCCEEDED(result)){replaced=1;runner_replaced++;}else {runner_shader_failures++;if(runner_log && runner_shader_failures<=8){fprintf(runner_log,"DRAW_FAILURE hr=%08lx shaderBytes=%u supported=%d color=%lu base=%d min=%u start=%u stride=%u\n",(unsigned long)result,entry?entry->bytes:0,entry?entry->supported:0,(unsigned long)color,base,minimum,start,stride);fflush(runner_log);}}}
+      if(SUCCEEDED(shader_status) && transform && ((color&7)==7 || color==0)){UmaMotionState *pose=have_worldview?runner_actor_pose_model(&worldview,model):&runner_models[model].idle;float root[9];const float *correction=runner_actor_root(pose,root)?root:NULL;
+       if(runner_log && runner_frames%120==0 && have_worldview){
+        float up[3]={0};for(int c=0;c<3;c++)for(int k=0;k<3;k++)up[c]+=(correction?correction[6+k]:(k==2?1.f:0.f))*worldview.m[k][c];
+        fprintf(runner_log,"VISUAL frame=%u model=%u idleFallback=%d corrected=%d color=%lu upView=%.5f,%.5f,%.5f originView=%.5f,%.5f,%.5f\n",runner_frames,model,pose==&runner_models[model].idle,correction!=NULL,(unsigned long)color,up[0],up[1],up[2],worldview.m[3][0],worldview.m[3][1],worldview.m[3][2]);
+       }
+       result=uma_d3d_draw(runner_active_renderer,pose,&combined,0,correction);if(SUCCEEDED(result)){replaced=1;runner_replaced++;}else {runner_shader_failures++;if(runner_log && runner_shader_failures<=8){fprintf(runner_log,"DRAW_FAILURE hr=%08lx shaderBytes=%u supported=%d color=%lu base=%d min=%u start=%u stride=%u\n",(unsigned long)result,entry?entry->bytes:0,entry?entry->supported:0,(unsigned long)color,base,minimum,start,stride);fflush(runner_log);}}}
      }
     }
    }

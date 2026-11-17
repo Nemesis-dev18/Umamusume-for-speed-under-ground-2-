@@ -16,7 +16,7 @@ typedef HRESULT (WINAPI *UmaDrawIndexed)(IDirect3DDevice9*,D3DPRIMITIVETYPE,INT,
 typedef struct {
  IDirect3DDevice9 *device;IDirect3DVertexBuffer9 *vertices;IDirect3DIndexBuffer9 *indices;
  IDirect3DTexture9 *texture;IDirect3DVertexDeclaration9 *declaration;IDirect3DPixelShader9 *shader,*native_shader;UmaShaderCache shaders;
- IDirect3DStateBlock9 *saved;
+ IDirect3DStateBlock9 *saved;UmaVertex *pose;
  const UmaMotion *motion;UmaDrawIndexed draw;UmaMotionState uploaded;float uploaded_root[9];int has_uploaded,uploaded_root_valid;
 } UmaD3D;
 static void uma_d3d_close(UmaD3D *renderer){
@@ -30,6 +30,7 @@ static void uma_d3d_close(UmaD3D *renderer){
  if(renderer->indices)IDirect3DIndexBuffer9_Release(renderer->indices);
  if(renderer->vertices)IDirect3DVertexBuffer9_Release(renderer->vertices);
  if(renderer->device)IDirect3DDevice9_Release(renderer->device);
+ free(renderer->pose);
  memset(renderer,0,sizeof(*renderer));
 }
 static HRESULT uma_texture_load(IDirect3DDevice9 *device,FILE *file,IDirect3DTexture9 **output){
@@ -63,7 +64,8 @@ invalid:
 static HRESULT uma_d3d_open(UmaD3D *output,IDirect3DDevice9 *device,const UmaMotion *motion,FILE *texture,UmaDrawIndexed draw){
  if(!output || output->device || !device || !motion || !motion->memory || !draw)return E_INVALIDARG;
  UmaD3D r={0};r.device=device;r.motion=motion;r.draw=draw;IDirect3DDevice9_AddRef(device);
- HRESULT result=IDirect3DDevice9_CreateVertexBuffer(device,motion->vertices*36,D3DUSAGE_DYNAMIC|D3DUSAGE_WRITEONLY,0,D3DPOOL_DEFAULT,&r.vertices,NULL);if(FAILED(result))goto invalid;
+ HRESULT result=E_OUTOFMEMORY;r.pose=malloc((size_t)motion->vertices*sizeof(*r.pose));if(!r.pose)goto invalid;
+ result=IDirect3DDevice9_CreateVertexBuffer(device,motion->vertices*36,D3DUSAGE_DYNAMIC|D3DUSAGE_WRITEONLY,0,D3DPOOL_DEFAULT,&r.vertices,NULL);if(FAILED(result))goto invalid;
  result=IDirect3DDevice9_CreateIndexBuffer(device,motion->indices*2,0,D3DFMT_INDEX16,D3DPOOL_MANAGED,&r.indices,NULL);if(FAILED(result))goto invalid;
  void *indices=NULL;result=IDirect3DIndexBuffer9_Lock(r.indices,0,motion->indices*2,&indices,0);if(FAILED(result))goto invalid;
  memcpy(indices,motion->index,motion->indices*2);result=IDirect3DIndexBuffer9_Unlock(r.indices);if(FAILED(result))goto invalid;
@@ -99,20 +101,22 @@ static HRESULT uma_d3d_draw(UmaD3D *r,const UmaMotionState *state,const D3DMATRI
 #ifdef UMA_PROFILE
   LONGLONG profile_upload=uma_profile_now();
 #endif
-  void *mapped=NULL;result=IDirect3DVertexBuffer9_Lock(r->vertices,0,r->motion->vertices*36,&mapped,D3DLOCK_DISCARD);if(FAILED(result))return result;
 #ifdef UMA_PROFILE
   LONGLONG profile_skin=uma_profile_now();
 #endif
-  int sampled=uma_motion_sample(r->motion,state->idle_phase,state->run_phase,state->run_blend,(UmaVertex*)mapped,(size_t)r->motion->vertices*36);
+  int sampled=uma_motion_sample(r->motion,state->idle_phase,state->run_phase,state->run_blend,r->pose,(size_t)r->motion->vertices*36);
 #ifdef UMA_PROFILE
   uma_profile_skin_ticks+=uma_profile_now()-profile_skin;
 #endif
   if(sampled && root)for(uint32_t i=0;i<r->motion->vertices;i++){
-   UmaVertex *vertex=(UmaVertex*)mapped+i;float position[3]={0},normal[3]={0};
+   UmaVertex *vertex=r->pose+i;float position[3]={0},normal[3]={0};
    for(int c=0;c<3;c++)for(int k=0;k<3;k++){position[c]+=vertex->position[k]*root[k*3+c];normal[c]+=vertex->normal[k]*root[k*3+c];}
    memcpy(vertex->position,position,sizeof(position));memcpy(vertex->normal,normal,sizeof(normal));
   }
-  result=IDirect3DVertexBuffer9_Unlock(r->vertices);if(FAILED(result))return result;if(!sampled)return E_INVALIDARG;
+  if(!sampled)return E_INVALIDARG;
+  void *mapped=NULL;result=IDirect3DVertexBuffer9_Lock(r->vertices,0,r->motion->vertices*36,&mapped,D3DLOCK_DISCARD);if(FAILED(result))return result;
+  memcpy(mapped,r->pose,(size_t)r->motion->vertices*sizeof(*r->pose));
+  result=IDirect3DVertexBuffer9_Unlock(r->vertices);if(FAILED(result))return result;
   r->uploaded_root_valid=root!=NULL;if(root)memcpy(r->uploaded_root,root,sizeof(r->uploaded_root));
   r->uploaded=*state;r->has_uploaded=1;
 #ifdef UMA_PROFILE

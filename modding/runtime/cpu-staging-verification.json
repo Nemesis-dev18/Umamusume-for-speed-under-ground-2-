@@ -1,0 +1,11 @@
+{
+  "renderer_pass": "PASS all renderer checks, failure restoration and device reset; 16 intercepted draws. No game integration tested.",
+  "gpu_images_byte_identical": {
+    "run-0.ppm": "bb2d717601dc44dfcbad8d4fe17bafbaa7e9d0c634185cf7ead120c01e369ae4",
+    "run-1.ppm": "15c1bcd144a8974518e1bf2f268b8b9b9a6b8112367cb54ce11f513ad3960fad",
+    "run-2.ppm": "4a92aac338b6e94fb02a589ec7a7ef48521e837fabe15b46200301a134144677",
+    "run-3.ppm": "e987af1c18594271477515983bb38e6c97ba7efc6c02b91eafe6dff244336e73"
+  },
+  "gameplay_verified": false,
+  "installed": false
+}
