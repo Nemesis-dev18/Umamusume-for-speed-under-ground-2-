@@ -1,0 +1,227 @@
+[
+  {
+    "type": "MonoBehaviour",
+    "path_id": -5368044947327354370,
+    "tree": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 4075731342966774402
+      },
+      "m_Enabled": 1,
+      "m_Script": {
+        "m_FileID": 0,
+        "m_PathID": 5513395694237505285
+      },
+      "m_Name": "",
+      "collisionParam": [],
+      "springParam": [
+        {
+          "_boneName": "Sp_Ch_Bust0_L_00",
+          "_stiffnessForce": 500.0,
+          "_dragForce": 480.0,
+          "_gravity": 100.0,
+          "_collisionRadius": 0.009999999776482582,
+          "_needEnvCollision": 0,
+          "_collisionNameList": [],
+          "_isLimit": 1,
+          "_limitAngleMin": {
+            "x": 10.0,
+            "y": 10.0,
+            "z": 0.0
+          },
+          "_limitAngleMax": {
+            "x": 10.0,
+            "y": 10.0,
+            "z": 0.0
+          },
+          "MoveSpringApplyRate": 0.800000011920929,
+          "_needSimulateEndBone": 1,
+          "_verticalWindRateSlow": 0.0,
+          "_horizontalWindRateSlow": 0.0,
+          "_verticalWindRateFast": 0.0,
+          "_horizontalWindRateFast": 0.0,
+          "_childElements": [
+            {
+              "_boneName": "Sp_Ch_Bust0_L_01",
+              "_stiffnessForce": 200.0,
+              "_dragForce": 600.0,
+              "_gravity": 30.0,
+              "_collisionRadius": 0.009999999776482582,
+              "_needEnvCollision": 0,
+              "_collisionNameList": [],
+              "_verticalWindRateSlow": 0.0,
+              "_horizontalWindRateSlow": 0.0,
+              "_verticalWindRateFast": 0.0,
+              "_horizontalWindRateFast": 0.0,
+              "_isLimit": 1,
+              "_limitAngleMin": {
+                "x": 10.0,
+                "y": 8.0,
+                "z": 0.0
+              },
+              "_limitAngleMax": {
+                "x": 10.0,
+                "y": 8.0,
+                "z": 0.0
+              },
+              "MoveSpringApplyRate": 0.800000011920929
+            }
+          ]
+        },
+        {
+          "_boneName": "Sp_Ch_Bust0_R_00",
+          "_stiffnessForce": 500.0,
+          "_dragForce": 480.0,
+          "_gravity": 100.0,
+          "_collisionRadius": 0.009999999776482582,
+          "_needEnvCollision": 0,
+          "_collisionNameList": [],
+          "_isLimit": 1,
+          "_limitAngleMin": {
+            "x": 10.0,
+            "y": 10.0,
+            "z": 0.0
+          },
+          "_limitAngleMax": {
+            "x": 10.0,
+            "y": 10.0,
+            "z": 0.0
+          },
+          "MoveSpringApplyRate": 0.800000011920929,
+          "_needSimulateEndBone": 1,
+          "_verticalWindRateSlow": 0.0,
+          "_horizontalWindRateSlow": 0.0,
+          "_verticalWindRateFast": 0.0,
+          "_horizontalWindRateFast": 0.0,
+          "_childElements": [
+            {
+              "_boneName": "Sp_Ch_Bust0_R_01",
+              "_stiffnessForce": 200.0,
+              "_dragForce": 600.0,
+              "_gravity": 30.0,
+              "_collisionRadius": 0.009999999776482582,
+              "_needEnvCollision": 0,
+              "_collisionNameList": [],
+              "_verticalWindRateSlow": 0.0,
+              "_horizontalWindRateSlow": 0.0,
+              "_verticalWindRateFast": 0.0,
+              "_horizontalWindRateFast": 0.0,
+              "_isLimit": 1,
+              "_limitAngleMin": {
+                "x": 10.0,
+                "y": 8.0,
+                "z": 0.0
+              },
+              "_limitAngleMax": {
+                "x": 10.0,
+                "y": 8.0,
+                "z": 0.0
+              },
+              "MoveSpringApplyRate": 0.800000011920929
+            }
+          ]
+        }
+      ],
+      "ConnectedBoneList": [],
+      "enableVerticalWind": 0,
+      "enableHorizontalWind": 0,
+      "centerWindAngleSlow": 0.0,
+      "centerWindAngleFast": 0.0,
+      "verticalCycleSlow": 0.0,
+      "horizontalCycleSlow": 0.0,
+      "verticalAngleWidthSlow": 0.0,
+      "horizontalAngleWidthSlow": 0.0,
+      "verticalCycleFast": 0.0,
+      "horizontalCycleFast": 0.0,
+      "verticalAngleWidthFast": 0.0,
+      "horizontalAngleWidthFast": 0.0,
+      "IsEnableHipMoveParam": 1,
+      "HipMoveInfluenceDistance": 0.019999999552965164,
+      "HipMoveInfluenceMaxDistance": 0.05000000074505806
+    }
+  },
+  {
+    "type": "Transform",
+    "path_id": -2203060273852989629,
+    "tree": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 4075731342966774402
+      },
+      "m_LocalRotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 1.0
+      },
+      "m_LocalPosition": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "m_LocalScale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "m_Children": [],
+      "m_Father": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      }
+    }
+  },
+  {
+    "type": "GameObject",
+    "path_id": 4075731342966774402,
+    "tree": {
+      "m_Component": [
+        {
+          "component": {
+            "m_FileID": 0,
+            "m_PathID": -2203060273852989629
+          }
+        },
+        {
+          "component": {
+            "m_FileID": 0,
+            "m_PathID": -5368044947327354370
+          }
+        }
+      ],
+      "m_Layer": 0,
+      "m_Name": "pfb_bdy1032_00_bust_cloth00",
+      "m_Tag": 0,
+      "m_IsActive": true
+    }
+  },
+  {
+    "type": "MonoScript",
+    "path_id": 5513395694237505285,
+    "tree": {
+      "m_Name": "CySpringDataContainer",
+      "m_ExecutionOrder": 0,
+      "m_PropertiesHash": {
+        "bytes[0]": 184,
+        "bytes[1]": 207,
+        "bytes[2]": 220,
+        "bytes[3]": 130,
+        "bytes[4]": 80,
+        "bytes[5]": 206,
+        "bytes[6]": 189,
+        "bytes[7]": 151,
+        "bytes[8]": 38,
+        "bytes[9]": 188,
+        "bytes[10]": 37,
+        "bytes[11]": 196,
+        "bytes[12]": 174,
+        "bytes[13]": 178,
+        "bytes[14]": 46,
+        "bytes[15]": 165
+      },
+      "m_ClassName": "CySpringDataContainer",
+      "m_Namespace": "Gallop",
+      "m_AssemblyName": "umamusume"
+    }
+  }
+]

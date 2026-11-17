@@ -1,0 +1,44 @@
+[
+  {
+    "id": "1006",
+    "returncode": 0,
+    "output": "bones=147 springs=50 3600_frames_cpu_seconds=0.7799 motion=32807.1\n",
+    "error": ""
+  },
+  {
+    "id": "1015",
+    "returncode": 0,
+    "output": "bones=148 springs=55 3600_frames_cpu_seconds=0.9362 motion=40990.0\n",
+    "error": ""
+  },
+  {
+    "id": "1032",
+    "returncode": 0,
+    "output": "bones=146 springs=55 3600_frames_cpu_seconds=0.9007 motion=38986.6\n",
+    "error": ""
+  },
+  {
+    "id": "1052",
+    "returncode": 0,
+    "output": "bones=152 springs=56 3600_frames_cpu_seconds=1.0066 motion=39406.0\n",
+    "error": ""
+  },
+  {
+    "id": "1058",
+    "returncode": 0,
+    "output": "bones=156 springs=64 3600_frames_cpu_seconds=0.9946 motion=36426.1\n",
+    "error": ""
+  },
+  {
+    "id": "1062",
+    "returncode": 0,
+    "output": "bones=156 springs=68 3600_frames_cpu_seconds=1.1162 motion=40647.3\n",
+    "error": ""
+  },
+  {
+    "id": "1068",
+    "returncode": 0,
+    "output": "bones=155 springs=51 3600_frames_cpu_seconds=0.7937 motion=28960.1\n",
+    "error": ""
+  }
+]

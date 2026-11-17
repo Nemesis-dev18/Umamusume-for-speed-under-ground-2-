@@ -1,0 +1,7 @@
+PASS id=1068 vertices=14616 bones=155; idle/run visible; full depth occlusion; CPU skin 3.060 ms
+PASS id=1052 vertices=10418 bones=152; idle/run visible; full depth occlusion; CPU skin 2.010 ms
+PASS id=1032 vertices=12949 bones=146; idle/run visible; full depth occlusion; CPU skin 2.660 ms
+PASS id=1062 vertices=15626 bones=156; idle/run visible; full depth occlusion; CPU skin 2.970 ms
+PASS id=1015 vertices=15713 bones=148; idle/run visible; full depth occlusion; CPU skin 3.110 ms
+PASS id=1006 vertices=11975 bones=147; idle/run visible; full depth occlusion; CPU skin 2.370 ms
+PASS id=1058 vertices=14804 bones=156; idle/run visible; full depth occlusion; CPU skin 2.710 ms

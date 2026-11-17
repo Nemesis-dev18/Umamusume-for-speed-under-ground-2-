@@ -1,0 +1,7 @@
+{
+  "records": [
+    "POSE_UNMATCHED frame=8091 model=6 determinant=-1.0000 rebased=0 origin=-0.0000,1.8734,5.7856 actor=1 age=1 speed=5.279 distance=10.036 rawDistance=10.036 direction=-0.929 determinant=1.000 actor=2 age=1 speed=4.455 distance=15.523 rawDistance=15.523 direction=-0.916 determinant=1.000 actor=3 age=1 speed=7.457 distance=13.714 rawDistance=13.714 direction=-0.831 determinant=1.000"
+  ],
+  "positive_determinant_records": 0,
+  "scope": "Unmatched pose lookup logs, not a visual verdict for the user-reported stationary opponent"
+}

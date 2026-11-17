@@ -1,0 +1,22 @@
+{
+  "records": [
+    "POSE_UNMATCHED frame=1488 model=3 determinant=-1.0000 rebased=0 origin=1.9803,1.0118,0.8799",
+    "POSE_UNMATCHED frame=1489 model=3 determinant=-1.0000 rebased=0 origin=1.9658,1.0211,1.0931",
+    "POSE_UNMATCHED frame=1490 model=3 determinant=-1.0000 rebased=0 origin=1.9530,1.0332,1.2941",
+    "POSE_UNMATCHED frame=1491 model=3 determinant=-1.0000 rebased=0 origin=1.9358,1.0353,1.5413",
+    "POSE_UNMATCHED frame=1492 model=3 determinant=-1.0000 rebased=0 origin=1.9159,1.0321,1.8209",
+    "POSE_UNMATCHED frame=1493 model=3 determinant=-1.0000 rebased=0 origin=1.8957,1.0327,2.1048",
+    "POSE_UNMATCHED frame=1494 model=3 determinant=-1.0000 rebased=0 origin=1.8778,1.0407,2.3863",
+    "POSE_UNMATCHED frame=1495 model=3 determinant=-1.0000 rebased=0 origin=1.8607,1.0477,2.6748",
+    "POSE_UNMATCHED frame=1496 model=3 determinant=-1.0000 rebased=0 origin=1.8408,1.0462,2.9864",
+    "POSE_UNMATCHED frame=1513 model=0 determinant=-1.0000 rebased=0 origin=-3.4685,1.9311,5.8931 actor=0 age=1 speed=3.292 distance=6.536 rawDistance=6.536 direction=0.869 determinant=1.000 actor=1 age=1 speed=5.460 distance=12.053 rawDistance=12.053 direction=0.852 determinant=1.000",
+    "POSE_UNMATCHED frame=2496 model=6 determinant=1.0000 rebased=1 origin=-59.9427,-3.7482,53.3642",
+    "POSE_UNMATCHED frame=2560 model=6 determinant=1.0000 rebased=1 origin=-63.5489,-2.1924,58.0553",
+    "POSE_UNMATCHED frame=2561 model=0 determinant=1.0000 rebased=1 origin=-69.6037,-2.5594,63.3289 actor=4 age=1 speed=24.656 distance=42.154 rawDistance=41.731 direction=0.904 determinant=1.000",
+    "POSE_UNMATCHED frame=2809 model=0 determinant=1.0000 rebased=1 origin=22.6157,-0.2517,16.1757",
+    "POSE_UNMATCHED frame=2815 model=0 determinant=1.0000 rebased=1 origin=50.4391,-4.5618,43.5732 actor=0 age=1 speed=23.617 distance=38.648 rawDistance=38.227 direction=0.930 determinant=1.000",
+    "POSE_UNMATCHED frame=3186 model=6 determinant=1.0000 rebased=1 origin=-20.2802,0.7100,14.5466"
+  ],
+  "positive_determinant_records": 6,
+  "interpretation": "Includes brief unmatched main-pass draws and first sightings without a same-model actor. Does not yet reproduce a sustained moving rival with zero gait."
+}

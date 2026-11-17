@@ -1,0 +1,142 @@
+{
+  "character_id": 1068,
+  "logical": "3d/chara/head/chr1068_00/clothes/pfb_chr1068_00_cloth00",
+  "hash": "6OU7IHLCRWBXB733HMKULRDE2U3YE5YO",
+  "complete_spring_entry": {
+    "_boneName": "Sp_He_Hair0_C_00",
+    "_stiffnessForce": 150.0,
+    "_dragForce": 350.0,
+    "_gravity": 80.0,
+    "_collisionRadius": 0.009999999776482582,
+    "_needEnvCollision": 0,
+    "_collisionNameList": [
+      "Col_Head_Top"
+    ],
+    "_isLimit": 1,
+    "_limitAngleMin": {
+      "x": 15.0,
+      "y": 10.0,
+      "z": 45.0
+    },
+    "_limitAngleMax": {
+      "x": 3.0,
+      "y": 15.0,
+      "z": 45.0
+    },
+    "MoveSpringApplyRate": 0.8999999761581421,
+    "_needSimulateEndBone": 0,
+    "_verticalWindRateSlow": 1.0,
+    "_horizontalWindRateSlow": 1.0,
+    "_verticalWindRateFast": 1.0,
+    "_horizontalWindRateFast": 1.0,
+    "_childElements": [
+      {
+        "_boneName": "Sp_He_Hair0_C_01",
+        "_stiffnessForce": 150.0,
+        "_dragForce": 350.0,
+        "_gravity": 80.0,
+        "_collisionRadius": 0.009999999776482582,
+        "_needEnvCollision": 0,
+        "_collisionNameList": [
+          "Col_Head_Top"
+        ],
+        "_verticalWindRateSlow": 1.0,
+        "_horizontalWindRateSlow": 1.0,
+        "_verticalWindRateFast": 1.0,
+        "_horizontalWindRateFast": 1.0,
+        "_isLimit": 1,
+        "_limitAngleMin": {
+          "x": 15.0,
+          "y": 10.0,
+          "z": 45.0
+        },
+        "_limitAngleMax": {
+          "x": 3.0,
+          "y": 15.0,
+          "z": 45.0
+        },
+        "MoveSpringApplyRate": 0.8999999761581421
+      }
+    ]
+  },
+  "complete_collider_entry": {
+    "_collisionName": "Col_Head_Top",
+    "_targetObjectName": "Head",
+    "_isOtherTarget": 0,
+    "_offset": {
+      "x": 0.0,
+      "y": 0.10199999809265137,
+      "z": -0.004000000189989805
+    },
+    "_offset2": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "_radius": 0.10999999940395355,
+    "_distance": 0.0,
+    "_normal": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "_type": 0,
+    "_isInner": 0
+  },
+  "tail_body_attachment_colliders": [
+    {
+      "_collisionName": "Col_B_Hip_Tail",
+      "_targetObjectName": "Hip",
+      "_isOtherTarget": 0,
+      "_offset": {
+        "x": 0.0,
+        "y": -0.6200000047683716,
+        "z": 0.38199999928474426
+      },
+      "_offset2": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "_radius": 0.8500000238418579,
+      "_distance": 0.0,
+      "_normal": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "_type": 0,
+      "_isInner": 0
+    },
+    {
+      "_collisionName": "Col_B_Chest_Tail",
+      "_targetObjectName": "Chest",
+      "_isOtherTarget": 0,
+      "_offset": {
+        "x": 0.0,
+        "y": 0.17000000178813934,
+        "z": 0.7699999809265137
+      },
+      "_offset2": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "_radius": 0.8500000238418579,
+      "_distance": 0.0,
+      "_normal": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "_type": 0,
+      "_isInner": 0
+    }
+  ],
+  "limitations": [
+    "Native solver coefficient units, timestep, force integration, local rotation-limit convention and collider enum semantics not recovered from asset serialization.",
+    "Collider offset/offset2/normal are serialized XYZ associated with named targetObjectName. Attachment-local interpretation is inferred; keep native coordinates until applying established skeleton basis conversion.",
+    "No explicit root fixation field; preserve parent/child skeleton relationship, do not freeze first spring node on assumption.",
+    "Variants cloth00 through cloth04 and skirt00 through skirt02 are all preserved. Variant selection behavior is unknown; do not merge or average parameter sets."
+  ]
+}

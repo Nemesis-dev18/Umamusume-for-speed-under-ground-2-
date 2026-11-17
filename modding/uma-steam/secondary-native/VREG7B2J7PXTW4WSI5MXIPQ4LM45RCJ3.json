@@ -1,0 +1,130 @@
+[
+  {
+    "type": "MonoBehaviour",
+    "path_id": -2025940381842904155,
+    "tree": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "m_Enabled": 1,
+      "m_Script": {
+        "m_FileID": 0,
+        "m_PathID": 4127261269461342614
+      },
+      "m_Name": "ast_bdy1058_00_skirt00",
+      "_isLongSkirt": 0,
+      "_centerBoneName": "Hip",
+      "_kneeLBoneName": "Knee_L",
+      "_kneeRBoneName": "Knee_R",
+      "_ankleLBoneName": "",
+      "_ankleRBoneName": "",
+      "_kneeColliderRadius": 0.08500000089406967,
+      "_ankleColliderRadius": 0.0,
+      "_influenceAngle": 31.0,
+      "_influenceMaxAngle": 73.0,
+      "IsOffsetAngleTargetEndNode": 1,
+      "_skirtBone": [
+        {
+          "_rootBoneName": "Sp_Hi_MSkirt0_F_00",
+          "_childBoneName": "Sp_Hi_MSkirt0_F_01",
+          "_isCheckRightLeg": 1,
+          "_isCheckLeftLeg": 1,
+          "IsIgnoreRaceRun": 0
+        },
+        {
+          "_rootBoneName": "Sp_Hi_MSkirt0_FL_00",
+          "_childBoneName": "Sp_Hi_MSkirt0_FL_01",
+          "_isCheckRightLeg": 1,
+          "_isCheckLeftLeg": 1,
+          "IsIgnoreRaceRun": 0
+        },
+        {
+          "_rootBoneName": "Sp_Hi_MSkirt0_FR_00",
+          "_childBoneName": "Sp_Hi_MSkirt0_FR_01",
+          "_isCheckRightLeg": 1,
+          "_isCheckLeftLeg": 1,
+          "IsIgnoreRaceRun": 0
+        },
+        {
+          "_rootBoneName": "Sp_Hi_MSkirt0_FLL_00",
+          "_childBoneName": "Sp_Hi_MSkirt0_FLL_01",
+          "_isCheckRightLeg": 1,
+          "_isCheckLeftLeg": 1,
+          "IsIgnoreRaceRun": 0
+        },
+        {
+          "_rootBoneName": "Sp_Hi_MSkirt0_FRR_00",
+          "_childBoneName": "Sp_Hi_MSkirt0_FRR_01",
+          "_isCheckRightLeg": 1,
+          "_isCheckLeftLeg": 1,
+          "IsIgnoreRaceRun": 0
+        },
+        {
+          "_rootBoneName": "Sp_Hi_MSkirt0_L_00",
+          "_childBoneName": "Sp_Hi_MSkirt0_L_01",
+          "_isCheckRightLeg": 1,
+          "_isCheckLeftLeg": 1,
+          "IsIgnoreRaceRun": 0
+        },
+        {
+          "_rootBoneName": "Sp_Hi_MSkirt0_R_00",
+          "_childBoneName": "Sp_Hi_MSkirt0_R_01",
+          "_isCheckRightLeg": 1,
+          "_isCheckLeftLeg": 1,
+          "IsIgnoreRaceRun": 0
+        },
+        {
+          "_rootBoneName": "Sp_Hi_MSkirt0_BL_00",
+          "_childBoneName": "Sp_Hi_MSkirt0_BL_01",
+          "_isCheckRightLeg": 1,
+          "_isCheckLeftLeg": 1,
+          "IsIgnoreRaceRun": 0
+        },
+        {
+          "_rootBoneName": "Sp_Hi_MSkirt0_BR_00",
+          "_childBoneName": "Sp_Hi_MSkirt0_BR_01",
+          "_isCheckRightLeg": 1,
+          "_isCheckLeftLeg": 1,
+          "IsIgnoreRaceRun": 0
+        },
+        {
+          "_rootBoneName": "Sp_Hi_MSkirt0_B_00",
+          "_childBoneName": "Sp_Hi_MSkirt0_B_01",
+          "_isCheckRightLeg": 1,
+          "_isCheckLeftLeg": 1,
+          "IsIgnoreRaceRun": 0
+        }
+      ]
+    }
+  },
+  {
+    "type": "MonoScript",
+    "path_id": 4127261269461342614,
+    "tree": {
+      "m_Name": "SkirtParamDataAsset",
+      "m_ExecutionOrder": 0,
+      "m_PropertiesHash": {
+        "bytes[0]": 252,
+        "bytes[1]": 223,
+        "bytes[2]": 69,
+        "bytes[3]": 135,
+        "bytes[4]": 59,
+        "bytes[5]": 71,
+        "bytes[6]": 203,
+        "bytes[7]": 242,
+        "bytes[8]": 220,
+        "bytes[9]": 204,
+        "bytes[10]": 248,
+        "bytes[11]": 89,
+        "bytes[12]": 176,
+        "bytes[13]": 31,
+        "bytes[14]": 245,
+        "bytes[15]": 243
+      },
+      "m_ClassName": "SkirtParamDataAsset",
+      "m_Namespace": "Gallop",
+      "m_AssemblyName": "umamusume"
+    }
+  }
+]

@@ -1,4 +1,5 @@
 START independent renderer test; not NFSU2
+PASS renderer buffers bypass upload observation; removing the ownership tag restores full native identity checks
 PASS full upload identity, distinct same-size fleet models, batched offsets, one-byte impostor, partial/nested overwrite, READONLY, DISCARD and hook removal
 PASS captured shader bridge parsing; UV-space composition passes rejected
 PASS exact captured game shader profiles: 15 programs; read-only camera extraction

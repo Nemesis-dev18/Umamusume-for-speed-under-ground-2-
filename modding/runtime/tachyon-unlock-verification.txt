@@ -1,0 +1,6 @@
+test_only_miata_prerequisite_changes (test_miata_unlock.MiataUnlock.test_only_miata_prerequisite_changes) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 22.738s
+
+OK

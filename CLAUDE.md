@@ -790,3 +790,5 @@ Usuario confirma buildfleetupright: Tachyon aparece en selección; Oguri yotro p
 - Diagnóstico rival estático: sesión anterior capturó solo 1 POSE_UNMATCHED, determinante negativo/reflejo. No hay evidencia suficiente del caso visual informado; continúa pendiente, sin forzar gaits compartidos.
 
 - Instalación cola/neón completada: nueve destinos verificados por SHA; checkpoint previo21902c1. Nueva prueba abierta; validar profiles=11 en arranque y resultado visual con usuario. No se da aún por eliminado el neón residual.
+
+- Sesión cola/neón PID296110: diagnóstico capturó 16 POSE_UNMATCHED, incluidos6 con determinante positivo. Algunos no tienen actor previo del mismo modelo; otros se encuentran a38–42 m del actor candidato. Hay cambios/reapariciones que merecen seguimiento, pero esta muestra no demuestra todavía deslizamiento sostenido de un CPU. Evidencia `modding/diagnostics/tail-neon-unmatched.json`; no se aplicó ningún fallback de animación global ni se marcaron casos resueltos.

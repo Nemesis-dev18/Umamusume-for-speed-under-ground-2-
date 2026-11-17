@@ -1,0 +1,1 @@
+edges=188700 absolute_length_change_max=0.86923 fraction_over_10pct=0.28898 fraction_over_25pct=0.08008 fraction_over_50pct=0.00167

@@ -1,0 +1,12 @@
+.
+----------------------------------------------------------------------
+Ran 1 test in 1.265s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 3.488s
+
+OK
+PASS seven exact native models through runtime hook; distinct textures, reverse-order pixel identity, per-model actor gait/durations, stationary actor, impostor preservation, all-renderer reset and hook removal; not NFSU2 gameplay
+

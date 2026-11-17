@@ -1,0 +1,35 @@
+{
+  "cases_per_character": 8,
+  "comparison": "C UMAB skinning vs original native glTF joint matrices and inverse bind poses",
+  "results": [
+    {
+      "id": 1068,
+      "output": "maximum_skin_error=5.96046e-07"
+    },
+    {
+      "id": 1052,
+      "output": "maximum_skin_error=5.36442e-07"
+    },
+    {
+      "id": 1032,
+      "output": "maximum_skin_error=4.76837e-07"
+    },
+    {
+      "id": 1062,
+      "output": "maximum_skin_error=5.96046e-07"
+    },
+    {
+      "id": 1015,
+      "output": "maximum_skin_error=5.96046e-07"
+    },
+    {
+      "id": 1006,
+      "output": "maximum_skin_error=5.96046e-07"
+    },
+    {
+      "id": 1058,
+      "output": "maximum_skin_error=5.96046e-07"
+    }
+  ],
+  "gameplay_verified": false
+}
