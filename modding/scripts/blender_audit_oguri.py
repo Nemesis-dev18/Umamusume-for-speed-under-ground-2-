@@ -28,5 +28,5 @@ for obj in meshes:
         materials.append({'name':slot.name,'triangles':sum(len(p.vertices)-2 for p in polygons)})
     rows.append({'object':obj.name,'vertices':len(obj.data.vertices),'triangles':sum(len(p.vertices)-2 for p in obj.data.polygons),'unweighted_vertices':missing,'more_than_four_influences':too_many,'weight_sum_range':[minimum,maximum],'uv_present':uv is not None,'uv_loops_outside_unit':uv_outside,'materials':materials})
 assert sum(r['vertices'] for r in rows)==34537
-report={'scope':'Read-only Blender source audit; no optimization or export applied','bones':len(bone_names),'meshes':rows,'images':[{'name':i.name,'size':list(i.size)} for i in bpy.data.images]}
+report={'scope':'Read-only Blender source audit; no optimization or export applied','bones':len(bone_names),'bone_names':sorted(bone_names),'meshes':rows,'images':[{'name':i.name,'size':list(i.size)} for i in bpy.data.images]}
 (folder/'export-audit.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n');print(json.dumps([{k:v for k,v in r.items() if k!='materials'} for r in rows]))
