@@ -11,7 +11,7 @@ class BadgeTests(unittest.TestCase):
             self.assertEqual(jdlz(literal_jdlz(data)),data)
 
     def test_existing_textures_preserved(self):
-        raw=jdlz((ROOT/'FRONTEND/FrontB.lzc').read_bytes())
+        raw=jdlz((ROOT/'FRONTEND/FrontB.lzc.before-kitasan-badge.bak').read_bytes())
         after,key=badge(raw,bytes(8192))
         def records(data):
             t=next(n for n in chunks(data) if n['offset']==204288)
