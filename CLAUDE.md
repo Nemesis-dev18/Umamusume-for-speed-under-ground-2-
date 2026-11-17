@@ -479,3 +479,5 @@ InstaladasEnglish/SpanishKitasanBlack conSHAverificado trascheckpoint 8190f25fe7
 Candidato filtro ampliado a7perfiles: humo2/neon1,SKID_DIRT,SKID_GRASS,TIREPATCH ySKID_ROAD expandido BGRA desdeP8+paletteoriginal. Dimensionesrectangulares/pitch porfilas cubiertos; host crea7texturas,reconoceexactas,rechazavariantes1byte ypreservabinding. Todoshosts pasaron antesde añadir comprobaciónhashpalette; ese últimoendurecimiento requiere repetirbuild. CandidatoNOinstalado, instalado siguefiltro3perfilesconfirmadohumo. P8GPU nativo aúnno soportado, soloA8R8G8B8expandido paraasfalto; detecciónrealpendiente.
 
 Filtro7perfiles conhashpalette recompilado y todoshosts pasaron. Backupmóduloanterior verificado antescheckpoint. Solo módulo cambia enesta prueba; no sonido,física,GEOMETRY niGLOBAL. P8nativo asfalto aúnno reconocido, síBGRAexpandido; resultadoGPUreal pendiente.
+
+Instalado filtro ampliado trascheckpoint 9b339d6f82b785e8b58ab5570ec3ac0e4cad4d2a SHA4f3eb9aca44801eb050f8315c5ab8c21a5123e939d706f542252ba310b440dcf. Logconfirmadohumo preservado sesión12. No lanzado; nombreKitasanBlack ymarcas pendientes de prueba.

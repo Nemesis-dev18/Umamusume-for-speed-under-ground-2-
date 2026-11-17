@@ -1,0 +1,10 @@
+{
+  "target": "scripts/UmaRunner.asi",
+  "candidate": "modding/runtime/UmaRunner.asi",
+  "backup": "modding/runtime/UmaRunner.before-skid-filter.asi",
+  "before_sha256": "de69bd92d7b1582e6b0fd024931a87f2ef8d912694167df8d0c4dd3be54fc570",
+  "after_sha256": "4f3eb9aca44801eb050f8315c5ab8c21a5123e939d706f542252ba310b440dcf",
+  "installed": true,
+  "gameplay_verified": false,
+  "checkpoint": "9b339d6f82b785e8b58ab5570ec3ac0e4cad4d2a"
+}
