@@ -1,0 +1,37 @@
+{
+  "files": [
+    {
+      "target": "GLOBAL/GLOBALB.BUN",
+      "candidate": "modding/staged-runtime/tachyon-unlock-GLOBALB.BUN",
+      "before_sha256": "e2a0c769aa3f4b4f8d5e547e76ecbf83727a100f2486cf942e7c7333d9c5c1d0",
+      "after_sha256": "53351141101972ca426ddb4dbe83befc55844fa6b31e05859f5d32a177427547",
+      "field": {
+        "decoded_offset": 7744188,
+        "bytes": 4,
+        "before": "0x1185ef07",
+        "after": "0x0",
+        "car": "MIATA",
+        "character": "Agnes Tachyon",
+        "unrelated_decoded_bytes_unchanged": true
+      }
+    },
+    {
+      "target": "GLOBAL/GlobalB.lzc",
+      "candidate": "modding/staged-runtime/tachyon-unlock-GlobalB.lzc",
+      "before_sha256": "d3d77b40c95d0d6adaccd925cca0ff280c5043afc90060909b7b6a927da2894b",
+      "after_sha256": "b5e26f0545bf13b3009e0bf57bb625d780179a242f24fa45a2b3cb4ea3eb1658",
+      "field": {
+        "decoded_offset": 7744188,
+        "bytes": 4,
+        "before": "0x1185ef07",
+        "after": "0x0",
+        "car": "MIATA",
+        "character": "Agnes Tachyon",
+        "unrelated_decoded_bytes_unchanged": true
+      }
+    }
+  ],
+  "installed": false,
+  "save_files_touched": false,
+  "menu_verified": false
+}

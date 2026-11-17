@@ -77,6 +77,21 @@ int main(void){
  fast->seen=runner_frames;UmaMatrix after_cut=uma_matrix_product(&fast->view,&cut_camera);
  assert(runner_actor_pose(&after_cut)==&fast->state);after_cut.m[3][2]+=1000;assert(runner_actor_pose(&after_cut)==&runner_idle_state);
  puts("PASS pose association through a 90-degree camera cut and 100m view translation; distant impostor still rejected");
+ {
+  unsigned original_count=runner_model_count;runner_model_count=7;
+  for(unsigned model=0;model<7;model++){
+  memset(runner_actors,0,sizeof(runner_actors));runner_scene=(UmaSceneSpeed){0};runner_actor_world_valid=0;runner_tracking_gap=0;runner_previous_reference_count=0;runner_actor_anchor=(UmaSceneKey){0};
+  UmaMatrix normal={0},mirror={0};for(int k=0;k<4;k++)normal.m[k][k]=mirror.m[k][k]=1;mirror.m[2][2]=-1;
+  runner_scene.anchor=normal;runner_scene.anchor_valid=1;runner_scene.anchor_key=(UmaSceneKey){.buffer=950};runner_frames=5000;
+  RunnerActor *actor=runner_actor_update_models(&normal,&model,1,.016f,NULL);assert(actor && actor->up[2]>.99f);
+  runner_previous_anchor=normal;runner_scene.anchor=mirror;runner_scene.anchor_key=(UmaSceneKey){.buffer=951,.pass=1};runner_frames++;
+  actor=runner_actor_update_models(&mirror,&model,1,.016f,&normal);assert(actor && actor->model==model);
+  float root[9];assert(runner_actor_root(&actor->state,root));assert(actor->up[2]>.99f && root[8]>.99f);
+  runner_previous_anchor=mirror;runner_frames++;actor=runner_actor_update_models(&mirror,&model,1,.016f,&normal);assert(actor && actor->up[2]>.99f);
+  }
+  runner_model_count=original_count;
+  puts("PASS all seven models preserve the vertical axis and visual root through main-to-reflection anchor handoff");
+ }
  runner_scene=(UmaSceneSpeed){0};memset(runner_actors,0,sizeof(runner_actors));runner_frames=0;
  FILE *asset=fopen("modding/runtime/kitasan.umab","rb");assert(asset);assert(uma_motion_load(asset,&runner_motion));fclose(asset);
  InitializeCriticalSection(&runner_lock);runner_log=fopen("modding/runtime/integration-test/runner.log","w");assert(runner_log);wcscpy(runner_atlas,L"modding\\runtime\\atlas.dds");

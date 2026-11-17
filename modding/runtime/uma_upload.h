@@ -5,6 +5,7 @@
 #include <d3d9.h>
 #include <string.h>
 #include "uma_vertex_bounds.h"
+#include "uma_resource_tags.h"
 /* Observe CPU uploads, never read back a WRITEONLY GPU buffer. */
 typedef HRESULT (WINAPI *UmaVertexLock)(IDirect3DVertexBuffer9*,UINT,UINT,void**,DWORD);
 typedef HRESULT (WINAPI *UmaVertexUnlock)(IDirect3DVertexBuffer9*);
@@ -35,7 +36,7 @@ static BOOL uma_upload_model_at(IDirect3DVertexBuffer9 *buffer,UINT offset,UINT 
 static BOOL uma_upload_matches_at(IDirect3DVertexBuffer9 *buffer,UINT offset){return uma_upload_model_at(buffer,offset,NULL);}
 static BOOL uma_upload_is_character(IDirect3DVertexBuffer9 *buffer){return uma_upload_matches_at(buffer,0);}
 static HRESULT WINAPI uma_observe_lock(IDirect3DVertexBuffer9 *buffer,UINT offset,UINT bytes,void **data,DWORD flags){
- HRESULT result=uma_native_lock(buffer,offset,bytes,data,flags);if(FAILED(result))return result;
+ HRESULT result=uma_native_lock(buffer,offset,bytes,data,flags);if(FAILED(result) || uma_private_renderer_buffer(buffer))return result;
  UmaPendingUpload pending={0};DWORD pending_bytes=sizeof(pending);
  BOOL nested=SUCCEEDED(IDirect3DVertexBuffer9_GetPrivateData(buffer,&uma_pending_guid,&pending,&pending_bytes)) && pending_bytes==sizeof(pending);
  if(!(flags&D3DLOCK_READONLY)){IDirect3DVertexBuffer9_FreePrivateData(buffer,&uma_identity_guid);IDirect3DVertexBuffer9_FreePrivateData(buffer,&uma_bounds_guid);}
@@ -65,7 +66,8 @@ static inline BOOL uma_upload_add_model(const void *expected,UINT bytes,UINT mod
  for(UINT i=0;i<uma_upload_model_count;i++)if(uma_upload_models[i].model==model || (uma_upload_models[i].bytes==bytes && uma_upload_geometry_equal(uma_upload_models[i].expected,&profile)))return FALSE;
  uma_upload_models[uma_upload_model_count++]=profile;return TRUE;
 }
-static HRESULT WINAPI uma_observe_unlock(IDirect3DVertexBuffer9 *buffer){
+/* Keep the large native snapshot off the renderer fast path. */
+static __attribute__((noinline)) HRESULT WINAPI uma_observe_unlock_scan(IDirect3DVertexBuffer9 *buffer){
  UmaPendingUpload pending={0};DWORD bytes=sizeof(pending);
  BOOL tracked=SUCCEEDED(IDirect3DVertexBuffer9_GetPrivateData(buffer,&uma_pending_guid,&pending,&bytes)) && bytes==sizeof(pending);
  UmaUploadIdentity identity={0};UmaUploadSnapshot snapshot;snapshot.bytes=0;
@@ -101,6 +103,10 @@ static HRESULT WINAPI uma_observe_unlock(IDirect3DVertexBuffer9 *buffer){
  if(SUCCEEDED(result) && snapshot.bytes)IDirect3DVertexBuffer9_SetPrivateData(buffer,&uma_bounds_guid,&snapshot,8+snapshot.bytes,0);
  if(SUCCEEDED(result) && identity.count)IDirect3DVertexBuffer9_SetPrivateData(buffer,&uma_identity_guid,&identity,sizeof(identity),0);
  return result;
+}
+static HRESULT WINAPI uma_observe_unlock(IDirect3DVertexBuffer9 *buffer){
+ if(uma_private_renderer_buffer(buffer))return uma_native_unlock(buffer);
+ return uma_observe_unlock_scan(buffer);
 }
 /* Install only before uploads; expected bytes must remain alive until removal. */
 static BOOL uma_upload_install(IDirect3DVertexBuffer9 *sample,const void *expected,UINT bytes){

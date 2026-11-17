@@ -89,7 +89,7 @@ static int runner_camera_change(UmaMatrix *output){
  for(unsigned now=0;now<runner_scene.references;now++)for(unsigned old=0;old<runner_previous_reference_count;old++){
   const UmaReference *a=&runner_scene.reference[now],*b=&runner_previous_references[old];UmaMatrix inverse;
   if(a->ambiguous || b->ambiguous || memcmp(&a->key,&b->key,sizeof(a->key)) || !uma_matrix_inverse(&b->matrix,&inverse))continue;
-  change=uma_matrix_product(&inverse,&a->matrix);if(!uma_rigid(&change))continue;
+  change=uma_matrix_product(&inverse,&a->matrix);if(!uma_rigid(&change) || uma_determinant(&change)<.98f)continue;
   index=now;key=a->key;matrix=a->matrix;cached=1;*output=change;return 1;
  }
  return 0;
@@ -115,12 +115,12 @@ static RunnerActor *runner_actor_update_models(const UmaMatrix *bodies,const uns
  if(runner_scene.anchor_valid && memcmp(&runner_actor_anchor,&runner_scene.anchor_key,sizeof(runner_actor_anchor))){
   int rebased=0;UmaMatrix change,inverse;
   if(camera && runner_actor_world_valid && uma_matrix_inverse(&runner_scene.anchor,&inverse)){
-   UmaMatrix previous=uma_matrix_product(&runner_previous_anchor,camera);change=uma_matrix_product(&previous,&inverse);rebased=uma_rigid(&change);
+   UmaMatrix previous=uma_matrix_product(&runner_previous_anchor,camera);change=uma_matrix_product(&previous,&inverse);rebased=uma_rigid(&change) && uma_determinant(&change)>.98f;
   }
   for(unsigned i=0;!rebased && runner_actor_world_valid && i<runner_previous_reference_count;i++){
    UmaReference *reference=&runner_previous_references[i];
    if(reference->ambiguous || memcmp(&reference->key,&runner_scene.anchor_key,sizeof(reference->key)) || !uma_matrix_inverse(&reference->matrix,&inverse))continue;
-   change=uma_matrix_product(&runner_previous_anchor,&inverse);rebased=uma_rigid(&change);
+   change=uma_matrix_product(&runner_previous_anchor,&inverse);rebased=uma_rigid(&change) && uma_determinant(&change)>.98f;
   }
   if(rebased)for(int actor=0;actor<16;actor++)if(runner_actors[actor].used){
    runner_actors[actor].world=uma_matrix_product(&runner_actors[actor].world,&change);

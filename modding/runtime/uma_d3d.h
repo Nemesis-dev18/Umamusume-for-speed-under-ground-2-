@@ -4,6 +4,7 @@
 #include <windows.h>
 #include <d3d9.h>
 #include "uma_motion.h"
+#include "uma_resource_tags.h"
 #include "uma_shader_bridge.h"
 
 #ifdef UMA_PROFILE
@@ -66,6 +67,7 @@ static HRESULT uma_d3d_open(UmaD3D *output,IDirect3DDevice9 *device,const UmaMot
  UmaD3D r={0};r.device=device;r.motion=motion;r.draw=draw;IDirect3DDevice9_AddRef(device);
  HRESULT result=E_OUTOFMEMORY;r.pose=malloc((size_t)motion->vertices*sizeof(*r.pose));if(!r.pose)goto invalid;
  result=IDirect3DDevice9_CreateVertexBuffer(device,motion->vertices*36,D3DUSAGE_DYNAMIC|D3DUSAGE_WRITEONLY,0,D3DPOOL_DEFAULT,&r.vertices,NULL);if(FAILED(result))goto invalid;
+ DWORD owned=1;result=IDirect3DVertexBuffer9_SetPrivateData(r.vertices,&uma_renderer_buffer_guid,&owned,sizeof(owned),0);if(FAILED(result))goto invalid;
  result=IDirect3DDevice9_CreateIndexBuffer(device,motion->indices*2,0,D3DFMT_INDEX16,D3DPOOL_MANAGED,&r.indices,NULL);if(FAILED(result))goto invalid;
  void *indices=NULL;result=IDirect3DIndexBuffer9_Lock(r.indices,0,motion->indices*2,&indices,0);if(FAILED(result))goto invalid;
  memcpy(indices,motion->index,motion->indices*2);result=IDirect3DIndexBuffer9_Unlock(r.indices);if(FAILED(result))goto invalid;

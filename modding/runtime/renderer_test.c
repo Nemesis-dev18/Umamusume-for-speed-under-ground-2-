@@ -136,6 +136,15 @@ static int check_upload_identity(IDirect3DDevice9 *device,const UmaMotion *motio
  CHECK(IDirect3DDevice9_CreateVertexBuffer(device,size,0,0,D3DPOOL_MANAGED,&managed,NULL));
  assert(uma_upload_install(candidate,motion->rest,size));assert(!uma_upload_install(candidate,motion->rest,size));
  assert(!uma_upload_is_character(candidate) && !uma_upload_is_character(other));
+ FILE *texture=fopen("modding/runtime/atlas.dds","rb");assert(texture);UmaD3D own={0};CHECK(uma_d3d_open(&own,device,motion,texture,observed_draw));fclose(texture);
+ assert(uma_private_renderer_buffer(own.vertices));
+ CHECK(IDirect3DVertexBuffer9_Lock(own.vertices,0,size,&mapped,D3DLOCK_DISCARD));memcpy(mapped,motion->rest,size);
+ UmaPendingUpload pending;DWORD pending_bytes=sizeof(pending);assert(FAILED(IDirect3DVertexBuffer9_GetPrivateData(own.vertices,&uma_pending_guid,&pending,&pending_bytes)));
+ CHECK(IDirect3DVertexBuffer9_Unlock(own.vertices));assert(!uma_upload_is_character(own.vertices));
+ CHECK(IDirect3DVertexBuffer9_FreePrivateData(own.vertices,&uma_renderer_buffer_guid));
+ CHECK(IDirect3DVertexBuffer9_Lock(own.vertices,0,size,&mapped,D3DLOCK_DISCARD));memcpy(mapped,motion->rest,size);CHECK(IDirect3DVertexBuffer9_Unlock(own.vertices));assert(uma_upload_is_character(own.vertices));uma_d3d_close(&own);
+ puts("PASS renderer buffers bypass upload observation; removing the ownership tag restores full native identity checks");
+
  CHECK(IDirect3DVertexBuffer9_Lock(candidate,0,0,&mapped,D3DLOCK_DISCARD));memcpy(mapped,motion->rest,size);CHECK(IDirect3DVertexBuffer9_Unlock(candidate));assert(uma_upload_is_character(candidate));
  CHECK(IDirect3DVertexBuffer9_Lock(other,0,size,&mapped,D3DLOCK_DISCARD));memcpy(mapped,motion->rest,size);((BYTE*)mapped)[size-1]^=1;CHECK(IDirect3DVertexBuffer9_Unlock(other));assert(!uma_upload_is_character(other));
  CHECK(IDirect3DVertexBuffer9_Lock(other,0,0,&mapped,D3DLOCK_DISCARD));memcpy(mapped,motion->rest,size);((BYTE*)mapped)[24]^=127;CHECK(IDirect3DVertexBuffer9_Unlock(other));assert(uma_upload_is_character(other));
