@@ -1,0 +1,189 @@
+{
+  "files": [
+    {
+      "target": "CARS/COROLLA/TEXTURES.BIN",
+      "slot": "COROLLA",
+      "candidate": "modding/staged-runtime/fleet-shadows-native/COROLLA/TEXTURES.BIN",
+      "before_sha256": "0ad09f89b7eb3c82cade7c76ea9c727dc28d43e48f79226e2159bf4add2c2094",
+      "after_sha256": "9cdba845b52eecf021767c413b68cca50e1da38c1028b87a89baf07f73a97daf",
+      "streams": [
+        {
+          "hash": "0xb7f6575b",
+          "compressed_bytes": 242,
+          "native_contract_checked": true
+        },
+        {
+          "hash": "0xb7f657c0",
+          "compressed_bytes": 243,
+          "native_contract_checked": true
+        }
+      ],
+      "verification": {
+        "textures": 56,
+        "only_two_shadows_changed": true,
+        "format": "DXT3 128x64, four mips",
+        "metadata_unchanged": true,
+        "sha256": "9cdba845b52eecf021767c413b68cca50e1da38c1028b87a89baf07f73a97daf"
+      }
+    },
+    {
+      "target": "CARS/240SX/TEXTURES.BIN",
+      "slot": "240SX",
+      "candidate": "modding/staged-runtime/fleet-shadows-native/240SX/TEXTURES.BIN",
+      "before_sha256": "797953b0aad7be50ebbf81144dedfb39c9fab513a41a02886935026c879d0ea1",
+      "after_sha256": "010ee70d2852c5c079c03fdb434b25cf1f6eea8db29db71d2792c4ff48b0752d",
+      "streams": [
+        {
+          "hash": "0xf3659690",
+          "compressed_bytes": 241,
+          "native_contract_checked": true
+        },
+        {
+          "hash": "0xf36596f5",
+          "compressed_bytes": 241,
+          "native_contract_checked": true
+        }
+      ],
+      "verification": {
+        "textures": 73,
+        "only_two_shadows_changed": true,
+        "format": "DXT3 128x64, four mips",
+        "metadata_unchanged": true,
+        "sha256": "010ee70d2852c5c079c03fdb434b25cf1f6eea8db29db71d2792c4ff48b0752d"
+      }
+    },
+    {
+      "target": "CARS/MIATA/TEXTURES.BIN",
+      "slot": "MIATA",
+      "candidate": "modding/staged-runtime/fleet-shadows-native/MIATA/TEXTURES.BIN",
+      "before_sha256": "4fe9f1bc5df58e47273c87586d278b0795121b7893844a415630a8e83025369b",
+      "after_sha256": "c2a60e833d9193913cc667f31a6cf7a809140883669563465b157d19f303cf84",
+      "streams": [
+        {
+          "hash": "0x1e8a50db",
+          "compressed_bytes": 241,
+          "native_contract_checked": true
+        },
+        {
+          "hash": "0x1e8a5140",
+          "compressed_bytes": 240,
+          "native_contract_checked": true
+        }
+      ],
+      "verification": {
+        "textures": 76,
+        "only_two_shadows_changed": true,
+        "format": "DXT3 128x64, four mips",
+        "metadata_unchanged": true,
+        "sha256": "c2a60e833d9193913cc667f31a6cf7a809140883669563465b157d19f303cf84"
+      }
+    },
+    {
+      "target": "CARS/FOCUS/TEXTURES.BIN",
+      "slot": "FOCUS",
+      "candidate": "modding/staged-runtime/fleet-shadows-native/FOCUS/TEXTURES.BIN",
+      "before_sha256": "6e601790adb3856bd637e1e62ef69bc2c8912ca795a22ffc9cb41f90a3e94156",
+      "after_sha256": "6a295e48106c153ace0f59f788efa9e665a62bd0d31d5a062a7778f28d5ae8e6",
+      "streams": [
+        {
+          "hash": "0x8c049acf",
+          "compressed_bytes": 241,
+          "native_contract_checked": true
+        },
+        {
+          "hash": "0x8c049b34",
+          "compressed_bytes": 240,
+          "native_contract_checked": true
+        }
+      ],
+      "verification": {
+        "textures": 72,
+        "only_two_shadows_changed": true,
+        "format": "DXT3 128x64, four mips",
+        "metadata_unchanged": true,
+        "sha256": "6a295e48106c153ace0f59f788efa9e665a62bd0d31d5a062a7778f28d5ae8e6"
+      }
+    },
+    {
+      "target": "CARS/PEUGOT/TEXTURES.BIN",
+      "slot": "PEUGOT",
+      "candidate": "modding/staged-runtime/fleet-shadows-native/PEUGOT/TEXTURES.BIN",
+      "before_sha256": "a2eff8c083c37a5f6ded202b0a181db04f4c0147fe2b9d6650fb0e848f7de838",
+      "after_sha256": "c8dae8b87be1bdfceb9d6e20bf506119ee1c9a3608290366842efc4805bd86d8",
+      "streams": [
+        {
+          "hash": "0x720ef583",
+          "compressed_bytes": 241,
+          "native_contract_checked": true
+        },
+        {
+          "hash": "0x720ef5e8",
+          "compressed_bytes": 242,
+          "native_contract_checked": true
+        }
+      ],
+      "verification": {
+        "textures": 73,
+        "only_two_shadows_changed": true,
+        "format": "DXT3 128x64, four mips",
+        "metadata_unchanged": true,
+        "sha256": "c8dae8b87be1bdfceb9d6e20bf506119ee1c9a3608290366842efc4805bd86d8"
+      }
+    },
+    {
+      "target": "CARS/PEUGOT106/TEXTURES.BIN",
+      "slot": "PEUGOT106",
+      "candidate": "modding/staged-runtime/fleet-shadows-native/PEUGOT106/TEXTURES.BIN",
+      "before_sha256": "cd2f633cd7a32614f7fb81bf785a4dcf067dcfca22bb84c26af9dff94e7a1bd3",
+      "after_sha256": "b1c25c68dc90d612dbd84683dc3592e58cb74d61af7def0a9a2769de2eb4dbd5",
+      "streams": [
+        {
+          "hash": "0x45f33d5a",
+          "compressed_bytes": 246,
+          "native_contract_checked": true
+        },
+        {
+          "hash": "0x45f33dbf",
+          "compressed_bytes": 244,
+          "native_contract_checked": true
+        }
+      ],
+      "verification": {
+        "textures": 60,
+        "only_two_shadows_changed": true,
+        "format": "DXT3 128x64, four mips",
+        "metadata_unchanged": true,
+        "sha256": "b1c25c68dc90d612dbd84683dc3592e58cb74d61af7def0a9a2769de2eb4dbd5"
+      }
+    },
+    {
+      "target": "CARS/CORSA/TEXTURES.BIN",
+      "slot": "CORSA",
+      "candidate": "modding/staged-runtime/fleet-shadows-native/CORSA/TEXTURES.BIN",
+      "before_sha256": "f7d8e61a42cc96365b66e68fd1214e3e372fc133e68812cb8d75c2fe21ccbcb7",
+      "after_sha256": "ecd4801d41584f230d5b3e7028f5e37ad74b6213eae5b046f69178afded99079",
+      "streams": [
+        {
+          "hash": "0x650ec7c7",
+          "compressed_bytes": 240,
+          "native_contract_checked": true
+        },
+        {
+          "hash": "0x650ec82c",
+          "compressed_bytes": 241,
+          "native_contract_checked": true
+        }
+      ],
+      "verification": {
+        "textures": 57,
+        "only_two_shadows_changed": true,
+        "format": "DXT3 128x64, four mips",
+        "metadata_unchanged": true,
+        "sha256": "ecd4801d41584f230d5b3e7028f5e37ad74b6213eae5b046f69178afded99079"
+      }
+    }
+  ],
+  "installed": false,
+  "game_verified": false,
+  "contract_source": "Read-only observed runtime instructions; safe Python reconstruction"
+}

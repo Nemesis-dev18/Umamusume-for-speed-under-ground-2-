@@ -1,0 +1,341 @@
+{
+  "scope": "Safe Python reconstruction of observed runtime instructions, not native execution",
+  "streams": [
+    {
+      "slot": "COROLLA",
+      "kind": "original",
+      "shadow": "FE",
+      "status": "PASS",
+      "bytes_before": 558,
+      "bytes_fixed": 558
+    },
+    {
+      "slot": "COROLLA",
+      "kind": "original",
+      "shadow": "IG",
+      "status": "PASS",
+      "bytes_before": 559,
+      "bytes_fixed": 559
+    },
+    {
+      "slot": "COROLLA",
+      "kind": "compact",
+      "shadow": "FE",
+      "status": "PASS",
+      "bytes_before": 242,
+      "bytes_fixed": 242
+    },
+    {
+      "slot": "COROLLA",
+      "kind": "compact",
+      "shadow": "IG",
+      "status": "PASS",
+      "bytes_before": 243,
+      "bytes_fixed": 243
+    },
+    {
+      "slot": "COROLLA",
+      "kind": "short",
+      "shadow": "FE",
+      "status": "PASS",
+      "bytes_before": 280,
+      "bytes_fixed": 280
+    },
+    {
+      "slot": "COROLLA",
+      "kind": "short",
+      "shadow": "IG",
+      "status": "Native flag/token read crosses compressed boundary",
+      "bytes_before": 281,
+      "bytes_fixed": 282
+    },
+    {
+      "slot": "240SX",
+      "kind": "original",
+      "shadow": "FE",
+      "status": "PASS",
+      "bytes_before": 2961,
+      "bytes_fixed": 2960
+    },
+    {
+      "slot": "240SX",
+      "kind": "original",
+      "shadow": "IG",
+      "status": "PASS",
+      "bytes_before": 2788,
+      "bytes_fixed": 2786
+    },
+    {
+      "slot": "240SX",
+      "kind": "compact",
+      "shadow": "FE",
+      "status": "PASS",
+      "bytes_before": 241,
+      "bytes_fixed": 241
+    },
+    {
+      "slot": "240SX",
+      "kind": "compact",
+      "shadow": "IG",
+      "status": "PASS",
+      "bytes_before": 241,
+      "bytes_fixed": 241
+    },
+    {
+      "slot": "240SX",
+      "kind": "short",
+      "shadow": "FE",
+      "status": "PASS",
+      "bytes_before": 279,
+      "bytes_fixed": 279
+    },
+    {
+      "slot": "240SX",
+      "kind": "short",
+      "shadow": "IG",
+      "status": "PASS",
+      "bytes_before": 279,
+      "bytes_fixed": 279
+    },
+    {
+      "slot": "MIATA",
+      "kind": "original",
+      "shadow": "FE",
+      "status": "PASS",
+      "bytes_before": 3054,
+      "bytes_fixed": 3053
+    },
+    {
+      "slot": "MIATA",
+      "kind": "original",
+      "shadow": "IG",
+      "status": "PASS",
+      "bytes_before": 2975,
+      "bytes_fixed": 2974
+    },
+    {
+      "slot": "MIATA",
+      "kind": "compact",
+      "shadow": "FE",
+      "status": "PASS",
+      "bytes_before": 241,
+      "bytes_fixed": 241
+    },
+    {
+      "slot": "MIATA",
+      "kind": "compact",
+      "shadow": "IG",
+      "status": "PASS",
+      "bytes_before": 240,
+      "bytes_fixed": 240
+    },
+    {
+      "slot": "MIATA",
+      "kind": "short",
+      "shadow": "FE",
+      "status": "PASS",
+      "bytes_before": 279,
+      "bytes_fixed": 279
+    },
+    {
+      "slot": "MIATA",
+      "kind": "short",
+      "shadow": "IG",
+      "status": "PASS",
+      "bytes_before": 278,
+      "bytes_fixed": 278
+    },
+    {
+      "slot": "FOCUS",
+      "kind": "original",
+      "shadow": "FE",
+      "status": "PASS",
+      "bytes_before": 2694,
+      "bytes_fixed": 2692
+    },
+    {
+      "slot": "FOCUS",
+      "kind": "original",
+      "shadow": "IG",
+      "status": "PASS",
+      "bytes_before": 2580,
+      "bytes_fixed": 2579
+    },
+    {
+      "slot": "FOCUS",
+      "kind": "compact",
+      "shadow": "FE",
+      "status": "PASS",
+      "bytes_before": 241,
+      "bytes_fixed": 241
+    },
+    {
+      "slot": "FOCUS",
+      "kind": "compact",
+      "shadow": "IG",
+      "status": "PASS",
+      "bytes_before": 240,
+      "bytes_fixed": 240
+    },
+    {
+      "slot": "FOCUS",
+      "kind": "short",
+      "shadow": "FE",
+      "status": "PASS",
+      "bytes_before": 279,
+      "bytes_fixed": 279
+    },
+    {
+      "slot": "FOCUS",
+      "kind": "short",
+      "shadow": "IG",
+      "status": "PASS",
+      "bytes_before": 278,
+      "bytes_fixed": 278
+    },
+    {
+      "slot": "PEUGOT",
+      "kind": "original",
+      "shadow": "FE",
+      "status": "PASS",
+      "bytes_before": 2918,
+      "bytes_fixed": 2917
+    },
+    {
+      "slot": "PEUGOT",
+      "kind": "original",
+      "shadow": "IG",
+      "status": "PASS",
+      "bytes_before": 2977,
+      "bytes_fixed": 2975
+    },
+    {
+      "slot": "PEUGOT",
+      "kind": "compact",
+      "shadow": "FE",
+      "status": "PASS",
+      "bytes_before": 241,
+      "bytes_fixed": 241
+    },
+    {
+      "slot": "PEUGOT",
+      "kind": "compact",
+      "shadow": "IG",
+      "status": "PASS",
+      "bytes_before": 242,
+      "bytes_fixed": 242
+    },
+    {
+      "slot": "PEUGOT",
+      "kind": "short",
+      "shadow": "FE",
+      "status": "PASS",
+      "bytes_before": 279,
+      "bytes_fixed": 279
+    },
+    {
+      "slot": "PEUGOT",
+      "kind": "short",
+      "shadow": "IG",
+      "status": "PASS",
+      "bytes_before": 280,
+      "bytes_fixed": 280
+    },
+    {
+      "slot": "PEUGOT106",
+      "kind": "original",
+      "shadow": "FE",
+      "status": "PASS",
+      "bytes_before": 3004,
+      "bytes_fixed": 3002
+    },
+    {
+      "slot": "PEUGOT106",
+      "kind": "original",
+      "shadow": "IG",
+      "status": "PASS",
+      "bytes_before": 2821,
+      "bytes_fixed": 2820
+    },
+    {
+      "slot": "PEUGOT106",
+      "kind": "compact",
+      "shadow": "FE",
+      "status": "Native flag/token read crosses compressed boundary",
+      "bytes_before": 245,
+      "bytes_fixed": 246
+    },
+    {
+      "slot": "PEUGOT106",
+      "kind": "compact",
+      "shadow": "IG",
+      "status": "PASS",
+      "bytes_before": 244,
+      "bytes_fixed": 244
+    },
+    {
+      "slot": "PEUGOT106",
+      "kind": "short",
+      "shadow": "FE",
+      "status": "PASS",
+      "bytes_before": 284,
+      "bytes_fixed": 284
+    },
+    {
+      "slot": "PEUGOT106",
+      "kind": "short",
+      "shadow": "IG",
+      "status": "PASS",
+      "bytes_before": 283,
+      "bytes_fixed": 283
+    },
+    {
+      "slot": "CORSA",
+      "kind": "original",
+      "shadow": "FE",
+      "status": "PASS",
+      "bytes_before": 3005,
+      "bytes_fixed": 3004
+    },
+    {
+      "slot": "CORSA",
+      "kind": "original",
+      "shadow": "IG",
+      "status": "PASS",
+      "bytes_before": 2818,
+      "bytes_fixed": 2817
+    },
+    {
+      "slot": "CORSA",
+      "kind": "compact",
+      "shadow": "FE",
+      "status": "PASS",
+      "bytes_before": 240,
+      "bytes_fixed": 240
+    },
+    {
+      "slot": "CORSA",
+      "kind": "compact",
+      "shadow": "IG",
+      "status": "PASS",
+      "bytes_before": 241,
+      "bytes_fixed": 241
+    },
+    {
+      "slot": "CORSA",
+      "kind": "short",
+      "shadow": "FE",
+      "status": "PASS",
+      "bytes_before": 278,
+      "bytes_fixed": 278
+    },
+    {
+      "slot": "CORSA",
+      "kind": "short",
+      "shadow": "IG",
+      "status": "PASS",
+      "bytes_before": 279,
+      "bytes_fixed": 279
+    }
+  ]
+}

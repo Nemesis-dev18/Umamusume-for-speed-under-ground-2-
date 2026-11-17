@@ -5,7 +5,8 @@ import struct
 from inspect_assets import ROOT,chunks,flatten,jdlz
 
 
-def rewrite_jdlz(source,data):
+def rewrite_jdlz(source,data,max_copy=4098):
+    if not isinstance(max_copy,int) or not 3<=max_copy<=4098:raise ValueError("Invalid copy limit")
     original=jdlz(source)
     if not data or len(data)!=len(original):raise ValueError('JDLZ decoded size changed')
     stream=bytearray();bit1=bit2=8;flag1=flag2=0
@@ -25,7 +26,19 @@ def rewrite_jdlz(source,data):
             a,b=source[at:at+2];at+=2;near=flags2&1
             length,distance=(((a&240)<<4|b)+3,(a&15)+1) if near else ((a&31)+3,(b|((a&224)<<3))+17)
             # A changed source pixel must never leak through a back-reference into another texture.
-            if all(data[position+k]==data[position+k-distance] for k in range(length)):emit(False,a,b,near)
+            if all(data[position+k]==data[position+k-distance] for k in range(length)):
+                if length<=max_copy:emit(False,a,b,near)
+                else:
+                    done=0
+                    while done<length:
+                        count=min(max_copy,length-done)
+                        if count<3:
+                            for value in data[position+done:position+done+count]:emit(True,value)
+                        elif near:
+                            value=count-3;emit(False,((value>>8)<<4)|(distance-1),value&255,1)
+                        else:
+                            value=distance-17;emit(False,(count-3)|((value>>8)<<5),value&255)
+                        done+=count
             else:
                 for value in data[position:position+length]:emit(True,value)
             position+=length;flags2>>=1
@@ -33,7 +46,8 @@ def rewrite_jdlz(source,data):
         flags1>>=1
     encoded=b'JDLZ\x02\x10\0\0'+struct.pack('<2I',len(data),len(stream)+16)+stream
     if jdlz(encoded)!=data:raise ValueError('JDLZ rewrite failed')
-    return encoded
+    from jdlz_native import finish_native
+    return finish_native(encoded)
 
 
 def prepare(source):
