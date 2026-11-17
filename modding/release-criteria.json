@@ -6,12 +6,13 @@
     "idle_without_import_pose": "Confirmed by user in real game: no import pose, slight idle movement",
     "no_residual_car_wheel_or_shadow": true,
     "character_label": "Kitasan Black confirmed by user",
-    "dedicated_portrait_badge": "Installed, real-game appearance pending"
+    "dedicated_portrait_badge": "Rolled back after boot failure; compressed replacement staged"
   },
   "race": {
     "player_character_visible": true,
     "animated_running_and_speed_response": "User confirmed leg animation now runs; speed valid in real log, but style unnatural and needs replacement/polish",
-    "other_car_bodies_visible_when_kitasan_selected": "Nissan 240SX confirmed intact by user. Replacement currently applies to every Corolla instance; no player-only targeting"
+    "other_car_bodies_visible_when_kitasan_selected": "Nissan 240SX confirmed intact by user. Replacement currently applies to every Corolla instance; no player-only targeting",
+    "gait_continuity": "User reports static pose on some road sections with current module"
   },
   "offline_motion": {
     "rig_vertices": 14512,
@@ -147,12 +148,14 @@
   "visual_rollover": {
     "installed": true,
     "offline_tests_passed": true,
-    "gameplay_verified": false,
-    "fall_recovery_animation": false
+    "gameplay_verified": "User confirms car rollover removed, but impact looks unnaturally rigid",
+    "fall_recovery_animation": false,
+    "natural_impact": false
   },
   "own_headlight_projector": {
     "installed": true,
     "offline_tests_passed": true,
-    "gameplay_verified": false
+    "gameplay_verified": false,
+    "user_result": "Headlight beam still appears intermittently"
   }
 }

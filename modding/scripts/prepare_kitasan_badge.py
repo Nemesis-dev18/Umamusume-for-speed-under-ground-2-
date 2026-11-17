@@ -19,6 +19,38 @@ def literal_jdlz(raw):
     return out
 
 
+def compress_jdlz(raw):
+    if not raw:raise ValueError('Empty JDLZ')
+    stream=bytearray();bit1=bit2=8;flag1=flag2=0;recent={};position=0
+    def emit(length,distance=0):
+        nonlocal bit1,bit2,flag1,flag2
+        if bit1==8:flag1=len(stream);stream.append(0);bit1=0
+        if bit2==8:flag2=len(stream);stream.append(0);bit2=0
+        if not distance:stream.append(raw[position])
+        else:
+            stream[flag1]|=1<<bit1
+            if distance<=16:
+                stream[flag2]|=1<<bit2;n=length-3;stream.extend((((n>>8)<<4)|(distance-1),n&255))
+            else:
+                d=distance-17;stream.extend(((length-3)|((d>>8)<<5),d&255))
+            bit2+=1
+        bit1+=1
+    while position<len(raw):
+        length=1;distance=0
+        if position+3<=len(raw):
+            prior=recent.get(raw[position:position+3],-10000);d=position-prior
+            if 1<=d<=2064:
+                limit=min(4098 if d<=16 else 34,len(raw)-position);length=3
+                while length<limit and raw[position+length]==raw[position+length-d]:length+=1
+                distance=d
+        emit(length,distance)
+        for at in range(position,min(position+length,len(raw)-2)):recent[raw[at:at+3]]=at
+        position+=length
+    result=b'JDLZ\x02\x10\0\0'+struct.pack('<II',len(raw),16+len(stream))+stream
+    if jdlz(result)!=raw:raise ValueError('JDLZ compressor roundtrip')
+    return result
+
+
 def badge(raw,pixels):
     tree=chunks(raw);tpk=next(n for n in tree if n['offset']==204288)
     nodes={n['id']:n for n in flatten(tpk['children']) if n['id']!='0x00000000'}
@@ -60,7 +92,8 @@ def main():
     image.thumbnail((64,64),Image.Resampling.LANCZOS)
     canvas=Image.new('RGBA',(128,64));canvas.alpha_composite(image,((128-image.width)//2,0))
     canvas.save(ROOT/'modding/diagnostics/kitasan-badge-preview.png')
-    out,key=badge(raw,dxt3(canvas));encoded=literal_jdlz(out)
+    out,key=badge(raw,dxt3(canvas));encoded=compress_jdlz(out)
+    if len(encoded)>=len(out):raise ValueError("Package must compress below decoded size")
     staged=ROOT/'modding/staged-runtime/FrontB.kitasan-badge.lzc';staged.write_bytes(encoded)
     rows=[dict(target=str(source.relative_to(ROOT)),candidate=str(staged.relative_to(ROOT)),before_sha256=hashlib.sha256(before).hexdigest(),after_sha256=hashlib.sha256(encoded).hexdigest(),bytes=len(encoded))]
     for name in ['GLOBAL/GLOBALB.BUN','GLOBAL/GlobalB.lzc']:

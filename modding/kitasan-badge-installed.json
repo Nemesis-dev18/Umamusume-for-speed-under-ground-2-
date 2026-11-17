@@ -31,7 +31,8 @@
     }
   ],
   "texture_hash": "0xd2dee64b",
-  "installed": true,
+  "installed": false,
   "gameplay_verified": false,
-  "checkpoint": "640107f"
+  "checkpoint": "640107f",
+  "rolled_back": true
 }
