@@ -1,0 +1,24 @@
+{
+  "cases": [
+    {
+      "label": "installed",
+      "returncode": 0,
+      "output": "edges=188700 absolute_length_change_max=0.15794 fraction_over_10pct=0.01186 fraction_over_25pct=0.00000 fraction_over_50pct=0.00000",
+      "error": ""
+    },
+    {
+      "label": "flex",
+      "returncode": -6,
+      "output": "",
+      "error": "secondary-stretch-test: /home/nemesis/V\u00eddeos/proyecto inginversa/NFSU2-Uma-Prueba/modding/runtime/secondary_stretch_test.c:17: main: Assertion `checked && maximum<.2f && over25==0' failed."
+    },
+    {
+      "label": "soft",
+      "returncode": -6,
+      "output": "",
+      "error": "secondary-stretch-test: /home/nemesis/V\u00eddeos/proyecto inginversa/NFSU2-Uma-Prueba/modding/runtime/secondary_stretch_test.c:17: main: Assertion `checked && maximum<.2f && over25==0' failed."
+    }
+  ],
+  "installed": false,
+  "scope": "CPU cape edge deformation only; appearance and gameplay unverified"
+}
