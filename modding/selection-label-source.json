@@ -1,0 +1,12 @@
+{
+  "file": "FRONTEND/FrontB.lzc",
+  "name": "SECONDARY_LOGO_COROLLA",
+  "decoded_header": 246172,
+  "pixel_offset": 3173120,
+  "bytes": 16384,
+  "width": 256,
+  "height": 64,
+  "mips": 1,
+  "format": "DXT3",
+  "installed": false
+}

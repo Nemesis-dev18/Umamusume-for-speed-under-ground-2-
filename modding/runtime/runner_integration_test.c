@@ -27,6 +27,21 @@ int main(void){
  UmaMatrix unknown={0};for(int k=0;k<4;k++)unknown.m[k][k]=1;unknown.m[3][0]=1000;assert(runner_actor_pose(&unknown)==&runner_idle_state);
  runner_scene.bodies=0;uma_scene_body(&runner_scene,&unknown);uma_scene_body(&runner_scene,&unknown);assert(runner_scene.bodies==1);
  puts("PASS independent actor gait: draw-order reversal, camera orbit and vertical suspension cannot animate a stopped actor; another runs then returns to idle");
+ memset(runner_actors,0,sizeof(runner_actors));runner_actor_world_valid=0;runner_tracking_gap=0;runner_previous_reference_count=0;
+ float last_phase=0;
+ for(int frame=0;frame<150;frame++){
+  UmaMatrix camera={0},actor={0};for(int k=0;k<4;k++)camera.m[k][k]=actor.m[k][k]=1;
+  float time=(float)frame*.01f,flight=fmaxf(0,time-.4f);actor.m[3][0]=time*25;
+  actor.m[3][2]=frame>=40 && frame<120?fmaxf(0,8*flight-9.8f*flight*flight):0;
+  float pitch=frame>=40 && frame<120?.35f*sinf(flight*4):0;
+  actor.m[0][0]=actor.m[2][2]=cosf(pitch);actor.m[0][2]=sinf(pitch);actor.m[2][0]=-sinf(pitch);
+  camera.m[3][0]=-time*25;camera.m[3][1]=-5;camera.m[3][2]=-2;
+  UmaMatrix view=uma_matrix_product(&actor,&camera);runner_scene.anchor=camera;runner_scene.anchor_valid=1;runner_scene.anchor_key=(UmaSceneKey){.buffer=900};runner_frames=1000+(unsigned)frame;
+  RunnerActor *tracked=runner_actor_update(&view,1,.01f);assert(tracked);
+  if(frame>40){assert(tracked->state.run_blend>.9f);assert(tracked->state.run_phase!=last_phase);assert(tracked->speed>20);}
+  last_phase=tracked->state.run_phase;
+ }
+ puts("PASS ballistic jump with stable scenery: horizontal motion, pitch and chase camera preserve running phase; missing-scene jump still needs live evidence");
  runner_scene=(UmaSceneSpeed){0};memset(runner_actors,0,sizeof(runner_actors));runner_frames=0;
  FILE *asset=fopen("modding/runtime/kitasan.umab","rb");assert(asset);assert(uma_motion_load(asset,&runner_motion));fclose(asset);
  InitializeCriticalSection(&runner_lock);runner_log=fopen("modding/runtime/integration-test/runner.log","w");assert(runner_log);wcscpy(runner_atlas,L"modding\\runtime\\atlas.dds");
