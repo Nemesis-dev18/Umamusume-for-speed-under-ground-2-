@@ -14,7 +14,7 @@ class FleetGeometry(unittest.TestCase):
         characters=json.loads((ROOT/'modding/fleet-source-inventory.json').read_text())['characters']
         for character in characters:
             with self.subTest(slot=character['nfs_slot']):
-                folder=ROOT/'modding/staged-runtime/fleet'/str(character['id']);receipt=json.loads((folder/'geometry.json').read_text());data=(folder/'GEOMETRY.BIN').read_bytes();source=(ROOT/receipt['target']).read_bytes()
+                folder=ROOT/'modding/staged-runtime/fleet'/str(character['id']);receipt=json.loads((folder/'geometry.json').read_text());data=(folder/'GEOMETRY.BIN').read_bytes();source=(ROOT/(receipt['target']+'.before-fleet-integration.bak')).read_bytes()
                 self.assertEqual(hashlib.sha256(data).hexdigest(),receipt['after_sha256']);self.assertEqual(hashlib.sha256(source).hexdigest(),receipt['before_sha256']);self.assertFalse(receipt['installed'])
                 self.assertEqual(solid_map(source).keys(),solid_map(data).keys());bodies=0
                 for node,leaves,header in solid_map(data).values():

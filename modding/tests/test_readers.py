@@ -37,8 +37,8 @@ class Geometry(unittest.TestCase):
         parts=geometry(path.read_bytes(),'KIT00_BODY_')
         self.assertEqual(len(parts),4)
         for part in parts:
-            self.assertEqual(len(part['positions']),14512)
-            self.assertEqual(len(part['indices']),16557*3)
+            self.assertEqual(len(part['positions']),6 if (ROOT/'modding/runtime/fleet.enabled').exists() else 14512)
+            self.assertEqual(len(part['indices']),6 if (ROOT/'modding/runtime/fleet.enabled').exists() else 16557*3)
             self.assertLess(max(part['indices']),len(part['positions']))
             self.assertIsNone(part['native_bones'])
         self.assertEqual(before,hashlib.sha256(path.read_bytes()).digest())
@@ -58,7 +58,10 @@ class Geometry(unittest.TestCase):
         from inspect_assets import ROOT
         asset=(ROOT/'modding/runtime/kitasan.umab').read_bytes()
         count=struct.unpack_from('<I',asset,8)[0];expected=asset[32:32+count*36]
-        self.assertEqual(len(expected),522432)
+        if (ROOT/'modding/runtime/fleet.enabled').exists():
+            from fleet_carrier import carrier
+            expected=carrier(1068)
+        self.assertEqual(len(expected),216 if (ROOT/'modding/runtime/fleet.enabled').exists() else 522432)
         data=data_path('CARS/COROLLA/GEOMETRY.BIN').read_bytes()
         meshes=geometry(data,'KIT00_BODY_');self.assertEqual(len(meshes),4)
         for mesh in meshes:
@@ -338,10 +341,13 @@ class AuthoredMotion(unittest.TestCase):
         import numpy as np
         from inspect_assets import ROOT
         from extract_assets import geometry
-        for m in geometry((ROOT/'CARS/240SX/GEOMETRY.BIN').read_bytes(),'240SX_KIT00_BODY_D'):
+        baseline=ROOT/'CARS/240SX/GEOMETRY.BIN.before-fleet-integration.bak'
+        if not baseline.exists():baseline=ROOT/'CARS/240SX/GEOMETRY.BIN'
+        for m in geometry(baseline.read_bytes(),'240SX_KIT00_BODY_D'):
             p=np.array(m['positions']);n=np.array(m['normals']);t=np.array(m['indices']).reshape(-1,3)
             cross=np.cross(p[t[:,1]]-p[t[:,0]],p[t[:,2]]-p[t[:,0]])
             valid=np.linalg.norm(cross,axis=1)>1e-10
+            self.assertTrue(valid.any(),'Native winding calibration needs real nondegenerate car triangles')
             self.assertGreater(float(((cross*n[t].mean(1)).sum(1)[valid]>0).mean()),.99)
 
 if __name__ == '__main__': unittest.main()
