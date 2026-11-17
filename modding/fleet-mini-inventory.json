@@ -1,0 +1,412 @@
+{
+  "characters": [
+    {
+      "id": 1068,
+      "name": "Kitasan Black",
+      "prefabs": [
+        {
+          "logical": "3d/chara/mini/body/mbdy1068_00/clothes/pfb_mbdy1068_00_cloth00",
+          "hash": "X3QUL3QNUUQ6Q2ISPBFAR65ZEQ22MOV6",
+          "cached": true
+        },
+        {
+          "logical": "3d/chara/mini/body/mbdy1068_00/pfb_mbdy1068_00",
+          "hash": "F4LZCRNKHUUKG6XTZ4DUJHZ3ZC7KB6T4",
+          "cached": true
+        },
+        {
+          "logical": "3d/chara/mini/body/mbdy1068_10/clothes/pfb_mbdy1068_10_cloth00",
+          "hash": "RUMZSQI4GLLVI3BOAYHCHA3IRW2VOG6A",
+          "cached": true
+        },
+        {
+          "logical": "3d/chara/mini/body/mbdy1068_10/pfb_mbdy1068_10",
+          "hash": "CR35KUWDQHT5CBPS6LLRLPKPXLJH62SJ",
+          "cached": true
+        },
+        {
+          "logical": "3d/chara/mini/head/mchr1068_00/clothes/pfb_mchr1068_00_cloth00",
+          "hash": "SE5HPZHPKBTXHVO5SOKGHOXDNY4XFO2P",
+          "cached": true
+        },
+        {
+          "logical": "3d/chara/mini/head/mchr1068_00/pfb_mchr1068_00_hair",
+          "hash": "EMEGPDP6EOEOSXYWPSAJFJBYLUCLOPLN",
+          "cached": true
+        },
+        {
+          "logical": "3d/chara/mini/head/mchr1068_10/clothes/pfb_mchr1068_10_cloth00",
+          "hash": "XJ2YOOCFHRPWCETVLP46MGZHKV422AJC",
+          "cached": true
+        },
+        {
+          "logical": "3d/chara/mini/head/mchr1068_10/pfb_mchr1068_10_hair",
+          "hash": "BDMROZQXXREUOCJLUSDJPHPF73URDPII",
+          "cached": true
+        }
+      ],
+      "selected_prefabs": [
+        {
+          "logical": "3d/chara/mini/body/mbdy1068_00/pfb_mbdy1068_00",
+          "hash": "F4LZCRNKHUUKG6XTZ4DUJHZ3ZC7KB6T4",
+          "cached": true
+        },
+        {
+          "logical": "3d/chara/mini/head/mchr1068_00/pfb_mchr1068_00_hair",
+          "hash": "EMEGPDP6EOEOSXYWPSAJFJBYLUCLOPLN",
+          "cached": true
+        }
+      ]
+    },
+    {
+      "id": 1052,
+      "name": "Haru Urara",
+      "prefabs": [
+        {
+          "logical": "3d/chara/mini/body/mbdy1052_00/clothes/pfb_mbdy1052_00_cloth00",
+          "hash": "NZIEZATDTJ2ZAVEYURLQAGFR62A56F7M",
+          "cached": true
+        },
+        {
+          "logical": "3d/chara/mini/body/mbdy1052_00/pfb_mbdy1052_00",
+          "hash": "CFGBY3DTYELIH3AJASYVRWDBQKJD7EXR",
+          "cached": true
+        },
+        {
+          "logical": "3d/chara/mini/body/mbdy1052_10/clothes/pfb_mbdy1052_10_cloth00",
+          "hash": "MODIDYDH3HBVA3O6R6UER6JFNFZWRSHF",
+          "cached": true
+        },
+        {
+          "logical": "3d/chara/mini/body/mbdy1052_10/pfb_mbdy1052_10",
+          "hash": "VSGPTJLKOVOANSPO73D2VQ5AGRTLO23X",
+          "cached": true
+        },
+        {
+          "logical": "3d/chara/mini/head/mchr1052_00/clothes/pfb_mchr1052_00_cloth00",
+          "hash": "NKCCPMQ37SVF2YWJUWXWSU4K3XXZR2TU",
+          "cached": true
+        },
+        {
+          "logical": "3d/chara/mini/head/mchr1052_00/pfb_mchr1052_00_hair",
+          "hash": "2PRLJCJ75FFQAUP7UARO4OJVHDYWL32U",
+          "cached": true
+        },
+        {
+          "logical": "3d/chara/mini/head/mchr1052_10/clothes/pfb_mchr1052_10_cloth00",
+          "hash": "Z6SP2W5QJ5EW7IS3M2MPGHILWQ3SZYH2",
+          "cached": true
+        },
+        {
+          "logical": "3d/chara/mini/head/mchr1052_10/pfb_mchr1052_10_hair",
+          "hash": "DUAWGFITGOUJC2OXNQKFXTC6WZMQ3D34",
+          "cached": true
+        }
+      ],
+      "selected_prefabs": [
+        {
+          "logical": "3d/chara/mini/body/mbdy1052_00/pfb_mbdy1052_00",
+          "hash": "CFGBY3DTYELIH3AJASYVRWDBQKJD7EXR",
+          "cached": true
+        },
+        {
+          "logical": "3d/chara/mini/head/mchr1052_00/pfb_mchr1052_00_hair",
+          "hash": "2PRLJCJ75FFQAUP7UARO4OJVHDYWL32U",
+          "cached": true
+        }
+      ]
+    },
+    {
+      "id": 1032,
+      "name": "Agnes Tachyon",
+      "prefabs": [
+        {
+          "logical": "3d/chara/mini/body/mbdy1032_00/clothes/pfb_mbdy1032_00_cloth00",
+          "hash": "DGVT2IGIJACLWDC5XBQ2KX6PXDXKW3RB",
+          "cached": true
+        },
+        {
+          "logical": "3d/chara/mini/body/mbdy1032_00/pfb_mbdy1032_00",
+          "hash": "D5NHSZU467DDRSJ2MH3ZR4N3KY6DVOZ2",
+          "cached": true
+        },
+        {
+          "logical": "3d/chara/mini/body/mbdy1032_30/clothes/pfb_mbdy1032_30_cloth00",
+          "hash": "L2FBTZK5CPRMHFWFL7MAAC377U55YA7K",
+          "cached": true
+        },
+        {
+          "logical": "3d/chara/mini/body/mbdy1032_30/pfb_mbdy1032_30",
+          "hash": "POVTHCBNADSVFAVGS5SPAB6I4GHKC3QR",
+          "cached": true
+        },
+        {
+          "logical": "3d/chara/mini/head/mchr1032_00/clothes/pfb_mchr1032_00_cloth00",
+          "hash": "KMDUVU7W3VYKQHBJ466OM6J6ATCPNBN5",
+          "cached": true
+        },
+        {
+          "logical": "3d/chara/mini/head/mchr1032_00/pfb_mchr1032_00_hair",
+          "hash": "YSSPGJMNH62HQLMQIR7JWVSNQ43UMAV5",
+          "cached": true
+        },
+        {
+          "logical": "3d/chara/mini/head/mchr1032_30/clothes/pfb_mchr1032_30_cloth00",
+          "hash": "A3MHOEI3UME5XSQN5MPJXV4UMEWUIZ6S",
+          "cached": true
+        },
+        {
+          "logical": "3d/chara/mini/head/mchr1032_30/pfb_mchr1032_30_hair",
+          "hash": "5AAKM226WR5K5FO5EO27WPZK7YCRG5GH",
+          "cached": true
+        }
+      ],
+      "selected_prefabs": [
+        {
+          "logical": "3d/chara/mini/body/mbdy1032_00/pfb_mbdy1032_00",
+          "hash": "D5NHSZU467DDRSJ2MH3ZR4N3KY6DVOZ2",
+          "cached": true
+        },
+        {
+          "logical": "3d/chara/mini/head/mchr1032_00/pfb_mchr1032_00_hair",
+          "hash": "YSSPGJMNH62HQLMQIR7JWVSNQ43UMAV5",
+          "cached": true
+        }
+      ]
+    },
+    {
+      "id": 1062,
+      "name": "Matikanetannhauser",
+      "prefabs": [
+        {
+          "logical": "3d/chara/mini/body/mbdy1062_00/clothes/pfb_mbdy1062_00_cloth00",
+          "hash": "FYJ7DUBU4GOSAMPLIRMLDJTYXZQZJQ7F",
+          "cached": true
+        },
+        {
+          "logical": "3d/chara/mini/body/mbdy1062_00/pfb_mbdy1062_00",
+          "hash": "YHPQEWELSSTTN5PFHFSJPGAEPMD5GJTI",
+          "cached": true
+        },
+        {
+          "logical": "3d/chara/mini/body/mbdy1062_50/clothes/pfb_mbdy1062_50_cloth00",
+          "hash": "CKKFPCMR25SNBONKMEFKBZD4PS5S4TRI",
+          "cached": true
+        },
+        {
+          "logical": "3d/chara/mini/body/mbdy1062_50/pfb_mbdy1062_50",
+          "hash": "33U5ZQGNIYP3YIMHFM2SCW3VHBUTP6MW",
+          "cached": true
+        },
+        {
+          "logical": "3d/chara/mini/head/mchr1062_00/clothes/pfb_mchr1062_00_cloth00",
+          "hash": "PEYFA4M2LXIDZ5PZVVNLKJYZPGT6P6NH",
+          "cached": true
+        },
+        {
+          "logical": "3d/chara/mini/head/mchr1062_00/pfb_mchr1062_00_hair",
+          "hash": "UNZAUCIZU6SLFHQXKV4VV6JGEB73IHON",
+          "cached": true
+        },
+        {
+          "logical": "3d/chara/mini/head/mchr1062_50/clothes/pfb_mchr1062_50_cloth00",
+          "hash": "AEZV2QHQI3JWL5FSMUEOTZC6UM5MYFQP",
+          "cached": true
+        },
+        {
+          "logical": "3d/chara/mini/head/mchr1062_50/pfb_mchr1062_50_hair",
+          "hash": "LTXB5Z2AKALSD2RNGHKGRFL5O6LWWF3L",
+          "cached": true
+        }
+      ],
+      "selected_prefabs": [
+        {
+          "logical": "3d/chara/mini/body/mbdy1062_00/pfb_mbdy1062_00",
+          "hash": "YHPQEWELSSTTN5PFHFSJPGAEPMD5GJTI",
+          "cached": true
+        },
+        {
+          "logical": "3d/chara/mini/head/mchr1062_00/pfb_mchr1062_00_hair",
+          "hash": "UNZAUCIZU6SLFHQXKV4VV6JGEB73IHON",
+          "cached": true
+        }
+      ]
+    },
+    {
+      "id": 1015,
+      "name": "T.M. Opera O",
+      "prefabs": [
+        {
+          "logical": "3d/chara/mini/body/mbdy1015_00/clothes/pfb_mbdy1015_00_cloth00",
+          "hash": "3C6YJZ2CD4MNJ4IWHE3RV6PMBSZTUJT3",
+          "cached": true
+        },
+        {
+          "logical": "3d/chara/mini/body/mbdy1015_00/pfb_mbdy1015_00",
+          "hash": "WB5JHLMMW6PHHCJBTUR5QCZUMQCCJDIA",
+          "cached": true
+        },
+        {
+          "logical": "3d/chara/mini/body/mbdy1015_10/clothes/pfb_mbdy1015_10_cloth00",
+          "hash": "DAGUYNA6XSVY7T5QFGIODZNG35W545PP",
+          "cached": true
+        },
+        {
+          "logical": "3d/chara/mini/body/mbdy1015_10/pfb_mbdy1015_10",
+          "hash": "ZSMPYBG2DG5QHIMKP5T525QNTIMHYZA3",
+          "cached": true
+        },
+        {
+          "logical": "3d/chara/mini/head/mchr1015_00/clothes/pfb_mchr1015_00_cloth00",
+          "hash": "TN2HA7ALZDOHUFO6AOVBLGW5QMUM3HM5",
+          "cached": true
+        },
+        {
+          "logical": "3d/chara/mini/head/mchr1015_00/pfb_mchr1015_00_hair",
+          "hash": "L7JJLF2LSKI2LRJIZOK6MAJFRP3W7DSZ",
+          "cached": true
+        },
+        {
+          "logical": "3d/chara/mini/head/mchr1015_10/clothes/pfb_mchr1015_10_cloth00",
+          "hash": "F3SQIBRTQNVPDKYVID45X6DMSYVNRLYK",
+          "cached": true
+        },
+        {
+          "logical": "3d/chara/mini/head/mchr1015_10/pfb_mchr1015_10_hair",
+          "hash": "JYFHPJYZE2XDBRVEF4MZIT6EP3IMFLFW",
+          "cached": true
+        }
+      ],
+      "selected_prefabs": [
+        {
+          "logical": "3d/chara/mini/body/mbdy1015_00/pfb_mbdy1015_00",
+          "hash": "WB5JHLMMW6PHHCJBTUR5QCZUMQCCJDIA",
+          "cached": true
+        },
+        {
+          "logical": "3d/chara/mini/head/mchr1015_00/pfb_mchr1015_00_hair",
+          "hash": "L7JJLF2LSKI2LRJIZOK6MAJFRP3W7DSZ",
+          "cached": true
+        }
+      ]
+    },
+    {
+      "id": 1006,
+      "name": "Oguri Cap",
+      "prefabs": [
+        {
+          "logical": "3d/chara/mini/body/mbdy1006_00/clothes/pfb_mbdy1006_00_cloth00",
+          "hash": "W7XC7LRAJOUB4NGAWN3TQIS4NORHJJGX",
+          "cached": true
+        },
+        {
+          "logical": "3d/chara/mini/body/mbdy1006_00/pfb_mbdy1006_00",
+          "hash": "7J3IKIOU2KRIHGWHPCQLFN5OL3V2ZP47",
+          "cached": true
+        },
+        {
+          "logical": "3d/chara/mini/body/mbdy1006_46/clothes/pfb_mbdy1006_46_cloth00",
+          "hash": "FWLKWHY5LJSABMUOMRZII2EN6IIWI6GJ",
+          "cached": true
+        },
+        {
+          "logical": "3d/chara/mini/body/mbdy1006_46/pfb_mbdy1006_46",
+          "hash": "7IR36CMZXL555KE53FSYLTJMQGCZNSMA",
+          "cached": true
+        },
+        {
+          "logical": "3d/chara/mini/head/mchr1006_00/clothes/pfb_mchr1006_00_cloth00",
+          "hash": "RV6XFTW2SBPZ5KFT4ZSGMG4ROXQN2ZGM",
+          "cached": true
+        },
+        {
+          "logical": "3d/chara/mini/head/mchr1006_00/pfb_mchr1006_00_hair",
+          "hash": "34NHH6HYDASUWNMR3LL2YNWB7FC74H3V",
+          "cached": true
+        },
+        {
+          "logical": "3d/chara/mini/head/mchr1006_46/clothes/pfb_mchr1006_46_cloth00",
+          "hash": "5UBAC42ZE4AMSJGH5ZJMQK7NEGEB5NZH",
+          "cached": true
+        },
+        {
+          "logical": "3d/chara/mini/head/mchr1006_46/pfb_mchr1006_46_hair",
+          "hash": "JNMSWFSNJJVOLPCQM27YTDYPKQB3N3EU",
+          "cached": true
+        }
+      ],
+      "selected_prefabs": [
+        {
+          "logical": "3d/chara/mini/body/mbdy1006_00/pfb_mbdy1006_00",
+          "hash": "7J3IKIOU2KRIHGWHPCQLFN5OL3V2ZP47",
+          "cached": true
+        },
+        {
+          "logical": "3d/chara/mini/head/mchr1006_00/pfb_mchr1006_00_hair",
+          "hash": "34NHH6HYDASUWNMR3LL2YNWB7FC74H3V",
+          "cached": true
+        }
+      ]
+    },
+    {
+      "id": 1058,
+      "name": "Meisho Doto",
+      "prefabs": [
+        {
+          "logical": "3d/chara/mini/body/mbdy1058_00/clothes/pfb_mbdy1058_00_cloth00",
+          "hash": "4X3QHULDWECA6KBBJMPS4RZ6IBL2SDGM",
+          "cached": true
+        },
+        {
+          "logical": "3d/chara/mini/body/mbdy1058_00/pfb_mbdy1058_00",
+          "hash": "YNUGPLUWU546KU7OCCMMUWQWVE6TWOFY",
+          "cached": true
+        },
+        {
+          "logical": "3d/chara/mini/body/mbdy1058_40/clothes/pfb_mbdy1058_40_cloth00",
+          "hash": "WYULWAIQYSMZGKTYNFDYPVVCAG5OE5RY",
+          "cached": true
+        },
+        {
+          "logical": "3d/chara/mini/body/mbdy1058_40/pfb_mbdy1058_40",
+          "hash": "7ZWROOPEZH6FW37LIM7R34BBE2QYQRDE",
+          "cached": true
+        },
+        {
+          "logical": "3d/chara/mini/head/mchr1058_00/clothes/pfb_mchr1058_00_cloth00",
+          "hash": "7AAJ2MLOO55B7EUCDWINBDHO5W5ZUOVI",
+          "cached": true
+        },
+        {
+          "logical": "3d/chara/mini/head/mchr1058_00/pfb_mchr1058_00_hair",
+          "hash": "YV6URRUKJBLXKGCACP3ZGYKOXSVSBTM5",
+          "cached": true
+        },
+        {
+          "logical": "3d/chara/mini/head/mchr1058_40/clothes/pfb_mchr1058_40_cloth00",
+          "hash": "WUZZAFJFPMGWQVVTQ5F7MSDHDOW4YPBV",
+          "cached": true
+        },
+        {
+          "logical": "3d/chara/mini/head/mchr1058_40/pfb_mchr1058_40_hair",
+          "hash": "3YODFYX6ABDNR7TH34Y25E5JGQWFBZTX",
+          "cached": true
+        }
+      ],
+      "selected_prefabs": [
+        {
+          "logical": "3d/chara/mini/body/mbdy1058_00/pfb_mbdy1058_00",
+          "hash": "YNUGPLUWU546KU7OCCMMUWQWVE6TWOFY",
+          "cached": true
+        },
+        {
+          "logical": "3d/chara/mini/head/mchr1058_00/pfb_mchr1058_00_hair",
+          "hash": "YV6URRUKJBLXKGCACP3ZGYKOXSVSBTM5",
+          "cached": true
+        }
+      ]
+    }
+  ],
+  "steam_modified": false,
+  "downloaded": false
+}

@@ -9,7 +9,9 @@ from extract_assets import skip_words,payload
 LOWER=np.array([-.35,-.29,.05])
 UPPER=np.array([.65,.29,1.95])
 
-def prepare(source):
+def prepare(source,slot='COROLLA',lower=LOWER,upper=UPPER):
+    lower=np.asarray(lower,dtype=float);upper=np.asarray(upper,dtype=float)
+    if lower.shape!=(3,) or upper.shape!=(3,) or not np.isfinite([lower,upper]).all() or np.any(upper<=lower):raise ValueError('Invalid character collision bounds')
     tree=chunks(source);container=[n for n in flatten(tree) if n['id']=='0x80034020']
     if len(container)!=1:raise ValueError('Expected one native collision container')
     children=container[0]['children'];out=bytearray(source);groups=[];allowed=[]
@@ -20,7 +22,7 @@ def prepare(source):
         raw=payload(source,header);start=skip_words(raw)
         version_a,version_b,_,_,_,count=struct.unpack_from('<6I',raw,start)
         name=raw[start+28:start+60].split(b'\0',1)[0].decode('ascii')
-        if (version_a,version_b)!=(3,3) or not name.startswith('COROLLA_') or not name.endswith('_CV') or count<4 or points['size']!=count*48:raise ValueError('Unexpected Corolla hull header')
+        if (version_a,version_b)!=(3,3) or not name.startswith(slot+'_') or not name.endswith('_CV') or count<4 or points['size']!=count*48:raise ValueError('Unexpected vehicle hull header')
         vertices=[]
         for vertex in range(count):
             at=points['payload']+vertex*48
@@ -28,11 +30,12 @@ def prepare(source):
             vertices.append(struct.unpack_from('<3f',source,at+16))
         vertices=np.array(vertices);minimum=vertices.min(0);maximum=vertices.max(0)
         if not np.isfinite(vertices).all() or np.any(maximum-minimum<.01):raise ValueError('Degenerate collision hull')
-        replacement=LOWER+(vertices-minimum)/(maximum-minimum)*(UPPER-LOWER)
+        replacement=lower+(vertices-minimum)/(maximum-minimum)*(upper-lower)
         for vertex,value in enumerate(replacement):
             at=points['payload']+vertex*48+16;struct.pack_into('<3f',out,at,*value);allowed.append({'offset':at,'bytes':12})
-        groups.append({'name':name,'vertices':count,'old_minimum':minimum.tolist(),'old_maximum':maximum.tolist(),'new_minimum':LOWER.tolist(),'new_maximum':UPPER.tolist(),'scale':((UPPER-LOWER)/(maximum-minimum)).tolist()})
-    if len(groups)!=5 or chunks(out)!=tree:raise ValueError('Unexpected hull count or container layout changed')
+        groups.append({'name':name,'vertices':count,'old_minimum':minimum.tolist(),'old_maximum':maximum.tolist(),'new_minimum':lower.tolist(),'new_maximum':upper.tolist(),'scale':((upper-lower)/(maximum-minimum)).tolist()})
+    expected={'COROLLA':5,'240SX':5,'MIATA':5,'FOCUS':5,'PEUGOT':5,'PEUGOT106':1,'CORSA':1}
+    if slot not in expected or len(groups)!=expected[slot] or chunks(out)!=tree:raise ValueError('Unexpected hull count or container layout changed')
     return bytes(out),groups,allowed
 
 def main():

@@ -8,11 +8,14 @@ import UnityPy
 from UnityPy.helpers.MeshHelper import MeshHandler
 
 
-def main():
+def main(mini=False):
     fleet=json.loads((ROOT/'modding/fleet-source-inventory.json').read_text())
+    minis={c['id']:c for c in json.loads((WORK/'mini-bundles/inventory.json').read_text())['characters']} if mini else {}
     for character in fleet['characters']:
-        folder=WORK/'fleet'/str(character['id']);inventory=json.loads((folder/'source-inventory.json').read_text())
-        env=UnityPy.load(*(str(WORK/'fleet-bundles'/(h+'.unity3d')) for h in inventory['dependencies']))
+        folder=WORK/('mini-fleet' if mini else 'fleet')/str(character['id']);folder.mkdir(parents=True,exist_ok=True)
+        inventory=minis[character['id']] if mini else json.loads((folder/'source-inventory.json').read_text())
+        dependencies=inventory['bundles'] if mini else inventory['dependencies']
+        env=UnityPy.load(*(str(WORK/('mini-bundles' if mini else 'fleet-bundles')/(h+'.unity3d')) for h in dependencies))
         (folder/'meshes').mkdir(exist_ok=True);(folder/'textures').mkdir(exist_ok=True)
         objects=[];meshes=[];textures=[]
         for obj in env.objects:
@@ -49,4 +52,4 @@ def main():
         (folder/'raw-model.json').write_text(json.dumps(report,ensure_ascii=False,allow_nan=False)+'\n')
         print(character['name'],sum(m['vertices'] for m in meshes),'raw vertices;',len(objects),'hierarchy/material records',flush=True)
 
-if __name__=='__main__':main()
+if __name__=='__main__':main(mini='--mini' in sys.argv[1:])

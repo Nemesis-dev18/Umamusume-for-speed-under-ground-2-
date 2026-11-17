@@ -36,6 +36,20 @@ def prepare(data):
     return bytes(output)
 
 
+def prepare_names(data,names):
+    node,text,records=entries(data);mapping={string_hash('CAR_NAME_'+slot):name.encode('utf-8') for slot,name in names.items()}
+    if not mapping or len(mapping)!=len(names) or not mapping.keys()<={k for k,_,_ in records}:raise ValueError('Missing or duplicate vehicle name key')
+    if any(not name or b'\0' in name or len(name)>96 for name in mapping.values()):raise ValueError('Invalid vehicle label')
+    added=bytearray();offsets={}
+    for key,name in mapping.items():offsets[key]=node['size']-text+len(added);added.extend(name+b'\0')
+    size=node['size']+len(added);padding=(-size)%16;output=bytearray(data[:node['end']]+added+bytes(padding)+data[node['end']:]);struct.pack_into('<I',output,node['offset']+4,size+padding)
+    for key,old,at in records:
+        if key in offsets:struct.pack_into('<I',output,at+4,offsets[key])
+    _,_,after=entries(output)
+    if {k:v for k,v,_ in after}!={k:mapping.get(k,v) for k,v,_ in records}:raise ValueError('Unrelated language entry changed')
+    return bytes(output)
+
+
 def main():
     rows=[]
     for language in ['English','Spanish']:

@@ -1,0 +1,28 @@
+{
+  "files": [
+    {
+      "target": "LANGUAGES/English.bin",
+      "candidate": "modding/staged-runtime/fleet-English.bin",
+      "before_sha256": "707a72ebca20bb8dfedf76db196f665df80ed92721c6fa9064602a8d71ce02b6",
+      "after_sha256": "a8930a998e45abca1ef53d04977aee06df5f6881ba1a677c00e43cdd77a1dd08",
+      "installed": false
+    },
+    {
+      "target": "LANGUAGES/Spanish.bin",
+      "candidate": "modding/staged-runtime/fleet-Spanish.bin",
+      "before_sha256": "2c9bfeff1a0b5508197b651a614875fa95feaa52d00541e6abfb2eb0bc5e44a8",
+      "after_sha256": "7acbf6271028639634dee28130922545a8257ef949eea81d35ebb87cd6ea4a9c",
+      "installed": false
+    }
+  ],
+  "names": {
+    "COROLLA": "Kitasan Black",
+    "240SX": "Haru Urara",
+    "MIATA": "Agnes Tachyon",
+    "FOCUS": "Matikanetannhauser",
+    "PEUGOT": "T.M. Opera O",
+    "PEUGOT106": "Oguri Cap",
+    "CORSA": "Meisho Doto"
+  },
+  "visual_logos_pending": true
+}
