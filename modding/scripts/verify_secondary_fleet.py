@@ -11,6 +11,9 @@ def main():
  rows=[];plan=json.loads((ROOT/'modding/secondary-fleet-plan.json').read_text());anchors=profiles()
  for row in plan['characters']:
   folder=ROOT/row['candidate_folder'];r=run([RUNTIME/'test-build/secondary-test',folder/'model-atlas.umab',folder/'secondary.bin'],capture_output=True,text=True);rows.append({'id':row['id'],'output':r.stdout.strip()})
+ run(['cc','-std=c11','-O2','-Wall','-Wextra','-Werror','-Wno-unused-function',RUNTIME/'secondary_stretch_test.c','-lm','-o',RUNTIME/'test-build/secondary-stretch-test'])
+ cape=ROOT/'modding/staged-runtime/fleet-secondary/1062';names=json.loads((cape/'model.json').read_text())['bone_names'];mask=cape/'mantle-mask.bin';mask.write_bytes(bytes(int('Mantle' in n) for n in names))
+ stretch=run([RUNTIME/'test-build/secondary-stretch-test',cape/'model-atlas.umab',cape/'secondary.bin',mask],capture_output=True,text=True).stdout.strip()
  run([CC,*FLAGS,RUNTIME/'runner_fleet_test.c','-o',RUNTIME/'test-build/secondary-routing-test.exe','-ld3d9','-luser32','-lwinmm','-lm'])
  with tempfile.TemporaryDirectory(prefix='secondary-route-',dir=RUNTIME) as tmp:
   fixture=Path(tmp)
@@ -20,6 +23,6 @@ def main():
    (destination/'carrier.bin').write_bytes(carrier(i));(destination/'anchors.bin').write_bytes(anchors[i]['bytes'])
   r=run([WINE,RUNTIME/'test-build/secondary-routing-test.exe',str(fixture.relative_to(ROOT)).replace('/','\\')],env=dict(os.environ,WINEPREFIX=str(WORK/'proton-prefix/pfx'),WINEDEBUG='-all'),capture_output=True,text=True)
   if not r.stdout.startswith('PASS seven exact native models'):raise RuntimeError(r.stdout+r.stderr)
- (RUNTIME/'secondary-verification.json').write_text(json.dumps({'cpu_solver':rows,'routing':r.stdout.strip(),'native_skin_cases':56,'installed':False,'gameplay_verified':False},indent=2)+'\n')
+ (RUNTIME/'secondary-verification.json').write_text(json.dumps({'cpu_solver':rows,'routing':r.stdout.strip(),'mambo_cape_stretch':stretch,'native_skin_cases':56,'installed':False,'gameplay_verified':False},indent=2)+'\n')
  print(r.stdout,flush=True)
 if __name__=='__main__':main()

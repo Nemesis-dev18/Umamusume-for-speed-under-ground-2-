@@ -107,6 +107,19 @@ static UmaMotionState *runner_actor_pose_model(const UmaMatrix *view,unsigned mo
   float score=0,orientation=0;for(int k=0;k<3;k++){float d=view->m[3][k]-predicted.m[3][k];score+=d*d;orientation+=view->m[0][k]*predicted.m[0][k];}
   if(orientation>.5f && score<distance){best=i;distance=score;}
  }
+ if(best<0 && runner_log){
+  static unsigned reports,frame=UINT32_MAX;int moving=0;
+  for(int i=0;i<16;i++)if(runner_actors[i].used && fabsf(runner_actors[i].speed)>.5f)moving=1;
+  if(moving && reports<512 && frame!=runner_frames){
+   frame=runner_frames;reports++;fprintf(runner_log,"POSE_UNMATCHED frame=%u model=%u determinant=%.4f rebased=%d origin=%.4f,%.4f,%.4f",runner_frames,model,uma_determinant(view),rebased,view->m[3][0],view->m[3][1],view->m[3][2]);
+   for(int i=0;i<16;i++)if(runner_actors[i].used && runner_actors[i].model==model){
+    UmaMatrix predicted=rebased?uma_matrix_product(&runner_actors[i].view,&camera):runner_actors[i].view;float score=0,raw=0,orientation=0;
+    for(int k=0;k<3;k++){float d=view->m[3][k]-predicted.m[3][k],r=view->m[3][k]-runner_actors[i].view.m[3][k];score+=d*d;raw+=r*r;orientation+=view->m[0][k]*predicted.m[0][k];}
+    fprintf(runner_log," actor=%d age=%u speed=%.3f distance=%.3f rawDistance=%.3f direction=%.3f determinant=%.3f",i,runner_frames-runner_actors[i].seen,runner_actors[i].speed,sqrtf(score),sqrtf(raw),orientation,uma_determinant(&runner_actors[i].view));
+   }
+   fputc('\n',runner_log);fflush(runner_log);
+  }
+ }
  return best>=0?&runner_actors[best].state:&runner_models[model].idle;
 }
 static inline UmaMotionState *runner_actor_pose(const UmaMatrix *view){return runner_actor_pose_model(view,0);}

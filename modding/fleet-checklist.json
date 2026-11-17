@@ -341,6 +341,22 @@
     "method": "bounded original garment/hair/tail bone springs",
     "offline_verification": "modding/runtime/secondary-verification.json",
     "gameplay_verified": false,
-    "backup_checkpoint": "703263125fef92191640bc9b474eca7813f71617"
+    "backup_checkpoint": "703263125fef92191640bc9b474eca7813f71617",
+    "user_feedback": {
+      "overall": "other clothing looks good",
+      "fps": "good",
+      "tails": "look strange",
+      "mambo_cape": "deforms too much",
+      "kitasan_cpu": "one opponent advanced with static pose"
+    },
+    "refined_candidate": {
+      "installed": true,
+      "tails_max_joint_degrees": 12,
+      "mambo_cape_max_joint_degrees": 10,
+      "damping_ratio_min": 0.95,
+      "unmatched_actor_diagnostic": true,
+      "cape_coherence_groups": true,
+      "gameplay_verified": false
+    }
   }
 }

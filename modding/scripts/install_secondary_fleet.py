@@ -19,11 +19,13 @@ def main():
  module=ROOT/'modding/runtime/UmaRunner.asi';runtime=json.loads((ROOT/'modding/runtime/verification.json').read_text())
  if sha(module)!=runtime['sha256']['UmaRunner.asi']:raise RuntimeError('Module changed since verification')
  sources.append((module,ROOT/'scripts/UmaRunner.asi'))
+ sources=[(source,target) for source,target in sources if not target.exists() or sha(source)!=sha(target)]
+ if not sources:print('All verified secondary files already installed');return
  backup=ROOT/'modding/backups'/('before-secondary-'+datetime.now().strftime('%Y%m%d-%H%M%S'));backup.mkdir(parents=True);rows=[]
  for source,target in sources:
-  relative=target.relative_to(ROOT);saved=backup/relative
+  relative=target.relative_to(ROOT);saved=backup/relative.parent/(relative.name+'.bak')
   if target.exists():saved.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(target,saved)
-  rows.append({'path':str(relative),'before':sha(target) if target.exists() else None,'after':sha(source),'bytes':source.stat().st_size})
+  rows.append({'path':str(relative),'before':sha(target) if target.exists() else None,'after':sha(source),'bytes':source.stat().st_size,'backup_path':str(saved.relative_to(ROOT)) if target.exists() else None})
  receipt={'backup':str(backup.relative_to(ROOT)),'files':rows,'installed':False,'gameplay_verified':False}
  (backup/'manifest.json').write_text(json.dumps(receipt,indent=2)+'\n')
  subprocess.run(['git','add','--',str(backup.relative_to(ROOT))],check=True)
@@ -35,7 +37,7 @@ def main():
    if sha(target)!=row['after']:raise RuntimeError('Installed hash mismatch')
  except BaseException:
   for row in rows:
-   target=ROOT/row['path'];saved=backup/row['path']
+   target=ROOT/row['path'];saved=ROOT/row['backup_path'] if row['backup_path'] else None
    if row['before'] is None:target.unlink(missing_ok=True)
    else:shutil.copyfile(saved,target)
   raise
