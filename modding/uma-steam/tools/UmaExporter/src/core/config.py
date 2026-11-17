@@ -1,0 +1,366 @@
+import os
+import shutil
+import json
+import platform
+import locale
+import sys
+
+from src.core.utils import is_nuitka
+from src.core.version import VERSION, HASH
+
+CONFIG_FILE = "config.json"
+
+
+class Config:
+    @staticmethod
+    def get_version_string():
+        """Returns the formatted version string."""
+        if HASH:
+            return f"v{VERSION}-dev ({HASH})"
+        return f"v{VERSION}"
+
+    @staticmethod
+    def get_bundle_dir():
+        """Returns the base directory of the application, handling PyInstaller and Nuitka bundles.
+        When frozen or compiled, returns the directory containing the executable.
+        """
+        if getattr(sys, "frozen", False) or is_nuitka():
+            # For PyInstaller onedir and Nuitka standalone:
+            # sys.executable is the binary, os.path.dirname(sys.executable) is the bundle folder root.
+            return os.path.dirname(sys.executable)
+        else:
+            # Running from source
+            return os.path.abspath(os.getcwd())
+
+    # Default fallback path
+    BASE_PATH = ""
+    # Supported game data root directory names.
+    DATA_ROOT_NAMES = ("Persistent", "umamusume")
+    # Language: "Auto", "English", "Chinese"
+    LANGUAGE = "Auto"
+    # Data region (jp, global, tw)
+    REGION = "jp"
+    # Runtime flag: most regions use encrypted metadata and asset bundles.
+    DB_ENCRYPTED = True
+    # Performance monitoring flag
+    PROFILE = False
+    # Square display and texture size for character stand illustrations.
+    CHARACTER_OUTFIT_IMAGE_SIZE = 180
+    # 3D dress icons use their original, more compact card presentation.
+    CHARACTER_3D_OUTFIT_ICON_SIZE = 96
+    # Empty means the default application data thumbnail directory.
+    THUMBNAIL_CACHE_PATH = ""
+    # Stage preview cache size upper limit in megabytes.
+    STAGE_CACHE_MAX_MB = 1024
+
+    @classmethod
+    def get_profile_dir(cls):
+        """Returns the directory where performance profiles are stored."""
+        path = os.path.join(cls.get_app_data_dir(), "profiles")
+        if not os.path.exists(path):
+            os.makedirs(path, exist_ok=True)
+        return path
+
+    @classmethod
+    def get_effective_language(cls):
+        """Returns the actual language (English or Chinese) after resolving Auto."""
+        if cls.LANGUAGE != "Auto":
+            return cls.LANGUAGE
+
+        # Try multiple ways to get system language
+        try:
+            # 1. Windows specific check (more robust than locale)
+            if platform.system() == "Windows":
+                import ctypes
+
+                # GetUserDefaultUILanguage returns LCID (e.g. 0x0804 for zh-CN)
+                lcid = ctypes.windll.kernel32.GetUserDefaultUILanguage()
+                if (lcid & 0xFF) == 0x04:  # 0x04 is Chinese language group
+                    return "Chinese"
+
+            # 2. Standard locale check
+            lang_code, _ = (
+                locale.getlocale()
+            )  # getlocale is preferred over getdefaultlocale
+            if lang_code and "zh" in lang_code.lower():
+                return "Chinese"
+
+            # 3. Check environment variables (common on Linux/macOS)
+            for env_var in ["LANG", "LC_ALL", "LC_CTYPE"]:
+                val = os.environ.get(env_var, "").lower()
+                if "zh" in val:
+                    return "Chinese"
+        except:
+            pass
+
+        return "English"
+
+    @classmethod
+    def _get_windows_defaults(cls):
+        if platform.system() != "Windows":
+            return []
+
+        user_profile = os.environ.get("USERPROFILE", "")
+        if not user_profile:
+            return []
+
+        return [
+            os.path.join(user_profile, "AppData", "LocalLow", "Cygames", "umamusume"),
+            os.path.join(user_profile, "Umamusume"),
+        ]
+
+    @classmethod
+    def is_encrypted_region(cls, region=None):
+        region = (region or cls.REGION or "").lower()
+        return region != "tw"
+
+    @classmethod
+    def _get_tw_game_root(cls, persistent_path):
+        if not persistent_path:
+            return ""
+        return os.path.dirname(os.path.dirname(os.path.normpath(persistent_path)))
+
+    @classmethod
+    def is_valid_path(cls, path, region=None):
+        if not path:
+            return False
+        region = (region or cls.REGION or "jp").lower()
+
+        if region == "tw":
+            normalized_path = os.path.normpath(path)
+            game_root = cls._get_tw_game_root(normalized_path)
+            has_master = os.path.exists(
+                os.path.join(normalized_path, "master", "master.mdb")
+            )
+            has_meta = os.path.exists(os.path.join(game_root, "meta"))
+            has_dat = os.path.isdir(os.path.join(game_root, "dat"))
+            return has_master and has_meta and has_dat
+
+        # Check for essential parts: meta database and dat folder
+        has_meta = os.path.exists(os.path.join(path, "meta"))
+        has_dat = os.path.isdir(os.path.join(path, "dat"))
+        return has_meta and has_dat
+
+    @classmethod
+    def is_supported_data_root(cls, path):
+        if not path:
+            return False
+        normalized_path = os.path.normpath(path)
+        return os.path.basename(normalized_path) in cls.DATA_ROOT_NAMES
+
+    @classmethod
+    def load(cls):
+        # 1. Try config file first
+        if os.path.exists(CONFIG_FILE):
+            try:
+                with open(CONFIG_FILE, "r") as f:
+                    data = json.load(f)
+                    path = data.get("base_path", "")
+                    cls.REGION = data.get("region", "jp")
+                    cls.DB_ENCRYPTED = cls.is_encrypted_region(cls.REGION)
+                    if cls.is_valid_path(path, cls.REGION):
+                        cls.BASE_PATH = path
+                        print(
+                            f"Loaded valid config path from {CONFIG_FILE}: {cls.BASE_PATH}"
+                        )
+
+                    cls.LANGUAGE = data.get("language", "Auto")
+                    image_size = data.get(
+                        "character_outfit_image_size",
+                        cls.CHARACTER_OUTFIT_IMAGE_SIZE,
+                    )
+                    try:
+                        cls.CHARACTER_OUTFIT_IMAGE_SIZE = max(1, int(image_size))
+                    except TypeError, ValueError:
+                        print(
+                            "Invalid character_outfit_image_size in config; "
+                            f"using {cls.CHARACTER_OUTFIT_IMAGE_SIZE}."
+                        )
+                    icon_size = data.get(
+                        "character_3d_outfit_icon_size",
+                        cls.CHARACTER_3D_OUTFIT_ICON_SIZE,
+                    )
+                    try:
+                        cls.CHARACTER_3D_OUTFIT_ICON_SIZE = max(1, int(icon_size))
+                    except TypeError, ValueError:
+                        print(
+                            "Invalid character_3d_outfit_icon_size in config; "
+                            f"using {cls.CHARACTER_3D_OUTFIT_ICON_SIZE}."
+                        )
+                    cls.THUMBNAIL_CACHE_PATH = data.get("thumbnail_cache_path", "")
+                    stage_cache_max_mb = data.get(
+                        "stage_cache_max_mb", cls.STAGE_CACHE_MAX_MB
+                    )
+                    try:
+                        cls.STAGE_CACHE_MAX_MB = max(50, int(stage_cache_max_mb))
+                    except (TypeError, ValueError):
+                        pass
+                    print(f"Loaded language: {cls.LANGUAGE}, region: {cls.REGION}")
+                    return
+            except Exception as e:
+                print(f"Failed to load config: {e}")
+
+        # 2. Try Windows defaults if on Windows
+        for p in cls._get_windows_defaults():
+            if cls.is_valid_path(p, cls.REGION):
+                cls.BASE_PATH = p
+                print(f"Found default Windows path: {p}")
+                return
+
+        # 3. Last resort (empty or previous default)
+        print("No valid data path found.")
+
+    @classmethod
+    def save(cls):
+        try:
+            with open(CONFIG_FILE, "w") as f:
+                data = {
+                    "base_path": cls.BASE_PATH,
+                    "language": cls.LANGUAGE,
+                    "region": cls.REGION,
+                    "character_outfit_image_size": cls.CHARACTER_OUTFIT_IMAGE_SIZE,
+                    "character_3d_outfit_icon_size": (
+                        cls.CHARACTER_3D_OUTFIT_ICON_SIZE
+                    ),
+                    "thumbnail_cache_path": cls.THUMBNAIL_CACHE_PATH,
+                    "stage_cache_max_mb": cls.STAGE_CACHE_MAX_MB,
+                }
+                json.dump(data, f, indent=4)
+                print(f"Saved config to {CONFIG_FILE}")
+        except Exception as e:
+            print(f"Failed to save config: {e}")
+
+    @classmethod
+    def get_app_data_dir(cls):
+        """Returns the system-standard directory for application data (thumbnails, cache, etc.)."""
+        app_name = "UmaExporter"
+        system = platform.system()
+
+        if system == "Windows":
+            base = os.environ.get("LOCALAPPDATA") or os.path.expanduser(
+                "~/AppData/Local"
+            )
+            path = os.path.join(base, app_name)
+        elif system == "Darwin":  # macOS
+            path = os.path.expanduser(f"~/Library/Application Support/{app_name}")
+        else:  # Linux/Other
+            base = os.environ.get("XDG_DATA_HOME") or os.path.expanduser(
+                "~/.local/share"
+            )
+            path = os.path.join(base, app_name)
+
+        if not os.path.exists(path):
+            os.makedirs(path, exist_ok=True)
+        return path
+
+    @classmethod
+    def get_thumbnail_dir(cls):
+        """Returns the directory where thumbnails are stored."""
+        path = cls.THUMBNAIL_CACHE_PATH.strip() or cls.get_default_thumbnail_dir()
+        if not os.path.exists(path):
+            os.makedirs(path, exist_ok=True)
+        return path
+
+    @classmethod
+    def get_default_thumbnail_dir(cls):
+        """Returns the built-in thumbnail cache directory."""
+        return os.path.join(cls.get_app_data_dir(), "thumbnails")
+
+    @classmethod
+    def get_stage_cache_dir(cls):
+        """Returns the memory/tmp directory for stage preview cache (/tmp on Linux, avoiding SSD wear)."""
+        import tempfile
+
+        path = os.path.join(tempfile.gettempdir(), "uma_stage_cache")
+        if not os.path.exists(path):
+            os.makedirs(path, exist_ok=True)
+        return path
+
+    @classmethod
+    def clear_stage_cache(cls):
+        """Clears all cached stage models from memory /tmp cache, returning freed bytes."""
+        freed = 0
+        cache_dir = cls.get_stage_cache_dir()
+        if os.path.exists(cache_dir):
+            for entry in os.listdir(cache_dir):
+                full_path = os.path.join(cache_dir, entry)
+                try:
+                    if os.path.isdir(full_path):
+                        for root, _, files in os.walk(full_path):
+                            for f in files:
+                                try:
+                                    freed += os.path.getsize(os.path.join(root, f))
+                                except OSError:
+                                    pass
+                        shutil.rmtree(full_path, ignore_errors=True)
+                    else:
+                        freed += os.path.getsize(full_path)
+                        os.remove(full_path)
+                except OSError:
+                    pass
+
+        # Also clean up previous disk directory if present to free disk space
+        old_disk_dir = os.path.join(cls.get_app_data_dir(), "stage_cache")
+        if os.path.exists(old_disk_dir):
+            shutil.rmtree(old_disk_dir, ignore_errors=True)
+
+        return freed
+
+    @classmethod
+    def get_db_path(cls):
+        if not cls.BASE_PATH:
+            return ""
+        if cls.REGION.lower() == "tw":
+            return os.path.join(cls._get_tw_game_root(cls.BASE_PATH), "meta")
+        return os.path.join(cls.BASE_PATH, "meta")
+
+    @classmethod
+    def get_master_db_path(cls):
+        if not cls.BASE_PATH:
+            return ""
+        # Try multiple common locations for master.mdb
+        candidates = [
+            os.path.join(cls.BASE_PATH, "master", "master.mdb"),
+            os.path.join(cls.BASE_PATH, "master.mdb"),
+        ]
+        for p in candidates:
+            if os.path.exists(p):
+                return p
+        return candidates[0]
+
+    @classmethod
+    def get_data_root(cls):
+        if not cls.BASE_PATH:
+            return ""
+        if cls.REGION.lower() == "tw":
+            return os.path.join(cls._get_tw_game_root(cls.BASE_PATH), "dat")
+        return os.path.join(cls.BASE_PATH, "dat")
+
+    @classmethod
+    def set_base_path(cls, path):
+        cls.BASE_PATH = path
+
+    @classmethod
+    def update_config(
+        cls,
+        base_path,
+        region=None,
+        language=None,
+        thumbnail_cache_path=None,
+        stage_cache_max_mb=None,
+    ):
+        """Update in-memory config and persist it to disk."""
+        cls.BASE_PATH = (base_path or "").strip()
+        if region is not None:
+            cls.REGION = region
+        cls.DB_ENCRYPTED = cls.is_encrypted_region(cls.REGION)
+        if language is not None:
+            cls.LANGUAGE = language
+        if thumbnail_cache_path is not None:
+            cls.THUMBNAIL_CACHE_PATH = (thumbnail_cache_path or "").strip()
+        if stage_cache_max_mb is not None:
+            try:
+                cls.STAGE_CACHE_MAX_MB = max(50, int(stage_cache_max_mb))
+            except (TypeError, ValueError):
+                pass
+        cls.save()

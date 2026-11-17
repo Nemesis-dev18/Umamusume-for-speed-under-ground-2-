@@ -1,0 +1,350 @@
+## [0.5.0] - 2026-09-19
+
+### 🚀 Features
+
+- *(ui)* 支持查看 Unity 场景层级与节点属性
+- *(stage)* 支持舞台大场景多Prefab聚合组装、F3D多模型FBX协同预览与批量导出
+- *(cache)* Move stage cache to disk, add LRU limit, remove close button and restrict exit keys to Esc/Q
+- *(stage)* Add live stage progress tracking in UI and terminal
+
+### 🐛 Bug Fixes
+
+- *(ui)* 修复缩略图模式向下滚动时下方空白无内容问题
+- *(stage)* 修复资源字典键名取值问题并将大场景按钮置顶横幅栏自动联动
+- *(f3d)* 修复数据库多线程连接忙锁问题与F3D预览进程30s超时退出
+- Include material bundles in stage export for textured FBX output
+- *(cli)* 修复 setup_as_cli 资源匹配与 CLI 二进制检查逻辑
+- *(f3d)* 修复舞台预览黑屏与窗口无法关闭问题
+- *(scene)* Add stage FBX preview cache, close 3D viewer button and universal camera framing
+- *(cache)* Locate stage preview cache in /tmp to prevent SSD wear while strictly enforcing size limit
+- *(scene)* Preserve active tab when switching items instead of auto-switching to hierarchy
+- *(app)* Delegate on_stage_cache_limit_changed and on_clear_stage_cache in UmaExporterApp
+- *(stage)* Normalize CLI percentage display and set completion status color to green
+- *(stage)* Remove CLI percentage stream and remove duplicate progress next to detach button
+- *(stage)* Wait for F3D actual load before showing completed and clear stage status on item switch
+
+### ⚡ Performance
+
+- *(f3d)* Optimize viewport interaction framerate by removing heavy grid and tone-mapping passes
+
+### ⚙️ Miscellaneous Tasks
+
+- Switch AssetStudio CLI from aelurum/AssetStudio to mumu-lhl/AssetStudioCat
+## [0.4.8] - 2026-08-26
+
+### 🐛 Bug Fixes
+
+- *(windows)* 修复导出单个对象失败
+
+### 🚜 Refactor
+
+- *(f3d)* 使用单独进程生成缩略图
+
+### ⚡ Performance
+
+- *(search)* [**breaking**] Stream complete results
+- *(ui)* Virtualize resource browsing
+- 减少启动时间
+
+### ⚙️ Miscellaneous Tasks
+
+- *(skill)* 删除无用的nuitka skill
+## [0.4.7] - 2026-08-23
+
+### 🐛 Bug Fixes
+
+- *(windows)* F3d
+## [0.4.6] - 2026-08-23
+
+### 🐛 Bug Fixes
+
+- 修复预览失败
+## [0.4.5] - 2026-08-23
+
+### 🐛 Bug Fixes
+
+- 修复Windows上含中文路径导出失败
+## [0.4.4] - 2026-08-22
+
+### 🚀 Features
+
+- 支持 umamusume 结尾的数据根目录
+
+### 🐛 Bug Fixes
+
+- *(ui)* 限制拖拽预览命中范围
+- 更新国际服key
+- 修复解密错误
+## [0.4.3] - 2026-08-09
+
+### 🚀 Features
+
+- 支持繁中服
+- 支持自定义缩略图缓存路径
+
+### 🐛 Bug Fixes
+
+- *(ui)* 修复列表拖拽预览
+## [0.4.2] - 2026-06-25
+
+### 🚀 Features
+
+- 检查更新按钮
+## [0.4.1] - 2026-06-24
+
+### 🚀 Features
+
+- 3d发现服装导出
+- 增加运行环境检测
+
+### 🚜 Refactor
+
+- 重构代码架构
+## [0.4.0] - 2026-06-07
+
+### 🚀 Features
+
+- 导出人物时导出物理参数
+- 导出人物flare碰撞数据
+- 支持导出小马
+## [0.3.9] - 2026-05-30
+
+### 🚀 Features
+
+- 场景和道具页面物品排序显示
+
+### 🐛 Bug Fixes
+
+- 修复切换物品后导出字样依然存在
+- 修复 f3d 输出无法即使显示
+
+### ⚙️ Miscellaneous Tasks
+
+- 更新依赖
+## [0.3.8] - 2026-05-03
+
+### 🐛 Bug Fixes
+
+- 修复常服导出
+
+### ⚙️ Miscellaneous Tasks
+
+- 更新依赖
+## [0.3.7] - 2026-04-26
+
+### 🚀 Features
+
+- 将所有文件直接导出至目标目录
+## [0.3.6] - 2026-04-25
+
+### 🚀 Features
+
+- 显示服装id
+
+### 🐛 Bug Fixes
+
+- 修复部分私服无法导出面部数据
+## [0.3.5] - 2026-04-25
+
+### 🐛 Bug Fixes
+
+- 修复unitypy解压失败
+## [0.3.4] - 2026-04-18
+
+### 🐛 Bug Fixes
+
+- 修复f3d开启时退出报错
+- 修复通用服装导出
+
+### 📚 Documentation
+
+- 更新 README.md
+## [0.3.3] - 2026-04-18
+
+### 🐛 Bug Fixes
+
+- 修复导出全部按钮无法导出fbx贴图
+- 修复警告
+## [0.3.2] - 2026-04-14
+
+### 🚀 Features
+
+- 更多翻译下载源
+## [0.3.1] - 2026-04-14
+
+### 🚀 Features
+
+- 为中文翻译库下载提供镜像
+- 翻译下载源
+
+### 🐛 Bug Fixes
+
+- 修复cython模块
+## [0.3.0] - 2026-04-13
+
+### 🚀 Features
+
+- Preview MonoBehaviour
+- 初步实现人物导出
+- 角色和服饰名称
+- 角色名称翻译
+- 导出通用身体模型
+- 导出表情数据
+- 显示版本号
+- 支持性能监测
+
+### 🐛 Bug Fixes
+
+- 依赖列表
+- 修复尾巴导出
+
+### 🚜 Refactor
+
+- 首页可展示所有搜索结果
+- 重构
+
+### ⚡ Performance
+
+- 优化内存占用
+
+### ⚙️ Miscellaneous Tasks
+
+- 移除nuitka开发依赖
+## [0.2.5] - 2026-04-05
+
+### 🚜 Refactor
+
+- 增加更多文本提示
+
+### ⚙️ Miscellaneous Tasks
+
+- 日志不显示日志更新commit
+## [0.2.4] - 2026-04-01
+
+### 🐛 Bug Fixes
+
+- 修复首次启动应用设置问题
+## [0.2.3] - 2026-03-23
+
+### 🐛 Bug Fixes
+
+- Export animator
+
+### ⚙️ Miscellaneous Tasks
+
+- *(version)* Release v0.2.3
+## [0.2.2] - 2026-03-23
+
+### 🐛 Bug Fixes
+
+- Preview the animator with the same name of file
+- Export objects
+
+### 🚜 Refactor
+
+- Remove useless code
+
+### ⚙️ Miscellaneous Tasks
+
+- *(nuitka)* Fix
+- *(version)* Release v0.2.2
+## [0.2.1] - 2026-03-19
+
+### 🚀 Features
+
+- Empty thumbmail when have not loaded
+
+### ⚙️ Miscellaneous Tasks
+
+- *(ci)* Remove cache
+- *(ci)* Speed up nuitka compiling
+- *(ci)* Use mold as linker
+- *(ci)* Fix mold
+- *(ci)* Improve nuitka
+- *(ci)* Don't use upx
+- *(ci)* Fix nuitka warning
+- *(version)* Release v0.2.1
+## [0.2.0] - 2026-03-15
+
+### 🚀 Features
+
+- Isometric view
+- Implement headless 3D thumbnail generation for Animators
+- Thumbmail options
+- *(ui)* Implement dynamic thumbnail grid resizing for scene and prop pages
+
+### 🐛 Bug Fixes
+
+- Chinese font on windows
+- Font on windows
+- Mouse on nuitka packaging
+- Fbx preview on windows
+- Repeat start app on nuitka
+- Export animator
+- Handle KeyboardInterrupt gracefully in F3D viewer process
+- Texture preview on nuitka
+- Texture preview on nuitka
+- Open f3d on nuitka
+- Os is not defined
+- Terminal window on windows
+- *(windows)* F3d preview
+- Home tab is empty when first loads database
+- Error output
+
+### 💼 Other
+
+- Fix loadlibrary failed on windows
+
+### 🚜 Refactor
+
+- Clean useless code
+- Clean useless code
+- Improve experience
+- All
+- Optimize batch thumbnail generation and search rendering with fast hash-based check
+
+### 📚 Documentation
+
+- Remove README.md
+- Update README.md
+- Update skills
+
+### ⚡ Performance
+
+- Improve performance
+- Improve performance
+
+### ⚙️ Miscellaneous Tasks
+
+- Initialize
+- *(ci)* Fix
+- *(ci)* Fix
+- *(ci)* Do better
+- *(ci)* Do better
+- *(ci)* Fix nuitka
+- Fix windows build
+- *(ci)* Change python to 3.13
+- *(ci)* Update python version
+- *(ci)* Fix windows nuitka
+- *(ci)* Faster nuitka build
+- *(ci)* Naming nuitka build
+- *(build)* Fix windows
+- Add README.md to package
+- *(build)* Fix nuitka
+- *(build)* Use upx for nuitka on macos and linux
+- *(ci)* Use ccache
+- *(ci)* Fix macos
+- *(ci)* Disable upx on linux
+- *(build)* Fix nuitka
+- *(build)* Disable upx on windows
+- *(build)* Fix fbx preview on nuitka
+- *(build)* Fix archspec on nuitka
+- Fix justfile
+- *(ci)* Add ci to release
+- *(ci)* Use python 3.13 for nuitka
+- *(version)* Release v0.2.0
+- *(ci)* Fix nuitka
+- *(ci)* Fix nuitka
+- *(ci)* Fix nuitka again
+- *(ci)* Fix nuitka again
+- *(ci)* Fix nuitka again
