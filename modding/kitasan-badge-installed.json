@@ -4,8 +4,8 @@
       "target": "FRONTEND/FrontB.lzc",
       "candidate": "modding/staged-runtime/FrontB.kitasan-badge.lzc",
       "before_sha256": "e6d9230e37fd24b986a8284a4cc49f9f3fbf64fd9c5c7003399dbdb0b3e83e07",
-      "after_sha256": "7b01775dc3d67d8cd697fb782189376aa4b4215b5404eb20160e87f893158ea4",
-      "bytes": 6725051
+      "after_sha256": "38d74d00a3eb986340b2efd47c114955c44a56b39600e7f51fa54331a34cc725",
+      "bytes": 1972938
     },
     {
       "target": "GLOBAL/GLOBALB.BUN",
@@ -31,8 +31,9 @@
     }
   ],
   "texture_hash": "0xd2dee64b",
-  "installed": false,
+  "installed": true,
   "gameplay_verified": false,
-  "checkpoint": "640107f",
-  "rolled_back": true
+  "boot_verified": true,
+  "visual_approved": false,
+  "user_feedback": "User rejects portrait style; replace using reference video"
 }

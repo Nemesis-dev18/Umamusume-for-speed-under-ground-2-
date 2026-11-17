@@ -6,7 +6,7 @@
     "idle_without_import_pose": "Confirmed by user in real game: no import pose, slight idle movement",
     "no_residual_car_wheel_or_shadow": true,
     "character_label": "Kitasan Black confirmed by user",
-    "dedicated_portrait_badge": "Rolled back after boot failure; compressed replacement staged"
+    "dedicated_portrait_badge": "Boot and appearance confirmed; style rejected by user"
   },
   "race": {
     "player_character_visible": true,
@@ -157,5 +157,25 @@
     "offline_tests_passed": true,
     "gameplay_verified": false,
     "user_result": "Headlight beam still appears intermittently"
-  }
+  },
+  "car_lights_cleanup": {
+    "installed": true,
+    "geometry_files": 28,
+    "global_projector_and_reflection_splash": true,
+    "gameplay_verified": false
+  },
+  "performance_cache": {
+    "installed": true,
+    "offline_readbacks_for_8000_repeated_queries": 0,
+    "live_fps_verified": false
+  },
+  "fleet_requested": [
+    "Kitasan Black",
+    "Haru Urara",
+    "Agnes Tachyon",
+    "Matikanetannhauser (Mambo, interpretation pending verification)",
+    "T M Opera O",
+    "Oguri Cap",
+    "Meisho Doto"
+  ]
 }

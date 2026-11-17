@@ -1,0 +1,11 @@
+{
+  "target": "scripts/UmaRunner.asi",
+  "candidate": "modding/runtime/UmaRunner.asi",
+  "backup": "modding/runtime/UmaRunner.before-performance.asi",
+  "before_sha256": "c5c351dd01c51c5604635dedf15414eab1b74171cd99a8cf81115b022ae97aaa",
+  "after_sha256": "3c4396d7f66fc5884c8a49a6ea681040b1533b2d1c1ee9e24838fee6041c09a0",
+  "bytes": 378996,
+  "installed": true,
+  "gameplay_verified": false,
+  "checkpoint": "94b734b"
+}

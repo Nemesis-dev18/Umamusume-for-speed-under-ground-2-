@@ -1,8 +1,8 @@
 {
   "module": "scripts/UmaRunner.asi",
-  "sha256": "c5c351dd01c51c5604635dedf15414eab1b74171cd99a8cf81115b022ae97aaa",
-  "bytes": 374691,
-  "checkpoint": "39f325e",
+  "sha256": "3c4396d7f66fc5884c8a49a6ea681040b1533b2d1c1ee9e24838fee6041c09a0",
+  "bytes": 378996,
+  "checkpoint": "94b734b",
   "inventory_files": 716,
   "changed_data": [
     "CARS/240SX/GEOMETRY.BIN",
@@ -332,6 +332,6 @@
   "unchanged_data": 393,
   "game_running": false,
   "gameplay_verified": false,
-  "previous_sha256": "6c56b6c8504dbdf7d0d300b839b460bb1eef2a06e57efa6aef06e74087e032b6",
-  "current_receipt": "modding/upright-headlights-installed.json"
+  "previous_sha256": "c5c351dd01c51c5604635dedf15414eab1b74171cd99a8cf81115b022ae97aaa",
+  "current_receipt": "modding/performance-installed.json"
 }
