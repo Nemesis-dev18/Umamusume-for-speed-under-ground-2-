@@ -10,10 +10,12 @@ typedef HRESULT (WINAPI *UmaDrawIndexed)(IDirect3DDevice9*,D3DPRIMITIVETYPE,INT,
 typedef struct {
  IDirect3DDevice9 *device;IDirect3DVertexBuffer9 *vertices;IDirect3DIndexBuffer9 *indices;
  IDirect3DTexture9 *texture;IDirect3DVertexDeclaration9 *declaration;IDirect3DPixelShader9 *shader,*native_shader;UmaShaderCache shaders;
+ IDirect3DStateBlock9 *saved;
  const UmaMotion *motion;UmaDrawIndexed draw;UmaMotionState uploaded;float uploaded_root[9];int has_uploaded,uploaded_root_valid;
 } UmaD3D;
 static void uma_d3d_close(UmaD3D *renderer){
  if(!renderer)return;
+ if(renderer->saved)IDirect3DStateBlock9_Release(renderer->saved);
  if(renderer->shader)IDirect3DPixelShader9_Release(renderer->shader);
  if(renderer->native_shader)IDirect3DPixelShader9_Release(renderer->native_shader);
  uma_shader_cache_clear(&renderer->shaders);
@@ -96,8 +98,8 @@ static HRESULT uma_d3d_draw(UmaD3D *r,const UmaMotionState *state,const D3DMATRI
   r->uploaded_root_valid=root!=NULL;if(root)memcpy(r->uploaded_root,root,sizeof(r->uploaded_root));
   r->uploaded=*state;r->has_uploaded=1;
  }
- IDirect3DStateBlock9 *saved=NULL;result=IDirect3DDevice9_CreateStateBlock(r->device,D3DSBT_ALL,&saved);if(FAILED(result))return result;
- result=IDirect3DStateBlock9_Capture(saved);if(FAILED(result)){IDirect3DStateBlock9_Release(saved);return result;}
+ if(!r->saved){result=IDirect3DDevice9_CreateStateBlock(r->device,D3DSBT_ALL,&r->saved);if(FAILED(result))return result;}
+ result=IDirect3DStateBlock9_Capture(r->saved);if(FAILED(result))return result;
  #define UMA_SET(call) do{result=(call);if(FAILED(result))goto restore;}while(0)
  D3DMATRIX identity={0};for(int i=0;i<4;i++)identity.m[i][i]=1;
  if(!native){UMA_SET(IDirect3DDevice9_SetVertexShader(r->device,NULL));UMA_SET(IDirect3DDevice9_SetFVF(r->device,D3DFVF_XYZ|D3DFVF_NORMAL|D3DFVF_DIFFUSE|D3DFVF_TEX1));}
@@ -121,7 +123,7 @@ static HRESULT uma_d3d_draw(UmaD3D *r,const UmaMotionState *state,const D3DMATRI
  for(UINT i=0;i<sizeof(names)/sizeof(names[0]);i++){if(native && (names[i]==D3DRS_STENCILENABLE || names[i]==D3DRS_SCISSORTESTENABLE || names[i]==D3DRS_CLIPPLANEENABLE || names[i]==D3DRS_FOGENABLE || (depth_only && names[i]==D3DRS_ZWRITEENABLE)))continue;UMA_SET(IDirect3DDevice9_SetRenderState(r->device,names[i],depth_only && names[i]==D3DRS_COLORWRITEENABLE?0:values[i]));}
  result=r->draw(r->device,D3DPT_TRIANGLELIST,0,0,r->motion->vertices,0,r->motion->indices/3);
 restore:
- {HRESULT restored=IDirect3DStateBlock9_Apply(saved);IDirect3DStateBlock9_Release(saved);if(SUCCEEDED(result) && FAILED(restored))result=restored;}
+ {HRESULT restored=IDirect3DStateBlock9_Apply(r->saved);if(SUCCEEDED(result) && FAILED(restored))result=restored;}
  #undef UMA_SET
  return result;
 }

@@ -1,0 +1,303 @@
+[
+  {
+    "slot": "COROLLA",
+    "original": [
+      {
+        "literals": 293,
+        "copies": 94,
+        "max_length": 3398,
+        "overlapping_copies": 18,
+        "consumed": 558,
+        "declared": 558,
+        "output": 11036
+      },
+      {
+        "literals": 294,
+        "copies": 94,
+        "max_length": 3398,
+        "overlapping_copies": 18,
+        "consumed": 559,
+        "declared": 559,
+        "output": 11036
+      }
+    ],
+    "compact": [
+      {
+        "literals": 114,
+        "copies": 43,
+        "max_length": 4098,
+        "overlapping_copies": 18,
+        "consumed": 242,
+        "declared": 242,
+        "output": 11036
+      },
+      {
+        "literals": 115,
+        "copies": 43,
+        "max_length": 4098,
+        "overlapping_copies": 18,
+        "consumed": 243,
+        "declared": 243,
+        "output": 11036
+      }
+    ]
+  },
+  {
+    "slot": "240SX",
+    "original": [
+      {
+        "literals": 1248,
+        "copies": 684,
+        "max_length": 331,
+        "overlapping_copies": 106,
+        "consumed": 2960,
+        "declared": 2961,
+        "output": 11036
+      },
+      {
+        "literals": 1184,
+        "copies": 639,
+        "max_length": 331,
+        "overlapping_copies": 90,
+        "consumed": 2786,
+        "declared": 2788,
+        "output": 11036
+      }
+    ],
+    "compact": [
+      {
+        "literals": 113,
+        "copies": 43,
+        "max_length": 4098,
+        "overlapping_copies": 18,
+        "consumed": 241,
+        "declared": 241,
+        "output": 11036
+      },
+      {
+        "literals": 115,
+        "copies": 42,
+        "max_length": 4098,
+        "overlapping_copies": 18,
+        "consumed": 241,
+        "declared": 241,
+        "output": 11036
+      }
+    ]
+  },
+  {
+    "slot": "MIATA",
+    "original": [
+      {
+        "literals": 1192,
+        "copies": 753,
+        "max_length": 177,
+        "overlapping_copies": 112,
+        "consumed": 3053,
+        "declared": 3054,
+        "output": 11036
+      },
+      {
+        "literals": 1207,
+        "copies": 711,
+        "max_length": 278,
+        "overlapping_copies": 90,
+        "consumed": 2974,
+        "declared": 2975,
+        "output": 11036
+      }
+    ],
+    "compact": [
+      {
+        "literals": 115,
+        "copies": 42,
+        "max_length": 4098,
+        "overlapping_copies": 18,
+        "consumed": 241,
+        "declared": 241,
+        "output": 11036
+      },
+      {
+        "literals": 110,
+        "copies": 44,
+        "max_length": 4098,
+        "overlapping_copies": 18,
+        "consumed": 240,
+        "declared": 240,
+        "output": 11036
+      }
+    ]
+  },
+  {
+    "slot": "FOCUS",
+    "original": [
+      {
+        "literals": 1124,
+        "copies": 627,
+        "max_length": 590,
+        "overlapping_copies": 87,
+        "consumed": 2692,
+        "declared": 2694,
+        "output": 11036
+      },
+      {
+        "literals": 1121,
+        "copies": 578,
+        "max_length": 618,
+        "overlapping_copies": 92,
+        "consumed": 2579,
+        "declared": 2580,
+        "output": 11036
+      }
+    ],
+    "compact": [
+      {
+        "literals": 113,
+        "copies": 43,
+        "max_length": 4098,
+        "overlapping_copies": 18,
+        "consumed": 241,
+        "declared": 241,
+        "output": 11036
+      },
+      {
+        "literals": 112,
+        "copies": 43,
+        "max_length": 4098,
+        "overlapping_copies": 18,
+        "consumed": 240,
+        "declared": 240,
+        "output": 11036
+      }
+    ]
+  },
+  {
+    "slot": "PEUGOT",
+    "original": [
+      {
+        "literals": 1174,
+        "copies": 702,
+        "max_length": 546,
+        "overlapping_copies": 116,
+        "consumed": 2917,
+        "declared": 2918,
+        "output": 11036
+      },
+      {
+        "literals": 1208,
+        "copies": 711,
+        "max_length": 278,
+        "overlapping_copies": 90,
+        "consumed": 2975,
+        "declared": 2977,
+        "output": 11036
+      }
+    ],
+    "compact": [
+      {
+        "literals": 113,
+        "copies": 43,
+        "max_length": 4098,
+        "overlapping_copies": 18,
+        "consumed": 241,
+        "declared": 241,
+        "output": 11036
+      },
+      {
+        "literals": 114,
+        "copies": 43,
+        "max_length": 4098,
+        "overlapping_copies": 18,
+        "consumed": 242,
+        "declared": 242,
+        "output": 11036
+      }
+    ]
+  },
+  {
+    "slot": "PEUGOT106",
+    "original": [
+      {
+        "literals": 1120,
+        "copies": 767,
+        "max_length": 203,
+        "overlapping_copies": 124,
+        "consumed": 3002,
+        "declared": 3004,
+        "output": 11036
+      },
+      {
+        "literals": 1243,
+        "copies": 624,
+        "max_length": 620,
+        "overlapping_copies": 83,
+        "consumed": 2820,
+        "declared": 2821,
+        "output": 11036
+      }
+    ],
+    "compact": [
+      {
+        "literals": 117,
+        "copies": 43,
+        "max_length": 4098,
+        "overlapping_copies": 18,
+        "consumed": 245,
+        "declared": 245,
+        "output": 11036
+      },
+      {
+        "literals": 116,
+        "copies": 43,
+        "max_length": 4098,
+        "overlapping_copies": 18,
+        "consumed": 244,
+        "declared": 244,
+        "output": 11036
+      }
+    ]
+  },
+  {
+    "slot": "CORSA",
+    "original": [
+      {
+        "literals": 1175,
+        "copies": 740,
+        "max_length": 233,
+        "overlapping_copies": 115,
+        "consumed": 3004,
+        "declared": 3005,
+        "output": 11036
+      },
+      {
+        "literals": 1240,
+        "copies": 624,
+        "max_length": 620,
+        "overlapping_copies": 83,
+        "consumed": 2816,
+        "declared": 2818,
+        "output": 11036
+      }
+    ],
+    "compact": [
+      {
+        "literals": 112,
+        "copies": 43,
+        "max_length": 4098,
+        "overlapping_copies": 18,
+        "consumed": 240,
+        "declared": 240,
+        "output": 11036
+      },
+      {
+        "literals": 113,
+        "copies": 43,
+        "max_length": 4098,
+        "overlapping_copies": 18,
+        "consumed": 241,
+        "declared": 241,
+        "output": 11036
+      }
+    ]
+  }
+]

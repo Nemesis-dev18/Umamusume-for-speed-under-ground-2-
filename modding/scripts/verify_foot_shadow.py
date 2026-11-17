@@ -6,8 +6,6 @@ from PIL import Image
 from inspect_assets import chunks,flatten,huff,jdlz
 from extract_assets import payload,dds_header,mip_layout
 
-TARGETS={0xb7f6575b,0xb7f657c0}
-
 
 def pools(data):
     result={}
@@ -24,12 +22,17 @@ def pools(data):
     return result
 
 
-def verify(original,candidate):
+def verify(original,candidate,slot="COROLLA"):
+    from disable_car_effects import string_hash
+    if slot not in {"COROLLA","240SX","MIATA","FOCUS","PEUGOT","PEUGOT106","CORSA"}:
+        raise ValueError("Unsupported character slot")
+    targets={string_hash(f"{slot}_SHADOWFE"),string_hash(f"{slot}_SHADOWIG")}
     a,b=pools(original),pools(candidate)
     if a.keys()!=b.keys() or len(original)!=len(candidate):raise ValueError('Texture directory/size changed')
+    if not targets.issubset(a):raise ValueError("Missing shadow texture")
     for key,(old,header) in a.items():
         new,new_header=b[key]
-        if key not in TARGETS:
+        if key not in targets:
             if old!=new or header!=new_header:raise ValueError('Unrelated texture changed')
             continue
         size=struct.unpack_from('<I',old,header+20)[0]

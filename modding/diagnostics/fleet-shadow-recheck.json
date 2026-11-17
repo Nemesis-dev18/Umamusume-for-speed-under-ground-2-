@@ -1,0 +1,79 @@
+[
+  {
+    "slot": "COROLLA",
+    "passed": true,
+    "result": {
+      "textures": 56,
+      "only_two_shadows_changed": true,
+      "format": "DXT3 128x64, four mips",
+      "metadata_unchanged": true,
+      "sha256": "9cdba845b52eecf021767c413b68cca50e1da38c1028b87a89baf07f73a97daf"
+    }
+  },
+  {
+    "slot": "240SX",
+    "passed": true,
+    "result": {
+      "textures": 73,
+      "only_two_shadows_changed": true,
+      "format": "DXT3 128x64, four mips",
+      "metadata_unchanged": true,
+      "sha256": "010ee70d2852c5c079c03fdb434b25cf1f6eea8db29db71d2792c4ff48b0752d"
+    }
+  },
+  {
+    "slot": "MIATA",
+    "passed": true,
+    "result": {
+      "textures": 76,
+      "only_two_shadows_changed": true,
+      "format": "DXT3 128x64, four mips",
+      "metadata_unchanged": true,
+      "sha256": "c2a60e833d9193913cc667f31a6cf7a809140883669563465b157d19f303cf84"
+    }
+  },
+  {
+    "slot": "FOCUS",
+    "passed": true,
+    "result": {
+      "textures": 72,
+      "only_two_shadows_changed": true,
+      "format": "DXT3 128x64, four mips",
+      "metadata_unchanged": true,
+      "sha256": "6a295e48106c153ace0f59f788efa9e665a62bd0d31d5a062a7778f28d5ae8e6"
+    }
+  },
+  {
+    "slot": "PEUGOT",
+    "passed": true,
+    "result": {
+      "textures": 73,
+      "only_two_shadows_changed": true,
+      "format": "DXT3 128x64, four mips",
+      "metadata_unchanged": true,
+      "sha256": "c8dae8b87be1bdfceb9d6e20bf506119ee1c9a3608290366842efc4805bd86d8"
+    }
+  },
+  {
+    "slot": "PEUGOT106",
+    "passed": true,
+    "result": {
+      "textures": 60,
+      "only_two_shadows_changed": true,
+      "format": "DXT3 128x64, four mips",
+      "metadata_unchanged": true,
+      "sha256": "ade45e9e894889cda87d7363b5d97e352b2f05dd8cebb3db53d7688b0ee5bdf4"
+    }
+  },
+  {
+    "slot": "CORSA",
+    "passed": true,
+    "result": {
+      "textures": 57,
+      "only_two_shadows_changed": true,
+      "format": "DXT3 128x64, four mips",
+      "metadata_unchanged": true,
+      "sha256": "ecd4801d41584f230d5b3e7028f5e37ad74b6213eae5b046f69178afded99079"
+    }
+  }
+]

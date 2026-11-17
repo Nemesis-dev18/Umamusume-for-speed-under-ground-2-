@@ -1,0 +1,25 @@
+{
+  "query_complete": true,
+  "candidates": [
+    {
+      "logical": "3d/chara/common/facialblendinfo",
+      "hash": "2YPMT6SLP3ZV5M7DIUBPMTQYZXGQIJ6A",
+      "cached": true
+    },
+    {
+      "logical": "3d/chara/common/tear/tear000/pfb_chr_tear000",
+      "hash": "5EMIPCSQOVDXPLGF5X7T4HKFWRJ6AKO2",
+      "cached": true
+    },
+    {
+      "logical": "3d/chara/common/tear/tear001/pfb_chr_tear001",
+      "hash": "TSMD4O5UQLTCN4GDPSL4QQZSD3NT6WV2",
+      "cached": true
+    },
+    {
+      "logical": "3d/chara/common/zekken/ast_zekken_color",
+      "hash": "PABUOAETBUKAIF7AESJTDWQCRVKTI4Z7",
+      "cached": true
+    }
+  ]
+}

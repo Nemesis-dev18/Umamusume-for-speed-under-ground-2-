@@ -1,0 +1,126 @@
+{
+  "files": [
+    {
+      "slot": "COROLLA",
+      "target": "CARS/COROLLA/TEXTURES.BIN",
+      "candidate": "modding/staged-runtime/fleet-shadows-guard/COROLLA/TEXTURES.BIN",
+      "before_sha256": "0ad09f89b7eb3c82cade7c76ea9c727dc28d43e48f79226e2159bf4add2c2094",
+      "after_sha256": "e35587fa4db36d550ddfb0f54c072af6255a82855384704a63f89a0c682eea8e",
+      "changed_slots": [
+        [
+          871936,
+          559
+        ],
+        [
+          869248,
+          558
+        ]
+      ]
+    },
+    {
+      "slot": "240SX",
+      "target": "CARS/240SX/TEXTURES.BIN",
+      "candidate": "modding/staged-runtime/fleet-shadows-guard/240SX/TEXTURES.BIN",
+      "before_sha256": "797953b0aad7be50ebbf81144dedfb39c9fab513a41a02886935026c879d0ea1",
+      "after_sha256": "9815b9c66df8bf2e2bbf4c957b5b7b8b5c74c7f64cadeb3001f5524efb621597",
+      "changed_slots": [
+        [
+          720128,
+          2961
+        ],
+        [
+          723136,
+          2788
+        ]
+      ]
+    },
+    {
+      "slot": "MIATA",
+      "target": "CARS/MIATA/TEXTURES.BIN",
+      "candidate": "modding/staged-runtime/fleet-shadows-guard/MIATA/TEXTURES.BIN",
+      "before_sha256": "4fe9f1bc5df58e47273c87586d278b0795121b7893844a415630a8e83025369b",
+      "after_sha256": "1bf80c8572cb8bd743377590451e7076d933f7b4e459a76f68ecc9f3a9c5cbbc",
+      "changed_slots": [
+        [
+          453312,
+          2975
+        ],
+        [
+          450240,
+          3054
+        ]
+      ]
+    },
+    {
+      "slot": "FOCUS",
+      "target": "CARS/FOCUS/TEXTURES.BIN",
+      "candidate": "modding/staged-runtime/fleet-shadows-guard/FOCUS/TEXTURES.BIN",
+      "before_sha256": "6e601790adb3856bd637e1e62ef69bc2c8912ca795a22ffc9cb41f90a3e94156",
+      "after_sha256": "c62d2b4510f97337290a7c0efa08cb4043a6f4b09624c898c3247702f7146c4d",
+      "changed_slots": [
+        [
+          435840,
+          2580
+        ],
+        [
+          433088,
+          2694
+        ]
+      ]
+    },
+    {
+      "slot": "PEUGOT",
+      "target": "CARS/PEUGOT/TEXTURES.BIN",
+      "candidate": "modding/staged-runtime/fleet-shadows-guard/PEUGOT/TEXTURES.BIN",
+      "before_sha256": "a2eff8c083c37a5f6ded202b0a181db04f4c0147fe2b9d6650fb0e848f7de838",
+      "after_sha256": "2855598f7f40622040daf070f1fc41f07f49041f0c0f6224b23266517eb4f5da",
+      "changed_slots": [
+        [
+          864128,
+          2977
+        ],
+        [
+          861184,
+          2918
+        ]
+      ]
+    },
+    {
+      "slot": "PEUGOT106",
+      "target": "CARS/PEUGOT106/TEXTURES.BIN",
+      "candidate": "modding/staged-runtime/fleet-shadows-guard/PEUGOT106/TEXTURES.BIN",
+      "before_sha256": "cd2f633cd7a32614f7fb81bf785a4dcf067dcfca22bb84c26af9dff94e7a1bd3",
+      "after_sha256": "bd6f4a43e2ba697f6c79c5dd7d45d14ebdb61ec3ce10475b03c0d36f814e6edc",
+      "changed_slots": [
+        [
+          697536,
+          3004
+        ],
+        [
+          700544,
+          2821
+        ]
+      ]
+    },
+    {
+      "slot": "CORSA",
+      "target": "CARS/CORSA/TEXTURES.BIN",
+      "candidate": "modding/staged-runtime/fleet-shadows-guard/CORSA/TEXTURES.BIN",
+      "before_sha256": "f7d8e61a42cc96365b66e68fd1214e3e372fc133e68812cb8d75c2fe21ccbcb7",
+      "after_sha256": "df86de97bc942529612fa2d19af04969bdae01b72b6273209b172da58ceefcaf",
+      "changed_slots": [
+        [
+          609600,
+          2818
+        ],
+        [
+          606592,
+          3005
+        ]
+      ]
+    }
+  ],
+  "installed": false,
+  "game_verified": false,
+  "hypothesis": "Original compressed slot sizes and zero tail guard; does not establish crash cause"
+}

@@ -1,0 +1,15 @@
+{
+  "installed": false,
+  "gpu_tests_run": true,
+  "cpu_scene_tests_passed": true,
+  "strict_build_passed": true,
+  "files": {
+    "modding/runtime/UmaRunner.state-reuse.asi": "a2861b402ca560c0b4ecaa0b56a048aea4eebd6468757e4a6cce60b0eef7c63c",
+    "scripts/UmaRunner.asi": "90063d9a4e47342d0bc931e381e18f12b888efcc7713f9f5a242bfa16b55f48c",
+    "modding/runtime/uma_d3d.h": "63bf3b8d61ccff7c3ead4ccd481fb5d2e4735ba27cfbab0c7f5406ce14b011e5",
+    "modding/runtime/renderer_test.c": "272507ca4546abbf68bf80681bae23908adfc70582af399122fc3f4e6717b49f"
+  },
+  "renderer_pass": "PASS all renderer checks, failure restoration and device reset; 16 intercepted draws. No game integration tested.",
+  "integration_pass": "PASS native shader 5 renders animated textured body through runtime hook; stream offset and base vertex pass, cross-device hooks pass, same-size impostor retains original white output; Present, Reset and hook removal pass. Not NFSU2 gameplay.",
+  "gameplay_verified": false
+}

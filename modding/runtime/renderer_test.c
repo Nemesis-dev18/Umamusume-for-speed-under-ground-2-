@@ -186,9 +186,12 @@ int main(int argc,char **argv){
  const char *textures[]={"modding/runtime/gpu-test/half-alpha.dds","modding/runtime/gpu-test/zero-alpha.dds","modding/runtime/atlas.dds"};UmaD3D renderer={0};UmaMotionState state={0};DWORD previous_hash=0;
  for(int kind=0;kind<3;kind++){
   FILE *tex=fopen(textures[kind],"rb");assert(tex);CHECK(uma_d3d_open(&renderer,device,&motion,tex,observed_draw));fclose(tex);
+  IDirect3DStateBlock9 *saved_block=NULL;
   for(int frame=0;frame<(kind==2?4:1);frame++){
    state.idle_phase=0;state.run_phase=frame*.25f;state.run_blend=kind==2?1:0;
+   original.m[3][0]=.123f+frame*.01f;CHECK(IDirect3DDevice9_SetTransform(device,D3DTS_WORLD,&original));
    CHECK(IDirect3DDevice9_Clear(device,0,NULL,D3DCLEAR_TARGET|D3DCLEAR_ZBUFFER,0xff252a32,1,0));CHECK(IDirect3DDevice9_BeginScene(device));CHECK(uma_d3d_draw(&renderer,&state,&combined,-1,NULL));check_restored(device,white,vb,ib,&original);
+   assert(renderer.saved);if(saved_block)assert(renderer.saved==saved_block);saved_block=renderer.saved;
    CHECK(IDirect3DDevice9_DrawIndexedPrimitive(device,D3DPT_TRIANGLELIST,0,0,4,0,2));CHECK(IDirect3DDevice9_EndScene(device));
    DWORD *pixels=read_pixels(device);assert(pixels[8*640+8]==0xffffffff);UINT different=0,orange=0;DWORD hash=2166136261u;
    for(int y=20;y<480;y++)for(int x=0;x<640;x++){DWORD p=pixels[y*640+x];if(p!=0xff252a32)different++;if(p==0xffff8040)orange++;hash=(hash^p)*16777619u;}
@@ -202,7 +205,7 @@ int main(int argc,char **argv){
    DWORD *recovered=read_pixels(device);DWORD recovered_hash=2166136261u;for(int y=20;y<480;y++)for(int x=0;x<640;x++)recovered_hash=(recovered_hash^recovered[y*640+x])*16777619u;assert(recovered_hash==previous_hash);free(recovered);puts("PASS invalid pose invalidates upload cache; repeated valid pose recovers identical GPU pixels");
   }
   fail_draw=1;CHECK(IDirect3DDevice9_BeginScene(device));assert(uma_d3d_draw(&renderer,&state,&combined,-1,NULL)==E_FAIL);check_restored(device,white,vb,ib,&original);CHECK(IDirect3DDevice9_EndScene(device));fail_draw=0;
-  uma_d3d_close(&renderer);
+  uma_d3d_close(&renderer);assert(!renderer.saved);
  }
  assert(check_native_lighting(device,&motion,&combined)==0);
  CHECK(IDirect3DDevice9_Reset(device,&pp));input=fopen("modding/runtime/atlas.dds","rb");assert(input);CHECK(uma_d3d_open(&renderer,device,&motion,input,observed_draw));fclose(input);CHECK(IDirect3DDevice9_BeginScene(device));CHECK(uma_d3d_draw(&renderer,&state,&combined,-1,NULL));CHECK(IDirect3DDevice9_EndScene(device));uma_d3d_close(&renderer);
