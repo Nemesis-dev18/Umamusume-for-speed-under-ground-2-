@@ -34,16 +34,16 @@ int main(void){
  D3DPRESENT_PARAMETERS pp={0};pp.Windowed=TRUE;pp.SwapEffect=D3DSWAPEFFECT_DISCARD;pp.hDeviceWindow=window;pp.BackBufferWidth=640;pp.BackBufferHeight=480;pp.BackBufferFormat=D3DFMT_A8R8G8B8;pp.EnableAutoDepthStencil=TRUE;pp.AutoDepthStencilFormat=D3DFMT_D24S8;
  IDirect3DDevice9 *device=NULL;CHECK(IDirect3D9_CreateDevice(api,0,D3DDEVTYPE_HAL,window,D3DCREATE_HARDWARE_VERTEXPROCESSING,&pp,&device));IDirect3DDevice9 *bootstrap=NULL;D3DPRESENT_PARAMETERS init=pp;init.EnableAutoDepthStencil=FALSE;CHECK(IDirect3D9_CreateDevice(api,0,D3DDEVTYPE_HAL,window,D3DCREATE_SOFTWARE_VERTEXPROCESSING,&init,&bootstrap));assert(runner_install(bootstrap));IDirect3DDevice9_Release(bootstrap);
  WCHAR effect_root[4096];assert(GetCurrentDirectoryW(4096,effect_root));assert(uma_effects_load(effect_root));
- for(int effect=0;effect<3;effect++){
-  IDirect3DTexture9 *sample=NULL;UINT width=uma_effects[effect].width;CHECK(IDirect3DDevice9_CreateTexture(device,width,width,1,0,D3DFMT_DXT3,D3DPOOL_MANAGED,&sample,NULL));
-  D3DLOCKED_RECT lock;CHECK(IDirect3DTexture9_LockRect(sample,0,&lock,NULL,0));for(UINT y=0;y<width/4;y++)memcpy((BYTE*)lock.pBits+y*lock.Pitch,uma_effects[effect].pixels+y*width*4,width*4);CHECK(IDirect3DTexture9_UnlockRect(sample,0));
+ for(int effect=0;effect<7;effect++){
+  IDirect3DTexture9 *sample=NULL;UINT width=uma_effects[effect].width;CHECK(IDirect3DDevice9_CreateTexture(device,width,uma_effects[effect].height,1,0,uma_effects[effect].format,D3DPOOL_MANAGED,&sample,NULL));
+  D3DLOCKED_RECT lock;CHECK(IDirect3DTexture9_LockRect(sample,0,&lock,NULL,0));for(UINT y=0;y<(uma_effects[effect].format==D3DFMT_DXT3?uma_effects[effect].height/4:uma_effects[effect].height);y++)memcpy((BYTE*)lock.pBits+y*lock.Pitch,uma_effects[effect].pixels+y*width*4,width*4);CHECK(IDirect3DTexture9_UnlockRect(sample,0));
   assert(uma_effect_texture(sample));CHECK(IDirect3DDevice9_SetTexture(device,0,(IDirect3DBaseTexture9*)sample));assert(uma_effect_draw(device));
   IDirect3DBaseTexture9 *retained=NULL;CHECK(IDirect3DDevice9_GetTexture(device,0,&retained));assert(retained==(IDirect3DBaseTexture9*)sample);IDirect3DBaseTexture9_Release(retained);
   CHECK(IDirect3DTexture9_LockRect(sample,0,&lock,NULL,0));((BYTE*)lock.pBits)[0]^=1;CHECK(IDirect3DTexture9_UnlockRect(sample,0));assert(!uma_effect_texture(sample));assert(!uma_effect_draw(device));
   CHECK(IDirect3DDevice9_SetTexture(device,0,NULL));IDirect3DTexture9_Release(sample);
  }
- assert(uma_effects_hidden==3);uma_effects_ready=0;
- puts("PASS all three exact effect textures match compressed rows, one-byte impostors pass through, bindings preserved");
+ assert(uma_effects_hidden==7);uma_effects_ready=0;
+ puts("PASS all seven exact effect textures match compressed rows, one-byte impostors pass through, bindings preserved");
  IDirect3DVertexBuffer9 *vb=NULL,*other=NULL;UINT bytes=runner_motion.vertices*36;void *mapped=NULL;
  CHECK(IDirect3DDevice9_CreateVertexBuffer(device,bytes+72,D3DUSAGE_DYNAMIC|D3DUSAGE_WRITEONLY,0,D3DPOOL_DEFAULT,&vb,NULL));CHECK(IDirect3DVertexBuffer9_Lock(vb,0,0,&mapped,D3DLOCK_DISCARD));memset(mapped,0,bytes+72);memcpy((BYTE*)mapped+72,runner_motion.rest,bytes);CHECK(IDirect3DVertexBuffer9_Unlock(vb));assert(uma_upload_matches_at(vb,72));
  CHECK(IDirect3DDevice9_CreateVertexBuffer(device,bytes,D3DUSAGE_DYNAMIC|D3DUSAGE_WRITEONLY,0,D3DPOOL_DEFAULT,&other,NULL));CHECK(IDirect3DVertexBuffer9_Lock(other,0,0,&mapped,D3DLOCK_DISCARD));memcpy(mapped,runner_motion.rest,bytes);((BYTE*)mapped)[bytes-1]^=1;CHECK(IDirect3DVertexBuffer9_Unlock(other));assert(!uma_upload_is_character(other));

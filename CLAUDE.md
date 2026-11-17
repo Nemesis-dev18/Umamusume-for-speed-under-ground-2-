@@ -475,3 +475,7 @@ Marcas identificadas por nombreexacto enInGameCommon:SKID_ROAD64x32formato8/P8, 
 Cambio nombre: dos pruebasunittest permanentes pasaron. Comparaciónexacta preserva tabla salvo puntero objetivo,tamaño ybytesañadidos; todaslasotrascadenas iguales ychunks posteriores idénticos. Rechazaoffsetinválido,100001entradas, clavesduplicadas,truncados yreaplicación. RespaldosEnglish/Spanish exactos antescheckpoint; juego cerrado. No se cambiaToyota/logotipo.
 
 InstaladasEnglish/SpanishKitasanBlack conSHAverificado trascheckpoint 8190f25fe787584b6b4a50dfcb58d0cbbbf786b3. No se lanza aún; nombrevisible ycentrado pendientes. Modelo/collider/runtime intactos.
+
+Candidato filtro ampliado a7perfiles: humo2/neon1,SKID_DIRT,SKID_GRASS,TIREPATCH ySKID_ROAD expandido BGRA desdeP8+paletteoriginal. Dimensionesrectangulares/pitch porfilas cubiertos; host crea7texturas,reconoceexactas,rechazavariantes1byte ypreservabinding. Todoshosts pasaron antesde añadir comprobaciónhashpalette; ese últimoendurecimiento requiere repetirbuild. CandidatoNOinstalado, instalado siguefiltro3perfilesconfirmadohumo. P8GPU nativo aúnno soportado, soloA8R8G8B8expandido paraasfalto; detecciónrealpendiente.
+
+Filtro7perfiles conhashpalette recompilado y todoshosts pasaron. Backupmóduloanterior verificado antescheckpoint. Solo módulo cambia enesta prueba; no sonido,física,GEOMETRY niGLOBAL. P8nativo asfalto aúnno reconocido, síBGRAexpandido; resultadoGPUreal pendiente.

@@ -1,0 +1,49 @@
+{
+  "textures": [
+    {
+      "name": "SKID_DIRT",
+      "source": "GLOBAL/InGameCommon.bun",
+      "width": 64,
+      "height": 32,
+      "format": 36,
+      "offset": 404736,
+      "top_mip_sha256": "4daf56c30b13d608413d4f67dad3092de22cce41fe312ab5c200a7a532ce08be",
+      "palette_offset": null,
+      "palette_bytes": 0
+    },
+    {
+      "name": "SKID_ROAD",
+      "source": "GLOBAL/InGameCommon.bun",
+      "width": 64,
+      "height": 32,
+      "format": 8,
+      "offset": 407424,
+      "top_mip_sha256": "9c3bb495d0a7733add5ac7d82b1a1f7a3e2edf4d157d3e83bd70cdbd65f6a53d",
+      "palette_offset": 46080,
+      "palette_bytes": 1024
+    },
+    {
+      "name": "SKID_GRASS",
+      "source": "GLOBAL/InGameCommon.bun",
+      "width": 64,
+      "height": 32,
+      "format": 36,
+      "offset": 475648,
+      "top_mip_sha256": "4daf56c30b13d608413d4f67dad3092de22cce41fe312ab5c200a7a532ce08be",
+      "palette_offset": null,
+      "palette_bytes": 0
+    },
+    {
+      "name": "TIREPATCH",
+      "source": "GLOBAL/InGameCommon.bun",
+      "width": 64,
+      "height": 64,
+      "format": 36,
+      "offset": 794112,
+      "top_mip_sha256": "7da1ed74c1d2bf86f9199d15cafa00c01c0f9dbb65f2bc263ca115ecad821739",
+      "palette_offset": null,
+      "palette_bytes": 0
+    }
+  ],
+  "installed": false
+}
