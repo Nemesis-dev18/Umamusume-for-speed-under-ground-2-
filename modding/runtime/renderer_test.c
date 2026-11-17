@@ -210,5 +210,9 @@ int main(int argc,char **argv){
  assert(check_native_lighting(device,&motion,&combined)==0);
  CHECK(IDirect3DDevice9_Reset(device,&pp));input=fopen("modding/runtime/atlas.dds","rb");assert(input);CHECK(uma_d3d_open(&renderer,device,&motion,input,observed_draw));fclose(input);CHECK(IDirect3DDevice9_BeginScene(device));CHECK(uma_d3d_draw(&renderer,&state,&combined,-1,NULL));CHECK(IDirect3DDevice9_EndScene(device));uma_d3d_close(&renderer);
  assert(uma_motion_step(&state,1.f/60,6,0));uma_motion_free(&motion);IDirect3DVertexBuffer9_Release(vb);IDirect3DIndexBuffer9_Release(ib);IDirect3DPixelShader9_Release(white);IDirect3DDevice9_Release(device);IDirect3D9_Release(api);DestroyWindow(window);
+#ifdef UMA_PROFILE
+ assert(uma_profile_draws==draws);assert(uma_profile_uploads>0 && uma_profile_skin_ticks>0 && uma_profile_upload_ticks>=uma_profile_skin_ticks && uma_profile_draw_ticks>=uma_profile_upload_ticks);
+ puts("PASS diagnostic counters cover draws and skin/upload timing without changing pixels");
+#endif
  printf("PASS all renderer checks, failure restoration and device reset; %u intercepted draws. No game integration tested.\n",draws);return 0;
 }

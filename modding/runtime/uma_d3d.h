@@ -6,6 +6,12 @@
 #include "uma_motion.h"
 #include "uma_shader_bridge.h"
 
+#ifdef UMA_PROFILE
+static LONGLONG uma_profile_skin_ticks,uma_profile_upload_ticks,uma_profile_draw_ticks;
+static unsigned uma_profile_uploads,uma_profile_draws;
+static LONGLONG uma_profile_now(void){LARGE_INTEGER t;QueryPerformanceCounter(&t);return t.QuadPart;}
+#endif
+
 typedef HRESULT (WINAPI *UmaDrawIndexed)(IDirect3DDevice9*,D3DPRIMITIVETYPE,INT,UINT,UINT,UINT,UINT);
 typedef struct {
  IDirect3DDevice9 *device;IDirect3DVertexBuffer9 *vertices;IDirect3DIndexBuffer9 *indices;
@@ -76,6 +82,9 @@ invalid:
 /* Caller supplies the camera/object transform and invokes this inside its scene. */
 static HRESULT uma_d3d_draw(UmaD3D *r,const UmaMotionState *state,const D3DMATRIX *combined,int use_native,const float *root){
  if(!r || !r->device || !state || (use_native!=-1 && use_native!=0))return E_INVALIDARG;
+#ifdef UMA_PROFILE
+ LONGLONG profile_start=uma_profile_now();
+#endif
  HRESULT result=S_OK;UmaShaderEntry *entry=NULL;int native=use_native==0;DWORD incoming_color=7;IDirect3DDevice9_GetRenderState(r->device,D3DRS_COLORWRITEENABLE,&incoming_color);int depth_only=incoming_color==0;
  if(native){entry=uma_shader_get(&r->shaders,r->device,&result);if(FAILED(result))return result;if(entry){result=uma_shader_clone(r->device,entry);if(FAILED(result))return result;}else native=0;}
  if(!native){if(!combined)return E_INVALIDARG;for(int row=0;row<4;row++)for(int column=0;column<4;column++)if(!isfinite(combined->m[row][column]) || fabsf(combined->m[row][column])>1e6)return E_INVALIDARG;}
@@ -87,8 +96,17 @@ static HRESULT uma_d3d_draw(UmaD3D *r,const UmaMotionState *state,const D3DMATRI
  /* Main and reflection passes share the same local pose and root correction. */
  if(!r->has_uploaded || state->idle_phase!=r->uploaded.idle_phase || state->run_phase!=r->uploaded.run_phase || state->run_blend!=r->uploaded.run_blend || (!!root)!=r->uploaded_root_valid || (root && memcmp(root,r->uploaded_root,sizeof(r->uploaded_root)))){
   r->has_uploaded=0;
+#ifdef UMA_PROFILE
+  LONGLONG profile_upload=uma_profile_now();
+#endif
   void *mapped=NULL;result=IDirect3DVertexBuffer9_Lock(r->vertices,0,r->motion->vertices*36,&mapped,D3DLOCK_DISCARD);if(FAILED(result))return result;
+#ifdef UMA_PROFILE
+  LONGLONG profile_skin=uma_profile_now();
+#endif
   int sampled=uma_motion_sample(r->motion,state->idle_phase,state->run_phase,state->run_blend,(UmaVertex*)mapped,(size_t)r->motion->vertices*36);
+#ifdef UMA_PROFILE
+  uma_profile_skin_ticks+=uma_profile_now()-profile_skin;
+#endif
   if(sampled && root)for(uint32_t i=0;i<r->motion->vertices;i++){
    UmaVertex *vertex=(UmaVertex*)mapped+i;float position[3]={0},normal[3]={0};
    for(int c=0;c<3;c++)for(int k=0;k<3;k++){position[c]+=vertex->position[k]*root[k*3+c];normal[c]+=vertex->normal[k]*root[k*3+c];}
@@ -97,6 +115,9 @@ static HRESULT uma_d3d_draw(UmaD3D *r,const UmaMotionState *state,const D3DMATRI
   result=IDirect3DVertexBuffer9_Unlock(r->vertices);if(FAILED(result))return result;if(!sampled)return E_INVALIDARG;
   r->uploaded_root_valid=root!=NULL;if(root)memcpy(r->uploaded_root,root,sizeof(r->uploaded_root));
   r->uploaded=*state;r->has_uploaded=1;
+#ifdef UMA_PROFILE
+  uma_profile_upload_ticks+=uma_profile_now()-profile_upload;uma_profile_uploads++;
+#endif
  }
  if(!r->saved){result=IDirect3DDevice9_CreateStateBlock(r->device,D3DSBT_ALL,&r->saved);if(FAILED(result))return result;}
  result=IDirect3DStateBlock9_Capture(r->saved);if(FAILED(result))return result;
@@ -125,6 +146,9 @@ static HRESULT uma_d3d_draw(UmaD3D *r,const UmaMotionState *state,const D3DMATRI
 restore:
  {HRESULT restored=IDirect3DStateBlock9_Apply(r->saved);if(SUCCEEDED(result) && FAILED(restored))result=restored;}
  #undef UMA_SET
+#ifdef UMA_PROFILE
+ uma_profile_draw_ticks+=uma_profile_now()-profile_start;uma_profile_draws++;
+#endif
  return result;
 }
 #endif
