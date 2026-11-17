@@ -3,6 +3,8 @@ import json
 import math
 from pathlib import Path
 import zlib
+import struct
+from bisect import bisect_right
 import numpy as np
 
 ROOT=Path(__file__).resolve().parents[2]
@@ -49,10 +51,35 @@ class OriginalRig:
             positions.append(p);rotations.append(r);scales.append(scale)
         return np.array(rotations),np.array(positions)
 
+class StreamedCurves:
+    """Evaluate Unity's per-key cubic coefficients, including constant/stepped intervals."""
+    def __init__(self,clip):
+        count=clip['curveCount']
+        if not 0<=count<=10000 or len(clip['data'])>10000000:raise ValueError('Streamed curve bounds')
+        raw=np.asarray(clip['data'],dtype='<u4').tobytes();self.keys=[[] for _ in range(count)];self.times=[[] for _ in range(count)];at=0;previous=-math.inf
+        while at<len(raw):
+            if at+8>len(raw):raise ValueError('Truncated streamed frame')
+            time,size=struct.unpack_from('<fI',raw,at);at+=8
+            if math.isnan(time) or time<previous or size>count or size>(len(raw)-at)//20:raise ValueError('Invalid streamed frame')
+            previous=time;seen=set()
+            for _ in range(size):
+                index,*coeff=struct.unpack_from('<I4f',raw,at);at+=20
+                if index>=count or index in seen or not all(math.isfinite(v) for v in coeff):raise ValueError('Invalid streamed key')
+                seen.add(index);self.times[index].append(time);self.keys[index].append(coeff)
+        if any(not keys for keys in self.keys):raise ValueError('Missing streamed channel')
+
+    def sample(self,time):
+        if not math.isfinite(time):raise ValueError('Nonfinite sample time')
+        output=[]
+        for times,keys in zip(self.times,self.keys):
+            index=max(0,bisect_right(times,time)-1);a,b,c,d=keys[index];delta=time-times[index]
+            output.append(((a*delta+b)*delta+c)*delta+d if math.isfinite(delta) else d)
+        return np.asarray(output)
+
 class DenseMotion:
-    def __init__(self,name,rig):
-        self.name=name;data=json.loads((DATA/(name+'.json')).read_text());muscle=data['m_MuscleClip'];clip=muscle['m_Clip']['data']
-        if clip['m_StreamedClip']['curveCount']:raise ValueError('Streamed channels require separate decoding')
+    def __init__(self,name,rig,folder=None):
+        self.name=name;data=json.loads(((Path(folder) if folder else DATA)/(name+'.json')).read_text());muscle=data['m_MuscleClip'];clip=muscle['m_Clip']['data']
+        self.stream=StreamedCurves(clip['m_StreamedClip'])
         dense=clip['m_DenseClip'];self.rate=dense['m_SampleRate'];self.stop=muscle['m_StopTime'];self.start=muscle['m_StartTime'];self.duration=self.stop-self.start
         self.dense=np.array(dense['m_SampleArray']).reshape(dense['m_FrameCount'],dense['m_CurveCount']);self.constant=np.array(clip['m_ConstantClip']['data']);self.bindings=[];self.unmapped=[];cursor=0
         for b in data['m_ClipBindingConstant']['genericBindings']:
@@ -61,12 +88,13 @@ class DenseMotion:
             if b['path'] in rig.paths:self.bindings.append((rig.paths[b['path']],b['attribute'],cursor,count))
             else:self.unmapped.append(b)
             cursor+=count
-        if cursor!=self.dense.shape[1]+len(self.constant) or not np.isfinite(self.dense).all() or not np.isfinite(self.constant).all():raise ValueError('Source channel count mismatch')
+        if cursor!=len(self.stream.keys)+self.dense.shape[1]+len(self.constant) or not np.isfinite(self.dense).all() or not np.isfinite(self.constant).all():raise ValueError('Source channel count mismatch')
         if not 0<self.duration<10 or self.stop*self.rate>len(self.dense)-1:raise ValueError('Invalid clip duration')
 
     def channels(self,phase):
         frame=((phase%1)*self.duration+self.start)*self.rate;a=int(frame);b=min(a+1,len(self.dense)-1);t=frame-a
-        first=np.concatenate((self.dense[a],self.constant));second=np.concatenate((self.dense[b],self.constant));result={}
+        streamed=self.stream.sample((phase%1)*self.duration+self.start)
+        first=np.concatenate((streamed,self.dense[a],self.constant));second=np.concatenate((streamed,self.dense[b],self.constant));result={}
         for bone,attribute,start,count in self.bindings:
             x=first[start:start+count];y=second[start:start+count]
             if attribute==2:

@@ -1,0 +1,23 @@
+{
+  "name": "Oguri Cap",
+  "bounds_min": [
+    -0.34253737330436707,
+    -0.15324707329273224,
+    -0.0015541249886155128
+  ],
+  "bounds_max": [
+    0.30095362663269043,
+    0.3883614242076874,
+    1.7200899124145508
+  ],
+  "height": 1.7216440374031663,
+  "mesh_count": 6,
+  "armatures": 1,
+  "rendered": true,
+  "visual_approved": false,
+  "game_integrated": false,
+  "gltf_sha256": "b00266011ef959231d4f873532407652577b52745ad48afc6594fc7654ea0170",
+  "buffer_sha256": "ae7b54f9d8116b0c97f472fc05be55c1c2fe143301e5eb825754ec2606933363",
+  "native_idle_and_run_rendered": true,
+  "eye_depth_material_pending": true
+}

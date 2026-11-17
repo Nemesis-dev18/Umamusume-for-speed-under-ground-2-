@@ -1,0 +1,82 @@
+//////////////////////////////////////////
+//
+// NOTE: This is *not* a valid shader file
+//
+///////////////////////////////////////////
+Shader "Gallop/3D/Chara/ToonEye/T" {
+Properties {
+
+_MainTex ("Diffuse", 2D) = "white" { }
+
+_High0Tex ("High0", 2D) = "black" { }
+
+_High1Tex ("High1", 2D) = "black" { }
+
+_High2Tex ("High2", 2D) = "black" { }
+
+_WetTex ("Wet Texture", 2D) = "black" { }
+
+_WetRate ("Wet Rate", Range(0, 1)) = 1.0
+
+_CharaColor ("_CharaColor", Color) = (1,1,1,1)
+
+_Saturation ("_Saturation", Range(0, 1)) = 1.0
+
+_LightProbeColor ("_LightProbeColor", Color) = (1,1,1,1)
+
+_Limit ("_Limit", Range(0, 1)) = 0.5
+
+[Header(Stencil)] _StencilMask ("Stencil Mask", Float) = 100.0
+
+[Enum(UnityEngine.Rendering.CompareFunction)] _StencilComp ("Stencil Comparison", Float) = 0.0
+
+[Enum(UnityEngine.Rendering.StencilOp)] _StencilOp ("Stencil Operation", Float) = 0.0
+
+[Header(Toon)] _ToonStep ("_ToonStep", Range(0, 1)) = 0.4000000059604645
+
+_ToonFeather ("_ToonFeather", Range(0.0001, 1)) = 0.10000000149011612
+
+_ToonBrightColor ("_ToonBrightColor", Color) = (1,1,1,0)
+
+_ToonDarkColor ("_ToonDarkColor", Color) = (1,1,1,0)
+
+[MaterialToggle] _UseOriginalDirectionalLight ("_UseOriginalDirectionalLight", Float) = 0.0
+
+_OriginalDirectionalLightDir ("_OriginalDirectionalLightDir", Vector) = (1,1,1,1)
+
+_CylinderBlend ("_CylinderBlend", Range(0, 1)) = 0.0
+
+[Header(MaskColor)] _MaskColorTex ("MaskColorTex", 2D) = "gray" { }
+
+_MaskColorR1 ("MaskColorR1", Color) = (1,1,1,1)
+
+_MaskColorR2 ("MaskColorR2", Color) = (1,1,1,1)
+
+_MaskColorG1 ("MaskColorG1", Color) = (1,1,1,1)
+
+_MaskColorG2 ("MaskColorG2", Color) = (1,1,1,1)
+
+_MaskColorB1 ("MaskColorB1", Color) = (1,1,1,1)
+
+_MaskColorB2 ("MaskColorB2", Color) = (1,1,1,1)
+
+_ZWrite ("_ZWrite", Float) = 1.0
+
+_ZTest ("_ZTest", Float) = 4.0
+
+_EyePupliScale ("_EyePupliScale", Float) = 1.0
+
+}
+SubShader {
+ LOD 100
+ Tags { "Mirror" = "Chara" "RenderType" = "Opaque" }
+ Pass {
+ Name "ToonEye"
+  LOD 100
+  Tags { "Mirror" = "Chara" "RenderType" = "Opaque" "SHADOWSUPPORT" = "true" }
+ ZTest Off
+ ZWrite Off
+  GpuProgramID 60392
+}
+}
+}

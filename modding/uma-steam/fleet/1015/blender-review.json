@@ -1,0 +1,23 @@
+{
+  "name": "T.M. Opera O",
+  "bounds_min": [
+    -0.38984301686286926,
+    -0.30343472957611084,
+    -0.0008521819254383445
+  ],
+  "bounds_max": [
+    0.38284793496131897,
+    0.46606186032295227,
+    1.5904935598373413
+  ],
+  "height": 1.5913457417627797,
+  "mesh_count": 6,
+  "armatures": 1,
+  "rendered": true,
+  "visual_approved": false,
+  "game_integrated": false,
+  "gltf_sha256": "8aba03bb2b047886a8b6c3443aaa0e69c54af06b8210c924bdd2966ed86beaa3",
+  "buffer_sha256": "1076459a41d383fbe2b01a751237a163f2f3531c5fd351cc530dfcccbdeb8c3b",
+  "native_idle_and_run_rendered": true,
+  "eye_depth_material_pending": true
+}

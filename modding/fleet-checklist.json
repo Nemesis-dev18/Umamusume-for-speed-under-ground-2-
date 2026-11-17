@@ -1,0 +1,262 @@
+{
+  "game": "Need for Speed Underground 2 PC, isolated working copy",
+  "source": "User-authorized local Steam Uma Musume files; no model downloads needed",
+  "reference": "Local video What-Have-I-SnapYT.App.mp4 at15s: chibi badge and cyan/pink stylized name; current portrait style rejected",
+  "characters": [
+    {
+      "id": 1068,
+      "name": "Kitasan Black",
+      "slot": "COROLLA",
+      "height_cm": 162,
+      "steam_body_head_tail_extracted": true,
+      "finite_skin_weights_and_bindposes_checked": true,
+      "native_idle_and_run_reviewed_in_blender": true,
+      "animations": [
+        {
+          "clip": "idle",
+          "seconds": 2.000000238418579,
+          "tracks": 111,
+          "unmapped_bindings": 8,
+          "samples": 33
+        },
+        {
+          "clip": "run",
+          "seconds": 0.6000000238418579,
+          "tracks": 116,
+          "unmapped_bindings": 8,
+          "samples": 49
+        }
+      ],
+      "target_eye_material_pass": false,
+      "game_motion_asset_packed": false,
+      "geometry_container_rebuilt": false,
+      "collider_adapted": false,
+      "unique_runtime_model_identity": false,
+      "menu_art_approved": false,
+      "selection_verified": false,
+      "race_verified": false,
+      "mixed_rivals_verified": false,
+      "live_fps_verified": false
+    },
+    {
+      "id": 1052,
+      "name": "Haru Urara",
+      "slot": "240SX",
+      "height_cm": 140,
+      "steam_body_head_tail_extracted": true,
+      "finite_skin_weights_and_bindposes_checked": true,
+      "native_idle_and_run_reviewed_in_blender": true,
+      "animations": [
+        {
+          "clip": "idle",
+          "seconds": 2.3000001907348633,
+          "tracks": 111,
+          "unmapped_bindings": 6,
+          "samples": 33
+        },
+        {
+          "clip": "run",
+          "seconds": 0.6000000238418579,
+          "tracks": 116,
+          "unmapped_bindings": 8,
+          "samples": 49
+        }
+      ],
+      "target_eye_material_pass": false,
+      "game_motion_asset_packed": false,
+      "geometry_container_rebuilt": false,
+      "collider_adapted": false,
+      "unique_runtime_model_identity": false,
+      "menu_art_approved": false,
+      "selection_verified": false,
+      "race_verified": false,
+      "mixed_rivals_verified": false,
+      "live_fps_verified": false
+    },
+    {
+      "id": 1032,
+      "name": "Agnes Tachyon",
+      "slot": "MIATA",
+      "height_cm": 159,
+      "steam_body_head_tail_extracted": true,
+      "finite_skin_weights_and_bindposes_checked": true,
+      "native_idle_and_run_reviewed_in_blender": true,
+      "animations": [
+        {
+          "clip": "idle",
+          "seconds": 2.266666889190674,
+          "tracks": 111,
+          "unmapped_bindings": 6,
+          "samples": 33
+        },
+        {
+          "clip": "run",
+          "seconds": 0.6000000238418579,
+          "tracks": 116,
+          "unmapped_bindings": 8,
+          "samples": 49
+        }
+      ],
+      "target_eye_material_pass": false,
+      "game_motion_asset_packed": false,
+      "geometry_container_rebuilt": false,
+      "collider_adapted": false,
+      "unique_runtime_model_identity": false,
+      "menu_art_approved": false,
+      "selection_verified": false,
+      "race_verified": false,
+      "mixed_rivals_verified": false,
+      "live_fps_verified": false
+    },
+    {
+      "id": 1062,
+      "name": "Matikanetannhauser",
+      "slot": "FOCUS",
+      "height_cm": 155,
+      "steam_body_head_tail_extracted": true,
+      "finite_skin_weights_and_bindposes_checked": true,
+      "native_idle_and_run_reviewed_in_blender": true,
+      "animations": [
+        {
+          "clip": "idle",
+          "seconds": 2.000000238418579,
+          "tracks": 111,
+          "unmapped_bindings": 8,
+          "samples": 33
+        },
+        {
+          "clip": "run",
+          "seconds": 0.6000000238418579,
+          "tracks": 116,
+          "unmapped_bindings": 8,
+          "samples": 49
+        }
+      ],
+      "target_eye_material_pass": false,
+      "game_motion_asset_packed": false,
+      "geometry_container_rebuilt": false,
+      "collider_adapted": false,
+      "unique_runtime_model_identity": false,
+      "menu_art_approved": false,
+      "selection_verified": false,
+      "race_verified": false,
+      "mixed_rivals_verified": false,
+      "live_fps_verified": false
+    },
+    {
+      "id": 1015,
+      "name": "T.M. Opera O",
+      "slot": "PEUGOT",
+      "height_cm": 156,
+      "steam_body_head_tail_extracted": true,
+      "finite_skin_weights_and_bindposes_checked": true,
+      "native_idle_and_run_reviewed_in_blender": true,
+      "animations": [
+        {
+          "clip": "idle",
+          "seconds": 2.200000047683716,
+          "tracks": 111,
+          "unmapped_bindings": 8,
+          "samples": 33
+        },
+        {
+          "clip": "run",
+          "seconds": 0.6000000238418579,
+          "tracks": 116,
+          "unmapped_bindings": 8,
+          "samples": 49
+        }
+      ],
+      "target_eye_material_pass": false,
+      "game_motion_asset_packed": false,
+      "geometry_container_rebuilt": false,
+      "collider_adapted": false,
+      "unique_runtime_model_identity": false,
+      "menu_art_approved": false,
+      "selection_verified": false,
+      "race_verified": false,
+      "mixed_rivals_verified": false,
+      "live_fps_verified": false
+    },
+    {
+      "id": 1006,
+      "name": "Oguri Cap",
+      "slot": "PEUGOT106",
+      "height_cm": 167,
+      "steam_body_head_tail_extracted": true,
+      "finite_skin_weights_and_bindposes_checked": true,
+      "native_idle_and_run_reviewed_in_blender": true,
+      "animations": [
+        {
+          "clip": "idle",
+          "seconds": 3.8333334922790527,
+          "tracks": 111,
+          "unmapped_bindings": 6,
+          "samples": 33
+        },
+        {
+          "clip": "run",
+          "seconds": 0.6000000238418579,
+          "tracks": 116,
+          "unmapped_bindings": 8,
+          "samples": 49
+        }
+      ],
+      "target_eye_material_pass": false,
+      "game_motion_asset_packed": false,
+      "geometry_container_rebuilt": false,
+      "collider_adapted": false,
+      "unique_runtime_model_identity": false,
+      "menu_art_approved": false,
+      "selection_verified": false,
+      "race_verified": false,
+      "mixed_rivals_verified": false,
+      "live_fps_verified": false
+    },
+    {
+      "id": 1058,
+      "name": "Meisho Doto",
+      "slot": "CORSA",
+      "height_cm": 164,
+      "steam_body_head_tail_extracted": true,
+      "finite_skin_weights_and_bindposes_checked": true,
+      "native_idle_and_run_reviewed_in_blender": true,
+      "animations": [
+        {
+          "clip": "idle",
+          "seconds": 2.000000238418579,
+          "tracks": 111,
+          "unmapped_bindings": 8,
+          "samples": 33
+        },
+        {
+          "clip": "run",
+          "seconds": 0.6000000238418579,
+          "tracks": 116,
+          "unmapped_bindings": 8,
+          "samples": 49
+        }
+      ],
+      "target_eye_material_pass": false,
+      "game_motion_asset_packed": false,
+      "geometry_container_rebuilt": false,
+      "collider_adapted": false,
+      "unique_runtime_model_identity": false,
+      "menu_art_approved": false,
+      "selection_verified": false,
+      "race_verified": false,
+      "mixed_rivals_verified": false,
+      "live_fps_verified": false
+    }
+  ],
+  "release_ready": false,
+  "latest_user_instruction": "Use all lessons from Kitasan, review as a demanding player, then launch the completed test. Do not launch unintegrated fleet as if ready.",
+  "earlier_request_pending": [
+    "Satono Diamond was requested earlier and has not been explicitly canceled; retain after the current six-character batch."
+  ],
+  "authoring_regression": {
+    "tests": 70,
+    "passed": true,
+    "scope": "Python data, motion and file integrity tests; independent of NFS gameplay"
+  }
+}

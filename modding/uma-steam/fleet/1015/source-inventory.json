@@ -1,0 +1,214 @@
+{
+  "id": 1015,
+  "name": "T.M. Opera O",
+  "nfs_slot": "PEUGOT",
+  "dependencies": [
+    "4UZQHF3YG6IUQSTHIFGDQTAWAWLLLSCM",
+    "5LOCQ73T727EEW3PNTWPPEFDGP45NADN",
+    "7ATTNWJHXBNRIMZJWMN3DNVMLU72NCQ6",
+    "7IFE5WMCG4DURZ2HPL4QOBULGV7NFTE5",
+    "AW6BHWXG25ZGR5ACMDVNYUD4J53VVIOF",
+    "CBBO6Z2MEVD2PDRRFSAYPCEM2X5G2VB4",
+    "DKFGN5Z4AWHSS2VTBWHMG5KI3ACSQF5I",
+    "DVQR5FRJJQLBXUXJZ5EFVXV76UBJGKUE",
+    "EQLRCRKPMAQGH5TR726AIC6A227JVTCB",
+    "EQMIHHQRFMA6MBNPLDU4QLIRZWACTAWH",
+    "FE7AVWYVWKSINRX3DM57A2IDVY2VAIZP",
+    "HFJV4JCOEQTB4QLKMLPZAF2BI2H47ALH",
+    "I76GE6PKPWCQ4S2IJ3VPNGJLZ2547NPI",
+    "IYZXJMSFGJ6HJILOABLKNINQ4E63I5BX",
+    "LNJLDMVZUFZBUEOQBVJ6IPDU42A2R726",
+    "MBCZF7AVHCGO4IKAFCXHKU4OUR6CAKUA",
+    "NIUSZUQTKV3JOGE3YE7WVCDB2OTSCR45",
+    "UKPSZSCTJ7R7Z2LWE42KIZZHDYYO7FZ6",
+    "VQNBLO64MSRA5AZ3D2PH4PJVL2P4XYO7",
+    "YMESTSTJCPP7MI4YDKT46MSY4NDL34TW",
+    "ZKGSS5WM7BVGZZV4KDVKN6XJNMIFOEWR"
+  ],
+  "object_counts": {
+    "GameObject": 292,
+    "Transform": 292,
+    "Animator": 3,
+    "AssetBundle": 21,
+    "MonoBehaviour": 7,
+    "Mesh": 9,
+    "Avatar": 3,
+    "SkinnedMeshRenderer": 6,
+    "MonoScript": 7,
+    "Texture2D": 22,
+    "Material": 8,
+    "Shader": 408,
+    "AnimationClip": 1,
+    "MeshFilter": 3,
+    "MeshRenderer": 3
+  },
+  "meshes": [
+    {
+      "name": "M_Body",
+      "path_id": 674895947165163880,
+      "vertices": 10993,
+      "submeshes": 2
+    },
+    {
+      "name": "M_Tail",
+      "path_id": 8632096047044711155,
+      "vertices": 281,
+      "submeshes": 1
+    },
+    {
+      "name": "M_Hair",
+      "path_id": -8563352531193083228,
+      "vertices": 2935,
+      "submeshes": 1
+    },
+    {
+      "name": "M_Line00",
+      "path_id": -6362330193598273219,
+      "vertices": 44,
+      "submeshes": 1
+    },
+    {
+      "name": "M_Tear_L",
+      "path_id": -5597059082902297544,
+      "vertices": 15,
+      "submeshes": 1
+    },
+    {
+      "name": "M_Cheek",
+      "path_id": 74764261795659910,
+      "vertices": 57,
+      "submeshes": 1
+    },
+    {
+      "name": "M_Face",
+      "path_id": 3848331552472168393,
+      "vertices": 1413,
+      "submeshes": 2
+    },
+    {
+      "name": "M_Tear_R",
+      "path_id": 5119769435018211942,
+      "vertices": 15,
+      "submeshes": 1
+    },
+    {
+      "name": "M_Mayu",
+      "path_id": 8961362656058726503,
+      "vertices": 58,
+      "submeshes": 1
+    }
+  ],
+  "textures": [
+    {
+      "name": "tex_tail0001_00_1015_diff",
+      "width": 256,
+      "height": 256
+    },
+    {
+      "name": "tex_chr1015_00_cheek0",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "name": "tex_chr1015_00_eyehi02",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "name": "tex_chr1015_00_eyehi01",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "name": "tex_chr1015_00_eyehi00",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "name": "tex_chr1015_00_eye0",
+      "width": 512,
+      "height": 256
+    },
+    {
+      "name": "chr_icon_1015",
+      "width": 256,
+      "height": 256
+    },
+    {
+      "name": "tex_chr1015_00_cheek1",
+      "width": 256,
+      "height": 256
+    },
+    {
+      "name": "tex_tail0001_00_0001_area",
+      "width": 256,
+      "height": 256
+    },
+    {
+      "name": "tex_chr_env000",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "name": "tex_chr1015_00_hair_shad_c",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "name": "tex_chr1015_00_hair_diff",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "name": "tex_chr1015_00_hair_ctrl",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "name": "tex_chr1015_00_hair_base",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "name": "tex_chr1015_00_face_base",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "name": "tex_chr1015_00_face_shad_c",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "name": "tex_chr1015_00_face_diff",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "name": "tex_chr1015_00_face_ctrl",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "name": "tex_bdy1015_00_diff",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "name": "tex_bdy1015_00_ctrl",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "name": "tex_bdy1015_00_shad_c",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "name": "tex_bdy1015_00_base",
+      "width": 2048,
+      "height": 2048
+    }
+  ],
+  "game_integrated": false
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Agnes Tachyon",
+  "vertices": 12973,
+  "skins": 6,
+  "head_attachment": "Neck rest transform",
+  "tail_attachment": "Hip rest transform",
+  "game_integrated": false,
+  "visual_approved": false,
+  "unbound_submeshes_skipped": [
+    {
+      "mesh": "M_Body",
+      "submesh": 1
+    }
+  ],
+  "native_neutral_transforms": 115,
+  "body_scale": 0.9890956866096972,
+  "eye_depth_pass_required": true
+}

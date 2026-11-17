@@ -1,0 +1,65 @@
+[
+  {
+    "character_id": 1006,
+    "seconds": 3.8333334922790527,
+    "streamed_channels": 129,
+    "mapped_bindings_to_reference_rig": 110,
+    "unmapped_bindings": 6,
+    "finite_samples": 32,
+    "target_rig_mapping_pending": true
+  },
+  {
+    "character_id": 1015,
+    "seconds": 2.200000047683716,
+    "streamed_channels": 124,
+    "mapped_bindings_to_reference_rig": 110,
+    "unmapped_bindings": 8,
+    "finite_samples": 32,
+    "target_rig_mapping_pending": true
+  },
+  {
+    "character_id": 1032,
+    "seconds": 2.266666889190674,
+    "streamed_channels": 226,
+    "mapped_bindings_to_reference_rig": 110,
+    "unmapped_bindings": 6,
+    "finite_samples": 32,
+    "target_rig_mapping_pending": true
+  },
+  {
+    "character_id": 1052,
+    "seconds": 2.3000001907348633,
+    "streamed_channels": 247,
+    "mapped_bindings_to_reference_rig": 110,
+    "unmapped_bindings": 6,
+    "finite_samples": 32,
+    "target_rig_mapping_pending": true
+  },
+  {
+    "character_id": 1058,
+    "seconds": 2.000000238418579,
+    "streamed_channels": 211,
+    "mapped_bindings_to_reference_rig": 110,
+    "unmapped_bindings": 8,
+    "finite_samples": 32,
+    "target_rig_mapping_pending": true
+  },
+  {
+    "character_id": 1062,
+    "seconds": 2.000000238418579,
+    "streamed_channels": 99,
+    "mapped_bindings_to_reference_rig": 110,
+    "unmapped_bindings": 8,
+    "finite_samples": 32,
+    "target_rig_mapping_pending": true
+  },
+  {
+    "character_id": 1068,
+    "seconds": 2.000000238418579,
+    "streamed_channels": 97,
+    "mapped_bindings_to_reference_rig": 110,
+    "unmapped_bindings": 8,
+    "finite_samples": 32,
+    "target_rig_mapping_pending": true
+  }
+]

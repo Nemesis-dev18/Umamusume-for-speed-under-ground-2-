@@ -1,0 +1,214 @@
+{
+  "id": 1058,
+  "name": "Meisho Doto",
+  "nfs_slot": "CORSA",
+  "dependencies": [
+    "2VXZKQRMLPDXIGCWMVVIGSKHHCAC3GJ5",
+    "4LEDICKADJJQGWRYJEVC6AY4JL3VJGDG",
+    "5F6ZK4ROLMZT7EHY7L74VKJIIFK6UVOE",
+    "6KQGI3GW4B66SIQ3U4SG4GS7UMHADIXS",
+    "6TCIIXL4JOPN6W63ACZXZ3WSIBMHM5RH",
+    "7ATTNWJHXBNRIMZJWMN3DNVMLU72NCQ6",
+    "DKFGN5Z4AWHSS2VTBWHMG5KI3ACSQF5I",
+    "HFJV4JCOEQTB4QLKMLPZAF2BI2H47ALH",
+    "JELDXAOPSMIYPY4A4FQOKGSI6OZSODJF",
+    "JOENKJGYERDZEIJWWEEZ64PROLB6VXM5",
+    "JX5RW5HC3OWGNV5B5X2OUABFBSHEMP5D",
+    "LFNXNTJ6WP3ZLKM7NYB7RPPLNCKUVEK4",
+    "LK4U5JEVR7DT5B7OYPXLCDUC5YVJZHUR",
+    "LNJLDMVZUFZBUEOQBVJ6IPDU42A2R726",
+    "MBCZF7AVHCGO4IKAFCXHKU4OUR6CAKUA",
+    "MXWWEZNVRPNDXODCVX653B3KP5KRUL4Z",
+    "OYHPIHNO4J2GKGRLQF4C334PONG43MSD",
+    "WZP45ZZVBK5OQGSDJY6MRCWWDYAS5S2C",
+    "XAGFUTVT4FWLGY2GAHNIP6A7JK2LLPMS",
+    "YUK4FLGEMYYBNSEPCQF5SVXTDYEKXKMI",
+    "Z6L5VWT25RFZXEUM2RDHCYLABCHODMYS"
+  ],
+  "object_counts": {
+    "AnimationClip": 1,
+    "AssetBundle": 21,
+    "Material": 8,
+    "GameObject": 300,
+    "Transform": 300,
+    "SkinnedMeshRenderer": 6,
+    "Animator": 3,
+    "MonoBehaviour": 7,
+    "Mesh": 9,
+    "MonoScript": 7,
+    "Avatar": 3,
+    "Texture2D": 22,
+    "Shader": 408,
+    "MeshFilter": 3,
+    "MeshRenderer": 3
+  },
+  "meshes": [
+    {
+      "name": "M_Body",
+      "path_id": 3009063360811359567,
+      "vertices": 10006,
+      "submeshes": 2
+    },
+    {
+      "name": "M_Tail",
+      "path_id": 8632096047044711155,
+      "vertices": 281,
+      "submeshes": 1
+    },
+    {
+      "name": "M_Tear_R",
+      "path_id": -9111959301394080381,
+      "vertices": 15,
+      "submeshes": 1
+    },
+    {
+      "name": "M_Hair",
+      "path_id": -7192092695893865064,
+      "vertices": 2935,
+      "submeshes": 1
+    },
+    {
+      "name": "M_Line00",
+      "path_id": -1890722313403064966,
+      "vertices": 44,
+      "submeshes": 1
+    },
+    {
+      "name": "M_Face",
+      "path_id": 1782605180463167038,
+      "vertices": 1503,
+      "submeshes": 2
+    },
+    {
+      "name": "M_Cheek",
+      "path_id": 5404393365515691271,
+      "vertices": 41,
+      "submeshes": 1
+    },
+    {
+      "name": "M_Tear_L",
+      "path_id": 7143018433012905704,
+      "vertices": 15,
+      "submeshes": 1
+    },
+    {
+      "name": "M_Mayu",
+      "path_id": 7677248792649179435,
+      "vertices": 62,
+      "submeshes": 1
+    }
+  ],
+  "textures": [
+    {
+      "name": "tex_chr1058_00_face_diff",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "name": "tex_chr1058_00_face_shad_c",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "name": "tex_chr1058_00_face_base",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "name": "tex_chr1058_00_face_ctrl",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "name": "tex_bdy1058_00_shad_c",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "name": "tex_bdy1058_00_base",
+      "width": 2048,
+      "height": 2048
+    },
+    {
+      "name": "tex_bdy1058_00_diff",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "name": "tex_bdy1058_00_ctrl",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "name": "tex_chr1058_00_cheek1",
+      "width": 256,
+      "height": 256
+    },
+    {
+      "name": "tex_chr1058_00_eye0",
+      "width": 512,
+      "height": 256
+    },
+    {
+      "name": "tex_chr1058_00_eyehi01",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "name": "tex_chr1058_00_eyehi02",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "name": "tex_chr1058_00_eyehi00",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "name": "chr_icon_1058",
+      "width": 256,
+      "height": 256
+    },
+    {
+      "name": "tex_tail0001_00_0001_area",
+      "width": 256,
+      "height": 256
+    },
+    {
+      "name": "tex_chr_env000",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "name": "tex_chr1058_00_cheek0",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "name": "tex_tail0001_00_1058_diff",
+      "width": 256,
+      "height": 256
+    },
+    {
+      "name": "tex_chr1058_00_hair_base",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "name": "tex_chr1058_00_hair_ctrl",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "name": "tex_chr1058_00_hair_shad_c",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "name": "tex_chr1058_00_hair_diff",
+      "width": 1024,
+      "height": 1024
+    }
+  ],
+  "game_integrated": false
+}

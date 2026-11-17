@@ -1,0 +1,23 @@
+{
+  "name": "Agnes Tachyon",
+  "bounds_min": [
+    -0.4205738604068756,
+    -0.2798362672328949,
+    -0.000621636223513633
+  ],
+  "bounds_max": [
+    0.21796508133411407,
+    0.31449195742607117,
+    1.6013128757476807
+  ],
+  "height": 1.6019345119711943,
+  "mesh_count": 6,
+  "armatures": 1,
+  "rendered": true,
+  "visual_approved": false,
+  "game_integrated": false,
+  "gltf_sha256": "cfea526d583bb862539dbf0a3023057eb5644aaa6f9253a1795f2c271e4257bf",
+  "buffer_sha256": "fb4d55ac671cddea323c31e38af3debe83c8240c4722d116f2acd7ee73ac0405",
+  "native_idle_and_run_rendered": true,
+  "eye_depth_material_pending": true
+}

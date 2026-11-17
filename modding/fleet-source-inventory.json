@@ -1,0 +1,397 @@
+{
+  "source": "Steam local master and cached asset catalog; no network downloads",
+  "characters": [
+    {
+      "id": 1068,
+      "name": "Kitasan Black",
+      "nfs_slot": "COROLLA",
+      "parts": [
+        {
+          "part": "body",
+          "logical": "3d/chara/body/bdy1068_00/pfb_bdy1068_00",
+          "hash": "KICC4AIHKEFQWYC7ZFO3FDC64WAROCSY",
+          "downloaded": true,
+          "bytes": 532538,
+          "dependency_count": 5,
+          "missing_dependencies": []
+        },
+        {
+          "part": "head",
+          "logical": "3d/chara/head/chr1068_00/pfb_chr1068_00",
+          "hash": "NBRJQAAQFAI453SH564FE42UWECFZ5VO",
+          "downloaded": true,
+          "bytes": 305006,
+          "dependency_count": 11,
+          "missing_dependencies": []
+        },
+        {
+          "part": "icon",
+          "logical": "chara/chr1068/chr_icon_1068",
+          "hash": "7YYIU465YJDSHSTVAQ2W6CDBGGFLESPE",
+          "downloaded": true,
+          "bytes": 31335
+        },
+        {
+          "part": "tail",
+          "logical": "3d/chara/tail/tail0001_00/pfb_tail0001_00",
+          "hash": "7ATTNWJHXBNRIMZJWMN3DNVMLU72NCQ6",
+          "downloaded": true,
+          "bytes": 24513
+        },
+        {
+          "part": "tail-texture",
+          "logical": "3d/chara/tail/tail0001_00/textures/tex_tail0001_00_1068_diff",
+          "hash": "CJ5GB4FO32NEGVUYE5ECUESSTDNEREL2",
+          "downloaded": true,
+          "bytes": 7658
+        },
+        {
+          "part": "idle-motion",
+          "logical": "3d/motion/event/body/chara/chr1068_00/anm_eve_chr1068_00_idle01_loop",
+          "hash": "XBK2JGLHYMKI55EZC2Q2WJBPTDV6H2DS",
+          "downloaded": true,
+          "bytes": 13288
+        }
+      ],
+      "integrated": false,
+      "height_cm": 162,
+      "body_scale": 1.007757869375918
+    },
+    {
+      "id": 1052,
+      "name": "Haru Urara",
+      "nfs_slot": "240SX",
+      "parts": [
+        {
+          "part": "body",
+          "logical": "3d/chara/body/bdy1052_00/pfb_bdy1052_00",
+          "hash": "475CWNZTV4ISFXKFH426WAOYFIVFS4W5",
+          "downloaded": true,
+          "bytes": 304788,
+          "dependency_count": 5,
+          "missing_dependencies": []
+        },
+        {
+          "part": "head",
+          "logical": "3d/chara/head/chr1052_00/pfb_chr1052_00",
+          "hash": "4HP35FVQSZSQK2RVLAOY3VVLDKXKH2HT",
+          "downloaded": true,
+          "bytes": 264759,
+          "dependency_count": 11,
+          "missing_dependencies": []
+        },
+        {
+          "part": "icon",
+          "logical": "chara/chr1052/chr_icon_1052",
+          "hash": "TRXXMB66DR53VDZ5WV2INKQUWFW5NJRV",
+          "downloaded": true,
+          "bytes": 24118
+        },
+        {
+          "part": "tail",
+          "logical": "3d/chara/tail/tail0001_00/pfb_tail0001_00",
+          "hash": "7ATTNWJHXBNRIMZJWMN3DNVMLU72NCQ6",
+          "downloaded": true,
+          "bytes": 24513
+        },
+        {
+          "part": "tail-texture",
+          "logical": "3d/chara/tail/tail0001_00/textures/tex_tail0001_00_1052_diff",
+          "hash": "DADADP4GTJURPYZJLYJ2FJEY4UIOIPG2",
+          "downloaded": true,
+          "bytes": 7429
+        },
+        {
+          "part": "idle-motion",
+          "logical": "3d/motion/event/body/chara/chr1052_00/anm_eve_chr1052_00_idle01_loop",
+          "hash": "BDG5OYTHC2DPF5F2JBYEQY244PAN7QV5",
+          "downloaded": true,
+          "bytes": 46154
+        }
+      ],
+      "integrated": false,
+      "height_cm": 140,
+      "body_scale": 0.8709018624236328
+    },
+    {
+      "id": 1032,
+      "name": "Agnes Tachyon",
+      "nfs_slot": "MIATA",
+      "parts": [
+        {
+          "part": "body",
+          "logical": "3d/chara/body/bdy1032_00/pfb_bdy1032_00",
+          "hash": "LQRST2IXGCHX6GG3EB66PY4QQGU3V7N2",
+          "downloaded": true,
+          "bytes": 411422,
+          "dependency_count": 5,
+          "missing_dependencies": []
+        },
+        {
+          "part": "head",
+          "logical": "3d/chara/head/chr1032_00/pfb_chr1032_00",
+          "hash": "AUPQXDF4TY4U2FOUCTFEMTNPUWLCY544",
+          "downloaded": true,
+          "bytes": 283087,
+          "dependency_count": 11,
+          "missing_dependencies": []
+        },
+        {
+          "part": "icon",
+          "logical": "chara/chr1032/chr_icon_1032",
+          "hash": "5HM2AIAOBO6ZT3AYRW7QZENZBI7TCWWC",
+          "downloaded": true,
+          "bytes": 29062
+        },
+        {
+          "part": "tail",
+          "logical": "3d/chara/tail/tail0001_00/pfb_tail0001_00",
+          "hash": "7ATTNWJHXBNRIMZJWMN3DNVMLU72NCQ6",
+          "downloaded": true,
+          "bytes": 24513
+        },
+        {
+          "part": "tail-texture",
+          "logical": "3d/chara/tail/tail0001_00/textures/tex_tail0001_00_1032_diff",
+          "hash": "Q2HZK6S3CN7HMHUOUFIGHS3ZQZSUW3YH",
+          "downloaded": true,
+          "bytes": 8527
+        },
+        {
+          "part": "idle-motion",
+          "logical": "3d/motion/event/body/chara/chr1032_00/anm_eve_chr1032_00_idle01_loop",
+          "hash": "FGEFT5MCEIUWLSATRMOYZHZ6ZS3CCC56",
+          "downloaded": true,
+          "bytes": 24978
+        }
+      ],
+      "integrated": false,
+      "height_cm": 159,
+      "body_scale": 0.9890956866096972
+    },
+    {
+      "id": 1062,
+      "name": "Matikanetannhauser",
+      "nfs_slot": "FOCUS",
+      "parts": [
+        {
+          "part": "body",
+          "logical": "3d/chara/body/bdy1062_00/pfb_bdy1062_00",
+          "hash": "BXU2ZV6WYM3ZXXHNXAQS72SRSJY6GSNL",
+          "downloaded": true,
+          "bytes": 547239,
+          "dependency_count": 5,
+          "missing_dependencies": []
+        },
+        {
+          "part": "head",
+          "logical": "3d/chara/head/chr1062_00/pfb_chr1062_00",
+          "hash": "WDS4U6QU4FE47R4FQA3AIEEICTS42CVM",
+          "downloaded": true,
+          "bytes": 292157,
+          "dependency_count": 10,
+          "missing_dependencies": []
+        },
+        {
+          "part": "icon",
+          "logical": "chara/chr1062/chr_icon_1062",
+          "hash": "6GLBSZHZ3Y4PSAPBNQ2VN6JV2RNJN4VE",
+          "downloaded": true,
+          "bytes": 29916
+        },
+        {
+          "part": "tail",
+          "logical": "3d/chara/tail/tail0001_00/pfb_tail0001_00",
+          "hash": "7ATTNWJHXBNRIMZJWMN3DNVMLU72NCQ6",
+          "downloaded": true,
+          "bytes": 24513
+        },
+        {
+          "part": "tail-texture",
+          "logical": "3d/chara/tail/tail0001_00/textures/tex_tail0001_00_1062_diff",
+          "hash": "DZ4QAIOSOVQABOTQD5WHQGQHEDMERRSC",
+          "downloaded": true,
+          "bytes": 7171
+        },
+        {
+          "part": "idle-motion",
+          "logical": "3d/motion/event/body/chara/chr1062_00/anm_eve_chr1062_00_idle01_loop",
+          "hash": "Q5WSEC6ECR7M6YFXT4ZT3EJ6XUJJW6AU",
+          "downloaded": true,
+          "bytes": 13341
+        }
+      ],
+      "integrated": false,
+      "height_cm": 155,
+      "body_scale": 0.9642127762547362
+    },
+    {
+      "id": 1015,
+      "name": "T.M. Opera O",
+      "nfs_slot": "PEUGOT",
+      "parts": [
+        {
+          "part": "body",
+          "logical": "3d/chara/body/bdy1015_00/pfb_bdy1015_00",
+          "hash": "4UZQHF3YG6IUQSTHIFGDQTAWAWLLLSCM",
+          "downloaded": true,
+          "bytes": 535074,
+          "dependency_count": 5,
+          "missing_dependencies": []
+        },
+        {
+          "part": "head",
+          "logical": "3d/chara/head/chr1015_00/pfb_chr1015_00",
+          "hash": "I76GE6PKPWCQ4S2IJ3VPNGJLZ2547NPI",
+          "downloaded": true,
+          "bytes": 286360,
+          "dependency_count": 12,
+          "missing_dependencies": []
+        },
+        {
+          "part": "icon",
+          "logical": "chara/chr1015/chr_icon_1015",
+          "hash": "DVQR5FRJJQLBXUXJZ5EFVXV76UBJGKUE",
+          "downloaded": true,
+          "bytes": 27795
+        },
+        {
+          "part": "tail",
+          "logical": "3d/chara/tail/tail0001_00/pfb_tail0001_00",
+          "hash": "7ATTNWJHXBNRIMZJWMN3DNVMLU72NCQ6",
+          "downloaded": true,
+          "bytes": 24513
+        },
+        {
+          "part": "tail-texture",
+          "logical": "3d/chara/tail/tail0001_00/textures/tex_tail0001_00_1015_diff",
+          "hash": "7IFE5WMCG4DURZ2HPL4QOBULGV7NFTE5",
+          "downloaded": true,
+          "bytes": 7262
+        },
+        {
+          "part": "idle-motion",
+          "logical": "3d/motion/event/body/chara/chr1015_00/anm_eve_chr1015_00_idle01_loop",
+          "hash": "EQLRCRKPMAQGH5TR726AIC6A227JVTCB",
+          "downloaded": true,
+          "bytes": 21895
+        }
+      ],
+      "integrated": false,
+      "height_cm": 156,
+      "body_scale": 0.9704335038434765
+    },
+    {
+      "id": 1006,
+      "name": "Oguri Cap",
+      "nfs_slot": "PEUGOT106",
+      "parts": [
+        {
+          "part": "body",
+          "logical": "3d/chara/body/bdy1006_00/pfb_bdy1006_00",
+          "hash": "NUKRNSDEWSBXEAYV2EVXXKM22A5IKCOK",
+          "downloaded": true,
+          "bytes": 395539,
+          "dependency_count": 5,
+          "missing_dependencies": []
+        },
+        {
+          "part": "head",
+          "logical": "3d/chara/head/chr1006_00/pfb_chr1006_00",
+          "hash": "EMRPWE5SERTMST2LSLSUP4SSIUUSLMDQ",
+          "downloaded": true,
+          "bytes": 288906,
+          "dependency_count": 12,
+          "missing_dependencies": []
+        },
+        {
+          "part": "icon",
+          "logical": "chara/chr1006/chr_icon_1006",
+          "hash": "RJTPVDGX5YR7BTK5V53QYDME5635JZB2",
+          "downloaded": true,
+          "bytes": 27346
+        },
+        {
+          "part": "tail",
+          "logical": "3d/chara/tail/tail0001_00/pfb_tail0001_00",
+          "hash": "7ATTNWJHXBNRIMZJWMN3DNVMLU72NCQ6",
+          "downloaded": true,
+          "bytes": 24513
+        },
+        {
+          "part": "tail-texture",
+          "logical": "3d/chara/tail/tail0001_00/textures/tex_tail0001_00_1006_diff",
+          "hash": "TEXS5M7UCCLFALNJCAL3S4K6RCWMXYHK",
+          "downloaded": true,
+          "bytes": 6514
+        },
+        {
+          "part": "idle-motion",
+          "logical": "3d/motion/event/body/chara/chr1006_00/anm_eve_chr1006_00_idle01_loop",
+          "hash": "FTMKMQRJFYWVAIBORZVBRDAFZCDA5JQ7",
+          "downloaded": true,
+          "bytes": 29659
+        }
+      ],
+      "integrated": false,
+      "height_cm": 167,
+      "body_scale": 1.038861507319619
+    },
+    {
+      "id": 1058,
+      "name": "Meisho Doto",
+      "nfs_slot": "CORSA",
+      "parts": [
+        {
+          "part": "body",
+          "logical": "3d/chara/body/bdy1058_00/pfb_bdy1058_00",
+          "hash": "5F6ZK4ROLMZT7EHY7L74VKJIIFK6UVOE",
+          "downloaded": true,
+          "bytes": 511918,
+          "dependency_count": 5,
+          "missing_dependencies": []
+        },
+        {
+          "part": "head",
+          "logical": "3d/chara/head/chr1058_00/pfb_chr1058_00",
+          "hash": "JOENKJGYERDZEIJWWEEZ64PROLB6VXM5",
+          "downloaded": true,
+          "bytes": 292440,
+          "dependency_count": 12,
+          "missing_dependencies": []
+        },
+        {
+          "part": "icon",
+          "logical": "chara/chr1058/chr_icon_1058",
+          "hash": "LK4U5JEVR7DT5B7OYPXLCDUC5YVJZHUR",
+          "downloaded": true,
+          "bytes": 31830
+        },
+        {
+          "part": "tail",
+          "logical": "3d/chara/tail/tail0001_00/pfb_tail0001_00",
+          "hash": "7ATTNWJHXBNRIMZJWMN3DNVMLU72NCQ6",
+          "downloaded": true,
+          "bytes": 24513
+        },
+        {
+          "part": "tail-texture",
+          "logical": "3d/chara/tail/tail0001_00/textures/tex_tail0001_00_1058_diff",
+          "hash": "XAGFUTVT4FWLGY2GAHNIP6A7JK2LLPMS",
+          "downloaded": true,
+          "bytes": 6990
+        },
+        {
+          "part": "idle-motion",
+          "logical": "3d/motion/event/body/chara/chr1058_00/anm_eve_chr1058_00_idle01_loop",
+          "hash": "2VXZKQRMLPDXIGCWMVVIGSKHHCAC3GJ5",
+          "downloaded": true,
+          "bytes": 17985
+        }
+      ],
+      "integrated": false,
+      "height_cm": 164,
+      "body_scale": 1.0201993245533982
+    }
+  ]
+}

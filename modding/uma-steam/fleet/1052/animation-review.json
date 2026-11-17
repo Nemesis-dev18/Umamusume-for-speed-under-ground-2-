@@ -1,0 +1,20 @@
+{
+  "clips": [
+    {
+      "clip": "idle",
+      "seconds": 2.3000001907348633,
+      "tracks": 111,
+      "unmapped_bindings": 6,
+      "samples": 33
+    },
+    {
+      "clip": "run",
+      "seconds": 0.6000000238418579,
+      "tracks": 116,
+      "unmapped_bindings": 8,
+      "samples": 49
+    }
+  ],
+  "head_tail_rigs_attached": true,
+  "game_integrated": false
+}

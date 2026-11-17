@@ -1,0 +1,213 @@
+{
+  "id": 1052,
+  "name": "Haru Urara",
+  "nfs_slot": "240SX",
+  "dependencies": [
+    "2UNY2UFTNUKEYHQ3HIFUYFBFWCKM6NCV",
+    "475CWNZTV4ISFXKFH426WAOYFIVFS4W5",
+    "4HP35FVQSZSQK2RVLAOY3VVLDKXKH2HT",
+    "7ATTNWJHXBNRIMZJWMN3DNVMLU72NCQ6",
+    "BDG5OYTHC2DPF5F2JBYEQY244PAN7QV5",
+    "CS7RYU2ADZ65GR5DRYKIMMTHVNS7KP7M",
+    "DADADP4GTJURPYZJLYJ2FJEY4UIOIPG2",
+    "DKFGN5Z4AWHSS2VTBWHMG5KI3ACSQF5I",
+    "HFJV4JCOEQTB4QLKMLPZAF2BI2H47ALH",
+    "LA5DUSZ7MOQHZZ6RZCNLB37WA47ADX25",
+    "LNJLDMVZUFZBUEOQBVJ6IPDU42A2R726",
+    "M7557BIWAFNJUMTA4TPIPWFIEPTEEDOF",
+    "MBCZF7AVHCGO4IKAFCXHKU4OUR6CAKUA",
+    "PTW5G552YDUSUTUHZZYAY33DVZSMJ2SY",
+    "RHVXDGE4FSIZZSUURWUBJQ6VLWQ7TI22",
+    "SLC4ZQXR6OASM6S4BF5M7FEPXDQQLQLQ",
+    "TJHVZGSFLYHZAN3HEFYIX7AALEJO66B3",
+    "TRXXMB66DR53VDZ5WV2INKQUWFW5NJRV",
+    "XRW3CWUUSJGKUDFS2FNECY4GBQATMN2D",
+    "ZZCJCXFFSS54BIOJN6PJCFBAAYFZSN2V"
+  ],
+  "object_counts": {
+    "Texture2D": 22,
+    "AssetBundle": 20,
+    "Material": 8,
+    "GameObject": 295,
+    "Transform": 295,
+    "SkinnedMeshRenderer": 6,
+    "Mesh": 9,
+    "Avatar": 3,
+    "MonoBehaviour": 7,
+    "MonoScript": 7,
+    "Animator": 3,
+    "MeshFilter": 3,
+    "MeshRenderer": 3,
+    "AnimationClip": 1,
+    "Shader": 408
+  },
+  "meshes": [
+    {
+      "name": "M_Body",
+      "path_id": -4193591683913359783,
+      "vertices": 6207,
+      "submeshes": 2
+    },
+    {
+      "name": "M_Hair",
+      "path_id": -3954316759728634638,
+      "vertices": 2295,
+      "submeshes": 1
+    },
+    {
+      "name": "M_Mayu",
+      "path_id": -2651480692136741711,
+      "vertices": 54,
+      "submeshes": 1
+    },
+    {
+      "name": "M_Tear_R",
+      "path_id": -1552738975626712633,
+      "vertices": 15,
+      "submeshes": 1
+    },
+    {
+      "name": "M_Face",
+      "path_id": -1002183256882687515,
+      "vertices": 1541,
+      "submeshes": 2
+    },
+    {
+      "name": "M_Cheek",
+      "path_id": -937004551877918631,
+      "vertices": 64,
+      "submeshes": 1
+    },
+    {
+      "name": "M_Tear_L",
+      "path_id": 7738959043159230320,
+      "vertices": 15,
+      "submeshes": 1
+    },
+    {
+      "name": "M_Line00",
+      "path_id": 7898965920758118499,
+      "vertices": 68,
+      "submeshes": 1
+    },
+    {
+      "name": "M_Tail",
+      "path_id": 8632096047044711155,
+      "vertices": 281,
+      "submeshes": 1
+    }
+  ],
+  "textures": [
+    {
+      "name": "tex_chr1052_00_eyehi00",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "name": "tex_chr1052_00_eyehi02",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "name": "tex_chr1052_00_eyehi01",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "name": "tex_chr1052_00_eye0",
+      "width": 512,
+      "height": 256
+    },
+    {
+      "name": "tex_chr1052_00_cheek1",
+      "width": 256,
+      "height": 256
+    },
+    {
+      "name": "tex_bdy1052_00_shad_c",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "name": "tex_bdy1052_00_diff",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "name": "tex_bdy1052_00_base",
+      "width": 2048,
+      "height": 2048
+    },
+    {
+      "name": "tex_bdy1052_00_ctrl",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "name": "tex_tail0001_00_1052_diff",
+      "width": 256,
+      "height": 256
+    },
+    {
+      "name": "tex_chr1052_00_hair_diff",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "name": "tex_chr1052_00_hair_base",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "name": "tex_chr1052_00_hair_shad_c",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "name": "tex_chr1052_00_hair_ctrl",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "name": "tex_tail0001_00_0001_area",
+      "width": 256,
+      "height": 256
+    },
+    {
+      "name": "tex_chr_env000",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "name": "tex_chr1052_00_face_base",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "name": "tex_chr1052_00_face_shad_c",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "name": "tex_chr1052_00_face_diff",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "name": "tex_chr1052_00_face_ctrl",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "name": "tex_chr1052_00_cheek0",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "name": "chr_icon_1052",
+      "width": 256,
+      "height": 256
+    }
+  ],
+  "game_integrated": false
+}

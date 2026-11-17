@@ -1,0 +1,23 @@
+{
+  "name": "Haru Urara",
+  "bounds_min": [
+    -0.23801878094673157,
+    -0.21449460089206696,
+    -0.006643366999924183
+  ],
+  "bounds_max": [
+    0.22472929954528809,
+    0.24406710267066956,
+    1.3647831678390503
+  ],
+  "height": 1.3714265348389745,
+  "mesh_count": 6,
+  "armatures": 1,
+  "rendered": true,
+  "visual_approved": false,
+  "game_integrated": false,
+  "gltf_sha256": "8a5d6b59f2d421d00ae02edb348c8f91b59aa20bdce540ecdcfd136f68ebd404",
+  "buffer_sha256": "9f851997716db83a0c21078d4133426d2d8c3c25d2c8dbd516620af2ce9c08f7",
+  "native_idle_and_run_rendered": true,
+  "eye_depth_material_pending": true
+}
