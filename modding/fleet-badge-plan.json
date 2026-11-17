@@ -1,0 +1,18 @@
+{
+  "target": "FRONTEND/FrontB.lzc",
+  "candidate": "modding/staged-runtime/FrontB.fleet-badges.lzc",
+  "before_sha256": "6acdf043e47c9c7ee58e7781f0926e2cf8f109bdfe57e60e330657b24de8703e",
+  "after_sha256": "2208f3e6a1323947bff073f14be2ddcf25af4c3a2f4c3a73a9162501df08b731",
+  "manufacturers": {
+    "1068": "KITASAN",
+    "1052": "URARA",
+    "1032": "TACHYON",
+    "1062": "MAMBO",
+    "1015": "OPERA",
+    "1006": "OGURI",
+    "1058": "DOTO"
+  },
+  "installed": false,
+  "manufacturer_mapping_pending": true,
+  "menu_visual_approved": false
+}

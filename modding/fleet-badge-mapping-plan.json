@@ -1,0 +1,120 @@
+{
+  "files": [
+    {
+      "target": "GLOBAL/GLOBALB.BUN",
+      "candidate": "modding/staged-runtime/fleet-badge-GLOBALB.BUN",
+      "before_sha256": "e2a0c769aa3f4b4f8d5e547e76ecbf83727a100f2486cf942e7c7333d9c5c1d0",
+      "after_sha256": "e8a11d592432df30bead63697dbcb3d4db145b7f356f67168c40c5eb910c6e78",
+      "fields": [
+        {
+          "slot": "COROLLA",
+          "offset": 7106288,
+          "before": "KITASAN",
+          "after": "KITASAN",
+          "texture_hash": "0xd2dee64b"
+        },
+        {
+          "slot": "240SX",
+          "offset": 7108480,
+          "before": "NISSAN",
+          "after": "URARA",
+          "texture_hash": "0xc3cc5c5b"
+        },
+        {
+          "slot": "MIATA",
+          "offset": 7110672,
+          "before": "MAZDA",
+          "after": "TACHYON",
+          "texture_hash": "0x73d21576"
+        },
+        {
+          "slot": "FOCUS",
+          "offset": 7104096,
+          "before": "FORD",
+          "after": "MAMBO",
+          "texture_hash": "0xc33276ec"
+        },
+        {
+          "slot": "PEUGOT",
+          "offset": 7101904,
+          "before": "PEUGEOT",
+          "after": "OPERA",
+          "texture_hash": "0xc35ec197"
+        },
+        {
+          "slot": "PEUGOT106",
+          "offset": 7115056,
+          "before": "PEUGEOT",
+          "after": "OGURI",
+          "texture_hash": "0xc35a1646"
+        },
+        {
+          "slot": "CORSA",
+          "offset": 7117248,
+          "before": "VAUXHALL",
+          "after": "DOTO",
+          "texture_hash": "0x5b3ae416"
+        }
+      ]
+    },
+    {
+      "target": "GLOBAL/GlobalB.lzc",
+      "candidate": "modding/staged-runtime/fleet-badge-GlobalB.lzc",
+      "before_sha256": "d3d77b40c95d0d6adaccd925cca0ff280c5043afc90060909b7b6a927da2894b",
+      "after_sha256": "2c4c57e66a3504958aa08defd9f36622a50916499ee3216551b6ff5c3346bc31",
+      "fields": [
+        {
+          "slot": "COROLLA",
+          "offset": 7106288,
+          "before": "KITASAN",
+          "after": "KITASAN",
+          "texture_hash": "0xd2dee64b"
+        },
+        {
+          "slot": "240SX",
+          "offset": 7108480,
+          "before": "NISSAN",
+          "after": "URARA",
+          "texture_hash": "0xc3cc5c5b"
+        },
+        {
+          "slot": "MIATA",
+          "offset": 7110672,
+          "before": "MAZDA",
+          "after": "TACHYON",
+          "texture_hash": "0x73d21576"
+        },
+        {
+          "slot": "FOCUS",
+          "offset": 7104096,
+          "before": "FORD",
+          "after": "MAMBO",
+          "texture_hash": "0xc33276ec"
+        },
+        {
+          "slot": "PEUGOT",
+          "offset": 7101904,
+          "before": "PEUGEOT",
+          "after": "OPERA",
+          "texture_hash": "0xc35ec197"
+        },
+        {
+          "slot": "PEUGOT106",
+          "offset": 7115056,
+          "before": "PEUGEOT",
+          "after": "OGURI",
+          "texture_hash": "0xc35a1646"
+        },
+        {
+          "slot": "CORSA",
+          "offset": 7117248,
+          "before": "VAUXHALL",
+          "after": "DOTO",
+          "texture_hash": "0x5b3ae416"
+        }
+      ]
+    }
+  ],
+  "installed": false,
+  "menu_visual_verified": false
+}

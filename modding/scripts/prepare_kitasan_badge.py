@@ -51,7 +51,8 @@ def compress_jdlz(raw):
     return result
 
 
-def badge(raw,pixels):
+def badge(raw,pixels,manufacturer='KITASAN'):
+    if not manufacturer or len(manufacturer)>15 or not manufacturer.isascii() or not manufacturer.isalpha() or manufacturer!=manufacturer.upper():raise ValueError('Invalid character manufacturer identifier')
     tree=chunks(raw);tpk=next(n for n in tree if n['offset']==204288)
     nodes={n['id']:n for n in flatten(tpk['children']) if n['id']!='0x00000000'}
     info,keys,formats,pool=[nodes[k] for k in ['0x33310004','0x33310002','0x33310005','0x33320002']]
@@ -65,7 +66,7 @@ def badge(raw,pixels):
         if a[36:40]!=k[:4]:raise ValueError('Table order mismatch')
         rows.append((struct.unpack('<I',k[:4])[0],a,k,f))
     original=next(r for r in rows if r[0]==0x3ad994a0)
-    key=string_hash('CARSELECT_MANUFACTURER_KITASAN')
+    key=string_hash('CARSELECT_MANUFACTURER_'+manufacturer)
     if key in {r[0] for r in rows}:raise ValueError('Badge already present')
     a=bytearray(original[1]);struct.pack_into('<I',a,36,key)
     placement=pool['size']-120
