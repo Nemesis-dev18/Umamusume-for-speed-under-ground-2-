@@ -72,7 +72,21 @@ static HRESULT WINAPI uma_observe_unlock(IDirect3DVertexBuffer9 *buffer){
  if(tracked && pending.depth==1 && pending.pointer && pending.bytes>=12 && pending.bytes<=sizeof(snapshot.data)){
   snapshot.offset=pending.offset;snapshot.bytes=pending.bytes;memcpy(snapshot.data,pending.pointer,pending.bytes);
  }
- if(tracked && pending.depth==1 && pending.pointer)for(UINT p=0;p<uma_upload_model_count;p++){
+ int shared=uma_upload_model_count>1;for(UINT p=1;shared && p<uma_upload_model_count;p++)if(uma_upload_models[p].bytes!=uma_upload_models[0].bytes || memcmp(uma_upload_models[p].expected,uma_upload_models[0].expected,24))shared=0;
+ if(tracked && pending.depth==1 && pending.pointer && shared && pending.bytes>=uma_upload_models[0].bytes){
+  const BYTE *mapped=pending.pointer,*prefix=uma_upload_models[0].expected;UINT length=uma_upload_models[0].bytes;
+  /* Fleet carriers share position/normal prefix; scan the upload once, then resolve its model. */
+  for(UINT at=0;at<=pending.bytes-length && identity.count<16;at+=4){
+   if(memcmp(mapped+at,prefix,24))continue;
+   for(UINT p=0;p<uma_upload_model_count;p++){
+    const UmaUploadModel *profile=&uma_upload_models[p];const BYTE *expected=profile->expected;
+    if(!memcmp(mapped+at+28,expected+28,8) && uma_upload_geometry_equal(mapped+at,profile)){
+     identity.offsets[identity.count]=pending.offset+at;identity.models[identity.count++]=profile->model;at+=length-4;break;
+    }
+   }
+  }
+ }
+ if(tracked && pending.depth==1 && pending.pointer && !shared)for(UINT p=0;p<uma_upload_model_count;p++){
   const UmaUploadModel *profile=&uma_upload_models[p];const BYTE *mapped=pending.pointer,*expected=profile->expected;
   if(pending.bytes<profile->bytes)continue;
   for(UINT at=0;at<=pending.bytes-profile->bytes && identity.count<16;at+=4){
