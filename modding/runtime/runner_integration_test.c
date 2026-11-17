@@ -42,6 +42,11 @@ int main(void){
   last_phase=tracked->state.run_phase;
  }
  puts("PASS ballistic jump with stable scenery: horizontal motion, pitch and chase camera preserve running phase; missing-scene jump still needs live evidence");
+ RunnerActor *fast=NULL;for(int i=0;i<16;i++)if(runner_actors[i].used){fast=&runner_actors[i];break;}assert(fast);
+ UmaMatrix fast_view=fast->view;fast_view.m[3][0]+=6;runner_frame_seconds=.05f;
+ assert(runner_actor_pose(&fast_view)==&fast->state);
+ fast_view.m[3][0]+=100;assert(runner_actor_pose(&fast_view)==&runner_idle_state);runner_frame_seconds=1.f/60;
+ puts("PASS pose lookup admits six-meter high-speed frame displacement but rejects a remote actor");
  runner_scene=(UmaSceneSpeed){0};memset(runner_actors,0,sizeof(runner_actors));runner_frames=0;
  FILE *asset=fopen("modding/runtime/kitasan.umab","rb");assert(asset);assert(uma_motion_load(asset,&runner_motion));fclose(asset);
  InitializeCriticalSection(&runner_lock);runner_log=fopen("modding/runtime/integration-test/runner.log","w");assert(runner_log);wcscpy(runner_atlas,L"modding\\runtime\\atlas.dds");

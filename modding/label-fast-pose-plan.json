@@ -1,0 +1,28 @@
+{
+  "files": [
+    {
+      "target": "FRONTEND/FrontB.lzc",
+      "candidate": "modding/staged-runtime/FrontB.kitasan-label.lzc",
+      "backup": "FRONTEND/FrontB.lzc.before-kitasan-label.bak",
+      "before_sha256": "2a59e9063ca54e3253a6a77ad1fe20a93133b89c38f0ed7b32e4d1ab612b6949",
+      "after_sha256": "e6d9230e37fd24b986a8284a4cc49f9f3fbf64fd9c5c7003399dbdb0b3e83e07",
+      "decoded_changed_range": [
+        3173120,
+        3189504
+      ],
+      "decoded_bytes": 5969360,
+      "bytes": 1768081,
+      "installed": false,
+      "gameplay_verified": false
+    },
+    {
+      "target": "scripts/UmaRunner.asi",
+      "candidate": "modding/runtime/UmaRunner.asi",
+      "backup": "modding/runtime/UmaRunner.before-fast-pose.asi",
+      "before_sha256": "4f3eb9aca44801eb050f8315c5ab8c21a5123e939d706f542252ba310b440dcf",
+      "after_sha256": "6c56b6c8504dbdf7d0d300b839b460bb1eef2a06e57efa6aef06e74087e032b6"
+    }
+  ],
+  "installed": false,
+  "gameplay_verified": false
+}

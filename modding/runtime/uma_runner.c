@@ -46,8 +46,9 @@ static float runner_speed;
 static unsigned runner_last_owned,runner_projected_references;
 static UmaMatrix runner_inverse_projection;
 static int runner_projection_valid;
+static float runner_frame_seconds=1.f/60;
 static UmaMotionState *runner_actor_pose(const UmaMatrix *view){
- int best=-1;float distance=16;
+ float radius=fmaxf(4,120*runner_frame_seconds+.25f);int best=-1;float distance=radius*radius;
  for(int i=0;i<16;i++)if(runner_actors[i].used && runner_frames-runner_actors[i].seen<3){
   float score=0,orientation=0;for(int k=0;k<3;k++){float d=view->m[3][k]-runner_actors[i].view.m[3][k];score+=d*d;orientation+=view->m[0][k]*runner_actors[i].view.m[0][k];}
   if(orientation>.5f && score<distance){best=i;distance=score;}
@@ -285,6 +286,7 @@ static HRESULT WINAPI runner_draw(IDirect3DDevice9 *device,D3DPRIMITIVETYPE type
 }
 static HRESULT WINAPI runner_present(IDirect3DDevice9 *device,const RECT *source,const RECT *destination,HWND window,const RGNDATA *dirty){
  EnterCriticalSection(&runner_lock);ULONGLONG tick=GetTickCount64();float seconds=runner_last_tick?(float)(tick-runner_last_tick)*.001f:0;runner_last_tick=tick;
+ if(seconds>0 && seconds<=.25f)runner_frame_seconds=seconds;
  unsigned references=runner_scene.samples,bodies=runner_scene.bodies,groups=runner_scene.references,best_votes=0,second_votes=0;
  for(unsigned i=0;i<groups;i++){unsigned votes=runner_scene.reference[i].votes;if(votes>best_votes){second_votes=best_votes;best_votes=votes;}else if(votes>second_votes)second_votes=votes;}
  if(runner_log && runner_frames%120==119 && references && bodies && runner_camera_reports<12){
