@@ -1,0 +1,38 @@
+{
+  "textures": [
+    {
+      "name": "SPARK",
+      "source": "GLOBAL/InGameCommon.bun",
+      "texture_info_offset": 35080,
+      "pixel_offset": 66560,
+      "width": 16,
+      "height": 16,
+      "format": "DXT3",
+      "mips": 2,
+      "bytes": 320,
+      "top_sha256": "f82b6bfb838d02123cc687c7c27dc93cd3d3ed31cf305b200d1ba1320b67a0ba",
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "name": "XE_SPARKSA",
+      "source": "GLOBAL/InGameCommon.bun",
+      "texture_info_offset": 40784,
+      "pixel_offset": 609280,
+      "width": 256,
+      "height": 128,
+      "format": "DXT3",
+      "mips": 5,
+      "bytes": 43648,
+      "top_sha256": "c8f74ad5935393bc287d0765cb9a8c733bf2bfaae617ee390c4c71193d548679",
+      "alpha_extrema": [
+        255,
+        255
+      ]
+    }
+  ],
+  "game_files_modified": false,
+  "emitter_identified": false
+}

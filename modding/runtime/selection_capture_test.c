@@ -15,7 +15,7 @@ int main(void){
  CHECK(IDirect3DDevice9_SetFVF(device,D3DFVF_XYZRHW|D3DFVF_DIFFUSE));CHECK(IDirect3DDevice9_SetRenderState(device,D3DRS_LIGHTING,FALSE));CHECK(IDirect3DDevice9_SetRenderState(device,D3DRS_ZENABLE,FALSE));CHECK(IDirect3DDevice9_SetRenderState(device,D3DRS_CULLMODE,D3DCULL_NONE));
  CHECK(IDirect3DDevice9_SetTextureStageState(device,0,D3DTSS_COLOROP,D3DTOP_SELECTARG1));CHECK(IDirect3DDevice9_SetTextureStageState(device,0,D3DTSS_COLORARG1,D3DTA_DIFFUSE));
  IDirect3DTexture9 *texture=NULL;CHECK(IDirect3DDevice9_CreateTexture(device,16,16,1,0,D3DFMT_A8R8G8B8,D3DPOOL_MANAGED,&texture,NULL));D3DLOCKED_RECT locked;CHECK(IDirect3DTexture9_LockRect(texture,0,&locked,NULL,0));for(UINT y=0;y<16;y++)memset((BYTE*)locked.pBits+y*locked.Pitch,255,16*4);CHECK(IDirect3DTexture9_UnlockRect(texture,0));CHECK(IDirect3DDevice9_SetTexture(device,0,(IDirect3DBaseTexture9*)texture));
- struct {float x,y,z,w;DWORD color;} quad[]={{360,220,.5f,1,0xff000000},{570,220,.5f,1,0xff000000},{360,400,.5f,1,0xff000000},{570,400,.5f,1,0xff000000}};
+ struct {float x,y,z,w;DWORD color;} quad[]={{140,220,.5f,1,0xff000000},{280,220,.5f,1,0xff000000},{140,400,.5f,1,0xff000000},{280,400,.5f,1,0xff000000}};
  CHECK(IDirect3DDevice9_Clear(device,0,NULL,D3DCLEAR_TARGET,0xffa0a0a0,1,0));CHECK(IDirect3DDevice9_BeginScene(device));uma_selection.enabled=uma_selection.armed=1;
  CHECK(IDirect3DDevice9_SetRenderState(device,D3DRS_ZENABLE,TRUE));
  int pending=uma_selection_before(device);assert(pending);CHECK(IDirect3DDevice9_DrawPrimitiveUP(device,D3DPT_TRIANGLESTRIP,2,quad,sizeof(quad[0])));uma_selection_after(device,pending,"DPUP",4,2);assert(uma_selection.best>1000);assert(uma_selection.geometry_best==uma_selection.best);

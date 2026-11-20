@@ -29,7 +29,7 @@ static inline int uma_selection_read(IDirect3DDevice9 *device,DWORD *pixels){
   if(SUCCEEDED(result))result=IDirect3DDevice9_StretchRect(device,source,NULL,uma_selection.resolved,NULL,D3DTEXF_NONE);
   IDirect3DSurface9_Release(source);source=uma_selection.resolved;if(FAILED(result) || !source)return 0;IDirect3DSurface9_AddRef(source);
  }
- RECT rect={(LONG)(desc.Width*.55f),(LONG)(desc.Height*.45f),(LONG)(desc.Width*.9f),(LONG)(desc.Height*.85f)};
+ RECT rect={(LONG)(desc.Width*.20f),(LONG)(desc.Height*.45f),(LONG)(desc.Width*.45f),(LONG)(desc.Height*.85f)};
  result=IDirect3DDevice9_StretchRect(device,source,&rect,uma_selection.small,NULL,D3DTEXF_POINT);IDirect3DSurface9_Release(source);
  if(SUCCEEDED(result))result=IDirect3DDevice9_GetRenderTargetData(device,uma_selection.small,uma_selection.cpu);
  D3DLOCKED_RECT locked;if(FAILED(result) || FAILED(IDirect3DSurface9_LockRect(uma_selection.cpu,&locked,NULL,D3DLOCK_READONLY)))return 0;
