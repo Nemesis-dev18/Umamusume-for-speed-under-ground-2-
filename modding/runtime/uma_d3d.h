@@ -119,7 +119,7 @@ static HRESULT uma_d3d_open(UmaD3D *output,IDirect3DDevice9 *device,const UmaMot
  static const DWORD code[]={0xffff0101,0x42,0xb00f0000,0x1,0x800f0000,0xb0e40000,0xffff};
  result=IDirect3DDevice9_CreatePixelShader(device,code,&r.shader);if(FAILED(result))goto invalid;
  /* Car shaders halve diffuse; the new diffuse-only pass restores that scale. */
- static const DWORD lit[]={0xffff0101,0x42,0xb00f0000,5,0x810f0000,0xb0e40000,0x90e40000,1,0x80080000,0xb0ff0000,0xffff};
+ static const DWORD lit[]={0xffff0101,0x51,0xa00f0000,0x3ed70a3d,0x3ed70a3d,0x3ed70a3d,0x3f800000,0x42,0xb00f0000,2,0x800f0001,0x90e40000,0x90e40000,11,0x800f0001,0x80e40001,0xa0e40000,5,0x800f0000,0xb0e40000,0x80e40001,1,0x80080000,0xb0ff0000,0xffff};
  result=IDirect3DDevice9_CreatePixelShader(device,lit,&r.native_shader);if(FAILED(result))goto invalid;
  result=IDirect3DDevice9_CreateTexture(device,16,16,1,0,D3DFMT_A8R8G8B8,D3DPOOL_MANAGED,&r.spark_texture,NULL);if(FAILED(result))goto invalid;
  D3DLOCKED_RECT spark_locked;result=IDirect3DTexture9_LockRect(r.spark_texture,0,&spark_locked,NULL,0);if(FAILED(result))goto invalid;

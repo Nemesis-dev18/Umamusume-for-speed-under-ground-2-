@@ -249,6 +249,12 @@ int main(void){
    float view[3][4]={{1,0,0,foreign?10:0},{0,1,0,0},{0,0,1,0}};CHECK(IDirect3DDevice9_SetVertexShaderConstantF(device,14,&view[0][0],3));CHECK(IDirect3DDevice9_SetVertexDeclaration(device,declaration));
    hidden=runner_hidden_wheels;CHECK(IDirect3DDevice9_BeginScene(device));CHECK(IDirect3DDevice9_DrawPrimitiveUP(device,D3DPT_TRIANGLESTRIP,94,dense,36));CHECK(IDirect3DDevice9_EndScene(device));assert(runner_hidden_wheels==hidden+(foreign?0:1));
   }
+  /* Replay the captured menu wheel's approximate body-local displacement, with synthetic rim vertices. */
+  for(int i=0;i<96;i++){dense[i].position[0]=0;dense[i].position[1]=(i&1?.2f:-.2f);dense[i].position[2]=(i&2?.2f:-.2f);}
+  for(int foreign=0;foreign<2;foreign++){
+   float view[3][4]={{1,0,0,1.31f+(foreign?10:0)},{0,1,0,.93f},{0,0,1,-.48f}};CHECK(IDirect3DDevice9_SetVertexShaderConstantF(device,14,&view[0][0],3));CHECK(IDirect3DDevice9_SetVertexDeclaration(device,declaration));
+   hidden=runner_hidden_wheels;CHECK(IDirect3DDevice9_BeginScene(device));CHECK(IDirect3DDevice9_DrawPrimitiveUP(device,D3DPT_TRIANGLESTRIP,94,dense,36));CHECK(IDirect3DDevice9_EndScene(device));assert(runner_hidden_wheels==hidden+(foreign?0:1));
+  }
   CHECK(IDirect3DDevice9_SetVertexShader(device,shader));IDirect3DVertexShader9_Release(baked_shader);
   puts("PASS detailed 96-vertex baked rim without lighting metadata; foreign car retained");
  }

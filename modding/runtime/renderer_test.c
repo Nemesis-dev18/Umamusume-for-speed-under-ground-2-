@@ -48,6 +48,13 @@ static int check_native_lighting(IDirect3DDevice9 *device,const UmaMotion *motio
  UmaMotionState state={0,.25f,1};CHECK(IDirect3DDevice9_Clear(device,0,NULL,D3DCLEAR_TARGET|D3DCLEAR_ZBUFFER,0xff252a32,1,0));CHECK(IDirect3DDevice9_BeginScene(device));CHECK(uma_d3d_draw(&renderer,&state,combined,0,NULL));CHECK(IDirect3DDevice9_EndScene(device));
  IDirect3DVertexShader9 *same_shader=NULL;IDirect3DVertexDeclaration9 *same_declaration=NULL;CHECK(IDirect3DDevice9_GetVertexShader(device,&same_shader));CHECK(IDirect3DDevice9_GetVertexDeclaration(device,&same_declaration));assert(same_shader==shader && same_declaration==declaration);IDirect3DVertexShader9_Release(same_shader);IDirect3DVertexDeclaration9_Release(same_declaration);
  DWORD *pixels=read_pixels(device);UINT count=0;for(int i=0;i<640*480;i++)if(pixels[i]!=0xff252a32){DWORD rgb=pixels[i]&0xffffff;assert(rgb==0x804020 || rgb==0x7f4020);count++;}assert(count>1000);free(pixels);
+ /* A bounded fill keeps character detail readable under dark native car lighting. */
+ diffuse[0]=diffuse[1]=diffuse[2]=.02f;
+ CHECK(IDirect3DDevice9_SetVertexShaderConstantF(device,4,diffuse,1));
+ CHECK(IDirect3DDevice9_Clear(device,0,NULL,D3DCLEAR_TARGET|D3DCLEAR_ZBUFFER,0xff252a32,1,0));CHECK(IDirect3DDevice9_BeginScene(device));CHECK(uma_d3d_draw(&renderer,&state,combined,0,NULL));CHECK(IDirect3DDevice9_EndScene(device));
+ pixels=read_pixels(device);count=0;for(int i=0;i<640*480;i++)if(pixels[i]!=0xff252a32){unsigned red=(pixels[i]>>16)&255,green=(pixels[i]>>8)&255,blue=pixels[i]&255;assert(red>=106 && red<=108 && green>=53 && green<=55 && blue>=26 && blue<=28);count++;}assert(count>1000);free(pixels);
+ diffuse[0]=diffuse[1]=diffuse[2]=.25f;CHECK(IDirect3DDevice9_SetVertexShaderConstantF(device,4,diffuse,1));
+ puts("PASS native dark lighting retains bounded character fill and texture color ratios; no extra model draw");
  const DWORD depth_code[]={0xfffe0101,31,0x80000000,0x900f0000,20,0xc00f0000,0x90e40000,0xa0e40000,0xffff};IDirect3DVertexShader9 *depth_shader=NULL;
  CHECK(IDirect3DDevice9_CreateVertexShader(device,depth_code,&depth_shader));CHECK(IDirect3DDevice9_SetVertexShader(device,depth_shader));CHECK(IDirect3DDevice9_SetRenderState(device,D3DRS_COLORWRITEENABLE,0));
  DWORD *before=read_pixels(device);CHECK(IDirect3DDevice9_BeginScene(device));CHECK(uma_d3d_draw(&renderer,&state,combined,0,NULL));CHECK(IDirect3DDevice9_EndScene(device));pixels=read_pixels(device);assert(!memcmp(before,pixels,640*480*4));free(before);free(pixels);

@@ -1,0 +1,127 @@
+{
+  "scope": "Installed runtime audit; no model modified",
+  "characters": [
+    {
+      "id": 1068,
+      "vertices": 14616,
+      "triangles": 18427,
+      "bones": 155,
+      "normal_length_min": 0.9999999533922714,
+      "normal_length_max": 1.000000044908696,
+      "atlas": [
+        2048,
+        2048
+      ],
+      "model_sha256": "d66cf8a605c13e4e9c26881f584f062dfa581e931bc606303d9780daeb415dea",
+      "atlas_sha256": "2fa4c5842646097d4bc3dff1390f7a536b52bd36ddd7e7f752044974b7a2c2e5"
+    },
+    {
+      "id": 1052,
+      "vertices": 10418,
+      "triangles": 14128,
+      "bones": 152,
+      "normal_length_min": 0.9999999536626596,
+      "normal_length_max": 1.0000000463946328,
+      "atlas": [
+        2048,
+        2048
+      ],
+      "model_sha256": "886c1d49eed57496cb7fb0bd034764a2f5c664214a4b0b1a5a43a4b3126f93e9",
+      "atlas_sha256": "7db3f5c632272591f46e89ea26c2a65db01fcce8d0871adb8d0b8b8c5aac6ff1"
+    },
+    {
+      "id": 1032,
+      "vertices": 12949,
+      "triangles": 15674,
+      "bones": 146,
+      "normal_length_min": 0.9999999569080584,
+      "normal_length_max": 1.0000000429901905,
+      "atlas": [
+        2048,
+        2048
+      ],
+      "model_sha256": "ef5c58e2118d2c8b41d0ddaa5ac76272223a702ebba81420cc819973928d4e4d",
+      "atlas_sha256": "94a10272ba24ba38c6106f296e105bc84b8b466029fc1ca74f3da0d93cf60819"
+    },
+    {
+      "id": 1062,
+      "vertices": 15626,
+      "triangles": 18414,
+      "bones": 156,
+      "normal_length_min": 0.9999999544387838,
+      "normal_length_max": 1.0000000423296358,
+      "atlas": [
+        2048,
+        2048
+      ],
+      "model_sha256": "bcb9ce73e4873bf39f697dac8736b6e91c4c22ecb8e3e6f4c355e7cf05ebab7a",
+      "atlas_sha256": "34891ba0a42892d9262bfea0b13a0f25635031eab06247a32a0694c38c7225e1"
+    },
+    {
+      "id": 1015,
+      "vertices": 15713,
+      "triangles": 17210,
+      "bones": 148,
+      "normal_length_min": 0.99999995039363,
+      "normal_length_max": 1.0000000477522029,
+      "atlas": [
+        2048,
+        2048
+      ],
+      "model_sha256": "b18f83f2ebd5125b2c3ca35f03aef584dab829d55041204bcfa3eb2d1eaff9fc",
+      "atlas_sha256": "6b6831e620d7de04feb5891f0b0162928d4097e754866cb066895312def17ace"
+    },
+    {
+      "id": 1006,
+      "vertices": 11975,
+      "triangles": 15382,
+      "bones": 147,
+      "normal_length_min": 0.9999999557573752,
+      "normal_length_max": 1.0000000427626032,
+      "atlas": [
+        2048,
+        2048
+      ],
+      "model_sha256": "7745c41f863278df6cb4e1b52d7799f03ab4abd9c9cc6c472b7c72403eb58569",
+      "atlas_sha256": "c08ba84ac09c5062c2b614632d56ea6b9320e8e5390103ca902f6fceace34d15"
+    },
+    {
+      "id": 1058,
+      "vertices": 14804,
+      "triangles": 17560,
+      "bones": 156,
+      "normal_length_min": 0.9999999578252043,
+      "normal_length_max": 1.0000000419279984,
+      "atlas": [
+        2048,
+        2048
+      ],
+      "model_sha256": "45e182a2f7ed74d5642f5d047622a06b65cc06fd25caae18d06882fe2db868bc",
+      "atlas_sha256": "3666a316414d70f6dad793912e9836f432bc92710042518b69778064f17b06b7"
+    },
+    {
+      "id": 9001,
+      "vertices": 29023,
+      "triangles": 44672,
+      "bones": 271,
+      "normal_length_min": 0.9999999141177706,
+      "normal_length_max": 1.0000001154383376,
+      "atlas": [
+        2048,
+        2048
+      ],
+      "model_sha256": "02a5fd4679138af04e2b5b1898cc25be961cb477bdd9d9cabf388a25156d82b4",
+      "atlas_sha256": "ba96f7491146bce640c4ee42a934d5ef4df19623c5cbd3d3b4d4ce84b41b979a"
+    }
+  ],
+  "blender_backend": "local CLI 4.5.16; no advertised Blender MCP tools",
+  "pipeline": [
+    "preserve source rigs and geometry",
+    "audit installed normals and UV",
+    "compare materials under matched lighting",
+    "runtime shader GPU validation",
+    "Blender review export only after visual gate",
+    "backed-up installation and gameplay verification"
+  ],
+  "limits": "PBR/Blender lighting does not automatically transfer to native NFS shader"
+}

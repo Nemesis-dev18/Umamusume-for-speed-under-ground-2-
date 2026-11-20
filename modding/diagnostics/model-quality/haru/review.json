@@ -1,0 +1,66 @@
+{
+  "source_sha256": "803d8c0ca01970ebe182305e424f9ad17cb2256376ded488fd20bc5086d9218e",
+  "backend": "Blender CLI 4.5.16 LTS",
+  "scope": "Native source review; not NFS rendering or installed upgrade",
+  "mesh_count": 7,
+  "armatures": 1,
+  "vertices": 10374,
+  "materials": [
+    {
+      "name": "mtl_bdy1052_00",
+      "images": [
+        "tex_bdy1052_00_diff_-6413188890646532261.png"
+      ]
+    },
+    {
+      "name": "mtl_chr1052_00_face",
+      "images": [
+        "face-baked.png"
+      ]
+    },
+    {
+      "name": "mtl_chr1052_00_hair",
+      "images": [
+        "tex_chr1052_00_hair_diff_-8996866127975906272.png"
+      ]
+    },
+    {
+      "name": "mtl_chr1052_00_mayu",
+      "images": [
+        "face-baked.png"
+      ]
+    },
+    {
+      "name": "mtl_tail0001_00",
+      "images": [
+        "tex_tail0001_00_1052_diff_1524863028369346985.png"
+      ]
+    }
+  ],
+  "gameplay_verified": false,
+  "renders": [
+    "front.png",
+    "rear.png",
+    "run-0.png",
+    "run-1.png",
+    "run-2.png",
+    "run-3.png"
+  ],
+  "geometry_and_groups_unchanged": true,
+  "visual_approved": false,
+  "export_accepted": false,
+  "review_export": {
+    "path": "modding/diagnostics/model-quality/haru/haru-quality-review.glb",
+    "bytes": 1517016,
+    "sha256": "a1cbb85b75e0e16a3b0f506da1df8bbc0000485f2bf04d5318ef2dd9950bce14",
+    "size_gate_15MiB": true,
+    "final_game_asset": false,
+    "reimport": {
+      "mesh_count": 6,
+      "armatures": 1,
+      "vertices": 10390,
+      "actions": 2,
+      "uv_present": true
+    }
+  }
+}

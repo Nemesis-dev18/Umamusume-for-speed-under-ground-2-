@@ -16,7 +16,14 @@ static int uma_model_wheel(const UmaMatrix *wheel,const UmaMatrix *body,const Um
 static int uma_model_wheel_bounds(const UmaVertexBounds *bounds,const UmaMatrix *object,const UmaMatrix *body,const UmaAnchors *anchors){
  UmaMatrix center=*object;float half[3];
  for(int i=0;i<3;i++){float p=(bounds->minimum[i]+bounds->maximum[i])*.5f;half[i]=(bounds->maximum[i]-bounds->minimum[i])*.5f;for(int j=0;j<3;j++)center.m[3][j]+=p*object->m[i][j];}
- if(!uma_model_wheel(&center,body,anchors))return 0;
+ if(!anchors || !uma_rigid(body))return 0;
+ /* shortcut: bounded suspension tolerance; use captured component identity if nearby geometry is misclassified. */
+ if(!uma_model_wheel(&center,body,anchors)){
+  float point[3]={0};for(int i=0;i<3;i++)for(int j=0;j<3;j++)point[i]+=(center.m[3][j]-body->m[3][j])*body->m[i][j];
+  int at_mount=0;for(int i=0;i<4;i++)if(fabsf(point[0]-anchors->wheel[i][0])<.2f && fabsf(point[1]-anchors->wheel[i][1])<.2f && fabsf(point[2]-anchors->wheel[i][2])<1.f)at_mount=1;
+  if(!at_mount)return 0;
+ }
+
  float largest=0;
  for(int axis=0;axis<3;axis++){float extent=0;for(int i=0;i<3;i++){float rotation=0;for(int j=0;j<3;j++)rotation+=object->m[i][j]*body->m[axis][j];extent+=fabsf(rotation)*half[i];}if(extent>largest)largest=extent;}
  return largest>=.12f && largest<=.75f;

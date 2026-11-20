@@ -355,10 +355,10 @@ static int runner_wheel_draw(IDirect3DDevice9 *device,D3DPRIMITIVETYPE type,UINT
  UmaMatrix bodies[32];unsigned models[32],count=runner_wheel_bodies(bodies,models);
  int match=runner_root_attachment(device,entry,&worldview,vertices);for(unsigned i=0;!match && i<count;i++)if(uma_model_wheel(&worldview,bodies+i,runner_anchors(models[i])) || (entry && entry->diffuse_min>=0 && uma_model_side_attachment(&worldview,bodies+i,runner_anchors(models[i])))){match=1;break;}
  UmaVertexBounds decoded={{NAN,NAN,NAN},{NAN,NAN,NAN}};
- /* Detailed baked rims share the body origin instead of a separate wheel transform. */
- int baked=vertices<=32;
- for(unsigned i=0;!baked && i<count;i++){float distance=0;for(int k=0;k<3;k++)distance+=fabsf(worldview.m[3][k]-bodies[i].m[3][k]);if(distance<.05f)baked=1;}
- if(!match && baked && vertices<=1024)match=runner_vertex_wheels(device,vertices,data,stride,first,&worldview,&decoded);
+ /* Detailed rims may use displaced child transforms, not the body origin. */
+ int nearby=vertices<=32;
+ for(unsigned i=0;!nearby && i<count;i++){float distance=0;for(int k=0;k<3;k++){float d=worldview.m[3][k]-bodies[i].m[3][k];distance+=d*d;}if(distance<16.f)nearby=1;}
+ if(!match && nearby && vertices<=1024)match=runner_vertex_wheels(device,vertices,data,stride,first,&worldview,&decoded);
  if(runner_log && runner_tire_candidates<96){
   UINT shader=entry?entry->bytes:0;int known=0,racing=runner_scene.bodies>2;
   for(unsigned i=0;i<runner_tire_candidates;i++)if(runner_wheel_reports[i].vertices==vertices && runner_wheel_reports[i].primitives==triangles && runner_wheel_reports[i].shader==shader && runner_wheel_reports[i].method==method && runner_wheel_reports[i].match==match && runner_wheel_reports[i].racing==racing)known=1;

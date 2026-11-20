@@ -1,0 +1,128 @@
+{
+  "backup_root": "modding/backups/before-model-quality-20261120-224338",
+  "files": [
+    {
+      "target": "modding/runtime/fleet/1006/model.umab",
+      "candidate": "modding/staged-runtime/fleet-detail/1006/model.umab",
+      "before": "7745c41f863278df6cb4e1b52d7799f03ab4abd9c9cc6c472b7c72403eb58569",
+      "after": "ad9f2470fa40582cabced462fbb067b0589907b32213f6a014050fb6a2b136bf",
+      "bytes": 1142464,
+      "backup": "modding/backups/before-model-quality-20261120-224338/modding/runtime/fleet/1006/model.umab.bak"
+    },
+    {
+      "target": "modding/runtime/fleet/1006/atlas.dds",
+      "candidate": "modding/staged-runtime/fleet-detail/1006/atlas.dds",
+      "before": "c08ba84ac09c5062c2b614632d56ea6b9320e8e5390103ca902f6fceace34d15",
+      "after": "108a1e94a8900228863f0dec7c7a47641fb0da04208565410532d919cc778b62",
+      "bytes": 22369776,
+      "backup": "modding/backups/before-model-quality-20261120-224338/modding/runtime/fleet/1006/atlas.dds.bak"
+    },
+    {
+      "target": "modding/runtime/fleet/1015/model.umab",
+      "candidate": "modding/staged-runtime/fleet-detail/1015/model.umab",
+      "before": "b18f83f2ebd5125b2c3ca35f03aef584dab829d55041204bcfa3eb2d1eaff9fc",
+      "after": "0a0f4b2fea52d9c81cc73dffc63fed30ab73562cbeffde8a5b508c6b3a0f530c",
+      "bytes": 1379968,
+      "backup": "modding/backups/before-model-quality-20261120-224338/modding/runtime/fleet/1015/model.umab.bak"
+    },
+    {
+      "target": "modding/runtime/fleet/1015/atlas.dds",
+      "candidate": "modding/staged-runtime/fleet-detail/1015/atlas.dds",
+      "before": "6b6831e620d7de04feb5891f0b0162928d4097e754866cb066895312def17ace",
+      "after": "a781110ccb6891909798b3f8e3ceaa84b475b1ccfcdbeb3d2abdb1bc6cc0890f",
+      "bytes": 22369776,
+      "backup": "modding/backups/before-model-quality-20261120-224338/modding/runtime/fleet/1015/atlas.dds.bak"
+    },
+    {
+      "target": "modding/runtime/fleet/1032/model.umab",
+      "candidate": "modding/staged-runtime/fleet-detail/1032/model.umab",
+      "before": "ef5c58e2118d2c8b41d0ddaa5ac76272223a702ebba81420cc819973928d4e4d",
+      "after": "b912788ff9b190b3fa3f4072da7a7b05968e5e7e366f586d9d373c78b8cef4fd",
+      "bytes": 1200400,
+      "backup": "modding/backups/before-model-quality-20261120-224338/modding/runtime/fleet/1032/model.umab.bak"
+    },
+    {
+      "target": "modding/runtime/fleet/1032/atlas.dds",
+      "candidate": "modding/staged-runtime/fleet-detail/1032/atlas.dds",
+      "before": "94a10272ba24ba38c6106f296e105bc84b8b466029fc1ca74f3da0d93cf60819",
+      "after": "1f3d39d956759e64126853e8d25f5fdf38a717060266d31b94b94fe358c0c8b6",
+      "bytes": 22369776,
+      "backup": "modding/backups/before-model-quality-20261120-224338/modding/runtime/fleet/1032/atlas.dds.bak"
+    },
+    {
+      "target": "modding/runtime/fleet/1052/model.umab",
+      "candidate": "modding/staged-runtime/fleet-detail/1052/model.umab",
+      "before": "886c1d49eed57496cb7fb0bd034764a2f5c664214a4b0b1a5a43a4b3126f93e9",
+      "after": "885d88af21c395b41abd9c7f25913664aeed4018257ce05066939017c2e79034",
+      "bytes": 1052800,
+      "backup": "modding/backups/before-model-quality-20261120-224338/modding/runtime/fleet/1052/model.umab.bak"
+    },
+    {
+      "target": "modding/runtime/fleet/1052/atlas.dds",
+      "candidate": "modding/staged-runtime/fleet-detail/1052/atlas.dds",
+      "before": "7db3f5c632272591f46e89ea26c2a65db01fcce8d0871adb8d0b8b8c5aac6ff1",
+      "after": "5ff9c337ba93e7ef1c4b8d25b06bec4d0add1bcb947da5423cc499a7d85ab91d",
+      "bytes": 22369776,
+      "backup": "modding/backups/before-model-quality-20261120-224338/modding/runtime/fleet/1052/atlas.dds.bak"
+    },
+    {
+      "target": "modding/runtime/fleet/1058/model.umab",
+      "candidate": "modding/staged-runtime/fleet-detail/1058/model.umab",
+      "before": "45e182a2f7ed74d5642f5d047622a06b65cc06fd25caae18d06882fe2db868bc",
+      "after": "fa72bcc8986972ca23a871d54619375a9bb2aaa3c973c6f012d35c6070fff42a",
+      "bytes": 1345576,
+      "backup": "modding/backups/before-model-quality-20261120-224338/modding/runtime/fleet/1058/model.umab.bak"
+    },
+    {
+      "target": "modding/runtime/fleet/1058/atlas.dds",
+      "candidate": "modding/staged-runtime/fleet-detail/1058/atlas.dds",
+      "before": "3666a316414d70f6dad793912e9836f432bc92710042518b69778064f17b06b7",
+      "after": "d20b9c86dc963d87357f262edd9d9ec125d56bb4458541a6427cfbaadb7112c9",
+      "bytes": 22369776,
+      "backup": "modding/backups/before-model-quality-20261120-224338/modding/runtime/fleet/1058/atlas.dds.bak"
+    },
+    {
+      "target": "modding/runtime/fleet/1062/model.umab",
+      "candidate": "modding/staged-runtime/fleet-detail/1062/model.umab",
+      "before": "bcb9ce73e4873bf39f697dac8736b6e91c4c22ecb8e3e6f4c355e7cf05ebab7a",
+      "after": "82b87cdb89efaa3e9d88411fc6f1cbb35d1dddd7594eb2abd911541d2ecf737b",
+      "bytes": 1400020,
+      "backup": "modding/backups/before-model-quality-20261120-224338/modding/runtime/fleet/1062/model.umab.bak"
+    },
+    {
+      "target": "modding/runtime/fleet/1062/atlas.dds",
+      "candidate": "modding/staged-runtime/fleet-detail/1062/atlas.dds",
+      "before": "34891ba0a42892d9262bfea0b13a0f25635031eab06247a32a0694c38c7225e1",
+      "after": "9d98651115251a14a0a327da80d84fc3d56619167b4d8e0dfe5d1a6ba33cc612",
+      "bytes": 22369776,
+      "backup": "modding/backups/before-model-quality-20261120-224338/modding/runtime/fleet/1062/atlas.dds.bak"
+    },
+    {
+      "target": "modding/runtime/fleet/1068/model.umab",
+      "candidate": "modding/staged-runtime/fleet-detail/1068/model.umab",
+      "before": "d66cf8a605c13e4e9c26881f584f062dfa581e931bc606303d9780daeb415dea",
+      "after": "ade0036c6e5bc8fe5ff30a7759cbb074e4aff4d5d8672eb84ec59c00793da810",
+      "bytes": 1337244,
+      "backup": "modding/backups/before-model-quality-20261120-224338/modding/runtime/fleet/1068/model.umab.bak"
+    },
+    {
+      "target": "modding/runtime/fleet/1068/atlas.dds",
+      "candidate": "modding/staged-runtime/fleet-detail/1068/atlas.dds",
+      "before": "2fa4c5842646097d4bc3dff1390f7a536b52bd36ddd7e7f752044974b7a2c2e5",
+      "after": "8ee81779c83581b4a5cb27fa1c1e404b86c292b927dd09ea4244ac80e6f0ad0f",
+      "bytes": 22369776,
+      "backup": "modding/backups/before-model-quality-20261120-224338/modding/runtime/fleet/1068/atlas.dds.bak"
+    },
+    {
+      "target": "scripts/UmaRunner.asi",
+      "candidate": "modding/runtime/UmaRunner.asi",
+      "before": "7511589a12df326a191a419f6cc8cfde29a1d13bcdfa3642d9681ac23b0b9541",
+      "after": "338f60c068f9628bbe74e30d610847f1817729a7ad9e06dee1156b3cb522bd8a",
+      "bytes": 415721,
+      "backup": "modding/backups/before-model-quality-20261120-224338/scripts/UmaRunner.asi.bak"
+    }
+  ],
+  "installed": false,
+  "gameplay_verified": false,
+  "scope": "Seven native-resolution atlases with UV-only model updates; all-eight dark lighting fill and displaced wheel-bounds filter; Gentildonna geometry/materials unchanged"
+}
