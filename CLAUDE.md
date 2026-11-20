@@ -872,3 +872,7 @@ Installer stages 23 files, hashes candidates and existing targets, checkpoints e
 - Keep unrotated skinned results separate from root transforms so camera/reflection changes do not repeat garment simulation work.
 
 Additional reacquisition gate covers complete roll and pitch (0..360 degrees), including a vertical forward axis at 90 degrees. The visual-up estimate is normalized and root construction recovers horizontal heading from the current basis when the stored heading is vertical. This closes a synthetic root-correction failure; live collision behavior remains unverified.
+
+Installation completed: all 23 target hashes match the tested package, module installed last, exact backups under modding/backups/before-gentildonna-20261120-094944 and checkpoint d967a463e99130642b9bbee49b216b85ac1bbe83. Gentildonna now assigned to 350Z; existing seven runtime models retained, Mambo secondary profile updated. No gameplay claims yet.
+
+Launched the isolated copy after installation. Runtime START confirms installed=1 and models=8; original footstep outputs and 11 effect profiles loaded. Initial menu heartbeat has shaderFailures=0. This confirms startup only. Asked user to check 350Z/Gentildonna, Mambo cape/impacts, sparks and FPS; no live visual result yet.

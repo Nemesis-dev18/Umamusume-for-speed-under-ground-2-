@@ -59,12 +59,13 @@
   "installation_fixture_tests": "3 passed: success, rollback and preservation of pre-existing temporary",
   "cape_surface_gate": "188700 sampled edges; max relative length change 0.12534; original 0.20 threshold retained",
   "manual_preview": "Gentildonna neutral/run/depth sequence and 60-frame Mambo cape sequence inspected",
-  "installed": false,
+  "installed": true,
   "gameplay_verified": false,
   "remaining": [
     "Live crash orientation and ground clearance",
     "Clothing/body intersections",
     "Frame rate in race with several characters",
     "Actual menu label/portrait presentation"
-  ]
+  ],
+  "checkpoint": "d967a463e99130642b9bbee49b216b85ac1bbe83"
 }

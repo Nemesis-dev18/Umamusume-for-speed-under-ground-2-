@@ -3,8 +3,8 @@
   "requested_slot": "350Z",
   "steam_local_master_lookup": "No Gentildonna or ジェンティル entry in local text_data",
   "source_available": true,
-  "installed": false,
-  "existing_seven_unchanged": true,
+  "installed": true,
+  "existing_seven_unchanged": false,
   "candidate_creator": "ヨッシー/YGaMch.",
   "candidate_url": "https://3d.nicovideo.jp/works/td92886",
   "downloaded": false,
@@ -28,5 +28,11 @@
   "native_materials": 35,
   "blender_materials": 37,
   "source_validation": "modding/blender-review/gentildonna/source-validation.json",
-  "staged_geometry": "modding/staged-runtime/gentildonna-source"
+  "staged_geometry": "modding/staged-runtime/gentildonna-source",
+  "nfs_slot": "350Z",
+  "local_runtime_id": 9001,
+  "material_batches": 35,
+  "native_vertices": 29023,
+  "gameplay_verified": false,
+  "install_receipt": "modding/gentildonna-install-plan.json"
 }

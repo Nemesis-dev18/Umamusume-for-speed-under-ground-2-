@@ -186,6 +186,7 @@
       "backup": "modding/backups/before-gentildonna-20261120-094944/scripts/UmaRunner.asi.bak"
     }
   ],
-  "installed": false,
-  "gameplay_verified": false
+  "installed": true,
+  "gameplay_verified": false,
+  "checkpoint": "d967a463e99130642b9bbee49b216b85ac1bbe83"
 }
