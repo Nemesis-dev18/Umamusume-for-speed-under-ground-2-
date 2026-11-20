@@ -475,6 +475,17 @@ static int runner_install(IDirect3DDevice9 *device){
  InterlockedExchangePointer(table+81,(void*)runner_primitive);InterlockedExchangePointer(table+83,(void*)runner_primitive_up);InterlockedExchangePointer(table+84,(void*)runner_indexed_up);InterlockedExchangePointer(table+82,(void*)runner_draw);InterlockedExchangePointer(table+17,(void*)runner_present);InterlockedExchangePointer(table+16,(void*)runner_reset);
  DWORD ignored;VirtualProtect(table+16,(84-16+1)*sizeof(void*),protection,&ignored);return 1;
 }
+/* Rotate full logs before opening so new sessions retain their diagnostic budget. */
+static inline FILE *runner_open_log(const WCHAR *root){
+ WCHAR path[4096],archive[4096];WIN32_FILE_ATTRIBUTE_DATA info;
+ if(!root || wcslen(root)>3800)return NULL;
+ swprintf(path,4096,L"%ls\\modding\\uma-runner.log",root);
+ if(GetFileAttributesExW(path,GetFileExInfoStandard,&info) && (info.nFileSizeHigh || info.nFileSizeLow>=2*1024*1024)){
+  swprintf(archive,4096,L"%ls\\modding\\uma-runner-%lu-%llu.log",root,(unsigned long)GetCurrentProcessId(),(unsigned long long)GetTickCount64());
+  if(!MoveFileW(path,archive))return NULL;
+ }
+ return _wfopen(path,L"a");
+}
 #ifdef UMA_RUNNER_TEST
 static int runner_remove(void){
  if(!runner_table)return 0;
@@ -487,7 +498,7 @@ static int runner_remove(void){
 static DWORD WINAPI runner_start(void *module){
  InitializeCriticalSection(&runner_lock);WCHAR root[4096],path[4096];DWORD length=GetModuleFileNameW((HMODULE)module,root,4096);if(!length || length>=4096)return 1;
  WCHAR *last=wcsrchr(root,L'\\');if(!last)return 1;*last=0;last=wcsrchr(root,L'\\');if(!last || _wcsicmp(last+1,L"scripts"))return 1;*last=0;if(wcslen(root)>3900)return 1;
- wcscpy(path,root);wcscat(path,L"\\modding\\uma-runner.log");runner_log=_wfopen(path,L"a");
+ runner_log=runner_open_log(root);
  wcscpy(path,root);wcscat(path,L"\\modding\\selection-trace.request");
  if(GetFileAttributesW(path)!=INVALID_FILE_ATTRIBUTES){
   wcscpy(uma_selection.folder,root);wcscat(uma_selection.folder,L"\\modding\\diagnostics\\selection-capture");

@@ -1,0 +1,77 @@
+{
+  "characters": [
+    {
+      "id": 1068,
+      "slot": "COROLLA",
+      "folder": "modding/staged-runtime/fleet-detail/1068",
+      "vertices": 14616,
+      "bones": 155,
+      "atlas_bytes": 22369776,
+      "model_sha256": "ade0036c6e5bc8fe5ff30a7759cbb074e4aff4d5d8672eb84ec59c00793da810",
+      "atlas_sha256": "8ee81779c83581b4a5cb27fa1c1e404b86c292b927dd09ea4244ac80e6f0ad0f"
+    },
+    {
+      "id": 1052,
+      "slot": "240SX",
+      "folder": "modding/staged-runtime/fleet-detail/1052",
+      "vertices": 10418,
+      "bones": 152,
+      "atlas_bytes": 22369776,
+      "model_sha256": "885d88af21c395b41abd9c7f25913664aeed4018257ce05066939017c2e79034",
+      "atlas_sha256": "5ff9c337ba93e7ef1c4b8d25b06bec4d0add1bcb947da5423cc499a7d85ab91d"
+    },
+    {
+      "id": 1032,
+      "slot": "MIATA",
+      "folder": "modding/staged-runtime/fleet-detail/1032",
+      "vertices": 12949,
+      "bones": 146,
+      "atlas_bytes": 22369776,
+      "model_sha256": "b912788ff9b190b3fa3f4072da7a7b05968e5e7e366f586d9d373c78b8cef4fd",
+      "atlas_sha256": "1f3d39d956759e64126853e8d25f5fdf38a717060266d31b94b94fe358c0c8b6"
+    },
+    {
+      "id": 1062,
+      "slot": "FOCUS",
+      "folder": "modding/staged-runtime/fleet-detail/1062",
+      "vertices": 15626,
+      "bones": 156,
+      "atlas_bytes": 22369776,
+      "model_sha256": "82b87cdb89efaa3e9d88411fc6f1cbb35d1dddd7594eb2abd911541d2ecf737b",
+      "atlas_sha256": "9d98651115251a14a0a327da80d84fc3d56619167b4d8e0dfe5d1a6ba33cc612"
+    },
+    {
+      "id": 1015,
+      "slot": "PEUGOT",
+      "folder": "modding/staged-runtime/fleet-detail/1015",
+      "vertices": 15713,
+      "bones": 148,
+      "atlas_bytes": 22369776,
+      "model_sha256": "0a0f4b2fea52d9c81cc73dffc63fed30ab73562cbeffde8a5b508c6b3a0f530c",
+      "atlas_sha256": "a781110ccb6891909798b3f8e3ceaa84b475b1ccfcdbeb3d2abdb1bc6cc0890f"
+    },
+    {
+      "id": 1006,
+      "slot": "PEUGOT106",
+      "folder": "modding/staged-runtime/fleet-detail/1006",
+      "vertices": 11975,
+      "bones": 147,
+      "atlas_bytes": 22369776,
+      "model_sha256": "ad9f2470fa40582cabced462fbb067b0589907b32213f6a014050fb6a2b136bf",
+      "atlas_sha256": "108a1e94a8900228863f0dec7c7a47641fb0da04208565410532d919cc778b62"
+    },
+    {
+      "id": 1058,
+      "slot": "CORSA",
+      "folder": "modding/staged-runtime/fleet-detail/1058",
+      "vertices": 14804,
+      "bones": 156,
+      "atlas_bytes": 22369776,
+      "model_sha256": "fa72bcc8986972ca23a871d54619375a9bb2aaa3c973c6f012d35c6070fff42a",
+      "atlas_sha256": "d20b9c86dc963d87357f262edd9d9ec125d56bb4458541a6427cfbaadb7112c9"
+    }
+  ],
+  "installed": false,
+  "gameplay_verified": false,
+  "scope": "Native source diffuse resolution preserved; does not recreate Unity toon shader or add geometric detail"
+}

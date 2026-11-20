@@ -17,6 +17,12 @@ static UmaMatrix headlight_fixture(void){
 }
 int main(void){
  freopen("modding/runtime/integration-test/result.txt","w",stdout);freopen("modding/runtime/integration-test/errors.txt","w",stderr);
+ /* A full prior session must be archived, not immediately disable the next log. */
+ CreateDirectoryW(L"modding\\runtime\\integration-test\\log-fixture",NULL);CreateDirectoryW(L"modding\\runtime\\integration-test\\log-fixture\\modding",NULL);
+ const WCHAR *log_root=L"modding\\runtime\\integration-test\\log-fixture";FILE *old_log=_wfopen(L"modding\\runtime\\integration-test\\log-fixture\\modding\\uma-runner.log",L"wb");assert(old_log);assert(!fseek(old_log,2*1024*1024,SEEK_SET));assert(fputc('X',old_log)!=EOF);fclose(old_log);
+ FILE *new_log=runner_open_log(log_root);assert(new_log && ftell(new_log)==0);assert(fputs("fresh session\n",new_log)>=0);fclose(new_log);
+ new_log=runner_open_log(log_root);assert(new_log);assert(!fseek(new_log,0,SEEK_END));assert(ftell(new_log)>0 && ftell(new_log)<100);fclose(new_log);
+ puts("PASS full diagnostic log rotation and small log preservation");
  /* Visual root stays upright through a complete car roll and pitch, without translation changes. */
  runner_scene.anchor_valid=1;runner_actors[0].up_valid=1;runner_actors[0].up[2]=1;runner_actors[0].heading[0]=1;
  for(int axis=0;axis<2;axis++)for(int angle=0;angle<=360;angle+=15){
