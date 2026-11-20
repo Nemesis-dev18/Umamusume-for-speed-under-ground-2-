@@ -7,6 +7,7 @@
 #include "uma_motion.h"
 #include "uma_cloth_surface.h"
 #include "uma_foot_sparks.h"
+#include "uma_spark_texture.h"
 #include "uma_resource_tags.h"
 #include "uma_shader_bridge.h"
 
@@ -21,7 +22,7 @@ typedef HRESULT (WINAPI *UmaDrawIndexed)(IDirect3DDevice9*,D3DPRIMITIVETYPE,INT,
 typedef struct {
  IDirect3DDevice9 *device;IDirect3DVertexBuffer9 *vertices;IDirect3DIndexBuffer9 *indices;
  IDirect3DTexture9 *texture;IDirect3DVertexDeclaration9 *declaration;IDirect3DPixelShader9 *shader,*native_shader;UmaShaderCache shaders;
- IDirect3DPixelShader9 *spark_shader;UmaDrawSparks spark_draw;float spark_feet[2][3];unsigned spark_contacts[2],spark_draws;
+ IDirect3DTexture9 *spark_texture;IDirect3DPixelShader9 *spark_shader;UmaDrawSparks spark_draw;float spark_feet[2][3];unsigned spark_contacts[2],spark_draws;
  IDirect3DTexture9 *material_textures[16];unsigned material_texture_count,batch_count;
  struct {uint32_t first,count,texture,visible;} batch[64];
  IDirect3DStateBlock9 *saved;UmaVertex *pose,*local_pose,*surface_base;unsigned skin_samples;float *surface_weight;uint16_t *surface_edges;uint32_t surface_edge_count;
@@ -31,6 +32,7 @@ static void uma_d3d_close(UmaD3D *renderer){
  if(!renderer)return;
  if(renderer->saved)IDirect3DStateBlock9_Release(renderer->saved);
  if(renderer->shader)IDirect3DPixelShader9_Release(renderer->shader);
+ if(renderer->spark_texture)IDirect3DTexture9_Release(renderer->spark_texture);
  if(renderer->spark_shader)IDirect3DPixelShader9_Release(renderer->spark_shader);
  if(renderer->native_shader)IDirect3DPixelShader9_Release(renderer->native_shader);
  uma_shader_cache_clear(&renderer->shaders);
@@ -119,7 +121,11 @@ static HRESULT uma_d3d_open(UmaD3D *output,IDirect3DDevice9 *device,const UmaMot
  /* Car shaders halve diffuse; the new diffuse-only pass restores that scale. */
  static const DWORD lit[]={0xffff0101,0x42,0xb00f0000,5,0x810f0000,0xb0e40000,0x90e40000,1,0x80080000,0xb0ff0000,0xffff};
  result=IDirect3DDevice9_CreatePixelShader(device,lit,&r.native_shader);if(FAILED(result))goto invalid;
- static const DWORD spark_code[]={0xffff0101,0x51,0xa00f0000,0x3f800000,0x3f333333,0x3dcccccd,0x3f800000,0x1,0x800f0000,0xa0e40000,0xffff};
+ result=IDirect3DDevice9_CreateTexture(device,16,16,1,0,D3DFMT_A8R8G8B8,D3DPOOL_MANAGED,&r.spark_texture,NULL);if(FAILED(result))goto invalid;
+ D3DLOCKED_RECT spark_locked;result=IDirect3DTexture9_LockRect(r.spark_texture,0,&spark_locked,NULL,0);if(FAILED(result))goto invalid;
+ for(unsigned y=0;y<16;y++)memcpy((BYTE*)spark_locked.pBits+y*spark_locked.Pitch,uma_spark_pixels+y*64,64);
+ result=IDirect3DTexture9_UnlockRect(r.spark_texture,0);if(FAILED(result))goto invalid;
+ static const DWORD spark_code[]={0xffff0101,0x51,0xa00f0000,0x3f800000,0x3f333333,0x3dcccccd,0x3f800000,0x42,0xb00f0000,5,0x800f0000,0xb0e40000,0xa0e40000,0xffff};
  result=IDirect3DDevice9_CreatePixelShader(device,spark_code,&r.spark_shader);if(FAILED(result))goto invalid;
  static const D3DVERTEXELEMENT9 elements[]={{0,0,D3DDECLTYPE_FLOAT3,0,D3DDECLUSAGE_POSITION,0},{0,12,D3DDECLTYPE_FLOAT3,0,D3DDECLUSAGE_NORMAL,0},{0,24,D3DDECLTYPE_D3DCOLOR,0,D3DDECLUSAGE_COLOR,0},{0,28,D3DDECLTYPE_FLOAT2,0,D3DDECLUSAGE_TEXCOORD,0},D3DDECL_END()};
  result=IDirect3DDevice9_CreateVertexDeclaration(device,elements,&r.declaration);if(FAILED(result))goto invalid;
@@ -209,12 +215,15 @@ static HRESULT uma_d3d_draw(UmaD3D *r,const UmaMotionState *state,const D3DMATRI
   }
  }else result=r->draw(r->device,D3DPT_TRIANGLELIST,0,0,r->motion->vertices,0,r->motion->indices/3);
  if(SUCCEEDED(result) && !depth_only && state->run_blend>.6f && r->spark_draw){
-  UmaVertex sparks[24];unsigned count=uma_spark_mesh(state->run_phase,r->spark_feet,r->spark_contacts,root,sparks);
+  UmaVertex sparks[48];unsigned count=uma_spark_mesh(state->run_phase,r->spark_feet,r->spark_contacts,root,sparks);
   if(count){
    UMA_SET(IDirect3DDevice9_SetPixelShader(r->device,r->spark_shader));
+   UMA_SET(IDirect3DDevice9_SetTexture(r->device,0,(IDirect3DBaseTexture9*)r->spark_texture));
+   UMA_SET(IDirect3DDevice9_SetSamplerState(r->device,0,D3DSAMP_ADDRESSU,D3DTADDRESS_CLAMP));
+   UMA_SET(IDirect3DDevice9_SetSamplerState(r->device,0,D3DSAMP_ADDRESSV,D3DTADDRESS_CLAMP));
    UMA_SET(IDirect3DDevice9_SetRenderState(r->device,D3DRS_ALPHATESTENABLE,FALSE));
    UMA_SET(IDirect3DDevice9_SetRenderState(r->device,D3DRS_ALPHABLENDENABLE,TRUE));
-   UMA_SET(IDirect3DDevice9_SetRenderState(r->device,D3DRS_SRCBLEND,D3DBLEND_ONE));
+   UMA_SET(IDirect3DDevice9_SetRenderState(r->device,D3DRS_SRCBLEND,D3DBLEND_SRCALPHA));
    UMA_SET(IDirect3DDevice9_SetRenderState(r->device,D3DRS_DESTBLEND,D3DBLEND_ONE));
    UMA_SET(IDirect3DDevice9_SetRenderState(r->device,D3DRS_ZWRITEENABLE,FALSE));
    UMA_SET(r->spark_draw(r->device,D3DPT_TRIANGLELIST,count/3,sparks,36));r->spark_draws++;

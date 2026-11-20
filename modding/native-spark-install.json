@@ -1,0 +1,10 @@
+{
+  "target": "scripts/UmaRunner.asi",
+  "candidate": "modding/runtime/UmaRunner.asi",
+  "backup": "modding/backups/before-native-sparks-20261120-123148/UmaRunner.asi.bak",
+  "before_sha256": "0bd363a0c94b5ab870aa5664b726fccfae2b2b0d0e0c2b5632da2c52dea471c5",
+  "after_sha256": "7511589a12df326a191a419f6cc8cfde29a1d13bcdfa3642d9681ac23b0b9541",
+  "bytes": 415209,
+  "installed": false,
+  "gameplay_verified": false
+}
