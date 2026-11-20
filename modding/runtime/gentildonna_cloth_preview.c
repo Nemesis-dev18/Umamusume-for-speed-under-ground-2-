@@ -12,18 +12,19 @@ static DWORD *pixels(IDirect3DDevice9 *device){
  assert(SUCCEEDED(IDirect3DSurface9_UnlockRect(copy)));IDirect3DSurface9_Release(copy);IDirect3DSurface9_Release(target);return result;
 }
 int main(int argc,char **argv){
- assert(argc==2);
+ int rear=argc==3 && !strcmp(argv[2],"rear");assert(argc==2 || rear);
+ const char *output_folder=rear?"modding/runtime/gentildonna-cloth-rear-preview":"modding/runtime/gentildonna-cloth-preview";char result_path[256];snprintf(result_path,sizeof(result_path),"%s/result.txt",output_folder);
  HWND window=CreateWindowA("STATIC","Native fleet renderer verification",WS_OVERLAPPEDWINDOW,0,0,640,800,NULL,NULL,GetModuleHandle(NULL),NULL);assert(window);
  IDirect3D9 *api=Direct3DCreate9(D3D_SDK_VERSION);assert(api);D3DPRESENT_PARAMETERS pp={0};pp.Windowed=TRUE;pp.SwapEffect=D3DSWAPEFFECT_DISCARD;pp.hDeviceWindow=window;pp.BackBufferWidth=640;pp.BackBufferHeight=800;pp.BackBufferFormat=D3DFMT_A8R8G8B8;pp.EnableAutoDepthStencil=TRUE;pp.AutoDepthStencilFormat=D3DFMT_D24S8;
  IDirect3DDevice9 *device=NULL;CHECK(IDirect3D9_CreateDevice(api,0,D3DDEVTYPE_HAL,window,D3DCREATE_HARDWARE_VERTEXPROCESSING,&pp,&device));UmaDrawIndexed draw=(UmaDrawIndexed)(*(void***)device)[82];
- const int ids[]={9001};FILE *report=fopen("modding/runtime/gentildonna-cloth-preview/result.txt","w");assert(report);
+ const int ids[]={9001};FILE *report=fopen(result_path,"w");assert(report);
  for(unsigned c=0;c<sizeof(ids)/sizeof(ids[0]);c++){
   char path[256];snprintf(path,sizeof(path),"modding/runtime/fleet/9001/model.umab");FILE *f=fopen(path,"rb");assert(f);UmaMotion asset={0};assert(uma_motion_load(f,&asset));fclose(f);
   UmaSecondary *cloth=calloc(1,sizeof(*cloth));UmaSecondaryState *spring=calloc(1,sizeof(*spring));assert(cloth && spring);
   f=fopen(argv[1],"rb");assert(f && uma_secondary_load(f,&asset,cloth));fclose(f);asset.secondary_mask=cloth->mask;asset.surface_mask=cloth->surface_mask;
   snprintf(path,sizeof(path),"modding/runtime/fleet/9001/atlas.dds");f=fopen(path,"rb");assert(f);UmaD3D renderer={0};CHECK(uma_d3d_open(&renderer,device,&asset,f,draw));fclose(f);
   CHECK(uma_d3d_materials_load(&renderer,L"modding\\runtime\\fleet\\9001\\atlas.dds"));assert(renderer.batch_count==35);
-  D3DMATRIX combined={0};combined.m[1][0]=.85f;combined.m[2][1]=.85f;combined.m[0][2]=-.1f;combined.m[3][1]=-.85f;combined.m[3][2]=.5f;combined.m[3][3]=1;
+  D3DMATRIX combined={0};combined.m[1][0]=rear?-.85f:.85f;combined.m[2][1]=.85f;combined.m[0][2]=rear?.1f:-.1f;combined.m[3][1]=-.85f;combined.m[3][2]=.5f;combined.m[3][3]=1;
   UmaMotionState state={0};
   for(int frame=0;frame<180;frame++){
    float speed=frame<30 || frame>=120?0:12;float acceleration[3]={frame==120?-35:0,0,0};assert(uma_motion_step_timed(&state,1.f/60,speed,0,asset.idle_seconds,asset.run_seconds));assert(uma_secondary_step(cloth,spring,&asset,&state,1.f/60,speed,acceleration));renderer.secondary=spring->rotation;renderer.secondary_revision=spring->revision;
@@ -32,7 +33,7 @@ int main(int argc,char **argv){
    CHECK(IDirect3DDevice9_Clear(device,0,NULL,D3DCLEAR_TARGET|D3DCLEAR_ZBUFFER,0xff252a32,1,0));CHECK(IDirect3DDevice9_BeginScene(device));CHECK(uma_d3d_draw(&renderer,&state,&combined,-1,NULL));CHECK(IDirect3DDevice9_EndScene(device));DWORD address=0;CHECK(IDirect3DDevice9_GetSamplerState(device,0,D3DSAMP_ADDRESSU,&address));assert(address==D3DTADDRESS_MIRROR);
    DWORD *image=pixels(device);unsigned changed=0;for(int i=0;i<640*800;i++)if(image[i]!=0xff252a32)changed++;
    {
-    assert(changed>5000);snprintf(path,sizeof(path),"modding/runtime/gentildonna-cloth-preview/%d-%d.ppm",ids[c],frame);f=fopen(path,"wb");assert(f);fputs("P6\n640 800\n255\n",f);for(int i=0;i<640*800;i++){unsigned char rgb[]={(unsigned char)(image[i]>>16),(unsigned char)(image[i]>>8),(unsigned char)image[i]};assert(fwrite(rgb,1,3,f)==3);}fclose(f);
+    assert(changed>5000);snprintf(path,sizeof(path),"%s/%d-%d.ppm",output_folder,ids[c],frame);f=fopen(path,"wb");assert(f);fputs("P6\n640 800\n255\n",f);for(int i=0;i<640*800;i++){unsigned char rgb[]={(unsigned char)(image[i]>>16),(unsigned char)(image[i]>>8),(unsigned char)image[i]};assert(fwrite(rgb,1,3,f)==3);}fclose(f);
    }
    free(image);
   }

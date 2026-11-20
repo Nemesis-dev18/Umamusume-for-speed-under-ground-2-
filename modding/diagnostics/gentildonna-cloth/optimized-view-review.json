@@ -1,0 +1,17 @@
+{
+  "scope": "Current SSE2 candidate in independent native-renderer host; not NFS gameplay",
+  "samples_per_view": 30,
+  "views": [
+    "front",
+    "rear"
+  ],
+  "sequence": "30 idle frames, 90 running frames, 60 stopping/idle frames at 60Hz; snapshots every six frames",
+  "artifact": "optimized-rear-contact-sheet.png",
+  "observed": "Reviewed front/rear contact sheets; hem silhouette opens while running and returns toward rest after stopping; no obvious explosive stretch in the inspected samples",
+  "limits": [
+    "No live impact or slope verification",
+    "No full cloth/body self-collision proof",
+    "No gameplay FPS verification"
+  ],
+  "active_game_files_unchanged": true
+}
