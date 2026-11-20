@@ -104,8 +104,9 @@ static UmaMotionState *runner_actor_pose_model(const UmaMatrix *view,unsigned mo
  float radius=fmaxf(4,120*runner_frame_seconds+.25f);int best=-1;float distance=radius*radius;UmaMatrix camera;int rebased=runner_camera_change(&camera);
  for(int i=0;i<16;i++)if(runner_actors[i].used && runner_actors[i].model==model && runner_frames-runner_actors[i].seen<3){
   UmaMatrix predicted=rebased?uma_matrix_product(&runner_actors[i].view,&camera):runner_actors[i].view;
-  float score=0,orientation=0;for(int k=0;k<3;k++){float d=view->m[3][k]-predicted.m[3][k];score+=d*d;orientation+=view->m[0][k]*predicted.m[0][k];}
-  if(orientation>.5f && score<distance){best=i;distance=score;}
+  float score=0;for(int k=0;k<3;k++){float d=view->m[3][k]-predicted.m[3][k];score+=d*d;}
+  /* A collision can reverse orientation without changing the actor's identity. */
+  if(uma_determinant(view)*uma_determinant(&predicted)>0 && score<distance){best=i;distance=score;}
  }
  if(best<0 && runner_log){
   static unsigned reports,frame=UINT32_MAX;int moving=0;
@@ -157,8 +158,8 @@ static RunnerActor *runner_actor_update_models(const UmaMatrix *bodies,const uns
   for(int i=0;i<16;i++)if(runner_actors[i].used && !used[i] && runner_frames-runner_actors[i].seen<=2){
    for(unsigned j=0;j<count;j++)if(!taken[j] && runner_actors[i].model==(models?models[j]:0)){
     const UmaMatrix *current=handoff?&bodies[j]:&world[j],*previous=handoff?&runner_actors[i].view:&runner_actors[i].world;
-    float distance=0,orientation=0;for(int k=0;k<3;k++){float d=current->m[3][k]-previous->m[3][k]-(handoff?0:runner_actors[i].velocity[k]*seconds);distance+=d*d;orientation+=current->m[0][k]*previous->m[0][k];}
-    if(orientation>.5f && distance<best){best=distance;actor=i;body=(int)j;}
+    float distance=0;for(int k=0;k<3;k++){float d=current->m[3][k]-previous->m[3][k]-(handoff?0:runner_actors[i].velocity[k]*seconds);distance+=d*d;}
+    if(uma_determinant(current)*uma_determinant(previous)>0 && distance<best){best=distance;actor=i;body=(int)j;}
    }
   }
   if(actor<0)break;

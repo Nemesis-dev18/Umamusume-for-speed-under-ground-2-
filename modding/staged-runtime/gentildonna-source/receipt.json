@@ -1,0 +1,25 @@
+{
+  "source_sha256": "c561fe62546273469131e80517b79736fdd59b3eed7c2dd450834384298f4252",
+  "installed": false,
+  "runtime_ready": false,
+  "geometry_decimated": false,
+  "textures_resized": false,
+  "material_batches": 35,
+  "axis_determinant": 1.0,
+  "minimum": [
+    -0.5903454780578613,
+    -0.7442836284637452,
+    0.0006121281068772078
+  ],
+  "maximum": [
+    0.41059288978576663,
+    0.7442859649658203,
+    2.215768241882324
+  ],
+  "remaining": [
+    "PMX grant/IK handling and retarget validation",
+    "per-material native texture renderer",
+    "secondary physics conversion and garment collision",
+    "independent GPU and gameplay checks"
+  ]
+}

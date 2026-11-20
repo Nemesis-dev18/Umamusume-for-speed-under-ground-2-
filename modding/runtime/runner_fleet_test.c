@@ -21,6 +21,15 @@ int main(int argc,char **argv){
   assert(runner_actor_update_models(bodies,models,7,.01f,NULL));
   for(unsigned j=0;j<7;j++){
    UmaMotionState *state=runner_actor_pose_model(&bodies[j],models[j]);assert(state && state!=&runner_models[models[j]].idle);
+   if(frame==119){
+    UmaMatrix reflected=bodies[j];for(int k=0;k<3;k++)reflected.m[0][k]*=-1;
+    assert(runner_actor_pose_model(&reflected,models[j])==&runner_models[models[j]].idle);
+    for(int angle=0;angle<=180;angle+=15){
+     UmaMatrix turned=bodies[j];float radians=angle*3.14159265f/180;
+     turned.m[0][0]=turned.m[2][2]=cosf(radians);turned.m[0][2]=sinf(radians);turned.m[2][0]=-sinf(radians);
+     assert(runner_actor_pose_model(&turned,models[j])==state);
+    }
+   }
    if(runner_models[models[j]].secondary.nodes){int found=0;for(int a=0;a<16;a++)if(state==&runner_actors[a].state){assert(runner_actors[a].secondary.initialized);assert(runner_actors[a].secondary.revision>0);found=1;}assert(found);}
    assert(fabsf(state->idle_phase-uma_fraction((frame+1)*.01f/runner_models[models[j]].motion.idle_seconds))<1e-4f);
    if(frame>100)assert(models[j]?state->run_blend>.9f:state->run_blend<.001f);
@@ -30,6 +39,13 @@ int main(int argc,char **argv){
  RunnerActor *moving=NULL;for(int i=0;i<16;i++)if(runner_actors[i].used && runner_actors[i].model==0)moving=&runner_actors[i];assert(moving);moving->speed=20;moving->state.run_blend=1;memset(moving->velocity,0,sizeof(moving->velocity));
  UmaMatrix noisy=moving->view;noisy.m[3][0]+=1.3f;unsigned model_zero=0;runner_frames++;RunnerActor *held=runner_actor_update_models(&noisy,&model_zero,1,.01f,NULL);assert(held==moving && held->speed==20 && held->state.run_blend>.99f);
  runner_frames++;RunnerActor *stopped=runner_actor_update_models(&noisy,&model_zero,1,.01f,NULL);assert(stopped==moving && stopped->speed==0);
+ /* Rotation during a collision must not turn an existing running actor into idle. */
+ for(int angle=180;angle>=0;angle-=15){
+  UmaMatrix turned=noisy;float radians=angle*3.14159265f/180;
+  turned.m[0][0]=turned.m[2][2]=cosf(radians);turned.m[0][2]=sinf(radians);turned.m[2][0]=-sinf(radians);
+  assert(runner_actor_pose_model(&turned,0)==&moving->state);
+  runner_frames++;assert(runner_actor_update_models(&turned,&model_zero,1,.01f,NULL)==moving);
+ }
  assert(!runner_actor_pose_model(&runner_actors[0].view,7));memset(runner_actors,0,sizeof(runner_actors));runner_scene=(UmaSceneSpeed){0};runner_frames=0;runner_actor_world_valid=0;
  InitializeCriticalSection(&runner_lock);HWND window=CreateWindowA("STATIC","Independent seven-model routing",WS_POPUP,0,0,640,480,NULL,NULL,GetModuleHandle(NULL),NULL);assert(window);IDirect3D9 *api=Direct3DCreate9(D3D_SDK_VERSION);assert(api);
  D3DPRESENT_PARAMETERS pp={0};pp.Windowed=TRUE;pp.SwapEffect=D3DSWAPEFFECT_DISCARD;pp.hDeviceWindow=window;pp.BackBufferWidth=640;pp.BackBufferHeight=480;pp.BackBufferFormat=D3DFMT_A8R8G8B8;pp.EnableAutoDepthStencil=TRUE;pp.AutoDepthStencilFormat=D3DFMT_D24S8;

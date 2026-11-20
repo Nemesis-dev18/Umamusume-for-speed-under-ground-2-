@@ -1,0 +1,73 @@
+{
+  "source_sha256": "c561fe62546273469131e80517b79736fdd59b3eed7c2dd450834384298f4252",
+  "vertices": 29023,
+  "triangles": 44672,
+  "bones": 271,
+  "rigid_bodies": 164,
+  "joints": 147,
+  "materials": 35,
+  "textures": [
+    {
+      "path": "modding/model-sources/gentildonna/ヨッシー式_ジェンティルドンナ/textures/GD_Hair_Tail.tga",
+      "sha256": "a3b3d03efc52c1475d09b47087a15d1bf2f9fb3ddf33631da4a2e404541d5fc7"
+    },
+    {
+      "path": "modding/model-sources/gentildonna/ヨッシー式_ジェンティルドンナ/sphere/sphere_白.png",
+      "sha256": "4604c3bf7f02b43ed934e1f1570d1a84118a9549eef79401033987b3897218be"
+    },
+    {
+      "path": "modding/model-sources/gentildonna/ヨッシー式_ジェンティルドンナ/textures/GD_Ear.tga",
+      "sha256": "2ac746cf360a2d5b98651778e79a18ada2bd0fe158dadd662613cf4bbf5e8e10"
+    },
+    {
+      "path": "modding/model-sources/gentildonna/ヨッシー式_ジェンティルドンナ/textures/GD_Face.tga",
+      "sha256": "54e7179d59d298075714c6128df3bd59a66e93b1ab353c9abdab3bb911550c8d"
+    },
+    {
+      "path": "modding/model-sources/gentildonna/ヨッシー式_ジェンティルドンナ/textures/GD_Others.tga",
+      "sha256": "0ae3c11fb7e6b7438f7e56c451ae550c3a3748e13dac440fe3cc67ab181ee3fb"
+    },
+    {
+      "path": "modding/model-sources/gentildonna/ヨッシー式_ジェンティルドンナ/textures/GD_Dynamic_Highlight.tga",
+      "sha256": "8cb79cbaaee50c4b669074c1ccea8250a676881f6ec5005f6f05c8dc37b37fe5"
+    },
+    {
+      "path": "modding/model-sources/gentildonna/ヨッシー式_ジェンティルドンナ/textures/GD_Body.tga",
+      "sha256": "9b78736a7cfa2eb1c71d7acc03aea3ceff5ac51374cb5161086487dd8ff49c8f"
+    },
+    {
+      "path": "modding/model-sources/gentildonna/ヨッシー式_ジェンティルドンナ/textures/GD_Clothes.tga",
+      "sha256": "a12035e327ef4d73ba8653889a2b11c32c383ecda88226c62f36efb236efcc8a"
+    },
+    {
+      "path": "modding/model-sources/gentildonna/ヨッシー式_ジェンティルドンナ/textures/GD_Shoes.tga",
+      "sha256": "90b1464f050d0c3614260ecfc83b6e1cc7e976384ed3de9d879097fb8b99366a"
+    },
+    {
+      "path": "modding/model-sources/gentildonna/ヨッシー式_ジェンティルドンナ/textures/GD_Others2.tga",
+      "sha256": "3fc65e6a561d910e0f3c8f2bd6224c6a917321397ee21b417638d1005826fbad"
+    }
+  ],
+  "uv_min": [
+    0.0014593939995393157,
+    -0.7960120439529419
+  ],
+  "uv_max": [
+    1.0338425636291504,
+    0.9992289543151855
+  ],
+  "degenerate_triangles": 4,
+  "nonunit_normals": 0,
+  "checks": [
+    "source digest",
+    "complete parser counts",
+    "finite geometry and UV",
+    "index bounds",
+    "material triangle coverage",
+    "bone weights and references",
+    "acyclic hierarchy",
+    "texture containment and presence"
+  ],
+  "installed": false,
+  "gameplay_verified": false
+}

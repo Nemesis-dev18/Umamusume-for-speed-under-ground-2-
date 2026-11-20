@@ -1,0 +1,13 @@
+{
+  "backup": "modding/backups/before-impact-identity-20261120-015814/UmaRunner.asi.bak",
+  "before": "b03466e9c47ed394d469cba9889a2164d517624a5dd00439c3806fc69cdbfa0c",
+  "after": "fb5a140f99847f27afc90537d72adb9568afbc9ce81a83c66e3b53d2e9b5c6d7",
+  "bytes": 399849,
+  "installed": false,
+  "gameplay_verified": false,
+  "tests": [
+    "modding/runtime/impact-identity-runtime-test.txt",
+    "modding/runtime/impact-identity-after-test.txt"
+  ],
+  "scope": "actor identity through rotation and session log rotation; Gentildonna remains staging only"
+}

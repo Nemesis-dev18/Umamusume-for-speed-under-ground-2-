@@ -2,17 +2,17 @@
   "requested_character": "Gentildonna",
   "requested_slot": "350Z",
   "steam_local_master_lookup": "No Gentildonna or ジェンティル entry in local text_data",
-  "source_available": false,
+  "source_available": true,
   "installed": false,
   "existing_seven_unchanged": true,
   "candidate_creator": "ヨッシー/YGaMch.",
   "candidate_url": "https://3d.nicovideo.jp/works/td92886",
   "downloaded": false,
-  "usage_terms_reviewed": false,
+  "usage_terms_reviewed": true,
   "local_zip": "/home/nemesis/Vídeos/proyecto inginversa/modelos/ヨッシー式_ジェンティルドンナ.zip",
   "local_zip_creator": "Yossi",
   "local_zip_terms": "ReadMe prohibits use outside MMD/PMXEditor and related software",
-  "decision": "User chose another compatible source",
+  "decision": "User explicitly confirmed author permission; use local ZIP privately",
   "compatible_source_verified": false,
   "search_results": [
     {
@@ -23,5 +23,10 @@
       "url": "https://www.newgrounds.com/art/view/gelokaiser/gentildonna",
       "finding": "3D art page explicitly says work may not be used for any purposes; excluded"
     }
-  ]
+  ],
+  "author_permission": "Confirmed by user in this conversation",
+  "native_materials": 35,
+  "blender_materials": 37,
+  "source_validation": "modding/blender-review/gentildonna/source-validation.json",
+  "staged_geometry": "modding/staged-runtime/gentildonna-source"
 }

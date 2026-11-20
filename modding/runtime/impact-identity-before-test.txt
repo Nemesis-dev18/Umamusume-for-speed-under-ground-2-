@@ -1,0 +1,27 @@
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.442s
+
+OK
+.
+----------------------------------------------------------------------
+Ran 1 test in 1.246s
+
+OK
+ ntsync: up and running.
+Assertion failed: runner_actor_pose_model(&turned,0)==&moving->state, file /home/nemesis/Vídeos/proyecto inginversa/NFSU2-Uma-Prueba/modding/runtime/runner_fleet_test.c, line 37
+
+
+Traceback (most recent call last):
+  File "/home/nemesis/Vídeos/proyecto inginversa/NFSU2-Uma-Prueba/modding/scripts/verify_secondary_fleet.py", line 31, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/home/nemesis/Vídeos/proyecto inginversa/NFSU2-Uma-Prueba/modding/scripts/verify_secondary_fleet.py", line 25, in main
+    r=run([WINE,RUNTIME/'test-build/secondary-routing-test.exe',str(fixture.relative_to(ROOT)).replace('/','\\')],env=dict(os.environ,WINEPREFIX=str(WORK/'proton-prefix/pfx'),WINEDEBUG='-all'),capture_output=True,text=True)
+  File "/home/nemesis/Vídeos/proyecto inginversa/NFSU2-Uma-Prueba/modding/scripts/verify_runtime.py", line 18, in run
+    return subprocess.run([str(a) for a in args], cwd=ROOT, check=True, timeout=60, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.14/subprocess.py", line 578, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['/home/nemesis/.local/share/Steam/steamapps/common/Proton - Experimental/files/bin/wine', '/home/nemesis/Vídeos/proyecto inginversa/NFSU2-Uma-Prueba/modding/runtime/test-build/secondary-routing-test.exe', 'modding\\runtime\\secondary-route-d5p10j38']' returned non-zero exit status 3.

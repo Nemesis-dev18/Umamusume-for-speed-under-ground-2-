@@ -1,0 +1,35 @@
+PASS 40 distinct scenery anchors without any majority, reordered draws, moving camera and instanced-anchor rejection
+PASS multi-tire batch, suspension travel, foreign actor and outlier rejection; symmetric side anchors
+PASS CPU-baked wheel center and radius; large mesh, truncated data and nonfinite vertices rejected
+PASS own tire mount, foreign car rejection, scaled tire and invalid matrix cases
+PASS scenery ViewProj recovery from body WV/WVP, moving body speed, singular and nonfinite matrices rejected
+PASS camera motion cancellation, translation speed, stop/reverse, teleport rejection, reflection/scale rejection, ambiguity and sample bounds; synthetic matrices only
+ntsync: up and running.
+ntsync: up and running.
+PASS DLL initialization, audio initialized without modifying main-image data and hook installation while CWD remains scripts
+AUDIO originalVariants=20 outputStreams=2 installed=1; sample playback only, no game data patch
+AUDIO playback failed code=1; own outputs stopped
+PASS actual WinMM accepts original footsteps with overlapping left/right tails, idle silent, playback failure closes only own outputs; contact lead and gain saturation checked; synthetic host only
+PASS multisample color resolve inside scene preserves the original render target
+PASS one-frame ROI readback inside scene, exact black-pixel attribution, texture binding/color state unchanged, DDS dump and Reset; no game capture yet
+{
+  "scope": "Independent test hosts, not NFSU2 gameplay",
+  "results": {
+    "renderer": "PASS all renderer checks, failure restoration and device reset; 16 intercepted draws. No game integration tested.",
+    "integration": "PASS native shader 5 renders animated textured body through runtime hook; stream offset and base vertex pass, cross-device hooks pass, same-size impostor retains original white output; Present, Reset and hook removal pass. Not NFSU2 gameplay."
+  },
+  "sha256": {
+    "UmaRunner.asi": "fb5a140f99847f27afc90537d72adb9568afbc9ce81a83c66e3b53d2e9b5c6d7",
+    "kitasan.umab": "c1701a3227ce720bf2f4166b96f96219e96b4f307251a579d9c2f0059c8e0581",
+    "atlas.dds": "cb40a42c64d1f97fb69734ad30caa78776c97330472d1152bcda44d69470920d"
+  },
+  "audio_tests": [
+    "main-image audio data untouched",
+    "overlapping original footsteps",
+    "contact lead",
+    "gain saturation",
+    "idle silence",
+    "own-output shutdown on playback failure"
+  ],
+  "gameplay_verified": false
+}

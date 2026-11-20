@@ -1,0 +1,457 @@
+[
+  {
+    "name": "髪",
+    "first_index": 0,
+    "index_count": 22692,
+    "texture_index": 0,
+    "double_sided": false,
+    "diffuse": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "name": "下地髪",
+    "first_index": 22692,
+    "index_count": 996,
+    "texture_index": 0,
+    "double_sided": false,
+    "diffuse": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "name": "髪飾り",
+    "first_index": 23688,
+    "index_count": 4068,
+    "texture_index": 0,
+    "double_sided": false,
+    "diffuse": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "name": "耳",
+    "first_index": 27756,
+    "index_count": 3090,
+    "texture_index": 2,
+    "double_sided": false,
+    "diffuse": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "name": "顔",
+    "first_index": 30846,
+    "index_count": 2007,
+    "texture_index": 3,
+    "double_sided": false,
+    "diffuse": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "name": "顔エッジ消し",
+    "first_index": 32853,
+    "index_count": 657,
+    "texture_index": 3,
+    "double_sided": false,
+    "diffuse": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "name": "フェイシャルパーツ",
+    "first_index": 33510,
+    "index_count": 114,
+    "texture_index": 3,
+    "double_sided": false,
+    "diffuse": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "name": "白目",
+    "first_index": 33624,
+    "index_count": 798,
+    "texture_index": 3,
+    "double_sided": false,
+    "diffuse": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "name": "歯",
+    "first_index": 34422,
+    "index_count": 2184,
+    "texture_index": 3,
+    "double_sided": false,
+    "diffuse": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "name": "舌",
+    "first_index": 36606,
+    "index_count": 624,
+    "texture_index": 3,
+    "double_sided": false,
+    "diffuse": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "name": "口内",
+    "first_index": 37230,
+    "index_count": 900,
+    "texture_index": 3,
+    "double_sided": false,
+    "diffuse": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "name": "アイライン",
+    "first_index": 38130,
+    "index_count": 264,
+    "texture_index": 3,
+    "double_sided": false,
+    "diffuse": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "name": "眉毛",
+    "first_index": 38394,
+    "index_count": 96,
+    "texture_index": 3,
+    "double_sided": false,
+    "diffuse": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "name": "瞳",
+    "first_index": 38490,
+    "index_count": 1728,
+    "texture_index": 3,
+    "double_sided": false,
+    "diffuse": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "name": "特殊瞳",
+    "first_index": 40218,
+    "index_count": 5184,
+    "texture_index": 4,
+    "double_sided": false,
+    "diffuse": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "name": "ハイライト",
+    "first_index": 45402,
+    "index_count": 618,
+    "texture_index": 3,
+    "double_sided": false,
+    "diffuse": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "name": "動的ハイライト",
+    "first_index": 46020,
+    "index_count": 3840,
+    "texture_index": 5,
+    "double_sided": false,
+    "diffuse": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "name": "胴体",
+    "first_index": 49860,
+    "index_count": 3288,
+    "texture_index": 6,
+    "double_sided": false,
+    "diffuse": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "name": "尻尾",
+    "first_index": 53148,
+    "index_count": 2013,
+    "texture_index": 0,
+    "double_sided": false,
+    "diffuse": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "name": "ソックス",
+    "first_index": 55161,
+    "index_count": 5880,
+    "texture_index": 6,
+    "double_sided": false,
+    "diffuse": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "name": "服エッジ赤め",
+    "first_index": 61041,
+    "index_count": 7530,
+    "texture_index": 7,
+    "double_sided": false,
+    "diffuse": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "name": "服エッジ暗め",
+    "first_index": 68571,
+    "index_count": 48522,
+    "texture_index": 7,
+    "double_sided": false,
+    "diffuse": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "name": "服金属",
+    "first_index": 117093,
+    "index_count": 432,
+    "texture_index": 7,
+    "double_sided": false,
+    "diffuse": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "name": "靴",
+    "first_index": 117525,
+    "index_count": 3960,
+    "texture_index": 8,
+    "double_sided": false,
+    "diffuse": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "name": "透過服エッジ",
+    "first_index": 121485,
+    "index_count": 2826,
+    "texture_index": 7,
+    "double_sided": false,
+    "diffuse": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "name": "透過服裏",
+    "first_index": 124311,
+    "index_count": 2682,
+    "texture_index": 7,
+    "double_sided": false,
+    "diffuse": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "name": "透過服",
+    "first_index": 126993,
+    "index_count": 2826,
+    "texture_index": 7,
+    "double_sided": false,
+    "diffuse": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "name": "手袋手首裏",
+    "first_index": 129819,
+    "index_count": 780,
+    "texture_index": 7,
+    "double_sided": false,
+    "diffuse": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "name": "手袋手首",
+    "first_index": 130599,
+    "index_count": 780,
+    "texture_index": 7,
+    "double_sided": false,
+    "diffuse": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "name": "手袋手首エッジ",
+    "first_index": 131379,
+    "index_count": 780,
+    "texture_index": 7,
+    "double_sided": false,
+    "diffuse": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "name": "涙",
+    "first_index": 132159,
+    "index_count": 12,
+    "texture_index": 9,
+    "double_sided": false,
+    "diffuse": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "name": "青影",
+    "first_index": 132171,
+    "index_count": 1224,
+    "texture_index": 4,
+    "double_sided": false,
+    "diffuse": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "name": "紅頬",
+    "first_index": 133395,
+    "index_count": 432,
+    "texture_index": 4,
+    "double_sided": false,
+    "diffuse": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "name": "汗",
+    "first_index": 133827,
+    "index_count": 129,
+    "texture_index": 9,
+    "double_sided": false,
+    "diffuse": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "name": "フェイシャル表情",
+    "first_index": 133956,
+    "index_count": 60,
+    "texture_index": 4,
+    "double_sided": false,
+    "diffuse": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  }
+]

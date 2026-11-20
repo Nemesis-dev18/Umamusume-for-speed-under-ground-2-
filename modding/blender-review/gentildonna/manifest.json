@@ -1,0 +1,13 @@
+{
+  "source_sha256": "c561fe62546273469131e80517b79736fdd59b3eed7c2dd450834384298f4252",
+  "reader_commit": "vendored-sha256:c4076c03a579f423f05ca6364ba0c8bebc54b94b7705fcc3d678e2d11acb3543",
+  "mesh_objects": 1,
+  "vertices": 29023,
+  "triangles": 44672,
+  "bones": 317,
+  "materials": 37,
+  "images": 12,
+  "missing_textures": [],
+  "scope": "Gentildonna import with author permission confirmed by user; no runtime export or game installation",
+  "source_file": "modding/model-sources/gentildonna/\u30e8\u30c3\u30b7\u30fc\u5f0f_\u30b8\u30a7\u30f3\u30c6\u30a3\u30eb\u30c9\u30f3\u30ca/\u30e8\u30c3\u30b7\u30fc\u5f0f\u30b8\u30a7\u30f3\u30c6\u30a3\u30eb\u30c9\u30f3\u30ca.pmx"
+}
