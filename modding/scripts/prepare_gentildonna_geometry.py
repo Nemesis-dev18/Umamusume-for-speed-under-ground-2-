@@ -28,7 +28,7 @@ def main():
  assert hashlib.sha256(RLIB.read_bytes()).hexdigest()=='03a5461701f4f86a251cba6e0e0725d504cfd4ef8ee50bd236af0282e9c4aa0f'
  subprocess.run(['rustc','--edition=2021','-O',str(ROOT/'modding/runtime/prepare_fleet_geometry.rs'),'--extern',f'gizmo_nfs={RLIB}','-L',f'dependency={RLIB.parent}','-o',str(ROOT/'modding/runtime/prepare-fleet-geometry')],check=True)
  built=subprocess.run([str(ROOT/'modding/runtime/prepare-fleet-geometry'),slot,str(identifier)],check=True,capture_output=True);candidate=built.stdout
- report=verify(raw,candidate,carrier(identifier),sampled.stdout,slot);candidate,hulls,ranges=collision(candidate,slot,LOWER*1.09,UPPER*1.09)
+ report=verify(raw,candidate,carrier(identifier),sampled.stdout,slot);candidate,hulls,ranges=collision(candidate,slot,LOWER*(1.78/1.95),UPPER*(1.78/1.95))
  hashes=set()
  for node in flatten(chunks(candidate)):
   if node['id']=='0x0013401a':
