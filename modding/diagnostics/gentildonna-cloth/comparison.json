@@ -1,0 +1,126 @@
+{
+  "scope": "Independent native runtime host; not NFS footage",
+  "frames": [
+    {
+      "frame": 0,
+      "changed_pixels": 0
+    },
+    {
+      "frame": 6,
+      "changed_pixels": 12417
+    },
+    {
+      "frame": 12,
+      "changed_pixels": 16552
+    },
+    {
+      "frame": 18,
+      "changed_pixels": 18410
+    },
+    {
+      "frame": 24,
+      "changed_pixels": 19953
+    },
+    {
+      "frame": 30,
+      "changed_pixels": 21009
+    },
+    {
+      "frame": 36,
+      "changed_pixels": 22256
+    },
+    {
+      "frame": 42,
+      "changed_pixels": 20425
+    },
+    {
+      "frame": 48,
+      "changed_pixels": 23525
+    },
+    {
+      "frame": 54,
+      "changed_pixels": 22974
+    },
+    {
+      "frame": 60,
+      "changed_pixels": 19274
+    },
+    {
+      "frame": 66,
+      "changed_pixels": 22929
+    },
+    {
+      "frame": 72,
+      "changed_pixels": 24016
+    },
+    {
+      "frame": 78,
+      "changed_pixels": 20493
+    },
+    {
+      "frame": 84,
+      "changed_pixels": 21734
+    },
+    {
+      "frame": 90,
+      "changed_pixels": 23986
+    },
+    {
+      "frame": 96,
+      "changed_pixels": 20331
+    },
+    {
+      "frame": 102,
+      "changed_pixels": 21688
+    },
+    {
+      "frame": 108,
+      "changed_pixels": 23810
+    },
+    {
+      "frame": 114,
+      "changed_pixels": 20332
+    },
+    {
+      "frame": 120,
+      "changed_pixels": 21264
+    },
+    {
+      "frame": 126,
+      "changed_pixels": 24052
+    },
+    {
+      "frame": 132,
+      "changed_pixels": 21681
+    },
+    {
+      "frame": 138,
+      "changed_pixels": 21978
+    },
+    {
+      "frame": 144,
+      "changed_pixels": 21317
+    },
+    {
+      "frame": 150,
+      "changed_pixels": 20914
+    },
+    {
+      "frame": 156,
+      "changed_pixels": 21134
+    },
+    {
+      "frame": 162,
+      "changed_pixels": 21556
+    },
+    {
+      "frame": 168,
+      "changed_pixels": 21624
+    },
+    {
+      "frame": 174,
+      "changed_pixels": 21870
+    }
+  ],
+  "visual_gate": "front silhouette reviewed; live collision, rear view, cloth/body intersections and FPS still unverified"
+}

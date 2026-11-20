@@ -26,6 +26,8 @@ def main():
     run([CC, *FLAGS, '-shared', RUNTIME / 'uma_runner.c', '-o', RUNTIME / 'UmaRunner.asi', '-ld3d9', '-luser32', '-lwinmm', '-lm'])
     run(['gcc', '-std=c11', '-O2', '-Wall', '-Wextra', '-Werror', RUNTIME / 'scene_speed_test.c', '-o', build / 'scene-speed-test', '-lm'])
     run([build / 'scene-speed-test'])
+    run(['gcc', '-std=c11', '-O2', '-Wall', '-Wextra', '-Werror', RUNTIME / 'secondary_flags_test.c', '-o', build / 'secondary-flags-test', '-lm'])
+    run([build / 'secondary-flags-test'])
     fixture = RUNTIME / 'runner-load-test'
     (fixture / 'scripts').mkdir(exist_ok=True)
     (fixture / 'modding/runtime').mkdir(parents=True, exist_ok=True)

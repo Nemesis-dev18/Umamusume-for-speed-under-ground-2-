@@ -16,14 +16,14 @@ static int uma_secondary_load(FILE *file,const UmaMotion *asset,UmaSecondary *ou
  if(fgetc(file)!=EOF)goto done;
  for(unsigned i=0;i<c->nodes;i++){
   UmaSpring *n=c->node+i;float length=0;
-  if(n->bone>=c->bones || (n->flags&~0x11fu) || (n->flags&31)>16 || (i && n->bone<=c->node[i-1].bone) || (unsigned)n->first+n->count>c->refs)goto done;
+  if(n->bone>=c->bones || (n->flags&~0x31fu) || (n->flags&31)>16 || (i && n->bone<=c->node[i-1].bone) || (unsigned)n->first+n->count>c->refs)goto done;
   float values[10];memcpy(values,n->tip,sizeof(values));for(int k=0;k<10;k++)if(!isfinite(values[k]))goto done;
   for(int k=0;k<3;k++)length+=n->tip[k]*n->tip[k];
   if(length<1e-6f || length>.36f || n->hz<.1f || n->hz>10 || n->damping<.1f || n->damping>2 || n->gravity<0 || n->gravity>30 || n->radius<0 || n->radius>.2f || n->cone<.01f || n->cone>1.4f || n->wind<0 || n->wind>.1f || n->apply<0 || n->apply>1)goto done;
-  c->mask[n->bone]=1;if(n->flags&31)c->surface_mask[n->bone]=1;if(n->flags&31)c->groups|=1u<<((n->flags&31)-1);
+  c->mask[n->bone]=1;if(n->flags&(31|512))c->surface_mask[n->bone]=(n->flags&512)?2:1;if(n->flags&31)c->groups|=1u<<((n->flags&31)-1);
  }
  for(unsigned i=0;i<c->bones;i++)if(asset->joint[i].parent>=0 && c->mask[asset->joint[i].parent])c->mask[i]=1;
- for(unsigned i=0;i<c->bones;i++)if(asset->joint[i].parent>=0 && c->surface_mask[asset->joint[i].parent])c->surface_mask[i]=1;
+ for(unsigned i=0;i<c->bones;i++)if(asset->joint[i].parent>=0 && c->surface_mask[asset->joint[i].parent])c->surface_mask[i]=c->surface_mask[asset->joint[i].parent];
  for(unsigned i=0;i<c->colliders;i++){
   UmaClothCollider *b=c->collider+i;if(b->bone0>=c->bones || b->bone1>=c->bones || b->kind>3 || b->reserved)goto done;
   float values[7];memcpy(values,b->a,sizeof(values));for(int k=0;k<7;k++)if(!isfinite(values[k]))goto done;

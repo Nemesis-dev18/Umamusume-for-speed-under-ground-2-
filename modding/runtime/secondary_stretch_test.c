@@ -2,7 +2,7 @@
 #include "uma_secondary.h"
 #include "uma_cloth_surface.h"
 int main(int argc,char **argv){
- assert(argc==4);UmaMotion a={0};FILE *f=fopen(argv[1],"rb");assert(f && uma_motion_load(f,&a));fclose(f);UmaSecondary *c=calloc(1,sizeof(*c));UmaSecondaryState *s=calloc(1,sizeof(*s));assert(c && s);f=fopen(argv[2],"rb");assert(f && uma_secondary_load(f,&a,c));fclose(f);a.secondary_mask=c->mask;
+ assert(argc==4);UmaMotion a={0};FILE *f=fopen(argv[1],"rb");assert(f && uma_motion_load(f,&a));fclose(f);UmaSecondary *c=calloc(1,sizeof(*c));UmaSecondaryState *s=calloc(1,sizeof(*s));assert(c && s);f=fopen(argv[2],"rb");assert(f && uma_secondary_load(f,&a,c));fclose(f);a.secondary_mask=c->mask;a.surface_mask=c->surface_mask;
  unsigned char mask[512]={0};f=fopen(argv[3],"rb");assert(f && fread(mask,1,a.bones,f)==a.bones && fgetc(f)==EOF);fclose(f);
  float *weight=calloc(a.vertices,sizeof(float));assert(weight);for(unsigned i=0;i<a.vertices;i++)for(int j=0;j<4;j++)if(mask[a.skin[i].bone[j]])weight[i]+=a.skin[i].weight[j];
  uint16_t *edges=malloc(a.indices*4);assert(edges);uint32_t edge_count=uma_cloth_edges(&a,weight,edges);assert(edge_count);
@@ -19,6 +19,6 @@ int main(int argc,char **argv){
    float change=fabsf(uma_secondary_length(d)/before-1);assert(isfinite(change));maximum=fmaxf(change,maximum);checked++;if(change>.1f)over10++;if(change>.25f)over25++;if(change>.5f)over50++;
   }
  }
- assert(checked && maximum<.2f && over25==0);printf("edges=%u absolute_length_change_max=%.5f fraction_over_10pct=%.5f fraction_over_25pct=%.5f fraction_over_50pct=%.5f\n",checked,maximum,(float)over10/checked,(float)over25/checked,(float)over50/checked);
+ printf("edges=%u absolute_length_change_max=%.5f fraction_over_10pct=%.5f fraction_over_25pct=%.5f fraction_over_50pct=%.5f\n",checked,maximum,(float)over10/checked,(float)over25/checked,(float)over50/checked);fflush(stdout);assert(checked && maximum<.2f && over25==0);
  free(edges);free(weight);free(reference);free(base);free(cloth);free(c);free(s);uma_motion_free(&a);return 0;
 }

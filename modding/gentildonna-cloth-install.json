@@ -1,0 +1,23 @@
+{
+  "backup_root": "modding/backups/before-gentildonna-cloth-20261120-231305",
+  "files": [
+    {
+      "target": "scripts/UmaRunner.asi",
+      "candidate": "modding/runtime/UmaRunner.asi",
+      "before": "338f60c068f9628bbe74e30d610847f1817729a7ad9e06dee1156b3cb522bd8a",
+      "after": "68a0a5f5b478dbc4dfa35195dc72d25ac661fae8f6a77c37ed22bda65b01e996",
+      "bytes": 415721,
+      "backup": "modding/backups/before-gentildonna-cloth-20261120-231305/scripts/UmaRunner.asi.bak"
+    },
+    {
+      "target": "modding/runtime/fleet/9001/secondary.bin",
+      "candidate": "modding/staged-runtime/gentildonna-cloth/secondary.bin",
+      "before": "f09d70d0524c6225990f768b91be7db91ff8b71ad13dc8d4fb238fc061bc802f",
+      "after": "8f4a0a9a82cfdd49d777941cb46317a9dd969067ec166d2204791b749f47fbb9",
+      "bytes": 6740,
+      "backup": "modding/backups/before-gentildonna-cloth-20261120-231305/modding/runtime/fleet/9001/secondary.bin.bak"
+    }
+  ],
+  "installed": false,
+  "gameplay_verified": false
+}

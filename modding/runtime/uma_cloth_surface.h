@@ -8,7 +8,9 @@ static inline uint32_t uma_cloth_edges(const UmaMotion *a,const float *weight,ui
 /* Spring bones supply motion; surface constraints stop linked cape panels stretching apart. */
 static inline int uma_cloth_project(const UmaMotion *a,const UmaMotionState *state,UmaVertex *pose,UmaVertex *base,const float *weight,const uint16_t *edges,uint32_t edge_count){
  if(!uma_motion_sample(a,state->idle_phase,state->run_phase,state->run_blend,base,(size_t)a->vertices*36))return 0;
- for(int iteration=0;iteration<16;iteration++)for(uint32_t edge=0;edge<edge_count;edge++){
+ /* Dense skirt panels need more convergence than the existing cape meshes. */
+ int iterations=16;if(a->surface_mask)for(unsigned b=0;b<a->bones;b++)if(a->surface_mask[b]==2){iterations=24;break;}
+ for(int iteration=0;iteration<iterations;iteration++)for(uint32_t edge=0;edge<edge_count;edge++){
   uint16_t u=edges[edge*2],v=edges[edge*2+1];float mass=weight[u]+weight[v];if(mass<=0)continue;
   float delta[3],rest[3],length=0,original=0;
   for(int k=0;k<3;k++){delta[k]=pose[v].position[k]-pose[u].position[k];rest[k]=base[v].position[k]-base[u].position[k];length+=delta[k]*delta[k];original+=rest[k]*rest[k];}
