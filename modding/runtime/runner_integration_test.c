@@ -237,6 +237,21 @@ int main(void){
  CHECK(IDirect3DVertexBuffer9_Lock(baked_vb,0,4,&mapped,0));memset(mapped,0,4);CHECK(IDirect3DVertexBuffer9_Unlock(baked_vb));assert(!uma_upload_bounds(baked_vb,0,4,32,0,&cached));
  IDirect3DVertexBuffer9_Release(baked_vb);
  puts("PASS CPU-baked wheel vertices across all four draw APIs; foreign pixels intact; partial writes invalidate bounds");
+ /* Detailed baked rims need vertex bounds even without DiffuseMin metadata. */
+ {
+  DWORD wheel_code[sizeof(uma_vs_5)/sizeof(DWORD)];memcpy(wheel_code,uma_vs_5,sizeof(wheel_code));unsigned renamed=0;
+  for(unsigned i=0;i+11<sizeof(wheel_code);i++)if(!memcmp((BYTE*)wheel_code+i,"DiffuseMin",11)){((BYTE*)wheel_code)[i]='X';renamed++;}
+  assert(renamed==1);
+  IDirect3DVertexShader9 *baked_shader=NULL;CHECK(IDirect3DDevice9_CreateVertexShader(device,wheel_code,&baked_shader));CHECK(IDirect3DDevice9_SetVertexShader(device,baked_shader));
+  HRESULT shader_result;UmaShaderEntry *baked_entry=uma_shader_get(&runner_active_renderer->shaders,device,&shader_result);assert(SUCCEEDED(shader_result) && baked_entry && baked_entry->diffuse_min<0 && baked_entry->worldview==14);
+  UmaVertex dense[96]={0};for(int i=0;i<96;i++){dense[i].position[0]=1.35f;dense[i].position[1]=.78f+(i&1?.2f:-.2f);dense[i].position[2]=.275f+(i&2?.2f:-.2f);dense[i].normal[0]=1;memset(dense[i].bgra,255,4);}
+  for(int foreign=0;foreign<2;foreign++){
+   float view[3][4]={{1,0,0,foreign?10:0},{0,1,0,0},{0,0,1,0}};CHECK(IDirect3DDevice9_SetVertexShaderConstantF(device,14,&view[0][0],3));CHECK(IDirect3DDevice9_SetVertexDeclaration(device,declaration));
+   hidden=runner_hidden_wheels;CHECK(IDirect3DDevice9_BeginScene(device));CHECK(IDirect3DDevice9_DrawPrimitiveUP(device,D3DPT_TRIANGLESTRIP,94,dense,36));CHECK(IDirect3DDevice9_EndScene(device));assert(runner_hidden_wheels==hidden+(foreign?0:1));
+  }
+  CHECK(IDirect3DDevice9_SetVertexShader(device,shader));IDirect3DVertexShader9_Release(baked_shader);
+  puts("PASS detailed 96-vertex baked rim without lighting metadata; foreign car retained");
+ }
  /* Combined tires in a shared upload must be tested vertex by vertex. */
  float batch[16][8]={0};WORD batch_indices[24];
  for(int k=0;k<4;k++)for(int j=0;j<4;j++){
