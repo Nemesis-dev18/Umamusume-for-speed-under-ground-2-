@@ -5,7 +5,7 @@
       "target": "modding/runtime/fleet/9001/model.umab",
       "candidate": "modding/staged-runtime/gentildonna/model.umab",
       "before": null,
-      "after": "9a249af0feab7c0a8cd3eb8a22979ade354ef83fb77657068fe12d63e0f7672c",
+      "after": "02a5fd4679138af04e2b5b1898cc25be961cb477bdd9d9cabf388a25156d82b4",
       "bytes": 2620828,
       "backup": null
     },
@@ -13,7 +13,7 @@
       "target": "modding/runtime/fleet/9001/secondary.bin",
       "candidate": "modding/staged-runtime/gentildonna/secondary.bin",
       "before": null,
-      "after": "81781a68bfe81e7ea83a623f80b91483ec2c85a908a1894c1fb0f61e64fcf87c",
+      "after": "f09d70d0524c6225990f768b91be7db91ff8b71ad13dc8d4fb238fc061bc802f",
       "bytes": 6740,
       "backup": null
     },
@@ -133,7 +133,7 @@
       "target": "CARS/350Z/GEOMETRY.BIN",
       "candidate": "modding/staged-runtime/fleet/9001/GEOMETRY.BIN",
       "before": "20af1a976458d47301bf6fe6fe27970bb0f59410aa1f4d4f98c9a51a89a54367",
-      "after": "9cd331f96e4190ad2e0aa32c70f613136ba55792ce21e628a1f42ee38e621e4b",
+      "after": "cf0bbf44427eebf4f116b2b1fa0cfb96a5b71b43d7c449c8515ac507bfa3d532",
       "bytes": 2303984,
       "backup": "modding/backups/before-gentildonna-20261120-094944/CARS/350Z/GEOMETRY.BIN.bak"
     },
@@ -188,5 +188,11 @@
   ],
   "installed": true,
   "gameplay_verified": false,
-  "checkpoint": "d967a463e99130642b9bbee49b216b85ac1bbe83"
+  "checkpoint": "d967a463e99130642b9bbee49b216b85ac1bbe83",
+  "updates": [
+    {
+      "receipt": "modding/gentildonna-size-install-plan.json",
+      "checkpoint": "684ddd67bf048421ef09043f11c06e437890bfc3"
+    }
+  ]
 }

@@ -34,5 +34,7 @@
   "material_batches": 35,
   "native_vertices": 29023,
   "gameplay_verified": false,
-  "install_receipt": "modding/gentildonna-install-plan.json"
+  "install_receipt": "modding/gentildonna-install-plan.json",
+  "height": 1.78,
+  "clothing_filter_seconds": 0.2
 }

@@ -67,5 +67,12 @@
     "Frame rate in race with several characters",
     "Actual menu label/portrait presentation"
   ],
-  "checkpoint": "d967a463e99130642b9bbee49b216b85ac1bbe83"
+  "checkpoint": "d967a463e99130642b9bbee49b216b85ac1bbe83",
+  "size_clothing_update": {
+    "height": 1.78,
+    "max_filtered_angular_speed_degrees_per_second": 37.908,
+    "secondary_nodes": 123,
+    "receipt": "modding/gentildonna-size-install-plan.json",
+    "gameplay_verified": false
+  }
 }

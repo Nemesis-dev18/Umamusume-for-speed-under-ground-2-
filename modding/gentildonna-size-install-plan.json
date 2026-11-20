@@ -26,7 +26,8 @@
       "backup": "modding/backups/before-gentildonna-size-20261120-101641/CARS/350Z/GEOMETRY.BIN.bak"
     }
   ],
-  "installed": false,
+  "installed": true,
   "gameplay_verified": false,
-  "reason": "Gentildonna scale 1.78 and damped clothing"
+  "reason": "Gentildonna scale 1.78 and damped clothing",
+  "checkpoint": "684ddd67bf048421ef09043f11c06e437890bfc3"
 }
