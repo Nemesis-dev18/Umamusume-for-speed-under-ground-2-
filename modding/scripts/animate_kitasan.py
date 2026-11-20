@@ -45,13 +45,16 @@ def leg_target(phase,ankle,amount):
 
 
 class Rig:
-    def __init__(self):
-        folder=ROOT/'modding/character-source';raw=(folder/'mesh.bin').read_bytes()
+    def __init__(self,folder=None):
+        folder=Path(folder) if folder is not None else ROOT/'modding/character-source';folder.resolve().relative_to((ROOT/'modding').resolve());raw=(folder/'mesh.bin').read_bytes()
         self.vertices,self.index_count=struct.unpack_from('<II',raw)
         if len(raw)!=8+self.vertices*36+self.index_count*4:raise ValueError('Mesh length mismatch')
         self.records=np.ndarray((self.vertices,9),'<f4',raw,8).copy()
         self.bones=json.loads((folder/'skeleton.json').read_text())
         self.rest=np.array([b['position'] for b in self.bones]);self.named={b['name']:i for i,b in enumerate(self.bones)}
+        for side in ('左','右'):
+            for alias,name in [('足D','足'),('ひざD','ひざ'),('足首D','足首'),('足先EX','つま先')]:
+                if side+alias not in self.named and side+name in self.named:self.named[side+alias]=self.named[side+name]
         skin=(folder/'skin.bin').read_bytes()
         if len(skin)!=self.vertices*24:raise ValueError('Skin length mismatch')
         self.ids=np.ndarray((self.vertices,4),'<u2',skin,0,strides=(24,2)).copy()

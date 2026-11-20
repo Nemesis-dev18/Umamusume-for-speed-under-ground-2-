@@ -24,7 +24,7 @@ def pools(data):
 
 def verify(original,candidate,slot="COROLLA"):
     from disable_car_effects import string_hash
-    if slot not in {"COROLLA","240SX","MIATA","FOCUS","PEUGOT","PEUGOT106","CORSA"}:
+    if slot not in {"COROLLA","240SX","MIATA","FOCUS","PEUGOT","PEUGOT106","CORSA","350Z"}:
         raise ValueError("Unsupported character slot")
     targets={string_hash(f"{slot}_SHADOWFE"),string_hash(f"{slot}_SHADOWIG")}
     a,b=pools(original),pools(candidate)

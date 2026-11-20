@@ -17,6 +17,22 @@ static UmaMatrix headlight_fixture(void){
 }
 int main(void){
  freopen("modding/runtime/integration-test/result.txt","w",stdout);freopen("modding/runtime/integration-test/errors.txt","w",stderr);
+ /* Gravity comes from coherent scenery, independent of repeated chassis rolls. */
+ {
+  UmaReference refs[5]={0};UmaMatrix anchor={0};for(int k=0;k<4;k++)anchor.m[k][k]=1;
+  for(int i=0;i<5;i++){refs[i].matrix=anchor;refs[i].key.buffer=(unsigned)i+1;}
+  refs[4].matrix.m[1][1]=refs[4].matrix.m[2][2]=-1;float up[3];
+  assert(runner_reference_up(refs,5,&anchor,up) && fabsf(up[2]-1)<1e-6f);
+  for(int axis=0;axis<2;axis++)for(int angle=0;angle<=360;angle+=15){
+   memset(runner_actors,0,sizeof(runner_actors));runner_scene.anchor_valid=1;runner_scene.anchor=anchor;runner_scene.anchor_key=(UmaSceneKey){.buffer=3000+(unsigned)angle};runner_frames++;
+   memcpy(runner_road_up,up,sizeof(up));runner_road_up_valid=1;
+   UmaMatrix body=anchor;float t=angle*3.14159265f/180;int a=axis?0:1;body.m[a][a]=body.m[2][2]=cosf(t);body.m[a][2]=sinf(t);body.m[2][a]=-sinf(t);
+   RunnerActor *actor=runner_actor_update(&body,1,.016f,NULL);assert(actor && actor->up[2]>.999f);float root[9];assert(runner_actor_root(&actor->state,root));
+   for(int c=0;c<3;c++){float corrected=0;for(int k=0;k<3;k++)corrected+=root[6+k]*body.m[k][c];assert(fabsf(corrected-(c==2))<1e-5f);}
+  }
+  assert(!runner_reference_up(refs,2,&anchor,up));runner_road_up_valid=0;memset(runner_actors,0,sizeof(runner_actors));runner_scene=(UmaSceneSpeed){0};runner_actor_world_valid=0;
+  puts("PASS scenery gravity rejects rolled chassis on reacquisition; sparse evidence rejected");
+ }
  /* A full prior session must be archived, not immediately disable the next log. */
  CreateDirectoryW(L"modding\\runtime\\integration-test\\log-fixture",NULL);CreateDirectoryW(L"modding\\runtime\\integration-test\\log-fixture\\modding",NULL);
  const WCHAR *log_root=L"modding\\runtime\\integration-test\\log-fixture";FILE *old_log=_wfopen(L"modding\\runtime\\integration-test\\log-fixture\\modding\\uma-runner.log",L"wb");assert(old_log);assert(!fseek(old_log,2*1024*1024,SEEK_SET));assert(fputc('X',old_log)!=EOF);fclose(old_log);

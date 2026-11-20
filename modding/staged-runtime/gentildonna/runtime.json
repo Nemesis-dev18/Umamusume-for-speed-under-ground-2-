@@ -1,0 +1,683 @@
+{
+  "installed": false,
+  "source": "c561fe62546273469131e80517b79736fdd59b3eed7c2dd450834384298f4252",
+  "vertices": 29023,
+  "triangles": 44672,
+  "native_materials": 35,
+  "textures": [
+    {
+      "index": 0,
+      "source": "modding/model-sources/gentildonna/ヨッシー式_ジェンティルドンナ/textures/GD_Hair_Tail.tga",
+      "levels": [
+        {
+          "width": 2048,
+          "height": 2048,
+          "bytes": 4194304
+        },
+        {
+          "width": 1024,
+          "height": 1024,
+          "bytes": 1048576
+        },
+        {
+          "width": 512,
+          "height": 512,
+          "bytes": 262144
+        },
+        {
+          "width": 256,
+          "height": 256,
+          "bytes": 65536
+        },
+        {
+          "width": 128,
+          "height": 128,
+          "bytes": 16384
+        },
+        {
+          "width": 64,
+          "height": 64,
+          "bytes": 4096
+        },
+        {
+          "width": 32,
+          "height": 32,
+          "bytes": 1024
+        },
+        {
+          "width": 16,
+          "height": 16,
+          "bytes": 256
+        },
+        {
+          "width": 8,
+          "height": 8,
+          "bytes": 64
+        },
+        {
+          "width": 4,
+          "height": 4,
+          "bytes": 16
+        },
+        {
+          "width": 2,
+          "height": 2,
+          "bytes": 16
+        },
+        {
+          "width": 1,
+          "height": 1,
+          "bytes": 16
+        }
+      ],
+      "rgb_rmse": 3.803502142957613
+    },
+    {
+      "index": 1,
+      "source": "modding/model-sources/gentildonna/ヨッシー式_ジェンティルドンナ/sphere/sphere_白.png",
+      "levels": [
+        {
+          "width": 512,
+          "height": 512,
+          "bytes": 262144
+        },
+        {
+          "width": 256,
+          "height": 256,
+          "bytes": 65536
+        },
+        {
+          "width": 128,
+          "height": 128,
+          "bytes": 16384
+        },
+        {
+          "width": 64,
+          "height": 64,
+          "bytes": 4096
+        },
+        {
+          "width": 32,
+          "height": 32,
+          "bytes": 1024
+        },
+        {
+          "width": 16,
+          "height": 16,
+          "bytes": 256
+        },
+        {
+          "width": 8,
+          "height": 8,
+          "bytes": 64
+        },
+        {
+          "width": 4,
+          "height": 4,
+          "bytes": 16
+        },
+        {
+          "width": 2,
+          "height": 2,
+          "bytes": 16
+        },
+        {
+          "width": 1,
+          "height": 1,
+          "bytes": 16
+        }
+      ],
+      "rgb_rmse": 0.7965621832907701
+    },
+    {
+      "index": 2,
+      "source": "modding/model-sources/gentildonna/ヨッシー式_ジェンティルドンナ/textures/GD_Ear.tga",
+      "levels": [
+        {
+          "width": 2048,
+          "height": 2048,
+          "bytes": 4194304
+        },
+        {
+          "width": 1024,
+          "height": 1024,
+          "bytes": 1048576
+        },
+        {
+          "width": 512,
+          "height": 512,
+          "bytes": 262144
+        },
+        {
+          "width": 256,
+          "height": 256,
+          "bytes": 65536
+        },
+        {
+          "width": 128,
+          "height": 128,
+          "bytes": 16384
+        },
+        {
+          "width": 64,
+          "height": 64,
+          "bytes": 4096
+        },
+        {
+          "width": 32,
+          "height": 32,
+          "bytes": 1024
+        },
+        {
+          "width": 16,
+          "height": 16,
+          "bytes": 256
+        },
+        {
+          "width": 8,
+          "height": 8,
+          "bytes": 64
+        },
+        {
+          "width": 4,
+          "height": 4,
+          "bytes": 16
+        },
+        {
+          "width": 2,
+          "height": 2,
+          "bytes": 16
+        },
+        {
+          "width": 1,
+          "height": 1,
+          "bytes": 16
+        }
+      ],
+      "rgb_rmse": 3.8176478458763197
+    },
+    {
+      "index": 3,
+      "source": "modding/model-sources/gentildonna/ヨッシー式_ジェンティルドンナ/textures/GD_Face.tga",
+      "levels": [
+        {
+          "width": 2048,
+          "height": 2048,
+          "bytes": 4194304
+        },
+        {
+          "width": 1024,
+          "height": 1024,
+          "bytes": 1048576
+        },
+        {
+          "width": 512,
+          "height": 512,
+          "bytes": 262144
+        },
+        {
+          "width": 256,
+          "height": 256,
+          "bytes": 65536
+        },
+        {
+          "width": 128,
+          "height": 128,
+          "bytes": 16384
+        },
+        {
+          "width": 64,
+          "height": 64,
+          "bytes": 4096
+        },
+        {
+          "width": 32,
+          "height": 32,
+          "bytes": 1024
+        },
+        {
+          "width": 16,
+          "height": 16,
+          "bytes": 256
+        },
+        {
+          "width": 8,
+          "height": 8,
+          "bytes": 64
+        },
+        {
+          "width": 4,
+          "height": 4,
+          "bytes": 16
+        },
+        {
+          "width": 2,
+          "height": 2,
+          "bytes": 16
+        },
+        {
+          "width": 1,
+          "height": 1,
+          "bytes": 16
+        }
+      ],
+      "rgb_rmse": 3.1056992734570223
+    },
+    {
+      "index": 4,
+      "source": "modding/model-sources/gentildonna/ヨッシー式_ジェンティルドンナ/textures/GD_Others.tga",
+      "levels": [
+        {
+          "width": 2048,
+          "height": 2048,
+          "bytes": 4194304
+        },
+        {
+          "width": 1024,
+          "height": 1024,
+          "bytes": 1048576
+        },
+        {
+          "width": 512,
+          "height": 512,
+          "bytes": 262144
+        },
+        {
+          "width": 256,
+          "height": 256,
+          "bytes": 65536
+        },
+        {
+          "width": 128,
+          "height": 128,
+          "bytes": 16384
+        },
+        {
+          "width": 64,
+          "height": 64,
+          "bytes": 4096
+        },
+        {
+          "width": 32,
+          "height": 32,
+          "bytes": 1024
+        },
+        {
+          "width": 16,
+          "height": 16,
+          "bytes": 256
+        },
+        {
+          "width": 8,
+          "height": 8,
+          "bytes": 64
+        },
+        {
+          "width": 4,
+          "height": 4,
+          "bytes": 16
+        },
+        {
+          "width": 2,
+          "height": 2,
+          "bytes": 16
+        },
+        {
+          "width": 1,
+          "height": 1,
+          "bytes": 16
+        }
+      ],
+      "rgb_rmse": 2.5592023626468987
+    },
+    {
+      "index": 5,
+      "source": "modding/model-sources/gentildonna/ヨッシー式_ジェンティルドンナ/textures/GD_Dynamic_Highlight.tga",
+      "levels": [
+        {
+          "width": 2048,
+          "height": 2048,
+          "bytes": 4194304
+        },
+        {
+          "width": 1024,
+          "height": 1024,
+          "bytes": 1048576
+        },
+        {
+          "width": 512,
+          "height": 512,
+          "bytes": 262144
+        },
+        {
+          "width": 256,
+          "height": 256,
+          "bytes": 65536
+        },
+        {
+          "width": 128,
+          "height": 128,
+          "bytes": 16384
+        },
+        {
+          "width": 64,
+          "height": 64,
+          "bytes": 4096
+        },
+        {
+          "width": 32,
+          "height": 32,
+          "bytes": 1024
+        },
+        {
+          "width": 16,
+          "height": 16,
+          "bytes": 256
+        },
+        {
+          "width": 8,
+          "height": 8,
+          "bytes": 64
+        },
+        {
+          "width": 4,
+          "height": 4,
+          "bytes": 16
+        },
+        {
+          "width": 2,
+          "height": 2,
+          "bytes": 16
+        },
+        {
+          "width": 1,
+          "height": 1,
+          "bytes": 16
+        }
+      ],
+      "rgb_rmse": 0.0
+    },
+    {
+      "index": 6,
+      "source": "modding/model-sources/gentildonna/ヨッシー式_ジェンティルドンナ/textures/GD_Body.tga",
+      "levels": [
+        {
+          "width": 2048,
+          "height": 2048,
+          "bytes": 4194304
+        },
+        {
+          "width": 1024,
+          "height": 1024,
+          "bytes": 1048576
+        },
+        {
+          "width": 512,
+          "height": 512,
+          "bytes": 262144
+        },
+        {
+          "width": 256,
+          "height": 256,
+          "bytes": 65536
+        },
+        {
+          "width": 128,
+          "height": 128,
+          "bytes": 16384
+        },
+        {
+          "width": 64,
+          "height": 64,
+          "bytes": 4096
+        },
+        {
+          "width": 32,
+          "height": 32,
+          "bytes": 1024
+        },
+        {
+          "width": 16,
+          "height": 16,
+          "bytes": 256
+        },
+        {
+          "width": 8,
+          "height": 8,
+          "bytes": 64
+        },
+        {
+          "width": 4,
+          "height": 4,
+          "bytes": 16
+        },
+        {
+          "width": 2,
+          "height": 2,
+          "bytes": 16
+        },
+        {
+          "width": 1,
+          "height": 1,
+          "bytes": 16
+        }
+      ],
+      "rgb_rmse": 4.0626724989043455
+    },
+    {
+      "index": 7,
+      "source": "modding/model-sources/gentildonna/ヨッシー式_ジェンティルドンナ/textures/GD_Clothes.tga",
+      "levels": [
+        {
+          "width": 2048,
+          "height": 2048,
+          "bytes": 4194304
+        },
+        {
+          "width": 1024,
+          "height": 1024,
+          "bytes": 1048576
+        },
+        {
+          "width": 512,
+          "height": 512,
+          "bytes": 262144
+        },
+        {
+          "width": 256,
+          "height": 256,
+          "bytes": 65536
+        },
+        {
+          "width": 128,
+          "height": 128,
+          "bytes": 16384
+        },
+        {
+          "width": 64,
+          "height": 64,
+          "bytes": 4096
+        },
+        {
+          "width": 32,
+          "height": 32,
+          "bytes": 1024
+        },
+        {
+          "width": 16,
+          "height": 16,
+          "bytes": 256
+        },
+        {
+          "width": 8,
+          "height": 8,
+          "bytes": 64
+        },
+        {
+          "width": 4,
+          "height": 4,
+          "bytes": 16
+        },
+        {
+          "width": 2,
+          "height": 2,
+          "bytes": 16
+        },
+        {
+          "width": 1,
+          "height": 1,
+          "bytes": 16
+        }
+      ],
+      "rgb_rmse": 4.1487739898703575
+    },
+    {
+      "index": 8,
+      "source": "modding/model-sources/gentildonna/ヨッシー式_ジェンティルドンナ/textures/GD_Shoes.tga",
+      "levels": [
+        {
+          "width": 2048,
+          "height": 2048,
+          "bytes": 4194304
+        },
+        {
+          "width": 1024,
+          "height": 1024,
+          "bytes": 1048576
+        },
+        {
+          "width": 512,
+          "height": 512,
+          "bytes": 262144
+        },
+        {
+          "width": 256,
+          "height": 256,
+          "bytes": 65536
+        },
+        {
+          "width": 128,
+          "height": 128,
+          "bytes": 16384
+        },
+        {
+          "width": 64,
+          "height": 64,
+          "bytes": 4096
+        },
+        {
+          "width": 32,
+          "height": 32,
+          "bytes": 1024
+        },
+        {
+          "width": 16,
+          "height": 16,
+          "bytes": 256
+        },
+        {
+          "width": 8,
+          "height": 8,
+          "bytes": 64
+        },
+        {
+          "width": 4,
+          "height": 4,
+          "bytes": 16
+        },
+        {
+          "width": 2,
+          "height": 2,
+          "bytes": 16
+        },
+        {
+          "width": 1,
+          "height": 1,
+          "bytes": 16
+        }
+      ],
+      "rgb_rmse": 3.9978840913914815
+    },
+    {
+      "index": 9,
+      "source": "modding/model-sources/gentildonna/ヨッシー式_ジェンティルドンナ/textures/GD_Others2.tga",
+      "levels": [
+        {
+          "width": 2048,
+          "height": 2048,
+          "bytes": 4194304
+        },
+        {
+          "width": 1024,
+          "height": 1024,
+          "bytes": 1048576
+        },
+        {
+          "width": 512,
+          "height": 512,
+          "bytes": 262144
+        },
+        {
+          "width": 256,
+          "height": 256,
+          "bytes": 65536
+        },
+        {
+          "width": 128,
+          "height": 128,
+          "bytes": 16384
+        },
+        {
+          "width": 64,
+          "height": 64,
+          "bytes": 4096
+        },
+        {
+          "width": 32,
+          "height": 32,
+          "bytes": 1024
+        },
+        {
+          "width": 16,
+          "height": 16,
+          "bytes": 256
+        },
+        {
+          "width": 8,
+          "height": 8,
+          "bytes": 64
+        },
+        {
+          "width": 4,
+          "height": 4,
+          "bytes": 16
+        },
+        {
+          "width": 2,
+          "height": 2,
+          "bytes": 16
+        },
+        {
+          "width": 1,
+          "height": 1,
+          "bytes": 16
+        }
+      ],
+      "rgb_rmse": 2.598725365141785
+    }
+  ],
+  "run_duration": 0.6000000238418579,
+  "neutral_hidden_materials": [
+    "フェイシャル表情",
+    "動的ハイライト",
+    "汗",
+    "涙",
+    "特殊瞳",
+    "紅頬",
+    "青影"
+  ],
+  "limitations": [
+    "Original MMD shader effects not reproduced",
+    "Secondary clothing not integrated yet"
+  ]
+}

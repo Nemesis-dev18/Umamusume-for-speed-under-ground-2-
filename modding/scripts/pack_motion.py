@@ -2,6 +2,7 @@
 import hashlib
 import json
 import struct
+from pathlib import Path
 import numpy as np
 from inspect_assets import ROOT
 
@@ -30,12 +31,12 @@ def quaternion(matrix):
     return q if q[3]>=0 else -q
 
 
-def pack(clips_directory=None):
+def pack(clips_directory=None,source_folder=None):
     manifest=ROOT/'modding/runtime/kitasan.json'
     current=json.loads(manifest.read_text()) if manifest.exists() else {}
     clips_directory=clips_directory or ROOT/current.get('reference_clip_directory','modding/animation-offline-v2')
     clips_directory.resolve().relative_to((ROOT/'modding').resolve())
-    folder=ROOT/'modding/character-source';mesh=(folder/'mesh.bin').read_bytes()
+    folder=Path(source_folder) if source_folder is not None else ROOT/'modding/character-source';folder.resolve().relative_to((ROOT/'modding').resolve());mesh=(folder/'mesh.bin').read_bytes()
     nv,ni=struct.unpack_from('<II',mesh);skin=(folder/'skin.bin').read_bytes()
     bones=json.loads((folder/'skeleton.json').read_text());nb=len(bones)
     if len(mesh)!=8+nv*36+ni*4 or len(skin)!=nv*24:raise ValueError('Source size mismatch')

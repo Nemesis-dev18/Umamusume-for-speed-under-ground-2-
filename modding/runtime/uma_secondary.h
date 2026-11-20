@@ -3,7 +3,7 @@
 #include "uma_motion.h"
 typedef struct {uint16_t bone,flags,first,count;float tip[3],hz,damping,gravity,radius,cone,wind,apply;} UmaSpring;
 typedef struct {uint16_t bone0,bone1,kind,reserved;float a[3],b[3],radius;} UmaClothCollider;
-typedef struct {uint32_t bones,nodes,colliders,refs,groups;UmaSpring node[512];UmaClothCollider collider[128];uint16_t ref[4096];uint8_t mask[512];} UmaSecondary;
+typedef struct {uint32_t bones,nodes,colliders,refs,groups;UmaSpring node[512];UmaClothCollider collider[128];uint16_t ref[4096];uint8_t mask[512],surface_mask[512];} UmaSecondary;
 typedef struct {float tip[512][3],previous[512][3],rotation[512*4],remainder;uint32_t revision;int initialized;} UmaSecondaryState;
 _Static_assert(sizeof(UmaSpring)==48,"UMAS spring layout");
 _Static_assert(sizeof(UmaClothCollider)==36,"UMAS collider layout");
@@ -20,9 +20,10 @@ static int uma_secondary_load(FILE *file,const UmaMotion *asset,UmaSecondary *ou
   float values[10];memcpy(values,n->tip,sizeof(values));for(int k=0;k<10;k++)if(!isfinite(values[k]))goto done;
   for(int k=0;k<3;k++)length+=n->tip[k]*n->tip[k];
   if(length<1e-6f || length>.36f || n->hz<.1f || n->hz>10 || n->damping<.1f || n->damping>2 || n->gravity<0 || n->gravity>30 || n->radius<0 || n->radius>.2f || n->cone<.01f || n->cone>1.4f || n->wind<0 || n->wind>.1f || n->apply<0 || n->apply>1)goto done;
-  c->mask[n->bone]=1;if(n->flags&31)c->groups|=1u<<((n->flags&31)-1);
+  c->mask[n->bone]=1;if(n->flags&31)c->surface_mask[n->bone]=1;if(n->flags&31)c->groups|=1u<<((n->flags&31)-1);
  }
  for(unsigned i=0;i<c->bones;i++)if(asset->joint[i].parent>=0 && c->mask[asset->joint[i].parent])c->mask[i]=1;
+ for(unsigned i=0;i<c->bones;i++)if(asset->joint[i].parent>=0 && c->surface_mask[asset->joint[i].parent])c->surface_mask[i]=1;
  for(unsigned i=0;i<c->colliders;i++){
   UmaClothCollider *b=c->collider+i;if(b->bone0>=c->bones || b->bone1>=c->bones || b->kind>3 || b->reserved)goto done;
   float values[7];memcpy(values,b->a,sizeof(values));for(int k=0;k<7;k++)if(!isfinite(values[k]))goto done;
@@ -56,7 +57,8 @@ static int uma_secondary_step(const UmaSecondary *c,UmaSecondaryState *s,const U
    uma_secondary_point(m,asset->joint[n->bone].rest,origin);
    float x=q[0],y=q[1],z=q[2],w=q[3];const float rot[]={1-2*(y*y+z*z),2*(x*y-z*w),2*(x*z+y*w),2*(x*y+z*w),1-2*(x*x+z*z),2*(y*z-x*w),2*(x*z-y*w),2*(y*z+x*w),1-2*(x*x+y*y)};
    for(int a=0;a<3;a++)for(int b=0;b<3;b++){base[a*3+b]=0;for(int k=0;k<3;k++)base[a*3+b]+=m[a*4+k]*rot[b*3+k];}
-   for(int a=0;a<3;a++){target[a]=origin[a];for(int k=0;k<3;k++)target[a]+=base[a*3+k]*n->tip[k];}
+   /* Cape rest directions follow gravity in character space, not the runner's leaning chest. */
+   for(int a=0;a<3;a++){target[a]=origin[a];if(n->flags&31)target[a]+=n->tip[a];else for(int k=0;k<3;k++)target[a]+=base[a*3+k]*n->tip[k];}
    float length=uma_secondary_length(n->tip),omega=6.2831853f*n->hz,drag=expf(-2*n->damping*omega*h),next[3];
    for(int k=0;k<3;k++){float external=-fmaxf(-40,fminf(40,acceleration[k]));if(k==0)external-=fminf(8,n->wind*speed*fabsf(speed));if(k==2)external-=n->gravity;next[k]=s->tip[i][k]+(s->tip[i][k]-s->previous[i][k])*drag+(omega*omega*(target[k]-s->tip[i][k])+external)*h*h;}
    /* Keep every joint length and angular limit bounded, including after a teleport. */
@@ -86,7 +88,8 @@ static int uma_secondary_step(const UmaSecondary *c,UmaSecondaryState *s,const U
     float sum[4]={0};unsigned count=0;
     for(unsigned i=0;i<c->nodes;i++)if((c->node[i].flags&31)==group){const float *q=s->rotation+c->node[i].bone*4;for(int k=0;k<4;k++)sum[k]+=q[k];count++;}
     float norm=sqrtf(sum[0]*sum[0]+sum[1]*sum[1]+sum[2]*sum[2]+sum[3]*sum[3]);if(!count || norm<1e-6f)return 0;
-    for(unsigned i=0;i<c->nodes;i++)if((c->node[i].flags&31)==group)for(int k=0;k<4;k++)s->rotation[c->node[i].bone*4+k]=sum[k]/norm;
+    for(int k=0;k<4;k++)sum[k]/=norm;
+    for(unsigned i=0;i<c->nodes;i++)if((c->node[i].flags&31)==group){float *q=s->rotation+c->node[i].bone*4;uma_quaternion_mix(q,sum,.95f,q);}
    }
    if(!uma_motion_matrices(asset,pose->idle_phase,pose->run_phase,pose->run_blend,s->rotation,matrices))return 0;
    for(unsigned i=0;i<c->nodes;i++)if(c->node[i].flags&31){const UmaSpring *n=c->node+i;float rest[3],tip[3];for(int k=0;k<3;k++)rest[k]=asset->joint[n->bone].rest[k]+n->tip[k];uma_secondary_point(matrices+n->bone*12,rest,tip);for(int k=0;k<3;k++){s->previous[i][k]+=tip[k]-s->tip[i][k];s->tip[i][k]=tip[k];}}

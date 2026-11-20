@@ -70,7 +70,7 @@ def metadata(source,native,report):
         if kind=='Tail':
             cone=min(cone,math.radians(8.));frequency=2.2;damping=1.1;gravity*=.2;wind*=.2;apply*=.6
         elif kind=='Mantle' and native['id']==1062:
-            cone=min(cone,math.radians(10.));frequency=max(frequency,4.);damping=max(damping,.95);wind*=.4
+            wind*=.6
         if part=='body':refs+=body_extra
         if 'Skirt' in kind or kind in ('Jacket','Mantle'):refs+=leg_extra
         refs=list(dict.fromkeys(refs));first=len(references);references+=refs
@@ -80,7 +80,12 @@ def metadata(source,native,report):
             while ancestor in springs and category(springs[ancestor][0]['_boneName'])=='Mantle':
                 group+=1;ancestor=source.parents.get(ancestor)
             if group>16:raise ValueError('Cape synchronization depth budget')
-        records.append((source.remap[i],group,first,len(refs),*tip,frequency,damping,9.81*min(2.,gravity/100.),float(n['_collisionRadius']),cone,wind,apply))
+        force=9.81*min(2.,gravity/100.)
+        if group&31:
+            depth=(group&31)-1
+            frequency=(1.3,1.6,1.8,2.0)[depth];damping=1.05;force=9.81
+            cone=math.radians((55.,35.,30.,25.)[depth])
+        records.append((source.remap[i],group,first,len(refs),*tip,frequency,damping,force,float(n['_collisionRadius']),cone,wind,apply))
         details.append({'bone':source.remap[i],'name':n['_boneName'],'category':kind,'coherence_group':group&31,'tail_smoothing':bool(group&256),'tip_length':length,'native':{k:v for k,v in n.items() if k!='_childElements'},'adapted_hz':frequency,'damping_ratio':damping,'cone_degrees':math.degrees(cone),'wind_coefficient':wind,'colliders':[k for k,v in names.items() if v in refs]})
     nb=len(source.bone_order)
     if not records or len(records)>512 or len(colliders)>128 or len(references)>4096:raise ValueError('Secondary metadata budget')

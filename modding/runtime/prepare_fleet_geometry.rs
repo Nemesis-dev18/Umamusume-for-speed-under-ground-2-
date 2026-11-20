@@ -7,7 +7,7 @@ fn solids(nodes:&[ChunkNode])->Vec<&ChunkNode>{let mut all=Vec::new();for n in n
 fn key(n:&ChunkNode,b:&[u8])->u32{u32at(n.find(SOLID_HEADER).unwrap().data(b),16)}
 fn main()->Result<(),Box<dyn std::error::Error>>{
  let args:Vec<_>=std::env::args().collect();if args.len()!=3{return Err("expected slot and character ID".into());}
- let slot=&args[1];let id:u32=args[2].parse()?;let admitted=[("COROLLA",1068),("240SX",1052),("MIATA",1032),("FOCUS",1062),("PEUGOT",1015),("PEUGOT106",1006),("CORSA",1058)];
+ let slot=&args[1];let id:u32=args[2].parse()?;let admitted=[("COROLLA",1068),("240SX",1052),("MIATA",1032),("FOCUS",1062),("PEUGOT",1015),("PEUGOT106",1006),("CORSA",1058),("350Z",9001)];
  if !admitted.iter().any(|(name,number)|*name==slot && *number==id){return Err("unapproved slot/character pair".into());}
  let original=fs::read(format!("CARS/{slot}/GEOMETRY.BIN"))?;let raw=fs::read(format!("modding/staged-runtime/fleet/{id}/carrier.bin"))?;let bounds=fs::read(format!("modding/staged-runtime/fleet/{id}/bounds.bin"))?;
  if raw.len()!=216 || bounds.len()!=24{return Err("carrier/bounds length".into());}

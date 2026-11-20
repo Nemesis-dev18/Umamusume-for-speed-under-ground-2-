@@ -25,7 +25,7 @@ def main():
    r=run([WINE,RUNTIME/'test-build/secondary-routing-test.exe',str(fixture.relative_to(ROOT)).replace('/','\\')],env=dict(os.environ,WINEPREFIX=str(WORK/'proton-prefix/pfx'),WINEDEBUG='-all'),capture_output=True,text=True)
   except subprocess.CalledProcessError as error:
    print(error.stdout or '',error.stderr or '',file=sys.stderr);raise
-  if not r.stdout.startswith('PASS seven exact native models'):raise RuntimeError(r.stdout+r.stderr)
+  if not r.stdout.startswith('PASS 7 exact native models'):raise RuntimeError(r.stdout+r.stderr)
  (RUNTIME/'secondary-verification.json').write_text(json.dumps({'cpu_solver':rows,'routing':r.stdout.strip(),'mambo_cape_stretch':stretch,'native_skin_cases':56,'installed':False,'gameplay_verified':False},indent=2)+'\n')
  print(r.stdout,flush=True)
 if __name__=='__main__':main()

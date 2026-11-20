@@ -27,7 +27,7 @@ def main():
             result=run([WINE,RUNTIME/'test-build/runner-fleet-test.exe',str(fixture.relative_to(ROOT)).replace('/','\\')],env=dict(os.environ,WINEPREFIX=str(WORK/'proton-prefix/pfx'),WINEDEBUG='-all'),capture_output=True,text=True)
         except subprocess.CalledProcessError as error:
             (RUNTIME/'fleet-routing-error.txt').write_text((error.stdout or '')+(error.stderr or ''));raise
-        if not result.stdout.startswith('PASS seven exact native models'):raise RuntimeError('Fleet routing host did not finish')
+        if not result.stdout.startswith('PASS 7 exact native models'):raise RuntimeError('Fleet routing host did not finish')
         (RUNTIME/'fleet-routing-result.txt').write_text(result.stdout)
         (RUNTIME/'fleet-routing-error.txt').unlink(missing_ok=True)
     if len(lines)!=len(characters) or not all(line.startswith('PASS ') for line in lines):raise RuntimeError('Fleet GPU checks incomplete')

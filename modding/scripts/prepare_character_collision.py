@@ -34,7 +34,7 @@ def prepare(source,slot='COROLLA',lower=LOWER,upper=UPPER):
         for vertex,value in enumerate(replacement):
             at=points['payload']+vertex*48+16;struct.pack_into('<3f',out,at,*value);allowed.append({'offset':at,'bytes':12})
         groups.append({'name':name,'vertices':count,'old_minimum':minimum.tolist(),'old_maximum':maximum.tolist(),'new_minimum':lower.tolist(),'new_maximum':upper.tolist(),'scale':((upper-lower)/(maximum-minimum)).tolist()})
-    expected={'COROLLA':5,'240SX':5,'MIATA':5,'FOCUS':5,'PEUGOT':5,'PEUGOT106':1,'CORSA':1}
+    expected={'COROLLA':5,'240SX':5,'MIATA':5,'FOCUS':5,'PEUGOT':5,'PEUGOT106':1,'CORSA':1,'350Z':5}
     if slot not in expected or len(groups)!=expected[slot] or chunks(out)!=tree:raise ValueError('Unexpected hull count or container layout changed')
     return bytes(out),groups,allowed
 

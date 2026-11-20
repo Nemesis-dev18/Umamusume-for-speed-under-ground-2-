@@ -9,8 +9,8 @@ from pack_motion import topology
 from inspect_assets import ROOT
 
 class UmaRetarget:
-    def __init__(self,clip='anm_rac_type03_run02_base'):
-        self.target=Rig();self.source=OriginalRig();self.clip=DenseMotion(clip,self.source);self.order=topology(self.target.bones)
+    def __init__(self,clip='anm_rac_type03_run02_base',target=None):
+        self.target=target if target is not None else Rig();self.source=OriginalRig();self.clip=DenseMotion(clip,self.source);self.order=topology(self.target.bones)
         self.axes=np.array([[0,0,1],[1,0,0],[0,1,0]],dtype=float)
         ratios=[]
         for target,source in [('左足D','Thigh_L'),('右足D','Thigh_R'),('左腕','Arm_L'),('右腕','Arm_R')]:

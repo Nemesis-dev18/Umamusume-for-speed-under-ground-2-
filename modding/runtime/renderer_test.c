@@ -5,6 +5,8 @@
 #define CHECK(call) do{HRESULT hr=(call);if(FAILED(hr)){fprintf(stderr,"FAIL %s: %08lx\n",#call,(unsigned long)hr);return 1;}}while(0)
 static UmaDrawIndexed native_draw;static UINT draws;static int fail_draw;
 static HRESULT WINAPI observed_draw(IDirect3DDevice9 *d,D3DPRIMITIVETYPE t,INT b,UINT m,UINT v,UINT s,UINT n){draws++;return fail_draw?E_FAIL:native_draw(d,t,b,m,v,s,n);}
+static UmaDrawSparks native_sparks;static unsigned spark_draws;static int fail_sparks;
+static HRESULT WINAPI observed_sparks(IDirect3DDevice9 *d,D3DPRIMITIVETYPE t,UINT n,const void *v,UINT stride){spark_draws++;return fail_sparks?E_FAIL:native_sparks(d,t,n,v,stride);}
 struct Quad {float x,y,z,rhw,u,v;};
 static DWORD *read_pixels(IDirect3DDevice9 *device){
  IDirect3DSurface9 *target=NULL,*copy=NULL;D3DLOCKED_RECT locked;
@@ -27,6 +29,8 @@ static void check_restored(IDirect3DDevice9 *d,IDirect3DPixelShader9 *shader,IDi
  assert(SUCCEEDED(IDirect3DDevice9_GetRenderState(d,D3DRS_ZENABLE,&value)));assert(value==FALSE);
  assert(SUCCEEDED(IDirect3DDevice9_GetRenderState(d,D3DRS_COLORWRITEENABLE,&value)));assert(value==15);
  assert(SUCCEEDED(IDirect3DDevice9_GetSamplerState(d,0,D3DSAMP_MINFILTER,&value)));assert(value==D3DTEXF_POINT);
+ assert(SUCCEEDED(IDirect3DDevice9_GetRenderState(d,D3DRS_SRCBLEND,&value)) && value==D3DBLEND_SRCALPHA);
+ assert(SUCCEEDED(IDirect3DDevice9_GetRenderState(d,D3DRS_DESTBLEND,&value)) && value==D3DBLEND_INVSRCALPHA);
  IDirect3DPixelShader9 *ps=NULL;assert(SUCCEEDED(IDirect3DDevice9_GetPixelShader(d,&ps)));assert(ps==shader);IDirect3DPixelShader9_Release(ps);
  IDirect3DVertexBuffer9 *v=NULL;UINT offset,stride;assert(SUCCEEDED(IDirect3DDevice9_GetStreamSource(d,0,&v,&offset,&stride)));assert(v==vb && stride==sizeof(struct Quad) && offset==0);IDirect3DVertexBuffer9_Release(v);
  IDirect3DIndexBuffer9 *i=NULL;assert(SUCCEEDED(IDirect3DDevice9_GetIndices(d,&i)));assert(i==ib);IDirect3DIndexBuffer9_Release(i);
@@ -50,10 +54,11 @@ static int check_native_lighting(IDirect3DDevice9 *device,const UmaMotion *motio
  DWORD write=99;CHECK(IDirect3DDevice9_GetRenderState(device,D3DRS_COLORWRITEENABLE,&write));assert(write==0);CHECK(IDirect3DDevice9_SetRenderState(device,D3DRS_COLORWRITEENABLE,7));IDirect3DVertexShader9_Release(depth_shader);
  puts("PASS position-only depth shader gains UV input on private clone; color writes remain disabled and pixels unchanged");
  CHECK(IDirect3DDevice9_SetVertexShader(device,shader));
- DWORD *root_pixels[3];const float root_rotation[9]={1,0,0,0,0,1,0,-1,0};
+ unsigned samples=renderer.skin_samples;DWORD *root_pixels[3];const float root_rotation[9]={1,0,0,0,0,1,0,-1,0};
  for(int pass=0;pass<3;pass++){
   CHECK(IDirect3DDevice9_Clear(device,0,NULL,D3DCLEAR_TARGET|D3DCLEAR_ZBUFFER,0xff252a32,1,0));
   CHECK(IDirect3DDevice9_BeginScene(device));CHECK(uma_d3d_draw(&renderer,&state,combined,0,pass==1?root_rotation:NULL));CHECK(IDirect3DDevice9_EndScene(device));
+  assert(renderer.skin_samples==samples);
   assert(renderer.uploaded_root_valid==(pass==1));root_pixels[pass]=read_pixels(device);
  }
  assert(memcmp(root_pixels[0],root_pixels[1],640*480*4));assert(!memcmp(root_pixels[0],root_pixels[2],640*480*4));
@@ -212,6 +217,12 @@ int main(int argc,char **argv){
   if(kind==2){
    UmaMotionState invalid=state;invalid.idle_phase=NAN;CHECK(IDirect3DDevice9_BeginScene(device));assert(uma_d3d_draw(&renderer,&invalid,&combined,-1,NULL)==E_INVALIDARG);assert(!renderer.has_uploaded);CHECK(uma_d3d_draw(&renderer,&state,&combined,-1,NULL));CHECK(IDirect3DDevice9_EndScene(device));assert(renderer.has_uploaded);
    DWORD *recovered=read_pixels(device);DWORD recovered_hash=2166136261u;for(int y=20;y<480;y++)for(int x=0;x<640;x++)recovered_hash=(recovered_hash^recovered[y*640+x])*16777619u;assert(recovered_hash==previous_hash);free(recovered);puts("PASS invalid pose invalidates upload cache; repeated valid pose recovers identical GPU pixels");
+   native_sparks=(UmaDrawSparks)(*(void***)device)[83];renderer.spark_draw=observed_sparks;renderer.has_uploaded=0;state=(UmaMotionState){0,0,1};unsigned before=spark_draws;
+   CHECK(IDirect3DDevice9_BeginScene(device));CHECK(uma_d3d_draw(&renderer,&state,&combined,-1,NULL));check_restored(device,white,vb,ib,&original);CHECK(IDirect3DDevice9_EndScene(device));assert(spark_draws>before);
+   fail_sparks=1;CHECK(IDirect3DDevice9_BeginScene(device));assert(uma_d3d_draw(&renderer,&state,&combined,-1,NULL)==E_FAIL);check_restored(device,white,vb,ib,&original);CHECK(IDirect3DDevice9_EndScene(device));fail_sparks=0;
+   state.run_blend=0;before=spark_draws;CHECK(IDirect3DDevice9_BeginScene(device));CHECK(uma_d3d_draw(&renderer,&state,&combined,-1,NULL));CHECK(IDirect3DDevice9_EndScene(device));assert(spark_draws==before);renderer.spark_draw=NULL;
+   puts("PASS foot spark GPU draw, idle suppression and blend/stream/shader restoration including injected spark failure");
+
   }
   fail_draw=1;CHECK(IDirect3DDevice9_BeginScene(device));assert(uma_d3d_draw(&renderer,&state,&combined,-1,NULL)==E_FAIL);check_restored(device,white,vb,ib,&original);CHECK(IDirect3DDevice9_EndScene(device));fail_draw=0;
   uma_d3d_close(&renderer);assert(!renderer.saved && !renderer.pose);

@@ -5,7 +5,8 @@
       "bone": 7,
       "name": "Sp_Hi_Tail0_B_00",
       "category": "Tail",
-      "coherence_group": 256,
+      "coherence_group": 0,
+      "tail_smoothing": true,
       "tip_length": 0.06404637113795583,
       "native": {
         "_boneName": "Sp_Hi_Tail0_B_00",
@@ -49,7 +50,8 @@
       "bone": 8,
       "name": "Sp_Hi_Tail0_B_01",
       "category": "Tail",
-      "coherence_group": 256,
+      "coherence_group": 0,
+      "tail_smoothing": true,
       "tip_length": 0.11188839167511352,
       "native": {
         "_boneName": "Sp_Hi_Tail0_B_01",
@@ -92,7 +94,8 @@
       "bone": 9,
       "name": "Sp_Hi_Tail0_B_02",
       "category": "Tail",
-      "coherence_group": 256,
+      "coherence_group": 0,
+      "tail_smoothing": true,
       "tip_length": 0.15888810184472346,
       "native": {
         "_boneName": "Sp_Hi_Tail0_B_02",
@@ -135,7 +138,8 @@
       "bone": 10,
       "name": "Sp_Hi_Tail0_B_03",
       "category": "Tail",
-      "coherence_group": 256,
+      "coherence_group": 0,
+      "tail_smoothing": true,
       "tip_length": 0.1496748073226892,
       "native": {
         "_boneName": "Sp_Hi_Tail0_B_03",
@@ -178,7 +182,8 @@
       "bone": 11,
       "name": "Sp_Hi_Tail0_B_04",
       "category": "Tail",
-      "coherence_group": 256,
+      "coherence_group": 0,
+      "tail_smoothing": true,
       "tip_length": 0.1496748073226892,
       "native": {
         "_boneName": "Sp_Hi_Tail0_B_04",
@@ -222,6 +227,7 @@
       "name": "Sp_Hi_MSkirt0_FR_00",
       "category": "MSkirt",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.28136693593087786,
       "native": {
         "_boneName": "Sp_Hi_MSkirt0_FR_00",
@@ -269,6 +275,7 @@
       "name": "Sp_Ch_Mantle0_BL_00",
       "category": "Mantle",
       "coherence_group": 1,
+      "tail_smoothing": false,
       "tip_length": 0.19750401888590818,
       "native": {
         "_boneName": "Sp_Ch_Mantle0_BL_00",
@@ -300,10 +307,10 @@
         "_verticalWindRateFast": 0.3400000035762787,
         "_horizontalWindRateFast": 1.100000023841858
       },
-      "adapted_hz": 4.0,
-      "damping_ratio": 0.95,
-      "cone_degrees": 10.0,
-      "wind_coefficient": 0.0015200000286102295,
+      "adapted_hz": 1.3,
+      "damping_ratio": 1.05,
+      "cone_degrees": 55.0,
+      "wind_coefficient": 0.002280000042915344,
       "colliders": [
         "Col_B_Chest_B_Hood0",
         "Col_B_Hip_Mant_Block_01",
@@ -320,6 +327,7 @@
       "name": "Sp_Ch_Mantle0_BL_01",
       "category": "Mantle",
       "coherence_group": 2,
+      "tail_smoothing": false,
       "tip_length": 0.25025131609387385,
       "native": {
         "_boneName": "Sp_Ch_Mantle0_BL_01",
@@ -350,10 +358,10 @@
         },
         "MoveSpringApplyRate": 0.8999999761581421
       },
-      "adapted_hz": 4.0,
-      "damping_ratio": 0.95,
-      "cone_degrees": 10.0,
-      "wind_coefficient": 0.0022399999618530272,
+      "adapted_hz": 1.6,
+      "damping_ratio": 1.05,
+      "cone_degrees": 35.0,
+      "wind_coefficient": 0.003359999942779541,
       "colliders": [
         "Col_B_Hip_Mant_Block_02",
         "Col_B_Hip_Mant_BL",
@@ -370,6 +378,7 @@
       "name": "Sp_Ch_Mantle0_BL_02",
       "category": "Mantle",
       "coherence_group": 3,
+      "tail_smoothing": false,
       "tip_length": 0.2807621052332636,
       "native": {
         "_boneName": "Sp_Ch_Mantle0_BL_02",
@@ -400,10 +409,10 @@
         },
         "MoveSpringApplyRate": 1.0
       },
-      "adapted_hz": 4.0,
-      "damping_ratio": 0.95,
-      "cone_degrees": 10.0,
-      "wind_coefficient": 0.0037840000152587895,
+      "adapted_hz": 1.8,
+      "damping_ratio": 1.05,
+      "cone_degrees": 29.999999999999996,
+      "wind_coefficient": 0.005676000022888184,
       "colliders": [
         "Col_B_Hip_Mant_Block_02",
         "Col_B_Hip_Mant_BL",
@@ -420,6 +429,7 @@
       "name": "Sp_Ch_Mantle0_BL_03",
       "category": "Mantle",
       "coherence_group": 4,
+      "tail_smoothing": false,
       "tip_length": 0.2807621052332636,
       "native": {
         "_boneName": "Sp_Ch_Mantle0_BL_03",
@@ -446,10 +456,10 @@
         },
         "MoveSpringApplyRate": 1.0
       },
-      "adapted_hz": 4.0,
-      "damping_ratio": 0.95,
-      "cone_degrees": 10.0,
-      "wind_coefficient": 0.0025760000705718996,
+      "adapted_hz": 2.0,
+      "damping_ratio": 1.05,
+      "cone_degrees": 25.0,
+      "wind_coefficient": 0.003864000105857849,
       "colliders": [
         "RuntimeTorso",
         "RuntimeThigh_L",
@@ -463,6 +473,7 @@
       "name": "Sp_Ch_Mantle0_BR_00",
       "category": "Mantle",
       "coherence_group": 1,
+      "tail_smoothing": false,
       "tip_length": 0.19750564245747865,
       "native": {
         "_boneName": "Sp_Ch_Mantle0_BR_00",
@@ -495,10 +506,10 @@
         "_verticalWindRateFast": 0.3400000035762787,
         "_horizontalWindRateFast": 1.100000023841858
       },
-      "adapted_hz": 4.0,
-      "damping_ratio": 0.95,
-      "cone_degrees": 10.0,
-      "wind_coefficient": 0.0015200000286102295,
+      "adapted_hz": 1.3,
+      "damping_ratio": 1.05,
+      "cone_degrees": 55.0,
+      "wind_coefficient": 0.002280000042915344,
       "colliders": [
         "Col_B_Chest_B_Hood0",
         "Col_B_Hip_Mant_R01",
@@ -516,6 +527,7 @@
       "name": "Sp_Ch_Mantle0_BR_01",
       "category": "Mantle",
       "coherence_group": 2,
+      "tail_smoothing": false,
       "tip_length": 0.2502478678002728,
       "native": {
         "_boneName": "Sp_Ch_Mantle0_BR_01",
@@ -546,10 +558,10 @@
         },
         "MoveSpringApplyRate": 0.8999999761581421
       },
-      "adapted_hz": 4.0,
-      "damping_ratio": 0.95,
-      "cone_degrees": 10.0,
-      "wind_coefficient": 0.0022399999618530272,
+      "adapted_hz": 1.6,
+      "damping_ratio": 1.05,
+      "cone_degrees": 35.0,
+      "wind_coefficient": 0.003359999942779541,
       "colliders": [
         "Col_B_Hip_Mant_Block_02",
         "Col_B_Hip_Mant_BR",
@@ -566,6 +578,7 @@
       "name": "Sp_Ch_Mantle0_BR_02",
       "category": "Mantle",
       "coherence_group": 3,
+      "tail_smoothing": false,
       "tip_length": 0.2807622201763836,
       "native": {
         "_boneName": "Sp_Ch_Mantle0_BR_02",
@@ -596,10 +609,10 @@
         },
         "MoveSpringApplyRate": 1.0
       },
-      "adapted_hz": 4.0,
-      "damping_ratio": 0.95,
-      "cone_degrees": 10.0,
-      "wind_coefficient": 0.0038399999618530275,
+      "adapted_hz": 1.8,
+      "damping_ratio": 1.05,
+      "cone_degrees": 29.999999999999996,
+      "wind_coefficient": 0.005759999942779541,
       "colliders": [
         "Col_B_Hip_Mant_Block_02",
         "Col_B_Hip_Mant_BR",
@@ -616,6 +629,7 @@
       "name": "Sp_Ch_Mantle0_BR_03",
       "category": "Mantle",
       "coherence_group": 4,
+      "tail_smoothing": false,
       "tip_length": 0.2807622201763836,
       "native": {
         "_boneName": "Sp_Ch_Mantle0_BR_03",
@@ -642,10 +656,10 @@
         },
         "MoveSpringApplyRate": 1.0
       },
-      "adapted_hz": 4.0,
-      "damping_ratio": 0.95,
-      "cone_degrees": 10.0,
-      "wind_coefficient": 0.0022559999942779545,
+      "adapted_hz": 2.0,
+      "damping_ratio": 1.05,
+      "cone_degrees": 25.0,
+      "wind_coefficient": 0.003383999991416931,
       "colliders": [
         "RuntimeTorso",
         "RuntimeThigh_L",
@@ -659,6 +673,7 @@
       "name": "Sp_Hi_MSkirt0_FL_00",
       "category": "MSkirt",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.2813705279033788,
       "native": {
         "_boneName": "Sp_Hi_MSkirt0_FL_00",
@@ -706,6 +721,7 @@
       "name": "Sp_Hi_MSkirt0_FL_01",
       "category": "MSkirt",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.2813705279033788,
       "native": {
         "_boneName": "Sp_Hi_MSkirt0_FL_01",
@@ -749,6 +765,7 @@
       "name": "Sp_Ao_Sleeve_R_00",
       "category": "Sleeve",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.1783793659059886,
       "native": {
         "_boneName": "Sp_Ao_Sleeve_R_00",
@@ -789,6 +806,7 @@
       "name": "Sp_Hi_MSkirt0_BL_00",
       "category": "MSkirt",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.3105527182540859,
       "native": {
         "_boneName": "Sp_Hi_MSkirt0_BL_00",
@@ -838,6 +856,7 @@
       "name": "Sp_Hi_MSkirt0_L_00",
       "category": "MSkirt",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.2846722402905501,
       "native": {
         "_boneName": "Sp_Hi_MSkirt0_L_00",
@@ -889,6 +908,7 @@
       "name": "Sp_Hi_MSkirt0_L_01",
       "category": "MSkirt",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.2846722402905501,
       "native": {
         "_boneName": "Sp_Hi_MSkirt0_L_01",
@@ -932,6 +952,7 @@
       "name": "Sp_Hi_MSkirt0_R_00",
       "category": "MSkirt",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.2846741655878107,
       "native": {
         "_boneName": "Sp_Hi_MSkirt0_R_00",
@@ -983,6 +1004,7 @@
       "name": "Sp_Hi_MSkirt0_R_01",
       "category": "MSkirt",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.2846741655878107,
       "native": {
         "_boneName": "Sp_Hi_MSkirt0_R_01",
@@ -1026,6 +1048,7 @@
       "name": "Sp_Ao_Sleeve_L_00",
       "category": "Sleeve",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.1783793659059886,
       "native": {
         "_boneName": "Sp_Ao_Sleeve_L_00",
@@ -1066,6 +1089,7 @@
       "name": "Sp_Ch_Mantle0_L_00",
       "category": "Mantle",
       "coherence_group": 1,
+      "tail_smoothing": false,
       "tip_length": 0.19913754740414874,
       "native": {
         "_boneName": "Sp_Ch_Mantle0_L_00",
@@ -1097,10 +1121,10 @@
         "_verticalWindRateFast": 0.0,
         "_horizontalWindRateFast": 0.5
       },
-      "adapted_hz": 4.0,
-      "damping_ratio": 0.95,
-      "cone_degrees": 10.0,
-      "wind_coefficient": 0.0005600000023841858,
+      "adapted_hz": 1.3,
+      "damping_ratio": 1.05,
+      "cone_degrees": 55.0,
+      "wind_coefficient": 0.0008400000035762787,
       "colliders": [
         "Col_B_Spine_Mant_L",
         "Col_B_Hip_Mant_Block_01",
@@ -1117,6 +1141,7 @@
       "name": "Sp_Ch_Mantle0_L_01",
       "category": "Mantle",
       "coherence_group": 2,
+      "tail_smoothing": false,
       "tip_length": 0.24711618502341068,
       "native": {
         "_boneName": "Sp_Ch_Mantle0_L_01",
@@ -1146,10 +1171,10 @@
         },
         "MoveSpringApplyRate": 0.8500000238418579
       },
-      "adapted_hz": 4.0,
-      "damping_ratio": 0.95,
-      "cone_degrees": 10.0,
-      "wind_coefficient": 0.0016,
+      "adapted_hz": 1.6,
+      "damping_ratio": 1.05,
+      "cone_degrees": 35.0,
+      "wind_coefficient": 0.0024,
       "colliders": [
         "Col_B_Hip_Mant_BL",
         "Col_B_Elbow_L_Mant",
@@ -1165,6 +1190,7 @@
       "name": "Sp_Ch_Mantle0_L_02",
       "category": "Mantle",
       "coherence_group": 3,
+      "tail_smoothing": false,
       "tip_length": 0.25104864778176367,
       "native": {
         "_boneName": "Sp_Ch_Mantle0_L_02",
@@ -1194,10 +1220,10 @@
         },
         "MoveSpringApplyRate": 0.8999999761581421
       },
-      "adapted_hz": 4.0,
-      "damping_ratio": 0.95,
-      "cone_degrees": 10.0,
-      "wind_coefficient": 0.0048000000000000004,
+      "adapted_hz": 1.8,
+      "damping_ratio": 1.05,
+      "cone_degrees": 29.999999999999996,
+      "wind_coefficient": 0.0072,
       "colliders": [
         "Col_B_Hip_Mant_BL",
         "Col_B_Elbow_L_Mant",
@@ -1213,6 +1239,7 @@
       "name": "Sp_Ch_Mantle0_L_03",
       "category": "Mantle",
       "coherence_group": 4,
+      "tail_smoothing": false,
       "tip_length": 0.25104864778176367,
       "native": {
         "_boneName": "Sp_Ch_Mantle0_L_03",
@@ -1239,10 +1266,10 @@
         },
         "MoveSpringApplyRate": 1.0
       },
-      "adapted_hz": 4.0,
-      "damping_ratio": 0.95,
-      "cone_degrees": 10.0,
-      "wind_coefficient": 0.00016000000238418583,
+      "adapted_hz": 2.0,
+      "damping_ratio": 1.05,
+      "cone_degrees": 25.0,
+      "wind_coefficient": 0.00024000000357627868,
       "colliders": [
         "RuntimeTorso",
         "RuntimeThigh_L",
@@ -1256,6 +1283,7 @@
       "name": "Sp_Ch_Hood0_B_00",
       "category": "Hood",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.10035321021720293,
       "native": {
         "_boneName": "Sp_Ch_Hood0_B_00",
@@ -1299,6 +1327,7 @@
       "name": "Sp_Hi_MSkirt0_FRR_00",
       "category": "MSkirt",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.27694119477290285,
       "native": {
         "_boneName": "Sp_Hi_MSkirt0_FRR_00",
@@ -1348,6 +1377,7 @@
       "name": "Sp_Hi_MSkirt0_FLL_00",
       "category": "MSkirt",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.27693906832518234,
       "native": {
         "_boneName": "Sp_Hi_MSkirt0_FLL_00",
@@ -1397,6 +1427,7 @@
       "name": "Sp_Hi_MSkirt0_FLL_01",
       "category": "MSkirt",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.27693906832518234,
       "native": {
         "_boneName": "Sp_Hi_MSkirt0_FLL_01",
@@ -1440,6 +1471,7 @@
       "name": "Sp_Hi_MSkirt0_F_00",
       "category": "MSkirt",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.2601936373547182,
       "native": {
         "_boneName": "Sp_Hi_MSkirt0_F_00",
@@ -1487,6 +1519,7 @@
       "name": "Sp_Ch_Mantle0_R_00",
       "category": "Mantle",
       "coherence_group": 1,
+      "tail_smoothing": false,
       "tip_length": 0.1991391709757192,
       "native": {
         "_boneName": "Sp_Ch_Mantle0_R_00",
@@ -1519,10 +1552,10 @@
         "_verticalWindRateFast": 0.0,
         "_horizontalWindRateFast": 0.5
       },
-      "adapted_hz": 4.0,
-      "damping_ratio": 0.95,
-      "cone_degrees": 10.0,
-      "wind_coefficient": 0.002,
+      "adapted_hz": 1.3,
+      "damping_ratio": 1.05,
+      "cone_degrees": 55.0,
+      "wind_coefficient": 0.003,
       "colliders": [
         "Col_B_Spine_Mant_R",
         "Col_B_Hip_Mant_R01",
@@ -1540,6 +1573,7 @@
       "name": "Sp_Ch_Mantle0_R_01",
       "category": "Mantle",
       "coherence_group": 2,
+      "tail_smoothing": false,
       "tip_length": 0.2471150355922104,
       "native": {
         "_boneName": "Sp_Ch_Mantle0_R_01",
@@ -1569,10 +1603,10 @@
         },
         "MoveSpringApplyRate": 0.8500000238418579
       },
-      "adapted_hz": 4.0,
-      "damping_ratio": 0.95,
-      "cone_degrees": 10.0,
-      "wind_coefficient": 0.0016,
+      "adapted_hz": 1.6,
+      "damping_ratio": 1.05,
+      "cone_degrees": 35.0,
+      "wind_coefficient": 0.0024,
       "colliders": [
         "Col_B_Hip_Mant_BR",
         "Col_B_Elbow_R_Mant",
@@ -1588,6 +1622,7 @@
       "name": "Sp_Ch_Mantle0_R_02",
       "category": "Mantle",
       "coherence_group": 3,
+      "tail_smoothing": false,
       "tip_length": 0.2510486477817636,
       "native": {
         "_boneName": "Sp_Ch_Mantle0_R_02",
@@ -1617,10 +1652,10 @@
         },
         "MoveSpringApplyRate": 0.8999999761581421
       },
-      "adapted_hz": 4.0,
-      "damping_ratio": 0.95,
-      "cone_degrees": 10.0,
-      "wind_coefficient": 0.0048000000000000004,
+      "adapted_hz": 1.8,
+      "damping_ratio": 1.05,
+      "cone_degrees": 29.999999999999996,
+      "wind_coefficient": 0.0072,
       "colliders": [
         "Col_B_Hip_Mant_BR",
         "Col_B_Elbow_R_Mant",
@@ -1636,6 +1671,7 @@
       "name": "Sp_Ch_Mantle0_R_03",
       "category": "Mantle",
       "coherence_group": 4,
+      "tail_smoothing": false,
       "tip_length": 0.2510486477817636,
       "native": {
         "_boneName": "Sp_Ch_Mantle0_R_03",
@@ -1662,10 +1698,10 @@
         },
         "MoveSpringApplyRate": 1.0
       },
-      "adapted_hz": 4.0,
-      "damping_ratio": 0.95,
-      "cone_degrees": 10.0,
-      "wind_coefficient": 0.00016000000238418583,
+      "adapted_hz": 2.0,
+      "damping_ratio": 1.05,
+      "cone_degrees": 25.0,
+      "wind_coefficient": 0.00024000000357627868,
       "colliders": [
         "RuntimeTorso",
         "RuntimeThigh_L",
@@ -1679,6 +1715,7 @@
       "name": "Sp_Hi_MSkirt0_FR_01",
       "category": "MSkirt",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.28136693593087786,
       "native": {
         "_boneName": "Sp_Hi_MSkirt0_FR_01",
@@ -1722,6 +1759,7 @@
       "name": "Sp_Hi_MSkirt0_B_00",
       "category": "MSkirt",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.3335759114040586,
       "native": {
         "_boneName": "Sp_Hi_MSkirt0_B_00",
@@ -1771,6 +1809,7 @@
       "name": "Sp_Hi_MSkirt0_F_01",
       "category": "MSkirt",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.2601936373547182,
       "native": {
         "_boneName": "Sp_Hi_MSkirt0_F_01",
@@ -1814,6 +1853,7 @@
       "name": "Sp_Ch_Ribbon0_F_00",
       "category": "Ribbon",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.07154704190727663,
       "native": {
         "_boneName": "Sp_Ch_Ribbon0_F_00",
@@ -1857,6 +1897,7 @@
       "name": "Sp_Hi_MSkirt0_BL_01",
       "category": "MSkirt",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.3105527182540859,
       "native": {
         "_boneName": "Sp_Hi_MSkirt0_BL_01",
@@ -1900,6 +1941,7 @@
       "name": "Sp_Hi_MSkirt0_BR_00",
       "category": "MSkirt",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.31055363779904616,
       "native": {
         "_boneName": "Sp_Hi_MSkirt0_BR_00",
@@ -1949,6 +1991,7 @@
       "name": "Sp_Hi_MSkirt0_BR_01",
       "category": "MSkirt",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.31055363779904616,
       "native": {
         "_boneName": "Sp_Hi_MSkirt0_BR_01",
@@ -1992,6 +2035,7 @@
       "name": "Sp_Hi_MSkirt1_F_00",
       "category": "MSkirt",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.1683830213787288,
       "native": {
         "_boneName": "Sp_Hi_MSkirt1_F_00",
@@ -2036,6 +2080,7 @@
       "name": "Sp_Hi_MSkirt1_F_01",
       "category": "MSkirt",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.1683830213787288,
       "native": {
         "_boneName": "Sp_Hi_MSkirt1_F_01",
@@ -2079,6 +2124,7 @@
       "name": "Sp_Ch_Ribbon0_F_01",
       "category": "Ribbon",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.07154704190727663,
       "native": {
         "_boneName": "Sp_Ch_Ribbon0_F_01",
@@ -2121,6 +2167,7 @@
       "name": "Sp_Hi_MSkirt0_FRR_01",
       "category": "MSkirt",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.27694119477290285,
       "native": {
         "_boneName": "Sp_Hi_MSkirt0_FRR_01",
@@ -2164,6 +2211,7 @@
       "name": "Sp_Hi_MSkirt0_B_01",
       "category": "MSkirt",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.3335759114040586,
       "native": {
         "_boneName": "Sp_Hi_MSkirt0_B_01",
@@ -2207,6 +2255,7 @@
       "name": "Sp_Hi_MSkirt1_R_00",
       "category": "MSkirt",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.13527210392107,
       "native": {
         "_boneName": "Sp_Hi_MSkirt1_R_00",
@@ -2254,6 +2303,7 @@
       "name": "Sp_He_Hair2_L_00",
       "category": "Hair",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.08289597241558122,
       "native": {
         "_boneName": "Sp_He_Hair2_L_00",
@@ -2304,6 +2354,7 @@
       "name": "Sp_He_Hair4_C_00",
       "category": "Hair",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.1024278616858331,
       "native": {
         "_boneName": "Sp_He_Hair4_C_00",
@@ -2350,6 +2401,7 @@
       "name": "Sp_He_Ribbon0_R_00",
       "category": "Ribbon",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.25540286558329794,
       "native": {
         "_boneName": "Sp_He_Ribbon0_R_00",
@@ -2394,6 +2446,7 @@
       "name": "Sp_He_Hair1_R_00",
       "category": "Hair",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.2044541552139404,
       "native": {
         "_boneName": "Sp_He_Hair1_R_00",
@@ -2438,6 +2491,7 @@
       "name": "Sp_He_Hair2_R_00",
       "category": "Hair",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.0798700085733695,
       "native": {
         "_boneName": "Sp_He_Hair2_R_00",
@@ -2488,6 +2542,7 @@
       "name": "Sp_He_Hair2_R_01",
       "category": "Hair",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.0838461425333899,
       "native": {
         "_boneName": "Sp_He_Hair2_R_01",
@@ -2537,6 +2592,7 @@
       "name": "Sp_He_Hair2_R_02",
       "category": "Hair",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.06624024736635788,
       "native": {
         "_boneName": "Sp_He_Hair2_R_02",
@@ -2586,6 +2642,7 @@
       "name": "Sp_He_Hair4_L_00",
       "category": "Hair",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.15630254256691847,
       "native": {
         "_boneName": "Sp_He_Hair4_L_00",
@@ -2634,6 +2691,7 @@
       "name": "Sp_He_Hair4_R_00",
       "category": "Hair",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.16363186188012016,
       "native": {
         "_boneName": "Sp_He_Hair4_R_00",
@@ -2682,6 +2740,7 @@
       "name": "Sp_He_Ribbon0_L_00",
       "category": "Ribbon",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.27660386545138554,
       "native": {
         "_boneName": "Sp_He_Ribbon0_L_00",
@@ -2726,6 +2785,7 @@
       "name": "Sp_He_Ribbon0_L_01",
       "category": "Ribbon",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.19948963254870009,
       "native": {
         "_boneName": "Sp_He_Ribbon0_L_01",
@@ -2769,6 +2829,7 @@
       "name": "Sp_He_Ribbon0_L_02",
       "category": "Ribbon",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.24354113789680074,
       "native": {
         "_boneName": "Sp_He_Ribbon0_L_02",
@@ -2812,6 +2873,7 @@
       "name": "Sp_He_Ribbon0_R_01",
       "category": "Ribbon",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.19401841187457392,
       "native": {
         "_boneName": "Sp_He_Ribbon0_R_01",
@@ -2855,6 +2917,7 @@
       "name": "Sp_He_Ribbon0_R_02",
       "category": "Ribbon",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.24111529208428184,
       "native": {
         "_boneName": "Sp_He_Ribbon0_R_02",
@@ -2898,6 +2961,7 @@
       "name": "Sp_He_Hair4_C_01",
       "category": "Hair",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.13458550556144228,
       "native": {
         "_boneName": "Sp_He_Hair4_C_01",
@@ -2943,6 +3007,7 @@
       "name": "Sp_He_Hair2_L_01",
       "category": "Hair",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.07531251386405641,
       "native": {
         "_boneName": "Sp_He_Hair2_L_01",
@@ -2992,6 +3057,7 @@
       "name": "Sp_He_Hair0_C_00",
       "category": "Hair",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.106516489040641,
       "native": {
         "_boneName": "Sp_He_Hair0_C_00",
@@ -3034,6 +3100,7 @@
       "name": "Sp_He_Hair2_L_02",
       "category": "Hair",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.06674652152248875,
       "native": {
         "_boneName": "Sp_He_Hair2_L_02",
@@ -3083,6 +3150,7 @@
       "name": "Sp_He_Hair1_L_00",
       "category": "Hair",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.21963847183178478,
       "native": {
         "_boneName": "Sp_He_Hair1_L_00",

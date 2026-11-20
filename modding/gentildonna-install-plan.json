@@ -1,0 +1,191 @@
+{
+  "backup_root": "modding/backups/before-gentildonna-20261120-094944",
+  "files": [
+    {
+      "target": "modding/runtime/fleet/9001/model.umab",
+      "candidate": "modding/staged-runtime/gentildonna/model.umab",
+      "before": null,
+      "after": "9a249af0feab7c0a8cd3eb8a22979ade354ef83fb77657068fe12d63e0f7672c",
+      "bytes": 2620828,
+      "backup": null
+    },
+    {
+      "target": "modding/runtime/fleet/9001/secondary.bin",
+      "candidate": "modding/staged-runtime/gentildonna/secondary.bin",
+      "before": null,
+      "after": "81781a68bfe81e7ea83a623f80b91483ec2c85a908a1894c1fb0f61e64fcf87c",
+      "bytes": 6740,
+      "backup": null
+    },
+    {
+      "target": "modding/runtime/fleet/9001/atlas.dds",
+      "candidate": "modding/staged-runtime/gentildonna/atlas.dds",
+      "before": null,
+      "after": "ba96f7491146bce640c4ee42a934d5ef4df19623c5cbd3d3b4d4ce84b41b979a",
+      "bytes": 5592560,
+      "backup": null
+    },
+    {
+      "target": "modding/runtime/fleet/9001/materials.bin",
+      "candidate": "modding/staged-runtime/gentildonna/materials.bin",
+      "before": null,
+      "after": "1f7380b648471986fbcf3920fb3c5482694b22ddfa47454a6e72102a2c751204",
+      "bytes": 576,
+      "backup": null
+    },
+    {
+      "target": "modding/runtime/fleet/9001/material-00.dds",
+      "candidate": "modding/staged-runtime/gentildonna/material-00.dds",
+      "before": null,
+      "after": "ba96f7491146bce640c4ee42a934d5ef4df19623c5cbd3d3b4d4ce84b41b979a",
+      "bytes": 5592560,
+      "backup": null
+    },
+    {
+      "target": "modding/runtime/fleet/9001/material-01.dds",
+      "candidate": "modding/staged-runtime/gentildonna/material-01.dds",
+      "before": null,
+      "after": "4aafe28ef19c3546da86fafb0d8d1ffe1c8182905a03a89ca17fd9eceb295a3d",
+      "bytes": 349680,
+      "backup": null
+    },
+    {
+      "target": "modding/runtime/fleet/9001/material-02.dds",
+      "candidate": "modding/staged-runtime/gentildonna/material-02.dds",
+      "before": null,
+      "after": "95a7bf360126e154e5d7018d1f5a0888f36be2ff325a32e63fbd4c7644c34d81",
+      "bytes": 5592560,
+      "backup": null
+    },
+    {
+      "target": "modding/runtime/fleet/9001/material-03.dds",
+      "candidate": "modding/staged-runtime/gentildonna/material-03.dds",
+      "before": null,
+      "after": "c4e142d339cfeef200cf0d28635ab951b5d4662d7bdb0e5a05a668aee07db9e2",
+      "bytes": 5592560,
+      "backup": null
+    },
+    {
+      "target": "modding/runtime/fleet/9001/material-04.dds",
+      "candidate": "modding/staged-runtime/gentildonna/material-04.dds",
+      "before": null,
+      "after": "63dc0a18b6ef858f7a5e43d13e84335c7d5a2716cd692ddcc734a5dfb9c68382",
+      "bytes": 5592560,
+      "backup": null
+    },
+    {
+      "target": "modding/runtime/fleet/9001/material-05.dds",
+      "candidate": "modding/staged-runtime/gentildonna/material-05.dds",
+      "before": null,
+      "after": "b9c539485d9c28797c1ce589f7cbf9ed3539b61cffa7dc206281d7198e161489",
+      "bytes": 5592560,
+      "backup": null
+    },
+    {
+      "target": "modding/runtime/fleet/9001/material-06.dds",
+      "candidate": "modding/staged-runtime/gentildonna/material-06.dds",
+      "before": null,
+      "after": "22680cb0ac82c8f17672a0b5325a59a028bb8057ad79eb422b5bf800c691cc76",
+      "bytes": 5592560,
+      "backup": null
+    },
+    {
+      "target": "modding/runtime/fleet/9001/material-07.dds",
+      "candidate": "modding/staged-runtime/gentildonna/material-07.dds",
+      "before": null,
+      "after": "30d55955bcfb573e85b5e0c5df33b4d80abc0966d81b22ba3d9bc32871e029de",
+      "bytes": 5592560,
+      "backup": null
+    },
+    {
+      "target": "modding/runtime/fleet/9001/material-08.dds",
+      "candidate": "modding/staged-runtime/gentildonna/material-08.dds",
+      "before": null,
+      "after": "5c443bf11a638effff5231843c193fd14a8b5cdf39dc51271be16ffb1f58716b",
+      "bytes": 5592560,
+      "backup": null
+    },
+    {
+      "target": "modding/runtime/fleet/9001/material-09.dds",
+      "candidate": "modding/staged-runtime/gentildonna/material-09.dds",
+      "before": null,
+      "after": "6c1c29c6d9fc44bcf7c205d8cede60417d57b8fbfa7827e5e8f4292a413609e7",
+      "bytes": 5592560,
+      "backup": null
+    },
+    {
+      "target": "modding/runtime/fleet/9001/anchors.bin",
+      "candidate": "modding/staged-runtime/fleet/9001/anchors.bin",
+      "before": null,
+      "after": "bfe7a9c44f182f7e49c0e1e6dc26d7073808f6437cc632750daf43a6bc267b64",
+      "bytes": 72,
+      "backup": null
+    },
+    {
+      "target": "modding/runtime/fleet/9001/carrier.bin",
+      "candidate": "modding/staged-runtime/fleet/9001/carrier.bin",
+      "before": null,
+      "after": "ece1dfb4f351cd3d3ffd0b48e1c8f43e50ef82eb8ae1a6df84cf4151ad28380a",
+      "bytes": 216,
+      "backup": null
+    },
+    {
+      "target": "CARS/350Z/GEOMETRY.BIN",
+      "candidate": "modding/staged-runtime/fleet/9001/GEOMETRY.BIN",
+      "before": "20af1a976458d47301bf6fe6fe27970bb0f59410aa1f4d4f98c9a51a89a54367",
+      "after": "9cd331f96e4190ad2e0aa32c70f613136ba55792ce21e628a1f42ee38e621e4b",
+      "bytes": 2303984,
+      "backup": "modding/backups/before-gentildonna-20261120-094944/CARS/350Z/GEOMETRY.BIN.bak"
+    },
+    {
+      "target": "CARS/350Z/TEXTURES.BIN",
+      "candidate": "modding/staged-runtime/gentildonna/TEXTURES.BIN",
+      "before": "b78af1e132612468439d97dd494ae7253778be559466ceb1f43dde42040deb68",
+      "after": "a25f640e113d731ca8874dc701a2f00f213fa0082a774d06fb489f054fd608f5",
+      "bytes": 617280,
+      "backup": "modding/backups/before-gentildonna-20261120-094944/CARS/350Z/TEXTURES.BIN.bak"
+    },
+    {
+      "target": "modding/runtime/fleet/1062/secondary.bin",
+      "candidate": "modding/staged-runtime/fleet-secondary/1062/secondary.bin",
+      "before": "ad516c128005a7d965990288ce90e3c3657c6d20bd5a45394a39afa2646c25c0",
+      "after": "0208793c2dee8d908645863f0acd6900eb3cf98482e92bbea2af3e2e500c1a82",
+      "bytes": 5780,
+      "backup": "modding/backups/before-gentildonna-20261120-094944/modding/runtime/fleet/1062/secondary.bin.bak"
+    },
+    {
+      "target": "FRONTEND/FrontB.lzc",
+      "candidate": "modding/staged-runtime/gentildonna-menu/FrontB.lzc",
+      "before": "6acdf043e47c9c7ee58e7781f0926e2cf8f109bdfe57e60e330657b24de8703e",
+      "after": "41b6d2418bc48745235caa867bb875d6a9c443ddc7fca2cd98966118cfc7004f",
+      "bytes": 1992934,
+      "backup": "modding/backups/before-gentildonna-20261120-094944/FRONTEND/FrontB.lzc.bak"
+    },
+    {
+      "target": "GLOBAL/GLOBALB.BUN",
+      "candidate": "modding/staged-runtime/gentildonna-menu/GLOBALB.BUN",
+      "before": "53351141101972ca426ddb4dbe83befc55844fa6b31e05859f5d32a177427547",
+      "after": "f8ecaea4bc69065d0ff195f4b9cb19c1d5de62b3b9ce5192e4d19506c34c2c95",
+      "bytes": 8008064,
+      "backup": "modding/backups/before-gentildonna-20261120-094944/GLOBAL/GLOBALB.BUN.bak"
+    },
+    {
+      "target": "GLOBAL/GlobalB.lzc",
+      "candidate": "modding/staged-runtime/gentildonna-menu/GlobalB.lzc",
+      "before": "b5e26f0545bf13b3009e0bf57bb625d780179a242f24fa45a2b3cb4ea3eb1658",
+      "after": "aaaf6c643a78770110f1c9c688d06b8c43bc5197ec1ba7d43cb66f05f2df65d5",
+      "bytes": 5145808,
+      "backup": "modding/backups/before-gentildonna-20261120-094944/GLOBAL/GlobalB.lzc.bak"
+    },
+    {
+      "target": "scripts/UmaRunner.asi",
+      "candidate": "modding/runtime/UmaRunner.asi",
+      "before": "fb5a140f99847f27afc90537d72adb9568afbc9ce81a83c66e3b53d2e9b5c6d7",
+      "after": "4f743781674afbb2ccef9080f51c704b1e8ca2bd18f1cea690c36c047800f6b6",
+      "bytes": 413193,
+      "backup": "modding/backups/before-gentildonna-20261120-094944/scripts/UmaRunner.asi.bak"
+    }
+  ],
+  "installed": false,
+  "gameplay_verified": false
+}

@@ -1,0 +1,24 @@
+{
+  "files": [
+    {
+      "target": "FRONTEND/FrontB.lzc",
+      "candidate": "modding/staged-runtime/gentildonna-menu/FrontB.lzc",
+      "before_sha256": "6acdf043e47c9c7ee58e7781f0926e2cf8f109bdfe57e60e330657b24de8703e",
+      "after_sha256": "41b6d2418bc48745235caa867bb875d6a9c443ddc7fca2cd98966118cfc7004f"
+    },
+    {
+      "target": "GLOBAL/GLOBALB.BUN",
+      "candidate": "modding/staged-runtime/gentildonna-menu/GLOBALB.BUN",
+      "before_sha256": "53351141101972ca426ddb4dbe83befc55844fa6b31e05859f5d32a177427547",
+      "after_sha256": "f8ecaea4bc69065d0ff195f4b9cb19c1d5de62b3b9ce5192e4d19506c34c2c95"
+    },
+    {
+      "target": "GLOBAL/GlobalB.lzc",
+      "candidate": "modding/staged-runtime/gentildonna-menu/GlobalB.lzc",
+      "before_sha256": "b5e26f0545bf13b3009e0bf57bb625d780179a242f24fa45a2b3cb4ea3eb1658",
+      "after_sha256": "aaaf6c643a78770110f1c9c688d06b8c43bc5197ec1ba7d43cb66f05f2df65d5"
+    }
+  ],
+  "installed": false,
+  "visual_review_pending": true
+}

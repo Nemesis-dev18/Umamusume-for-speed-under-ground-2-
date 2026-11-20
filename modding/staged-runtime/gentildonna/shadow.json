@@ -1,0 +1,13 @@
+{
+  "target": "CARS/350Z/TEXTURES.BIN",
+  "before_sha256": "b78af1e132612468439d97dd494ae7253778be559466ceb1f43dde42040deb68",
+  "after_sha256": "a25f640e113d731ca8874dc701a2f00f213fa0082a774d06fb489f054fd608f5",
+  "verification": {
+    "textures": 73,
+    "only_two_shadows_changed": true,
+    "format": "DXT3 128x64, four mips",
+    "metadata_unchanged": true,
+    "sha256": "a25f640e113d731ca8874dc701a2f00f213fa0082a774d06fb489f054fd608f5"
+  },
+  "installed": false
+}
