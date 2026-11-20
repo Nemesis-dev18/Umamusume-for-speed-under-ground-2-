@@ -481,6 +481,7 @@ static HRESULT WINAPI runner_present(IDirect3DDevice9 *device,const RECT *source
   }
   uma_profile_draws=uma_profile_uploads=0;uma_profile_skin_ticks=uma_profile_upload_ticks=uma_profile_draw_ticks=0;
 #endif
+  for(unsigned m=0;m<runner_model_count;m++)if(runner_models[m].renderer.device)fprintf(runner_log,"SPARK model=%u draws=%u contacts=%u,%u blend=%.3f\n",m,runner_models[m].renderer.spark_draws,runner_models[m].renderer.spark_contacts[0],runner_models[m].renderer.spark_contacts[1],runner_models[m].renderer.uploaded.run_blend);
   fprintf(runner_log,"ROAD_UP valid=%d local=%.5f,%.5f,%.5f\n",runner_road_up_valid,runner_road_up[0],runner_road_up[1],runner_road_up[2]);
   for(int i=0;i<16;i++)if(runner_actors[i].used && runner_frames-runner_actors[i].seen<=2)fprintf(runner_log,"ACTOR slot=%d model=%u speed=%.4f blend=%.4f position=%.4f,%.4f,%.4f\n",i,runner_actors[i].model,runner_actors[i].speed,runner_actors[i].state.run_blend,runner_actors[i].world.m[3][0],runner_actors[i].world.m[3][1],runner_actors[i].world.m[3][2]);
   if(ftell(runner_log)>2*1024*1024){fclose(runner_log);runner_log=NULL;}

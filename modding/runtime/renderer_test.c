@@ -217,8 +217,12 @@ int main(int argc,char **argv){
   if(kind==2){
    UmaMotionState invalid=state;invalid.idle_phase=NAN;CHECK(IDirect3DDevice9_BeginScene(device));assert(uma_d3d_draw(&renderer,&invalid,&combined,-1,NULL)==E_INVALIDARG);assert(!renderer.has_uploaded);CHECK(uma_d3d_draw(&renderer,&state,&combined,-1,NULL));CHECK(IDirect3DDevice9_EndScene(device));assert(renderer.has_uploaded);
    DWORD *recovered=read_pixels(device);DWORD recovered_hash=2166136261u;for(int y=20;y<480;y++)for(int x=0;x<640;x++)recovered_hash=(recovered_hash^recovered[y*640+x])*16777619u;assert(recovered_hash==previous_hash);free(recovered);puts("PASS invalid pose invalidates upload cache; repeated valid pose recovers identical GPU pixels");
-   native_sparks=(UmaDrawSparks)(*(void***)device)[83];renderer.spark_draw=observed_sparks;renderer.has_uploaded=0;state=(UmaMotionState){0,0,1};unsigned before=spark_draws;
+   native_sparks=(UmaDrawSparks)(*(void***)device)[83];renderer.spark_draw=observed_sparks;renderer.has_uploaded=0;state=(UmaMotionState){0,0,1};unsigned before=spark_draws;CHECK(IDirect3DDevice9_Clear(device,0,NULL,D3DCLEAR_TARGET|D3DCLEAR_ZBUFFER,0xff252a32,1,0));
    CHECK(IDirect3DDevice9_BeginScene(device));CHECK(uma_d3d_draw(&renderer,&state,&combined,-1,NULL));check_restored(device,white,vb,ib,&original);CHECK(IDirect3DDevice9_EndScene(device));assert(spark_draws>before);
+   DWORD *spark_image=read_pixels(device);renderer.spark_draw=NULL;
+   CHECK(IDirect3DDevice9_Clear(device,0,NULL,D3DCLEAR_TARGET|D3DCLEAR_ZBUFFER,0xff252a32,1,0));CHECK(IDirect3DDevice9_BeginScene(device));CHECK(uma_d3d_draw(&renderer,&state,&combined,-1,NULL));CHECK(IDirect3DDevice9_EndScene(device));DWORD *plain_image=read_pixels(device);unsigned spark_pixels=0;
+   for(int i=0;i<640*480;i++)if(spark_image[i]!=plain_image[i])spark_pixels++;
+   assert(spark_pixels>=8);printf("PASS visible spark contribution: %u changed GPU pixels\n",spark_pixels);free(spark_image);free(plain_image);renderer.spark_draw=observed_sparks;
    fail_sparks=1;CHECK(IDirect3DDevice9_BeginScene(device));assert(uma_d3d_draw(&renderer,&state,&combined,-1,NULL)==E_FAIL);check_restored(device,white,vb,ib,&original);CHECK(IDirect3DDevice9_EndScene(device));fail_sparks=0;
    state.run_blend=0;before=spark_draws;CHECK(IDirect3DDevice9_BeginScene(device));CHECK(uma_d3d_draw(&renderer,&state,&combined,-1,NULL));CHECK(IDirect3DDevice9_EndScene(device));assert(spark_draws==before);renderer.spark_draw=NULL;
    puts("PASS foot spark GPU draw, idle suppression and blend/stream/shader restoration including injected spark failure");

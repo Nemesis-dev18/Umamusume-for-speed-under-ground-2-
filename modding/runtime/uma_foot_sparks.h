@@ -20,10 +20,10 @@ static inline void uma_spark_contacts(const UmaMotion *motion,const UmaVertex *p
 static inline unsigned uma_spark_mesh(float phase,float feet[2][3],const unsigned counts[2],const float *root,UmaVertex output[24]){
  unsigned vertices=0;
  for(int side=0;side<2;side++)if(counts[side])for(int i=0;i<4;i++){
-  float age=uma_fraction(phase*7+i*.237f+side*.37f),width=.006f*(1-age)+.002f;
-  float center[]={feet[side][0]-.16f*age,feet[side][1]+(i-1.5f)*.025f*age,feet[side][2]+.008f+.06f*sinf(age*3.14159265f)};
+  float age=uma_fraction(phase*7+i*.237f+side*.37f),width=.014f*(1-age)+.006f;
+  float center[]={feet[side][0]-.24f*age,feet[side][1]+(side?1.f:-1.f)*(.07f+.09f*age)+(i-1.5f)*.025f*age,feet[side][2]+.035f+.10f*sinf(age*3.14159265f)};
   for(int v=0;v<3;v++){
-   UmaVertex *point=output+vertices++;memset(point,0,sizeof(*point));float p[]={center[0]+(v==0?-.025f:(v==1?.015f:0)),center[1]+(v==0?-width:(v==1?width:0)),center[2]+(v==2?width*2:0)};
+   UmaVertex *point=output+vertices++;memset(point,0,sizeof(*point));float p[]={center[0]+(v==0?-.045f:(v==1?.025f:0)),center[1]+(v==0?-width:(v==1?width:0)),center[2]+(v==2?width*2:0)};
    if(root){for(int c=0;c<3;c++)for(int k=0;k<3;k++)point->position[c]+=p[k]*root[k*3+c];}else memcpy(point->position,p,12);
    point->normal[2]=1;memset(point->bgra,255,4);
   }

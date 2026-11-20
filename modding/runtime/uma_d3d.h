@@ -21,7 +21,7 @@ typedef HRESULT (WINAPI *UmaDrawIndexed)(IDirect3DDevice9*,D3DPRIMITIVETYPE,INT,
 typedef struct {
  IDirect3DDevice9 *device;IDirect3DVertexBuffer9 *vertices;IDirect3DIndexBuffer9 *indices;
  IDirect3DTexture9 *texture;IDirect3DVertexDeclaration9 *declaration;IDirect3DPixelShader9 *shader,*native_shader;UmaShaderCache shaders;
- IDirect3DPixelShader9 *spark_shader;UmaDrawSparks spark_draw;float spark_feet[2][3];unsigned spark_contacts[2];
+ IDirect3DPixelShader9 *spark_shader;UmaDrawSparks spark_draw;float spark_feet[2][3];unsigned spark_contacts[2],spark_draws;
  IDirect3DTexture9 *material_textures[16];unsigned material_texture_count,batch_count;
  struct {uint32_t first,count,texture,visible;} batch[64];
  IDirect3DStateBlock9 *saved;UmaVertex *pose,*local_pose,*surface_base;unsigned skin_samples;float *surface_weight;uint16_t *surface_edges;uint32_t surface_edge_count;
@@ -217,7 +217,7 @@ static HRESULT uma_d3d_draw(UmaD3D *r,const UmaMotionState *state,const D3DMATRI
    UMA_SET(IDirect3DDevice9_SetRenderState(r->device,D3DRS_SRCBLEND,D3DBLEND_ONE));
    UMA_SET(IDirect3DDevice9_SetRenderState(r->device,D3DRS_DESTBLEND,D3DBLEND_ONE));
    UMA_SET(IDirect3DDevice9_SetRenderState(r->device,D3DRS_ZWRITEENABLE,FALSE));
-   UMA_SET(r->spark_draw(r->device,D3DPT_TRIANGLELIST,count/3,sparks,36));
+   UMA_SET(r->spark_draw(r->device,D3DPT_TRIANGLELIST,count/3,sparks,36));r->spark_draws++;
   }
  }
 restore:
