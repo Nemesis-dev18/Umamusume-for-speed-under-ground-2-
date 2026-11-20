@@ -196,22 +196,25 @@ static RunnerActor *runner_actor_update_models(const UmaMatrix *bodies,const uns
 static inline RunnerActor *runner_actor_update(const UmaMatrix *bodies,unsigned count,float seconds,const UmaMatrix *camera){return runner_actor_update_models(bodies,NULL,count,seconds,camera);}
 /* Keep the character upright in the initial road frame instead of inheriting car roll. */
 /* shortcut: no fall/recovery clip yet; a crash keeps the existing gait with an upright root. */
-static int runner_actor_root(const UmaMotionState *state,float rotation[9]){
+static int runner_actor_root_view(const UmaMotionState *state,const UmaMatrix *view,float rotation[9]){
  if(!runner_scene.anchor_valid)return 0;
  for(int actor=0;actor<16;actor++)if(state==&runner_actors[actor].state && runner_actors[actor].up_valid){
-  const RunnerActor *a=&runner_actors[actor];float forward[3],left[3],dot=0,length=0;
+  const RunnerActor *a=&runner_actors[actor];UmaMatrix body=a->world;
+  if(view){UmaMatrix reference=runner_scene.anchor,camera,current;if(runner_camera_change(&camera))reference=uma_matrix_product(&reference,&camera);if(uma_relative_world(view,&reference,&current))body=current;}
+  float forward[3],left[3],dot=0,length=0;
   for(int k=0;k<3;k++)dot+=a->heading[k]*a->up[k];
   for(int k=0;k<3;k++){forward[k]=a->heading[k]-dot*a->up[k];length+=forward[k]*forward[k];}
   if(length<.01f)return 0;
   length=sqrtf(length);for(int k=0;k<3;k++)forward[k]/=length;
   for(int k=0;k<3;k++)left[k]=a->up[(k+1)%3]*forward[(k+2)%3]-a->up[(k+2)%3]*forward[(k+1)%3];
   for(int r=0;r<3;r++)for(int c=0;c<3;c++){
-   rotation[r*3+c]=0;for(int k=0;k<3;k++)rotation[r*3+c]+=(r==0?forward[k]:(r==1?left[k]:a->up[k]))*a->world.m[c][k];
+   rotation[r*3+c]=0;for(int k=0;k<3;k++)rotation[r*3+c]+=(r==0?forward[k]:(r==1?left[k]:a->up[k]))*body.m[c][k];
   }
   return 1;
  }
  return 0;
 }
+static inline int runner_actor_root(const UmaMotionState *state,float rotation[9]){return runner_actor_root_view(state,NULL,rotation);}
 static int runner_combined(IDirect3DDevice9 *device,const UmaShaderEntry *entry,UmaMatrix *output){
  if(!entry || entry->worldviewproj<0)return 0;
  float rows[4][4];if(FAILED(IDirect3DDevice9_GetVertexShaderConstantF(device,(UINT)entry->worldviewproj,&rows[0][0],4)))return 0;
@@ -284,6 +287,15 @@ static int runner_readable(const void *data,size_t bytes){
  }
  return at>=end;
 }
+/* Crash cameras may draw wheels before the character body in the current pass. */
+static unsigned runner_wheel_bodies(UmaMatrix bodies[32],unsigned models[32]){
+ unsigned count=0;for(unsigned i=0;i<runner_scene.bodies && count<32;i++){bodies[count]=runner_scene.body[i];models[count++]=runner_scene.body_model[i];}
+ UmaMatrix camera;int rebased=runner_camera_change(&camera);
+ for(int i=0;i<16 && count<32;i++)if(runner_actors[i].used && runner_frames-runner_actors[i].seen<=2 && runner_actors[i].model<runner_model_count){
+  bodies[count]=rebased?uma_matrix_product(&runner_actors[i].view,&camera):runner_actors[i].view;models[count++]=runner_actors[i].model;
+ }
+ return count;
+}
 static int runner_vertex_wheels(IDirect3DDevice9 *device,UINT vertices,const void *data,UINT stride,UINT first,const UmaMatrix *worldview,UmaVertexBounds *decoded){
  UINT position=0;UmaUploadSnapshot snapshot;const BYTE *points=data;size_t bytes=(size_t)vertices*stride;
  if(!data){
@@ -297,7 +309,8 @@ static int runner_vertex_wheels(IDirect3DDevice9 *device,UINT vertices,const voi
  if(!runner_position_offset(device,stride,&position))return 0;
  UmaVertexBounds bounds;if(!uma_vertex_bounds(points,bytes,vertices,stride,position,&bounds))return 0;
  *decoded=bounds;
- for(unsigned i=0;i<runner_scene.bodies;i++)if(uma_model_wheel_bounds(&bounds,worldview,&runner_scene.body[i],runner_anchors(runner_scene.body_model[i])) || uma_model_tire_batch(points,bytes,vertices,stride,position,worldview,&runner_scene.body[i],runner_anchors(runner_scene.body_model[i])))return 1;
+ UmaMatrix bodies[32];unsigned models[32],count=runner_wheel_bodies(bodies,models);
+ for(unsigned i=0;i<count;i++)if(uma_model_wheel_bounds(&bounds,worldview,bodies+i,runner_anchors(models[i])) || uma_model_tire_batch(points,bytes,vertices,stride,position,worldview,bodies+i,runner_anchors(models[i])))return 1;
  return 0;
 }
 static int runner_root_attachment(IDirect3DDevice9 *device,const UmaShaderEntry *entry,const UmaMatrix *worldview,UINT vertices){
@@ -305,17 +318,19 @@ static int runner_root_attachment(IDirect3DDevice9 *device,const UmaShaderEntry 
  IDirect3DVertexBuffer9 *buffer=NULL;UINT offset=0,stride=0;
  if(FAILED(IDirect3DDevice9_GetStreamSource(device,0,&buffer,&offset,&stride)) || !buffer)return 0;
  IDirect3DVertexBuffer9_Release(buffer);if(stride!=36)return 0;
- for(unsigned i=0;i<runner_scene.bodies;i++){
-  int equal=1;for(int r=0;r<4;r++)for(int c=0;c<3;c++)if(fabsf(worldview->m[r][c]-runner_scene.body[i].m[r][c])>.001f)equal=0;
+ UmaMatrix bodies[32];unsigned models[32],count=runner_wheel_bodies(bodies,models);
+ for(unsigned i=0;i<count;i++){
+  int equal=1;for(int r=0;r<4;r++)for(int c=0;c<3;c++)if(fabsf(worldview->m[r][c]-bodies[i].m[r][c])>.001f)equal=0;
   if(equal)return 1;
  }
  return 0;
 }
 static int runner_wheel_draw(IDirect3DDevice9 *device,D3DPRIMITIVETYPE type,UINT vertices,UINT triangles,const char *method,const void *data,UINT stride,UINT first){
- if(type<D3DPT_TRIANGLELIST || type>D3DPT_TRIANGLEFAN || vertices<4 || vertices>4096 || triangles<2 || triangles>2048 || runner_active_renderer->device!=device || runner_frames-runner_last_owned>=3 || !runner_scene.bodies)return 0;
+ if(type<D3DPT_TRIANGLELIST || type>D3DPT_TRIANGLEFAN || vertices<4 || vertices>4096 || triangles<2 || triangles>2048 || runner_active_renderer->device!=device || runner_frames-runner_last_owned>=3 )return 0;
  DWORD depth=0;if(FAILED(IDirect3DDevice9_GetRenderState(device,D3DRS_ZENABLE,&depth)) || !depth)return 0;
  HRESULT status;UmaShaderEntry *entry=uma_shader_get(&runner_active_renderer->shaders,device,&status);UmaMatrix worldview;if(FAILED(status) || !runner_worldview(device,entry,&worldview))return 0;
- int match=runner_root_attachment(device,entry,&worldview,vertices);for(unsigned i=0;!match && i<runner_scene.bodies;i++)if(uma_model_wheel(&worldview,&runner_scene.body[i],runner_anchors(runner_scene.body_model[i])) || (entry && entry->diffuse_min>=0 && uma_model_side_attachment(&worldview,&runner_scene.body[i],runner_anchors(runner_scene.body_model[i])))){match=1;break;}
+ UmaMatrix bodies[32];unsigned models[32],count=runner_wheel_bodies(bodies,models);
+ int match=runner_root_attachment(device,entry,&worldview,vertices);for(unsigned i=0;!match && i<count;i++)if(uma_model_wheel(&worldview,bodies+i,runner_anchors(models[i])) || (entry && entry->diffuse_min>=0 && uma_model_side_attachment(&worldview,bodies+i,runner_anchors(models[i])))){match=1;break;}
  UmaVertexBounds decoded={{NAN,NAN,NAN},{NAN,NAN,NAN}};
  /* shortcut: CPU-baked tire billboards have at most 32 vertices; native wheel meshes use their socket transform. */
  if(!match && vertices<=32)match=runner_vertex_wheels(device,vertices,data,stride,first,&worldview,&decoded);
@@ -384,7 +399,7 @@ static HRESULT WINAPI runner_draw(IDirect3DDevice9 *device,D3DPRIMITIVETYPE type
       DWORD color=0;IDirect3DDevice9_GetRenderState(device,D3DRS_COLORWRITEENABLE,&color);
       D3DMATRIX combined={0};int transform=entry?1:runner_fixed_combined(device,&combined);
       if(runner_log && runner_owned<=8){fprintf(runner_log,"OWNED frame=%u base=%d min=%u start=%u offset=%u stride=%u color=%lu shaderBytes=%u supported=%d\n",runner_frames,base,minimum,start,offset,stride,(unsigned long)color,entry?entry->bytes:0,entry?entry->supported:0);fflush(runner_log);}
-      if(SUCCEEDED(shader_status) && transform && ((color&7)==7 || color==0)){UmaMotionState *pose=have_worldview?runner_actor_pose_model(&worldview,model):&runner_models[model].idle;float root[9];const float *correction=runner_actor_root(pose,root)?root:NULL;
+      if(SUCCEEDED(shader_status) && transform && ((color&7)==7 || color==0)){UmaMotionState *pose=have_worldview?runner_actor_pose_model(&worldview,model):&runner_models[model].idle;float root[9];const float *correction=runner_actor_root_view(pose,have_worldview?&worldview:NULL,root)?root:NULL;
        if(runner_log && runner_frames%120==0 && have_worldview){
         float up[3]={0};for(int c=0;c<3;c++)for(int k=0;k<3;k++)up[c]+=(correction?correction[6+k]:(k==2?1.f:0.f))*worldview.m[k][c];
         fprintf(runner_log,"VISUAL frame=%u model=%u idleFallback=%d corrected=%d color=%lu upView=%.5f,%.5f,%.5f originView=%.5f,%.5f,%.5f\n",runner_frames,model,pose==&runner_models[model].idle,correction!=NULL,(unsigned long)color,up[0],up[1],up[2],worldview.m[3][0],worldview.m[3][1],worldview.m[3][2]);

@@ -26,6 +26,15 @@ int main(void){
   for(int r=0;r<3;r++)for(int c=0;c<3;c++){float v=0;for(int k=0;k<3;k++)v+=root[r*3+k]*body.m[k][c];assert(fabsf(v-(r==c))<.0001f);}
   assert(runner_actors[0].world.m[3][0]==23);
  }
+ /* A crash can rotate the native car between update and draw. */
+ memset(&runner_scene.anchor,0,sizeof(runner_scene.anchor));for(int k=0;k<4;k++)runner_scene.anchor.m[k][k]=1;
+ runner_scene.references=runner_previous_reference_count=0;
+ for(int angle=0;angle<=180;angle+=15){
+  UmaMatrix current=runner_scene.anchor;float t=angle*3.14159265f/180,root[9];current.m[1][1]=current.m[2][2]=cosf(t);current.m[1][2]=sinf(t);current.m[2][1]=-sinf(t);
+  runner_actors[0].world=runner_scene.anchor;assert(runner_actor_root_view(&runner_actors[0].state,&current,root));
+  for(int r=0;r<3;r++)for(int c=0;c<3;c++){float v=0;for(int k=0;k<3;k++)v+=root[r*3+k]*current.m[k][c];assert(fabsf(v-(r==c))<.0001f);}
+ }
+ puts("PASS current-draw root cancels crash rotation changed since previous actor update");
  memset(runner_actors,0,sizeof(runner_actors));puts("PASS visual root: full roll/pitch cancellation with position unchanged");
  /* A stationary actor must remain idle while another runs and the camera orbits. */
  runner_scene.anchor_key=(UmaSceneKey){.buffer=777};runner_scene.anchor_valid=1;
@@ -158,6 +167,13 @@ int main(void){
  CHECK(IDirect3DDevice9_CreateIndexBuffer(device,sizeof(wheel_indices),0,D3DFMT_INDEX16,D3DPOOL_MANAGED,&wheel_ib,NULL));CHECK(IDirect3DIndexBuffer9_Lock(wheel_ib,0,0,&mapped,0));memcpy(mapped,wheel_indices,sizeof(wheel_indices));CHECK(IDirect3DIndexBuffer9_Unlock(wheel_ib));
  CHECK(IDirect3DDevice9_CreateTexture(device,128,128,1,0,D3DFMT_DXT1,D3DPOOL_MANAGED,&tire,NULL));CHECK(IDirect3DDevice9_CreateTexture(device,128,128,1,0,D3DFMT_A8R8G8B8,D3DPOOL_MANAGED,&non_tire,NULL));
  CHECK(IDirect3DDevice9_SetStreamSource(device,0,wheel_vb,0,36));CHECK(IDirect3DDevice9_SetIndices(device,wheel_ib));
+ /* Last frame's identified character must protect all four sockets before its next body draw. */
+ runner_scene.bodies=0;runner_scene.references=runner_previous_reference_count=0;memset(runner_actors,0,sizeof(runner_actors));
+ runner_actors[0].used=1;runner_actors[0].seen=runner_frames;runner_actors[0].model=0;for(int k=0;k<4;k++)runner_actors[0].view.m[k][k]=1;
+ UmaMatrix recent[32];unsigned recent_models[32];assert(runner_wheel_bodies(recent,recent_models)==1);
+ for(int socket=0;socket<4;socket++){UmaMatrix wheel=recent[0];memcpy(wheel.m[3],uma_corolla_anchors.wheel[socket],12);assert(uma_model_wheel(&wheel,&recent[0],runner_anchors(recent_models[0])));wheel.m[3][0]+=10;assert(!uma_model_wheel(&wheel,&recent[0],runner_anchors(recent_models[0])));}
+ runner_actors[0].seen=runner_frames-3;assert(!runner_wheel_bodies(recent,recent_models));memset(runner_actors,0,sizeof(runner_actors));
+ puts("PASS all four remembered wheel sockets before body draw; foreign position and stale actor rejected");
  runner_scene.bodies=1;memset(&runner_scene.body[0],0,sizeof(UmaMatrix));for(int i=0;i<4;i++)runner_scene.body[0].m[i][i]=1;
  native_draw=runner_original_draw;runner_original_draw=observed_draw;draws=0;unsigned hidden=runner_hidden_wheels;
  for(int kind=0;kind<3;kind++){

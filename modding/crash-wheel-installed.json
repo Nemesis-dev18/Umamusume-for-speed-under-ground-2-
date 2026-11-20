@@ -1,0 +1,15 @@
+{
+  "backup": "modding/backups/before-secondary-20261119-194219",
+  "files": [
+    {
+      "path": "scripts/UmaRunner.asi",
+      "before": "a8e47d80d7a274016d4fd03c114e0ec8116ca1dbd454970a054b0e3ed1bc8ec0",
+      "after": "a25700e86cc76b697bfa560f13e5aabf4470d05053a21bd830e098837c6144dd",
+      "bytes": 398711,
+      "backup_path": "modding/backups/before-secondary-20261119-194219/scripts/UmaRunner.asi.bak"
+    }
+  ],
+  "installed": true,
+  "gameplay_verified": false,
+  "checkpoint": "870898a85d0e2f7248379845548eb47bcfe79ec3"
+}
