@@ -10,7 +10,7 @@ ROOT = Path(__file__).resolve().parents[2]
 WORK = Path('/home/nemesis/Documents/Codex/2026-11-13/tu-x20/work')
 RUNTIME = ROOT / 'modding/runtime'
 CC = WORK / 'mingw/usr/bin/i686-w64-mingw32-gcc'
-FLAGS = [f'--sysroot={WORK}/mingw/usr/i686-w64-mingw32/sys-root', '-std=c11', '-O2', '-Wall', '-Wextra', '-Werror', '-static-libgcc']
+FLAGS = [f'--sysroot={WORK}/mingw/usr/i686-w64-mingw32/sys-root', '-std=c11', '-O2', '-msse2', '-mfpmath=sse', '-Wall', '-Wextra', '-Werror', '-static-libgcc']
 WINE = Path('/home/nemesis/.local/share/Steam/steamapps/common/Proton - Experimental/files/bin/wine')
 
 

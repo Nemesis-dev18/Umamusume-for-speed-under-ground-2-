@@ -19,5 +19,7 @@
     }
   ],
   "installed": false,
-  "gameplay_verified": false
+  "gameplay_verified": false,
+  "superseded_by": "modding/gentildonna-cloth-optimized-install.json",
+  "do_not_install": "Earlier candidate exceeded target 32-bit cloth frame cost; approve optimized receipt instead"
 }

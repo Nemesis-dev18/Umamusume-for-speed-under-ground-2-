@@ -1,0 +1,30 @@
+{
+  "backup_root": "modding/backups/before-gentildonna-cloth-20261120-231305",
+  "files": [
+    {
+      "target": "scripts/UmaRunner.asi",
+      "candidate": "modding/runtime/UmaRunner.asi",
+      "before": "338f60c068f9628bbe74e30d610847f1817729a7ad9e06dee1156b3cb522bd8a",
+      "after": "a256534d520feaf2ba2bbaacb1432b8ffb97b2abadd28b483c1c4278f556767c",
+      "bytes": 414588,
+      "backup": "modding/backups/before-gentildonna-cloth-20261120-231305/scripts/UmaRunner.asi.bak"
+    },
+    {
+      "target": "modding/runtime/fleet/9001/secondary.bin",
+      "candidate": "modding/staged-runtime/gentildonna-cloth/secondary.bin",
+      "before": "f09d70d0524c6225990f768b91be7db91ff8b71ad13dc8d4fb238fc061bc802f",
+      "after": "8f4a0a9a82cfdd49d777941cb46317a9dd969067ec166d2204791b749f47fbb9",
+      "bytes": 6740,
+      "backup": "modding/backups/before-gentildonna-cloth-20261120-231305/modding/runtime/fleet/9001/secondary.bin.bak"
+    }
+  ],
+  "installed": false,
+  "gameplay_verified": false,
+  "requires_approval": true,
+  "scope": "Optimized dense-skirt surface, cached reference lengths and unique edges; SSE2 local build, finite-value checks retained",
+  "performance": {
+    "scope": "Independent 32-bit Wine CPU host, not gameplay FPS",
+    "surface_ms": 5.656,
+    "total_update_ms": 7.45
+  }
+}

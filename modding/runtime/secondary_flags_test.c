@@ -1,5 +1,6 @@
 #include <assert.h>
 #include "uma_secondary.h"
+#include "uma_cloth_surface.h"
 int main(void){
  (void)uma_motion_load;(void)uma_motion_free;(void)uma_secondary_step;
  UmaJoint joint={.parent=-1};UmaMotion asset={.bones=1,.joint=&joint};UmaSecondary *out=calloc(1,sizeof(*out));assert(out);
@@ -10,5 +11,7 @@ int main(void){
   if(i==3){assert(!valid && !out->nodes);continue;}
   assert(valid && out->mask[0]);assert(out->surface_mask[0]==(i==1?1:i==2?2:0));assert(out->groups==(i==1?1u:0u));
  }
+ uint16_t index[]={0,1,2,2,1,0},edges[12];float weight[]={1,1,1};UmaMotion triangle={.indices=6,.index=index};
+ assert(uma_cloth_edges(&triangle,weight,edges)==3);const uint16_t expected[]={0,1,0,2,1,2};assert(!memcmp(edges,expected,sizeof(expected)));memset(weight,0,sizeof(weight));assert(!uma_cloth_edges(&triangle,weight,edges));
  free(out);puts("PASS legacy springs unchanged, cape groups unchanged, dense skirt surface independent of cape averaging, unknown flags rejected");return 0;
 }
