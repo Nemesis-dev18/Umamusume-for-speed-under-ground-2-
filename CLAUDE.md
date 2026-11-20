@@ -941,3 +941,6 @@ Model-quality package installed after authoritative process check found no SPEED
 
 ### Optimized cloth rear-view review before approval
 Diagnostic host now supports explicit rear camera by flipping horizontal and depth axes. Generated30front+30rear snapshots from current SSE2 runtime headers, including idle/run/braking. Reviewed8rear sample frames: skirt hem opens during run and settles after braking; no obvious explosive silhouette distortion in inspected samples. This does not prove all frames, body penetration, slopes/impacts or game FPS. Candidate/target/backup SHA256 checks confirm both active targets remain unchanged and optimized receipt still matches. Approval requests remain unanswered; no install or launch performed.
+
+### Explicit approval received for both pending packages
+User replied apruebo after being asked to approve both packages. Revalidated optimized cloth target/candidate/backups. Locale preparation reproduced all five exact previously reviewed hashes and sizes, retained every existing frontend texture, validated native JDLZ and all eight name/badge keys. No SPEED2 process present before staging. Next: tracked locale backups/checkpoint, scoped seven-file atomic installation, then startup and user gameplay verification.

@@ -20,11 +20,13 @@
   ],
   "installed": false,
   "gameplay_verified": false,
-  "requires_approval": true,
+  "requires_approval": false,
   "scope": "Optimized dense-skirt surface, cached reference lengths and unique edges; SSE2 local build, finite-value checks retained",
   "performance": {
     "scope": "Independent 32-bit Wine CPU host, not gameplay FPS",
     "surface_ms": 5.656,
     "total_update_ms": 7.45
-  }
+  },
+  "user_approved": true,
+  "approval_note": "User replied apruebo after request to approve both optimized cloth and Spanish/emblem packages"
 }
