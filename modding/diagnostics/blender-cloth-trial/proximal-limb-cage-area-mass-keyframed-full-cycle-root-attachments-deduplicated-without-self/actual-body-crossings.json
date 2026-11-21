@@ -1,0 +1,397 @@
+{
+  "scope": "Matched exact noncoplanar body/garment triangle crossings on saved frames only; excludes tangencies/shared-index neighbors. Does not verify cloth self-contact, hair/tail, normals or motion aesthetics.",
+  "results": [
+    {
+      "frame": 1,
+      "native_crossing_pairs": 653,
+      "trial_crossing_pairs": 653,
+      "native_details": {
+        "pairs": 653,
+        "by_body_bone": {
+          "Ankle_L": 58,
+          "Toe_L": 34,
+          "Elbow_R": 6,
+          "Thigh_R": 155,
+          "Hip": 82,
+          "Waist": 9,
+          "Thigh_L": 194,
+          "Knee_L": 115
+        },
+        "fully_pinned_garment_pairs": 19
+      },
+      "trial_details": {
+        "pairs": 653,
+        "by_body_bone": {
+          "Ankle_L": 58,
+          "Toe_L": 34,
+          "Elbow_R": 6,
+          "Thigh_R": 155,
+          "Hip": 82,
+          "Waist": 9,
+          "Thigh_L": 194,
+          "Knee_L": 115
+        },
+        "fully_pinned_garment_pairs": 19
+      }
+    },
+    {
+      "frame": 8,
+      "native_crossing_pairs": 539,
+      "trial_crossing_pairs": 419,
+      "native_details": {
+        "pairs": 539,
+        "by_body_bone": {
+          "Hip": 82,
+          "Thigh_R": 24,
+          "Waist": 7,
+          "Elbow_L": 6,
+          "Thigh_L": 246,
+          "Knee_L": 174
+        },
+        "fully_pinned_garment_pairs": 15
+      },
+      "trial_details": {
+        "pairs": 419,
+        "by_body_bone": {
+          "Hip": 118,
+          "Thigh_L": 121,
+          "Knee_L": 44,
+          "Waist": 7,
+          "Thigh_R": 24,
+          "Sp_Ch_Ribbon0_F_01": 22,
+          "Chest": 75,
+          "Sp_Ch_Ribbon0_F_00": 8
+        },
+        "fully_pinned_garment_pairs": 15
+      }
+    },
+    {
+      "frame": 16,
+      "native_crossing_pairs": 537,
+      "trial_crossing_pairs": 313,
+      "native_details": {
+        "pairs": 537,
+        "by_body_bone": {
+          "Thigh_R": 34,
+          "Knee_R": 145,
+          "Waist": 5,
+          "Hip": 109,
+          "Thigh_L": 244
+        },
+        "fully_pinned_garment_pairs": 17
+      },
+      "trial_details": {
+        "pairs": 313,
+        "by_body_bone": {
+          "Hip": 158,
+          "Ankle_R": 30,
+          "Waist": 5,
+          "Thigh_L": 87,
+          "Thigh_R": 33
+        },
+        "fully_pinned_garment_pairs": 17
+      }
+    },
+    {
+      "frame": 24,
+      "native_crossing_pairs": 862,
+      "trial_crossing_pairs": 652,
+      "native_details": {
+        "pairs": 862,
+        "by_body_bone": {
+          "Knee_R": 88,
+          "Ankle_R": 203,
+          "Toe_R": 64,
+          "Thigh_R": 190,
+          "Hip": 83,
+          "Waist": 8,
+          "Thigh_L": 207,
+          "Elbow_L": 19
+        },
+        "fully_pinned_garment_pairs": 18
+      },
+      "trial_details": {
+        "pairs": 652,
+        "by_body_bone": {
+          "Hip": 163,
+          "Knee_R": 19,
+          "Ankle_R": 270,
+          "Toe_R": 71,
+          "Thigh_L": 93,
+          "Waist": 8,
+          "Thigh_R": 28
+        },
+        "fully_pinned_garment_pairs": 18
+      }
+    },
+    {
+      "frame": 32,
+      "native_crossing_pairs": 344,
+      "trial_crossing_pairs": 1218,
+      "native_details": {
+        "pairs": 344,
+        "by_body_bone": {
+          "Hip": 82,
+          "Thigh_R": 111,
+          "Elbow_R": 8,
+          "Waist": 7,
+          "Thigh_L": 24,
+          "Knee_R": 112
+        },
+        "fully_pinned_garment_pairs": 15
+      },
+      "trial_details": {
+        "pairs": 1218,
+        "by_body_bone": {
+          "Chest": 390,
+          "Spine": 133,
+          "Thigh_R": 84,
+          "Hip": 188,
+          "Waist": 68,
+          "Knee_R": 9,
+          "Thigh_L": 206,
+          "Toe_R": 13,
+          "Ankle_R": 59,
+          "Knee_L": 6,
+          "Sp_Ch_Ribbon0_F_02": 30,
+          "Sp_Ch_Ribbon0_F_01": 32
+        },
+        "fully_pinned_garment_pairs": 15
+      }
+    },
+    {
+      "frame": 40,
+      "native_crossing_pairs": 395,
+      "trial_crossing_pairs": 374,
+      "native_details": {
+        "pairs": 395,
+        "by_body_bone": {
+          "Knee_L": 146,
+          "Thigh_L": 34,
+          "Hip": 110,
+          "Thigh_R": 100,
+          "Waist": 5
+        },
+        "fully_pinned_garment_pairs": 17
+      },
+      "trial_details": {
+        "pairs": 374,
+        "by_body_bone": {
+          "Hip": 208,
+          "Thigh_R": 45,
+          "Thigh_L": 98,
+          "Knee_L": 18,
+          "Waist": 5
+        },
+        "fully_pinned_garment_pairs": 17
+      }
+    },
+    {
+      "frame": 48,
+      "native_crossing_pairs": 855,
+      "trial_crossing_pairs": 486,
+      "native_details": {
+        "pairs": 855,
+        "by_body_bone": {
+          "Ankle_L": 235,
+          "Toe_L": 64,
+          "Knee_L": 88,
+          "Thigh_R": 161,
+          "Hip": 82,
+          "Elbow_R": 19,
+          "Waist": 8,
+          "Thigh_L": 198
+        },
+        "fully_pinned_garment_pairs": 18
+      },
+      "trial_details": {
+        "pairs": 486,
+        "by_body_bone": {
+          "Hip": 254,
+          "Thigh_R": 32,
+          "Thigh_L": 89,
+          "Ankle_L": 40,
+          "Toe_L": 41,
+          "Knee_L": 22,
+          "Waist": 8
+        },
+        "fully_pinned_garment_pairs": 18
+      }
+    },
+    {
+      "frame": 56,
+      "native_crossing_pairs": 539,
+      "trial_crossing_pairs": 1095,
+      "native_details": {
+        "pairs": 539,
+        "by_body_bone": {
+          "Hip": 82,
+          "Thigh_R": 24,
+          "Waist": 7,
+          "Elbow_L": 6,
+          "Thigh_L": 246,
+          "Knee_L": 174
+        },
+        "fully_pinned_garment_pairs": 15
+      },
+      "trial_details": {
+        "pairs": 1095,
+        "by_body_bone": {
+          "Chest": 357,
+          "Spine": 36,
+          "Waist": 19,
+          "Hip": 230,
+          "Thigh_L": 152,
+          "Thigh_R": 75,
+          "Knee_L": 17,
+          "Ankle_L": 47,
+          "Sp_Ch_Ribbon0_F_01": 87,
+          "Sp_Ch_Ribbon0_F_00": 64,
+          "Sp_Ch_Ribbon0_F_02": 11
+        },
+        "fully_pinned_garment_pairs": 15
+      }
+    },
+    {
+      "frame": 64,
+      "native_crossing_pairs": 537,
+      "trial_crossing_pairs": 321,
+      "native_details": {
+        "pairs": 537,
+        "by_body_bone": {
+          "Thigh_R": 34,
+          "Knee_R": 145,
+          "Waist": 5,
+          "Hip": 109,
+          "Thigh_L": 244
+        },
+        "fully_pinned_garment_pairs": 17
+      },
+      "trial_details": {
+        "pairs": 321,
+        "by_body_bone": {
+          "Hip": 222,
+          "Waist": 5,
+          "Thigh_L": 94
+        },
+        "fully_pinned_garment_pairs": 17
+      }
+    },
+    {
+      "frame": 72,
+      "native_crossing_pairs": 862,
+      "trial_crossing_pairs": 418,
+      "native_details": {
+        "pairs": 862,
+        "by_body_bone": {
+          "Knee_R": 88,
+          "Ankle_R": 203,
+          "Toe_R": 64,
+          "Thigh_R": 190,
+          "Hip": 83,
+          "Waist": 8,
+          "Thigh_L": 207,
+          "Elbow_L": 19
+        },
+        "fully_pinned_garment_pairs": 18
+      },
+      "trial_details": {
+        "pairs": 418,
+        "by_body_bone": {
+          "Hip": 234,
+          "Ankle_R": 50,
+          "Thigh_R": 37,
+          "Waist": 8,
+          "Thigh_L": 89
+        },
+        "fully_pinned_garment_pairs": 18
+      }
+    },
+    {
+      "frame": 80,
+      "native_crossing_pairs": 344,
+      "trial_crossing_pairs": 470,
+      "native_details": {
+        "pairs": 344,
+        "by_body_bone": {
+          "Hip": 82,
+          "Thigh_R": 111,
+          "Elbow_R": 8,
+          "Waist": 7,
+          "Thigh_L": 24,
+          "Knee_R": 112
+        },
+        "fully_pinned_garment_pairs": 15
+      },
+      "trial_details": {
+        "pairs": 470,
+        "by_body_bone": {
+          "Hip": 194,
+          "Waist": 7,
+          "Thigh_L": 78,
+          "Chest": 101,
+          "Sp_Ch_Ribbon0_F_01": 66,
+          "Sp_Ch_Ribbon0_F_00": 24
+        },
+        "fully_pinned_garment_pairs": 15
+      }
+    },
+    {
+      "frame": 88,
+      "native_crossing_pairs": 395,
+      "trial_crossing_pairs": 291,
+      "native_details": {
+        "pairs": 395,
+        "by_body_bone": {
+          "Knee_L": 146,
+          "Thigh_L": 34,
+          "Hip": 110,
+          "Thigh_R": 100,
+          "Waist": 5
+        },
+        "fully_pinned_garment_pairs": 17
+      },
+      "trial_details": {
+        "pairs": 291,
+        "by_body_bone": {
+          "Hip": 231,
+          "Waist": 5,
+          "Thigh_L": 27,
+          "Thigh_R": 28
+        },
+        "fully_pinned_garment_pairs": 17
+      }
+    },
+    {
+      "frame": 96,
+      "native_crossing_pairs": 855,
+      "trial_crossing_pairs": 296,
+      "native_details": {
+        "pairs": 855,
+        "by_body_bone": {
+          "Ankle_L": 235,
+          "Toe_L": 64,
+          "Knee_L": 88,
+          "Thigh_R": 161,
+          "Hip": 82,
+          "Elbow_R": 19,
+          "Waist": 8,
+          "Thigh_L": 198
+        },
+        "fully_pinned_garment_pairs": 18
+      },
+      "trial_details": {
+        "pairs": 296,
+        "by_body_bone": {
+          "Hip": 229,
+          "Ankle_L": 7,
+          "Waist": 8,
+          "Thigh_L": 26,
+          "Thigh_R": 26
+        },
+        "fully_pinned_garment_pairs": 18
+      }
+    }
+  ],
+  "accepted_for_game": false
+}

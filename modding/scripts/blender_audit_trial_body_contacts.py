@@ -26,7 +26,7 @@ def crossing_count(vertices,garments,body,body_labels,pinned):
 
 def main(name):
     folder=(BASE/name).resolve();assert folder.parent==BASE.resolve()
-    report=json.loads((folder/'simulation-report.json').read_text());mesh=trial_mesh(report)
+    report=json.loads((folder/'simulation-report.json').read_text());mesh=trial_mesh(report,folder)
     garments=[ids for _,ids in source.sets['garment']];body=[]
     for group in source.meta['groups']:
         if not group['material'].startswith('mtl_bdy'):continue

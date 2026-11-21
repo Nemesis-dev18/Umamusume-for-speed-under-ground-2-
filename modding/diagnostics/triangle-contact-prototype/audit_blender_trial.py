@@ -17,7 +17,11 @@ def strain_metrics(pose,native,edges):
     return {'max_edge_length_error_m':max(absolute,default=0),'max_edge_strain':max(values,default=0),'p95_edge_strain':values[int((len(values)-1)*.95)] if values else 0,'edges_above_ten_percent':sum(v>.1 for v in values)}
 
 
-def trial_mesh(report):
+def trial_mesh(report,folder=None):
+    if folder is not None and (folder/'simulation-topology.json').is_file():
+        data=json.loads((folder/'simulation-topology.json').read_text());data['render_to_sim']={int(v):p for v,p in data['render_to_sim'].items()}
+        count=len(data['sim_roots']);assert count==len(data['pins']) and all(0<=p<count for p in data['render_to_sim'].values()) and all(0<=a<count and 0<=b<count for a,b in data['edges'])
+        return data
     here=Path(__file__).resolve().parent;root=here.parents[2]
     roots,mapping,tris,edges,mass=physical_mesh(json.loads((here/'diamond-topology-position-skin.json').read_text()))
     model=(root/'modding/runtime/fleet/1067/model.umab').read_bytes();nv,_,nb=struct.unpack_from('<3I',model,8)
@@ -47,7 +51,7 @@ def main(name):
     here=Path(__file__).resolve().parent;root=here.parents[2];base=root/'modding/diagnostics/blender-cloth-trial'
     folder=(base/name).resolve();assert folder.parent==base.resolve()
     report=json.loads((folder/'simulation-report.json').read_text())
-    mesh=trial_mesh(report)
+    mesh=trial_mesh(report,folder)
     rows=[]
     for record in report['frames']:
         frame=record['frame'];pose=json.loads((folder/f'trial-{frame:03d}.json').read_text());assert len(pose)==len(mesh['sim_roots'])

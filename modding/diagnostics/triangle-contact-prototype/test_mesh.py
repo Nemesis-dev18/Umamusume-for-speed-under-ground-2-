@@ -1,5 +1,5 @@
 import unittest
-from mesh import physical_mesh,root_attachment_weights
+from mesh import physical_mesh,root_attachment_weights,proximal_attachment_weights
 
 
 class PhysicalMeshTests(unittest.TestCase):
@@ -10,6 +10,15 @@ class PhysicalMeshTests(unittest.TestCase):
 
     def test_invalid_hierarchy_is_rejected(self):
         with self.assertRaises(AssertionError):root_attachment_weights([1,-1],{0},[])
+
+    def test_proximal_seam_retains_attachment_and_frees_distal_panel(self):
+        parents=[-1,0,1];skins=[([1],[1]) for _ in range(4)]
+        weights=proximal_attachment_weights(parents,{1,2},skins,[[0,0,z] for z in (0,.1,.2,.3)],{1:[0,0,0]},{1:[0,0,1]},[(0,1),(1,2),(2,3)])
+        self.assertEqual(weights,[1,1,.5,0])
+
+    def test_child_only_piece_does_not_gain_an_invented_attachment(self):
+        weights=proximal_attachment_weights([-1,0,1],{1,2},[([2],[1])],[[0,0,1]],{1:[0,0,0]},{1:[0,0,1]},[])
+        self.assertEqual(weights,[0])
 
     def fixture(self):
         return {'weights':{'0':0,'1':1,'2':1,'3':1},'candidate_seams':[[1,3]],'triangles':[[0,1,2],[0,2,3]]}

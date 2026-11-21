@@ -10,14 +10,14 @@ import numpy as np
 ROOT=Path(__file__).resolve().parents[2]
 HERE=ROOT/'modding/diagnostics/triangle-contact-prototype'
 sys.path.insert(0,str(HERE));sys.path.insert(0,str(Path(__file__).resolve().parent))
-from mesh import physical_mesh,root_attachment_weights
+from mesh import physical_mesh,root_attachment_weights,proximal_attachment_weights
 import blender_diamond_intersections as source
 from mathutils import Vector
 from mathutils.bvhtree import BVHTree
 
 
 def main():
-    base=ROOT/'modding/diagnostics/blender-cloth-trial';no_self='--no-self' in sys.argv;no_body='--no-body' in sys.argv;root_pins='--root-attachments' in sys.argv;full_cycle='--full-cycle' in sys.argv;limit=1.5 if full_cycle else .3;area_mass='--area-mass' in sys.argv;limb_cage='--limb-cage' in sys.argv;out=base/(('limb-cage-' if limb_cage else '')+('area-mass-' if area_mass else '')+'keyframed-'+('full-cycle-' if full_cycle else '')+('root-attachments-' if root_pins else '')+('structural-only' if no_body and no_self else 'self-contact-only' if no_body else 'deduplicated-without-self' if no_self else 'deduplicated-full-contact'));out.mkdir(parents=True,exist_ok=True)
+    base=ROOT/'modding/diagnostics/blender-cloth-trial';no_self='--no-self' in sys.argv;no_body='--no-body' in sys.argv;proximal='--proximal-attachments' in sys.argv;root_pins='--root-attachments' in sys.argv or proximal;full_cycle='--full-cycle' in sys.argv;limit=1.5 if full_cycle else .3;area_mass='--area-mass' in sys.argv;limb_cage='--limb-cage' in sys.argv;out=base/(('proximal-' if proximal else '')+('limb-cage-' if limb_cage else '')+('area-mass-' if area_mass else '')+'keyframed-'+('full-cycle-' if full_cycle else '')+('root-attachments-' if root_pins else '')+('structural-only' if no_body and no_self else 'self-contact-only' if no_body else 'deduplicated-without-self' if no_self else 'deduplicated-full-contact'));out.mkdir(parents=True,exist_ok=True)
     topo=json.loads((HERE/'diamond-topology-position-skin.json').read_text())
     roots,mapping,tris,edges,mass=physical_mesh(topo)
     model=(ROOT/'modding/runtime/fleet/1067/model.umab').read_bytes();nv,_,nb=struct.unpack_from('<3I',model,8)
@@ -26,6 +26,11 @@ def main():
     cloth_nodes={n['bone'] for n in spring['spring_nodes'] if 'Skirt' in n['category'] or n['category']=='Sleeve'}
     skins=[(struct.unpack_from('<4H',model,40+nv*36+v*24),struct.unpack_from('<4f',model,40+nv*36+v*24+8)) for v in roots]
     pin_weights=root_attachment_weights(parents,cloth_nodes,skins) if root_pins else [1-w for w in mass]
+    if proximal:
+        secondary=(ROOT/'modding/runtime/fleet/1067/secondary.bin').read_bytes();nodes=struct.unpack_from('<I',secondary,12)[0]
+        tips={struct.unpack_from('<H',secondary,24+48*i)[0]:struct.unpack_from('<3f',secondary,32+48*i) for i in range(nodes)}
+        points=[struct.unpack_from('<3f',model,40+36*v) for v in roots];origins={b:struct.unpack_from('<3f',model,44+nv*60+16*b) for b in cloth_nodes}
+        pin_weights=proximal_attachment_weights(parents,cloth_nodes,skins,points,origins,tips,edges)
     adjacent=[[] for _ in roots]
     for a,b in edges:adjacent[a].append(b);adjacent[b].append(a)
     seen=set();keep=set();excluded=[]
@@ -43,6 +48,8 @@ def main():
     duplicate_faces=len(sim_tris)-len({tuple(sorted(tri)) for tri in sim_tris})
     sim_tris=list({tuple(sorted(tri)):tri for tri in sim_tris}.values())
     sim_roots=[roots[v] for v in order]
+    state={'render_to_sim':{v:remap[p] for v,p in mapping.items() if p in keep},'sim_roots':sim_roots,'pins':[pin_weights[v] for v in order],'edges':[(remap[a],remap[b]) for a,b in edges if a in keep],'vertices':nv}
+    (out/'simulation-topology.json').write_text(json.dumps(state,separators=(',',':'))+'\n')
     assert len(sim_roots)>2000 and all(all(v in keep for v in tri) for tri in tris if tri[0] in keep)
     body=[]
     for group in source.meta['groups']:
@@ -116,7 +123,7 @@ def main():
         if rejected:break
         if displacement>limit:
             rejected=f'Offset from native reference exceeds {limit}m diagnostic limit; not proof of solver divergence';break
-    report={'scope':'Keyframed offline Blender cloth trial, not runtime implementation. Body selection includes rigid costume surfaces. Does not prove collision-free or visually accepted output.','simulation_particles':len(sim_roots),'native_root_attachments':root_pins,'body_collision':not no_body,'self_collision':not no_self,'cloth_area_m2':cloth_area,'mass_per_particle_kg':settings.mass,'assumed_areal_density_kg_m2':.3 if area_mass else None,'total_assigned_particle_mass_kg':settings.mass*len(sim_roots),'diagnostic_reference_offset_limit_m':limit,'fully_pinned_particles':sum(pin_weights[i]>=.9999 for i in order),'duplicate_physical_faces_removed':duplicate_faces,'unattached_particles_retained_on_native_animation':len(excluded),'body_triangles':len(body_tris),'limb_only_collision_cage':limb_cage,'elapsed_seconds':time.monotonic()-begin,'frames':rows,'rejected':rejected,'accepted_for_game':False}
+    report={'scope':'Keyframed offline Blender cloth trial, not runtime implementation. Body selection includes rigid costume surfaces. Does not prove collision-free or visually accepted output.','simulation_particles':len(sim_roots),'native_root_attachments':root_pins,'proximal_attachment_bands':proximal,'body_collision':not no_body,'self_collision':not no_self,'cloth_area_m2':cloth_area,'mass_per_particle_kg':settings.mass,'assumed_areal_density_kg_m2':.3 if area_mass else None,'total_assigned_particle_mass_kg':settings.mass*len(sim_roots),'diagnostic_reference_offset_limit_m':limit,'fully_pinned_particles':sum(pin_weights[i]>=.9999 for i in order),'duplicate_physical_faces_removed':duplicate_faces,'unattached_particles_retained_on_native_animation':len(excluded),'body_triangles':len(body_tris),'limb_only_collision_cage':limb_cage,'elapsed_seconds':time.monotonic()-begin,'frames':rows,'rejected':rejected,'accepted_for_game':False}
     (out/'simulation-report.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report),flush=True)
 
 

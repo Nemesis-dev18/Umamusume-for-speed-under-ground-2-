@@ -40,6 +40,50 @@ def root_attachment_weights(parents,cloth_nodes,skins):
     return result
 
 
+
+def proximal_attachment_weights(parents,cloth_nodes,skins,points,origins,tips,edges):
+    root_attachment_weights(parents,cloth_nodes,skins)
+    assert len(points)==len(skins)
+    adj=[set() for _ in points]
+    for a,b in edges:
+        assert 0<=a<len(points) and 0<=b<len(points)
+        adj[a].add(b);adj[b].add(a)
+    component={}
+    for v in range(len(points)):
+        if v in component:continue
+        stack=[v];component[v]=v
+        while stack:
+            a=stack.pop()
+            for b in adj[a]:
+                if b not in component:component[b]=v;stack.append(b)
+    result=[];contributions=[];groups={}
+    for v,(bones,weights) in enumerate(skins):
+        body=0;root_weights={}
+        for b,w in zip(bones,weights):
+            ancestor=b
+            while ancestor>=0 and ancestor not in cloth_nodes:ancestor=parents[ancestor]
+            if ancestor<0:body+=w
+            elif parents[ancestor] not in cloth_nodes and w>0:
+                root_weights[ancestor]=root_weights.get(ancestor,0)+w
+        result.append(body);contributions.append(root_weights)
+        for root in root_weights:
+            tip=tips[root];squared=sum(x*x for x in tip);assert squared>1e-12
+            axial=sum((points[v][k]-origins[root][k])*tip[k] for k in range(3))/squared
+            assert math.isfinite(axial)
+            groups.setdefault((component[v],root),[]).append((axial,v))
+    factors={}
+    for (_,root),values in groups.items():
+        minimum=min(t for t,_ in values);members={v for _,v in values}
+        seeds={v for t,v in values if t<=minimum+1e-6}
+        attached=seeds|{b for a in seeds for b in adj[a] if b in members}
+        fade={b for a in attached for b in adj[a] if b in members}-attached
+        for v in attached:factors[v,root]=1
+        for v in fade:factors[v,root]=.5
+    for v,weights in enumerate(contributions):
+        result[v]=min(1.,result[v]+sum(w*factors.get((v,root),0) for root,w in weights.items()))
+    return result
+
+
 def main():
     here=Path(__file__).resolve().parent
     root=here.parents[2]
