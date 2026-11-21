@@ -1,0 +1,78 @@
+{
+  "scope": "Staged UMALv1 only; runtime does not discover these files. Fold links are preserved but rejected by experimental integrator.",
+  "files": [
+    {
+      "id": 1006,
+      "candidate": "modding/staged-runtime/native-garment-support/1006.umal",
+      "bytes": 80,
+      "sha256": "7c02f8842d6624fca5ce1d8bee9363777df11ed7ed945b0ec6685d56b647e55a",
+      "links": 4,
+      "fold_links_unsupported": 0,
+      "installed": false
+    },
+    {
+      "id": 1015,
+      "candidate": "modding/staged-runtime/native-garment-support/1015.umal",
+      "bytes": 112,
+      "sha256": "974af66c4c53f0b25e4f7e985077e211dfde60ef83b98d1f390702e37a18813a",
+      "links": 6,
+      "fold_links_unsupported": 6,
+      "installed": false
+    },
+    {
+      "id": 1032,
+      "candidate": "modding/staged-runtime/native-garment-support/1032.umal",
+      "bytes": 16,
+      "sha256": "f889c9163677d915c28ba60666ce399c4bb9c403574a603ed68213ad398ba7c4",
+      "links": 0,
+      "fold_links_unsupported": 0,
+      "installed": false
+    },
+    {
+      "id": 1052,
+      "candidate": "modding/staged-runtime/native-garment-support/1052.umal",
+      "bytes": 208,
+      "sha256": "4c5884a6608ce5b2dc52ee1b6cbd64420d7249cc1abe5c434094bc2d11126cab",
+      "links": 12,
+      "fold_links_unsupported": 2,
+      "installed": false
+    },
+    {
+      "id": 1058,
+      "candidate": "modding/staged-runtime/native-garment-support/1058.umal",
+      "bytes": 48,
+      "sha256": "a0bfcbf4103b9de726c1241c8bb8ace220b2db065d761b2d4334d2c1514966f2",
+      "links": 2,
+      "fold_links_unsupported": 0,
+      "installed": false
+    },
+    {
+      "id": 1062,
+      "candidate": "modding/staged-runtime/native-garment-support/1062.umal",
+      "bytes": 48,
+      "sha256": "3cd784e9edc3b87bb0a0650a0ed2a5db53a17e70ece5aa9acc3b8d8a4194dace",
+      "links": 2,
+      "fold_links_unsupported": 0,
+      "installed": false
+    },
+    {
+      "id": 1067,
+      "candidate": "modding/staged-runtime/native-garment-support/1067.umal",
+      "bytes": 80,
+      "sha256": "3115bbf4bc1522cb216a33b38cf4650fd1c1b0d94298683a3f03f5c756a2517e",
+      "links": 4,
+      "fold_links_unsupported": 0,
+      "installed": false
+    },
+    {
+      "id": 1068,
+      "candidate": "modding/staged-runtime/native-garment-support/1068.umal",
+      "bytes": 16,
+      "sha256": "47cd896f721b44780c5a3abd0690bffda04d3a4d9ef4d5ea24cd0e62fa0fd252",
+      "links": 0,
+      "fold_links_unsupported": 0,
+      "installed": false
+    }
+  ],
+  "installed": false
+}

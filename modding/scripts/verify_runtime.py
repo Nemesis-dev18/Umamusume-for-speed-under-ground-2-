@@ -27,6 +27,8 @@ def main():
     run([CC, *FLAGS, RUNTIME / 'cloth_subset_test.c', '-o', build / 'cloth-subset-test.exe', '-lm'])
     run(['gcc', '-std=c11', '-O2', '-Wall', '-Wextra', '-Werror', RUNTIME / 'scene_speed_test.c', '-o', build / 'scene-speed-test', '-lm'])
     run([build / 'scene-speed-test'])
+    run(['gcc', '-std=c11', '-O2', '-Wall', '-Wextra', '-Werror', RUNTIME / 'garment_links_test.c', '-o', build / 'garment-links-test', '-lm'])
+    run([build / 'garment-links-test'])
     run(['gcc', '-std=c11', '-O2', '-Wall', '-Wextra', '-Werror', RUNTIME / 'secondary_flags_test.c', '-o', build / 'secondary-flags-test', '-lm'])
     run([build / 'secondary-flags-test'])
     run(['gcc', '-std=c11', '-O2', '-Wall', '-Wextra', '-Werror', RUNTIME / 'body_contact_test.c', '-o', build / 'body-contact-test', '-lm'])

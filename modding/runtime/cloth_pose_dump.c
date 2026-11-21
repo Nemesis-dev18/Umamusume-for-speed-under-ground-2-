@@ -25,7 +25,7 @@ static void collider_snapshot(const char *folder,const char *name,const UmaMotio
  assert(fputs("\n]\n",f)>=0 && !fclose(f));
 }
 int main(int argc,char **argv){
- assert(argc==4);UmaMotion a={0};FILE *f=fopen(argv[1],"rb");assert(f && uma_motion_load(f,&a));fclose(f);UmaSecondary *c=calloc(1,sizeof(*c));UmaSecondaryState *s=calloc(1,sizeof(*s));assert(c && s);f=fopen(argv[2],"rb");assert(f && uma_secondary_load(f,&a,c));fclose(f);a.secondary_mask=c->mask;a.surface_mask=c->surface_mask;
+ assert(argc==4 || argc==5);UmaMotion a={0};FILE *f=fopen(argv[1],"rb");assert(f && uma_motion_load(f,&a));fclose(f);UmaSecondary *c=calloc(1,sizeof(*c));UmaSecondaryState *s=calloc(1,sizeof(*s));assert(c && s);f=fopen(argv[2],"rb");assert(f && uma_secondary_load(f,&a,c));fclose(f);if(argc==5){f=fopen(argv[4],"rb");assert(f && uma_secondary_links_load(f,&a,c));fclose(f);}a.secondary_mask=c->mask;a.surface_mask=c->surface_mask;
  UmaVertex *pose=malloc(a.vertices*36),*base=malloc(a.vertices*36);float *weight=calloc(a.vertices,sizeof(float));uint16_t *edges=malloc(a.indices*4);assert(pose && base && weight && edges);
  for(unsigned v=0;v<a.vertices;v++)for(int j=0;j<4;j++)if(c->surface_mask[a.skin[v].bone[j]])weight[v]+=a.skin[v].weight[j];
  unsigned count=uma_cloth_edges(&a,weight,edges);float *lengths=malloc((count?count:1)*sizeof(float));assert(lengths);snapshot(argv[3],"rest",&a,a.rest);UmaMotionState state={0};unsigned written=1;

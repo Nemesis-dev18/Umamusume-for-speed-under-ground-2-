@@ -1,9 +1,10 @@
 #ifndef UMA_SECONDARY_H
 #define UMA_SECONDARY_H
 #include "uma_motion.h"
+#include "uma_garment_links.h"
 typedef struct {uint16_t bone,flags,first,count;float tip[3],hz,damping,gravity,radius,cone,wind,apply;} UmaSpring;
 typedef struct {uint16_t bone0,bone1,kind,reserved;float a[3],b[3],radius;} UmaClothCollider;
-typedef struct {uint32_t bones,nodes,colliders,refs,groups;UmaSpring node[512];UmaClothCollider collider[128];uint16_t ref[4096];uint8_t mask[512],surface_mask[512];} UmaSecondary;
+typedef struct {uint32_t bones,nodes,colliders,refs,groups;UmaSpring node[512];UmaClothCollider collider[128];uint16_t ref[4096];uint8_t mask[512],surface_mask[512];UmaGarmentLinks links;int16_t link_tip[512];} UmaSecondary;
 typedef struct {float tip[512][3],previous[512][3],rotation[512*4],remainder;uint32_t revision;int initialized;} UmaSecondaryState;
 _Static_assert(sizeof(UmaSpring)==48,"UMAS spring layout");
 _Static_assert(sizeof(UmaClothCollider)==36,"UMAS collider layout");
@@ -33,6 +34,24 @@ static int uma_secondary_load(FILE *file,const UmaMotion *asset,UmaSecondary *ou
  *out=*c;valid=1;
  done:free(c);return valid;
 }
+static inline int uma_secondary_links_load(FILE *file,const UmaMotion *asset,UmaSecondary *c){
+ if(!c || !asset || !asset->joint || c->bones!=asset->bones || c->nodes>512)return 0;
+ UmaGarmentLinks links={0};int16_t tips[512];for(unsigned i=0;i<512;i++)tips[i]=-1;
+ if(!uma_garment_links_load(file,asset,&links))return 0;
+ for(unsigned i=0;i<links.count;i++){
+  const UmaGarmentLink *p=links.pair+i;if(p->flags)return 0;unsigned ids[]={p->a,p->b};
+  for(int end=0;end<2;end++){
+   unsigned bone=ids[end];int parent=asset->joint[bone].parent,found=-1;
+   for(unsigned n=0;n<c->nodes;n++)if(c->node[n].bone==parent){
+    float error=0;for(int k=0;k<3;k++)error=fmaxf(error,fabsf(c->node[n].tip[k]-(asset->joint[bone].rest[k]-asset->joint[parent].rest[k])));
+    if(error<.00001f)found=(int)n;
+   }
+   if(found<0 || (tips[found]>=0 && tips[found]!=(int)bone))return 0;
+   tips[found]=(int16_t)bone;
+  }
+ }
+ c->links=links;memcpy(c->link_tip,tips,sizeof(tips));return 1;
+}
 static float uma_secondary_length(const float *v){return sqrtf(v[0]*v[0]+v[1]*v[1]+v[2]*v[2]);}
 static void uma_secondary_point(const float *m,const float *p,float *out){for(int k=0;k<3;k++)out[k]=m[k*4+3]+m[k*4]*p[0]+m[k*4+1]*p[1]+m[k*4+2]*p[2];}
 static void uma_secondary_reset(UmaSecondaryState *s,unsigned bones){memset(s,0,sizeof(*s));for(unsigned i=0;i<bones;i++)s->rotation[i*4+3]=1;}
@@ -52,6 +71,7 @@ static int uma_secondary_step(const UmaSecondary *c,UmaSecondaryState *s,const U
  s->remainder+=dt;const float h=1.f/120;
  for(int steps=0;s->remainder>=h && steps<12;steps++,s->remainder-=h){
   float matrices[512*12];if(!uma_motion_matrices(asset,pose->idle_phase,pose->run_phase,pose->run_blend,s->rotation,matrices))return 0;
+  float connected[512*3];if(c->links.count && !uma_garment_link_forces(asset,&c->links,matrices,connected))return 0;
   for(unsigned i=0;i<c->nodes;i++){
    const UmaSpring *n=c->node+i;const float *m=matrices+n->bone*12;float *q=s->rotation+n->bone*4,origin[3],target[3],base[9];
    uma_secondary_point(m,asset->joint[n->bone].rest,origin);
@@ -60,6 +80,7 @@ static int uma_secondary_step(const UmaSecondary *c,UmaSecondaryState *s,const U
    /* Cape rest directions follow gravity in character space, not the runner's leaning chest. */
    for(int a=0;a<3;a++){target[a]=origin[a];if(n->flags&31)target[a]+=n->tip[a];else for(int k=0;k<3;k++)target[a]+=base[a*3+k]*n->tip[k];}
    float length=uma_secondary_length(n->tip),omega=6.2831853f*n->hz,drag=expf(-2*n->damping*omega*h),next[3];
+   if(c->links.count && c->link_tip[i]>=0){float direction[3],norm=0;const float *force=connected+c->link_tip[i]*3;for(int k=0;k<3;k++){direction[k]=target[k]-origin[k]+force[k];norm+=direction[k]*direction[k];}if(norm>1e-12f){norm=sqrtf(norm);for(int k=0;k<3;k++)target[k]=origin[k]+direction[k]*length/norm;}}
    for(int k=0;k<3;k++){float external=-fmaxf(-40,fminf(40,acceleration[k]));if(k==0)external-=fminf(8,n->wind*speed*fabsf(speed));if(k==2)external-=n->gravity;next[k]=s->tip[i][k]+(s->tip[i][k]-s->previous[i][k])*drag+(omega*omega*(target[k]-s->tip[i][k])+external)*h*h;}
    /* Keep every joint length and angular limit bounded, including after a teleport. */
    uma_secondary_limit(next,origin,target,length,n->cone);
@@ -82,7 +103,7 @@ static int uma_secondary_step(const UmaSecondary *c,UmaSecondaryState *s,const U
    const float identity[4]={0,0,0,1};float applied[4];uma_quaternion_mix(identity,desired,n->apply,applied);
    if(n->flags&256)uma_quaternion_mix(q,applied,1-expf(-h/.2f),q);else memcpy(q,applied,16);
   }
-  if(c->groups){
+  if(c->groups && !c->links.count){
    for(unsigned group=1;group<=16;group++)if(c->groups&(1u<<(group-1))){
     float sum[4]={0};unsigned count=0;
     for(unsigned i=0;i<c->nodes;i++)if((c->node[i].flags&31)==group){const float *q=s->rotation+c->node[i].bone*4;for(int k=0;k<4;k++)sum[k]+=q[k];count++;}

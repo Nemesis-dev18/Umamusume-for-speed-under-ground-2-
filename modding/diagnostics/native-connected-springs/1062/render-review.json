@@ -1,0 +1,20 @@
+{
+  "scope": "Local Cycles contact sheet of actual C runtime pose samples; not in-game lighting, continuous animation, clipping or FPS acceptance.",
+  "character_id": 1062,
+  "frames": [
+    30,
+    90,
+    150
+  ],
+  "rows": [
+    "baseline",
+    "linked"
+  ],
+  "visual_approved": false,
+  "gameplay_verified": false,
+  "failed_dimensions": [
+    "cape panel coherence/body intersection",
+    "lower-row framing in diagnostic contact sheet"
+  ],
+  "failure": "Linked candidate exposes body/inner surfaces through deformed cape; not accepted. Renderer camera framing adjusted in source for next render."
+}

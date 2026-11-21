@@ -1,0 +1,102 @@
+{
+  "scope": "Finite independent pose snapshots only; no actual-mesh clipping, visual naturalness, FPS or game acceptance claim.",
+  "results": [
+    {
+      "id": 1062,
+      "pose": "frame-000",
+      "maximum_position_change_m": 0.0,
+      "vertices_changed_over_1mm": 0
+    },
+    {
+      "id": 1062,
+      "pose": "frame-030",
+      "maximum_position_change_m": 0.2243708278018295,
+      "vertices_changed_over_1mm": 375
+    },
+    {
+      "id": 1062,
+      "pose": "frame-060",
+      "maximum_position_change_m": 0.323828863329628,
+      "vertices_changed_over_1mm": 378
+    },
+    {
+      "id": 1062,
+      "pose": "frame-090",
+      "maximum_position_change_m": 0.3029049251136337,
+      "vertices_changed_over_1mm": 379
+    },
+    {
+      "id": 1062,
+      "pose": "frame-120",
+      "maximum_position_change_m": 0.3845982707717805,
+      "vertices_changed_over_1mm": 369
+    },
+    {
+      "id": 1062,
+      "pose": "frame-150",
+      "maximum_position_change_m": 0.2937154609986245,
+      "vertices_changed_over_1mm": 383
+    },
+    {
+      "id": 1062,
+      "pose": "frame-179",
+      "maximum_position_change_m": 0.16314917012506044,
+      "vertices_changed_over_1mm": 373
+    },
+    {
+      "id": 1062,
+      "pose": "rest",
+      "maximum_position_change_m": 0.0,
+      "vertices_changed_over_1mm": 0
+    },
+    {
+      "id": 1067,
+      "pose": "frame-000",
+      "maximum_position_change_m": 0.0,
+      "vertices_changed_over_1mm": 0
+    },
+    {
+      "id": 1067,
+      "pose": "frame-030",
+      "maximum_position_change_m": 0.0042714612670837464,
+      "vertices_changed_over_1mm": 1219
+    },
+    {
+      "id": 1067,
+      "pose": "frame-060",
+      "maximum_position_change_m": 0.009047412856539132,
+      "vertices_changed_over_1mm": 960
+    },
+    {
+      "id": 1067,
+      "pose": "frame-090",
+      "maximum_position_change_m": 0.019037367600640127,
+      "vertices_changed_over_1mm": 1156
+    },
+    {
+      "id": 1067,
+      "pose": "frame-120",
+      "maximum_position_change_m": 0.018870742748924432,
+      "vertices_changed_over_1mm": 1807
+    },
+    {
+      "id": 1067,
+      "pose": "frame-150",
+      "maximum_position_change_m": 0.006067100662768673,
+      "vertices_changed_over_1mm": 993
+    },
+    {
+      "id": 1067,
+      "pose": "frame-179",
+      "maximum_position_change_m": 0.004220953183928485,
+      "vertices_changed_over_1mm": 1233
+    },
+    {
+      "id": 1067,
+      "pose": "rest",
+      "maximum_position_change_m": 0.0,
+      "vertices_changed_over_1mm": 0
+    }
+  ],
+  "accepted_for_game": false
+}

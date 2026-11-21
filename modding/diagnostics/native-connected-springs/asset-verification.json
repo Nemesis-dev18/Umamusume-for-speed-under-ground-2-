@@ -1,0 +1,46 @@
+{
+  "scope": "Independent host test. Fold data preserved but unsupported by experimental integrator. No game/visual/contact acceptance.",
+  "results": [
+    {
+      "id": 1006,
+      "result": "PASS links=4 frames360 finite quaternion/skin; native endpoint maps valid; no gameplay or appearance acceptance",
+      "motion_tested": true
+    },
+    {
+      "id": 1015,
+      "result": "PASS source links=6 fold=6 preserved; unsupported fold mode rejected without changing secondary data",
+      "motion_tested": false
+    },
+    {
+      "id": 1032,
+      "result": "PASS links=0 frames360 finite quaternion/skin; zero-link state bitwise matches baseline; no gameplay or appearance acceptance",
+      "motion_tested": true
+    },
+    {
+      "id": 1052,
+      "result": "PASS source links=12 fold=2 preserved; unsupported fold mode rejected without changing secondary data",
+      "motion_tested": false
+    },
+    {
+      "id": 1058,
+      "result": "PASS links=2 frames360 finite quaternion/skin; native endpoint maps valid; no gameplay or appearance acceptance",
+      "motion_tested": true
+    },
+    {
+      "id": 1062,
+      "result": "PASS links=2 frames360 finite quaternion/skin; native endpoint maps valid; no gameplay or appearance acceptance",
+      "motion_tested": true
+    },
+    {
+      "id": 1067,
+      "result": "PASS links=4 frames360 finite quaternion/skin; native endpoint maps valid; no gameplay or appearance acceptance",
+      "motion_tested": true
+    },
+    {
+      "id": 1068,
+      "result": "PASS links=0 frames360 finite quaternion/skin; zero-link state bitwise matches baseline; no gameplay or appearance acceptance",
+      "motion_tested": true
+    }
+  ],
+  "accepted_for_game": false
+}
