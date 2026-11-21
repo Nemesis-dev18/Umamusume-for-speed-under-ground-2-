@@ -1,0 +1,4 @@
+9001 paired_same_frame full_surface_ms=8.6833 subset_surface_ms=6.9167
+frames180 reference_vertices=6251/29023 maximum_position_delta=0.00000027 maximum_normal_delta=0.00006595; poisoned unused baseline values never consumed
+1062 paired_same_frame full_surface_ms=1.7056 subset_surface_ms=0.7722
+frames180 reference_vertices=435/15626 maximum_position_delta=0.00000036 maximum_normal_delta=0.00016290; poisoned unused baseline values never consumed

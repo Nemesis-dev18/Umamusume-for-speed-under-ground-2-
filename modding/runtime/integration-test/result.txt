@@ -1,5 +1,6 @@
 PASS scenery gravity rejects rolled chassis on reacquisition; sparse evidence rejected
 PASS full diagnostic log rotation and small log preservation
+PASS scenery-gap mirrored draw ignored by actor tracker; real draw retained
 PASS current-draw root cancels crash rotation changed since previous actor update
 PASS raw and rebased camera-pass actor association share the same upright frame
 PASS visual root: full roll/pitch cancellation with position unchanged

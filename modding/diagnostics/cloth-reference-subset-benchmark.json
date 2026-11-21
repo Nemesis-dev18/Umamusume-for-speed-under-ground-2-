@@ -1,0 +1,35 @@
+{
+  "scope": "Paired32-bitSSE2 CPU180-frame benchmark, same solver iterations and mesh; no NFS FPS claim",
+  "results": [
+    {
+      "trial": 0,
+      "method": "full",
+      "output": "frames=180 active_edges=15456 physics_ms=0.533 skin_ms=1.600 surface_ms=5.428 total_ms=7.561"
+    },
+    {
+      "trial": 0,
+      "method": "subset",
+      "output": "frames=180 active_edges=15456 physics_ms=1.017 skin_ms=2.894 surface_ms=8.367 total_ms=12.278"
+    },
+    {
+      "trial": 1,
+      "method": "full",
+      "output": "frames=180 active_edges=15456 physics_ms=1.006 skin_ms=2.917 surface_ms=10.072 total_ms=13.994"
+    },
+    {
+      "trial": 1,
+      "method": "subset",
+      "output": "frames=180 active_edges=15456 physics_ms=1.000 skin_ms=2.967 surface_ms=8.289 total_ms=12.256"
+    },
+    {
+      "trial": 2,
+      "method": "full",
+      "output": "frames=180 active_edges=15456 physics_ms=1.006 skin_ms=2.956 surface_ms=10.244 total_ms=14.206"
+    },
+    {
+      "trial": 2,
+      "method": "subset",
+      "output": "frames=180 active_edges=15456 physics_ms=1.011 skin_ms=2.906 surface_ms=8.433 total_ms=12.350"
+    }
+  ]
+}

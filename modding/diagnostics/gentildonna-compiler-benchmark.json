@@ -1,0 +1,35 @@
+{
+  "scope": "Paired target32-bitSSE2 CPU180-frame tests while game closed; no fast-math; not NFS FPS",
+  "results": [
+    {
+      "trial": 0,
+      "level": "O2",
+      "output": "frames=180 active_edges=15456 physics_ms=0.844 skin_ms=2.472 surface_ms=8.794 total_ms=12.111"
+    },
+    {
+      "trial": 0,
+      "level": "O3",
+      "output": "frames=180 active_edges=15456 physics_ms=0.817 skin_ms=2.878 surface_ms=10.011 total_ms=13.706"
+    },
+    {
+      "trial": 1,
+      "level": "O2",
+      "output": "frames=180 active_edges=15456 physics_ms=1.033 skin_ms=2.922 surface_ms=10.417 total_ms=14.372"
+    },
+    {
+      "trial": 1,
+      "level": "O3",
+      "output": "frames=180 active_edges=15456 physics_ms=0.817 skin_ms=2.783 surface_ms=10.333 total_ms=13.933"
+    },
+    {
+      "trial": 2,
+      "level": "O2",
+      "output": "frames=180 active_edges=15456 physics_ms=1.033 skin_ms=2.922 surface_ms=10.511 total_ms=14.467"
+    },
+    {
+      "trial": 2,
+      "level": "O3",
+      "output": "frames=180 active_edges=15456 physics_ms=0.861 skin_ms=2.761 surface_ms=10.222 total_ms=13.844"
+    }
+  ]
+}
