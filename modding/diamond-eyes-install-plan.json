@@ -1,0 +1,27 @@
+{
+  "files": [
+    {
+      "target": "modding/runtime/fleet/1067/atlas.dds",
+      "candidate": "modding/staged-runtime/diamond-eyes-release-20261121-043958/atlas.dds",
+      "backup": "modding/backups/before-diamond-eyes-20261121-043958/modding/runtime/fleet/1067/atlas.dds.bak",
+      "before": "5d7017b2c68067b1555d294cae001d1229a28e8e50bf2214cd98381a946a5096",
+      "after": "ee1a1a660b85be711263e4c74533add7f1438e081c08d9b2a58aab9910ce2756",
+      "bytes": 22369776
+    }
+  ],
+  "backup_root": "modding/backups/before-diamond-eyes-20261121-043958",
+  "installed": false,
+  "user_approved": false,
+  "gameplay_verified": false,
+  "scope": "Diamond baked eye texture selected regardless of brow material order; same atlas layout, resolution, mip count and all runtime vertex records; no geometry/rig/cloth change",
+  "tests": [
+    "two material-order regression cases",
+    "15870 unchanged vertex records",
+    "identical atlas layout",
+    "decoded before/after face cells inspected"
+  ],
+  "limits": [
+    "NFS appearance pending",
+    "hair/clothing/tail intersections unresolved"
+  ]
+}

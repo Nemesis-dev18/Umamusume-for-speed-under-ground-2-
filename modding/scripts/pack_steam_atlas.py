@@ -8,20 +8,23 @@ ROOT=Path(__file__).resolve().parents[2]
 SIZE=2048
 GUTTER=8
 
+def diffuse_images(folder,g,groups):
+    textures={};faces={group['texture'] for group in groups if group['material'].endswith('_face')}
+    for group in groups:
+        texture=group['texture']
+        if texture is None:raise ValueError('Missing diffuse material')
+        if texture not in textures:
+            # Face and brows may share a texture; material order must not discard baked irises.
+            image_path=folder/'runtime/face-baked.png' if texture in faces else folder/g['images'][g['textures'][texture]['source']]['uri']
+            image_path.resolve().relative_to(folder.resolve())
+            with Image.open(image_path) as image:textures[texture]=image.convert('RGBA')
+    return textures
 
 def pack(folder,output=None,preserve_resolution=False):
     size=4096 if preserve_resolution else SIZE
     path=folder/'runtime/model.umab';source=path.read_bytes();data=bytearray(source);report=json.loads((folder/'runtime/model.json').read_text());g=json.loads((folder/'source.gltf').read_text())
     if hashlib.sha256(source).hexdigest()!=report['sha256']:raise ValueError('Stale motion asset')
-    textures={};materials={m['name']:m for m in g['materials']}
-    for group in report['groups']:
-        texture=group['texture']
-        if texture is None:raise ValueError('Missing diffuse material')
-        if texture not in textures:
-            image_path=folder/g['images'][g['textures'][texture]['source']]['uri']
-            if group['material'].endswith('_face'):image_path=folder/'runtime/face-baked.png'
-            image_path.resolve().relative_to(folder.resolve())
-            with Image.open(image_path) as image:textures[texture]=image.convert('RGBA')
+    textures=diffuse_images(folder,g,report['groups']);materials={m['name']:m for m in g['materials']}
     atlas=Image.new('RGBA',(size,size));layout={};x=y=row_height=0
     for index,image in sorted(textures.items(),key=lambda item:(-max(item[1].size),-min(item[1].size),item[0])):
         cw=image.width+2*GUTTER if preserve_resolution else 1<<(image.width-1).bit_length();ch=image.height+2*GUTTER if preserve_resolution else 1<<(image.height-1).bit_length()
