@@ -177,7 +177,11 @@ static RunnerActor *runner_actor_update_models(const UmaMatrix *bodies,const uns
   runner_actor_anchor=runner_scene.anchor_key;
  }
  UmaMatrix world[16];int assignment[16],taken[16]={0};
- for(unsigned j=0;j<count;j++){assignment[j]=-1;if(!runner_scene.anchor_valid)world[j]=bodies[j];else if(!uma_relative_world(&bodies[j],&runner_scene.anchor,&world[j]))taken[j]=1;}
+ for(unsigned j=0;j<count;j++){
+  assignment[j]=-1;
+  if(!runner_scene.anchor_valid){if(!uma_rigid(&bodies[j]) || uma_determinant(&bodies[j])<.98f)taken[j]=1;else world[j]=bodies[j];}
+  else if(!uma_relative_world(&bodies[j],&runner_scene.anchor,&world[j]))taken[j]=1;
+ }
  int used[16]={0};float limit=120*seconds+.25f;
  for(unsigned pair=0;pair<count;pair++){
   int actor=-1,body=-1;float best=limit*limit;

@@ -24,6 +24,7 @@ def main():
     for name in ('renderer', 'runner_integration', 'runner_load', 'audio_windows', 'selection_capture'):
         run([CC, *FLAGS, RUNTIME / f'{name}_test.c', '-o', build / f'{name}-test.exe', '-ld3d9', '-luser32', '-lwinmm', '-lm'])
     run([CC, *FLAGS, '-shared', RUNTIME / 'uma_runner.c', '-o', RUNTIME / 'UmaRunner.asi', '-ld3d9', '-luser32', '-lwinmm', '-lm'])
+    run([CC, *FLAGS, RUNTIME / 'cloth_subset_test.c', '-o', build / 'cloth-subset-test.exe', '-lm'])
     run(['gcc', '-std=c11', '-O2', '-Wall', '-Wextra', '-Werror', RUNTIME / 'scene_speed_test.c', '-o', build / 'scene-speed-test', '-lm'])
     run([build / 'scene-speed-test'])
     run(['gcc', '-std=c11', '-O2', '-Wall', '-Wextra', '-Werror', RUNTIME / 'secondary_flags_test.c', '-o', build / 'secondary-flags-test', '-lm'])
@@ -42,6 +43,9 @@ def main():
     env = dict(os.environ, WINEPREFIX=str(WORK / 'proton-prefix/pfx'), WINEDEBUG='-all')
     for name in ('renderer', 'runner_integration', 'runner_load', 'audio_windows', 'selection_capture'):
         run([WINE, build / f'{name}-test.exe'], env=env)
+    for identifier in (9001,1062):
+        folder = RUNTIME / 'fleet' / str(identifier)
+        run([WINE, build / 'cloth-subset-test.exe', folder / 'model.umab', folder / 'secondary.bin'], env=env)
     results = {}
     for name, folder in (('renderer', 'gpu-test'), ('integration', 'integration-test')):
         lines = (RUNTIME / folder / 'result.txt').read_text().splitlines()

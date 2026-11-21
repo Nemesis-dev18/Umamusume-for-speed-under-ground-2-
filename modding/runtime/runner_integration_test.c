@@ -39,6 +39,13 @@ int main(void){
  FILE *new_log=runner_open_log(log_root);assert(new_log && ftell(new_log)==0);assert(fputs("fresh session\n",new_log)>=0);fclose(new_log);
  new_log=runner_open_log(log_root);assert(new_log);assert(!fseek(new_log,0,SEEK_END));assert(ftell(new_log)>0 && ftell(new_log)<100);fclose(new_log);
  puts("PASS full diagnostic log rotation and small log preservation");
+ /* Without scenery, mirrored render passes cannot create physical actors. */
+ memset(runner_actors,0,sizeof(runner_actors));runner_scene.anchor_valid=0;runner_frames+=10;
+ UmaMatrix mirror={0};for(int k=0;k<4;k++)mirror.m[k][k]=1;mirror.m[2][2]=-1;unsigned model_zero=0;
+ assert(!runner_actor_update_models(&mirror,&model_zero,1,.01f,NULL));for(int i=0;i<16;i++)assert(!runner_actors[i].used);
+ UmaMatrix invalid=mirror;invalid.m[3][0]=NAN;assert(!runner_actor_update_models(&invalid,&model_zero,1,.01f,NULL));for(int i=0;i<16;i++)assert(!runner_actors[i].used);
+ UmaMatrix real=mirror;real.m[2][2]=1;assert(runner_actor_update_models(&real,&model_zero,1,.01f,NULL));memset(runner_actors,0,sizeof(runner_actors));
+ puts("PASS scenery-gap mirrored draw ignored by actor tracker; real draw retained");
  /* Visual root stays upright through a complete car roll and pitch, without translation changes. */
  runner_scene.anchor_valid=1;runner_actors[0].up_valid=1;runner_actors[0].up[2]=1;runner_actors[0].heading[0]=1;
  for(int axis=0;axis<2;axis++)for(int angle=0;angle<=360;angle+=15){

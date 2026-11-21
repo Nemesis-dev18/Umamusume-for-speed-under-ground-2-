@@ -21,9 +21,30 @@ static inline void uma_cloth_normals(const UmaMotion *a,UmaVertex *pose,const Um
  }
  for(uint32_t i=0;i<a->vertices;i++)if(weight[i]>0){float length=0;for(int k=0;k<3;k++)length+=pose[i].normal[k]*pose[i].normal[k];if(length<1e-12f)memcpy(pose[i].normal,base[i].normal,12);else for(int k=0;k<3;k++)pose[i].normal[k]/=sqrtf(length);}
 }
+/* Include boundary vertices too: their normals orient cloth triangles. */
+static inline uint32_t uma_cloth_reference_vertices(const UmaMotion *a,const float *weight,uint16_t *output){
+ uint8_t *needed=calloc(a->vertices,1);if(!needed)return UINT32_MAX;
+ for(unsigned t=0;t<a->indices;t+=3){uint16_t u=a->index[t],v=a->index[t+1],w=a->index[t+2];if(weight[u]+weight[v]+weight[w]>0)needed[u]=needed[v]=needed[w]=1;}
+ uint32_t count=0;for(unsigned v=0;v<a->vertices;v++)if(needed[v])output[count++]=(uint16_t)v;free(needed);return count;
+}
+static inline int uma_cloth_reference_subset(const UmaMotion *a,const UmaMotionState *state,UmaVertex *base,const uint16_t *vertices,uint32_t count){
+ if(!a || !state || !base || !vertices || count>a->vertices)return 0;
+ for(unsigned i=0;i<count;i++)if(vertices[i]>=a->vertices)return 0;
+ float matrices[512*12];if(!uma_motion_matrices(a,state->idle_phase,state->run_phase,state->run_blend,NULL,matrices))return 0;
+ for(unsigned i=0;i<count;i++){
+  unsigned v=vertices[i];UmaVertex *p=base+v;*p=a->rest[v];memset(p->position,0,12);memset(p->normal,0,12);
+  for(int j=0;j<4;j++){
+   float weight=a->skin[v].weight[j];if(weight==0)continue;const float *matrix=matrices+a->skin[v].bone[j]*12;
+   for(int axis=0;axis<3;axis++){const float *row=matrix+axis*4;float pp=row[3],nn=0;for(int k=0;k<3;k++){pp+=row[k]*a->rest[v].position[k];nn+=row[k]*a->rest[v].normal[k];}p->position[axis]+=pp*weight;p->normal[axis]+=nn*weight;}
+  }
+  float length=sqrtf(p->normal[0]*p->normal[0]+p->normal[1]*p->normal[1]+p->normal[2]*p->normal[2]);if(length<1e-8f){memcpy(p->normal,a->rest[v].normal,12);length=sqrtf(p->normal[0]*p->normal[0]+p->normal[1]*p->normal[1]+p->normal[2]*p->normal[2]);}for(int k=0;k<3;k++)p->normal[k]/=length;
+ }
+ /* A uniform support-plane lift cancels from every edge, so no whole-body floor pass is needed. */
+ return 1;
+}
 /* Spring bones supply motion; surface constraints stop linked cape panels stretching apart. */
-static inline int uma_cloth_project(const UmaMotion *a,const UmaMotionState *state,UmaVertex *pose,UmaVertex *base,const float *weight,const uint16_t *edges,uint32_t edge_count,float *lengths){
- if(!lengths || !uma_motion_sample(a,state->idle_phase,state->run_phase,state->run_blend,base,(size_t)a->vertices*36))return 0;
+static inline int uma_cloth_solve(const UmaMotion *a,UmaVertex *pose,UmaVertex *base,const float *weight,const uint16_t *edges,uint32_t edge_count,float *lengths){
+ if(!lengths)return 0;
  /* Reference lengths stay constant throughout one solve; most edges need no correction. */
  for(uint32_t edge=0;edge<edge_count;edge++){
   uint16_t u=edges[edge*2],v=edges[edge*2+1];float squared=0;
@@ -44,5 +65,13 @@ static inline int uma_cloth_project(const UmaMotion *a,const UmaMotionState *sta
  }
  uma_cloth_normals(a,pose,base,weight);
  return 1;
+}
+static inline int uma_cloth_project(const UmaMotion *a,const UmaMotionState *state,UmaVertex *pose,UmaVertex *base,const float *weight,const uint16_t *edges,uint32_t edge_count,float *lengths){
+ if(!uma_motion_sample(a,state->idle_phase,state->run_phase,state->run_blend,base,(size_t)a->vertices*36))return 0;
+ return uma_cloth_solve(a,pose,base,weight,edges,edge_count,lengths);
+}
+static inline int uma_cloth_project_subset(const UmaMotion *a,const UmaMotionState *state,UmaVertex *pose,UmaVertex *base,const float *weight,const uint16_t *edges,uint32_t edge_count,float *lengths,const uint16_t *vertices,uint32_t count){
+ if(!uma_cloth_reference_subset(a,state,base,vertices,count))return 0;
+ return uma_cloth_solve(a,pose,base,weight,edges,edge_count,lengths);
 }
 #endif

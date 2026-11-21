@@ -1,0 +1,29 @@
+{
+  "backup_root": "modding/backups/before-cloth-subset-20261121-150908",
+  "files": [
+    {
+      "target": "scripts/UmaRunner.asi",
+      "candidate": "modding/staged-runtime/cloth-subset-release-20261121-150908/UmaRunner.asi",
+      "backup": "modding/backups/before-cloth-subset-20261121-150908/scripts/UmaRunner.asi.bak",
+      "before": "7f4439cc052f899fb498896ab2855b921fec6f2fb3a527fa4c8a12107d03f773",
+      "after": "2626a9891f0a827ab8149fd625038785394bf67595cc4c7df162371430bc3789",
+      "bytes": 451732
+    }
+  ],
+  "installed": false,
+  "user_approved": false,
+  "gameplay_verified": false,
+  "scope": "Sample only cloth-reference vertices, retain rendered model/solver iterations and all data; reject mirrored/nonrigid/no-scene actors.",
+  "tests": [
+    "strict runtime suite",
+    "180-frame subset/full geometry and normal equivalence for Gentildonna/Mambo",
+    "nine-model GPU hook fixture",
+    "scenery-gap reflected actor regression"
+  ],
+  "measurement": "Paired same-frame32-bitSSE2 surface8.6833->6.9167ms Gentildonna,1.7056->0.7722ms Mambo; no NFS FPS claim",
+  "limits": [
+    "native car collision diagnostic remains installed for Gentildonna",
+    "all reported clipping/underground/collision issues still require live verification",
+    "no hair/cloth/tail mutual-collision fix"
+  ]
+}

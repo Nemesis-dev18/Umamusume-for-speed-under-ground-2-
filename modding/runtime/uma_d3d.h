@@ -26,7 +26,7 @@ typedef struct {
  IDirect3DTexture9 *spark_texture;IDirect3DPixelShader9 *spark_shader;UmaDrawSparks spark_draw;float spark_feet[2][3];unsigned spark_contacts[2],spark_draws;
  IDirect3DTexture9 *material_textures[16];unsigned material_texture_count,batch_count;
  struct {uint32_t first,count,texture,visible;} batch[64];
- IDirect3DStateBlock9 *saved;UmaVertex *pose,*local_pose,*surface_base;unsigned skin_samples;float *surface_weight,*surface_lengths,*contact_weight;uint16_t *surface_edges;uint32_t surface_edge_count;
+ IDirect3DStateBlock9 *saved;UmaVertex *pose,*local_pose,*surface_base;unsigned skin_samples;float *surface_weight,*surface_lengths,*contact_weight;uint16_t *surface_edges,*surface_reference_vertices;uint32_t surface_edge_count,surface_reference_count;
  const UmaMotion *motion;UmaDrawIndexed draw;UmaMotionState uploaded;float uploaded_root[9];int has_uploaded,uploaded_root_valid;const float *secondary,*uploaded_secondary;uint32_t secondary_revision,uploaded_secondary_revision;
 } UmaD3D;
 static void uma_d3d_close(UmaD3D *renderer){
@@ -43,7 +43,7 @@ static void uma_d3d_close(UmaD3D *renderer){
  if(renderer->indices)IDirect3DIndexBuffer9_Release(renderer->indices);
  if(renderer->vertices)IDirect3DVertexBuffer9_Release(renderer->vertices);
  if(renderer->device)IDirect3DDevice9_Release(renderer->device);
- free(renderer->pose);free(renderer->local_pose);free(renderer->surface_base);free(renderer->surface_weight);free(renderer->surface_lengths);free(renderer->contact_weight);free(renderer->surface_edges);
+ free(renderer->pose);free(renderer->local_pose);free(renderer->surface_base);free(renderer->surface_weight);free(renderer->surface_lengths);free(renderer->contact_weight);free(renderer->surface_edges);free(renderer->surface_reference_vertices);
  memset(renderer,0,sizeof(*renderer));
 }
 static HRESULT uma_texture_load(IDirect3DDevice9 *device,FILE *file,IDirect3DTexture9 **output){
@@ -109,6 +109,7 @@ static HRESULT uma_d3d_open(UmaD3D *output,IDirect3DDevice9 *device,const UmaMot
    r.surface_base=malloc((size_t)motion->vertices*sizeof(*r.surface_base));r.surface_weight=calloc(motion->vertices,sizeof(*r.surface_weight));if(!r.surface_base || !r.surface_weight)goto invalid;
    for(unsigned v=0;v<motion->vertices;v++)for(int j=0;j<4;j++)if(motion->surface_mask[motion->skin[v].bone[j]])r.surface_weight[v]+=motion->skin[v].weight[j];
    r.surface_edges=malloc((size_t)motion->indices*4);if(!r.surface_edges)goto invalid;r.surface_edge_count=uma_cloth_edges(motion,r.surface_weight,r.surface_edges);
+   r.surface_reference_vertices=malloc((size_t)motion->vertices*2);if(!r.surface_reference_vertices)goto invalid;r.surface_reference_count=uma_cloth_reference_vertices(motion,r.surface_weight,r.surface_reference_vertices);if(r.surface_reference_count==UINT32_MAX)goto invalid;
    r.surface_lengths=malloc((size_t)(r.surface_edge_count?r.surface_edge_count:1)*sizeof(float));if(!r.surface_lengths)goto invalid;
   }
  }
@@ -167,7 +168,7 @@ static HRESULT uma_d3d_draw(UmaD3D *r,const UmaMotionState *state,const D3DMATRI
    LONGLONG profile_skin=uma_profile_now();
 #endif
    sampled=uma_motion_sample_secondary(r->motion,state->idle_phase,state->run_phase,state->run_blend,r->local_pose,(size_t)r->motion->vertices*36,r->secondary);
-   if(sampled && r->secondary && r->surface_base && r->surface_edge_count)sampled=uma_cloth_project(r->motion,state,r->local_pose,r->surface_base,r->surface_weight,r->surface_edges,r->surface_edge_count,r->surface_lengths);
+   if(sampled && r->secondary && r->surface_base && r->surface_edge_count)sampled=uma_cloth_project_subset(r->motion,state,r->local_pose,r->surface_base,r->surface_weight,r->surface_edges,r->surface_edge_count,r->surface_lengths,r->surface_reference_vertices,r->surface_reference_count);
    if(sampled && r->contact_weight)sampled=uma_body_render(r->motion,state,r->secondary,r->local_pose,r->surface_base,r->contact_weight);
    if(sampled && r->spark_draw)uma_spark_contacts(r->motion,r->local_pose,r->spark_feet,r->spark_contacts);
    if(sampled)r->skin_samples++;
