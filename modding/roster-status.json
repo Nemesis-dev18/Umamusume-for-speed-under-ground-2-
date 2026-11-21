@@ -1,0 +1,352 @@
+{
+  "scope": "Racer records UsageType0 in this local copy; menu visibility can differ by region/unlocks. Installed means native model/assets and20 body carriers present, not finished quality.",
+  "global_sha256": "0fb80ab312d2ca2f12f0bc1b66898ac5e480e7748be6153fde526994e8cbb131",
+  "usage_offset": "CarTypeInfo+0x844",
+  "counts": {
+    "racer_slots": 31,
+    "character_slots": 9,
+    "remaining_stock_racers": 22,
+    "traffic_records": 15
+  },
+  "racers": [
+    {
+      "slot": "PEUGOT",
+      "display_name": "T.M. Opera O",
+      "manufacturer": "OPERA",
+      "usage": 0,
+      "cartype_offset": 7101712,
+      "character": "T.M. Opera O",
+      "status": "installed_unfinished",
+      "character_id": 1015,
+      "render_carriers": 20,
+      "vertices": 15713,
+      "quality_complete": false
+    },
+    {
+      "slot": "FOCUS",
+      "display_name": "Matikanetannhauser",
+      "manufacturer": "MAMBO",
+      "usage": 0,
+      "cartype_offset": 7103904,
+      "character": "Matikanetannhauser",
+      "status": "installed_unfinished",
+      "character_id": 1062,
+      "render_carriers": 20,
+      "vertices": 15626,
+      "quality_complete": false
+    },
+    {
+      "slot": "COROLLA",
+      "display_name": "Kitasan Black",
+      "manufacturer": "KITASAN",
+      "usage": 0,
+      "cartype_offset": 7106096,
+      "character": "Kitasan Black",
+      "status": "installed_unfinished",
+      "character_id": 1068,
+      "render_carriers": 20,
+      "vertices": 14616,
+      "quality_complete": false
+    },
+    {
+      "slot": "240SX",
+      "display_name": "Haru Urara",
+      "manufacturer": "URARA",
+      "usage": 0,
+      "cartype_offset": 7108288,
+      "character": "Haru Urara",
+      "status": "installed_unfinished",
+      "character_id": 1052,
+      "render_carriers": 20,
+      "vertices": 10418,
+      "quality_complete": false
+    },
+    {
+      "slot": "MIATA",
+      "display_name": "Agnes Tachyon",
+      "manufacturer": "TACHYON",
+      "usage": 0,
+      "cartype_offset": 7110480,
+      "character": "Agnes Tachyon",
+      "status": "installed_unfinished",
+      "character_id": 1032,
+      "render_carriers": 20,
+      "vertices": 12949,
+      "quality_complete": false
+    },
+    {
+      "slot": "CIVIC",
+      "display_name": "Civic",
+      "manufacturer": "HONDA",
+      "usage": 0,
+      "cartype_offset": 7112672,
+      "character": null,
+      "status": "stock_car"
+    },
+    {
+      "slot": "PEUGOT106",
+      "display_name": "Oguri Cap",
+      "manufacturer": "OGURI",
+      "usage": 0,
+      "cartype_offset": 7114864,
+      "character": "Oguri Cap",
+      "status": "installed_unfinished",
+      "character_id": 1006,
+      "render_carriers": 20,
+      "vertices": 11975,
+      "quality_complete": false
+    },
+    {
+      "slot": "CORSA",
+      "display_name": "Meisho Doto",
+      "manufacturer": "DOTO",
+      "usage": 0,
+      "cartype_offset": 7117056,
+      "character": "Meisho Doto",
+      "status": "installed_unfinished",
+      "character_id": 1058,
+      "render_carriers": 20,
+      "vertices": 14804,
+      "quality_complete": false
+    },
+    {
+      "slot": "HUMMER",
+      "display_name": "Hummer H2",
+      "manufacturer": "HUMMER",
+      "usage": 0,
+      "cartype_offset": 7119248,
+      "character": null,
+      "status": "stock_car"
+    },
+    {
+      "slot": "NAVIGATOR",
+      "display_name": "Navigator",
+      "manufacturer": "LINCOLN",
+      "usage": 0,
+      "cartype_offset": 7121440,
+      "character": null,
+      "status": "stock_car"
+    },
+    {
+      "slot": "ESCALADE",
+      "display_name": "Escalade",
+      "manufacturer": "CADILLAC",
+      "usage": 0,
+      "cartype_offset": 7123632,
+      "character": null,
+      "status": "stock_car"
+    },
+    {
+      "slot": "TIBURON",
+      "display_name": "Coupé",
+      "manufacturer": "HYUNDAI",
+      "usage": 0,
+      "cartype_offset": 7125824,
+      "character": null,
+      "status": "stock_car"
+    },
+    {
+      "slot": "SENTRA",
+      "display_name": "Sentra",
+      "manufacturer": "NISSAN",
+      "usage": 0,
+      "cartype_offset": 7128016,
+      "character": null,
+      "status": "stock_car"
+    },
+    {
+      "slot": "CELICA",
+      "display_name": "Celica",
+      "manufacturer": "TOYOTA",
+      "usage": 0,
+      "cartype_offset": 7130208,
+      "character": null,
+      "status": "stock_car"
+    },
+    {
+      "slot": "IS300",
+      "display_name": "IS 300",
+      "manufacturer": "LEXUS",
+      "usage": 0,
+      "cartype_offset": 7132400,
+      "character": null,
+      "status": "stock_car"
+    },
+    {
+      "slot": "SUPRA",
+      "display_name": "Supra",
+      "manufacturer": "TOYOTA",
+      "usage": 0,
+      "cartype_offset": 7134592,
+      "character": null,
+      "status": "stock_car"
+    },
+    {
+      "slot": "GOLF",
+      "display_name": "Golf",
+      "manufacturer": "VOLKSWAGEN",
+      "usage": 0,
+      "cartype_offset": 7136784,
+      "character": null,
+      "status": "stock_car"
+    },
+    {
+      "slot": "A3",
+      "display_name": "A3",
+      "manufacturer": "AUDI",
+      "usage": 0,
+      "cartype_offset": 7138976,
+      "character": null,
+      "status": "stock_car"
+    },
+    {
+      "slot": "RSX",
+      "display_name": "RSX",
+      "manufacturer": "ACURA",
+      "usage": 0,
+      "cartype_offset": 7141168,
+      "character": null,
+      "status": "stock_car"
+    },
+    {
+      "slot": "ECLIPSE",
+      "display_name": "Eclipse",
+      "manufacturer": "MITSUBISHI",
+      "usage": 0,
+      "cartype_offset": 7143360,
+      "character": null,
+      "status": "stock_car"
+    },
+    {
+      "slot": "TT",
+      "display_name": "TT",
+      "manufacturer": "AUDI",
+      "usage": 0,
+      "cartype_offset": 7145552,
+      "character": null,
+      "status": "stock_car"
+    },
+    {
+      "slot": "RX8",
+      "display_name": "RX-8",
+      "manufacturer": "MAZDA",
+      "usage": 0,
+      "cartype_offset": 7147744,
+      "character": null,
+      "status": "stock_car"
+    },
+    {
+      "slot": "350Z",
+      "display_name": "Gentildonna",
+      "manufacturer": "GENTILDONNA",
+      "usage": 0,
+      "cartype_offset": 7149936,
+      "character": "Gentildonna",
+      "status": "installed_unfinished",
+      "character_id": 9001,
+      "render_carriers": 20,
+      "vertices": 29023,
+      "quality_complete": false
+    },
+    {
+      "slot": "G35",
+      "display_name": "G35",
+      "manufacturer": "INFINITI",
+      "usage": 0,
+      "cartype_offset": 7152128,
+      "character": null,
+      "status": "stock_car"
+    },
+    {
+      "slot": "3000GT",
+      "display_name": "3000GT",
+      "manufacturer": "MITSUBISHI",
+      "usage": 0,
+      "cartype_offset": 7154320,
+      "character": null,
+      "status": "stock_car"
+    },
+    {
+      "slot": "GTO",
+      "display_name": "GTO",
+      "manufacturer": "PONTIAC",
+      "usage": 0,
+      "cartype_offset": 7156512,
+      "character": null,
+      "status": "stock_car"
+    },
+    {
+      "slot": "MUSTANGGT",
+      "display_name": "Mustang GT",
+      "manufacturer": "FORD",
+      "usage": 0,
+      "cartype_offset": 7158704,
+      "character": null,
+      "status": "stock_car"
+    },
+    {
+      "slot": "SKYLINE",
+      "display_name": "Skyline",
+      "manufacturer": "NISSAN",
+      "usage": 0,
+      "cartype_offset": 7160896,
+      "character": null,
+      "status": "stock_car"
+    },
+    {
+      "slot": "LANCEREVO8",
+      "display_name": "Satono Diamond",
+      "manufacturer": "DIAMOND",
+      "usage": 0,
+      "cartype_offset": 7163088,
+      "character": "Satono Diamond",
+      "status": "installed_unfinished",
+      "character_id": 1067,
+      "render_carriers": 20,
+      "vertices": 15870,
+      "quality_complete": false
+    },
+    {
+      "slot": "RX7",
+      "display_name": "RX-7",
+      "manufacturer": "MAZDA",
+      "usage": 0,
+      "cartype_offset": 7165280,
+      "character": null,
+      "status": "stock_car"
+    },
+    {
+      "slot": "IMPREZAWRX",
+      "display_name": "WRX STi",
+      "manufacturer": "SUBARU",
+      "usage": 0,
+      "cartype_offset": 7167472,
+      "character": null,
+      "status": "stock_car"
+    }
+  ],
+  "traffic_excluded": [
+    "TAXI",
+    "4DR_SEDAN02",
+    "AMBULANCE",
+    "TAXI02",
+    "PANELVAN",
+    "COUPE",
+    "FIRETRUCK",
+    "PARCELVAN",
+    "PICKUP",
+    "4DR_SEDAN",
+    "BUS",
+    "SUV",
+    "MINIVAN",
+    "HATCHBACK",
+    "HATCHBACK02"
+  ],
+  "gentildonna_collision_diagnostic_installed": true,
+  "open_issues": [
+    "Cruces de paredes/suelo e inclinación tras choques pendientes de verificar",
+    "Tirones en modo profesional",
+    "Intersecciones entre ropa, extremidades, cabello y cola",
+    "Colisión humanoide final pendiente; Gentildonna conserva temporalmente la colisión original del coche"
+  ]
+}
