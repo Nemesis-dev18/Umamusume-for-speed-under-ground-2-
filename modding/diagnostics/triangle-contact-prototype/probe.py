@@ -1,4 +1,4 @@
-"""Offline experiment: coupled triangle/sphere and edge constraints. Not used by the game."""
+"""Offline experiment: coupled triangle/capsule and edge constraints. Not used by the game."""
 import math
 import unittest
 
@@ -40,8 +40,28 @@ def closest_triangle(p, tri):
     return min(candidates, key=lambda item: dot(sub(item[0], p), sub(item[0], p)))
 
 
-def contact(tri, mass, center, radius):
-    q, bary = closest_triangle(center, tri)
+def closest_capsule_axis(start, end, tri):
+    # Squared distance to a convex triangle is convex along a segment.
+    def sample(t):
+        center = [start[k]+t*(end[k]-start[k]) for k in range(3)]
+        q, bary = closest_triangle(center, tri)
+        return dot(sub(q, center),sub(q, center)), q, bary, center
+    lo, hi = 0., 1.
+    for _ in range(72):
+        a, b = (2*lo+hi)/3, (lo+2*hi)/3
+        if sample(a)[0] <= sample(b)[0]:
+            hi = b
+        else:
+            lo = a
+    _, q, bary, center = min((sample(0),sample(1),sample((lo+hi)/2)), key=lambda item:item[0])
+    return q, bary, center
+
+
+def contact(tri, mass, center, radius, end=None):
+    if end is None:
+        q, bary = closest_triangle(center, tri)
+    else:
+        q, bary, center = closest_capsule_axis(center, end, tri)
     delta = sub(q, center)
     distance = math.sqrt(dot(delta, delta))
     if distance >= radius:
@@ -56,7 +76,7 @@ def contact(tri, mass, center, radius):
     return radius-distance
 
 
-def solve(tri, mass, center, radius, iterations=100):
+def solve(tri, mass, center, radius, iterations=100, end=None):
     lengths = {(i,j): math.dist(tri[i], tri[j]) for i,j in ((0,1),(1,2),(2,0))}
     for _ in range(iterations):
         for (i,j), original in lengths.items():
@@ -68,7 +88,7 @@ def solve(tri, mass, center, radius, iterations=100):
             for k in range(3):
                 tri[i][k] += mass[i]*correction*delta[k]
                 tri[j][k] -= mass[j]*correction*delta[k]
-        contact(tri, mass, center, radius)
+        contact(tri, mass, center, radius, end)
     return max(abs(math.dist(tri[i], tri[j])/length-1) for (i,j),length in lengths.items())
 
 
@@ -89,6 +109,35 @@ class Probe(unittest.TestCase):
         point,_ = closest_triangle([0,0,0],tri)
         self.assertGreaterEqual(math.dist(point,[0,0,0]),.053-1e-6)
         self.assertLess(strain,.001)
+
+    def test_capsule_middle_detected_when_end_spheres_are_remote(self):
+        tri = [[-.2,-.2,.02],[.2,-.2,.02],[0,.2,.02]]
+        start, end = [-1,0,0],[1,0,0]
+        for p in (start,end):
+            point,_ = closest_triangle(p,tri)
+            self.assertGreater(math.dist(point,p),.053)
+        point, bary, axis = closest_capsule_axis(start,end,tri)
+        self.assertAlmostEqual(math.dist(point,axis),.02,places=8)
+        self.assertAlmostEqual(sum(bary),1)
+        strain = solve(tri,[1,1,1],start,.053,end=end)
+        point,_,axis = closest_capsule_axis(start,end,tri)
+        self.assertGreaterEqual(math.dist(point,axis),.053-1e-6)
+        self.assertLess(strain,.001)
+
+    def test_capsule_axis_piercing_reports_unresolved_contact(self):
+        tri = [[-.2,-.2,0],[.2,-.2,0],[0,.2,0]]
+        before = [p[:] for p in tri]
+        point,_,axis = closest_capsule_axis([0,0,-1],[0,0,1],tri)
+        self.assertLess(math.dist(point,axis),1e-12)
+        self.assertGreater(contact(tri,[1,1,1],[0,0,-1],.053,end=[0,0,1]),0)
+        self.assertEqual(tri,before)
+
+    def test_zero_length_capsule_matches_sphere(self):
+        tri = [[-.2,-.2,.02],[.2,-.2,.02],[0,.2,.02]]
+        sphere = [p[:] for p in tri]
+        contact(tri,[1,1,1],[0,0,0],.053,end=[0,0,0])
+        contact(sphere,[1,1,1],[0,0,0],.053)
+        self.assertEqual(tri,sphere)
 
     def test_fully_pinned_panel_reports_unresolved_contact(self):
         tri = [[-.2,-.2,.02],[.2,-.2,.02],[0,.2,.02]]
