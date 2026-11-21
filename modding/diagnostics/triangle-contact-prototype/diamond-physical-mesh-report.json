@@ -1,0 +1,42 @@
+{
+  "scope": "Experimental exact seam map only; no contact or garment quality claim. Native rendered topology is unchanged.",
+  "render_vertices": 6549,
+  "physical_particles": 5651,
+  "triangles": 7220,
+  "physical_edges": 12779,
+  "fully_pinned_particles": 92,
+  "poses": [
+    {
+      "pose": "frame-000",
+      "expand_error_m": 0.0
+    },
+    {
+      "pose": "frame-030",
+      "expand_error_m": 0.0
+    },
+    {
+      "pose": "frame-060",
+      "expand_error_m": 0.0
+    },
+    {
+      "pose": "frame-090",
+      "expand_error_m": 0.0
+    },
+    {
+      "pose": "frame-120",
+      "expand_error_m": 0.0
+    },
+    {
+      "pose": "frame-150",
+      "expand_error_m": 0.0
+    },
+    {
+      "pose": "frame-179",
+      "expand_error_m": 0.0
+    },
+    {
+      "pose": "rest",
+      "expand_error_m": 0.0
+    }
+  ]
+}
