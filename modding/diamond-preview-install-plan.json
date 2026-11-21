@@ -1,0 +1,124 @@
+{
+  "backup_root": "modding/backups/before-diamond-preview-20261121-034839",
+  "files": [
+    {
+      "target": "modding/runtime/fleet/1067/model.umab",
+      "candidate": "modding/staged-runtime/diamond-preview-20261121-034839/modding/runtime/fleet/1067/model.umab",
+      "before": null,
+      "after": "5d8a79cc46825b01bac99addc0e517506a7d6a5ba72ea208e1719c3a02420662",
+      "bytes": 1414648,
+      "backup": null
+    },
+    {
+      "target": "modding/runtime/fleet/1067/atlas.dds",
+      "candidate": "modding/staged-runtime/diamond-preview-20261121-034839/modding/runtime/fleet/1067/atlas.dds",
+      "before": null,
+      "after": "5d7017b2c68067b1555d294cae001d1229a28e8e50bf2214cd98381a946a5096",
+      "bytes": 22369776,
+      "backup": null
+    },
+    {
+      "target": "modding/runtime/fleet/1067/secondary.bin",
+      "candidate": "modding/staged-runtime/diamond-preview-20261121-034839/modding/runtime/fleet/1067/secondary.bin",
+      "before": null,
+      "after": "60927db1fa8c989e4033997d6fbdb83def4e950e05628a06019e3b790c1abe60",
+      "bytes": 5896,
+      "backup": null
+    },
+    {
+      "target": "modding/runtime/fleet/1067/anchors.bin",
+      "candidate": "modding/staged-runtime/diamond-preview-20261121-034839/modding/runtime/fleet/1067/anchors.bin",
+      "before": null,
+      "after": "a0319f90b24427daf581e913f02fb40e45cb174db82c26bb4f8f8d3ccf44ff45",
+      "bytes": 72,
+      "backup": null
+    },
+    {
+      "target": "modding/runtime/fleet/1067/carrier.bin",
+      "candidate": "modding/staged-runtime/diamond-preview-20261121-034839/modding/runtime/fleet/1067/carrier.bin",
+      "before": null,
+      "after": "3b8717fa7f6b044d8bc91d5c9c65bebaabd8395162df16d29c26f2a290c4840b",
+      "bytes": 216,
+      "backup": null
+    },
+    {
+      "target": "CARS/CELICA/GEOMETRY.BIN",
+      "candidate": "modding/staged-runtime/diamond-preview-20261121-034839/CARS/CELICA/GEOMETRY.BIN",
+      "before": "7e2cd9ce30b3d4fee31a426efcf422efe66ea84f310857be7e8912bf4cdc3009",
+      "after": "c2fd31c984c6a0cf9911456b4a876e1adbc04c8f0e67e5df173be2cb5fc7aab3",
+      "bytes": 2117392,
+      "backup": "modding/backups/before-diamond-preview-20261121-034839/CARS/CELICA/GEOMETRY.BIN.bak"
+    },
+    {
+      "target": "CARS/CELICA/TEXTURES.BIN",
+      "candidate": "modding/staged-runtime/diamond-preview-20261121-034839/CARS/CELICA/TEXTURES.BIN",
+      "before": "3bdfb9ea5aaddaec1c560a3a4afdaabd22d39c6a84be6df310bbed295009619a",
+      "after": "ab96c1d5a8e46f946c1f8f23a3505d3dcda48ab01bdc1fed4271cea4699593ce",
+      "bytes": 671872,
+      "backup": "modding/backups/before-diamond-preview-20261121-034839/CARS/CELICA/TEXTURES.BIN.bak"
+    },
+    {
+      "target": "scripts/UmaRunner.asi",
+      "candidate": "modding/staged-runtime/diamond-preview-20261121-034839/scripts/UmaRunner.asi",
+      "before": "a256534d520feaf2ba2bbaacb1432b8ffb97b2abadd28b483c1c4278f556767c",
+      "after": "546ebd938ea67dee8087dc89ec29f335f08e6435bdbbbb3c6ef0e33cbf42e104",
+      "bytes": 450421,
+      "backup": "modding/backups/before-diamond-preview-20261121-034839/scripts/UmaRunner.asi.bak"
+    },
+    {
+      "target": "FRONTEND/FrontB.lzc",
+      "candidate": "modding/staged-runtime/diamond-preview-20261121-034839/FRONTEND/FrontB.lzc",
+      "before": "2ec4c960cf03156177ecc671b2833c7cd7f9171c0460f1f8f709c67c054bb4d3",
+      "after": "262080ab1730e0e94d4c84df835f630e5d27f7e81e12be3f2acec39e87d5065c",
+      "bytes": 2022653,
+      "backup": "modding/backups/before-diamond-preview-20261121-034839/FRONTEND/FrontB.lzc.bak"
+    },
+    {
+      "target": "LANGUAGES/English.bin",
+      "candidate": "modding/staged-runtime/diamond-preview-20261121-034839/LANGUAGES/English.bin",
+      "before": "6fde51111c4fd288823c8127aa57d4760c14c41209885fb5882bde6128ab7687",
+      "after": "c581b51823645a0a716290faba1fee0d6db3712cd481bbd13dfba84c085c3b83",
+      "bytes": 280476,
+      "backup": "modding/backups/before-diamond-preview-20261121-034839/LANGUAGES/English.bin.bak"
+    },
+    {
+      "target": "LANGUAGES/Spanish.bin",
+      "candidate": "modding/staged-runtime/diamond-preview-20261121-034839/LANGUAGES/Spanish.bin",
+      "before": "6fde51111c4fd288823c8127aa57d4760c14c41209885fb5882bde6128ab7687",
+      "after": "c581b51823645a0a716290faba1fee0d6db3712cd481bbd13dfba84c085c3b83",
+      "bytes": 280476,
+      "backup": "modding/backups/before-diamond-preview-20261121-034839/LANGUAGES/Spanish.bin.bak"
+    },
+    {
+      "target": "GLOBAL/GLOBALB.BUN",
+      "candidate": "modding/staged-runtime/diamond-preview-20261121-034839/GLOBAL/GLOBALB.BUN",
+      "before": "390bb1551ca3f30f9f8126fc77e36f8052db91f5be083dd2e4afbf4605e5776d",
+      "after": "c8f0b9859f8ea99cf97297e68c488c675a1373b1ef3341a1a48c64e59ceb4fe9",
+      "bytes": 8008064,
+      "backup": "modding/backups/before-diamond-preview-20261121-034839/GLOBAL/GLOBALB.BUN.bak"
+    },
+    {
+      "target": "GLOBAL/GlobalB.lzc",
+      "candidate": "modding/staged-runtime/diamond-preview-20261121-034839/GLOBAL/GlobalB.lzc",
+      "before": "871d38d35e87fffb3191ec05a4fecfeefef5a4b2e4845129d467cc472ad4fb00",
+      "after": "a1a04c88a60debedf010d4ba1459e06f81d12653b845095ec99b378e4917519b",
+      "bytes": 5145866,
+      "backup": "modding/backups/before-diamond-preview-20261121-034839/GLOBAL/GlobalB.lzc.bak"
+    }
+  ],
+  "installed": false,
+  "user_approved": false,
+  "gameplay_verified": false,
+  "scope": "Add Satono Diamond/CELICA, regional Tachyon titles, Diamond name/icon, larger native-atlas contact sparks; experimental body-contact correction excluded",
+  "checks": [
+    "strict standalone runtime tests",
+    "nine-model exact-identity GPU host without UMAC",
+    "native JDLZ/shadow validation",
+    "Diamond source Blender front/rear/run review"
+  ],
+  "limits": [
+    "NFS gameplay and FPS unverified",
+    "existing garment clipping still unresolved"
+  ],
+  "active_targets_unchanged": true
+}
