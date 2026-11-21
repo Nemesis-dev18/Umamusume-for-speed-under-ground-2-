@@ -57,6 +57,17 @@ int main(void){
   for(int r=0;r<3;r++)for(int c=0;c<3;c++){float v=0;for(int k=0;k<3;k++)v+=root[r*3+k]*current.m[k][c];assert(fabsf(v-(r==c))<.0001f);}
  }
  puts("PASS current-draw root cancels crash rotation changed since previous actor update");
+ /* A different pass's camera estimate must not override a matching current actor view. */
+ runner_frames+=20;runner_actors[0].used=1;runner_actors[0].model=0;runner_actors[0].seen=runner_frames-1;runner_actors[0].state.run_blend=1;runner_actors[0].view=runner_actors[0].world=runner_scene.anchor;
+ UmaMatrix pass_camera=runner_scene.anchor;pass_camera.m[0][0]=pass_camera.m[2][2]=0;pass_camera.m[0][2]=1;pass_camera.m[2][0]=-1;pass_camera.m[3][0]=18;
+ runner_scene.references=runner_previous_reference_count=1;runner_scene.reference[0]=(UmaReference){.key={.buffer=987},.matrix=pass_camera};runner_previous_references[0]=(UmaReference){.key={.buffer=987},.matrix=runner_scene.anchor};
+ for(int rebased=0;rebased<2;rebased++){
+  UmaMatrix view=rebased?pass_camera:runner_scene.anchor;float root[9];assert(runner_actor_pose_model(&view,0)==&runner_actors[0].state);assert(runner_actor_root_view(&runner_actors[0].state,&view,root));
+  const UmaMatrix *expected=rebased?&pass_camera:&runner_scene.anchor;
+  for(int r=0;r<3;r++)for(int c=0;c<3;c++){float value=0;for(int k=0;k<3;k++)value+=root[r*3+k]*view.m[k][c];assert(fabsf(value-expected->m[r][c])<.0001f);}
+ }
+ runner_scene.references=runner_previous_reference_count=0;runner_frames++;
+ puts("PASS raw and rebased camera-pass actor association share the same upright frame");
  memset(runner_actors,0,sizeof(runner_actors));puts("PASS visual root: full roll/pitch cancellation with position unchanged");
  /* A stationary actor must remain idle while another runs and the camera orbits. */
  runner_scene.anchor_key=(UmaSceneKey){.buffer=777};runner_scene.anchor_valid=1;

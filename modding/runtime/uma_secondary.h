@@ -82,7 +82,6 @@ static int uma_secondary_step(const UmaSecondary *c,UmaSecondaryState *s,const U
    const float identity[4]={0,0,0,1};float applied[4];uma_quaternion_mix(identity,desired,n->apply,applied);
    if(n->flags&256)uma_quaternion_mix(q,applied,1-expf(-h/.2f),q);else memcpy(q,applied,16);
   }
-  /* Linked cape panels share one bend per depth instead of stretching apart. */
   if(c->groups){
    for(unsigned group=1;group<=16;group++)if(c->groups&(1u<<(group-1))){
     float sum[4]={0};unsigned count=0;
