@@ -17587,3 +17587,928 @@ ROAD_UP valid=1 local=0.00000,-0.00000,1.00000
 ACTOR slot=0 model=7 speed=2.2713 blend=0.7944 position=0.4989,4.2423,-1.5395
 VISUAL frame=31920 model=7 idleFallback=0 corrected=1 color=7 upView=-0.15989,0.98677,-0.02704 originView=-0.16699,1.88245,4.20972
 VISUAL frame=31920 model=7 idleFallback=0 corrected=1 color=7 upView=0.10592,-0.99369,0.03698 originView=-0.14722,1.69127,4.21637
+AUDIO originalVariants=20 outputStreams=2 installed=1; sample playback only, no game data patch
+EFFECTS exact source textures ready=1 profiles=11
+START native lighting runner installed=1; graphics-derived speed uncalibrated; independent actor gait, spatial association; models=9
+FRAME 120 candidates=0 owned=0 replaced=0 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000 projectionValid=0 recoveredSceneRefs=0 hiddenWheels=0 groups=0 best=0 second=0 hoofPlayed=0 audioActive=1 hiddenEffects=0 hiddenHeadlights=0 effectReads=0 effectCacheHits=3075
+ROAD_UP valid=0 local=0.00000,0.00000,0.00000
+FRAME 240 candidates=0 owned=0 replaced=0 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000 projectionValid=0 recoveredSceneRefs=0 hiddenWheels=0 groups=0 best=0 second=0 hoofPlayed=0 audioActive=1 hiddenEffects=0 hiddenHeadlights=0 effectReads=0 effectCacheHits=4732
+ROAD_UP valid=0 local=0.00000,0.00000,0.00000
+FRAME 360 candidates=0 owned=0 replaced=0 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000 projectionValid=0 recoveredSceneRefs=0 hiddenWheels=0 groups=0 best=0 second=0 hoofPlayed=0 audioActive=1 hiddenEffects=0 hiddenHeadlights=0 effectReads=0 effectCacheHits=6387
+ROAD_UP valid=0 local=0.00000,0.00000,0.00000
+FRAME 480 candidates=0 owned=0 replaced=0 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000 projectionValid=0 recoveredSceneRefs=0 hiddenWheels=0 groups=0 best=0 second=0 hoofPlayed=0 audioActive=1 hiddenEffects=0 hiddenHeadlights=0 effectReads=0 effectCacheHits=8042
+ROAD_UP valid=0 local=0.00000,0.00000,0.00000
+FRAME 600 candidates=0 owned=0 replaced=0 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000 projectionValid=0 recoveredSceneRefs=0 hiddenWheels=0 groups=0 best=0 second=0 hoofPlayed=0 audioActive=1 hiddenEffects=0 hiddenHeadlights=0 effectReads=0 effectCacheHits=9701
+ROAD_UP valid=0 local=0.00000,0.00000,0.00000
+FRAME 720 candidates=0 owned=0 replaced=0 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000 projectionValid=0 recoveredSceneRefs=0 hiddenWheels=0 groups=0 best=0 second=0 hoofPlayed=0 audioActive=1 hiddenEffects=0 hiddenHeadlights=0 effectReads=0 effectCacheHits=11356
+ROAD_UP valid=0 local=0.00000,0.00000,0.00000
+FRAME 840 candidates=0 owned=0 replaced=0 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000 projectionValid=0 recoveredSceneRefs=0 hiddenWheels=0 groups=0 best=0 second=0 hoofPlayed=0 audioActive=1 hiddenEffects=0 hiddenHeadlights=0 effectReads=0 effectCacheHits=17093
+ROAD_UP valid=0 local=0.00000,0.00000,0.00000
+FRAME 960 candidates=0 owned=0 replaced=0 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000 projectionValid=0 recoveredSceneRefs=0 hiddenWheels=0 groups=0 best=0 second=0 hoofPlayed=0 audioActive=1 hiddenEffects=0 hiddenHeadlights=0 effectReads=0 effectCacheHits=27653
+ROAD_UP valid=0 local=0.00000,0.00000,0.00000
+FRAME 1080 candidates=0 owned=0 replaced=0 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000 projectionValid=0 recoveredSceneRefs=0 hiddenWheels=0 groups=0 best=0 second=0 hoofPlayed=0 audioActive=1 hiddenEffects=0 hiddenHeadlights=0 effectReads=0 effectCacheHits=38213
+ROAD_UP valid=0 local=0.00000,0.00000,0.00000
+FRAME 1200 candidates=0 owned=0 replaced=0 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000 projectionValid=0 recoveredSceneRefs=0 hiddenWheels=0 groups=0 best=0 second=0 hoofPlayed=0 audioActive=1 hiddenEffects=0 hiddenHeadlights=0 effectReads=0 effectCacheHits=48773
+ROAD_UP valid=0 local=0.00000,0.00000,0.00000
+FRAME 1320 candidates=0 owned=0 replaced=0 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000 projectionValid=0 recoveredSceneRefs=0 hiddenWheels=0 groups=0 best=0 second=0 hoofPlayed=0 audioActive=1 hiddenEffects=0 hiddenHeadlights=0 effectReads=2 effectCacheHits=60659
+ROAD_UP valid=0 local=0.00000,0.00000,0.00000
+OWNED frame=1403 base=0 min=0 start=0 offset=0 stride=36 color=7 shaderBytes=1792 supported=1
+WHEEL method=DIP frame=1403 vertices=150 primitives=144 shaderBytes=420 match=0 bodies=1 origin=0.0000,1.3497,4.0171 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=1403 vertices=539 primitives=787 shaderBytes=628 match=0 bodies=1 origin=0.0000,1.3497,4.0171 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=1403 vertices=371 primitives=192 shaderBytes=628 match=0 bodies=1 origin=0.0000,1.2825,9.4167 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=1403 vertices=371 primitives=216 shaderBytes=628 match=0 bodies=1 origin=0.0000,1.2825,9.4167 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=1403 vertices=371 primitives=72 shaderBytes=628 match=0 bodies=1 origin=0.0000,1.2825,9.4167 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DPUP frame=1403 vertices=4 primitives=2 shaderBytes=584 match=1 bodies=1 origin=6.2207,0.8932,0.7927 rawBounds=-0.4435,0.1220,-0.4435:0.4435,0.1220,0.4435
+OWNED frame=1403 base=0 min=0 start=0 offset=0 stride=36 color=7 shaderBytes=1792 supported=1
+WHEEL method=DPUP frame=1404 vertices=4 primitives=2 shaderBytes=584 match=0 bodies=0 origin=6.6792,1.5536,1.8369 rawBounds=-0.4435,0.1220,-0.4435:0.4435,0.1220,0.4435
+OWNED frame=1404 base=0 min=0 start=0 offset=0 stride=36 color=7 shaderBytes=1792 supported=1
+OWNED frame=1404 base=0 min=0 start=0 offset=0 stride=36 color=7 shaderBytes=1792 supported=1
+OWNED frame=1405 base=0 min=0 start=0 offset=0 stride=36 color=7 shaderBytes=1792 supported=1
+OWNED frame=1405 base=0 min=0 start=0 offset=0 stride=36 color=7 shaderBytes=1792 supported=1
+OWNED frame=1406 base=0 min=0 start=0 offset=0 stride=36 color=7 shaderBytes=1792 supported=1
+OWNED frame=1406 base=0 min=0 start=0 offset=0 stride=36 color=7 shaderBytes=1792 supported=1
+WHEEL method=DIP frame=1420 vertices=318 primitives=96 shaderBytes=1792 match=0 bodies=1 origin=3.9238,2.0788,7.5542 rawBounds=-0.1878,-0.6926,-0.0000:0.2069,0.6926,0.2492
+WHEEL method=DIP frame=1420 vertices=649 primitives=224 shaderBytes=1792 match=0 bodies=2 origin=3.9238,0.2128,7.5309 rawBounds=-0.1878,-0.6926,-0.0000:0.2069,0.6926,0.2492
+WHEEL method=DIP frame=1423 vertices=318 primitives=64 shaderBytes=1792 match=0 bodies=1 origin=3.5521,2.0692,8.3258 rawBounds=-0.1878,-0.6926,-0.0000:0.2069,0.6926,0.2492
+WHEEL method=DIP frame=1423 vertices=259 primitives=60 shaderBytes=1792 match=1 bodies=1 origin=3.1549,1.4806,7.2456 rawBounds=-0.3242,0.0000,-0.3308:0.3242,0.1838,0.3308
+WHEEL method=DIP frame=1423 vertices=259 primitives=160 shaderBytes=1792 match=1 bodies=1 origin=3.1549,1.4806,7.2456 rawBounds=-0.3242,0.0000,-0.3308:0.3242,0.1838,0.3308
+WHEEL method=DIP frame=1423 vertices=259 primitives=14 shaderBytes=1792 match=1 bodies=1 origin=3.1549,1.4806,7.2456 rawBounds=-0.3242,0.0000,-0.3308:0.3242,0.1838,0.3308
+WHEEL method=DIP frame=1423 vertices=649 primitives=156 shaderBytes=1792 match=0 bodies=2 origin=3.5521,0.2032,8.3025 rawBounds=-0.1878,-0.6926,-0.0000:0.2069,0.6926,0.2492
+WHEEL method=DIP frame=1423 vertices=495 primitives=120 shaderBytes=1792 match=1 bodies=2 origin=3.1549,0.8185,7.2373 rawBounds=-0.3303,-0.0000,-0.3303:0.3303,0.1838,0.3303
+WHEEL method=DIP frame=1423 vertices=495 primitives=330 shaderBytes=1792 match=1 bodies=2 origin=3.1549,0.8185,7.2373 rawBounds=-0.3303,-0.0000,-0.3303:0.3303,0.1838,0.3303
+WHEEL method=DIP frame=1423 vertices=495 primitives=22 shaderBytes=1792 match=1 bodies=2 origin=3.1549,0.8185,7.2373 rawBounds=-0.3303,-0.0000,-0.3303:0.3303,0.1838,0.3303
+WHEEL method=DIP frame=1424 vertices=269 primitives=98 shaderBytes=1792 match=1 bodies=1 origin=3.1221,1.4766,7.5631 rawBounds=-0.1864,-0.0473,-0.1750:0.1750,0.0181,0.1750
+WHEEL method=DIP frame=1424 vertices=269 primitives=44 shaderBytes=1792 match=1 bodies=1 origin=3.1221,1.4766,7.5631 rawBounds=-0.1864,-0.0473,-0.1750:0.1750,0.0181,0.1750
+WHEEL method=DIP frame=1424 vertices=269 primitives=8 shaderBytes=1792 match=1 bodies=1 origin=3.1221,1.4766,7.5631 rawBounds=-0.1864,-0.0473,-0.1750:0.1750,0.0181,0.1750
+WHEEL method=DIP frame=1424 vertices=269 primitives=38 shaderBytes=1792 match=1 bodies=1 origin=3.1221,1.4766,7.5631 rawBounds=-0.1864,-0.0473,-0.1750:0.1750,0.0181,0.1750
+CAMERA frame=1439 groups=40 best=1 second=1 inverseProjection=0.400005,1.83759e-10,-1.19212e-08,-7.958e-13,-9.80429e-11,-0.263179,2.45104e-10,1.63619e-14,-1.0967e-06,2.50978e-07,3.24185e-14,-1.99993,1.09674e-06,-2.50987e-07,1,2,
+REF votes=1 1,4.59393e-10,-2.98027e-08,-4.60432e-12,-0.0124615,0.999922,3.72504e-10,0.999922,0.0124615,1.67398e-07,1.34975,4.01713,
+REF votes=1 1,4.59393e-10,-2.98027e-08,-4.60432e-12,-0.0124615,0.999922,3.72504e-10,0.999922,0.0124615,1.67398e-07,1.34975,4.01713,
+REF votes=1 1,4.59393e-10,-2.98027e-08,-4.60432e-12,-0.0124615,0.999922,3.72504e-10,0.999922,0.0124615,1.67398e-07,1.34975,4.01713,
+REF votes=1 1,4.59393e-10,-2.98027e-08,-4.60432e-12,-0.0124615,0.999922,3.72504e-10,0.999922,0.0124615,1.67398e-07,1.34975,4.01713,
+BODY 0.584554,0.0101107,-0.811292,0.811355,-0.00728444,0.584509,0,0.999922,0.0124615,0.152637,1.26739,9.43471,
+FRAME 1440 candidates=74 owned=74 replaced=74 shaderFailures=0 references=40 bodies=2 graphicsSpeedValid=1 graphicsSpeed=-24.2611 blend=0.4055 projectionValid=1 recoveredSceneRefs=1258 hiddenWheels=685 groups=40 best=1 second=1 hoofPlayed=1 audioActive=1 hiddenEffects=70 hiddenHeadlights=0 effectReads=16 effectCacheHits=91430
+SPARK model=7 draws=10 contacts=0,39 blend=0.352 skinSamples=36
+ROAD_UP valid=1 local=0.00000,-0.00000,1.00000
+ACTOR slot=1 model=7 speed=-24.2611 blend=0.4055 position=0.1526,5.4182,-0.0148
+VISUAL frame=1440 model=7 idleFallback=0 corrected=1 color=7 upView=0.00000,0.99992,0.01246 originView=-0.01156,1.26737,9.43685
+VISUAL frame=1440 model=7 idleFallback=0 corrected=1 color=7 upView=0.00000,-0.99992,-0.01246 originView=-0.01156,0.97706,9.43323
+CAMERA frame=1559 groups=40 best=1 second=1 inverseProjection=0.400005,1.83759e-10,-1.19212e-08,-7.95802e-13,-9.80429e-11,-0.263179,2.45104e-10,1.63619e-14,-3.90402e-07,2.50979e-07,1.14353e-14,-1.99994,3.90415e-07,-2.50987e-07,1,2,
+REF votes=1 1,4.59393e-10,-2.98027e-08,-4.63274e-12,-0.0124615,0.999922,3.72504e-10,0.999922,0.0124615,1.9571e-07,1.34975,4.01713,
+REF votes=1 1,4.59393e-10,-2.98027e-08,-4.63274e-12,-0.0124615,0.999922,3.72504e-10,0.999922,0.0124615,1.9571e-07,1.34975,4.01713,
+REF votes=1 1,4.59393e-10,-2.98027e-08,-4.63274e-12,-0.0124615,0.999922,3.72504e-10,0.999922,0.0124615,1.9571e-07,1.34975,4.01713,
+REF votes=1 1,4.59393e-10,-2.98027e-08,-4.63274e-12,-0.0124615,0.999922,3.72504e-10,0.999922,0.0124615,1.9571e-07,1.34975,4.01713,
+BODY 0.584554,0.0101107,-0.811292,0.811355,-0.00728444,0.584509,0,0.999922,0.0124615,-0.0115573,1.26737,9.43685,
+FRAME 1560 candidates=314 owned=314 replaced=314 shaderFailures=0 references=40 bodies=2 graphicsSpeedValid=1 graphicsSpeed=0.0000 blend=0.0000 projectionValid=1 recoveredSceneRefs=5338 hiddenWheels=7883 groups=40 best=1 second=1 hoofPlayed=1 audioActive=1 hiddenEffects=190 hiddenHeadlights=0 effectReads=16 effectCacheHits=131119
+SPARK model=7 draws=10 contacts=149,149 blend=0.000 skinSamples=156
+ROAD_UP valid=1 local=0.00000,-0.00000,1.00000
+ACTOR slot=1 model=7 speed=0.0000 blend=0.0000 position=-0.0116,5.4203,-0.0148
+VISUAL frame=1560 model=7 idleFallback=0 corrected=1 color=7 upView=0.00000,0.99992,0.01246 originView=-0.01156,1.26737,9.43685
+VISUAL frame=1560 model=7 idleFallback=0 corrected=1 color=7 upView=0.00000,-0.99992,-0.01246 originView=-0.01156,0.97706,9.43323
+CAMERA frame=1679 groups=40 best=1 second=1 inverseProjection=0.400005,1.83759e-10,-1.19212e-08,-7.95802e-13,-9.80429e-11,-0.263179,2.45104e-10,1.63619e-14,-3.90402e-07,2.50979e-07,1.14353e-14,-1.99994,3.90415e-07,-2.50987e-07,1,2,
+REF votes=1 1,4.59393e-10,-2.98027e-08,-4.63274e-12,-0.0124615,0.999922,3.72504e-10,0.999922,0.0124615,1.9571e-07,1.34975,4.01713,
+REF votes=1 1,4.59393e-10,-2.98027e-08,-4.63274e-12,-0.0124615,0.999922,3.72504e-10,0.999922,0.0124615,1.9571e-07,1.34975,4.01713,
+REF votes=1 1,4.59393e-10,-2.98027e-08,-4.63274e-12,-0.0124615,0.999922,3.72504e-10,0.999922,0.0124615,1.9571e-07,1.34975,4.01713,
+REF votes=1 1,4.59393e-10,-2.98027e-08,-4.63274e-12,-0.0124615,0.999922,3.72504e-10,0.999922,0.0124615,1.9571e-07,1.34975,4.01713,
+BODY 0.584554,0.0101107,-0.811292,0.811355,-0.00728444,0.584509,0,0.999922,0.0124615,-0.0115573,1.26737,9.43685,
+FRAME 1680 candidates=554 owned=554 replaced=554 shaderFailures=0 references=40 bodies=2 graphicsSpeedValid=1 graphicsSpeed=0.0000 blend=0.0000 projectionValid=1 recoveredSceneRefs=9418 hiddenWheels=15083 groups=40 best=1 second=1 hoofPlayed=1 audioActive=1 hiddenEffects=310 hiddenHeadlights=0 effectReads=16 effectCacheHits=170812
+SPARK model=7 draws=10 contacts=149,149 blend=0.000 skinSamples=276
+ROAD_UP valid=1 local=0.00000,-0.00000,1.00000
+ACTOR slot=1 model=7 speed=0.0000 blend=0.0000 position=-0.0116,5.4203,-0.0148
+VISUAL frame=1680 model=7 idleFallback=0 corrected=1 color=7 upView=0.00000,0.99992,0.01246 originView=-0.01156,1.26737,9.43685
+VISUAL frame=1680 model=7 idleFallback=0 corrected=1 color=7 upView=0.00000,-0.99992,-0.01246 originView=-0.01156,0.97706,9.43323
+CAMERA frame=1799 groups=40 best=1 second=1 inverseProjection=0.400005,1.83759e-10,-1.19212e-08,-7.95802e-13,-9.80429e-11,-0.263179,2.45104e-10,1.63619e-14,-3.90402e-07,2.50979e-07,1.14353e-14,-1.99994,3.90415e-07,-2.50987e-07,1,2,
+REF votes=1 1,4.59393e-10,-2.98027e-08,-4.63274e-12,-0.0124615,0.999922,3.72504e-10,0.999922,0.0124615,1.9571e-07,1.34975,4.01713,
+REF votes=1 1,4.59393e-10,-2.98027e-08,-4.63274e-12,-0.0124615,0.999922,3.72504e-10,0.999922,0.0124615,1.9571e-07,1.34975,4.01713,
+REF votes=1 1,4.59393e-10,-2.98027e-08,-4.63274e-12,-0.0124615,0.999922,3.72504e-10,0.999922,0.0124615,1.9571e-07,1.34975,4.01713,
+REF votes=1 1,4.59393e-10,-2.98027e-08,-4.63274e-12,-0.0124615,0.999922,3.72504e-10,0.999922,0.0124615,1.9571e-07,1.34975,4.01713,
+BODY 0.584554,0.0101107,-0.811292,0.811355,-0.00728444,0.584509,0,0.999922,0.0124615,-0.0115573,1.26737,9.43685,
+FRAME 1800 candidates=794 owned=794 replaced=794 shaderFailures=0 references=40 bodies=2 graphicsSpeedValid=1 graphicsSpeed=0.0000 blend=0.0000 projectionValid=1 recoveredSceneRefs=13498 hiddenWheels=22283 groups=40 best=1 second=1 hoofPlayed=1 audioActive=1 hiddenEffects=430 hiddenHeadlights=0 effectReads=16 effectCacheHits=210485
+SPARK model=7 draws=10 contacts=149,149 blend=0.000 skinSamples=396
+ROAD_UP valid=1 local=0.00000,-0.00000,1.00000
+ACTOR slot=1 model=7 speed=0.0000 blend=0.0000 position=-0.0116,5.4203,-0.0148
+VISUAL frame=1800 model=7 idleFallback=0 corrected=1 color=7 upView=0.00000,0.99992,0.01246 originView=-0.01156,1.26737,9.43685
+VISUAL frame=1800 model=7 idleFallback=0 corrected=1 color=7 upView=0.00000,-0.99992,-0.01246 originView=-0.01156,0.97706,9.43323
+CAMERA frame=1919 groups=40 best=1 second=1 inverseProjection=0.400005,1.83759e-10,-1.19212e-08,-7.95802e-13,-9.80429e-11,-0.263179,2.45104e-10,1.63619e-14,-3.90402e-07,2.50979e-07,1.14353e-14,-1.99994,3.90415e-07,-2.50987e-07,1,2,
+REF votes=1 1,4.59393e-10,-2.98027e-08,-4.63274e-12,-0.0124615,0.999922,3.72504e-10,0.999922,0.0124615,1.9571e-07,1.34975,4.01713,
+REF votes=1 1,4.59393e-10,-2.98027e-08,-4.63274e-12,-0.0124615,0.999922,3.72504e-10,0.999922,0.0124615,1.9571e-07,1.34975,4.01713,
+REF votes=1 1,4.59393e-10,-2.98027e-08,-4.63274e-12,-0.0124615,0.999922,3.72504e-10,0.999922,0.0124615,1.9571e-07,1.34975,4.01713,
+REF votes=1 1,4.59393e-10,-2.98027e-08,-4.63274e-12,-0.0124615,0.999922,3.72504e-10,0.999922,0.0124615,1.9571e-07,1.34975,4.01713,
+BODY 0.584554,0.0101107,-0.811292,0.811355,-0.00728444,0.584509,0,0.999922,0.0124615,-0.0115573,1.26737,9.43685,
+FRAME 1920 candidates=1034 owned=1034 replaced=1034 shaderFailures=0 references=40 bodies=2 graphicsSpeedValid=1 graphicsSpeed=0.0000 blend=0.0000 projectionValid=1 recoveredSceneRefs=17578 hiddenWheels=29483 groups=40 best=1 second=1 hoofPlayed=1 audioActive=1 hiddenEffects=550 hiddenHeadlights=0 effectReads=16 effectCacheHits=249424
+SPARK model=7 draws=10 contacts=149,149 blend=0.000 skinSamples=516
+ROAD_UP valid=1 local=0.00000,-0.00000,1.00000
+ACTOR slot=1 model=7 speed=0.0000 blend=0.0000 position=-0.0116,5.4203,-0.0148
+VISUAL frame=1920 model=7 idleFallback=0 corrected=1 color=7 upView=0.00000,0.99992,0.01246 originView=-0.01156,1.26737,9.43685
+VISUAL frame=1920 model=7 idleFallback=0 corrected=1 color=7 upView=0.00000,-0.99992,-0.01246 originView=-0.01156,0.97706,9.43323
+CAMERA frame=2039 groups=40 best=1 second=1 inverseProjection=0.400005,1.83759e-10,-1.19212e-08,-7.95802e-13,-9.80429e-11,-0.263179,2.45104e-10,1.63619e-14,-3.90402e-07,2.50979e-07,1.14353e-14,-1.99994,3.90415e-07,-2.50987e-07,1,2,
+REF votes=1 1,4.59393e-10,-2.98027e-08,-4.63274e-12,-0.0124615,0.999922,3.72504e-10,0.999922,0.0124615,1.9571e-07,1.34975,4.01713,
+REF votes=1 1,4.59393e-10,-2.98027e-08,-4.63274e-12,-0.0124615,0.999922,3.72504e-10,0.999922,0.0124615,1.9571e-07,1.34975,4.01713,
+REF votes=1 1,4.59393e-10,-2.98027e-08,-4.63274e-12,-0.0124615,0.999922,3.72504e-10,0.999922,0.0124615,1.9571e-07,1.34975,4.01713,
+REF votes=1 1,4.59393e-10,-2.98027e-08,-4.63274e-12,-0.0124615,0.999922,3.72504e-10,0.999922,0.0124615,1.9571e-07,1.34975,4.01713,
+BODY 0.584554,0.0101107,-0.811292,0.811355,-0.00728444,0.584509,0,0.999922,0.0124615,-0.0115573,1.26737,9.43685,
+FRAME 2040 candidates=1274 owned=1274 replaced=1274 shaderFailures=0 references=40 bodies=2 graphicsSpeedValid=1 graphicsSpeed=0.0000 blend=0.0000 projectionValid=1 recoveredSceneRefs=21658 hiddenWheels=36683 groups=40 best=1 second=1 hoofPlayed=1 audioActive=1 hiddenEffects=670 hiddenHeadlights=0 effectReads=16 effectCacheHits=275126
+SPARK model=7 draws=10 contacts=149,149 blend=0.000 skinSamples=636
+ROAD_UP valid=1 local=0.00000,-0.00000,1.00000
+ACTOR slot=1 model=7 speed=0.0000 blend=0.0000 position=-0.0116,5.4203,-0.0148
+VISUAL frame=2040 model=7 idleFallback=0 corrected=1 color=7 upView=0.00000,0.99992,0.01246 originView=-0.01156,1.26737,9.43685
+VISUAL frame=2040 model=7 idleFallback=0 corrected=1 color=7 upView=0.00000,-0.99992,-0.01246 originView=-0.01156,0.97706,9.43323
+CAMERA frame=2159 groups=40 best=1 second=1 inverseProjection=0.400005,1.83759e-10,-1.19212e-08,-7.95802e-13,-9.80429e-11,-0.263179,2.45104e-10,1.63619e-14,-3.90402e-07,2.50979e-07,1.14353e-14,-1.99994,3.90415e-07,-2.50987e-07,1,2,
+REF votes=1 1,4.59393e-10,-2.98027e-08,-4.63274e-12,-0.0124615,0.999922,3.72504e-10,0.999922,0.0124615,1.9571e-07,1.34975,4.01713,
+REF votes=1 1,4.59393e-10,-2.98027e-08,-4.63274e-12,-0.0124615,0.999922,3.72504e-10,0.999922,0.0124615,1.9571e-07,1.34975,4.01713,
+REF votes=1 1,4.59393e-10,-2.98027e-08,-4.63274e-12,-0.0124615,0.999922,3.72504e-10,0.999922,0.0124615,1.9571e-07,1.34975,4.01713,
+REF votes=1 1,4.59393e-10,-2.98027e-08,-4.63274e-12,-0.0124615,0.999922,3.72504e-10,0.999922,0.0124615,1.9571e-07,1.34975,4.01713,
+BODY 0.584554,0.0101107,-0.811292,0.811355,-0.00728444,0.584509,0,0.999922,0.0124615,-0.0115573,1.26737,9.43685,
+FRAME 2160 candidates=1514 owned=1514 replaced=1514 shaderFailures=0 references=40 bodies=2 graphicsSpeedValid=1 graphicsSpeed=0.0000 blend=0.0000 projectionValid=1 recoveredSceneRefs=25738 hiddenWheels=43883 groups=40 best=1 second=1 hoofPlayed=1 audioActive=1 hiddenEffects=790 hiddenHeadlights=0 effectReads=16 effectCacheHits=299935
+SPARK model=7 draws=10 contacts=149,149 blend=0.000 skinSamples=756
+ROAD_UP valid=1 local=0.00000,-0.00000,1.00000
+ACTOR slot=1 model=7 speed=0.0000 blend=0.0000 position=-0.0116,5.4203,-0.0148
+VISUAL frame=2160 model=7 idleFallback=0 corrected=1 color=7 upView=0.00000,0.99992,0.01246 originView=-0.01156,1.26737,9.43685
+VISUAL frame=2160 model=7 idleFallback=0 corrected=1 color=7 upView=0.00000,-0.99992,-0.01246 originView=-0.01156,0.97706,9.43323
+CAMERA frame=2279 groups=40 best=1 second=1 inverseProjection=0.400005,1.83759e-10,-1.19212e-08,-7.95802e-13,-9.80429e-11,-0.263179,2.45104e-10,1.63619e-14,-3.90402e-07,2.50979e-07,1.14353e-14,-1.99994,3.90415e-07,-2.50987e-07,1,2,
+REF votes=1 1,4.59393e-10,-2.98027e-08,-4.63274e-12,-0.0124615,0.999922,3.72504e-10,0.999922,0.0124615,1.9571e-07,1.34975,4.01713,
+REF votes=1 1,4.59393e-10,-2.98027e-08,-4.63274e-12,-0.0124615,0.999922,3.72504e-10,0.999922,0.0124615,1.9571e-07,1.34975,4.01713,
+REF votes=1 1,4.59393e-10,-2.98027e-08,-4.63274e-12,-0.0124615,0.999922,3.72504e-10,0.999922,0.0124615,1.9571e-07,1.34975,4.01713,
+REF votes=1 1,4.59393e-10,-2.98027e-08,-4.63274e-12,-0.0124615,0.999922,3.72504e-10,0.999922,0.0124615,1.9571e-07,1.34975,4.01713,
+BODY 0.584554,0.0101107,-0.811292,0.811355,-0.00728444,0.584509,0,0.999922,0.0124615,-0.0115573,1.26737,9.43685,
+FRAME 2280 candidates=1754 owned=1754 replaced=1754 shaderFailures=0 references=40 bodies=2 graphicsSpeedValid=1 graphicsSpeed=0.0000 blend=0.0000 projectionValid=1 recoveredSceneRefs=29818 hiddenWheels=51083 groups=40 best=1 second=1 hoofPlayed=1 audioActive=1 hiddenEffects=910 hiddenHeadlights=0 effectReads=16 effectCacheHits=324745
+SPARK model=7 draws=10 contacts=149,149 blend=0.000 skinSamples=876
+ROAD_UP valid=1 local=0.00000,-0.00000,1.00000
+ACTOR slot=1 model=7 speed=0.0000 blend=0.0000 position=-0.0116,5.4203,-0.0148
+VISUAL frame=2280 model=7 idleFallback=0 corrected=1 color=7 upView=0.00000,0.99992,0.01246 originView=-0.01156,1.26737,9.43685
+VISUAL frame=2280 model=7 idleFallback=0 corrected=1 color=7 upView=0.00000,-0.99992,-0.01246 originView=-0.01156,0.97706,9.43323
+CAMERA frame=2399 groups=40 best=1 second=1 inverseProjection=0.400005,1.83759e-10,-1.19212e-08,-7.95802e-13,-9.80429e-11,-0.263179,2.45104e-10,1.63619e-14,-3.90402e-07,2.50979e-07,1.14353e-14,-1.99994,3.90415e-07,-2.50987e-07,1,2,
+REF votes=1 1,4.59393e-10,-2.98027e-08,-4.63274e-12,-0.0124615,0.999922,3.72504e-10,0.999922,0.0124615,1.9571e-07,1.34975,4.01713,
+REF votes=1 1,4.59393e-10,-2.98027e-08,-4.63274e-12,-0.0124615,0.999922,3.72504e-10,0.999922,0.0124615,1.9571e-07,1.34975,4.01713,
+REF votes=1 1,4.59393e-10,-2.98027e-08,-4.63274e-12,-0.0124615,0.999922,3.72504e-10,0.999922,0.0124615,1.9571e-07,1.34975,4.01713,
+REF votes=1 1,4.59393e-10,-2.98027e-08,-4.63274e-12,-0.0124615,0.999922,3.72504e-10,0.999922,0.0124615,1.9571e-07,1.34975,4.01713,
+BODY 0.584554,0.0101107,-0.811292,0.811355,-0.00728444,0.584509,0,0.999922,0.0124615,-0.0115573,1.26737,9.43685,
+FRAME 2400 candidates=1994 owned=1994 replaced=1994 shaderFailures=0 references=40 bodies=2 graphicsSpeedValid=1 graphicsSpeed=0.0000 blend=0.0000 projectionValid=1 recoveredSceneRefs=33898 hiddenWheels=58283 groups=40 best=1 second=1 hoofPlayed=1 audioActive=1 hiddenEffects=1030 hiddenHeadlights=0 effectReads=16 effectCacheHits=349537
+SPARK model=7 draws=10 contacts=149,149 blend=0.000 skinSamples=996
+ROAD_UP valid=1 local=0.00000,-0.00000,1.00000
+ACTOR slot=1 model=7 speed=0.0000 blend=0.0000 position=-0.0116,5.4203,-0.0148
+VISUAL frame=2400 model=7 idleFallback=0 corrected=1 color=7 upView=0.00000,0.99992,0.01246 originView=-0.01156,1.26737,9.43685
+VISUAL frame=2400 model=7 idleFallback=0 corrected=1 color=7 upView=0.00000,-0.99992,-0.01246 originView=-0.01156,0.97706,9.43323
+CAMERA frame=2519 groups=40 best=1 second=1 inverseProjection=0.400005,1.83759e-10,-1.19212e-08,-7.95802e-13,-9.80429e-11,-0.263179,2.45104e-10,1.63619e-14,-3.90402e-07,2.50979e-07,1.14353e-14,-1.99994,3.90415e-07,-2.50987e-07,1,2,
+REF votes=1 1,4.59393e-10,-2.98027e-08,-4.63274e-12,-0.0124615,0.999922,3.72504e-10,0.999922,0.0124615,1.9571e-07,1.34975,4.01713,
+REF votes=1 1,4.59393e-10,-2.98027e-08,-4.63274e-12,-0.0124615,0.999922,3.72504e-10,0.999922,0.0124615,1.9571e-07,1.34975,4.01713,
+REF votes=1 1,4.59393e-10,-2.98027e-08,-4.63274e-12,-0.0124615,0.999922,3.72504e-10,0.999922,0.0124615,1.9571e-07,1.34975,4.01713,
+REF votes=1 1,4.59393e-10,-2.98027e-08,-4.63274e-12,-0.0124615,0.999922,3.72504e-10,0.999922,0.0124615,1.9571e-07,1.34975,4.01713,
+BODY 0.584554,0.0101107,-0.811292,0.811355,-0.00728444,0.584509,0,0.999922,0.0124615,-0.0115573,1.26737,9.43685,
+FRAME 2520 candidates=2234 owned=2234 replaced=2234 shaderFailures=0 references=40 bodies=2 graphicsSpeedValid=1 graphicsSpeed=0.0000 blend=0.0000 projectionValid=1 recoveredSceneRefs=37978 hiddenWheels=65483 groups=40 best=1 second=1 hoofPlayed=1 audioActive=1 hiddenEffects=1150 hiddenHeadlights=0 effectReads=16 effectCacheHits=374355
+SPARK model=7 draws=10 contacts=149,149 blend=0.000 skinSamples=1116
+ROAD_UP valid=1 local=0.00000,-0.00000,1.00000
+ACTOR slot=1 model=7 speed=0.0000 blend=0.0000 position=-0.0116,5.4203,-0.0148
+VISUAL frame=2520 model=7 idleFallback=0 corrected=1 color=7 upView=0.00000,0.99992,0.01246 originView=-0.01156,1.26737,9.43685
+VISUAL frame=2520 model=7 idleFallback=0 corrected=1 color=7 upView=0.00000,-0.99992,-0.01246 originView=-0.01156,0.97706,9.43323
+CAMERA frame=2639 groups=40 best=1 second=1 inverseProjection=0.400005,1.83759e-10,-1.19212e-08,-7.95802e-13,-9.80429e-11,-0.263179,2.45104e-10,1.63619e-14,-3.90402e-07,2.50979e-07,1.14353e-14,-1.99994,3.90415e-07,-2.50987e-07,1,2,
+REF votes=1 1,4.59393e-10,-2.98027e-08,-4.63274e-12,-0.0124615,0.999922,3.72504e-10,0.999922,0.0124615,1.9571e-07,1.34975,4.01713,
+REF votes=1 1,4.59393e-10,-2.98027e-08,-4.63274e-12,-0.0124615,0.999922,3.72504e-10,0.999922,0.0124615,1.9571e-07,1.34975,4.01713,
+REF votes=1 1,4.59393e-10,-2.98027e-08,-4.63274e-12,-0.0124615,0.999922,3.72504e-10,0.999922,0.0124615,1.9571e-07,1.34975,4.01713,
+REF votes=1 1,4.59393e-10,-2.98027e-08,-4.63274e-12,-0.0124615,0.999922,3.72504e-10,0.999922,0.0124615,1.9571e-07,1.34975,4.01713,
+BODY 0.584554,0.0101107,-0.811292,0.811355,-0.00728444,0.584509,0,0.999922,0.0124615,-0.0115573,1.26737,9.43685,
+FRAME 2640 candidates=2474 owned=2474 replaced=2474 shaderFailures=0 references=40 bodies=2 graphicsSpeedValid=1 graphicsSpeed=0.0000 blend=0.0000 projectionValid=1 recoveredSceneRefs=42058 hiddenWheels=72683 groups=40 best=1 second=1 hoofPlayed=1 audioActive=1 hiddenEffects=1270 hiddenHeadlights=0 effectReads=16 effectCacheHits=398982
+SPARK model=7 draws=10 contacts=149,149 blend=0.000 skinSamples=1236
+ROAD_UP valid=1 local=0.00000,-0.00000,1.00000
+ACTOR slot=1 model=7 speed=0.0000 blend=0.0000 position=-0.0116,5.4203,-0.0148
+VISUAL frame=2640 model=7 idleFallback=0 corrected=1 color=7 upView=0.00000,0.99992,0.01246 originView=-0.01156,1.26737,9.43685
+VISUAL frame=2640 model=7 idleFallback=0 corrected=1 color=7 upView=0.00000,-0.99992,-0.01246 originView=-0.01156,0.97706,9.43323
+CAMERA frame=2759 groups=40 best=1 second=1 inverseProjection=0.400005,1.83759e-10,-1.19212e-08,-7.95802e-13,-9.80429e-11,-0.263179,2.45104e-10,1.63619e-14,-3.90402e-07,2.50979e-07,1.14353e-14,-1.99994,3.90415e-07,-2.50987e-07,1,2,
+REF votes=1 1,4.59393e-10,-2.98027e-08,-4.63274e-12,-0.0124615,0.999922,3.72504e-10,0.999922,0.0124615,1.9571e-07,1.34975,4.01713,
+REF votes=1 1,4.59393e-10,-2.98027e-08,-4.63274e-12,-0.0124615,0.999922,3.72504e-10,0.999922,0.0124615,1.9571e-07,1.34975,4.01713,
+REF votes=1 1,4.59393e-10,-2.98027e-08,-4.63274e-12,-0.0124615,0.999922,3.72504e-10,0.999922,0.0124615,1.9571e-07,1.34975,4.01713,
+REF votes=1 1,4.59393e-10,-2.98027e-08,-4.63274e-12,-0.0124615,0.999922,3.72504e-10,0.999922,0.0124615,1.9571e-07,1.34975,4.01713,
+BODY 0.584554,0.0101107,-0.811292,0.811355,-0.00728444,0.584509,0,0.999922,0.0124615,-0.0115573,1.26737,9.43685,
+FRAME 2760 candidates=2714 owned=2714 replaced=2714 shaderFailures=0 references=40 bodies=2 graphicsSpeedValid=1 graphicsSpeed=0.0000 blend=0.0000 projectionValid=1 recoveredSceneRefs=46138 hiddenWheels=79883 groups=40 best=1 second=1 hoofPlayed=1 audioActive=1 hiddenEffects=1390 hiddenHeadlights=0 effectReads=19 effectCacheHits=430222
+SPARK model=7 draws=10 contacts=149,149 blend=0.000 skinSamples=1356
+ROAD_UP valid=1 local=0.00000,-0.00000,1.00000
+ACTOR slot=1 model=7 speed=0.0000 blend=0.0000 position=-0.0116,5.4203,-0.0148
+VISUAL frame=2760 model=7 idleFallback=0 corrected=1 color=7 upView=0.00000,0.99992,0.01246 originView=-0.01156,1.26737,9.43685
+VISUAL frame=2760 model=7 idleFallback=0 corrected=1 color=7 upView=0.00000,-0.99992,-0.01246 originView=-0.01156,0.97706,9.43323
+WHEEL method=DIP frame=2839 vertices=649 primitives=224 shaderBytes=1792 match=0 bodies=3 origin=-1.1417,0.1697,10.9919 rawBounds=-0.1878,-0.6926,-0.0000:0.2069,0.6926,0.2492
+WHEEL method=DIP frame=2839 vertices=269 primitives=98 shaderBytes=1792 match=1 bodies=3 origin=1.4461,0.7994,8.7977 rawBounds=-0.1864,-0.0473,-0.1750:0.1750,0.0181,0.1750
+WHEEL method=DIP frame=2839 vertices=649 primitives=156 shaderBytes=1792 match=0 bodies=3 origin=-1.1417,0.1697,10.9919 rawBounds=-0.1878,-0.6926,-0.0000:0.2069,0.6926,0.2492
+WHEEL method=DIP frame=2839 vertices=495 primitives=120 shaderBytes=1792 match=1 bodies=3 origin=1.5091,0.7920,8.9124 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=2839 vertices=495 primitives=330 shaderBytes=1792 match=1 bodies=3 origin=1.5091,0.7920,8.9124 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=2839 vertices=495 primitives=22 shaderBytes=1792 match=1 bodies=3 origin=1.5091,0.7920,8.9124 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=2839 vertices=269 primitives=44 shaderBytes=1792 match=1 bodies=3 origin=1.4461,0.7994,8.7977 rawBounds=-0.1864,-0.0473,-0.1750:0.1750,0.0181,0.1750
+WHEEL method=DIP frame=2839 vertices=269 primitives=8 shaderBytes=1792 match=1 bodies=3 origin=1.4461,0.7994,8.7977 rawBounds=-0.1864,-0.0473,-0.1750:0.1750,0.0181,0.1750
+WHEEL method=DIP frame=2839 vertices=269 primitives=38 shaderBytes=1792 match=1 bodies=3 origin=1.4461,0.7994,8.7977 rawBounds=-0.1864,-0.0473,-0.1750:0.1750,0.0181,0.1750
+WHEEL method=DIP frame=2856 vertices=261 primitives=60 shaderBytes=1792 match=1 bodies=2 origin=3.1556,1.4256,7.6088 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=2856 vertices=261 primitives=156 shaderBytes=1792 match=1 bodies=2 origin=3.1556,1.4256,7.6088 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=2856 vertices=261 primitives=14 shaderBytes=1792 match=1 bodies=2 origin=3.1556,1.4256,7.6088 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=2856 vertices=530 primitives=120 shaderBytes=1792 match=1 bodies=4 origin=3.1556,0.8644,7.6018 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=2856 vertices=530 primitives=355 shaderBytes=1792 match=1 bodies=4 origin=3.1556,0.8644,7.6018 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=2856 vertices=530 primitives=22 shaderBytes=1792 match=1 bodies=4 origin=3.1556,0.8644,7.6018 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=2873 vertices=530 primitives=120 shaderBytes=1792 match=1 bodies=2 origin=1.2994,0.8477,8.9432 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=2873 vertices=530 primitives=355 shaderBytes=1792 match=1 bodies=2 origin=1.2994,0.8477,8.9432 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=2873 vertices=530 primitives=22 shaderBytes=1792 match=1 bodies=2 origin=1.2994,0.8477,8.9432 rawBounds=nan,nan,nan:nan,nan,nan
+FRAME 2880 candidates=3022 owned=3022 replaced=3022 shaderFailures=0 references=40 bodies=2 graphicsSpeedValid=1 graphicsSpeed=0.0000 blend=0.7231 projectionValid=1 recoveredSceneRefs=50218 hiddenWheels=85818 groups=40 best=1 second=1 hoofPlayed=2 audioActive=1 hiddenEffects=2617 hiddenHeadlights=0 effectReads=24 effectCacheHits=476871
+SPARK model=5 draws=20 contacts=0,0 blend=0.768 skinSamples=43
+SPARK model=7 draws=28 contacts=0,0 blend=0.949 skinSamples=1469
+ROAD_UP valid=1 local=0.00000,0.00000,1.00000
+ACTOR slot=0 model=5 speed=0.0000 blend=0.7231 position=0.0121,5.4203,0.0057
+VISUAL frame=2880 model=5 idleFallback=0 corrected=1 color=7 upView=0.00000,0.99992,0.01246 originView=0.01208,1.28790,9.43710
+VISUAL frame=2880 model=5 idleFallback=0 corrected=1 color=7 upView=0.00000,-0.99992,-0.01246 originView=0.01208,0.95652,9.43297
+FRAME 3000 candidates=3262 owned=3262 replaced=3262 shaderFailures=0 references=40 bodies=2 graphicsSpeedValid=1 graphicsSpeed=0.0000 blend=0.0005 projectionValid=1 recoveredSceneRefs=54298 hiddenWheels=89178 groups=40 best=1 second=1 hoofPlayed=2 audioActive=1 hiddenEffects=5977 hiddenHeadlights=0 effectReads=25 effectCacheHits=516358
+SPARK model=5 draws=26 contacts=49,47 blend=0.001 skinSamples=163
+SPARK model=7 draws=28 contacts=0,0 blend=0.949 skinSamples=1469
+ROAD_UP valid=1 local=0.00000,0.00000,1.00000
+ACTOR slot=0 model=5 speed=0.0000 blend=0.0005 position=0.0121,5.4203,0.0057
+VISUAL frame=3000 model=5 idleFallback=0 corrected=1 color=7 upView=0.00000,0.99992,0.01246 originView=0.01208,1.28790,9.43710
+VISUAL frame=3000 model=5 idleFallback=0 corrected=1 color=7 upView=0.00000,-0.99992,-0.01246 originView=0.01208,0.95652,9.43297
+WHEEL method=DIP frame=3079 vertices=339 primitives=60 shaderBytes=1792 match=1 bodies=1 origin=-2.9738,1.4549,6.6404 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=3079 vertices=339 primitives=14 shaderBytes=1792 match=1 bodies=1 origin=-2.9738,1.4549,6.6404 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=3079 vertices=608 primitives=120 shaderBytes=1792 match=1 bodies=3 origin=-2.9738,0.8593,6.6329 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=3080 vertices=339 primitives=150 shaderBytes=1792 match=1 bodies=1 origin=-2.8585,1.4530,6.7903 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=3080 vertices=608 primitives=256 shaderBytes=1792 match=1 bodies=3 origin=-2.8585,0.8574,6.7829 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=3080 vertices=608 primitives=22 shaderBytes=1792 match=1 bodies=3 origin=-2.8585,0.8574,6.7829 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=3081 vertices=608 primitives=99 shaderBytes=1792 match=1 bodies=3 origin=-2.7381,0.8556,6.9287 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=3081 vertices=608 primitives=2 shaderBytes=1792 match=1 bodies=3 origin=-2.7381,0.8556,6.9287 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=3102 vertices=608 primitives=256 shaderBytes=1792 match=1 bodies=2 origin=1.3694,0.8319,8.8255 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=3102 vertices=608 primitives=22 shaderBytes=1792 match=1 bodies=2 origin=1.3694,0.8319,8.8255 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=3102 vertices=608 primitives=99 shaderBytes=1792 match=1 bodies=2 origin=1.3694,0.8319,8.8255 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=3102 vertices=608 primitives=2 shaderBytes=1792 match=1 bodies=2 origin=1.3694,0.8319,8.8255 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=3102 vertices=608 primitives=120 shaderBytes=1792 match=1 bodies=2 origin=1.3694,0.8319,8.8255 rawBounds=nan,nan,nan:nan,nan,nan
+FRAME 3120 candidates=3604 owned=3604 replaced=3604 shaderFailures=0 references=40 bodies=2 graphicsSpeedValid=1 graphicsSpeed=0.0000 blend=0.3175 projectionValid=1 recoveredSceneRefs=58378 hiddenWheels=92671 groups=40 best=1 second=1 hoofPlayed=3 audioActive=1 hiddenEffects=10507 hiddenHeadlights=0 effectReads=27 effectCacheHits=559079
+SPARK model=0 draws=40 contacts=6,51 blend=0.337 skinSamples=71
+SPARK model=5 draws=58 contacts=0,0 blend=0.939 skinSamples=267
+SPARK model=7 draws=28 contacts=0,0 blend=0.949 skinSamples=1469
+ROAD_UP valid=1 local=-0.00000,0.00000,1.00000
+ACTOR slot=2 model=0 speed=0.0000 blend=0.3175 position=-0.0116,5.4203,-0.1438
+VISUAL frame=3120 model=0 idleFallback=0 corrected=1 color=7 upView=-0.00000,0.99992,0.01246 originView=-0.01156,1.13846,9.43524
+VISUAL frame=3120 model=0 idleFallback=0 corrected=1 color=7 upView=-0.00000,-0.99992,-0.01246 originView=-0.01156,1.10596,9.43483
+FRAME 3240 candidates=3952 owned=3952 replaced=3952 shaderFailures=0 references=36 bodies=2 graphicsSpeedValid=1 graphicsSpeed=0.0000 blend=0.4059 projectionValid=1 recoveredSceneRefs=62458 hiddenWheels=95754 groups=36 best=1 second=1 hoofPlayed=4 audioActive=1 hiddenEffects=13195 hiddenHeadlights=0 effectReads=29 effectCacheHits=599998
+SPARK model=0 draws=68 contacts=0,0 blend=0.940 skinSamples=180
+SPARK model=5 draws=58 contacts=0,0 blend=0.939 skinSamples=267
+SPARK model=7 draws=28 contacts=0,0 blend=0.949 skinSamples=1469
+SPARK model=8 draws=36 contacts=28,0 blend=0.431 skinSamples=69
+ROAD_UP valid=1 local=-0.00000,0.00000,1.00000
+ACTOR slot=3 model=8 speed=0.0000 blend=0.4059 position=-0.0000,5.4000,0.1167
+VISUAL frame=3240 model=8 idleFallback=0 corrected=1 color=7 upView=-0.00000,0.99992,0.01246 originView=0.00000,1.39909,9.41819
+VISUAL frame=3240 model=8 idleFallback=0 corrected=1 color=7 upView=-0.00000,-0.99992,-0.01246 originView=0.00000,0.84584,9.41129
+WHEEL method=DIP frame=3315 vertices=491 primitives=221 shaderBytes=1792 match=0 bodies=0 origin=-5.1314,1.3501,5.7635 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=3315 vertices=611 primitives=358 shaderBytes=1792 match=0 bodies=1 origin=-5.1314,0.9859,5.7589 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=3317 vertices=491 primitives=74 shaderBytes=1792 match=0 bodies=0 origin=-4.9971,1.3457,6.1171 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=3317 vertices=611 primitives=106 shaderBytes=1792 match=0 bodies=1 origin=-4.9971,0.9815,6.1125 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=3318 vertices=84 primitives=14 shaderBytes=1792 match=0 bodies=0 origin=-4.9208,1.3435,6.2901 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=3318 vertices=124 primitives=14 shaderBytes=1792 match=0 bodies=1 origin=-4.9208,0.9794,6.2856 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=3320 vertices=331 primitives=120 shaderBytes=1792 match=0 bodies=0 origin=-4.7319,1.3389,6.6609 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=3320 vertices=491 primitives=24 shaderBytes=1792 match=0 bodies=1 origin=-4.7319,1.3389,6.6609 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=3320 vertices=505 primitives=286 shaderBytes=1792 match=0 bodies=1 origin=-4.7319,0.9747,6.6564 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=3320 vertices=611 primitives=18 shaderBytes=1792 match=0 bodies=2 origin=-4.7319,0.9747,6.6564 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=3321 vertices=146 primitives=50 shaderBytes=1792 match=0 bodies=0 origin=-4.6170,1.3364,6.8568 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=3321 vertices=146 primitives=74 shaderBytes=1792 match=0 bodies=0 origin=-4.6170,1.3364,6.8568 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=3321 vertices=84 primitives=40 shaderBytes=1792 match=0 bodies=0 origin=-4.6170,1.3364,6.8568 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=3321 vertices=84 primitives=12 shaderBytes=1792 match=0 bodies=0 origin=-4.6170,1.3364,6.8568 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=3321 vertices=246 primitives=128 shaderBytes=1792 match=0 bodies=1 origin=-4.6170,0.9723,6.8522 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=3321 vertices=246 primitives=120 shaderBytes=1792 match=0 bodies=1 origin=-4.6170,0.9723,6.8522 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=3321 vertices=124 primitives=26 shaderBytes=1792 match=0 bodies=1 origin=-4.6170,0.9723,6.8522 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=3322 vertices=407 primitives=152 shaderBytes=1792 match=0 bodies=0 origin=-4.4940,1.3341,7.0476 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=3322 vertices=491 primitives=30 shaderBytes=1792 match=0 bodies=0 origin=-4.4940,1.3341,7.0476 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=3322 vertices=407 primitives=11 shaderBytes=1792 match=0 bodies=0 origin=-4.4940,1.3341,7.0476 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=3322 vertices=407 primitives=41 shaderBytes=1792 match=0 bodies=1 origin=-4.4940,1.3341,7.0476 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=3322 vertices=558 primitives=368 shaderBytes=1792 match=0 bodies=1 origin=-4.4940,0.9699,7.0431 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=3322 vertices=113 primitives=108 shaderBytes=1792 match=0 bodies=1 origin=-4.4940,0.9699,7.0431 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=3322 vertices=124 primitives=66 shaderBytes=1792 match=0 bodies=1 origin=-4.4940,0.9699,7.0431 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=3322 vertices=558 primitives=11 shaderBytes=1792 match=0 bodies=1 origin=-4.4940,0.9699,7.0431 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=3322 vertices=558 primitives=41 shaderBytes=1792 match=0 bodies=2 origin=-4.4940,0.9699,7.0431 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=3323 vertices=407 primitives=86 shaderBytes=1792 match=0 bodies=0 origin=-4.3557,1.3316,7.2432 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=3323 vertices=270 primitives=151 shaderBytes=1792 match=0 bodies=0 origin=-2.8306,1.4856,6.6270 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=3323 vertices=270 primitives=60 shaderBytes=1792 match=0 bodies=0 origin=-2.8306,1.4856,6.6270 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=3323 vertices=270 primitives=14 shaderBytes=1792 match=0 bodies=0 origin=-2.8306,1.4856,6.6270 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=3323 vertices=558 primitives=118 shaderBytes=1792 match=0 bodies=1 origin=-4.3557,0.9675,7.2387 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=3323 vertices=90 primitives=30 shaderBytes=1792 match=0 bodies=1 origin=-4.3557,0.9675,7.2387 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=3323 vertices=90 primitives=21 shaderBytes=1792 match=0 bodies=1 origin=-4.3557,0.9675,7.2387 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=3323 vertices=157 primitives=31 shaderBytes=1792 match=0 bodies=1 origin=-4.3557,0.9675,7.2387 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=3323 vertices=157 primitives=76 shaderBytes=1792 match=0 bodies=1 origin=-4.3557,0.9675,7.2387 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=3323 vertices=201 primitives=56 shaderBytes=1792 match=0 bodies=1 origin=-4.3557,0.9675,7.2387 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=3323 vertices=201 primitives=100 shaderBytes=1792 match=0 bodies=1 origin=-4.3557,0.9675,7.2387 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=3323 vertices=228 primitives=73 shaderBytes=1792 match=0 bodies=1 origin=-4.3557,0.9675,7.2387 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=3323 vertices=228 primitives=30 shaderBytes=1792 match=0 bodies=1 origin=-4.3557,0.9675,7.2387 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=3323 vertices=228 primitives=60 shaderBytes=1792 match=0 bodies=1 origin=-4.3557,0.9675,7.2387 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=3323 vertices=496 primitives=280 shaderBytes=1792 match=0 bodies=1 origin=-2.8306,0.8289,6.6189 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=3323 vertices=496 primitives=120 shaderBytes=1792 match=0 bodies=1 origin=-2.8306,0.8289,6.6189 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=3323 vertices=496 primitives=14 shaderBytes=1792 match=0 bodies=1 origin=-2.8306,0.8289,6.6189 rawBounds=nan,nan,nan:nan,nan,nan
+WHEEL method=DIP frame=3323 vertices=90 primitives=4 shaderBytes=1792 match=0 bodies=2 origin=-4.3557,0.9675,7.2387 rawBounds=nan,nan,nan:nan,nan,nan
+FRAME 3360 candidates=4160 owned=4160 replaced=4160 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.3311 projectionValid=1 recoveredSceneRefs=66062 hiddenWheels=96117 groups=0 best=0 second=0 hoofPlayed=5 audioActive=1 hiddenEffects=13315 hiddenHeadlights=0 effectReads=31 effectCacheHits=637657
+SPARK model=0 draws=68 contacts=0,0 blend=0.940 skinSamples=180
+SPARK model=5 draws=58 contacts=0,0 blend=0.939 skinSamples=267
+SPARK model=7 draws=28 contacts=0,0 blend=0.949 skinSamples=1469
+SPARK model=8 draws=60 contacts=0,0 blend=0.960 skinSamples=173
+ROAD_UP valid=0 local=0.00000,0.00000,1.00000
+FRAME 3480 candidates=4302 owned=4302 replaced=4302 shaderFailures=0 references=40 bodies=2 graphicsSpeedValid=1 graphicsSpeed=0.0000 blend=0.0694 projectionValid=1 recoveredSceneRefs=68476 hiddenWheels=96380 groups=40 best=1 second=1 hoofPlayed=6 audioActive=1 hiddenEffects=13435 hiddenHeadlights=0 effectReads=34 effectCacheHits=675590
+SPARK model=0 draws=68 contacts=0,0 blend=0.940 skinSamples=180
+SPARK model=5 draws=58 contacts=0,0 blend=0.939 skinSamples=267
+SPARK model=7 draws=66 contacts=56,125 blend=0.075 skinSamples=1540
+SPARK model=8 draws=60 contacts=0,0 blend=0.960 skinSamples=173
+ROAD_UP valid=1 local=0.00000,-0.00000,1.00000
+ACTOR slot=0 model=7 speed=0.0000 blend=0.0694 position=-0.0116,5.4203,0.0002
+VISUAL frame=3480 model=7 idleFallback=0 corrected=1 color=7 upView=0.00000,0.99992,0.01246 originView=-0.01156,1.28238,9.43703
+VISUAL frame=3480 model=7 idleFallback=0 corrected=1 color=7 upView=0.00000,-0.99992,-0.01246 originView=-0.01156,0.96204,9.43304
+FRAME 3600 candidates=4456 owned=4456 replaced=4456 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0586 projectionValid=1 recoveredSceneRefs=71162 hiddenWheels=96619 groups=0 best=0 second=0 hoofPlayed=8 audioActive=1 hiddenEffects=13555 hiddenHeadlights=0 effectReads=36 effectCacheHits=713311
+SPARK model=0 draws=68 contacts=0,0 blend=0.940 skinSamples=180
+SPARK model=5 draws=58 contacts=0,0 blend=0.939 skinSamples=267
+SPARK model=7 draws=92 contacts=0,0 blend=0.960 skinSamples=1617
+SPARK model=8 draws=60 contacts=0,0 blend=0.960 skinSamples=173
+ROAD_UP valid=0 local=0.00000,-0.00000,1.00000
+FRAME 3720 candidates=4670 owned=4670 replaced=4670 shaderFailures=0 references=40 bodies=2 graphicsSpeedValid=1 graphicsSpeed=0.0000 blend=0.0227 projectionValid=1 recoveredSceneRefs=74800 hiddenWheels=97043 groups=40 best=1 second=1 hoofPlayed=8 audioActive=1 hiddenEffects=13675 hiddenHeadlights=0 effectReads=37 effectCacheHits=751222
+SPARK model=0 draws=68 contacts=0,0 blend=0.940 skinSamples=180
+SPARK model=5 draws=58 contacts=0,0 blend=0.939 skinSamples=267
+SPARK model=6 draws=34 contacts=73,49 blend=0.024 skinSamples=109
+SPARK model=7 draws=92 contacts=0,0 blend=0.960 skinSamples=1617
+SPARK model=8 draws=60 contacts=0,0 blend=0.960 skinSamples=173
+ROAD_UP valid=1 local=0.00000,-0.00000,1.00000
+ACTOR slot=1 model=6 speed=0.0000 blend=0.0227 position=0.0121,5.4203,-0.0628
+VISUAL frame=3720 model=6 idleFallback=0 corrected=1 color=7 upView=0.00000,0.99999,0.00379 originView=0.01208,1.30073,9.42537
+VISUAL frame=3720 model=6 idleFallback=0 corrected=1 color=7 upView=0.00000,-0.99999,-0.00383 originView=0.01208,1.10643,9.42463
+FRAME 3840 candidates=5012 owned=5012 replaced=5012 shaderFailures=0 references=40 bodies=2 graphicsSpeedValid=1 graphicsSpeed=0.0000 blend=0.0302 projectionValid=1 recoveredSceneRefs=78880 hiddenWheels=97635 groups=40 best=1 second=1 hoofPlayed=8 audioActive=1 hiddenEffects=13795 hiddenHeadlights=0 effectReads=39 effectCacheHits=789338
+SPARK model=0 draws=68 contacts=0,0 blend=0.940 skinSamples=180
+SPARK model=5 draws=116 contacts=46,49 blend=0.032 skinSamples=371
+SPARK model=6 draws=66 contacts=0,0 blend=0.960 skinSamples=178
+SPARK model=7 draws=92 contacts=0,0 blend=0.960 skinSamples=1617
+SPARK model=8 draws=60 contacts=0,0 blend=0.960 skinSamples=173
+ROAD_UP valid=1 local=0.00000,0.00000,1.00000
+ACTOR slot=0 model=5 speed=0.0000 blend=0.0302 position=-0.0116,5.4203,0.0156
+VISUAL frame=3840 model=5 idleFallback=0 corrected=1 color=7 upView=0.00000,0.99994,0.01068 originView=-0.01156,1.31422,9.43495
+VISUAL frame=3840 model=5 idleFallback=0 corrected=1 color=7 upView=0.00000,-0.99994,-0.01072 originView=-0.01156,0.96304,9.43119
+FRAME 3960 candidates=5350 owned=5350 replaced=5350 shaderFailures=0 references=36 bodies=2 graphicsSpeedValid=1 graphicsSpeed=0.0000 blend=0.0201 projectionValid=1 recoveredSceneRefs=82960 hiddenWheels=98247 groups=36 best=1 second=1 hoofPlayed=9 audioActive=1 hiddenEffects=13915 hiddenHeadlights=0 effectReads=41 effectCacheHits=827060
+SPARK model=0 draws=68 contacts=0,0 blend=0.940 skinSamples=180
+SPARK model=2 draws=14 contacts=70,70 blend=0.022 skinSamples=109
+SPARK model=5 draws=140 contacts=0,0 blend=0.942 skinSamples=435
+SPARK model=6 draws=66 contacts=0,0 blend=0.960 skinSamples=178
+SPARK model=7 draws=92 contacts=0,0 blend=0.960 skinSamples=1617
+SPARK model=8 draws=60 contacts=0,0 blend=0.960 skinSamples=173
+ROAD_UP valid=1 local=0.00000,0.00000,1.00000
+ACTOR slot=1 model=2 speed=0.0000 blend=0.0201 position=0.0000,5.4000,0.0195
+VISUAL frame=3960 model=2 idleFallback=0 corrected=1 color=7 upView=0.00000,0.99992,0.01246 originView=0.00000,1.30195,9.41698
+VISUAL frame=3960 model=2 idleFallback=0 corrected=1 color=7 upView=0.00000,-0.99992,-0.01246 originView=0.00000,0.94298,9.41250
+FRAME 4080 candidates=5694 owned=5694 replaced=5694 shaderFailures=0 references=40 bodies=2 graphicsSpeedValid=1 graphicsSpeed=0.0000 blend=0.0312 projectionValid=1 recoveredSceneRefs=87040 hiddenWheels=98881 groups=40 best=1 second=1 hoofPlayed=10 audioActive=1 hiddenEffects=14035 hiddenHeadlights=0 effectReads=42 effectCacheHits=865081
+SPARK model=0 draws=68 contacts=0,0 blend=0.940 skinSamples=180
+SPARK model=1 draws=42 contacts=82,24 blend=0.033 skinSamples=109
+SPARK model=2 draws=40 contacts=0,0 blend=0.942 skinSamples=176
+SPARK model=5 draws=140 contacts=0,0 blend=0.942 skinSamples=435
+SPARK model=6 draws=66 contacts=0,0 blend=0.960 skinSamples=178
+SPARK model=7 draws=92 contacts=0,0 blend=0.960 skinSamples=1617
+SPARK model=8 draws=60 contacts=0,0 blend=0.960 skinSamples=173
+ROAD_UP valid=1 local=0.00000,-0.00000,1.00000
+ACTOR slot=2 model=1 speed=0.0000 blend=0.0312 position=0.0121,5.4203,0.0735
+VISUAL frame=4080 model=1 idleFallback=0 corrected=1 color=7 upView=0.00000,0.99992,0.01246 originView=0.01208,1.35569,9.43795
+VISUAL frame=4080 model=1 idleFallback=0 corrected=1 color=7 upView=0.00000,-0.99992,-0.01246 originView=0.01208,0.88873,9.43213
+FRAME 4200 candidates=6034 owned=6034 replaced=6034 shaderFailures=0 references=40 bodies=2 graphicsSpeedValid=1 graphicsSpeed=0.0000 blend=0.0889 projectionValid=1 recoveredSceneRefs=91120 hiddenWheels=99483 groups=40 best=1 second=1 hoofPlayed=11 audioActive=1 hiddenEffects=14155 hiddenHeadlights=0 effectReads=44 effectCacheHits=903200
+SPARK model=0 draws=118 contacts=13,42 blend=0.095 skinSamples=271
+SPARK model=1 draws=78 contacts=0,32 blend=0.959 skinSamples=190
+SPARK model=2 draws=40 contacts=0,0 blend=0.942 skinSamples=176
+SPARK model=5 draws=140 contacts=0,0 blend=0.942 skinSamples=435
+SPARK model=6 draws=66 contacts=0,0 blend=0.960 skinSamples=178
+SPARK model=7 draws=92 contacts=0,0 blend=0.960 skinSamples=1617
+SPARK model=8 draws=60 contacts=0,0 blend=0.960 skinSamples=173
+ROAD_UP valid=1 local=-0.00000,0.00000,1.00000
+ACTOR slot=0 model=0 speed=0.0000 blend=0.0889 position=-0.0116,5.4203,-0.1355
+VISUAL frame=4200 model=0 idleFallback=0 corrected=1 color=7 upView=-0.00000,0.99992,0.01246 originView=-0.01156,1.14671,9.43534
+VISUAL frame=4200 model=0 idleFallback=0 corrected=1 color=7 upView=-0.00000,-0.99992,-0.01246 originView=-0.01156,1.09771,9.43473
+FRAME 4320 candidates=6378 owned=6378 replaced=6378 shaderFailures=0 references=36 bodies=2 graphicsSpeedValid=1 graphicsSpeed=0.0000 blend=0.0642 projectionValid=1 recoveredSceneRefs=95200 hiddenWheels=100113 groups=36 best=1 second=1 hoofPlayed=12 audioActive=1 hiddenEffects=14275 hiddenHeadlights=0 effectReads=46 effectCacheHits=941060
+SPARK model=0 draws=152 contacts=0,0 blend=0.941 skinSamples=357
+SPARK model=1 draws=78 contacts=0,32 blend=0.959 skinSamples=190
+SPARK model=2 draws=40 contacts=0,0 blend=0.942 skinSamples=176
+SPARK model=3 draws=42 contacts=109,96 blend=0.069 skinSamples=90
+SPARK model=5 draws=140 contacts=0,0 blend=0.942 skinSamples=435
+SPARK model=6 draws=66 contacts=0,0 blend=0.960 skinSamples=178
+SPARK model=7 draws=92 contacts=0,0 blend=0.960 skinSamples=1617
+SPARK model=8 draws=60 contacts=0,0 blend=0.960 skinSamples=173
+ROAD_UP valid=1 local=-0.00000,0.00000,1.00000
+ACTOR slot=1 model=3 speed=0.0000 blend=0.0642 position=-0.0000,5.4000,0.0500
+VISUAL frame=4320 model=3 idleFallback=0 corrected=1 color=7 upView=-0.00000,0.99992,0.01246 originView=0.00000,1.33241,9.41735
+VISUAL frame=4320 model=3 idleFallback=0 corrected=1 color=7 upView=-0.00000,-0.99992,-0.01246 originView=0.00000,0.91252,9.41212
+FRAME 4440 candidates=6712 owned=6712 replaced=6712 shaderFailures=0 references=40 bodies=2 graphicsSpeedValid=1 graphicsSpeed=0.0000 blend=0.0459 projectionValid=1 recoveredSceneRefs=99280 hiddenWheels=100716 groups=40 best=1 second=1 hoofPlayed=13 audioActive=1 hiddenEffects=14395 hiddenHeadlights=0 effectReads=47 effectCacheHits=978864
+SPARK model=0 draws=152 contacts=0,0 blend=0.941 skinSamples=357
+SPARK model=1 draws=78 contacts=0,32 blend=0.959 skinSamples=190
+SPARK model=2 draws=40 contacts=0,0 blend=0.942 skinSamples=176
+SPARK model=3 draws=64 contacts=0,36 blend=0.940 skinSamples=164
+SPARK model=4 draws=16 contacts=42,44 blend=0.048 skinSamples=97
+SPARK model=5 draws=140 contacts=0,0 blend=0.942 skinSamples=435
+SPARK model=6 draws=66 contacts=0,0 blend=0.960 skinSamples=178
+SPARK model=7 draws=92 contacts=0,0 blend=0.960 skinSamples=1617
+SPARK model=8 draws=60 contacts=0,0 blend=0.960 skinSamples=173
+ROAD_UP valid=1 local=0.00000,0.00000,1.00000
+ACTOR slot=0 model=4 speed=0.0000 blend=0.0459 position=0.0121,5.4203,0.0379
+VISUAL frame=4440 model=4 idleFallback=0 corrected=1 color=7 upView=0.00000,0.99992,0.01246 originView=0.01208,1.32011,9.43750
+VISUAL frame=4440 model=4 idleFallback=0 corrected=1 color=7 upView=0.00000,-0.99992,-0.01246 originView=0.01208,0.92432,9.43257
+FRAME 4560 candidates=6952 owned=6952 replaced=6952 shaderFailures=0 references=40 bodies=2 graphicsSpeedValid=1 graphicsSpeed=0.0000 blend=0.0000 projectionValid=1 recoveredSceneRefs=103360 hiddenWheels=101196 groups=40 best=1 second=1 hoofPlayed=13 audioActive=1 hiddenEffects=14515 hiddenHeadlights=0 effectReads=47 effectCacheHits=1016618
+SPARK model=0 draws=152 contacts=0,0 blend=0.941 skinSamples=357
+SPARK model=1 draws=78 contacts=0,32 blend=0.959 skinSamples=190
+SPARK model=2 draws=40 contacts=0,0 blend=0.942 skinSamples=176
+SPARK model=3 draws=64 contacts=0,36 blend=0.940 skinSamples=164
+SPARK model=4 draws=16 contacts=46,46 blend=0.000 skinSamples=217
+SPARK model=5 draws=140 contacts=0,0 blend=0.942 skinSamples=435
+SPARK model=6 draws=66 contacts=0,0 blend=0.960 skinSamples=178
+SPARK model=7 draws=92 contacts=0,0 blend=0.960 skinSamples=1617
+SPARK model=8 draws=60 contacts=0,0 blend=0.960 skinSamples=173
+ROAD_UP valid=1 local=0.00000,0.00000,1.00000
+ACTOR slot=0 model=4 speed=0.0000 blend=0.0000 position=0.0121,5.4203,0.0379
+VISUAL frame=4560 model=4 idleFallback=0 corrected=1 color=7 upView=0.00000,0.99992,0.01246 originView=0.01208,1.32011,9.43750
+VISUAL frame=4560 model=4 idleFallback=0 corrected=1 color=7 upView=0.00000,-0.99992,-0.01246 originView=0.01208,0.92432,9.43257
+FRAME 4680 candidates=7192 owned=7192 replaced=7192 shaderFailures=0 references=40 bodies=2 graphicsSpeedValid=1 graphicsSpeed=0.0000 blend=0.0000 projectionValid=1 recoveredSceneRefs=107440 hiddenWheels=101676 groups=40 best=1 second=1 hoofPlayed=13 audioActive=1 hiddenEffects=14635 hiddenHeadlights=0 effectReads=47 effectCacheHits=1055140
+SPARK model=0 draws=152 contacts=0,0 blend=0.941 skinSamples=357
+SPARK model=1 draws=78 contacts=0,32 blend=0.959 skinSamples=190
+SPARK model=2 draws=40 contacts=0,0 blend=0.942 skinSamples=176
+SPARK model=3 draws=64 contacts=0,36 blend=0.940 skinSamples=164
+SPARK model=4 draws=16 contacts=46,46 blend=0.000 skinSamples=337
+SPARK model=5 draws=140 contacts=0,0 blend=0.942 skinSamples=435
+SPARK model=6 draws=66 contacts=0,0 blend=0.960 skinSamples=178
+SPARK model=7 draws=92 contacts=0,0 blend=0.960 skinSamples=1617
+SPARK model=8 draws=60 contacts=0,0 blend=0.960 skinSamples=173
+ROAD_UP valid=1 local=0.00000,0.00000,1.00000
+ACTOR slot=0 model=4 speed=0.0000 blend=0.0000 position=0.0121,5.4203,0.0379
+VISUAL frame=4680 model=4 idleFallback=0 corrected=1 color=7 upView=0.00000,0.99992,0.01246 originView=0.01208,1.32011,9.43750
+VISUAL frame=4680 model=4 idleFallback=0 corrected=1 color=7 upView=0.00000,-0.99992,-0.01246 originView=0.01208,0.92432,9.43257
+FRAME 4800 candidates=7278 owned=7278 replaced=7278 shaderFailures=0 references=0 bodies=0 graphicsSpeedValid=0 graphicsSpeed=0.0000 blend=0.0000 projectionValid=1 recoveredSceneRefs=108902 hiddenWheels=101848 groups=0 best=0 second=0 hoofPlayed=13 audioActive=1 hiddenEffects=14678 hiddenHeadlights=0 effectReads=47 effectCacheHits=1085173
+SPARK model=0 draws=152 contacts=0,0 blend=0.941 skinSamples=357
+SPARK model=1 draws=78 contacts=0,32 blend=0.959 skinSamples=190
+SPARK model=2 draws=40 contacts=0,0 blend=0.942 skinSamples=176
+SPARK model=3 draws=64 contacts=0,36 blend=0.940 skinSamples=164
+SPARK model=4 draws=16 contacts=46,46 blend=0.000 skinSamples=380
+SPARK model=5 draws=140 contacts=0,0 blend=0.942 skinSamples=435
+SPARK model=6 draws=66 contacts=0,0 blend=0.960 skinSamples=178
+SPARK model=7 draws=92 contacts=0,0 blend=0.960 skinSamples=1617
+SPARK model=8 draws=60 contacts=0,0 blend=0.960 skinSamples=173
+ROAD_UP valid=0 local=0.00000,0.00000,1.00000
+POSE_UNMATCHED frame=4893 model=4 determinant=-1.0000 rebased=0 origin=1.9927,1.0194,0.6803 actor=0 age=1 speed=4.260 distance=8.651 rawDistance=8.651 direction=0.873 determinant=1.000 actor=1 age=1 speed=5.217 distance=10.416 rawDistance=10.416 direction=0.870 determinant=1.000
+POSE_UNMATCHED frame=4894 model=4 determinant=-1.0000 rebased=0 origin=1.9785,1.0161,0.8703 actor=0 age=1 speed=2.799 distance=8.573 rawDistance=8.573 direction=0.876 determinant=1.000 actor=1 age=1 speed=3.432 distance=10.316 rawDistance=10.316 direction=0.873 determinant=1.000
+POSE_UNMATCHED frame=4895 model=4 determinant=-1.0000 rebased=0 origin=1.9689,1.0232,1.0281 actor=0 age=1 speed=2.993 distance=8.528 rawDistance=8.528 direction=0.880 determinant=1.000 actor=1 age=1 speed=3.746 distance=10.250 rawDistance=10.250 direction=0.875 determinant=1.000
+POSE_UNMATCHED frame=4896 model=4 determinant=-1.0000 rebased=0 origin=1.9579,1.0267,1.1956 actor=0 age=1 speed=2.396 distance=8.456 rawDistance=8.456 direction=0.883 determinant=1.000 actor=1 age=1 speed=3.005 distance=10.160 rawDistance=10.160 direction=0.878 determinant=1.000
+POSE_UNMATCHED frame=4897 model=4 determinant=-1.0000 rebased=0 origin=1.9435,1.0234,1.3970 actor=0 age=1 speed=2.457 distance=8.357 rawDistance=8.357 direction=0.886 determinant=1.000 actor=1 age=1 speed=3.130 distance=10.043 rawDistance=10.043 direction=0.881 determinant=1.000
+POSE_UNMATCHED frame=4898 model=4 determinant=-1.0000 rebased=0 origin=1.9280,1.0211,1.6075 actor=0 age=1 speed=2.937 distance=8.267 rawDistance=8.267 direction=0.889 determinant=1.000 actor=1 age=1 speed=3.785 distance=9.932 rawDistance=9.932 direction=0.884 determinant=1.000
+POSE_UNMATCHED frame=4899 model=4 determinant=-1.0000 rebased=0 origin=1.9134,1.0224,1.8153 actor=0 age=1 speed=3.138 distance=8.184 rawDistance=8.184 direction=0.892 determinant=1.000 actor=1 age=1 speed=4.112 distance=9.831 rawDistance=9.831 direction=0.887 determinant=1.000
+POSE_UNMATCHED frame=4900 model=4 determinant=-1.0000 rebased=0 origin=1.8990,1.0248,2.0203 actor=0 age=1 speed=3.080 distance=8.102 rawDistance=8.102 direction=0.895 determinant=1.000 actor=1 age=1 speed=4.083 distance=9.732 rawDistance=9.732 direction=0.889 determinant=1.000
+POSE_UNMATCHED frame=4901 model=4 determinant=-1.0000 rebased=0 origin=1.8850,1.0263,2.2275 actor=0 age=1 speed=2.925 distance=8.017 rawDistance=8.017 direction=0.898 determinant=1.000 actor=1 age=1 speed=3.922 distance=9.630 rawDistance=9.630 direction=0.891 determinant=1.000
+POSE_UNMATCHED frame=4902 model=4 determinant=-1.0000 rebased=0 origin=1.8707,1.0277,2.4402 actor=0 age=1 speed=2.849 distance=7.927 rawDistance=7.927 direction=0.901 determinant=1.000 actor=1 age=1 speed=3.857 distance=9.524 rawDistance=9.524 direction=0.893 determinant=1.000
+POSE_UNMATCHED frame=4903 model=4 determinant=-1.0000 rebased=0 origin=1.8568,1.0283,2.6542 actor=0 age=1 speed=3.082 distance=7.838 rawDistance=7.838 direction=0.904 determinant=1.000 actor=1 age=1 speed=4.237 distance=9.421 rawDistance=9.421 direction=0.896 determinant=1.000
+POSE_UNMATCHED frame=4904 model=4 determinant=-1.0000 rebased=0 origin=1.8424,1.0285,2.8733 actor=0 age=1 speed=3.088 distance=7.746 rawDistance=7.746 direction=0.907 determinant=1.000 actor=1 age=1 speed=4.306 distance=9.315 rawDistance=9.315 direction=0.898 determinant=1.000
+FRAME 4920 candidates=7582 owned=7582 replaced=7488 shaderFailures=0 references=91 bodies=8 graphicsSpeedValid=1 graphicsSpeed=5.0337 blend=0.9857 projectionValid=1 recoveredSceneRefs=113757 hiddenWheels=102751 groups=80 best=4 second=3 hoofPlayed=15 audioActive=1 hiddenEffects=14881 hiddenHeadlights=8028 effectReads=71 effectCacheHits=1158871
+SPARK model=0 draws=164 contacts=0,19 blend=0.982 skinSamples=386
+SPARK model=1 draws=78 contacts=0,32 blend=0.959 skinSamples=190
+SPARK model=2 draws=40 contacts=0,0 blend=0.942 skinSamples=176
+SPARK model=3 draws=64 contacts=0,36 blend=0.940 skinSamples=164
+SPARK model=4 draws=72 contacts=0,0 blend=0.956 skinSamples=537
+SPARK model=5 draws=140 contacts=0,0 blend=0.942 skinSamples=435
+SPARK model=6 draws=66 contacts=0,0 blend=0.960 skinSamples=178
+SPARK model=7 draws=92 contacts=0,0 blend=0.960 skinSamples=1617
+SPARK model=8 draws=60 contacts=0,0 blend=0.960 skinSamples=173
+ROAD_UP valid=1 local=0.00000,-0.00000,1.00000
+ACTOR slot=0 model=4 speed=3.4473 blend=0.9970 position=2.4519,95.4249,6.6283
+ACTOR slot=1 model=4 speed=5.6127 blend=0.9979 position=2.1248,102.3859,6.7421
+ACTOR slot=2 model=0 speed=5.0337 blend=0.9857 position=7.8781,92.3747,6.2591
+ACTOR slot=3 model=4 speed=7.7599 blend=0.9648 position=8.3974,97.5953,6.2618
+VISUAL frame=4920 model=4 idleFallback=0 corrected=1 color=7 upView=-0.05559,0.97752,0.20344 originView=3.62146,-0.16147,14.09972
+VISUAL frame=4920 model=4 idleFallback=0 corrected=1 color=7 upView=-0.05884,0.97892,0.19564 originView=-2.63758,0.24347,11.06927
+VISUAL frame=4920 model=4 idleFallback=0 corrected=1 color=7 upView=-0.06701,0.97299,0.22095 originView=1.67216,1.01287,6.62439
+VISUAL frame=4920 model=0 idleFallback=0 corrected=1 color=7 upView=0.06704,0.98574,0.15443 originView=-3.36807,0.90672,4.96912
+VISUAL frame=4920 model=4 idleFallback=0 corrected=1 color=7 upView=0.00000,-0.99572,-0.09255 originView=3.62146,-0.55277,14.06285
+VISUAL frame=4920 model=4 idleFallback=0 corrected=1 color=7 upView=-0.00000,-0.99560,-0.09380 originView=-2.63758,-0.14831,11.03236
+VISUAL frame=4920 model=0 idleFallback=0 corrected=1 color=7 upView=-0.00000,-0.99560,-0.09380 originView=-3.36807,0.79029,4.95815
+VISUAL frame=4920 model=4 idleFallback=0 corrected=1 color=7 upView=0.00000,-0.99572,-0.09255 originView=1.67216,0.62909,6.58823
+POSE_UNMATCHED frame=4981 model=4 determinant=-1.0000 rebased=0 origin=-5.3202,1.4257,6.9752 actor=0 age=1 speed=3.134 distance=12.156 rawDistance=12.156 direction=-0.618 determinant=1.000 actor=1 age=1 speed=2.420 distance=18.240 rawDistance=18.240 direction=-0.604 determinant=1.000 actor=3 age=1 speed=4.932 distance=15.252 rawDistance=15.252 direction=-0.627 determinant=1.000
+FRAME 5040 candidates=8804 owned=8804 replaced=8412 shaderFailures=0 references=76 bodies=8 graphicsSpeedValid=1 graphicsSpeed=0.0000 blend=0.0000 projectionValid=1 recoveredSceneRefs=130999 hiddenWheels=106115 groups=64 best=4 second=4 hoofPlayed=22 audioActive=1 hiddenEffects=15907 hiddenHeadlights=41175 effectReads=75 effectCacheHits=1313326
+SPARK model=0 draws=202 contacts=60,72 blend=0.000 skinSamples=522
+SPARK model=1 draws=78 contacts=0,32 blend=0.959 skinSamples=190
+SPARK model=2 draws=40 contacts=0,0 blend=0.942 skinSamples=176
+SPARK model=3 draws=64 contacts=0,36 blend=0.940 skinSamples=164
+SPARK model=4 draws=192 contacts=46,46 blend=0.000 skinSamples=1212
+SPARK model=5 draws=140 contacts=0,0 blend=0.942 skinSamples=435
+SPARK model=6 draws=66 contacts=0,0 blend=0.960 skinSamples=178
+SPARK model=7 draws=92 contacts=0,0 blend=0.960 skinSamples=1617
+SPARK model=8 draws=60 contacts=0,0 blend=0.960 skinSamples=173
+ROAD_UP valid=1 local=-0.00000,0.00000,1.00000
+ACTOR slot=0 model=4 speed=0.0000 blend=0.0000 position=-108.4448,123.0904,-6.4525
+ACTOR slot=1 model=4 speed=0.0000 blend=0.0000 position=-102.5326,126.5692,-6.5503
+ACTOR slot=2 model=0 speed=0.0000 blend=0.0000 position=-99.8720,128.0479,-6.6145
+ACTOR slot=5 model=4 speed=0.0000 blend=0.0000 position=-105.5521,124.8448,-6.5511
+VISUAL frame=5040 model=4 idleFallback=0 corrected=1 color=7 upView=-0.00103,0.99878,0.04939 originView=0.00005,2.07729,5.76466
+VISUAL frame=5040 model=4 idleFallback=0 corrected=1 color=7 upView=-0.00104,0.99874,0.05017 originView=-6.85892,2.16865,5.63211
+VISUAL frame=5040 model=4 idleFallback=0 corrected=1 color=7 upView=-0.00104,0.99874,0.05017 originView=-3.38155,2.17046,5.65186
+VISUAL frame=5040 model=0 idleFallback=0 corrected=1 color=7 upView=-0.00405,0.99888,0.04707 originView=-9.90291,1.90752,5.66281
+VISUAL frame=5040 model=4 idleFallback=0 corrected=1 color=7 upView=0.00002,-0.99884,0.04807 originView=0.00006,1.68693,5.78345
+VISUAL frame=5040 model=4 idleFallback=0 corrected=1 color=7 upView=0.00002,-0.99884,0.04807 originView=-6.85891,1.77831,5.65089
+VISUAL frame=5040 model=0 idleFallback=0 corrected=1 color=7 upView=0.00002,-0.99884,0.04807 originView=-9.90291,1.84329,5.66589
+VISUAL frame=5040 model=4 idleFallback=0 corrected=1 color=7 upView=0.00002,-0.99884,0.04807 originView=-3.38154,1.78013,5.67064
+FRAME 5160 candidates=9764 owned=9764 replaced=9372 shaderFailures=0 references=76 bodies=8 graphicsSpeedValid=1 graphicsSpeed=1.2947 blend=0.2032 projectionValid=1 recoveredSceneRefs=141685 hiddenWheels=107797 groups=64 best=4 second=4 hoofPlayed=22 audioActive=1 hiddenEffects=17534 hiddenHeadlights=78734 effectReads=78 effectCacheHits=1454994
+SPARK model=0 draws=202 contacts=10,34 blend=0.156 skinSamples=642
+SPARK model=1 draws=78 contacts=0,32 blend=0.959 skinSamples=190
+SPARK model=2 draws=40 contacts=0,0 blend=0.942 skinSamples=176
+SPARK model=3 draws=64 contacts=0,36 blend=0.940 skinSamples=164
+SPARK model=4 draws=192 contacts=38,14 blend=0.178 skinSamples=1932
+SPARK model=5 draws=140 contacts=0,0 blend=0.942 skinSamples=435
+SPARK model=6 draws=66 contacts=0,0 blend=0.960 skinSamples=178
+SPARK model=7 draws=92 contacts=0,0 blend=0.960 skinSamples=1617
+SPARK model=8 draws=60 contacts=0,0 blend=0.960 skinSamples=173
+ROAD_UP valid=1 local=0.00000,-0.00000,1.00000
+ACTOR slot=0 model=4 speed=1.2947 blend=0.2032 position=-108.3508,122.9287,-6.4371
+ACTOR slot=1 model=4 speed=1.2980 blend=0.2075 position=-102.4462,126.3997,-6.5370
+ACTOR slot=2 model=0 speed=1.2126 blend=0.1841 position=-99.7836,127.8996,-6.6113
+ACTOR slot=5 model=4 speed=1.2979 blend=0.2075 position=-105.4493,124.6846,-6.5378
+VISUAL frame=5160 model=4 idleFallback=0 corrected=1 color=7 upView=-0.00422,0.99789,0.06483 originView=-0.00005,2.08981,5.87456
+VISUAL frame=5160 model=4 idleFallback=0 corrected=1 color=7 upView=-0.00016,0.99731,0.07330 originView=-6.84673,2.17829,5.74753
+VISUAL frame=5160 model=4 idleFallback=0 corrected=1 color=7 upView=-0.00249,0.99731,0.07327 originView=-3.39140,2.18025,5.76590
+VISUAL frame=5160 model=0 idleFallback=0 corrected=1 color=7 upView=-0.00701,0.99988,0.01396 originView=-9.90503,1.90746,5.76070
+VISUAL frame=5160 model=4 idleFallback=0 corrected=1 color=7 upView=0.00006,-0.99879,0.04921 originView=-0.00003,1.68678,5.89453
+VISUAL frame=5160 model=4 idleFallback=0 corrected=1 color=7 upView=0.00006,-0.99879,0.04921 originView=-6.84670,1.77998,5.76726
+VISUAL frame=5160 model=0 idleFallback=0 corrected=1 color=7 upView=0.00006,-0.99879,0.04921 originView=-9.90502,1.85461,5.76332
+VISUAL frame=5160 model=4 idleFallback=0 corrected=1 color=7 upView=0.00006,-0.99879,0.04921 originView=-3.39138,1.78195,5.78563
+FRAME 5280 candidates=10700 owned=10700 replaced=10308 shaderFailures=0 references=70 bodies=6 graphicsSpeedValid=1 graphicsSpeed=15.5922 blend=1.0000 projectionValid=1 recoveredSceneRefs=163211 hiddenWheels=109598 groups=56 best=4 second=4 hoofPlayed=31 audioActive=1 hiddenEffects=46392 hiddenHeadlights=116985 effectReads=82 effectCacheHits=1634679
+SPARK model=0 draws=266 contacts=0,0 blend=1.000 skinSamples=750
+SPARK model=1 draws=78 contacts=0,32 blend=0.959 skinSamples=190
+SPARK model=2 draws=40 contacts=0,0 blend=0.942 skinSamples=176
+SPARK model=3 draws=64 contacts=0,36 blend=0.940 skinSamples=164
+SPARK model=4 draws=430 contacts=0,0 blend=1.000 skinSamples=2652
+SPARK model=5 draws=140 contacts=0,0 blend=0.942 skinSamples=435
+SPARK model=6 draws=66 contacts=0,0 blend=0.960 skinSamples=178
+SPARK model=7 draws=92 contacts=0,0 blend=0.960 skinSamples=1617
+SPARK model=8 draws=60 contacts=0,0 blend=0.960 skinSamples=173
+ROAD_UP valid=1 local=-0.00000,0.00000,1.00000
+ACTOR slot=0 model=4 speed=15.5922 blend=1.0000 position=-94.4005,98.4174,-5.5710
+ACTOR slot=1 model=4 speed=15.6546 blend=1.0000 position=-89.4066,101.4037,-5.6746
+ACTOR slot=5 model=4 speed=15.5026 blend=1.0000 position=-90.3626,100.9141,-5.6750
+VISUAL frame=5280 model=4 idleFallback=0 corrected=1 color=7 upView=0.00103,0.99992,0.01266 originView=0.00759,2.03816,6.38258
+VISUAL frame=5280 model=4 idleFallback=0 corrected=1 color=7 upView=-0.00345,0.99995,0.00952 originView=-5.80441,2.12659,6.26738
+VISUAL frame=5280 model=4 idleFallback=0 corrected=1 color=7 upView=0.00049,0.99997,0.00729 originView=-4.75057,2.12621,6.21457
+VISUAL frame=5280 model=4 idleFallback=0 corrected=1 color=7 upView=-0.00004,-0.99974,0.02260 originView=0.00757,1.69126,6.39043
+VISUAL frame=5280 model=4 idleFallback=0 corrected=1 color=7 upView=-0.00004,-0.99974,0.02260 originView=-5.80443,1.79319,6.27493
+VISUAL frame=5280 model=4 idleFallback=0 corrected=1 color=7 upView=-0.00004,-0.99974,0.02260 originView=-4.75060,1.79264,6.22212
+POSE_UNMATCHED frame=5353 model=0 determinant=1.0000 rebased=1 origin=-6.4542,1.9546,1.2903
+FRAME 5400 candidates=11285 owned=11285 replaced=10893 shaderFailures=0 references=67 bodies=5 graphicsSpeedValid=1 graphicsSpeed=21.2541 blend=0.9964 projectionValid=1 recoveredSceneRefs=174601 hiddenWheels=110536 groups=59 best=5 second=5 hoofPlayed=40 audioActive=1 hiddenEffects=58713 hiddenHeadlights=148580 effectReads=85 effectCacheHits=1780620
+SPARK model=0 draws=279 contacts=0,0 blend=0.996 skinSamples=797
+SPARK model=1 draws=78 contacts=0,32 blend=0.959 skinSamples=190
+SPARK model=2 draws=40 contacts=0,0 blend=0.942 skinSamples=176
+SPARK model=3 draws=64 contacts=0,36 blend=0.940 skinSamples=164
+SPARK model=4 draws=625 contacts=0,0 blend=1.000 skinSamples=3099
+SPARK model=5 draws=140 contacts=0,0 blend=0.942 skinSamples=435
+SPARK model=6 draws=66 contacts=0,0 blend=0.960 skinSamples=178
+SPARK model=7 draws=92 contacts=0,0 blend=0.960 skinSamples=1617
+SPARK model=8 draws=60 contacts=0,0 blend=0.960 skinSamples=173
+ROAD_UP valid=1 local=-0.00000,0.00000,1.00000
+ACTOR slot=0 model=4 speed=21.7290 blend=1.0000 position=-71.3839,57.6545,-5.4244
+ACTOR slot=1 model=4 speed=17.0004 blend=1.0000 position=-65.6794,62.7753,-5.4298
+ACTOR slot=2 model=0 speed=21.2541 blend=0.9964 position=-70.1897,64.4429,-5.6899
+ACTOR slot=5 model=4 speed=14.2962 blend=1.0000 position=-66.2671,64.0131,-5.3947
+VISUAL frame=5400 model=4 idleFallback=0 corrected=1 color=7 upView=0.01568,0.99958,-0.02436 originView=-0.00813,2.00211,6.19846
+VISUAL frame=5400 model=4 idleFallback=0 corrected=1 color=7 upView=-0.00001,-1.00000,0.00096 originView=-0.00813,1.69129,6.19861
+VISUAL frame=5400 model=4 idleFallback=0 corrected=1 color=7 upView=-0.00001,-1.00000,0.00096 originView=-7.44144,1.69967,4.42194
+VISUAL frame=5400 model=4 idleFallback=0 corrected=1 color=7 upView=-0.00001,-1.00000,0.00096 originView=-7.68192,1.67044,2.99081
+VISUAL frame=5400 model=0 idleFallback=0 corrected=1 color=7 upView=-0.00001,-1.00000,0.00096 originView=-4.31772,1.95192,0.85403
+POSE_UNMATCHED frame=5472 model=0 determinant=1.0000 rebased=1 origin=-0.9721,1.9311,-0.4070
+POSE_UNMATCHED frame=5506 model=0 determinant=1.0000 rebased=1 origin=-1.1216,1.9326,-1.6635
+FRAME 5520 candidates=11652 owned=11652 replaced=11260 shaderFailures=0 references=46 bodies=2 graphicsSpeedValid=1 graphicsSpeed=27.9119 blend=1.0000 projectionValid=1 recoveredSceneRefs=185897 hiddenWheels=110536 groups=38 best=5 second=5 hoofPlayed=46 audioActive=1 hiddenEffects=89569 hiddenHeadlights=177826 effectReads=85 effectCacheHits=1921984
+SPARK model=0 draws=306 contacts=60,72 blend=0.000 skinSamples=879
+SPARK model=1 draws=78 contacts=0,32 blend=0.959 skinSamples=190
+SPARK model=2 draws=40 contacts=0,0 blend=0.942 skinSamples=176
+SPARK model=3 draws=64 contacts=0,36 blend=0.940 skinSamples=164
+SPARK model=4 draws=722 contacts=14,0 blend=1.000 skinSamples=3264
+SPARK model=5 draws=140 contacts=0,0 blend=0.942 skinSamples=435
+SPARK model=6 draws=66 contacts=0,0 blend=0.960 skinSamples=178
+SPARK model=7 draws=92 contacts=0,0 blend=0.960 skinSamples=1617
+SPARK model=8 draws=60 contacts=0,0 blend=0.960 skinSamples=173
+ROAD_UP valid=1 local=-0.00000,-0.00000,1.00000
+ACTOR slot=0 model=4 speed=27.9119 blend=1.0000 position=-56.7161,13.4339,-4.7152
+VISUAL frame=5520 model=4 idleFallback=0 corrected=1 color=7 upView=0.02237,0.99964,0.01506 originView=0.03593,1.98215,6.03656
+VISUAL frame=5520 model=4 idleFallback=0 corrected=1 color=7 upView=-0.02055,-0.99938,0.02858 originView=0.03035,1.69401,6.04489
+POSE_UNMATCHED frame=5520 model=0 determinant=1.0000 rebased=1 origin=-1.8793,1.9534,-2.2057
+VISUAL frame=5520 model=0 idleFallback=1 corrected=0 color=7 upView=-0.09451,-0.99533,0.01986 originView=-1.87929,1.95338,-2.20566
+FRAME 5640 candidates=11905 owned=11905 replaced=11513 shaderFailures=0 references=37 bodies=2 graphicsSpeedValid=1 graphicsSpeed=22.7901 blend=1.0000 projectionValid=1 recoveredSceneRefs=195311 hiddenWheels=110536 groups=30 best=4 second=4 hoofPlayed=52 audioActive=1 hiddenEffects=120808 hiddenHeadlights=202360 effectReads=85 effectCacheHits=2042612
+SPARK model=0 draws=306 contacts=0,0 blend=0.709 skinSamples=892
+SPARK model=1 draws=78 contacts=0,32 blend=0.959 skinSamples=190
+SPARK model=2 draws=40 contacts=0,0 blend=0.942 skinSamples=176
+SPARK model=3 draws=64 contacts=0,36 blend=0.940 skinSamples=164
+SPARK model=4 draws=812 contacts=0,0 blend=1.000 skinSamples=3384
+SPARK model=5 draws=140 contacts=0,0 blend=0.942 skinSamples=435
+SPARK model=6 draws=66 contacts=0,0 blend=0.960 skinSamples=178
+SPARK model=7 draws=92 contacts=0,0 blend=0.960 skinSamples=1617
+SPARK model=8 draws=60 contacts=0,0 blend=0.960 skinSamples=173
+ROAD_UP valid=1 local=0.00000,-0.00000,1.00000
+ACTOR slot=0 model=4 speed=22.7901 blend=1.0000 position=46.9996,80.0676,-2.8497
+VISUAL frame=5640 model=4 idleFallback=0 corrected=1 color=7 upView=-0.01710,0.99985,-0.00340 originView=0.00205,1.98064,5.97537
+VISUAL frame=5640 model=4 idleFallback=0 corrected=1 color=7 upView=-0.00186,-0.99963,0.02701 originView=0.00172,1.68984,5.98312
+FRAME 5760 candidates=12145 owned=12145 replaced=11753 shaderFailures=0 references=47 bodies=2 graphicsSpeedValid=1 graphicsSpeed=24.5992 blend=1.0000 projectionValid=1 recoveredSceneRefs=203772 hiddenWheels=110536 groups=42 best=3 second=2 hoofPlayed=58 audioActive=1 hiddenEffects=154596 hiddenHeadlights=223630 effectReads=86 effectCacheHits=2161113
+SPARK model=0 draws=306 contacts=0,0 blend=0.709 skinSamples=892
+SPARK model=1 draws=78 contacts=0,32 blend=0.959 skinSamples=190
+SPARK model=2 draws=40 contacts=0,0 blend=0.942 skinSamples=176
+SPARK model=3 draws=64 contacts=0,36 blend=0.940 skinSamples=164
+SPARK model=4 draws=896 contacts=0,0 blend=1.000 skinSamples=3504
+SPARK model=5 draws=140 contacts=0,0 blend=0.942 skinSamples=435
+SPARK model=6 draws=66 contacts=0,0 blend=0.960 skinSamples=178
+SPARK model=7 draws=92 contacts=0,0 blend=0.960 skinSamples=1617
+SPARK model=8 draws=60 contacts=0,0 blend=0.960 skinSamples=173
+ROAD_UP valid=1 local=0.00000,-0.00000,1.00000
+ACTOR slot=0 model=4 speed=24.5992 blend=1.0000 position=-10.3098,95.9285,-2.1515
+VISUAL frame=5760 model=4 idleFallback=0 corrected=1 color=7 upView=-0.08780,0.99589,-0.02222 originView=-0.04332,1.97523,6.00317
+VISUAL frame=5760 model=4 idleFallback=0 corrected=1 color=7 upView=0.02188,-0.99971,0.01017 originView=-0.03685,1.68950,6.00604
+FRAME 5880 candidates=12385 owned=12385 replaced=11993 shaderFailures=0 references=45 bodies=2 graphicsSpeedValid=1 graphicsSpeed=34.5940 blend=1.0000 projectionValid=1 recoveredSceneRefs=211421 hiddenWheels=110536 groups=40 best=4 second=2 hoofPlayed=65 audioActive=1 hiddenEffects=193944 hiddenHeadlights=244519 effectReads=87 effectCacheHits=2280856
+SPARK model=0 draws=306 contacts=0,0 blend=0.709 skinSamples=892
+SPARK model=1 draws=78 contacts=0,32 blend=0.959 skinSamples=190
+SPARK model=2 draws=40 contacts=0,0 blend=0.942 skinSamples=176
+SPARK model=3 draws=64 contacts=0,36 blend=0.940 skinSamples=164
+SPARK model=4 draws=990 contacts=0,0 blend=1.000 skinSamples=3624
+SPARK model=5 draws=140 contacts=0,0 blend=0.942 skinSamples=435
+SPARK model=6 draws=66 contacts=0,0 blend=0.960 skinSamples=178
+SPARK model=7 draws=92 contacts=0,0 blend=0.960 skinSamples=1617
+SPARK model=8 draws=60 contacts=0,0 blend=0.960 skinSamples=173
+ROAD_UP valid=1 local=-0.00000,0.00000,1.00000
+ACTOR slot=0 model=4 speed=34.5940 blend=1.0000 position=-74.7199,78.0972,-1.9135
+VISUAL frame=5880 model=4 idleFallback=0 corrected=1 color=7 upView=-0.12989,0.99027,-0.05002 originView=-0.06268,1.98153,5.85046
+VISUAL frame=5880 model=4 idleFallback=0 corrected=1 color=7 upView=0.03114,-0.99951,0.00168 originView=-0.05316,1.68943,5.85101
+FRAME 6000 candidates=12625 owned=12625 replaced=12233 shaderFailures=0 references=83 bodies=2 graphicsSpeedValid=1 graphicsSpeed=29.1899 blend=1.0000 projectionValid=1 recoveredSceneRefs=220203 hiddenWheels=110536 groups=57 best=12 second=12 hoofPlayed=72 audioActive=1 hiddenEffects=240618 hiddenHeadlights=266549 effectReads=88 effectCacheHits=2405580
+SPARK model=0 draws=306 contacts=0,0 blend=0.709 skinSamples=892
+SPARK model=1 draws=78 contacts=0,32 blend=0.959 skinSamples=190
+SPARK model=2 draws=40 contacts=0,0 blend=0.942 skinSamples=176
+SPARK model=3 draws=64 contacts=0,36 blend=0.940 skinSamples=164
+SPARK model=4 draws=1076 contacts=24,0 blend=1.000 skinSamples=3744
+SPARK model=5 draws=140 contacts=0,0 blend=0.942 skinSamples=435
+SPARK model=6 draws=66 contacts=0,0 blend=0.960 skinSamples=178
+SPARK model=7 draws=92 contacts=0,0 blend=0.960 skinSamples=1617
+SPARK model=8 draws=60 contacts=0,0 blend=0.960 skinSamples=173
+ROAD_UP valid=1 local=-0.00000,-0.00000,1.00000
+ACTOR slot=0 model=4 speed=29.1899 blend=1.0000 position=-98.3007,18.3981,-1.5563
+VISUAL frame=6000 model=4 idleFallback=0 corrected=1 color=7 upView=-0.17835,0.98390,0.01114 originView=-0.17389,2.17233,6.22156
+VISUAL frame=6000 model=4 idleFallback=0 corrected=1 color=7 upView=0.08592,-0.99618,-0.01542 originView=-0.13257,1.68666,6.21407
+FRAME 6120 candidates=12865 owned=12865 replaced=12473 shaderFailures=0 references=91 bodies=2 graphicsSpeedValid=1 graphicsSpeed=31.6184 blend=1.0000 projectionValid=1 recoveredSceneRefs=236258 hiddenWheels=110536 groups=55 best=17 second=17 hoofPlayed=78 audioActive=1 hiddenEffects=291893 hiddenHeadlights=295032 effectReads=90 effectCacheHits=2562877
+SPARK model=0 draws=306 contacts=0,0 blend=0.709 skinSamples=892
+SPARK model=1 draws=78 contacts=0,32 blend=0.959 skinSamples=190
+SPARK model=2 draws=40 contacts=0,0 blend=0.942 skinSamples=176
+SPARK model=3 draws=64 contacts=0,36 blend=0.940 skinSamples=164
+SPARK model=4 draws=1166 contacts=0,0 blend=1.000 skinSamples=3864
+SPARK model=5 draws=140 contacts=0,0 blend=0.942 skinSamples=435
+SPARK model=6 draws=66 contacts=0,0 blend=0.960 skinSamples=178
+SPARK model=7 draws=92 contacts=0,0 blend=0.960 skinSamples=1617
+SPARK model=8 draws=60 contacts=0,0 blend=0.960 skinSamples=173
+ROAD_UP valid=1 local=-0.00000,-0.00000,1.00000
+ACTOR slot=0 model=4 speed=31.6184 blend=1.0000 position=-54.1844,-24.8931,-1.2240
+VISUAL frame=6120 model=4 idleFallback=0 corrected=1 color=7 upView=-0.05055,0.99851,-0.02042 originView=-0.16728,2.05433,5.43973
+VISUAL frame=6120 model=4 idleFallback=0 corrected=1 color=7 upView=0.08338,-0.99648,0.00886 originView=-0.13583,1.67977,5.44327
+FRAME 6240 candidates=13105 owned=13105 replaced=12713 shaderFailures=0 references=79 bodies=2 graphicsSpeedValid=1 graphicsSpeed=31.3757 blend=1.0000 projectionValid=1 recoveredSceneRefs=251936 hiddenWheels=110536 groups=57 best=8 second=8 hoofPlayed=85 audioActive=1 hiddenEffects=343792 hiddenHeadlights=318548 effectReads=90 effectCacheHits=2719621
+SPARK model=0 draws=306 contacts=0,0 blend=0.709 skinSamples=892
+SPARK model=1 draws=78 contacts=0,32 blend=0.959 skinSamples=190
+SPARK model=2 draws=40 contacts=0,0 blend=0.942 skinSamples=176
+SPARK model=3 draws=64 contacts=0,36 blend=0.940 skinSamples=164
+SPARK model=4 draws=1260 contacts=0,0 blend=1.000 skinSamples=3984
+SPARK model=5 draws=140 contacts=0,0 blend=0.942 skinSamples=435
+SPARK model=6 draws=66 contacts=0,0 blend=0.960 skinSamples=178
+SPARK model=7 draws=92 contacts=0,0 blend=0.960 skinSamples=1617
+SPARK model=8 draws=60 contacts=0,0 blend=0.960 skinSamples=173
+ROAD_UP valid=1 local=-0.00000,-0.00000,1.00000
+ACTOR slot=0 model=4 speed=31.3757 blend=1.0000 position=12.7867,-23.5998,0.0946
+VISUAL frame=6240 model=4 idleFallback=0 corrected=1 color=7 upView=0.20651,0.97758,-0.04105 originView=0.06955,1.95323,5.56888
+VISUAL frame=6240 model=4 idleFallback=0 corrected=1 color=7 upView=-0.03709,-0.99907,0.02208 originView=0.05969,1.69964,5.57449
+POSE_UNMATCHED frame=6323 model=4 determinant=1.0000 rebased=0 origin=-72.7249,14.3647,71.0007 actor=0 age=1 speed=19.039 distance=99.191 rawDistance=99.191 direction=-0.506 determinant=1.000
+POSE_UNMATCHED frame=6358 model=4 determinant=-1.0000 rebased=0 origin=-0.0088,2.0583,4.5735 actor=2 age=1 speed=15.084 distance=52.384 rawDistance=52.384 direction=-0.182 determinant=1.000
+FRAME 6360 candidates=13373 owned=13373 replaced=12981 shaderFailures=0 references=96 bodies=2 graphicsSpeedValid=1 graphicsSpeed=0.0000 blend=0.0000 projectionValid=1 recoveredSceneRefs=267896 hiddenWheels=110719 groups=96 best=12 second=12 hoofPlayed=91 audioActive=1 hiddenEffects=381457 hiddenHeadlights=357213 effectReads=103 effectCacheHits=2908529
+SPARK model=0 draws=313 contacts=0,0 blend=0.978 skinSamples=928
+SPARK model=1 draws=78 contacts=0,32 blend=0.959 skinSamples=190
+SPARK model=2 draws=40 contacts=0,0 blend=0.942 skinSamples=176
+SPARK model=3 draws=64 contacts=0,36 blend=0.940 skinSamples=164
+SPARK model=4 draws=1341 contacts=46,46 blend=0.000 skinSamples=4132
+SPARK model=5 draws=140 contacts=0,0 blend=0.942 skinSamples=435
+SPARK model=6 draws=66 contacts=0,0 blend=0.960 skinSamples=178
+SPARK model=7 draws=92 contacts=0,0 blend=0.960 skinSamples=1617
+SPARK model=8 draws=60 contacts=0,0 blend=0.960 skinSamples=173
+ROAD_UP valid=1 local=0.00000,0.00000,1.00000
+ACTOR slot=0 model=4 speed=0.0000 blend=0.0000 position=-0.0088,2.0583,4.5735
+ACTOR slot=1 model=4 speed=0.0000 blend=0.0000 position=54.4271,-62.0448,0.2631
+ACTOR slot=2 model=4 speed=15.0841 blend=0.9807 position=-39.0512,3.2690,39.1634
+ACTOR slot=3 model=0 speed=-5.6623 blend=0.9807 position=-7.4379,1.1407,12.5667
+VISUAL frame=6360 model=4 idleFallback=0 corrected=0 color=7 upView=0.03710,0.99874,-0.03379 originView=-0.00305,2.05562,4.56988
+VISUAL frame=6360 model=4 idleFallback=0 corrected=1 color=7 upView=-0.00990,-0.99995,0.00269 originView=-0.00656,1.70197,4.57066
+POSE_UNMATCHED frame=6374 model=0 determinant=1.0000 rebased=0 origin=-8.9807,0.9681,5.8392
+POSE_UNMATCHED frame=6450 model=4 determinant=1.0000 rebased=1 origin=-22.9473,-0.5318,12.3632
+POSE_UNMATCHED frame=6465 model=4 determinant=-1.0000 rebased=0 origin=0.0016,1.5798,-0.7621 actor=1 age=1 speed=24.214 distance=22.247 rawDistance=22.247 direction=-0.534 determinant=1.000
+POSE_UNMATCHED frame=6466 model=4 determinant=-1.0000 rebased=0 origin=0.0034,1.5780,-0.7624 actor=1 age=1 speed=21.086 distance=21.932 rawDistance=21.932 direction=-0.550 determinant=1.000
+POSE_UNMATCHED frame=6467 model=4 determinant=-1.0000 rebased=0 origin=0.0048,1.5728,-0.7632 actor=1 age=1 speed=21.784 distance=21.614 rawDistance=21.614 direction=-0.565 determinant=1.000
+POSE_UNMATCHED frame=6468 model=4 determinant=-1.0000 rebased=0 origin=0.0061,1.5662,-0.7632 actor=1 age=1 speed=23.602 distance=21.284 rawDistance=21.284 direction=-0.581 determinant=1.000
+POSE_UNMATCHED frame=6469 model=4 determinant=-1.0000 rebased=0 origin=0.0075,1.5586,-0.7631 actor=1 age=1 speed=23.001 distance=20.970 rawDistance=20.970 direction=-0.595 determinant=1.000
+POSE_UNMATCHED frame=6470 model=4 determinant=-1.0000 rebased=0 origin=0.0082,1.5518,-0.7624 actor=1 age=1 speed=22.309 distance=20.663 rawDistance=20.663 direction=-0.608 determinant=1.000
+POSE_UNMATCHED frame=6471 model=4 determinant=-1.0000 rebased=0 origin=0.0079,1.5470,-0.7621 actor=1 age=1 speed=22.189 distance=20.369 rawDistance=20.369 direction=-0.619 determinant=1.000
+POSE_UNMATCHED frame=6472 model=4 determinant=-1.0000 rebased=0 origin=0.0066,1.5448,-0.7617 actor=1 age=1 speed=20.123 distance=20.070 rawDistance=20.070 direction=-0.629 determinant=1.000
+POSE_UNMATCHED frame=6473 model=4 determinant=-1.0000 rebased=0 origin=0.0051,1.5448,-0.7618 actor=1 age=1 speed=20.099 distance=19.770 rawDistance=19.770 direction=-0.638 determinant=1.000
+POSE_UNMATCHED frame=6474 model=4 determinant=-1.0000 rebased=0 origin=0.0040,1.5469,-0.7615 actor=1 age=1 speed=21.519 distance=19.483 rawDistance=19.483 direction=-0.648 determinant=1.000
+POSE_UNMATCHED frame=6475 model=4 determinant=-1.0000 rebased=0 origin=0.0027,1.5491,-0.7627 actor=1 age=1 speed=20.094 distance=19.210 rawDistance=19.210 direction=-0.658 determinant=1.000
+POSE_UNMATCHED frame=6476 model=4 determinant=-1.0000 rebased=0 origin=0.0015,1.5506,-0.7633 actor=1 age=1 speed=21.313 distance=18.935 rawDistance=18.935 direction=-0.667 determinant=1.000
+POSE_UNMATCHED frame=6477 model=4 determinant=-1.0000 rebased=0 origin=0.0009,1.5508,-0.7625 actor=1 age=1 speed=18.268 distance=18.673 rawDistance=18.673 direction=-0.677 determinant=1.000
+POSE_UNMATCHED frame=6478 model=4 determinant=-1.0000 rebased=0 origin=0.0002,1.5499,-0.7612 actor=1 age=1 speed=20.658 distance=18.402 rawDistance=18.402 direction=-0.687 determinant=1.000
+POSE_UNMATCHED frame=6479 model=4 determinant=-1.0000 rebased=0 origin=0.0003,1.5469,-0.7608 actor=1 age=1 speed=18.772 distance=18.152 rawDistance=18.152 direction=-0.697 determinant=1.000
+FRAME 6480 candidates=13539 owned=13539 replaced=13147 shaderFailures=0 references=96 bodies=3 graphicsSpeedValid=1 graphicsSpeed=19.8748 blend=0.9772 projectionValid=1 recoveredSceneRefs=288639 hiddenWheels=111358 groups=96 best=7 second=6 hoofPlayed=95 audioActive=1 hiddenEffects=422163 hiddenHeadlights=390322 effectReads=109 effectCacheHits=3124883
+SPARK model=0 draws=337 contacts=0,0 blend=1.000 skinSamples=1023
+SPARK model=1 draws=78 contacts=0,32 blend=0.959 skinSamples=190
+SPARK model=2 draws=40 contacts=0,0 blend=0.942 skinSamples=176
+SPARK model=3 draws=64 contacts=0,36 blend=0.940 skinSamples=164
+SPARK model=4 draws=1357 contacts=0,0 blend=0.974 skinSamples=4191
+SPARK model=5 draws=140 contacts=0,0 blend=0.942 skinSamples=435
+SPARK model=6 draws=66 contacts=0,0 blend=0.960 skinSamples=178
+SPARK model=7 draws=92 contacts=0,0 blend=0.960 skinSamples=1617
+SPARK model=8 draws=60 contacts=0,0 blend=0.960 skinSamples=173
+ROAD_UP valid=1 local=0.03103,0.04378,0.99856
+ACTOR slot=0 model=0 speed=24.3001 blend=0.9999 position=33.1534,-91.7922,0.4858
+ACTOR slot=1 model=4 speed=19.8748 blend=0.9772 position=37.4919,-92.8025,1.9535
+POSE_UNMATCHED frame=6480 model=4 determinant=-1.0000 rebased=0 origin=0.0000,1.5421,-0.7600 actor=1 age=1 speed=19.875 distance=17.900 rawDistance=17.900 direction=-0.707 determinant=1.000
+VISUAL frame=6480 model=4 idleFallback=1 corrected=0 color=7 upView=-0.00000,1.00001,0.00000 originView=0.00005,1.54209,-0.76001
+VISUAL frame=6480 model=4 idleFallback=0 corrected=1 color=7 upView=0.00476,-0.99968,-0.02642 originView=-6.94046,0.12862,15.39658
+VISUAL frame=6480 model=0 idleFallback=0 corrected=1 color=7 upView=0.00476,-0.99967,-0.02642 originView=-3.57803,1.60823,18.12668
+POSE_UNMATCHED frame=6481 model=4 determinant=-1.0000 rebased=0 origin=-0.0003,1.5375,-0.7597 actor=1 age=1 speed=19.544 distance=17.640 rawDistance=17.640 direction=-0.718 determinant=1.000
+POSE_UNMATCHED frame=6482 model=4 determinant=-1.0000 rebased=0 origin=-0.0011,1.5344,-0.7587 actor=1 age=1 speed=18.726 distance=17.404 rawDistance=17.404 direction=-0.728 determinant=1.000
+POSE_UNMATCHED frame=6483 model=4 determinant=-1.0000 rebased=0 origin=-0.0021,1.5337,-0.7578 actor=1 age=1 speed=19.662 distance=17.160 rawDistance=17.160 direction=-0.738 determinant=1.000
+POSE_UNMATCHED frame=6484 model=4 determinant=-1.0000 rebased=0 origin=-0.0026,2.0370,5.3055 actor=1 age=1 speed=19.871 distance=11.531 rawDistance=11.531 direction=-0.751 determinant=1.000
+POSE_UNMATCHED frame=6549 model=4 determinant=1.0000 rebased=1 origin=-4.1942,1.7499,-1.4224 actor=2 age=1 speed=17.115 distance=7.470 rawDistance=7.693 direction=0.965 determinant=1.000
+POSE_UNMATCHED frame=6584 model=4 determinant=1.0000 rebased=1 origin=-4.3956,1.8207,44.5159 actor=1 age=1 speed=16.674 distance=33.850 rawDistance=45.671 direction=0.953 determinant=1.000 actor=2 age=1 speed=17.307 distance=39.480 rawDistance=39.844 direction=0.866 determinant=1.000
+FRAME 6600 candidates=13950 owned=13950 replaced=13558 shaderFailures=0 references=91 bodies=4 graphicsSpeedValid=1 graphicsSpeed=16.2676 blend=1.0000 projectionValid=1 recoveredSceneRefs=306185 hiddenWheels=112270 groups=85 best=6 second=2 hoofPlayed=101 audioActive=1 hiddenEffects=475414 hiddenHeadlights=423576 effectReads=111 effectCacheHits=3355620
+SPARK model=0 draws=374 contacts=0,0 blend=1.000 skinSamples=1127
+SPARK model=1 draws=78 contacts=0,32 blend=0.959 skinSamples=190
+SPARK model=2 draws=40 contacts=0,0 blend=0.942 skinSamples=176
+SPARK model=3 draws=64 contacts=0,36 blend=0.940 skinSamples=164
+SPARK model=4 draws=1473 contacts=17,0 blend=0.841 skinSamples=4384
+SPARK model=5 draws=140 contacts=0,0 blend=0.942 skinSamples=435
+SPARK model=6 draws=66 contacts=0,0 blend=0.960 skinSamples=178
+SPARK model=7 draws=92 contacts=0,0 blend=0.960 skinSamples=1617
+SPARK model=8 draws=60 contacts=0,0 blend=0.960 skinSamples=173
+ROAD_UP valid=1 local=-0.00000,-0.00001,1.00000
+ACTOR slot=2 model=4 speed=16.2676 blend=1.0000 position=-2314.5198,-2163.8367,-187.4269
+ACTOR slot=4 model=4 speed=13.1767 blend=0.8628 position=-2307.3494,-2161.9604,-187.5185
+ACTOR slot=5 model=4 speed=21.0449 blend=0.8628 position=-2286.6216,-2137.4106,-187.8477
+VISUAL frame=6600 model=4 idleFallback=0 corrected=1 color=7 upView=-0.00718,0.99986,0.01538 originView=-0.03220,2.01916,4.95871
+VISUAL frame=6600 model=4 idleFallback=0 corrected=1 color=7 upView=0.01421,-0.99990,0.00119 originView=-0.02786,1.69452,4.95895
+VISUAL frame=6600 model=4 idleFallback=0 corrected=1 color=7 upView=0.01421,-0.99990,0.00119 originView=2.82288,1.82821,11.92560
+VISUAL frame=6600 model=4 idleFallback=0 corrected=1 color=7 upView=0.01421,-0.99990,0.00119 originView=-4.38667,2.08298,43.03711
+POSE_UNMATCHED frame=6628 model=0 determinant=1.0000 rebased=1 origin=27.7127,1.5544,39.9664
+FRAME 6720 candidates=14338 owned=14338 replaced=13946 shaderFailures=0 references=96 bodies=3 graphicsSpeedValid=1 graphicsSpeed=22.3259 blend=1.0000 projectionValid=1 recoveredSceneRefs=318990 hiddenWheels=112787 groups=96 best=8 second=8 hoofPlayed=107 audioActive=1 hiddenEffects=505592 hiddenHeadlights=448517 effectReads=111 effectCacheHits=3538386
+SPARK model=0 draws=405 contacts=50,0 blend=1.000 skinSamples=1219
+SPARK model=1 draws=78 contacts=0,32 blend=0.959 skinSamples=190
+SPARK model=2 draws=40 contacts=0,0 blend=0.942 skinSamples=176
+SPARK model=3 draws=64 contacts=0,36 blend=0.940 skinSamples=164
+SPARK model=4 draws=1577 contacts=22,0 blend=1.000 skinSamples=4560
+SPARK model=5 draws=140 contacts=0,0 blend=0.942 skinSamples=435
+SPARK model=6 draws=66 contacts=0,0 blend=0.960 skinSamples=178
+SPARK model=7 draws=92 contacts=0,0 blend=0.960 skinSamples=1617
+SPARK model=8 draws=60 contacts=0,0 blend=0.960 skinSamples=173
+ROAD_UP valid=1 local=0.00000,0.00000,1.00000
+ACTOR slot=0 model=0 speed=26.7030 blend=1.0000 position=-66.2785,-102.7051,0.7376
+ACTOR slot=1 model=4 speed=22.3259 blend=1.0000 position=-14.0635,-118.5242,0.6300
+VISUAL frame=6720 model=4 idleFallback=0 corrected=1 color=7 upView=0.06668,0.99760,-0.01867 originView=0.03972,1.99913,4.83188
+VISUAL frame=6720 model=0 idleFallback=0 corrected=1 color=7 upView=-0.02046,-0.99979,-0.00110 originView=18.53074,1.12691,56.25949
+VISUAL frame=6720 model=4 idleFallback=0 corrected=1 color=7 upView=-0.02046,-0.99979,-0.00110 originView=0.03322,1.68736,4.83148
+POSE_UNMATCHED frame=6764 model=4 determinant=1.0000 rebased=1 origin=-2.0732,1.6156,28.5040 actor=1 age=1 speed=19.701 distance=23.281 rawDistance=23.724 direction=0.975 determinant=1.000
+FRAME 6840 candidates=14774 owned=14774 replaced=14382 shaderFailures=0 references=96 bodies=4 graphicsSpeedValid=1 graphicsSpeed=26.2824 blend=1.0000 projectionValid=1 recoveredSceneRefs=340424 hiddenWheels=113628 groups=96 best=18 second=18 hoofPlayed=114 audioActive=1 hiddenEffects=513858 hiddenHeadlights=468699 effectReads=111 effectCacheHits=3734373
+SPARK model=0 draws=423 contacts=12,0 blend=1.000 skinSamples=1263
+SPARK model=1 draws=78 contacts=0,32 blend=0.959 skinSamples=190
+SPARK model=2 draws=40 contacts=0,0 blend=0.942 skinSamples=176
+SPARK model=3 draws=64 contacts=0,36 blend=0.940 skinSamples=164
+SPARK model=4 draws=1725 contacts=15,0 blend=1.000 skinSamples=4831
+SPARK model=5 draws=140 contacts=0,0 blend=0.942 skinSamples=435
+SPARK model=6 draws=66 contacts=0,0 blend=0.960 skinSamples=178
+SPARK model=7 draws=92 contacts=0,0 blend=0.960 skinSamples=1617
+SPARK model=8 draws=60 contacts=0,0 blend=0.960 skinSamples=173
+ROAD_UP valid=1 local=0.00000,-0.00000,1.00000
+ACTOR slot=1 model=4 speed=26.2824 blend=1.0000 position=-67.9757,-102.8716,0.9072
+ACTOR slot=2 model=4 speed=21.6757 blend=1.0000 position=-38.7727,-113.5067,0.7362
+ACTOR slot=3 model=4 speed=23.8375 blend=1.0000 position=-39.2577,-110.6418,0.7953
+VISUAL frame=6840 model=4 idleFallback=0 corrected=1 color=7 upView=0.00073,0.99974,0.02302 originView=-0.00162,1.98666,5.00244
+VISUAL frame=6840 model=4 idleFallback=0 corrected=1 color=7 upView=-0.00015,-1.00000,-0.00276 originView=-0.00166,1.69293,5.00171
+VISUAL frame=6840 model=4 idleFallback=0 corrected=1 color=7 upView=-0.00015,-1.00000,-0.00276 originView=-2.14665,1.72510,34.74384
+VISUAL frame=6840 model=4 idleFallback=0 corrected=1 color=7 upView=-0.00015,-1.00000,-0.00276 originView=0.41454,1.78032,36.20657
+POSE_UNMATCHED frame=6845 model=0 determinant=1.0000 rebased=1 origin=-37.4787,1.3299,41.2071
+FRAME 6960 candidates=15036 owned=15036 replaced=14644 shaderFailures=0 references=96 bodies=2 graphicsSpeedValid=1 graphicsSpeed=0.0000 blend=0.0005 projectionValid=1 recoveredSceneRefs=352507 hiddenWheels=113694 groups=90 best=6 second=6 hoofPlayed=117 audioActive=1 hiddenEffects=515846 hiddenHeadlights=502355 effectReads=114 effectCacheHits=3874669
+SPARK model=0 draws=423 contacts=0,0 blend=0.697 skinSamples=1275
+SPARK model=1 draws=78 contacts=0,32 blend=0.959 skinSamples=190
+SPARK model=2 draws=40 contacts=0,0 blend=0.942 skinSamples=176
+SPARK model=3 draws=64 contacts=0,36 blend=0.940 skinSamples=164
+SPARK model=4 draws=1769 contacts=46,46 blend=0.001 skinSamples=4961
+SPARK model=5 draws=140 contacts=0,0 blend=0.942 skinSamples=435
+SPARK model=6 draws=66 contacts=0,0 blend=0.960 skinSamples=178
+SPARK model=7 draws=92 contacts=0,0 blend=0.960 skinSamples=1617
+SPARK model=8 draws=60 contacts=0,0 blend=0.960 skinSamples=173
+ROAD_UP valid=1 local=-0.00000,0.00000,1.00000
+ACTOR slot=1 model=4 speed=0.0000 blend=0.0005 position=8.5859,-190.7710,0.9445
+VISUAL frame=6960 model=4 idleFallback=0 corrected=1 color=7 upView=-0.00010,0.99951,-0.03146 originView=0.00117,1.97297,4.86258
+VISUAL frame=6960 model=4 idleFallback=0 corrected=1 color=7 upView=-0.00001,-1.00000,-0.00127 originView=0.00117,1.68525,4.86221
+FRAME 7080 candidates=15276 owned=15276 replaced=14884 shaderFailures=0 references=96 bodies=2 graphicsSpeedValid=1 graphicsSpeed=0.0000 blend=0.0000 projectionValid=1 recoveredSceneRefs=363307 hiddenWheels=113694 groups=90 best=6 second=6 hoofPlayed=117 audioActive=1 hiddenEffects=517406 hiddenHeadlights=536435 effectReads=114 effectCacheHits=4006195
+SPARK model=0 draws=423 contacts=0,0 blend=0.697 skinSamples=1275
+SPARK model=1 draws=78 contacts=0,32 blend=0.959 skinSamples=190
+SPARK model=2 draws=40 contacts=0,0 blend=0.942 skinSamples=176
+SPARK model=3 draws=64 contacts=0,36 blend=0.940 skinSamples=164
+SPARK model=4 draws=1769 contacts=46,46 blend=0.000 skinSamples=5081
+SPARK model=5 draws=140 contacts=0,0 blend=0.942 skinSamples=435
+SPARK model=6 draws=66 contacts=0,0 blend=0.960 skinSamples=178
+SPARK model=7 draws=92 contacts=0,0 blend=0.960 skinSamples=1617
+SPARK model=8 draws=60 contacts=0,0 blend=0.960 skinSamples=173
+ROAD_UP valid=1 local=-0.00000,0.00000,1.00000
+ACTOR slot=1 model=4 speed=0.0000 blend=0.0000 position=8.5859,-190.7710,0.9445
+VISUAL frame=7080 model=4 idleFallback=0 corrected=1 color=7 upView=-0.00010,0.99951,-0.03146 originView=0.00117,1.97297,4.86258
+VISUAL frame=7080 model=4 idleFallback=0 corrected=1 color=7 upView=-0.00001,-1.00000,-0.00127 originView=0.00117,1.68525,4.86221
+FRAME 7200 candidates=15516 owned=15516 replaced=15124 shaderFailures=0 references=96 bodies=2 graphicsSpeedValid=1 graphicsSpeed=0.0000 blend=0.0000 projectionValid=1 recoveredSceneRefs=374107 hiddenWheels=113694 groups=90 best=6 second=6 hoofPlayed=117 audioActive=1 hiddenEffects=518966 hiddenHeadlights=570515 effectReads=114 effectCacheHits=4137835
+SPARK model=0 draws=423 contacts=0,0 blend=0.697 skinSamples=1275
+SPARK model=1 draws=78 contacts=0,32 blend=0.959 skinSamples=190
+SPARK model=2 draws=40 contacts=0,0 blend=0.942 skinSamples=176
+SPARK model=3 draws=64 contacts=0,36 blend=0.940 skinSamples=164
+SPARK model=4 draws=1769 contacts=46,46 blend=0.000 skinSamples=5201
+SPARK model=5 draws=140 contacts=0,0 blend=0.942 skinSamples=435
+SPARK model=6 draws=66 contacts=0,0 blend=0.960 skinSamples=178
+SPARK model=7 draws=92 contacts=0,0 blend=0.960 skinSamples=1617
+SPARK model=8 draws=60 contacts=0,0 blend=0.960 skinSamples=173
+ROAD_UP valid=1 local=-0.00000,0.00000,1.00000
+ACTOR slot=1 model=4 speed=0.0000 blend=0.0000 position=8.5859,-190.7710,0.9445
+VISUAL frame=7200 model=4 idleFallback=0 corrected=1 color=7 upView=-0.00010,0.99951,-0.03146 originView=0.00117,1.97297,4.86258
+VISUAL frame=7200 model=4 idleFallback=0 corrected=1 color=7 upView=-0.00001,-1.00000,-0.00127 originView=0.00117,1.68525,4.86221
+FRAME 7320 candidates=15756 owned=15756 replaced=15364 shaderFailures=0 references=96 bodies=2 graphicsSpeedValid=1 graphicsSpeed=0.0000 blend=0.0000 projectionValid=1 recoveredSceneRefs=384907 hiddenWheels=113694 groups=90 best=6 second=6 hoofPlayed=117 audioActive=1 hiddenEffects=520526 hiddenHeadlights=604595 effectReads=114 effectCacheHits=4269408
+SPARK model=0 draws=423 contacts=0,0 blend=0.697 skinSamples=1275
+SPARK model=1 draws=78 contacts=0,32 blend=0.959 skinSamples=190
+SPARK model=2 draws=40 contacts=0,0 blend=0.942 skinSamples=176
+SPARK model=3 draws=64 contacts=0,36 blend=0.940 skinSamples=164
+SPARK model=4 draws=1769 contacts=46,46 blend=0.000 skinSamples=5321
+SPARK model=5 draws=140 contacts=0,0 blend=0.942 skinSamples=435
+SPARK model=6 draws=66 contacts=0,0 blend=0.960 skinSamples=178
+SPARK model=7 draws=92 contacts=0,0 blend=0.960 skinSamples=1617
+SPARK model=8 draws=60 contacts=0,0 blend=0.960 skinSamples=173
+ROAD_UP valid=1 local=-0.00000,0.00000,1.00000
+ACTOR slot=1 model=4 speed=0.0000 blend=0.0000 position=8.5859,-190.7710,0.9445
+VISUAL frame=7320 model=4 idleFallback=0 corrected=1 color=7 upView=-0.00010,0.99951,-0.03146 originView=0.00117,1.97297,4.86258
+VISUAL frame=7320 model=4 idleFallback=0 corrected=1 color=7 upView=-0.00001,-1.00000,-0.00127 originView=0.00117,1.68525,4.86221
+FRAME 7440 candidates=15996 owned=15996 replaced=15604 shaderFailures=0 references=96 bodies=2 graphicsSpeedValid=1 graphicsSpeed=0.0000 blend=0.0000 projectionValid=1 recoveredSceneRefs=395707 hiddenWheels=113694 groups=90 best=6 second=6 hoofPlayed=117 audioActive=1 hiddenEffects=522086 hiddenHeadlights=638675 effectReads=114 effectCacheHits=4401007
+SPARK model=0 draws=423 contacts=0,0 blend=0.697 skinSamples=1275
+SPARK model=1 draws=78 contacts=0,32 blend=0.959 skinSamples=190
+SPARK model=2 draws=40 contacts=0,0 blend=0.942 skinSamples=176
+SPARK model=3 draws=64 contacts=0,36 blend=0.940 skinSamples=164
+SPARK model=4 draws=1769 contacts=46,46 blend=0.000 skinSamples=5441
+SPARK model=5 draws=140 contacts=0,0 blend=0.942 skinSamples=435
+SPARK model=6 draws=66 contacts=0,0 blend=0.960 skinSamples=178
+SPARK model=7 draws=92 contacts=0,0 blend=0.960 skinSamples=1617
+SPARK model=8 draws=60 contacts=0,0 blend=0.960 skinSamples=173
+ROAD_UP valid=1 local=-0.00000,0.00000,1.00000
+ACTOR slot=1 model=4 speed=0.0000 blend=0.0000 position=8.5859,-190.7710,0.9445
+VISUAL frame=7440 model=4 idleFallback=0 corrected=1 color=7 upView=-0.00010,0.99951,-0.03146 originView=0.00117,1.97297,4.86258
+VISUAL frame=7440 model=4 idleFallback=0 corrected=1 color=7 upView=-0.00001,-1.00000,-0.00127 originView=0.00117,1.68525,4.86221
+FRAME 7560 candidates=16236 owned=16236 replaced=15844 shaderFailures=0 references=96 bodies=2 graphicsSpeedValid=1 graphicsSpeed=0.0000 blend=0.0000 projectionValid=1 recoveredSceneRefs=406507 hiddenWheels=113694 groups=90 best=6 second=6 hoofPlayed=117 audioActive=1 hiddenEffects=523646 hiddenHeadlights=672755 effectReads=114 effectCacheHits=4532614
+SPARK model=0 draws=423 contacts=0,0 blend=0.697 skinSamples=1275
+SPARK model=1 draws=78 contacts=0,32 blend=0.959 skinSamples=190
+SPARK model=2 draws=40 contacts=0,0 blend=0.942 skinSamples=176
+SPARK model=3 draws=64 contacts=0,36 blend=0.940 skinSamples=164
+SPARK model=4 draws=1769 contacts=46,46 blend=0.000 skinSamples=5561
+SPARK model=5 draws=140 contacts=0,0 blend=0.942 skinSamples=435
+SPARK model=6 draws=66 contacts=0,0 blend=0.960 skinSamples=178
+SPARK model=7 draws=92 contacts=0,0 blend=0.960 skinSamples=1617
+SPARK model=8 draws=60 contacts=0,0 blend=0.960 skinSamples=173
+ROAD_UP valid=1 local=-0.00000,0.00000,1.00000
+ACTOR slot=1 model=4 speed=0.0000 blend=0.0000 position=8.5859,-190.7710,0.9445
+VISUAL frame=7560 model=4 idleFallback=0 corrected=1 color=7 upView=-0.00010,0.99951,-0.03146 originView=0.00117,1.97297,4.86258
+VISUAL frame=7560 model=4 idleFallback=0 corrected=1 color=7 upView=-0.00001,-1.00000,-0.00127 originView=0.00117,1.68525,4.86221
+FRAME 7680 candidates=16476 owned=16476 replaced=16084 shaderFailures=0 references=96 bodies=2 graphicsSpeedValid=1 graphicsSpeed=0.0000 blend=0.0000 projectionValid=1 recoveredSceneRefs=417307 hiddenWheels=113694 groups=90 best=6 second=6 hoofPlayed=117 audioActive=1 hiddenEffects=525206 hiddenHeadlights=706835 effectReads=114 effectCacheHits=4664134
+SPARK model=0 draws=423 contacts=0,0 blend=0.697 skinSamples=1275
+SPARK model=1 draws=78 contacts=0,32 blend=0.959 skinSamples=190
+SPARK model=2 draws=40 contacts=0,0 blend=0.942 skinSamples=176
+SPARK model=3 draws=64 contacts=0,36 blend=0.940 skinSamples=164
+SPARK model=4 draws=1769 contacts=46,46 blend=0.000 skinSamples=5681
+SPARK model=5 draws=140 contacts=0,0 blend=0.942 skinSamples=435
+SPARK model=6 draws=66 contacts=0,0 blend=0.960 skinSamples=178
+SPARK model=7 draws=92 contacts=0,0 blend=0.960 skinSamples=1617
+SPARK model=8 draws=60 contacts=0,0 blend=0.960 skinSamples=173
+ROAD_UP valid=1 local=-0.00000,0.00000,1.00000
+ACTOR slot=1 model=4 speed=0.0000 blend=0.0000 position=8.5859,-190.7710,0.9445
+VISUAL frame=7680 model=4 idleFallback=0 corrected=1 color=7 upView=-0.00010,0.99951,-0.03146 originView=0.00117,1.97297,4.86258
+VISUAL frame=7680 model=4 idleFallback=0 corrected=1 color=7 upView=-0.00001,-1.00000,-0.00127 originView=0.00117,1.68525,4.86221
+FRAME 7800 candidates=16716 owned=16716 replaced=16324 shaderFailures=0 references=96 bodies=2 graphicsSpeedValid=1 graphicsSpeed=0.0000 blend=0.0000 projectionValid=1 recoveredSceneRefs=428107 hiddenWheels=113694 groups=90 best=6 second=6 hoofPlayed=117 audioActive=1 hiddenEffects=526766 hiddenHeadlights=740915 effectReads=114 effectCacheHits=4795725
+SPARK model=0 draws=423 contacts=0,0 blend=0.697 skinSamples=1275
+SPARK model=1 draws=78 contacts=0,32 blend=0.959 skinSamples=190
+SPARK model=2 draws=40 contacts=0,0 blend=0.942 skinSamples=176
+SPARK model=3 draws=64 contacts=0,36 blend=0.940 skinSamples=164
+SPARK model=4 draws=1769 contacts=46,46 blend=0.000 skinSamples=5801
+SPARK model=5 draws=140 contacts=0,0 blend=0.942 skinSamples=435
+SPARK model=6 draws=66 contacts=0,0 blend=0.960 skinSamples=178
+SPARK model=7 draws=92 contacts=0,0 blend=0.960 skinSamples=1617
+SPARK model=8 draws=60 contacts=0,0 blend=0.960 skinSamples=173
+ROAD_UP valid=1 local=-0.00000,0.00000,1.00000
+ACTOR slot=1 model=4 speed=0.0000 blend=0.0000 position=8.5859,-190.7710,0.9445
+VISUAL frame=7800 model=4 idleFallback=0 corrected=1 color=7 upView=-0.00010,0.99951,-0.03146 originView=0.00117,1.97297,4.86258
+VISUAL frame=7800 model=4 idleFallback=0 corrected=1 color=7 upView=-0.00001,-1.00000,-0.00127 originView=0.00117,1.68525,4.86221
+FRAME 7920 candidates=16956 owned=16956 replaced=16564 shaderFailures=0 references=96 bodies=2 graphicsSpeedValid=1 graphicsSpeed=0.0000 blend=0.0000 projectionValid=1 recoveredSceneRefs=438907 hiddenWheels=113694 groups=90 best=6 second=6 hoofPlayed=117 audioActive=1 hiddenEffects=528326 hiddenHeadlights=774995 effectReads=114 effectCacheHits=4927285
+SPARK model=0 draws=423 contacts=0,0 blend=0.697 skinSamples=1275
+SPARK model=1 draws=78 contacts=0,32 blend=0.959 skinSamples=190
+SPARK model=2 draws=40 contacts=0,0 blend=0.942 skinSamples=176
+SPARK model=3 draws=64 contacts=0,36 blend=0.940 skinSamples=164
+SPARK model=4 draws=1769 contacts=46,46 blend=0.000 skinSamples=5921
+SPARK model=5 draws=140 contacts=0,0 blend=0.942 skinSamples=435
+SPARK model=6 draws=66 contacts=0,0 blend=0.960 skinSamples=178
+SPARK model=7 draws=92 contacts=0,0 blend=0.960 skinSamples=1617
+SPARK model=8 draws=60 contacts=0,0 blend=0.960 skinSamples=173
+ROAD_UP valid=1 local=-0.00000,0.00000,1.00000
+ACTOR slot=1 model=4 speed=0.0000 blend=0.0000 position=8.5859,-190.7710,0.9445
+VISUAL frame=7920 model=4 idleFallback=0 corrected=1 color=7 upView=-0.00010,0.99951,-0.03146 originView=0.00117,1.97297,4.86258
+VISUAL frame=7920 model=4 idleFallback=0 corrected=1 color=7 upView=-0.00001,-1.00000,-0.00127 originView=0.00117,1.68525,4.86221
+FRAME 8040 candidates=17196 owned=17196 replaced=16804 shaderFailures=0 references=96 bodies=2 graphicsSpeedValid=1 graphicsSpeed=0.0000 blend=0.0000 projectionValid=1 recoveredSceneRefs=449707 hiddenWheels=113694 groups=90 best=6 second=6 hoofPlayed=117 audioActive=1 hiddenEffects=529886 hiddenHeadlights=809075 effectReads=114 effectCacheHits=5058890
+SPARK model=0 draws=423 contacts=0,0 blend=0.697 skinSamples=1275
+SPARK model=1 draws=78 contacts=0,32 blend=0.959 skinSamples=190
+SPARK model=2 draws=40 contacts=0,0 blend=0.942 skinSamples=176
+SPARK model=3 draws=64 contacts=0,36 blend=0.940 skinSamples=164
+SPARK model=4 draws=1769 contacts=46,46 blend=0.000 skinSamples=6040
+SPARK model=5 draws=140 contacts=0,0 blend=0.942 skinSamples=435
+SPARK model=6 draws=66 contacts=0,0 blend=0.960 skinSamples=178
+SPARK model=7 draws=92 contacts=0,0 blend=0.960 skinSamples=1617
+SPARK model=8 draws=60 contacts=0,0 blend=0.960 skinSamples=173
+ROAD_UP valid=1 local=-0.00000,0.00000,1.00000
+ACTOR slot=1 model=4 speed=0.0000 blend=0.0000 position=8.5859,-190.7710,0.9445
+VISUAL frame=8040 model=4 idleFallback=0 corrected=1 color=7 upView=-0.00010,0.99951,-0.03146 originView=0.00117,1.97297,4.86258
+VISUAL frame=8040 model=4 idleFallback=0 corrected=1 color=7 upView=-0.00001,-1.00000,-0.00127 originView=0.00117,1.68525,4.86221
