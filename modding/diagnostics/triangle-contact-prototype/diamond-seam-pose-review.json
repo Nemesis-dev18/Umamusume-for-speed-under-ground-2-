@@ -1,0 +1,38 @@
+{
+  "scope": "Exact candidate seams in existing recorded pose samples; not continuous animation proof or approval to weld layered geometry.",
+  "poses": [
+    {
+      "pose": "frame-000",
+      "maximum_seam_gap_m": 0
+    },
+    {
+      "pose": "frame-030",
+      "maximum_seam_gap_m": 0
+    },
+    {
+      "pose": "frame-060",
+      "maximum_seam_gap_m": 0
+    },
+    {
+      "pose": "frame-090",
+      "maximum_seam_gap_m": 0
+    },
+    {
+      "pose": "frame-120",
+      "maximum_seam_gap_m": 0
+    },
+    {
+      "pose": "frame-150",
+      "maximum_seam_gap_m": 0
+    },
+    {
+      "pose": "frame-179",
+      "maximum_seam_gap_m": 0
+    },
+    {
+      "pose": "rest",
+      "maximum_seam_gap_m": 0
+    }
+  ],
+  "maximum_gap_m": 0
+}

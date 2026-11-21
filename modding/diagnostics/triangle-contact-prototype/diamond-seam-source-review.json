@@ -1,0 +1,60 @@
+{
+  "candidate_groups": 794,
+  "classification": {
+    "same_source_node": 794
+  },
+  "examples": {
+    "same_source_node": [
+      {
+        "vertices": [
+          5093,
+          5098
+        ],
+        "materials": [
+          "mtl_bdy1067_00_Alpha0"
+        ],
+        "source_nodes": [
+          "M_Body_Alpha0"
+        ]
+      },
+      {
+        "vertices": [
+          5094,
+          5097
+        ],
+        "materials": [
+          "mtl_bdy1067_00_Alpha0"
+        ],
+        "source_nodes": [
+          "M_Body_Alpha0"
+        ]
+      },
+      {
+        "vertices": [
+          5095,
+          5106,
+          5109
+        ],
+        "materials": [
+          "mtl_bdy1067_00_Alpha0"
+        ],
+        "source_nodes": [
+          "M_Body_Alpha0"
+        ]
+      },
+      {
+        "vertices": [
+          5102,
+          5115
+        ],
+        "materials": [
+          "mtl_bdy1067_00_Alpha0"
+        ],
+        "source_nodes": [
+          "M_Body_Alpha0"
+        ]
+      }
+    ]
+  },
+  "limit": "Shared source renderer does not prove physical stitch; face/layer and animation checks still required. No welds applied."
+}
