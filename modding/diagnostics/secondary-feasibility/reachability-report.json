@@ -1,0 +1,835 @@
+{
+  "scope": "Individual full-link sphere reachability versus actual aligned runtime colliders. Capsule outside uses conservative Lipschitz bound, inside uses lower bound. Angular limits, simultaneous-contact conflicts and surface mesh are not evaluated. A positive margin proves that contact and link length cannot both hold; zero does not prove feasibility.",
+  "results": [
+    {
+      "variant": "active",
+      "pose": "frame-000",
+      "proven_unreachable_contacts": 12,
+      "hits": [
+        {
+          "bone": 45,
+          "name": "Sp_Hi_Tail0_B_03",
+          "collider": 0,
+          "unreachable_margin_m": 0.06149777986331842
+        },
+        {
+          "bone": 46,
+          "name": "Sp_Hi_Tail0_B_04",
+          "collider": 0,
+          "unreachable_margin_m": 0.10746173639352188
+        },
+        {
+          "bone": 55,
+          "name": "Sp_El_Sleeve0_R_00",
+          "collider": 9,
+          "unreachable_margin_m": 0.04815992497961638
+        },
+        {
+          "bone": 55,
+          "name": "Sp_El_Sleeve0_R_00",
+          "collider": 5,
+          "unreachable_margin_m": 0.01977254247397156
+        },
+        {
+          "bone": 56,
+          "name": "Sp_El_Sleeve0_R_01",
+          "collider": 9,
+          "unreachable_margin_m": 0.1372984767996413
+        },
+        {
+          "bone": 56,
+          "name": "Sp_El_Sleeve0_R_01",
+          "collider": 5,
+          "unreachable_margin_m": 0.045701074245106735
+        },
+        {
+          "bone": 74,
+          "name": "Sp_El_Sleeve0_L_00",
+          "collider": 8,
+          "unreachable_margin_m": 0.04816077881238047
+        },
+        {
+          "bone": 74,
+          "name": "Sp_El_Sleeve0_L_00",
+          "collider": 5,
+          "unreachable_margin_m": 0.020770863934456527
+        },
+        {
+          "bone": 75,
+          "name": "Sp_El_Sleeve0_L_01",
+          "collider": 8,
+          "unreachable_margin_m": 0.13730054098847944
+        },
+        {
+          "bone": 75,
+          "name": "Sp_El_Sleeve0_L_01",
+          "collider": 5,
+          "unreachable_margin_m": 0.03810739526818477
+        },
+        {
+          "bone": 120,
+          "name": "Sp_El_Sleeve0_L_02",
+          "collider": 8,
+          "unreachable_margin_m": 0.24312529834848848
+        },
+        {
+          "bone": 149,
+          "name": "Sp_El_Sleeve0_R_02",
+          "collider": 9,
+          "unreachable_margin_m": 0.243123770407631
+        }
+      ]
+    },
+    {
+      "variant": "active",
+      "pose": "frame-030",
+      "proven_unreachable_contacts": 9,
+      "hits": [
+        {
+          "bone": 55,
+          "name": "Sp_El_Sleeve0_R_00",
+          "collider": 9,
+          "unreachable_margin_m": 0.04815986646224654
+        },
+        {
+          "bone": 55,
+          "name": "Sp_El_Sleeve0_R_00",
+          "collider": 5,
+          "unreachable_margin_m": 0.03696783514326929
+        },
+        {
+          "bone": 56,
+          "name": "Sp_El_Sleeve0_R_01",
+          "collider": 9,
+          "unreachable_margin_m": 0.09279868418875041
+        },
+        {
+          "bone": 74,
+          "name": "Sp_El_Sleeve0_L_00",
+          "collider": 8,
+          "unreachable_margin_m": 0.04816111340261607
+        },
+        {
+          "bone": 74,
+          "name": "Sp_El_Sleeve0_L_00",
+          "collider": 5,
+          "unreachable_margin_m": 0.09333059007480556
+        },
+        {
+          "bone": 75,
+          "name": "Sp_El_Sleeve0_L_01",
+          "collider": 8,
+          "unreachable_margin_m": 0.09231097563638396
+        },
+        {
+          "bone": 75,
+          "name": "Sp_El_Sleeve0_L_01",
+          "collider": 5,
+          "unreachable_margin_m": 0.06607860748567695
+        },
+        {
+          "bone": 120,
+          "name": "Sp_El_Sleeve0_L_02",
+          "collider": 8,
+          "unreachable_margin_m": 0.07541207253670446
+        },
+        {
+          "bone": 149,
+          "name": "Sp_El_Sleeve0_R_02",
+          "collider": 9,
+          "unreachable_margin_m": 0.0795241930236432
+        }
+      ]
+    },
+    {
+      "variant": "active",
+      "pose": "frame-060",
+      "proven_unreachable_contacts": 9,
+      "hits": [
+        {
+          "bone": 55,
+          "name": "Sp_El_Sleeve0_R_00",
+          "collider": 9,
+          "unreachable_margin_m": 0.04815987985457601
+        },
+        {
+          "bone": 56,
+          "name": "Sp_El_Sleeve0_R_01",
+          "collider": 9,
+          "unreachable_margin_m": 0.08830544096762714
+        },
+        {
+          "bone": 56,
+          "name": "Sp_El_Sleeve0_R_01",
+          "collider": 5,
+          "unreachable_margin_m": 0.028559044583908136
+        },
+        {
+          "bone": 74,
+          "name": "Sp_El_Sleeve0_L_00",
+          "collider": 8,
+          "unreachable_margin_m": 0.048160842495898346
+        },
+        {
+          "bone": 75,
+          "name": "Sp_El_Sleeve0_L_01",
+          "collider": 8,
+          "unreachable_margin_m": 0.08830743296518753
+        },
+        {
+          "bone": 120,
+          "name": "Sp_El_Sleeve0_L_02",
+          "collider": 8,
+          "unreachable_margin_m": 0.06448728633715184
+        },
+        {
+          "bone": 149,
+          "name": "Sp_El_Sleeve0_R_02",
+          "collider": 9,
+          "unreachable_margin_m": 0.06455914643404063
+        },
+        {
+          "bone": 149,
+          "name": "Sp_El_Sleeve0_R_02",
+          "collider": 5,
+          "unreachable_margin_m": 0.08361240642978975
+        },
+        {
+          "bone": 149,
+          "name": "Sp_El_Sleeve0_R_02",
+          "collider": 37,
+          "unreachable_margin_m": 0.01113091507566398
+        }
+      ]
+    },
+    {
+      "variant": "active",
+      "pose": "frame-090",
+      "proven_unreachable_contacts": 9,
+      "hits": [
+        {
+          "bone": 55,
+          "name": "Sp_El_Sleeve0_R_00",
+          "collider": 9,
+          "unreachable_margin_m": 0.048159807235684055
+        },
+        {
+          "bone": 56,
+          "name": "Sp_El_Sleeve0_R_01",
+          "collider": 9,
+          "unreachable_margin_m": 0.1042367533327017
+        },
+        {
+          "bone": 74,
+          "name": "Sp_El_Sleeve0_L_00",
+          "collider": 8,
+          "unreachable_margin_m": 0.04816090007540043
+        },
+        {
+          "bone": 75,
+          "name": "Sp_El_Sleeve0_L_01",
+          "collider": 8,
+          "unreachable_margin_m": 0.08830839647424105
+        },
+        {
+          "bone": 75,
+          "name": "Sp_El_Sleeve0_L_01",
+          "collider": 5,
+          "unreachable_margin_m": 0.04701628303007188
+        },
+        {
+          "bone": 120,
+          "name": "Sp_El_Sleeve0_L_02",
+          "collider": 8,
+          "unreachable_margin_m": 0.06470458877843002
+        },
+        {
+          "bone": 120,
+          "name": "Sp_El_Sleeve0_L_02",
+          "collider": 5,
+          "unreachable_margin_m": 0.10116672453275097
+        },
+        {
+          "bone": 120,
+          "name": "Sp_El_Sleeve0_L_02",
+          "collider": 37,
+          "unreachable_margin_m": 0.01795027390682749
+        },
+        {
+          "bone": 149,
+          "name": "Sp_El_Sleeve0_R_02",
+          "collider": 9,
+          "unreachable_margin_m": 0.11175028240120609
+        }
+      ]
+    },
+    {
+      "variant": "active",
+      "pose": "frame-120",
+      "proven_unreachable_contacts": 7,
+      "hits": [
+        {
+          "bone": 55,
+          "name": "Sp_El_Sleeve0_R_00",
+          "collider": 9,
+          "unreachable_margin_m": 0.048159831496480704
+        },
+        {
+          "bone": 56,
+          "name": "Sp_El_Sleeve0_R_01",
+          "collider": 9,
+          "unreachable_margin_m": 0.08830553473160598
+        },
+        {
+          "bone": 74,
+          "name": "Sp_El_Sleeve0_L_00",
+          "collider": 8,
+          "unreachable_margin_m": 0.04816090681651174
+        },
+        {
+          "bone": 75,
+          "name": "Sp_El_Sleeve0_L_01",
+          "collider": 8,
+          "unreachable_margin_m": 0.08830734425027759
+        },
+        {
+          "bone": 120,
+          "name": "Sp_El_Sleeve0_L_02",
+          "collider": 8,
+          "unreachable_margin_m": 0.06448818564441519
+        },
+        {
+          "bone": 120,
+          "name": "Sp_El_Sleeve0_L_02",
+          "collider": 5,
+          "unreachable_margin_m": 0.05837593020352452
+        },
+        {
+          "bone": 149,
+          "name": "Sp_El_Sleeve0_R_02",
+          "collider": 9,
+          "unreachable_margin_m": 0.0645010729145274
+        }
+      ]
+    },
+    {
+      "variant": "active",
+      "pose": "frame-150",
+      "proven_unreachable_contacts": 8,
+      "hits": [
+        {
+          "bone": 55,
+          "name": "Sp_El_Sleeve0_R_00",
+          "collider": 9,
+          "unreachable_margin_m": 0.04815972789718137
+        },
+        {
+          "bone": 55,
+          "name": "Sp_El_Sleeve0_R_00",
+          "collider": 5,
+          "unreachable_margin_m": 0.03792723377063159
+        },
+        {
+          "bone": 56,
+          "name": "Sp_El_Sleeve0_R_01",
+          "collider": 9,
+          "unreachable_margin_m": 0.09222087791799467
+        },
+        {
+          "bone": 74,
+          "name": "Sp_El_Sleeve0_L_00",
+          "collider": 8,
+          "unreachable_margin_m": 0.04816090503536209
+        },
+        {
+          "bone": 74,
+          "name": "Sp_El_Sleeve0_L_00",
+          "collider": 5,
+          "unreachable_margin_m": 0.023264207960160724
+        },
+        {
+          "bone": 75,
+          "name": "Sp_El_Sleeve0_L_01",
+          "collider": 8,
+          "unreachable_margin_m": 0.09033121033550623
+        },
+        {
+          "bone": 120,
+          "name": "Sp_El_Sleeve0_L_02",
+          "collider": 8,
+          "unreachable_margin_m": 0.07176829793754855
+        },
+        {
+          "bone": 149,
+          "name": "Sp_El_Sleeve0_R_02",
+          "collider": 9,
+          "unreachable_margin_m": 0.07675440970702872
+        }
+      ]
+    },
+    {
+      "variant": "active",
+      "pose": "frame-179",
+      "proven_unreachable_contacts": 8,
+      "hits": [
+        {
+          "bone": 55,
+          "name": "Sp_El_Sleeve0_R_00",
+          "collider": 9,
+          "unreachable_margin_m": 0.0481598638922936
+        },
+        {
+          "bone": 55,
+          "name": "Sp_El_Sleeve0_R_00",
+          "collider": 5,
+          "unreachable_margin_m": 0.00838756513365324
+        },
+        {
+          "bone": 56,
+          "name": "Sp_El_Sleeve0_R_01",
+          "collider": 9,
+          "unreachable_margin_m": 0.09094803351180518
+        },
+        {
+          "bone": 74,
+          "name": "Sp_El_Sleeve0_L_00",
+          "collider": 8,
+          "unreachable_margin_m": 0.04816079485074688
+        },
+        {
+          "bone": 74,
+          "name": "Sp_El_Sleeve0_L_00",
+          "collider": 5,
+          "unreachable_margin_m": 0.012177056250229648
+        },
+        {
+          "bone": 75,
+          "name": "Sp_El_Sleeve0_L_01",
+          "collider": 8,
+          "unreachable_margin_m": 0.08989296938796698
+        },
+        {
+          "bone": 120,
+          "name": "Sp_El_Sleeve0_L_02",
+          "collider": 8,
+          "unreachable_margin_m": 0.0706402547090691
+        },
+        {
+          "bone": 149,
+          "name": "Sp_El_Sleeve0_R_02",
+          "collider": 9,
+          "unreachable_margin_m": 0.07473588741722535
+        }
+      ]
+    },
+    {
+      "variant": "native-refs",
+      "pose": "frame-000",
+      "proven_unreachable_contacts": 12,
+      "hits": [
+        {
+          "bone": 45,
+          "name": "Sp_Hi_Tail0_B_03",
+          "collider": 0,
+          "unreachable_margin_m": 0.06149777986331842
+        },
+        {
+          "bone": 46,
+          "name": "Sp_Hi_Tail0_B_04",
+          "collider": 0,
+          "unreachable_margin_m": 0.10746173639352188
+        },
+        {
+          "bone": 55,
+          "name": "Sp_El_Sleeve0_R_00",
+          "collider": 9,
+          "unreachable_margin_m": 0.04815992497961638
+        },
+        {
+          "bone": 55,
+          "name": "Sp_El_Sleeve0_R_00",
+          "collider": 5,
+          "unreachable_margin_m": 0.01977254247397156
+        },
+        {
+          "bone": 56,
+          "name": "Sp_El_Sleeve0_R_01",
+          "collider": 9,
+          "unreachable_margin_m": 0.1372984767996413
+        },
+        {
+          "bone": 56,
+          "name": "Sp_El_Sleeve0_R_01",
+          "collider": 5,
+          "unreachable_margin_m": 0.045701074245106735
+        },
+        {
+          "bone": 74,
+          "name": "Sp_El_Sleeve0_L_00",
+          "collider": 8,
+          "unreachable_margin_m": 0.04816077881238047
+        },
+        {
+          "bone": 74,
+          "name": "Sp_El_Sleeve0_L_00",
+          "collider": 5,
+          "unreachable_margin_m": 0.020770863934456527
+        },
+        {
+          "bone": 75,
+          "name": "Sp_El_Sleeve0_L_01",
+          "collider": 8,
+          "unreachable_margin_m": 0.13730054098847944
+        },
+        {
+          "bone": 75,
+          "name": "Sp_El_Sleeve0_L_01",
+          "collider": 5,
+          "unreachable_margin_m": 0.03810739526818477
+        },
+        {
+          "bone": 120,
+          "name": "Sp_El_Sleeve0_L_02",
+          "collider": 8,
+          "unreachable_margin_m": 0.24312529834848848
+        },
+        {
+          "bone": 149,
+          "name": "Sp_El_Sleeve0_R_02",
+          "collider": 9,
+          "unreachable_margin_m": 0.243123770407631
+        }
+      ]
+    },
+    {
+      "variant": "native-refs",
+      "pose": "frame-030",
+      "proven_unreachable_contacts": 9,
+      "hits": [
+        {
+          "bone": 55,
+          "name": "Sp_El_Sleeve0_R_00",
+          "collider": 9,
+          "unreachable_margin_m": 0.04815986646224654
+        },
+        {
+          "bone": 55,
+          "name": "Sp_El_Sleeve0_R_00",
+          "collider": 5,
+          "unreachable_margin_m": 0.03696783514326929
+        },
+        {
+          "bone": 56,
+          "name": "Sp_El_Sleeve0_R_01",
+          "collider": 9,
+          "unreachable_margin_m": 0.09279868418875041
+        },
+        {
+          "bone": 74,
+          "name": "Sp_El_Sleeve0_L_00",
+          "collider": 8,
+          "unreachable_margin_m": 0.04816111340261607
+        },
+        {
+          "bone": 74,
+          "name": "Sp_El_Sleeve0_L_00",
+          "collider": 5,
+          "unreachable_margin_m": 0.09333059007480556
+        },
+        {
+          "bone": 75,
+          "name": "Sp_El_Sleeve0_L_01",
+          "collider": 8,
+          "unreachable_margin_m": 0.09231097563638396
+        },
+        {
+          "bone": 75,
+          "name": "Sp_El_Sleeve0_L_01",
+          "collider": 5,
+          "unreachable_margin_m": 0.06607860748567695
+        },
+        {
+          "bone": 120,
+          "name": "Sp_El_Sleeve0_L_02",
+          "collider": 8,
+          "unreachable_margin_m": 0.07541207253670446
+        },
+        {
+          "bone": 149,
+          "name": "Sp_El_Sleeve0_R_02",
+          "collider": 9,
+          "unreachable_margin_m": 0.0795241930236432
+        }
+      ]
+    },
+    {
+      "variant": "native-refs",
+      "pose": "frame-060",
+      "proven_unreachable_contacts": 8,
+      "hits": [
+        {
+          "bone": 55,
+          "name": "Sp_El_Sleeve0_R_00",
+          "collider": 9,
+          "unreachable_margin_m": 0.0481599972984085
+        },
+        {
+          "bone": 56,
+          "name": "Sp_El_Sleeve0_R_01",
+          "collider": 9,
+          "unreachable_margin_m": 0.08830551625010798
+        },
+        {
+          "bone": 56,
+          "name": "Sp_El_Sleeve0_R_01",
+          "collider": 5,
+          "unreachable_margin_m": 0.028559094876089944
+        },
+        {
+          "bone": 74,
+          "name": "Sp_El_Sleeve0_L_00",
+          "collider": 8,
+          "unreachable_margin_m": 0.04816084640031791
+        },
+        {
+          "bone": 75,
+          "name": "Sp_El_Sleeve0_L_01",
+          "collider": 8,
+          "unreachable_margin_m": 0.0883073051634796
+        },
+        {
+          "bone": 120,
+          "name": "Sp_El_Sleeve0_L_02",
+          "collider": 8,
+          "unreachable_margin_m": 0.06448742640878746
+        },
+        {
+          "bone": 149,
+          "name": "Sp_El_Sleeve0_R_02",
+          "collider": 9,
+          "unreachable_margin_m": 0.06455897781800106
+        },
+        {
+          "bone": 149,
+          "name": "Sp_El_Sleeve0_R_02",
+          "collider": 5,
+          "unreachable_margin_m": 0.08361227470495576
+        }
+      ]
+    },
+    {
+      "variant": "native-refs",
+      "pose": "frame-090",
+      "proven_unreachable_contacts": 8,
+      "hits": [
+        {
+          "bone": 55,
+          "name": "Sp_El_Sleeve0_R_00",
+          "collider": 9,
+          "unreachable_margin_m": 0.04815985859188221
+        },
+        {
+          "bone": 56,
+          "name": "Sp_El_Sleeve0_R_01",
+          "collider": 9,
+          "unreachable_margin_m": 0.08831470195119957
+        },
+        {
+          "bone": 74,
+          "name": "Sp_El_Sleeve0_L_00",
+          "collider": 8,
+          "unreachable_margin_m": 0.04816090007540043
+        },
+        {
+          "bone": 75,
+          "name": "Sp_El_Sleeve0_L_01",
+          "collider": 8,
+          "unreachable_margin_m": 0.08830836822898347
+        },
+        {
+          "bone": 75,
+          "name": "Sp_El_Sleeve0_L_01",
+          "collider": 5,
+          "unreachable_margin_m": 0.04701624998641696
+        },
+        {
+          "bone": 120,
+          "name": "Sp_El_Sleeve0_L_02",
+          "collider": 8,
+          "unreachable_margin_m": 0.06470452872267213
+        },
+        {
+          "bone": 120,
+          "name": "Sp_El_Sleeve0_L_02",
+          "collider": 5,
+          "unreachable_margin_m": 0.10116668238101872
+        },
+        {
+          "bone": 149,
+          "name": "Sp_El_Sleeve0_R_02",
+          "collider": 9,
+          "unreachable_margin_m": 0.0647691628594081
+        }
+      ]
+    },
+    {
+      "variant": "native-refs",
+      "pose": "frame-120",
+      "proven_unreachable_contacts": 7,
+      "hits": [
+        {
+          "bone": 55,
+          "name": "Sp_El_Sleeve0_R_00",
+          "collider": 9,
+          "unreachable_margin_m": 0.048159831496480704
+        },
+        {
+          "bone": 56,
+          "name": "Sp_El_Sleeve0_R_01",
+          "collider": 9,
+          "unreachable_margin_m": 0.0883054876601463
+        },
+        {
+          "bone": 74,
+          "name": "Sp_El_Sleeve0_L_00",
+          "collider": 8,
+          "unreachable_margin_m": 0.048160869541271675
+        },
+        {
+          "bone": 75,
+          "name": "Sp_El_Sleeve0_L_01",
+          "collider": 8,
+          "unreachable_margin_m": 0.08830729436335061
+        },
+        {
+          "bone": 120,
+          "name": "Sp_El_Sleeve0_L_02",
+          "collider": 8,
+          "unreachable_margin_m": 0.06448841774266223
+        },
+        {
+          "bone": 120,
+          "name": "Sp_El_Sleeve0_L_02",
+          "collider": 5,
+          "unreachable_margin_m": 0.05837607735184647
+        },
+        {
+          "bone": 149,
+          "name": "Sp_El_Sleeve0_R_02",
+          "collider": 9,
+          "unreachable_margin_m": 0.06448155978297755
+        }
+      ]
+    },
+    {
+      "variant": "native-refs",
+      "pose": "frame-150",
+      "proven_unreachable_contacts": 8,
+      "hits": [
+        {
+          "bone": 55,
+          "name": "Sp_El_Sleeve0_R_00",
+          "collider": 9,
+          "unreachable_margin_m": 0.04815983724750955
+        },
+        {
+          "bone": 55,
+          "name": "Sp_El_Sleeve0_R_00",
+          "collider": 5,
+          "unreachable_margin_m": 0.03792730488483895
+        },
+        {
+          "bone": 56,
+          "name": "Sp_El_Sleeve0_R_01",
+          "collider": 9,
+          "unreachable_margin_m": 0.09222094686421163
+        },
+        {
+          "bone": 74,
+          "name": "Sp_El_Sleeve0_L_00",
+          "collider": 8,
+          "unreachable_margin_m": 0.04816090503536209
+        },
+        {
+          "bone": 74,
+          "name": "Sp_El_Sleeve0_L_00",
+          "collider": 5,
+          "unreachable_margin_m": 0.023264207960160724
+        },
+        {
+          "bone": 75,
+          "name": "Sp_El_Sleeve0_L_01",
+          "collider": 8,
+          "unreachable_margin_m": 0.09033132411999004
+        },
+        {
+          "bone": 120,
+          "name": "Sp_El_Sleeve0_L_02",
+          "collider": 8,
+          "unreachable_margin_m": 0.07176828665616825
+        },
+        {
+          "bone": 149,
+          "name": "Sp_El_Sleeve0_R_02",
+          "collider": 9,
+          "unreachable_margin_m": 0.07675434595059484
+        }
+      ]
+    },
+    {
+      "variant": "native-refs",
+      "pose": "frame-179",
+      "proven_unreachable_contacts": 8,
+      "hits": [
+        {
+          "bone": 55,
+          "name": "Sp_El_Sleeve0_R_00",
+          "collider": 9,
+          "unreachable_margin_m": 0.04815985113899274
+        },
+        {
+          "bone": 55,
+          "name": "Sp_El_Sleeve0_R_00",
+          "collider": 5,
+          "unreachable_margin_m": 0.00838758372899398
+        },
+        {
+          "bone": 56,
+          "name": "Sp_El_Sleeve0_R_01",
+          "collider": 9,
+          "unreachable_margin_m": 0.09094808265630806
+        },
+        {
+          "bone": 74,
+          "name": "Sp_El_Sleeve0_L_00",
+          "collider": 8,
+          "unreachable_margin_m": 0.04816079485074688
+        },
+        {
+          "bone": 74,
+          "name": "Sp_El_Sleeve0_L_00",
+          "collider": 5,
+          "unreachable_margin_m": 0.012177056250229648
+        },
+        {
+          "bone": 75,
+          "name": "Sp_El_Sleeve0_L_01",
+          "collider": 8,
+          "unreachable_margin_m": 0.08989296938796698
+        },
+        {
+          "bone": 120,
+          "name": "Sp_El_Sleeve0_L_02",
+          "collider": 8,
+          "unreachable_margin_m": 0.07064019565714205
+        },
+        {
+          "bone": 149,
+          "name": "Sp_El_Sleeve0_R_02",
+          "collider": 9,
+          "unreachable_margin_m": 0.07473605405131016
+        }
+      ]
+    }
+  ]
+}

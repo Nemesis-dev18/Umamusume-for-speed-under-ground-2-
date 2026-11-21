@@ -1,0 +1,72 @@
+{
+  "scope": "Read-only reference source from upstream, not linked or installed code; no solver-equivalence claim.",
+  "commit": "07f82e9fa08f23c1cda3a9be3045a09372eae8bb",
+  "files": [
+    {
+      "file": "CySpringCollision.cs",
+      "url": "https://raw.githubusercontent.com/katboi01/UmaViewer/07f82e9fa08f23c1cda3a9be3045a09372eae8bb/Assets/Scripts/umamusume/Gallop/Cyspring/CySpringCollision.cs",
+      "sha256": "796282ed8cea6e105444371f11b9a0f83cb96bdf3e5770c5691bba36f8b85f17",
+      "bytes": 7123
+    },
+    {
+      "file": "CySpringBonebase.cs",
+      "url": "https://raw.githubusercontent.com/katboi01/UmaViewer/07f82e9fa08f23c1cda3a9be3045a09372eae8bb/Assets/Scripts/umamusume/Gallop/Cyspring/CySpringBonebase.cs",
+      "sha256": "abe345d194d07f0cf890ec4399ae5eb54bd4955d88880bf0e22f52fcd4d5cec0",
+      "bytes": 31829
+    },
+    {
+      "file": "CySpringNative.cs",
+      "url": "https://raw.githubusercontent.com/katboi01/UmaViewer/07f82e9fa08f23c1cda3a9be3045a09372eae8bb/Assets/Scripts/umamusume/Gallop/Cyspring/CySpringNative.cs",
+      "sha256": "da8f6e24f82cf050e8471843a3cb9a057e07458e58d732571842c2b1ba53504f",
+      "bytes": 17669
+    },
+    {
+      "file": "NativeClothCollision.cs",
+      "url": "https://raw.githubusercontent.com/katboi01/UmaViewer/07f82e9fa08f23c1cda3a9be3045a09372eae8bb/Assets/Scripts/umamusume/Gallop/Cyspring/NativeClothCollision.cs",
+      "sha256": "2b6af20082be339251fa370fbc3a890abb88f9e929be26e358a066aaf7da3209",
+      "bytes": 1710
+    },
+    {
+      "file": "NativeClothworking.cs",
+      "url": "https://raw.githubusercontent.com/katboi01/UmaViewer/07f82e9fa08f23c1cda3a9be3045a09372eae8bb/Assets/Scripts/umamusume/Gallop/Cyspring/NativeClothworking.cs",
+      "sha256": "fa1d883bd7b92fe44b48311b5ac4ff23a02e111215295e79bb9547324bc092f3",
+      "bytes": 3208
+    },
+    {
+      "file": "SkirtController.cs",
+      "url": "https://raw.githubusercontent.com/katboi01/UmaViewer/07f82e9fa08f23c1cda3a9be3045a09372eae8bb/Assets/Scripts/umamusume/Gallop/Cyspring/SkirtController.cs",
+      "sha256": "92e58adcd50fb7096f523e167bcf0b97b81271dd604fd6aa68c86db076d01c78",
+      "bytes": 35520
+    },
+    {
+      "file": "NativeSkirtArg.cs",
+      "url": "https://raw.githubusercontent.com/katboi01/UmaViewer/07f82e9fa08f23c1cda3a9be3045a09372eae8bb/Assets/Scripts/umamusume/Gallop/Cyspring/NativeSkirtArg.cs",
+      "sha256": "bb7c82d3f0b33a48f48a14a00e79e2ac1b4bff87d860a5b2d50bf879bcf6ca96",
+      "bytes": 737
+    },
+    {
+      "file": "CyspringRootbone.cs",
+      "url": "https://raw.githubusercontent.com/katboi01/UmaViewer/07f82e9fa08f23c1cda3a9be3045a09372eae8bb/Assets/Scripts/umamusume/Gallop/Cyspring/CyspringRootbone.cs",
+      "sha256": "f4ab992d4fdcb92281abeeeacd1ee0440442a60679fa31729e380901b283b35a",
+      "bytes": 20666
+    },
+    {
+      "file": "CySpringDataContainer.cs",
+      "url": "https://raw.githubusercontent.com/katboi01/UmaViewer/07f82e9fa08f23c1cda3a9be3045a09372eae8bb/Assets/Scripts/umamusume/Gallop/Cyspring/CySpringDataContainer.cs",
+      "sha256": "2557f6baff6b1ea8ee75212bcce8a54711e97f6566c8f2020041f7fe0ab93b8a",
+      "bytes": 4212
+    },
+    {
+      "file": "CySpringController.cs",
+      "url": "https://raw.githubusercontent.com/katboi01/UmaViewer/07f82e9fa08f23c1cda3a9be3045a09372eae8bb/Assets/Scripts/umamusume/Gallop/Cyspring/CySpringController.cs",
+      "sha256": "3c75eabf93bb005f5fad203be845beec3d73d5c5bb2a0380f29a51605718e377",
+      "bytes": 63148
+    },
+    {
+      "file": "Cyspring.cs",
+      "url": "https://raw.githubusercontent.com/katboi01/UmaViewer/07f82e9fa08f23c1cda3a9be3045a09372eae8bb/Assets/Scripts/umamusume/Gallop/Cyspring/Cyspring.cs",
+      "sha256": "56ba8b06555d1052b2819a7b18ada1364930f907982c2caba99309f4432428e0",
+      "bytes": 46811
+    }
+  ]
+}

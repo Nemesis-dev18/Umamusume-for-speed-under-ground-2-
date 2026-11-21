@@ -1,0 +1,212 @@
+{
+  "character_id": 1052,
+  "scope": "Omitted original connections/skirt controller metadata only. Rest distances use active UMAB bind coordinates; native skirt parameters are retained raw and have not been converted to runtime units/behavior. Not a solver-equivalence claim.",
+  "source_model_sha256": "885d88af21c395b41abd9c7f25913664aeed4018257ce05066939017c2e79034",
+  "source_json": [
+    {
+      "logical": "3d/chara/body/bdy1052_00/clothes/ast_bdy1052_00_skirt00",
+      "sha256": "feb256b161c501fc9f096fcb73c7036b60563be4ac56b706ac9f46201489ce76"
+    },
+    {
+      "logical": "3d/chara/body/bdy1052_00/clothes/ast_bdy1052_00_skirt01",
+      "sha256": "761b7107ff5e8ddf9410f65eb4b1425c1eabe482318e8352d9cbb1cfa7455b36"
+    },
+    {
+      "logical": "3d/chara/body/bdy1052_00/clothes/ast_bdy1052_00_skirt02",
+      "sha256": "49cef9341e4ed3a7ba343d543eabf2a09142f796f391002e6adb9479c70efa9d"
+    },
+    {
+      "logical": "3d/chara/body/bdy1052_00/clothes/pfb_bdy1052_00_bust_cloth00",
+      "sha256": "a4b252b48acb42f76654b3f4fa2015694a63ceaaf77d9f509b6ea003e309391e"
+    },
+    {
+      "logical": "3d/chara/body/bdy1052_00/clothes/pfb_bdy1052_00_cloth00",
+      "sha256": "06933f57469ad5f9ae9fddf0f1b1d232f2b1f098084dd74f1e102f09829dd937"
+    },
+    {
+      "logical": "3d/chara/head/chr1052_00/clothes/pfb_chr1052_00_cloth00",
+      "sha256": "5a2b1b8867b7a5a3d88412708d05864c1217d91e3fff9ca7634aa16854ed9353"
+    },
+    {
+      "logical": "3d/chara/tail/tail0001_00/clothes/pfb_tail0001_00_cloth00",
+      "sha256": "196d3f12d9290afe3c914202a5750de30a9b54a1025613c5a25fbc4472abeec2"
+    }
+  ],
+  "base_cloth_connections": [
+    {
+      "bone_a": 100,
+      "bone_b": 118,
+      "name_a": "Sp_Ch_Jacket0_FL_03",
+      "name_b": "Sp_Ch_Jacket0_FLL_03",
+      "rest_distance_m": 0.07420844173847205,
+      "intensity": 0.5,
+      "is_fold": false,
+      "source": "3d/chara/body/bdy1052_00/clothes/pfb_bdy1052_00_cloth00"
+    },
+    {
+      "bone_a": 40,
+      "bone_b": 107,
+      "name_a": "Sp_Ch_Jacket0_FR_03",
+      "name_b": "Sp_Ch_Jacket0_FRR_03",
+      "rest_distance_m": 0.07420837748735726,
+      "intensity": 0.5,
+      "is_fold": false,
+      "source": "3d/chara/body/bdy1052_00/clothes/pfb_bdy1052_00_cloth00"
+    },
+    {
+      "bone_a": 118,
+      "bone_b": 73,
+      "name_a": "Sp_Ch_Jacket0_FLL_03",
+      "name_b": "Sp_Ch_Jacket0_L_03",
+      "rest_distance_m": 0.06834092663112988,
+      "intensity": 0.5,
+      "is_fold": false,
+      "source": "3d/chara/body/bdy1052_00/clothes/pfb_bdy1052_00_cloth00"
+    },
+    {
+      "bone_a": 107,
+      "bone_b": 115,
+      "name_a": "Sp_Ch_Jacket0_FRR_03",
+      "name_b": "Sp_Ch_Jacket0_R_03",
+      "rest_distance_m": 0.06834106546329778,
+      "intensity": 0.5,
+      "is_fold": false,
+      "source": "3d/chara/body/bdy1052_00/clothes/pfb_bdy1052_00_cloth00"
+    },
+    {
+      "bone_a": 67,
+      "bone_b": 92,
+      "name_a": "Sp_Ch_Collar0_FL_01",
+      "name_b": "Sp_Ch_Collar0_L_01",
+      "rest_distance_m": 0.05523686728648735,
+      "intensity": 0.5,
+      "is_fold": false,
+      "source": "3d/chara/body/bdy1052_00/clothes/pfb_bdy1052_00_cloth00"
+    },
+    {
+      "bone_a": 114,
+      "bone_b": 26,
+      "name_a": "Sp_Ch_Collar0_FR_01",
+      "name_b": "Sp_Ch_Collar0_R_01",
+      "rest_distance_m": 0.05523742564264899,
+      "intensity": 0.5,
+      "is_fold": false,
+      "source": "3d/chara/body/bdy1052_00/clothes/pfb_bdy1052_00_cloth00"
+    },
+    {
+      "bone_a": 113,
+      "bone_b": 72,
+      "name_a": "Sp_Ch_Jacket0_FLL_02",
+      "name_b": "Sp_Ch_Jacket0_L_02",
+      "rest_distance_m": 0.06348852739586146,
+      "intensity": 0.5,
+      "is_fold": false,
+      "source": "3d/chara/body/bdy1052_00/clothes/pfb_bdy1052_00_cloth00"
+    },
+    {
+      "bone_a": 85,
+      "bone_b": 30,
+      "name_a": "Sp_Ch_Jacket0_FRR_02",
+      "name_b": "Sp_Ch_Jacket0_R_02",
+      "rest_distance_m": 0.06348848395446256,
+      "intensity": 0.5,
+      "is_fold": false,
+      "source": "3d/chara/body/bdy1052_00/clothes/pfb_bdy1052_00_cloth00"
+    },
+    {
+      "bone_a": 113,
+      "bone_b": 99,
+      "name_a": "Sp_Ch_Jacket0_FLL_02",
+      "name_b": "Sp_Ch_Jacket0_FL_02",
+      "rest_distance_m": 0.06036301443644742,
+      "intensity": 0.5,
+      "is_fold": false,
+      "source": "3d/chara/body/bdy1052_00/clothes/pfb_bdy1052_00_cloth00"
+    },
+    {
+      "bone_a": 85,
+      "bone_b": 39,
+      "name_a": "Sp_Ch_Jacket0_FRR_02",
+      "name_b": "Sp_Ch_Jacket0_FR_02",
+      "rest_distance_m": 0.06036319223956947,
+      "intensity": 0.5,
+      "is_fold": false,
+      "source": "3d/chara/body/bdy1052_00/clothes/pfb_bdy1052_00_cloth00"
+    },
+    {
+      "bone_a": 65,
+      "bone_b": 101,
+      "name_a": "Sp_Ch_Collar0_B_01",
+      "name_b": "Sp_Ch_Collar0_BL_01",
+      "rest_distance_m": 0.04794868898674552,
+      "intensity": 0.4000000059604645,
+      "is_fold": true,
+      "source": "3d/chara/body/bdy1052_00/clothes/pfb_bdy1052_00_cloth00"
+    },
+    {
+      "bone_a": 65,
+      "bone_b": 62,
+      "name_a": "Sp_Ch_Collar0_B_01",
+      "name_b": "Sp_Ch_Collar0_BR_01",
+      "rest_distance_m": 0.04794870667465933,
+      "intensity": 0.4000000059604645,
+      "is_fold": true,
+      "source": "3d/chara/body/bdy1052_00/clothes/pfb_bdy1052_00_cloth00"
+    }
+  ],
+  "skirt_controllers": [
+    {
+      "source": "3d/chara/body/bdy1052_00/clothes/ast_bdy1052_00_skirt00",
+      "native_parameters": {
+        "_isLongSkirt": 0,
+        "_centerBoneName": "Hip",
+        "_kneeLBoneName": "Knee_L",
+        "_kneeRBoneName": "Knee_R",
+        "_ankleLBoneName": "",
+        "_ankleRBoneName": "",
+        "_kneeColliderRadius": 0.0,
+        "_ankleColliderRadius": 0.0,
+        "_influenceAngle": 0.0,
+        "_influenceMaxAngle": 0.0,
+        "IsOffsetAngleTargetEndNode": 1
+      },
+      "panels": []
+    },
+    {
+      "source": "3d/chara/body/bdy1052_00/clothes/ast_bdy1052_00_skirt01",
+      "native_parameters": {
+        "_isLongSkirt": 0,
+        "_centerBoneName": "Hip",
+        "_kneeLBoneName": "Knee_L",
+        "_kneeRBoneName": "Knee_R",
+        "_ankleLBoneName": "",
+        "_ankleRBoneName": "",
+        "_kneeColliderRadius": 0.0,
+        "_ankleColliderRadius": 0.0,
+        "_influenceAngle": 0.0,
+        "_influenceMaxAngle": 0.0,
+        "IsOffsetAngleTargetEndNode": 1
+      },
+      "panels": []
+    },
+    {
+      "source": "3d/chara/body/bdy1052_00/clothes/ast_bdy1052_00_skirt02",
+      "native_parameters": {
+        "_isLongSkirt": 0,
+        "_centerBoneName": "Hip",
+        "_kneeLBoneName": "Knee_L",
+        "_kneeRBoneName": "Knee_R",
+        "_ankleLBoneName": "",
+        "_ankleRBoneName": "",
+        "_kneeColliderRadius": 0.0,
+        "_ankleColliderRadius": 0.0,
+        "_influenceAngle": 0.0,
+        "_influenceMaxAngle": 0.0,
+        "IsOffsetAngleTargetEndNode": 1
+      },
+      "panels": []
+    }
+  ],
+  "runtime_integrated": false,
+  "accepted_for_game": false
+}

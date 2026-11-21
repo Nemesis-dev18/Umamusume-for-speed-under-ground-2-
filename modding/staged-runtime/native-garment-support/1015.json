@@ -1,0 +1,545 @@
+{
+  "character_id": 1015,
+  "scope": "Omitted original connections/skirt controller metadata only. Rest distances use active UMAB bind coordinates; native skirt parameters are retained raw and have not been converted to runtime units/behavior. Not a solver-equivalence claim.",
+  "source_model_sha256": "0a0f4b2fea52d9c81cc73dffc63fed30ab73562cbeffde8a5b508c6b3a0f530c",
+  "source_json": [
+    {
+      "logical": "3d/chara/body/bdy1015_00/clothes/ast_bdy1015_00_skirt00",
+      "sha256": "ea6700b8f07e1721ebd5a13a606fe92329ec741557243e4063882fc54b954769"
+    },
+    {
+      "logical": "3d/chara/body/bdy1015_00/clothes/ast_bdy1015_00_skirt01",
+      "sha256": "e3004d39ec1ac5c4762cfe6043d55337b3f3bd1cc7c1bbb4ddf4c010cca3d073"
+    },
+    {
+      "logical": "3d/chara/body/bdy1015_00/clothes/ast_bdy1015_00_skirt02",
+      "sha256": "f57b8ad76cb495bdaa393f5a7b37a6a1034ead9ff38b2b17ce113145b8ef4201"
+    },
+    {
+      "logical": "3d/chara/body/bdy1015_00/clothes/pfb_bdy1015_00_bust_cloth00",
+      "sha256": "8310c1497b29e6e5e91426b87063e7b9d62e6c8e538899ec39b073d963d73c8e"
+    },
+    {
+      "logical": "3d/chara/body/bdy1015_00/clothes/pfb_bdy1015_00_cloth00",
+      "sha256": "de831a07bcc6ac870be163a1aeccbe5dc179406a685202b217307436285304e7"
+    },
+    {
+      "logical": "3d/chara/head/chr1015_00/clothes/pfb_chr1015_00_cloth00",
+      "sha256": "d0f327f824cb79db7ceef84c0c929935e89c2e4cead64bafdffcf812ab35de47"
+    },
+    {
+      "logical": "3d/chara/tail/tail0001_00/clothes/pfb_tail0001_00_cloth00",
+      "sha256": "196d3f12d9290afe3c914202a5750de30a9b54a1025613c5a25fbc4472abeec2"
+    }
+  ],
+  "base_cloth_connections": [
+    {
+      "bone_a": 54,
+      "bone_b": 111,
+      "name_a": "Sp_Hi_MSkirt0_F_01",
+      "name_b": "Sp_Hi_MSkirt0_FL_01",
+      "rest_distance_m": 0.12299516167621259,
+      "intensity": 0.30000001192092896,
+      "is_fold": true,
+      "source": "3d/chara/body/bdy1015_00/clothes/pfb_bdy1015_00_cloth00"
+    },
+    {
+      "bone_a": 54,
+      "bone_b": 113,
+      "name_a": "Sp_Hi_MSkirt0_F_01",
+      "name_b": "Sp_Hi_MSkirt0_FR_01",
+      "rest_distance_m": 0.12251198788677194,
+      "intensity": 0.30000001192092896,
+      "is_fold": true,
+      "source": "3d/chara/body/bdy1015_00/clothes/pfb_bdy1015_00_cloth00"
+    },
+    {
+      "bone_a": 108,
+      "bone_b": 117,
+      "name_a": "Sp_Hi_MSkirt0_FLL_01",
+      "name_b": "Sp_Hi_MSkirt0_L_01",
+      "rest_distance_m": 0.11616775675134658,
+      "intensity": 0.30000001192092896,
+      "is_fold": true,
+      "source": "3d/chara/body/bdy1015_00/clothes/pfb_bdy1015_00_cloth00"
+    },
+    {
+      "bone_a": 38,
+      "bone_b": 29,
+      "name_a": "Sp_Hi_MSkirt0_FRR_01",
+      "name_b": "Sp_Hi_MSkirt0_R_01",
+      "rest_distance_m": 0.11616729881471904,
+      "intensity": 0.30000001192092896,
+      "is_fold": true,
+      "source": "3d/chara/body/bdy1015_00/clothes/pfb_bdy1015_00_cloth00"
+    },
+    {
+      "bone_a": 41,
+      "bone_b": 34,
+      "name_a": "Sp_Ch_Mantle0_B_03",
+      "name_b": "Sp_Ch_Mantle0_L_03",
+      "rest_distance_m": 0.2226653464289528,
+      "intensity": 0.30000001192092896,
+      "is_fold": true,
+      "source": "3d/chara/body/bdy1015_00/clothes/pfb_bdy1015_00_cloth00"
+    },
+    {
+      "bone_a": 41,
+      "bone_b": 59,
+      "name_a": "Sp_Ch_Mantle0_B_03",
+      "name_b": "Sp_Ch_Mantle0_R_03",
+      "rest_distance_m": 0.24191368220554027,
+      "intensity": 0.30000001192092896,
+      "is_fold": true,
+      "source": "3d/chara/body/bdy1015_00/clothes/pfb_bdy1015_00_cloth00"
+    }
+  ],
+  "skirt_controllers": [
+    {
+      "source": "3d/chara/body/bdy1015_00/clothes/ast_bdy1015_00_skirt00",
+      "native_parameters": {
+        "_isLongSkirt": 0,
+        "_centerBoneName": "Hip",
+        "_kneeLBoneName": "Knee_L",
+        "_kneeRBoneName": "Knee_R",
+        "_ankleLBoneName": "",
+        "_ankleRBoneName": "",
+        "_kneeColliderRadius": 0.08500000089406967,
+        "_ankleColliderRadius": 0.0,
+        "_influenceAngle": 25.0,
+        "_influenceMaxAngle": 80.0,
+        "IsOffsetAngleTargetEndNode": 1
+      },
+      "panels": [
+        {
+          "root_bone": 53,
+          "child_bone": 54,
+          "resolved": true,
+          "unresolved_reason": null,
+          "native": {
+            "_rootBoneName": "Sp_Hi_MSkirt0_F_00",
+            "_childBoneName": "Sp_Hi_MSkirt0_F_01",
+            "_isCheckRightLeg": 1,
+            "_isCheckLeftLeg": 1,
+            "IsIgnoreRaceRun": 0
+          }
+        },
+        {
+          "root_bone": 36,
+          "child_bone": 111,
+          "resolved": true,
+          "unresolved_reason": null,
+          "native": {
+            "_rootBoneName": "Sp_Hi_MSkirt0_FL_00",
+            "_childBoneName": "Sp_Hi_MSkirt0_FL_01",
+            "_isCheckRightLeg": 1,
+            "_isCheckLeftLeg": 1,
+            "IsIgnoreRaceRun": 0
+          }
+        },
+        {
+          "root_bone": 105,
+          "child_bone": 113,
+          "resolved": true,
+          "unresolved_reason": null,
+          "native": {
+            "_rootBoneName": "Sp_Hi_MSkirt0_FR_00",
+            "_childBoneName": "Sp_Hi_MSkirt0_FR_01",
+            "_isCheckRightLeg": 1,
+            "_isCheckLeftLeg": 1,
+            "IsIgnoreRaceRun": 0
+          }
+        },
+        {
+          "root_bone": 107,
+          "child_bone": 108,
+          "resolved": true,
+          "unresolved_reason": null,
+          "native": {
+            "_rootBoneName": "Sp_Hi_MSkirt0_FLL_00",
+            "_childBoneName": "Sp_Hi_MSkirt0_FLL_01",
+            "_isCheckRightLeg": 1,
+            "_isCheckLeftLeg": 1,
+            "IsIgnoreRaceRun": 0
+          }
+        },
+        {
+          "root_bone": 37,
+          "child_bone": 38,
+          "resolved": true,
+          "unresolved_reason": null,
+          "native": {
+            "_rootBoneName": "Sp_Hi_MSkirt0_FRR_00",
+            "_childBoneName": "Sp_Hi_MSkirt0_FRR_01",
+            "_isCheckRightLeg": 1,
+            "_isCheckLeftLeg": 1,
+            "IsIgnoreRaceRun": 0
+          }
+        },
+        {
+          "root_bone": 47,
+          "child_bone": 117,
+          "resolved": true,
+          "unresolved_reason": null,
+          "native": {
+            "_rootBoneName": "Sp_Hi_MSkirt0_L_00",
+            "_childBoneName": "Sp_Hi_MSkirt0_L_01",
+            "_isCheckRightLeg": 1,
+            "_isCheckLeftLeg": 1,
+            "IsIgnoreRaceRun": 0
+          }
+        },
+        {
+          "root_bone": 28,
+          "child_bone": 29,
+          "resolved": true,
+          "unresolved_reason": null,
+          "native": {
+            "_rootBoneName": "Sp_Hi_MSkirt0_R_00",
+            "_childBoneName": "Sp_Hi_MSkirt0_R_01",
+            "_isCheckRightLeg": 1,
+            "_isCheckLeftLeg": 1,
+            "IsIgnoreRaceRun": 0
+          }
+        },
+        {
+          "root_bone": 79,
+          "child_bone": 91,
+          "resolved": true,
+          "unresolved_reason": null,
+          "native": {
+            "_rootBoneName": "Sp_Hi_MSkirt0_BL_00",
+            "_childBoneName": "Sp_Hi_MSkirt0_BL_01",
+            "_isCheckRightLeg": 1,
+            "_isCheckLeftLeg": 1,
+            "IsIgnoreRaceRun": 0
+          }
+        },
+        {
+          "root_bone": 42,
+          "child_bone": 43,
+          "resolved": true,
+          "unresolved_reason": null,
+          "native": {
+            "_rootBoneName": "Sp_Hi_MSkirt0_BR_00",
+            "_childBoneName": "Sp_Hi_MSkirt0_BR_01",
+            "_isCheckRightLeg": 1,
+            "_isCheckLeftLeg": 1,
+            "IsIgnoreRaceRun": 0
+          }
+        },
+        {
+          "root_bone": 23,
+          "child_bone": 106,
+          "resolved": true,
+          "unresolved_reason": null,
+          "native": {
+            "_rootBoneName": "Sp_Hi_MSkirt0_B_00",
+            "_childBoneName": "Sp_Hi_MSkirt0_B_01",
+            "_isCheckRightLeg": 1,
+            "_isCheckLeftLeg": 1,
+            "IsIgnoreRaceRun": 0
+          }
+        }
+      ]
+    },
+    {
+      "source": "3d/chara/body/bdy1015_00/clothes/ast_bdy1015_00_skirt01",
+      "native_parameters": {
+        "_isLongSkirt": 0,
+        "_centerBoneName": "Hip",
+        "_kneeLBoneName": "Knee_L",
+        "_kneeRBoneName": "Knee_R",
+        "_ankleLBoneName": "",
+        "_ankleRBoneName": "",
+        "_kneeColliderRadius": 0.05999999865889549,
+        "_ankleColliderRadius": 0.0,
+        "_influenceAngle": 20.0,
+        "_influenceMaxAngle": 65.0,
+        "IsOffsetAngleTargetEndNode": 1
+      },
+      "panels": [
+        {
+          "root_bone": 53,
+          "child_bone": 54,
+          "resolved": true,
+          "unresolved_reason": null,
+          "native": {
+            "_rootBoneName": "Sp_Hi_MSkirt0_F_00",
+            "_childBoneName": "Sp_Hi_MSkirt0_F_01",
+            "_isCheckRightLeg": 1,
+            "_isCheckLeftLeg": 1,
+            "IsIgnoreRaceRun": 0
+          }
+        },
+        {
+          "root_bone": 36,
+          "child_bone": 111,
+          "resolved": true,
+          "unresolved_reason": null,
+          "native": {
+            "_rootBoneName": "Sp_Hi_MSkirt0_FL_00",
+            "_childBoneName": "Sp_Hi_MSkirt0_FL_01",
+            "_isCheckRightLeg": 1,
+            "_isCheckLeftLeg": 1,
+            "IsIgnoreRaceRun": 0
+          }
+        },
+        {
+          "root_bone": 105,
+          "child_bone": 113,
+          "resolved": true,
+          "unresolved_reason": null,
+          "native": {
+            "_rootBoneName": "Sp_Hi_MSkirt0_FR_00",
+            "_childBoneName": "Sp_Hi_MSkirt0_FR_01",
+            "_isCheckRightLeg": 1,
+            "_isCheckLeftLeg": 1,
+            "IsIgnoreRaceRun": 0
+          }
+        },
+        {
+          "root_bone": 107,
+          "child_bone": 108,
+          "resolved": true,
+          "unresolved_reason": null,
+          "native": {
+            "_rootBoneName": "Sp_Hi_MSkirt0_FLL_00",
+            "_childBoneName": "Sp_Hi_MSkirt0_FLL_01",
+            "_isCheckRightLeg": 1,
+            "_isCheckLeftLeg": 1,
+            "IsIgnoreRaceRun": 0
+          }
+        },
+        {
+          "root_bone": 37,
+          "child_bone": 38,
+          "resolved": true,
+          "unresolved_reason": null,
+          "native": {
+            "_rootBoneName": "Sp_Hi_MSkirt0_FRR_00",
+            "_childBoneName": "Sp_Hi_MSkirt0_FRR_01",
+            "_isCheckRightLeg": 1,
+            "_isCheckLeftLeg": 1,
+            "IsIgnoreRaceRun": 0
+          }
+        },
+        {
+          "root_bone": 47,
+          "child_bone": 117,
+          "resolved": true,
+          "unresolved_reason": null,
+          "native": {
+            "_rootBoneName": "Sp_Hi_MSkirt0_L_00",
+            "_childBoneName": "Sp_Hi_MSkirt0_L_01",
+            "_isCheckRightLeg": 1,
+            "_isCheckLeftLeg": 1,
+            "IsIgnoreRaceRun": 0
+          }
+        },
+        {
+          "root_bone": 28,
+          "child_bone": 29,
+          "resolved": true,
+          "unresolved_reason": null,
+          "native": {
+            "_rootBoneName": "Sp_Hi_MSkirt0_R_00",
+            "_childBoneName": "Sp_Hi_MSkirt0_R_01",
+            "_isCheckRightLeg": 1,
+            "_isCheckLeftLeg": 1,
+            "IsIgnoreRaceRun": 0
+          }
+        },
+        {
+          "root_bone": 79,
+          "child_bone": 91,
+          "resolved": true,
+          "unresolved_reason": null,
+          "native": {
+            "_rootBoneName": "Sp_Hi_MSkirt0_BL_00",
+            "_childBoneName": "Sp_Hi_MSkirt0_BL_01",
+            "_isCheckRightLeg": 1,
+            "_isCheckLeftLeg": 1,
+            "IsIgnoreRaceRun": 0
+          }
+        },
+        {
+          "root_bone": 42,
+          "child_bone": 43,
+          "resolved": true,
+          "unresolved_reason": null,
+          "native": {
+            "_rootBoneName": "Sp_Hi_MSkirt0_BR_00",
+            "_childBoneName": "Sp_Hi_MSkirt0_BR_01",
+            "_isCheckRightLeg": 1,
+            "_isCheckLeftLeg": 1,
+            "IsIgnoreRaceRun": 0
+          }
+        },
+        {
+          "root_bone": 23,
+          "child_bone": 106,
+          "resolved": true,
+          "unresolved_reason": null,
+          "native": {
+            "_rootBoneName": "Sp_Hi_MSkirt0_B_00",
+            "_childBoneName": "Sp_Hi_MSkirt0_B_01",
+            "_isCheckRightLeg": 1,
+            "_isCheckLeftLeg": 1,
+            "IsIgnoreRaceRun": 0
+          }
+        }
+      ]
+    },
+    {
+      "source": "3d/chara/body/bdy1015_00/clothes/ast_bdy1015_00_skirt02",
+      "native_parameters": {
+        "_isLongSkirt": 0,
+        "_centerBoneName": "Hip",
+        "_kneeLBoneName": "Knee_L",
+        "_kneeRBoneName": "Knee_R",
+        "_ankleLBoneName": "",
+        "_ankleRBoneName": "",
+        "_kneeColliderRadius": 0.07999999821186066,
+        "_ankleColliderRadius": 0.0,
+        "_influenceAngle": 25.0,
+        "_influenceMaxAngle": 74.0,
+        "IsOffsetAngleTargetEndNode": 1
+      },
+      "panels": [
+        {
+          "root_bone": 53,
+          "child_bone": 54,
+          "resolved": true,
+          "unresolved_reason": null,
+          "native": {
+            "_rootBoneName": "Sp_Hi_MSkirt0_F_00",
+            "_childBoneName": "Sp_Hi_MSkirt0_F_01",
+            "_isCheckRightLeg": 1,
+            "_isCheckLeftLeg": 1,
+            "IsIgnoreRaceRun": 0
+          }
+        },
+        {
+          "root_bone": 36,
+          "child_bone": 111,
+          "resolved": true,
+          "unresolved_reason": null,
+          "native": {
+            "_rootBoneName": "Sp_Hi_MSkirt0_FL_00",
+            "_childBoneName": "Sp_Hi_MSkirt0_FL_01",
+            "_isCheckRightLeg": 1,
+            "_isCheckLeftLeg": 1,
+            "IsIgnoreRaceRun": 0
+          }
+        },
+        {
+          "root_bone": 105,
+          "child_bone": 113,
+          "resolved": true,
+          "unresolved_reason": null,
+          "native": {
+            "_rootBoneName": "Sp_Hi_MSkirt0_FR_00",
+            "_childBoneName": "Sp_Hi_MSkirt0_FR_01",
+            "_isCheckRightLeg": 1,
+            "_isCheckLeftLeg": 1,
+            "IsIgnoreRaceRun": 0
+          }
+        },
+        {
+          "root_bone": 107,
+          "child_bone": 108,
+          "resolved": true,
+          "unresolved_reason": null,
+          "native": {
+            "_rootBoneName": "Sp_Hi_MSkirt0_FLL_00",
+            "_childBoneName": "Sp_Hi_MSkirt0_FLL_01",
+            "_isCheckRightLeg": 1,
+            "_isCheckLeftLeg": 1,
+            "IsIgnoreRaceRun": 0
+          }
+        },
+        {
+          "root_bone": 37,
+          "child_bone": 38,
+          "resolved": true,
+          "unresolved_reason": null,
+          "native": {
+            "_rootBoneName": "Sp_Hi_MSkirt0_FRR_00",
+            "_childBoneName": "Sp_Hi_MSkirt0_FRR_01",
+            "_isCheckRightLeg": 1,
+            "_isCheckLeftLeg": 1,
+            "IsIgnoreRaceRun": 0
+          }
+        },
+        {
+          "root_bone": 47,
+          "child_bone": 117,
+          "resolved": true,
+          "unresolved_reason": null,
+          "native": {
+            "_rootBoneName": "Sp_Hi_MSkirt0_L_00",
+            "_childBoneName": "Sp_Hi_MSkirt0_L_01",
+            "_isCheckRightLeg": 1,
+            "_isCheckLeftLeg": 1,
+            "IsIgnoreRaceRun": 0
+          }
+        },
+        {
+          "root_bone": 28,
+          "child_bone": 29,
+          "resolved": true,
+          "unresolved_reason": null,
+          "native": {
+            "_rootBoneName": "Sp_Hi_MSkirt0_R_00",
+            "_childBoneName": "Sp_Hi_MSkirt0_R_01",
+            "_isCheckRightLeg": 1,
+            "_isCheckLeftLeg": 1,
+            "IsIgnoreRaceRun": 0
+          }
+        },
+        {
+          "root_bone": 79,
+          "child_bone": 91,
+          "resolved": true,
+          "unresolved_reason": null,
+          "native": {
+            "_rootBoneName": "Sp_Hi_MSkirt0_BL_00",
+            "_childBoneName": "Sp_Hi_MSkirt0_BL_01",
+            "_isCheckRightLeg": 1,
+            "_isCheckLeftLeg": 1,
+            "IsIgnoreRaceRun": 0
+          }
+        },
+        {
+          "root_bone": 42,
+          "child_bone": 43,
+          "resolved": true,
+          "unresolved_reason": null,
+          "native": {
+            "_rootBoneName": "Sp_Hi_MSkirt0_BR_00",
+            "_childBoneName": "Sp_Hi_MSkirt0_BR_01",
+            "_isCheckRightLeg": 1,
+            "_isCheckLeftLeg": 1,
+            "IsIgnoreRaceRun": 0
+          }
+        },
+        {
+          "root_bone": 23,
+          "child_bone": 106,
+          "resolved": true,
+          "unresolved_reason": null,
+          "native": {
+            "_rootBoneName": "Sp_Hi_MSkirt0_B_00",
+            "_childBoneName": "Sp_Hi_MSkirt0_B_01",
+            "_isCheckRightLeg": 1,
+            "_isCheckLeftLeg": 1,
+            "IsIgnoreRaceRun": 0
+          }
+        }
+      ]
+    }
+  ],
+  "runtime_integrated": false,
+  "accepted_for_game": false
+}
