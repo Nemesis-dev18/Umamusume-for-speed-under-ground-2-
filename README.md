@@ -292,11 +292,22 @@ Los nombres, marcas y activos pertenecen a sus respectivos titulares.
 
 ## ⚖️ Aviso legal
 
-Este proyecto es una modificación experimental hecha por fans. No está afiliado, patrocinado ni respaldado por Electronic Arts, Cygames, Unity, Blender Foundation o los autores de los modelos utilizados.
+> [!IMPORTANT]
+> **Todos los modelos, personajes, diseños, texturas, animaciones y demás obras utilizadas pertenecen a sus respectivos creadores y propietarios.**
+>
+> Este mod no pretende apropiarse de ninguna autoría ni reclamar como propios los derechos de los personajes, modelos o recursos utilizados.
+>
+> El proyecto se desarrolla únicamente con fines personales, educativos y experimentales. **No está destinado a obtener beneficios económicos ni busca lucro.**
+>
+> Los derechos corresponden íntegramente a sus creadores originales, autores individuales, Cygames, Electronic Arts y demás titulares aplicables.
+>
+> Este proyecto no está afiliado, respaldado ni autorizado oficialmente por dichas entidades, salvo indicación expresa y comprobable.
+
+Los recursos propios solo pueden utilizarse con permiso, licencia compatible o autorización otorgada por sus autores. Las obras de terceros no deben redistribuirse ni utilizarse con fines comerciales sin autorización explícita.
 
 Este repositorio no distribuye una copia comercial del juego ni pretende sustituirla. Necesitas tus propios archivos originales y legales para ejecutar una copia compatible.
 
-No se garantiza compatibilidad con mods, guardados, anticheat, modos online, Steam o actualizaciones futuras.
+Este proyecto es una modificación experimental hecha por fans. No se garantiza compatibilidad con mods, guardados, anticheat, modos online, Steam o actualizaciones futuras.
 
 ---
 
