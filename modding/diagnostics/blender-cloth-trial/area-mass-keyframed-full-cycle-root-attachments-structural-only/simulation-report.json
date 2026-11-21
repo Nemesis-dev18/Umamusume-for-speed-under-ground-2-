@@ -1,0 +1,148 @@
+{
+  "scope": "Keyframed offline Blender cloth trial, not runtime implementation. Body selection includes rigid costume surfaces. Does not prove collision-free or visually accepted output.",
+  "simulation_particles": 3478,
+  "native_root_attachments": true,
+  "cloth_area_m2": 5.204781821534055,
+  "mass_per_particle_kg": 0.00044894611346535385,
+  "assumed_areal_density_kg_m2": 0.3,
+  "total_assigned_particle_mass_kg": 1.5614345826325007,
+  "diagnostic_reference_offset_limit_m": 1.5,
+  "fully_pinned_particles": 841,
+  "duplicate_physical_faces_removed": 1025,
+  "unattached_particles_retained_on_native_animation": 15,
+  "body_triangles": 5031,
+  "elapsed_seconds": 19.45720916199207,
+  "frames": [
+    {
+      "frame": 1,
+      "maximum_displacement_m": 0.0,
+      "minimum_z": 0.3937183618545532,
+      "worst_render_vertex": 5093,
+      "worst_pin_weight": 0.9999999850988388,
+      "worst_native_motion_from_initial_m": 0.0,
+      "worst_simulated_motion_from_initial_m": 0.0
+    },
+    {
+      "frame": 8,
+      "maximum_displacement_m": 0.358135461807251,
+      "minimum_z": 0.3923183083534241,
+      "worst_render_vertex": 6932,
+      "worst_pin_weight": 0.0,
+      "worst_native_motion_from_initial_m": 1.1921257972717285,
+      "worst_simulated_motion_from_initial_m": 0.8692293763160706,
+      "sample_motion_m": 1.0214471817016602
+    },
+    {
+      "frame": 16,
+      "maximum_displacement_m": 0.3333091139793396,
+      "minimum_z": 0.42820340394973755,
+      "worst_render_vertex": 6930,
+      "worst_pin_weight": 0.0,
+      "worst_native_motion_from_initial_m": 1.3303743600845337,
+      "worst_simulated_motion_from_initial_m": 1.1793296337127686,
+      "sample_motion_m": 0.5877728462219238
+    },
+    {
+      "frame": 24,
+      "maximum_displacement_m": 0.26412197947502136,
+      "minimum_z": 0.4172351360321045,
+      "worst_render_vertex": 8809,
+      "worst_pin_weight": 0.0,
+      "worst_native_motion_from_initial_m": 1.2094521522521973,
+      "worst_simulated_motion_from_initial_m": 1.0363566875457764,
+      "sample_motion_m": 0.2535608112812042
+    },
+    {
+      "frame": 32,
+      "maximum_displacement_m": 0.3626094162464142,
+      "minimum_z": 0.382525771856308,
+      "worst_render_vertex": 8703,
+      "worst_pin_weight": 0.0,
+      "worst_native_motion_from_initial_m": 0.2861245572566986,
+      "worst_simulated_motion_from_initial_m": 0.5272216200828552,
+      "sample_motion_m": 0.9623697996139526
+    },
+    {
+      "frame": 40,
+      "maximum_displacement_m": 0.36451712250709534,
+      "minimum_z": 0.4212496876716614,
+      "worst_render_vertex": 8703,
+      "worst_pin_weight": 0.0,
+      "worst_native_motion_from_initial_m": 0.28456950187683105,
+      "worst_simulated_motion_from_initial_m": 0.1733737587928772,
+      "sample_motion_m": 0.5314009785652161
+    },
+    {
+      "frame": 48,
+      "maximum_displacement_m": 0.24795106053352356,
+      "minimum_z": 0.4123927354812622,
+      "worst_render_vertex": 8678,
+      "worst_pin_weight": 0.0,
+      "worst_native_motion_from_initial_m": 0.08535314351320267,
+      "worst_simulated_motion_from_initial_m": 0.16526204347610474,
+      "sample_motion_m": 0.2456599920988083
+    },
+    {
+      "frame": 56,
+      "maximum_displacement_m": 0.33393624424934387,
+      "minimum_z": 0.38307666778564453,
+      "worst_render_vertex": 6876,
+      "worst_pin_weight": 0.0,
+      "worst_native_motion_from_initial_m": 1.2194181680679321,
+      "worst_simulated_motion_from_initial_m": 0.9866647124290466,
+      "sample_motion_m": 0.9821950793266296
+    },
+    {
+      "frame": 64,
+      "maximum_displacement_m": 0.32711565494537354,
+      "minimum_z": 0.4280312955379486,
+      "worst_render_vertex": 6897,
+      "worst_pin_weight": 0.0,
+      "worst_native_motion_from_initial_m": 1.358083724975586,
+      "worst_simulated_motion_from_initial_m": 1.251281976699829,
+      "sample_motion_m": 0.5778366327285767
+    },
+    {
+      "frame": 72,
+      "maximum_displacement_m": 0.2971900999546051,
+      "minimum_z": 0.40830594301223755,
+      "worst_render_vertex": 8807,
+      "worst_pin_weight": 0.0,
+      "worst_native_motion_from_initial_m": 1.21327543258667,
+      "worst_simulated_motion_from_initial_m": 1.0130435228347778,
+      "sample_motion_m": 0.24352483451366425
+    },
+    {
+      "frame": 80,
+      "maximum_displacement_m": 0.3854284882545471,
+      "minimum_z": 0.3724001348018646,
+      "worst_render_vertex": 8670,
+      "worst_pin_weight": 0.0,
+      "worst_native_motion_from_initial_m": 0.2701626420021057,
+      "worst_simulated_motion_from_initial_m": 0.5308746099472046,
+      "sample_motion_m": 0.954685389995575
+    },
+    {
+      "frame": 88,
+      "maximum_displacement_m": 0.3577597737312317,
+      "minimum_z": 0.4188651442527771,
+      "worst_render_vertex": 8670,
+      "worst_pin_weight": 0.0,
+      "worst_native_motion_from_initial_m": 0.30391252040863037,
+      "worst_simulated_motion_from_initial_m": 0.09626884758472443,
+      "sample_motion_m": 0.5693099498748779
+    },
+    {
+      "frame": 96,
+      "maximum_displacement_m": 0.3410499393939972,
+      "minimum_z": 0.4060543477535248,
+      "worst_render_vertex": 7060,
+      "worst_pin_weight": 0.0,
+      "worst_native_motion_from_initial_m": 0.03223279491066933,
+      "worst_simulated_motion_from_initial_m": 0.33982160687446594,
+      "sample_motion_m": 0.2590722143650055
+    }
+  ],
+  "rejected": null,
+  "accepted_for_game": false
+}

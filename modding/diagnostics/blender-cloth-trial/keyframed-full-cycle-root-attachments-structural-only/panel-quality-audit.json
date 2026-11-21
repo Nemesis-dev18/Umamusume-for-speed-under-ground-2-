@@ -1,0 +1,111 @@
+{
+  "scope": "Saved-sample panel strain relative to native skinned panel; maximum pin error checks >=0.9999weights. Does not verify unsampled contacts or natural appearance.",
+  "trial": "keyframed-full-cycle-root-attachments-structural-only",
+  "results": [
+    {
+      "frame": 1,
+      "max_edge_length_error_m": 0.0,
+      "max_edge_strain": 0.0,
+      "p95_edge_strain": 0.0,
+      "edges_above_ten_percent": 0,
+      "max_full_pin_error_m": 0.0
+    },
+    {
+      "frame": 8,
+      "max_edge_length_error_m": 0.006479196829382722,
+      "max_edge_strain": 0.5768033440766596,
+      "p95_edge_strain": 0.02417117573954175,
+      "edges_above_ten_percent": 55,
+      "max_full_pin_error_m": 2.9802322387695312e-08
+    },
+    {
+      "frame": 16,
+      "max_edge_length_error_m": 0.004411271772036804,
+      "max_edge_strain": 0.13259223520860797,
+      "p95_edge_strain": 0.007751494909669532,
+      "edges_above_ten_percent": 2,
+      "max_full_pin_error_m": 5.960464477539063e-08
+    },
+    {
+      "frame": 24,
+      "max_edge_length_error_m": 0.0037986114954819683,
+      "max_edge_strain": 0.22931944262590576,
+      "p95_edge_strain": 0.011393486687208298,
+      "edges_above_ten_percent": 14,
+      "max_full_pin_error_m": 3.0719530773294423e-08
+    },
+    {
+      "frame": 32,
+      "max_edge_length_error_m": 0.007773404915165295,
+      "max_edge_strain": 0.6149723919415644,
+      "p95_edge_strain": 0.02218203149102893,
+      "edges_above_ten_percent": 50,
+      "max_full_pin_error_m": 1.4901161193847656e-08
+    },
+    {
+      "frame": 40,
+      "max_edge_length_error_m": 0.004256803473231596,
+      "max_edge_strain": 0.1688555969308303,
+      "p95_edge_strain": 0.008476451076160463,
+      "edges_above_ten_percent": 1,
+      "max_full_pin_error_m": 7.450580596923828e-09
+    },
+    {
+      "frame": 48,
+      "max_edge_length_error_m": 0.003982996539478048,
+      "max_edge_strain": 0.18974885057013946,
+      "p95_edge_strain": 0.01317361634794123,
+      "edges_above_ten_percent": 12,
+      "max_full_pin_error_m": 9.313225746154785e-10
+    },
+    {
+      "frame": 56,
+      "max_edge_length_error_m": 0.006772069011586168,
+      "max_edge_strain": 0.692681678839373,
+      "p95_edge_strain": 0.024463776506730817,
+      "edges_above_ten_percent": 64,
+      "max_full_pin_error_m": 2.9802322387695312e-08
+    },
+    {
+      "frame": 64,
+      "max_edge_length_error_m": 0.004197324452435466,
+      "max_edge_strain": 0.13810451629827458,
+      "p95_edge_strain": 0.00796781628740928,
+      "edges_above_ten_percent": 1,
+      "max_full_pin_error_m": 5.960464477539063e-08
+    },
+    {
+      "frame": 72,
+      "max_edge_length_error_m": 0.003986290432108436,
+      "max_edge_strain": 0.25717677560293795,
+      "p95_edge_strain": 0.012644527384428672,
+      "edges_above_ten_percent": 16,
+      "max_full_pin_error_m": 3.0719530773294423e-08
+    },
+    {
+      "frame": 80,
+      "max_edge_length_error_m": 0.006709069082752886,
+      "max_edge_strain": 0.48529143269497044,
+      "p95_edge_strain": 0.02362620537078297,
+      "edges_above_ten_percent": 58,
+      "max_full_pin_error_m": 1.4901161193847656e-08
+    },
+    {
+      "frame": 88,
+      "max_edge_length_error_m": 0.00369425254716807,
+      "max_edge_strain": 0.1728175587888423,
+      "p95_edge_strain": 0.008004403349664013,
+      "edges_above_ten_percent": 2,
+      "max_full_pin_error_m": 7.450580596923828e-09
+    },
+    {
+      "frame": 96,
+      "max_edge_length_error_m": 0.003532450602521539,
+      "max_edge_strain": 0.1749773596478994,
+      "p95_edge_strain": 0.013151859049854386,
+      "edges_above_ten_percent": 11,
+      "max_full_pin_error_m": 9.313225746154785e-10
+    }
+  ],
+  "accepted_for_game": false
+}
