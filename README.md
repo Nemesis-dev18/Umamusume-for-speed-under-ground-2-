@@ -101,6 +101,21 @@
 
 > Una llamada DIP exitosa, una captura o un comando que termina con código cero nunca se presenta aquí como prueba de aceptación final.
 
+
+
+
+
+https://github.com/user-attachments/assets/0d9f5f21-b30e-4fbc-9fcd-c99d2d6803dc
+
+
+
+
+
+https://github.com/user-attachments/assets/30507dc0-87b0-49f5-8fcb-d70416c05fb8
+
+
+
+
 ---
 
 ## 🚀 Inicio rápido
