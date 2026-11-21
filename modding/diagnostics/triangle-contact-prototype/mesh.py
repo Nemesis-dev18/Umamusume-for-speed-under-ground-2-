@@ -24,6 +24,22 @@ def physical_mesh(topology):
     return roots,mapping,triangles,edges,[weights[v] for v in roots]
 
 
+
+def root_attachment_weights(parents,cloth_nodes,skins):
+    controls=[]
+    for bone,parent in enumerate(parents):
+        assert -1<=parent<bone
+        ancestor=bone
+        while ancestor>=0 and ancestor not in cloth_nodes:ancestor=parents[ancestor]
+        controls.append(ancestor<0 or parents[ancestor] not in cloth_nodes)
+    result=[]
+    for bones,weights in skins:
+        assert len(bones)==len(weights) and all(0<=b<len(parents) for b in bones)
+        assert all(math.isfinite(w) and 0<=w<=1 for w in weights) and abs(sum(weights)-1)<1e-4
+        result.append(sum(w for b,w in zip(bones,weights) if controls[b]))
+    return result
+
+
 def main():
     here=Path(__file__).resolve().parent
     root=here.parents[2]

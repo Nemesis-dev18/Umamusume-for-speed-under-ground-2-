@@ -1,0 +1,32 @@
+{
+  "scope": "Offline Blender cloth trial, not runtime implementation. Body selection includes rigid costume surfaces. Does not prove collision-free or visually accepted output.",
+  "simulation_particles": 3478,
+  "native_root_attachments": true,
+  "fully_pinned_particles": 841,
+  "duplicate_physical_faces_removed": 1025,
+  "unattached_particles_retained_on_native_animation": 15,
+  "body_triangles": 5031,
+  "elapsed_seconds": 0.21377736100112088,
+  "frames": [
+    {
+      "frame": 1,
+      "maximum_displacement_m": 0.0,
+      "minimum_z": 0.3937183618545532,
+      "worst_render_vertex": 5093,
+      "worst_pin_weight": 0.9999999850988388,
+      "worst_native_motion_from_initial_m": 0.0,
+      "worst_simulated_motion_from_initial_m": 0.0
+    },
+    {
+      "frame": 4,
+      "maximum_displacement_m": 0.45506399869918823,
+      "minimum_z": 0.3945766091346741,
+      "worst_render_vertex": 6874,
+      "worst_pin_weight": 0.0,
+      "worst_native_motion_from_initial_m": 0.660207211971283,
+      "worst_simulated_motion_from_initial_m": 0.23365263640880585
+    }
+  ],
+  "rejected": "Offset from native reference exceeds 30cm; attachment/visual review required, not proof of solver divergence",
+  "accepted_for_game": false
+}

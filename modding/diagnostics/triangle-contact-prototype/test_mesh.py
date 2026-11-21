@@ -1,8 +1,16 @@
 import unittest
-from mesh import physical_mesh
+from mesh import physical_mesh,root_attachment_weights
 
 
 class PhysicalMeshTests(unittest.TestCase):
+    def test_native_chain_root_attaches_but_distal_bones_remain_free(self):
+        parents=[-1,0,1,2,0]
+        skins=[([0],[1]),([1],[1]),([2],[1]),([3],[1]),([4],[1]),([1,2],[.25,.75])]
+        self.assertEqual(root_attachment_weights(parents,{1,2},skins),[1,1,0,0,1,.25])
+
+    def test_invalid_hierarchy_is_rejected(self):
+        with self.assertRaises(AssertionError):root_attachment_weights([1,-1],{0},[])
+
     def fixture(self):
         return {'weights':{'0':0,'1':1,'2':1,'3':1},'candidate_seams':[[1,3]],'triangles':[[0,1,2],[0,2,3]]}
 

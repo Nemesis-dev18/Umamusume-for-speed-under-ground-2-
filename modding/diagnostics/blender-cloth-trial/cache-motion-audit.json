@@ -1,0 +1,20 @@
+{
+  "scope": "Harness regression: rejects stale cloth cache; not visual/physics acceptance.",
+  "results": [
+    {
+      "trial": "full-cycle-root-attachments-deduplicated-without-self",
+      "frame8_to16_maximum_motion_m": 0.0,
+      "frozen": true
+    },
+    {
+      "trial": "keyframed-full-cycle-root-attachments-structural-only",
+      "frame8_to16_maximum_motion_m": 0.8773080507192287,
+      "frozen": false
+    },
+    {
+      "trial": "keyframed-full-cycle-root-attachments-deduplicated-full-contact",
+      "frame8_to16_maximum_motion_m": 0.8866452812015676,
+      "frozen": false
+    }
+  ]
+}

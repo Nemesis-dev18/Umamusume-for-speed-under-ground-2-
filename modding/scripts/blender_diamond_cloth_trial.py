@@ -10,16 +10,22 @@ import numpy as np
 ROOT=Path(__file__).resolve().parents[2]
 HERE=ROOT/'modding/diagnostics/triangle-contact-prototype'
 sys.path.insert(0,str(HERE));sys.path.insert(0,str(Path(__file__).resolve().parent))
-from mesh import physical_mesh
+from mesh import physical_mesh,root_attachment_weights
 import blender_diamond_intersections as source
 from mathutils import Vector
 from mathutils.bvhtree import BVHTree
 
 
 def main():
-    base=ROOT/'modding/diagnostics/blender-cloth-trial';no_self='--no-self' in sys.argv;no_body='--no-body' in sys.argv;out=base/('structural-only' if no_body else 'deduplicated-without-self' if no_self else 'deduplicated-full-contact');out.mkdir(parents=True,exist_ok=True)
+    base=ROOT/'modding/diagnostics/blender-cloth-trial';no_self='--no-self' in sys.argv;no_body='--no-body' in sys.argv;root_pins='--root-attachments' in sys.argv;full_cycle='--full-cycle' in sys.argv;limit=1.5 if full_cycle else .3;out=base/('keyframed-'+('full-cycle-' if full_cycle else '')+('root-attachments-' if root_pins else '')+('structural-only' if no_body else 'deduplicated-without-self' if no_self else 'deduplicated-full-contact'));out.mkdir(parents=True,exist_ok=True)
     topo=json.loads((HERE/'diamond-topology-position-skin.json').read_text())
     roots,mapping,tris,edges,mass=physical_mesh(topo)
+    model=(ROOT/'modding/runtime/fleet/1067/model.umab').read_bytes();nv,_,nb=struct.unpack_from('<3I',model,8)
+    parents=[struct.unpack_from('<h',model,40+nv*60+b*16)[0] for b in range(nb)]
+    spring=json.loads((ROOT/'modding/staged-runtime/diamond/secondary.json').read_text())
+    cloth_nodes={n['bone'] for n in spring['spring_nodes'] if 'Skirt' in n['category'] or n['category']=='Sleeve'}
+    skins=[(struct.unpack_from('<4H',model,40+nv*36+v*24),struct.unpack_from('<4f',model,40+nv*36+v*24+8)) for v in roots]
+    pin_weights=root_attachment_weights(parents,cloth_nodes,skins) if root_pins else [1-w for w in mass]
     adjacent=[[] for _ in roots]
     for a,b in edges:adjacent[a].append(b);adjacent[b].append(a)
     seen=set();keep=set();excluded=[]
@@ -30,7 +36,7 @@ def main():
             a=stack.pop();part.append(a)
             for b in adjacent[a]:
                 if b not in seen:seen.add(b);stack.append(b)
-        if min(mass[i] for i in part)<1:keep.update(part)
+        if max(pin_weights[i] for i in part)>0:keep.update(part)
         else:excluded.extend(part)
     order=sorted(keep);remap={v:i for i,v in enumerate(order)}
     sim_tris=[tuple(remap[v] for v in tri) for tri in tris if tri[0] in keep]
@@ -61,9 +67,17 @@ def main():
         obj.shape_key_add(name='Basis')
         for i,pose in enumerate(poses):
             key=obj.shape_key_add(name=f'Run-{i:03d}');key.data.foreach_set('co',pose[ids].ravel())
+            key.value=0;key.keyframe_insert('value',frame=0)
+            for cycle in range(3):
+                at=1+i+cycle*48
+                for frame,value in ((at-1,0),(at,1),(at+1,0)):
+                    key.value=value;key.keyframe_insert('value',frame=frame)
+            key.value=0
+        for curve in obj.data.shape_keys.animation_data.action.fcurves:
+            for point in curve.keyframe_points:point.interpolation='LINEAR'
     pins=cloth.vertex_groups.new(name='Native-attachments')
     for i,original in enumerate(order):
-        weight=1-mass[original]
+        weight=pin_weights[original]
         if weight>0:pins.add([i],min(1,weight),'REPLACE')
     collider.modifiers.new('Native-body-surface','COLLISION')
     collider.collision.thickness_outer=.002;collider.collision.thickness_inner=.001
@@ -75,25 +89,24 @@ def main():
     contacts.collision_quality=4;contacts.use_self_collision=not no_self;contacts.self_distance_min=.002
     scene=bpy.context.scene;scene.render.fps=80;scene.frame_start=1;scene.frame_end=96
     modifier.point_cache.frame_start=1;modifier.point_cache.frame_end=96
-    def animate(scene):
-        current=(scene.frame_current-1)%48
-        for obj in (cloth,collider):
-            for i,key in enumerate(obj.data.shape_keys.key_blocks[1:]):key.value=float(i==current)
-    bpy.app.handlers.frame_change_pre.append(animate)
-    rows=[];begin=time.monotonic();rejected=None
+    rows=[];begin=time.monotonic();rejected=None;previous_snapshot=None;previous_native=None
     for frame in range(1,97):
         scene.frame_set(frame);graph=bpy.context.evaluated_depsgraph_get();evaluated=cloth.evaluated_get(graph);mesh=evaluated.to_mesh()
         positions=np.empty((len(sim_roots),3),dtype=np.float32);mesh.vertices.foreach_get('co',positions.ravel());evaluated.to_mesh_clear()
         native=poses[(frame-1)%48][sim_roots]
         displacement=float(np.linalg.norm(positions-native,axis=1).max())
         assert np.isfinite(positions).all()
-        if frame%8==0 or frame==1 or displacement>.3:
-            worst=int(np.linalg.norm(positions-native,axis=1).argmax());row={'frame':frame,'maximum_displacement_m':displacement,'minimum_z':float(positions[:,2].min()),'worst_render_vertex':sim_roots[worst],'worst_pin_weight':1-mass[order[worst]],'worst_native_motion_from_initial_m':float(np.linalg.norm(native[worst]-poses[0][sim_roots[worst]])),'worst_simulated_motion_from_initial_m':float(np.linalg.norm(positions[worst]-poses[0][sim_roots[worst]]))};rows.append(row);print(json.dumps(row),flush=True)
+        if frame%8==0 or frame==1 or displacement>limit:
+            worst=int(np.linalg.norm(positions-native,axis=1).argmax());row={'frame':frame,'maximum_displacement_m':displacement,'minimum_z':float(positions[:,2].min()),'worst_render_vertex':sim_roots[worst],'worst_pin_weight':pin_weights[order[worst]],'worst_native_motion_from_initial_m':float(np.linalg.norm(native[worst]-poses[0][sim_roots[worst]])),'worst_simulated_motion_from_initial_m':float(np.linalg.norm(positions[worst]-poses[0][sim_roots[worst]]))};
+            if previous_snapshot is not None:
+                movement=float(np.linalg.norm(positions-previous_snapshot,axis=1).max());expected=float(np.linalg.norm(native-previous_native,axis=1).max());row['sample_motion_m']=movement
+                if movement<1e-8 and expected>.001:rejected='Frozen cloth cache while native pose changes'
+            previous_snapshot=positions.copy();previous_native=native.copy();rows.append(row);print(json.dumps(row),flush=True)
             (out/f'trial-{frame:03d}.json').write_text(json.dumps(positions.tolist(),separators=(',',':'))+'\n')
-        if displacement>.3:
-            rejected='Offset from native reference exceeds 30cm; attachment/visual review required, not proof of solver divergence';break
-    bpy.app.handlers.frame_change_pre.remove(animate)
-    report={'scope':'Offline Blender cloth trial, not runtime implementation. Body selection includes rigid costume surfaces. Does not prove collision-free or visually accepted output.','simulation_particles':len(sim_roots),'duplicate_physical_faces_removed':duplicate_faces,'unattached_particles_retained_on_native_animation':len(excluded),'body_triangles':len(body),'elapsed_seconds':time.monotonic()-begin,'frames':rows,'rejected':rejected,'accepted_for_game':False}
+        if rejected:break
+        if displacement>limit:
+            rejected=f'Offset from native reference exceeds {limit}m diagnostic limit; not proof of solver divergence';break
+    report={'scope':'Keyframed offline Blender cloth trial, not runtime implementation. Body selection includes rigid costume surfaces. Does not prove collision-free or visually accepted output.','simulation_particles':len(sim_roots),'native_root_attachments':root_pins,'diagnostic_reference_offset_limit_m':limit,'fully_pinned_particles':sum(pin_weights[i]>=.9999 for i in order),'duplicate_physical_faces_removed':duplicate_faces,'unattached_particles_retained_on_native_animation':len(excluded),'body_triangles':len(body),'elapsed_seconds':time.monotonic()-begin,'frames':rows,'rejected':rejected,'accepted_for_game':False}
     (out/'simulation-report.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report),flush=True)
 
 
