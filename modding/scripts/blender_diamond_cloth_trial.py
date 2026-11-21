@@ -17,7 +17,7 @@ from mathutils.bvhtree import BVHTree
 
 
 def main():
-    base=ROOT/'modding/diagnostics/blender-cloth-trial';no_self='--no-self' in sys.argv;no_body='--no-body' in sys.argv;root_pins='--root-attachments' in sys.argv;full_cycle='--full-cycle' in sys.argv;limit=1.5 if full_cycle else .3;area_mass='--area-mass' in sys.argv;out=base/(('area-mass-' if area_mass else '')+'keyframed-'+('full-cycle-' if full_cycle else '')+('root-attachments-' if root_pins else '')+('structural-only' if no_body and no_self else 'self-contact-only' if no_body else 'deduplicated-without-self' if no_self else 'deduplicated-full-contact'));out.mkdir(parents=True,exist_ok=True)
+    base=ROOT/'modding/diagnostics/blender-cloth-trial';no_self='--no-self' in sys.argv;no_body='--no-body' in sys.argv;root_pins='--root-attachments' in sys.argv;full_cycle='--full-cycle' in sys.argv;limit=1.5 if full_cycle else .3;area_mass='--area-mass' in sys.argv;limb_cage='--limb-cage' in sys.argv;out=base/(('limb-cage-' if limb_cage else '')+('area-mass-' if area_mass else '')+'keyframed-'+('full-cycle-' if full_cycle else '')+('root-attachments-' if root_pins else '')+('structural-only' if no_body and no_self else 'self-contact-only' if no_body else 'deduplicated-without-self' if no_self else 'deduplicated-full-contact'));out.mkdir(parents=True,exist_ok=True)
     topo=json.loads((HERE/'diamond-topology-position-skin.json').read_text())
     roots,mapping,tris,edges,mass=physical_mesh(topo)
     model=(ROOT/'modding/runtime/fleet/1067/model.umab').read_bytes();nv,_,nb=struct.unpack_from('<3I',model,8)
@@ -62,11 +62,19 @@ def main():
         mesh=bpy.data.meshes.new(name);mesh.from_pydata(vertices,[],faces);mesh.update()
         obj=bpy.data.objects.new(name,mesh);bpy.context.collection.objects.link(obj);return obj
     cloth=object_mesh('GEO-Diamond-cloth-trial',poses[0][sim_roots].tolist(),sim_tris)
-    collider=object_mesh('GEO-Diamond-body-collision',poses[0][body_ids].tolist(),body_tris)
-    for obj,ids in ((cloth,sim_roots),(collider,body_ids)):
+    collider_frames=[pose[body_ids] for pose in poses]
+    if limb_cage:
+        cage=json.loads((base/'limb-contact-cage.json').read_text());rest=np.asarray(cage['vertices'],dtype=np.float32);owners=np.asarray(cage['bone_owner']);body_tris=cage['triangles'];collider_frames=[]
+        for path in sorted((base/'run-source').glob('*.umax')):
+            raw=path.read_bytes();assert struct.unpack_from('<4s2I',raw)==(b'UMAX',1,nb) and len(raw)==12+nb*48
+            matrices=np.frombuffer(raw,dtype='<f4',offset=12).reshape(nb,3,4)[owners]
+            coordinates=np.einsum('nij,nj->ni',matrices[:,:,:3],rest)+matrices[:,:,3];assert np.isfinite(coordinates).all();collider_frames.append(coordinates)
+        assert len(collider_frames)==len(poses)
+    collider=object_mesh('GEO-Diamond-body-collision',collider_frames[0].tolist(),body_tris)
+    for obj,frames in ((cloth,[pose[sim_roots] for pose in poses]),(collider,collider_frames)):
         obj.shape_key_add(name='Basis')
-        for i,pose in enumerate(poses):
-            key=obj.shape_key_add(name=f'Run-{i:03d}');key.data.foreach_set('co',pose[ids].ravel())
+        for i,coordinates in enumerate(frames):
+            key=obj.shape_key_add(name=f'Run-{i:03d}');key.data.foreach_set('co',coordinates.ravel())
             key.value=0;key.keyframe_insert('value',frame=0)
             for cycle in range(3):
                 at=1+i+cycle*48
@@ -108,7 +116,7 @@ def main():
         if rejected:break
         if displacement>limit:
             rejected=f'Offset from native reference exceeds {limit}m diagnostic limit; not proof of solver divergence';break
-    report={'scope':'Keyframed offline Blender cloth trial, not runtime implementation. Body selection includes rigid costume surfaces. Does not prove collision-free or visually accepted output.','simulation_particles':len(sim_roots),'native_root_attachments':root_pins,'body_collision':not no_body,'self_collision':not no_self,'cloth_area_m2':cloth_area,'mass_per_particle_kg':settings.mass,'assumed_areal_density_kg_m2':.3 if area_mass else None,'total_assigned_particle_mass_kg':settings.mass*len(sim_roots),'diagnostic_reference_offset_limit_m':limit,'fully_pinned_particles':sum(pin_weights[i]>=.9999 for i in order),'duplicate_physical_faces_removed':duplicate_faces,'unattached_particles_retained_on_native_animation':len(excluded),'body_triangles':len(body),'elapsed_seconds':time.monotonic()-begin,'frames':rows,'rejected':rejected,'accepted_for_game':False}
+    report={'scope':'Keyframed offline Blender cloth trial, not runtime implementation. Body selection includes rigid costume surfaces. Does not prove collision-free or visually accepted output.','simulation_particles':len(sim_roots),'native_root_attachments':root_pins,'body_collision':not no_body,'self_collision':not no_self,'cloth_area_m2':cloth_area,'mass_per_particle_kg':settings.mass,'assumed_areal_density_kg_m2':.3 if area_mass else None,'total_assigned_particle_mass_kg':settings.mass*len(sim_roots),'diagnostic_reference_offset_limit_m':limit,'fully_pinned_particles':sum(pin_weights[i]>=.9999 for i in order),'duplicate_physical_faces_removed':duplicate_faces,'unattached_particles_retained_on_native_animation':len(excluded),'body_triangles':len(body_tris),'limb_only_collision_cage':limb_cage,'elapsed_seconds':time.monotonic()-begin,'frames':rows,'rejected':rejected,'accepted_for_game':False}
     (out/'simulation-report.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report),flush=True)
 
 

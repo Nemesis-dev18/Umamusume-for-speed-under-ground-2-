@@ -1,0 +1,168 @@
+{
+  "scope": "Experimental arm/leg envelopes only, not full anatomy. Does not validate containment, torso/hands/feet or cloth collision. No active body.umac created.",
+  "source_model_sha256": "5d8a79cc46825b01bac99addc0e517506a7d6a5ba72ea208e1719c3a02420662",
+  "contacts": [
+    {
+      "name": "Arm-Elbow_L",
+      "bone_a": 58,
+      "bone_b": 59,
+      "a": [
+        -0.05548780411481857,
+        -0.10182860493659973,
+        1.2537118196487427
+      ],
+      "b": [
+        -0.057020675390958786,
+        -0.2919042110443115,
+        1.2537118196487427
+      ],
+      "radius": 0.03689820011641384,
+      "sample_count": 75,
+      "minimum_sample_radius": 0.022739288532978477,
+      "maximum_sample_radius": 0.03971274190361206,
+      "fit": "90th percentile radial distance; axial range .1-.9; body-material vertices, >=50%segment influence and <=5%spring influence"
+    },
+    {
+      "name": "Elbow-Wrist_L",
+      "bone_a": 59,
+      "bone_b": 60,
+      "a": [
+        -0.057020675390958786,
+        -0.2919042110443115,
+        1.2537118196487427
+      ],
+      "b": [
+        -0.055386222898960114,
+        -0.49457621574401855,
+        1.2537119388580322
+      ],
+      "radius": 0.053566888184563,
+      "sample_count": 46,
+      "minimum_sample_radius": 0.024487383943995612,
+      "maximum_sample_radius": 0.060835488809082995,
+      "fit": "90th percentile radial distance; axial range .1-.9; body-material vertices, >=50%segment influence and <=5%spring influence"
+    },
+    {
+      "name": "Thigh-Knee_L",
+      "bone_a": 87,
+      "bone_b": 88,
+      "a": [
+        -0.0338471420109272,
+        -0.06615577638149261,
+        0.8661437034606934
+      ],
+      "b": [
+        -0.032308634370565414,
+        -0.06615577638149261,
+        0.5193731188774109
+      ],
+      "radius": 0.07453336660417781,
+      "sample_count": 87,
+      "minimum_sample_radius": 0.03651869920843214,
+      "maximum_sample_radius": 0.07598871438750919,
+      "fit": "90th percentile radial distance; axial range .1-.9; body-material vertices, >=50%segment influence and <=5%spring influence"
+    },
+    {
+      "name": "Knee-Ankle_L",
+      "bone_a": 88,
+      "bone_b": 89,
+      "a": [
+        -0.032308634370565414,
+        -0.06615577638149261,
+        0.5193731188774109
+      ],
+      "b": [
+        -0.061540257185697556,
+        -0.06615577638149261,
+        0.1252630352973938
+      ],
+      "radius": 0.07334130865582189,
+      "sample_count": 129,
+      "minimum_sample_radius": 0.014505158614065927,
+      "maximum_sample_radius": 0.08676228131038612,
+      "fit": "90th percentile radial distance; axial range .1-.9; body-material vertices, >=50%segment influence and <=5%spring influence"
+    },
+    {
+      "name": "Arm-Elbow_R",
+      "bone_a": 53,
+      "bone_b": 54,
+      "a": [
+        -0.055488470941782,
+        0.10183321684598923,
+        1.2537071704864502
+      ],
+      "b": [
+        -0.05702068284153938,
+        0.2919054329395294,
+        1.2537118196487427
+      ],
+      "radius": 0.03689521495762247,
+      "sample_count": 75,
+      "minimum_sample_radius": 0.022739716997884827,
+      "maximum_sample_radius": 0.03970942463456408,
+      "fit": "90th percentile radial distance; axial range .1-.9; body-material vertices, >=50%segment influence and <=5%spring influence"
+    },
+    {
+      "name": "Elbow-Wrist_R",
+      "bone_a": 54,
+      "bone_b": 83,
+      "a": [
+        -0.05702068284153938,
+        0.2919054329395294,
+        1.2537118196487427
+      ],
+      "b": [
+        -0.05538623034954071,
+        0.49457746744155884,
+        1.2537119388580322
+      ],
+      "radius": 0.05356688826793709,
+      "sample_count": 46,
+      "minimum_sample_radius": 0.024487395946985957,
+      "maximum_sample_radius": 0.06083548842431075,
+      "fit": "90th percentile radial distance; axial range .1-.9; body-material vertices, >=50%segment influence and <=5%spring influence"
+    },
+    {
+      "name": "Thigh-Knee_R",
+      "bone_a": 66,
+      "bone_b": 67,
+      "a": [
+        -0.0338471420109272,
+        0.06615577638149261,
+        0.8661437034606934
+      ],
+      "b": [
+        -0.032308634370565414,
+        0.06615577638149261,
+        0.5193731188774109
+      ],
+      "radius": 0.07453336660417781,
+      "sample_count": 87,
+      "minimum_sample_radius": 0.03651869920843214,
+      "maximum_sample_radius": 0.07598871463423615,
+      "fit": "90th percentile radial distance; axial range .1-.9; body-material vertices, >=50%segment influence and <=5%spring influence"
+    },
+    {
+      "name": "Knee-Ankle_R",
+      "bone_a": 67,
+      "bone_b": 68,
+      "a": [
+        -0.032308634370565414,
+        0.06615577638149261,
+        0.5193731188774109
+      ],
+      "b": [
+        -0.061540257185697556,
+        0.06615577638149261,
+        0.1252630352973938
+      ],
+      "radius": 0.07334130865582189,
+      "sample_count": 129,
+      "minimum_sample_radius": 0.014505158614065927,
+      "maximum_sample_radius": 0.08676228131038612,
+      "fit": "90th percentile radial distance; axial range .1-.9; body-material vertices, >=50%segment influence and <=5%spring influence"
+    }
+  ],
+  "unfitted": [],
+  "accepted_for_game": false
+}

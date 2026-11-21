@@ -1,0 +1,7 @@
+{
+  "scope": "Eight limb segments in48native run poses; verifies start-bone skin transform places distal endpoint on joint position, including support-plane translation. Not contact/garment acceptance.",
+  "frames": 48,
+  "limbs": 8,
+  "maximum_distal_endpoint_error_m": 2.7601224749326333e-07,
+  "accepted_for_game": false
+}
