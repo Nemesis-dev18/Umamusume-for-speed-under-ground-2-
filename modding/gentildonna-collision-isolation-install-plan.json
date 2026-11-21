@@ -1,0 +1,27 @@
+{
+  "files": [
+    {
+      "target": "CARS/350Z/GEOMETRY.BIN",
+      "candidate": "modding/staged-runtime/gentildonna-original-collision/GEOMETRY.BIN",
+      "before": "cf0bbf44427eebf4f116b2b1fa0cfb96a5b71b43d7c449c8515ac507bfa3d532",
+      "after": "6ad66da8dafcea24d023dd04aeae762981006d80ca20b54dc1647cdf1f5e1775",
+      "bytes": 2303984,
+      "backup": "modding/backups/before-gentildonna-collision-isolation-20261121-052049/CARS/350Z/GEOMETRY.BIN.bak"
+    }
+  ],
+  "source_backup": "modding/backups/before-gentildonna-20261120-094944/CARS/350Z/GEOMETRY.BIN.bak",
+  "collision_payload_offset": 2288200,
+  "collision_payload_bytes": 15784,
+  "hulls": 5,
+  "installed": false,
+  "user_approved": false,
+  "gameplay_verified": false,
+  "diagnostic_only": true,
+  "scope": "Restore exact original 350Z collision payload, keep current character carriers and all other bytes. Test wall/ground contact separately from render tracking.",
+  "limits": [
+    "Temporarily restores car-sized collision, not intended final humanoid hitbox",
+    "Does not prove native physical stability until in-game test",
+    "Character cloth and crash animation remain incomplete"
+  ],
+  "backup_root": "modding/backups/before-gentildonna-collision-isolation-20261121-052049"
+}
