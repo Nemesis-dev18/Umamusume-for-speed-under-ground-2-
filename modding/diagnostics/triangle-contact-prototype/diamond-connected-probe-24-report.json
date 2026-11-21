@@ -1,0 +1,34 @@
+{
+  "scope": "Controlled single-sphere/single-contact perturbation on actual garment topology; does not test native body fitting, complete collisions, temporal animation, normals, rendering or runtime speed.",
+  "iterations": 24,
+  "results": [
+    {
+      "pose": "rest",
+      "initial_penetration_m": 0.005000000000000032,
+      "remaining_penetration_m": 1.9364718162329098e-14,
+      "max_edge_strain": 0.004668699294220424,
+      "pinned_displacement_m": 0.0,
+      "max_displacement_m": 0.005342644939212382,
+      "offline_python_seconds": 0.7805622140003834
+    },
+    {
+      "pose": "frame-060",
+      "initial_penetration_m": 0.004999999999999996,
+      "remaining_penetration_m": 7.688294445529209e-14,
+      "max_edge_strain": 0.004724556497014865,
+      "pinned_displacement_m": 0.0,
+      "max_displacement_m": 0.0055834870560957294,
+      "offline_python_seconds": 0.7550551219901536
+    },
+    {
+      "pose": "frame-120",
+      "initial_penetration_m": 0.004999999999999994,
+      "remaining_penetration_m": 2.6282795384524604e-13,
+      "max_edge_strain": 0.01949002657003851,
+      "pinned_displacement_m": 0.0,
+      "max_displacement_m": 0.006385949174364416,
+      "offline_python_seconds": 0.7639939559885534
+    }
+  ],
+  "accepted_for_game": false
+}
