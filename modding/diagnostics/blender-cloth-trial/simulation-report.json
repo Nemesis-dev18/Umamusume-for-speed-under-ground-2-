@@ -1,0 +1,16 @@
+{
+  "scope": "Offline Blender cloth trial, not runtime implementation. Body selection includes rigid costume surfaces. Does not prove collision-free or visually accepted output.",
+  "simulation_particles": 3358,
+  "unattached_particles_retained_on_native_animation": 135,
+  "body_triangles": 5031,
+  "elapsed_seconds": 2.770895374007523,
+  "frames": [
+    {
+      "frame": 1,
+      "maximum_displacement_m": 0.0,
+      "minimum_z": 0.3937183618545532
+    }
+  ],
+  "rejected": "Displacement exceeds 30cm diagnostic safety gate",
+  "accepted_for_game": false
+}

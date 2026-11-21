@@ -1,0 +1,30 @@
+{
+  "scope": "Offline Blender cloth trial, not runtime implementation. Body selection includes rigid costume surfaces. Does not prove collision-free or visually accepted output.",
+  "simulation_particles": 3358,
+  "duplicate_physical_faces_removed": 1025,
+  "unattached_particles_retained_on_native_animation": 135,
+  "body_triangles": 5031,
+  "elapsed_seconds": 0.37056659000518266,
+  "frames": [
+    {
+      "frame": 1,
+      "maximum_displacement_m": 0.0,
+      "minimum_z": 0.3937183618545532,
+      "worst_render_vertex": 5093,
+      "worst_pin_weight": 0.24000000953674316,
+      "worst_native_motion_from_initial_m": 0.0,
+      "worst_simulated_motion_from_initial_m": 0.0
+    },
+    {
+      "frame": 4,
+      "maximum_displacement_m": 0.4551762342453003,
+      "minimum_z": 0.3944721817970276,
+      "worst_render_vertex": 6867,
+      "worst_pin_weight": 0.0,
+      "worst_native_motion_from_initial_m": 0.660081148147583,
+      "worst_simulated_motion_from_initial_m": 0.2339898645877838
+    }
+  ],
+  "rejected": "Displacement exceeds 30cm diagnostic safety gate",
+  "accepted_for_game": false
+}
