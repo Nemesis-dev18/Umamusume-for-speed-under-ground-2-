@@ -71,12 +71,12 @@ def verify(source,candidate,identity,bounds,slot):
     return {'solids':len(after),'body_carriers':bodies,'hidden_original_parts':len(after)-bodies,'directory_records':records,'collision_relocated':True,'opaque_leaves_preserved':True,'bytes':len(candidate)}
 
 
-def main():
+def main(inventory_path=None):
     if hashlib.sha256(RLIB.read_bytes()).hexdigest()!='03a5461701f4f86a251cba6e0e0725d504cfd4ef8ee50bd236af0282e9c4aa0f':raise ValueError('Unreviewed gizmo-nfs library')
     subprocess.run(['rustc','--edition=2021','-O',str(ROOT/'modding/runtime/prepare_fleet_geometry.rs'),'--extern',f'gizmo_nfs={RLIB}','-L',f'dependency={RLIB.parent}','-o',str(ROOT/'modding/runtime/prepare-fleet-geometry')],check=True,cwd=ROOT)
     subprocess.run(['cc','-std=c11','-O2','-Wall','-Wextra','-Werror','-Wno-unused-function',str(ROOT/'modding/runtime/fleet_bounds.c'),'-lm','-o',str(ROOT/'modding/runtime/test-build/fleet-bounds')],check=True,cwd=ROOT)
-    rows=[];anchors=profiles()
-    for character in json.loads((ROOT/'modding/fleet-source-inventory.json').read_text())['characters']:
+    rows=[];anchors=profiles(inventory_path)
+    for character in json.loads((inventory_path or ROOT/'modding/fleet-source-inventory.json').read_text())['characters']:
         identifier=character['id'];slot=character['nfs_slot'];target=ROOT/'CARS'/slot/'GEOMETRY.BIN';source=target.read_bytes();folder=ROOT/'modding/staged-runtime/fleet'/str(identifier);folder.mkdir(parents=True,exist_ok=True);identity=carrier(identifier);(folder/'carrier.bin').write_bytes(identity)
         (folder/'anchors.bin').write_bytes(anchors[identifier]['bytes'])
         (folder/'anchors.json').write_text(json.dumps({k:v for k,v in anchors[identifier].items() if k!='bytes'},indent=2)+'\n')
@@ -104,6 +104,6 @@ def main():
         output=folder/'GEOMETRY.BIN';output.write_bytes(candidate);(folder/'build.log').write_text((sampled.stderr+built.stderr).decode())
         row={'id':identifier,'slot':slot,'target':str(target.relative_to(ROOT)),'candidate':str(output.relative_to(ROOT)),'before_sha256':hashlib.sha256(source).hexdigest(),'after_sha256':hashlib.sha256(candidate).hexdigest(),'bytes_before':len(source),'bytes_after':len(candidate),'verification':verified,'bounds':struct.unpack('<6f',bounds),'collision_hulls':hulls,'collision_point_ranges':ranges,'disabled_markers':markers,'installed':False};rows.append(row)
         (folder/'geometry.json').write_text(json.dumps(row,indent=2)+'\n');print(slot,len(source),'->',len(candidate),'bytes;',len(hulls),'humanoid hulls',flush=True)
-    (ROOT/'modding/fleet-geometry-plan.json').write_text(json.dumps({'characters':rows,'installed':False,'scope':'Staging only:20 carriers per car, original native surfaces collapsed, collision hulls scaled; no active resource overwritten'},indent=2)+'\n')
+    (ROOT/('modding/diamond-geometry-plan.json' if inventory_path else 'modding/fleet-geometry-plan.json')).write_text(json.dumps({'characters':rows,'installed':False,'scope':'Staging only:20 carriers per car, original native surfaces collapsed, collision hulls scaled; no active resource overwritten'},indent=2)+'\n')
 
 if __name__=='__main__':main()

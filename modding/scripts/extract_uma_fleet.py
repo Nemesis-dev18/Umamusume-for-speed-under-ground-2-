@@ -10,13 +10,17 @@ import apsw
 import UnityPy
 
 
-def main():
-    repo=WORK/'tools/UmaExporter';helper=repo/'src/core/decryptor.py'
-    if helper.read_bytes()!=subprocess.check_output(['git','-C',str(repo),'show',REV+':src/core/decryptor.py']):raise ValueError('Reader source changed')
+def verify_reader():
+ helper=WORK/'tools/UmaExporter/src/core/decryptor.py'
+ if hashlib.sha256(helper.read_bytes()).hexdigest()!='871745184e71f1d780473d1215ec797a1e3cc174838f6c9163673f65188904ea' or helper.read_bytes()!=subprocess.check_output(['git','-C',str(ROOT),'show','HEAD:'+str(helper.relative_to(ROOT))]):raise ValueError('Vendored reader source changed')
+ return helper
+
+def main(inventory_path=None):
+    helper=verify_reader()
     spec=importlib.util.spec_from_file_location('fleet_reader',helper);decoder=importlib.util.module_from_spec(spec);spec.loader.exec_module(decoder)
     db=apsw.Connection(str(WORK/'meta.snapshot'),flags=apsw.SQLITE_OPEN_READONLY)
     db.pragma('cipher','chacha20');db.pragma('cipher_page_size',4096);db.pragma('hexkey',decoder.get_db_hex_key('global'))
-    fleet=json.loads((ROOT/'modding/fleet-source-inventory.json').read_text());destination=WORK/'fleet-bundles';destination.mkdir(exist_ok=True);receipts={}
+    fleet=json.loads((inventory_path or ROOT/'modding/fleet-source-inventory.json').read_text());destination=WORK/'fleet-bundles';destination.mkdir(exist_ok=True);receipt_path=destination/'source-receipts.json';previous=json.loads(receipt_path.read_text()) if receipt_path.exists() else {};receipts=previous.get('bundles',{});assert not previous or previous['reader_revision']==REV
     for character in fleet['characters']:
         dependencies={}
         for part in character['parts']:
@@ -28,7 +32,8 @@ def main():
         for hashed,(name,key) in sorted(dependencies.items()):
             if not hashed.isalnum():raise ValueError('Unsafe asset filename')
             source=SOURCE/'dat'/hashed[:2]/hashed;target=destination/(hashed+'.unity3d')
-            if hashed not in receipts:
+            if hashed in receipts and target.exists() and hashlib.sha256(target.read_bytes()).hexdigest()!=receipts[hashed]['decoded_sha256']:raise ValueError('Cached bundle no longer matches receipt')
+            if hashed not in receipts or not target.exists():
                 before=source.stat()
                 if not 0<before.st_size<=256*1024*1024:raise ValueError('Bundle outside bounds')
                 original=source.read_bytes();decoded=bytes(decoder.decrypt_bundle(bytearray(original),key=key,base_keys=decoder.ASSET_BASE_KEYS_JAPAN))
@@ -55,7 +60,7 @@ def main():
         folder=WORK/'fleet'/str(character['id']);folder.mkdir(parents=True,exist_ok=True)
         report=dict(id=character['id'],name=character['name'],nfs_slot=character['nfs_slot'],dependencies=sorted(dependencies),object_counts=counts,meshes=meshes,textures=textures,game_integrated=False)
         (folder/'source-inventory.json').write_text(json.dumps(report,indent=2)+'\n')
-        (destination/'source-receipts.json').write_text(json.dumps(dict(reader_revision=REV,bundles=receipts),indent=2)+'\n')
+        (destination/'source-receipts.json').write_text(json.dumps(dict(reader_revision=REV,reader_source_sha256=hashlib.sha256(helper.read_bytes()).hexdigest(),bundles=receipts),indent=2)+'\n')
         print(character['name'],len(dependencies),'bundles;',len(meshes),'meshes;',len(textures),'textures',flush=True)
     db.close()
 

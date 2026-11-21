@@ -5,9 +5,9 @@ from inspect_assets import ROOT,cartypes,chunks,flatten
 from extract_assets import payload,skip_words
 
 
-def profiles():
+def profiles(inventory_path=None):
     cars={car['name']:car for car in cartypes((ROOT/'GLOBAL/GLOBALB.BUN').read_bytes())};result={}
-    for character in json.loads((ROOT/'modding/fleet-source-inventory.json').read_text())['characters']:
+    for character in json.loads((inventory_path or ROOT/'modding/fleet-source-inventory.json').read_text())['characters']:
         slot=character['nfs_slot'];data=(ROOT/'CARS'/slot/'GEOMETRY.BIN').read_bytes();positions={0x9b971511:[],0x0ee87ec4:[]}
         for node in flatten(chunks(data)):
             if node['id']!='0x0013401a':continue

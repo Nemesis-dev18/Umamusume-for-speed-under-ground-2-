@@ -3,14 +3,13 @@ import hashlib,importlib.util,json,sys,subprocess
 from pathlib import Path
 import extract_uma_fleet as f
 
-def main():
+def main(inventory_path=None):
     out=f.WORK/'secondary-native';out.mkdir(exist_ok=True)
-    spec=importlib.util.spec_from_file_location('secondary_decoder',f.WORK/'tools/UmaExporter/src/core/decryptor.py');d=importlib.util.module_from_spec(spec);spec.loader.exec_module(d)
-    helper=f.WORK/'tools/UmaExporter/src/core/decryptor.py'
-    assert helper.read_bytes()==subprocess.check_output(['git','-C',str(f.WORK/'tools/UmaExporter'),'show',f.REV+':src/core/decryptor.py'])
+    helper=f.verify_reader()
+    spec=importlib.util.spec_from_file_location('secondary_decoder',helper);d=importlib.util.module_from_spec(spec);spec.loader.exec_module(d)
     db=f.apsw.Connection(str(f.WORK/'meta.snapshot'),flags=f.apsw.SQLITE_OPEN_READONLY)
     db.pragma('cipher','chacha20');db.pragma('cipher_page_size',4096);db.pragma('hexkey',d.get_db_hex_key('global'))
-    fleet=json.loads((f.ROOT/'modding/fleet-source-inventory.json').read_text());report={'reader_revision':f.REV,'metadata_snapshot_sha256':hashlib.sha256((f.WORK/'meta.snapshot').read_bytes()).hexdigest(),'characters':[],'bundles':{}}
+    fleet=json.loads((inventory_path or f.ROOT/'modding/fleet-source-inventory.json').read_text());report=json.loads((out/'inventory.json').read_text()) if inventory_path and (out/'inventory.json').exists() else {'characters':[],'bundles':{}};report.update(reader_revision=f.REV,reader_source_sha256=hashlib.sha256(helper.read_bytes()).hexdigest(),metadata_snapshot_sha256=hashlib.sha256((f.WORK/'meta.snapshot').read_bytes()).hexdigest());incoming={c['id'] for c in fleet['characters']};report['characters']=[c for c in report['characters'] if c['id'] not in incoming]
     for ch in fleet['characters']:
         entry={'id':ch['id'],'parts':{}};report['characters'].append(entry)
         for part in ch['parts']:
@@ -52,7 +51,7 @@ def main():
                     entries.append({'part':part,'logical':asset['logical'],'hash':asset['hash'],'chains':[[n['_boneName'] for n in [root]+root.get('_childElements',[])] for root in chains], 'node_count':len(nodes),'missing_model_bones':sorted({n['_boneName'] for n in nodes}-names),'ranges':{k:[min(n[k] for n in nodes),max(n[k] for n in nodes)] for k in ('_stiffnessForce','_dragForce','_gravity','_collisionRadius') if nodes},'colliders':tree.get('collisionParam',[]),'skirt':tree if '_skirtBone' in tree else None,'nodes':nodes})
         summary.append({'id':ch['id'],'assets':entries})
     (out/'structural-summary.json').write_text(json.dumps(summary,indent=2,allow_nan=False)+'\n')
-    assert len(report['characters'])==7 and all(b['cached'] for b in report['bundles'].values())
+    assert incoming<={c['id'] for c in report['characters']} and all(b['cached'] for b in report['bundles'].values())
     assert all(not o.get('error') for h in report['bundles'] for o in json.loads((out/(h+'.json')).read_text()))
-    print('Decoded',len(report['bundles']),'bundles; all type trees and seven character summaries verified')
+    print('Decoded',len(report['bundles']),'bundles; all type trees and character summaries verified')
 if __name__=='__main__':main()

@@ -1,13 +1,14 @@
 """Review and round-trip one native source without changing its geometry or rig."""
-import bpy,hashlib,json,math
+import bpy,hashlib,json,math,sys
 import numpy as np
 from bpy_extras.object_utils import world_to_camera_view
 from pathlib import Path
 from mathutils import Vector
 ROOT=Path(__file__).resolve().parents[2]
-folder=ROOT/'modding/uma-steam/fleet/1052';out=ROOT/'modding/diagnostics/model-quality/haru';out.mkdir(parents=True,exist_ok=True)
+identifier=int(sys.argv[sys.argv.index('--')+1]) if '--' in sys.argv else 1052
+folder=ROOT/'modding/uma-steam/fleet'/str(identifier);out=ROOT/'modding/diagnostics/model-quality'/str(identifier);out.mkdir(parents=True,exist_ok=True)
 source=folder/'review-eyes.gltf';bpy.ops.wm.read_factory_settings(use_empty=True);bpy.ops.import_scene.gltf(filepath=str(source))
-scene=bpy.context.scene;scene.frame_set(0);meshes=[o for o in scene.objects if o.type=='MESH'];rigs=[o for o in scene.objects if o.type=='ARMATURE'];assert meshes and rigs
+scene=bpy.context.scene;scene.frame_set(0);rigs=[o for o in scene.objects if o.type=='ARMATURE'];helpers={b.custom_shape for o in rigs for b in o.pose.bones if b.custom_shape};meshes=[o for o in scene.objects if o.type=='MESH' and o not in helpers and not o.hide_render and len(o.data.polygons)>0];assert meshes and rigs
 before={o.name:(len(o.data.vertices),len(o.data.polygons),tuple(v.name for v in o.vertex_groups)) for o in meshes}
 report={'source_sha256':hashlib.sha256(source.read_bytes()).hexdigest(),'backend':'Blender CLI '+bpy.app.version_string,'scope':'Native source review; not NFS rendering or installed upgrade','mesh_count':len(meshes),'armatures':len(rigs),'vertices':sum(v[0] for v in before.values()),'materials':[], 'gameplay_verified':False}
 for mat in bpy.data.materials:
@@ -44,8 +45,8 @@ assert before=={o.name:(len(o.data.vertices),len(o.data.polygons),tuple(v.name f
 report.update(renders=renders,geometry_and_groups_unchanged=True,visual_approved=False,export_accepted=False)
 bpy.ops.object.select_all(action='DESELECT')
 for obj in [*meshes,*rigs]:obj.select_set(True)
-export=out/'haru-quality-review.glb'
+export=out/'source-quality-review.glb'
 bpy.ops.export_scene.gltf(filepath=str(export),export_format='GLB',use_selection=True,export_materials='EXPORT',export_animations=True,export_skins=True,export_normals=True,export_yup=True)
 report['review_export']={'path':str(export.relative_to(ROOT)),'bytes':export.stat().st_size,'sha256':hashlib.sha256(export.read_bytes()).hexdigest(),'size_gate_15MiB':export.stat().st_size<=15*1024*1024,'final_game_asset':False}
-(out/'review.json').write_text(json.dumps(report,indent=2)+'\n');bpy.ops.wm.save_as_mainfile(filepath=str(out/'haru-quality-review.blend'))
+(out/'review.json').write_text(json.dumps(report,indent=2)+'\n');bpy.ops.wm.save_as_mainfile(filepath=str(out/'source-quality-review.blend'))
 print('PASS source geometry and skin groups preserved; review frames generated, visual acceptance pending',flush=True)

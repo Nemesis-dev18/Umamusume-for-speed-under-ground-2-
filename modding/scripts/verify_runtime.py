@@ -28,6 +28,10 @@ def main():
     run([build / 'scene-speed-test'])
     run(['gcc', '-std=c11', '-O2', '-Wall', '-Wextra', '-Werror', RUNTIME / 'secondary_flags_test.c', '-o', build / 'secondary-flags-test', '-lm'])
     run([build / 'secondary-flags-test'])
+    run(['gcc', '-std=c11', '-O2', '-Wall', '-Wextra', '-Werror', RUNTIME / 'body_contact_test.c', '-o', build / 'body-contact-test', '-lm'])
+    run([build / 'body-contact-test'])
+    run(['gcc', '-std=c11', '-O2', '-Wall', '-Wextra', '-Werror', RUNTIME / 'foot_sparks_test.c', '-o', build / 'foot-sparks-test', '-lm'])
+    run([build / 'foot-sparks-test'])
     fixture = RUNTIME / 'runner-load-test'
     (fixture / 'scripts').mkdir(exist_ok=True)
     (fixture / 'modding/runtime').mkdir(parents=True, exist_ok=True)

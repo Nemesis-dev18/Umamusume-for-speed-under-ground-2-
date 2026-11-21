@@ -8,8 +8,8 @@ import UnityPy
 from UnityPy.helpers.MeshHelper import MeshHandler
 
 
-def main(mini=False):
-    fleet=json.loads((ROOT/'modding/fleet-source-inventory.json').read_text())
+def main(mini=False,inventory_path=None):
+    fleet=json.loads((inventory_path or ROOT/'modding/fleet-source-inventory.json').read_text())
     minis={c['id']:c for c in json.loads((WORK/'mini-bundles/inventory.json').read_text())['characters']} if mini else {}
     for character in fleet['characters']:
         folder=WORK/('mini-fleet' if mini else 'fleet')/str(character['id']);folder.mkdir(parents=True,exist_ok=True)
