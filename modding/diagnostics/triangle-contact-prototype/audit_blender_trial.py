@@ -17,12 +17,8 @@ def strain_metrics(pose,native,edges):
     return {'max_edge_length_error_m':max(absolute,default=0),'max_edge_strain':max(values,default=0),'p95_edge_strain':values[int((len(values)-1)*.95)] if values else 0,'edges_above_ten_percent':sum(v>.1 for v in values)}
 
 
-def main(name):
-    assert strain_metrics([[0,0,0],[2,0,0]],[[0,0,0],[1,0,0]],[(0,1)])['max_edge_strain']==1
-    assert strain_metrics([[1,2,3],[2,2,3]],[[0,0,0],[1,0,0]],[(0,1)])['max_edge_strain']==0
-    here=Path(__file__).resolve().parent;root=here.parents[2];base=root/'modding/diagnostics/blender-cloth-trial'
-    folder=(base/name).resolve();assert folder.parent==base.resolve()
-    report=json.loads((folder/'simulation-report.json').read_text())
+def trial_mesh(report):
+    here=Path(__file__).resolve().parent;root=here.parents[2]
     roots,mapping,tris,edges,mass=physical_mesh(json.loads((here/'diamond-topology-position-skin.json').read_text()))
     model=(root/'modding/runtime/fleet/1067/model.umab').read_bytes();nv,_,nb=struct.unpack_from('<3I',model,8)
     parents=[struct.unpack_from('<h',model,40+nv*60+b*16)[0] for b in range(nb)]
@@ -42,12 +38,22 @@ def main(name):
                 if b not in seen:seen.add(b);stack.append(b)
         if max(pin[i] for i in part)>0:keep.update(part)
     order=sorted(keep);remap={v:i for i,v in enumerate(order)};sim_edges=[(remap[a],remap[b]) for a,b in edges if a in keep]
+    return {'render_to_sim':{v:remap[particle] for v,particle in mapping.items() if particle in keep},'sim_roots':[roots[v] for v in order],'pins':[pin[v] for v in order],'edges':sim_edges,'vertices':nv}
+
+
+def main(name):
+    assert strain_metrics([[0,0,0],[2,0,0]],[[0,0,0],[1,0,0]],[(0,1)])['max_edge_strain']==1
+    assert strain_metrics([[1,2,3],[2,2,3]],[[0,0,0],[1,0,0]],[(0,1)])['max_edge_strain']==0
+    here=Path(__file__).resolve().parent;root=here.parents[2];base=root/'modding/diagnostics/blender-cloth-trial'
+    folder=(base/name).resolve();assert folder.parent==base.resolve()
+    report=json.loads((folder/'simulation-report.json').read_text())
+    mesh=trial_mesh(report)
     rows=[]
     for record in report['frames']:
-        frame=record['frame'];pose=json.loads((folder/f'trial-{frame:03d}.json').read_text());assert len(pose)==len(order)
+        frame=record['frame'];pose=json.loads((folder/f'trial-{frame:03d}.json').read_text());assert len(pose)==len(mesh['sim_roots'])
         raw=(base/f'run-source/run-{(frame-1)%48:03d}.umap').read_bytes()
-        native=[struct.unpack_from('<3f',raw,12+36*roots[v]) for v in order]
-        row={'frame':frame,**strain_metrics(pose,native,sim_edges),'max_full_pin_error_m':max((math.dist(pose[i],native[i]) for i,v in enumerate(order) if pin[v]>=.9999),default=0)}
+        native=[struct.unpack_from('<3f',raw,12+36*v) for v in mesh['sim_roots']]
+        row={'frame':frame,**strain_metrics(pose,native,mesh['edges']),'max_full_pin_error_m':max((math.dist(pose[i],native[i]) for i,pin in enumerate(mesh['pins']) if pin>=.9999),default=0)}
         rows.append(row)
     result={'scope':'Saved-sample panel strain relative to native skinned panel; maximum pin error checks >=0.9999weights. Does not verify unsampled contacts or natural appearance.','trial':name,'results':rows,'accepted_for_game':False}
     (folder/'panel-quality-audit.json').write_text(json.dumps(result,indent=2)+'\n')
