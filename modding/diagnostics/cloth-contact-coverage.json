@@ -1,0 +1,86 @@
+{
+  "scope": "Structural contact coverage only; absence of spring contacts can be intentional. Presence does not prove mesh collision.",
+  "characters": [
+    {
+      "id": "1006",
+      "spring_nodes": 50,
+      "colliders": 36,
+      "mesh_contact_file_present": false,
+      "surface_nodes": 0,
+      "surface_nodes_without_contacts": 0,
+      "other_nodes_without_contacts": 0
+    },
+    {
+      "id": "1015",
+      "spring_nodes": 55,
+      "colliders": 33,
+      "mesh_contact_file_present": false,
+      "surface_nodes": 0,
+      "surface_nodes_without_contacts": 0,
+      "other_nodes_without_contacts": 0
+    },
+    {
+      "id": "1032",
+      "spring_nodes": 55,
+      "colliders": 42,
+      "mesh_contact_file_present": false,
+      "surface_nodes": 0,
+      "surface_nodes_without_contacts": 0,
+      "other_nodes_without_contacts": 0
+    },
+    {
+      "id": "1052",
+      "spring_nodes": 56,
+      "colliders": 56,
+      "mesh_contact_file_present": false,
+      "surface_nodes": 0,
+      "surface_nodes_without_contacts": 0,
+      "other_nodes_without_contacts": 0
+    },
+    {
+      "id": "1058",
+      "spring_nodes": 64,
+      "colliders": 54,
+      "mesh_contact_file_present": false,
+      "surface_nodes": 0,
+      "surface_nodes_without_contacts": 0,
+      "other_nodes_without_contacts": 0
+    },
+    {
+      "id": "1062",
+      "spring_nodes": 68,
+      "colliders": 51,
+      "mesh_contact_file_present": false,
+      "surface_nodes": 16,
+      "surface_nodes_without_contacts": 0,
+      "other_nodes_without_contacts": 0
+    },
+    {
+      "id": "1067",
+      "spring_nodes": 76,
+      "colliders": 42,
+      "mesh_contact_file_present": false,
+      "surface_nodes": 0,
+      "surface_nodes_without_contacts": 0,
+      "other_nodes_without_contacts": 0
+    },
+    {
+      "id": "1068",
+      "spring_nodes": 51,
+      "colliders": 49,
+      "mesh_contact_file_present": false,
+      "surface_nodes": 0,
+      "surface_nodes_without_contacts": 0,
+      "other_nodes_without_contacts": 0
+    },
+    {
+      "id": "9001",
+      "spring_nodes": 123,
+      "colliders": 21,
+      "mesh_contact_file_present": false,
+      "surface_nodes": 48,
+      "surface_nodes_without_contacts": 0,
+      "other_nodes_without_contacts": 4
+    }
+  ]
+}
