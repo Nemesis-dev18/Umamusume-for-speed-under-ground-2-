@@ -1,0 +1,34 @@
+{
+  "scope": "Controlled isolation with same area-normalized mass and native root attachments; sampled96-frame offline Blender tests, not game behavior.",
+  "results": [
+    {
+      "mode": "structural-only",
+      "max_reference_offset_m": 0.3854284882545471,
+      "worst_p95_edge_strain": 0.017718199151519398,
+      "max_edge_error_m": 0.005827548970804036,
+      "max_anchor_error_m": 5.960464477539063e-08
+    },
+    {
+      "mode": "deduplicated-without-self",
+      "max_reference_offset_m": 1.0046322345733643,
+      "worst_p95_edge_strain": 0.25124361391624395,
+      "max_edge_error_m": 0.13865922032134706,
+      "max_anchor_error_m": 5.960464477539063e-08
+    },
+    {
+      "mode": "self-contact-only",
+      "max_reference_offset_m": 0.47563278675079346,
+      "worst_p95_edge_strain": 0.24624251442167266,
+      "max_edge_error_m": 0.034251643890388664,
+      "max_anchor_error_m": 5.960464477539063e-08
+    },
+    {
+      "mode": "deduplicated-full-contact",
+      "max_reference_offset_m": 1.14573335647583,
+      "worst_p95_edge_strain": 0.3919320333215437,
+      "max_edge_error_m": 0.1550782509979387,
+      "max_anchor_error_m": 5.960464477539063e-08
+    }
+  ],
+  "accepted_for_game": false
+}
