@@ -5,9 +5,12 @@
 #undef main
 int main(int argc,char **argv){
  (void)uma_effects_load;
- assert(argc==2 || argc==3);unsigned count=argc==3?(unsigned)atoi(argv[2]):7;assert(count==7 || count==8);WCHAR root[4096];assert(MultiByteToWideChar(CP_UTF8,MB_ERR_INVALID_CHARS,argv[1],-1,root,4096));
+ assert(argc==2 || argc==3);unsigned count=argc==3?(unsigned)atoi(argv[2]):7;assert(count==7 || count==8 || count==9);WCHAR root[4096];assert(MultiByteToWideChar(CP_UTF8,MB_ERR_INVALID_CHARS,argv[1],-1,root,4096));
  assert(!runner_load_models(L"modding\\runtime\\absent-fleet",1));assert(runner_model_count==1);assert(runner_load_models(root,1));assert(runner_model_count==count);assert(!runner_load_models(root,1));
- const unsigned ids[]={1068,1052,1032,1062,1015,1006,1058,9001};for(unsigned i=0;i<count;i++){WCHAR path[4096];swprintf(path,4096,L"%ls\\modding\\runtime\\fleet\\%u\\carrier.bin",root,ids[i]);FILE *f=_wfopen(path,L"rb");assert(f);unsigned char expected[216];assert(fread(expected,1,216,f)==216 && fgetc(f)==EOF);fclose(f);assert(!memcmp(expected,runner_models[i].carrier,216));}
+ const unsigned ids[]={1068,1052,1032,1062,1015,1006,1058,9001,1067};for(unsigned i=0;i<count;i++){WCHAR path[4096];swprintf(path,4096,L"%ls\\modding\\runtime\\fleet\\%u\\carrier.bin",root,ids[i]);FILE *f=_wfopen(path,L"rb");assert(f);unsigned char expected[216];assert(fread(expected,1,216,f)==216 && fgetc(f)==EOF);fclose(f);assert(!memcmp(expected,runner_models[i].carrier,216));}
+ for(unsigned i=0;i<count;i++){
+  WCHAR path[4096];swprintf(path,4096,L"%ls\\modding\\runtime\\fleet\\%u\\body.umac",root,ids[i]);int present=GetFileAttributesW(path)!=INVALID_FILE_ATTRIBUTES;assert((runner_models[i].motion.body_contacts!=NULL)==present);
+ }
  for(unsigned i=0;i<count;i++){
   UmaMatrix body={0},object={0};for(int k=0;k<4;k++)body.m[k][k]=object.m[k][k]=1;
   const UmaAnchors *anchors=runner_anchors(i);assert(anchors);
@@ -15,7 +18,7 @@ int main(int argc,char **argv){
   for(int side=0;side<2;side++){memcpy(object.m[3],anchors->side[side],12);assert(uma_model_side_attachment(&object,&body,anchors));object.m[3][0]+=10;assert(!uma_model_side_attachment(&object,&body,anchors));}
  }
  for(unsigned frame=0;frame<120;frame++){
-  UmaMatrix bodies[8];unsigned models[8];
+  UmaMatrix bodies[9];unsigned models[9];
   for(unsigned j=0;j<count;j++){unsigned index=frame&1?count-1-j:j;models[index]=j;memset(&bodies[index],0,sizeof(bodies[index]));for(int k=0;k<4;k++)bodies[index].m[k][k]=1;bodies[index].m[3][0]=j*frame*.05f;}
   runner_frames=frame;runner_scene.anchor_valid=1;runner_scene.anchor_key=(UmaSceneKey){.buffer=444};memset(&runner_scene.anchor,0,sizeof(runner_scene.anchor));for(int k=0;k<4;k++)runner_scene.anchor.m[k][k]=1;
   assert(runner_actor_update_models(bodies,models,count,.01f,NULL));
@@ -56,7 +59,7 @@ int main(int argc,char **argv){
  CHECK(IDirect3DDevice9_SetVertexShader(device,shader));CHECK(IDirect3DDevice9_SetVertexDeclaration(device,declaration));CHECK(IDirect3DDevice9_SetPixelShader(device,white));CHECK(IDirect3DDevice9_SetRenderState(device,D3DRS_ZENABLE,TRUE));CHECK(IDirect3DDevice9_SetRenderState(device,D3DRS_CULLMODE,D3DCULL_NONE));CHECK(IDirect3DDevice9_SetRenderState(device,D3DRS_COLORWRITEENABLE,7));
  D3DMATRIX combined={0};combined.m[1][0]=.6f;combined.m[2][1]=.8f;combined.m[0][2]=-.1f;combined.m[3][1]=-.85f;combined.m[3][2]=.5f;combined.m[3][3]=1;float constants[4][4];for(int r=0;r<4;r++)for(int c=0;c<4;c++)constants[r][c]=combined.m[c][r];CHECK(IDirect3DDevice9_SetVertexShaderConstantF(device,10,&constants[0][0],4));
  float view[3][4]={{1,0,0,0},{0,1,0,0},{0,0,1,0}},eye[]={2,-6,1.3f,1},paint[]={.4f,0,0,1};CHECK(IDirect3DDevice9_SetVertexShaderConstantF(device,14,&view[0][0],3));CHECK(IDirect3DDevice9_SetVertexShaderConstantF(device,17,eye,1));CHECK(IDirect3DDevice9_SetVertexShaderConstantF(device,18,paint,1));
- IDirect3DVertexBuffer9 *vb[8]={0};IDirect3DIndexBuffer9 *ib[8]={0};DWORD hashes[8]={0};void *mapped=NULL;
+ IDirect3DVertexBuffer9 *vb[9]={0};IDirect3DIndexBuffer9 *ib[9]={0};DWORD hashes[9]={0};void *mapped=NULL;
  for(unsigned i=0;i<count;i++){
   UINT bytes=runner_input_count(&runner_models[i])*36;CHECK(IDirect3DDevice9_CreateVertexBuffer(device,bytes+72,D3DUSAGE_DYNAMIC|D3DUSAGE_WRITEONLY,0,D3DPOOL_DEFAULT,&vb[i],NULL));CHECK(IDirect3DVertexBuffer9_Lock(vb[i],0,0,&mapped,D3DLOCK_DISCARD));memset(mapped,0,72);memcpy((BYTE*)mapped+72,runner_input_vertices(&runner_models[i]),bytes);CHECK(IDirect3DVertexBuffer9_Unlock(vb[i]));UINT model=99;assert(uma_upload_model_at(vb[i],72,&model) && model==i);
   CHECK(IDirect3DDevice9_CreateIndexBuffer(device,12,0,D3DFMT_INDEX16,D3DPOOL_MANAGED,&ib[i],NULL));CHECK(IDirect3DIndexBuffer9_Lock(ib[i],0,0,&mapped,0));const WORD carrier_indices[]={0,1,2,3,4,5};memcpy(mapped,carrier_indices,12);CHECK(IDirect3DIndexBuffer9_Unlock(ib[i]));runner_models[i].idle=(UmaMotionState){0,.25f,1};

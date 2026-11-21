@@ -1,0 +1,58 @@
+{
+  "source_sha256": "c561fe62546273469131e80517b79736fdd59b3eed7c2dd450834384298f4252",
+  "vertices": 29023,
+  "triangles": 44672,
+  "bones": 271,
+  "rigid_bodies": 164,
+  "joints": 147,
+  "materials": 35,
+  "uv_min": [
+    0.0014593939995393157,
+    -0.7960120439529419
+  ],
+  "uv_max": [
+    1.0338425636291504,
+    0.9992289543151855
+  ],
+  "degenerate_triangles": 4,
+  "nonunit_normals": 0,
+  "checks": [
+    "source digest",
+    "complete parser counts",
+    "finite geometry and UV",
+    "index bounds",
+    "material triangle coverage",
+    "bone weights and references",
+    "acyclic hierarchy",
+    "texture containment and presence"
+  ],
+  "installed": false,
+  "gameplay_verified": false
+}
+{
+  "target_height": 1.78,
+  "pmx_to_game_scale": 0.08035551033765383,
+  "source_sha256": "c561fe62546273469131e80517b79736fdd59b3eed7c2dd450834384298f4252",
+  "installed": false,
+  "runtime_ready": false,
+  "geometry_decimated": false,
+  "textures_resized": false,
+  "material_batches": 35,
+  "axis_determinant": 1.0,
+  "minimum": [
+    -0.47437512164865664,
+    -0.5980729080116497,
+    0.0004918786642013993
+  ],
+  "maximum": [
+    0.32993401199747324,
+    0.5980747855198163,
+    1.7804918786642014
+  ],
+  "remaining": [
+    "PMX grant/IK handling and retarget validation",
+    "per-material native texture renderer",
+    "secondary physics conversion and garment collision",
+    "independent GPU and gameplay checks"
+  ]
+}

@@ -7,6 +7,7 @@
 #include <string.h>
 #include <math.h>
 
+struct UmaBodyContacts;
 typedef struct {float position[3],normal[3];uint8_t bgra[4];float uv[2];} UmaVertex;
 typedef struct {uint16_t bone[4];float weight[4];} UmaSkin;
 typedef struct {int16_t parent;uint16_t reserved;float rest[3];} UmaJoint;
@@ -14,7 +15,7 @@ typedef struct {
  uint32_t vertices,indices,bones,idle_frames,run_frames;
  float idle_seconds,run_seconds;
  size_t memory_bytes;unsigned char *memory;
- UmaVertex *rest;UmaSkin *skin;UmaJoint *joint;uint16_t *index;float *idle,*run;const uint8_t *secondary_mask,*surface_mask;
+ UmaVertex *rest;UmaSkin *skin;UmaJoint *joint;uint16_t *index;float *idle,*run;const uint8_t *secondary_mask,*surface_mask;const struct UmaBodyContacts *body_contacts;
 } UmaMotion;
 typedef struct {float idle_phase,run_phase,run_blend;} UmaMotionState;
 _Static_assert(sizeof(UmaVertex)==36,"Game-compatible vertex stride");

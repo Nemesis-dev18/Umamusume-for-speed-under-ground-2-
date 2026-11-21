@@ -1,0 +1,226 @@
+{
+  "id": 1067,
+  "name": "Satono Diamond",
+  "nfs_slot": "CELICA",
+  "dependencies": [
+    "2KOHUGFVPAXHSYIDN7FVDJB5CGHBY4KX",
+    "7ATTNWJHXBNRIMZJWMN3DNVMLU72NCQ6",
+    "AXBSYDPQLSFEQJ3X7VROURNUAWD67IUV",
+    "C3VL4JV27RYY4XMNFEQCXDIR5M2YBEXI",
+    "CJ43AOREQJDKQ6CFOHQ3YZ42IQF6T3WV",
+    "DKFGN5Z4AWHSS2VTBWHMG5KI3ACSQF5I",
+    "EPFNIQKRVYO4QCNHHDLQ22O7DKPHF7QV",
+    "HFJV4JCOEQTB4QLKMLPZAF2BI2H47ALH",
+    "INKXZYDKVRG6TGTVTUD62XU3T5W6Z7HM",
+    "JXBUFOZEBNNWOHDBRNHQMMLVOT7IX4FL",
+    "LNJLDMVZUFZBUEOQBVJ6IPDU42A2R726",
+    "M3HPC7KMCVHS42VRQWU67RC5RHKO23SE",
+    "MBCZF7AVHCGO4IKAFCXHKU4OUR6CAKUA",
+    "OFWPVRG23I4IAKT7IHXP5TYAIEWQ34Q3",
+    "PMFMU4ARCVACWOLKBRVVMW36GFWSFOCJ",
+    "QHJ7LT36FQNIXS2BCWBRIT64QSLD32GS",
+    "QOEYOBQ7WYG2QILODGGHPWHEVNWAXECA",
+    "TYAM5SEAE7U4MC4GNYRYYFYP4YP3NTZM",
+    "VNLFJKTOP7LLE47D255VQ7V77UFSJOB3",
+    "X7J6ECEWSMODIDTQ3ECYVE2VKLSJG3X6",
+    "YHH3CNJT2VZKH7ZNUVPZ6JFHJVLXRGP3",
+    "ZTUCXKOHCZUXUITJFJHPY2QQMVGJZLYQ"
+  ],
+  "object_counts": {
+    "Transform": 301,
+    "GameObject": 301,
+    "MeshFilter": 3,
+    "Texture2D": 23,
+    "Mesh": 10,
+    "MonoBehaviour": 7,
+    "SkinnedMeshRenderer": 7,
+    "MeshRenderer": 3,
+    "Avatar": 3,
+    "AssetBundle": 22,
+    "MonoScript": 7,
+    "Animator": 3,
+    "Material": 9,
+    "Shader": 408,
+    "AnimationClip": 1
+  },
+  "meshes": [
+    {
+      "name": "M_Mayu",
+      "path_id": -7315494537637282732,
+      "vertices": 59,
+      "submeshes": 1
+    },
+    {
+      "name": "M_Tear_R",
+      "path_id": -6222519861961669976,
+      "vertices": 15,
+      "submeshes": 1
+    },
+    {
+      "name": "M_Hair",
+      "path_id": -4119299243829446651,
+      "vertices": 3222,
+      "submeshes": 1
+    },
+    {
+      "name": "M_Cheek",
+      "path_id": -2562272612241660197,
+      "vertices": 50,
+      "submeshes": 1
+    },
+    {
+      "name": "M_Tear_L",
+      "path_id": -462867793677348935,
+      "vertices": 15,
+      "submeshes": 1
+    },
+    {
+      "name": "M_Face",
+      "path_id": 682874478811728799,
+      "vertices": 1505,
+      "submeshes": 2
+    },
+    {
+      "name": "M_Line00",
+      "path_id": 6527507458790114504,
+      "vertices": 44,
+      "submeshes": 1
+    },
+    {
+      "name": "M_Tail",
+      "path_id": 8632096047044711155,
+      "vertices": 281,
+      "submeshes": 1
+    },
+    {
+      "name": "M_Body_Alpha0",
+      "path_id": -4338146529158116872,
+      "vertices": 769,
+      "submeshes": 2
+    },
+    {
+      "name": "M_Body",
+      "path_id": 9053734295403015979,
+      "vertices": 10008,
+      "submeshes": 2
+    }
+  ],
+  "textures": [
+    {
+      "name": "tex_chr1067_00_cheek1",
+      "width": 256,
+      "height": 256
+    },
+    {
+      "name": "tex_chr1067_00_hair_base",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "name": "tex_chr1067_00_hair_ctrl",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "name": "tex_chr1067_00_hair_diff",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "name": "tex_chr1067_00_hair_shad_c",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "name": "tex_chr1067_00_face_base",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "name": "tex_chr1067_00_face_shad_c",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "name": "tex_chr1067_00_face_ctrl",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "name": "chr_icon_1067",
+      "width": 256,
+      "height": 256
+    },
+    {
+      "name": "tex_tail0001_00_0001_area",
+      "width": 256,
+      "height": 256
+    },
+    {
+      "name": "tex_chr_env000",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "name": "tex_tail0001_00_1067_diff",
+      "width": 256,
+      "height": 256
+    },
+    {
+      "name": "tex_chr1067_00_face_diff",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "name": "tex_chr1067_00_eyehi02",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "name": "tex_chr1067_00_eyehi01",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "name": "tex_chr1067_00_eyehi00",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "name": "tex_chr1067_00_eye0",
+      "width": 512,
+      "height": 256
+    },
+    {
+      "name": "tex_chr1067_00_cheek0",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "name": "tex_bdy1067_00_ctrl",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "name": "tex_bdy1067_00_base",
+      "width": 2048,
+      "height": 2048
+    },
+    {
+      "name": "tex_bdy1067_00_shad_c",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "name": "tex_bdy1067_00_diff",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "name": "tex_bdy1067_00_emi",
+      "width": 512,
+      "height": 512
+    }
+  ],
+  "game_integrated": false
+}

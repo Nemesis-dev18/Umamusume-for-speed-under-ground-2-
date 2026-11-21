@@ -1,0 +1,90 @@
+{
+  "scope": "Read-only hull coordinates and adjacency ranges, not proof of native contact dynamics",
+  "hulls": [
+    {
+      "name": "350Z_CV",
+      "vertices": 54,
+      "adjacency_values": 216,
+      "zero_degree_vertices": 16,
+      "structural_errors": [],
+      "minimum": [
+        -0.31948718428611755,
+        -0.2647179365158081,
+        0.04564102739095688
+      ],
+      "maximum": [
+        0.5933333039283752,
+        0.2647179365158081,
+        1.7799999713897705
+      ]
+    },
+    {
+      "name": "350Z_W01_CV",
+      "vertices": 54,
+      "adjacency_values": 228,
+      "zero_degree_vertices": 14,
+      "structural_errors": [],
+      "minimum": [
+        -0.31948718428611755,
+        -0.2647179365158081,
+        0.04564102739095688
+      ],
+      "maximum": [
+        0.5933333039283752,
+        0.2647179365158081,
+        1.7799999713897705
+      ]
+    },
+    {
+      "name": "350Z_W02_CV",
+      "vertices": 54,
+      "adjacency_values": 228,
+      "zero_degree_vertices": 14,
+      "structural_errors": [],
+      "minimum": [
+        -0.31948718428611755,
+        -0.2647179365158081,
+        0.04564102739095688
+      ],
+      "maximum": [
+        0.5933333039283752,
+        0.2647179365158081,
+        1.7799999713897705
+      ]
+    },
+    {
+      "name": "350Z_W03_CV",
+      "vertices": 54,
+      "adjacency_values": 216,
+      "zero_degree_vertices": 16,
+      "structural_errors": [],
+      "minimum": [
+        -0.31948718428611755,
+        -0.2647179365158081,
+        0.04564102739095688
+      ],
+      "maximum": [
+        0.5933333039283752,
+        0.2647179365158081,
+        1.7799999713897705
+      ]
+    },
+    {
+      "name": "350Z_W04_CV",
+      "vertices": 54,
+      "adjacency_values": 216,
+      "zero_degree_vertices": 16,
+      "structural_errors": [],
+      "minimum": [
+        -0.31948718428611755,
+        -0.2647179365158081,
+        0.04564102739095688
+      ],
+      "maximum": [
+        0.5933333039283752,
+        0.2647179365158081,
+        1.7799999713897705
+      ]
+    }
+  ]
+}

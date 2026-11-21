@@ -1,0 +1,19 @@
+{
+  "accepted": false,
+  "installed": false,
+  "cause": "Circular torso proxy encloses fitted jacket panels even at frame0; independent radial projection splits neighboring vertices to opposite sides. Contact reduction is not evidence of faithful cloth.",
+  "evidence": "haru-worst-edge.txt",
+  "worst_frame": 0,
+  "vertices": [
+    3227,
+    3236
+  ],
+  "original_distances_m": [
+    0.0329,
+    0.0202
+  ],
+  "proxy_radius_m": 0.12,
+  "maximum_edge_change_m": 0.10403,
+  "surface_relaxation_probe_maximum_edge_change_m": 0.0992,
+  "next_required": "Use garment-specific collision association and a fitted body envelope; validate neutral fit before motion, then surface strain and target32-bit cost. Do not install optional UMAC fixtures."
+}

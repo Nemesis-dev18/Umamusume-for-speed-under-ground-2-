@@ -1,0 +1,61 @@
+{
+  "scope": "Uninstalled proxy-collision prototype; not exact body mesh",
+  "garment_bones": 30,
+  "capsules": [
+    {
+      "from": "Hip",
+      "to": "Chest",
+      "radius": 0.12
+    },
+    {
+      "from": "Thigh_L",
+      "to": "Knee_L",
+      "radius": 0.075
+    },
+    {
+      "from": "Knee_L",
+      "to": "Ankle_L",
+      "radius": 0.055
+    },
+    {
+      "from": "Arm_L",
+      "to": "Elbow_L",
+      "radius": 0.045
+    },
+    {
+      "from": "Elbow_L",
+      "to": "Wrist_L",
+      "radius": 0.035
+    },
+    {
+      "from": "Wrist_L",
+      "to": "Wrist_L",
+      "radius": 0.045
+    },
+    {
+      "from": "Thigh_R",
+      "to": "Knee_R",
+      "radius": 0.075
+    },
+    {
+      "from": "Knee_R",
+      "to": "Ankle_R",
+      "radius": 0.055
+    },
+    {
+      "from": "Arm_R",
+      "to": "Elbow_R",
+      "radius": 0.045
+    },
+    {
+      "from": "Elbow_R",
+      "to": "Wrist_R",
+      "radius": 0.035
+    },
+    {
+      "from": "Wrist_R",
+      "to": "Wrist_R",
+      "radius": 0.045
+    }
+  ]
+}

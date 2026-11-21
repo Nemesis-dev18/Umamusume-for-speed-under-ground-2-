@@ -1,0 +1,61 @@
+{
+  "scope": "Uninstalled proxy-collision prototype; not exact body mesh",
+  "garment_bones": 56,
+  "capsules": [
+    {
+      "from": "\u4e0b\u534a\u8eab",
+      "to": "\u4e0a\u534a\u8eab2",
+      "radius": 0.12
+    },
+    {
+      "from": "\u5de6\u8db3",
+      "to": "\u5de6\u3072\u3056",
+      "radius": 0.075
+    },
+    {
+      "from": "\u5de6\u3072\u3056",
+      "to": "\u5de6\u8db3\u9996",
+      "radius": 0.055
+    },
+    {
+      "from": "\u5de6\u8155",
+      "to": "\u5de6\u3072\u3058",
+      "radius": 0.045
+    },
+    {
+      "from": "\u5de6\u3072\u3058",
+      "to": "\u5de6\u624b\u9996",
+      "radius": 0.035
+    },
+    {
+      "from": "\u5de6\u624b\u9996",
+      "to": "\u5de6\u624b\u9996",
+      "radius": 0.045
+    },
+    {
+      "from": "\u53f3\u8db3",
+      "to": "\u53f3\u3072\u3056",
+      "radius": 0.075
+    },
+    {
+      "from": "\u53f3\u3072\u3056",
+      "to": "\u53f3\u8db3\u9996",
+      "radius": 0.055
+    },
+    {
+      "from": "\u53f3\u8155",
+      "to": "\u53f3\u3072\u3058",
+      "radius": 0.045
+    },
+    {
+      "from": "\u53f3\u3072\u3058",
+      "to": "\u53f3\u624b\u9996",
+      "radius": 0.035
+    },
+    {
+      "from": "\u53f3\u624b\u9996",
+      "to": "\u53f3\u624b\u9996",
+      "radius": 0.045
+    }
+  ]
+}

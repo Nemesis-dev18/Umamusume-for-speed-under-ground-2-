@@ -1,0 +1,53 @@
+{
+  "scope": "3600-frame CPU solver per model; run concurrently at lowest priority, timings not a performance benchmark; not graphical validation",
+  "results": [
+    {
+      "id": 1068,
+      "exit": 0,
+      "result": "bones=155 springs=51 3600_frames_cpu_seconds=0.5651 motion=21957.8 max_absolute_vertex=1.705 tail_peak_degrees_per_second=38.278 cloth_peak_degrees_per_second=0.000",
+      "error": ""
+    },
+    {
+      "id": 1052,
+      "exit": 0,
+      "result": "bones=152 springs=56 3600_frames_cpu_seconds=0.7650 motion=35380.6 max_absolute_vertex=1.393 tail_peak_degrees_per_second=40.911 cloth_peak_degrees_per_second=0.000",
+      "error": ""
+    },
+    {
+      "id": 1032,
+      "exit": 0,
+      "result": "bones=146 springs=55 3600_frames_cpu_seconds=0.5784 motion=28368.3 max_absolute_vertex=1.609 tail_peak_degrees_per_second=39.366 cloth_peak_degrees_per_second=0.000",
+      "error": ""
+    },
+    {
+      "id": 1062,
+      "exit": 0,
+      "result": "bones=156 springs=68 3600_frames_cpu_seconds=0.8260 motion=26504.4 max_absolute_vertex=1.620 tail_peak_degrees_per_second=41.797 cloth_peak_degrees_per_second=0.000",
+      "error": ""
+    },
+    {
+      "id": 1015,
+      "exit": 0,
+      "result": "bones=148 springs=55 3600_frames_cpu_seconds=0.5242 motion=29875.7 max_absolute_vertex=1.601 tail_peak_degrees_per_second=42.065 cloth_peak_degrees_per_second=0.000",
+      "error": ""
+    },
+    {
+      "id": 1006,
+      "exit": 0,
+      "result": "bones=147 springs=50 3600_frames_cpu_seconds=0.5786 motion=21870.5 max_absolute_vertex=1.749 tail_peak_degrees_per_second=36.158 cloth_peak_degrees_per_second=0.000",
+      "error": ""
+    },
+    {
+      "id": 1058,
+      "exit": 0,
+      "result": "bones=156 springs=64 3600_frames_cpu_seconds=0.5986 motion=29758.0 max_absolute_vertex=1.558 tail_peak_degrees_per_second=38.571 cloth_peak_degrees_per_second=0.000",
+      "error": ""
+    },
+    {
+      "id": 1067,
+      "exit": 0,
+      "result": "bones=156 springs=76 3600_frames_cpu_seconds=0.6537 motion=44813.3 max_absolute_vertex=1.654 tail_peak_degrees_per_second=37.233 cloth_peak_degrees_per_second=0.000",
+      "error": ""
+    }
+  ]
+}

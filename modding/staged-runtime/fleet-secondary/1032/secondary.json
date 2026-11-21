@@ -5,7 +5,8 @@
       "bone": 7,
       "name": "Sp_Hi_Tail0_B_00",
       "category": "Tail",
-      "coherence_group": 256,
+      "coherence_group": 0,
+      "tail_smoothing": true,
       "tip_length": 0.06569918071570958,
       "native": {
         "_boneName": "Sp_Hi_Tail0_B_00",
@@ -49,7 +50,8 @@
       "bone": 8,
       "name": "Sp_Hi_Tail0_B_01",
       "category": "Tail",
-      "coherence_group": 256,
+      "coherence_group": 0,
+      "tail_smoothing": true,
       "tip_length": 0.11477583404092283,
       "native": {
         "_boneName": "Sp_Hi_Tail0_B_01",
@@ -92,7 +94,8 @@
       "bone": 9,
       "name": "Sp_Hi_Tail0_B_02",
       "category": "Tail",
-      "coherence_group": 256,
+      "coherence_group": 0,
+      "tail_smoothing": true,
       "tip_length": 0.16298843995684528,
       "native": {
         "_boneName": "Sp_Hi_Tail0_B_02",
@@ -135,7 +138,8 @@
       "bone": 10,
       "name": "Sp_Hi_Tail0_B_03",
       "category": "Tail",
-      "coherence_group": 256,
+      "coherence_group": 0,
+      "tail_smoothing": true,
       "tip_length": 0.15353738299553282,
       "native": {
         "_boneName": "Sp_Hi_Tail0_B_03",
@@ -178,7 +182,8 @@
       "bone": 11,
       "name": "Sp_Hi_Tail0_B_04",
       "category": "Tail",
-      "coherence_group": 256,
+      "coherence_group": 0,
+      "tail_smoothing": true,
       "tip_length": 0.15353738299553282,
       "native": {
         "_boneName": "Sp_Hi_Tail0_B_04",
@@ -222,6 +227,7 @@
       "name": "Sp_He_Hair2_R_00",
       "category": "Hair",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.06482435196641588,
       "native": {
         "_boneName": "Sp_He_Hair2_R_00",
@@ -268,6 +274,7 @@
       "name": "Sp_He_Hair5_L_00",
       "category": "Hair",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.13624281627469798,
       "native": {
         "_boneName": "Sp_He_Hair5_L_00",
@@ -316,6 +323,7 @@
       "name": "Sp_He_Hair3_R_00",
       "category": "Hair",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.141454485187464,
       "native": {
         "_boneName": "Sp_He_Hair3_R_00",
@@ -366,6 +374,7 @@
       "name": "Sp_He_Hair2_C_00",
       "category": "Hair",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.15330983260359696,
       "native": {
         "_boneName": "Sp_He_Hair2_C_00",
@@ -408,6 +417,7 @@
       "name": "Sp_He_Hair2_R_01",
       "category": "Hair",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.06256762511785759,
       "native": {
         "_boneName": "Sp_He_Hair2_R_01",
@@ -455,6 +465,7 @@
       "name": "Sp_He_Hair4_L_00",
       "category": "Hair",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.1584492230576237,
       "native": {
         "_boneName": "Sp_He_Hair4_L_00",
@@ -497,6 +508,7 @@
       "name": "Sp_He_Hair2_L_00",
       "category": "Hair",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.06482393928331658,
       "native": {
         "_boneName": "Sp_He_Hair2_L_00",
@@ -543,6 +555,7 @@
       "name": "Sp_He_Hair2_L_01",
       "category": "Hair",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.0625676472258594,
       "native": {
         "_boneName": "Sp_He_Hair2_L_01",
@@ -590,6 +603,7 @@
       "name": "Sp_He_Hair3_L_00",
       "category": "Hair",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.14145432306180536,
       "native": {
         "_boneName": "Sp_He_Hair3_L_00",
@@ -640,6 +654,7 @@
       "name": "Sp_He_Hair5_C_00",
       "category": "Hair",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.1065329651635889,
       "native": {
         "_boneName": "Sp_He_Hair5_C_00",
@@ -685,6 +700,7 @@
       "name": "Sp_He_Hair4_R_00",
       "category": "Hair",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.158449547308717,
       "native": {
         "_boneName": "Sp_He_Hair4_R_00",
@@ -727,6 +743,7 @@
       "name": "Sp_He_Acc0_L_00",
       "category": "Acc",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.0791276531601349,
       "native": {
         "_boneName": "Sp_He_Acc0_L_00",
@@ -769,6 +786,7 @@
       "name": "Sp_He_Hair5_R_00",
       "category": "Hair",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.13624255097884483,
       "native": {
         "_boneName": "Sp_He_Hair5_R_00",
@@ -817,6 +835,7 @@
       "name": "Sp_He_Hair0_C_00",
       "category": "Hair",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.10274810309037617,
       "native": {
         "_boneName": "Sp_He_Hair0_C_00",
@@ -859,6 +878,7 @@
       "name": "Sp_Hi_CSkirt0_BL_00",
       "category": "CSkirt",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.2403502378149385,
       "native": {
         "_boneName": "Sp_Hi_CSkirt0_BL_00",
@@ -908,6 +928,7 @@
       "name": "Sp_Hi_CSkirt0_R_00",
       "category": "CSkirt",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.2423267382513549,
       "native": {
         "_boneName": "Sp_Hi_CSkirt0_R_00",
@@ -955,6 +976,7 @@
       "name": "Sp_Hi_CSkirt0_R_01",
       "category": "CSkirt",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.2551816330778308,
       "native": {
         "_boneName": "Sp_Hi_CSkirt0_R_01",
@@ -1003,6 +1025,7 @@
       "name": "Sp_Hi_CSkirt0_FLL_00",
       "category": "CSkirt",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.2472739216524243,
       "native": {
         "_boneName": "Sp_Hi_CSkirt0_FLL_00",
@@ -1050,6 +1073,7 @@
       "name": "Sp_Ch_Collor_R_00",
       "category": "Collor",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.0325646334480368,
       "native": {
         "_boneName": "Sp_Ch_Collor_R_00",
@@ -1093,6 +1117,7 @@
       "name": "Sp_Th_Acc0_L_00",
       "category": "Acc",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.05197859511674246,
       "native": {
         "_boneName": "Sp_Th_Acc0_L_00",
@@ -1136,6 +1161,7 @@
       "name": "Sp_El_Sleeve0_R_00",
       "category": "Sleeve",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.07164016344675576,
       "native": {
         "_boneName": "Sp_El_Sleeve0_R_00",
@@ -1187,6 +1213,7 @@
       "name": "Sp_Hi_CSkirt0_FRR_00",
       "category": "CSkirt",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.24727601454443082,
       "native": {
         "_boneName": "Sp_Hi_CSkirt0_FRR_00",
@@ -1234,6 +1261,7 @@
       "name": "Sp_Hi_CSkirt0_FRR_01",
       "category": "CSkirt",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.25560478041520984,
       "native": {
         "_boneName": "Sp_Hi_CSkirt0_FRR_01",
@@ -1282,6 +1310,7 @@
       "name": "Sp_Hi_CSkirt0_L_00",
       "category": "CSkirt",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.2423284331970773,
       "native": {
         "_boneName": "Sp_Hi_CSkirt0_L_00",
@@ -1329,6 +1358,7 @@
       "name": "Sp_Hi_CSkirt0_L_01",
       "category": "CSkirt",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.25518231105604927,
       "native": {
         "_boneName": "Sp_Hi_CSkirt0_L_01",
@@ -1377,6 +1407,7 @@
       "name": "Sp_Hi_CSkirt0_L_02",
       "category": "CSkirt",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.15990879396973554,
       "native": {
         "_boneName": "Sp_Hi_CSkirt0_L_02",
@@ -1423,6 +1454,7 @@
       "name": "Sp_Hi_CSkirt0_L_03",
       "category": "CSkirt",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.15990879396973554,
       "native": {
         "_boneName": "Sp_Hi_CSkirt0_L_03",
@@ -1466,6 +1498,7 @@
       "name": "Sp_Hi_CSkirt0_BR_00",
       "category": "CSkirt",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.24035300869587933,
       "native": {
         "_boneName": "Sp_Hi_CSkirt0_BR_00",
@@ -1515,6 +1548,7 @@
       "name": "Sp_Hi_CSkirt0_BR_01",
       "category": "CSkirt",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.2556100273840238,
       "native": {
         "_boneName": "Sp_Hi_CSkirt0_BR_01",
@@ -1561,6 +1595,7 @@
       "name": "Sp_Hi_CSkirt0_BR_02",
       "category": "CSkirt",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.15990839602556794,
       "native": {
         "_boneName": "Sp_Hi_CSkirt0_BR_02",
@@ -1607,6 +1642,7 @@
       "name": "Sp_Hi_CSkirt0_BR_03",
       "category": "CSkirt",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.15990839602556794,
       "native": {
         "_boneName": "Sp_Hi_CSkirt0_BR_03",
@@ -1650,6 +1686,7 @@
       "name": "Sp_Ch_Collor_L_00",
       "category": "Collor",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.032558807368665156,
       "native": {
         "_boneName": "Sp_Ch_Collor_L_00",
@@ -1693,6 +1730,7 @@
       "name": "Sp_Th_Acc0_R_00",
       "category": "Acc",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.05197697755044733,
       "native": {
         "_boneName": "Sp_Th_Acc0_R_00",
@@ -1736,6 +1774,7 @@
       "name": "Sp_Hi_CSkirt0_FLL_01",
       "category": "CSkirt",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.25560439720957334,
       "native": {
         "_boneName": "Sp_Hi_CSkirt0_FLL_01",
@@ -1784,6 +1823,7 @@
       "name": "Sp_Hi_CSkirt0_FLL_02",
       "category": "CSkirt",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.15990879396973554,
       "native": {
         "_boneName": "Sp_Hi_CSkirt0_FLL_02",
@@ -1830,6 +1870,7 @@
       "name": "Sp_Hi_CSkirt0_FLL_03",
       "category": "CSkirt",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.15990879396973554,
       "native": {
         "_boneName": "Sp_Hi_CSkirt0_FLL_03",
@@ -1873,6 +1914,7 @@
       "name": "Sp_Hi_CSkirt0_BL_01",
       "category": "CSkirt",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.2556093494041255,
       "native": {
         "_boneName": "Sp_Hi_CSkirt0_BL_01",
@@ -1919,6 +1961,7 @@
       "name": "Sp_Hi_CSkirt0_BL_02",
       "category": "CSkirt",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.15990879396973554,
       "native": {
         "_boneName": "Sp_Hi_CSkirt0_BL_02",
@@ -1965,6 +2008,7 @@
       "name": "Sp_El_Sleeve0_L_00",
       "category": "Sleeve",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.0716388295967351,
       "native": {
         "_boneName": "Sp_El_Sleeve0_L_00",
@@ -2016,6 +2060,7 @@
       "name": "Sp_El_Sleeve0_L_01",
       "category": "Sleeve",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.04705265382813583,
       "native": {
         "_boneName": "Sp_El_Sleeve0_L_01",
@@ -2064,6 +2109,7 @@
       "name": "Sp_El_Sleeve0_L_02",
       "category": "Sleeve",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.04705265382813583,
       "native": {
         "_boneName": "Sp_El_Sleeve0_L_02",
@@ -2112,6 +2158,7 @@
       "name": "Sp_El_Sleeve0_R_01",
       "category": "Sleeve",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.04705131997811506,
       "native": {
         "_boneName": "Sp_El_Sleeve0_R_01",
@@ -2160,6 +2207,7 @@
       "name": "Sp_Hi_CSkirt0_BL_03",
       "category": "CSkirt",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.15990879396973554,
       "native": {
         "_boneName": "Sp_Hi_CSkirt0_BL_03",
@@ -2203,6 +2251,7 @@
       "name": "Sp_Ch_Tie0_F_00",
       "category": "Tie",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.0490929506142788,
       "native": {
         "_boneName": "Sp_Ch_Tie0_F_00",
@@ -2246,6 +2295,7 @@
       "name": "Sp_Hi_CSkirt0_R_02",
       "category": "CSkirt",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.15990960459701414,
       "native": {
         "_boneName": "Sp_Hi_CSkirt0_R_02",
@@ -2292,6 +2342,7 @@
       "name": "Sp_Hi_CSkirt0_R_03",
       "category": "CSkirt",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.15990960459701414,
       "native": {
         "_boneName": "Sp_Hi_CSkirt0_R_03",
@@ -2335,6 +2386,7 @@
       "name": "Sp_Ch_Tie0_F_01",
       "category": "Tie",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.04647500833711016,
       "native": {
         "_boneName": "Sp_Ch_Tie0_F_01",
@@ -2377,6 +2429,7 @@
       "name": "Sp_Hi_CSkirt0_FRR_02",
       "category": "CSkirt",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.15990873501693756,
       "native": {
         "_boneName": "Sp_Hi_CSkirt0_FRR_02",
@@ -2423,6 +2476,7 @@
       "name": "Sp_Hi_CSkirt0_FRR_03",
       "category": "CSkirt",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.15990873501693756,
       "native": {
         "_boneName": "Sp_Hi_CSkirt0_FRR_03",
@@ -2466,6 +2520,7 @@
       "name": "Sp_El_Sleeve0_R_02",
       "category": "Sleeve",
       "coherence_group": 0,
+      "tail_smoothing": false,
       "tip_length": 0.04705131997811506,
       "native": {
         "_boneName": "Sp_El_Sleeve0_R_02",

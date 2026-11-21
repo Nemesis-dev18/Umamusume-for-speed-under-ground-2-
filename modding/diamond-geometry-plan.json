@@ -1,0 +1,1825 @@
+{
+  "characters": [
+    {
+      "id": 1067,
+      "slot": "LANCEREVO8",
+      "target": "CARS/LANCEREVO8/GEOMETRY.BIN",
+      "candidate": "modding/staged-runtime/fleet/1067/GEOMETRY.BIN",
+      "before_sha256": "7c6ebb5ad9099487a4201a1cd64adc52d24bf913364bc1f00a6cf8fdb9733eb6",
+      "after_sha256": "3576acca7a66a9dc06da2fefce974c0c110627a4c7d8da1ede2cafb96b30d6ef",
+      "bytes_before": 7268208,
+      "bytes_after": 2175792,
+      "verification": {
+        "solids": 572,
+        "body_carriers": 20,
+        "hidden_original_parts": 552,
+        "directory_records": 572,
+        "collision_relocated": true,
+        "opaque_leaves_preserved": true,
+        "bytes": 2175792
+      },
+      "bounds": [
+        -2.25,
+        -2.25,
+        -2.25,
+        2.25,
+        2.25,
+        2.25
+      ],
+      "collision_hulls": [
+        {
+          "name": "LANCEREVO8_CV",
+          "vertices": 46,
+          "old_minimum": [
+            -2.214740753173828,
+            -0.8790332078933716,
+            0.01972808875143528
+          ],
+          "old_maximum": [
+            2.2899110317230225,
+            0.8790332078933716,
+            1.173789381980896
+          ],
+          "new_minimum": [
+            -0.341358024691358,
+            -0.2828395061728395,
+            0.04876543209876544
+          ],
+          "new_maximum": [
+            0.6339506172839506,
+            0.2828395061728395,
+            1.901851851851852
+          ],
+          "scale": [
+            0.21651143940699552,
+            0.32176202631829176,
+            1.6057088394044592
+          ]
+        },
+        {
+          "name": "LANCEREVO8_W01_CV",
+          "vertices": 46,
+          "old_minimum": [
+            -2.3115172386169434,
+            -0.9867687821388245,
+            0.01972808875143528
+          ],
+          "old_maximum": [
+            2.429344415664673,
+            0.9867687821388245,
+            1.173789381980896
+          ],
+          "new_minimum": [
+            -0.341358024691358,
+            -0.2828395061728395,
+            0.04876543209876544
+          ],
+          "new_maximum": [
+            0.6339506172839506,
+            0.2828395061728395,
+            1.901851851851852
+          ],
+          "scale": [
+            0.2057239196369457,
+            0.28663199656537974,
+            1.6057088394044592
+          ]
+        },
+        {
+          "name": "LANCEREVO8_W02_CV",
+          "vertices": 46,
+          "old_minimum": [
+            -2.268200635910034,
+            -0.9867687821388245,
+            0.01972808875143528
+          ],
+          "old_maximum": [
+            2.382996082305908,
+            0.9867687821388245,
+            1.173789381980896
+          ],
+          "new_minimum": [
+            -0.341358024691358,
+            -0.2828395061728395,
+            0.04876543209876544
+          ],
+          "new_maximum": [
+            0.6339506172839506,
+            0.2828395061728395,
+            1.901851851851852
+          ],
+          "scale": [
+            0.20968982845976195,
+            0.28663199656537974,
+            1.6057088394044592
+          ]
+        },
+        {
+          "name": "LANCEREVO8_W03_CV",
+          "vertices": 46,
+          "old_minimum": [
+            -2.276395320892334,
+            -0.9867687821388245,
+            0.01972808875143528
+          ],
+          "old_maximum": [
+            2.429344415664673,
+            0.9867687821388245,
+            1.173789381980896
+          ],
+          "new_minimum": [
+            -0.341358024691358,
+            -0.2828395061728395,
+            0.04876543209876544
+          ],
+          "new_maximum": [
+            0.6339506172839506,
+            0.2828395061728395,
+            1.901851851851852
+          ],
+          "scale": [
+            0.20725936761834202,
+            0.28663199656537974,
+            1.6057088394044592
+          ]
+        },
+        {
+          "name": "LANCEREVO8_W04_CV",
+          "vertices": 46,
+          "old_minimum": [
+            -2.2928555011749268,
+            -0.9867687821388245,
+            0.01972808875143528
+          ],
+          "old_maximum": [
+            2.429344415664673,
+            0.9867687821388245,
+            1.173789381980896
+          ],
+          "new_minimum": [
+            -0.341358024691358,
+            -0.2828395061728395,
+            0.04876543209876544
+          ],
+          "new_maximum": [
+            0.6339506172839506,
+            0.2828395061728395,
+            1.901851851851852
+          ],
+          "scale": [
+            0.20653692328808645,
+            0.28663199656537974,
+            1.6057088394044592
+          ]
+        }
+      ],
+      "collision_point_ranges": [
+        {
+          "offset": 2162112,
+          "bytes": 12
+        },
+        {
+          "offset": 2162160,
+          "bytes": 12
+        },
+        {
+          "offset": 2162208,
+          "bytes": 12
+        },
+        {
+          "offset": 2162256,
+          "bytes": 12
+        },
+        {
+          "offset": 2162304,
+          "bytes": 12
+        },
+        {
+          "offset": 2162352,
+          "bytes": 12
+        },
+        {
+          "offset": 2162400,
+          "bytes": 12
+        },
+        {
+          "offset": 2162448,
+          "bytes": 12
+        },
+        {
+          "offset": 2162496,
+          "bytes": 12
+        },
+        {
+          "offset": 2162544,
+          "bytes": 12
+        },
+        {
+          "offset": 2162592,
+          "bytes": 12
+        },
+        {
+          "offset": 2162640,
+          "bytes": 12
+        },
+        {
+          "offset": 2162688,
+          "bytes": 12
+        },
+        {
+          "offset": 2162736,
+          "bytes": 12
+        },
+        {
+          "offset": 2162784,
+          "bytes": 12
+        },
+        {
+          "offset": 2162832,
+          "bytes": 12
+        },
+        {
+          "offset": 2162880,
+          "bytes": 12
+        },
+        {
+          "offset": 2162928,
+          "bytes": 12
+        },
+        {
+          "offset": 2162976,
+          "bytes": 12
+        },
+        {
+          "offset": 2163024,
+          "bytes": 12
+        },
+        {
+          "offset": 2163072,
+          "bytes": 12
+        },
+        {
+          "offset": 2163120,
+          "bytes": 12
+        },
+        {
+          "offset": 2163168,
+          "bytes": 12
+        },
+        {
+          "offset": 2163216,
+          "bytes": 12
+        },
+        {
+          "offset": 2163264,
+          "bytes": 12
+        },
+        {
+          "offset": 2163312,
+          "bytes": 12
+        },
+        {
+          "offset": 2163360,
+          "bytes": 12
+        },
+        {
+          "offset": 2163408,
+          "bytes": 12
+        },
+        {
+          "offset": 2163456,
+          "bytes": 12
+        },
+        {
+          "offset": 2163504,
+          "bytes": 12
+        },
+        {
+          "offset": 2163552,
+          "bytes": 12
+        },
+        {
+          "offset": 2163600,
+          "bytes": 12
+        },
+        {
+          "offset": 2163648,
+          "bytes": 12
+        },
+        {
+          "offset": 2163696,
+          "bytes": 12
+        },
+        {
+          "offset": 2163744,
+          "bytes": 12
+        },
+        {
+          "offset": 2163792,
+          "bytes": 12
+        },
+        {
+          "offset": 2163840,
+          "bytes": 12
+        },
+        {
+          "offset": 2163888,
+          "bytes": 12
+        },
+        {
+          "offset": 2163936,
+          "bytes": 12
+        },
+        {
+          "offset": 2163984,
+          "bytes": 12
+        },
+        {
+          "offset": 2164032,
+          "bytes": 12
+        },
+        {
+          "offset": 2164080,
+          "bytes": 12
+        },
+        {
+          "offset": 2164128,
+          "bytes": 12
+        },
+        {
+          "offset": 2164176,
+          "bytes": 12
+        },
+        {
+          "offset": 2164224,
+          "bytes": 12
+        },
+        {
+          "offset": 2164272,
+          "bytes": 12
+        },
+        {
+          "offset": 2164880,
+          "bytes": 12
+        },
+        {
+          "offset": 2164928,
+          "bytes": 12
+        },
+        {
+          "offset": 2164976,
+          "bytes": 12
+        },
+        {
+          "offset": 2165024,
+          "bytes": 12
+        },
+        {
+          "offset": 2165072,
+          "bytes": 12
+        },
+        {
+          "offset": 2165120,
+          "bytes": 12
+        },
+        {
+          "offset": 2165168,
+          "bytes": 12
+        },
+        {
+          "offset": 2165216,
+          "bytes": 12
+        },
+        {
+          "offset": 2165264,
+          "bytes": 12
+        },
+        {
+          "offset": 2165312,
+          "bytes": 12
+        },
+        {
+          "offset": 2165360,
+          "bytes": 12
+        },
+        {
+          "offset": 2165408,
+          "bytes": 12
+        },
+        {
+          "offset": 2165456,
+          "bytes": 12
+        },
+        {
+          "offset": 2165504,
+          "bytes": 12
+        },
+        {
+          "offset": 2165552,
+          "bytes": 12
+        },
+        {
+          "offset": 2165600,
+          "bytes": 12
+        },
+        {
+          "offset": 2165648,
+          "bytes": 12
+        },
+        {
+          "offset": 2165696,
+          "bytes": 12
+        },
+        {
+          "offset": 2165744,
+          "bytes": 12
+        },
+        {
+          "offset": 2165792,
+          "bytes": 12
+        },
+        {
+          "offset": 2165840,
+          "bytes": 12
+        },
+        {
+          "offset": 2165888,
+          "bytes": 12
+        },
+        {
+          "offset": 2165936,
+          "bytes": 12
+        },
+        {
+          "offset": 2165984,
+          "bytes": 12
+        },
+        {
+          "offset": 2166032,
+          "bytes": 12
+        },
+        {
+          "offset": 2166080,
+          "bytes": 12
+        },
+        {
+          "offset": 2166128,
+          "bytes": 12
+        },
+        {
+          "offset": 2166176,
+          "bytes": 12
+        },
+        {
+          "offset": 2166224,
+          "bytes": 12
+        },
+        {
+          "offset": 2166272,
+          "bytes": 12
+        },
+        {
+          "offset": 2166320,
+          "bytes": 12
+        },
+        {
+          "offset": 2166368,
+          "bytes": 12
+        },
+        {
+          "offset": 2166416,
+          "bytes": 12
+        },
+        {
+          "offset": 2166464,
+          "bytes": 12
+        },
+        {
+          "offset": 2166512,
+          "bytes": 12
+        },
+        {
+          "offset": 2166560,
+          "bytes": 12
+        },
+        {
+          "offset": 2166608,
+          "bytes": 12
+        },
+        {
+          "offset": 2166656,
+          "bytes": 12
+        },
+        {
+          "offset": 2166704,
+          "bytes": 12
+        },
+        {
+          "offset": 2166752,
+          "bytes": 12
+        },
+        {
+          "offset": 2166800,
+          "bytes": 12
+        },
+        {
+          "offset": 2166848,
+          "bytes": 12
+        },
+        {
+          "offset": 2166896,
+          "bytes": 12
+        },
+        {
+          "offset": 2166944,
+          "bytes": 12
+        },
+        {
+          "offset": 2166992,
+          "bytes": 12
+        },
+        {
+          "offset": 2167040,
+          "bytes": 12
+        },
+        {
+          "offset": 2167648,
+          "bytes": 12
+        },
+        {
+          "offset": 2167696,
+          "bytes": 12
+        },
+        {
+          "offset": 2167744,
+          "bytes": 12
+        },
+        {
+          "offset": 2167792,
+          "bytes": 12
+        },
+        {
+          "offset": 2167840,
+          "bytes": 12
+        },
+        {
+          "offset": 2167888,
+          "bytes": 12
+        },
+        {
+          "offset": 2167936,
+          "bytes": 12
+        },
+        {
+          "offset": 2167984,
+          "bytes": 12
+        },
+        {
+          "offset": 2168032,
+          "bytes": 12
+        },
+        {
+          "offset": 2168080,
+          "bytes": 12
+        },
+        {
+          "offset": 2168128,
+          "bytes": 12
+        },
+        {
+          "offset": 2168176,
+          "bytes": 12
+        },
+        {
+          "offset": 2168224,
+          "bytes": 12
+        },
+        {
+          "offset": 2168272,
+          "bytes": 12
+        },
+        {
+          "offset": 2168320,
+          "bytes": 12
+        },
+        {
+          "offset": 2168368,
+          "bytes": 12
+        },
+        {
+          "offset": 2168416,
+          "bytes": 12
+        },
+        {
+          "offset": 2168464,
+          "bytes": 12
+        },
+        {
+          "offset": 2168512,
+          "bytes": 12
+        },
+        {
+          "offset": 2168560,
+          "bytes": 12
+        },
+        {
+          "offset": 2168608,
+          "bytes": 12
+        },
+        {
+          "offset": 2168656,
+          "bytes": 12
+        },
+        {
+          "offset": 2168704,
+          "bytes": 12
+        },
+        {
+          "offset": 2168752,
+          "bytes": 12
+        },
+        {
+          "offset": 2168800,
+          "bytes": 12
+        },
+        {
+          "offset": 2168848,
+          "bytes": 12
+        },
+        {
+          "offset": 2168896,
+          "bytes": 12
+        },
+        {
+          "offset": 2168944,
+          "bytes": 12
+        },
+        {
+          "offset": 2168992,
+          "bytes": 12
+        },
+        {
+          "offset": 2169040,
+          "bytes": 12
+        },
+        {
+          "offset": 2169088,
+          "bytes": 12
+        },
+        {
+          "offset": 2169136,
+          "bytes": 12
+        },
+        {
+          "offset": 2169184,
+          "bytes": 12
+        },
+        {
+          "offset": 2169232,
+          "bytes": 12
+        },
+        {
+          "offset": 2169280,
+          "bytes": 12
+        },
+        {
+          "offset": 2169328,
+          "bytes": 12
+        },
+        {
+          "offset": 2169376,
+          "bytes": 12
+        },
+        {
+          "offset": 2169424,
+          "bytes": 12
+        },
+        {
+          "offset": 2169472,
+          "bytes": 12
+        },
+        {
+          "offset": 2169520,
+          "bytes": 12
+        },
+        {
+          "offset": 2169568,
+          "bytes": 12
+        },
+        {
+          "offset": 2169616,
+          "bytes": 12
+        },
+        {
+          "offset": 2169664,
+          "bytes": 12
+        },
+        {
+          "offset": 2169712,
+          "bytes": 12
+        },
+        {
+          "offset": 2169760,
+          "bytes": 12
+        },
+        {
+          "offset": 2169808,
+          "bytes": 12
+        },
+        {
+          "offset": 2170384,
+          "bytes": 12
+        },
+        {
+          "offset": 2170432,
+          "bytes": 12
+        },
+        {
+          "offset": 2170480,
+          "bytes": 12
+        },
+        {
+          "offset": 2170528,
+          "bytes": 12
+        },
+        {
+          "offset": 2170576,
+          "bytes": 12
+        },
+        {
+          "offset": 2170624,
+          "bytes": 12
+        },
+        {
+          "offset": 2170672,
+          "bytes": 12
+        },
+        {
+          "offset": 2170720,
+          "bytes": 12
+        },
+        {
+          "offset": 2170768,
+          "bytes": 12
+        },
+        {
+          "offset": 2170816,
+          "bytes": 12
+        },
+        {
+          "offset": 2170864,
+          "bytes": 12
+        },
+        {
+          "offset": 2170912,
+          "bytes": 12
+        },
+        {
+          "offset": 2170960,
+          "bytes": 12
+        },
+        {
+          "offset": 2171008,
+          "bytes": 12
+        },
+        {
+          "offset": 2171056,
+          "bytes": 12
+        },
+        {
+          "offset": 2171104,
+          "bytes": 12
+        },
+        {
+          "offset": 2171152,
+          "bytes": 12
+        },
+        {
+          "offset": 2171200,
+          "bytes": 12
+        },
+        {
+          "offset": 2171248,
+          "bytes": 12
+        },
+        {
+          "offset": 2171296,
+          "bytes": 12
+        },
+        {
+          "offset": 2171344,
+          "bytes": 12
+        },
+        {
+          "offset": 2171392,
+          "bytes": 12
+        },
+        {
+          "offset": 2171440,
+          "bytes": 12
+        },
+        {
+          "offset": 2171488,
+          "bytes": 12
+        },
+        {
+          "offset": 2171536,
+          "bytes": 12
+        },
+        {
+          "offset": 2171584,
+          "bytes": 12
+        },
+        {
+          "offset": 2171632,
+          "bytes": 12
+        },
+        {
+          "offset": 2171680,
+          "bytes": 12
+        },
+        {
+          "offset": 2171728,
+          "bytes": 12
+        },
+        {
+          "offset": 2171776,
+          "bytes": 12
+        },
+        {
+          "offset": 2171824,
+          "bytes": 12
+        },
+        {
+          "offset": 2171872,
+          "bytes": 12
+        },
+        {
+          "offset": 2171920,
+          "bytes": 12
+        },
+        {
+          "offset": 2171968,
+          "bytes": 12
+        },
+        {
+          "offset": 2172016,
+          "bytes": 12
+        },
+        {
+          "offset": 2172064,
+          "bytes": 12
+        },
+        {
+          "offset": 2172112,
+          "bytes": 12
+        },
+        {
+          "offset": 2172160,
+          "bytes": 12
+        },
+        {
+          "offset": 2172208,
+          "bytes": 12
+        },
+        {
+          "offset": 2172256,
+          "bytes": 12
+        },
+        {
+          "offset": 2172304,
+          "bytes": 12
+        },
+        {
+          "offset": 2172352,
+          "bytes": 12
+        },
+        {
+          "offset": 2172400,
+          "bytes": 12
+        },
+        {
+          "offset": 2172448,
+          "bytes": 12
+        },
+        {
+          "offset": 2172496,
+          "bytes": 12
+        },
+        {
+          "offset": 2172544,
+          "bytes": 12
+        },
+        {
+          "offset": 2173152,
+          "bytes": 12
+        },
+        {
+          "offset": 2173200,
+          "bytes": 12
+        },
+        {
+          "offset": 2173248,
+          "bytes": 12
+        },
+        {
+          "offset": 2173296,
+          "bytes": 12
+        },
+        {
+          "offset": 2173344,
+          "bytes": 12
+        },
+        {
+          "offset": 2173392,
+          "bytes": 12
+        },
+        {
+          "offset": 2173440,
+          "bytes": 12
+        },
+        {
+          "offset": 2173488,
+          "bytes": 12
+        },
+        {
+          "offset": 2173536,
+          "bytes": 12
+        },
+        {
+          "offset": 2173584,
+          "bytes": 12
+        },
+        {
+          "offset": 2173632,
+          "bytes": 12
+        },
+        {
+          "offset": 2173680,
+          "bytes": 12
+        },
+        {
+          "offset": 2173728,
+          "bytes": 12
+        },
+        {
+          "offset": 2173776,
+          "bytes": 12
+        },
+        {
+          "offset": 2173824,
+          "bytes": 12
+        },
+        {
+          "offset": 2173872,
+          "bytes": 12
+        },
+        {
+          "offset": 2173920,
+          "bytes": 12
+        },
+        {
+          "offset": 2173968,
+          "bytes": 12
+        },
+        {
+          "offset": 2174016,
+          "bytes": 12
+        },
+        {
+          "offset": 2174064,
+          "bytes": 12
+        },
+        {
+          "offset": 2174112,
+          "bytes": 12
+        },
+        {
+          "offset": 2174160,
+          "bytes": 12
+        },
+        {
+          "offset": 2174208,
+          "bytes": 12
+        },
+        {
+          "offset": 2174256,
+          "bytes": 12
+        },
+        {
+          "offset": 2174304,
+          "bytes": 12
+        },
+        {
+          "offset": 2174352,
+          "bytes": 12
+        },
+        {
+          "offset": 2174400,
+          "bytes": 12
+        },
+        {
+          "offset": 2174448,
+          "bytes": 12
+        },
+        {
+          "offset": 2174496,
+          "bytes": 12
+        },
+        {
+          "offset": 2174544,
+          "bytes": 12
+        },
+        {
+          "offset": 2174592,
+          "bytes": 12
+        },
+        {
+          "offset": 2174640,
+          "bytes": 12
+        },
+        {
+          "offset": 2174688,
+          "bytes": 12
+        },
+        {
+          "offset": 2174736,
+          "bytes": 12
+        },
+        {
+          "offset": 2174784,
+          "bytes": 12
+        },
+        {
+          "offset": 2174832,
+          "bytes": 12
+        },
+        {
+          "offset": 2174880,
+          "bytes": 12
+        },
+        {
+          "offset": 2174928,
+          "bytes": 12
+        },
+        {
+          "offset": 2174976,
+          "bytes": 12
+        },
+        {
+          "offset": 2175024,
+          "bytes": 12
+        },
+        {
+          "offset": 2175072,
+          "bytes": 12
+        },
+        {
+          "offset": 2175120,
+          "bytes": 12
+        },
+        {
+          "offset": 2175168,
+          "bytes": 12
+        },
+        {
+          "offset": 2175216,
+          "bytes": 12
+        },
+        {
+          "offset": 2175264,
+          "bytes": 12
+        },
+        {
+          "offset": 2175312,
+          "bytes": 12
+        }
+      ],
+      "disabled_markers": [
+        {
+          "name": "RIGHT_EXHAUST",
+          "offset": 138992,
+          "before": "5ef17cbd",
+          "after": "7a20f662"
+        },
+        {
+          "name": "REAR_LICENSE_PLATE",
+          "offset": 139072,
+          "before": "e0f705c8",
+          "after": "7cf8e4a4"
+        },
+        {
+          "name": "RIGHT_EXHAUST",
+          "offset": 147056,
+          "before": "5ef17cbd",
+          "after": "7a20f662"
+        },
+        {
+          "name": "REAR_LICENSE_PLATE",
+          "offset": 147136,
+          "before": "e0f705c8",
+          "after": "7cf8e4a4"
+        },
+        {
+          "name": "RIGHT_EXHAUST",
+          "offset": 215280,
+          "before": "5ef17cbd",
+          "after": "7a20f662"
+        },
+        {
+          "name": "REAR_LICENSE_PLATE",
+          "offset": 215360,
+          "before": "e0f705c8",
+          "after": "7cf8e4a4"
+        },
+        {
+          "name": "RIGHT_EXHAUST",
+          "offset": 222192,
+          "before": "5ef17cbd",
+          "after": "7a20f662"
+        },
+        {
+          "name": "REAR_LICENSE_PLATE",
+          "offset": 222272,
+          "before": "e0f705c8",
+          "after": "7cf8e4a4"
+        },
+        {
+          "name": "RIGHT_EXHAUST",
+          "offset": 260864,
+          "before": "5ef17cbd",
+          "after": "7a20f662"
+        },
+        {
+          "name": "REAR_LICENSE_PLATE",
+          "offset": 260944,
+          "before": "e0f705c8",
+          "after": "7cf8e4a4"
+        },
+        {
+          "name": "RIGHT_EXHAUST",
+          "offset": 269952,
+          "before": "5ef17cbd",
+          "after": "7a20f662"
+        },
+        {
+          "name": "REAR_LICENSE_PLATE",
+          "offset": 270032,
+          "before": "e0f705c8",
+          "after": "7cf8e4a4"
+        },
+        {
+          "name": "RIGHT_EXHAUST",
+          "offset": 311536,
+          "before": "5ef17cbd",
+          "after": "7a20f662"
+        },
+        {
+          "name": "REAR_LICENSE_PLATE",
+          "offset": 311616,
+          "before": "e0f705c8",
+          "after": "7cf8e4a4"
+        },
+        {
+          "name": "RIGHT_EXHAUST",
+          "offset": 320368,
+          "before": "5ef17cbd",
+          "after": "7a20f662"
+        },
+        {
+          "name": "REAR_LICENSE_PLATE",
+          "offset": 320448,
+          "before": "e0f705c8",
+          "after": "7cf8e4a4"
+        },
+        {
+          "name": "RIGHT_EXHAUST",
+          "offset": 358016,
+          "before": "5ef17cbd",
+          "after": "7a20f662"
+        },
+        {
+          "name": "REAR_LICENSE_PLATE",
+          "offset": 358096,
+          "before": "e0f705c8",
+          "after": "7cf8e4a4"
+        },
+        {
+          "name": "RIGHT_EXHAUST",
+          "offset": 366720,
+          "before": "5ef17cbd",
+          "after": "7a20f662"
+        },
+        {
+          "name": "REAR_LICENSE_PLATE",
+          "offset": 366800,
+          "before": "e0f705c8",
+          "after": "7cf8e4a4"
+        },
+        {
+          "name": "RIGHT_EXHAUST",
+          "offset": 403072,
+          "before": "5ef17cbd",
+          "after": "7a20f662"
+        },
+        {
+          "name": "REAR_LICENSE_PLATE",
+          "offset": 403152,
+          "before": "e0f705c8",
+          "after": "7cf8e4a4"
+        },
+        {
+          "name": "RIGHT_EXHAUST",
+          "offset": 412160,
+          "before": "5ef17cbd",
+          "after": "7a20f662"
+        },
+        {
+          "name": "REAR_LICENSE_PLATE",
+          "offset": 412240,
+          "before": "e0f705c8",
+          "after": "7cf8e4a4"
+        },
+        {
+          "name": "RIGHT_EXHAUST",
+          "offset": 451968,
+          "before": "5ef17cbd",
+          "after": "7a20f662"
+        },
+        {
+          "name": "REAR_LICENSE_PLATE",
+          "offset": 452048,
+          "before": "e0f705c8",
+          "after": "7cf8e4a4"
+        },
+        {
+          "name": "RIGHT_EXHAUST",
+          "offset": 461184,
+          "before": "5ef17cbd",
+          "after": "7a20f662"
+        },
+        {
+          "name": "REAR_LICENSE_PLATE",
+          "offset": 461264,
+          "before": "e0f705c8",
+          "after": "7cf8e4a4"
+        },
+        {
+          "name": "RIGHT_EXHAUST",
+          "offset": 503296,
+          "before": "5ef17cbd",
+          "after": "7a20f662"
+        },
+        {
+          "name": "REAR_LICENSE_PLATE",
+          "offset": 503376,
+          "before": "e0f705c8",
+          "after": "7cf8e4a4"
+        },
+        {
+          "name": "RIGHT_EXHAUST",
+          "offset": 512896,
+          "before": "5ef17cbd",
+          "after": "7a20f662"
+        },
+        {
+          "name": "REAR_LICENSE_PLATE",
+          "offset": 512976,
+          "before": "e0f705c8",
+          "after": "7cf8e4a4"
+        },
+        {
+          "name": "RIGHT_EXHAUST",
+          "offset": 552832,
+          "before": "5ef17cbd",
+          "after": "7a20f662"
+        },
+        {
+          "name": "REAR_LICENSE_PLATE",
+          "offset": 552912,
+          "before": "e0f705c8",
+          "after": "7cf8e4a4"
+        },
+        {
+          "name": "RIGHT_EXHAUST",
+          "offset": 560896,
+          "before": "5ef17cbd",
+          "after": "7a20f662"
+        },
+        {
+          "name": "REAR_LICENSE_PLATE",
+          "offset": 560976,
+          "before": "e0f705c8",
+          "after": "7cf8e4a4"
+        },
+        {
+          "name": "RIGHT_EXHAUST",
+          "offset": 602096,
+          "before": "5ef17cbd",
+          "after": "7a20f662"
+        },
+        {
+          "name": "REAR_LICENSE_PLATE",
+          "offset": 602176,
+          "before": "e0f705c8",
+          "after": "7cf8e4a4"
+        },
+        {
+          "name": "RIGHT_EXHAUST",
+          "offset": 610544,
+          "before": "5ef17cbd",
+          "after": "7a20f662"
+        },
+        {
+          "name": "REAR_LICENSE_PLATE",
+          "offset": 610624,
+          "before": "e0f705c8",
+          "after": "7cf8e4a4"
+        },
+        {
+          "name": "RIGHT_EXHAUST",
+          "offset": 641040,
+          "before": "5ef17cbd",
+          "after": "7a20f662"
+        },
+        {
+          "name": "REAR_LICENSE_PLATE",
+          "offset": 641120,
+          "before": "e0f705c8",
+          "after": "7cf8e4a4"
+        },
+        {
+          "name": "RIGHT_EXHAUST",
+          "offset": 647440,
+          "before": "5ef17cbd",
+          "after": "7a20f662"
+        },
+        {
+          "name": "REAR_LICENSE_PLATE",
+          "offset": 647520,
+          "before": "e0f705c8",
+          "after": "7cf8e4a4"
+        },
+        {
+          "name": "RIGHT_EXHAUST",
+          "offset": 676400,
+          "before": "5ef17cbd",
+          "after": "7a20f662"
+        },
+        {
+          "name": "REAR_LICENSE_PLATE",
+          "offset": 676480,
+          "before": "e0f705c8",
+          "after": "7cf8e4a4"
+        },
+        {
+          "name": "RIGHT_EXHAUST",
+          "offset": 683168,
+          "before": "5ef17cbd",
+          "after": "7a20f662"
+        },
+        {
+          "name": "REAR_LICENSE_PLATE",
+          "offset": 683248,
+          "before": "e0f705c8",
+          "after": "7cf8e4a4"
+        },
+        {
+          "name": "RIGHT_EXHAUST",
+          "offset": 715904,
+          "before": "5ef17cbd",
+          "after": "7a20f662"
+        },
+        {
+          "name": "REAR_LICENSE_PLATE",
+          "offset": 715984,
+          "before": "e0f705c8",
+          "after": "7cf8e4a4"
+        },
+        {
+          "name": "RIGHT_EXHAUST",
+          "offset": 723712,
+          "before": "5ef17cbd",
+          "after": "7a20f662"
+        },
+        {
+          "name": "REAR_LICENSE_PLATE",
+          "offset": 723792,
+          "before": "e0f705c8",
+          "after": "7cf8e4a4"
+        },
+        {
+          "name": "RIGHT_EXHAUST",
+          "offset": 755200,
+          "before": "5ef17cbd",
+          "after": "7a20f662"
+        },
+        {
+          "name": "REAR_LICENSE_PLATE",
+          "offset": 755280,
+          "before": "e0f705c8",
+          "after": "7cf8e4a4"
+        },
+        {
+          "name": "RIGHT_EXHAUST",
+          "offset": 763264,
+          "before": "5ef17cbd",
+          "after": "7a20f662"
+        },
+        {
+          "name": "REAR_LICENSE_PLATE",
+          "offset": 763344,
+          "before": "e0f705c8",
+          "after": "7cf8e4a4"
+        },
+        {
+          "name": "RIGHT_EXHAUST",
+          "offset": 797184,
+          "before": "5ef17cbd",
+          "after": "7a20f662"
+        },
+        {
+          "name": "REAR_LICENSE_PLATE",
+          "offset": 797264,
+          "before": "e0f705c8",
+          "after": "7cf8e4a4"
+        },
+        {
+          "name": "RIGHT_EXHAUST",
+          "offset": 804224,
+          "before": "5ef17cbd",
+          "after": "7a20f662"
+        },
+        {
+          "name": "REAR_LICENSE_PLATE",
+          "offset": 804304,
+          "before": "e0f705c8",
+          "after": "7cf8e4a4"
+        },
+        {
+          "name": "RIGHT_EXHAUST",
+          "offset": 833664,
+          "before": "5ef17cbd",
+          "after": "7a20f662"
+        },
+        {
+          "name": "REAR_LICENSE_PLATE",
+          "offset": 833744,
+          "before": "e0f705c8",
+          "after": "7cf8e4a4"
+        },
+        {
+          "name": "RIGHT_EXHAUST",
+          "offset": 840960,
+          "before": "5ef17cbd",
+          "after": "7a20f662"
+        },
+        {
+          "name": "REAR_LICENSE_PLATE",
+          "offset": 841040,
+          "before": "e0f705c8",
+          "after": "7cf8e4a4"
+        },
+        {
+          "name": "RIGHT_EXHAUST",
+          "offset": 873488,
+          "before": "5ef17cbd",
+          "after": "7a20f662"
+        },
+        {
+          "name": "REAR_LICENSE_PLATE",
+          "offset": 873568,
+          "before": "e0f705c8",
+          "after": "7cf8e4a4"
+        },
+        {
+          "name": "RIGHT_EXHAUST",
+          "offset": 881808,
+          "before": "5ef17cbd",
+          "after": "7a20f662"
+        },
+        {
+          "name": "REAR_LICENSE_PLATE",
+          "offset": 881888,
+          "before": "e0f705c8",
+          "after": "7cf8e4a4"
+        },
+        {
+          "name": "RIGHT_EXHAUST",
+          "offset": 913408,
+          "before": "5ef17cbd",
+          "after": "7a20f662"
+        },
+        {
+          "name": "REAR_LICENSE_PLATE",
+          "offset": 913488,
+          "before": "e0f705c8",
+          "after": "7cf8e4a4"
+        },
+        {
+          "name": "RIGHT_EXHAUST",
+          "offset": 918656,
+          "before": "5ef17cbd",
+          "after": "7a20f662"
+        },
+        {
+          "name": "REAR_LICENSE_PLATE",
+          "offset": 918736,
+          "before": "e0f705c8",
+          "after": "7cf8e4a4"
+        },
+        {
+          "name": "RIGHT_EXHAUST",
+          "offset": 951152,
+          "before": "5ef17cbd",
+          "after": "7a20f662"
+        },
+        {
+          "name": "REAR_LICENSE_PLATE",
+          "offset": 951232,
+          "before": "e0f705c8",
+          "after": "7cf8e4a4"
+        },
+        {
+          "name": "RIGHT_EXHAUST",
+          "offset": 958448,
+          "before": "5ef17cbd",
+          "after": "7a20f662"
+        },
+        {
+          "name": "REAR_LICENSE_PLATE",
+          "offset": 958528,
+          "before": "e0f705c8",
+          "after": "7cf8e4a4"
+        },
+        {
+          "name": "RIGHT_EXHAUST",
+          "offset": 993152,
+          "before": "5ef17cbd",
+          "after": "7a20f662"
+        },
+        {
+          "name": "REAR_LICENSE_PLATE",
+          "offset": 993232,
+          "before": "e0f705c8",
+          "after": "7cf8e4a4"
+        },
+        {
+          "name": "RIGHT_EXHAUST",
+          "offset": 1002112,
+          "before": "5ef17cbd",
+          "after": "7a20f662"
+        },
+        {
+          "name": "REAR_LICENSE_PLATE",
+          "offset": 1002192,
+          "before": "e0f705c8",
+          "after": "7cf8e4a4"
+        },
+        {
+          "name": "RIGHT_EXHAUST",
+          "offset": 1046160,
+          "before": "5ef17cbd",
+          "after": "7a20f662"
+        },
+        {
+          "name": "REAR_LICENSE_PLATE",
+          "offset": 1046240,
+          "before": "e0f705c8",
+          "after": "7cf8e4a4"
+        },
+        {
+          "name": "RIGHT_EXHAUST",
+          "offset": 1055632,
+          "before": "5ef17cbd",
+          "after": "7a20f662"
+        },
+        {
+          "name": "REAR_LICENSE_PLATE",
+          "offset": 1055712,
+          "before": "e0f705c8",
+          "after": "7cf8e4a4"
+        },
+        {
+          "name": "RIGHT_EXHAUST",
+          "offset": 1090176,
+          "before": "5ef17cbd",
+          "after": "7a20f662"
+        },
+        {
+          "name": "REAR_LICENSE_PLATE",
+          "offset": 1090256,
+          "before": "e0f705c8",
+          "after": "7cf8e4a4"
+        },
+        {
+          "name": "RIGHT_EXHAUST",
+          "offset": 1097344,
+          "before": "5ef17cbd",
+          "after": "7a20f662"
+        },
+        {
+          "name": "REAR_LICENSE_PLATE",
+          "offset": 1097424,
+          "before": "e0f705c8",
+          "after": "7cf8e4a4"
+        },
+        {
+          "name": "RIGHT_EXHAUST",
+          "offset": 1132544,
+          "before": "5ef17cbd",
+          "after": "7a20f662"
+        },
+        {
+          "name": "REAR_LICENSE_PLATE",
+          "offset": 1132624,
+          "before": "e0f705c8",
+          "after": "7cf8e4a4"
+        },
+        {
+          "name": "RIGHT_EXHAUST",
+          "offset": 1142528,
+          "before": "5ef17cbd",
+          "after": "7a20f662"
+        },
+        {
+          "name": "REAR_LICENSE_PLATE",
+          "offset": 1142608,
+          "before": "e0f705c8",
+          "after": "7cf8e4a4"
+        },
+        {
+          "name": "RIGHT_EXHAUST",
+          "offset": 1175552,
+          "before": "5ef17cbd",
+          "after": "7a20f662"
+        },
+        {
+          "name": "REAR_LICENSE_PLATE",
+          "offset": 1175632,
+          "before": "e0f705c8",
+          "after": "7cf8e4a4"
+        },
+        {
+          "name": "RIGHT_EXHAUST",
+          "offset": 1182208,
+          "before": "5ef17cbd",
+          "after": "7a20f662"
+        },
+        {
+          "name": "REAR_LICENSE_PLATE",
+          "offset": 1182288,
+          "before": "e0f705c8",
+          "after": "7cf8e4a4"
+        },
+        {
+          "name": "RIGHT_EXHAUST",
+          "offset": 1217024,
+          "before": "5ef17cbd",
+          "after": "7a20f662"
+        },
+        {
+          "name": "REAR_LICENSE_PLATE",
+          "offset": 1217104,
+          "before": "e0f705c8",
+          "after": "7cf8e4a4"
+        },
+        {
+          "name": "RIGHT_EXHAUST",
+          "offset": 1229184,
+          "before": "5ef17cbd",
+          "after": "7a20f662"
+        },
+        {
+          "name": "REAR_LICENSE_PLATE",
+          "offset": 1229264,
+          "before": "e0f705c8",
+          "after": "7cf8e4a4"
+        },
+        {
+          "name": "RIGHT_EXHAUST",
+          "offset": 1269376,
+          "before": "5ef17cbd",
+          "after": "7a20f662"
+        },
+        {
+          "name": "REAR_LICENSE_PLATE",
+          "offset": 1269456,
+          "before": "e0f705c8",
+          "after": "7cf8e4a4"
+        },
+        {
+          "name": "RIGHT_EXHAUST",
+          "offset": 1278336,
+          "before": "5ef17cbd",
+          "after": "7a20f662"
+        },
+        {
+          "name": "REAR_LICENSE_PLATE",
+          "offset": 1278416,
+          "before": "e0f705c8",
+          "after": "7cf8e4a4"
+        },
+        {
+          "name": "RIGHT_EXHAUST",
+          "offset": 1300272,
+          "before": "5ef17cbd",
+          "after": "7a20f662"
+        },
+        {
+          "name": "REAR_LICENSE_PLATE",
+          "offset": 1300432,
+          "before": "e0f705c8",
+          "after": "7cf8e4a4"
+        },
+        {
+          "name": "RIGHT_EXHAUST",
+          "offset": 1325232,
+          "before": "5ef17cbd",
+          "after": "7a20f662"
+        },
+        {
+          "name": "REAR_LICENSE_PLATE",
+          "offset": 1325392,
+          "before": "e0f705c8",
+          "after": "7cf8e4a4"
+        },
+        {
+          "name": "RIGHT_EXHAUST",
+          "offset": 1358288,
+          "before": "5ef17cbd",
+          "after": "7a20f662"
+        },
+        {
+          "name": "REAR_LICENSE_PLATE",
+          "offset": 1358448,
+          "before": "e0f705c8",
+          "after": "7cf8e4a4"
+        },
+        {
+          "name": "RIGHT_EXHAUST",
+          "offset": 1393600,
+          "before": "5ef17cbd",
+          "after": "7a20f662"
+        },
+        {
+          "name": "REAR_LICENSE_PLATE",
+          "offset": 1393760,
+          "before": "e0f705c8",
+          "after": "7cf8e4a4"
+        },
+        {
+          "name": "RIGHT_EXHAUST",
+          "offset": 1439920,
+          "before": "5ef17cbd",
+          "after": "7a20f662"
+        },
+        {
+          "name": "REAR_LICENSE_PLATE",
+          "offset": 1440080,
+          "before": "e0f705c8",
+          "after": "7cf8e4a4"
+        },
+        {
+          "name": "RIGHT_EXHAUST",
+          "offset": 1476784,
+          "before": "5ef17cbd",
+          "after": "7a20f662"
+        },
+        {
+          "name": "REAR_LICENSE_PLATE",
+          "offset": 1476944,
+          "before": "e0f705c8",
+          "after": "7cf8e4a4"
+        },
+        {
+          "name": "RIGHT_EXHAUST",
+          "offset": 1522256,
+          "before": "5ef17cbd",
+          "after": "7a20f662"
+        },
+        {
+          "name": "REAR_LICENSE_PLATE",
+          "offset": 1522416,
+          "before": "e0f705c8",
+          "after": "7cf8e4a4"
+        },
+        {
+          "name": "RIGHT_EXHAUST",
+          "offset": 1557312,
+          "before": "5ef17cbd",
+          "after": "7a20f662"
+        },
+        {
+          "name": "REAR_LICENSE_PLATE",
+          "offset": 1557472,
+          "before": "e0f705c8",
+          "after": "7cf8e4a4"
+        }
+      ],
+      "installed": false
+    }
+  ],
+  "installed": false,
+  "scope": "Staging only:20 carriers per car, original native surfaces collapsed, collision hulls scaled; no active resource overwritten"
+}

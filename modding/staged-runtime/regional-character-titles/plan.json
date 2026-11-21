@@ -1,0 +1,47 @@
+{
+  "target": "FRONTEND/FrontB.lzc",
+  "candidate": "modding/staged-runtime/regional-character-titles/FrontB.lzc",
+  "before_sha256": "2ec4c960cf03156177ecc671b2833c7cd7f9171c0460f1f8f709c67c054bb4d3",
+  "after_sha256": "54c544c4b37517ccf66a15f24ce50da9ed79299ead1730babdcdcc758f9f2296",
+  "before_bytes": 2004213,
+  "bytes": 2081700,
+  "aliases": [
+    {
+      "source": "MIATA",
+      "alias": "SECONDARY_LOGO_MX5",
+      "hash": "0x2454ccb0",
+      "pixel_offset": 1014912,
+      "bytes": 16384
+    },
+    {
+      "source": "MIATA",
+      "alias": "SECONDARY_LOGO_MIATA_RO",
+      "hash": "0xea6d41ee",
+      "pixel_offset": 4493568,
+      "bytes": 16384
+    },
+    {
+      "source": "COROLLA",
+      "alias": "SECONDARY_LOGO_TRUENO",
+      "hash": "0x340c1413",
+      "pixel_offset": 1379456,
+      "bytes": 16384
+    },
+    {
+      "source": "CORSA",
+      "alias": "SECONDARY_LOGO_OPEL_CORSA",
+      "hash": "0x45d5cf7d",
+      "pixel_offset": 1723648,
+      "bytes": 16384
+    },
+    {
+      "source": "350Z",
+      "alias": "SECONDARY_LOGO_FAIRLADYZ",
+      "hash": "0xc6ce341c",
+      "pixel_offset": 4078848,
+      "bytes": 16384
+    }
+  ],
+  "installed": false,
+  "gameplay_verified": false
+}

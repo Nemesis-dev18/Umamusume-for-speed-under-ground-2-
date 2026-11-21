@@ -106,8 +106,8 @@
       "backup": "modding/backups/before-diamond-preview-20261121-034839/GLOBAL/GlobalB.lzc.bak"
     }
   ],
-  "installed": false,
-  "user_approved": false,
+  "installed": true,
+  "user_approved": true,
   "gameplay_verified": false,
   "scope": "Add Satono Diamond/CELICA, regional Tachyon titles, Diamond name/icon, larger native-atlas contact sparks; experimental body-contact correction excluded",
   "checks": [
@@ -120,5 +120,9 @@
     "NFS gameplay and FPS unverified",
     "existing garment clipping still unresolved"
   ],
-  "active_targets_unchanged": true
+  "active_targets_unchanged": true,
+  "approval": "User replied si to exact thirteen-file frozen preview",
+  "checkpoint": "f52e99a5b8af1cf693946de355b49e54dc54eb44",
+  "startup_verified": true,
+  "startup_evidence": "START native lighting runner installed=1; graphics-derived speed uncalibrated; independent actor gait, spatial association; models=9"
 }

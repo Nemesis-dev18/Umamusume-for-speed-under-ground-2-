@@ -1,5 +1,5 @@
 {
-  "source_sha256": "2208f3e6a1323947bff073f14be2ddcf25af4c3a2f4c3a73a9162501df08b731",
+  "source_sha256": "2ec4c960cf03156177ecc671b2833c7cd7f9171c0460f1f8f709c67c054bb4d3",
   "characters": [
     {
       "id": 1068,
@@ -38,7 +38,5 @@
     }
   ],
   "scope": "Decoded installed textures laid out for inspection; not an in-game screenshot",
-  "game_menu_verified": false,
-  "texture_sheet_inspected": true,
-  "inspection": "Seven distinct decoded chibis and correct readable labels; transparent backgrounds; no text clipping on review sheet. Native game layout not verified."
+  "game_menu_verified": false
 }

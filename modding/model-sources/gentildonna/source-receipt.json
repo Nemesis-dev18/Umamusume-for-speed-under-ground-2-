@@ -1,0 +1,237 @@
+{
+  "archive_sha256": "c905909c17f025b35465be33753cf0be98919dcb3c087d1c81e5c1b891a20b81",
+  "permission": "User confirmed author permission for NFS conversion in this chat",
+  "files": [
+    {
+      "path": "ヨッシー式_ジェンティルドンナ/ReadMe.txt",
+      "bytes": 2485,
+      "sha256": "b15482faf28be4c8ae48d0b5786459f66e99c71821f704cdcd4ee36ed51a020f"
+    },
+    {
+      "path": "ヨッシー式_ジェンティルドンナ/shader/AlphaEyeBrowNeo.fx",
+      "bytes": 7853,
+      "sha256": "f2f5abcd98f0f3f8f40bbdc0cdb27369350e8d77c88dd43a9253fdb03fd1e460"
+    },
+    {
+      "path": "ヨッシー式_ジェンティルドンナ/shader/AlphaOverLapEyeLineNeo.fx",
+      "bytes": 7749,
+      "sha256": "54be84101f3ae6f2ca2da9bba1be7be973a336e6f5494ec7a913d7a0c353e343"
+    },
+    {
+      "path": "ヨッシー式_ジェンティルドンナ/shader/AlternativeShadowGloss.fxsub",
+      "bytes": 33188,
+      "sha256": "d7d7d2ab7568998ef12cf91c833053561aaec669da8fe06894e5a18179e52b8a"
+    },
+    {
+      "path": "ヨッシー式_ジェンティルドンナ/shader/GD_Accessory_S.fx",
+      "bytes": 673,
+      "sha256": "243ae11392000180b969cdd88cc4dd64ab754a1a7970b70dcd804d937ccfff44"
+    },
+    {
+      "path": "ヨッシー式_ジェンティルドンナ/shader/GD_AlphaEyeBrow.fx",
+      "bytes": 558,
+      "sha256": "008119860f6526e6f9c49865079e7bc168f8cd3a223620c14c89e15de66a6b05"
+    },
+    {
+      "path": "ヨッシー式_ジェンティルドンナ/shader/GD_AlphaOverLapEyeLine.fx",
+      "bytes": 487,
+      "sha256": "cdaf9cb23a09ad8a6c9f6dccef6e742bc747836762476ee69be255a94590df88"
+    },
+    {
+      "path": "ヨッシー式_ジェンティルドンナ/shader/GD_Body_S.fx",
+      "bytes": 726,
+      "sha256": "79df08806a6dc3e1741d36a36ac95428644643656cd3907c1a6fc83c2a3d730f"
+    },
+    {
+      "path": "ヨッシー式_ジェンティルドンナ/shader/GD_Clothes_S.fx",
+      "bytes": 735,
+      "sha256": "57b98c168ef79f51227447c4c0157f10dcb30ba2d4aa01854e55ece57d34b9da"
+    },
+    {
+      "path": "ヨッシー式_ジェンティルドンナ/shader/GD_Ear_S.fx",
+      "bytes": 723,
+      "sha256": "4dd342efed0113cb67cba779883280d2a06df6624aa3631f2d95bb9bb3d0d992"
+    },
+    {
+      "path": "ヨッシー式_ジェンティルドンナ/shader/GD_Edge.fx",
+      "bytes": 543,
+      "sha256": "090438af9b21f8da573aa749a914338991a2f079f98296cb65a80a597fe037d0"
+    },
+    {
+      "path": "ヨッシー式_ジェンティルドンナ/shader/GD_Face_S.fx",
+      "bytes": 745,
+      "sha256": "d1b0bfb24ab4b88014fe5ee9da9fcd2b705410252da6017c1f82f17aff991fb8"
+    },
+    {
+      "path": "ヨッシー式_ジェンティルドンナ/shader/GD_Hair_Tail_S.fx",
+      "bytes": 638,
+      "sha256": "f9ad03d8aa8643ebe2d2c7669998811c49363e139a6f0f7ef13e632827569302"
+    },
+    {
+      "path": "ヨッシー式_ジェンティルドンナ/shader/GD_Shoes_S.fx",
+      "bytes": 729,
+      "sha256": "a9620eb2746e58b67b01c91abfcea03199cd245462008dc730ff59d9e4510f9e"
+    },
+    {
+      "path": "ヨッシー式_ジェンティルドンナ/shader/shading_hint_face.png",
+      "bytes": 249,
+      "sha256": "e95abbb344c023d89028063a67932901783fce39e79b5b142918a4d3a4b61932"
+    },
+    {
+      "path": "ヨッシー式_ジェンティルドンナ/shader/shading_hint_katturi.png",
+      "bytes": 247,
+      "sha256": "86844101d8675d6ea0e2f09b281f1aa7c71360a7fc4211430365562f47f4087d"
+    },
+    {
+      "path": "ヨッシー式_ジェンティルドンナ/shader/shading_hint_none.png",
+      "bytes": 237,
+      "sha256": "5e60e4ecced01dda3586caa795cc8a6f62a798f4e577df8ac11e0c454d7baa5c"
+    },
+    {
+      "path": "ヨッシー式_ジェンティルドンナ/sphere/sphere_白.png",
+      "bytes": 12958,
+      "sha256": "4604c3bf7f02b43ed934e1f1570d1a84118a9549eef79401033987b3897218be"
+    },
+    {
+      "path": "ヨッシー式_ジェンティルドンナ/textures/GD_Body.tga",
+      "bytes": 345341,
+      "sha256": "9b78736a7cfa2eb1c71d7acc03aea3ceff5ac51374cb5161086487dd8ff49c8f"
+    },
+    {
+      "path": "ヨッシー式_ジェンティルドンナ/textures/GD_Clothes.tga",
+      "bytes": 1103691,
+      "sha256": "a12035e327ef4d73ba8653889a2b11c32c383ecda88226c62f36efb236efcc8a"
+    },
+    {
+      "path": "ヨッシー式_ジェンティルドンナ/textures/GD_Dynamic_Highlight.tga",
+      "bytes": 173231,
+      "sha256": "8cb79cbaaee50c4b669074c1ccea8250a676881f6ec5005f6f05c8dc37b37fe5"
+    },
+    {
+      "path": "ヨッシー式_ジェンティルドンナ/textures/GD_Ear.tga",
+      "bytes": 408816,
+      "sha256": "2ac746cf360a2d5b98651778e79a18ada2bd0fe158dadd662613cf4bbf5e8e10"
+    },
+    {
+      "path": "ヨッシー式_ジェンティルドンナ/textures/GD_Face.tga",
+      "bytes": 1015584,
+      "sha256": "54e7179d59d298075714c6128df3bd59a66e93b1ab353c9abdab3bb911550c8d"
+    },
+    {
+      "path": "ヨッシー式_ジェンティルドンナ/textures/GD_Hair_Tail.tga",
+      "bytes": 896599,
+      "sha256": "a3b3d03efc52c1475d09b47087a15d1bf2f9fb3ddf33631da4a2e404541d5fc7"
+    },
+    {
+      "path": "ヨッシー式_ジェンティルドンナ/textures/GD_Others.tga",
+      "bytes": 988850,
+      "sha256": "0ae3c11fb7e6b7438f7e56c451ae550c3a3748e13dac440fe3cc67ab181ee3fb"
+    },
+    {
+      "path": "ヨッシー式_ジェンティルドンナ/textures/GD_Others2.tga",
+      "bytes": 565995,
+      "sha256": "3fc65e6a561d910e0f3c8f2bd6224c6a917321397ee21b417638d1005826fbad"
+    },
+    {
+      "path": "ヨッシー式_ジェンティルドンナ/textures/GD_Shoes.tga",
+      "bytes": 487812,
+      "sha256": "90b1464f050d0c3614260ecfc83b6e1cc7e976384ed3de9d879097fb8b99366a"
+    },
+    {
+      "path": "ヨッシー式_ジェンティルドンナ/textures/M_tex/GD_Body_M.tga",
+      "bytes": 187805,
+      "sha256": "ac90a07288f68a1cd4ed48eef92d1e182c42579095f8023fc8d7288db4369059"
+    },
+    {
+      "path": "ヨッシー式_ジェンティルドンナ/textures/M_tex/GD_Clothes_M.tga",
+      "bytes": 236363,
+      "sha256": "dd61f147a0806b8b4f8c2c67a9ccf8ff0a316a2537b247631f9f58bd764b92c9"
+    },
+    {
+      "path": "ヨッシー式_ジェンティルドンナ/textures/M_tex/GD_Ear_M.tga",
+      "bytes": 181546,
+      "sha256": "b6af9b97aa6cc90c9e8d500d622d9834047cc470b91b1ccd228b3aeee5ec7a88"
+    },
+    {
+      "path": "ヨッシー式_ジェンティルドンナ/textures/M_tex/GD_Hair_Tail_M.tga",
+      "bytes": 190931,
+      "sha256": "6a74f03177745b54558b9891c5f52fc01cb6802e7f5d9648f2de0cc003e9d1e7"
+    },
+    {
+      "path": "ヨッシー式_ジェンティルドンナ/textures/M_tex/GD_Shoes_M.tga",
+      "bytes": 259762,
+      "sha256": "96e9bda9f22357578178fc618d33610fe73c72a233416f124c4442c85005a691"
+    },
+    {
+      "path": "ヨッシー式_ジェンティルドンナ/textures/N_tex/GD_Body_N.tga",
+      "bytes": 304926,
+      "sha256": "02776909bf3b45da76e94e72ce13333659f90a679e58f7dc2f4c63d4dd2cd876"
+    },
+    {
+      "path": "ヨッシー式_ジェンティルドンナ/textures/N_tex/GD_Clothes_N.tga",
+      "bytes": 411255,
+      "sha256": "2853e1edeb767cc3fc8b8078e2b653e875a721538ecf35b6e1fa77a9af60ec60"
+    },
+    {
+      "path": "ヨッシー式_ジェンティルドンナ/textures/N_tex/GD_Ear_N.tga",
+      "bytes": 822691,
+      "sha256": "6aec2cad3c74813538db7f5aa1aaad130cefd88535d1c230074c20e31b8b2d21"
+    },
+    {
+      "path": "ヨッシー式_ジェンティルドンナ/textures/N_tex/GD_Shoes_N.tga",
+      "bytes": 568176,
+      "sha256": "5569965e6da8d198b8078b2752dfda8eb81a0a8b3eb132725ed5e4897f763bb8"
+    },
+    {
+      "path": "ヨッシー式_ジェンティルドンナ/textures/SB_tex/GD_Face_SB.tga",
+      "bytes": 212201,
+      "sha256": "39c3107c8a0fba069c0fc88bdb2486112892531047dd01d9d6b826940a7ef25a"
+    },
+    {
+      "path": "ヨッシー式_ジェンティルドンナ/textures/SB_tex/GD_Face_SB2.tga",
+      "bytes": 198876,
+      "sha256": "b2c7092f54920b9db84a56cf87e6ea26ec9092b32ee9653f7343f7a2d705cae6"
+    },
+    {
+      "path": "ヨッシー式_ジェンティルドンナ/textures/S_tex/GD_Body_S.tga",
+      "bytes": 288650,
+      "sha256": "e82d6c137a3557701811138cd645a755d6e733247be955de16c1040d9352043b"
+    },
+    {
+      "path": "ヨッシー式_ジェンティルドンナ/textures/S_tex/GD_Clothes_S.tga",
+      "bytes": 960126,
+      "sha256": "7736e54dd5984e321cc52ac6ec0f16c87c5d6807c969984aa9f1cb30a745edd8"
+    },
+    {
+      "path": "ヨッシー式_ジェンティルドンナ/textures/S_tex/GD_Ear_S.tga",
+      "bytes": 340256,
+      "sha256": "68f1c862bab715a1ad49c118a3783597dacb673dd9659ce5ed8ab7bc6f2b903d"
+    },
+    {
+      "path": "ヨッシー式_ジェンティルドンナ/textures/S_tex/GD_Face_S.tga",
+      "bytes": 1002931,
+      "sha256": "65ae677305bbf2c50b9e68d7481b5186ba4a2be2765907bcdcdb3ea0dba39144"
+    },
+    {
+      "path": "ヨッシー式_ジェンティルドンナ/textures/S_tex/GD_Hair_Tail_S.tga",
+      "bytes": 808972,
+      "sha256": "13e01885703e44353b65291b11d225bdcfadae26bf346a5a8155178681afbf16"
+    },
+    {
+      "path": "ヨッシー式_ジェンティルドンナ/textures/S_tex/GD_Shoes_S.tga",
+      "bytes": 430386,
+      "sha256": "3ecc49598cc3c2f7e66c76c4347600a4673b7fda61c348cb015978cd49f097c8"
+    },
+    {
+      "path": "ヨッシー式_ジェンティルドンナ/ヨッシー式ジェンティルドンナ.emd",
+      "bytes": 804,
+      "sha256": "051caf3c46d0d303f7cb12031def3e3563948c8b40122bdba722ec4bfa5ef036"
+    },
+    {
+      "path": "ヨッシー式_ジェンティルドンナ/ヨッシー式ジェンティルドンナ.pmx",
+      "bytes": 2900515,
+      "sha256": "c561fe62546273469131e80517b79736fdd59b3eed7c2dd450834384298f4252"
+    }
+  ],
+  "game_installed": false
+}

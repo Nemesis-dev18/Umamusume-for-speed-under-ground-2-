@@ -145,8 +145,8 @@
       "bytes": 8192
     }
   ],
-  "installed": false,
-  "user_approved": false,
+  "installed": true,
+  "user_approved": true,
   "gameplay_verified": false,
   "scope": "Diamond on selectable LANCEREVO8, Celica restored, regional Doto portraits, Gentildonna original PMX fixed shapes/masks; no ASI update; remaining cloth penetration not claimed fixed",
   "backup_root": "modding/backups/before-lancer-doto-cloth-20261121-042326",
@@ -157,5 +157,10 @@
     "native JDLZ and unrelated texture preservation",
     "32-bitSSE2 cost7.433ms excluding game/GPU",
     "four rear GPU frames reviewed"
-  ]
+  ],
+  "approval": "User explicitly replied si haslo to the eleven-file package",
+  "checkpoint": "8d849cccc9d608f7ac9fe412187815f0564ec4cb",
+  "startup_verified": true,
+  "startup_evidence": "START native lighting runner installed=1; graphics-derived speed uncalibrated; independent actor gait, spatial association; models=9",
+  "diamond_actor_seen_in_latest_session": true
 }

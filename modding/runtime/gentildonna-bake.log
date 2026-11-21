@@ -1,0 +1,32 @@
+{
+  "source_sha256": "c561fe62546273469131e80517b79736fdd59b3eed7c2dd450834384298f4252",
+  "vertices": 29023,
+  "triangles": 44672,
+  "bones": 271,
+  "rigid_bodies": 164,
+  "joints": 147,
+  "materials": 35,
+  "uv_min": [
+    0.0014593939995393157,
+    -0.7960120439529419
+  ],
+  "uv_max": [
+    1.0338425636291504,
+    0.9992289543151855
+  ],
+  "degenerate_triangles": 4,
+  "nonunit_normals": 0,
+  "checks": [
+    "source digest",
+    "complete parser counts",
+    "finite geometry and UV",
+    "index bounds",
+    "material triangle coverage",
+    "bone weights and references",
+    "acyclic hierarchy",
+    "texture containment and presence"
+  ],
+  "installed": false,
+  "gameplay_verified": false
+}
+PASS staged Gentildonna motion and native-resolution material textures

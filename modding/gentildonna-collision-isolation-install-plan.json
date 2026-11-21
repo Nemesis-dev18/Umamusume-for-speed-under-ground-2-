@@ -13,8 +13,8 @@
   "collision_payload_offset": 2288200,
   "collision_payload_bytes": 15784,
   "hulls": 5,
-  "installed": false,
-  "user_approved": false,
+  "installed": true,
+  "user_approved": true,
   "gameplay_verified": false,
   "diagnostic_only": true,
   "scope": "Restore exact original 350Z collision payload, keep current character carriers and all other bytes. Test wall/ground contact separately from render tracking.",
@@ -23,5 +23,7 @@
     "Does not prove native physical stability until in-game test",
     "Character cloth and crash animation remain incomplete"
   ],
-  "backup_root": "modding/backups/before-gentildonna-collision-isolation-20261121-052049"
+  "backup_root": "modding/backups/before-gentildonna-collision-isolation-20261121-052049",
+  "approval": "User previously approved original-collision diagnostic, then confirmed ready with ya after closing game",
+  "checkpoint": "4a02480bf60d41ec689f75d41f1ee80846d1bcf0"
 }

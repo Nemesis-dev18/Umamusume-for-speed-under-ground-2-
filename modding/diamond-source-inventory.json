@@ -1,0 +1,69 @@
+{
+  "source": "Read-only local Steam catalog and master; source files unchanged",
+  "characters": [
+    {
+      "id": 1067,
+      "name": "Satono Diamond",
+      "nfs_slot": "LANCEREVO8",
+      "parts": [
+        {
+          "part": "body",
+          "logical": "3d/chara/body/bdy1067_00/pfb_bdy1067_00",
+          "hash": "JXBUFOZEBNNWOHDBRNHQMMLVOT7IX4FL",
+          "downloaded": true,
+          "bytes": 524563,
+          "dependency_count": 6,
+          "missing_dependencies": []
+        },
+        {
+          "part": "head",
+          "logical": "3d/chara/head/chr1067_00/pfb_chr1067_00",
+          "hash": "2KOHUGFVPAXHSYIDN7FVDJB5CGHBY4KX",
+          "downloaded": true,
+          "bytes": 312668,
+          "dependency_count": 12,
+          "missing_dependencies": []
+        },
+        {
+          "part": "icon",
+          "logical": "chara/chr1067/chr_icon_1067",
+          "hash": "EPFNIQKRVYO4QCNHHDLQ22O7DKPHF7QV",
+          "downloaded": true,
+          "bytes": 28221,
+          "dependency_count": 1,
+          "missing_dependencies": []
+        },
+        {
+          "part": "tail",
+          "logical": "3d/chara/tail/tail0001_00/pfb_tail0001_00",
+          "hash": "7ATTNWJHXBNRIMZJWMN3DNVMLU72NCQ6",
+          "downloaded": true,
+          "bytes": 24513,
+          "dependency_count": 4,
+          "missing_dependencies": []
+        },
+        {
+          "part": "tail-texture",
+          "logical": "3d/chara/tail/tail0001_00/textures/tex_tail0001_00_1067_diff",
+          "hash": "OFWPVRG23I4IAKT7IHXP5TYAIEWQ34Q3",
+          "downloaded": true,
+          "bytes": 9159,
+          "dependency_count": 1,
+          "missing_dependencies": []
+        },
+        {
+          "part": "idle-motion",
+          "logical": "3d/motion/event/body/chara/chr1067_00/anm_eve_chr1067_00_idle01_loop",
+          "hash": "M3HPC7KMCVHS42VRQWU67RC5RHKO23SE",
+          "downloaded": true,
+          "bytes": 12652,
+          "dependency_count": 1,
+          "missing_dependencies": []
+        }
+      ],
+      "integrated": false,
+      "height_cm": 158,
+      "body_scale": 0.982874959020957
+    }
+  ]
+}

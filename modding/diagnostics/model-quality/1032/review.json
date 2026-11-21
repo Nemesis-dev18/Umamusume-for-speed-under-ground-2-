@@ -1,0 +1,59 @@
+{
+  "source_sha256": "a7084960fee60fee20207de27a906c18f5a0e7d72a0b9e419c66030729e518ba",
+  "backend": "Blender CLI 4.5.16 LTS",
+  "scope": "Native source review; not NFS rendering or installed upgrade",
+  "mesh_count": 5,
+  "armatures": 1,
+  "vertices": 12874,
+  "materials": [
+    {
+      "name": "mtl_bdy1032_00",
+      "images": [
+        "tex_bdy1032_00_diff_8708074623845632044.png"
+      ]
+    },
+    {
+      "name": "mtl_chr1032_00_face",
+      "images": [
+        "face-baked.png"
+      ]
+    },
+    {
+      "name": "mtl_chr1032_00_hair",
+      "images": [
+        "tex_chr1032_00_hair_diff_512901402556518226.png"
+      ]
+    },
+    {
+      "name": "mtl_chr1032_00_mayu",
+      "images": [
+        "face-baked.png"
+      ]
+    },
+    {
+      "name": "mtl_tail0001_00",
+      "images": [
+        "tex_tail0001_00_1032_diff_5237852009674236616.png"
+      ]
+    }
+  ],
+  "gameplay_verified": false,
+  "renders": [
+    "front.png",
+    "rear.png",
+    "run-0.png",
+    "run-1.png",
+    "run-2.png",
+    "run-3.png"
+  ],
+  "geometry_and_groups_unchanged": true,
+  "visual_approved": false,
+  "export_accepted": false,
+  "review_export": {
+    "path": "modding/diagnostics/model-quality/1032/source-quality-review.glb",
+    "bytes": 1660676,
+    "sha256": "2ae0eee5b79d6fe503a63e10614f266c969d8128b7457bc129d678642792a32e",
+    "size_gate_15MiB": true,
+    "final_game_asset": false
+  }
+}

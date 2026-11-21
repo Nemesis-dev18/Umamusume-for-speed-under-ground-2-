@@ -1,0 +1,158 @@
+{
+  "model_sha256": "b912788ff9b190b3fa3f4072da7a7b05968e5e7e366f586d9d373c78b8cef4fd",
+  "source_model_sha256": "6a6273bd074ee518a27c7359f6e0405ad5dc7c8f23d47cf3d50331e9df26775c",
+  "atlas_sha256": "1f3d39d956759e64126853e8d25f5fdf38a717060266d31b94b94fe358c0c8b6",
+  "size": [
+    4096,
+    4096
+  ],
+  "source_resolution_preserved": true,
+  "gutter_pixels": 8,
+  "layout": {
+    "8": {
+      "x": 8,
+      "y": 8,
+      "width": 1024,
+      "height": 1024,
+      "cell": [
+        0,
+        0,
+        1040,
+        1040
+      ]
+    },
+    "21": {
+      "x": 1048,
+      "y": 8,
+      "width": 1024,
+      "height": 1024,
+      "cell": [
+        1040,
+        0,
+        1040,
+        1040
+      ]
+    },
+    "4": {
+      "x": 2088,
+      "y": 8,
+      "width": 512,
+      "height": 512,
+      "cell": [
+        2080,
+        0,
+        528,
+        528
+      ]
+    },
+    "13": {
+      "x": 2616,
+      "y": 8,
+      "width": 512,
+      "height": 256,
+      "cell": [
+        2608,
+        0,
+        528,
+        272
+      ]
+    },
+    "16": {
+      "x": 3144,
+      "y": 8,
+      "width": 256,
+      "height": 256,
+      "cell": [
+        3136,
+        0,
+        272,
+        272
+      ]
+    },
+    "17": {
+      "x": 3416,
+      "y": 8,
+      "width": 128,
+      "height": 128,
+      "cell": [
+        3408,
+        0,
+        144,
+        144
+      ]
+    }
+  },
+  "levels": [
+    {
+      "width": 4096,
+      "height": 4096,
+      "bytes": 16777216
+    },
+    {
+      "width": 2048,
+      "height": 2048,
+      "bytes": 4194304
+    },
+    {
+      "width": 1024,
+      "height": 1024,
+      "bytes": 1048576
+    },
+    {
+      "width": 512,
+      "height": 512,
+      "bytes": 262144
+    },
+    {
+      "width": 256,
+      "height": 256,
+      "bytes": 65536
+    },
+    {
+      "width": 128,
+      "height": 128,
+      "bytes": 16384
+    },
+    {
+      "width": 64,
+      "height": 64,
+      "bytes": 4096
+    },
+    {
+      "width": 32,
+      "height": 32,
+      "bytes": 1024
+    },
+    {
+      "width": 16,
+      "height": 16,
+      "bytes": 256
+    },
+    {
+      "width": 8,
+      "height": 8,
+      "bytes": 64
+    },
+    {
+      "width": 4,
+      "height": 4,
+      "bytes": 16
+    },
+    {
+      "width": 2,
+      "height": 2,
+      "bytes": 16
+    },
+    {
+      "width": 1,
+      "height": 1,
+      "bytes": 16
+    }
+  ],
+  "opaque_rgb_rmse_0_255": 1.9844053914061757,
+  "game_integrated": false,
+  "neutral_iris_baked": true,
+  "eye_depth_pass_pending": false,
+  "installed_rig_preserved": true,
+  "installed_baseline_sha256": "ef5c58e2118d2c8b41d0ddaa5ac76272223a702ebba81420cc819973928d4e4d"
+}

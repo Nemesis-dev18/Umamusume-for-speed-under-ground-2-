@@ -1,0 +1,30 @@
+[Info]
+Version = 3
+
+[Effect]
+Obj = none
+Obj[0] = shader\GD_AlphaEyeBrow.fx
+Obj[1] = shader\GD_Hair_Tail_S.fx
+Obj[2] = shader\GD_Accessory_S.fx
+Obj[3] = shader\GD_Ear_S.fx
+Obj[4] = shader\GD_Face_S.fx
+Obj[5] = shader\GD_Face_S.fx
+Obj[6] = shader\GD_Face_S.fx
+Obj[7] = shader\GD_Face_S.fx
+Obj[17] = shader\GD_Body_S.fx
+Obj[18] = shader\GD_Hair_Tail_S.fx
+Obj[19] = shader\GD_Body_S.fx
+Obj[20] = shader\GD_Clothes_S.fx
+Obj[21] = shader\GD_Clothes_S.fx
+Obj[22] = shader\GD_Clothes_S.fx
+Obj[23] = shader\GD_Shoes_S.fx
+Obj[24] = shader\GD_Edge.fx
+Obj[25] = shader\GD_Clothes_S.fx
+Obj[26] = shader\GD_Clothes_S.fx
+Obj[27] = shader\GD_Clothes_S.fx
+Obj[28] = shader\GD_Clothes_S.fx
+Obj[29] = shader\GD_Edge.fx
+Obj[30] = none
+Obj[31] = shader\GD_AlphaOverLapEyeLine.fx
+Obj[33] = none
+

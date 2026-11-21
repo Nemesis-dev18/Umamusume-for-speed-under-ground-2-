@@ -10,8 +10,8 @@
     }
   ],
   "backup_root": "modding/backups/before-diamond-eyes-20261121-043958",
-  "installed": false,
-  "user_approved": false,
+  "installed": true,
+  "user_approved": true,
   "gameplay_verified": false,
   "scope": "Diamond baked eye texture selected regardless of brow material order; same atlas layout, resolution, mip count and all runtime vertex records; no geometry/rig/cloth change",
   "tests": [
@@ -23,5 +23,9 @@
   "limits": [
     "NFS appearance pending",
     "hair/clothing/tail intersections unresolved"
-  ]
+  ],
+  "approval": "User replied arreglalo y lanzalo after exact one-file eyes plan",
+  "checkpoint": "a97d55f21c2a6356f3cdadc60476f5826223c303",
+  "eyes_user_verified": true,
+  "user_feedback": "S\u00ed, ya se ven los ojos"
 }

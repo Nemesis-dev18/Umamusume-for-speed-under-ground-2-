@@ -1,0 +1,6 @@
+{"frame": "frame-030", "before_pairs": {"hair-garment": 2464, "tail-garment": 661, "hair-tail": 35}, "after_pairs": {"hair-garment": 3357, "tail-garment": 555, "hair-tail": 50}, "changed_vertices": 454, "maximum_displacement_m": 0.10781835261233927, "maximum_edge_length_change_m": 0.037047976942252314, "pinned_vertices_unchanged": true, "normals_recomputed": false}
+{"frame": "frame-060", "before_pairs": {"hair-garment": 871, "tail-garment": 239, "hair-tail": 65}, "after_pairs": {"hair-garment": 882, "tail-garment": 640, "hair-tail": 77}, "changed_vertices": 247, "maximum_displacement_m": 0.11268934634066578, "maximum_edge_length_change_m": 0.050491017956308996, "pinned_vertices_unchanged": true, "normals_recomputed": false}
+{"frame": "frame-120", "before_pairs": {"hair-garment": 589, "tail-garment": 339, "hair-tail": 62}, "after_pairs": {"hair-garment": 716, "tail-garment": 568, "hair-tail": 3}, "changed_vertices": 183, "maximum_displacement_m": 0.08472695516481683, "maximum_edge_length_change_m": 0.03869782117668532, "pinned_vertices_unchanged": true, "normals_recomputed": false}
+Blender 4.5.16 LTS (hash 3f6797307da5 built 2026-11-10 01:31:21)
+
+Blender quit

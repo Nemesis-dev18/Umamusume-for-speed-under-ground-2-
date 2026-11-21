@@ -17,16 +17,18 @@ static inline void uma_spark_contacts(const UmaMotion *motion,const UmaVertex *p
  }
  for(int side=0;side<2;side++)if(counts[side])for(int k=0;k<3;k++)feet[side][k]/=counts[side];
 }
-static inline unsigned uma_spark_mesh(float phase,float feet[2][3],const unsigned counts[2],const float *root,UmaVertex output[48]){
- unsigned vertices=0;
+static inline unsigned uma_spark_mesh(float phase,float feet[2][3],const unsigned counts[2],const float *root,const float *facing,UmaVertex output[48]){
+ unsigned vertices=0;const float axes[]={0,1,0,0,0,1};if(!facing)facing=axes;
  for(int side=0;side<2;side++)if(counts[side])for(int i=0;i<4;i++){
-  float age=uma_fraction(phase*7+i*.237f+side*.37f),width=.014f*(1-age)+.006f;
-  float center[]={feet[side][0]-.24f*age,feet[side][1]+(side?1.f:-1.f)*(.07f+.09f*age)+(i-1.5f)*.025f*age,feet[side][2]+.035f+.10f*sinf(age*3.14159265f)};
+  float age=uma_fraction(phase*2+i*.237f+side*.37f),width=.09f*(1-age)+.025f;
+  float local[]={feet[side][0]-.5f*age,feet[side][1]+(side?1.f:-1.f)*(.05f+.08f*age),feet[side][2]+.05f+.06f*sinf(age*3.14159265f)},center[3]={0};
+  if(root){for(int c=0;c<3;c++)for(int k=0;k<3;k++)center[c]+=local[k]*root[k*3+c];}else memcpy(center,local,12);
+  unsigned frame=(unsigned)(age*8);if(frame>7)frame=7;
   for(int v=0;v<6;v++){
-   static const unsigned corners[]={0,1,2,2,1,3};unsigned corner=corners[v];
-   UmaVertex *point=output+vertices++;memset(point,0,sizeof(*point));float p[]={center[0],center[1]+((corner&1)?width:-width),center[2]+((corner&2)?width*2:0)};
-   point->uv[0]=(corner&1)?1.f:0.f;point->uv[1]=(corner&2)?0.f:1.f;
-   if(root){for(int c=0;c<3;c++)for(int k=0;k<3;k++)point->position[c]+=p[k]*root[k*3+c];}else memcpy(point->position,p,12);
+   static const unsigned corners[]={0,1,2,2,1,3};unsigned corner=corners[v];UmaVertex *point=output+vertices++;memset(point,0,sizeof(*point));
+   for(int k=0;k<3;k++)point->position[k]=center[k]+facing[k]*((corner&1)?width:-width)+facing[3+k]*((corner&2)?width:-width);
+   point->uv[0]=((frame%4)+((corner&1)?.9921875f:.0078125f))/4;
+   point->uv[1]=((frame/4)+((corner&2)?.0078125f:.9921875f))/2;
    point->normal[2]=1;memset(point->bgra,255,4);
   }
  }

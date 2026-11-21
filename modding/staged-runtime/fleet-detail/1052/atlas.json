@@ -1,0 +1,156 @@
+{
+  "model_sha256": "55a814353d87b528021dd3b3216cde6525d56542c8223f46e03e7a759d8ba776",
+  "source_model_sha256": "59573d0543a97e0deeec61c97c75e118bd139bc3691ee5e4ae750df45cea1a8e",
+  "atlas_sha256": "5ff9c337ba93e7ef1c4b8d25b06bec4d0add1bcb947da5423cc499a7d85ab91d",
+  "size": [
+    4096,
+    4096
+  ],
+  "source_resolution_preserved": true,
+  "gutter_pixels": 8,
+  "layout": {
+    "6": {
+      "x": 8,
+      "y": 8,
+      "width": 1024,
+      "height": 1024,
+      "cell": [
+        0,
+        0,
+        1040,
+        1040
+      ]
+    },
+    "10": {
+      "x": 1048,
+      "y": 8,
+      "width": 1024,
+      "height": 1024,
+      "cell": [
+        1040,
+        0,
+        1040,
+        1040
+      ]
+    },
+    "18": {
+      "x": 2088,
+      "y": 8,
+      "width": 512,
+      "height": 512,
+      "cell": [
+        2080,
+        0,
+        528,
+        528
+      ]
+    },
+    "3": {
+      "x": 2616,
+      "y": 8,
+      "width": 512,
+      "height": 256,
+      "cell": [
+        2608,
+        0,
+        528,
+        272
+      ]
+    },
+    "9": {
+      "x": 3144,
+      "y": 8,
+      "width": 256,
+      "height": 256,
+      "cell": [
+        3136,
+        0,
+        272,
+        272
+      ]
+    },
+    "20": {
+      "x": 3416,
+      "y": 8,
+      "width": 128,
+      "height": 128,
+      "cell": [
+        3408,
+        0,
+        144,
+        144
+      ]
+    }
+  },
+  "levels": [
+    {
+      "width": 4096,
+      "height": 4096,
+      "bytes": 16777216
+    },
+    {
+      "width": 2048,
+      "height": 2048,
+      "bytes": 4194304
+    },
+    {
+      "width": 1024,
+      "height": 1024,
+      "bytes": 1048576
+    },
+    {
+      "width": 512,
+      "height": 512,
+      "bytes": 262144
+    },
+    {
+      "width": 256,
+      "height": 256,
+      "bytes": 65536
+    },
+    {
+      "width": 128,
+      "height": 128,
+      "bytes": 16384
+    },
+    {
+      "width": 64,
+      "height": 64,
+      "bytes": 4096
+    },
+    {
+      "width": 32,
+      "height": 32,
+      "bytes": 1024
+    },
+    {
+      "width": 16,
+      "height": 16,
+      "bytes": 256
+    },
+    {
+      "width": 8,
+      "height": 8,
+      "bytes": 64
+    },
+    {
+      "width": 4,
+      "height": 4,
+      "bytes": 16
+    },
+    {
+      "width": 2,
+      "height": 2,
+      "bytes": 16
+    },
+    {
+      "width": 1,
+      "height": 1,
+      "bytes": 16
+    }
+  ],
+  "opaque_rgb_rmse_0_255": 1.8442366809201882,
+  "game_integrated": false,
+  "neutral_iris_baked": true,
+  "eye_depth_pass_pending": false
+}

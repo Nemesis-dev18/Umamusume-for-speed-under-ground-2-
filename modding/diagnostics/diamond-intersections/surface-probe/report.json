@@ -1,0 +1,61 @@
+{
+  "installed": false,
+  "accepted": false,
+  "scope": "Offline nearest-surface projection only; no edge preservation, updated normals, temporal continuity or game performance proof. Do not install these snapshots.",
+  "results": [
+    {
+      "frame": "frame-030",
+      "before_pairs": {
+        "hair-garment": 2464,
+        "tail-garment": 661,
+        "hair-tail": 35
+      },
+      "after_pairs": {
+        "hair-garment": 2562,
+        "tail-garment": 681,
+        "hair-tail": 35
+      },
+      "changed_vertices": 240,
+      "maximum_displacement_m": 0.06251015020258667,
+      "maximum_edge_length_change_m": 0.08800651084846776,
+      "pinned_vertices_unchanged": true,
+      "normals_recomputed": false
+    },
+    {
+      "frame": "frame-060",
+      "before_pairs": {
+        "hair-garment": 871,
+        "tail-garment": 239,
+        "hair-tail": 65
+      },
+      "after_pairs": {
+        "hair-garment": 981,
+        "tail-garment": 363,
+        "hair-tail": 70
+      },
+      "changed_vertices": 159,
+      "maximum_displacement_m": 0.07645789478870241,
+      "maximum_edge_length_change_m": 0.07857278496892756,
+      "pinned_vertices_unchanged": true,
+      "normals_recomputed": false
+    },
+    {
+      "frame": "frame-120",
+      "before_pairs": {
+        "hair-garment": 589,
+        "tail-garment": 339,
+        "hair-tail": 62
+      },
+      "after_pairs": {
+        "hair-garment": 651,
+        "tail-garment": 470,
+        "hair-tail": 60
+      },
+      "changed_vertices": 108,
+      "maximum_displacement_m": 0.05989351035382656,
+      "maximum_edge_length_change_m": 0.06248396532467507,
+      "pinned_vertices_unchanged": true,
+      "normals_recomputed": false
+    }
+  ]
+}

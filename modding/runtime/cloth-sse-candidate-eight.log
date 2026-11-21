@@ -1,0 +1,2 @@
+PASS 8 exact native models through runtime hook; distinct textures, reverse-order pixel identity, per-model actor gait/durations, stationary actor, impostor preservation, all-renderer reset and hook removal; not NFSU2 gameplay
+ntsync: up and running.

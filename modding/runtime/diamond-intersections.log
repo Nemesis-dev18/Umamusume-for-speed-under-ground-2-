@@ -1,0 +1,19 @@
+installed frame-000 {'hair-garment': 12, 'hair-tail': 0, 'garment-tail': 703}
+installed frame-030 {'hair-garment': 2464, 'hair-tail': 35, 'garment-tail': 661}
+installed frame-060 {'hair-garment': 871, 'hair-tail': 65, 'garment-tail': 239}
+installed frame-090 {'hair-garment': 682, 'hair-tail': 46, 'garment-tail': 104}
+installed frame-120 {'hair-garment': 589, 'hair-tail': 62, 'garment-tail': 339}
+installed frame-150 {'hair-garment': 2220, 'hair-tail': 0, 'garment-tail': 562}
+installed frame-179 {'hair-garment': 2188, 'hair-tail': 0, 'garment-tail': 515}
+installed rest {'hair-garment': 444, 'hair-tail': 0, 'garment-tail': 271}
+native-contacts frame-000 {'hair-garment': 12, 'hair-tail': 0, 'garment-tail': 703}
+native-contacts frame-030 {'hair-garment': 2464, 'hair-tail': 35, 'garment-tail': 661}
+native-contacts frame-060 {'hair-garment': 867, 'hair-tail': 65, 'garment-tail': 239}
+native-contacts frame-090 {'hair-garment': 669, 'hair-tail': 46, 'garment-tail': 104}
+native-contacts frame-120 {'hair-garment': 587, 'hair-tail': 62, 'garment-tail': 339}
+native-contacts frame-150 {'hair-garment': 2220, 'hair-tail': 0, 'garment-tail': 562}
+native-contacts frame-179 {'hair-garment': 2188, 'hair-tail': 0, 'garment-tail': 515}
+native-contacts rest {'hair-garment': 444, 'hair-tail': 0, 'garment-tail': 271}
+Blender 4.5.16 LTS (hash 3f6797307da5 built 2026-11-10 01:31:21)
+
+Blender quit

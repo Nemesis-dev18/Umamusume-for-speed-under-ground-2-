@@ -1,0 +1,6864 @@
+{
+  "files": [
+    {
+      "id": 1068,
+      "target": "modding/runtime/fleet/1068/secondary.bin",
+      "candidate": "modding/staged-runtime/native-garment-contacts/1068/secondary.bin",
+      "before": "3246e2e9738726719a0e64a2f8dcc056ff59ddff9288dcbcccc360bb72269383",
+      "after": "630bb274fb3e07a441dfd88fe452ba6ac712b8f6d839d0415b42f1ffd9a706b4",
+      "bytes": 4460,
+      "changed_contacts": [
+        {
+          "bone": 7,
+          "name": "Sp_Hi_Tail0_B_00",
+          "before": [
+            "Col_B_Hip_Tail",
+            "Col_B_Chest_Tail"
+          ],
+          "after": [
+            "Col_B_Chest_Tail",
+            "Col_B_Hip_Tail"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 8,
+          "name": "Sp_Hi_Tail0_B_01",
+          "before": [
+            "Col_B_Hip_Tail",
+            "Col_B_Chest_Tail"
+          ],
+          "after": [
+            "Col_B_Chest_Tail",
+            "Col_B_Hip_Tail"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 9,
+          "name": "Sp_Hi_Tail0_B_02",
+          "before": [
+            "Col_B_Hip_Tail",
+            "Col_B_Chest_Tail"
+          ],
+          "after": [
+            "Col_B_Chest_Tail",
+            "Col_B_Hip_Tail"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 10,
+          "name": "Sp_Hi_Tail0_B_03",
+          "before": [
+            "Col_B_Hip_Tail",
+            "Col_B_Chest_Tail"
+          ],
+          "after": [
+            "Col_B_Chest_Tail",
+            "Col_B_Hip_Tail"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 11,
+          "name": "Sp_Hi_Tail0_B_04",
+          "before": [
+            "Col_B_Hip_Tail",
+            "Col_B_Chest_Tail"
+          ],
+          "after": [
+            "Col_B_Chest_Tail",
+            "Col_B_Hip_Tail"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 27,
+          "name": "Sp_Hi_CSkirt0_BR_00",
+          "before": [
+            "Col_B_Thigh_R_Multi",
+            "Col_B_Hip_Skirt_BLR",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Thigh_R_Multi",
+            "Col_B_Hip_Skirt_BLR"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 29,
+          "name": "Sp_Hi_CSkirt0_FRR_00",
+          "before": [
+            "Col_B_Thigh_R_Skirt",
+            "Col_B_Hip_Skirt_FRR",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_Skirt_FRR",
+            "Col_B_Thigh_R_Skirt"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 30,
+          "name": "Sp_Hi_CSkirt0_FRR_01",
+          "before": [
+            "Col_B_Thigh_R_Skirt",
+            "Col_B_Hip_Skirt_FRR",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_Skirt_FRR",
+            "Col_B_Thigh_R_Skirt"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 32,
+          "name": "Sp_Hi_CSkirt1_FRR_00",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 33,
+          "name": "Sp_Hi_CSkirt0_FLL_00",
+          "before": [
+            "Col_B_Thigh_L_Skirt",
+            "Col_B_Hip_Skirt_FLL",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_Skirt_FLL",
+            "Col_B_Thigh_L_Skirt"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 34,
+          "name": "Sp_Hi_CSkirt0_FLL_01",
+          "before": [
+            "Col_B_Thigh_L_Skirt",
+            "Col_B_Hip_Skirt_FLL",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_Skirt_FLL",
+            "Col_B_Thigh_L_Skirt"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 49,
+          "name": "Sp_Wa_Ribbon4_L_00",
+          "before": [
+            "Col_B_Hip_Rbbn_F_00",
+            "Col_B_Hip_Rbbn_F_01",
+            "RuntimeTorso"
+          ],
+          "after": [
+            "Col_B_Hip_Rbbn_F_01",
+            "Col_B_Hip_Rbbn_F_00"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 54,
+          "name": "Sp_Hi_CSkirt0_FL_00",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 58,
+          "name": "Sp_El_Sleeve0_L_00",
+          "before": [
+            "Col_B_Elbow_L_Multi",
+            "RuntimeTorso"
+          ],
+          "after": [
+            "Col_B_Elbow_L_Multi"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 60,
+          "name": "Sp_Wa_Ribbon0_R_00",
+          "before": [
+            "Col_B_Chest_Rbbn_B",
+            "Col_B_Hip_Rbbn_B_00",
+            "Col_B_Elbow_R_Multi",
+            "Col_B_Arm_R_Multi",
+            "RuntimeTorso"
+          ],
+          "after": [
+            "Col_B_Arm_R_Multi",
+            "Col_B_Elbow_R_Multi",
+            "Col_B_Chest_Rbbn_B",
+            "Col_B_Hip_Rbbn_B_00"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 61,
+          "name": "Sp_El_Sleeve0_R_00",
+          "before": [
+            "Col_B_Elbow_R_Multi",
+            "RuntimeTorso"
+          ],
+          "after": [
+            "Col_B_Elbow_R_Multi"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 62,
+          "name": "Sp_Wa_Ribbon1_R_00",
+          "before": [
+            "Col_B_Chest_Rbbn_B",
+            "Col_B_Hip_Rbbn_B_00",
+            "Col_B_Elbow_R_Multi",
+            "Col_B_Thigh_R_Multi",
+            "RuntimeTorso"
+          ],
+          "after": [
+            "Col_B_Thigh_R_Multi",
+            "Col_B_Chest_Rbbn_B",
+            "Col_B_Elbow_R_Multi",
+            "Col_B_Hip_Rbbn_B_00"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 63,
+          "name": "Sp_Wa_Ribbon1_R_01",
+          "before": [
+            "Col_B_Chest_Rbbn_B",
+            "Col_B_Hip_Rbbn_B_00",
+            "Col_B_Elbow_R_Multi",
+            "Col_B_Thigh_R_Multi",
+            "RuntimeTorso"
+          ],
+          "after": [
+            "Col_B_Thigh_R_Multi",
+            "Col_B_Chest_Rbbn_B",
+            "Col_B_Elbow_R_Multi",
+            "Col_B_Hip_Rbbn_B_00"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 64,
+          "name": "Sp_Wa_Ribbon3_L_00",
+          "before": [
+            "Col_B_Hip_Rbbn_F_00",
+            "Col_B_Hip_Rbbn_F_01",
+            "Col_B_Thigh_L_Rbbn_F",
+            "RuntimeTorso"
+          ],
+          "after": [
+            "Col_B_Thigh_L_Rbbn_F",
+            "Col_B_Hip_Rbbn_F_01",
+            "Col_B_Hip_Rbbn_F_00"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 67,
+          "name": "Sp_Hi_CSkirt0_F_00",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 69,
+          "name": "Sp_Wa_Ribbon0_L_00",
+          "before": [
+            "Col_B_Chest_Rbbn_B",
+            "Col_B_Hip_Rbbn_B_00",
+            "Col_B_Elbow_L_Multi",
+            "Col_B_Arm_L_Multi",
+            "RuntimeTorso"
+          ],
+          "after": [
+            "Col_B_Arm_L_Multi",
+            "Col_B_Elbow_L_Multi",
+            "Col_B_Chest_Rbbn_B",
+            "Col_B_Hip_Rbbn_B_00"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 72,
+          "name": "Sp_Hi_CSkirt0_L_00",
+          "before": [
+            "Col_B_Thigh_L_Multi",
+            "Col_B_Hip_Skirt_LR",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Thigh_L_Multi",
+            "Col_B_Hip_Skirt_LR"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 74,
+          "name": "Sp_Hi_CSkirt0_R_00",
+          "before": [
+            "Col_B_Thigh_R_Multi",
+            "Col_B_Hip_Skirt_LR",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Thigh_R_Multi",
+            "Col_B_Hip_Skirt_LR"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 78,
+          "name": "Sp_El_Sleeve1_R_00",
+          "before": [
+            "Col_B_Elbow_R_Multi",
+            "Col_B_Hip_Slv_R",
+            "RuntimeTorso"
+          ],
+          "after": [
+            "Col_B_Elbow_R_Multi",
+            "Col_B_Hip_Slv_R"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 81,
+          "name": "Sp_Hi_CSkirt0_FR_00",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 83,
+          "name": "Sp_El_Sleeve1_L_00",
+          "before": [
+            "Col_B_Elbow_L_Multi",
+            "Col_B_Hip_Slv_L",
+            "RuntimeTorso"
+          ],
+          "after": [
+            "Col_B_Elbow_L_Multi",
+            "Col_B_Hip_Slv_L"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 86,
+          "name": "Sp_Hi_CSkirt0_BL_00",
+          "before": [
+            "Col_B_Thigh_L_Multi",
+            "Col_B_Hip_Skirt_BLR",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Thigh_L_Multi",
+            "Col_B_Hip_Skirt_BLR"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 91,
+          "name": "Sp_Hi_CSkirt1_FLL_00",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 94,
+          "name": "Sp_Wa_Ribbon1_L_00",
+          "before": [
+            "Col_B_Chest_Rbbn_B",
+            "Col_B_Hip_Rbbn_B_00",
+            "Col_B_Elbow_L_Multi",
+            "Col_B_Thigh_L_Multi",
+            "RuntimeTorso"
+          ],
+          "after": [
+            "Col_B_Thigh_L_Multi",
+            "Col_B_Chest_Rbbn_B",
+            "Col_B_Elbow_L_Multi",
+            "Col_B_Hip_Rbbn_B_00"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 95,
+          "name": "Sp_Wa_Ribbon1_L_01",
+          "before": [
+            "Col_B_Chest_Rbbn_B",
+            "Col_B_Hip_Rbbn_B_00",
+            "Col_B_Elbow_L_Multi",
+            "Col_B_Thigh_L_Multi",
+            "RuntimeTorso"
+          ],
+          "after": [
+            "Col_B_Thigh_L_Multi",
+            "Col_B_Chest_Rbbn_B",
+            "Col_B_Elbow_L_Multi",
+            "Col_B_Hip_Rbbn_B_00"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 96,
+          "name": "Sp_Wa_Ribbon1_L_02",
+          "before": [
+            "RuntimeTorso"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 97,
+          "name": "Sp_Hi_CSkirt0_B_00",
+          "before": [
+            "Col_B_Thigh_R_Multi",
+            "Col_B_Hip_Skirt_BLR",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Thigh_R_Multi",
+            "Col_B_Hip_Skirt_BLR"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 102,
+          "name": "Sp_Wa_Ribbon2_L_00",
+          "before": [
+            "Col_B_Hip_Rbbn_F_00",
+            "Col_B_Hip_Rbbn_F_01",
+            "Col_B_Thigh_L_Rbbn_F",
+            "RuntimeTorso"
+          ],
+          "after": [
+            "Col_B_Thigh_L_Rbbn_F",
+            "Col_B_Hip_Rbbn_F_01",
+            "Col_B_Hip_Rbbn_F_00"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 104,
+          "name": "Sp_Wa_Ribbon3_L_01",
+          "before": [
+            "RuntimeTorso"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 105,
+          "name": "Sp_Wa_Ribbon1_R_02",
+          "before": [
+            "RuntimeTorso"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 121,
+          "name": "Sp_Wa_Ribbon2_L_01",
+          "before": [
+            "RuntimeTorso"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 130,
+          "name": "Sp_He_Hair4_L_00",
+          "before": [
+            "Col_Head_Rear_L",
+            "Col_Chest_Shldr_B",
+            "Col_Arm_L_Hair",
+            "Col_Shoulder_L_Hair"
+          ],
+          "after": [
+            "Col_Shoulder_L_Hair",
+            "Col_Chest_Shldr_B",
+            "Col_Arm_L_Hair",
+            "Col_Head_Rear_L"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 131,
+          "name": "Sp_He_Hair3_L_00",
+          "before": [
+            "Col_Head_Side",
+            "Col_Arm_L_Hair",
+            "Col_Elbow_L_Hair"
+          ],
+          "after": [
+            "Col_Elbow_L_Hair",
+            "Col_Arm_L_Hair",
+            "Col_Head_Side"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 132,
+          "name": "Sp_He_Hair2_R_00",
+          "before": [
+            "Col_Head_Face_R_00",
+            "Col_Head_Hair_Block_R"
+          ],
+          "after": [
+            "Col_Head_Hair_Block_R",
+            "Col_Head_Face_R_00"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 133,
+          "name": "Sp_He_Hair1_R_00",
+          "before": [
+            "Col_Head_Face_R_02",
+            "Col_Head_Hair_Wall_F",
+            "Col_Chest_Hair_F",
+            "Col_Arm_R_Hair"
+          ],
+          "after": [
+            "Col_Chest_Hair_F",
+            "Col_Head_Hair_Wall_F",
+            "Col_Arm_R_Hair",
+            "Col_Head_Face_R_02"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 134,
+          "name": "Sp_He_Hair2_L_00",
+          "before": [
+            "Col_Head_Face_L_00",
+            "Col_Head_Hair_Block_L"
+          ],
+          "after": [
+            "Col_Head_Hair_Block_L",
+            "Col_Head_Face_L_00"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 135,
+          "name": "Sp_He_Hair2_L_01",
+          "before": [
+            "Col_Head_Face_L_01",
+            "Col_Chest_Hair_F",
+            "Col_Arm_L_Hair",
+            "Col_Shoulder_L_Hair"
+          ],
+          "after": [
+            "Col_Chest_Hair_F",
+            "Col_Shoulder_L_Hair",
+            "Col_Arm_L_Hair",
+            "Col_Head_Face_L_01"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 136,
+          "name": "Sp_He_Hair3_R_00",
+          "before": [
+            "Col_Head_Side",
+            "Col_Arm_R_Hair",
+            "Col_Elbow_R_Hair"
+          ],
+          "after": [
+            "Col_Elbow_R_Hair",
+            "Col_Arm_R_Hair",
+            "Col_Head_Side"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 137,
+          "name": "Sp_He_Hair3_R_01",
+          "before": [
+            "Col_Head_Round",
+            "Col_Arm_R_Hair",
+            "Col_Elbow_R_Hair",
+            "Col_Shoulder_R_Hair"
+          ],
+          "after": [
+            "Col_Shoulder_R_Hair",
+            "Col_Elbow_R_Hair",
+            "Col_Arm_R_Hair",
+            "Col_Head_Round"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 139,
+          "name": "Sp_He_Hair4_R_00",
+          "before": [
+            "Col_Head_Rear_R",
+            "Col_Chest_Shldr_B",
+            "Col_Arm_R_Hair",
+            "Col_Shoulder_R_Hair"
+          ],
+          "after": [
+            "Col_Shoulder_R_Hair",
+            "Col_Chest_Shldr_B",
+            "Col_Arm_R_Hair",
+            "Col_Head_Rear_R"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 142,
+          "name": "Sp_He_Hair4_C_00",
+          "before": [
+            "Col_Head_Rear_C",
+            "Col_Chest_Shldr_B"
+          ],
+          "after": [
+            "Col_Chest_Shldr_B",
+            "Col_Head_Rear_C"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 144,
+          "name": "Sp_He_Hair2_R_01",
+          "before": [
+            "Col_Head_Face_R_01",
+            "Col_Chest_Hair_F",
+            "Col_Arm_R_Hair",
+            "Col_Shoulder_R_Hair"
+          ],
+          "after": [
+            "Col_Chest_Hair_F",
+            "Col_Shoulder_R_Hair",
+            "Col_Arm_R_Hair",
+            "Col_Head_Face_R_01"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 145,
+          "name": "Sp_He_Hair3_L_01",
+          "before": [
+            "Col_Head_Round",
+            "Col_Arm_L_Hair",
+            "Col_Elbow_L_Hair",
+            "Col_Shoulder_L_Hair"
+          ],
+          "after": [
+            "Col_Shoulder_L_Hair",
+            "Col_Elbow_L_Hair",
+            "Col_Arm_L_Hair",
+            "Col_Head_Round"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 146,
+          "name": "Sp_He_Hair1_L_00",
+          "before": [
+            "Col_Head_Face_L_02",
+            "Col_Head_Hair_Wall_F",
+            "Col_Chest_Hair_F",
+            "Col_Arm_L_Hair"
+          ],
+          "after": [
+            "Col_Chest_Hair_F",
+            "Col_Head_Hair_Wall_F",
+            "Col_Arm_L_Hair",
+            "Col_Head_Face_L_02"
+          ],
+          "unresolved_original": []
+        }
+      ],
+      "physics_coefficients_and_colliders_unchanged": true
+    },
+    {
+      "id": 1052,
+      "target": "modding/runtime/fleet/1052/secondary.bin",
+      "candidate": "modding/staged-runtime/native-garment-contacts/1052/secondary.bin",
+      "before": "983baea66449065a611cd7151867ca306127383c6ec70fda85c99a0c3f0eaac2",
+      "after": "c4dbc5ee7a4c07abd2d4b6fa02d6908d36867827d0d9e6b1245031d9489ed799",
+      "bytes": 5200,
+      "changed_contacts": [
+        {
+          "bone": 16,
+          "name": "Sp_Ch_Jacket0_FR_00",
+          "before": [
+            "Col_B_Spine_Jacket_Side",
+            "Col_B_Hip_R_Jacket_FR",
+            "Col_B_Hip_Jacket_FR",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Spine_Jacket_Side",
+            "Col_B_Hip_Jacket_FR",
+            "Col_B_Hip_R_Jacket_FR",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "unresolved_original": [
+            "Col_B_Waist_Jacket_Side_00"
+          ]
+        },
+        {
+          "bone": 17,
+          "name": "Sp_Ch_Jacket0_FR_01",
+          "before": [
+            "Col_B_Hip_Jacket_F",
+            "Col_B_Waist_Jacket_FR",
+            "Col_B_Hip_R_Jacket_FR",
+            "Col_B_Thigh_R_Jacket",
+            "Col_B_Thigh_R_Jacket_FR",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Waist_Jacket_FR",
+            "Col_B_Hip_Jacket_F",
+            "Col_B_Hip_R_Jacket_FR",
+            "Col_B_Thigh_R_Jacket_FR",
+            "Col_B_Thigh_R_Jacket"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 18,
+          "name": "Sp_Ch_Jacket0_FL_00",
+          "before": [
+            "Col_B_Spine_Jacket_Side",
+            "Col_B_Hip_L_Jacket_FL",
+            "Col_B_Hip_Jacket_FL",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Spine_Jacket_Side",
+            "Col_B_Hip_Jacket_FL",
+            "Col_B_Hip_L_Jacket_FL",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "unresolved_original": [
+            "Col_B_Waist_Jacket_Side_00"
+          ]
+        },
+        {
+          "bone": 25,
+          "name": "Sp_Ch_Collar0_R_00",
+          "before": [
+            "Col_B_Head_Collar_R_00",
+            "Col_B_Head_Collar_B",
+            "Col_B_Arm_R_Coller",
+            "RuntimeTorso"
+          ],
+          "after": [
+            "Col_B_Arm_R_Coller",
+            "Col_B_Head_Collar_B",
+            "Col_B_Head_Collar_R_00"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 28,
+          "name": "Sp_Ch_Jacket0_R_00",
+          "before": [
+            "Col_B_Waist_Jacket_Side",
+            "Col_B_Waist_Jacket_R",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Waist_Jacket_R",
+            "Col_B_Waist_Jacket_Side",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "unresolved_original": [
+            "Col_B_Waist_Jacket_Side_00"
+          ]
+        },
+        {
+          "bone": 29,
+          "name": "Sp_Ch_Jacket0_R_01",
+          "before": [
+            "Col_B_Hip_Jacket_LR",
+            "Col_B_Waist_Jacket_Side",
+            "Col_B_Waist_Jacket_R",
+            "Col_B_Waist_Jacket_R_01",
+            "Col_B_Thigh_R_Jacket",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Waist_Jacket_R",
+            "Col_B_Waist_Jacket_Side",
+            "Col_B_Waist_Jacket_R_01",
+            "Col_B_Hip_Jacket_LR",
+            "Col_B_Thigh_R_Jacket"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 30,
+          "name": "Sp_Ch_Jacket0_R_02",
+          "before": [
+            "Col_B_Hip_Jacket_LR",
+            "Col_B_Waist_Jacket_Side",
+            "Col_B_Waist_Jacket_R",
+            "Col_B_Waist_Jacket_R_01",
+            "Col_B_Thigh_R_Jacket",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Waist_Jacket_R",
+            "Col_B_Waist_Jacket_Side",
+            "Col_B_Waist_Jacket_R_01",
+            "Col_B_Hip_Jacket_LR",
+            "Col_B_Thigh_R_Jacket"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 31,
+          "name": "Sp_Ch_Jacket0_B_00",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 32,
+          "name": "Sp_Ch_Jacket0_B_01",
+          "before": [
+            "Col_B_Hip_Jacket_B",
+            "Col_B_Waist_Jacket_B",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Waist_Jacket_B",
+            "Col_B_Hip_Jacket_B",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "unresolved_original": [
+            "Col_B_Waist_Jacket_Side_00"
+          ]
+        },
+        {
+          "bone": 34,
+          "name": "Sp_Ch_Jacket0_B_02",
+          "before": [
+            "Col_B_Hip_Jacket_B",
+            "Col_B_Waist_Jacket_B",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Waist_Jacket_B",
+            "Col_B_Hip_Jacket_B",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "unresolved_original": [
+            "Col_B_Waist_Jacket_Side_00"
+          ]
+        },
+        {
+          "bone": 37,
+          "name": "Sp_Ch_Jacket0_BL_00",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 38,
+          "name": "Sp_Ch_Jacket0_BL_01",
+          "before": [
+            "Col_B_Hip_Jacket_BL",
+            "Col_B_Waist_Jacket_BL",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Waist_Jacket_BL",
+            "Col_B_Hip_Jacket_BL",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "unresolved_original": [
+            "Col_B_Waist_Jacket_Side_00"
+          ]
+        },
+        {
+          "bone": 39,
+          "name": "Sp_Ch_Jacket0_FR_02",
+          "before": [
+            "Col_B_Hip_Jacket_F",
+            "Col_B_Waist_Jacket_FR",
+            "Col_B_Hip_R_Jacket_FR",
+            "Col_B_Thigh_R_Jacket",
+            "Col_B_Thigh_R_Jacket_FR",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Waist_Jacket_FR",
+            "Col_B_Hip_Jacket_F",
+            "Col_B_Hip_R_Jacket_FR",
+            "Col_B_Thigh_R_Jacket_FR",
+            "Col_B_Thigh_R_Jacket"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 42,
+          "name": "Sp_Ch_Jacket0_BR_00",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 43,
+          "name": "Sp_Ch_Jacket0_BR_01",
+          "before": [
+            "Col_B_Hip_Jacket_BR",
+            "Col_B_Waist_Jacket_BR",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Waist_Jacket_BR",
+            "Col_B_Hip_Jacket_BR",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "unresolved_original": [
+            "Col_B_Waist_Jacket_Side_00"
+          ]
+        },
+        {
+          "bone": 58,
+          "name": "Sp_Ch_Collar0_FR_00",
+          "before": [
+            "Col_B_Head_Collar_R_01",
+            "RuntimeTorso"
+          ],
+          "after": [
+            "Col_B_Head_Collar_R_01"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 59,
+          "name": "Sp_Ch_Jacket0_BL_02",
+          "before": [
+            "Col_B_Hip_Jacket_BL",
+            "Col_B_Waist_Jacket_BL",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Waist_Jacket_BL",
+            "Col_B_Hip_Jacket_BL",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "unresolved_original": [
+            "Col_B_Waist_Jacket_Side_00"
+          ]
+        },
+        {
+          "bone": 61,
+          "name": "Sp_Ch_Collar0_BR_00",
+          "before": [
+            "Col_B_Head_Collar_B",
+            "Col_B_Neck_Collar_Wall",
+            "RuntimeTorso"
+          ],
+          "after": [
+            "Col_B_Neck_Collar_Wall",
+            "Col_B_Head_Collar_B"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 64,
+          "name": "Sp_Ch_Collar0_B_00",
+          "before": [
+            "Col_B_Head_Collar_B",
+            "Col_B_Neck_Collar_Wall",
+            "RuntimeTorso"
+          ],
+          "after": [
+            "Col_B_Neck_Collar_Wall",
+            "Col_B_Head_Collar_B"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 66,
+          "name": "Sp_Ch_Collar0_FL_00",
+          "before": [
+            "Col_B_Head_Collar_L_01",
+            "RuntimeTorso"
+          ],
+          "after": [
+            "Col_B_Head_Collar_L_01"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 70,
+          "name": "Sp_Ch_Jacket0_L_00",
+          "before": [
+            "Col_B_Waist_Jacket_Side",
+            "Col_B_Waist_Jacket_L",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Waist_Jacket_L",
+            "Col_B_Waist_Jacket_Side",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "unresolved_original": [
+            "Col_B_Waist_Jacket_Side_00"
+          ]
+        },
+        {
+          "bone": 71,
+          "name": "Sp_Ch_Jacket0_L_01",
+          "before": [
+            "Col_B_Hip_Jacket_LR",
+            "Col_B_Waist_Jacket_Side",
+            "Col_B_Waist_Jacket_L",
+            "Col_B_Waist_Jacket_L_01",
+            "Col_B_Thigh_L_Jacket",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Waist_Jacket_L",
+            "Col_B_Waist_Jacket_Side",
+            "Col_B_Waist_Jacket_L_01",
+            "Col_B_Hip_Jacket_LR",
+            "Col_B_Thigh_L_Jacket"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 72,
+          "name": "Sp_Ch_Jacket0_L_02",
+          "before": [
+            "Col_B_Hip_Jacket_LR",
+            "Col_B_Waist_Jacket_Side",
+            "Col_B_Waist_Jacket_L",
+            "Col_B_Waist_Jacket_L_01",
+            "Col_B_Thigh_L_Jacket",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Waist_Jacket_L",
+            "Col_B_Waist_Jacket_Side",
+            "Col_B_Waist_Jacket_L_01",
+            "Col_B_Hip_Jacket_LR",
+            "Col_B_Thigh_L_Jacket"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 82,
+          "name": "Sp_Ch_Jacket0_FL_01",
+          "before": [
+            "Col_B_Hip_Jacket_F",
+            "Col_B_Waist_Jacket_FL",
+            "Col_B_Hip_L_Jacket_FL",
+            "Col_B_Thigh_L_Jacket",
+            "Col_B_Thigh_L_Jacket_FL",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Waist_Jacket_FL",
+            "Col_B_Hip_L_Jacket_FL",
+            "Col_B_Thigh_L_Jacket",
+            "Col_B_Thigh_L_Jacket_FL",
+            "Col_B_Hip_Jacket_F"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 84,
+          "name": "Sp_Ch_Jacket0_FRR_01",
+          "before": [
+            "Col_B_Hip_Jacket_F",
+            "Col_B_Hip_Jacket_FR",
+            "Col_B_Thigh_R_Jacket",
+            "Col_B_Thigh_R_Jacket_FRR",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_Jacket_F",
+            "Col_B_Hip_Jacket_FR",
+            "Col_B_Thigh_R_Jacket_FRR",
+            "Col_B_Thigh_R_Jacket",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "unresolved_original": [
+            "Col_B_Waist_Jacket_FRR"
+          ]
+        },
+        {
+          "bone": 85,
+          "name": "Sp_Ch_Jacket0_FRR_02",
+          "before": [
+            "Col_B_Hip_Jacket_F",
+            "Col_B_Waist_Jacket_Side",
+            "Col_B_Thigh_R_Jacket",
+            "Col_B_Thigh_R_Jacket_FRR",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Waist_Jacket_Side",
+            "Col_B_Hip_Jacket_F",
+            "Col_B_Thigh_R_Jacket_FRR",
+            "Col_B_Thigh_R_Jacket",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "unresolved_original": [
+            "Col_B_Waist_Jacket_FRR"
+          ]
+        },
+        {
+          "bone": 91,
+          "name": "Sp_Ch_Collar0_L_00",
+          "before": [
+            "Col_B_Head_Collar_L_00",
+            "Col_B_Head_Collar_B",
+            "Col_B_Arm_L_Coller",
+            "RuntimeTorso"
+          ],
+          "after": [
+            "Col_B_Arm_L_Coller",
+            "Col_B_Head_Collar_B",
+            "Col_B_Head_Collar_L_00"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 94,
+          "name": "Sp_Ch_Jacket0_BR_02",
+          "before": [
+            "Col_B_Hip_Jacket_BR",
+            "Col_B_Waist_Jacket_BR",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Waist_Jacket_BR",
+            "Col_B_Hip_Jacket_BR"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 98,
+          "name": "Sp_Ch_Collar0_BL_00",
+          "before": [
+            "Col_B_Head_Collar_B",
+            "Col_B_Neck_Collar_Wall",
+            "RuntimeTorso"
+          ],
+          "after": [
+            "Col_B_Neck_Collar_Wall",
+            "Col_B_Head_Collar_B"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 99,
+          "name": "Sp_Ch_Jacket0_FL_02",
+          "before": [
+            "Col_B_Hip_Jacket_F",
+            "Col_B_Waist_Jacket_FL",
+            "Col_B_Hip_L_Jacket_FL",
+            "Col_B_Thigh_L_Jacket",
+            "Col_B_Thigh_L_Jacket_FL",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Waist_Jacket_FL",
+            "Col_B_Hip_L_Jacket_FL",
+            "Col_B_Thigh_L_Jacket",
+            "Col_B_Thigh_L_Jacket_FL",
+            "Col_B_Hip_Jacket_F"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 100,
+          "name": "Sp_Ch_Jacket0_FL_03",
+          "before": [
+            "Col_B_Hip_Jacket_F",
+            "Col_B_Waist_Jacket_FL",
+            "Col_B_Hip_L_Jacket_FL",
+            "Col_B_Thigh_L_Jacket",
+            "Col_B_Thigh_L_Jacket_FL",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Waist_Jacket_FL",
+            "Col_B_Hip_Jacket_F",
+            "Col_B_Hip_L_Jacket_FL",
+            "Col_B_Thigh_L_Jacket",
+            "Col_B_Thigh_L_Jacket_FL"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 113,
+          "name": "Sp_Ch_Jacket0_FLL_02",
+          "before": [
+            "Col_B_Hip_Jacket_F",
+            "Col_B_Waist_Jacket_Side",
+            "Col_B_Thigh_L_Jacket",
+            "Col_B_Thigh_L_Jacket_FLL",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Waist_Jacket_Side",
+            "Col_B_Hip_Jacket_F",
+            "Col_B_Thigh_L_Jacket",
+            "Col_B_Thigh_L_Jacket_FLL",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "unresolved_original": [
+            "Col_B_Waist_Jacket_FLL"
+          ]
+        },
+        {
+          "bone": 124,
+          "name": "Sp_He_Hair2_R_00",
+          "before": [
+            "Col_Head_F10R",
+            "Col_Head_B_Hair",
+            "Col_Arm_R_Hair"
+          ],
+          "after": [
+            "Col_Head_B_Hair",
+            "Col_Arm_R_Hair",
+            "Col_Head_F10R"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 125,
+          "name": "Sp_He_Hair2_R_01",
+          "before": [
+            "Col_Head_F10R",
+            "Col_Head_B_Hair",
+            "Col_Chest_F_Sphr",
+            "Col_Arm_R_Hair"
+          ],
+          "after": [
+            "Col_Head_B_Hair",
+            "Col_Arm_R_Hair",
+            "Col_Chest_F_Sphr",
+            "Col_Head_F10R"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 126,
+          "name": "Sp_He_Hair2_R_02",
+          "before": [
+            "Col_Arm_R",
+            "Col_Head_F10R",
+            "Col_Chest_F_Sphr",
+            "Col_Chest_R_Sphr"
+          ],
+          "after": [
+            "Col_Chest_R_Sphr",
+            "Col_Chest_F_Sphr",
+            "Col_Arm_R",
+            "Col_Head_F10R"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 131,
+          "name": "Sp_He_Hair4_C_01",
+          "before": [
+            "Col_Chest_B_Hair",
+            "Col_Head_Back_Hair",
+            "Col_Arm_L",
+            "Col_Arm_R"
+          ],
+          "after": [
+            "Col_Chest_B_Hair",
+            "Col_Arm_L",
+            "Col_Arm_R",
+            "Col_Head_Back_Hair"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 132,
+          "name": "Sp_He_Hair4_C_02",
+          "before": [
+            "Col_Chest_B_Hair",
+            "Col_Head_Back_Hair",
+            "Col_Arm_L",
+            "Col_Arm_R"
+          ],
+          "after": [
+            "Col_Chest_B_Hair",
+            "Col_Arm_L",
+            "Col_Arm_R",
+            "Col_Head_Back_Hair"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 133,
+          "name": "Sp_He_Hair4_C_03",
+          "before": [
+            "Col_Chest_B_Hair",
+            "Col_Head_Back_Hair",
+            "Col_Arm_L",
+            "Col_Arm_R"
+          ],
+          "after": [
+            "Col_Chest_B_Hair",
+            "Col_Arm_L",
+            "Col_Arm_R",
+            "Col_Head_Back_Hair"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 134,
+          "name": "Sp_He_Hair4_C_04",
+          "before": [
+            "Col_Hip_B_Hair",
+            "Col_Chest_B_Hair",
+            "Col_Head_Back_Hair",
+            "Col_Arm_L",
+            "Col_Arm_R"
+          ],
+          "after": [
+            "Col_Hip_B_Hair",
+            "Col_Chest_B_Hair",
+            "Col_Arm_L",
+            "Col_Arm_R",
+            "Col_Head_Back_Hair"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 136,
+          "name": "Sp_He_Hair2_L_00",
+          "before": [
+            "Col_Head_F10L",
+            "Col_Head_B_Hair",
+            "Col_Arm_L_Hair"
+          ],
+          "after": [
+            "Col_Head_B_Hair",
+            "Col_Arm_L_Hair",
+            "Col_Head_F10L"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 137,
+          "name": "Sp_He_Hair2_L_01",
+          "before": [
+            "Col_Head_F10L",
+            "Col_Head_B_Hair",
+            "Col_Chest_F_Sphr",
+            "Col_Arm_L_Hair"
+          ],
+          "after": [
+            "Col_Head_B_Hair",
+            "Col_Arm_L_Hair",
+            "Col_Chest_F_Sphr",
+            "Col_Head_F10L"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 141,
+          "name": "Sp_He_Hair2_L_02",
+          "before": [
+            "Col_Arm_L",
+            "Col_Head_F10L",
+            "Col_Chest_F_Sphr",
+            "Col_Chest_L_Sphr"
+          ],
+          "after": [
+            "Col_Chest_L_Sphr",
+            "Col_Chest_F_Sphr",
+            "Col_Arm_L",
+            "Col_Head_F10L"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 147,
+          "name": "Sp_Hi_Tail0_B_00",
+          "before": [
+            "Col_B_Hip_Tail",
+            "Col_B_Chest_Tail"
+          ],
+          "after": [
+            "Col_B_Chest_Tail",
+            "Col_B_Hip_Tail"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 148,
+          "name": "Sp_Hi_Tail0_B_01",
+          "before": [
+            "Col_B_Hip_Tail",
+            "Col_B_Chest_Tail"
+          ],
+          "after": [
+            "Col_B_Chest_Tail",
+            "Col_B_Hip_Tail"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 149,
+          "name": "Sp_Hi_Tail0_B_02",
+          "before": [
+            "Col_B_Hip_Tail",
+            "Col_B_Chest_Tail"
+          ],
+          "after": [
+            "Col_B_Chest_Tail",
+            "Col_B_Hip_Tail"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 150,
+          "name": "Sp_Hi_Tail0_B_03",
+          "before": [
+            "Col_B_Hip_Tail",
+            "Col_B_Chest_Tail"
+          ],
+          "after": [
+            "Col_B_Chest_Tail",
+            "Col_B_Hip_Tail"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 151,
+          "name": "Sp_Hi_Tail0_B_04",
+          "before": [
+            "Col_B_Hip_Tail",
+            "Col_B_Chest_Tail"
+          ],
+          "after": [
+            "Col_B_Chest_Tail",
+            "Col_B_Hip_Tail"
+          ],
+          "unresolved_original": []
+        }
+      ],
+      "physics_coefficients_and_colliders_unchanged": true
+    },
+    {
+      "id": 1032,
+      "target": "modding/runtime/fleet/1032/secondary.bin",
+      "candidate": "modding/staged-runtime/native-garment-contacts/1032/secondary.bin",
+      "before": "a9bd0c6adba779f0c0fd77032e1be97aac816f4e58f90c2640672fdf719dbfc6",
+      "after": "4d473489afefe99d88334d7b4a48d8deba851c91b9399ce37fb16cabac173041",
+      "bytes": 4388,
+      "changed_contacts": [
+        {
+          "bone": 7,
+          "name": "Sp_Hi_Tail0_B_00",
+          "before": [
+            "Col_B_Hip_Tail",
+            "Col_B_Chest_Tail"
+          ],
+          "after": [
+            "Col_B_Chest_Tail",
+            "Col_B_Hip_Tail"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 8,
+          "name": "Sp_Hi_Tail0_B_01",
+          "before": [
+            "Col_B_Hip_Tail",
+            "Col_B_Chest_Tail"
+          ],
+          "after": [
+            "Col_B_Chest_Tail",
+            "Col_B_Hip_Tail"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 9,
+          "name": "Sp_Hi_Tail0_B_02",
+          "before": [
+            "Col_B_Hip_Tail",
+            "Col_B_Chest_Tail"
+          ],
+          "after": [
+            "Col_B_Chest_Tail",
+            "Col_B_Hip_Tail"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 10,
+          "name": "Sp_Hi_Tail0_B_03",
+          "before": [
+            "Col_B_Hip_Tail",
+            "Col_B_Chest_Tail"
+          ],
+          "after": [
+            "Col_B_Chest_Tail",
+            "Col_B_Hip_Tail"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 11,
+          "name": "Sp_Hi_Tail0_B_04",
+          "before": [
+            "Col_B_Hip_Tail",
+            "Col_B_Chest_Tail"
+          ],
+          "after": [
+            "Col_B_Chest_Tail",
+            "Col_B_Hip_Tail"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 20,
+          "name": "Sp_He_Hair2_R_00",
+          "before": [
+            "Col_Head_FlipHair",
+            "Col_Head_Face_R_00",
+            "Col_Head_FrontWall"
+          ],
+          "after": [
+            "Col_Head_FlipHair",
+            "Col_Head_FrontWall",
+            "Col_Head_Face_R_00"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 21,
+          "name": "Sp_He_Hair5_L_00",
+          "before": [
+            "Col_Head_FlipHair",
+            "Col_Head_Rear",
+            "Col_Chest_Shldr_B",
+            "Col_Arm_L_Hair"
+          ],
+          "after": [
+            "Col_Head_FlipHair",
+            "Col_Chest_Shldr_B",
+            "Col_Arm_L_Hair",
+            "Col_Head_Rear"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 26,
+          "name": "Sp_He_Hair2_R_01",
+          "before": [
+            "Col_Head_Face_R_01",
+            "Col_Head_FrontWall",
+            "Col_Chest_Hair_F",
+            "Col_Arm_R_Hair"
+          ],
+          "after": [
+            "Col_Chest_Hair_F",
+            "Col_Head_FrontWall",
+            "Col_Arm_R_Hair",
+            "Col_Head_Face_R_01"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 30,
+          "name": "Sp_He_Hair2_L_00",
+          "before": [
+            "Col_Head_FlipHair",
+            "Col_Head_Face_L_00",
+            "Col_Head_FrontWall"
+          ],
+          "after": [
+            "Col_Head_FlipHair",
+            "Col_Head_FrontWall",
+            "Col_Head_Face_L_00"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 31,
+          "name": "Sp_He_Hair2_L_01",
+          "before": [
+            "Col_Head_Face_L_01",
+            "Col_Head_FrontWall",
+            "Col_Chest_Hair_F",
+            "Col_Arm_L_Hair"
+          ],
+          "after": [
+            "Col_Chest_Hair_F",
+            "Col_Head_FrontWall",
+            "Col_Arm_L_Hair",
+            "Col_Head_Face_L_01"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 40,
+          "name": "Sp_He_Hair5_R_00",
+          "before": [
+            "Col_Head_FlipHair",
+            "Col_Head_Rear",
+            "Col_Chest_Shldr_B",
+            "Col_Arm_R_Hair"
+          ],
+          "after": [
+            "Col_Head_FlipHair",
+            "Col_Chest_Shldr_B",
+            "Col_Arm_R_Hair",
+            "Col_Head_Rear"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 53,
+          "name": "Sp_Hi_CSkirt0_BL_00",
+          "before": [
+            "Col_B_Hip_CSkirt_BC",
+            "Col_B_Hip_CSkirt_BL",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_CSkirt_BC",
+            "Col_B_Hip_CSkirt_BL"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 54,
+          "name": "Sp_Hi_CSkirt0_R_00",
+          "before": [
+            "Col_B_Hip_CSkirt_R",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_CSkirt_R"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 55,
+          "name": "Sp_Hi_CSkirt0_R_01",
+          "before": [
+            "Col_B_Hip_CSkirt_R",
+            "Col_B_Knee_R_CSkirt",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_CSkirt_R",
+            "Col_B_Knee_R_CSkirt"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 62,
+          "name": "Sp_Hi_CSkirt0_FLL_00",
+          "before": [
+            "Col_B_Hip_CSkirt_L",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_CSkirt_L"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 67,
+          "name": "Sp_Ch_Collor_R_00",
+          "before": [
+            "Col_B_Chest_Collor",
+            "RuntimeTorso"
+          ],
+          "after": [
+            "Col_B_Chest_Collor"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 69,
+          "name": "Sp_Th_Acc0_L_00",
+          "before": [
+            "Col_B_Thigh_L_Acc",
+            "RuntimeTorso"
+          ],
+          "after": [
+            "Col_B_Thigh_L_Acc"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 71,
+          "name": "Sp_El_Sleeve0_R_00",
+          "before": [
+            "Col_B_Head_Slv",
+            "Col_B_Wrist_L_Slv_R",
+            "Col_B_Waist_Slv_Side",
+            "Col_B_Hip_Slv_Side",
+            "Col_B_Elbow_R_Sleeve0_R",
+            "RuntimeTorso"
+          ],
+          "after": [
+            "Col_B_Waist_Slv_Side",
+            "Col_B_Elbow_R_Sleeve0_R",
+            "Col_B_Hip_Slv_Side",
+            "Col_B_Wrist_L_Slv_R",
+            "Col_B_Head_Slv"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 72,
+          "name": "Sp_Hi_CSkirt0_FRR_00",
+          "before": [
+            "Col_B_Hip_CSkirt_R",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_CSkirt_R"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 73,
+          "name": "Sp_Hi_CSkirt0_FRR_01",
+          "before": [
+            "Col_B_Hip_CSkirt_R",
+            "Col_B_Knee_R_CSkirt",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_CSkirt_R",
+            "Col_B_Knee_R_CSkirt"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 77,
+          "name": "Sp_Hi_CSkirt0_L_00",
+          "before": [
+            "Col_B_Hip_CSkirt_L",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_CSkirt_L"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 78,
+          "name": "Sp_Hi_CSkirt0_L_01",
+          "before": [
+            "Col_B_Hip_CSkirt_L",
+            "Col_B_Knee_L_CSkirt",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_CSkirt_L",
+            "Col_B_Knee_L_CSkirt"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 79,
+          "name": "Sp_Hi_CSkirt0_L_02",
+          "before": [
+            "Col_B_Knee_L_CSkirt",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Knee_L_CSkirt"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 80,
+          "name": "Sp_Hi_CSkirt0_L_03",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 83,
+          "name": "Sp_Hi_CSkirt0_BR_00",
+          "before": [
+            "Col_B_Hip_CSkirt_BC",
+            "Col_B_Hip_CSkirt_BR",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_CSkirt_BC",
+            "Col_B_Hip_CSkirt_BR"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 84,
+          "name": "Sp_Hi_CSkirt0_BR_01",
+          "before": [
+            "Col_B_Knee_R_CSkirt",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Knee_R_CSkirt"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 85,
+          "name": "Sp_Hi_CSkirt0_BR_02",
+          "before": [
+            "Col_B_Knee_R_CSkirt",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Knee_R_CSkirt"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 86,
+          "name": "Sp_Hi_CSkirt0_BR_03",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 87,
+          "name": "Sp_Ch_Collor_L_00",
+          "before": [
+            "Col_B_Chest_Collor",
+            "RuntimeTorso"
+          ],
+          "after": [
+            "Col_B_Chest_Collor"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 89,
+          "name": "Sp_Th_Acc0_R_00",
+          "before": [
+            "Col_B_Thigh_R_Acc",
+            "RuntimeTorso"
+          ],
+          "after": [
+            "Col_B_Thigh_R_Acc"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 93,
+          "name": "Sp_Hi_CSkirt0_FLL_01",
+          "before": [
+            "Col_B_Hip_CSkirt_L",
+            "Col_B_Knee_L_CSkirt",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_CSkirt_L",
+            "Col_B_Knee_L_CSkirt"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 94,
+          "name": "Sp_Hi_CSkirt0_FLL_02",
+          "before": [
+            "Col_B_Knee_L_CSkirt",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Knee_L_CSkirt"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 95,
+          "name": "Sp_Hi_CSkirt0_FLL_03",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 97,
+          "name": "Sp_Hi_CSkirt0_BL_01",
+          "before": [
+            "Col_B_Knee_L_CSkirt",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Knee_L_CSkirt"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 98,
+          "name": "Sp_Hi_CSkirt0_BL_02",
+          "before": [
+            "Col_B_Knee_L_CSkirt",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Knee_L_CSkirt"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 99,
+          "name": "Sp_El_Sleeve0_L_00",
+          "before": [
+            "Col_B_Head_Slv",
+            "Col_B_Wrist_R_Slv_L",
+            "Col_B_Waist_Slv_Side",
+            "Col_B_Hip_Slv_Side",
+            "Col_B_Elbow_L_Sleeve0_L",
+            "RuntimeTorso"
+          ],
+          "after": [
+            "Col_B_Waist_Slv_Side",
+            "Col_B_Elbow_L_Sleeve0_L",
+            "Col_B_Hip_Slv_Side",
+            "Col_B_Wrist_R_Slv_L",
+            "Col_B_Head_Slv"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 100,
+          "name": "Sp_El_Sleeve0_L_01",
+          "before": [
+            "Col_B_Head_Slv",
+            "Col_B_Wrist_R_Slv_L",
+            "Col_B_Waist_Slv_Side",
+            "Col_B_Hip_Slv_Side",
+            "RuntimeTorso"
+          ],
+          "after": [
+            "Col_B_Waist_Slv_Side",
+            "Col_B_Hip_Slv_Side",
+            "Col_B_Wrist_R_Slv_L",
+            "Col_B_Head_Slv"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 101,
+          "name": "Sp_El_Sleeve0_L_02",
+          "before": [
+            "Col_B_Head_Slv",
+            "Col_B_Wrist_R_Slv_L",
+            "Col_B_Waist_Slv_Side",
+            "Col_B_Hip_Slv_Side",
+            "RuntimeTorso"
+          ],
+          "after": [
+            "Col_B_Waist_Slv_Side",
+            "Col_B_Hip_Slv_Side",
+            "Col_B_Wrist_R_Slv_L",
+            "Col_B_Head_Slv"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 103,
+          "name": "Sp_El_Sleeve0_R_01",
+          "before": [
+            "Col_B_Head_Slv",
+            "Col_B_Wrist_L_Slv_R",
+            "Col_B_Waist_Slv_Side",
+            "Col_B_Hip_Slv_Side",
+            "RuntimeTorso"
+          ],
+          "after": [
+            "Col_B_Waist_Slv_Side",
+            "Col_B_Hip_Slv_Side",
+            "Col_B_Wrist_L_Slv_R",
+            "Col_B_Head_Slv"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 104,
+          "name": "Sp_Hi_CSkirt0_BL_03",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 105,
+          "name": "Sp_Ch_Tie0_F_00",
+          "before": [
+            "Col_B_Chest_Acc_F_00",
+            "RuntimeTorso"
+          ],
+          "after": [
+            "Col_B_Chest_Acc_F_00"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 109,
+          "name": "Sp_Hi_CSkirt0_R_02",
+          "before": [
+            "Col_B_Knee_R_CSkirt",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Knee_R_CSkirt"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 110,
+          "name": "Sp_Hi_CSkirt0_R_03",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 119,
+          "name": "Sp_Ch_Tie0_F_01",
+          "before": [
+            "Col_B_Chest_Acc_F_00",
+            "RuntimeTorso"
+          ],
+          "after": [
+            "Col_B_Chest_Acc_F_00"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 122,
+          "name": "Sp_Hi_CSkirt0_FRR_02",
+          "before": [
+            "Col_B_Knee_R_CSkirt",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Knee_R_CSkirt"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 140,
+          "name": "Sp_Hi_CSkirt0_FRR_03",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 144,
+          "name": "Sp_El_Sleeve0_R_02",
+          "before": [
+            "Col_B_Head_Slv",
+            "Col_B_Wrist_L_Slv_R",
+            "Col_B_Waist_Slv_Side",
+            "Col_B_Hip_Slv_Side",
+            "RuntimeTorso"
+          ],
+          "after": [
+            "Col_B_Waist_Slv_Side",
+            "Col_B_Hip_Slv_Side",
+            "Col_B_Wrist_L_Slv_R",
+            "Col_B_Head_Slv"
+          ],
+          "unresolved_original": []
+        }
+      ],
+      "physics_coefficients_and_colliders_unchanged": true
+    },
+    {
+      "id": 1062,
+      "target": "modding/runtime/fleet/1062/secondary.bin",
+      "candidate": "modding/staged-runtime/native-garment-contacts/1062/secondary.bin",
+      "before": "0208793c2dee8d908645863f0acd6900eb3cf98482e92bbea2af3e2e500c1a82",
+      "after": "b098c0e14a7dc76a822902b6a6188ca27ce5fa0cc8f8f22a26e5e0116080f5df",
+      "bytes": 5380,
+      "changed_contacts": [
+        {
+          "bone": 7,
+          "name": "Sp_Hi_Tail0_B_00",
+          "before": [
+            "Col_B_Hip_Tail",
+            "Col_B_Chest_Tail"
+          ],
+          "after": [
+            "Col_B_Chest_Tail",
+            "Col_B_Hip_Tail"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 8,
+          "name": "Sp_Hi_Tail0_B_01",
+          "before": [
+            "Col_B_Hip_Tail",
+            "Col_B_Chest_Tail"
+          ],
+          "after": [
+            "Col_B_Chest_Tail",
+            "Col_B_Hip_Tail"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 9,
+          "name": "Sp_Hi_Tail0_B_02",
+          "before": [
+            "Col_B_Hip_Tail",
+            "Col_B_Chest_Tail"
+          ],
+          "after": [
+            "Col_B_Chest_Tail",
+            "Col_B_Hip_Tail"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 10,
+          "name": "Sp_Hi_Tail0_B_03",
+          "before": [
+            "Col_B_Hip_Tail",
+            "Col_B_Chest_Tail"
+          ],
+          "after": [
+            "Col_B_Chest_Tail",
+            "Col_B_Hip_Tail"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 11,
+          "name": "Sp_Hi_Tail0_B_04",
+          "before": [
+            "Col_B_Hip_Tail",
+            "Col_B_Chest_Tail"
+          ],
+          "after": [
+            "Col_B_Chest_Tail",
+            "Col_B_Hip_Tail"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 20,
+          "name": "Sp_Hi_MSkirt0_FR_00",
+          "before": [
+            "Col_B_Hip_Skirt_Flip",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_Skirt_Flip"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 24,
+          "name": "Sp_Ch_Mantle0_BL_00",
+          "before": [
+            "Col_B_Chest_B_Hood0",
+            "Col_B_Hip_Mant_Block_01",
+            "Col_B_Elbow_L_Mant",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Elbow_L_Mant",
+            "Col_B_Hip_Mant_Block_01",
+            "Col_B_Chest_B_Hood0"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 25,
+          "name": "Sp_Ch_Mantle0_BL_01",
+          "before": [
+            "Col_B_Hip_Mant_Block_02",
+            "Col_B_Hip_Mant_BL",
+            "Col_B_Elbow_L_Mant",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_Mant_Block_02",
+            "Col_B_Elbow_L_Mant",
+            "Col_B_Hip_Mant_BL"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 26,
+          "name": "Sp_Ch_Mantle0_BL_02",
+          "before": [
+            "Col_B_Hip_Mant_Block_02",
+            "Col_B_Hip_Mant_BL",
+            "Col_B_Elbow_L_Mant",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_Mant_Block_02",
+            "Col_B_Elbow_L_Mant",
+            "Col_B_Hip_Mant_BL"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 27,
+          "name": "Sp_Ch_Mantle0_BL_03",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 31,
+          "name": "Sp_Ch_Mantle0_BR_00",
+          "before": [
+            "Col_B_Chest_B_Hood0",
+            "Col_B_Hip_Mant_R01",
+            "Col_B_Hip_Mant_Block_01",
+            "Col_B_Elbow_R_Mant",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_Mant_R01",
+            "Col_B_Elbow_R_Mant",
+            "Col_B_Hip_Mant_Block_01",
+            "Col_B_Chest_B_Hood0"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 32,
+          "name": "Sp_Ch_Mantle0_BR_01",
+          "before": [
+            "Col_B_Hip_Mant_Block_02",
+            "Col_B_Hip_Mant_BR",
+            "Col_B_Elbow_R_Mant",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_Mant_Block_02",
+            "Col_B_Elbow_R_Mant",
+            "Col_B_Hip_Mant_BR"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 33,
+          "name": "Sp_Ch_Mantle0_BR_02",
+          "before": [
+            "Col_B_Hip_Mant_Block_02",
+            "Col_B_Hip_Mant_BR",
+            "Col_B_Elbow_R_Mant",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_Mant_Block_02",
+            "Col_B_Elbow_R_Mant",
+            "Col_B_Hip_Mant_BR"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 34,
+          "name": "Sp_Ch_Mantle0_BR_03",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 35,
+          "name": "Sp_Hi_MSkirt0_FL_00",
+          "before": [
+            "Col_B_Hip_Skirt_Flip",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_Skirt_Flip"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 36,
+          "name": "Sp_Hi_MSkirt0_FL_01",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 39,
+          "name": "Sp_Ao_Sleeve_R_00",
+          "before": [
+            "RuntimeTorso"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 41,
+          "name": "Sp_Hi_MSkirt0_BL_00",
+          "before": [
+            "Col_B_Hip_Skirt_BL",
+            "Col_B_Hip_Skirt_Flip",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_Skirt_Flip",
+            "Col_B_Hip_Skirt_BL"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 45,
+          "name": "Sp_Hi_MSkirt0_L_00",
+          "before": [
+            "Col_B_Hip_Skirt_BL",
+            "Col_B_Hip_Skirt_Flip",
+            "Col_B_Thigh_L_Skirt",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_Skirt_Flip",
+            "Col_B_Thigh_L_Skirt",
+            "Col_B_Hip_Skirt_BL"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 46,
+          "name": "Sp_Hi_MSkirt0_L_01",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 49,
+          "name": "Sp_Hi_MSkirt0_R_00",
+          "before": [
+            "Col_B_Hip_Skirt_BR",
+            "Col_B_Hip_Skirt_Flip",
+            "Col_B_Thigh_R_Skirt",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_Skirt_Flip",
+            "Col_B_Thigh_R_Skirt",
+            "Col_B_Hip_Skirt_BR"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 50,
+          "name": "Sp_Hi_MSkirt0_R_01",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 53,
+          "name": "Sp_Ao_Sleeve_L_00",
+          "before": [
+            "RuntimeTorso"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 54,
+          "name": "Sp_Ch_Mantle0_L_00",
+          "before": [
+            "Col_B_Spine_Mant_L",
+            "Col_B_Hip_Mant_Block_01",
+            "Col_B_Elbow_L_Mant_00",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Elbow_L_Mant_00",
+            "Col_B_Hip_Mant_Block_01",
+            "Col_B_Spine_Mant_L"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 55,
+          "name": "Sp_Ch_Mantle0_L_01",
+          "before": [
+            "Col_B_Hip_Mant_BL",
+            "Col_B_Elbow_L_Mant",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Elbow_L_Mant",
+            "Col_B_Hip_Mant_BL"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 56,
+          "name": "Sp_Ch_Mantle0_L_02",
+          "before": [
+            "Col_B_Hip_Mant_BL",
+            "Col_B_Elbow_L_Mant",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Elbow_L_Mant",
+            "Col_B_Hip_Mant_BL"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 57,
+          "name": "Sp_Ch_Mantle0_L_03",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 58,
+          "name": "Sp_Ch_Hood0_B_00",
+          "before": [
+            "Col_B_Chest_B_Hood0",
+            "RuntimeTorso"
+          ],
+          "after": [
+            "Col_B_Chest_B_Hood0"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 59,
+          "name": "Sp_Hi_MSkirt0_FRR_00",
+          "before": [
+            "Col_B_Hip_Skirt_Flip",
+            "Col_B_Thigh_R_Skirt",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_Skirt_Flip",
+            "Col_B_Thigh_R_Skirt"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 66,
+          "name": "Sp_Hi_MSkirt0_FLL_00",
+          "before": [
+            "Col_B_Hip_Skirt_Flip",
+            "Col_B_Thigh_L_Skirt",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_Skirt_Flip",
+            "Col_B_Thigh_L_Skirt"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 67,
+          "name": "Sp_Hi_MSkirt0_FLL_01",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 69,
+          "name": "Sp_Hi_MSkirt0_F_00",
+          "before": [
+            "Col_B_Hip_Skirt_Flip",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_Skirt_Flip"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 75,
+          "name": "Sp_Ch_Mantle0_R_00",
+          "before": [
+            "Col_B_Spine_Mant_R",
+            "Col_B_Hip_Mant_R01",
+            "Col_B_Hip_Mant_Block_01",
+            "Col_B_Elbow_R_Mant_00",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_Mant_R01",
+            "Col_B_Elbow_R_Mant_00",
+            "Col_B_Hip_Mant_Block_01",
+            "Col_B_Spine_Mant_R"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 76,
+          "name": "Sp_Ch_Mantle0_R_01",
+          "before": [
+            "Col_B_Hip_Mant_BR",
+            "Col_B_Elbow_R_Mant",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Elbow_R_Mant",
+            "Col_B_Hip_Mant_BR"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 77,
+          "name": "Sp_Ch_Mantle0_R_02",
+          "before": [
+            "Col_B_Hip_Mant_BR",
+            "Col_B_Elbow_R_Mant",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Elbow_R_Mant",
+            "Col_B_Hip_Mant_BR"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 78,
+          "name": "Sp_Ch_Mantle0_R_03",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 88,
+          "name": "Sp_Hi_MSkirt0_FR_01",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 89,
+          "name": "Sp_Hi_MSkirt0_B_00",
+          "before": [
+            "Col_B_Hip_Skirt_B",
+            "Col_B_Hip_Skirt_Flip",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_Skirt_Flip",
+            "Col_B_Hip_Skirt_B"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 90,
+          "name": "Sp_Hi_MSkirt0_F_01",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 93,
+          "name": "Sp_Ch_Ribbon0_F_00",
+          "before": [
+            "Col_B_Chest_Ribbon",
+            "RuntimeTorso"
+          ],
+          "after": [
+            "Col_B_Chest_Ribbon"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 95,
+          "name": "Sp_Hi_MSkirt0_BL_01",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 96,
+          "name": "Sp_Hi_MSkirt0_BR_00",
+          "before": [
+            "Col_B_Hip_Skirt_BR",
+            "Col_B_Hip_Skirt_Flip",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_Skirt_Flip",
+            "Col_B_Hip_Skirt_BR"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 97,
+          "name": "Sp_Hi_MSkirt0_BR_01",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 99,
+          "name": "Sp_Hi_MSkirt1_F_00",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 100,
+          "name": "Sp_Hi_MSkirt1_F_01",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 110,
+          "name": "Sp_Ch_Ribbon0_F_01",
+          "before": [
+            "Col_B_Chest_Ribbon",
+            "RuntimeTorso"
+          ],
+          "after": [
+            "Col_B_Chest_Ribbon"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 112,
+          "name": "Sp_Hi_MSkirt0_FRR_01",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 115,
+          "name": "Sp_Hi_MSkirt0_B_01",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 119,
+          "name": "Sp_Hi_MSkirt1_R_00",
+          "before": [
+            "Col_B_Hip_Acc_00",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_Acc_00"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 127,
+          "name": "Sp_He_Hair2_L_00",
+          "before": [
+            "Col_Head_Top_guard",
+            "Col_Head_Face_L",
+            "Col_Head_Hair_B",
+            "Col_Chest_Hair_F",
+            "Col_Arm_L_Hair_00"
+          ],
+          "after": [
+            "Col_Chest_Hair_F",
+            "Col_Head_Top_guard",
+            "Col_Arm_L_Hair_00",
+            "Col_Head_Hair_B",
+            "Col_Head_Face_L"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 129,
+          "name": "Sp_He_Ribbon0_R_00",
+          "before": [
+            "Col_Chest_Ribbon_B",
+            "Col_Hip_Ribbon_B"
+          ],
+          "after": [
+            "Col_Hip_Ribbon_B",
+            "Col_Chest_Ribbon_B"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 131,
+          "name": "Sp_He_Hair2_R_00",
+          "before": [
+            "Col_Head_Top_guard",
+            "Col_Head_Face_R",
+            "Col_Head_Hair_B",
+            "Col_Chest_Hair_F",
+            "Col_Arm_R_Hair_00"
+          ],
+          "after": [
+            "Col_Chest_Hair_F",
+            "Col_Head_Top_guard",
+            "Col_Arm_R_Hair_00",
+            "Col_Head_Hair_B",
+            "Col_Head_Face_R"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 132,
+          "name": "Sp_He_Hair2_R_01",
+          "before": [
+            "Col_Head_Face_R",
+            "Col_Chest_Hair_F",
+            "Col_Arm_R_Hair_01",
+            "Col_Elbow_R_Hair_00",
+            "Col_Wrist_L_Hair_00"
+          ],
+          "after": [
+            "Col_Chest_Hair_F",
+            "Col_Wrist_L_Hair_00",
+            "Col_Elbow_R_Hair_00",
+            "Col_Arm_R_Hair_01",
+            "Col_Head_Face_R"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 133,
+          "name": "Sp_He_Hair2_R_02",
+          "before": [
+            "Col_Chest_Hair_F_01",
+            "Col_Chest_Hair_FR",
+            "Col_Arm_R_Hair_01",
+            "Col_Elbow_R_Hair_00",
+            "Col_Wrist_L_Hair_00"
+          ],
+          "after": [
+            "Col_Chest_Hair_F_01",
+            "Col_Wrist_L_Hair_00",
+            "Col_Chest_Hair_FR",
+            "Col_Elbow_R_Hair_00",
+            "Col_Arm_R_Hair_01"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 134,
+          "name": "Sp_He_Hair4_L_00",
+          "before": [
+            "Col_Chest_Shldr_F",
+            "Col_Chest_Hair_B",
+            "Col_Chest_Root_B",
+            "Col_Arm_L_Hair_01"
+          ],
+          "after": [
+            "Col_Chest_Hair_B",
+            "Col_Chest_Root_B",
+            "Col_Arm_L_Hair_01",
+            "Col_Chest_Shldr_F"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 135,
+          "name": "Sp_He_Hair4_R_00",
+          "before": [
+            "Col_Chest_Shldr_F",
+            "Col_Chest_Hair_B",
+            "Col_Chest_Root_B",
+            "Col_Arm_R_Hair_01"
+          ],
+          "after": [
+            "Col_Chest_Hair_B",
+            "Col_Chest_Root_B",
+            "Col_Arm_R_Hair_01",
+            "Col_Chest_Shldr_F"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 136,
+          "name": "Sp_He_Ribbon0_L_00",
+          "before": [
+            "Col_Chest_Ribbon_B",
+            "Col_Hip_Ribbon_B"
+          ],
+          "after": [
+            "Col_Hip_Ribbon_B",
+            "Col_Chest_Ribbon_B"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 137,
+          "name": "Sp_He_Ribbon0_L_01",
+          "before": [
+            "Col_Chest_Ribbon_B",
+            "Col_Hip_Ribbon_B"
+          ],
+          "after": [
+            "Col_Hip_Ribbon_B",
+            "Col_Chest_Ribbon_B"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 138,
+          "name": "Sp_He_Ribbon0_L_02",
+          "before": [
+            "Col_Chest_Ribbon_B",
+            "Col_Hip_Ribbon_B"
+          ],
+          "after": [
+            "Col_Hip_Ribbon_B",
+            "Col_Chest_Ribbon_B"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 139,
+          "name": "Sp_He_Ribbon0_R_01",
+          "before": [
+            "Col_Chest_Ribbon_B",
+            "Col_Hip_Ribbon_B"
+          ],
+          "after": [
+            "Col_Hip_Ribbon_B",
+            "Col_Chest_Ribbon_B"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 140,
+          "name": "Sp_He_Ribbon0_R_02",
+          "before": [
+            "Col_Chest_Ribbon_B",
+            "Col_Hip_Ribbon_B"
+          ],
+          "after": [
+            "Col_Hip_Ribbon_B",
+            "Col_Chest_Ribbon_B"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 144,
+          "name": "Sp_He_Hair2_L_01",
+          "before": [
+            "Col_Head_Face_L",
+            "Col_Chest_Hair_F",
+            "Col_Arm_L_Hair_01",
+            "Col_Elbow_L_Hair_00",
+            "Col_Wrist_R_Hair_00"
+          ],
+          "after": [
+            "Col_Chest_Hair_F",
+            "Col_Wrist_R_Hair_00",
+            "Col_Elbow_L_Hair_00",
+            "Col_Arm_L_Hair_01",
+            "Col_Head_Face_L"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 149,
+          "name": "Sp_He_Hair2_L_02",
+          "before": [
+            "Col_Chest_Hair_F_01",
+            "Col_Chest_Hair_FL",
+            "Col_Arm_L_Hair_01",
+            "Col_Elbow_L_Hair_00",
+            "Col_Wrist_R_Hair_00"
+          ],
+          "after": [
+            "Col_Chest_Hair_F_01",
+            "Col_Wrist_R_Hair_00",
+            "Col_Chest_Hair_FL",
+            "Col_Elbow_L_Hair_00",
+            "Col_Arm_L_Hair_01"
+          ],
+          "unresolved_original": []
+        }
+      ],
+      "physics_coefficients_and_colliders_unchanged": true
+    },
+    {
+      "id": 1015,
+      "target": "modding/runtime/fleet/1015/secondary.bin",
+      "candidate": "modding/staged-runtime/native-garment-contacts/1015/secondary.bin",
+      "before": "172e7bbca88dbb12e410d273314e7bebba0b4d08a5e9f2e9bd06fc621665c44e",
+      "after": "91fece1602f977c8c9232e550f348c309c998cdab063c5d7296781654b6158de",
+      "bytes": 4000,
+      "changed_contacts": [
+        {
+          "bone": 10,
+          "name": "Sp_Ch_Mantle0_L_00",
+          "before": [
+            "Col_B_Chest_Mant_B_00",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Chest_Mant_B_00"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 11,
+          "name": "Sp_Ch_Mantle0_L_01",
+          "before": [
+            "Col_B_Chest_Mant_B_00",
+            "Col_B_Elbow_L_Mant",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Chest_Mant_B_00",
+            "Col_B_Elbow_L_Mant"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 23,
+          "name": "Sp_Hi_MSkirt0_B_00",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 24,
+          "name": "Sp_Ch_Mantle0_B_00",
+          "before": [
+            "Col_B_Chest_Mant_B_00",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Chest_Mant_B_00"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 28,
+          "name": "Sp_Hi_MSkirt0_R_00",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 30,
+          "name": "Sp_Ch_Mantle1_L_00",
+          "before": [
+            "Col_B_Chest_Mant_B_01",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Chest_Mant_B_01"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 31,
+          "name": "Sp_Ch_Mantle1_L_01",
+          "before": [
+            "Col_B_Chest_Mant_B_01",
+            "Col_B_Hip_Mant_B_01",
+            "Col_B_Elbow_L_Mant",
+            "Col_B_Arm_L_Mant",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_Mant_B_01",
+            "Col_B_Chest_Mant_B_01",
+            "Col_B_Elbow_L_Mant",
+            "Col_B_Arm_L_Mant"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 32,
+          "name": "Sp_Ch_Mantle1_L_02",
+          "before": [
+            "Col_B_Chest_Mant_B_01",
+            "Col_B_Hip_Mant_B_01",
+            "Col_B_Elbow_L_Mant",
+            "Col_B_Arm_L_Mant",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_Mant_B_01",
+            "Col_B_Chest_Mant_B_01",
+            "Col_B_Elbow_L_Mant",
+            "Col_B_Arm_L_Mant"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 33,
+          "name": "Sp_Ch_Mantle0_L_02",
+          "before": [
+            "Col_B_Chest_Mant_B_00",
+            "Col_B_Hip_Mant_B_00",
+            "Col_B_Elbow_L_Mant",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_Mant_B_00",
+            "Col_B_Chest_Mant_B_00",
+            "Col_B_Elbow_L_Mant"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 34,
+          "name": "Sp_Ch_Mantle0_L_03",
+          "before": [
+            "Col_B_Hip_Mant_B_00",
+            "Col_B_Elbow_L_Mant",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_Mant_B_00",
+            "Col_B_Elbow_L_Mant"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 35,
+          "name": "Sp_Ch_Mantle0_L_04",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 36,
+          "name": "Sp_Hi_MSkirt0_FL_00",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 37,
+          "name": "Sp_Hi_MSkirt0_FRR_00",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 39,
+          "name": "Sp_Ch_Mantle0_B_01",
+          "before": [
+            "Col_B_Chest_Mant_B_00",
+            "Col_B_Hip_Mant_B_02",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_Mant_B_02",
+            "Col_B_Chest_Mant_B_00"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 40,
+          "name": "Sp_Ch_Mantle0_B_02",
+          "before": [
+            "Col_B_Chest_Mant_B_00",
+            "Col_B_Hip_Mant_B_02",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_Mant_B_02",
+            "Col_B_Chest_Mant_B_00"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 41,
+          "name": "Sp_Ch_Mantle0_B_03",
+          "before": [
+            "Col_B_Hip_Mant_B_02",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_Mant_B_02"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 42,
+          "name": "Sp_Hi_MSkirt0_BR_00",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 47,
+          "name": "Sp_Hi_MSkirt0_L_00",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 50,
+          "name": "Sp_Ch_Ribbon1_L_00",
+          "before": [
+            "Col_B_Chest_Ribbon_FL",
+            "RuntimeTorso"
+          ],
+          "after": [
+            "Col_B_Chest_Ribbon_FL"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 52,
+          "name": "Sp_Ch_Mantle1_L_03",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 53,
+          "name": "Sp_Hi_MSkirt0_F_00",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 56,
+          "name": "Sp_Ch_Mantle0_R_00",
+          "before": [
+            "Col_B_Chest_Mant_B_00",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Chest_Mant_B_00"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 57,
+          "name": "Sp_Ch_Mantle0_R_01",
+          "before": [
+            "Col_B_Chest_Mant_B_00",
+            "Col_B_Elbow_R_Mant",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Chest_Mant_B_00",
+            "Col_B_Elbow_R_Mant"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 58,
+          "name": "Sp_Ch_Mantle0_R_02",
+          "before": [
+            "Col_B_Chest_Mant_B_00",
+            "Col_B_Hip_Mant_B_00",
+            "Col_B_Elbow_R_Mant",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_Mant_B_00",
+            "Col_B_Chest_Mant_B_00",
+            "Col_B_Elbow_R_Mant"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 59,
+          "name": "Sp_Ch_Mantle0_R_03",
+          "before": [
+            "Col_B_Hip_Mant_B_00",
+            "Col_B_Elbow_R_Mant",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_Mant_B_00",
+            "Col_B_Elbow_R_Mant"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 60,
+          "name": "Sp_Ch_Mantle0_R_04",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 67,
+          "name": "Sp_Ch_Ribbon0_L_00",
+          "before": [
+            "Col_B_Chest_Ribbon_F_00",
+            "RuntimeTorso"
+          ],
+          "after": [
+            "Col_B_Chest_Ribbon_F_00"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 68,
+          "name": "Sp_Ch_Ribbon0_L_01",
+          "before": [
+            "RuntimeTorso"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 70,
+          "name": "Sp_Ch_Mantle1_R_00",
+          "before": [
+            "Col_B_Chest_Mant_B_01",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Chest_Mant_B_01"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 71,
+          "name": "Sp_Ch_Mantle1_R_01",
+          "before": [
+            "Col_B_Chest_Mant_B_01",
+            "Col_B_Hip_Mant_B_01",
+            "Col_B_Elbow_R_Mant",
+            "Col_B_Arm_R_Mant",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_Mant_B_01",
+            "Col_B_Chest_Mant_B_01",
+            "Col_B_Elbow_R_Mant",
+            "Col_B_Arm_R_Mant"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 74,
+          "name": "Sp_Ch_Mantle1_R_02",
+          "before": [
+            "Col_B_Chest_Mant_B_01",
+            "Col_B_Hip_Mant_B_01",
+            "Col_B_Elbow_R_Mant",
+            "Col_B_Arm_R_Mant",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_Mant_B_01",
+            "Col_B_Chest_Mant_B_01",
+            "Col_B_Elbow_R_Mant",
+            "Col_B_Arm_R_Mant"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 78,
+          "name": "Sp_Ch_Ribbon0_R_00",
+          "before": [
+            "Col_B_Chest_Ribbon_F_00",
+            "RuntimeTorso"
+          ],
+          "after": [
+            "Col_B_Chest_Ribbon_F_00"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 79,
+          "name": "Sp_Hi_MSkirt0_BL_00",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 82,
+          "name": "Sp_Ch_Ribbon0_R_01",
+          "before": [
+            "RuntimeTorso"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 86,
+          "name": "Sp_Ch_Ribbon1_R_00",
+          "before": [
+            "Col_B_Chest_Ribbon_FR",
+            "RuntimeTorso"
+          ],
+          "after": [
+            "Col_B_Chest_Ribbon_FR"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 90,
+          "name": "Sp_Ch_Mantle1_R_03",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 101,
+          "name": "Sp_Ch_Ribbon1_L_01",
+          "before": [
+            "RuntimeTorso"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 102,
+          "name": "Sp_Ch_Ribbon1_R_01",
+          "before": [
+            "RuntimeTorso"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 105,
+          "name": "Sp_Hi_MSkirt0_FR_00",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 107,
+          "name": "Sp_Hi_MSkirt0_FLL_00",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 112,
+          "name": "Sp_Ch_Mantle0_B_04",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 122,
+          "name": "Sp_Hi_Tail0_B_00",
+          "before": [
+            "Col_B_Hip_Tail",
+            "Col_B_Chest_Tail"
+          ],
+          "after": [
+            "Col_B_Chest_Tail",
+            "Col_B_Hip_Tail"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 123,
+          "name": "Sp_Hi_Tail0_B_01",
+          "before": [
+            "Col_B_Hip_Tail",
+            "Col_B_Chest_Tail"
+          ],
+          "after": [
+            "Col_B_Chest_Tail",
+            "Col_B_Hip_Tail"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 124,
+          "name": "Sp_Hi_Tail0_B_02",
+          "before": [
+            "Col_B_Hip_Tail",
+            "Col_B_Chest_Tail"
+          ],
+          "after": [
+            "Col_B_Chest_Tail",
+            "Col_B_Hip_Tail"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 125,
+          "name": "Sp_Hi_Tail0_B_03",
+          "before": [
+            "Col_B_Hip_Tail",
+            "Col_B_Chest_Tail"
+          ],
+          "after": [
+            "Col_B_Chest_Tail",
+            "Col_B_Hip_Tail"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 126,
+          "name": "Sp_Hi_Tail0_B_04",
+          "before": [
+            "Col_B_Hip_Tail",
+            "Col_B_Chest_Tail"
+          ],
+          "after": [
+            "Col_B_Chest_Tail",
+            "Col_B_Hip_Tail"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 130,
+          "name": "Sp_He_Hair5_R_00",
+          "before": [
+            "Col_Head_Hair_BR",
+            "Col_Arm_R_Hair"
+          ],
+          "after": [
+            "Col_Arm_R_Hair",
+            "Col_Head_Hair_BR"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 132,
+          "name": "Sp_He_Hair3_R_00",
+          "before": [
+            "Col_Head_Hair_FRR",
+            "Col_Arm_R_Hair"
+          ],
+          "after": [
+            "Col_Arm_R_Hair",
+            "Col_Head_Hair_FRR"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 134,
+          "name": "Sp_He_Hair2_L_00",
+          "before": [
+            "Col_Head_Face_FL",
+            "Col_Arm_L_Hair",
+            "Col_Head_Hair_Wall"
+          ],
+          "after": [
+            "Col_Head_Hair_Wall",
+            "Col_Arm_L_Hair",
+            "Col_Head_Face_FL"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 136,
+          "name": "Sp_He_Hair5_L_00",
+          "before": [
+            "Col_Head_Hair_BL",
+            "Col_Arm_L_Hair"
+          ],
+          "after": [
+            "Col_Arm_L_Hair",
+            "Col_Head_Hair_BL"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 138,
+          "name": "Sp_He_Hair2_R_00",
+          "before": [
+            "Col_Head_Face_FR",
+            "Col_Arm_R_Hair",
+            "Col_Head_Hair_Wall"
+          ],
+          "after": [
+            "Col_Head_Hair_Wall",
+            "Col_Arm_R_Hair",
+            "Col_Head_Face_FR"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 139,
+          "name": "Sp_He_Hair4_R_00",
+          "before": [
+            "Col_Head_Hair_R",
+            "Col_Arm_R_Hair"
+          ],
+          "after": [
+            "Col_Arm_R_Hair",
+            "Col_Head_Hair_R"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 143,
+          "name": "Sp_He_Hair4_L_00",
+          "before": [
+            "Col_Head_Hair_L",
+            "Col_Arm_L_Hair"
+          ],
+          "after": [
+            "Col_Arm_L_Hair",
+            "Col_Head_Hair_L"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 144,
+          "name": "Sp_He_Hair5_C_00",
+          "before": [
+            "Col_Head_Hair_Back_L",
+            "Col_Head_Hair_Back_R",
+            "Col_Chest_Hair_B"
+          ],
+          "after": [
+            "Col_Chest_Hair_B",
+            "Col_Head_Hair_Back_L",
+            "Col_Head_Hair_Back_R"
+          ],
+          "unresolved_original": []
+        }
+      ],
+      "physics_coefficients_and_colliders_unchanged": true
+    },
+    {
+      "id": 1006,
+      "target": "modding/runtime/fleet/1006/secondary.bin",
+      "candidate": "modding/staged-runtime/native-garment-contacts/1006/secondary.bin",
+      "before": "d73639e75f3700925a9dce4d178c597affa9e23df54445884c298a365822954c",
+      "after": "302a00e2480d5f4004e6c4eb7b01aa63d05df4fe3726834166d7b118b00853a5",
+      "bytes": 3948,
+      "changed_contacts": [
+        {
+          "bone": 7,
+          "name": "Sp_Hi_Tail0_B_00",
+          "before": [
+            "Col_B_Hip_Tail",
+            "Col_B_Chest_Tail"
+          ],
+          "after": [
+            "Col_B_Chest_Tail",
+            "Col_B_Hip_Tail"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 8,
+          "name": "Sp_Hi_Tail0_B_01",
+          "before": [
+            "Col_B_Hip_Tail",
+            "Col_B_Chest_Tail"
+          ],
+          "after": [
+            "Col_B_Chest_Tail",
+            "Col_B_Hip_Tail"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 9,
+          "name": "Sp_Hi_Tail0_B_02",
+          "before": [
+            "Col_B_Hip_Tail",
+            "Col_B_Chest_Tail"
+          ],
+          "after": [
+            "Col_B_Chest_Tail",
+            "Col_B_Hip_Tail"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 10,
+          "name": "Sp_Hi_Tail0_B_03",
+          "before": [
+            "Col_B_Hip_Tail",
+            "Col_B_Chest_Tail"
+          ],
+          "after": [
+            "Col_B_Chest_Tail",
+            "Col_B_Hip_Tail"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 11,
+          "name": "Sp_Hi_Tail0_B_04",
+          "before": [
+            "Col_B_Hip_Tail",
+            "Col_B_Chest_Tail"
+          ],
+          "after": [
+            "Col_B_Chest_Tail",
+            "Col_B_Hip_Tail"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 21,
+          "name": "Sp_He_Hair4_R_00",
+          "before": [
+            "Col_Head_Hair_Rear",
+            "Col_Head_Hair_Wall_BR",
+            "Col_Chest_Hair_B",
+            "Col_Arm_R_Hair"
+          ],
+          "after": [
+            "Col_Head_Hair_Wall_BR",
+            "Col_Head_Hair_Rear",
+            "Col_Arm_R_Hair",
+            "Col_Chest_Hair_B"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 22,
+          "name": "Sp_He_Hair4_R_01",
+          "before": [
+            "Col_Chest_Hair_B",
+            "Col_Hip_Hair_B",
+            "Col_Arm_R_Hair",
+            "Col_Elbow_R_Hair"
+          ],
+          "after": [
+            "Col_Hip_Hair_B",
+            "Col_Arm_R_Hair",
+            "Col_Elbow_R_Hair",
+            "Col_Chest_Hair_B"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 23,
+          "name": "Sp_He_Hair4_R_02",
+          "before": [
+            "Col_Chest_Hair_B",
+            "Col_Hip_Hair_B",
+            "Col_Arm_R_Hair",
+            "Col_Elbow_R_Hair"
+          ],
+          "after": [
+            "Col_Arm_R_Hair",
+            "Col_Elbow_R_Hair",
+            "Col_Hip_Hair_B",
+            "Col_Chest_Hair_B"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 24,
+          "name": "Sp_He_Hair4_R_03",
+          "before": [
+            "Col_Chest_Hair_B",
+            "Col_Hip_Hair_B",
+            "Col_Arm_R_Hair",
+            "Col_Elbow_R_Hair"
+          ],
+          "after": [
+            "Col_Arm_R_Hair",
+            "Col_Elbow_R_Hair",
+            "Col_Hip_Hair_B",
+            "Col_Chest_Hair_B"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 28,
+          "name": "Sp_He_Hair2_L_00",
+          "before": [
+            "Col_Head_Face_L_01",
+            "Col_Head_Hair_F_Wall",
+            "Col_Chest_Hair_F_00",
+            "Col_Chest_Hair_Side",
+            "Col_Arm_L_Hair"
+          ],
+          "after": [
+            "Col_Head_Hair_F_Wall",
+            "Col_Chest_Hair_Side",
+            "Col_Chest_Hair_F_00",
+            "Col_Arm_L_Hair",
+            "Col_Head_Face_L_01"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 29,
+          "name": "Sp_He_Hair2_L_01",
+          "before": [
+            "Col_Head_Face_L_00",
+            "Col_Head_Hair_F_Wall",
+            "Col_Chest_Hair_F_01",
+            "Col_Chest_Hair_Side",
+            "Col_Arm_L_Hair"
+          ],
+          "after": [
+            "Col_Head_Hair_F_Wall",
+            "Col_Chest_Hair_Side",
+            "Col_Chest_Hair_F_01",
+            "Col_Arm_L_Hair",
+            "Col_Head_Face_L_00"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 30,
+          "name": "Sp_He_Hair2_L_02",
+          "before": [
+            "Col_Head_Face_L_00",
+            "Col_Head_Hair_F_Wall",
+            "Col_Chest_Hair_F_01",
+            "Col_Chest_Hair_Top",
+            "Col_Arm_L_Hair"
+          ],
+          "after": [
+            "Col_Head_Hair_F_Wall",
+            "Col_Arm_L_Hair",
+            "Col_Chest_Hair_Top",
+            "Col_Chest_Hair_F_01",
+            "Col_Head_Face_L_00"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 33,
+          "name": "Sp_He_Hair2_R_00",
+          "before": [
+            "Col_Head_Face_R_01",
+            "Col_Head_Hair_F_Wall",
+            "Col_Chest_Hair_F_00",
+            "Col_Chest_Hair_Side",
+            "Col_Arm_R_Hair"
+          ],
+          "after": [
+            "Col_Head_Hair_F_Wall",
+            "Col_Chest_Hair_Side",
+            "Col_Chest_Hair_F_00",
+            "Col_Arm_R_Hair",
+            "Col_Head_Face_R_01"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 34,
+          "name": "Sp_He_Hair2_R_01",
+          "before": [
+            "Col_Head_Face_R_00",
+            "Col_Head_Hair_F_Wall",
+            "Col_Chest_Hair_F_01",
+            "Col_Chest_Hair_Side",
+            "Col_Arm_R_Hair"
+          ],
+          "after": [
+            "Col_Head_Hair_F_Wall",
+            "Col_Chest_Hair_Side",
+            "Col_Chest_Hair_F_01",
+            "Col_Arm_R_Hair",
+            "Col_Head_Face_R_00"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 35,
+          "name": "Sp_He_Hair2_R_02",
+          "before": [
+            "Col_Head_Face_R_00",
+            "Col_Head_Hair_F_Wall",
+            "Col_Chest_Hair_F_01",
+            "Col_Chest_Hair_Top",
+            "Col_Arm_R_Hair"
+          ],
+          "after": [
+            "Col_Head_Hair_F_Wall",
+            "Col_Arm_R_Hair",
+            "Col_Chest_Hair_Top",
+            "Col_Chest_Hair_F_01",
+            "Col_Head_Face_R_00"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 39,
+          "name": "Sp_He_Hair4_L_00",
+          "before": [
+            "Col_Head_Hair_Rear",
+            "Col_Head_Hair_Wall_BL",
+            "Col_Chest_Hair_B",
+            "Col_Arm_L_Hair"
+          ],
+          "after": [
+            "Col_Head_Hair_Wall_BL",
+            "Col_Head_Hair_Rear",
+            "Col_Arm_L_Hair",
+            "Col_Chest_Hair_B"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 40,
+          "name": "Sp_He_Hair4_L_01",
+          "before": [
+            "Col_Chest_Hair_B",
+            "Col_Hip_Hair_B",
+            "Col_Arm_L_Hair",
+            "Col_Elbow_L_Hair"
+          ],
+          "after": [
+            "Col_Hip_Hair_B",
+            "Col_Arm_L_Hair",
+            "Col_Elbow_L_Hair",
+            "Col_Chest_Hair_B"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 42,
+          "name": "Sp_He_Hair4_L_02",
+          "before": [
+            "Col_Chest_Hair_B",
+            "Col_Hip_Hair_B",
+            "Col_Arm_L_Hair",
+            "Col_Elbow_L_Hair"
+          ],
+          "after": [
+            "Col_Arm_L_Hair",
+            "Col_Elbow_L_Hair",
+            "Col_Hip_Hair_B",
+            "Col_Chest_Hair_B"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 43,
+          "name": "Sp_He_Hair4_L_03",
+          "before": [
+            "Col_Chest_Hair_B",
+            "Col_Hip_Hair_B",
+            "Col_Arm_L_Hair",
+            "Col_Elbow_L_Hair"
+          ],
+          "after": [
+            "Col_Arm_L_Hair",
+            "Col_Elbow_L_Hair",
+            "Col_Hip_Hair_B",
+            "Col_Chest_Hair_B"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 46,
+          "name": "Sp_Hi_MSkirt0_L_00",
+          "before": [
+            "Col_B_Thigh_L_MSkirt_L",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Thigh_L_MSkirt_L"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 47,
+          "name": "Sp_Hi_MSkirt0_L_01",
+          "before": [
+            "Col_B_Thigh_L_MSkirt_L",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Thigh_L_MSkirt_L"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 59,
+          "name": "Sp_Hi_MSkirt0_FL_00",
+          "before": [
+            "Col_B_Thigh_L_MSkirt_L",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Thigh_L_MSkirt_L"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 64,
+          "name": "Sp_Hi_MSkirt0_BR_00",
+          "before": [
+            "Col_B_Hip_MSkirt_B",
+            "Col_B_Hip_MSkirt_BR",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_MSkirt_B",
+            "Col_B_Hip_MSkirt_BR"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 65,
+          "name": "Sp_Hi_MSkirt0_BR_01",
+          "before": [
+            "Col_B_Hip_MSkirt_B",
+            "Col_B_Hip_MSkirt_BR",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_MSkirt_B",
+            "Col_B_Hip_MSkirt_BR"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 66,
+          "name": "Sp_Hi_MSkirt0_F_00",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 67,
+          "name": "Sp_Hi_MSkirt0_F_01",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 69,
+          "name": "Sp_Hi_MSkirt0_R_00",
+          "before": [
+            "Col_B_Thigh_R_MSkirt_R",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Thigh_R_MSkirt_R"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 74,
+          "name": "Sp_Hi_MSkirt0_FLL_00",
+          "before": [
+            "Col_B_Thigh_L_MSkirt_L",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Thigh_L_MSkirt_L"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 81,
+          "name": "Sp_Ch_Mantle0_B_00",
+          "before": [
+            "Col_B_Chest_Mantle",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Chest_Mantle"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 86,
+          "name": "Sp_Ch_Ribbon0_L_00",
+          "before": [
+            "Col_B_Waist_Ribbon",
+            "Col_B_Thigh_L_Ribbon",
+            "Col_B_Chest_Ribbon_00",
+            "RuntimeTorso"
+          ],
+          "after": [
+            "Col_B_Waist_Ribbon",
+            "Col_B_Thigh_L_Ribbon",
+            "Col_B_Chest_Ribbon_00"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 87,
+          "name": "Sp_Ch_Ribbon0_L_01",
+          "before": [
+            "Col_B_Waist_Ribbon",
+            "Col_B_Thigh_L_Ribbon",
+            "Col_B_Thigh_R_Ribbon",
+            "Col_B_Chest_Ribbon_00",
+            "RuntimeTorso"
+          ],
+          "after": [
+            "Col_B_Waist_Ribbon",
+            "Col_B_Thigh_L_Ribbon",
+            "Col_B_Thigh_R_Ribbon",
+            "Col_B_Chest_Ribbon_00"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 89,
+          "name": "Sp_Ch_Ribbon0_R_00",
+          "before": [
+            "Col_B_Waist_Ribbon",
+            "Col_B_Thigh_R_Ribbon",
+            "Col_B_Chest_Ribbon_00",
+            "RuntimeTorso"
+          ],
+          "after": [
+            "Col_B_Waist_Ribbon",
+            "Col_B_Thigh_R_Ribbon",
+            "Col_B_Chest_Ribbon_00"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 90,
+          "name": "Sp_Ch_Ribbon0_R_01",
+          "before": [
+            "Col_B_Waist_Ribbon",
+            "Col_B_Thigh_L_Ribbon",
+            "Col_B_Thigh_R_Ribbon",
+            "Col_B_Chest_Ribbon_00",
+            "RuntimeTorso"
+          ],
+          "after": [
+            "Col_B_Waist_Ribbon",
+            "Col_B_Thigh_R_Ribbon",
+            "Col_B_Thigh_L_Ribbon",
+            "Col_B_Chest_Ribbon_00"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 92,
+          "name": "Sp_Hi_MSkirt0_FLL_01",
+          "before": [
+            "Col_B_Thigh_L_MSkirt_L",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Thigh_L_MSkirt_L"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 97,
+          "name": "Sp_Hi_MSkirt0_R_01",
+          "before": [
+            "Col_B_Thigh_R_MSkirt_R",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Thigh_R_MSkirt_R"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 98,
+          "name": "Sp_Hi_MSkirt0_FL_01",
+          "before": [
+            "Col_B_Thigh_L_MSkirt_L",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Thigh_L_MSkirt_L"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 99,
+          "name": "Sp_Hi_MSkirt0_FR_00",
+          "before": [
+            "Col_B_Thigh_R_MSkirt_R",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Thigh_R_MSkirt_R"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 100,
+          "name": "Sp_Hi_MSkirt0_FR_01",
+          "before": [
+            "Col_B_Thigh_R_MSkirt_R",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Thigh_R_MSkirt_R"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 105,
+          "name": "Sp_Hi_MSkirt0_FRR_00",
+          "before": [
+            "Col_B_Thigh_R_MSkirt_R",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Thigh_R_MSkirt_R"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 106,
+          "name": "Sp_Hi_MSkirt0_FRR_01",
+          "before": [
+            "Col_B_Thigh_R_MSkirt_R",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Thigh_R_MSkirt_R"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 109,
+          "name": "Sp_Hi_MSkirt0_B_00",
+          "before": [
+            "Col_B_Hip_MSkirt_B",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_MSkirt_B"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 110,
+          "name": "Sp_Hi_MSkirt0_B_01",
+          "before": [
+            "Col_B_Hip_MSkirt_B",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_MSkirt_B"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 116,
+          "name": "Sp_Hi_MSkirt0_BL_00",
+          "before": [
+            "Col_B_Hip_MSkirt_B",
+            "Col_B_Hip_MSkirt_BL",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_MSkirt_B",
+            "Col_B_Hip_MSkirt_BL"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 133,
+          "name": "Sp_Hi_MSkirt0_BL_01",
+          "before": [
+            "Col_B_Hip_MSkirt_B",
+            "Col_B_Hip_MSkirt_BL",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_MSkirt_B",
+            "Col_B_Hip_MSkirt_BL"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 139,
+          "name": "Sp_Ar_Sleeve0_L_00",
+          "before": [
+            "RuntimeTorso"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 141,
+          "name": "Sp_Ar_Sleeve0_R_00",
+          "before": [
+            "RuntimeTorso"
+          ],
+          "after": [],
+          "unresolved_original": []
+        }
+      ],
+      "physics_coefficients_and_colliders_unchanged": true
+    },
+    {
+      "id": 1058,
+      "target": "modding/runtime/fleet/1058/secondary.bin",
+      "candidate": "modding/staged-runtime/native-garment-contacts/1058/secondary.bin",
+      "before": "96264f2c8b2cafb67c5d32f6d819df57d980a9b400e2b51029c342c11f904470",
+      "after": "e20be403811d5b37aa972fab1f869276f6390342b2f7b29a48d6948e32f0bb68",
+      "bytes": 5248,
+      "changed_contacts": [
+        {
+          "bone": 15,
+          "name": "Sp_Hi_MSkirt0_FR_00",
+          "before": [
+            "Col_B_Thigh_R_MSkirt0_FR",
+            "Col_B_Thigh_R_MSkirt0_FR_01",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Thigh_R_MSkirt0_FR",
+            "Col_B_Thigh_R_MSkirt0_FR_01"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 16,
+          "name": "Sp_Hi_MSkirt0_FR_01",
+          "before": [
+            "Col_B_Thigh_R_MSkirt0_FR",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Thigh_R_MSkirt0_FR"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 17,
+          "name": "Sp_Hi_MSkirt0_FR_02",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 18,
+          "name": "Sp_Ch_Ribbon0_R_00",
+          "before": [
+            "Col_B_Chest_Ribbon",
+            "RuntimeTorso"
+          ],
+          "after": [
+            "Col_B_Chest_Ribbon"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 21,
+          "name": "Sp_Hi_MSkirt0_BL_00",
+          "before": [
+            "Col_B_Hip_MSkirt0_BL",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_MSkirt0_BL"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 26,
+          "name": "Sp_An_Ribbon0_R_00",
+          "before": [
+            "Col_B_Ankle_R_Ribbon0",
+            "RuntimeTorso"
+          ],
+          "after": [
+            "Col_B_Ankle_R_Ribbon0"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 27,
+          "name": "Sp_Si_Acc0_F_00",
+          "before": [
+            "Col_B_Hip_Acc0_L_01",
+            "Col_B_Hip_Acc_Wall",
+            "Col_B_Hip_Acc_Wall_Side",
+            "RuntimeTorso"
+          ],
+          "after": [
+            "Col_B_Hip_Acc_Wall",
+            "Col_B_Hip_Acc_Wall_Side",
+            "Col_B_Hip_Acc0_L_01",
+            "RuntimeTorso"
+          ],
+          "unresolved_original": [
+            "Col_B_Waist_Acc0_L_"
+          ]
+        },
+        {
+          "bone": 28,
+          "name": "Sp_Si_Acc0_F_01",
+          "before": [
+            "Col_B_Hip_Acc0_L_01",
+            "Col_B_Hip_Acc_Wall",
+            "Col_B_Hip_Acc_Wall_Side",
+            "RuntimeTorso"
+          ],
+          "after": [
+            "Col_B_Hip_Acc_Wall",
+            "Col_B_Hip_Acc_Wall_Side",
+            "Col_B_Hip_Acc0_L_01",
+            "RuntimeTorso"
+          ],
+          "unresolved_original": [
+            "Col_B_Hip_Acc0_L",
+            "Col_B_Thigh_L_Acc"
+          ]
+        },
+        {
+          "bone": 29,
+          "name": "Sp_Si_Acc0_F_02",
+          "before": [
+            "Col_B_Thigh_L_Acc_01",
+            "Col_B_Hip_Acc0_L_01",
+            "Col_B_Hip_Acc_Wall_Side",
+            "Col_B_Hip_Acc_Wall_BackSide",
+            "RuntimeTorso"
+          ],
+          "after": [
+            "Col_B_Hip_Acc_Wall_Side",
+            "Col_B_Hip_Acc_Wall_BackSide",
+            "Col_B_Thigh_L_Acc_01",
+            "Col_B_Hip_Acc0_L_01",
+            "RuntimeTorso"
+          ],
+          "unresolved_original": [
+            "Col_B_Thigh_L_Acc"
+          ]
+        },
+        {
+          "bone": 36,
+          "name": "Sp_Hi_MSkirt0_BL_01",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 37,
+          "name": "Sp_Hi_MSkirt0_BL_02",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 43,
+          "name": "Sp_Hi_MSkirt0_BR_00",
+          "before": [
+            "Col_B_Hip_MSkirt0_BR",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_MSkirt0_BR"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 44,
+          "name": "Sp_Hi_MSkirt0_BR_01",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 45,
+          "name": "Sp_Hi_MSkirt0_BR_02",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 46,
+          "name": "Sp_Si_Acc0_F_03",
+          "before": [
+            "RuntimeTorso"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 47,
+          "name": "Sp_Si_Acc0_F_04",
+          "before": [
+            "Col_B_Thigh_L_Acc_01",
+            "Col_B_Hip_Acc0_L_01",
+            "RuntimeTorso"
+          ],
+          "after": [
+            "Col_B_Hip_Acc0_L_01",
+            "Col_B_Thigh_L_Acc_01"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 48,
+          "name": "Sp_Si_Acc0_F_05",
+          "before": [
+            "Col_B_Thigh_L_Acc_01",
+            "Col_B_Hip_Acc0_L_01",
+            "RuntimeTorso"
+          ],
+          "after": [
+            "Col_B_Hip_Acc0_L_01",
+            "Col_B_Thigh_L_Acc_01"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 49,
+          "name": "Sp_Hi_MSkirt0_FRR_00",
+          "before": [
+            "Col_B_Thigh_R_MSkirt0_R",
+            "Col_B_Thigh_R_MSkirt0_FRR",
+            "Col_B_Thigh_R_MSkirt0_FRR_01",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Thigh_R_MSkirt0_R",
+            "Col_B_Thigh_R_MSkirt0_FRR_01",
+            "Col_B_Thigh_R_MSkirt0_FRR"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 52,
+          "name": "Sp_Hi_MSkirt0_FL_00",
+          "before": [
+            "Col_B_Thigh_L_MSkirt0_FL",
+            "Col_B_Thigh_L_MSkirt0_FL_01",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Thigh_L_MSkirt0_FL",
+            "Col_B_Thigh_L_MSkirt0_FL_01"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 53,
+          "name": "Sp_Hi_MSkirt0_FL_01",
+          "before": [
+            "Col_B_Thigh_L_MSkirt0_FL",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Thigh_L_MSkirt0_FL"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 54,
+          "name": "Sp_Hi_MSkirt0_FL_02",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 55,
+          "name": "Sp_Hi_MSkirt0_R_00",
+          "before": [
+            "Col_B_Thigh_R_MSkirt0_R",
+            "Col_B_Thigh_R_MSkirt0_R_01",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Thigh_R_MSkirt0_R",
+            "Col_B_Thigh_R_MSkirt0_R_01"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 56,
+          "name": "Sp_Hi_MSkirt0_R_01",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 57,
+          "name": "Sp_Ch_Ribbon0_L_00",
+          "before": [
+            "Col_B_Chest_Ribbon",
+            "RuntimeTorso"
+          ],
+          "after": [
+            "Col_B_Chest_Ribbon"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 58,
+          "name": "Sp_Ch_Ribbon0_L_01",
+          "before": [
+            "Col_B_Chest_Ribbon",
+            "RuntimeTorso"
+          ],
+          "after": [
+            "Col_B_Chest_Ribbon"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 62,
+          "name": "Sp_El_Sleeve0_L_00",
+          "before": [
+            "RuntimeTorso"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 64,
+          "name": "Sp_An_Ribbon0_L_00",
+          "before": [
+            "Col_B_Ankle_L_Ribbon0",
+            "RuntimeTorso"
+          ],
+          "after": [
+            "Col_B_Ankle_L_Ribbon0"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 70,
+          "name": "Sp_Hi_MSkirt0_F_00",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 71,
+          "name": "Sp_Hi_MSkirt0_F_01",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 72,
+          "name": "Sp_Hi_MSkirt0_F_02",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 73,
+          "name": "Sp_Hi_MSkirt0_R_02",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 74,
+          "name": "Sp_Hi_MSkirt0_FRR_01",
+          "before": [
+            "Col_B_Knee_R_MSkirt0_FRR",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Knee_R_MSkirt0_FRR"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 75,
+          "name": "Sp_El_Sleeve0_R_00",
+          "before": [
+            "RuntimeTorso"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 89,
+          "name": "Sp_Hi_MSkirt0_B_00",
+          "before": [
+            "Col_B_Hip_MSkirt0_B",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_MSkirt0_B"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 90,
+          "name": "Sp_Hi_MSkirt0_B_01",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 94,
+          "name": "Sp_Hi_MSkirt0_FLL_01",
+          "before": [
+            "Col_B_Knee_L_MSkirt0_FLL",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Knee_L_MSkirt0_FLL"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 95,
+          "name": "Sp_Hi_MSkirt0_FLL_02",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 96,
+          "name": "Sp_Hi_MSkirt0_L_00",
+          "before": [
+            "Col_B_Thigh_L_MSkirt0_L",
+            "Col_B_Thigh_L_MSkirt0_L_01",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Thigh_L_MSkirt0_L",
+            "Col_B_Thigh_L_MSkirt0_L_01"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 101,
+          "name": "Sp_Hi_MSkirt0_L_01",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 102,
+          "name": "Sp_Hi_MSkirt0_L_02",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 105,
+          "name": "Sp_Hi_MSkirt0_B_02",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 111,
+          "name": "Sp_Hi_MSkirt0_FRR_02",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 120,
+          "name": "Sp_Hi_Tail0_B_00",
+          "before": [
+            "Col_B_Hip_Tail",
+            "Col_B_Chest_Tail"
+          ],
+          "after": [
+            "Col_B_Chest_Tail",
+            "Col_B_Hip_Tail"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 121,
+          "name": "Sp_Hi_Tail0_B_01",
+          "before": [
+            "Col_B_Hip_Tail",
+            "Col_B_Chest_Tail"
+          ],
+          "after": [
+            "Col_B_Chest_Tail",
+            "Col_B_Hip_Tail"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 122,
+          "name": "Sp_Hi_Tail0_B_02",
+          "before": [
+            "Col_B_Hip_Tail",
+            "Col_B_Chest_Tail"
+          ],
+          "after": [
+            "Col_B_Chest_Tail",
+            "Col_B_Hip_Tail"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 123,
+          "name": "Sp_Hi_Tail0_B_03",
+          "before": [
+            "Col_B_Hip_Tail",
+            "Col_B_Chest_Tail"
+          ],
+          "after": [
+            "Col_B_Chest_Tail",
+            "Col_B_Hip_Tail"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 124,
+          "name": "Sp_Hi_Tail0_B_04",
+          "before": [
+            "Col_B_Hip_Tail",
+            "Col_B_Chest_Tail"
+          ],
+          "after": [
+            "Col_B_Chest_Tail",
+            "Col_B_Hip_Tail"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 128,
+          "name": "Sp_He_Hair3_R_00",
+          "before": [
+            "Col_Head_Face_R_01",
+            "Col_Arm_R_Hair_Multi"
+          ],
+          "after": [
+            "Col_Arm_R_Hair_Multi",
+            "Col_Head_Face_R_01"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 129,
+          "name": "Sp_He_Hair3_R_01",
+          "before": [
+            "Col_Head_Face_R_01",
+            "Col_Chest_Hair_FR",
+            "Col_Chest_Shldr_R",
+            "Col_Arm_R_Hair_Multi",
+            "Col_Elbow_R_Hair"
+          ],
+          "after": [
+            "Col_Chest_Hair_FR",
+            "Col_Chest_Shldr_R",
+            "Col_Elbow_R_Hair",
+            "Col_Arm_R_Hair_Multi",
+            "Col_Head_Face_R_01"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 130,
+          "name": "Sp_He_Acc0_R_00",
+          "before": [
+            "Col_Arm_R_Hair_Multi",
+            "Col_Elbow_R_Hair",
+            "Col_Head_Acc"
+          ],
+          "after": [
+            "Col_Elbow_R_Hair",
+            "Col_Arm_R_Hair_Multi",
+            "Col_Head_Acc"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 131,
+          "name": "Sp_He_Hair2_L_00",
+          "before": [
+            "Col_Head_Face_L_02",
+            "Col_Arm_L_Hair_Multi"
+          ],
+          "after": [
+            "Col_Arm_L_Hair_Multi",
+            "Col_Head_Face_L_02"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 134,
+          "name": "Sp_He_Hair4_L_00",
+          "before": [
+            "Col_Head_Round",
+            "Col_Arm_L_Hair_Multi"
+          ],
+          "after": [
+            "Col_Arm_L_Hair_Multi",
+            "Col_Head_Round"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 136,
+          "name": "Sp_He_Hair1_R_00",
+          "before": [
+            "Col_Head_Face_R_00",
+            "Col_Head_BackWall_F_00",
+            "Col_Chest_Hair_FR",
+            "Col_Arm_R_Hair1_00",
+            "Col_Arm_R_Hair1_01"
+          ],
+          "after": [
+            "Col_Head_BackWall_F_00",
+            "Col_Chest_Hair_FR",
+            "Col_Arm_R_Hair1_01",
+            "Col_Arm_R_Hair1_00",
+            "Col_Head_Face_R_00"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 137,
+          "name": "Sp_He_Hair1_R_01",
+          "before": [
+            "Col_Head_Face_R_00",
+            "Col_Chest_Hair_FR",
+            "Col_Arm_R_Hair1_00",
+            "Col_Arm_R_Hair1_01",
+            "Col_Elbow_R_Hair"
+          ],
+          "after": [
+            "Col_Elbow_R_Hair",
+            "Col_Chest_Hair_FR",
+            "Col_Arm_R_Hair1_01",
+            "Col_Arm_R_Hair1_00",
+            "Col_Head_Face_R_00"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 138,
+          "name": "Sp_He_Hair3_L_00",
+          "before": [
+            "Col_Head_Face_L_01",
+            "Col_Arm_L_Hair_Multi"
+          ],
+          "after": [
+            "Col_Arm_L_Hair_Multi",
+            "Col_Head_Face_L_01"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 139,
+          "name": "Sp_He_Hair3_L_01",
+          "before": [
+            "Col_Head_Face_L_01",
+            "Col_Chest_Hair_FL",
+            "Col_Chest_Shldr_L",
+            "Col_Arm_L_Hair_Multi",
+            "Col_Elbow_L_Hair"
+          ],
+          "after": [
+            "Col_Chest_Hair_FL",
+            "Col_Elbow_L_Hair",
+            "Col_Chest_Shldr_L",
+            "Col_Arm_L_Hair_Multi",
+            "Col_Head_Face_L_01"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 143,
+          "name": "Sp_He_Hair4_R_00",
+          "before": [
+            "Col_Head_Round",
+            "Col_Arm_R_Hair_Multi"
+          ],
+          "after": [
+            "Col_Arm_R_Hair_Multi",
+            "Col_Head_Round"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 148,
+          "name": "Sp_He_Hair2_R_00",
+          "before": [
+            "Col_Head_Face_R_02",
+            "Col_Arm_R_Hair_Multi"
+          ],
+          "after": [
+            "Col_Arm_R_Hair_Multi",
+            "Col_Head_Face_R_02"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 152,
+          "name": "Sp_He_Hair1_L_00",
+          "before": [
+            "Col_Head_Face_L_00",
+            "Col_Head_BackWall_F_00",
+            "Col_Chest_Hair_FL",
+            "Col_Arm_L_Hair1_00",
+            "Col_Arm_L_Hair1_01"
+          ],
+          "after": [
+            "Col_Head_BackWall_F_00",
+            "Col_Chest_Hair_FL",
+            "Col_Arm_L_Hair1_01",
+            "Col_Arm_L_Hair1_00",
+            "Col_Head_Face_L_00"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 153,
+          "name": "Sp_He_Hair1_L_01",
+          "before": [
+            "Col_Head_Face_L_00",
+            "Col_Chest_Hair_FL",
+            "Col_Arm_L_Hair1_00",
+            "Col_Arm_L_Hair1_01",
+            "Col_Elbow_L_Hair"
+          ],
+          "after": [
+            "Col_Elbow_L_Hair",
+            "Col_Chest_Hair_FL",
+            "Col_Arm_L_Hair1_01",
+            "Col_Arm_L_Hair1_00",
+            "Col_Head_Face_L_00"
+          ],
+          "unresolved_original": []
+        }
+      ],
+      "physics_coefficients_and_colliders_unchanged": true
+    },
+    {
+      "id": 1067,
+      "target": "modding/runtime/fleet/1067/secondary.bin",
+      "candidate": "modding/staged-runtime/native-garment-contacts/1067/secondary.bin",
+      "before": "60927db1fa8c989e4033997d6fbdb83def4e950e05628a06019e3b790c1abe60",
+      "after": "41669788edf0d994cd81a5ad7365f162e6b7c9f85a693da42cf2cbf2a62a9872",
+      "bytes": 5468,
+      "changed_contacts": [
+        {
+          "bone": 13,
+          "name": "Sp_He_Hair4_C_01",
+          "before": [
+            "Col_Chest_Hair_B_01",
+            "Col_Hip_Hair_B_00",
+            "Col_Arm_L_Hair_B_00",
+            "Col_Arm_R_Hair_B_00"
+          ],
+          "after": [
+            "Col_Hip_Hair_B_00",
+            "Col_Arm_L_Hair_B_00",
+            "Col_Arm_R_Hair_B_00",
+            "Col_Chest_Hair_B_01"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 17,
+          "name": "Sp_He_Hair4_R_01",
+          "before": [
+            "Col_Chest_Hair_B_01",
+            "Col_Hip_Hair_B_01",
+            "Col_Arm_R_Hair_B_01"
+          ],
+          "after": [
+            "Col_Hip_Hair_B_01",
+            "Col_Arm_R_Hair_B_01",
+            "Col_Chest_Hair_B_01"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 21,
+          "name": "Sp_He_Hair4_L_01",
+          "before": [
+            "Col_Chest_Hair_B_01",
+            "Col_Hip_Hair_B_01",
+            "Col_Arm_L_Hair_B_01"
+          ],
+          "after": [
+            "Col_Hip_Hair_B_01",
+            "Col_Arm_L_Hair_B_01",
+            "Col_Chest_Hair_B_01"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 22,
+          "name": "Sp_He_Hair5_C_00",
+          "before": [
+            "Col_Head_Hair_Round",
+            "Col_Head_Hair_B_01",
+            "Col_Chest_Hair_B_02"
+          ],
+          "after": [
+            "Col_Head_Hair_Round",
+            "Col_Chest_Hair_B_02",
+            "Col_Head_Hair_B_01"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 23,
+          "name": "Sp_He_Hair5_C_01",
+          "before": [
+            "Col_Chest_Hair_B_00",
+            "Col_Hip_Hair_B_02",
+            "Col_Arm_L_Hair_B_00",
+            "Col_Arm_R_Hair_B_00"
+          ],
+          "after": [
+            "Col_Hip_Hair_B_02",
+            "Col_Arm_L_Hair_B_00",
+            "Col_Arm_R_Hair_B_00",
+            "Col_Chest_Hair_B_00"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 24,
+          "name": "Sp_He_Hair2_R_00",
+          "before": [
+            "Col_Head_F_guard",
+            "Col_Head_Hair_R_00"
+          ],
+          "after": [
+            "Col_Head_Hair_R_00",
+            "Col_Head_F_guard"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 25,
+          "name": "Sp_He_Acc1_R_00",
+          "before": [
+            "Col_Head_Acc_R_00",
+            "Col_Arm_R_Acc_00"
+          ],
+          "after": [
+            "Col_Arm_R_Acc_00",
+            "Col_Head_Acc_R_00"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 28,
+          "name": "Sp_He_Hair2_L_00",
+          "before": [
+            "Col_Head_F_guard",
+            "Col_Head_Hair_L_00"
+          ],
+          "after": [
+            "Col_Head_Hair_L_00",
+            "Col_Head_F_guard"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 29,
+          "name": "Sp_He_Acc1_R_01",
+          "before": [
+            "Col_Head_Acc_R_00",
+            "Col_Chest_Acc_F",
+            "Col_Arm_R_Acc_00"
+          ],
+          "after": [
+            "Col_Arm_R_Acc_00",
+            "Col_Chest_Acc_F",
+            "Col_Head_Acc_R_00"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 34,
+          "name": "Sp_He_Hair5_C_02",
+          "before": [
+            "Col_Chest_Hair_B_00",
+            "Col_Hip_Hair_B_02",
+            "Col_Arm_L_Hair_B_00",
+            "Col_Arm_R_Hair_B_00"
+          ],
+          "after": [
+            "Col_Hip_Hair_B_02",
+            "Col_Arm_L_Hair_B_00",
+            "Col_Arm_R_Hair_B_00",
+            "Col_Chest_Hair_B_00"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 42,
+          "name": "Sp_Hi_Tail0_B_00",
+          "before": [
+            "Col_B_Hip_Tail",
+            "Col_B_Chest_Tail"
+          ],
+          "after": [
+            "Col_B_Chest_Tail",
+            "Col_B_Hip_Tail"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 43,
+          "name": "Sp_Hi_Tail0_B_01",
+          "before": [
+            "Col_B_Hip_Tail",
+            "Col_B_Chest_Tail"
+          ],
+          "after": [
+            "Col_B_Chest_Tail",
+            "Col_B_Hip_Tail"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 44,
+          "name": "Sp_Hi_Tail0_B_02",
+          "before": [
+            "Col_B_Hip_Tail",
+            "Col_B_Chest_Tail"
+          ],
+          "after": [
+            "Col_B_Chest_Tail",
+            "Col_B_Hip_Tail"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 45,
+          "name": "Sp_Hi_Tail0_B_03",
+          "before": [
+            "Col_B_Hip_Tail",
+            "Col_B_Chest_Tail"
+          ],
+          "after": [
+            "Col_B_Chest_Tail",
+            "Col_B_Hip_Tail"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 46,
+          "name": "Sp_Hi_Tail0_B_04",
+          "before": [
+            "Col_B_Hip_Tail",
+            "Col_B_Chest_Tail"
+          ],
+          "after": [
+            "Col_B_Chest_Tail",
+            "Col_B_Hip_Tail"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 47,
+          "name": "Sp_Hi_MSkirt0_FL_00",
+          "before": [
+            "Col_B_Hip_MSkirt_Flip_00",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_MSkirt_Flip_00"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 48,
+          "name": "Sp_Hi_MSkirt0_FL_01",
+          "before": [
+            "Col_B_Hip_MSkirt_Flip_01",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_MSkirt_Flip_01"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 49,
+          "name": "Sp_Hi_MSkirt0_FL_02",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 50,
+          "name": "Sp_Hi_MSkirt0_FR_00",
+          "before": [
+            "Col_B_Hip_MSkirt_Flip_00",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_MSkirt_Flip_00"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 51,
+          "name": "Sp_Hi_MSkirt0_FR_01",
+          "before": [
+            "Col_B_Hip_MSkirt_Flip_01",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_MSkirt_Flip_01"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 55,
+          "name": "Sp_El_Sleeve0_R_00",
+          "before": [
+            "Col_B_Hip_Sleeve0",
+            "Col_B_Head_Slv",
+            "Col_B_Elbow_R_Sleeve0_R",
+            "Col_B_Waist_Sleeve0_R_00",
+            "RuntimeTorso"
+          ],
+          "after": [
+            "Col_B_Elbow_R_Sleeve0_R",
+            "Col_B_Waist_Sleeve0_R_00",
+            "Col_B_Hip_Sleeve0",
+            "Col_B_Head_Slv"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 56,
+          "name": "Sp_El_Sleeve0_R_01",
+          "before": [
+            "Col_B_Hip_Sleeve0",
+            "Col_B_Head_Slv",
+            "Col_B_Elbow_R_Sleeve0_R",
+            "Col_B_Waist_Sleeve0_R_00",
+            "RuntimeTorso"
+          ],
+          "after": [
+            "Col_B_Elbow_R_Sleeve0_R",
+            "Col_B_Waist_Sleeve0_R_00",
+            "Col_B_Hip_Sleeve0",
+            "Col_B_Head_Slv"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 63,
+          "name": "Sp_Hi_MSkirt0_FLL_00",
+          "before": [
+            "Col_B_Hip_MSkirt_Flip_00",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_MSkirt_Flip_00"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 64,
+          "name": "Sp_Hi_MSkirt0_FLL_01",
+          "before": [
+            "Col_B_Hip_MSkirt_Flip_01",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_MSkirt_Flip_01"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 65,
+          "name": "Sp_Hi_MSkirt0_FLL_02",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 70,
+          "name": "Sp_Hi_MSkirt0_B_00",
+          "before": [
+            "Col_B_Hip_MSkirt_Flip_00",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_MSkirt_Flip_00"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 71,
+          "name": "Sp_Hi_MSkirt0_B_01",
+          "before": [
+            "Col_B_Hip_MSkirt_Flip_01",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_MSkirt_Flip_01"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 72,
+          "name": "Sp_Hi_MSkirt0_B_02",
+          "before": [
+            "Col_B_Hip_MSkirt_Flip_01",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_MSkirt_Flip_01"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 73,
+          "name": "Sp_Hi_MSkirt0_B_03",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 74,
+          "name": "Sp_El_Sleeve0_L_00",
+          "before": [
+            "Col_B_Hip_Sleeve0",
+            "Col_B_Head_Slv",
+            "Col_B_Elbow_L_Sleeve0_L",
+            "Col_B_Waist_Sleeve0_L_00",
+            "RuntimeTorso"
+          ],
+          "after": [
+            "Col_B_Elbow_L_Sleeve0_L",
+            "Col_B_Waist_Sleeve0_L_00",
+            "Col_B_Hip_Sleeve0",
+            "Col_B_Head_Slv"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 75,
+          "name": "Sp_El_Sleeve0_L_01",
+          "before": [
+            "Col_B_Hip_Sleeve0",
+            "Col_B_Head_Slv",
+            "Col_B_Elbow_L_Sleeve0_L",
+            "Col_B_Waist_Sleeve0_L_00",
+            "RuntimeTorso"
+          ],
+          "after": [
+            "Col_B_Elbow_L_Sleeve0_L",
+            "Col_B_Waist_Sleeve0_L_00",
+            "Col_B_Hip_Sleeve0",
+            "Col_B_Head_Slv"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 79,
+          "name": "Sp_Hi_MSkirt0_BR_00",
+          "before": [
+            "Col_B_Hip_MSkirt_Flip_00",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_MSkirt_Flip_00"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 80,
+          "name": "Sp_Hi_MSkirt0_BR_01",
+          "before": [
+            "Col_B_Hip_MSkirt_Flip_01",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_MSkirt_Flip_01"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 81,
+          "name": "Sp_Hi_MSkirt0_FRR_00",
+          "before": [
+            "Col_B_Hip_MSkirt_Flip_00",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_MSkirt_Flip_00"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 82,
+          "name": "Sp_Hi_MSkirt0_FRR_01",
+          "before": [
+            "Col_B_Hip_MSkirt_Flip_01",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_MSkirt_Flip_01"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 90,
+          "name": "Sp_Hi_MSkirt0_R_00",
+          "before": [
+            "Col_B_Hip_MSkirt_Flip_00",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_MSkirt_Flip_00"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 91,
+          "name": "Sp_Hi_MSkirt0_R_01",
+          "before": [
+            "Col_B_Hip_MSkirt_Flip_01",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_MSkirt_Flip_01"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 92,
+          "name": "Sp_Hi_MSkirt0_R_02",
+          "before": [
+            "Col_B_Hip_MSkirt_Flip_01",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_MSkirt_Flip_01"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 93,
+          "name": "Sp_Hi_MSkirt1_R_00",
+          "before": [
+            "Col_B_Hip_MSkirt1_00",
+            "Col_B_Hip_MSkirt1_Flip_00",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_MSkirt1_Flip_00",
+            "Col_B_Hip_MSkirt1_00"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 94,
+          "name": "Sp_Hi_MSkirt1_L_00",
+          "before": [
+            "Col_B_Hip_MSkirt1_00",
+            "Col_B_Hip_MSkirt1_Flip_00",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_MSkirt1_Flip_00",
+            "Col_B_Hip_MSkirt1_00"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 95,
+          "name": "Sp_Hi_MSkirt1_L_01",
+          "before": [
+            "Col_B_Hip_MSkirt1_00",
+            "Col_B_Hip_MSkirt1_Flip_00",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_MSkirt1_Flip_00",
+            "Col_B_Hip_MSkirt1_00"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 96,
+          "name": "Sp_Hi_MSkirt0_L_00",
+          "before": [
+            "Col_B_Hip_MSkirt_Flip_00",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_MSkirt_Flip_00"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 97,
+          "name": "Sp_Hi_MSkirt0_L_01",
+          "before": [
+            "Col_B_Hip_MSkirt_Flip_01",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_MSkirt_Flip_01"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 98,
+          "name": "Sp_Hi_MSkirt0_L_02",
+          "before": [
+            "Col_B_Hip_MSkirt_Flip_01",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_MSkirt_Flip_01"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 99,
+          "name": "Sp_Hi_MSkirt0_F_00",
+          "before": [
+            "Col_B_Hip_MSkirt_Flip_00",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_MSkirt_Flip_00"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 100,
+          "name": "Sp_Hi_MSkirt1_R_01",
+          "before": [
+            "Col_B_Hip_MSkirt1_00",
+            "Col_B_Hip_MSkirt1_Flip_00",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_MSkirt1_Flip_00",
+            "Col_B_Hip_MSkirt1_00"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 106,
+          "name": "Sp_Hi_MSkirt0_FRR_02",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 108,
+          "name": "Sp_Hi_MSkirt0_BL_00",
+          "before": [
+            "Col_B_Hip_MSkirt_Flip_00",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_MSkirt_Flip_00"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 109,
+          "name": "Sp_Hi_MSkirt0_BL_01",
+          "before": [
+            "Col_B_Hip_MSkirt_Flip_01",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_MSkirt_Flip_01"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 110,
+          "name": "Sp_Hi_MSkirt0_BL_02",
+          "before": [
+            "Col_B_Hip_MSkirt_Flip_01",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_MSkirt_Flip_01"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 111,
+          "name": "Sp_Hi_MSkirt0_R_03",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 118,
+          "name": "Sp_Hi_MSkirt0_L_03",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 120,
+          "name": "Sp_El_Sleeve0_L_02",
+          "before": [
+            "Col_B_Hip_Sleeve0",
+            "Col_B_Head_Slv",
+            "Col_B_Elbow_L_Sleeve0_L",
+            "Col_B_Waist_Sleeve0_L_00",
+            "RuntimeTorso"
+          ],
+          "after": [
+            "Col_B_Elbow_L_Sleeve0_L",
+            "Col_B_Waist_Sleeve0_L_00",
+            "Col_B_Hip_Sleeve0",
+            "Col_B_Head_Slv"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 122,
+          "name": "Sp_Hi_MSkirt0_BR_02",
+          "before": [
+            "Col_B_Hip_MSkirt_Flip_01",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_MSkirt_Flip_01"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 123,
+          "name": "Sp_Hi_MSkirt0_BR_03",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 131,
+          "name": "Sp_Ch_Ribbon0_F_00",
+          "before": [
+            "Col_B_Chest_Ribbon_00",
+            "Col_B_Chest_Ribbon_01",
+            "Col_B_Chest_Ribbon_Flip",
+            "RuntimeTorso"
+          ],
+          "after": [
+            "Col_B_Chest_Ribbon_Flip",
+            "Col_B_Chest_Ribbon_00",
+            "Col_B_Chest_Ribbon_01"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 133,
+          "name": "Sp_Ch_Ribbon0_F_01",
+          "before": [
+            "Col_B_Chest_Ribbon_00",
+            "Col_B_Chest_Ribbon_Flip",
+            "RuntimeTorso"
+          ],
+          "after": [
+            "Col_B_Chest_Ribbon_Flip",
+            "Col_B_Chest_Ribbon_00"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 134,
+          "name": "Sp_Ch_Ribbon0_F_02",
+          "before": [
+            "RuntimeTorso"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 143,
+          "name": "Sp_Hi_MSkirt0_F_01",
+          "before": [
+            "Col_B_Hip_MSkirt_Flip_01",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_MSkirt_Flip_01"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 144,
+          "name": "Sp_Hi_MSkirt0_FR_02",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 148,
+          "name": "Sp_Hi_MSkirt1_L_02",
+          "before": [
+            "Col_B_Hip_MSkirt1_00",
+            "Col_B_Hip_MSkirt1_Flip_00",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_MSkirt1_Flip_00",
+            "Col_B_Hip_MSkirt1_00"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 149,
+          "name": "Sp_El_Sleeve0_R_02",
+          "before": [
+            "Col_B_Hip_Sleeve0",
+            "Col_B_Head_Slv",
+            "Col_B_Elbow_R_Sleeve0_R",
+            "Col_B_Waist_Sleeve0_R_00",
+            "RuntimeTorso"
+          ],
+          "after": [
+            "Col_B_Elbow_R_Sleeve0_R",
+            "Col_B_Waist_Sleeve0_R_00",
+            "Col_B_Hip_Sleeve0",
+            "Col_B_Head_Slv"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 150,
+          "name": "Sp_Hi_MSkirt0_F_02",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        },
+        {
+          "bone": 152,
+          "name": "Sp_Hi_MSkirt1_R_02",
+          "before": [
+            "Col_B_Hip_MSkirt1_00",
+            "Col_B_Hip_MSkirt1_Flip_00",
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [
+            "Col_B_Hip_MSkirt1_Flip_00",
+            "Col_B_Hip_MSkirt1_00"
+          ],
+          "unresolved_original": []
+        },
+        {
+          "bone": 154,
+          "name": "Sp_Hi_MSkirt0_BL_03",
+          "before": [
+            "RuntimeTorso",
+            "RuntimeThigh_L",
+            "RuntimeCalf_L",
+            "RuntimeThigh_R",
+            "RuntimeCalf_R"
+          ],
+          "after": [],
+          "unresolved_original": []
+        }
+      ],
+      "physics_coefficients_and_colliders_unchanged": true
+    }
+  ],
+  "installed": false,
+  "user_approved": false,
+  "gameplay_verified": false,
+  "scope": "Native collision-name associations instead of blanket generic body contacts; unsupported source planes keep existing fallback. Does not add cloth surface/body collision or promise zero clipping.",
+  "visual_review_pending": true,
+  "addresses_diamond_reported_intersections": false,
+  "diamond_intersection_evidence": "modding/diagnostics/diamond-intersections/intersection-report.json",
+  "acceptance": "Not approved as a clipping fix: Triangle crossings barely improve on Diamond; retain uninstalled until actual mesh/contact solver and visual review."
+}

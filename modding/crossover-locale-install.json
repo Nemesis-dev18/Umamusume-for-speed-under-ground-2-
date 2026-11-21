@@ -128,8 +128,10 @@
       "value": "DOTO"
     }
   ],
-  "installed": false,
+  "installed": true,
   "gameplay_verified": false,
   "scope": "Approved Spanish text resources, Gentildonna internal name, six missing chibi badges; original title texture pixels retained",
-  "user_approved": true
+  "user_approved": true,
+  "checkpoint": "45f44fd25ab5b576c01969082c9a40c25be2f4b8",
+  "combined_install": "modding/crossover-approved-install.json"
 }

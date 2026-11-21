@@ -883,6 +883,132 @@
           }
         ]
       }
+    },
+    {
+      "id": 1067,
+      "parts": {
+        "body": [
+          {
+            "logical": "3d/chara/body/bdy1067_00/clothes/ast_bdy1067_00_skirt00",
+            "hash": "ZLA6VX43XRTK25M47PEYDIXBYEZX5BV3",
+            "cached": true
+          },
+          {
+            "logical": "3d/chara/body/bdy1067_00/clothes/ast_bdy1067_00_skirt01",
+            "hash": "TVUQQGC7NNVVLC5VX7I7XO6JWWDPSCO7",
+            "cached": true
+          },
+          {
+            "logical": "3d/chara/body/bdy1067_00/clothes/ast_bdy1067_00_skirt02",
+            "hash": "KPTPJYGMPL2QVTINQ5XU4R5TNXTLVJ5Q",
+            "cached": true
+          },
+          {
+            "logical": "3d/chara/body/bdy1067_00/clothes/pfb_bdy1067_00_bust_cloth00",
+            "hash": "CPN2R43QU74RGAFUWJ7X3VIZNHG5OEPA",
+            "cached": true
+          },
+          {
+            "logical": "3d/chara/body/bdy1067_00/clothes/pfb_bdy1067_00_bust_cloth01",
+            "hash": "5TAZTFHV7I6TBDXNKFFV7QYSD4YSJZQC",
+            "cached": true
+          },
+          {
+            "logical": "3d/chara/body/bdy1067_00/clothes/pfb_bdy1067_00_bust_cloth02",
+            "hash": "MY4F34PDSNCLXBB5LGFQAXNDCUSIW6K3",
+            "cached": true
+          },
+          {
+            "logical": "3d/chara/body/bdy1067_00/clothes/pfb_bdy1067_00_bust_cloth03",
+            "hash": "UWHJ26OA3YI6ZULJJKX5DOXYKEYOJBS6",
+            "cached": true
+          },
+          {
+            "logical": "3d/chara/body/bdy1067_00/clothes/pfb_bdy1067_00_bust_cloth04",
+            "hash": "4WIDTDHAO2JZ37KAYDPDITSISUMYRI5B",
+            "cached": true
+          },
+          {
+            "logical": "3d/chara/body/bdy1067_00/clothes/pfb_bdy1067_00_cloth00",
+            "hash": "PD7P7XARCQQ6A4WWBP55CPN6IXFWZI44",
+            "cached": true
+          },
+          {
+            "logical": "3d/chara/body/bdy1067_00/clothes/pfb_bdy1067_00_cloth01",
+            "hash": "QDWKNF25ETWAB4JTYEXKDHPYOIBIOAHO",
+            "cached": true
+          },
+          {
+            "logical": "3d/chara/body/bdy1067_00/clothes/pfb_bdy1067_00_cloth02",
+            "hash": "BTYJOLF2GKSRHUNXGUSJTDOZ4NEG4DZF",
+            "cached": true
+          },
+          {
+            "logical": "3d/chara/body/bdy1067_00/clothes/pfb_bdy1067_00_cloth03",
+            "hash": "CKXL3PD637KCDIU6TEFV5MWGR2H5BUDP",
+            "cached": true
+          },
+          {
+            "logical": "3d/chara/body/bdy1067_00/clothes/pfb_bdy1067_00_cloth04",
+            "hash": "JOV3Y2TS4BQHEYRO5PPKZYQM7HMLXIMU",
+            "cached": true
+          }
+        ],
+        "head": [
+          {
+            "logical": "3d/chara/head/chr1067_00/clothes/pfb_chr1067_00_cloth00",
+            "hash": "DZ3G3BNLQYMRZF6FXNY7XGGN5VHMQH4K",
+            "cached": true
+          },
+          {
+            "logical": "3d/chara/head/chr1067_00/clothes/pfb_chr1067_00_cloth01",
+            "hash": "BAORYNXPPH3OKHFMLQTGHNXJBKSTNUY2",
+            "cached": true
+          },
+          {
+            "logical": "3d/chara/head/chr1067_00/clothes/pfb_chr1067_00_cloth02",
+            "hash": "OFIO2ZVA3USANAXCA2IIE6V3ASHKHOKU",
+            "cached": true
+          },
+          {
+            "logical": "3d/chara/head/chr1067_00/clothes/pfb_chr1067_00_cloth03",
+            "hash": "IARBHDQ6UI7NDC3SZ5KCT2BCIYN3MM5B",
+            "cached": true
+          },
+          {
+            "logical": "3d/chara/head/chr1067_00/clothes/pfb_chr1067_00_cloth04",
+            "hash": "VQIAGNFVVTVTMBVCKJPVETN4OZOVH7D2",
+            "cached": true
+          }
+        ],
+        "tail": [
+          {
+            "logical": "3d/chara/tail/tail0001_00/clothes/pfb_tail0001_00_cloth00",
+            "hash": "EWO24RA6MMW24RSUKRJ2AF2MMTTWTCX4",
+            "cached": true
+          },
+          {
+            "logical": "3d/chara/tail/tail0001_00/clothes/pfb_tail0001_00_cloth01",
+            "hash": "IU2CDGXURGL5AG4BT6SSN6YK4ZCC5U53",
+            "cached": true
+          },
+          {
+            "logical": "3d/chara/tail/tail0001_00/clothes/pfb_tail0001_00_cloth02",
+            "hash": "6EP4LCG6BEHT5CLQDOPXWTUQINARCFMY",
+            "cached": true
+          },
+          {
+            "logical": "3d/chara/tail/tail0001_00/clothes/pfb_tail0001_00_cloth03",
+            "hash": "E5OGHP57ZCPC7IZHC2YIF4FTZKDRMXBL",
+            "cached": true
+          },
+          {
+            "logical": "3d/chara/tail/tail0001_00/clothes/pfb_tail0001_00_cloth04",
+            "hash": "SZK4UHSWN7RHGV6NJ5NEVQZZXSYX5W6Y",
+            "cached": true
+          }
+        ]
+      }
     }
   ],
   "bundles": {
@@ -1802,6 +1928,133 @@
       "source_sha256": "ad9d9fc7d6a4007668a4bb11f83115f127f0116286db3cd3e34ef978edb4caca",
       "decoded_sha256": "12b971fdf03af23780a75cd96df73789786057d8cd27c98c101c3a99a0d566fa",
       "objects": 4
+    },
+    "ZLA6VX43XRTK25M47PEYDIXBYEZX5BV3": {
+      "logical": "3d/chara/body/bdy1067_00/clothes/ast_bdy1067_00_skirt00",
+      "cached": true,
+      "source_sha256": "83746d17aae54b2a29ae84c397a2c3586d0b94ec50116a0e44928341698d8c60",
+      "decoded_sha256": "61dae51ef1b2569966cebf169a73c0ed67ecfb3d9742cebc1a73740b1c8788c9",
+      "objects": 2
+    },
+    "TVUQQGC7NNVVLC5VX7I7XO6JWWDPSCO7": {
+      "logical": "3d/chara/body/bdy1067_00/clothes/ast_bdy1067_00_skirt01",
+      "cached": true,
+      "source_sha256": "3c25b1c00a420c63e8b18738f9dfe3b5f561138406691a2f72cd90283b6a60eb",
+      "decoded_sha256": "81fc49e86ca77dcc6dd38ecbd7777d569ddf2928840c1c5a29aa4df9bf299e15",
+      "objects": 2
+    },
+    "KPTPJYGMPL2QVTINQ5XU4R5TNXTLVJ5Q": {
+      "logical": "3d/chara/body/bdy1067_00/clothes/ast_bdy1067_00_skirt02",
+      "cached": true,
+      "source_sha256": "c60ae88f342ac887ebd1309765908b0228f68d855fd9250e2716348719477f06",
+      "decoded_sha256": "123775e16cd702f0b96732b6ab0e8f689982be92cd2db651fa02045096788878",
+      "objects": 2
+    },
+    "CPN2R43QU74RGAFUWJ7X3VIZNHG5OEPA": {
+      "logical": "3d/chara/body/bdy1067_00/clothes/pfb_bdy1067_00_bust_cloth00",
+      "cached": true,
+      "source_sha256": "3bc1dee72737d57c93a00b1e9a58fc17e55bff263dd39d82e63ad75df6153636",
+      "decoded_sha256": "06bfc9dd53bb91abf3dc667be7c8597b1157798e9270c111b8ca34b7d37cb62d",
+      "objects": 4
+    },
+    "5TAZTFHV7I6TBDXNKFFV7QYSD4YSJZQC": {
+      "logical": "3d/chara/body/bdy1067_00/clothes/pfb_bdy1067_00_bust_cloth01",
+      "cached": true,
+      "source_sha256": "fa70729add00d476b855deedce1dfab6731681cf35de6ee44177bdb003a74aed",
+      "decoded_sha256": "a8e2916af8afd4c4a676b27d8d4b629f14b11065bff419a6c552a1f25c9873bc",
+      "objects": 4
+    },
+    "MY4F34PDSNCLXBB5LGFQAXNDCUSIW6K3": {
+      "logical": "3d/chara/body/bdy1067_00/clothes/pfb_bdy1067_00_bust_cloth02",
+      "cached": true,
+      "source_sha256": "bf9961278b718105fa995ec25fa36f4c42e537f1496b935a97ed52aac9f8e1ce",
+      "decoded_sha256": "10cdf576d4e3641fb7bf8407d5329683324add24e9348ffbd7ba88fc18cb1ea7",
+      "objects": 4
+    },
+    "UWHJ26OA3YI6ZULJJKX5DOXYKEYOJBS6": {
+      "logical": "3d/chara/body/bdy1067_00/clothes/pfb_bdy1067_00_bust_cloth03",
+      "cached": true,
+      "source_sha256": "00da98f32006270b04bac071a8c1146541c711815251d71ffc1ebba339799959",
+      "decoded_sha256": "d2c9c9c7b12ee0a55eca0bb96cbc0bab13a9100a7104079b97a97cad231ba08a",
+      "objects": 4
+    },
+    "4WIDTDHAO2JZ37KAYDPDITSISUMYRI5B": {
+      "logical": "3d/chara/body/bdy1067_00/clothes/pfb_bdy1067_00_bust_cloth04",
+      "cached": true,
+      "source_sha256": "1f7dc5e46a024c152637ea311f8a358988c15325cc28a03fecd3a75d5b6d1bc1",
+      "decoded_sha256": "2b0b84ffc99447682fb5a78599d969bef3030e8a6ef4ea6d07d33d7b1b4142e9",
+      "objects": 4
+    },
+    "PD7P7XARCQQ6A4WWBP55CPN6IXFWZI44": {
+      "logical": "3d/chara/body/bdy1067_00/clothes/pfb_bdy1067_00_cloth00",
+      "cached": true,
+      "source_sha256": "a59ba223b0d778170c9e32dc38eb6db7eb104187e2e8fd83b864571aa9f22cf8",
+      "decoded_sha256": "9d5c2a8be605c8e773c2a8f33f4dc51e102e39efc800030acc264f56f3addda0",
+      "objects": 4
+    },
+    "QDWKNF25ETWAB4JTYEXKDHPYOIBIOAHO": {
+      "logical": "3d/chara/body/bdy1067_00/clothes/pfb_bdy1067_00_cloth01",
+      "cached": true,
+      "source_sha256": "a30d6b8ab128a45d753c5845a3bcb0d849b7fd7a286ec4ce8c243a576bdeb2dd",
+      "decoded_sha256": "649789c0d9dc937f8b11b3a69754fe8d3be6c62673596ce97e6639bb27ee1063",
+      "objects": 4
+    },
+    "BTYJOLF2GKSRHUNXGUSJTDOZ4NEG4DZF": {
+      "logical": "3d/chara/body/bdy1067_00/clothes/pfb_bdy1067_00_cloth02",
+      "cached": true,
+      "source_sha256": "14c7fcda5459cb9c1bc662371cb62d2e8c6960049af8dff3b0c03946fa18c72c",
+      "decoded_sha256": "cf1e60b5fd9e69cffdc18352c7f4a081e5d2961f6d2ef466775758710ad2b291",
+      "objects": 4
+    },
+    "CKXL3PD637KCDIU6TEFV5MWGR2H5BUDP": {
+      "logical": "3d/chara/body/bdy1067_00/clothes/pfb_bdy1067_00_cloth03",
+      "cached": true,
+      "source_sha256": "b63c10633e6eae640a9863899d31e1b1e597fe3c7467ee317f16bd27b7ccb601",
+      "decoded_sha256": "bfb0e9850c8990da3d69acc45df8cc2b7b1c26c62327a8705134798a869d6ddf",
+      "objects": 4
+    },
+    "JOV3Y2TS4BQHEYRO5PPKZYQM7HMLXIMU": {
+      "logical": "3d/chara/body/bdy1067_00/clothes/pfb_bdy1067_00_cloth04",
+      "cached": true,
+      "source_sha256": "09859ae0d945a1a5526921e89ba044b7f2ef66098a2c806c1f464d3e107f9ae8",
+      "decoded_sha256": "6dff85949f50ae76b7f08f80d465dd2851241314942335044d1bafd4c93773d5",
+      "objects": 4
+    },
+    "DZ3G3BNLQYMRZF6FXNY7XGGN5VHMQH4K": {
+      "logical": "3d/chara/head/chr1067_00/clothes/pfb_chr1067_00_cloth00",
+      "cached": true,
+      "source_sha256": "213379822c2235e158dba1047cfc1797692d8c3864003beca17a8e43788096a3",
+      "decoded_sha256": "2dd8ea3a29650e3a1bac91f3bc243f2ad96000021b9e0df46aa14cb5164d7e38",
+      "objects": 4
+    },
+    "BAORYNXPPH3OKHFMLQTGHNXJBKSTNUY2": {
+      "logical": "3d/chara/head/chr1067_00/clothes/pfb_chr1067_00_cloth01",
+      "cached": true,
+      "source_sha256": "b6050f6d2f91a345e4064e39dd23a0b9a3cfe603cf6c1f30fa412587ca48b7c0",
+      "decoded_sha256": "38c6c8388583388ef4c1c3a2ab14e271eb4c5bce62082563d1d375b999ad933a",
+      "objects": 4
+    },
+    "OFIO2ZVA3USANAXCA2IIE6V3ASHKHOKU": {
+      "logical": "3d/chara/head/chr1067_00/clothes/pfb_chr1067_00_cloth02",
+      "cached": true,
+      "source_sha256": "ac7c2e18af037ed02281d66ccaf06983b4d8bf91d63fa5a20f8e3b871fb7197c",
+      "decoded_sha256": "07a48f08ddd21d99b56d84628086bb1dce776952ef01533b471439b0afce2bfb",
+      "objects": 4
+    },
+    "IARBHDQ6UI7NDC3SZ5KCT2BCIYN3MM5B": {
+      "logical": "3d/chara/head/chr1067_00/clothes/pfb_chr1067_00_cloth03",
+      "cached": true,
+      "source_sha256": "17245315dedb4f5db0278142ded53ff1e5c9501f94695e0051b5313f8029088d",
+      "decoded_sha256": "3187f9f4c8c938cb6827c466b9054dca5599c1aca5a04ff3440ce828032e4795",
+      "objects": 4
+    },
+    "VQIAGNFVVTVTMBVCKJPVETN4OZOVH7D2": {
+      "logical": "3d/chara/head/chr1067_00/clothes/pfb_chr1067_00_cloth04",
+      "cached": true,
+      "source_sha256": "5e46d809bebefb75f76edd3dc2669a28a7c2074206e46d0446a33c1bd09a59c0",
+      "decoded_sha256": "509335e64a4092407879275d813794c11d6af331ce1b307c00ed7dfbea00fb66",
+      "objects": 4
     }
-  }
+  },
+  "reader_source_sha256": "871745184e71f1d780473d1215ec797a1e3cc174838f6c9163673f65188904ea"
 }

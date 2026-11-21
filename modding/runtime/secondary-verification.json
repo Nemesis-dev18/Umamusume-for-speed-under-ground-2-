@@ -2,35 +2,35 @@
   "cpu_solver": [
     {
       "id": 1068,
-      "output": "bones=155 springs=51 3600_frames_cpu_seconds=0.4589 motion=24961.3 max_absolute_vertex=1.705 tail_peak_degrees_per_second=38.278"
+      "output": "bones=155 springs=51 3600_frames_cpu_seconds=0.4567 motion=24961.3 max_absolute_vertex=1.705 tail_peak_degrees_per_second=38.278"
     },
     {
       "id": 1052,
-      "output": "bones=152 springs=56 3600_frames_cpu_seconds=0.5409 motion=35405.1 max_absolute_vertex=1.393 tail_peak_degrees_per_second=40.911"
+      "output": "bones=152 springs=56 3600_frames_cpu_seconds=0.5404 motion=35405.1 max_absolute_vertex=1.393 tail_peak_degrees_per_second=40.911"
     },
     {
       "id": 1032,
-      "output": "bones=146 springs=55 3600_frames_cpu_seconds=0.4829 motion=35029.4 max_absolute_vertex=1.609 tail_peak_degrees_per_second=39.366"
+      "output": "bones=146 springs=55 3600_frames_cpu_seconds=0.4852 motion=35029.4 max_absolute_vertex=1.609 tail_peak_degrees_per_second=39.366"
     },
     {
       "id": 1062,
-      "output": "bones=156 springs=68 3600_frames_cpu_seconds=0.7702 motion=27539.4 max_absolute_vertex=1.620 tail_peak_degrees_per_second=41.797"
+      "output": "bones=156 springs=68 3600_frames_cpu_seconds=0.7708 motion=32895.6 max_absolute_vertex=1.620 tail_peak_degrees_per_second=41.797"
     },
     {
       "id": 1015,
-      "output": "bones=148 springs=55 3600_frames_cpu_seconds=0.5073 motion=36995.2 max_absolute_vertex=1.601 tail_peak_degrees_per_second=42.065"
+      "output": "bones=148 springs=55 3600_frames_cpu_seconds=0.5032 motion=36995.2 max_absolute_vertex=1.601 tail_peak_degrees_per_second=42.065"
     },
     {
       "id": 1006,
-      "output": "bones=147 springs=50 3600_frames_cpu_seconds=0.4623 motion=28995.3 max_absolute_vertex=1.749 tail_peak_degrees_per_second=36.158"
+      "output": "bones=147 springs=50 3600_frames_cpu_seconds=0.4614 motion=28995.3 max_absolute_vertex=1.749 tail_peak_degrees_per_second=36.158"
     },
     {
       "id": 1058,
-      "output": "bones=156 springs=64 3600_frames_cpu_seconds=0.5355 motion=32433.5 max_absolute_vertex=1.558 tail_peak_degrees_per_second=38.571"
+      "output": "bones=156 springs=64 3600_frames_cpu_seconds=0.5386 motion=32433.5 max_absolute_vertex=1.558 tail_peak_degrees_per_second=38.571"
     }
   ],
-  "routing": "PASS seven exact native models through runtime hook; distinct textures, reverse-order pixel identity, per-model actor gait/durations, stationary actor, impostor preservation, all-renderer reset and hook removal; not NFSU2 gameplay",
-  "mambo_cape_stretch": "edges=188700 absolute_length_change_max=0.15794 fraction_over_10pct=0.01272 fraction_over_25pct=0.00000 fraction_over_50pct=0.00000",
+  "routing": "PASS 7 exact native models through runtime hook; distinct textures, reverse-order pixel identity, per-model actor gait/durations, stationary actor, impostor preservation, all-renderer reset and hook removal; not NFSU2 gameplay",
+  "mambo_cape_stretch": "edges=188700 absolute_length_change_max=0.12534 fraction_over_10pct=0.00006 fraction_over_25pct=0.00000 fraction_over_50pct=0.00000",
   "native_skin_cases": 56,
   "installed": false,
   "gameplay_verified": false

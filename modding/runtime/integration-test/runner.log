@@ -10,6 +10,8 @@ WHEEL method=DPUP frame=0 vertices=4 primitives=2 shaderBytes=1792 match=1 bodie
 WHEEL method=DPUP frame=0 vertices=4 primitives=2 shaderBytes=1792 match=0 bodies=1 origin=11.3500,0.7800,0.2750 rawBounds=0.0000,-0.2000,0.7000:0.0000,0.2000,1.2000
 WHEEL method=DIPUP frame=0 vertices=4 primitives=2 shaderBytes=1792 match=1 bodies=1 origin=1.3500,0.7800,0.2750 rawBounds=nan,nan,nan:nan,nan,nan
 WHEEL method=DIPUP frame=0 vertices=4 primitives=2 shaderBytes=1792 match=0 bodies=1 origin=11.3500,0.7800,0.2750 rawBounds=0.0000,-0.2000,0.7000:0.0000,0.2000,1.2000
+WHEEL method=DPUP frame=0 vertices=96 primitives=94 shaderBytes=1792 match=1 bodies=1 origin=0.0000,0.0000,0.0000 rawBounds=1.3500,0.5800,0.0750:1.3500,0.9800,0.4750
+WHEEL method=DPUP frame=0 vertices=96 primitives=94 shaderBytes=1792 match=0 bodies=1 origin=10.0000,0.0000,0.0000 rawBounds=nan,nan,nan:nan,nan,nan
 WHEEL method=DIP frame=0 vertices=16 primitives=8 shaderBytes=1792 match=1 bodies=1 origin=0.0000,0.0000,0.2000 rawBounds=-1.2500,-0.7800,0.0750:1.5500,0.7800,0.4750
 WHEEL method=DIP frame=0 vertices=16 primitives=8 shaderBytes=1792 match=0 bodies=1 origin=10.0000,0.0000,0.2000 rawBounds=-1.2500,-0.7800,0.0750:1.5500,0.7800,0.4750
 WHEEL method=DP frame=0 vertices=16 primitives=14 shaderBytes=1792 match=1 bodies=1 origin=0.0000,0.0000,0.2000 rawBounds=-1.2500,-0.7800,0.0750:1.5500,0.7800,0.4750
@@ -18,6 +20,7 @@ WHEEL method=DPUP frame=0 vertices=16 primitives=14 shaderBytes=1792 match=1 bod
 WHEEL method=DPUP frame=0 vertices=16 primitives=14 shaderBytes=1792 match=0 bodies=1 origin=10.0000,0.0000,0.2000 rawBounds=-1.2500,-0.7800,0.0750:1.5500,0.7800,0.4750
 WHEEL method=DIPUP frame=0 vertices=16 primitives=8 shaderBytes=1792 match=1 bodies=1 origin=0.0000,0.0000,0.2000 rawBounds=-1.2500,-0.7800,0.0750:1.5500,0.7800,0.4750
 WHEEL method=DIPUP frame=0 vertices=16 primitives=8 shaderBytes=1792 match=0 bodies=1 origin=10.0000,0.0000,0.2000 rawBounds=-1.2500,-0.7800,0.0750:1.5500,0.7800,0.4750
+WHEEL method=DIP frame=0 vertices=64 primitives=32 shaderBytes=420 match=0 bodies=0 origin=-80.0000,0.0000,0.0000 rawBounds=nan,nan,nan:nan,nan,nan
 OWNED frame=0 base=0 min=0 start=0 offset=72 stride=36 color=15 shaderBytes=1792 supported=1
 VISUAL frame=0 model=0 idleFallback=1 corrected=0 color=15 upView=0.00000,0.00000,1.00000 originView=-95.00000,0.00000,0.00000
 OWNED frame=0 base=0 min=0 start=0 offset=72 stride=36 color=15 shaderBytes=1792 supported=1

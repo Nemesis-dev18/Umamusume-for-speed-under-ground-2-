@@ -12,7 +12,10 @@ PASS animated frame 1; 21764 non-background pixels; unrelated quad remains white
 PASS animated frame 2; 22164 non-background pixels; unrelated quad remains white
 PASS animated frame 3; 21748 non-background pixels; unrelated quad remains white
 PASS invalid pose invalidates upload cache; repeated valid pose recovers identical GPU pixels
+PASS visible spark contribution: 253 changed GPU pixels
+PASS foot spark GPU draw, idle suppression and blend/stream/shader restoration including injected spark failure
+PASS native dark lighting retains bounded character fill and texture color ratios; no extra model draw
 PASS position-only depth shader gains UV input on private clone; color writes remain disabled and pixels unchanged
 PASS visual root rotates the skinned GPU body and invalidates cache; removing correction restores exact baseline pixels
 PASS native vertex shader/declaration preserved, native diffuse lighting applied and texture alpha retained without blending
-PASS all renderer checks, failure restoration and device reset; 16 intercepted draws. No game integration tested.
+PASS all renderer checks, failure restoration and device reset; 21 intercepted draws. No game integration tested.

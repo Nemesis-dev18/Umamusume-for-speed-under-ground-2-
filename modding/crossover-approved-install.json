@@ -1,0 +1,69 @@
+{
+  "files": [
+    {
+      "target": "scripts/UmaRunner.asi",
+      "candidate": "modding/runtime/UmaRunner.asi",
+      "before": "338f60c068f9628bbe74e30d610847f1817729a7ad9e06dee1156b3cb522bd8a",
+      "after": "a256534d520feaf2ba2bbaacb1432b8ffb97b2abadd28b483c1c4278f556767c",
+      "bytes": 414588,
+      "backup": "modding/backups/before-gentildonna-cloth-20261120-231305/scripts/UmaRunner.asi.bak"
+    },
+    {
+      "target": "modding/runtime/fleet/9001/secondary.bin",
+      "candidate": "modding/staged-runtime/gentildonna-cloth/secondary.bin",
+      "before": "f09d70d0524c6225990f768b91be7db91ff8b71ad13dc8d4fb238fc061bc802f",
+      "after": "8f4a0a9a82cfdd49d777941cb46317a9dd969067ec166d2204791b749f47fbb9",
+      "bytes": 6740,
+      "backup": "modding/backups/before-gentildonna-cloth-20261120-231305/modding/runtime/fleet/9001/secondary.bin.bak"
+    },
+    {
+      "target": "LANGUAGES/English.bin",
+      "candidate": "modding/staged-runtime/crossover-locale/LANGUAGES/English.bin",
+      "before": "a8930a998e45abca1ef53d04977aee06df5f6881ba1a677c00e43cdd77a1dd08",
+      "after": "6fde51111c4fd288823c8127aa57d4760c14c41209885fb5882bde6128ab7687",
+      "bytes": 280444,
+      "backup": "modding/backups/before-crossover-locale-20261120-234854/LANGUAGES/English.bin.bak"
+    },
+    {
+      "target": "LANGUAGES/Spanish.bin",
+      "candidate": "modding/staged-runtime/crossover-locale/LANGUAGES/Spanish.bin",
+      "before": "7acbf6271028639634dee28130922545a8257ef949eea81d35ebb87cd6ea4a9c",
+      "after": "6fde51111c4fd288823c8127aa57d4760c14c41209885fb5882bde6128ab7687",
+      "bytes": 280444,
+      "backup": "modding/backups/before-crossover-locale-20261120-234854/LANGUAGES/Spanish.bin.bak"
+    },
+    {
+      "target": "FRONTEND/FrontB.lzc",
+      "candidate": "modding/staged-runtime/crossover-locale/FRONTEND/FrontB.lzc",
+      "before": "41b6d2418bc48745235caa867bb875d6a9c443ddc7fca2cd98966118cfc7004f",
+      "after": "2ec4c960cf03156177ecc671b2833c7cd7f9171c0460f1f8f709c67c054bb4d3",
+      "bytes": 2004213,
+      "backup": "modding/backups/before-crossover-locale-20261120-234854/FRONTEND/FrontB.lzc.bak"
+    },
+    {
+      "target": "GLOBAL/GLOBALB.BUN",
+      "candidate": "modding/staged-runtime/crossover-locale/GLOBAL/GLOBALB.BUN",
+      "before": "f8ecaea4bc69065d0ff195f4b9cb19c1d5de62b3b9ce5192e4d19506c34c2c95",
+      "after": "390bb1551ca3f30f9f8126fc77e36f8052db91f5be083dd2e4afbf4605e5776d",
+      "bytes": 8008064,
+      "backup": "modding/backups/before-crossover-locale-20261120-234854/GLOBAL/GLOBALB.BUN.bak"
+    },
+    {
+      "target": "GLOBAL/GlobalB.lzc",
+      "candidate": "modding/staged-runtime/crossover-locale/GLOBAL/GlobalB.lzc",
+      "before": "aaaf6c643a78770110f1c9c688d06b8c43bc5197ec1ba7d43cb66f05f2df65d5",
+      "after": "871d38d35e87fffb3191ec05a4fecfeefef5a4b2e4845129d467cc472ad4fb00",
+      "bytes": 5145851,
+      "backup": "modding/backups/before-crossover-locale-20261120-234854/GLOBAL/GlobalB.lzc.bak"
+    }
+  ],
+  "component_plans": [
+    "modding/gentildonna-cloth-optimized-install.json",
+    "modding/crossover-locale-install.json"
+  ],
+  "user_approved": true,
+  "installed": true,
+  "gameplay_verified": false,
+  "checkpoint": "45f44fd25ab5b576c01969082c9a40c25be2f4b8",
+  "startup_verified": true
+}

@@ -1,0 +1,17 @@
+TARGET width=320 height=240 format=21 multisample=0
+TARGET width=1920 height=1200 format=21 multisample=1
+DRAW number=35 method=DIP vertices=371 primitives=72 blackGain=61 blackLost=0 shaderBytes=628 stride=24 offset=0
+DRAW number=41 method=DPUP vertices=4 primitives=2 blackGain=278 blackLost=0 shaderBytes=584 stride=0 offset=0
+TARGET width=1920 height=1200 format=21 multisample=0
+DRAW number=77 method=DPUP vertices=4 primitives=2 blackGain=33 blackLost=0 shaderBytes=228 stride=0 offset=0
+TARGET width=960 height=600 format=21 multisample=0
+DRAW number=84 method=DPUP vertices=4 primitives=2 blackGain=1123 blackLost=0 shaderBytes=172 stride=0 offset=0
+DRAW number=88 method=DPUP vertices=4 primitives=2 blackGain=3630 blackLost=0 shaderBytes=228 stride=0 offset=0
+DRAW number=89 method=DPUP vertices=4 primitives=2 blackGain=3600 blackLost=0 shaderBytes=228 stride=0 offset=0
+DRAW number=90 method=DPUP vertices=4 primitives=2 blackGain=13 blackLost=132 shaderBytes=228 stride=0 offset=0
+DRAW number=91 method=DPUP vertices=4 primitives=2 blackGain=8 blackLost=119 shaderBytes=228 stride=0 offset=0
+DRAW number=92 method=DPUP vertices=4 primitives=2 blackGain=31 blackLost=58 shaderBytes=228 stride=0 offset=0
+DRAW number=93 method=DPUP vertices=4 primitives=2 blackGain=210 blackLost=0 shaderBytes=228 stride=0 offset=0
+DRAW number=100 method=DPUP vertices=4 primitives=2 blackGain=42 blackLost=0 shaderBytes=420 stride=0 offset=0
+DRAW number=102 method=DPUP vertices=4 primitives=2 blackGain=1036 blackLost=0 shaderBytes=420 stride=0 offset=0
+DONE draws=444 largestBlackGain=3630

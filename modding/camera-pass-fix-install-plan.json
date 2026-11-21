@@ -10,8 +10,8 @@
     }
   ],
   "backup_root": "modding/backups/before-camera-pass-fix-20261121-050910",
-  "installed": false,
-  "user_approved": false,
+  "installed": true,
+  "user_approved": true,
   "gameplay_verified": false,
   "scope": "Choose closest raw or camera-rebased actor view consistently for animation and upright root; append skin sample counter to existing log lines. Keep installed cape solver, all data/textures and eye fix.",
   "evidence": "Live Gentildonna raw distance0.001m versus camera-rebased18.571m generated idle fallback; new integration regression covers false camera estimate and genuine transformed pass.",
@@ -24,5 +24,7 @@
     "ground translation and physics recovery not changed",
     "cloth/hair/tail intersections remain",
     "professional-mode FPS unverified"
-  ]
+  ],
+  "approval": "User explicitly confirmed game closed and requested installation/launch",
+  "checkpoint": "1527fd169fcc5fe07260118ebaee2647079f3da0"
 }

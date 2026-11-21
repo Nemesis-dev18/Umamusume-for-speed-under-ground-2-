@@ -1,0 +1,1 @@
+PASS id=1062 vertices=15626 bones=156; idle/run visible; full depth occlusion; CPU skin 0.500 ms

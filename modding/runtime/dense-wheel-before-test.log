@@ -1,0 +1,20 @@
+PASS 40 distinct scenery anchors without any majority, reordered draws, moving camera and instanced-anchor rejection
+PASS multi-tire batch, suspension travel, foreign actor and outlier rejection; symmetric side anchors
+PASS CPU-baked wheel center and radius; large mesh, truncated data and nonfinite vertices rejected
+PASS own tire mount, foreign car rejection, scaled tire and invalid matrix cases
+PASS scenery ViewProj recovery from body WV/WVP, moving body speed, singular and nonfinite matrices rejected
+PASS camera motion cancellation, translation speed, stop/reverse, teleport rejection, reflection/scale rejection, ambiguity and sample bounds; synthetic matrices only
+Traceback (most recent call last):
+  File "/home/nemesis/Vídeos/proyecto inginversa/NFSU2-Uma-Prueba/modding/scripts/verify_runtime.py", line 52, in <module>
+    main()
+    ~~~~^^
+  File "/home/nemesis/Vídeos/proyecto inginversa/NFSU2-Uma-Prueba/modding/scripts/verify_runtime.py", line 38, in main
+    run([WINE, build / f'{name}-test.exe'], env=env)
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nemesis/Vídeos/proyecto inginversa/NFSU2-Uma-Prueba/modding/scripts/verify_runtime.py", line 18, in run
+    return subprocess.run([str(a) for a in args], cwd=ROOT, check=True, timeout=60, **kwargs)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.14/subprocess.py", line 578, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['/home/nemesis/.local/share/Steam/steamapps/common/Proton - Experimental/files/bin/wine', '/home/nemesis/Vídeos/proyecto inginversa/NFSU2-Uma-Prueba/modding/runtime/test-build/runner_integration-test.exe']' returned non-zero exit status 3.

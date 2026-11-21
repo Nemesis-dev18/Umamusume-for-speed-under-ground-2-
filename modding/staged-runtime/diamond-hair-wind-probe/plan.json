@@ -1,0 +1,98 @@
+{
+  "installed": false,
+  "accepted": false,
+  "basis": "Probe equivalent24-degree trailing force angle at12m/s; actual spring targets and engine8m/s2 wind cap still apply; not source-native calibration",
+  "changes": [
+    {
+      "name": "Sp_He_Hair4_C_00",
+      "before": 0.003800000064074993,
+      "after": 0.06066241096808516,
+      "gravity": 19.6200008392334
+    },
+    {
+      "name": "Sp_He_Hair4_C_01",
+      "before": 0.003599999938160181,
+      "after": 0.06066241096808516,
+      "gravity": 19.6200008392334
+    },
+    {
+      "name": "Sp_He_Hair4_C_02",
+      "before": 0.003599999938160181,
+      "after": 0.06066241096808516,
+      "gravity": 19.6200008392334
+    },
+    {
+      "name": "Sp_He_Hair4_C_03",
+      "before": 0.003599999938160181,
+      "after": 0.04549680675174734,
+      "gravity": 14.71500015258789
+    },
+    {
+      "name": "Sp_He_Hair4_R_00",
+      "before": 0.003800000064074993,
+      "after": 0.06066241096808516,
+      "gravity": 19.6200008392334
+    },
+    {
+      "name": "Sp_He_Hair4_R_01",
+      "before": 0.003599999938160181,
+      "after": 0.06066241096808516,
+      "gravity": 19.6200008392334
+    },
+    {
+      "name": "Sp_He_Hair4_R_02",
+      "before": 0.003599999938160181,
+      "after": 0.06066241096808516,
+      "gravity": 19.6200008392334
+    },
+    {
+      "name": "Sp_He_Hair4_R_03",
+      "before": 0.003599999938160181,
+      "after": 0.03943056624466543,
+      "gravity": 12.753000259399414
+    },
+    {
+      "name": "Sp_He_Hair4_L_00",
+      "before": 0.003800000064074993,
+      "after": 0.06066241096808516,
+      "gravity": 19.6200008392334
+    },
+    {
+      "name": "Sp_He_Hair4_L_01",
+      "before": 0.003599999938160181,
+      "after": 0.06066241096808516,
+      "gravity": 19.6200008392334
+    },
+    {
+      "name": "Sp_He_Hair5_C_00",
+      "before": 0.004000000189989805,
+      "after": 0.06066241096808516,
+      "gravity": 19.6200008392334
+    },
+    {
+      "name": "Sp_He_Hair5_C_01",
+      "before": 0.004000000189989805,
+      "after": 0.06066241096808516,
+      "gravity": 19.6200008392334
+    },
+    {
+      "name": "Sp_He_Hair4_L_02",
+      "before": 0.003599999938160181,
+      "after": 0.06066241096808516,
+      "gravity": 19.6200008392334
+    },
+    {
+      "name": "Sp_He_Hair5_C_02",
+      "before": 0.004000000189989805,
+      "after": 0.06066241096808516,
+      "gravity": 19.6200008392334
+    },
+    {
+      "name": "Sp_He_Hair4_L_03",
+      "before": 0.003599999938160181,
+      "after": 0.03943056624466543,
+      "gravity": 12.753000259399414
+    }
+  ],
+  "rejection": "Rejected: stronger wind increases sampled hair/garment crossings; not a mesh-contact solution."
+}

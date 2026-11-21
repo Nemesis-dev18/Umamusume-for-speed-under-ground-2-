@@ -1,11 +1,11 @@
 {
   "scope": "Independent test hosts, not NFSU2 gameplay",
   "results": {
-    "renderer": "PASS all renderer checks, failure restoration and device reset; 16 intercepted draws. No game integration tested.",
+    "renderer": "PASS all renderer checks, failure restoration and device reset; 21 intercepted draws. No game integration tested.",
     "integration": "PASS native shader 5 renders animated textured body through runtime hook; stream offset and base vertex pass, cross-device hooks pass, same-size impostor retains original white output; Present, Reset and hook removal pass. Not NFSU2 gameplay."
   },
   "sha256": {
-    "UmaRunner.asi": "a8e47d80d7a274016d4fd03c114e0ec8116ca1dbd454970a054b0e3ed1bc8ec0",
+    "UmaRunner.asi": "f13b83ed7c6dfb494e117e5198e9da88563aa4fd688091d4fb5ebc0f1a6eb490",
     "kitasan.umab": "c1701a3227ce720bf2f4166b96f96219e96b4f307251a579d9c2f0059c8e0581",
     "atlas.dds": "cb40a42c64d1f97fb69734ad30caa78776c97330472d1152bcda44d69470920d"
   },

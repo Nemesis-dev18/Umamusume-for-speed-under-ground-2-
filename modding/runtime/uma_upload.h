@@ -15,7 +15,7 @@ static UmaVertexLock uma_native_lock;
 static UmaVertexUnlock uma_native_unlock;
 static void **uma_upload_table;
 typedef struct {const void *expected;UINT bytes,model;} UmaUploadModel;
-static UmaUploadModel uma_upload_models[8];
+static UmaUploadModel uma_upload_models[9];
 static UINT uma_upload_model_count;
 typedef struct {void *pointer;UINT bytes,offset,depth;BOOL whole;} UmaPendingUpload;
 /* Retain only bounded CPU upload bytes; decode the actual declaration/range at draw time. */
@@ -61,7 +61,7 @@ static int uma_upload_geometry_equal(const void *mapped,const UmaUploadModel *pr
 }
 /* Register before uploads; all borrowed profile bytes must remain alive until removal. */
 static inline BOOL uma_upload_add_model(const void *expected,UINT bytes,UINT model){
- if(!uma_upload_table || !expected || !bytes || bytes%36 || bytes>4*1024*1024 || uma_upload_model_count>=8)return FALSE;
+ if(!uma_upload_table || !expected || !bytes || bytes%36 || bytes>4*1024*1024 || uma_upload_model_count>=sizeof(uma_upload_models)/sizeof(uma_upload_models[0]))return FALSE;
  UmaUploadModel profile={expected,bytes,model};
  for(UINT i=0;i<uma_upload_model_count;i++)if(uma_upload_models[i].model==model || (uma_upload_models[i].bytes==bytes && uma_upload_geometry_equal(uma_upload_models[i].expected,&profile)))return FALSE;
  uma_upload_models[uma_upload_model_count++]=profile;return TRUE;

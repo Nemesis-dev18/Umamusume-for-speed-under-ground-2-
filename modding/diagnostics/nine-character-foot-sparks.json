@@ -1,0 +1,59 @@
+{
+  "scope": "Original run clip sole contacts; no NFS gameplay proof",
+  "results": [
+    {
+      "id": 1068,
+      "exit": 0,
+      "result": "PASS contact frames=34/96 left=17 right=17 modding/runtime/crossover-nine-test/modding/runtime/fleet/1068/model.umab",
+      "error": ""
+    },
+    {
+      "id": 1052,
+      "exit": 0,
+      "result": "PASS contact frames=36/96 left=18 right=18 modding/runtime/crossover-nine-test/modding/runtime/fleet/1052/model.umab",
+      "error": ""
+    },
+    {
+      "id": 1032,
+      "exit": 0,
+      "result": "PASS contact frames=33/96 left=17 right=16 modding/runtime/crossover-nine-test/modding/runtime/fleet/1032/model.umab",
+      "error": ""
+    },
+    {
+      "id": 1062,
+      "exit": 0,
+      "result": "PASS contact frames=36/96 left=18 right=18 modding/runtime/crossover-nine-test/modding/runtime/fleet/1062/model.umab",
+      "error": ""
+    },
+    {
+      "id": 1015,
+      "exit": 0,
+      "result": "PASS contact frames=36/96 left=18 right=18 modding/runtime/crossover-nine-test/modding/runtime/fleet/1015/model.umab",
+      "error": ""
+    },
+    {
+      "id": 1006,
+      "exit": 0,
+      "result": "PASS contact frames=34/96 left=17 right=17 modding/runtime/crossover-nine-test/modding/runtime/fleet/1006/model.umab",
+      "error": ""
+    },
+    {
+      "id": 1058,
+      "exit": 0,
+      "result": "PASS contact frames=32/96 left=16 right=16 modding/runtime/crossover-nine-test/modding/runtime/fleet/1058/model.umab",
+      "error": ""
+    },
+    {
+      "id": 9001,
+      "exit": 0,
+      "result": "PASS contact frames=32/96 left=16 right=16 modding/runtime/crossover-nine-test/modding/runtime/fleet/9001/model.umab",
+      "error": ""
+    },
+    {
+      "id": 1067,
+      "exit": 0,
+      "result": "PASS contact frames=36/96 left=18 right=18 modding/runtime/crossover-nine-test/modding/runtime/fleet/1067/model.umab",
+      "error": ""
+    }
+  ]
+}

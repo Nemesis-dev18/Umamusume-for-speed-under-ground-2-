@@ -1,0 +1,19 @@
+19:22:52 | INFO: Data are loaded, start creating Blender stuff
+19:22:52 | INFO: Blender create Mesh node M_Body
+19:22:52 | INFO: Blender create Mesh node M_Tail
+19:22:52 | INFO: Blender create Mesh node M_Cheek
+19:22:52 | INFO: Blender create Mesh node M_Face
+19:22:52 | INFO: Blender create Mesh node M_Hair
+19:22:52 | INFO: Blender create Mesh node M_Mayu
+19:22:52 | INFO: glTF import finished in 0.25s
+BOUNDS_DIAGNOSTIC
+M_Body (0.6385388970375061, 0.5943282246589661, 1.4849884510040283) ['mtl_bdy1032_00']
+M_Tail (0.14706860482692719, 0.2345324158668518, 0.7714597582817078) ['mtl_tail0001_00']
+M_Cheek (0.0, 0.0, 0.0) []
+M_Face (0.15726619958877563, 0.15100522339344025, 0.16968871653079987) ['mtl_chr1032_00_face']
+M_Hair (0.3037089407444, 0.31825530529022217, 0.3652334213256836) ['mtl_chr1032_00_hair']
+M_Mayu (0.1375572383403778, 0.02387293614447117, 0.01806548796594143) ['mtl_chr1032_00_mayu']
+Icosphere (1.9021157026290894, 1.9999998807907104, 2.0) []
+Blender 4.5.16 LTS (hash 3f6797307da5 built 2026-11-10 01:31:21)
+
+Blender quit

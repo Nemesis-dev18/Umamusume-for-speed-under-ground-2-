@@ -1,0 +1,9 @@
+1068: exit=0 frames=360 penetrating_frames=360 before_proxy_contacts=127992 after_proxy_contacts=0 largest_axis_correction=0.07540; normals and pinned skin checked; edge strain and live gameplay not validated 
+1052: exit=0 frames=360 penetrating_frames=360 before_proxy_contacts=46426 after_proxy_contacts=256 largest_axis_correction=0.12021; normals and pinned skin checked; edge strain and live gameplay not validated 
+1032: exit=0 frames=360 penetrating_frames=360 before_proxy_contacts=18112 after_proxy_contacts=0 largest_axis_correction=0.04496; normals and pinned skin checked; edge strain and live gameplay not validated 
+1062: exit=0 frames=360 penetrating_frames=360 before_proxy_contacts=69155 after_proxy_contacts=845 largest_axis_correction=0.09417; normals and pinned skin checked; edge strain and live gameplay not validated 
+1015: exit=0 frames=360 penetrating_frames=360 before_proxy_contacts=57186 after_proxy_contacts=14 largest_axis_correction=0.06948; normals and pinned skin checked; edge strain and live gameplay not validated 
+1006: exit=0 frames=360 penetrating_frames=360 before_proxy_contacts=87960 after_proxy_contacts=0 largest_axis_correction=0.07272; normals and pinned skin checked; edge strain and live gameplay not validated 
+1058: exit=0 frames=360 penetrating_frames=360 before_proxy_contacts=49713 after_proxy_contacts=0 largest_axis_correction=0.07076; normals and pinned skin checked; edge strain and live gameplay not validated 
+9001: exit=0 frames=360 penetrating_frames=360 before_proxy_contacts=53710 after_proxy_contacts=4 largest_axis_correction=0.07387; normals and pinned skin checked; edge strain and live gameplay not validated 
+1067: exit=0 frames=360 penetrating_frames=360 before_proxy_contacts=72308 after_proxy_contacts=175 largest_axis_correction=0.11433; normals and pinned skin checked; edge strain and live gameplay not validated 

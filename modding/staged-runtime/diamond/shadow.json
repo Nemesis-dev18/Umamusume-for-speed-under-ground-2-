@@ -1,0 +1,13 @@
+{
+  "target": "CARS/LANCEREVO8/TEXTURES.BIN",
+  "before_sha256": "43e5191d2280450a85efc5ab2aa40c8fc6683c40205e32b4834801f31ecadbd1",
+  "after_sha256": "7766bdf357b89ed4b61e885ca7d0129f0437e98aecbd3788c7a24447e39ade97",
+  "verification": {
+    "textures": 68,
+    "only_two_shadows_changed": true,
+    "format": "DXT3 128x64, four mips",
+    "metadata_unchanged": true,
+    "sha256": "7766bdf357b89ed4b61e885ca7d0129f0437e98aecbd3788c7a24447e39ade97"
+  },
+  "installed": false
+}

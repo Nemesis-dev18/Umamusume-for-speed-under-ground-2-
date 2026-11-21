@@ -122,7 +122,8 @@
       "backup": "modding/backups/before-model-quality-20261120-224338/scripts/UmaRunner.asi.bak"
     }
   ],
-  "installed": false,
+  "installed": true,
   "gameplay_verified": false,
-  "scope": "Seven native-resolution atlases with UV-only model updates; all-eight dark lighting fill and displaced wheel-bounds filter; Gentildonna geometry/materials unchanged"
+  "scope": "Seven native-resolution atlases with UV-only model updates; all-eight dark lighting fill and displaced wheel-bounds filter; Gentildonna geometry/materials unchanged",
+  "checkpoint": "c7aa728e3f8d046703a19cc306239e7dd760cec5"
 }

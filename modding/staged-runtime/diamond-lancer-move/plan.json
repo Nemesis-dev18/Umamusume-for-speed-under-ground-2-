@@ -1,0 +1,134 @@
+{
+  "files": [
+    {
+      "target": "FRONTEND/FrontB.lzc",
+      "candidate": "modding/staged-runtime/diamond-lancer-move/FRONTEND/FrontB.lzc",
+      "before": "262080ab1730e0e94d4c84df835f630e5d27f7e81e12be3f2acec39e87d5065c",
+      "after": "26f41efd672f79d30419dd9e633c0dfce73a4f17ba5ff5c4f3e705d2fff22655",
+      "bytes": 2051264
+    },
+    {
+      "target": "LANGUAGES/English.bin",
+      "candidate": "modding/staged-runtime/diamond-lancer-move/LANGUAGES/English.bin",
+      "before": "c581b51823645a0a716290faba1fee0d6db3712cd481bbd13dfba84c085c3b83",
+      "after": "46d5edac4330497863f683400c5ee41e96956530241590eef4a573a73f3f535b",
+      "bytes": 280508
+    },
+    {
+      "target": "LANGUAGES/Spanish.bin",
+      "candidate": "modding/staged-runtime/diamond-lancer-move/LANGUAGES/Spanish.bin",
+      "before": "c581b51823645a0a716290faba1fee0d6db3712cd481bbd13dfba84c085c3b83",
+      "after": "46d5edac4330497863f683400c5ee41e96956530241590eef4a573a73f3f535b",
+      "bytes": 280508
+    },
+    {
+      "target": "GLOBAL/GLOBALB.BUN",
+      "candidate": "modding/staged-runtime/diamond-lancer-move/GLOBAL/GLOBALB.BUN",
+      "before": "c8f0b9859f8ea99cf97297e68c488c675a1373b1ef3341a1a48c64e59ceb4fe9",
+      "after": "0fb80ab312d2ca2f12f0bc1b66898ac5e480e7748be6153fde526994e8cbb131",
+      "bytes": 8008064
+    },
+    {
+      "target": "GLOBAL/GlobalB.lzc",
+      "candidate": "modding/staged-runtime/diamond-lancer-move/GLOBAL/GlobalB.lzc",
+      "before": "a1a04c88a60debedf010d4ba1459e06f81d12653b845095ec99b378e4917519b",
+      "after": "9ae4c960b3f56b1520ac6e183e5b40ec2752a664dfee4d3c8add307b9ecfbace",
+      "bytes": 5145866
+    },
+    {
+      "target": "CARS/CELICA/GEOMETRY.BIN",
+      "candidate": "modding/staged-runtime/diamond-lancer-move/CARS/CELICA/GEOMETRY.BIN",
+      "before": "c2fd31c984c6a0cf9911456b4a876e1adbc04c8f0e67e5df173be2cb5fc7aab3",
+      "after": "7e2cd9ce30b3d4fee31a426efcf422efe66ea84f310857be7e8912bf4cdc3009",
+      "bytes": 7499600
+    },
+    {
+      "target": "CARS/CELICA/TEXTURES.BIN",
+      "candidate": "modding/staged-runtime/diamond-lancer-move/CARS/CELICA/TEXTURES.BIN",
+      "before": "ab96c1d5a8e46f946c1f8f23a3505d3dcda48ab01bdc1fed4271cea4699593ce",
+      "after": "3bdfb9ea5aaddaec1c560a3a4afdaabd22d39c6a84be6df310bbed295009619a",
+      "bytes": 671872
+    },
+    {
+      "target": "CARS/LANCEREVO8/GEOMETRY.BIN",
+      "candidate": "modding/staged-runtime/diamond-lancer-move/CARS/LANCEREVO8/GEOMETRY.BIN",
+      "before": "7c6ebb5ad9099487a4201a1cd64adc52d24bf913364bc1f00a6cf8fdb9733eb6",
+      "after": "3576acca7a66a9dc06da2fefce974c0c110627a4c7d8da1ede2cafb96b30d6ef",
+      "bytes": 2175792
+    },
+    {
+      "target": "CARS/LANCEREVO8/TEXTURES.BIN",
+      "candidate": "modding/staged-runtime/diamond-lancer-move/CARS/LANCEREVO8/TEXTURES.BIN",
+      "before": "43e5191d2280450a85efc5ab2aa40c8fc6683c40205e32b4834801f31ecadbd1",
+      "after": "7766bdf357b89ed4b61e885ca7d0129f0437e98aecbd3788c7a24447e39ade97",
+      "bytes": 736192
+    },
+    {
+      "target": "modding/runtime/fleet/1067/anchors.bin",
+      "candidate": "modding/staged-runtime/diamond-lancer-move/modding/runtime/fleet/1067/anchors.bin",
+      "before": "a0319f90b24427daf581e913f02fb40e45cb174db82c26bb4f8f8d3ccf44ff45",
+      "after": "3257913f3445490f989f72e016ea7c36da3ead3e6557a73c5a1849da7e3daa9a",
+      "bytes": 72
+    }
+  ],
+  "fields": [
+    {
+      "target": "GLOBAL/GLOBALB.BUN",
+      "slot": "CELICA",
+      "decoded_offset": 7130400,
+      "bytes": 16,
+      "value": "TOYOTA"
+    },
+    {
+      "target": "GLOBAL/GLOBALB.BUN",
+      "slot": "LANCEREVO8",
+      "decoded_offset": 7163280,
+      "bytes": 16,
+      "value": "DIAMOND"
+    },
+    {
+      "target": "GLOBAL/GlobalB.lzc",
+      "slot": "CELICA",
+      "decoded_offset": 7130400,
+      "bytes": 16,
+      "value": "TOYOTA"
+    },
+    {
+      "target": "GLOBAL/GlobalB.lzc",
+      "slot": "LANCEREVO8",
+      "decoded_offset": 7163280,
+      "bytes": 16,
+      "value": "DIAMOND"
+    }
+  ],
+  "texture_changes": [
+    {
+      "texture": "SECONDARY_LOGO_CELICA",
+      "source": "SECONDARY_LOGO_CELICA",
+      "offset": 460928,
+      "bytes": 16384
+    },
+    {
+      "texture": "SECONDARY_LOGO_LANCEREVO8",
+      "source": "SECONDARY_LOGO_CELICA",
+      "offset": 3963392,
+      "bytes": 16384
+    },
+    {
+      "texture": "CARSELECT_MANUFACTURER_OPEL",
+      "source": "CARSELECT_MANUFACTURER_DOTO",
+      "offset": 2120192,
+      "bytes": 8192
+    },
+    {
+      "texture": "CARSELECT_MANUFACTURER_VAUXHALL",
+      "source": "CARSELECT_MANUFACTURER_DOTO",
+      "offset": 4546048,
+      "bytes": 8192
+    }
+  ],
+  "installed": false,
+  "user_approved": false,
+  "gameplay_verified": false,
+  "scope": "Move Diamond to selectable LANCEREVO8; restore Celica original assets/name/manufacturer; Doto portrait on both regional brand aliases. Existing ASI and cloth unchanged."
+}
