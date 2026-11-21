@@ -40,7 +40,7 @@ def closest_triangle(p, tri):
     return min(candidates, key=lambda item: dot(sub(item[0], p), sub(item[0], p)))
 
 
-def closest_capsule_axis(start, end, tri):
+def closest_capsule_axis_reference(start, end, tri):
     # Squared distance to a convex triangle is convex along a segment.
     def sample(t):
         center = [start[k]+t*(end[k]-start[k]) for k in range(3)]
@@ -55,6 +55,45 @@ def closest_capsule_axis(start, end, tri):
             lo = a
     _, q, bary, center = min((sample(0),sample(1),sample((lo+hi)/2)), key=lambda item:item[0])
     return q, bary, center
+
+
+
+def segment_pair(a, b, c, d):
+    u,v,r=sub(b,a),sub(d,c),sub(a,c)
+    aa,ee,bb,cc,ff=dot(u,u),dot(v,v),dot(u,v),dot(u,r),dot(v,r)
+    clamp=lambda value:max(0.,min(1.,value))
+    if aa<=1e-20:
+        s,t=0.,clamp(ff/ee) if ee>1e-20 else 0.
+    elif ee<=1e-20:
+        s,t=clamp(-cc/aa),0.
+    else:
+        denom=aa*ee-bb*bb
+        s=clamp((bb*ff-cc*ee)/denom) if denom>1e-20 else 0.
+        t=(bb*s+ff)/ee
+        if t<0:s,t=clamp(-cc/aa),0.
+        elif t>1:s,t=clamp((bb-cc)/aa),1.
+    return [a[k]+s*u[k] for k in range(3)],[c[k]+t*v[k] for k in range(3)],t
+
+
+def closest_capsule_axis(start, end, tri):
+    candidates=[]
+    for point in (start,end):
+        q,bary=closest_triangle(point,tri)
+        candidates.append((q,bary,point))
+    for i,j in ((0,1),(1,2),(2,0)):
+        axis,q,t=segment_pair(start,end,tri[i],tri[j])
+        bary=[0.,0.,0.];bary[i],bary[j]=1-t,t
+        candidates.append((q,bary,axis))
+    ab,ac=sub(tri[1],tri[0]),sub(tri[2],tri[0])
+    normal=[ab[1]*ac[2]-ab[2]*ac[1],ab[2]*ac[0]-ab[0]*ac[2],ab[0]*ac[1]-ab[1]*ac[0]]
+    direction=sub(end,start);denom=dot(normal,direction)
+    if abs(denom)>1e-20:
+        t=dot(normal,sub(tri[0],start))/denom
+        if 0<=t<=1:
+            axis=[start[k]+t*direction[k] for k in range(3)]
+            q,bary=closest_triangle(axis,tri)
+            candidates.append((q,bary,axis))
+    return min(candidates,key=lambda item:dot(sub(item[0],item[2]),sub(item[0],item[2])))
 
 
 def contact(tri, mass, center, radius, end=None):
@@ -138,6 +177,16 @@ class Probe(unittest.TestCase):
         contact(tri,[1,1,1],[0,0,0],.053,end=[0,0,0])
         contact(sphere,[1,1,1],[0,0,0],.053)
         self.assertEqual(tri,sphere)
+
+    def test_analytic_capsule_distance_matches_numerical_reference(self):
+        import random
+        rng=random.Random(1067)
+        for _ in range(120):
+            tri=[[rng.uniform(-1,1) for _ in range(3)] for _ in range(3)]
+            start,end=([rng.uniform(-1,1) for _ in range(3)] for _ in range(2))
+            q,_,axis=closest_capsule_axis(start,end,tri)
+            reference,_,ref_axis=closest_capsule_axis_reference(start,end,tri)
+            self.assertAlmostEqual(math.dist(q,axis),math.dist(reference,ref_axis),places=7)
 
     def test_fully_pinned_panel_reports_unresolved_contact(self):
         tri = [[-.2,-.2,.02],[.2,-.2,.02],[0,.2,.02]]
